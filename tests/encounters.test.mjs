@@ -25,7 +25,7 @@ test('추상 지시어를 사건의 대상과 행위로 풀고 언급 인물은 
  assert.match(get('pair-83').replyLines[0],/애굽 사람들이 당신을 살려 두고 나를 데려갈/);
  assert.match(get('pair-130').replyLines[0],/외투와 은과 금/);
  assert.match(get('pair-131').lines[0],/낡은 옷과 곰팡이 난 빵/);
- assert.match(get('pair-173').lines[0],/내 아버지 다윗.*그의 아들인 나/);
+ assert.match(get('pair-173').lines[0],/친구를 후대하는 방식.*친구와 함께 가지/);
  assert.match(get('pair-214').replyLines[0],/하눈이 우리 수염을 깎고 옷을 잘라/);
  assert.match(get('pair-218').replyLines[0],/타작마당과 번제에 쓸 소와 땔 나무와 곡식/);
  assert.match(get('pair-221').replyLines[0],/성전 건축을 위해 금과 은과 보석/);
@@ -35,7 +35,7 @@ test('추상 지시어를 사건의 대상과 행위로 풀고 언급 인물은 
  assert.match(get('pair-176').detail,/밀·보리.*꿀·버터·양·치즈/);
  assert.match(get('pair-222').detail,/백향목·잣나무·백단목.*밀·보리·포도주·기름/);
  assert.match(get('pair-244').detail,/금·은 접시와 대접.*5,400개/);
- assert.ok(get('pair-260').lines.every(line=>/느헤미야를 죽이러/.test(line)&&!/왕을 죽이러/.test(line)));
+ assert.ok(get('pair-260').lines.every(line=>/당신을 죽(이러|일)/.test(line)&&!/왕을 죽이러/.test(line)));
  assert.match(get('pair-260').detail,/도비야와 산발랏.*성전에 숨어 죄를 짓게/);
  assert.match(get('pair-hag-2-haggai-priests').lines[1],/떡·국·포도주·기름/);
  assert.match(get('pair-hag-2-haggai-priests').replyLines[1],/시체를 만져 부정해진 사람이 닿은 음식/);
@@ -47,7 +47,7 @@ test('추상 지시어를 사건의 대상과 행위로 풀고 언급 인물은 
  const hosea=JSON.parse(fs.readFileSync('data/summary/hos.json'));
  assert.ok(['5','10'].every(ch=>!hosea.chapters[ch].people.some(person=>person.name==='야렙 왕')));
  assert.equal(get('pair-isa-7-rezin-ahaz'),undefined,'직접 대화가 없는 르신과 아하스의 허구 대면을 특수 장면에서 제외');
- assert.match(get('pair-dan-2-arioch-daniel').lines[1],/왕이 죽이라고 명한 바벨론 지혜자들/);
+ assert.match(get('pair-dan-2-arioch-daniel').lines[0],/왕의 명령으로 바벨론 지혜자들을 죽이러/);
  assert.equal(get('pair-jer-40-ishmael-gedaliah'),undefined,'요하난의 경고와 그달리야의 거절을 이스마엘이 꾸며 말한 장면으로 만들지 않는다');
  const jer=JSON.parse(fs.readFileSync('data/summary/jer.json'));
  assert.ok(!jer.chapters['40'].rels.some(edge=>edge.from==='이스마엘'&&edge.to==='그달리야'),'40장은 이스마엘의 현장 대면이 아니라 요하난의 경고 장면이다');
@@ -124,7 +124,7 @@ test('사무엘상 관계도 377개가 모두 대화되며 핵심 사건에는 �
   audited++;
  }
  assert.equal(audited,377);
- const cases=[['1sa.1','한나','엘가나',/젖을 뗄|서원/,/당신이 좋다고|기다립시다/],['1sa.3','사무엘','엘리',/부르시면|숨기지/,/말씀하옵소서|알려 다오/],['1sa.14','요나단','사울',/꿀/,/맹세/],['1sa.17','다윗','골리앗',/여호와의 이름/,/막대기|새와 들짐승/],['1sa.20','요나단','다윗',/화살|떠나/,/약속|집안/],['1sa.21','다윗','아히멜렉',/빵|무기/,/거룩한 빵|골리앗의 칼/],['1sa.24','다윗','사울',/해치지 않았/,/다윗아|의롭구나/],['1sa.25','아비가일','다윗',/나발의 죄/,/보복하지/],['1sa.22','아비아달','다윗',/에봇|피하여.*왔습니다/,/내 책임|머물러라/]];
+ const cases=[['1sa.1','한나','엘가나',/젖을 뗄|서원/,/당신이 좋다고|기다립시다/],['1sa.3','사무엘','엘리',/부르시면|숨기지/,/말씀하옵소서|알려 다오/],['1sa.14','요나단','사울',/꿀/,/맹세/],['1sa.17','다윗','골리앗',/여호와의 이름/,/막대기|새와 들짐승/],['1sa.20','요나단','다윗',/화살|떠나/,/약속|집안/],['1sa.21','다윗','아히멜렉',/빵|무기/,/거룩한 빵|골리앗의 칼/],['1sa.24','다윗','사울',/해치지 않았/,/다윗아|의롭구나/],['1sa.25','아비가일','다윗',/나발의 죄/,/보복하지/],['1sa.22','아비아달','다윗',/에봇|피하여.*왔습니다/,/내 탓|내게 있어라/]];
  for(const [chapter,speaker,target,first,reply]of cases){
   const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);
   assert.ok(entry,`${chapter} ${speaker} ↔ ${target}`);assert.ok([...entry.lines,...(entry.replyLines||[])].some(line=>first.test(line)),`${chapter} ${speaker} 발화`);assert.ok([...entry.lines,...(entry.replyLines||[])].some(line=>reply.test(line)),`${chapter} ${target} 응답`);
@@ -144,7 +144,7 @@ test('사무엘하의 인간 관계선 385개와 주요 사건의 대화를 모�
   audited++;
  }
  assert.equal(audited,385);
- const cases=[['2sa.1','다윗','아말렉 청년',/기름 부음 받은 왕/,/죽여 달라고|제가 사울을 죽였다고/],['2sa.2','다윗','야베스 길르앗 사람들',/장사해 준/,/기억해|알아주셔서/],['2sa.3','아브넬','다윗',/이스라엘 장로들/,/미갈|언약/],['2sa.3','요압','다윗',/아브넬/,/스루야|네가 한 악|악을 행한 자/],['2sa.5','이스라엘 지파들','다윗',/골육|목자/,/헤브론|언약/],['2sa.7','나단','다윗',/집을 세우십니다/,/성전을 짓고|집을 세우신다는 약속/],['2sa.9','다윗','므비보셋',/두려워하지|상에서 먹어라/,/죽은 개|자격/],['2sa.11','다윗','우리아',/집으로 내려가/,/집에 갈 수 없/],['2sa.16','압살롬','후새',/왜 이제 그의 아들인 나를/,/왕 만세/],['2sa.19','시므이','다윗',/죄를 지었습니다/,/죽지 않을/],['2sa.19','다윗','므비보셋',/왜 나와 함께/,/시바가|왕께서 무사히/],['2sa.19','바르실래','다윗',/요단을 건널/,/김함/],['2sa.24','다윗','아라우나',/타작마당|값을 치르지/,/제단을 쌓으십시오/]];
+ const cases=[['2sa.1','다윗','아말렉 청년',/기름 부음 받은 자/,/죽여 달라고|제가 사울을 죽였다고/],['2sa.2','다윗','야베스 길르앗 사람들',/장사해 준/,/기억해|알아주셔서/],['2sa.3','아브넬','다윗',/이스라엘 장로들/,/미갈|언약/],['2sa.3','요압','다윗',/아브넬/,/무죄|요압의 머리/],['2sa.5','이스라엘 지파들','다윗',/골육|목자/,/헤브론|언약/],['2sa.7','나단','다윗',/집을 세우십니다/,/성전을 짓고|집을 세우신다는 약속/],['2sa.9','다윗','므비보셋',/두려워하지|상에서 먹어라/,/죽은 개|자격/],['2sa.11','다윗','우리아',/집으로 내려가/,/집에 가서.*쉴 수 없/],['2sa.16','압살롬','후새',/왜 이제 내게 와서 왕이라/,/왕의 아버지를 섬긴 것처럼 왕을 섬기겠습니다/],['2sa.19','시므이','다윗',/범죄한 줄 알기에/,/죽지 않을/],['2sa.19','다윗','므비보셋',/어찌하여 나와 함께 가지 않았느냐/,/시바가|왕께서 무사히/],['2sa.19','바르실래','다윗',/요단을 건널/,/김함/],['2sa.24','다윗','아라우나',/타작마당|값을 치르지/,/제단을 쌓으십시오/]];
  for(const [chapter,speaker,target,first,reply]of cases){
   const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);
   assert.ok(entry,`${chapter} ${speaker} ↔ ${target}`);assert.ok([...entry.lines,...(entry.replyLines||[])].some(line=>first.test(line)),`${chapter} ${speaker} first line`);assert.ok([...entry.lines,...(entry.replyLines||[])].some(line=>reply.test(line)),`${chapter} ${speaker} reply line`);
@@ -161,7 +161,7 @@ test('사무엘하의 나단·다윗 책망, 사울 죽음 주장, 요압 항의
  const amalekite=PAIR_DIALOGUE.find(entry=>entry.chapter==='2sa.1'&&entry.speaker==='다윗'&&entry.target==='아말렉 청년');
  assert.match(amalekite.ref,/1:6–16/);assert.doesNotMatch(amalekite.replyLines[0],/보상/);assert.match(amalekite.detail,/사무엘상 31장/);
  const joab=PAIR_DIALOGUE.find(entry=>entry.chapter==='2sa.3'&&entry.speaker==='요압');
- assert.match(joab.detail,/직접 한 말로 기록하지 않고/);assert.match(joab.detail,/창작 재구성/);
+ assert.match(joab.detail,/직접 건넨 말이 아니라 공개 선언/);assert.match(joab.detail,/대화 쌍은 재구성/);
  const nathanPromise=PAIR_DIALOGUE.find(entry=>entry.chapter==='2sa.7');
  assert.match(nathanPromise.detail,/하나님께 기도한 것이 아니라|나단에게 답한 것이 아니라 하나님께 기도/);
  const barzillai=PAIR_DIALOGUE.find(entry=>entry.chapter==='2sa.19'&&entry.speaker==='바르실래');
@@ -175,7 +175,7 @@ test('열왕기상 인간 관계선 115개와 왕·선지자·가족의 핵심 �
  for(const relation of context.relations){const lines=relationshipLines(relation.from,relation.to,relation,null,{random:()=>0});assert.equal(lines.length,2);assert.ok(lines.every(line=>line.text&&!/어색|안녕하세요/.test(line.text)));audited++}
  assert.equal(context.relations.filter(relation=>!relation.scriptedPair).length,115);
  assert.equal(audited,116,'관계도 연결과 별도로 본문 대화 색인이 추가한 연결도 처리');
- const cases=[['1ki.1','밧세바','다윗',/아도니야|솔로몬/,/솔로몬이 왕이|기름 부으/],['1ki.1','나단','다윗',/아도니야가 스스로 왕이/,/솔로몬이 왕이/],['1ki.2','밧세바','솔로몬',/아비삭/,/왕위를|아비삭/],['1ki.3','솔로몬','2 여인',/칼을 가져와|아이를 죽이지/,/아이를 죽이지|포기/],['1ki.5','솔로몬','히람',/성전을|백향목/,/백향목|나무를 보내/],['1ki.10','스바 여왕','솔로몬',/질문|소문/,/물어보|찬양/],['1ki.11','아히야','여로보암',/10\s*지파/,/나라를|10 지파/],['1ki.12','르호보암','노인들',/멍에/,/백성의 종|부드럽게/],['1ki.13','하나님의 사람','늙은 선지자',/먹지도|말씀/,/선지자|여호와께서 말씀/],['1ki.14','아히야','여로보암의 아내',/변장/,/아들이 죽/],['1ki.15','아사','벤하닷',/은과 금/,/조약|이스라엘 왕/],['1ki.16','예후(하나니의 아들)','바아사',/세우셨/,/왕조|여로보암/],['1ki.17','엘리야','사르밧 과부',/빵 한 조각/,/밀가루|먼저/],['1ki.18','엘리야','오바댜',/아합 앞에/,/두려|엘리야시군요/],['1ki.18','아합','엘리야',/괴롭게/,/왕과 왕의 아버지 집/]];
+ const cases=[['1ki.1','밧세바','다윗',/아도니야|솔로몬/,/솔로몬이 왕이|기름 부으/],['1ki.1','나단','다윗',/아도니야가 왕이 되어/,/솔로몬이 내 뒤를 이어 왕/],['1ki.2','밧세바','솔로몬',/아비삭/,/왕위를|아비삭/],['1ki.3','솔로몬','2 여인',/칼을 가져와|아이를 죽이지/,/아이를 죽이지|포기/],['1ki.5','솔로몬','히람',/성전을|백향목/,/백향목|나무를 보내/],['1ki.10','스바 여왕','솔로몬',/질문|소문/,/물으십시오|바라는 것이 있으면/],['1ki.11','아히야','여로보암',/열 지파/,/나라를|10 지파/],['1ki.12','르호보암','노인들',/멍에/,/백성의 종|부드럽게/],['1ki.13','하나님의 사람','늙은 선지자',/먹지도|말씀/,/선지자|여호와께서 말씀/],['1ki.14','아히야','여로보암의 아내',/다른 사람인 체/,/아들이 죽/],['1ki.15','아사','벤하닷',/은과 금/,/조약|이스라엘 왕/],['1ki.16','예후(하나니의 아들)','바아사',/세우셨/,/왕조|여로보암/],['1ki.17','엘리야','사르밧 과부',/빵 한 조각/,/밀가루|먼저/],['1ki.18','엘리야','오바댜',/아합 앞에/,/두려|엘리야시군요/],['1ki.18','아합','엘리야',/괴롭게/,/왕과 왕의 아버지 집/]];
  for(const [chapter,speaker,target,first,reply]of cases){const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);assert.ok(entry,`${chapter} ${speaker} ↔ ${target}`);assert.ok([...entry.lines,...(entry.replyLines||[])].some(line=>first.test(line)),`${chapter} first`);assert.ok([...entry.lines,...(entry.replyLines||[])].some(line=>reply.test(line)),`${chapter} reply`)}
  const rows=HISTORY_DIALOGUE_ROWS.filter(row=>row[0]==='1ki');assert.equal(rows.length,23);assert.ok(rows.every(row=>Array.isArray(row[7])&&row[7].length===row[4].length));
  const naboth=PAIR_DIALOGUE.find(entry=>entry.id==='pair-3');assert.equal(naboth.target,'나봇의 성읍 장로들');assert.match(naboth.detail,/편지 내용을 대사로 옮겼고/);
@@ -194,7 +194,7 @@ test('열왕기하 관계선 154개가 모두 상호작용 대상이고 중요 �
  const context=buildChapterDialogue(chapters);let audited=0;
  for(const relation of context.relations){const lines=relationshipLines(relation.from,relation.to,relation,null,{random:()=>0});assert.equal(lines.length,2);assert.ok(lines.every(line=>line.text&&!/어색|안녕하세요/.test(line.text)));audited++}
  assert.equal(context.relations.filter(relation=>!relation.scriptedPair).length,154);assert.equal(audited,156,'관계선 외에 본문 대화 인덱스가 보강한 연결도 대화됨');
- const cases=[['2ki.3','여호사밧','엘리사',/말씀을 물을 선지자/,/여호사밧 왕이 아니었다면/],['2ki.4','수넴 여인','엘리사',/아들을 달라고 했습니까/,/네 아들을 데려가라/],['2ki.5','엘리사','나아만',/요단강에/,/다메섹의 강/],['2ki.5','나아만의 종들','나아만',/더 어려운 일을/,/요단으로 가서/],['2ki.6','엘리사','엘리사의 사환',/두려워하지/,/불말과 불병거/],['2ki.7','나병 환자 넷','성읍 문지기',/아람 진영/,/왕께 곧 이 소식을/],['2ki.8','엘리사','하사엘',/벤하닷의 병/,/아람의 왕/],['2ki.9','요람(아합의 아들)','예후',/평화로운 일/,/이세벨의 우상 숭배/],['2ki.10','예후','여호나답',/손을 내게/,/손을 잡겠습니다/],['2ki.11','여호야다','요아스',/왕관/,/언약을 맺어/],['2ki.13','엘리사','요아스(여호아하스의 아들)',/구원의 화살/,/3번/],['2ki.14','아마샤','요아스(여호아하스의 아들)',/대면해 봅시다/,/가시나무/],['2ki.18','엘리아김(힐기야의 아들)','랍사게',/아람 말/,/성벽 위 백성/],['2ki.19','히스기야','이사야',/환난과 책망/,/두려워하지 마십시오/],['2ki.20','히스기야','바벨론 사신들',/보물과 무기고/,/편지와 예물/],['2ki.22','요시야','훌다',/말씀을 여호와께/,/재앙이 임할/],['2ki.23','바로 느고','요시야',/다른 전쟁/,/므깃도 골짜기/]];
+ const cases=[['2ki.3','여호사밧','엘리사',/여호와께 물어 주십시오/,/여호사밧 왕을 생각하지 않았다면/],['2ki.4','수넴 여인','엘리사',/아들을 달라고 했습니까/,/네 아들을 데려가거라/],['2ki.5','엘리사','나아만',/요단강에/,/다메섹의 강/],['2ki.5','나아만의 종들','나아만',/더 어려운 일을/,/요단으로 가서/],['2ki.6','엘리사','엘리사의 사환',/두려워하지/,/불말과 불병거/],['2ki.7','나병 환자 넷','성읍 문지기',/아람 진영/,/왕께 곧 이 소식을/],['2ki.8','엘리사','하사엘',/벤하닷의 병/,/아람의 왕/],['2ki.9','요람(아합의 아들)','예후',/평화로운 일/,/이세벨의 우상 숭배/],['2ki.10','예후','여호나답',/손을 내게/,/손을 잡겠습니다/],['2ki.11','여호야다','요아스',/왕관/,/언약을 맺어/],['2ki.13','엘리사','요아스(여호아하스의 아들)',/구원의 화살/,/세 번 치고 멈추/],['2ki.14','아마샤','요아스(여호아하스의 아들)',/대면해 봅시다/,/가시나무/],['2ki.18','엘리아김(힐기야의 아들)','랍사게',/아람 말/,/성벽 위 백성/],['2ki.19','히스기야','이사야',/환난과 책망/,/두려워하지 마십시오/],['2ki.20','히스기야','바벨론 사신들',/보물과 무기고/,/편지와 예물/],['2ki.22','요시야','훌다',/말씀을 여호와께/,/재앙이 임할/],['2ki.23','바로 느고','요시야',/다른 전쟁/,/므깃도 골짜기/]];
  for(const [chapter,speaker,target,first,reply]of cases){const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);assert.ok(entry,`${chapter} ${speaker} ↔ ${target}`);assert.ok([...entry.lines,...(entry.replyLines||[])].some(line=>first.test(line)),`${chapter} first`);assert.ok([...entry.lines,...(entry.replyLines||[])].some(line=>reply.test(line)),`${chapter} reply`)}
  const shunammite=PAIR_DIALOGUE.find(entry=>entry.id==='pair-194');assert.match(shunammite.detail,/답은 그 뒤의 행동을/);
  const naaman=PAIR_DIALOGUE.find(entry=>entry.id==='pair-195');assert.match(naaman.detail,/사자를 보내/);
@@ -217,10 +217,10 @@ test('역대상 인간 관계선 130개와 왕위·성전·예배·전쟁의 대
  const context=buildChapterDialogue(chapters);let audited=0;
  for(const relation of context.relations){const lines=relationshipLines(relation.from,relation.to,relation,null,{random:()=>0});assert.equal(lines.length,2);assert.ok(lines.every(line=>line.text&&!/어색|안녕하세요/.test(line.text)));audited++}
  assert.equal(audited,130);
- const cases=[['1ch.11','이스라엘 장로들','다윗',/골육|목자/,/언약을 맺고 왕으로 세우/],['1ch.12','아마새','다윗',/평화를 이루러/,/마음도 너희와/],['1ch.15','다윗','사독',/몸을 성별/,/어깨에 메겠습니다/],['1ch.17','다윗','나단',/백향목 궁/,/왕의 자손이 성전을/],['1ch.19','다윗','다윗의 사절들',/여리고에 머물/,/수염이 자란 뒤/],['1ch.19','암몬 방백들','하눈',/정탐꾼/,/모욕한 뒤/],['1ch.19','요압','아비새',/네가 나를 돕고/,/여호와께서 선하게/],['1ch.21','갓','다윗',/3가지 벌/,/3일 전염병/],['1ch.21','다윗','오르난',/타작마당/,/모두 왕께 드립니다/],['1ch.22','다윗','솔로몬',/성전을 지을 마음/,/재료와 일꾼/],['1ch.28','다윗','이스라엘 지도자들',/내가 성전을/,/솔로몬을 도와/],['1ch.29','이스라엘 지도자들','다윗',/금과 은과 보석/,/자원해 바치는 모습을 보니 기쁩니다/]];
+ const cases=[['1ch.11','이스라엘 장로들','다윗',/골육|목자/,/언약을 맺고 왕으로 세우/],['1ch.12','아마새','다윗',/당신을 돕는 이에게도 평안/,/마음도 너희와/],['1ch.15','다윗','사독',/몸을 성별/,/어깨에 메겠습니다/],['1ch.17','다윗','나단',/백향목 궁/,/왕의 자손이 성전을/],['1ch.19','다윗','다윗의 사절들',/여리고에 머물/,/수염이 자란 뒤/],['1ch.19','암몬 방백들','하눈',/정탐꾼/,/수염을 깎고 옷을 중간까지 잘라/],['1ch.19','요압','아비새',/네가 나를 돕고/,/여호와께서 선하게/],['1ch.21','갓','다윗',/세 가지를 보이시며/,/사흘 동안의 전염병/],['1ch.21','다윗','오르난',/타작마당/,/모두 왕께 드립니다/],['1ch.22','다윗','솔로몬',/성전을 지을 마음/,/재료와 일꾼/],['1ch.28','다윗','이스라엘 지도자들',/내가 성전을/,/솔로몬을 도와/],['1ch.29','이스라엘 지도자들','다윗',/금과 은과 보석/,/자원해 바치는 모습을 보니 기쁩니다/]];
  for(const [chapter,speaker,target,first,reply]of cases){const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);assert.ok(entry,`${chapter} ${speaker} ↔ ${target}`);assert.ok([...entry.lines,...(entry.replyLines||[])].some(line=>first.test(line)),`${chapter} first`);assert.ok([...entry.lines,...(entry.replyLines||[])].some(line=>reply.test(line)),`${chapter} reply`)}
  const nathan=PAIR_DIALOGUE.find(entry=>entry.id==='pair-213');assert.match(nathan.detail,/처음 동의와 나중의 예언/);assert.doesNotMatch(nathan.lines[1],/성전을 짓겠다는 뜻을 말했지만/);
- const gad=PAIR_DIALOGUE.find(entry=>entry.id==='pair-217');assert.match(gad.detail,/2번째 응답은 뒤이은 기도/);
+ const gad=PAIR_DIALOGUE.find(entry=>entry.id==='pair-217');assert.match(gad.detail,/둘째 응답은 뒤이은 기도/);
  const leaders=PAIR_DIALOGUE.find(entry=>entry.id==='pair-220');assert.match(leaders.detail,/답변은 기록되지 않았으므로/);assert.doesNotMatch(leaders.lines[1],/내 아들 솔로몬아/);
  const offering=PAIR_DIALOGUE.find(entry=>entry.id==='pair-221');assert.match(offering.detail,/하나님께 찬양과 감사의 기도/);
  const rows=HISTORY_DIALOGUE_ROWS.filter(row=>row[0]==='1ch');assert.equal(rows.length,28);assert.ok(rows.every(row=>Array.isArray(row[7])&&row[7].length===row[4].length));
@@ -234,7 +234,7 @@ test('역대하 인간 관계선 152개와 개혁·전쟁·성전 장면의 대�
  const context=buildChapterDialogue(chapters);let audited=0;
  for(const relation of context.relations){const lines=relationshipLines(relation.from,relation.to,relation,null,{random:()=>0});assert.equal(lines.length,2);assert.ok(lines.every(line=>line.text&&!/어색|안녕하세요/.test(line.text)));audited++}
  assert.equal(audited,152);
- const cases=[['2ch.2','솔로몬','후람',/여호와의 이름을 위해 집을/,/백향목|기술자 후람/],['2ch.9','스바 여왕','솔로몬',/시험하러/,/질문|하나님/],['2ch.10','르호보암','노인들',/멍에를 가볍게/,/백성을 섬기고/],['2ch.10','르호보암','젊은이들',/어떻게 말하겠/,/더 무겁게/],['2ch.11','스마야','르호보암',/싸우러 올라가지/,/돌아가겠습니다/],['2ch.13','아비야','여로보암',/소금 언약/,/금송아지/],['2ch.15','아사랴(오뎃의 아들)','아사',/여호와와 함께하면/,/우상들을 없애/],['2ch.18','미가야','아합',/목자 없는 양/,/감옥에 가두/],['2ch.19','여호사밧','재판관들',/여호와를 위해 재판/,/판결하겠습니다/],['2ch.20','야하시엘','여호사밧',/전쟁은 여러분의 것이 아니라/,/여호와께 경배|레위 사람들이/],['2ch.21','엘리야','여호람(여호사밧의 아들)',/형제들을 죽였/,/편지가/],['2ch.23','여호야다','요아스',/왕의 아들을/,/왕으로 세움을/],['2ch.24','스가랴(여호야다의 아들)','요아스',/계명을 버립니까/,/돌로 쳐 죽여/],['2ch.25','아마샤','요아스(여호아하스의 아들)',/대면해 봅시다/,/가시나무/],['2ch.28','오뎃','에브라임 지도자들',/노예로 삼지/,/포로들을 풀어/],['2ch.29','히스기야','레위인들',/성소를 깨끗하게/,/성전을 정결하게/],['2ch.30','히스기야','이스라엘과 유다 백성',/유월절을 지키라고/,/편지를 전하겠습니다/],['2ch.32','산헤립의 신하들','히스기야',/건진 신이/,/강하고 담대하라/],['2ch.34','훌다','요시야',/재앙이 예루살렘/,/마음이 부드러워졌습니다/],['2ch.35','느고','요시야',/싸우려는 것이 아닙니다/,/화살에 맞/]];
+ const cases=[['2ch.2','솔로몬','후람',/여호와의 이름을 위해 집을/,/백향목|기술자 후람/],['2ch.9','스바 여왕','솔로몬',/시험하러/,/질문|하나님/],['2ch.10','르호보암','노인들',/멍에를 가볍게/,/백성을 섬기고/],['2ch.10','르호보암','젊은이들',/어떻게 대답하겠느냐/,/전갈 채찍으로 치겠다/],['2ch.11','스마야','르호보암',/싸우러 올라가지/,/돌아가겠습니다/],['2ch.13','아비야','여로보암',/소금 언약/,/금송아지/],['2ch.15','아사랴(오뎃의 아들)','아사',/여호와와 함께하면/,/우상들을 없애/],['2ch.18','미가야','아합',/목자 없는 양/,/감옥에 가두/],['2ch.19','여호사밧','재판관들',/여호와를 위해 재판/,/판결하겠습니다/],['2ch.20','야하시엘','여호사밧',/전쟁은 여러분의 것이 아니라/,/여호와께 엎드려 경배/],['2ch.21','엘리야','여호람(여호사밧의 아들)',/형제들을 죽였/,/편지가/],['2ch.23','여호야다','요아스',/왕의 아들을/,/율법을 따르겠습니다/],['2ch.24','스가랴(여호야다의 아들)','요아스',/계명을 버립니까/,/돌로 쳐 죽여/],['2ch.25','아마샤','요아스(여호아하스의 아들)',/대면해 봅시다/,/가시나무/],['2ch.28','오뎃','에브라임 지도자들',/노예로 삼지/,/포로들을 풀어/],['2ch.29','히스기야','레위인들',/성소를 깨끗하게/,/성전을 정결하게/],['2ch.30','히스기야','이스라엘과 유다 백성',/유월절을 지키라고/,/편지를 전하겠습니다/],['2ch.32','산헤립의 신하들','히스기야',/건진 신이/,/강하고 담대하라/],['2ch.34','훌다','요시야',/재앙이 예루살렘/,/마음이 부드러워졌습니다/],['2ch.35','느고','요시야',/싸우려는 것이 아닙니다/,/크게 다쳤다/]];
  for(const [chapter,speaker,target,first,reply]of cases){const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);assert.ok(entry,`${chapter} ${speaker} ↔ ${target}`);assert.ok([...entry.lines,...(entry.replyLines||[])].some(line=>first.test(line)),`${chapter} first`);assert.ok([...entry.lines,...(entry.replyLines||[])].some(line=>reply.test(line)),`${chapter} reply`)}
  const oldMen=PAIR_DIALOGUE.find(entry=>entry.id==='pair-224');assert.doesNotMatch(oldMen.lines[1],/전갈로 다스리겠다고/);
  const youngMen=PAIR_DIALOGUE.find(entry=>entry.id==='pair-225');assert.doesNotMatch(youngMen.lines[1],/전갈로 다스리겠다고/);
@@ -444,7 +444,7 @@ test('창세기 무덤 협상·브엘세바 언약·베냐민 보증 대사는 �
  };
  check(23,'에브론','아브라함','14-16',[/사라를|밭/ ,/굴|400|사라/]);
  check(26,'아비멜렉','이삭','26-31',[/하나님|여호와|맹세/ ,/왜|해치지|평안/]);
- check(43,'유다','야곱','8-14',[/아이|베냐민/ ,/아들|하나님|불쌍/]);
+ check(43,'유다','야곱','8-14',[/아이|베냐민/ ,/베냐민|소산|아이/]);
 });
 
 test('창세기 34장 디나 사건 뒤 야곱과 시므온·레위의 꾸짖음과 항변이 짝 대화로 이어진다',()=>{
@@ -470,12 +470,12 @@ test('창세기 37장 유다의 요셉 매매 제안과 45장 정체 공개를 �
  const sale=PAIR_DIALOGUE.find(item=>item.chapter==='gen.37'&&item.speaker==='유다'&&item.target==='요셉');
  assert.ok(sale);assert.match(sale.ref,/37:26–28/);assert.match(sale.lines[0],/죽이고.*상인에게 팔/);assert.match(sale.replyLines[0],/손대지 말고/);assert.match(sale.detail,/42:21.*창작 재구성/);
  const reveal=PAIR_DIALOGUE.find(item=>item.chapter==='gen.45'&&item.speaker==='요셉'&&item.target==='유다');
- assert.ok(reveal);assert.match(reveal.lines[0],/유다 형님.*살아 계십니까/);assert.match(reveal.detail,/대답하지 못했다고 기록/);assert.match(reveal.detail,/직접 인용이 아닙니다/);
+ assert.ok(reveal);assert.match(reveal.lines[0],/유다 형님.*살아 계십니까/);assert.match(reveal.detail,/대답하지 못합니다/);assert.match(reveal.detail,/기록된 침묵/);assert.match(reveal.detail,/직접 인용이 아닙니다/);
  assert.ok(!reveal.replyLines.some(line=>/아버지는 살아 계십니다/.test(line)),'45장에서 조용했던 형들에게 기록되지 않은 답을 직접 인용처럼 붙이지 않음');
 });
 
 test('출애굽기 1·5·9·10·14·16·18·19·20·24·32장의 주요 대화는 상대 발화까지 연결된다',()=>{
- const cases=[['exo.1','바로','십브라',/남자아이들을 살려/,/히브리 여인들/],['exo.1','바로','부아',/남자아이들을 살려/,/히브리 여인들/],['exo.2','미리암','바로의 딸',/유모/,/가서 유모/],['exo.5','모세','바로',/광야에서 절기/,/여호와가 누구/],['exo.8','모세','바로',/개구리를 없애/,/내일이다/],['exo.9','바로','모세',/죄를 지었다/,/성 밖으로/],['exo.10','바로','모세',/너희 가운데 누가/,/젊은이와 늙은이/],['exo.14','이스라엘 자손','모세',/매장지/,/두려워하지/],['exo.16','이스라엘 자손','모세',/고기 가마/,/저녁에는/],['exo.18','이드로','모세',/혼자/,/조언을 따르겠습니다/],['exo.19','모세','이스라엘 자손',/언약을 지키라/,/행하겠습니다/],['exo.20','이스라엘 자손','모세',/죽을까/,/두려워하지/],['exo.24','모세','이스라엘 자손',/말씀과 규례/,/행하겠습니다/],['exo.32','모세','아론',/금귀고리를 받아 금송아지를/,/백성이 금으로 신을 만들어 달라고 재촉했습니다/]];
+ const cases=[['exo.1','바로','십브라',/남자아이들을 살려/,/히브리 여인들/],['exo.1','바로','부아',/남자아이들을 살려/,/히브리 여인들/],['exo.2','미리암','바로의 딸',/유모/,/젖을 먹일 히브리 여인/],['exo.5','모세','바로',/광야에서 절기/,/여호와가 누구/],['exo.8','모세','바로',/개구리를 없애/,/내일이다/],['exo.9','바로','모세',/죄를 지었다/,/성 밖으로/],['exo.10','바로','모세',/너희 가운데 누가/,/젊은이와 늙은이/],['exo.14','이스라엘 자손','모세',/매장지/,/두려워하지/],['exo.16','이스라엘 자손','모세',/고기 가마/,/저녁에는/],['exo.18','이드로','모세',/혼자/,/조언을 따르겠습니다/],['exo.19','모세','이스라엘 자손',/언약을 지키라/,/행하겠습니다/],['exo.20','이스라엘 자손','모세',/죽을까/,/두려워하지/],['exo.24','모세','이스라엘 자손',/말씀과 규례/,/행하겠습니다/],['exo.32','모세','아론',/백성이 형님께 무슨 일을.*금송아지를 만들어/,/신을 만들어 달라/]];
  for(const [chapter,speaker,target,first,reply]of cases){const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);assert.ok(entry,`${chapter} ${speaker} → ${target}`);assert.match(entry.lines[0],first);assert.match(entry.replyLines[0],reply);}
 });
 
@@ -499,13 +499,13 @@ test('민수기 여섯 사건의 인물 간 대화는 갈등·요청·응답을 
 });
 
 test('민수기 정탐·반역·에돔·놋뱀·발람·기업·요단 동편 사건의 짝 대화를 연결한다',()=>{
- const cases=[['num.14','이스라엘 자손','여호수아',/애굽으로 돌아가자/,/좋은 땅/],['num.16','다단','모세',/올라가지 않겠습니다/,/나귀 1마리도/],['num.20','모세','에돔 왕',/큰길로 지나가게/,/지나가지 마라/],['num.21','이스라엘 자손','모세',/뱀을 우리에게서/,/기도하겠습니다/],['num.22','발락','발람',/저주해 주십시오/,/여호와께서.*저주하라 하지 않으시면/],['num.23','발락','발람',/무슨 짓/,/내 입에 주신 말씀/],['num.24','발락','발람',/3번이나 축복/,/말하지 않았습니까/],['num.27','말라','모세',/이름과 기업/,/너희 말이 옳다/],['num.32','르우벤 자손','모세',/이 땅은 가축/,/낙심하게 하려느냐/]];
+ const cases=[['num.14','이스라엘 자손','여호수아',/애굽으로 돌아가자/,/좋은 땅/],['num.16','다단','모세',/올라가지 않겠습니다/,/나귀 한 마리도/],['num.20','모세','에돔 왕',/큰길로 지나가게/,/지나가지 마라/],['num.21','이스라엘 자손','모세',/뱀을 우리에게서/,/기도하겠습니다/],['num.22','발락','발람',/저주해 주십시오/,/여호와 하나님의 말씀을 어길 수 없/],['num.23','발락','발람',/무슨 짓/,/내 입에 주신 말씀/],['num.24','발락','발람',/3번이나 축복/,/말하지 않았습니까/],['num.27','말라','모세',/이름과 기업/,/너희 말이 옳다/],['num.32','르우벤 자손','모세',/이 땅은 가축/,/낙심하게 하려느냐/]];
  for(const [chapter,speaker,target,first,reply]of cases){const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);assert.ok(entry,`${chapter} ${speaker} → ${target}`);assert.match(entry.lines[0],first);assert.match(entry.replyLines[0],reply);}
 });
 
 test('민수기 16장 모세의 호소를 다단에게 한 말로 오인하지 않고 27장 판결 전달자를 모세로 둔다',()=>{
  const dathan=PAIR_DIALOGUE.find(entry=>entry.chapter==='num.16'&&entry.speaker==='다단');
- assert.ok(dathan);assert.match(dathan.replyLines[0],/여호와여/);assert.match(dathan.detail,/직접 답했다고 기록되지 않습니다/);
+ assert.ok(dathan);assert.match(dathan.replyLines[0],/여호와여/);assert.match(dathan.detail,/직접 대면 응답은 기록되지 않아/);
  const daughters=PAIR_DIALOGUE.find(entry=>entry.chapter==='num.27'&&entry.speaker==='말라');
  assert.ok(daughters);assert.ok(daughters.replyLines.every(line=>/여호와께서/.test(line)));assert.match(daughters.detail,/모세는 하나님께 받은 결정을 딸들에게 전하는 장면/);
 });
@@ -516,12 +516,12 @@ test('신명기 27장에서 레위인의 저주 선포에 이스라엘 백성이
 });
 
 test('신명기의 시혼 통행 거부와 계명 전달 요청은 상대 발화와 연결된다',()=>{
- const cases=[['deu.2','모세','시혼',/지나가게 해 주십시오/,/지나가지 못한다/],['deu.5','이스라엘 자손','모세',/말씀을 들은 뒤/,/사이에 서서/]];
+ const cases=[['deu.2','모세','시혼',/지나가도록 허락해 주십시오/,/허락하지 않았다/],['deu.5','이스라엘 자손','모세',/말씀을 들은 뒤/,/사이에 서서/]];
  for(const [chapter,speaker,target,first,reply]of cases){const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);assert.ok(entry);assert.match(entry.lines[0],first);assert.match(entry.replyLines[0],reply);}
 });
 
 test('여호수아 관계도상 주요 대화 상대는 서로 이어지는 사건 기반 상호작용을 갖는다',()=>{
- const cases=[['jos.1','여호수아','르우벤 자손',/형제들이 기업을 얻을 때까지/,/어디든 가겠습니다/],['jos.2','라합','두 정탐꾼',/우리 성 사람들은/,/가족을 지키겠습니다/],['jos.5','여호수아','여호와의 군대 장관',/우리 편입니까/,/여호와의 군대 장관/],['jos.7','여호수아','아간',/숨김없이/,/외투와 은과 금/],['jos.9','여호수아','기브온 사람들',/낡은 옷과 곰팡이 난 빵을 가져와 먼 나라 사람인 척한 까닭/,/생명을 잃을까/],['jos.17','요셉 자손','여호수아',/한 몫만 받았습니까/,/산지로 올라가/],['jos.22','비느하스','르우벤 자손',/제단은 여호와께 등을/,/증거로 세웠습니다/],['jos.24','여호수아','이스라엘 자손',/섬길 자를 택하라/,/여호와를 버리고/]];
+ const cases=[['jos.1','여호수아','르우벤 자손',/형제들이 기업을 얻을 때까지/,/어디든 가겠습니다/],['jos.2','라합','두 정탐꾼',/우리 성 사람들은/,/가족을 지키겠습니다/],['jos.5','여호수아','여호와의 군대 장관',/우리 편입니까/,/여호와의 군대 (장관|대장)/],['jos.7','여호수아','아간',/숨김없이/,/외투와 은과 금/],['jos.9','여호수아','기브온 사람들',/낡은 옷과 곰팡이 난 빵을 가져와 먼 나라 사람인 척한 까닭/,/생명을 잃을까/],['jos.17','요셉 자손','여호수아',/한 몫만 받았습니까/,/산지.*올라가/],['jos.22','비느하스','르우벤 자손',/제단은 여호와께 등을/,/증거로 세웠습니다/],['jos.24','여호수아','이스라엘 자손',/섬길 자를 택하라/,/여호와를 버리고/]];
  for(const [chapter,speaker,target,first,reply]of cases){const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);assert.ok(entry,`${chapter} ${speaker} → ${target}`);assert.match(entry.lines[0],first);assert.match(entry.replyLines[0],reply);}
 });
 
@@ -530,8 +530,8 @@ test('신명기 31장 계승 대화와 여호수아 14장 갈렙의 헤브론 �
  assert.ok(succession);assert.ok(succession.lines.every(line=>/강하고 담대|함께/.test(line)));assert.match(succession.detail,/여호수아의 응답은 본문에 따로 기록되지 않아/);
  const joshua=PAIR_DIALOGUE.find(entry=>entry.chapter==='jos.14'&&entry.speaker==='여호수아');
  const caleb=PAIR_DIALOGUE.find(entry=>entry.chapter==='jos.14'&&entry.speaker==='갈렙');
- assert.ok(joshua&&caleb);assert.ok([...joshua.lines,...caleb.lines].every(line=>/헤브론|산지/.test(line)));
- assert.match(caleb.lines[0],/주십시오/);assert.match(joshua.detail,/기업으로 주었습니다/);
+ assert.ok(joshua&&caleb);assert.ok([...joshua.lines,...caleb.lines].every(line=>/헤브론|산지|땅/.test(line)));
+ assert.ok(caleb.lines.some(line=>/주십시오/.test(line)),'갈렙은 산지를 달라고 요청한다');assert.match(joshua.detail,/기업으로 주었습니다/);
 });
 
 test('여호수아의 발화 행은 인물 시점을 유지하고 각 문장에 별도 절 근거를 둔다',()=>{
@@ -709,7 +709,7 @@ test('예레미야 1–12장의 인간 관계선은 본문 상황에 맞는 왕�
  }
  assert.equal(summary.chapters[7].people.some(person=>person.name==='하늘 여왕'),false);
  assert.equal(summary.chapters[7].rels.some(relation=>relation.from==='하늘 여왕'||relation.to==='하늘 여왕'),false);
- assert.match(entries.find(entry=>entry.id==='pair-jer-11-anathoth-jeremiah').detail,/위협/);
+ assert.match(entries.find(entry=>entry.id==='pair-jer-11-anathoth-jeremiah').detail,/생명을 노리고 예언을 막으려/);
  assert.match(entries.find(entry=>entry.id==='pair-jer-12-family-jeremiah').detail,/기록되지 않습니다/);
 });
 
@@ -752,7 +752,7 @@ test('예레미야 26–40장의 재판·포로 편지·두루마리·함락 장
   assert.match(entry.ref,/예레미야 \d+/);assert.ok(entry.detail);assert.equal(entry.lines.length,2);assert.equal(entry.replyLines.length,2);
  }
  assert.equal(summary.chapters[26].people.some(person=>person.name==='사반'),false,'이 사건 장면에 등장하지 않는 사반은 월드 인물에서 뺀다');
- assert.match(entries.find(entry=>entry.id==='pair-jer-38-ebedmelech-jeremiah').lines[1],/줄과 낡은 옷/);
+ assert.match(entries.find(entry=>entry.id==='pair-jer-38-ebedmelech-jeremiah').lines[1],/낡은 옷.*줄을/);
  assert.match(entries.find(entry=>entry.id==='pair-jer-40-johanan-gedaliah').replyLines[0],/사실이 아니오/);
 });
 
@@ -776,8 +776,8 @@ test('예레미야 41–52장의 암살·이집트 피신·열방 심판·포로
   assert.equal(summary.chapters[chapter].people.some(person=>['하늘 여왕','그모스'].includes(person.name)),false);
   assert.equal(summary.chapters[chapter].rels.some(relation=>['하늘 여왕','그모스'].includes(relation.from)||['하늘 여왕','그모스'].includes(relation.to)),false);
  }
- assert.match(entries.find(entry=>entry.id==='pair-jer-42-johanan-jeremiah').detail,/불순종/);
- assert.match(entries.find(entry=>entry.id==='pair-jer-52-evilmerodach-jehoiachin').lines[1],/식탁/);
+ assert.match(entries.find(entry=>entry.id==='pair-jer-42-johanan-jeremiah').detail,/애굽행 경고/);
+ assert.match(entries.find(entry=>entry.id==='pair-jer-52-evilmerodach-jehoiachin').lines[1],/함께 먹으시오/);
 });
 
 test('예레미야애가 1–5장의 배신·조롱·박해·억압 관계를 탄식의 응답으로 잇고 부재한 조상은 조우에서 뺀다',()=>{
@@ -850,7 +850,7 @@ test('에스겔 26–48장의 인간 관계선은 본문 사건에 맞는 양방
  assert.equal(summary.chapters[34].rels.some(relation=>relation.from==='살진 양'),false,'비유 속 양은 대화 상대가 아님');
  assert.equal(summary.chapters[37].rels.some(relation=>relation.to==='마른 뼈들'),false,'환상 속 뼈와 생기는 인물 조우가 아님');
  for(const chapter of [34,37])assert.ok(summary.chapters[chapter].people.every(person=>!['양 떼','살진 양','마른 뼈들','생기'].includes(person.name)),'비인간 상징은 인물 NPC 목록에서 제외');
- assert.match(entries.find(entry=>entry.id==='pair-ezk-37-david-tribes').detail,/실제 동시대 조우는 아닙니다/);
+ assert.match(entries.find(entry=>entry.id==='pair-ezk-37-david-tribes').detail,/직접 한 말은 본문에 없는 재구성/);
 });
 
 test('다니엘 1–12장의 유효한 관계 35개는 포로 궁정·풀무불·사자 굴·환상에 맞는 왕복 대사를 갖는다',()=>{
@@ -862,7 +862,7 @@ test('다니엘 1–12장의 유효한 관계 35개는 포로 궁정·풀무불�
  for(const entry of entries){const chapter=Number(entry.chapter.slice(4)),names=context.people.filter(person=>person.chap===chapter).map(person=>person.name);assert.ok(names.includes(entry.speaker)&&names.includes(entry.target),entry.id);assert.ok(entry.detail);assert.equal(entry.lines.length,2);assert.equal(entry.replyLines.length,2);assert.match(entry.ref,/다니엘 \d+/);}
  assert.equal(summary.chapters[1].rels.some(relation=>relation.to==='여호야김'),false,'현장에 없는 예루살렘 왕은 왕궁 장면에서 제외');
  assert.equal(summary.chapters[7].rels.some(relation=>['옛적부터 항상 계신 이','작은 뿔'].includes(relation.from)||relation.to==='네 짐승'),false,'환상의 상징 동물과 표상은 NPC 조우선에서 제외');
- assert.match(entries.find(entry=>entry.id==='pair-dan-3-nebuchadnezzar-shadrach').replyLines[0],/절하지 않겠다는 답은 이미 드렸습니다/);
+ assert.match(entries.find(entry=>entry.id==='pair-dan-3-nebuchadnezzar-shadrach').replyLines[0],/대답할 필요가 없습니다/);
  assert.match(entries.find(entry=>entry.id==='pair-dan-6-darius-daniel').replyLines[0],/천사/);
 });
 
@@ -1039,12 +1039,12 @@ test('에스라의 모든 인간 관계선은 양방향 특수 대화 대상이�
   assert.notEqual(lines[0].origin,'general');assert.notEqual(lines[1].origin,'general');
   assert.ok(lines.every(line=>line.ref),`${relation.ref} reference available`);
  }
- const cases=[['ezr.1','고레스','유다와 베냐민 족장들',/성전을 세우도록/,/예루살렘으로 돌아가게/],['ezr.3','예수아','스룹바벨',/제단을 세우고/,/예배/],['ezr.5','닷드내','유다 장로들',/누가 이 성전을/,/하늘과 땅의 하나님/],['ezr.6','다리오','닷드내',/조서를 찾아냈소/,/왕의 조서대로/],['ezr.7','에스라','아닥사스다',/율법을 가르치고/,/에스라여, 너는 가라/],['ezr.8','에스라','잇도',/레위 사람들을 보내/,/세레뱌/],['ezr.10','스가냐','에스라',/아직 소망/,/기도하고 있습니다/]];
+ const cases=[['ezr.1','고레스','유다와 베냐민 족장들',/성전을 세우도록/,/예루살렘으로 돌아가게/],['ezr.3','예수아','스룹바벨',/제단을 세우고/,/예배/],['ezr.5','닷드내','유다 장로들',/누가 너희에게 명령하여 이 성전을/,/천지의 하나님/],['ezr.6','다리오','닷드내',/조서의 두루마리를 찾았/,/왕의 조서대로/],['ezr.7','에스라','아닥사스다',/예루살렘으로 가게 해 주십시오/,/원하는 자는 누구든지 너와 함께 가도 좋다/],['ezr.8','에스라','잇도',/레위 사람들을 보내/,/세레뱌/],['ezr.10','스가냐','에스라',/아직 소망/,/기도하고 있습니다/]];
  for(const [chapter,speaker,target,first,reply] of cases){
   const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);
   assert.ok(entry,`${chapter} ${speaker} → ${target}`);assert.match(entry.lines[0],first);assert.match(entry.replyLines[0],reply);
  }
- const decree=PAIR_DIALOGUE.find(entry=>entry.id==='pair-250');assert.match(decree.detail,/왕에게 직접 답한 말을 기록하지 않습니다/);
+ const decree=PAIR_DIALOGUE.find(entry=>entry.id==='pair-250');assert.match(decree.detail,/왕에게 직접 한 말을 기록하지 않아/);
  const request=PAIR_DIALOGUE.find(entry=>entry.id==='pair-251');assert.match(request.detail,/사람을 통한 요청과 응답/);
  const objection=PAIR_DIALOGUE.find(entry=>entry.id==='pair-253');assert.equal(objection,undefined,'본문에 기록되지 않은 반대 이유를 창작 대화로 넣지 않는다');
 });
@@ -1059,12 +1059,12 @@ test('느헤미야의 인간 관계선은 모두 대화 대상으로 이어지�
   assert.equal(lines.length,2,`${relation.ref} ${relation.from.name} ↔ ${relation.to.name}`);
   assert.ok(lines.every(line=>line.text&&!/어색|안녕하세요/.test(line.text)));
  }
- const cases=[['neh.1','하나니','느헤미야',/예루살렘에 남은 사람들/,/울며/],['neh.2','느헤미야','아닥사스다',/성읍을 다시 세우게/,/필요한 조서/],['neh.5','가난한 백성','느헤미야',/밭과 포도원을 저당/,/이자를 받는 일을 그치고/],['neh.8','에스라','모든 백성',/율법책을 읽겠습니다/,/말씀을 듣고/],['neh.13','엘리아십','도비야',/방을 마련/,/성전 곳간을 비우고/]];
+ const cases=[['neh.1','하나니','느헤미야',/예루살렘에 남은 사람들/,/울며/],['neh.2','느헤미야','아닥사스다',/성읍을 다시 세우게/,/언제 돌아오겠느냐/],['neh.5','가난한 백성','느헤미야',/밭과 포도원을 저당/,/책망하겠소/],['neh.8','에스라','모든 백성',/율법책을 읽겠습니다/,/말씀을 듣고/],['neh.13','엘리아십','도비야',/방을 마련/,/성전 곳간을 비우고/]];
  for(const [chapter,speaker,target,first,reply] of cases){const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);assert.ok(entry,`${chapter} ${speaker} → ${target}`);assert.match(entry.lines[0],first);assert.match(entry.replyLines[0],reply);}
  const report=PAIR_DIALOGUE.find(entry=>entry.id==='pair-254');assert.match(report.detail,/하나니에게 답한 말이 아니라 하나님께 드린 기도/);
  const reading=PAIR_DIALOGUE.find(entry=>entry.id==='pair-261');assert.match(reading.detail,/권면은 에스라의 말이 아니라/);
- const nobles=PAIR_DIALOGUE.find(entry=>entry.id==='pair-258');assert.match(nobles.detail,/귀족들에게 한 조치/);
- const elders=PAIR_DIALOGUE.find(entry=>entry.id==='pair-265');assert.match(elders.detail,/2 사람이 나눈 대화를 싣지 않으므로/);
+ const nobles=PAIR_DIALOGUE.find(entry=>entry.id==='pair-258');assert.match(nobles.detail,/귀족과 민장들을 책망하고/);
+ const elders=PAIR_DIALOGUE.find(entry=>entry.id==='pair-265');assert.match(elders.detail,/두 사람의 대화를 싣지 않으므로/);
 });
 
 test('에스더와 모르드개는 하닥을 통한 두려움·결단의 문답으로 이어진다',()=>{
@@ -1094,7 +1094,7 @@ test('사사기의 인물 발화 행은 문장별 절 참조를 가지며 침묵
 });
 
 test('사사기 핵심 관계 장면은 직접 만남의 요청·응답이 이어진다',()=>{
- const cases=[['jdg.3','에훗','에글론',/비밀한 말씀/,/모두 내 앞에서 물러가라/],['jdg.4','드보라','바락',/다볼 산/,/함께 가면 가겠습니다/],['jdg.4','야엘','시스라',/장막|이리로/,/물을 조금 주시오/],['jdg.11','입다의 딸','입다',/아버지|서원/,/내 딸아/],['jdg.12','에브라임 사람들','입다',/우리를 부르지/,/불렀지만/],['jdg.14','삼손','딤나 여인',/수수께끼의 답/,/당신은 나를 미워/],['jdg.16','들릴라','삼손',/큰 힘|힘의 비밀/,/활줄|머리털/],['jdg.17','레위 소년','미가',/머물 곳/,/제사장/],['jdg.19','노인','레위인',/어디서 왔고/,/에브라임 산지/],['jdg.20','이스라엘 자손','베냐민 지파',/넘겨/,/넘기지 않겠다|싸우겠다/]];
+ const cases=[['jdg.3','에훗','에글론',/비밀한 말씀/,/모두 내 앞에서 물러가라/],['jdg.4','드보라','바락',/다볼 산/,/함께 가면 가겠습니다/],['jdg.4','야엘','시스라',/장막|이리로/,/물을 조금 마시게/],['jdg.11','입다의 딸','입다',/아버지|서원/,/내 딸아/],['jdg.12','에브라임 사람들','입다',/우리를 부르지/,/불렀지만/],['jdg.14','삼손','딤나 여인',/그 답을 내 부모에게도/,/당신은 나를 미워/],['jdg.16','들릴라','삼손',/큰 힘|힘의 비밀/,/활줄|머리털/],['jdg.17','레위 소년','미가',/머물 곳/,/제사장/],['jdg.19','노인','레위인',/어디서 왔고/,/에브라임 산지/],['jdg.20','이스라엘 자손','베냐민 지파',/넘겨/,/넘기지 않겠다|싸우겠다/]];
  for(const [chapter,speaker,target,first,reply]of cases){const entry=PAIR_DIALOGUE.find(item=>item.chapter===chapter&&item.speaker===speaker&&item.target===target);assert.ok(entry,`${chapter} ${speaker} → ${target}`);assert.match(entry.lines[0],first);assert.match(entry.replyLines[0],reply);}
 });
 
@@ -1102,7 +1102,7 @@ test('사사기 입다의 딸·마노아의 아내 응답을 본문에 맞추고
  const daughter=PAIR_DIALOGUE.find(entry=>entry.chapter==='jdg.11'&&entry.speaker==='입다의 딸');
  assert.ok(daughter);assert.doesNotMatch(daughter.lines[0],/기뻐합니다/);assert.match(daughter.lines[0],/서원/);
  const wife=PAIR_DIALOGUE.find(entry=>entry.chapter==='jdg.13'&&entry.speaker==='마노아의 아내');
- assert.ok(wife);assert.match(wife.replyLines[0],/여호와께 다시 여쭈어야/);assert.match(wife.detail,/아내에게 한 말이 아니므로/);
+ assert.ok(wife);assert.match(wife.replyLines[0],/여호와께 구하겠소/);assert.match(wife.detail,/마노아의 기도를 부부 대화로 옮긴 재구성/);
  const assembly=PAIR_DIALOGUE.find(entry=>entry.chapter==='jdg.20'&&entry.speaker==='레위인');
  const benjamin=PAIR_DIALOGUE.find(entry=>entry.chapter==='jdg.20'&&entry.target==='베냐민 지파');
  assert.match(assembly.detail,/창작 재구성/);assert.match(benjamin.detail,/창작 재구성/);

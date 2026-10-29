@@ -2,8 +2,8 @@
   "date": "2026-10-29",
   "unit": "PAIR_DIALOGUE entry; relationship edge counts may differ",
   "total": 928,
-  "reviewed": 592,
-  "pending": 336,
+  "reviewed": 928,
+  "pending": 0,
   "entries": [
     {
       "id": "pair-2ki-21-people-josiah",
@@ -11,7 +11,9 @@
       "speaker": "유다 백성",
       "target": "요시야",
       "ref": "열왕기하 21:23-24",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 아몬 살해, 반역자 처단, 요시야 즉위(21:23-24), 여덟 살(22:1)이 본문과 맞음"
     },
     {
       "id": "pair-luk-1-mary-gabriel",
@@ -4729,7 +4731,9 @@
       "speaker": "악사",
       "target": "갈렙",
       "ref": "사사기 1:14–15",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 악사가 남방 땅 대신 샘을 청하고 갈렙이 윗샘과 아랫샘을 준 본문과 맞음"
     },
     {
       "id": "pair-138",
@@ -4737,7 +4741,9 @@
       "speaker": "에훗",
       "target": "에글론",
       "ref": "사사기 3:15–22",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 둘째 답이 신하를 물리는 말을 반복하고 3인칭이라 왕이 일어나는 장면으로 바로잡음"
     },
     {
       "id": "pair-139",
@@ -4745,7 +4751,9 @@
       "speaker": "드보라",
       "target": "바락",
       "ref": "사사기 4:6–16",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 만 명과 시스라를 여인의 손에 파실 것이라는 말을 본문대로 하고 둘째 답을 본문 순서에 맞게 바로잡음"
     },
     {
       "id": "pair-140",
@@ -4753,7 +4761,9 @@
       "speaker": "야엘",
       "target": "시스라",
       "ref": "사사기 4:17–22",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 야엘이 우유를 주겠다고 한 말과 숨겨 주겠다는 말은 본문에 없어 맞아들이는 말과 이불을 덮는 장면으로 바로잡음"
     },
     {
       "id": "pair-141",
@@ -4761,7 +4771,9 @@
       "speaker": "입다의 딸",
       "target": "입다",
       "ref": "사사기 11:34–36",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 딸이 서원대로 행하라 한 뒤 두 달의 시간을 청하고 입다가 허락한 순서로 바로잡음"
     },
     {
       "id": "pair-142",
@@ -4769,7 +4781,9 @@
       "speaker": "에브라임 사람들",
       "target": "입다",
       "ref": "사사기 12:1–3",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 둘째 답이 도움을 주지 않아 하나님이 넘기셨다는 인과로 읽혀 본문대로 바로잡음"
     },
     {
       "id": "pair-143",
@@ -4777,7 +4791,9 @@
       "speaker": "마노아의 아내",
       "target": "마노아",
       "ref": "사사기 13:6–23",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 아내가 남편에게 전한 말과 마노아의 기도를 본문 순서대로 바꾸고 번제 뒤 두려움 장면은 아내의 위로로 정리"
     },
     {
       "id": "pair-144",
@@ -4785,7 +4801,9 @@
       "speaker": "삼손",
       "target": "딤나 여인",
       "ref": "사사기 14:16–18",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 어색한 말과 반복을 바로잡고 삼손이 거절한 뒤 일곱째 날 끝내 알려 준 흐름으로 정리"
     },
     {
       "id": "pair-145",
@@ -4793,7 +4811,9 @@
       "speaker": "삼손",
       "target": "장인",
       "ref": "사사기 15:1–2",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 아내를 삼손의 친구에게 주었다는 본문과 달리 동생에게 주었다고 한 오류와 큰딸이라는 추가를 바로잡음"
     },
     {
       "id": "pair-146",
@@ -4801,7 +4821,9 @@
       "speaker": "들릴라",
       "target": "삼손",
       "ref": "사사기 16:6–17",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 본문에 없는 사자 이야기를 빼고 들릴라의 말과 삼손의 나실인 고백을 본문대로 바로잡음"
     },
     {
       "id": "pair-147",
@@ -4809,7 +4831,9 @@
       "speaker": "삼손",
       "target": "블레셋 방백들",
       "ref": "사사기 16:23–30",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 기둥을 찾는 말은 방백이 아니라 소년에게 한 말이고 기도는 여호와께 한 것이라 본문 인용을 바로잡고 대화 쌍은 재구성임을 밝힘"
     },
     {
       "id": "pair-148",
@@ -4817,7 +4841,9 @@
       "speaker": "레위 소년",
       "target": "미가",
       "ref": "사사기 17:7–13",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 레위 청년이 보수를 먼저 청한 것으로 읽히던 둘째 쌍을 미가의 제안과 복을 기대하는 말로 바로잡음"
     },
     {
       "id": "pair-149",
@@ -4825,7 +4851,9 @@
       "speaker": "단 지파",
       "target": "미가",
       "ref": "사사기 18:22–26",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 본문에 없는 무장한 사람들과 신상 표현을 바로잡고 미가의 항의와 단 지파의 위협 순서로 정리"
     },
     {
       "id": "pair-150",
@@ -4833,7 +4861,9 @@
       "speaker": "레위인의 장인",
       "target": "레위인",
       "ref": "사사기 19:4–9",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 장인이 해가 기울도록 머물라 했고 레위인은 첩과 종을 데리고 떠났는데 아내를 데리러 간다는 말로 둔갑한 오류를 바로잡음"
     },
     {
       "id": "pair-151",
@@ -4841,7 +4871,9 @@
       "speaker": "노인",
       "target": "레위인",
       "ref": "사사기 19:16–21",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 노인이 빵과 포도주를 주겠다고 한 것이 아니라 필요한 것을 담당하겠다고 한 본문에 맞게 바로잡음"
     },
     {
       "id": "pair-152",
@@ -4849,7 +4881,9 @@
       "speaker": "레위인",
       "target": "이스라엘 자손",
       "ref": "사사기 20:4–7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 레위인이 본문에서 한 말을 따르고 회중의 응답 쌍은 짧게 다듬음"
     },
     {
       "id": "pair-153",
@@ -4857,7 +4891,9 @@
       "speaker": "이스라엘 자손",
       "target": "베냐민 지파",
       "ref": "사사기 20:12–14",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 요구와 베냐민의 거절·전쟁 준비가 본문과 맞고 응답이 재구성임이 detail에 밝혀져 있음"
     },
     {
       "id": "pair-154",
@@ -4885,7 +4921,9 @@
       "speaker": "한나",
       "target": "엘가나",
       "ref": "사무엘상 1:21–23",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 한나가 젖 뗀 뒤 데려가겠다고 하고 엘가나가 좋을 대로 하되 기다리라 한 본문과 맞음"
     },
     {
       "id": "pair-157",
@@ -4893,7 +4931,9 @@
       "speaker": "사무엘",
       "target": "엘리",
       "ref": "사무엘상 3:8–18",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 엘리의 답이 두 번 부르심의 응답과 섞여 있고 답 개수가 맞지 않아 세 번째 부르심 장면과 마지막 응답으로 바로잡음"
     },
     {
       "id": "pair-158",
@@ -4901,7 +4941,9 @@
       "speaker": "요나단",
       "target": "사울",
       "ref": "사무엘상 14:24–30, 43–45",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 백성이 한 말을 요나단의 말로 옮긴 부분을 바로잡고 사울의 질문과 죽음 선언 순서를 본문에 맞춤"
     },
     {
       "id": "pair-159",
@@ -4909,7 +4951,9 @@
       "speaker": "다윗",
       "target": "골리앗",
       "ref": "사무엘상 17:41–47",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 숫자로 바뀐 네 살 오류와 막대기·개 발언을 본문대로 바로잡음"
     },
     {
       "id": "pair-160",
@@ -4917,7 +4961,9 @@
       "speaker": "요나단",
       "target": "다윗",
       "ref": "사무엘상 20:35–42",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 다윗이 한 말로 되어 있던 요나단의 맹세 말과 본문에 없는 안전한 곳 이야기를 바로잡음"
     },
     {
       "id": "pair-161",
@@ -4925,7 +4971,9 @@
       "speaker": "다윗",
       "target": "아히멜렉",
       "ref": "사무엘상 21:1–9",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 왕의 일이라는 다윗의 거짓 설명, 거룩한 빵, 골리앗의 칼이 본문과 맞고 detail에 설명이 밝혀져 있음"
     },
     {
       "id": "pair-162",
@@ -4933,7 +4981,9 @@
       "speaker": "다윗",
       "target": "사울",
       "ref": "사무엘상 24:8–15",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 선을 베풀었으니 왕이 된다는 인과를 바로잡고 사울이 악으로 갚았음을 인정하는 본문 순서로 정리"
     },
     {
       "id": "pair-163",
@@ -4941,7 +4991,9 @@
       "speaker": "아비가일",
       "target": "다윗",
       "ref": "사무엘상 25:23–35",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 아비가일의 간청과 다윗이 보복을 멈추고 여호와를 찬송한 본문과 맞음"
     },
     {
       "id": "pair-164",
@@ -4949,7 +5001,9 @@
       "speaker": "아비아달",
       "target": "다윗",
       "ref": "사무엘상 22:20–23",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 다윗이 도엑이 말할 줄 이미 알았다고 한 본문과 달리 알았어야 했다고 한 오류를 바로잡음"
     },
     {
       "id": "pair-165",
@@ -4957,7 +5011,9 @@
       "speaker": "다윗",
       "target": "아말렉 청년",
       "ref": "사무엘하 1:6–16",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 다윗의 질문 순서(어떻게 아느냐, 기름 부음 받은 자를 죽이기 두렵지 않았느냐)와 아말렉 청년의 답을 본문에 맞게 바로잡음"
     },
     {
       "id": "pair-166",
@@ -4965,7 +5021,9 @@
       "speaker": "다윗",
       "target": "야베스 길르앗 사람들",
       "ref": "사무엘하 2:4–7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 다윗이 사울을 장사한 야베스 사람들을 축복하고 은혜를 갚겠다며 손을 강하게 하라고 한 본문과 맞고 detail에 답이 재구성임이 밝혀져 있음"
     },
     {
       "id": "pair-167",
@@ -4973,7 +5031,9 @@
       "speaker": "아브넬",
       "target": "다윗",
       "ref": "사무엘하 3:17–21",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 미갈 조건은 앞 단락 일이라 이 장면에서 빼고 아브넬이 장로들을 설득한 뒤 다윗에게 언약을 약속하고 평안히 떠난 순서로 바로잡음"
     },
     {
       "id": "pair-168",
@@ -4981,7 +5041,9 @@
       "speaker": "요압",
       "target": "다윗",
       "ref": "사무엘하 3:22–30",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 요압의 항의 뒤 다윗의 답이 시간 순서가 맞지 않아 아브넬의 정탐 주장은 요압의 말로 두고 다윗의 답은 아브넬의 죽음 뒤 공개 선언으로 바로잡음"
     },
     {
       "id": "pair-169",
@@ -4989,7 +5051,9 @@
       "speaker": "이스라엘 지파들",
       "target": "다윗",
       "ref": "사무엘하 5:1–3",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 둘째 답이 본문의 언약과 기름 부음 순서를 흐려 바로잡음"
     },
     {
       "id": "pair-170",
@@ -4997,7 +5061,9 @@
       "speaker": "나단",
       "target": "다윗",
       "ref": "사무엘하 7:1–17",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 다윗의 성전 계획, 나단의 처음 동의와 밤의 말씀, 다윗의 반응이 detail에 재구성으로 밝혀져 본문과 맞음"
     },
     {
       "id": "pair-171",
@@ -5005,7 +5071,9 @@
       "speaker": "다윗",
       "target": "므비보셋",
       "ref": "사무엘하 9:1–13",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 다윗이 요나단 때문에 은총을 베풀고 사울의 밭을 돌려주고 상에서 먹게 한 본문과 맞음"
     },
     {
       "id": "pair-172",
@@ -5013,7 +5081,9 @@
       "speaker": "다윗",
       "target": "우리아",
       "ref": "사무엘하 11:6–13",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 어제 집으로 보냈다는 말은 본문과 달라 다윗이 하루 더 머물게 하고 먹고 마시게 한 순서로 바로잡음"
     },
     {
       "id": "pair-173",
@@ -5021,7 +5091,9 @@
       "speaker": "압살롬",
       "target": "후새",
       "ref": "사무엘하 16:15–19",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 압살롬의 물음과 후새의 답이 본문 17~19절과 달랐던 부분을 바로잡음"
     },
     {
       "id": "pair-174",
@@ -5029,7 +5101,9 @@
       "speaker": "시므이",
       "target": "다윗",
       "ref": "사무엘하 19:16–23",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시므이의 고백이 예루살렘을 떠나시던 날의 패역을 기억하지 말아 달라는 본문과 달랐고 다윗의 답도 정리함"
     },
     {
       "id": "pair-175",
@@ -5037,7 +5111,9 @@
       "speaker": "다윗",
       "target": "므비보셋",
       "ref": "사무엘하 19:24–30",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 므비보셋은 자기가 나귀를 준비시키려 했으나 종 시바가 속이고 모함했다고 답했는데 거꾸로 서술된 부분과 다윗의 말을 본문대로 바로잡음"
     },
     {
       "id": "pair-176",
@@ -5045,7 +5121,9 @@
       "speaker": "바르실래",
       "target": "다윗",
       "ref": "사무엘하 17:27–29; 19:31–39",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 다윗의 봉양 제안과 바르실래가 고향에 남고 김함을 보낸 본문과 맞음"
     },
     {
       "id": "pair-177",
@@ -5053,7 +5131,9 @@
       "speaker": "다윗",
       "target": "아라우나",
       "ref": "사무엘하 24:18–25",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 아라우나가 소와 땔감을 드리겠다 했으나 다윗이 값을 치르고 샀다는 본문과 맞음"
     },
     {
       "id": "pair-178",
@@ -5061,7 +5141,9 @@
       "speaker": "밧세바",
       "target": "다윗",
       "ref": "열왕기상 1:15–21",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 기혼에서 기름 붓는 일은 이 대화 뒤 다윗의 명령이므로 맹세를 이행하겠다는 답으로 정리"
     },
     {
       "id": "pair-179",
@@ -5069,7 +5151,9 @@
       "speaker": "나단",
       "target": "다윗",
       "ref": "열왕기상 1:22–27",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 나단의 질문이 본문(1:24,27)과 맞게 하고 다윗 답을 맹세와 명령으로 바로잡음"
     },
     {
       "id": "pair-180",
@@ -5077,7 +5161,9 @@
       "speaker": "밧세바",
       "target": "솔로몬",
       "ref": "열왕기상 2:13–25",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 밧세바의 요청을 본문(2:20-21)대로, 솔로몬의 반문(2:22)으로 정리"
     },
     {
       "id": "pair-181",
@@ -5085,7 +5171,9 @@
       "speaker": "솔로몬",
       "target": "2 여인",
       "ref": "열왕기상 3:16–28",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 숫자 표기('1 여인') 제거, 진짜 어머니의 말과 다른 여인의 말(3:26)을 본문대로 바로잡음"
     },
     {
       "id": "pair-182",
@@ -5093,7 +5181,9 @@
       "speaker": "솔로몬",
       "target": "히람",
       "ref": "열왕기상 5:1–12",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 히람의 답을 본문(5:7-9)에 맞게 다윗에게 지혜로운 아들을 주신 여호와 찬송으로 바로잡음"
     },
     {
       "id": "pair-183",
@@ -5101,7 +5191,9 @@
       "speaker": "스바 여왕",
       "target": "솔로몬",
       "ref": "열왕기상 10:1–10",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 질문 응답은 솔로몬, 여호와 찬송은 스바 여왕의 말(10:9)로 화자 바로잡음"
     },
     {
       "id": "pair-184",
@@ -5109,7 +5201,9 @@
       "speaker": "아히야",
       "target": "여로보암",
       "ref": "열왕기상 11:29–39",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: '10지파' 숫자 표기를 '열 지파'로, 아히야가 자기 새 옷을 찢은 사실 반영"
     },
     {
       "id": "pair-185",
@@ -5117,7 +5211,9 @@
       "speaker": "르호보암",
       "target": "노인들",
       "ref": "열왕기상 12:6–15",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 왕이 노인들에게 묻는 말투(12:6)로 바로잡고 노인들의 조언(12:7)을 본문에 맞춤"
     },
     {
       "id": "pair-186",
@@ -5125,7 +5221,9 @@
       "speaker": "하나님의 사람",
       "target": "늙은 선지자",
       "ref": "열왕기상 13:11–24",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 하나님의 사람의 말은 본문(13:16-17)대로, 이후 늙은 선지자의 말씀(13:21-22)은 정리하고 하나님의 사람의 반응은 재구성"
     },
     {
       "id": "pair-187",
@@ -5133,7 +5231,9 @@
       "speaker": "아히야",
       "target": "여로보암의 아내",
       "ref": "열왕기상 14:1–16",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 아히야의 첫 말을 본문(14:6)대로 변장을 꿰뚫는 말로, 재앙 선포(14:10-12)로 정리"
     },
     {
       "id": "pair-188",
@@ -5141,7 +5241,9 @@
       "speaker": "아사",
       "target": "벤하닷",
       "ref": "열왕기상 15:18–22",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 아사의 요청을 본문(15:19)대로 바아사와의 조약을 깨 달라는 말로 바로잡음"
     },
     {
       "id": "pair-189",
@@ -5149,7 +5251,9 @@
       "speaker": "예후(하나니의 아들)",
       "target": "바아사",
       "ref": "열왕기상 16:1–7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 본문에 없는 벧엘·단 송아지 언급 제거(16:2-3은 여로보암의 길과 죄)"
     },
     {
       "id": "pair-190",
@@ -5157,7 +5261,9 @@
       "speaker": "엘리야",
       "target": "사르밧 과부",
       "ref": "열왕기상 17:8–16",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 숫자 표기('1그릇')를 고치고 엘리야의 요청을 본문(17:10-11)에 맞춤"
     },
     {
       "id": "pair-191",
@@ -5165,7 +5271,9 @@
       "speaker": "엘리야",
       "target": "오바댜",
       "ref": "열왕기상 18:7–16",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 엘리야의 명령(18:8)과 맹세(18:15), 오바댜의 두려움(18:10-14)이 본문과 맞음"
     },
     {
       "id": "pair-192",
@@ -5173,7 +5281,9 @@
       "speaker": "아합",
       "target": "엘리야",
       "ref": "열왕기상 18:17–19",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 본문에 없는 아합의 반문 제거. 아합의 두 번째 말은 재구성임을 밝힘"
     },
     {
       "id": "pair-193",
@@ -5181,7 +5291,9 @@
       "speaker": "여호사밧",
       "target": "엘리사",
       "ref": "열왕기하 3:11–19",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 숫자 '3 왕'을 '세 왕'으로, 여호사밧의 요청과 엘리사의 답(3:13-18: 도랑을 파라)을 본문에 맞춤"
     },
     {
       "id": "pair-194",
@@ -5189,7 +5301,9 @@
       "speaker": "수넴 여인",
       "target": "엘리사",
       "ref": "열왕기하 4:25–37",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 둘째 줄이 첫째 줄과 겹쳐, 본문(4:27-30)의 엘리사 발을 붙들고 떠나지 않겠다는 말로 교체. 엘리사의 첫 답도 지팡이를 게하시에게 들려 보냄(4:29)으로 바로잡음"
     },
     {
       "id": "pair-195",
@@ -5197,7 +5311,9 @@
       "speaker": "엘리사",
       "target": "나아만",
       "ref": "열왕기하 5:9–14",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 숫자 '7번'을 '일곱 번'으로, 엘리사의 말(5:10)에 맞춤"
     },
     {
       "id": "pair-196",
@@ -5205,7 +5321,9 @@
       "speaker": "나아만의 종들",
       "target": "나아만",
       "ref": "열왕기하 5:13–14",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 종들의 설득(5:13)이 본문과 맞고 나아만의 답은 재구성으로 이미 밝힘"
     },
     {
       "id": "pair-197",
@@ -5213,7 +5331,9 @@
       "speaker": "엘리사",
       "target": "엘리사의 사환",
       "ref": "열왕기하 6:15–17",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 둘째 줄을 본문(6:17)의 엘리사의 기도에 가깝게 고침"
     },
     {
       "id": "pair-198",
@@ -5221,7 +5341,9 @@
       "speaker": "나병 환자 넷",
       "target": "성읍 문지기",
       "ref": "열왕기하 7:3–11",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 문지기에게 한 말을 본문(7:10)에 맞춤. 음식과 물건만 남았다는 말은 없고 사람 소리가 없고 말과 나귀가 매여 있다고 함"
     },
     {
       "id": "pair-199",
@@ -5229,7 +5351,9 @@
       "speaker": "엘리사",
       "target": "하사엘",
       "ref": "열왕기하 8:7–15",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 엘리사의 말(8:10-13)과 하사엘의 반응이 본문과 맞음"
     },
     {
       "id": "pair-200",
@@ -5237,7 +5361,9 @@
       "speaker": "요람(아합의 아들)",
       "target": "예후",
       "ref": "열왕기하 9:17–26",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 화자 요람의 둘째 줄에 들어간 서술체('요람 왕이 물었습니다')를 제거. 둘째 줄은 재구성"
     },
     {
       "id": "pair-201",
@@ -5245,7 +5371,9 @@
       "speaker": "예후",
       "target": "여호나답",
       "ref": "열왕기하 10:15–17",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 숫자 '2 사람'을 '두 사람'으로, 여호나답의 둘째 답을 3인칭에서 1인칭으로 고침"
     },
     {
       "id": "pair-202",
@@ -5253,7 +5381,9 @@
       "speaker": "여호야다",
       "target": "요아스",
       "ref": "열왕기하 11:12–17",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 일곱 살 요아스가 바알 신전을 허물겠다고 말하는 것은 본문과 달라(11:18은 백성의 행동) 어린 왕의 말로 고침"
     },
     {
       "id": "pair-203",
@@ -5261,7 +5391,9 @@
       "speaker": "엘리사",
       "target": "요아스(여호아하스의 아들)",
       "ref": "열왕기하 13:14–19",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 숫자('3번', '2번째')를 한글로, 엘리사의 책망을 본문(13:19: 대여섯 번 쳤어야 함)에 맞춤"
     },
     {
       "id": "pair-204",
@@ -5269,7 +5401,9 @@
       "speaker": "아마샤",
       "target": "요아스(여호아하스의 아들)",
       "ref": "열왕기하 14:8–14",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 둘째 줄의 서술체('아마샤가 청합니다')를 아마샤의 말로 고침"
     },
     {
       "id": "pair-205",
@@ -5277,7 +5411,9 @@
       "speaker": "엘리아김(힐기야의 아들)",
       "target": "랍사게",
       "ref": "열왕기하 18:26–37",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 아람 말 요청(18:26)과 랍사게의 답(18:27)이 본문과 맞음"
     },
     {
       "id": "pair-206",
@@ -5285,7 +5421,9 @@
       "speaker": "히스기야",
       "target": "이사야",
       "ref": "열왕기하 19:1–7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 히스기야의 사절 요청(19:3-4)과 이사야의 답(19:6-7)이 본문과 맞음"
     },
     {
       "id": "pair-207",
@@ -5293,7 +5431,9 @@
       "speaker": "히스기야",
       "target": "바벨론 사신들",
       "ref": "열왕기하 20:12–19",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 사신 방문과 보물 공개(20:12-13)가 본문과 맞고 대사는 재구성으로 밝혀 둠"
     },
     {
       "id": "pair-208",
@@ -5301,7 +5441,9 @@
       "speaker": "요시야",
       "target": "훌다",
       "ref": "열왕기하 22:14–20",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 요시야의 명령(22:13)과 훌다의 말(22:16-20)이 본문과 맞음"
     },
     {
       "id": "pair-209",
@@ -5309,7 +5451,9 @@
       "speaker": "바로 느고",
       "target": "요시야",
       "ref": "열왕기하 23:29–30; 역대하 35:20–22",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 요시야의 답에서 느고를 3인칭으로 부른 말을 고치고, 부상 때의 말을 본문(대하 35:23)에 맞춤"
     },
     {
       "id": "pair-210",
@@ -5317,7 +5461,9 @@
       "speaker": "이스라엘 장로들",
       "target": "다윗",
       "ref": "역대상 11:1–3",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 헤브론 장로들의 말(11:1-2)과 언약·기름 부음이 본문과 맞고 다윗의 답은 재구성으로 밝혀 둠"
     },
     {
       "id": "pair-211",
@@ -5325,7 +5471,9 @@
       "speaker": "아마새",
       "target": "다윗",
       "ref": "역대상 12:16–18",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 화자 바로잡음. '평화로 왔느냐'는 다윗의 말(12:17)이고 '우리는 당신 편'은 아마새의 말(12:18)인데 뒤바뀌어 있었음"
     },
     {
       "id": "pair-212",
@@ -5333,7 +5481,9 @@
       "speaker": "다윗",
       "target": "사독",
       "ref": "역대상 15:11–15",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 다윗의 성결 명령과 첫 시도의 실패 언급(15:12-13)이 본문과 맞음"
     },
     {
       "id": "pair-213",
@@ -5341,7 +5491,9 @@
       "speaker": "다윗",
       "target": "나단",
       "ref": "역대상 17:1–15",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 다윗의 말(17:1)과 나단의 동의 후 말씀(17:4-12)이 본문과 맞음"
     },
     {
       "id": "pair-214",
@@ -5349,7 +5501,9 @@
       "speaker": "다윗",
       "target": "다윗의 사절들",
       "ref": "역대상 19:1–5",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 수염이 자랄 때까지 여리고에 머물라는 말(19:5)이 맞고 사절의 답은 재구성으로 밝혀 둠"
     },
     {
       "id": "pair-215",
@@ -5357,7 +5511,9 @@
       "speaker": "암몬 방백들",
       "target": "하눈",
       "ref": "역대상 19:2–4",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 방백들이 수염을 깎으라고 권한 것은 본문에 없고 하눈이 행한 일이므로, 방백들의 둘째 말은 정탐 의심(19:3)으로 고치고 하눈의 답은 재구성으로 둠"
     },
     {
       "id": "pair-216",
@@ -5365,7 +5521,9 @@
       "speaker": "요압",
       "target": "아비새",
       "ref": "역대상 19:10–13",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 요압의 서로 돕자는 제안과 격려(19:12-13)가 본문과 맞고 아비새의 답은 재구성으로 밝혀 둠"
     },
     {
       "id": "pair-217",
@@ -5373,7 +5531,9 @@
       "speaker": "갓",
       "target": "다윗",
       "ref": "역대상 21:9–17",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 숫자('3가지', '3년', '3개월', '3일')를 한글로, 벌의 내용을 본문(21:12)에 맞춤"
     },
     {
       "id": "pair-218",
@@ -5381,7 +5541,9 @@
       "speaker": "다윗",
       "target": "오르난",
       "ref": "역대상 21:18–27",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 오르난의 제안(21:23)과 다윗의 값 치름(21:24-25)이 본문과 맞음"
     },
     {
       "id": "pair-219",
@@ -5389,7 +5551,9 @@
       "speaker": "다윗",
       "target": "솔로몬",
       "ref": "역대상 22:6–16",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 피를 많이 흘려 성전을 못 짓고 솔로몬이 평안한 사람으로 건축한다는 말(22:7-10)이 맞고 솔로몬의 답은 재구성으로 밝혀 둠"
     },
     {
       "id": "pair-220",
@@ -5397,7 +5561,9 @@
       "speaker": "다윗",
       "target": "이스라엘 지도자들",
       "ref": "역대상 28:1–10",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 솔로몬을 택하신 일과 계명을 지키라는 당부(28:3-8)가 본문과 맞고 지도자들의 답은 재구성으로 밝혀 둠"
     },
     {
       "id": "pair-221",
@@ -5405,7 +5571,9 @@
       "speaker": "이스라엘 지도자들",
       "target": "다윗",
       "ref": "역대상 29:6–20",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 자원하여 드린 예물(29:6-9)과 다윗의 기도(29:14)가 본문과 맞고 재구성으로 밝혀 둠"
     },
     {
       "id": "pair-222",
@@ -5413,7 +5581,9 @@
       "speaker": "솔로몬",
       "target": "후람",
       "ref": "역대하 2:3–16",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 솔로몬의 요청(2:7-10)과 후람의 찬송·응답(2:11-16)이 본문과 맞음"
     },
     {
       "id": "pair-223",
@@ -5421,7 +5591,9 @@
       "speaker": "스바 여왕",
       "target": "솔로몬",
       "ref": "역대하 9:1–8",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 질문에 답하는 말과 '복이 있다'며 여호와를 찬송하는 말(9:7-8)이 스바 여왕의 말인데 솔로몬의 답처럼 놓여 있어 화자 바로잡음"
     },
     {
       "id": "pair-224",
@@ -5429,7 +5601,9 @@
       "speaker": "르호보암",
       "target": "노인들",
       "ref": "역대하 10:3–11",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 왕이 노인들에게 묻는 말투(10:6)로 바로잡음"
     },
     {
       "id": "pair-225",
@@ -5437,7 +5611,9 @@
       "speaker": "르호보암",
       "target": "젊은이들",
       "ref": "역대하 10:8–15",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 젊은이들의 조언을 본문(10:10-11)대로 새끼손가락과 전갈 채찍으로 바로잡고 르호보암의 둘째 말을 정리"
     },
     {
       "id": "pair-226",
@@ -5445,7 +5621,9 @@
       "speaker": "스마야",
       "target": "르호보암",
       "ref": "역대하 11:1–4",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 둘째 줄을 본문(11:4)의 '이 일이 여호와께로 말미암았다'로 고침"
     },
     {
       "id": "pair-227",
@@ -5453,7 +5631,9 @@
       "speaker": "아비야",
       "target": "여로보암",
       "ref": "역대하 13:4–12",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 소금 언약(13:5)과 여호와와 싸우지 말라는 외침(13:10-12)이 본문과 맞고 여로보암의 답은 재구성으로 밝혀 둠"
     },
     {
       "id": "pair-228",
@@ -5461,7 +5641,9 @@
       "speaker": "아사랴(오뎃의 아들)",
       "target": "아사",
       "ref": "역대하 15:1–8",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 아사가 고친 것은 성전 현관 앞 여호와의 제단(15:8)이라 바로잡음"
     },
     {
       "id": "pair-229",
@@ -5469,7 +5651,9 @@
       "speaker": "여호사밧",
       "target": "아합",
       "ref": "역대하 18:3–7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: '함께 라못으로 가겠느냐'는 아합의 물음이고 여호사밧은 '당신과 다름없다'고 답함(18:3). 화자 바로잡고 숫자 '1 사람'을 '한 사람'으로"
     },
     {
       "id": "pair-230",
@@ -5477,7 +5661,9 @@
       "speaker": "미가야",
       "target": "아합",
       "ref": "역대하 18:12–27",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 설명에서 미가야가 여호사밧에게 경고했다는 부분을 바로잡음(18:27은 아합에게 한 말)"
     },
     {
       "id": "pair-231",
@@ -5485,7 +5671,9 @@
       "speaker": "여호사밧",
       "target": "재판관들",
       "ref": "역대하 19:5–11",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 여호사밧의 재판관 당부(19:6-7)와 예루살렘 재판 제도(19:8-11)가 본문과 맞고 재판관의 답은 재구성으로 밝혀 둠"
     },
     {
       "id": "pair-232",
@@ -5493,7 +5681,9 @@
       "speaker": "야하시엘",
       "target": "여호사밧",
       "ref": "역대하 20:14–17",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 유다의 답이 서술체('엎드려 경배했습니다')라 여호사밧의 1인칭 말로 고침"
     },
     {
       "id": "pair-233",
@@ -5501,7 +5691,9 @@
       "speaker": "엘리야",
       "target": "여호람(여호사밧의 아들)",
       "ref": "역대하 21:12–15",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 엘리야 편지의 책망과 심판(21:12-15)이 본문과 맞고 여호람의 반응은 재구성으로 밝혀 둠"
     },
     {
       "id": "pair-234",
@@ -5509,7 +5701,9 @@
       "speaker": "여호야다",
       "target": "요아스",
       "ref": "역대하 23:1–11",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 일곱 살 요아스의 답을 어린 왕의 말로 고침"
     },
     {
       "id": "pair-235",
@@ -5517,7 +5711,9 @@
       "speaker": "스가랴(여호야다의 아들)",
       "target": "요아스",
       "ref": "역대하 24:20–22",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 스가랴의 책망(24:20)과 왕의 명령으로 돌로 친 일(24:21)이 본문과 맞고 명령문은 재구성으로 밝혀 둠"
     },
     {
       "id": "pair-236",
@@ -5525,7 +5721,9 @@
       "speaker": "아마샤",
       "target": "요아스(여호아하스의 아들)",
       "ref": "역대하 25:17–24",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 본문에 없는 '내 군대가 더 강하다'를 제거하고 아마샤의 청을 본문(25:17)에 맞춤"
     },
     {
       "id": "pair-237",
@@ -5533,7 +5731,9 @@
       "speaker": "오뎃",
       "target": "에브라임 지도자들",
       "ref": "역대하 28:9–15",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 지도자들의 답을 본문(28:13)의 '포로를 끌어들이면 여호와께 죄를 더한다'로 바로잡음"
     },
     {
       "id": "pair-238",
@@ -5541,7 +5741,9 @@
       "speaker": "히스기야",
       "target": "레위인들",
       "ref": "역대하 29:4–15",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 성전 정결 명령(29:5)이 본문과 맞고 레위인의 답은 재구성으로 밝혀 둠"
     },
     {
       "id": "pair-239",
@@ -5549,7 +5751,9 @@
       "speaker": "히스기야",
       "target": "이스라엘과 유다 백성",
       "ref": "역대하 30:1–12",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 유월절 초청(30:1-9)과 조롱·겸손한 응답(30:10-11)이 본문과 맞음"
     },
     {
       "id": "pair-240",
@@ -5557,7 +5761,9 @@
       "speaker": "산헤립의 신하들",
       "target": "히스기야",
       "ref": "역대하 32:9–19",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 산헤립 신하들의 조롱(32:10-17)과 히스기야의 격려(32:7-8)가 본문과 맞고 설명에 구별해 밝혀 둠"
     },
     {
       "id": "pair-241",
@@ -5565,7 +5771,9 @@
       "speaker": "훌다",
       "target": "요시야",
       "ref": "역대하 34:22–28",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 훌다의 예언(34:24-28)과 요시야의 반응이 본문과 맞음"
     },
     {
       "id": "pair-242",
@@ -5573,7 +5781,9 @@
       "speaker": "느고",
       "target": "요시야",
       "ref": "역대하 35:20–24",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 요시야의 첫 답이 3인칭 서술체라 1인칭으로 고치고 부상 때 말(35:23)을 본문에 맞춤"
     },
     {
       "id": "pair-243",
@@ -5581,7 +5791,9 @@
       "speaker": "고레스",
       "target": "유다와 베냐민 족장들",
       "ref": "에스라 1:1–6",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 둘째 답이 이웃의 도움 몫을 족장들 말로 둬서 고침"
     },
     {
       "id": "pair-244",
@@ -5589,7 +5801,9 @@
       "speaker": "미드르닷",
       "target": "세스바살",
       "ref": "에스라 1:7–11",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 미드르닷이 기구를 세어 세스바살에게 넘긴 본문(1:7-11)과 일치"
     },
     {
       "id": "pair-245",
@@ -5597,7 +5811,9 @@
       "speaker": "예수아",
       "target": "스룹바벨",
       "ref": "에스라 3:1–13",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 기초를 놓은 시점 순서(제단 후 이년째 둘째 달)와 레위 감독 세움을 맞춤"
     },
     {
       "id": "pair-246",
@@ -5605,7 +5821,9 @@
       "speaker": "대적들",
       "target": "스룹바벨",
       "ref": "에스라 4:1–5",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 대적들의 요청 뒤 거절이 오고, 방해는 그 이후라는 순서로 바로잡음. 이 시점에 없던 왕에게의 고발 제거"
     },
     {
       "id": "pair-247",
@@ -5613,7 +5831,9 @@
       "speaker": "학개",
       "target": "스룹바벨",
       "ref": "에스라 5:1–2",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 학개와 스가랴의 예언 및 스룹바벨과 예수아의 재개(5:1-2)와 일치하고 응답은 재구성이라고 이미 밝힘"
     },
     {
       "id": "pair-248",
@@ -5621,7 +5841,9 @@
       "speaker": "닷드내",
       "target": "유다 장로들",
       "ref": "에스라 5:3–17",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 성전 짓는 이를 물은 쪽은 닷드내, 조서 조사를 왕께 청한 쪽도 닷드내의 보고서임을 바로잡음"
     },
     {
       "id": "pair-249",
@@ -5629,7 +5851,9 @@
       "speaker": "다리오",
       "target": "닷드내",
       "ref": "에스라 6:1–12",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 조서 발견 장소를 본문대로 메대 도 악메다 궁성으로 고침"
     },
     {
       "id": "pair-250",
@@ -5637,7 +5861,9 @@
       "speaker": "에스라",
       "target": "아닥사스다",
       "ref": "에스라 7:11–28",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 답이 에스라의 말이 아니라 왕의 조서 내용인데 설명이 어긋나 있어, 조서 취지(원하는 자의 동행, 창고 지원, 재판관 세움)에 맞춰 재구성"
     },
     {
       "id": "pair-251",
@@ -5645,7 +5871,9 @@
       "speaker": "에스라",
       "target": "잇도",
       "ref": "에스라 8:15–20",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 아하와 강가에서 레위 사람이 없음을 확인하고 잇도에게 사람을 보내 세레뱌 등이 온 본문(8:15-20)과 일치하며 재구성임을 밝힘"
     },
     {
       "id": "pair-252",
@@ -5653,7 +5881,9 @@
       "speaker": "스가냐",
       "target": "에스라",
       "ref": "에스라 10:1–4",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 스가냐의 소망 선언과 언약 제안, 에스라 일어나라는 권면(10:1-4)과 일치하며 에스라의 응답이 재구성임을 밝힘"
     },
     {
       "id": "pair-254",
@@ -5661,7 +5891,9 @@
       "speaker": "하나니",
       "target": "느헤미야",
       "ref": "느헤미야 1:1–4",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 하나니 일행이 환난과 무너진 성벽, 불탄 성문을 전하고 느헤미야가 울며 기도한 본문(1:1-4)과 일치하며 재구성임을 밝힘"
     },
     {
       "id": "pair-255",
@@ -5669,7 +5901,9 @@
       "speaker": "느헤미야",
       "target": "아닥사스다",
       "ref": "느헤미야 2:1–8",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 왕의 질문(기한)과 느헤미야의 편지 요청 순서를 본문(2:5-8)대로 맞춤. 성읍은 황폐하다고 했으므로 표현 고침, 숲 관리 아삽 반영"
     },
     {
       "id": "pair-256",
@@ -5677,7 +5911,9 @@
       "speaker": "산발랏",
       "target": "느헤미야",
       "ref": "느헤미야 2:10, 19–20",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 산발랏 일행의 비웃음과 느헤미야의 대답(2:19-20)에 맞춰 답을 나눔. 공사 금지 같은 없던 말 제거"
     },
     {
       "id": "pair-257",
@@ -5685,7 +5921,9 @@
       "speaker": "느헤미야",
       "target": "유다 백성",
       "ref": "느헤미야 4:10–20",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 형제와 자녀와 아내와 집을 위해 싸우라, 나팔 소리에 모이라, 한 손으로 일하고 한 손에 무기(4:14-20)와 일치하며 응답이 재구성임을 밝힘"
     },
     {
       "id": "pair-258",
@@ -5693,7 +5931,9 @@
       "speaker": "가난한 백성",
       "target": "느헤미야",
       "ref": "느헤미야 5:1–13",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 느헤미야의 답이 귀족들에게 한 말과 섞여 있어 분노 후 숙고하여 귀족을 꾸짖은 흐름(5:6-10)으로 고침"
     },
     {
       "id": "pair-259",
@@ -5701,7 +5941,9 @@
       "speaker": "느헤미야",
       "target": "귀족과 민장들",
       "ref": "느헤미야 5:6–13",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 느헤미야는 분노 뒤 숙고하여 책망함(마음이 무겁다는 표현 교정), 맹세는 그들이 답한 뒤라 순서 고침, 침묵 뒤 응답 반영"
     },
     {
       "id": "pair-260",
@@ -5709,7 +5951,9 @@
       "speaker": "스마야(들라야의 아들)",
       "target": "느헤미야",
       "ref": "느헤미야 6:10–14",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 첫째 쌍과 둘째 쌍의 스마야 말이 중복되어 나눔, 느헤미야가 알아챈 것은 서술이라 재구성임을 밝힘"
     },
     {
       "id": "pair-261",
@@ -5717,7 +5961,9 @@
       "speaker": "에스라",
       "target": "모든 백성",
       "ref": "느헤미야 8:1–12",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 백성이 운 이유를 본문대로 율법 말씀을 들음으로 바로잡음(죄를 깨달았다는 표현 제거)"
     },
     {
       "id": "pair-262",
@@ -5725,7 +5971,9 @@
       "speaker": "느헤미야",
       "target": "에스라",
       "ref": "느헤미야 8:9–12",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 에스라와 레위 사람들도 함께 권면한 본문(8:9-12)대로 에스라의 답을 고치고 느헤미야 말은 10절에 맞춤"
     },
     {
       "id": "pair-263",
@@ -5733,7 +5981,9 @@
       "speaker": "레위인들",
       "target": "이스라엘 자손",
       "ref": "느헤미야 9:1–38",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 레위 사람들의 송축과 창조·역사 고백 및 백성의 죄 고백과 언약(9:1-38)과 일치하며 응답이 재구성임을 밝힘"
     },
     {
       "id": "pair-264",
@@ -5741,7 +5991,9 @@
       "speaker": "느헤미야",
       "target": "온 백성",
       "ref": "느헤미야 10:1–39",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: detail의 숫자 표기('1차례')를 한글로 고침, 내용은 본문(10장)과 일치"
     },
     {
       "id": "pair-265",
@@ -5749,7 +6001,9 @@
       "speaker": "엘리아십",
       "target": "도비야",
       "ref": "느헤미야 13:4–9",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 제사장 엘리아십이 대제사장인지 본문(13:4)이 말하지 않아 직함을 고침, 성전 방을 내준 일이 잘못이라는 본문 취지에 맞춰 대사 정리"
     },
     {
       "id": "pair-266",
@@ -5757,7 +6011,9 @@
       "speaker": "느헤미야",
       "target": "도비야",
       "ref": "느헤미야 13:4–9",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 도비야의 두 답이 중복되어 둘째를 다르게 구성(느헤미야가 세간을 내던진 본문 13:8 반영)"
     },
     {
       "id": "pair-267",
@@ -5765,7 +6021,9 @@
       "speaker": "느헤미야",
       "target": "민장들",
       "ref": "느헤미야 13:15–22",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 귀인들의 응답을 본문(13:19-22)에 맞춰 레위 사람들이 성문을 지키게 한 조치로 고침"
     },
     {
       "id": "pair-268",
@@ -5773,7 +6031,9 @@
       "speaker": "느헤미야",
       "target": "유다 귀인들",
       "ref": "느헤미야 13:23–29",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 이방 혼인, 방언, 솔로몬의 죄 지적과 엘리아십 집안 혼인 처리(13:23-29)가 본문과 일치하고 응답이 재구성임을 밝힘"
     },
     {
       "id": "pair-isa-13-medes-babylon",
@@ -6291,7 +6551,9 @@
       "speaker": "예레미야",
       "target": "힐기야",
       "ref": "예레미야 1:1, 4–10",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 소명 내용(어림, 말 못함, 입에 두신 말씀)이 1:4-10과 맞고 부자 대화는 재구성으로 밝혀 있음"
     },
     {
       "id": "pair-jer-1-judah-jeremiah",
@@ -6299,7 +6561,9 @@
       "speaker": "유다 백성",
       "target": "예레미야",
       "ref": "예레미야 1:17–19",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 1:17-19의 대적 경고와 성벽 약속에 맞고 재구성 표시 있음"
     },
     {
       "id": "pair-jer-2-israel-nations",
@@ -6307,7 +6571,9 @@
       "speaker": "이스라엘",
       "target": "애굽과 앗수르",
       "ref": "예레미야 2:18, 36–37",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 애굽·앗수르 답이 하나님 말씀(생수의 근원)을 대신 말하던 것을 36-37절의 수치와 버려진 의지처로 교정"
     },
     {
       "id": "pair-jer-3-sisters",
@@ -6315,7 +6581,9 @@
       "speaker": "배역한 이스라엘",
       "target": "반역한 유다",
       "ref": "예레미야 3:6–11",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 이스라엘이 쫓겨남을 유다가 보고도 진심으로 돌아오지 않았다는 3:6-11과 화자 구도가 맞음"
     },
     {
       "id": "pair-jer-4-north-judah",
@@ -6323,7 +6591,9 @@
       "speaker": "북방의 사자",
       "target": "유다와 예루살렘",
       "ref": "예레미야 4:5–9",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 사자가 '황폐하게 하겠다'고 하나님처럼 말하던 것을 7절의 '황폐하게 되어 주민이 없게 된다'로 교정"
     },
     {
       "id": "pair-jer-5-leaders-people",
@@ -6331,7 +6601,9 @@
       "speaker": "거짓 선지자와 제사장",
       "target": "예루살렘 백성",
       "ref": "예레미야 5:30–31",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 백성 답의 깨진 문장을 31절 끝의 '마지막에는 어찌하려느냐'에 맞게 교정"
     },
     {
       "id": "pair-jer-5-far-nation-people",
@@ -6339,7 +6611,9 @@
       "speaker": "먼 나라",
       "target": "예루살렘 백성",
       "ref": "예레미야 5:15–17",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 자녀를 삼킨다는 표현을 17절의 곡식·가축·과일·성을 먹고 무너뜨린다는 내용으로 교정"
     },
     {
       "id": "pair-jer-5-jeremiah-people",
@@ -6347,7 +6621,9 @@
       "speaker": "예레미야",
       "target": "예루살렘 백성",
       "ref": "예레미야 5:1–2, 12–13",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 5:1-2, 12-13의 정직한 자 찾기, 재앙 부인, 선지자를 바람으로 여김과 맞음"
     },
     {
       "id": "pair-jer-6-leaders-people",
@@ -6355,7 +6631,9 @@
       "speaker": "거짓 선지자와 제사장",
       "target": "예루살렘 백성",
       "ref": "예레미야 6:13–15",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 6:13-15의 평강 외침과 부끄러움 없음에 맞음"
     },
     {
       "id": "pair-jer-6-north-people",
@@ -6363,7 +6641,9 @@
       "speaker": "북방 민족",
       "target": "예루살렘 백성",
       "ref": "예레미야 6:22–26",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 6:22-26의 북방 민족과 24절 백성의 반응에 맞음"
     },
     {
       "id": "pair-jer-7-judah-vulnerable",
@@ -6371,7 +6651,9 @@
       "speaker": "유다 백성",
       "target": "나그네와 고아와 과부",
       "ref": "예레미야 7:5–10",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 7:5-10의 이방인·고아·과부 압제와 성전 안전 선언에 맞음"
     },
     {
       "id": "pair-jer-8-scribe-people",
@@ -6379,7 +6661,9 @@
       "speaker": "서기관",
       "target": "유다 백성",
       "ref": "예레미야 8:8–9",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 8:8-9의 서기관의 거짓 붓과 말씀을 버림에 맞음"
     },
     {
       "id": "pair-jer-8-jeremiah-people",
@@ -6387,7 +6671,9 @@
       "speaker": "예레미야",
       "target": "유다 백성",
       "ref": "예레미야 8:18–22",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 8:18-22의 예레미야의 슬픔, 구원 못 얻음, 유향 질문에 맞음"
     },
     {
       "id": "pair-jer-9-jeremiah-people",
@@ -6395,7 +6681,9 @@
       "speaker": "예레미야",
       "target": "유다 백성",
       "ref": "예레미야 9:1–3",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 9:1-3의 눈물 근원과 활 같은 거짓 혀에 맞음"
     },
     {
       "id": "pair-jer-11-anathoth-jeremiah",
@@ -6403,7 +6691,9 @@
       "speaker": "아나돗 사람들",
       "target": "예레미야",
       "ref": "예레미야 11:18–23",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 예레미야 답의 어색한 문장을 18-20절(주께서 알게 하심, 원통함을 아룀)에 맞게 교정"
     },
     {
       "id": "pair-jer-12-family-jeremiah",
@@ -6411,7 +6701,9 @@
       "speaker": "예레미야의 형제와 아버지 집",
       "target": "예레미야",
       "ref": "예레미야 12:5–6",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 가족이 이미 속였다고 단정하던 말을 12:6의 경고(좋은 말을 해도 믿지 말라, 뒤에서 크게 외침)에 맞게 교정"
     },
     {
       "id": "pair-jer-13-jeremiah-royalty",
@@ -6419,7 +6711,9 @@
       "speaker": "예레미야",
       "target": "왕과 왕후",
       "ref": "예레미야 13:18–19",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 13:18-19의 낮추어 앉으라는 전언과 네겝 성읍 봉쇄, 유다 포로에 맞음"
     },
     {
       "id": "pair-jer-14-prophets-judah",
@@ -6427,7 +6721,9 @@
       "speaker": "거짓 선지자들",
       "target": "유다 백성",
       "ref": "예레미야 14:13–14",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 14:13-14의 칼과 기근이 없다는 거짓 평강 선포와 보내지 않으셨다는 책망에 맞음"
     },
     {
       "id": "pair-jer-15-judah-jeremiah",
@@ -6435,7 +6731,9 @@
       "speaker": "유다 백성",
       "target": "예레미야",
       "ref": "예레미야 15:10, 20",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 15:10의 다투는 자 탄식과 15:20의 놋 성벽 약속에 맞음"
     },
     {
       "id": "pair-jer-18-conspirators-jeremiah",
@@ -6443,7 +6741,9 @@
       "speaker": "음모자들",
       "target": "예레미야",
       "ref": "예레미야 18:18",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 18:18의 율법·책략·말씀 구절과 혀로 치자는 음모에 맞고 답은 18:20의 기도와 이어짐"
     },
     {
       "id": "pair-jer-19-jeremiah-elders",
@@ -6451,7 +6751,9 @@
       "speaker": "예레미야",
       "target": "백성과 제사장의 어른들",
       "ref": "예레미야 19:1–3, 10–11",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 19:1-3, 10-11의 옹기 깨뜨림과 돌이킬 수 없는 파멸 선포에 맞음"
     },
     {
       "id": "pair-jer-20-pashhur-jeremiah",
@@ -6459,7 +6761,9 @@
       "speaker": "바스훌(임멜의 아들)",
       "target": "예레미야",
       "ref": "예레미야 20:1–6",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 바스훌의 구타·가둠·풀어 줌과 예레미야의 마골밋사빕 선고(20:1-6) 순서와 화자가 맞음"
     },
     {
       "id": "pair-jer-20-friends-jeremiah",
@@ -6467,7 +6771,9 @@
       "speaker": "친한 벗들",
       "target": "예레미야",
       "ref": "예레미야 20:10–11",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 20:10-11의 고소 모의, 벗들의 기다림, 두려운 용사 같으신 주님 고백에 맞음"
     },
     {
       "id": "pair-jer-21-zedekiah-jeremiah",
@@ -6475,7 +6781,9 @@
       "speaker": "시드기야",
       "target": "예레미야",
       "ref": "예레미야 21:1–7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 하나님이 바벨론과 함께 치신다는 부정확한 답을 4-5절(성 밖 무기를 돌리시고 친히 치심)으로 교정하고 왕의 요청을 2절에 맞춤"
     },
     {
       "id": "pair-jer-21-nebuchadnezzar-zedekiah",
@@ -6483,7 +6791,9 @@
       "speaker": "느부갓네살",
       "target": "시드기야",
       "ref": "예레미야 21:2, 7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 느부갓네살이 하나님의 선고(전염병·넘기심)를 대신 말하던 것을 포위 사실로 바꾸고 시드기야의 답을 2·7절에 맞춤"
     },
     {
       "id": "pair-jer-21-pashhur-zedekiah",
@@ -6491,7 +6801,9 @@
       "speaker": "바스훌(말기야의 아들)",
       "target": "시드기야",
       "ref": "예레미야 21:1–2",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 왕이 먼저 보내는 순서(파견 지시 후 전달 내용)로 대화를 바로잡음"
     },
     {
       "id": "pair-jer-23-shepherds-flock",
@@ -6499,7 +6811,9 @@
       "speaker": "악한 목자들",
       "target": "남은 양 떼",
       "ref": "예레미야 23:1–4",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 23:1-4의 양 떼를 흩은 목자와 주님이 모아 새 목자를 세우심에 맞음"
     },
     {
       "id": "pair-jer-24-nebuchadnezzar-jeconiah",
@@ -6507,7 +6821,9 @@
       "speaker": "느부갓네살",
       "target": "여고냐",
       "ref": "예레미야 24:1–7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 느부갓네살이 하나님의 무화과 약속을 말하던 화자 오류를 바로잡고 포로 이주(1절)와 돌보심의 약속(5-7절)을 여고냐 쪽 답으로 이동"
     },
     {
       "id": "pair-jer-25-jeremiah-judah",
@@ -6515,7 +6831,9 @@
       "speaker": "예레미야",
       "target": "유다 백성",
       "ref": "예레미야 25:3–7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 25:3-7의 이십삼 년 선포, 순종하지 않음, 악한 길과 우상을 버리라는 말씀에 맞음"
     },
     {
       "id": "pair-jer-26-priests-jeremiah",
@@ -6523,7 +6841,9 @@
       "speaker": "제사장과 선지자들",
       "target": "예레미야",
       "ref": "예레미야 26:8–15",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 26:8-15의 성전이 실로 같이 되리라는 예언, 죽이려는 요구, 예레미야의 변론과 무죄한 피 경고에 맞음"
     },
     {
       "id": "pair-jer-26-elders-jeremiah",
@@ -6531,7 +6851,9 @@
       "speaker": "장로들",
       "target": "예레미야",
       "ref": "예레미야 26:17–19",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 26:17-19의 미가 예언과 히스기야가 죽이지 않고 간구한 사례에 맞음"
     },
     {
       "id": "pair-jer-26-ahikam-jeremiah",
@@ -6539,7 +6861,9 @@
       "speaker": "아히감",
       "target": "예레미야",
       "ref": "예레미야 26:24",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 주님이 사람을 보내셨다는 본문에 없는 표현을 아히감을 통한 보호(24절)로 교정"
     },
     {
       "id": "pair-jer-26-jehoiakim-uriah",
@@ -6547,7 +6871,9 @@
       "speaker": "여호야김",
       "target": "우리야",
       "ref": "예레미야 26:20–23",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 26:20-23의 우리야의 예언, 애굽 도피, 연행과 칼로 죽임, 평민 묘지에 던짐에 맞음(대사는 재구성 표시)"
     },
     {
       "id": "pair-jer-26-officials-jeremiah",
@@ -6555,7 +6881,9 @@
       "speaker": "고관들",
       "target": "예레미야",
       "ref": "예레미야 26:16",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 26:16의 죽일 이유가 없다는 고관들의 판단에 맞음"
     },
     {
       "id": "pair-jer-27-envoys-jeremiah",
@@ -6563,7 +6891,9 @@
       "speaker": "예레미야",
       "target": "이웃 나라 사신들",
       "ref": "예레미야 27:2–4",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 멍에를 목에 메라는 지시를 '멍에를 사신들 손에 주어 각 왕에게 보내라'(27:2-4)에 맞게 교정"
     },
     {
       "id": "pair-jer-27-jeremiah-zedekiah",
@@ -6571,7 +6901,9 @@
       "speaker": "예레미야",
       "target": "시드기야",
       "ref": "예레미야 27:12–15",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 27:12-15의 멍에를 메고 섬기면 산다는 권면과 거짓 선지자를 듣지 말라는 경고에 맞음"
     },
     {
       "id": "pair-jer-27-false-prophets-zedekiah",
@@ -6579,7 +6911,9 @@
       "speaker": "거짓 선지자들",
       "target": "시드기야",
       "ref": "예레미야 27:14–15",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 거짓 선지자들의 말을 27:16의 '성전 기구가 곧 돌아온다'에 맞게 교정"
     },
     {
       "id": "pair-jer-28-hananiah-jeremiah",
@@ -6587,7 +6921,9 @@
       "speaker": "하나냐",
       "target": "예레미야",
       "ref": "예레미야 28:10–17",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 하나냐가 예레미야의 쇠 멍에 선고를 대신 말하던 화자 오류를 바로잡고 하나냐의 선언(2-4, 11절)과 예레미야의 답(6-9, 13절)으로 재구성"
     },
     {
       "id": "pair-jer-28-jeremiah-hananiah",
@@ -6595,7 +6931,9 @@
       "speaker": "예레미야",
       "target": "하나냐",
       "ref": "예레미야 28:15–17",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 하나냐의 죄를 '주님을 거역하게 했다'가 아닌 16절의 '패역한 말을 하였음'으로 교정"
     },
     {
       "id": "pair-jer-29-jeremiah-exiles",
@@ -6603,7 +6941,9 @@
       "speaker": "예레미야",
       "target": "바벨론 포로들",
       "ref": "예레미야 29:1, 5–7, 10–11",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 29:5-7, 10-11의 편지 내용(집, 텃밭, 자녀, 성읍의 평안, 칠십 년, 미래와 희망)에 맞음"
     },
     {
       "id": "pair-jer-29-shemaiah-jeremiah",
@@ -6611,7 +6951,9 @@
       "speaker": "스마야(느헬람 사람)",
       "target": "예레미야",
       "ref": "예레미야 29:24–32",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 스마야가 이미 편지를 보낸 사실(25-29절)을 반영하고 예레미야의 답을 31-32절(보내지 않으셨는데 거짓을 믿게 함)로 교정"
     },
     {
       "id": "pair-jer-29-elasa-gemariah-jeremiah",
@@ -6619,7 +6961,9 @@
       "speaker": "엘라사와 그마랴",
       "target": "예레미야",
       "ref": "예레미야 29:1–3",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 29:1-3의 엘라사와 그마랴가 시드기야의 사절로 편지를 전한 일과 편지 내용에 맞음"
     },
     {
       "id": "pair-jer-30-jacob-david",
@@ -6627,7 +6971,9 @@
       "speaker": "야곱",
       "target": "다윗 왕",
       "ref": "예레미야 30:7–10",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 다윗이 '내가 가리키는 왕'이라며 자신을 제3자처럼 말한 부분을 본문(30:8-10) 약속으로 교체"
     },
     {
       "id": "pair-jer-32-hanamel-jeremiah",
@@ -6635,7 +6981,9 @@
       "speaker": "하나멜",
       "target": "예레미야",
       "ref": "예레미야 32:7–9",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 하나멜 부탁에 대한 예레미야의 실제 반응(말씀인 줄 앎, 은 열일곱 세겔)으로 답을 바로잡고 '2번째' 숫자 표기 수정"
     },
     {
       "id": "pair-jer-32-baruch-jeremiah",
@@ -6643,7 +6991,9 @@
       "speaker": "바룩",
       "target": "예레미야",
       "ref": "예레미야 32:12–14",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 바룩의 질문을 보관 이유를 묻는 말로 바꾸고 답을 32:14-15에 맞춤"
     },
     {
       "id": "pair-jer-32-zedekiah-jeremiah",
@@ -6651,7 +7001,9 @@
       "speaker": "시드기야",
       "target": "예레미야",
       "ref": "예레미야 32:2–5",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 어긋난 둘째 문답을 32:3-5 내용(싸워도 이기지 못함, 바벨론에 머묾)으로 교체"
     },
     {
       "id": "pair-jer-34-officials-slaves",
@@ -6659,7 +7011,9 @@
       "speaker": "예루살렘 고관과 백성",
       "target": "히브리 종들",
       "ref": "예레미야 34:8–11",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 종들이 심판을 선언하던 부분 삭제(34:17은 하나님의 말씀), 자유 철회와 동족 종 삼지 않기 언약으로 대조"
     },
     {
       "id": "pair-jer-34-jeremiah-zedekiah",
@@ -6667,7 +7021,9 @@
       "speaker": "예레미야",
       "target": "시드기야",
       "ref": "예레미야 34:2–5",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시드기야가 순순히 받아들였다는 기록 없는 답을 34:5의 향을 피우며 애통하는 약속에 대한 반응으로 교체"
     },
     {
       "id": "pair-jer-34-nebuchadnezzar-zedekiah",
@@ -6675,7 +7031,9 @@
       "speaker": "느부갓네살",
       "target": "시드기야",
       "ref": "예레미야 34:3, 21",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 근거 없는 '거부한 항복' 대사를 빼고 34:3 예언(손에서 벗어나지 못함, 얼굴을 마주 봄)에 맞춤"
     },
     {
       "id": "pair-jer-35-rechabites-jonadab",
@@ -6683,7 +7041,9 @@
       "speaker": "레갑 족속",
       "target": "요나답",
       "ref": "예레미야 35:6–8",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 요나답이 후대 유다를 평가하던 부분(35:14은 하나님의 말씀)을 삭제하고 35:6-8 금령에 맞춤"
     },
     {
       "id": "pair-jer-35-jeremiah-rechabites",
@@ -6691,7 +7051,9 @@
       "speaker": "예레미야",
       "target": "레갑 족속",
       "ref": "예레미야 35:2, 5–8",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 예레미야가 순종을 보이려 한다고 말한 부분 삭제, 포도주를 권함과 레갑 족속의 설명(35:5-8)으로 정리"
     },
     {
       "id": "pair-jer-36-baruch-jeremiah",
@@ -6699,7 +7061,9 @@
       "speaker": "바룩",
       "target": "예레미야",
       "ref": "예레미야 36:4–8",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 바룩의 말을 갇힌 예레미야 대신 낭독한다는 취지로 정리하고, 답을 36:6-7(여러 성읍에서 온 사람들, 기도하며 악한 길을 떠남)에 맞춤"
     },
     {
       "id": "pair-jer-36-jehoiakim-jeremiah",
@@ -6707,7 +7071,9 @@
       "speaker": "여호야김",
       "target": "예레미야",
       "ref": "예레미야 36:22–26",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 왕이 직접 베어 태운 사실(36:23)에 맞게 첫 명령 수정, 예레미야는 현장에 없었으므로 그의 말은 재구성임을 명시, 숫자 표기 정리"
     },
     {
       "id": "pair-jer-36-officials-baruch",
@@ -6715,7 +7081,9 @@
       "speaker": "고관들",
       "target": "바룩",
       "ref": "예레미야 36:19",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 두루마리가 불타기 전에 있었던 일인데 불길 이야기가 나오던 시대 착오를 고치고 36:16, 19-20(왕께 알림)에 맞춤"
     },
     {
       "id": "pair-jer-36-gemariah-jehoiakim",
@@ -6723,7 +7091,9 @@
       "speaker": "그마랴",
       "target": "여호야김",
       "ref": "예레미야 36:25",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 왕의 답이 서술체였던 것을 간청을 듣지 않은 왕의 말로 정리하고 근거 없는 심판 경고 삭제(36:25)"
     },
     {
       "id": "pair-jer-36-gemariah-shaphan",
@@ -6731,7 +7101,9 @@
       "speaker": "그마랴",
       "target": "사반",
       "ref": "예레미야 36:10, 25",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 사반이 왕 앞 간청 현장에 있었다는 기록이 없어 아버지 답을 조언 형태로 고치고 부자 대화는 재구성임을 밝힘(36:10)"
     },
     {
       "id": "pair-jer-37-iriya-jeremiah",
@@ -6739,7 +7111,9 @@
       "speaker": "이리야",
       "target": "예레미야",
       "ref": "예레미야 37:13–14",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 이리야의 체포 혐의, 예레미야의 부인, 듣지 않고 끌고 감(37:13-14)과 맞음"
     },
     {
       "id": "pair-jer-37-officials-jeremiah",
@@ -6747,7 +7121,9 @@
       "speaker": "고관들",
       "target": "예레미야",
       "ref": "예레미야 37:15–16",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 고관들이 노해 때리고 요나단의 집 옥에 가둔 사건(37:15-16)에 맞음"
     },
     {
       "id": "pair-jer-37-zedekiah-jeremiah",
@@ -6755,7 +7131,9 @@
       "speaker": "시드기야",
       "target": "예레미야",
       "ref": "예레미야 37:17–21",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 예레미야가 왕에게 하는 말을 존대로 바로잡음(37:17-20)"
     },
     {
       "id": "pair-jer-38-officials-jeremiah",
@@ -6763,7 +7141,9 @@
       "speaker": "스바댜와 고관들",
       "target": "예레미야",
       "ref": "예레미야 38:4–6",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 본문에 없는 '빵도 주지 마시오'를 삭제하고 38:4-6(왕에게 고발, 말기야의 구덩이)에 맞춤, 숫자 표기 정리"
     },
     {
       "id": "pair-jer-38-ebedmelech-jeremiah",
@@ -6771,7 +7151,9 @@
       "speaker": "에벳멜렉",
       "target": "예레미야",
       "ref": "예레미야 38:7–13",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 왕의 명령을 반영하고 예레미야의 답을 존대·본문 상황(서른 명, 겨드랑이에 헝겊)에 맞춤(38:9-13)"
     },
     {
       "id": "pair-jer-38-ebedmelech-zedekiah",
@@ -6779,7 +7161,9 @@
       "speaker": "에벳멜렉",
       "target": "시드기야",
       "ref": "예레미야 38:8–9",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 왕의 답을 38:10의 실제 명령(서른 명, 죽기 전에 끌어냄)으로 바로잡고 에벳멜렉의 말을 38:9에 맞춤"
     },
     {
       "id": "pair-jer-38-zedekiah-jeremiah",
@@ -6787,7 +7171,9 @@
       "speaker": "시드기야",
       "target": "예레미야",
       "ref": "예레미야 38:14–18",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 질문-맹세-항복 권고의 실제 순서(38:14-18)로 재배열하고 예레미야의 말을 존대로 바로잡음"
     },
     {
       "id": "pair-jer-39-nebuchadnezzar-zedekiah",
@@ -6795,7 +7181,9 @@
       "speaker": "느부갓네살",
       "target": "시드기야",
       "ref": "예레미야 39:6–7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 리블라에서 아들들과 귀족이 죽고 눈이 뽑혀 사슬에 묶여 끌려간 기록(39:6-7)과 맞음"
     },
     {
       "id": "pair-jer-39-nebuchadnezzar-nebuzaradan",
@@ -6803,7 +7191,9 @@
       "speaker": "느부갓네살",
       "target": "느부사라단",
       "ref": "예레미야 39:9–12",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 느부갓네살이 느부사라단에게 예레미야를 선대하고 해하지 말라 명한 기록(39:11-12)과 맞음"
     },
     {
       "id": "pair-jer-39-nebuchadnezzar-jeremiah",
@@ -6811,7 +7201,9 @@
       "speaker": "느부갓네살",
       "target": "예레미야",
       "ref": "예레미야 39:11–14",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 선대 명령(39:11-12)과 그달리야에게 맡겨진 일(39:14)에 맞고 직접 대화가 아닌 재구성임이 밝혀져 있음"
     },
     {
       "id": "pair-jer-39-gedaliah-jeremiah",
@@ -6819,7 +7211,9 @@
       "speaker": "그달리야",
       "target": "예레미야",
       "ref": "예레미야 39:14",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 그달리야가 예레미야를 3인칭으로 말하던 어색한 주소를 고치고 39:14(감옥 뜰에서 그달리야에게 맡겨짐)에 맞춤"
     },
     {
       "id": "pair-jer-40-nebuzaradan-jeremiah",
@@ -6827,7 +7221,9 @@
       "speaker": "느부사라단",
       "target": "예레미야",
       "ref": "예레미야 40:2–4",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 느부사라단의 명령투를 선택권을 주는 말투로 바로잡음(40:4)"
     },
     {
       "id": "pair-jer-40-gedaliah-jeremiah",
@@ -6835,7 +7231,9 @@
       "speaker": "그달리야",
       "target": "예레미야",
       "ref": "예레미야 40:6",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 근거 없는 '새 일 시작' 답을 줄이고 예레미야의 말을 총독에 대한 존대로 바로잡음(40:6)"
     },
     {
       "id": "pair-jer-40-johanan-gedaliah",
@@ -6843,7 +7241,9 @@
       "speaker": "요하난",
       "target": "그달리야",
       "ref": "예레미야 40:13–16",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 요하난의 경고, 은밀한 제안, 그달리야의 거절과 '진정이 아니라'는 말(40:13-16)에 맞음"
     },
     {
       "id": "pair-jer-40-baalis-ishmael",
@@ -6851,7 +7251,9 @@
       "speaker": "바알리스",
       "target": "이스마엘",
       "ref": "예레미야 40:14",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 근거 없는 권력 교체 동기와 시대 앞선 요하난 언급을 삭제하고 40:14, 41:1-2에 맞춤"
     },
     {
       "id": "pair-jer-41-ishmael-gedaliah",
@@ -6859,7 +7261,9 @@
       "speaker": "이스마엘",
       "target": "그달리야",
       "ref": "예레미야 41:1–3",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 이스마엘이 열 사람과 미스바에서 함께 식사하다 그달리야를 죽인 흐름(41:1-3)에 맞고 창작임이 밝혀져 있음"
     },
     {
       "id": "pair-jer-41-ishmael-pilgrims",
@@ -6867,7 +7271,9 @@
       "speaker": "이스마엘",
       "target": "순례자 80명",
       "ref": "예레미야 41:4–7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 숫자 '10 사람' 삭제, 이스마엘이 울며 그달리야에게 가자고 속인 말(41:6)과 순례자들의 실제 상황(세겜·실로·사마리아, 예물)에 맞춤"
     },
     {
       "id": "pair-jer-41-johanan-ishmael",
@@ -6875,7 +7281,9 @@
       "speaker": "요하난",
       "target": "이스마엘",
       "ref": "예레미야 41:11–15",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 포로들이 모두 요하난에게 돌아서고 이스마엘이 여덟 사람과 암몬으로 피한 사실(41:14-15)에 맞춤"
     },
     {
       "id": "pair-jer-41-johanan-royal-daughters",
@@ -6883,7 +7291,9 @@
       "speaker": "요하난",
       "target": "왕의 딸들",
       "ref": "예레미야 41:10–16",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 되찾은 곳을 미스바가 아닌 기브온으로 바로잡고, 애굽행 계획(41:17-18) 반응을 정리"
     },
     {
       "id": "pair-jer-42-johanan-jeremiah",
@@ -6891,7 +7301,9 @@
       "speaker": "요하난",
       "target": "예레미야",
       "ref": "예레미야 42:1–6, 19–21",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 예레미야의 답을 '여호와께서 이르십니다' 형식과 42:10-22(머물라, 속으로 정해 놓음, 애굽에서의 칼·기근)에 맞춤"
     },
     {
       "id": "pair-jer-42-jeshaniah-johanan",
@@ -6899,7 +7311,9 @@
       "speaker": "여사냐",
       "target": "요하난",
       "ref": "예레미야 42:1–3",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 지도자와 백성이 함께 예레미야에게 기도를 청하고 갈 길을 묻는 장면(42:1-3)에 맞음"
     },
     {
       "id": "pair-jer-43-azariah-jeremiah",
@@ -6907,7 +7321,9 @@
       "speaker": "아사랴(호사야의 아들)",
       "target": "예레미야",
       "ref": "예레미야 43:2–3",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 교만한 자들이 거짓이라 몰고 바룩을 탓한 말(43:2-3)에 맞음"
     },
     {
       "id": "pair-jer-43-johanan-jeremiah",
@@ -6915,7 +7331,9 @@
       "speaker": "요하난",
       "target": "예레미야",
       "ref": "예레미야 43:5–7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 요하난이 예레미야와 바룩을 포함해 남은 백성을 애굽 다바네스로 데려간 기록(43:5-7)에 맞음"
     },
     {
       "id": "pair-jer-43-baruch-jeremiah",
@@ -6923,7 +7341,9 @@
       "speaker": "바룩",
       "target": "예레미야",
       "ref": "예레미야 43:6–7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 주님이 데려가셨다는 오류를 고치고(요하난 일행이 끌고 감) 43:10 다바네스 예언에 맞춤"
     },
     {
       "id": "pair-jer-44-judeans-jeremiah",
@@ -6931,7 +7351,9 @@
       "speaker": "애굽의 유다인들",
       "target": "예레미야",
       "ref": "예레미야 44:15–19",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 여호와의 이름으로 전한 말을 거부하고 하늘 여왕 숭배를 고집한 논쟁(44:15-19)과 예레미야의 경고(44:22-23)에 맞음"
     },
     {
       "id": "pair-jer-45-baruch-jeremiah",
@@ -6939,7 +7361,9 @@
       "speaker": "바룩",
       "target": "예레미야",
       "ref": "예레미야 45:1–5",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 바룩의 탄식(45:3)과 큰 일을 구하지 말라, 생명은 건져 주겠다는 말씀(45:4-5)에 맞음"
     },
     {
       "id": "pair-jer-46-nebuchadnezzar-necho",
@@ -6947,7 +7371,9 @@
       "speaker": "느부갓네살",
       "target": "바로 느고",
       "ref": "예레미야 46:2",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 갈그미스에서 느부갓네살이 느고의 군대를 이긴 사건(46:2)에 맞고 창작임이 밝혀져 있음"
     },
     {
       "id": "pair-jer-47-north-army-philistia",
@@ -6955,7 +7381,9 @@
       "speaker": "북쪽 군대",
       "target": "블레셋",
       "ref": "예레미야 47:2–7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 북쪽에서 밀려오는 물, 아버지의 손맥이 풀림, 가사·아스글론, 쉬지 못하는 여호와의 칼(47:2-7)에 맞음"
     },
     {
       "id": "pair-jer-48-jeremiah-moab",
@@ -6963,7 +7391,9 @@
       "speaker": "예레미야",
       "target": "모압",
       "ref": "예레미야 48:29–32, 47",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 모압의 교만, 십마 포도나무를 위한 애곡, 마지막 날의 회복 약속(48:29-32, 47)에 맞음"
     },
     {
       "id": "pair-jer-49-nebuchadnezzar-kedar",
@@ -6971,7 +7401,9 @@
       "speaker": "느부갓네살",
       "target": "게달과 하솔",
       "ref": "예레미야 49:28–30",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 게달과 하솔을 쳐 장막·가축·낙타를 빼앗으라는 예언(49:28-31)에 맞고 재구성임이 밝혀져 있음"
     },
     {
       "id": "pair-jer-50-north-babylon",
@@ -6979,7 +7411,9 @@
       "speaker": "북쪽 나라",
       "target": "바벨론",
       "ref": "예레미야 50:3, 9–10",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 북쪽 나라와 민족의 무리가 바벨론을 치는 예언(50:3, 9-10)과 돌아가려는 이스라엘(50:4-5)에 맞음"
     },
     {
       "id": "pair-jer-50-nebuchadnezzar-israel",
@@ -6987,7 +7421,9 @@
       "speaker": "느부갓네살",
       "target": "이스라엘과 유다",
       "ref": "예레미야 50:17–20",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 느부갓네살이 자신을 '바벨론 왕'이라 3인칭으로 부르던 어색함을 고치고 앗수르 왕이 먼저, 그 다음 바벨론이 뼈를 꺾은 순서(50:17)와 갈멜·바산 회복(50:19)에 맞춤"
     },
     {
       "id": "pair-jer-51-medes-babylon",
@@ -6995,7 +7431,9 @@
       "speaker": "메대 왕들",
       "target": "바벨론",
       "ref": "예레미야 51:11, 28–29",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 메대가 자기 자신을 3인칭으로 말하던 어색함을 고쳐 51:11, 28(화살·방패, 메대 왕들과 총독·관리들 준비)에 맞춤"
     },
     {
       "id": "pair-jer-51-jeremiah-seraiah",
@@ -7003,7 +7441,9 @@
       "speaker": "예레미야",
       "target": "스라야",
       "ref": "예레미야 51:59–64",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 책을 읽고 돌을 매어 유프라테스 강에 던지며 바벨론의 몰락을 말하라는 명령(51:61-64)에 맞음"
     },
     {
       "id": "pair-jer-51-seraiah-zedekiah",
@@ -7011,7 +7451,9 @@
       "speaker": "스라야",
       "target": "시드기야",
       "ref": "예레미야 51:59–61",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시드기야가 예레미야의 비밀 사명을 알고 지시하던 근거 없는 답을 고치고 51:59의 바벨론 동행(병참감)에 맞춤"
     },
     {
       "id": "pair-jer-52-zedekiah-nebuchadnezzar",
@@ -7019,7 +7461,9 @@
       "speaker": "시드기야",
       "target": "느부갓네살",
       "ref": "예레미야 52:3, 10–11",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 시드기야의 반역(52:3)과 아들들의 죽음, 두 눈을 빼고 사슬로 결박해 끌고 간 일(52:10-11)에 맞고 재구성임이 밝혀져 있음"
     },
     {
       "id": "pair-jer-52-nebuchadnezzar-nebuzaradan",
@@ -7027,7 +7471,9 @@
       "speaker": "느부사라단",
       "target": "느부갓네살",
       "ref": "예레미야 52:12–16",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 이미 불태운 뒤 보고에 새 명령을 하던 흐름과 남은 백성을 '다스리게' 한다는 오류를 고치고 52:13-16(가난한 백성을 남겨 포도원·농사)에 맞춤"
     },
     {
       "id": "pair-jer-52-evilmerodach-jehoiachin",
@@ -7035,7 +7481,9 @@
       "speaker": "에윌므로닥",
       "target": "여호야긴",
       "ref": "예레미야 52:31–34",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 숫자 '37년'을 한글로 고치고, 52:32의 '친절하게 말함'에 맞게 하대를 존중하는 말투로 정리"
     },
     {
       "id": "pair-lam-1-friends-zion",
@@ -7123,7 +7571,9 @@
       "speaker": "에스겔",
       "target": "이스라엘 자손",
       "ref": "에스겔 2:3–7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 백성의 답에 하나님 말씀이 섞여 있어 백성의 말로 바꿈"
     },
     {
       "id": "pair-ezk-3-ezekiel-wicked-righteous",
@@ -7131,7 +7581,9 @@
       "speaker": "에스겔",
       "target": "악인과 의인",
       "ref": "에스겔 3:17–21",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 하나님이 에스겔에게 하신 말씀을 에스겔이 전하는 형태로 바꾸고 답을 맞춤"
     },
     {
       "id": "pair-ezk-4-ezekiel-israel",
@@ -7139,7 +7591,9 @@
       "speaker": "에스겔",
       "target": "이스라엘 족속",
       "ref": "에스겔 4:1–8",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 표징 행동과 날수를 본문대로 정리하고 숫자를 한글로 씀"
     },
     {
       "id": "pair-ezk-7-leaders-people",
@@ -7147,7 +7601,9 @@
       "speaker": "선지자와 제사장과 장로",
       "target": "이스라엘 땅의 백성",
       "ref": "에스겔 7:26",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 하나님의 예고를 지도자와 백성의 말로 맞춤"
     },
     {
       "id": "pair-ezk-8-yaazaniah-elders",
@@ -7155,7 +7611,9 @@
       "speaker": "야아사냐(사반의 아들)",
       "target": "장로 70명",
       "ref": "에스겔 8:10–12",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 숫자를 한글로, 환상 속 인용 구절임을 detail에 밝히고 답을 맞춤"
     },
     {
       "id": "pair-ezk-9-scribe-mourners",
@@ -7163,7 +7621,9 @@
       "speaker": "베옷 입은 서기관",
       "target": "탄식하는 자들",
       "ref": "에스겔 9:4, 11",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 서기관의 복명은 하나님께 한 보고여서 탄식하는 자들에게 하는 말로 재구성"
     },
     {
       "id": "pair-ezk-9-avengers-elders",
@@ -7171,7 +7631,9 @@
       "speaker": "6 사람",
       "target": "성전 앞 장로들",
       "ref": "에스겔 9:5–7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 숫자 표기 맞추고 엉뚱한 답을 장로들의 반응으로 바꿈"
     },
     {
       "id": "pair-ezk-11-jerusalem-exiles",
@@ -7179,7 +7641,9 @@
       "speaker": "예루살렘 주민",
       "target": "포로 된 형제들",
       "ref": "에스겔 11:15–16",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 본문 어순에 맞게 예루살렘 주민의 말과 포로 편 답을 고침"
     },
     {
       "id": "pair-ezk-13-prophets-people",
@@ -7187,7 +7651,9 @@
       "speaker": "거짓 선지자들",
       "target": "이스라엘 백성",
       "ref": "에스겔 13:10–16",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 거짓 선지자가 스스로 거짓을 폭로하는 말을 본문 속 그들의 주장으로 바꿈"
     },
     {
       "id": "pair-ezk-13-women-people",
@@ -7195,7 +7661,9 @@
       "speaker": "거짓 여선지자들",
       "target": "이스라엘 백성",
       "ref": "에스겔 13:17–23",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 하나님의 책망을 여선지자 본인의 고백으로 둔 것을 거짓 예언 행위와 백성의 반응으로 바꿈"
     },
     {
       "id": "pair-ezk-14-elders-ezekiel",
@@ -7203,7 +7671,9 @@
       "speaker": "이스라엘 장로들",
       "target": "에스겔",
       "ref": "에스겔 14:1–5",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 장로들이 스스로 우상을 인정하는 말을 고치고 답을 본문에 맞춤"
     },
     {
       "id": "pair-ezk-16-jerusalem-nations",
@@ -7211,7 +7681,9 @@
       "speaker": "예루살렘",
       "target": "애굽과 앗수르와 갈대아",
       "ref": "에스겔 16:26–29",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 본문에 없는 내 재산과 바벨론 동맹 표현을 정리하고 블레셋 언급 반영"
     },
     {
       "id": "pair-ezk-16-samaria-jerusalem",
@@ -7219,7 +7691,9 @@
       "speaker": "사마리아",
       "target": "예루살렘",
       "ref": "에스겔 16:46, 51–52",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 사마리아가 예루살렘을 비웃었다는 본문 없는 내용을 고치고 본문의 비교로 바꿈"
     },
     {
       "id": "pair-ezk-17-babylon-zedekiah",
@@ -7227,7 +7701,9 @@
       "speaker": "바벨론 왕",
       "target": "시드기야",
       "ref": "에스겔 17:12–14",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시드기야의 답을 본문 순서에 맞게 고침"
     },
     {
       "id": "pair-ezk-17-zedekiah-egypt",
@@ -7235,7 +7711,9 @@
       "speaker": "시드기야",
       "target": "애굽 왕",
       "ref": "에스겔 17:15–18",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 애굽 왕의 답을 하나님의 예고에 맞춰 고침"
     },
     {
       "id": "pair-ezk-17-babylon-jehoiachin",
@@ -7243,7 +7721,9 @@
       "speaker": "바벨론 왕",
       "target": "여호야긴",
       "ref": "에스겔 17:12–13",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 숫자를 한글로, 여호야긴의 답을 시드기야와의 관계에 맞게 고침"
     },
     {
       "id": "pair-ezk-18-violent-son-righteous-father",
@@ -7251,7 +7731,9 @@
       "speaker": "강포한 아들",
       "target": "의로운 사람",
       "ref": "에스겔 18:5–13",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 의로운 아버지와 강포한 아들의 사례(18:5-13)와 책임 원리가 본문과 맞고 가상 사례임이 detail에 밝혀져 있음"
     },
     {
       "id": "pair-ezk-18-righteous-grandson-violent-father",
@@ -7259,7 +7741,9 @@
       "speaker": "의로운 손자",
       "target": "강포한 아들",
       "ref": "에스겔 18:14–18",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 답의 어색한 마무리를 18:17-18의 원리에 맞게 고침"
     },
     {
       "id": "pair-ezk-19-ezekiel-leaders",
@@ -7267,7 +7751,9 @@
       "speaker": "에스겔",
       "target": "이스라엘 고관들",
       "ref": "에스겔 19:1–14",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 하나님의 명령 문장을 에스겔이 부르는 애가의 내용으로 바꿈"
     },
     {
       "id": "pair-ezk-20-elders-ezekiel",
@@ -7275,7 +7761,9 @@
       "speaker": "이스라엘 장로들",
       "target": "에스겔",
       "ref": "에스겔 20:1–4",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 장로들이 하지 않은 말을 고치고 하나님의 말씀을 에스겔이 전하는 형태로 바꿈"
     },
     {
       "id": "pair-ezk-21-babylon-ammon",
@@ -7283,7 +7771,9 @@
       "speaker": "바벨론 왕",
       "target": "암몬",
       "ref": "에스겔 21:20–23, 28–32",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 암몬의 답을 3인칭 서술에서 대화로 고침"
     },
     {
       "id": "pair-ezk-22-rulers-vulnerable",
@@ -7291,7 +7781,9 @@
       "speaker": "고관들",
       "target": "나그네와 고아와 과부",
       "ref": "에스겔 22:6–7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 부모를 업신여긴 죄 등 22:7 내용을 반영"
     },
     {
       "id": "pair-ezk-22-prophets-jerusalem",
@@ -7299,7 +7791,9 @@
       "speaker": "선지자들",
       "target": "예루살렘",
       "ref": "에스겔 22:25–28",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 선지자들의 약탈과 회칠한 거짓 환상(22:25, 28), 성벽 틈을 막을 사람이 없었다는 내용(22:30)이 본문과 맞고 의인화임이 detail에 밝혀져 있음"
     },
     {
       "id": "pair-ezk-23-sisters",
@@ -7307,7 +7801,9 @@
       "speaker": "오홀라(사마리아)",
       "target": "오홀리바(예루살렘)",
       "ref": "에스겔 23:1–4",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 오홀라와 오홀리바의 이름 설정과 답을 본문에 맞춤"
     },
     {
       "id": "pair-ezk-23-samaria-assyria",
@@ -7315,7 +7811,9 @@
       "speaker": "오홀라(사마리아)",
       "target": "앗수르 사람들",
       "ref": "에스겔 23:5–10",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 오홀라가 당한 일을 본문대로(자녀를 빼앗기고 칼로 죽음) 고침"
     },
     {
       "id": "pair-ezk-23-jerusalem-babylon",
@@ -7323,7 +7821,9 @@
       "speaker": "오홀리바(예루살렘)",
       "target": "갈대아 사람들",
       "ref": "에스겔 23:14–17",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 사건 순서와 싫증 낸 쪽(예루살렘)을 본문대로 고침"
     },
     {
       "id": "pair-ezk-23-babylon-jerusalem",
@@ -7331,7 +7831,9 @@
       "speaker": "갈대아 사람들",
       "target": "오홀리바(예루살렘)",
       "ref": "에스겔 23:22–24",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 하나님의 선언을 갈대아 사람들의 말로 둔갑시킨 것을 고침"
     },
     {
       "id": "pair-ezk-24-babylon-jerusalem",
@@ -7339,7 +7841,9 @@
       "speaker": "바벨론 왕",
       "target": "예루살렘",
       "ref": "에스겔 24:1–2",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 날짜와 본문의 서술 방식을 반영하고 바벨론 왕의 발언이 재구성임을 밝힘"
     },
     {
       "id": "pair-ezk-24-exiles-ezekiel",
@@ -7347,7 +7851,9 @@
       "speaker": "포로 백성",
       "target": "에스겔",
       "ref": "에스겔 24:18–24",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 포로들이 실제로 물은 말(24:19)과 에스겔의 답(24:20-24)에 맞춤"
     },
     {
       "id": "pair-ezk-25-ammon-judah",
@@ -7355,7 +7861,9 @@
       "speaker": "암몬",
       "target": "유다 족속",
       "ref": "에스겔 25:3–7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 성소가 더럽혀지고 땅이 황폐하고 유다가 사로잡힐 때 아하 좋다 한 암몬(25:3)과 동방 사람에게 넘기신다는 예고(25:4)가 본문과 맞음"
     },
     {
       "id": "pair-ezk-25-edom-judah",
@@ -7363,7 +7871,9 @@
       "speaker": "에돔",
       "target": "유다 족속",
       "ref": "에스겔 25:12–14",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 본문에 없는 온 에돔의 칼 서술을 에돔의 복수 발언으로 고침"
     },
     {
       "id": "pair-ezk-25-philistia-judah",
@@ -7371,7 +7881,9 @@
       "speaker": "블레셋",
       "target": "유다 족속",
       "ref": "에스겔 25:15–17",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 블레셋의 옛 미움과 복수(25:15)와 그렛 사람을 끊는 심판(25:16-17)이 본문과 맞음"
     },
     {
       "id": "pair-ezk-26-tyre-jerusalem",
@@ -7379,7 +7891,9 @@
       "speaker": "두로",
       "target": "예루살렘",
       "ref": "에스겔 26:2–6",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 두로가 만민의 문이 깨졌으니 자신이 충만하리라 한 말(26:2)과 두로 심판 예고가 본문과 맞음"
     },
     {
       "id": "pair-ezk-26-nebuchadnezzar-tyre",
@@ -7387,7 +7901,9 @@
       "speaker": "느부갓네살",
       "target": "두로",
       "ref": "에스겔 26:7–14",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 느부갓네살의 병거·성벽 공격·돌과 흙을 물에 던짐(26:7-12)이 본문과 맞고 재구성임이 detail에 밝혀져 있음"
     },
     {
       "id": "pair-ezk-26-sea-kings-tyre",
@@ -7395,7 +7911,9 @@
       "speaker": "바다의 왕들",
       "target": "두로",
       "ref": "에스겔 26:15–18",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 섬들이 진동하고 바다의 왕들이 떨며 애가를 부르는 장면(26:15-18)이 본문과 맞음"
     },
     {
       "id": "pair-ezk-27-traders-tyre",
@@ -7403,7 +7921,9 @@
       "speaker": "무역하는 나라들",
       "target": "두로",
       "ref": "에스겔 27:12–24",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 다시스·야완·유다 등의 교역 목록(27:12-24)과 두로의 번성을 반영한 재구성이어서 본문과 어긋나지 않음"
     },
     {
       "id": "pair-ezk-27-sailors-tyre",
@@ -7411,7 +7931,9 @@
       "speaker": "뱃사람들",
       "target": "두로",
       "ref": "에스겔 27:25–36",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 다시스의 배와 사공, 동풍에 부서지는 두로와 선원들의 통곡(27:25-36)이 본문과 맞음"
     },
     {
       "id": "pair-ezk-29-israel-egypt",
@@ -7419,7 +7941,9 @@
       "speaker": "이스라엘 족속",
       "target": "애굽",
       "ref": "에스겔 29:6–7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 부러진 갈대 지팡이가 어깨를 찢고 허리를 흔든 표현(29:7)에 맞춤"
     },
     {
       "id": "pair-ezk-30-nebuchadnezzar-egypt",
@@ -7427,7 +7951,9 @@
       "speaker": "느부갓네살",
       "target": "애굽",
       "ref": "에스겔 30:10–12",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 느부갓네살의 손으로 애굽의 무리를 끊고 강을 마르게 한다는 예고(30:10-12)와 맞고 재구성임이 detail에 밝혀져 있음"
     },
     {
       "id": "pair-ezk-30-allies-egypt",
@@ -7435,7 +7961,9 @@
       "speaker": "구스와 붓과 룻",
       "target": "애굽",
       "ref": "에스겔 30:4–9",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 구스·붓·룻과 동맹국이 애굽과 함께 칼에 엎드러진다는 말씀(30:4-9)과 맞음"
     },
     {
       "id": "pair-ezk-31-mighty-assyria",
@@ -7443,7 +7971,9 @@
       "speaker": "능한 자",
       "target": "앗수르",
       "ref": "에스겔 31:11–18",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 백향목 비유와 여러 나라의 능한 자에게 넘겨져 찍힘(31:11-12), 그늘을 떠나는 민족들이 본문과 맞고 재구성임이 detail에 밝혀져 있음"
     },
     {
       "id": "pair-ezk-32-babylon-pharaoh",
@@ -7451,7 +7981,9 @@
       "speaker": "바벨론 왕",
       "target": "바로",
       "ref": "에스겔 32:11–16",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 본문에 없는 강을 피로 물들인다는 말을 군대와 교만을 꺾는 내용(32:12)으로 고침"
     },
     {
       "id": "pair-ezk-32-pharaoh-nations",
@@ -7459,7 +7991,9 @@
       "speaker": "바로",
       "target": "앗수르와 엘람",
       "ref": "에스겔 32:22–24, 31",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 앗수르와 엘람에 대한 본문 묘사(무덤·할례 받지 못함)를 반영하고 바로의 위로(32:31)를 반영"
     },
     {
       "id": "pair-ezk-32-ezekiel-pharaoh",
@@ -7467,7 +8001,9 @@
       "speaker": "에스겔",
       "target": "바로",
       "ref": "에스겔 32:2–10",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 사자라 여겼으나 실상은 큰 악어라는 본문 표현(32:2)에 맞춤"
     },
     {
       "id": "pair-ezk-33-fugitive-ezekiel",
@@ -7475,7 +8011,9 @@
       "speaker": "도망한 자",
       "target": "에스겔",
       "ref": "에스겔 33:21–22",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 도망한 자는 포로가 아니라 탈출자이고, 에스겔의 입이 열린 때는 전날 저녁"
     },
     {
       "id": "pair-ezk-33-exiles-ezekiel",
@@ -7483,7 +8021,9 @@
       "speaker": "포로 백성",
       "target": "에스겔",
       "ref": "에스겔 33:30–33",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 백성이 스스로 욕심을 고백하는 부분을 고치고 시간 순서 오류(함락 소식 이후)를 바로잡음"
     },
     {
       "id": "pair-ezk-34-shepherds-flock",
@@ -7491,7 +8031,9 @@
       "speaker": "이스라엘 목자들",
       "target": "양 떼",
       "ref": "에스겔 34:2–10",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 자기만 먹는 목자들이 약한 자를 돌보지 않고 흩어진 양을 찾지 않은 책망(34:2-6)과 맞음"
     },
     {
       "id": "pair-ezk-35-edom-israel",
@@ -7499,7 +8041,9 @@
       "speaker": "세일산(에돔)",
       "target": "이스라엘",
       "ref": "에스겔 35:5–15",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 옛 원한으로 이스라엘을 칼에 넘기고 두 땅이 내 것이라 한 에돔(35:5, 10)과 황폐해 기뻐함(35:15)이 본문과 맞음"
     },
     {
       "id": "pair-ezk-36-enemies-israel",
@@ -7507,7 +8051,9 @@
       "speaker": "원수 나라들",
       "target": "이스라엘 족속",
       "ref": "에스겔 36:1–7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 원수들이 옛적 높은 곳이 우리의 기업이 되었다고 한 말(36:2)과 하나님의 질투(36:5-7)가 본문과 맞음"
     },
     {
       "id": "pair-ezk-37-david-tribes",
@@ -7515,7 +8061,9 @@
       "speaker": "내 종 다윗",
       "target": "유다와 요셉",
       "ref": "에스겔 37:15–28",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 하나님의 말씀을 다윗의 말로 둔갑시킨 것을 고치고 숫자를 한글로 씀"
     },
     {
       "id": "pair-ezk-38-gog-israel",
@@ -7523,7 +8071,9 @@
       "speaker": "곡",
       "target": "이스라엘",
       "ref": "에스겔 38:8–16",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 성벽 없이 평안히 사는 백성을 치겠다는 곡의 악한 계획(38:10-12)과 회복된 이스라엘이 본문과 맞음"
     },
     {
       "id": "pair-ezk-38-allies-gog",
@@ -7531,7 +8081,9 @@
       "speaker": "연합한 나라들",
       "target": "곡",
       "ref": "에스겔 38:5–6",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 본문에 없는 병거 표현을 방패·투구와 연합국 명단(38:5-6)으로 바꿈"
     },
     {
       "id": "pair-ezk-39-gog-israel",
@@ -7539,7 +8091,9 @@
       "speaker": "곡",
       "target": "이스라엘 족속",
       "ref": "에스겔 39:1–8",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 곡이 이스라엘 산에서 엎드러지고 하나님이 거룩한 이름을 알게 하시는 내용(39:1-8)과 맞음"
     },
     {
       "id": "pair-ezk-40-guide-ezekiel",
@@ -7547,7 +8101,9 @@
       "speaker": "놋 같은 사람",
       "target": "에스겔",
       "ref": "에스겔 40:3–4",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 놋 같은 사람이 보고 듣고 마음에 두라, 본 것을 이스라엘 족속에게 전하라 한 말(40:4)과 맞음"
     },
     {
       "id": "pair-ezk-40-ezekiel-israel",
@@ -7555,7 +8111,9 @@
       "speaker": "에스겔",
       "target": "이스라엘 족속",
       "ref": "에스겔 40:4",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 안내자가 에스겔에게 한 말을 에스겔이 백성에게 하는 말로 맞춤"
     },
     {
       "id": "pair-ezk-41-guide-ezekiel",
@@ -7563,7 +8121,9 @@
       "speaker": "측량하는 사람",
       "target": "에스겔",
       "ref": "에스겔 41:1–4",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 본문의 실제 치수(성소 길이 마흔 척, 너비 스무 척, 내전 스무 척)를 반영"
     },
     {
       "id": "pair-ezk-42-guide-ezekiel",
@@ -7571,7 +8131,9 @@
       "speaker": "측량하는 사람",
       "target": "에스겔",
       "ref": "에스겔 42:1–15",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 거룩한 옷 규례는 제사장에게 해당하는 것(42:14)이므로 에스겔에게 하는 명령이 아닌 설명으로 고침"
     },
     {
       "id": "pair-ezk-42-priests-people",
@@ -7579,7 +8141,9 @@
       "speaker": "제사장들",
       "target": "백성",
       "ref": "에스겔 42:13–14",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 지성물을 먹고 두는 방과 거룩한 옷을 두고 백성의 뜰로 나가는 규례(42:13-14)가 본문과 맞고 재구성임이 detail에 밝혀져 있음"
     },
     {
       "id": "pair-ezk-45-israel-rulers",
@@ -7587,7 +8151,9 @@
       "speaker": "이스라엘 족속",
       "target": "이스라엘의 통치자들",
       "ref": "에스겔 45:9–17",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 하나님이 통치자들에게 하신 말씀을 백성이 요청하는 재구성으로 밝히고 에바·밧 저울을 반영"
     },
     {
       "id": "pair-ezk-46-ruler-people",
@@ -7595,7 +8161,9 @@
       "speaker": "왕(군주)",
       "target": "백성",
       "ref": "에스겔 46:16–18",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 군주의 말을 본문 규례(46:16-18)에 맞게 고침"
     },
     {
       "id": "pair-ezk-46-priests-ruler",
@@ -7603,7 +8171,9 @@
       "speaker": "제사장들",
       "target": "왕(군주)",
       "ref": "에스겔 46:1–8",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 군주가 제물을 드린다는 오류를 바로잡음(제사장이 번제와 감사제를 드림, 46:2)"
     },
     {
       "id": "pair-ezk-47-guide-ezekiel",
@@ -7611,7 +8181,9 @@
       "speaker": "측량하는 사람",
       "target": "에스겔",
       "ref": "에스겔 47:3–6",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 천 척씩 재며 발목·무릎·허리·건널 수 없는 강으로 깊어지는 순서(47:3-5)와 안내자의 질문(47:6)에 맞춤"
     },
     {
       "id": "pair-dan-1-ashpenaz-daniel",
@@ -7619,7 +8191,9 @@
       "speaker": "다니엘",
       "target": "아스부나스",
       "ref": "다니엘 1:8–9",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 환관장은 부탁을 바로 들어주지 않고 왕이 두렵다고 답함(1:10). 친구들 포함 요청은 11절 이후이므로 다니엘 본인 요청으로 정리"
     },
     {
       "id": "pair-dan-1-supervisor-daniel",
@@ -7627,7 +8201,9 @@
       "speaker": "감독자",
       "target": "다니엘",
       "ref": "다니엘 1:11–16",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 감독자의 말은 본문에 없고 다니엘의 제안(1:12-13)에 따라 열흘 시험을 받아들임. 질문과 수락 순서로 정리"
     },
     {
       "id": "pair-dan-1-hananiah-daniel",
@@ -7635,7 +8211,9 @@
       "speaker": "사드락",
       "target": "다니엘",
       "ref": "다니엘 1:6–7, 8–16",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 네 친구가 함께한 이름 개명(1:7)과 뜻 정함 장면을 재구성으로 밝힌 대화. 사실 오류 없음"
     },
     {
       "id": "pair-dan-1-mishael-daniel",
@@ -7643,7 +8221,9 @@
       "speaker": "메삭",
       "target": "다니엘",
       "ref": "다니엘 1:6–7, 8–16",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 사건(열흘 시험, 1:12-16)과 맞고 창작임을 밝힘"
     },
     {
       "id": "pair-dan-1-azariah-daniel",
@@ -7651,7 +8231,9 @@
       "speaker": "아벳느고",
       "target": "다니엘",
       "ref": "다니엘 1:6–7, 8–16",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 이름 개명(1:7)과 절제 결심에 맞는 재구성, 오류 없음"
     },
     {
       "id": "pair-dan-2-daniel-nebuchadnezzar",
@@ -7659,7 +8241,9 @@
       "speaker": "다니엘",
       "target": "느부갓네살",
       "ref": "다니엘 2:27–47",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 2:27-28, 2:47과 일치"
     },
     {
       "id": "pair-dan-2-nebuchadnezzar-wise",
@@ -7667,7 +8251,9 @@
       "speaker": "느부갓네살",
       "target": "바벨론 지혜자들",
       "ref": "다니엘 2:5–12",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 2:5-11과 일치"
     },
     {
       "id": "pair-dan-2-arioch-daniel",
@@ -7675,7 +8261,9 @@
       "speaker": "아리옥",
       "target": "다니엘",
       "ref": "다니엘 2:14–16, 24–25",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시간을 청한 것은 왕에게(2:16)이고, 아리옥에게는 지혜자들을 죽이지 말고 왕께 데려가 달라 청함(2:24). 다니엘 질문 '어찌 이리 급하냐'(2:15)로 정리"
     },
     {
       "id": "pair-dan-2-friends-daniel",
@@ -7683,7 +8271,9 @@
       "speaker": "사드락·메삭·아벳느고",
       "target": "다니엘",
       "ref": "다니엘 2:17–19",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 친구들에게 긍휼을 구하자고 한 쪽은 다니엘(2:17-18). 비밀을 밤 환상으로 보이신 뒤 찬양(2:19-20)으로 정리"
     },
     {
       "id": "pair-dan-3-nebuchadnezzar-shadrach",
@@ -7691,7 +8281,9 @@
       "speaker": "느부갓네살",
       "target": "사드락",
       "ref": "다니엘 3:13–18",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 왕의 질문(3:14-15)에 세 사람은 '대답할 필요가 없다'고 답함(3:16). 이미 답했다는 표현 삭제"
     },
     {
       "id": "pair-dan-3-shadrach-meshach",
@@ -7699,7 +8291,9 @@
       "speaker": "사드락",
       "target": "메삭",
       "ref": "다니엘 3:16–18",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 3:16-18 고백과 맞는 재구성, 오류 없음"
     },
     {
       "id": "pair-dan-3-meshach-abednego",
@@ -7707,7 +8301,9 @@
       "speaker": "메삭",
       "target": "아벳느고",
       "ref": "다니엘 3:16–23",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 3:16-23과 맞는 공동 고백의 재구성"
     },
     {
       "id": "pair-dan-3-chaldeans-shadrach",
@@ -7715,7 +8311,9 @@
       "speaker": "갈대아 사람들",
       "target": "사드락",
       "ref": "다니엘 3:8–12",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 3:8-12 고발 내용과 일치"
     },
     {
       "id": "pair-dan-3-fourth-abednego",
@@ -7723,7 +8321,9 @@
       "speaker": "넷째 사람",
       "target": "아벳느고",
       "ref": "다니엘 3:24–25",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 넷째 사람의 말은 본문에 없고 왕이 본 장면(3:24-25)과 하나님이 천사를 보내 건지셨다는 왕의 고백(3:28)만 있음. 말을 천사 보내심 취지로 정리"
     },
     {
       "id": "pair-dan-4-daniel-nebuchadnezzar",
@@ -7731,7 +8331,9 @@
       "speaker": "다니엘(벨드사살)",
       "target": "느부갓네살",
       "ref": "다니엘 4:19–27",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 바벨론 자랑은 열두 달 뒤(4:29-30)이고 즉시 답이 아님. 본문에 없는 자비 문답을 삭제하고 4:19-27 충고 뒤 왕의 반응을 재구성으로 표시"
     },
     {
       "id": "pair-dan-4-watcher-nebuchadnezzar",
@@ -7739,7 +8341,9 @@
       "speaker": "거룩한 순찰자",
       "target": "느부갓네살",
       "ref": "다니엘 4:13–17",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 환상 속 순찰자의 선고(4:13-17)에 왕이 즉시 말로 반박한 기록이 없음. 왕이 두려워한 반응(4:5)과 훗날 깨달음(4:34-37)으로 정리"
     },
     {
       "id": "pair-dan-5-daniel-belshazzar",
@@ -7747,7 +8351,9 @@
       "speaker": "다니엘",
       "target": "벨사살",
       "ref": "다니엘 5:22–28",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 다니엘이 풀기 전 왕의 약속(5:16)과 글을 풀어 준 뒤의 명령(5:29) 순서로 정리. 본문에 없는 '네 말이 두렵다' 삭제"
     },
     {
       "id": "pair-dan-5-queen-daniel",
@@ -7755,7 +8361,9 @@
       "speaker": "왕비",
       "target": "다니엘",
       "ref": "다니엘 5:10–13",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 왕비(왕의 어머니로도 번역됨)의 추천(5:10-12)을 재구성으로 밝힌 대화"
     },
     {
       "id": "pair-dan-6-officials-daniel",
@@ -7763,7 +8371,9 @@
       "speaker": "총리와 고관들",
       "target": "다니엘",
       "ref": "다니엘 6:4–13",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 숫자를 한글로 정리('삼십 일')"
     },
     {
       "id": "pair-dan-6-darius-daniel",
@@ -7771,7 +8381,9 @@
       "speaker": "다리오",
       "target": "다니엘",
       "ref": "다니엘 6:14–20",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 왕의 말은 '네 하나님이 너를 구원하시리라'(6:16)와 새벽에 부른 질문(6:19-20)으로 정리"
     },
     {
       "id": "pair-dan-6-angel-daniel",
@@ -7779,7 +8391,9 @@
       "speaker": "천사",
       "target": "다니엘",
       "ref": "다니엘 6:22",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 천사의 말은 본문에 기록되지 않아 재구성임을 밝힘"
     },
     {
       "id": "pair-dan-6-darius-officials",
@@ -7787,7 +8401,9 @@
       "speaker": "다리오",
       "target": "총리와 고관들",
       "ref": "다니엘 6:24",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 왕은 참소한 자들을 처자와 함께 사자 굴에 던지게 함(6:24). 본문에 없는 관리들의 답변을 재구성으로 밝히고 판결 중심으로 정리"
     },
     {
       "id": "pair-dan-7-angel-daniel",
@@ -7795,7 +8411,9 @@
       "speaker": "천사",
       "target": "다니엘",
       "ref": "다니엘 7:15–18",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 다니엘이 먼저 근심하며 뜻을 묻고 천사가 해석(7:15-18)하는 순서로 정리"
     },
     {
       "id": "pair-dan-8-gabriel-daniel",
@@ -7803,7 +8421,9 @@
       "speaker": "가브리엘",
       "target": "다니엘",
       "ref": "다니엘 8:15–19",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 환상의 뜻은 '정한 때 끝에 관한 것'(8:17,19)"
     },
     {
       "id": "pair-dan-9-gabriel-daniel",
@@ -7811,7 +8431,9 @@
       "speaker": "가브리엘",
       "target": "다니엘",
       "ref": "다니엘 9:20–23",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 다니엘이 묵상한 것은 예레미야에게 이르신 칠십 년(9:2). 칠십 이레는 가브리엘의 풀이이므로 기도 내용 정정"
     },
     {
       "id": "pair-dan-10-linen-daniel",
@@ -7819,7 +8441,9 @@
       "speaker": "세마포 입은 이",
       "target": "다니엘",
       "ref": "다니엘 10:10–12, 18–19",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 10:10-12, 18-19과 일치"
     },
     {
       "id": "pair-dan-10-persia-prince-linen",
@@ -7827,7 +8451,9 @@
       "speaker": "바사 왕국의 군주",
       "target": "세마포 입은 이",
       "ref": "다니엘 10:12–14",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 숫자를 한글로 정리('이십일 일', 10:13)"
     },
     {
       "id": "pair-dan-10-michael-linen",
@@ -7835,7 +8461,9 @@
       "speaker": "미가엘",
       "target": "세마포 입은 이",
       "ref": "다니엘 10:13, 20–21",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 미가엘의 말은 본문에 없어 재구성임을 밝힘"
     },
     {
       "id": "pair-dan-11-south-north",
@@ -7843,7 +8471,9 @@
       "speaker": "남방 왕",
       "target": "북방 왕",
       "ref": "다니엘 11:5–15",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 남방 왕이 남쪽으로 군대를 이끈다는 방향 오류. 11:7 남방 왕가의 후손이 북방 군대를 침과 11:9-10 북방 왕의 침공과 후퇴로 정리"
     },
     {
       "id": "pair-dan-11-wicked-king-faithful",
@@ -7851,7 +8481,9 @@
       "speaker": "비천한 왕",
       "target": "하나님을 아는 백성",
       "ref": "다니엘 11:21, 31–32",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 11:21, 31-32와 일치하는 재구성"
     },
     {
       "id": "pair-dan-11-wise-faithful",
@@ -7859,7 +8491,9 @@
       "speaker": "지혜로운 자",
       "target": "하나님을 아는 백성",
       "ref": "다니엘 11:32–35",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 11:32-35와 일치하는 재구성"
     },
     {
       "id": "pair-dan-11-angel-daniel",
@@ -7867,7 +8501,9 @@
       "speaker": "천사",
       "target": "다니엘",
       "ref": "다니엘 11:2–4",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 11:2은 바사에서 세 왕 뒤 넷째가 헬라를 침, 11:3-4는 능력 있는 왕과 나라가 넷으로 나뉨. 순서 정정"
     },
     {
       "id": "pair-dan-12-michael-people",
@@ -7875,7 +8511,9 @@
       "speaker": "미가엘",
       "target": "책에 기록된 백성",
       "ref": "다니엘 12:1",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 12:1 보호와 구원 약속에 맞는 재구성(미가엘의 직접 발언은 본문에 없음을 detail에 보완)"
     },
     {
       "id": "pair-dan-12-wise-people",
@@ -7883,7 +8521,9 @@
       "speaker": "지혜 있는 자",
       "target": "책에 기록된 백성",
       "ref": "다니엘 12:3",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 12:3과 일치하는 재구성"
     },
     {
       "id": "pair-dan-12-linen-daniel",
@@ -7891,7 +8531,9 @@
       "speaker": "세마포 입은 이",
       "target": "다니엘",
       "ref": "다니엘 12:7–13",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 12:7-13과 일치"
     },
     {
       "id": "pair-hos-1-hosea-gomer",
@@ -8069,7 +8711,9 @@
       "speaker": "이스라엘 족속",
       "target": "성문에서 책망하는 자",
       "ref": "아모스 5:10, 13–15",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 5:10은 무리가 책망하는 자를 미워함, 5:13은 이런 때에 지혜자가 잠잠함, 5:14는 살려면 선을 구하라. 입을 막았다는 본문에 없는 표현을 정리"
     },
     {
       "id": "pair-amo-6-leaders-joseph",
@@ -8087,7 +8731,9 @@
       "speaker": "아모스",
       "target": "요셉(이스라엘)",
       "ref": "아모스 6:13–14",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 6:13-14와 일치, 응답은 재구성으로 밝힘"
     },
     {
       "id": "pair-amo-7-amaziah-amos",
@@ -8345,7 +8991,9 @@
       "speaker": "니느웨 사람들",
       "target": "피해를 입은 나라들",
       "ref": "나훔 3:4, 19",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 예언의 내용과 화자(하나님의 선언)·반응의 예고를 본문에 맞게 교정"
     },
     {
       "id": "pair-nam-3-assyrian-king-nineveh",
@@ -8523,7 +9171,9 @@
       "speaker": "나다나엘",
       "target": "예수",
       "ref": "요한복음 1:46–49",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: '와서 보라'는 빌립의 말이라 예수님 답에서 제거하고 1:47-50 순서(무화과나무 아래 봄, 고백, 더 큰 일)로 맞춤"
     },
     {
       "id": "encounter-jhn-3",
@@ -8531,7 +9181,9 @@
       "speaker": "니고데모",
       "target": "예수",
       "ref": "요한복음 3:2–8",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 예수님의 답에 빠진 '물과 성령' 말씀(3:5-6)을 넣고 개역개정 취지로 정리"
     },
     {
       "id": "encounter-jhn-4",
@@ -8539,7 +9191,9 @@
       "speaker": "사마리아 여자",
       "target": "예수",
       "ref": "요한복음 4:9–26",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 예수님의 답을 4:10, 13-14 본문 취지에 맞게 정확히 정리"
     },
     {
       "id": "encounter-jhn-9",
@@ -8547,7 +9201,9 @@
       "speaker": "날 때부터 맹인 된 사람",
       "target": "바리새인",
       "ref": "요한복음 9:24–34",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 숫자 표기('1가지')를 한글로 고침, 나머지는 9:24-34와 일치"
     },
     {
       "id": "encounter-jhn-13",
@@ -8555,7 +9211,9 @@
       "speaker": "시몬 베드로",
       "target": "예수",
       "ref": "요한복음 13:6–10, 36–38",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 숫자 표기('3번')를 한글로, 예수님의 답을 13:38 본문 취지에 맞춤"
     },
     {
       "id": "encounter-jhn-20",
@@ -8563,7 +9221,9 @@
       "speaker": "도마",
       "target": "예수",
       "ref": "요한복음 20:25–29",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 예수님이 옆구리에 넣어 보라고 하신 말씀(20:27) 반영, 도마의 조건도 본문대로"
     },
     {
       "id": "encounter-jhn-21",
@@ -8571,7 +9231,9 @@
       "speaker": "예수",
       "target": "시몬 베드로",
       "ref": "요한복음 21:15–19",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 둘째 답이 셋째 질문('근심하여' 답한 것)에 대한 것이라 짝이 맞게 질문을 세 번째로 바꿈"
     },
     {
       "id": "encounter-act-9",
@@ -8579,7 +9241,9 @@
       "speaker": "아나니아",
       "target": "사울",
       "ref": "사도행전 9:17–18",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 사울이 '나를 보내셨군요'라 답한 부분은 본문에 없고 어색해, 눈이 열리고 세례받은 본문(9:18) 행동으로 재구성"
     },
     {
       "id": "encounter-act-10",
@@ -8587,7 +9251,9 @@
       "speaker": "고넬료",
       "target": "베드로",
       "ref": "사도행전 10:25–29",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 베드로가 고넬료를 일으켜 '나도 사람'이라 한 본문(10:25-29) 반영, 고넬료의 말은 기록된 행동(엎드려 절함, 친족을 모음)에 맞춰 재구성"
     },
     {
       "id": "encounter-act-16",
@@ -8595,7 +9261,9 @@
       "speaker": "간수",
       "target": "바울",
       "ref": "사도행전 16:30–32",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 간수의 물음과 바울과 실라의 답(16:30-32)이 본문과 일치"
     },
     {
       "id": "encounter-act-26",
@@ -8603,7 +9271,9 @@
       "speaker": "아그립바",
       "target": "바울",
       "ref": "사도행전 26:28–29",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 바울의 답에서 빠진 '결박된 것 외에는'과 '하나님께 원하나이다'(26:29)를 본문대로 반영"
     },
     {
       "id": "pair-2ki-25-nebuchadnezzar-gedaliah",
@@ -8611,7 +9281,9 @@
       "speaker": "느부갓네살",
       "target": "그달리야",
       "ref": "열왕기하 25:22–24",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 열왕기하 25:22-24의 총독 임명과 그달리야의 안심 권면을 두 역본과 대조했고, 직접 대화가 없다는 점이 설명문에 밝혀져 있음"
     }
   ]
 }

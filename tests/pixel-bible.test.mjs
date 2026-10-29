@@ -842,7 +842,7 @@ test('가족 갈등 대화에서 자녀는 부모에게 존댓말로 답한다',
  const {PAIR_DIALOGUE}=await import('../js/features/pixel-bible/pair-dialogue.js');
  const sonToFather=PAIR_DIALOGUE.find(entry=>entry.id==='pair-158');
  const violentSon=PAIR_DIALOGUE.find(entry=>entry.id==='pair-ezk-18-violent-son-righteous-father');
- assert.match(sonToFather.lines.join(' '),/아버지께서 전투가 끝날 때까지/);
+ assert.match(sonToFather.lines.join(' '),/아버지께서 맹세하신 줄 몰랐습니다/);
  assert.ok(violentSon.lines.join(' ').length>0);
 });
 

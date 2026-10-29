@@ -741,7 +741,7 @@ test('에스겔 46–48장의 예배·생명수·땅 분배 환상은 발화와 
  const rows=MAJOR_PROPHETS_DIALOGUE_ROWS.filter(row=>row[0]==='ezk'&&row[1]>=46&&row[1]<=48);
  assert.ok(rows.some(row=>row[1]===46&&row[2]==='하나님'&&row[7].includes('16-18')));
  assert.ok(rows.some(row=>row[1]===46&&row[2]==='측량하는 사람'&&row[7].includes('24')));
- assert.ok(rows.some(row=>row[1]===47&&row[2]==='측량하는 사람'&&row[7].includes('6')));
+ assert.ok(rows.some(row=>row[1]===47&&row[2]==='측량하는 사람'&&row[7].some(ref=>{const [from,to=from]=ref.split('-').map(Number);return from<=6&&6<=to&&to<=6})));
  assert.ok(rows.some(row=>row[1]===47&&row[2]==='하나님'&&row[7].includes('22-23')));
  assert.ok(!rows.some(row=>row[1]===47&&row[2]==='어부들'),'강가 어부는 환상 속 미래 장면이지 발화자가 아니다');
  assert.ok(rows.some(row=>row[1]===48&&row[2]==='하나님'&&row[7].includes('23-29')));

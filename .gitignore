@@ -5,3 +5,4 @@ tools/commentary/.bible-cache/
 # Offline Python reference tooling
 __pycache__/
 *.py[cod]
+docs/.pair-review.lock
