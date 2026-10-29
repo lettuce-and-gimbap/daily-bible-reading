@@ -8,7 +8,7 @@ export const OBJECT_SCENES=[
  {id:'aaron-manna',code:'exo',chapter:16,title:'만나를 담은 항아리',actors:['아론'],object:'water',ref:'출애굽기 16:32–34',lines:['모세가 전한 말씀에 따라 아론은 항아리에 만나 한 오멜을 담습니다.','후손들이 광야에서 주신 양식을 기억하도록 간직합니다.']},
  {id:'david-stones',code:'1sa',chapter:17,title:'5개의 매끄러운 돌',actors:['다윗'],object:'stone',ref:'사무엘상 17:40',lines:['다윗은 시내에서 매끄러운 돌 5개를 고릅니다.','돌들을 주머니에 넣고 물매를 들고 나아갑니다.']},
  {id:'widow-water',actions:{"사르밧 과부":"water"},code:'1ki',chapter:17,title:'사르밧의 물과 양식',actors:['사르밧 과부','엘리야'],object:'water',ref:'열왕기상 17:10–16',lines:['엘리야가 사르밧 여인에게 물과 떡을 요청합니다.','여인은 엘리야가 전한 여호와의 말씀대로 준비합니다. 비가 내릴 때까지 가루와 기름이 떨어지지 않으리라는 약속대로 여러 날 양식을 먹습니다.']},
- {id:'widow-oil',code:'2ki',chapter:4,title:'빈 그릇에 붓는 기름',actors:['선지자 제자의 아내'],object:'oil',ref:'열왕기하 4:1–7',lines:['여인은 엘리사의 말을 따라 이웃에게 빈 그릇들을 빌립니다.','2 아들과 문을 닫고 그릇에 기름을 붓습니다. 그릇이 없자 기름이 멈추고, 엘리사는 기름을 팔아 빚을 갚고 남은 것으로 살라고 말합니다.']},
+ {id:'widow-oil',code:'2ki',chapter:4,title:'빈 그릇에 붓는 기름',actors:['선지자 제자의 아내'],object:'oil',ref:'열왕기하 4:1–7',lines:['여인은 엘리사의 말을 따라 이웃에게 빈 그릇들을 빌립니다.','두 아들과 문을 닫고 그릇에 기름을 붓습니다. 그릇이 없자 기름이 멈추고, 엘리사는 기름을 팔아 빚을 갚고 남은 것으로 살라고 말합니다.']},
  {id:'josiah-scroll',actions:{},code:'2ki',chapter:22,title:'율법책을 듣는 요시야',actors:['요시야'],object:'scroll',ref:'열왕기하 22:8–13',lines:['힐기야가 성전에서 발견한 율법책을 서기관 사반이 요시야 앞에서 읽습니다.','왕은 옷을 찢고 그 말씀에 관해 여호와께 묻게 합니다.']},
  {id:'baruch-scroll',code:'jer',chapter:36,title:'두루마리에 기록하는 바룩',actors:['바룩'],object:'scroll',ref:'예레미야 36:4–8',lines:['바룩은 예레미야가 불러 주는 여호와의 말씀을 두루마리에 기록합니다.','성전에 갈 수 없는 예레미야의 부탁을 받아, 금식일에 모인 백성에게 말씀을 읽어 줍니다.']},
  {id:'jesus-boat',actions:{},code:'mrk',chapter:4,title:'풍랑 속의 배',actors:['예수','제자들'],object:'boat',ref:'마가복음 4:35–41',lines:['배에 물이 들어오자 제자들이 주무시는 예수님을 깨웁니다.','예수님이 바람과 바다를 꾸짖으시자 아주 잔잔해집니다.']},

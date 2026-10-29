@@ -81,9 +81,9 @@
       "id": "ot-ecc-12-2",
       "code": "ecc",
       "chapter": 12,
-      "title": "1 목자가 주신 말씀",
+      "title": "한 목자가 주신 말씀",
       "actors": [
-        "1 목자"
+        "한 목자"
       ],
       "object": "book",
       "ref": "전도서 12:9-12",
@@ -104,7 +104,7 @@
       "animation": {
         "version": 2,
         "motif": "symbolic",
-        "lead": "1 목자",
+        "lead": "한 목자",
         "target": null,
         "mode": "illustration",
         "setting": "vision",
@@ -115,32 +115,32 @@
           {
             "action": "listen",
             "duration": 1,
-            "actor": "1 목자"
+            "actor": "한 목자"
           },
           {
             "action": "read",
             "duration": 1.2,
-            "actor": "1 목자"
+            "actor": "한 목자"
           },
           {
             "action": "look",
             "duration": 1.5,
-            "actor": "1 목자"
+            "actor": "한 목자"
           },
           {
             "action": "point",
             "duration": 1.8,
-            "actor": "1 목자"
+            "actor": "한 목자"
           },
           {
             "action": "listen",
             "duration": 1.5,
-            "actor": "1 목자"
+            "actor": "한 목자"
           },
           {
             "action": "bow",
             "duration": 1.2,
-            "actor": "1 목자"
+            "actor": "한 목자"
           }
         ],
         "duration": 8.2,
@@ -321,7 +321,7 @@
         "전도자",
         "학대받는 자",
         "학대하는 자",
-        "함께하는 2 사람"
+        "함께하는 두 사람"
       ],
       "object": "scene-marker",
       "ref": "전도서 4:1-12",
@@ -786,7 +786,7 @@
       "actors": [
         "전도자",
         "청년",
-        "1 목자"
+        "한 목자"
       ],
       "object": "scene-marker",
       "ref": "전도서 12:1-8",

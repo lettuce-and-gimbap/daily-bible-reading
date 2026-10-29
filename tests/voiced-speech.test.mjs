@@ -789,7 +789,7 @@ test('다니엘 7–12장의 환상 문답과 예언 해석을 실제 발화자 
  assert.ok(rows.some(row=>row[1]===9&&row[2]==='가브리엘'&&row[7].includes('24-27')));
  assert.ok(rows.some(row=>row[1]===10&&row[2]==='다니엘'&&row[7].includes('16-17')));
  assert.ok(rows.some(row=>row[1]===11&&row[2]==='천사'&&row[7].includes('21-35')));
- assert.ok(rows.some(row=>row[1]===12&&row[2]==='1 천사'&&row[7].includes('6')));
+ assert.ok(rows.some(row=>row[1]===12&&row[2]==='한 천사'&&row[7].includes('6')));
  assert.ok(rows.some(row=>row[1]===12&&row[2]==='다니엘'&&row[7].includes('8')));
  assert.ok(!rows.some(row=>row[1]===12&&row[2]==='미가엘'),'미가엘의 등장은 서술이며 직접 발화가 아니다');
  for(const row of rows){

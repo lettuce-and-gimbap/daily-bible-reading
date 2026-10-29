@@ -134,7 +134,7 @@ test('요한계시록 1–5장의 증언·환상·찬양을 실제 화자에게 
  assert.deepEqual(row(1,'예수')[6],['17-18','19']);
  assert.deepEqual(row(4,'네 생물')[6],['8']);
  assert.deepEqual(row(4,'24 장로')[6],['10-11']);
- assert.deepEqual(row(5,'장로 중 1 사람')[6],['5']);
+ assert.deepEqual(row(5,'장로 중 한 사람')[6],['5']);
  assert.deepEqual(row(5,'힘 있는 천사')[6],['2']);
  assert.deepEqual(row(5,'수많은 천사')[6],['11-12']);
  assert.deepEqual(row(5,'네 생물')[6],['14']);

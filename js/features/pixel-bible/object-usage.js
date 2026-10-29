@@ -22,35 +22,35 @@ bind('key',options(['unlock','열쇠 꽂아 돌리기'],['turn-key','반대로 �
 bind('seal signet',options(['stamp','인장 꾹 누르기'],['lift-seal','인장을 들어 자국 확인하기'],['roll-seal','인장을 굴려 찍기'],['inspect','새겨진 문양 보기'],['wipe','인장 면 닦기'],['place','인장 내려놓기']));
 bind('scale',options(['weigh','양쪽 접시에 물건 놓기'],['balance','저울 균형 맞추기'],['remove-weight','추 하나 들어 빼기'],['count','추 세어 보기'],['wipe','접시 닦기'],['inspect','수평 확인하기']));
 bind('pen ink',options(['write','붓으로 글 쓰기'],['dip','붓끝에 먹 묻히기'],['trace','글줄 따라 쓰기'],['wipe','붓끝 닦기'],['inspect','붓끝 살피기'],['place','붓 내려놓기']));
-bind('dough leaven flour',options(['knead','2 손으로 반죽 주무르기'],['press','손바닥으로 누르기'],['fold','반죽 접어 모으기'],['sprinkle','가루 조금 뿌리기'],['portion','작게 나누기'],['cover','천으로 덮기']));
-bind('honey milk wine',options(['drink','잔에 담아 마시기'],['pour','잔에 따르기'],['offer','잔 내밀어 나누기'],['cap','마개 열기'],['hold','그릇 2 손으로 받치기'],['wipe','그릇 가장자리 닦기']));
-bind('incense myrrh perfume censer',options(['waft','향을 가볍게 맡기'],['pour','조금 덜어 내기'],['cap','마개 열기'],['offer','2 손으로 받쳐 내밀기'],['wipe','그릇 닦기'],['inspect','내용물 살피기']));
+bind('dough leaven flour',options(['knead','두 손으로 반죽 주무르기'],['press','손바닥으로 누르기'],['fold','반죽 접어 모으기'],['sprinkle','가루 조금 뿌리기'],['portion','작게 나누기'],['cover','천으로 덮기']));
+bind('honey milk wine',options(['drink','잔에 담아 마시기'],['pour','잔에 따르기'],['offer','잔 내밀어 나누기'],['cap','마개 열기'],['hold','그릇 두 손으로 받치기'],['wipe','그릇 가장자리 닦기']));
+bind('incense myrrh perfume censer',options(['waft','향을 가볍게 맡기'],['pour','조금 덜어 내기'],['cap','마개 열기'],['offer','두 손으로 받쳐 내밀기'],['wipe','그릇 닦기'],['inspect','내용물 살피기']));
 bind('fire oven',options(['warm','안전한 거리에서 손 녹이기'],['fan','가볍게 부채질하기'],['tend','긴 막대로 불 살피기'],['step-back','열기에서 물러서기'],['observe','불길 지켜보기'],['shield','손으로 얼굴 앞 열 가리기']));
-bind('water well water-supply jar pitcher basin bowl cup',options(['scoop','그릇으로 물 떠 올리기'],['drink','잔을 입에 대고 물 마시기'],['sip','2 손으로 잔을 받쳐 천천히 마시기'],['pour','잔에 물 따르기'],['wash','물을 떠 손 씻기'],['fill','빈 그릇에 물 채우기']));
+bind('water well water-supply jar pitcher basin bowl cup',options(['scoop','그릇으로 물 떠 올리기'],['drink','잔을 입에 대고 물 마시기'],['sip','두 손으로 잔을 받쳐 천천히 마시기'],['pour','잔에 물 따르기'],['wash','물을 떠 손 씻기'],['fill','빈 그릇에 물 채우기']));
 // 물은 담는 그릇과 길어 올리는 시설의 쓰임이 다르므로 실제 동작을 나눈다.
 OBJECT_USAGE.well=options(['bucket','두레박을 우물에 내리기'],['rope','줄을 당겨 두레박 올리기'],['scoop','길어 온 물을 그릇에 받기'],['pour','물동이에 물 옮기기'],['inspect','우물 안을 들여다보기'],['lower-rope','두레박을 천천히 내려 주기']);
 OBJECT_USAGE.basin=options(['wash','대야 물로 손 씻기'],['rinse','손에 물을 끼얹어 헹구기'],['fill','대야에 물 붓기'],['pour','사용한 물 비우기'],['scoop','손으로 물 떠 보기'],['wipe','대야 가장자리 닦기']);
-OBJECT_USAGE.bowl=options(['drink','그릇을 들어 마시기'],['sip','2 손으로 받쳐 조금씩 마시기'],['scoop','물을 떠 옮기기'],['pour','다른 그릇에 나누어 붓기'],['wash','손끝을 씻기'],['fill','그릇에 물 채우기']);
-OBJECT_USAGE.cup=options(['drink','잔을 들어 물 마시기'],['sip','잔을 2 손으로 받쳐 마시기'],['offer','잔을 다른 이에게 내밀기'],['pour','잔에 물 따르기'],['fill','빈 잔 채우기'],['wipe','잔 가장자리 닦기']);
-OBJECT_USAGE.jar=options(['fill','항아리에 물 담기'],['pour','항아리 물을 그릇에 붓기'],['hold','항아리를 2 손으로 받치기'],['carry','항아리를 옮기기'],['cap','항아리 입구 덮기'],['wipe','항아리 겉면 닦기']);
+OBJECT_USAGE.bowl=options(['drink','그릇을 들어 마시기'],['sip','두 손으로 받쳐 조금씩 마시기'],['scoop','물을 떠 옮기기'],['pour','다른 그릇에 나누어 붓기'],['wash','손끝을 씻기'],['fill','그릇에 물 채우기']);
+OBJECT_USAGE.cup=options(['drink','잔을 들어 물 마시기'],['sip','잔을 두 손으로 받쳐 마시기'],['offer','잔을 다른 이에게 내밀기'],['pour','잔에 물 따르기'],['fill','빈 잔 채우기'],['wipe','잔 가장자리 닦기']);
+OBJECT_USAGE.jar=options(['fill','항아리에 물 담기'],['pour','항아리 물을 그릇에 붓기'],['hold','항아리를 두 손으로 받치기'],['carry','항아리를 옮기기'],['cap','항아리 입구 덮기'],['wipe','항아리 겉면 닦기']);
 OBJECT_USAGE.pitcher=options(['pour','주전자 물을 잔에 따르기'],['fill','주전자에 물 채우기'],['hold','손잡이를 잡고 받치기'],['offer','물을 담아 내밀기'],['cap','주전자 입구 덮기'],['wipe','주전자 입구 닦기']);
 OBJECT_USAGE['water-supply']=options(['fill','그릇에 물을 담기'],['pour','물을 필요한 곳에 붓기'],['offer','물을 건네기'],['hold','물그릇을 받쳐 들기'],['drink','물을 마시기'],['wash','물로 손을 씻기']);
 OBJECT_USAGE.oven=options(['tend','긴 도구로 화덕 살피기'],['fan','불길에 바람 보내기'],['place','빵을 화덕에 넣기'],['take-bread','익은 빵 꺼내기'],['warm','불 가까이 손 녹이기'],['inspect','화덕 안 열기 살피기']);
 bind('sandal',options(['wear','발을 굽혀 신발 신기'],['remove','발을 굽혀 신발 벗기'],['tie','신 끈 묶기'],['wipe','신발 밑창 닦기'],['inspect','밑창 살피기'],['place','신발 가지런히 놓기']));
-bind('crown helmet',options(['wear','머리에 맞춰 쓰기'],['remove','머리에서 벗기'],['smooth','머리에 고쳐 쓰기'],['polish','겉면 닦기'],['hold','2 손으로 받쳐 들기'],['offer','2 손으로 내밀기']));
-bind('belt breastplate',options(['wear','몸에 맞춰 매기'],['remove','매듭 풀어 벗기'],['smooth','위치 고쳐 매기'],['polish','겉면 닦기'],['hold','2 손으로 받치기'],['offer','건네기']));
+bind('crown helmet',options(['wear','머리에 맞춰 쓰기'],['remove','머리에서 벗기'],['smooth','머리에 고쳐 쓰기'],['polish','겉면 닦기'],['hold','두 손으로 받쳐 들기'],['offer','두 손으로 내밀기']));
+bind('belt breastplate',options(['wear','몸에 맞춰 매기'],['remove','매듭 풀어 벗기'],['smooth','위치 고쳐 매기'],['polish','겉면 닦기'],['hold','두 손으로 받치기'],['offer','건네기']));
 bind('veil curtain sail',options(['spread','천을 양옆으로 펼치기'],['pull','천 아래쪽 당기기'],['smooth','주름 펴기'],['tie','천 끝 묶기'],['measure','너비 가늠하기'],['step-back','1걸음 물러서 보기']));
 bind('anchor wheel',options(['grip','양손으로 단단히 잡기'],['pull','몸 기울여 당기기'],['turn','테두리 돌려 살피기'],['repair','연결 부위 고치기'],['wipe','표면 닦기'],['step-back','물러서 살펴보기']));
 bind('rainbow star cloud bronze-snake cross',options(['look','고개 들어 바라보기'],['point','손으로 가리키기'],['observe','서서 지켜보기'],['hands','손 모아 바라보기'],['bow','고개 숙이기'],['step-back','물러서 바라보기']));
 bind('seed mustard',options(['sow','손을 벌려 씨 뿌리기'],['sprinkle','씨 조금씩 흩뿌리기'],['count','손바닥에서 씨 세기'],['sort','씨 골라 내기'],['gather','씨앗 주워 담기'],['offer','손바닥에 씨 내밀기']));
-bind('grapes vineyard',options(['gather','포도송이 따기'],['bundle','딴 포도 모으기'],['inspect','익은 포도 살피기'],['hold','송이 2 손으로 받치기'],['offer','포도송이 내밀기'],['place','바구니에 송이 놓기']));
-bind('tomb stone-pillar',options(['look','돌 앞에 서서 보기'],['inspect','새겨진 흔적 살피기'],['hands','2 손 모아 서기'],['bow','조용히 고개 숙이기'],['point','돌을 가리키기'],['step-back','1걸음 물러서기']));
+bind('grapes vineyard',options(['gather','포도송이 따기'],['bundle','딴 포도 모으기'],['inspect','익은 포도 살피기'],['hold','송이 두 손으로 받치기'],['offer','포도송이 내밀기'],['place','바구니에 송이 놓기']));
+bind('tomb stone-pillar',options(['look','돌 앞에 서서 보기'],['inspect','새겨진 흔적 살피기'],['hands','두 손 모아 서기'],['bow','조용히 고개 숙이기'],['point','돌을 가리키기'],['step-back','1걸음 물러서기']));
 
 OBJECT_USAGE.honey=options(['taste','손끝으로 꿀 맛보기'],['pour','꿀 조금 덜기'],['offer','꿀 그릇 내밀기'],['cap','마개 열기'],['close','마개 닫기'],['wipe','그릇 가장자리 닦기']);
 OBJECT_USAGE.cedar=options(['shade','그늘에서 쉬기'],['leaves','잎 살피기'],['trunk','줄기에 손 대기'],['inspect','나무껍질 살피기'],['look','위로 올려다보기'],['step-back','1걸음 물러서기']);
 
 bind('salt-bowl flour-bowl',options(['sprinkle','조금씩 뿌려 넣기'],['pour','기울여 덜어 내기'],['offer','그릇 내밀기'],['hold','양손으로 받치기'],['wipe','가장자리 닦기'],['place','조심히 내려놓기']));
 bind('fig-poultice',options(['place','반죽을 상처 위에 올리기'],['press','천 위를 가볍게 누르기'],['wrap','천으로 감싸기'],['inspect','반죽 상태 살피기'],['offer','반죽 건네기'],['hold','천을 받쳐 들기']));
-bind('alabaster-jar oil-vessel',options(['cap','마개 열기'],['pour','그릇을 기울여 따르기'],['hold','그릇 받쳐 들기'],['offer','2 손으로 건네기'],['wipe','입구 닦기'],['place','그릇 내려놓기']));
-bind('reed-basket',options(['hold','상자를 2 손으로 받치기'],['cover','덮개를 조심히 덮기'],['inspect','엮인 부분 살피기'],['repair','갈대 틈 다듬기'],['place','물가에 조심히 놓기'],['offer','상자를 건네기']));
+bind('alabaster-jar oil-vessel',options(['cap','마개 열기'],['pour','그릇을 기울여 따르기'],['hold','그릇 받쳐 들기'],['offer','두 손으로 건네기'],['wipe','입구 닦기'],['place','그릇 내려놓기']));
+bind('reed-basket',options(['hold','상자를 두 손으로 받치기'],['cover','덮개를 조심히 덮기'],['inspect','엮인 부분 살피기'],['repair','갈대 틈 다듬기'],['place','물가에 조심히 놓기'],['offer','상자를 건네기']));
 bind('writing-tablet',options(['write','판에 글씨 쓰기'],['trace','새긴 글줄 따라가기'],['inspect','기록한 내용 살피기'],['wipe','판 표면 고르기'],['offer','판을 내밀어 보여 주기'],['hold','판을 받쳐 들기']));

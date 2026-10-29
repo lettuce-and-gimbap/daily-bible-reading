@@ -46,7 +46,7 @@
         {"name":"부자","role":"좋은 자리를 받은 이","weight":2},
         {"name":"가난한 사람","role":"업신여김받은 이","weight":2},
         {"name":"아브라함","role":"이삭을 바친 조상","weight":2},
-        {"name":"이삭","role":"아버지가 제물로 바치려 1 아들","weight":1},
+        {"name":"이삭","role":"아버지가 제물로 바치려 한 아들","weight":1},
         {"name":"라합","role":"사자들을 접대한 기생","weight":2},
         {"name":"예수","role":"영광의 주","weight":1},
         {"name":"하나님","role":"가난한 자를 택하신 분","weight":2}

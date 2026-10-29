@@ -2448,7 +2448,7 @@
     {
       "id": "pair-ecc-12-shepherd-preacher",
       "chapter": "ecc.12",
-      "speaker": "1 목자",
+      "speaker": "한 목자",
       "target": "전도자",
       "ref": "전도서 12:9–14",
       "status": "source-reviewed",
@@ -3169,7 +3169,7 @@
       "id": "pair-job-12-job-friends",
       "chapter": "job.12",
       "speaker": "욥",
-      "target": "3 친구",
+      "target": "세 친구",
       "ref": "욥기 12:2–3, 13–25",
       "status": "source-reviewed",
       "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
@@ -3179,7 +3179,7 @@
       "id": "pair-job-13-job-friends",
       "chapter": "job.13",
       "speaker": "욥",
-      "target": "3 친구",
+      "target": "세 친구",
       "ref": "욥기 13:4–12",
       "status": "source-reviewed",
       "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
@@ -3199,7 +3199,7 @@
       "id": "pair-job-16-job-friends",
       "chapter": "job.16",
       "speaker": "욥",
-      "target": "3 친구",
+      "target": "세 친구",
       "ref": "욥기 16:2–5",
       "status": "source-reviewed",
       "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
@@ -3209,7 +3209,7 @@
       "id": "pair-job-17-job-friends",
       "chapter": "job.17",
       "speaker": "욥",
-      "target": "3 친구",
+      "target": "세 친구",
       "ref": "욥기 17:1–10",
       "status": "source-reviewed",
       "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
@@ -3229,7 +3229,7 @@
       "id": "pair-job-19-job-friends",
       "chapter": "job.19",
       "speaker": "욥",
-      "target": "3 친구",
+      "target": "세 친구",
       "ref": "욥기 19:21–22",
       "status": "source-reviewed",
       "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
@@ -3249,7 +3249,7 @@
       "id": "pair-job-21-job-friends",
       "chapter": "job.21",
       "speaker": "욥",
-      "target": "3 친구",
+      "target": "세 친구",
       "ref": "욥기 21:2–7, 34",
       "status": "source-reviewed",
       "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
@@ -3289,7 +3289,7 @@
       "id": "pair-job-27-job-friends",
       "chapter": "job.27",
       "speaker": "욥",
-      "target": "3 친구",
+      "target": "세 친구",
       "ref": "욥기 27:2–6",
       "status": "source-reviewed",
       "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
@@ -3309,7 +3309,7 @@
       "id": "pair-job-32-elihu-friends",
       "chapter": "job.32",
       "speaker": "엘리후",
-      "target": "3 친구",
+      "target": "세 친구",
       "ref": "욥기 32:3–5, 11–14",
       "status": "source-reviewed",
       "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
@@ -4309,7 +4309,7 @@
       "id": "pair-95",
       "chapter": "gen.19",
       "speaker": "롯",
-      "target": "2 천사",
+      "target": "두 천사",
       "ref": "창세기 19:15–22",
       "status": "source-reviewed",
       "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
@@ -5169,11 +5169,11 @@
       "id": "pair-181",
       "chapter": "1ki.3",
       "speaker": "솔로몬",
-      "target": "2 여인",
+      "target": "두 여인",
       "ref": "열왕기상 3:16–28",
       "status": "source-reviewed",
       "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
-      "result": "수정: 숫자 표기('1 여인') 제거, 진짜 어머니의 말과 다른 여인의 말(3:26)을 본문대로 바로잡음"
+      "result": "수정: 숫자 표기('한 여인') 제거, 진짜 어머니의 말과 다른 여인의 말(3:26)을 본문대로 바로잡음"
     },
     {
       "id": "pair-182",
@@ -5293,7 +5293,7 @@
       "ref": "열왕기하 3:11–19",
       "status": "source-reviewed",
       "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
-      "result": "수정: 숫자 '3 왕'을 '세 왕'으로, 여호사밧의 요청과 엘리사의 답(3:13-18: 도랑을 파라)을 본문에 맞춤"
+      "result": "수정: 숫자 '세 왕'을 '세 왕'으로, 여호사밧의 요청과 엘리사의 답(3:13-18: 도랑을 파라)을 본문에 맞춤"
     },
     {
       "id": "pair-194",
@@ -5373,7 +5373,7 @@
       "ref": "열왕기하 10:15–17",
       "status": "source-reviewed",
       "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
-      "result": "수정: 숫자 '2 사람'을 '두 사람'으로, 여호나답의 둘째 답을 3인칭에서 1인칭으로 고침"
+      "result": "수정: 숫자 '두 사람'을 '두 사람'으로, 여호나답의 둘째 답을 3인칭에서 1인칭으로 고침"
     },
     {
       "id": "pair-202",
@@ -5653,7 +5653,7 @@
       "ref": "역대하 18:3–7",
       "status": "source-reviewed",
       "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
-      "result": "수정: '함께 라못으로 가겠느냐'는 아합의 물음이고 여호사밧은 '당신과 다름없다'고 답함(18:3). 화자 바로잡고 숫자 '1 사람'을 '한 사람'으로"
+      "result": "수정: '함께 라못으로 가겠느냐'는 아합의 물음이고 여호사밧은 '당신과 다름없다'고 답함(18:3). 화자 바로잡고 숫자 '한 사람'을 '한 사람'으로"
     },
     {
       "id": "pair-230",
@@ -7628,7 +7628,7 @@
     {
       "id": "pair-ezk-9-avengers-elders",
       "chapter": "ezk.9",
-      "speaker": "6 사람",
+      "speaker": "여섯 사람",
       "target": "성전 앞 장로들",
       "ref": "에스겔 9:5–7",
       "status": "source-reviewed",

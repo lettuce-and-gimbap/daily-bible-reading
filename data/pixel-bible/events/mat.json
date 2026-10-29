@@ -473,9 +473,9 @@
       ],
       "actions": {},
       "lines": [
-        "해설: 1 여인이 비싼 향유를 머리에 부어요. 예수님은 장례를 미리 준비한 일이라며 칭찬하세요."
+        "해설: 한 여인이 비싼 향유를 머리에 부어요. 예수님은 장례를 미리 준비한 일이라며 칭찬하세요."
       ],
-      "study": "1 여인이 비싼 향유를 머리에 부어요. 예수님은 장례를 미리 준비한 일이라며 칭찬하세요.",
+      "study": "한 여인이 비싼 향유를 머리에 부어요. 예수님은 장례를 미리 준비한 일이라며 칭찬하세요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 사건을 설명으로 살펴보는 장면이에요. 물건은 해당 구절에 언급된 대상의 공통 그림이며, 비유·시의 장면은 실제 일어난 행동으로 재현하지 않아요.",
@@ -2130,7 +2130,7 @@
       "title": "가다라의 귀신 들린 자",
       "actors": [
         "예수",
-        "귀신 들린 2 사람"
+        "귀신 들린 두 사람"
       ],
       "object": "tomb",
       "ref": "마태복음 8:28-34",
@@ -2148,13 +2148,13 @@
       ],
       "actions": {},
       "lines": [
-        "무덤 사이의 귀신 들린 2 사람을 고치고 귀신은 돼지 떼로 들어가 죽어요."
+        "무덤 사이의 귀신 들린 두 사람을 고치고 귀신은 돼지 떼로 들어가 죽어요."
       ],
-      "study": "무덤 사이의 귀신 들린 2 사람을 고치고 귀신은 돼지 떼로 들어가 죽어요. 동네 사람들은 그분께 떠나 달라고 해요.",
+      "study": "무덤 사이의 귀신 들린 두 사람을 고치고 귀신은 돼지 떼로 들어가 죽어요. 동네 사람들은 그분께 떠나 달라고 해요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 요약에 나온 대상을 공통 픽셀 그림으로 보여 줘요. 세부 자세와 시간은 창작이에요.",
-      "animation": {"version":2,"motif":"heal-rise","lead":"예수","target":"귀신 들린 2 사람","mode":"reconstruction","setting":"courtyard","effect":"rise","emotion":"gentle","prop":"tomb","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"kneel","duration":1.2,"actor":"예수"},{"action":"reach","duration":1.5,"actor":"예수"},{"action":"touch","duration":1.8,"actor":"예수"},{"action":"pull","duration":1.5,"actor":"예수"},{"action":"bless","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마태복음 8:28-34","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+      "animation": {"version":2,"motif":"heal-rise","lead":"예수","target":"귀신 들린 두 사람","mode":"reconstruction","setting":"courtyard","effect":"rise","emotion":"gentle","prop":"tomb","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"kneel","duration":1.2,"actor":"예수"},{"action":"reach","duration":1.5,"actor":"예수"},{"action":"touch","duration":1.8,"actor":"예수"},{"action":"pull","duration":1.5,"actor":"예수"},{"action":"bless","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마태복음 8:28-34","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
     },
     {
       "id": "nt-restored-mat-9-0",
@@ -2309,9 +2309,9 @@
       ],
       "actions": {},
       "lines": [
-        "2 맹인과 말 못하는 사람을 고치시지만 바리새인은 귀신 왕 덕이라 해요."
+        "두 맹인과 말 못하는 사람을 고치시지만 바리새인은 귀신 왕 덕이라 해요."
       ],
-      "study": "2 맹인과 말 못하는 사람을 고치시지만 바리새인은 귀신 왕 덕이라 해요. 목자 없는 양 같은 무리에게 일꾼이 필요하다고 하세요.",
+      "study": "두 맹인과 말 못하는 사람을 고치시지만 바리새인은 귀신 왕 덕이라 해요. 목자 없는 양 같은 무리에게 일꾼이 필요하다고 하세요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
@@ -3174,7 +3174,7 @@
       "lines": [
         "두 번째로 죽음과 부활을 말씀하세요."
       ],
-      "study": "두 번째로 죽음과 부활을 말씀하세요. 왕의 자녀라 면제지만, 거치지 않게 하려고 물고기 입의 돈으로 2 사람 몫을 내라 하세요.",
+      "study": "두 번째로 죽음과 부활을 말씀하세요. 왕의 자녀라 면제지만, 거치지 않게 하려고 물고기 입의 돈으로 두 사람 몫을 내라 하세요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 요약에 나온 대상을 공통 픽셀 그림으로 보여 줘요. 세부 자세와 시간은 창작이에요.",
@@ -3529,9 +3529,9 @@
       ],
       "actions": {},
       "lines": [
-        "좌우편 자리를 구한 2 제자와 어머니에게 고난의 잔을 말씀하세요."
+        "좌우편 자리를 구한 두 제자와 어머니에게 고난의 잔을 말씀하세요."
       ],
-      "study": "좌우편 자리를 구한 2 제자와 어머니에게 고난의 잔을 말씀하세요. 인자는 섬기고 대속물로 목숨을 주러 오셨어요.",
+      "study": "좌우편 자리를 구한 두 제자와 어머니에게 고난의 잔을 말씀하세요. 인자는 섬기고 대속물로 목숨을 주러 오셨어요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "가르침을 이해하기 위한 상징 그림이에요. 실제 사건의 행동으로 재현하지 않아요.",
@@ -3541,10 +3541,10 @@
       "id": "nt-restored-mat-20-3",
       "code": "mat",
       "chapter": 20,
-      "title": "여리고의 2 맹인",
+      "title": "여리고의 두 맹인",
       "actors": [
         "예수",
-        "2 맹인"
+        "두 맹인"
       ],
       "object": "scene-marker",
       "ref": "마태복음 20:29-34",
@@ -3561,13 +3561,13 @@
       ],
       "actions": {},
       "lines": [
-        "여리고 길가의 2 맹인이 다윗의 자손이라 외쳐요."
+        "여리고 길가의 두 맹인이 다윗의 자손이라 외쳐요."
       ],
-      "study": "여리고 길가의 2 맹인이 다윗의 자손이라 외쳐요. 예수님은 불쌍히 여겨 눈을 만지시고, 그들은 곧 보고 따라가요.",
+      "study": "여리고 길가의 두 맹인이 다윗의 자손이라 외쳐요. 예수님은 불쌍히 여겨 눈을 만지시고, 그들은 곧 보고 따라가요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
-      "animation": {"version":2,"motif":"heal-rise","lead":"예수","target":"2 맹인","mode":"reconstruction","setting":"courtyard","effect":"rise","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"kneel","duration":1.2,"actor":"예수"},{"action":"reach","duration":1.5,"actor":"예수"},{"action":"touch","duration":1.8,"actor":"예수"},{"action":"pull","duration":1.5,"actor":"예수"},{"action":"bless","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마태복음 20:29-34","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
+      "animation": {"version":2,"motif":"heal-rise","lead":"예수","target":"두 맹인","mode":"reconstruction","setting":"courtyard","effect":"rise","emotion":"gentle","prop":"scene-marker","beats":[{"action":"listen","duration":1,"actor":"예수"},{"action":"kneel","duration":1.2,"actor":"예수"},{"action":"reach","duration":1.5,"actor":"예수"},{"action":"touch","duration":1.8,"actor":"예수"},{"action":"pull","duration":1.5,"actor":"예수"},{"action":"bless","duration":1.2,"actor":"예수"}],"duration":8.2,"ref":"마태복음 20:29-34","source":"장별 본문 요약 기반 · 원문 인용 및 창작 발화 없음"}
     },
     {
       "id": "nt-restored-mat-21-0",
@@ -3695,7 +3695,7 @@
       "lines": [
         "권위를 따진 지도자들에게 요한의 세례를 되물으세요."
       ],
-      "study": "권위를 따진 지도자들에게 요한의 세례를 되물으세요. 2 아들 비유로 회개한 세리와 창녀가 먼저 간다고 하세요.",
+      "study": "권위를 따진 지도자들에게 요한의 세례를 되물으세요. 두 아들 비유로 회개한 세리와 창녀가 먼저 간다고 하세요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",
@@ -3801,9 +3801,9 @@
       ],
       "actions": {},
       "lines": [
-        "사두개인이 7 형제 이야기로 부활을 조롱하자, 부활 때는 천사 같고 하나님은 산 자의 하나님이라고 답하세요."
+        "사두개인이 일곱 형제 이야기로 부활을 조롱하자, 부활 때는 천사 같고 하나님은 산 자의 하나님이라고 답하세요."
       ],
-      "study": "사두개인이 7 형제 이야기로 부활을 조롱하자, 부활 때는 천사 같고 하나님은 산 자의 하나님이라고 답하세요.",
+      "study": "사두개인이 일곱 형제 이야기로 부활을 조롱하자, 부활 때는 천사 같고 하나님은 산 자의 하나님이라고 답하세요.",
       "actorLines": {},
       "narrationOnly": true,
       "objectNote": "본문 장면을 여는 안내 표지예요. 성경 속 물건으로 재현한 것이 아니에요.",

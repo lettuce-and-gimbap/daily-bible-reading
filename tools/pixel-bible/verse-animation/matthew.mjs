@@ -6,7 +6,7 @@ const d=(verse,title,study,diagram,labels,extra={})=>v(verse,title,study,[],'loo
 const genealogy=[
 [1,'계보의 표제',['아브라함','다윗','예수'],'예수께서 아브라함과 다윗의 약속을 잇는 분임을 먼저 밝혀요.'],
 [2,'언약 계보의 시작',['아브라함','이삭','야곱','유다'],'아브라함에서 유다와 형제들까지 계보가 이어져요.'],
-[3,'다말이 포함된 계보',['유다 · 다말','베레스','헤스론','람'],'다말과 2 아들의 사연도 계보에서 지워지지 않아요.'],
+[3,'다말이 포함된 계보',['유다 · 다말','베레스','헤스론','람'],'다말과 두 아들의 사연도 계보에서 지워지지 않아요.'],
 [4,'람에서 살몬까지',['람','아미나답','나손','살몬'],'광야 세대와 연결되는 이름들이 이어져요.'],
 [5,'라합과 룻의 자리',['살몬 · 라합','보아스 · 룻','오벳','이새'],'라합과 룻도 다윗에게 이르는 계보에 포함돼요.'],
 [6,'다윗과 솔로몬',['이새','다윗 · 우리야의 아내','솔로몬'],'다윗의 왕권과 함께 그의 잘못을 떠올리게 하는 표현도 남겨요.'],
@@ -22,7 +22,7 @@ const genealogy=[
 [16,'마리아에게서 나신 예수',['야곱','요셉','마리아','예수'],'요셉을 소개한 뒤, 예수께서 마리아에게서 나셨음을 구별해요.'],
 [17,'세 묶음의 계보',['아브라함 → 다윗','다윗 → 포로','포로 → 그리스도'],'마태는 계보를 열네 대씩 세 묶음으로 정리해요.']];
 for(const [n,t,labels,s]of genealogy){d(n,t,s,'lineage',labels);if(n===16)out().at(-1).diagram.edgeLabels=['계보','혼인','탄생'];}
-v(18,'요셉이 알게 된 임신','함께 살기 전의 임신을 알게 되면서 2 사람의 상황에 긴장이 생겨요.',['요셉','마리아'],'look listen startle lower turn stand',{emotion:'worried',setting:'chamber'});
+v(18,'요셉이 알게 된 임신','함께 살기 전의 임신을 알게 되면서 두 사람의 상황에 긴장이 생겨요.',['요셉','마리아'],'look listen startle lower turn stand',{emotion:'worried',setting:'chamber'});
 v(19,'드러내지 않으려는 요셉','요셉은 마리아를 공개적으로 수치스럽게 하지 않을 길을 생각해요.',['요셉'],'listen lower sit look turn lower',{emotion:'worried',setting:'chamber'});
 v(20,'꿈속의 천사','천사는 요셉에게 두려움을 내려놓고 마리아를 맞으라고 알려요.',['주의 사자','요셉'],'look speak extend point listen lower',{mode:'vision',setting:'night',support:{actor:'요셉',actions:['sleep','sleep','sleep','sleep','sleep','sleep']},effect:'light'});
 d(21,'이름과 구원의 사명','아기의 이름은 자기 백성을 죄에서 건지실 사명을 가리켜요.','promise',['아기의 이름','예수','죄에서 구원']);
@@ -90,9 +90,9 @@ d(14,'이사야의 약속과 연결됨','갈릴리에서의 사역이 앞선 예
 d(15,'빛이 비칠 지역','예언이 가리키는 갈릴리와 요단 주변 지역을 짚어요.','map',['스불론 · 납달리','해변 길','갈릴리']);
 d(16,'어둠에 비친 빛','어둠 속 백성에게 큰 빛이 비친다는 약속을 보여 줘요.','light',['어둠','비치는 빛','백성에게 소망']);
 v(17,'갈릴리에서의 선포','예수께서 돌이킴과 하나님 나라를 선포하며 사역을 시작하세요.',['예수','무리'],'look speak point extend listen stand',{setting:'courtyard'});
-v(18,'그물을 던지는 2 형제','예수께서 호숫가에서 일하는 베드로와 안드레를 만나세요.',['베드로','안드레','예수'],'grasp load windup throw pull look',{setting:'water',prop:'net',effect:'cast-net',tracks:{안드레:['grasp','load','windup','throw','pull','look']}});
-v(19,'새로운 부르심','예수께서 2 형제에게 따라오라고 부르며 새로운 사명을 알려 주세요.',['예수','베드로','안드레'],'look signal speak extend wait stand',{setting:'water'});
-v(20,'그물을 두고 따라감','2 형제가 일하던 그물을 놓아두고 예수의 길을 따르기 시작해요.',['베드로','안드레','예수'],'grasp lower release turn walk walk',{setting:'water',prop:'net',propFixed:true,tracks:{안드레:['grasp','lower','release','turn','walk','walk']}});
+v(18,'그물을 던지는 두 형제','예수께서 호숫가에서 일하는 베드로와 안드레를 만나세요.',['베드로','안드레','예수'],'grasp load windup throw pull look',{setting:'water',prop:'net',effect:'cast-net',tracks:{안드레:['grasp','load','windup','throw','pull','look']}});
+v(19,'새로운 부르심','예수께서 두 형제에게 따라오라고 부르며 새로운 사명을 알려 주세요.',['예수','베드로','안드레'],'look signal speak extend wait stand',{setting:'water'});
+v(20,'그물을 두고 따라감','두 형제가 일하던 그물을 놓아두고 예수의 길을 따르기 시작해요.',['베드로','안드레','예수'],'grasp lower release turn walk walk',{setting:'water',prop:'net',propFixed:true,tracks:{안드레:['grasp','lower','release','turn','walk','walk']}});
 v(21,'배에서 그물을 고치던 형제','예수께서 세베대와 일하는 야고보와 요한에게도 부르심을 전하세요.',['야고보','요한','세베대','예수'],'inspect grasp weave weave look listen',{setting:'water',prop:'net',tracks:{요한:['inspect','grasp','weave','weave','look','listen']}});
 v(22,'배와 아버지를 두고 출발함','야고보와 요한이 배와 아버지를 떠나 예수를 따르는 길에 올라요.',['야고보','요한','세베대','예수'],'lower release rise turn walk walk',{setting:'water',prop:'boat',tracks:{요한:['lower','release','rise','turn','walk','walk']}});
 v(23,'가르침과 치유의 사역','예수의 갈릴리 사역은 가르침과 복음 선포, 병든 사람을 돌보는 일로 펼쳐져요.',['예수','무리'],'walk halt speak extend touch lower',{setting:'courtyard',effect:'heal'});
@@ -237,19 +237,19 @@ v(15,'손을 만지자 일어나 섬김','예수께서 손을 만지시자 열�
 v(16,'저녁에 모인 병든 이들','해 질 무렵 사람들이 병든 이들을 데려오고 예수께서 고치세요.',['예수','무리'],'look listen speak extend touch lower',{setting:'night',effect:'heal',tracks:{무리:['walk','walk','sit','sit','rise','stand']}});
 d(17,'연약함을 담당하심','치유의 사역을 이사야가 전한 연약함을 짊어지시는 분의 약속과 연결해요.','promise',['백성의 연약함','짊어지시는 분','이루어진 약속']);
 v(18,'건너편으로 가라는 지시','무리가 둘러싸자 예수께서 제자들에게 건너편으로 가자고 하세요.',['예수','제자들'],'look turn speak point signal stand',{setting:'water',prop:'boat'});
-v(19,'어디든 따르겠다는 말','서기관 1 사람이 예수께 다가와 따라가겠다는 뜻을 밝혀요.',['서기관','예수'],'walk halt bow speak extend listen',{setting:'water'});
+v(19,'어디든 따르겠다는 말','서기관 한 사람이 예수께 다가와 따라가겠다는 뜻을 밝혀요.',['서기관','예수'],'walk halt bow speak extend listen',{setting:'water'});
 d(20,'안락함이 보장되지 않는 길','따름의 길에 편안한 거처가 약속된 것은 아니라고 설명하세요.','comparison',['동물의 거처','인자의 고단함','따름의 각오']);
-v(21,'먼저 장례를 허락해 달라는 청','1 제자가 아버지의 장례를 먼저 치르게 해 달라고 구해요.',['제자들','예수'],'look bow speak extend listen lower',{setting:'road'});
+v(21,'먼저 장례를 허락해 달라는 청','한 제자가 아버지의 장례를 먼저 치르게 해 달라고 구해요.',['제자들','예수'],'look bow speak extend listen lower',{setting:'road'});
 v(22,'지금 따르라는 부르심','예수께서는 하나님 나라의 부르심에 우선하여 응답하라고 하세요.',['예수','제자들'],'listen speak signal point stand stand',{setting:'road'});
 v(23,'예수와 제자들이 배에 오름','예수께서 배를 타시자 제자들도 함께 타요.',['예수','제자들'],'walk halt sit look stand sit',{setting:'water',prop:'boat',motif:'calm-sea',effect:'none',tracks:{제자들:['walk','halt','sit','look','stand','sit']}});
 v(24,'풍랑 속에서 주무심','파도가 배를 덮는 동안에도 예수께서는 잠들어 계세요.',['예수','제자들'],'sleep sleep sleep sleep sleep sleep',{setting:'water',prop:'boat',motif:'calm-sea',effect:'storm',tracks:{제자들:['look','startle','brace','brace','brace','look']}});
 v(25,'제자들이 예수를 깨움','위기에 빠진 제자들이 예수께 다가가 깨우며 구원을 구해요.',['제자들','예수'],'look startle reach touch speak extend',{setting:'water',prop:'boat',motif:'calm-sea',effect:'storm',tracks:{예수:['sleep','sleep','rise','sit','look','stand']}});
 v(26,'일어나 바람과 물결을 꾸짖음','예수께서 일어나 명하시자 거센 바람과 바다가 잠잠해져요.',['예수','제자들'],'rise look speak halt stand stand',{setting:'water',prop:'boat',motif:'calm-sea',effect:'storm-calm',tracks:{제자들:['brace','brace','look','look','stand','stand']}});
 v(27,'바다도 순종함에 놀람','제자들은 자연이 예수께 순종하는 것을 보고 놀라 물어요.',['제자들','예수'],'look startle turn speak look stand',{setting:'water',prop:'boat',motif:'calm-sea',emotion:'surprised'});
-v(28,'무덤에서 나온 2 사람','가다라에서 귀신 들린 2 사람이 무덤 사이에서 나와 예수와 마주쳐요.',['귀신 들린 2 사람','예수'],'walk brace halt look speak stand',{setting:'road',prop:'tomb',portrayals:{'귀신 들린 2 사람':{copies:2}}});
-v(29,'예수께 소리치는 이들','그들은 예수를 하나님의 아들로 부르며 심판을 두려워해요.',['귀신 들린 2 사람','예수'],'startle brace speak retreat look stand',{setting:'road',emotion:'worried',portrayals:{'귀신 들린 2 사람':{copies:2}}});
+v(28,'무덤에서 나온 두 사람','가다라에서 귀신 들린 두 사람이 무덤 사이에서 나와 예수와 마주쳐요.',['귀신 들린 두 사람','예수'],'walk brace halt look speak stand',{setting:'road',prop:'tomb',portrayals:{'귀신 들린 두 사람':{copies:2}}});
+v(29,'예수께 소리치는 이들','그들은 예수를 하나님의 아들로 부르며 심판을 두려워해요.',['귀신 들린 두 사람','예수'],'startle brace speak retreat look stand',{setting:'road',emotion:'worried',portrayals:{'귀신 들린 두 사람':{copies:2}}});
 d(30,'멀리서 먹는 돼지 떼','사건의 현장에서 떨어진 곳에 돼지들이 먹이를 먹고 있어요.','herd',['멀리 있는 돼지 떼','먹이를 먹음','이어질 사건']);
-v(31,'돼지 떼로 보내 달라는 간청','귀신들이 쫓겨날 것을 알고 돼지 떼로 가게 해 달라고 간청해요.',['귀신 들린 2 사람','예수'],'brace lower speak extend listen stand',{setting:'road',portrayals:{'귀신 들린 2 사람':{copies:2}}});
+v(31,'돼지 떼로 보내 달라는 간청','귀신들이 쫓겨날 것을 알고 돼지 떼로 가게 해 달라고 간청해요.',['귀신 들린 두 사람','예수'],'brace lower speak extend listen stand',{setting:'road',portrayals:{'귀신 들린 두 사람':{copies:2}}});
 d(32,'비탈 아래 물로 달리는 떼','귀신이 떠난 뒤 돼지 떼가 비탈을 달려 물로 들어가 죽는 결과가 이어져요.','herd-water',['내려가는 비탈','물로 달리는 떼','물에 잠김']);
 v(33,'마을로 달려가 전하는 이들','돼지를 치던 이들이 달아나 마을에서 일어난 일을 전해요.',['돼지 치던 사람들'],'startle turn run run speak point',{setting:'road',directions:{'돼지 치던 사람들':'right'}});
 v(34,'떠나 달라는 마을 사람들','마을 사람들이 예수를 만나 자기 지역을 떠나 달라고 간청해요.',['무리','예수'],'walk halt bow speak point listen',{setting:'road'});
@@ -280,11 +280,11 @@ v(23,'장례의 소리가 있는 집','예수께서 관리의 집에서 피리 �
 v(24,'물러가라는 말씀과 비웃음','예수의 말씀에 집 안 사람들이 믿지 못하고 비웃어요.',['예수','무리'],'look halt speak point listen lower',{setting:'chamber',tracks:{무리:['listen','look','turn','smile','look','stand']}});
 v(25,'소녀의 손을 잡아 일으킴','예수께서 사람들을 내보낸 뒤 소녀의 손을 잡으시자 소녀가 일어나요.',['예수','관리의 딸'],'walk look reach grasp lift lower',{setting:'chamber',prop:'bed',motif:'raise-dead',effect:'rise',portrayals:{'관리의 딸':{scale:.7,hideBeard:true}}});
 d(26,'퍼져 나가는 소식','소녀가 살아난 소식이 주변 지역으로 퍼져요.','map',['관리의 집','이웃의 소식','온 지역으로']);
-v(27,'따라오며 부르는 2 맹인','보지 못하는 2 사람이 예수의 뒤를 따라오며 자비를 구해요.',['2 맹인','예수'],'walk walk speak extend listen stand',{setting:'road',portrayals:{'2 맹인':{copies:2}}});
-v(28,'치유를 믿느냐는 질문','집 안에서 예수께서 믿음을 물으시고 2 사람이 믿는다고 답해요.',['예수','2 맹인'],'look speak point listen lower stand',{setting:'chamber',portrayals:{'2 맹인':{copies:2}}});
-v(29,'눈에 손을 대심','예수께서 2 사람의 눈에 손을 대며 믿음대로 이루어지라 말씀하세요.',['예수','2 맹인'],'look reach lift touch lower stand',{setting:'chamber',placements:{예수:{x:300,y:235},'2 맹인':{x:395,y:235}},effect:'heal',portrayals:{'2 맹인':{copies:2}}});
-v(30,'열린 눈과 엄중한 당부','눈이 밝아진 뒤 예수께서 일을 함부로 알리지 말라고 당부하세요.',['예수','2 맹인'],'look speak halt point lower stand',{setting:'chamber',portrayals:{'2 맹인':{copies:2}}});
-v(31,'사방에 알리는 2 사람','2 사람은 나가서 예수에 관한 소식을 널리 전해요.',['2 맹인'],'walk look speak point walk stand',{setting:'road',portrayals:{'2 맹인':{copies:2}}});
+v(27,'따라오며 부르는 두 맹인','보지 못하는 두 사람이 예수의 뒤를 따라오며 자비를 구해요.',['두 맹인','예수'],'walk walk speak extend listen stand',{setting:'road',portrayals:{'두 맹인':{copies:2}}});
+v(28,'치유를 믿느냐는 질문','집 안에서 예수께서 믿음을 물으시고 두 사람이 믿는다고 답해요.',['예수','두 맹인'],'look speak point listen lower stand',{setting:'chamber',portrayals:{'두 맹인':{copies:2}}});
+v(29,'눈에 손을 대심','예수께서 두 사람의 눈에 손을 대며 믿음대로 이루어지라 말씀하세요.',['예수','두 맹인'],'look reach lift touch lower stand',{setting:'chamber',placements:{예수:{x:300,y:235},'두 맹인':{x:395,y:235}},effect:'heal',portrayals:{'두 맹인':{copies:2}}});
+v(30,'열린 눈과 엄중한 당부','눈이 밝아진 뒤 예수께서 일을 함부로 알리지 말라고 당부하세요.',['예수','두 맹인'],'look speak halt point lower stand',{setting:'chamber',portrayals:{'두 맹인':{copies:2}}});
+v(31,'사방에 알리는 두 사람','두 사람은 나가서 예수에 관한 소식을 널리 전해요.',['두 맹인'],'walk look speak point walk stand',{setting:'road',portrayals:{'두 맹인':{copies:2}}});
 v(32,'말 못하는 사람을 데려옴','사람들이 귀신 들려 말을 못하는 이를 예수께 데려와요.',['말 못하는 사람','예수'],'walk halt lower look stand stand',{setting:'courtyard'});
 v(33,'말하게 된 사람','귀신이 떠난 뒤 말 못하던 사람이 말하고 무리가 놀라요.',['예수','말 못하는 사람','무리'],'look speak halt lower look stand',{setting:'courtyard',effect:'heal',tracks:{'말 못하는 사람':['stand','look','startle','speak','speak','stand'],무리:['listen','look','startle','listen','look','stand']}});
 v(34,'치유를 왜곡하는 주장','바리새인들이 예수의 능력을 귀신의 우두머리와 연결해 비난해요.',['바리새인'],'look turn speak point listen lower',{setting:'courtyard'});
@@ -295,7 +295,7 @@ v(38,'일꾼을 보내 달라는 기도','예수께서 추수의 주인께 일�
 export const additionalPeople={8:[{name:'무리',role:'예수를 따르거나 병든 이들을 데려온 사람들',refs:['마태복음 8:1','마태복음 8:16','마태복음 8:34']},{name:'백부장의 종',role:'집에서 중풍병으로 고통받다가 나은 종',refs:['마태복음 8:6','마태복음 8:13']},{name:'돼지 치던 사람들',role:'사건을 보고 마을에 알린 사람들',refs:['마태복음 8:33']}],9:[{name:'서기관들',role:'죄 사함의 말씀에 속으로 반발한 이들',refs:['마태복음 9:3']},{name:'무리',role:'예수의 권능을 보고 놀란 사람들',refs:['마태복음 9:8','마태복음 9:33']},{name:'요한의 제자들',role:'금식의 이유를 물으러 온 이들',refs:['마태복음 9:14']},{name:'피리 부는 사람들',role:'관리의 집에서 장례의 피리를 불던 이들',refs:['마태복음 9:23']},{name:'말 못하는 사람',role:'귀신이 떠난 뒤 말하게 된 사람',refs:['마태복음 9:32','마태복음 9:33']}]};
 chapter=10;
 v(1,'열둘에게 맡기신 권세','예수께서 12 제자를 불러 병을 고치고 귀신을 쫓는 권세를 맡기세요.',['예수','12 제자'],'signal look speak extend bless lower',{setting:'courtyard',effect:'light'});
-d(2,'먼저 기록된 2 형제 쌍','베드로와 안드레, 야고보와 요한의 이름을 형제 관계와 함께 소개해요.','lineage',['베드로 · 안드레','야고보 · 요한','보냄받을 사도들']);
+d(2,'먼저 기록된 두 형제 쌍','베드로와 안드레, 야고보와 요한의 이름을 형제 관계와 함께 소개해요.','lineage',['베드로 · 안드레','야고보 · 요한','보냄받을 사도들']);
 d(3,'이어지는 사도들의 이름','빌립부터 다대오까지, 서로 다른 배경의 제자들이 같은 명단에 있어요.','lineage',['빌립 · 바돌로매','도마 · 마태','알패오의 야고보 · 다대오']);
 d(4,'시몬과 가룟 유다','명단의 끝에서는 시몬과, 뒤에 예수를 넘겨줄 유다가 소개돼요.','lineage',['가나나인 시몬','가룟 유다','배반의 예고']);
 v(5,'첫 파송의 범위를 정하심','예수께서 이번 파송에서 갈 곳과 가지 않을 곳을 분명히 지시하세요.',['예수','12 제자'],'look speak point halt listen lower',{setting:'road'});
@@ -414,7 +414,7 @@ d(43,'쉼을 찾는 더러운 영의 비유','더러운 영이 쉴 곳을 찾는
 d(44,'비어 있는 집','비어 정돈된 집이라는 이미지로 중심이 바뀌지 않은 상태를 설명하세요.','house',['돌아와 살핌','정돈된 집','비어 있는 중심']);
 d(45,'더 나빠진 나중 상태','겉만 정리한 채 악을 다시 받아들이는 세대의 위험을 경고하세요.','warning',['빈 중심','다시 들어온 악','더 나빠진 상태']);
 v(46,'밖에 서 있는 가족','예수께서 가르치시는 동안 어머니와 동생들이 밖에서 만나기를 기다려요.',['마리아','예수의 동생들'],'walk halt look wait listen stand',{setting:'courtyard',prop:'house'});
-v(47,'가족의 방문을 전하는 사람','1 사람이 밖에서 기다리는 가족의 소식을 예수께 알려요.',['소식을 전한 사람','예수'],'walk halt speak point listen stand',{setting:'chamber'});
+v(47,'가족의 방문을 전하는 사람','한 사람이 밖에서 기다리는 가족의 소식을 예수께 알려요.',['소식을 전한 사람','예수'],'walk halt speak point listen stand',{setting:'chamber'});
 v(48,'가족에 관한 되물음','예수께서 누가 자기 가족인지 되물으며 가르침을 시작하세요.',['예수','소식을 전한 사람'],'listen look speak point listen lower',{setting:'chamber'});
 v(49,'제자들을 가리키심','예수께서 손을 뻗어 제자들을 가리키며 새로운 가족의 뜻을 밝히세요.',['예수','제자들'],'look extend point hold lower stand',{setting:'chamber'});
 d(50,'아버지 뜻을 행하는 가족','예수께서는 아버지의 뜻을 행하는 이들을 믿음의 가족이라 부르세요.','reconcile',['아버지의 뜻','행하는 응답','믿음의 가족']);
@@ -587,7 +587,7 @@ d(26,'생명과 바꿀 수 없는 재물','온 세상을 얻어도 자기 생명
 d(27,'영광 중에 오실 때의 판단','인자가 아버지의 영광으로 오셔서 행한 대로 갚으실 것을 말씀하세요.','judgment',['영광으로 오실 인자','각 사람의 삶','행한 대로의 판단']);
 d(28,'왕권을 보게 될 약속','듣고 서 있는 이들 중 왕권의 드러남을 보게 될 사람이 있다고 하세요.','promise',['지금 듣는 이들','인자의 왕권','보게 될 약속']);
 chapter=17;
-v(1,'3 제자와 높은 산으로','예수께서 베드로와 야고보와 요한을 데리고 따로 높은 산에 오르세요.',['예수','베드로','야고보','요한'],'look signal walk walk halt stand',{setting:'hills',tracks:{베드로:['listen','turn','walk','walk','halt','stand'],야고보:['listen','turn','walk','walk','halt','stand'],요한:['listen','turn','walk','walk','halt','stand']},directions:{예수:'right',베드로:'right',야고보:'right',요한:'right'}});
+v(1,'세 제자와 높은 산으로','예수께서 베드로와 야고보와 요한을 데리고 따로 높은 산에 오르세요.',['예수','베드로','야고보','요한'],'look signal walk walk halt stand',{setting:'hills',tracks:{베드로:['listen','turn','walk','walk','halt','stand'],야고보:['listen','turn','walk','walk','halt','stand'],요한:['listen','turn','walk','walk','halt','stand']},directions:{예수:'right',베드로:'right',야고보:'right',요한:'right'}});
 v(2,'제자들 앞에서 빛나심','예수의 얼굴과 옷이 밝게 빛나는 모습으로 드러나요.',['예수','베드로','야고보','요한'],'stand look stand listen stand stand',{setting:'hills',motif:'transfiguration',effect:'transfiguration',whiteAfter:2});
 v(3,'함께 말씀하는 모세와 엘리야','모세와 엘리야가 나타나 예수와 말씀을 나누는 모습을 제자들이 보아요.',['예수','모세','엘리야'],'look listen speak point listen stand',{setting:'hills',motif:'transfiguration',effect:'transfiguration'});
 v(4,'초막 셋을 제안하는 베드로','베드로는 그곳에 머무르며 3분을 위한 초막을 짓겠다고 제안해요.',['베드로','예수','모세','엘리야'],'look speak point extend listen stand',{setting:'hills'});
@@ -607,13 +607,13 @@ v(17,'아이를 데려오라는 말씀','예수께서 믿음 없는 세대를 �
 v(18,'꾸짖으시자 아이가 나음','예수께서 귀신을 꾸짖으시자 아이가 그때부터 회복돼요.',['예수','귀신 들린 아이'],'look speak halt extend lower inspect',{setting:'road',effect:'heal',tracks:{'귀신 들린 아이':['sit','brace','look','rise','stand','stand']},portrayals:{'귀신 들린 아이':{scale:.7,hideBeard:true}}});
 v(19,'실패한 까닭을 조용히 물음','제자들이 따로 예수께 자신들은 왜 고치지 못했는지 물어요.',['제자들','예수'],'walk halt bow speak listen lower',{setting:'courtyard'});
 d(20,'겨자씨 같은 믿음','예수께서 작은 씨를 들어 하나님을 의지하는 믿음과 그 능력을 가르치세요.','seed-ground',['작은 겨자씨','하나님을 의지함','불가능 앞의 믿음'],{diagram:{kind:'seed-ground',labels:['작은 겨자씨','하나님을 의지함','불가능 앞의 믿음'],soil:'mustard-seed'}});
-d(21,'이 번호의 본문 표기','업로드한 2 역본 모두 이 절을 본문 없음으로 표시해요. 없는 사건을 만들지 않고 번호의 차이를 안내해요.','edition-note',['17장 21절','2 역본의 본문 없음','새 사건을 만들지 않음'],{textualNotice:true});
+d(21,'이 번호의 본문 표기','업로드한 두 역본 모두 이 절을 본문 없음으로 표시해요. 없는 사건을 만들지 않고 번호의 차이를 안내해요.','edition-note',['17장 21절','두 역본의 본문 없음','새 사건을 만들지 않음'],{textualNotice:true});
 v(22,'사람의 손에 넘겨질 예고','예수께서 갈릴리에서 인자가 사람들의 손에 넘겨질 것을 말씀하세요.',['예수','제자들'],'look speak extend lower listen stand',{setting:'courtyard'});
 v(23,'죽음과 부활을 듣고 근심함','제자들은 죽음과 부활의 예고를 듣고 크게 근심해요.',['제자들','예수'],'listen startle lower sit look stand',{setting:'courtyard',emotion:'sad'});
 v(24,'성전세를 묻는 사람들','성전세를 걷는 사람들이 베드로에게 예수의 납부 여부를 물어요.',['성전세 걷는 사람들','베드로'],'walk halt speak extend listen lower',{setting:'courtyard'});
 v(25,'베드로에게 되묻는 예수','집에 들어온 베드로에게 예수께서 왕이 누구에게 세금을 받는지 물으세요.',['예수','베드로'],'look speak point listen lower stand',{setting:'chamber'});
 v(26,'아들의 자유에 관한 응답','베드로의 대답을 들은 예수께서 아들의 자유를 설명하세요.',['예수','베드로'],'listen look speak extend lower stand',{setting:'chamber'});
-d(27,'물고기의 돈으로 낼 성전세','예수께서 낚시로 얻을 돈으로 2 사람의 성전세를 내도록 지시하세요.','fish-coin',['낚시의 지시','물고기 입의 돈','2 사람의 성전세']);
+d(27,'물고기의 돈으로 낼 성전세','예수께서 낚시로 얻을 돈으로 두 사람의 성전세를 내도록 지시하세요.','fish-coin',['낚시의 지시','물고기 입의 돈','두 사람의 성전세']);
 additionalPeople[17]=[{name:'제자들',role:'예수와 함께 산에서 내려오고 가르침을 듣던 이들',refs:['마태복음 17:6','마태복음 17:19']},{name:'성전세 걷는 사람들',role:'베드로에게 반 세겔 납부를 물은 이들',refs:['마태복음 17:24']}];
 chapter=18;
 v(1,'큰 사람을 묻는 제자들','제자들이 예수께 하나님 나라에서 누가 큰 사람인지 물어요.',['제자들','예수'],'walk halt speak point listen stand',{setting:'courtyard'});
@@ -625,11 +625,11 @@ d(6,'작은 이를 넘어뜨리지 말라','믿는 작은 이를 죄에 빠뜨�
 d(7,'걸림을 만드는 자의 책임','세상에 걸림이 있어도 그것을 만드는 사람의 책임은 사라지지 않아요.','warning',['세상의 걸림','내가 만든 걸림','피할 수 없는 책임']);
 d(8,'죄의 통로를 끊는 결단','손과 발을 버린다는 강한 비유로 죄와 타협하지 말라고 하세요.','warning',['죄로 이끄는 행동','단호히 끊는 결단','생명의 가치']);
 d(9,'보는 욕망도 돌아봄','눈을 버린다는 비유로 죄의 유혹을 생명보다 앞세우지 말라고 하세요.','warning',['죄로 이끄는 눈','끊어야 할 유혹','더 귀한 생명']);
-d(10,'작은 이를 업신여기지 말라','아버지 앞에서 귀하게 여겨지는 작은 이를 멸시하지 말라고 하세요.','promise',['작은 1 사람','하나님 앞의 존귀함','업신여기지 않음']);
-d(11,'이 번호의 본문 표기','업로드한 2 역본 모두 이 절을 본문 없음으로 표시해요. 별도의 사건 동작을 덧붙이지 않아요.','edition-note',['18장 11절','2 역본의 본문 없음','본문 표기 안내'],{textualNotice:true});
+d(10,'작은 이를 업신여기지 말라','아버지 앞에서 귀하게 여겨지는 작은 이를 멸시하지 말라고 하세요.','promise',['작은 한 사람','하나님 앞의 존귀함','업신여기지 않음']);
+d(11,'이 번호의 본문 표기','업로드한 두 역본 모두 이 절을 본문 없음으로 표시해요. 별도의 사건 동작을 덧붙이지 않아요.','edition-note',['18장 11절','두 역본의 본문 없음','본문 표기 안내'],{textualNotice:true});
 d(12,'잃은 1마리를 찾음','목자가 무리를 두고 길 잃은 한 양을 찾아가는 비유를 들어요.','lost-sheep',['100마리 중 하나','찾으러 나서는 목자','길 잃은 양']);
 d(13,'찾은 양으로 인한 기쁨','잃었던 양을 찾았을 때의 큰 기쁨을 말씀하세요.','lost-sheep',['찾아 나선 길','되찾은 한 양','발견의 기쁨']);
-d(14,'하나도 잃지 않으려는 뜻','작은 1 사람도 잃지 않는 것이 아버지의 뜻이라고 하세요.','promise',['작은 1 사람','잃기를 원치 않으심','아버지의 뜻']);
+d(14,'하나도 잃지 않으려는 뜻','작은 한 사람도 잃지 않는 것이 아버지의 뜻이라고 하세요.','promise',['작은 한 사람','잃기를 원치 않으심','아버지의 뜻']);
 d(15,'먼저 둘이서 권고함','형제의 잘못을 먼저 단둘이 권고하여 관계를 회복하도록 하세요.','reconcile',['형제의 잘못','단둘이 권고','듣고 회복함']);
 d(16,'증인과 함께 다시 권함','듣지 않으면 한두 사람과 함께 다시 사실을 확인하며 권하라고 하세요.','reconcile',['들으려 하지 않음','한두 증인과 함께','사실을 분명히 함']);
 d(17,'공동체의 권고까지','끝까지 듣지 않는 경우 교회의 권고와 경계가 필요함을 가르치세요.','door',['함께 권고함','교회에도 듣지 않음','공동체의 경계']);
@@ -705,30 +705,30 @@ d(16,'뒤바뀌는 먼저와 나중','예수께서 먼저와 나중이 바뀌는
 v(17,'길에서 제자들을 따로 부르심','예수께서 예루살렘으로 가는 길에 열둘을 따로 데리고 말씀하세요.',['예수','12 제자'],'walk halt signal look speak stand',{setting:'road'});
 d(18,'예루살렘에서의 넘겨짐','예수께서 종교 지도자들에게 넘겨져 죽음의 결정을 받으실 것을 예고하세요.','map',['예루살렘으로 감','지도자들에게 넘겨짐','죽음의 결정']);
 d(19,'고난과 부활의 길','조롱과 십자가 죽음 뒤 셋째 날 부활할 것을 예고하세요.','three-days',['조롱과 고난','십자가의 죽음','셋째 날의 부활']);
-v(20,'2 아들과 함께 청하는 어머니','세베대의 아들들의 어머니가 아들들과 와서 예수께 절하며 구해요.',['세베대의 아들들의 어머니','예수','야고보','요한'],'walk kneel bow speak extend listen',{setting:'road'});
-v(21,'높은 자리를 구하는 청','어머니는 주님의 나라에서 2 아들의 높은 자리를 부탁해요.',['세베대의 아들들의 어머니','예수'],'kneel speak point extend listen stand',{setting:'road'});
+v(20,'두 아들과 함께 청하는 어머니','세베대의 아들들의 어머니가 아들들과 와서 예수께 절하며 구해요.',['세베대의 아들들의 어머니','예수','야고보','요한'],'walk kneel bow speak extend listen',{setting:'road'});
+v(21,'높은 자리를 구하는 청','어머니는 주님의 나라에서 두 아들의 높은 자리를 부탁해요.',['세베대의 아들들의 어머니','예수'],'kneel speak point extend listen stand',{setting:'road'});
 d(22,'무엇을 구하는지 모름','예수께서 높은 자리보다 고난의 잔을 함께할 수 있는지 물으세요.','comparison',['구하던 높은 자리','주님이 마실 잔','감당할 고난']);
 d(23,'아버지께 맡겨진 자리','고난에는 참여하겠지만 영광의 자리는 아버지께서 예비하신 것이라고 하세요.','promise',['함께할 고난의 잔','아버지께서 예비함','맡겨진 자리']);
-v(24,'2 형제에게 분개한 제자들','다른 10 제자가 그 청을 듣고 2 형제에게 분개해요.',['10 제자','야고보','요한'],'listen startle turn speak point lower',{setting:'road',emotion:'angry'});
+v(24,'두 형제에게 분개한 제자들','다른 10 제자가 그 청을 듣고 두 형제에게 분개해요.',['10 제자','야고보','요한'],'listen startle turn speak point lower',{setting:'road',emotion:'angry'});
 v(25,'제자들을 불러 모아 가르치심','예수께서 제자들을 불러 세상의 권력자가 군림하는 방식을 짚으세요.',['예수','12 제자'],'signal look speak point listen stand',{setting:'road'});
 d(26,'크려는 사람은 섬기는 이로','예수의 제자들은 군림하는 대신 서로를 섬기며 크기를 배워야 해요.','gift',['세상의 군림','제자의 섬김','나라에서의 크기']);
 d(27,'으뜸이 되는 종의 길','앞서려는 이는 다른 사람의 종이 되어야 한다고 하세요.','comparison',['으뜸을 원함','남을 위한 종','낮아지는 길']);
 d(28,'자기 생명을 내어 주는 섬김','인자가 섬기며 많은 사람의 대속물로 생명을 주러 오셨다고 하세요.','promise',['섬기러 오신 인자','자기 생명을 주심','많은 이를 위한 대속']);
 v(29,'여리고를 떠나는 길','예수께서 여리고를 떠나실 때 많은 사람이 뒤따라요.',['예수','무리'],'look turn walk walk walk halt',{setting:'road',tracks:{무리:['look','turn','walk','walk','walk','halt']},directions:{예수:'right',무리:'right'}});
-v(30,'길가에서 외치는 2 사람','길가의 2 맹인이 예수께서 지나가심을 듣고 자비를 구해요.',['2 맹인'],'sit listen look lift speak reach',{setting:'road',portrayals:{'2 맹인':{copies:2}}});
-v(31,'막는 소리보다 크게 부름','무리가 잠잠하라 해도 2 사람은 더 크게 예수께 자비를 구해요.',['2 맹인','무리'],'listen startle lift speak reach stand',{setting:'road',portrayals:{'2 맹인':{copies:2}}});
-v(32,'멈춰 서서 물으시는 예수','예수께서 길을 멈추고 2 사람을 불러 무엇을 원하는지 물으세요.',['예수','2 맹인'],'walk halt look signal speak listen',{setting:'road',portrayals:{'2 맹인':{copies:2}}});
-v(33,'눈뜨기를 원하는 간구','2 사람은 예수께 자기들이 보게 되기를 구해요.',['2 맹인','예수'],'look bow speak extend listen stand',{setting:'road',portrayals:{'2 맹인':{copies:2}}});
-v(34,'눈을 만져 보게 하심','예수께서 2 사람의 눈을 만지시자 곧 보게 되어 예수를 따라요.',['예수','2 맹인'],'look reach lift touch lower turn',{setting:'road',placements:{예수:{x:300,y:235},'2 맹인':{x:395,y:235}},effect:'heal',portrayals:{'2 맹인':{copies:2}},tracks:{'2 맹인':['stand','look','listen','startle','turn','walk']}});
+v(30,'길가에서 외치는 두 사람','길가의 두 맹인이 예수께서 지나가심을 듣고 자비를 구해요.',['두 맹인'],'sit listen look lift speak reach',{setting:'road',portrayals:{'두 맹인':{copies:2}}});
+v(31,'막는 소리보다 크게 부름','무리가 잠잠하라 해도 두 사람은 더 크게 예수께 자비를 구해요.',['두 맹인','무리'],'listen startle lift speak reach stand',{setting:'road',portrayals:{'두 맹인':{copies:2}}});
+v(32,'멈춰 서서 물으시는 예수','예수께서 길을 멈추고 두 사람을 불러 무엇을 원하는지 물으세요.',['예수','두 맹인'],'walk halt look signal speak listen',{setting:'road',portrayals:{'두 맹인':{copies:2}}});
+v(33,'눈뜨기를 원하는 간구','두 사람은 예수께 자기들이 보게 되기를 구해요.',['두 맹인','예수'],'look bow speak extend listen stand',{setting:'road',portrayals:{'두 맹인':{copies:2}}});
+v(34,'눈을 만져 보게 하심','예수께서 두 사람의 눈을 만지시자 곧 보게 되어 예수를 따라요.',['예수','두 맹인'],'look reach lift touch lower turn',{setting:'road',placements:{예수:{x:300,y:235},'두 맹인':{x:395,y:235}},effect:'heal',portrayals:{'두 맹인':{copies:2}},tracks:{'두 맹인':['stand','look','listen','startle','turn','walk']}});
 additionalPeople[20]=[{name:'청지기',role:'품꾼에게 품삯을 주는 비유 속 관리인',refs:['마태복음 20:8']},{name:'12 제자',role:'예루살렘 길에서 예수의 말씀을 들은 제자들',refs:['마태복음 20:17','마태복음 20:25']},{name:'무리',role:'여리고에서 예수를 따른 사람들',refs:['마태복음 20:29']}];
 chapter=21;
-v(1,'벳바게에서 2 제자를 보내심','예수께서 예루살렘에 가까운 벳바게에서 2 제자를 마을로 보내세요.',['예수','2 제자'],'walk halt look speak point signal',{setting:'road'});
+v(1,'벳바게에서 두 제자를 보내심','예수께서 예루살렘에 가까운 벳바게에서 두 제자를 마을로 보내세요.',['예수','두 제자'],'walk halt look speak point signal',{setting:'road'});
 d(2,'나귀와 새끼를 데려오라는 지시','예수께서 마을의 매인 나귀와 새끼를 풀어 데려오도록 지시하세요.','donkey-pair',['맞은편 마을','매인 나귀와 새끼','풀어 데려오라는 지시']);
-v(3,'물으면 전할 말을 주심','예수께서 누가 묻거든 주께서 쓰실 일임을 전하라고 하세요.',['예수','2 제자'],'look speak point listen extend stand',{setting:'road'});
+v(3,'물으면 전할 말을 주심','예수께서 누가 묻거든 주께서 쓰실 일임을 전하라고 하세요.',['예수','두 제자'],'look speak point listen extend stand',{setting:'road'});
 d(4,'예언의 성취를 보여 줌','나귀를 준비하는 일이 선지자의 말씀을 이루는 과정이라고 설명해요.','promise',['선지자의 말씀','준비되는 입성','이루어지는 약속']);
 d(5,'겸손한 왕의 오심','나귀 새끼를 타고 오실 겸손한 왕의 약속을 떠올려요.','donkey-pair',['기다리던 왕','나귀 새끼','겸손한 오심']);
-v(6,'명령대로 가는 2 제자','2 제자가 가서 예수께서 지시하신 대로 행해요.',['2 제자'],'listen turn walk walk halt reach',{setting:'road',directions:{'2 제자':'right'}});
-v(7,'겉옷을 얹고 나귀에 타심','제자들이 나귀들을 데려와 겉옷을 얹고 예수께서 나귀에 앉으세요.',['예수','2 제자'],'walk reach rise sit sit sit',{setting:'road',prop:'donkey',propAt:{x:405,y:235},props:[{kind:'donkey',x:535,y:235}],waypoints:{예수:[{x:300,y:235},{x:330,y:235},{x:375,y:225},{x:405,y:235},{x:405,y:235},{x:405,y:235}]},tracks:{'2 제자':['grasp','lift','extend','place','stand','stand']}});
+v(6,'명령대로 가는 두 제자','두 제자가 가서 예수께서 지시하신 대로 행해요.',['두 제자'],'listen turn walk walk halt reach',{setting:'road',directions:{'두 제자':'right'}});
+v(7,'겉옷을 얹고 나귀에 타심','제자들이 나귀들을 데려와 겉옷을 얹고 예수께서 나귀에 앉으세요.',['예수','두 제자'],'walk reach rise sit sit sit',{setting:'road',prop:'donkey',propAt:{x:405,y:235},props:[{kind:'donkey',x:535,y:235}],waypoints:{예수:[{x:300,y:235},{x:330,y:235},{x:375,y:225},{x:405,y:235},{x:405,y:235},{x:405,y:235}]},tracks:{'두 제자':['grasp','lift','extend','place','stand','stand']}});
 v(8,'옷과 가지를 길에 펴는 무리','사람들이 겉옷과 나뭇가지를 길에 펴며 맞을 길을 준비해요.',['무리'],'grasp lift extend bend place stand',{setting:'road',prop:'cloak',props:[{kind:'reed',x:420,y:235},{kind:'cloak',x:460,y:235}]});
 v(9,'호산나로 맞는 사람들','앞뒤의 무리가 예수를 향해 구원과 찬송의 외침을 올려요.',['예수','무리'],'sit listen look stand sit sit',{setting:'road',prop:'donkey',propPath:[{x:300,y:235},{x:320,y:235},{x:340,y:235},{x:360,y:235},{x:380,y:235},{x:400,y:235}],waypoints:{예수:[{x:300,y:235},{x:320,y:235},{x:340,y:235},{x:360,y:235},{x:380,y:235},{x:400,y:235}]},portrayals:{예수:{sit:true}},tracks:{무리:['look','lift','speak','bless','lift','stand']}});
 v(10,'입성에 술렁이는 예루살렘','예수의 입성을 본 성 안 사람들이 그분이 누구인지 물으며 술렁여요.',['무리'],'look startle turn speak point listen',{setting:'courtyard'});
@@ -749,8 +749,8 @@ v(24,'질문으로 되물으심','예수께서 한 질문에 답하면 권위를
 v(25,'요한의 세례에 관해 의논함','지도자들은 요한의 세례가 하늘에서 왔다고 답하면 믿지 않은 책임이 생김을 알아요.',['대제사장과 장로들'],'listen turn speak point look stand',{setting:'temple'});
 v(26,'백성의 눈치를 보는 이들','사람에게서 왔다고 답하기에는 요한을 선지자로 여기는 백성이 두려워요.',['대제사장과 장로들'],'look lower turn speak listen stand',{setting:'temple',emotion:'worried'});
 v(27,'모른다는 대답','지도자들이 모른다고 하자 예수께서도 권위를 답하지 않겠다고 하세요.',['대제사장과 장로들','예수'],'lower speak listen look stand stand',{setting:'temple'});
-d(28,'2 아들에게 내린 부탁','예수께서 포도원에 가서 일하라는 아버지와 2 아들의 비유를 시작하세요.','map',['아버지의 부탁','2 아들의 응답','포도원에서 일함']);
-d(29,'첫 응답의 역본별 배열','개역개정은 승낙 뒤 불순종을, 쉬운성경은 거절 뒤 실천을 1 아들의 응답으로 전해요.','son-variants',['개역개정: 말만 승낙','쉬운성경: 뉘우쳐 실천','말과 행동을 구별함'],{diagram:{kind:'son-variants',labels:['개역개정: 말만 승낙','쉬운성경: 뉘우쳐 실천','말과 행동을 구별함'],patterns:['yes-stay','no-go']},editionVariant:true});
+d(28,'두 아들에게 내린 부탁','예수께서 포도원에 가서 일하라는 아버지와 두 아들의 비유를 시작하세요.','map',['아버지의 부탁','두 아들의 응답','포도원에서 일함']);
+d(29,'첫 응답의 역본별 배열','개역개정은 승낙 뒤 불순종을, 쉬운성경은 거절 뒤 실천을 한 아들의 응답으로 전해요.','son-variants',['개역개정: 말만 승낙','쉬운성경: 뉘우쳐 실천','말과 행동을 구별함'],{diagram:{kind:'son-variants',labels:['개역개정: 말만 승낙','쉬운성경: 뉘우쳐 실천','말과 행동을 구별함'],patterns:['yes-stay','no-go']},editionVariant:true});
 d(30,'다음 응답의 역본별 배열','개역개정은 거절 뒤 실천을, 쉬운성경은 승낙 뒤 불순종을 다른 아들의 응답으로 전해요.','son-variants',['개역개정: 뉘우쳐 실천','쉬운성경: 말만 승낙','실제 따름을 살핌'],{diagram:{kind:'son-variants',labels:['개역개정: 뉘우쳐 실천','쉬운성경: 말만 승낙','실제 따름을 살핌'],patterns:['no-go','yes-stay']},editionVariant:true});
 d(31,'아버지의 뜻을 행한 아들','아들의 번호는 역본에 따라 다르지만 실제로 뜻을 행한 응답이 비유의 핵심이에요.','comparison',['말로만 동의함','뉘우치고 행함','먼저 나라에 들어감'],{editionVariant:true});
 d(32,'믿고 돌아선 이들과 거절한 이들','요한을 믿고 돌이킨 이들과 그것을 보고도 돌아서지 않은 지도자들을 대조하세요.','comparison',['요한의 의로운 길','믿고 돌이킨 이들','끝내 거절한 지도자들']);
@@ -832,7 +832,7 @@ d(10,'그리스도가 주시는 인도','궁극의 지도자는 그리스도 한
 d(11,'큰 사람의 섬김','공동체에서 큰 사람은 다른 이를 섬기는 사람이 되어야 해요.','gift',['크고자 하는 사람','이웃의 필요','섬기는 삶']);
 d(12,'높아짐과 낮아짐의 역전','자기를 높이는 삶과 낮추는 삶의 끝이 뒤바뀜을 말씀하세요.','comparison',['자기를 높임','자기를 낮춤','뒤바뀌는 평가']);
 d(13,'나라의 문을 막는 위선','자신도 들어가지 않으면서 다른 사람의 길까지 막는 지도자들을 책망하세요.','door',['들어가지 않는 지도자','가로막힌 문','막힌 사람들의 길']);
-d(14,'이 번호의 본문 표기','업로드한 2 역본 모두 이 번호를 본문 없음으로 표시해요. 별도 사건을 만들어 넣지 않아요.','edition-note',['23장 14절','2 역본의 본문 없음','본문 표기 안내'],{textualNotice:true});
+d(14,'이 번호의 본문 표기','업로드한 두 역본 모두 이 번호를 본문 없음으로 표시해요. 별도 사건을 만들어 넣지 않아요.','edition-note',['23장 14절','두 역본의 본문 없음','본문 표기 안내'],{textualNotice:true});
 d(15,'잘못 이끄는 열심','멀리 다니며 사람을 얻어도 더 나쁜 길로 이끈다면 그 열심은 선하지 않아요.','map',['사람을 얻는 열심','잘못된 가르침','더 나빠진 결과']);
 d(16,'금에 매인 맹세의 잣대','성전보다 금을 높이는 비뚤어진 맹세의 기준을 지적하세요.','balance',['성전으로 한 맹세','금으로 한 맹세','뒤집힌 가치 기준']);
 d(17,'금을 거룩하게 하는 성전','금을 높이면서 그 금이 거룩해지는 뜻을 놓친 모순을 물으세요.','comparison',['성전의 금','거룩하게 하는 성전','더 중요한 근원']);
@@ -898,8 +898,8 @@ d(36,'아버지께 속한 때','정확한 날과 때를 아무도 계산할 수 
 d(37,'노아 때와의 비교','예수께서 자신의 오심을 노아 때 사람들의 모습과 비교하세요.','flood-memory',['노아의 때','예상하지 못한 사람들','인자의 오심과 비교']);
 d(38,'깨닫지 못한 일상','사람들은 노아가 방주에 들어갈 때까지 일상을 계속하며 깨닫지 못했어요.','flood-memory',['먹고 마시던 일상','방주로 들어간 노아','깨닫지 못한 때']);
 d(39,'홍수가 닥칠 때까지 모름','재난이 닥칠 때까지 몰랐던 모습으로 준비 없는 삶을 경고하세요.','flood-memory',['알지 못한 사람들','닥쳐온 홍수','미리 준비할 삶']);
-d(40,'같은 밭에서 다른 결과','같이 밭에 있던 2 사람에게 다른 결과가 닥칠 것을 말씀하세요.','comparison',['한 밭의 2 사람','다르게 맞는 결과','지금의 준비']);
-d(41,'맷돌을 갈던 일상도','맷돌을 갈던 2 사람의 일상도 다르게 갈릴 수 있다고 하세요.','grinding',['함께 맷돌을 갈음','다르게 맞는 결과','깨어 준비함']);
+d(40,'같은 밭에서 다른 결과','같이 밭에 있던 두 사람에게 다른 결과가 닥칠 것을 말씀하세요.','comparison',['한 밭의 두 사람','다르게 맞는 결과','지금의 준비']);
+d(41,'맷돌을 갈던 일상도','맷돌을 갈던 두 사람의 일상도 다르게 갈릴 수 있다고 하세요.','grinding',['함께 맷돌을 갈음','다르게 맞는 결과','깨어 준비함']);
 d(42,'주가 오실 날을 모르므로','오실 날을 모르기에 깨어 있으라고 하세요.','lamp',['모르는 날','주님을 기다림','깨어 있는 준비']);
 d(43,'도둑을 막을 준비의 예','집주인이 침입의 때를 알면 준비할 것이라는 비유를 드세요.','door',['언제 올지 모르는 도둑','깨어 지키는 집','준비의 필요']);
 d(44,'뜻밖의 때에도 준비함','생각하지 않은 때의 오심을 맞을 준비가 되어 있으라 하세요.','lamp',['예상 밖의 때','준비된 사람','인자의 오심']);
@@ -956,7 +956,7 @@ d(41,'떠나라는 엄중한 판단','왼편의 이들에게 내려지는 영원
 d(42,'필요를 보고도 주지 않음','배고프고 목마른 이를 외면했던 일을 짚으세요.','gift',['배고픔과 목마름','주지 않은 도움','외면한 책임']);
 d(43,'곁에 가지 않은 사람들','낯섦과 헐벗음과 질병과 감금 속의 이들을 돌보지 않은 책임을 밝히세요.','care',['도움이 필요한 자리','찾아가지 않음','돌보지 않은 책임']);
 d(44,'언제 돌보지 않았냐는 질문','외면한 이들은 언제 주님의 어려움을 보고 돕지 않았는지 되물어요.','comparison',['자기의 항변','보았던 이웃의 어려움','놓친 섬김']);
-d(45,'작은 이에게 하지 않은 일','작은 한 이에게 하지 않은 돌봄이 주님께 하지 않은 일이었음을 밝히세요.','heart',['작은 1 사람','베풀지 않은 돌봄','주님께 하지 않은 일']);
+d(45,'작은 이에게 하지 않은 일','작은 한 이에게 하지 않은 돌봄이 주님께 하지 않은 일이었음을 밝히세요.','heart',['작은 한 사람','베풀지 않은 돌봄','주님께 하지 않은 일']);
 d(46,'영원한 두 결과','예수께서 영벌과 영생이라는 마지막의 엄중한 구분으로 가르침을 맺으세요.','separate',['영원한 형벌','의인들의 영생','마지막 판단']);
 chapter=26;
 additionalPeople[26]=['붙잡으러 온 무리','칼을 뽑은 제자','대제사장의 종','거짓 증인들','여종','다른 여종','뜰의 사람들'].map(name=>({name,role:'수난 사건에 등장하는 인물',refs:['마태복음 26장']}));
@@ -966,7 +966,7 @@ v(3,'가야바의 집에 모인 지도자들','대제사장들과 장로들이 �
 v(4,'죽이려는 음모','지도자들이 속임수로 예수를 붙잡아 죽일 방도를 의논해요.',['대제사장과 장로들'],'look bend speak point listen lower',{setting:'court'});
 v(5,'소동을 두려워하는 계산','사람들의 소동을 걱정하여 명절을 피하자는 의견을 내요.',['대제사장과 장로들'],'startle lower speak signal look sit',{setting:'court',emotion:'worried'});
 v(6,'베다니 시몬의 집','예수께서 나병환자 시몬으로 불리는 이의 집에 머무세요.',['예수'],'walk halt look sit listen stand',{setting:'chamber'});
-v(7,'머리에 부은 귀한 향유','1 여인이 식사 중인 예수의 머리에 귀한 향유를 부어요. 여인의 이름을 다른 복음서에서 가져와 단정하지 않아요.',['향유를 부은 여인','예수'],'reach lift anoint-head anoint-head lower stand',{prop:'oil',effect:'anoint-head',placements:{'향유를 부은 여인':{x:335,y:235},예수:{x:410,y:235}},setting:'chamber',tracks:{예수:['sit','sit','sit','sit','sit','sit']},propAt:{x:300,y:235}});
+v(7,'머리에 부은 귀한 향유','한 여인이 식사 중인 예수의 머리에 귀한 향유를 부어요. 여인의 이름을 다른 복음서에서 가져와 단정하지 않아요.',['향유를 부은 여인','예수'],'reach lift anoint-head anoint-head lower stand',{prop:'oil',effect:'anoint-head',placements:{'향유를 부은 여인':{x:335,y:235},예수:{x:410,y:235}},setting:'chamber',tracks:{예수:['sit','sit','sit','sit','sit','sit']},propAt:{x:300,y:235}});
 v(8,'향유를 보고 분개한 제자들','제자들이 향유를 부은 일을 낭비라고 여기며 화를 내요.',['제자들','향유를 부은 여인'],'look startle point speak brace lower',{emotion:'angry',prop:'oil',setting:'chamber'});
 v(9,'가난한 이에게 줄 수 있었다는 말','제자들은 향유를 팔아 가난한 이들을 도울 수 있었다고 주장해요.',['제자들','예수'],'look point speak extend listen stand',{prop:'coin',setting:'chamber'});
 v(10,'여인을 변호하시는 예수','예수께서 제자들의 비난을 멈추게 하시고 여인이 한 일을 귀하게 받아 주세요.',['예수','향유를 부은 여인'],'look signal speak extend bless stand',{setting:'chamber'});
@@ -977,7 +977,7 @@ v(14,'유다가 지도자들을 찾아감','12 제자에 속한 가룟 유다가
 v(15,'배신의 대가를 흥정함','유다가 넘겨줄 대가를 묻고 지도자들이 은 삼십을 달아 줘요.',['가룟 유다','대제사장과 장로들'],'speak extend weigh receive inspect lower',{prop:'coin',setting:'court'});
 v(16,'넘겨줄 기회를 기다림','유다가 예수를 넘길 틈을 찾기 시작해요.',['가룟 유다'],'look turn inspect look lower stand',{emotion:'worried'});
 v(17,'유월절 준비 장소를 물음','제자들이 유월절 식사를 준비할 장소를 예수께 물어요.',['제자들','예수'],'walk halt speak point listen stand');
-v(18,'성 안의 집으로 보내심','예수께서 제자들을 성 안의 1 사람에게 보내 유월절 식사를 알리게 하세요.',['예수','제자들'],'speak point signal extend listen stand');
+v(18,'성 안의 집으로 보내심','예수께서 제자들을 성 안의 한 사람에게 보내 유월절 식사를 알리게 하세요.',['예수','제자들'],'speak point signal extend listen stand');
 v(19,'말씀대로 식사를 준비함','제자들이 지시를 따라 유월절 식사를 준비해요.',['제자들'],'walk reach gather place inspect stand',{prop:'bread',setting:'chamber'});
 v(20,'12 제자와 앉은 저녁','저녁에 예수께서 12 제자와 식탁에 자리하세요.',['예수','제자들'],'walk halt sit look listen sit',{setting:'chamber',prop:'table',propFixed:true,tracks:{제자들:['walk','halt','sit','sit','sit','sit']}});
 v(21,'식사 중 전한 배신의 예고','함께 먹는 이들 중 하나가 자신을 넘길 것이라 예수께서 알리세요.',['예수','제자들'],'sit look speak lower look sit',{setting:'chamber',emotion:'sad'});
@@ -996,7 +996,7 @@ v(33,'떠나지 않겠다는 베드로','베드로는 다른 이들이 떠나도
 v(34,'닭 울기 전 3번의 부인','예수께서 베드로가 그 밤 닭 울기 전에 3번 부인할 것이라 알려 주세요.',['예수','베드로'],'look speak point lower listen stand',{emotion:'sad'});
 v(35,'죽어도 부인하지 않겠다는 말','베드로와 다른 제자들이 죽음 앞에서도 부인하지 않겠다고 말해요.',['베드로','제자들','예수'],'brace speak extend signal listen stand');
 v(36,'겟세마네에서 기다리게 하심','예수께서 기도하러 가시며 제자들에게 그 자리에 앉아 기다리게 하세요.',['예수','제자들'],'walk halt point speak turn walk',{setting:'garden',night:true});
-v(37,'3 제자와 깊은 근심 속으로','베드로와 야고보와 요한을 데리고 가신 예수께 깊은 슬픔이 드러나요.',['예수','베드로','야고보','요한'],'walk halt lower bend look stand',{setting:'garden',night:true,emotion:'sad'});
+v(37,'세 제자와 깊은 근심 속으로','베드로와 야고보와 요한을 데리고 가신 예수께 깊은 슬픔이 드러나요.',['예수','베드로','야고보','요한'],'walk halt lower bend look stand',{setting:'garden',night:true,emotion:'sad'});
 v(38,'함께 깨어 있어 달라는 요청','예수께서 죽을 만큼 괴로운 마음을 밝히며 곁에서 깨어 있도록 부탁하세요.',['예수','베드로','야고보','요한'],'lower speak extend look listen stand',{setting:'garden',night:true,emotion:'sad'});
 v(39,'엎드려 아버지 뜻에 맡김','예수께서 얼굴을 땅에 가까이 숙여 기도하며 자기 뜻보다 아버지의 뜻을 구하세요.',['예수'],'kneel bow prostrate prostrate prostrate lower',{setting:'garden',night:true,emotion:'sad'});
 v(40,'잠든 제자들을 깨우심','예수께서 돌아와 잠든 제자들을 보시고 베드로에게 함께 깨어 있지 못함을 말씀하세요.',['예수','베드로'],'walk look lower speak signal stand',{setting:'garden',night:true,tracks:{베드로:['sleep','sleep','sleep','rise','listen','stand']}});
@@ -1010,7 +1010,7 @@ v(47,'무장한 무리와 온 유다','유다가 칼과 몽치를 든 체포 무
 v(48,'입맞춤을 체포 신호로','유다가 누구를 붙잡아야 할지 입맞춤으로 알려 주기로 정해요.',['가룟 유다','붙잡으러 온 무리'],'bend speak point signal listen stand',{setting:'garden',night:true});
 v(49,'인사와 입맞춤의 배신','유다가 인사를 건네고 가까이 다가가 입맞춤으로 예수를 지목해요.',['가룟 유다','예수'],'walk halt speak bend extend lower',{setting:'garden',night:true,placements:{'가룟 유다':{x:345,y:235},예수:{x:405,y:235}}});
 v(50,'예수를 붙잡은 무리','예수의 말씀 뒤 무리가 다가와 손을 대어 붙잡아요.',['붙잡으러 온 무리','예수'],'walk reach grasp hold brace stand',{setting:'garden',night:true});
-v(51,'칼을 휘두른 제자','함께 있던 1 제자가 칼을 휘둘러 대제사장의 종을 다치게 해요. 상처는 직접 그리지 않아요.',['칼을 뽑은 제자','대제사장의 종'],'reach reach strike halt lower stand',{prop:'sword',setting:'garden',night:true});
+v(51,'칼을 휘두른 제자','함께 있던 한 제자가 칼을 휘둘러 대제사장의 종을 다치게 해요. 상처는 직접 그리지 않아요.',['칼을 뽑은 제자','대제사장의 종'],'reach reach strike halt lower stand',{prop:'sword',setting:'garden',night:true});
 v(52,'칼을 거두라는 명령','예수께서 폭력을 멈추게 하시며 칼을 칼집으로 돌리라고 명하세요.',['예수','칼을 뽑은 제자'],'signal speak point lower look stand',{setting:'garden',night:true});
 d(53,'군사적 구원을 구하지 않으심','예수께 도움을 구할 권세가 없어서 붙잡히시는 것이 아님을 설명하세요. 천사 군대를 실제 도착시키지 않아요.','promise',['아버지께 구할 권세','충분한 도움','스스로 택한 수난의 길']);
 d(54,'성경을 이루는 길','폭력으로 이 상황을 피한다면 성경의 수난 말씀이 어떻게 이루어지겠느냐고 물으세요.','promise',['피할 수 있는 힘','기록된 말씀','성취를 향한 순종']);
@@ -1019,7 +1019,7 @@ v(56,'말씀의 성취와 제자들의 도주','예수께서 예언의 성취를
 v(57,'가야바에게 끌려가심','체포 무리가 예수를 서기관과 장로들이 모인 가야바에게 데려가요.',['붙잡으러 온 무리','예수','가야바'],'walk walk halt signal speak stand',{setting:'court'});
 v(58,'멀리 따라가 앉은 베드로','베드로가 결말을 보려고 멀찍이 따라가 뜰의 사람들 곁에 앉아요.',['베드로','뜰의 사람들'],'walk look halt turn sit look',{setting:'court'});
 v(59,'죽일 증거를 찾는 공회','지도자들이 예수를 죽일 거짓 증거를 찾으려 해요.',['대제사장과 장로들','예수'],'look speak signal inspect lower stand',{setting:'court'});
-v(60,'마침내 나선 두 증인','많은 거짓 증언 뒤 2 사람이 나와요. 2명의 증인을 복제 수로 표시해요.',['거짓 증인들','예수'],'walk halt speak point listen stand',{setting:'court',portrayals:{'거짓 증인들':{copies:2,scale:.85}}});
+v(60,'마침내 나선 두 증인','많은 거짓 증언 뒤 두 사람이 나와요. 2명의 증인을 복제 수로 표시해요.',['거짓 증인들','예수'],'walk halt speak point listen stand',{setting:'court',portrayals:{'거짓 증인들':{copies:2,scale:.85}}});
 v(61,'성전에 관한 왜곡된 증언','증인들이 성전을 헐고 다시 세운다는 말을 예수께 불리한 증언으로 내놓아요.',['거짓 증인들','예수'],'speak point extend look lower stand',{setting:'court'});
 v(62,'일어서서 답을 요구함','대제사장이 일어나 예수께 증언에 답하라고 요구해요.',['가야바','예수'],'sit rise point speak listen stand',{setting:'court'});
 v(63,'침묵 앞에서 신분을 추궁함','예수께서 침묵하시자 대제사장이 하나님의 아들 그리스도인지 맹세로 답하라고 요구해요.',['가야바','예수'],'look speak point extend listen stand',{setting:'court',tracks:{예수:['stand','stand','stand','stand','stand','stand']}});
@@ -1051,9 +1051,9 @@ v(11,'왕인지 묻는 빌라도','총독 앞에 선 예수께 빌라도가 유�
 v(12,'고발 앞의 침묵','지도자들이 고발하는 동안 예수께서 답하지 않으세요.',['대제사장과 장로들','예수'],'point speak signal listen lower stand',{setting:'court',tracks:{예수:['stand','stand','stand','stand','stand','stand']}});
 v(13,'대답을 요구하는 총독','빌라도가 쏟아지는 고발을 듣고 있느냐며 예수께 답을 요구해요.',['빌라도','예수'],'look speak extend point listen stand',{setting:'court'});
 v(14,'침묵에 놀란 빌라도','계속되는 침묵을 보고 빌라도가 크게 놀라요.',['빌라도','예수'],'listen wait look startle inspect stand',{setting:'court',emotion:'surprised'});
-d(15,'명절의 사면 관례','명절에 백성이 원하는 죄수 1 사람을 놓아주던 관례를 소개해요.','door',['명절','백성의 요청','죄수 1 사람의 석방']);
+d(15,'명절의 사면 관례','명절에 백성이 원하는 죄수 한 사람을 놓아주던 관례를 소개해요.','door',['명절','백성의 요청','죄수 한 사람의 석방']);
 v(16,'죄수 바라바의 등장','잘 알려진 죄수 바라바가 소개돼요.',['바라바'],'sit look rise halt lower stand',{setting:'prison'});
-v(17,'2 사람 중 누구를 놓을지 물음','빌라도가 무리에게 바라바와 예수 중 누구를 석방할지 물어요.',['빌라도','바라바','예수','무리'],'look point speak extend listen stand',{setting:'court'});
+v(17,'두 사람 중 누구를 놓을지 물음','빌라도가 무리에게 바라바와 예수 중 누구를 석방할지 물어요.',['빌라도','바라바','예수','무리'],'look point speak extend listen stand',{setting:'court'});
 v(18,'시기임을 알고 있던 총독','빌라도는 지도자들이 시기 때문에 예수를 넘겼다는 점을 알고 있어요.',['빌라도','대제사장과 장로들'],'look inspect lower turn look sit',{setting:'court'});
 v(19,'아내에게서 온 경고','빌라도의 아내가 꿈으로 괴로웠다며 무죄한 이에게 관여하지 말라는 말을 사람을 통해 보내요.',['아내가 보낸 사람','빌라도'],'walk halt speak extend listen stand',{setting:'court'});
 v(20,'무리를 설득하는 지도자들','지도자들이 바라바의 석방과 예수의 죽음을 요청하도록 무리를 부추겨요.',['대제사장과 장로들','무리'],'gather speak point signal listen stand',{setting:'court'});
@@ -1084,7 +1084,7 @@ d(44,'함께 달린 이들의 비방','마태는 함께 처형된 강도들도 �
 d(45,'한낮에 임한 어둠','낮 열두 시부터 오후 세 시까지 땅에 어둠이 계속돼요.','cosmic-dark',['낮 열두 시','계속된 어둠','오후 세 시']);
 v(46,'버림받음의 탄식','예수께서 하나님을 부르며 버림받음의 고통을 큰 소리로 탄식하세요.',['예수'],'brace look speak lower bow hold',{motif:'crucifixion',setting:'hills',emotion:'sad'});
 v(47,'엘리야를 부른다고 오해함','곁의 일부 사람들이 예수의 외침을 엘리야를 부르는 말로 잘못 들어요.',['거기 서 있던 사람들'],'listen startle look point speak stand',{setting:'hills'});
-v(48,'신 포도주를 적신 해면','1 사람이 신 포도주를 머금은 해면을 갈대에 달아 예수께 내밀어요.',['거기 서 있던 사람들'],'run reach scoop place lift extend',{prop:'reed',setting:'hills'});
+v(48,'신 포도주를 적신 해면','한 사람이 신 포도주를 머금은 해면을 갈대에 달아 예수께 내밀어요.',['거기 서 있던 사람들'],'run reach scoop place lift extend',{prop:'reed',setting:'hills'});
 v(49,'구출이 오나 보자는 말','다른 이들은 엘리야가 와서 구하는지 보자고 말해요. 실제 엘리야를 등장시키지 않아요.',['거기 서 있던 사람들'],'signal speak point look wait stand',{setting:'hills'});
 v(50,'숨을 거두심','예수께서 다시 큰 소리로 외치신 뒤 숨을 거두세요.',['예수'],'brace speak lower bow hold wait',{motif:'crucifixion',setting:'hills',emotion:'sad'});
 d(51,'찢어진 휘장과 흔들린 땅','성전 휘장이 위에서 아래로 찢어지고 땅과 바위가 흔들려요.','veil',['위에서 아래로','찢어진 휘장','진동과 갈라진 바위']);
@@ -1104,7 +1104,7 @@ v(64,'무덤을 지키게 해 달라는 요청','지도자들은 제자들이 �
 v(65,'경비를 허락한 빌라도','빌라도가 경비병으로 무덤을 굳게 지키도록 허락해요.',['빌라도','경비병'],'look speak signal point listen stand',{setting:'court'});
 v(66,'봉인하고 지킨 무덤','사람들이 돌을 봉인하고 경비병들이 입구를 지켜요.',['경비병'],'walk halt reach mark guard stand',{prop:'tomb',propFixed:true,setting:'garden'});
 chapter=28;
-v(1,'새벽에 무덤으로 간 2 여인','1주의 첫날 동틀 무렵 두 마리아가 무덤을 보러 가요.',['막달라 마리아','다른 마리아'],'walk walk look halt inspect stand',{prop:'tomb',propFixed:true,setting:'garden'});
+v(1,'새벽에 무덤으로 간 두 여인','1주의 첫날 동틀 무렵 두 마리아가 무덤을 보러 가요.',['막달라 마리아','다른 마리아'],'walk walk look halt inspect stand',{prop:'tomb',propFixed:true,setting:'garden'});
 v(2,'돌을 굴리고 앉은 천사','지진과 함께 내려온 천사가 돌을 굴려 내고 그 위에 앉아요. 돌을 여는 일이 예수의 부활 자체라고 설명하지 않아요.',['주의 천사'],'look reach brace push roll sit',{prop:'stone',propFixed:true,setting:'garden',props:[{kind:'tomb',x:455,y:235}],propPath:[{x:455,y:235},{x:455,y:235},{x:430,y:235},{x:390,y:235},{x:330,y:235},{x:300,y:235}],placements:{'주의 천사':{x:300,y:220}},effect:'light'});
 v(3,'빛나는 천사의 모습','천사의 모습은 번개처럼 밝고 옷은 희게 묘사돼요.',['주의 천사'],'sit look extend hold lower sit',{setting:'garden',whiteAfter:0,effect:'light'});
 v(4,'두려워 쓰러진 경비병','경비병들이 천사를 보고 두려워 떨며 죽은 사람처럼 돼요. 죽었다고 단정하지 않아요.',['경비병'],'guard startle shake brace fall lie',{setting:'garden',emotion:'worried'});

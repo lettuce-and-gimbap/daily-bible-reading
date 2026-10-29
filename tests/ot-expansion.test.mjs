@@ -162,7 +162,7 @@ test('에스라의 귀환·재건·율법 교육·공동체 회복에서 빠진 
 
 test('느헤미야의 성벽 재건·공동체 회복·예배 개혁에서 빠진 핵심 사건을 보강한다',()=>{
  const data=JSON.parse(fs.readFileSync(root+'neh.json')),added=data.scenes.filter(s=>s.id.startsWith('ot-neh-extra-')),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/neh.json'));assert.equal(added.length,19);
- for(const title of ['왕이 허락한 예루살렘 재건','밤중에 무너진 성벽을 살피다','1 손으로 일하고 1 손으로 지키다','빚으로 땅과 자녀를 잃는 백성','초막절을 함께 지키는 기쁨','금식하며 죄를 고백하는 회중','안식일에 닫아 건 성문'])assert(added.some(s=>s.title===title),title);
+ for(const title of ['왕이 허락한 예루살렘 재건','밤중에 무너진 성벽을 살피다','한 손으로 일하고 한 손으로 지키다','빚으로 땅과 자녀를 잃는 백성','초막절을 함께 지키는 기쁨','금식하며 죄를 고백하는 회중','안식일에 닫아 건 성문'])assert(added.some(s=>s.title===title),title);
  for(const s of added)assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);const prayer=data.scenes.find(s=>s.id==='ot-neh-1-2');assert.equal(prayer.ref,'느헤미야 1:5-11');
 });
 
@@ -174,7 +174,7 @@ test('에스더서의 왕후 교체·하만의 음모·중재·부림절 제정�
 
 test('욥기의 논쟁·엘리후의 답변·폭풍 속 질문과 회복을 상징 장면으로 보강한다',()=>{
  const data=JSON.parse(fs.readFileSync(root+'job.json')),added=data.scenes.filter(s=>s.id.startsWith('ot-job-extra-')),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/job.json'));assert.equal(added.length,29);
- for(const title of ['재앙 뒤에도 하나님을 예배한 욥','7일을 말없이 함께한 3 친구','엘리바스의 충고와 욥의 응답','대속자가 살아 계시리라는 욥의 희망','자신의 삶을 내놓는 욥의 맹세','폭풍 속에서 욥에게 창조 세계를 물으시다','친구들을 위해 기도한 욥','회복된 욥과 다시 이어진 가족의 삶'])assert(added.some(s=>s.title===title),title);
+ for(const title of ['재앙 뒤에도 하나님을 예배한 욥','7일을 말없이 함께한 세 친구','엘리바스의 충고와 욥의 응답','대속자가 살아 계시리라는 욥의 희망','자신의 삶을 내놓는 욥의 맹세','폭풍 속에서 욥에게 창조 세계를 물으시다','친구들을 위해 기도한 욥','회복된 욥과 다시 이어진 가족의 삶'])assert(added.some(s=>s.title===title),title);
  for(const s of added){assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);assert(s.narrationOnly);}
  assert(added.filter(s=>[38,40].includes(s.chapter)).every(s=>!s.actors.includes('하나님')));
 });
@@ -247,7 +247,7 @@ test('에스겔의 상징 행동·포로 소식·회복 환상을 사건별로 �
 
 test('다니엘서의 왕궁 시험·불 가운데의 구원·환상 해석을 누락 사건으로 보강한다',()=>{
  const data=JSON.parse(fs.readFileSync(root+'dan.json')),added=data.scenes.filter(s=>s.id.startsWith('ot-dan-extra-')),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/dan.json'));assert.equal(added.length,8);
- for(const title of ['왕의 음식 대신 시험을 청하다','불 가운데서 보호받은 3 친구','큰 나무의 꿈을 해석하다','숫양과 숫염소의 환상을 보다'])assert(added.some(s=>s.title===title),title);
+ for(const title of ['왕의 음식 대신 시험을 청하다','불 가운데서 보호받은 세 친구','큰 나무의 꿈을 해석하다','숫양과 숫염소의 환상을 보다'])assert(added.some(s=>s.title===title),title);
  for(const s of added){assert(s.narrationOnly);assert.equal(s.animation.mode,'illustration');assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
 });
 
@@ -433,7 +433,7 @@ test('num 보강 장면이 누락 사건을 다루고 본문 범위·표상 방�
 
 test('num 보강 장면이 누락 사건을 다루고 본문 범위·표상 방식에 연결된다',()=>{
  const data=JSON.parse(fs.readFileSync(root+'num.json')),added=data.scenes.filter(s=>s.id==='ot-num-extra-15-0'),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/num.json'));assert.equal(added.length,1);
- for(const title of ["안식일에 나무를 1 사람이 모세 앞에 서다"])assert(added.some(s=>s.title===title),title);
+ for(const title of ["안식일에 나무를 한 사람이 모세 앞에 서다"])assert(added.some(s=>s.title===title),title);
  for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
 });
 

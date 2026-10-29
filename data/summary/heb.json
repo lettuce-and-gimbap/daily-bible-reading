@@ -321,8 +321,8 @@
         {"from":"라합","to":"하나님","label":"정탐꾼을 영접","kind":"ally","directed":true,"weight":2,"verses":"31","note":"기생 라합은 믿음으로 정탐꾼들을 평안히 맞아들여, 순종하지 않던 사람들과 함께 망하지 않았어요."},
         {"from":"하나님","to":"에녹","label":"옮기신 분","kind":"ally","directed":true,"weight":2,"verses":"5","note":"에녹은 하나님을 기쁘시게 했다는 증거를 받고 죽음을 보지 않고 옮겨졌어요. 하나님이 그를 데려가셨기 때문이에요."},
         {"from":"이삭","to":"야곱","label":"축복한 아버지","kind":"family","directed":true,"weight":1,"verses":"20","note":"이삭은 믿음으로 야곱과 에서의 앞날을 축복했어요. 히브리서는 이 축복을 통해 하나님이 주신 약속을 바라본 믿음을 보여 줘요."},
-        {"from":"이삭","to":"에서","label":"축복한 아버지","kind":"family","directed":true,"weight":1,"verses":"20","note":"이삭은 야곱뿐 아니라 에서의 앞날도 믿음으로 축복했어요. 이 구절은 2 아들에게 한 축복을 함께 기록해요."},
-        {"from":"야곱","to":"요셉의 아들들","label":"축복한 할아버지","kind":"family","directed":true,"weight":1,"verses":"21","note":"야곱은 임종 때 요셉의 2 아들을 축복했어요. 이름을 각각 적지는 않지만, 창세기의 이 장면에 나오는 에브라임과 므낫세를 가리켜요."}
+        {"from":"이삭","to":"에서","label":"축복한 아버지","kind":"family","directed":true,"weight":1,"verses":"20","note":"이삭은 야곱뿐 아니라 에서의 앞날도 믿음으로 축복했어요. 이 구절은 두 아들에게 한 축복을 함께 기록해요."},
+        {"from":"야곱","to":"요셉의 아들들","label":"축복한 할아버지","kind":"family","directed":true,"weight":1,"verses":"21","note":"야곱은 임종 때 요셉의 두 아들을 축복했어요. 이름을 각각 적지는 않지만, 창세기의 이 장면에 나오는 에브라임과 므낫세를 가리켜요."}
       ],
       "places": [
         {"name":"약속의 땅","where":"가나안","what":"아브라함이 나그네로 산 곳","weight":2},
