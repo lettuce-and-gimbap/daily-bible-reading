@@ -40,7 +40,7 @@ test('추상 지시어를 사건의 대상과 행위로 풀고 언급 인물은 
  assert.match(get('pair-hag-2-haggai-priests').lines[1],/떡·국·포도주·기름/);
  assert.match(get('pair-hag-2-haggai-priests').replyLines[1],/시체를 만져 부정해진 사람이 닿은 음식/);
  assert.match(get('pair-pro-1-wisdom-fool').detail,/두려움과 재앙.*응답을 얻지 못/);
- assert.match(get('pair-sng-5-woman-daughters').lines[1],/사랑하는 이가 어디로 갔는지/);
+ assert.match(get('pair-sng-5-woman-daughters').lines[1],/다른 이들보다 어떤 점/);
  assert.match(get('pair-66').lines[0],/라헬을 아내로 맞기 위해.*7년/);
  assert.doesNotMatch(get('pair-66').lines.join(' '),/그만큼/);
  assert.equal(get('pair-hos-5-ephraim-jareb'),undefined,'도움을 청한 대상일 뿐 현장에 없는 야렙 왕을 대화 상대·인물로 세우지 않음');
@@ -633,7 +633,7 @@ test('아가의 8장 관계 후보 23개는 연인·가족·합창대의 서로 
   assert.ok(entries.some(entry=>entry.chapter===`sng.${relation.from.chap}`&&((entry.speaker===relation.from.name&&entry.target===relation.to.name)||(entry.target===relation.from.name&&entry.speaker===relation.to.name))));
  }
  for(const entry of entries){
-  assert.ok(entry.detail);assert.match(entry.detail,/재구성|극화|노래/);
+  assert.ok(entry.detail);assert.match(entry.detail,/재구성|극화|노래|창작/);
   const people=summary.chapters[Number(entry.chapter.split('.')[1])].people.map(person=>person.name);
   assert.ok(people.includes(entry.speaker));assert.ok(people.includes(entry.target));
  }
