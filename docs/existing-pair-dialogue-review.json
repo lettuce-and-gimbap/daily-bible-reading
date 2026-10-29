@@ -2,8 +2,8 @@
   "date": "2026-10-29",
   "unit": "PAIR_DIALOGUE entry; relationship edge counts may differ",
   "total": 928,
-  "reviewed": 151,
-  "pending": 777,
+  "reviewed": 170,
+  "pending": 758,
   "entries": [
     {
       "id": "pair-2ki-21-people-josiah",
@@ -1737,7 +1737,9 @@
       "speaker": "아버지",
       "target": "아들",
       "ref": "잠언 5:1–23",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-7-seductress-young-man",
@@ -1785,7 +1787,9 @@
       "speaker": "지혜",
       "target": "어리석은 자",
       "ref": "잠언 9:1–12",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-9-foolish-woman-young-man",
@@ -1793,7 +1797,9 @@
       "speaker": "미련한 여인",
       "target": "어리석은 자",
       "ref": "잠언 9:13–18",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-pro-10-righteous-wicked",
@@ -1801,7 +1807,9 @@
       "speaker": "의인",
       "target": "악인",
       "ref": "잠언 10:1–12",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-13-parent-wise-son",
@@ -1809,7 +1817,9 @@
       "speaker": "부모",
       "target": "지혜로운 아들",
       "ref": "잠언 13:1, 24",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-13-friend-wise-son",
@@ -1817,7 +1827,9 @@
       "speaker": "지혜로운 친구",
       "target": "지혜로운 아들",
       "ref": "잠언 13:20",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-17-friend-brother",
@@ -1825,7 +1837,9 @@
       "speaker": "친구",
       "target": "형제",
       "ref": "잠언 17:17",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-23-parents-son",
@@ -1913,7 +1927,9 @@
       "speaker": "음녀",
       "target": "아들",
       "ref": "잠언 5:3–14",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-5-wife-son",
@@ -1921,7 +1937,9 @@
       "speaker": "젊어서 맞은 아내",
       "target": "아들",
       "ref": "잠언 5:15–20",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-6-father-son",
@@ -1953,7 +1971,9 @@
       "speaker": "지혜",
       "target": "미련한 여인",
       "ref": "잠언 9:1–6, 13–18",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-pro-9-scoffer-wise",
@@ -1961,7 +1981,9 @@
       "speaker": "거만한 자",
       "target": "지혜 있는 자",
       "ref": "잠언 9:7–9",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-10-wise-foolish-sons",
@@ -1969,7 +1991,9 @@
       "speaker": "지혜로운 아들",
       "target": "미련한 아들",
       "ref": "잠언 10:1, 5, 8",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-12-wise-fool",
@@ -1977,7 +2001,9 @@
       "speaker": "지혜로운 자",
       "target": "미련한 자",
       "ref": "잠언 12:15–18",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-12-diligent-lazy",
@@ -1985,7 +2011,9 @@
       "speaker": "부지런한 자",
       "target": "게으른 자",
       "ref": "잠언 12:11, 24, 27",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-13-wise-arrogant",
@@ -1993,7 +2021,9 @@
       "speaker": "지혜로운 아들",
       "target": "거만한 자",
       "ref": "잠언 13:1, 10, 20",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-14-wise-foolish-women",
@@ -2001,7 +2031,9 @@
       "speaker": "지혜로운 여인",
       "target": "미련한 여인",
       "ref": "잠언 14:1, 7–9",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-14-prudent-poor",
@@ -2009,7 +2041,9 @@
       "speaker": "슬기로운 자",
       "target": "가난한 사람",
       "ref": "잠언 14:21, 31",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-pro-15-wise-fool",
@@ -2017,7 +2051,9 @@
       "speaker": "지혜로운 자",
       "target": "미련한 자",
       "ref": "잠언 15:1–5, 14",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-20-king-faithful",
@@ -2025,7 +2061,9 @@
       "speaker": "왕",
       "target": "충성된 자",
       "ref": "잠언 20:6, 28",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-pro-23-seductress-son",
