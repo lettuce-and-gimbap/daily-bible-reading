@@ -134,7 +134,6 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 :root[data-weather="snow"]{--weather-wash:#d4e6ef38}
 body{background-image:linear-gradient(var(--weather-wash),var(--weather-wash)),linear-gradient(135deg,var(--kst-sky),var(--bg) 65%);background-attachment:fixed}
 .app-entrance{background-image:linear-gradient(var(--weather-wash),var(--weather-wash)),linear-gradient(155deg,var(--kst-sky),var(--kst-light))!important}
-.entrance-celestial{top:var(--sun-height,22%);left:var(--sun-x,50%);transition:top 1s,left 1s}
 .app-entrance img{filter:brightness(var(--hour-glow,1));transition:filter 1s}
 :root[data-weather="overcast"] .app-entrance img,:root[data-weather="rain"] .app-entrance img{filter:brightness(.85) saturate(.8)}
 
