@@ -2,8 +2,8 @@
   "date": "2026-10-29",
   "unit": "PAIR_DIALOGUE entry; relationship edge counts may differ",
   "total": 928,
-  "reviewed": 8,
-  "pending": 920,
+  "reviewed": 18,
+  "pending": 910,
   "entries": [
     {
       "id": "pair-2ki-21-people-josiah",
@@ -277,7 +277,9 @@
       "speaker": "도망하라는 사람들",
       "target": "다윗",
       "ref": "시편 11:1–4",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문의 대조와 신뢰 고백에 부합하며 가상 문답 명시"
     },
     {
       "id": "pair-psa-18-saul-david",
@@ -285,7 +287,9 @@
       "speaker": "사울",
       "target": "다윗",
       "ref": "시편 18:1–3, 16–19",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 수신자·화자·시적 기도와 창작 문답 구분"
     },
     {
       "id": "pair-psa-34-achish-david",
@@ -521,7 +525,9 @@
       "speaker": "백성",
       "target": "기름 부음 받은 왕",
       "ref": "시편 20:1–9",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 수신자·화자·시적 기도와 창작 문답 구분"
     },
     {
       "id": "pair-psa-27-parents-david",
@@ -781,7 +787,9 @@
       "speaker": "거짓말하는 자들",
       "target": "가련한 자들",
       "ref": "시편 12:2–5",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 수신자·화자·시적 기도와 창작 문답 구분"
     },
     {
       "id": "pair-psa-27-enemies-david",
@@ -987,7 +995,9 @@
       "speaker": "악인",
       "target": "다윗",
       "ref": "시편 11:2–7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 수신자·화자·시적 기도와 창작 문답 구분"
     },
     {
       "id": "pair-psa-13-enemy-david",
@@ -995,7 +1005,9 @@
       "speaker": "원수",
       "target": "다윗",
       "ref": "시편 13:1–6",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 수신자·화자·시적 기도와 창작 문답 구분"
     },
     {
       "id": "pair-psa-16-david-saints",
@@ -1003,7 +1015,9 @@
       "speaker": "다윗",
       "target": "성도",
       "ref": "시편 16:2–4",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 수신자·화자·시적 기도와 창작 문답 구분"
     },
     {
       "id": "pair-psa-17-enemies-david",
@@ -1011,7 +1025,9 @@
       "speaker": "원수들",
       "target": "다윗",
       "ref": "시편 17:9–15",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 수신자·화자·시적 기도와 창작 문답 구분"
     },
     {
       "id": "pair-psa-18-enemies-david",
@@ -1019,7 +1035,9 @@
       "speaker": "원수들",
       "target": "다윗",
       "ref": "시편 18:4–19, 37–45",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문의 대조와 신뢰 고백에 부합하며 가상 문답 명시"
     },
     {
       "id": "pair-psa-20-chariots-people",
@@ -1027,7 +1045,9 @@
       "speaker": "병거와 말을 의지하는 자",
       "target": "백성",
       "ref": "시편 20:6–9",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 수신자·화자·시적 기도와 창작 문답 구분"
     },
     {
       "id": "pair-psa-21-enemies-david",
