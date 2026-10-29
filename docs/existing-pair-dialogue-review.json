@@ -2,8 +2,8 @@
   "date": "2026-10-29",
   "unit": "PAIR_DIALOGUE entry; relationship edge counts may differ",
   "total": 928,
-  "reviewed": 318,
-  "pending": 610,
+  "reviewed": 323,
+  "pending": 605,
   "entries": [
     {
       "id": "pair-2ki-21-people-josiah",
@@ -7655,7 +7655,9 @@
       "speaker": "선장",
       "target": "요나",
       "ref": "요나 1:6, 9–10",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-jnh-1-sailors-jonah",
@@ -7663,7 +7665,9 @@
       "speaker": "사공들",
       "target": "요나",
       "ref": "요나 1:11–15",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-jnh-3-jonah-nineveh",
@@ -7671,7 +7675,9 @@
       "speaker": "요나",
       "target": "니느웨 사람들",
       "ref": "요나 3:4–5",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-jnh-3-king-nineveh",
@@ -7679,7 +7685,9 @@
       "speaker": "니느웨 왕",
       "target": "니느웨 사람들",
       "ref": "요나 3:6–9",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-jnh-4-jonah-nineveh",
@@ -7687,7 +7695,9 @@
       "speaker": "니느웨 사람들",
       "target": "요나",
       "ref": "요나 4:5, 9–11",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-mic-1-micah-judah-towns",
