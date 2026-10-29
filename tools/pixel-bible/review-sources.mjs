@@ -18,8 +18,8 @@ const bibleFiles=fs.readdirSync(path.join(root,'원문_md')),hokmaFiles=fs.readd
 const results=[];
 for(const [group,entries] of Object.entries(groups))for(const e of entries){
  const ref=parseReference(e.ref);if(!ref)throw Error('잘못된 참조 '+group+':'+e.id+' '+e.ref);
- const bible=['개역개정','쉬운성경'].map(ver=>{
-  const name=bibleFiles.find(n=>n.startsWith(ver+'_'+ref.code+'_'));if(!name)throw Error('원문 없음 '+ver+' '+ref.code);
+ const bible=[['개역개정4판',['개역개정4판','개역개정']],['쉬운성경',['쉬운성경']]].map(([ver,prefixes])=>{
+  const name=bibleFiles.find(n=>prefixes.some(prefix=>n.startsWith(prefix+'_'))&&n.includes('_'+ref.code+'_'));if(!name)throw Error('원문 없음 '+ver+' '+ref.code);
   const text=chapter(read(path.join(root,'원문_md',name)),ref.chapter);
   const rows=text.split(/\r?\n/).filter(s=>/^\d+ /.test(s)&&(!ref.verses||ref.verses.includes(parseInt(s))));
   const missing=(ref.verses||[]).filter(v=>!rows.some(s=>parseInt(s)===v));if(!rows.length||missing.length)throw Error('절 누락 '+e.ref+' '+name+' '+missing);
