@@ -137,3 +137,6 @@ body{background-image:linear-gradient(var(--weather-wash),var(--weather-wash)),l
 .entrance-celestial{top:var(--sun-height,22%);left:var(--sun-x,50%);transition:top 1s,left 1s}
 .app-entrance img{filter:brightness(var(--hour-glow,1));transition:filter 1s}
 :root[data-weather="overcast"] .app-entrance img,:root[data-weather="rain"] .app-entrance img{filter:brightness(.85) saturate(.8)}
+
+.reading-weather{position:fixed;z-index:0;left:var(--weather-x,50%);top:var(--weather-y,20%);font-size:clamp(28px,5vw,58px);opacity:.35;pointer-events:none;transition:left 1s,top 1s,opacity 1s}
+.reading-weather[hidden]{display:none}
