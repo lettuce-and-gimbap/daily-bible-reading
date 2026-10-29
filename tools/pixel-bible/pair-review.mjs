@@ -31,7 +31,7 @@ function verseText(prefix,code,chapter,ref){
  const unit=code==='psa'?'편':'장',start=text.indexOf(`\n## ${chapter}${unit}\n`);if(start<0)return '';
  const end=text.indexOf('\n## ',start+4),body=text.slice(start,end<0?undefined:end);
  const wanted=verseNumbers(ref);
- return body.split('\n').filter(s=>wanted.has(parseInt(s))&&/^\d+ /.test(s)).join(' ');
+ return body.split('\n').filter(s=>{const m=s.match(/^(\d+)(?:-(\d+))? /);if(!m)return false;for(let v=+m[1];v<=+(m[2]||m[1]);v++)if(wanted.has(v))return true;return false;}).join(' ');
 }
 async function load(){
  const mod=await import(pathToFileURL(dataFile).href+'?t='+Date.now());

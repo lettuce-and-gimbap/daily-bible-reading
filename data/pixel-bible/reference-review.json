@@ -17976,7 +17976,7 @@
       "bible": [
         {
           "file": "개역개정4판_24_jer_예레미야.md",
-          "sha256": "5a8871235f53631c768422c1bf55423155e963db09d33e02ae1ad07cedf768be"
+          "sha256": "410e89b1e7919f56a48cab59b9259de308831cc89703872f5d2f0fb10e9a141d"
         },
         {
           "file": "쉬운성경_24_jer_예레미야.md",
@@ -17987,17 +17987,7 @@
         "file": "호크마_24_예레미야.md",
         "chapter": 32,
         "sha256": "b96be11ddd5e233b6dce6d5b234a42986dc84317d535f648870d71a6c777028e"
-      },
-      "sourceGap": [
-        {
-          "version": "개역개정4판",
-          "missing": [
-            3,
-            4,
-            5
-          ]
-        }
-      ]
+      }
     },
     {
       "group": "pair",
