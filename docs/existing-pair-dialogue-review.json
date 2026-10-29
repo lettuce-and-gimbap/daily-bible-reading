@@ -2,8 +2,8 @@
   "date": "2026-10-29",
   "unit": "PAIR_DIALOGUE entry; relationship edge counts may differ",
   "total": 928,
-  "reviewed": 247,
-  "pending": 681,
+  "reviewed": 268,
+  "pending": 660,
   "entries": [
     {
       "id": "pair-2ki-21-people-josiah",
@@ -5329,7 +5329,9 @@
       "speaker": "메대 사람들",
       "target": "바벨론",
       "ref": "이사야 13:17–22",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-14-babylon-jacob",
@@ -5337,7 +5339,9 @@
       "speaker": "바벨론 왕",
       "target": "야곱",
       "ref": "이사야 14:3–6, 12–15",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-15-isaiah-moab",
@@ -5345,7 +5349,9 @@
       "speaker": "이사야",
       "target": "모압 사람들",
       "ref": "이사야 15:5–9",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-16-moab-judah",
@@ -5353,7 +5359,9 @@
       "speaker": "모압 사람들",
       "target": "유다",
       "ref": "이사야 16:1–5",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-isa-16-isaiah-moab",
@@ -5361,7 +5369,9 @@
       "speaker": "이사야",
       "target": "모압 사람들",
       "ref": "이사야 16:9–12",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-17-damascus-ephraim",
@@ -5369,7 +5379,9 @@
       "speaker": "다메섹",
       "target": "에브라임",
       "ref": "이사야 17:1–3",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-18-envoys-cush",
@@ -5377,7 +5389,9 @@
       "speaker": "구스의 사신들",
       "target": "구스",
       "ref": "이사야 18:1–2, 7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-isa-18-isaiah-envoys",
@@ -5385,7 +5399,9 @@
       "speaker": "이사야",
       "target": "구스의 사신들",
       "ref": "이사야 18:2–3",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-19-advisers-egypt",
@@ -5393,7 +5409,9 @@
       "speaker": "바로의 모사들",
       "target": "애굽",
       "ref": "이사야 19:11–15",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-19-egypt-assyria",
@@ -5401,7 +5419,9 @@
       "speaker": "애굽",
       "target": "앗수르",
       "ref": "이사야 19:23–25",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-20-tartan-sargon",
@@ -5409,7 +5429,9 @@
       "speaker": "다르단",
       "target": "사르곤",
       "ref": "이사야 20:1",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-20-sargon-egypt",
@@ -5417,7 +5439,9 @@
       "speaker": "사르곤",
       "target": "애굽과 구스",
       "ref": "이사야 20:3–5",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-isa-20-coast-egypt",
@@ -5425,7 +5449,9 @@
       "speaker": "해변 주민들",
       "target": "애굽과 구스",
       "ref": "이사야 20:5–6",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-11-shoot-poor",
@@ -5433,7 +5459,9 @@
       "speaker": "이새의 싹",
       "target": "가난한 자와 겸손한 자",
       "ref": "이사야 11:1–5",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-11-nations-shoot",
@@ -5441,7 +5469,9 @@
       "speaker": "열방",
       "target": "이새의 싹",
       "ref": "이사야 11:10",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-21-elam-babylon",
@@ -5449,7 +5479,9 @@
       "speaker": "엘람과 메대",
       "target": "바벨론",
       "ref": "이사야 21:2, 9",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-isa-21-dumah-watchman",
@@ -5457,7 +5489,9 @@
       "speaker": "세일의 질문자",
       "target": "파수꾼",
       "ref": "이사야 21:11–12",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-22-eliakim-shebna",
@@ -5465,7 +5499,9 @@
       "speaker": "엘리아김",
       "target": "셉나",
       "ref": "이사야 22:15–22",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-22-eliakim-hilkiah",
@@ -5473,7 +5509,9 @@
       "speaker": "엘리아김",
       "target": "힐기야",
       "ref": "이사야 22:20",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-23-sidon-tyre",
@@ -5481,7 +5519,9 @@
       "speaker": "시돈 상인",
       "target": "두로",
       "ref": "이사야 23:2–3",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-28-priests-leaders",
@@ -5489,7 +5529,9 @@
       "speaker": "제사장과 선지자",
       "target": "예루살렘 지도자들",
       "ref": "이사야 28:7–15",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-isa-30-sons-pharaoh",
