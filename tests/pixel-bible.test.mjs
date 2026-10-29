@@ -368,7 +368,7 @@ test('산상설교의 예화 인물과 비교 대상 집단은 실제 장면 배
  const chapter20=summary.chapters['20'];
  assert.equal(isMentionOnlyPerson({name:'세베대의 아들들의 어머니'},{code:'mat',chapter:20}),false,'야고보와 요한의 어머니는 실제로 예수께 청함');
  assert.match(summary.chapters['19'].rels.find(relation=>relation.to==='부자 청년').note,/직접 기록하지 않아요/);
- assert.match(chapter20.rels.find(relation=>relation.from==='야고보'&&relation.to==='요한').note,/마태복음은 이때 이후 두 사람의 생애를 기록하지 않아요/);
+ assert.match(chapter20.rels.find(relation=>relation.from==='야고보'&&relation.to==='요한').note,/두 형제는 할 수 있다고 답했어요/);
 });
 
 test('마태복음 28장의 두 여인 모두 천사의 소식을 듣고 부활하신 예수를 만난다',()=>{
@@ -2100,7 +2100,7 @@ test('디모데후서의 기억·전언·요청을 현재 동행 인물과 구�
  assert.equal(resolveIdentity('오네시보로',{code:'2ti',chapter:1}).kind,'unresolved');
  assert.equal(resolveIdentity('오네시보로의 집',{code:'2ti',chapter:4}).kind,'group');
  assert.equal(resolveIdentity('브리스가',{code:'2ti',chapter:4}).id,resolveIdentity('브리스길라',{code:'rom',chapter:16}).id);
- assert.equal(Object.values(summary.chapters).reduce((n,c)=>n+(c.rels||[]).length,0),20);
+ assert.equal(Object.values(summary.chapters).reduce((n,c)=>n+(c.rels||[]).length,0),19);
 });
 
 test('디도서는 실제 목회 대상 디도와 파송을 도울 선교 동역자를 남기고 일반 직분·미래 파견자를 분리한다',async()=>{

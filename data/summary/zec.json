@@ -25,8 +25,8 @@
       ],
       "rels": [
         {"from":"하나님","to":"스가랴","label":"돌아오라 하심","kind":"ally","directed":true,"weight":3,"verses":"3","note":"하나님은 먼저 스가랴를 통해 돌아오라고 부르셨어요."},
-        {"from":"여호와의 천사","to":"하나님","label":"긍휼을 구한 천사","kind":"ally","directed":true,"weight":3,"verses":"12","note":"천사는 70년이나 노하신 예루살렘을 언제까지 불쌍히 여기지 않으시냐고 하나님께 물었어요."},
-        {"from":"하나님","to":"여호와의 천사","label":"위로로 답하심","kind":"ally","directed":true,"weight":2,"verses":"13","note":"하나님은 천사에게 좋고 위로가 되는 말로 대답하셨어요. 사랑하며 예루살렘으로 돌아오겠다는 약속이에요."},
+        {"from":"여호와의 천사","to":"하나님","label":"긍휼을 구한 천사","kind":"ally","directed":true,"weight":3,"verses":"12","note":"천사는 칠십 년이나 노하신 예루살렘을 언제까지 불쌍히 여기지 않으시냐고 하나님께 물었어요."},
+        {"from":"하나님","to":"여호와의 천사","label":"위로로 답하심","kind":"ally","directed":true,"weight":2,"verses":"13-16절","note":"하나님은 천사에게 좋고 위로가 되는 말로 대답하셨어요. 사랑하며 예루살렘으로 돌아오겠다는 약속이에요."},
         {"from":"스가랴","to":"천사","label":"환상을 묻고 해석을 들음","kind":"ally","directed":true,"weight":2,"verses":"9, 19-21","note":"스가랴가 말과 뿔, 대장장이 환상의 뜻을 묻고 함께 말하던 천사가 설명했어요."}
       ],
       "places": [
@@ -157,10 +157,10 @@
         {"name":"하나님","role":"온 세상의 주","weight":3}
       ],
       "rels": [
-        {"from":"하나님","to":"싹이라 이름하는 사람","label":"세우실 분","kind":"ally","directed":true,"weight":3,"verses":"12-13","note":"싹은 하나님이 일으키시는 분으로, 메시아로 읽는 견해가 많아요. 성전을 짓고 왕과 제사장 직분 2개를 가진 분으로 그려져요."},
+        {"from":"하나님","to":"싹이라 이름하는 사람","label":"세우실 분","kind":"ally","directed":true,"weight":3,"verses":"12-13","note":"싹이라 이름하는 사람은 자기 곳에서 돋아나 여호와의 전을 짓고 보좌에 앉아 다스려요. 제사장도 자기 자리에 있어 이 둘 사이에 평화의 의논이 있어요. 싹을 메시아로 읽는 견해가 많아요."},
         {"from":"헬대와 도비야와 여다야","to":"여호수아","label":"면류관 재료를 드림","kind":"ally","directed":true,"weight":1,"verses":"10-11","note":"바빌론에서 돌아온 이 사람들이 은과 금을 가져와 관을 만들게 했어요."},
         {"from":"스가랴","to":"여호수아","label":"면류관을 씌운 이","kind":"ally","directed":true,"weight":2,"verses":"11","note":"스가랴는 하나님이 시키신 대로 관을 만들어 대제사장 머리에 씌웠어요. 이는 싹이라는 분을 미리 보여 주는 행동으로 읽는 견해가 많아요."},
-        {"from":"천사","to":"스가랴","label":"풀어 준 천사","kind":"ally","directed":true,"weight":1,"verses":"4-5","note":"천사가 병거 4대는 온 땅 주 앞에 섰다가 나가는 하늘의 영 4개라고 풀어 주었어요. 북쪽으로 간 병거가 북쪽 땅에서 하나님의 영을 쉬게 했다고 알려 줬어요."}
+        {"from":"천사","to":"스가랴","label":"풀어 준 천사","kind":"ally","directed":true,"weight":1,"verses":"4-5","note":"천사가 병거 네 대는 온 세상의 주 앞에 섰다가 나가는 하늘의 네 바람이라고 풀어 주었어요. 북쪽으로 간 병거가 북쪽 땅에서 하나님의 영을 쉬게 했다고 알려 줬어요."}
       ],
       "places": [
         {"name":"놋산 2개 사이","where":"놋쇠 산 2개 사이","what":"병거 4대가 나와 온 땅으로 나간 곳.","weight":2},
@@ -240,7 +240,7 @@
       "rels": [
         {"from":"겸손한 왕","to":"시온 주민","label":"임하시는 왕","kind":"ally","directed":true,"weight":3,"verses":"9","note":"공의롭고 구원을 베푸는 왕이 오세요. 군마가 아닌 나귀 새끼를 타고 평화를 선포하세요. 예수님의 예루살렘 입성이 이 말씀을 이루었어요."},
         {"from":"하나님","to":"갇힌 자들","label":"놓으실 분","kind":"ally","directed":true,"weight":3,"verses":"11-12","note":"하나님은 언약의 피 때문에 갇힌 사람들을 물이 없는 구덩이에서 놓아 주세요. 소망을 가진 포로들에게 요새로 돌아오라고 하세요."},
-        {"from":"하나님","to":"두로와 시돈과 블레셋","label":"심판하실 분","kind":"conflict","directed":true,"weight":2,"verses":"2-6","note":"두로는 은과 금을 진흙처럼 쌓은 부유한 성이었지만 하나님이 그 권세를 바다에 쳐넣으세요. 블레셋은 교만이 꺾이고 남은 자는 하나님께 속하게 돼요."},
+        {"from":"하나님","to":"두로와 시돈과 블레셋","label":"심판하실 분","kind":"conflict","directed":true,"weight":2,"verses":"2-7절","note":"두로는 은과 금을 진흙처럼 쌓은 부유한 성이었지만 하나님이 그 권세를 바다에 쳐넣으세요. 블레셋은 교만이 꺾이고 남은 자는 하나님께 속하게 돼요."},
         {"from":"하나님","to":"헬라 자손","label":"치실 분","kind":"conflict","directed":true,"weight":1,"verses":"13","note":"하나님은 유다를 활로, 에브라임을 화살로 삼아 그리스 사람과 맞서게 하세요."}
       ],
       "places": [
@@ -267,7 +267,7 @@
       ],
       "rels": [
         {"from":"하나님","to":"악한 목자들","label":"노하시는 분","kind":"conflict","directed":true,"weight":2,"verses":"3","note":"하나님은 목자들에게 노하시며 숫염소들을 벌하겠다고 하세요."},
-        {"from":"하나님","to":"유다 족속","label":"견고케 하실 분","kind":"ally","directed":true,"weight":3,"verses":"6","note":"하나님은 자기 양 떼인 유다를 돌보고 전쟁의 준마처럼 만드세요. 그에게서 모퉁잇돌과 말뚝과 활과 지도자가 나와요."},
+        {"from":"하나님","to":"유다 족속","label":"견고케 하실 분","kind":"ally","directed":true,"weight":3,"verses":"3-6절","note":"하나님은 자기 양 떼인 유다를 돌보고 전쟁의 준마처럼 만드세요. 그에게서 모퉁잇돌과 말뚝과 활과 지도자가 나와요."},
         {"from":"하나님","to":"요셉 족속","label":"돌아오게 하실 분","kind":"ally","directed":true,"weight":2,"verses":"6","note":"요셉 족속은 북쪽 이스라엘이에요. 하나님은 이들을 긍휼히 여겨 다시 돌아오게 하세요."},
         {"from":"복술가","to":"유다 족속","label":"속인 자","kind":"conflict","directed":true,"weight":1,"verses":"2","note":"점쟁이와 우상은 허탄한 말과 거짓 꿈으로 위로를 주었어요. 그래서 백성은 목자 없는 양처럼 헤맸어요."}
       ],
@@ -295,7 +295,7 @@
         {"name":"하나님","role":"은 30개으로 헤아림받은 분","weight":3}
       ],
       "rels": [
-        {"from":"스가랴","to":"잡혀 죽을 양 떼","label":"먹인 목자","kind":"ally","directed":true,"weight":3,"verses":"4, 7","note":"스가랴는 하나님의 뜻을 보여 주는 목자 역할을 해요. 은총 막대기는 모든 민족과 맺은 언약을, 연합 막대기는 유다와 이스라엘의 우정을 뜻해요."},
+        {"from":"스가랴","to":"잡혀 죽을 양 떼","label":"먹인 목자","kind":"ally","directed":true,"weight":3,"verses":"4, 7, 10, 14절","note":"스가랴는 하나님의 뜻을 보여 주는 목자 역할을 해요. 은총 막대기는 모든 민족과 맺은 언약을, 연합 막대기는 유다와 이스라엘의 우정을 뜻해요."},
         {"from":"잡혀 죽을 양 떼","to":"스가랴","label":"목자를 싫어함","kind":"conflict","directed":true,"weight":2,"verses":"8","note":"양 떼는 스가랴를 싫어했고 스가랴도 그들을 견디지 못했어요."},
         {"from":"사고파는 자들","to":"잡혀 죽을 양 떼","label":"팔아넘긴 자","kind":"conflict","directed":true,"weight":2,"verses":"5","note":"양을 사고판 사람들은 양이 죽는 걸 대수롭지 않게 여겼어요."},
         {"from":"하나님","to":"못된 목자","label":"화를 선포하심","kind":"conflict","directed":true,"weight":2,"verses":"17","note":"양 떼를 버린 못된 목자의 팔과 오른쪽 눈이 쓸모없게 된다고 하세요."}
@@ -326,7 +326,7 @@
         {"from":"하나님","to":"다윗의 족속","label":"은총의 영을 부으심","kind":"ally","directed":true,"weight":3,"verses":"10","note":"하나님이 은혜와 간구하는 영을 부으시겠다고 하세요."},
         {"from":"다윗의 족속","to":"찔린 이","label":"바라보며 애통함","kind":"ally","directed":true,"weight":3,"verses":"10","note":"그들은 자기가 찌른 분을 보며 독자를 잃은 듯 울어요. 요한복음은 예수님의 옆구리를 창으로 찌른 일을 이 말씀의 성취로 보았어요."},
         {"from":"모든 민족","to":"예루살렘 주민","label":"치려는 나라","kind":"conflict","directed":true,"weight":2,"verses":"3","note":"온 나라가 모여 예루살렘을 치려 하지만 예루살렘은 무거운 돌이 되어 들어 올리는 사람이 상해요."},
-        {"from":"하나님","to":"모든 민족","label":"상하게 하실 분","kind":"conflict","directed":true,"weight":2,"verses":"9","note":"하나님은 예루살렘을 치러 오는 모든 나라를 멸하려 하세요. 말은 놀라고 기수는 미치게 하며 눈을 멀게 하세요."}
+        {"from":"하나님","to":"모든 민족","label":"상하게 하실 분","kind":"conflict","directed":true,"weight":2,"verses":"4, 9절","note":"하나님은 예루살렘을 치러 오는 모든 나라를 멸하려 하세요. 말은 놀라고 기수는 미치게 하며 눈을 멀게 하세요."}
       ],
       "places": [
         {"name":"예루살렘","where":"예루살렘","what":"찌른 이를 바라보고 애통할 곳.","weight":3},
@@ -355,8 +355,8 @@
         {"from":"하나님","to":"다윗의 족속과 예루살렘 주민","label":"샘을 여실 분","kind":"ally","directed":true,"weight":3,"verses":"1","note":"하나님이 죄와 더러움을 씻는 샘을 여세요."},
         {"from":"하나님","to":"내 목자, 내 짝 된 자","label":"짝 된 목자","kind":"ally","directed":true,"weight":3,"verses":"7","note":"하나님이 칼에게 내 목자, 내 짝 된 자를 치라고 하세요."},
         {"from":"흩어질 양","to":"내 목자, 내 짝 된 자","label":"목자를 따르는 양","kind":"ally","directed":true,"weight":2,"verses":"7","note":"목자가 맞으면 양이 흩어져요. 이를 예수님이 잡히시던 밤 제자들이 흩어진 일과 이어 읽는 견해가 많아요. 그래도 하나님은 작은 자들 위에 손을 두세요."},
-        {"from":"하나님","to":"남은 3분의 1","label":"연단하실 분","kind":"ally","directed":true,"weight":3,"verses":"9","note":"남은 3분의 1은 불 속에서 은과 금처럼 단련돼요. 그들이 하나님의 이름을 부르면 하나님이 대답하세요."},
-        {"from":"하나님","to":"거짓 선지자","label":"끊으실 분","kind":"conflict","directed":true,"weight":2,"verses":"2","note":"그날 하나님은 우상의 이름을 끊고 거짓 선지자와 더러운 영을 땅에서 없애세요. 거짓 예언을 하면 부모가 찌를 만큼 미움받아요."}
+        {"from":"하나님","to":"남은 3분의 1","label":"연단하실 분","kind":"ally","directed":true,"weight":3,"verses":"9","note":"남은 삼분의 일은 불 속에서 은과 금처럼 단련돼요. 그들이 하나님의 이름을 부르면 하나님이 대답하세요."},
+        {"from":"하나님","to":"거짓 선지자","label":"끊으실 분","kind":"conflict","directed":true,"weight":2,"verses":"2-3절","note":"그날 하나님은 우상의 이름을 끊고 거짓 선지자와 더러운 영을 땅에서 없애세요. 거짓 예언을 하면 부모가 찌를 만큼 미움받아요."}
       ],
       "places": [
         {"name":"죄를 씻는 샘","where":"예루살렘에 열릴 샘","what":"더러움이 씻길 곳","weight":3}

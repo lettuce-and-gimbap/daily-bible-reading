@@ -52,7 +52,7 @@
         {"name":"하나님","role":"경건한 자를 건지시는 분","weight":3}
       ],
       "rels": [
-        {"from":"거짓 선생들","to":"베드로","label":"교회를 미혹함","kind":"conflict","directed":true,"weight":3,"verses":"1-3","note":"옛 이스라엘에 거짓 선지자가 있었듯 교회 안에도 거짓 선생들이 몰래 들어와 사람들을 속인다고 베드로가 경고해요."},
+        {"from":"거짓 선생들","to":"성도들","label":"교회를 미혹함","kind":"conflict","directed":true,"weight":3,"verses":"1-3","note":"옛 이스라엘에 거짓 선지자가 있었듯 교회 안에도 거짓 선생들이 몰래 들어와 사람들을 속인다고 베드로가 경고해요."},
         {"from":"하나님","to":"노아","label":"보존하심","kind":"ally","directed":true,"weight":2,"verses":"5","note":"하나님은 옛 세상을 홍수로 심판하셨지만 의를 전파하던 노아와 일곱 식구는 지키셨어요. 심판과 구원이 함께 있다는 본이에요."},
         {"from":"하나님","to":"롯","label":"건지심","kind":"ally","directed":true,"weight":2,"verses":"7-8","note":"하나님은 불법한 사람들 사이에서 마음 아파하던 의로운 롯을 소돔의 멸망에서 건져 내셨어요."},
         {"from":"거짓 선생들","to":"발람","label":"길을 따름","kind":"other","directed":true,"weight":2,"verses":"15","note":"거짓 선생들은 불의한 삯을 사랑한 발람의 길을 따라갔어요. 돈 때문에 하나님의 길을 어그러뜨리는 모습이에요."},

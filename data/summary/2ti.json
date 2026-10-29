@@ -28,7 +28,7 @@
       ],
       "rels": [
         {"from":"바울","to":"디모데","label":"사랑하는 아들","kind":"family","directed":true,"weight":3,"verses":"2-4","note":"바울은 밤낮 기도하며 디모데의 눈물을 기억하고 다시 보고 싶어 해요. 믿음의 아버지와 아들 사이예요."},
-        {"from":"유니게","to":"디모데","label":"어머니","kind":"family","directed":true,"weight":2,"verses":"5","note":"디모데의 어머니 유니게도 믿음이 있었어요. 어려서부터 성경을 가르쳐 디모데가 거짓 없는 믿음을 갖게 되었어요."},
+        {"from":"유니게","to":"디모데","label":"어머니","kind":"family","directed":true,"weight":2,"verses":"5","note":"디모데의 어머니 유니게도 거짓 없는 믿음이 있었고, 그 믿음이 디모데에게도 이어졌어요."},
         {"from":"로이스","to":"유니게","label":"어머니","kind":"family","directed":true,"weight":1,"verses":"5","note":"로이스는 디모데의 외할머니예요. 믿음이 먼저 로이스에게, 그다음 유니게와 디모데에게 이어졌어요."},
         {"from":"부겔로","to":"바울","label":"버린 이","kind":"conflict","directed":true,"weight":1,"verses":"15","note":"아시아의 많은 사람이 바울을 떠났어요. 부겔로와 허모게네는 그 가운데 이름이 알려진 이들이에요. 갇힌 바울을 돕기가 위험했던 거예요."},
         {"from":"오네시보로","to":"바울","label":"부지런히 찾음","kind":"ally","directed":true,"weight":2,"verses":"16-17","note":"오네시보로는 갇힌 바울을 부끄러워하지 않고 로마에서 부지런히 찾아내 자주 위로했어요. 바울은 그와 집안에 긍휼을 구해요."}
@@ -64,7 +64,6 @@
         {"from":"바울","to":"디모데","label":"내 아들","kind":"family","directed":true,"weight":3,"verses":"1, 3","note":"바울은 디모데에게 그리스도 안의 은혜로 강해지고 좋은 병사처럼 함께 고난받으라고 해요. 곧 떠날 바울이 마지막으로 남기는 당부예요."},
         {"from":"디모데","to":"충성된 사람들","label":"부탁할 이들","kind":"ally","directed":true,"weight":2,"verses":"2","note":"바울에게 들은 것을 다른 이도 가르칠 수 있는 신실한 사람들에게 맡기라고 해요. 믿음의 가르침이 세대를 넘어 이어지도록 하려는 거예요."},
         {"from":"후메내오","to":"빌레도","label":"함께 그릇됨","kind":"ally","directed":false,"weight":1,"verses":"17-18","note":"두 사람은 부활이 이미 지났다고 가르쳐 진리에서 벗어났어요. 그들의 말이 악성 종양처럼 번져 사람들을 해쳤어요."},
-        {"from":"후메내오","to":"디모데","label":"믿음을 무너뜨림","kind":"conflict","directed":true,"weight":2,"verses":"18","note":"그들의 말은 퍼지는 종기 같아서 일부 사람들의 믿음을 무너뜨렸어요. 그래서 디모데는 이런 헛된 말을 경계하고 피해야 해요."},
         {"from":"예수","to":"다윗","label":"씨로 나심","kind":"family","directed":true,"weight":1,"verses":"8","note":"예수님은 다윗의 후손으로 오셔서 죽은 자 가운데서 살아나신 메시아예요. 바울은 이것이 복음의 중심이라며 늘 기억하라고 해요."}
       ],
       "places": [
@@ -125,10 +124,10 @@
       "rels": [
         {"from":"바울","to":"디모데","label":"엄히 명함","kind":"ally","directed":true,"weight":3,"verses":"1-2","note":"바울은 하나님과 그리스도 예수님 앞에서 엄히 명해요. 때가 좋든 나쁘든 말씀을 전하고 전도자의 일을 다하라는 거예요."},
         {"from":"데마","to":"바울","label":"버리고 떠남","kind":"conflict","directed":true,"weight":2,"verses":"10","note":"한때 함께 일하던 데마가 이 세상을 사랑해 바울을 떠나 데살로니가로 갔어요. 고난의 길을 함께하기가 쉽지 않았음을 보여 줘요."},
-        {"from":"누가","to":"바울","label":"함께 있음","kind":"ally","directed":true,"weight":2,"verses":"11","note":"모두 떠난 때에도 의사 누가만 바울 곁에 남아 있었어요. 바울은 감옥에서 이 신실한 동료에게 큰 힘을 얻었을 거예요."},
-        {"from":"바울","to":"마가","label":"데려오라 함","kind":"ally","directed":true,"weight":2,"verses":"11","note":"바울은 마가가 자신의 일에 쓸모가 있다며 데려오라고 해요. 한때 갈등했던 마가와 화해해 함께 일한다는 것을 보여 줘요."},
+        {"from":"누가","to":"바울","label":"함께 있음","kind":"ally","directed":true,"weight":2,"verses":"11","note":"다른 이들이 떠난 때에도 의사 누가만 바울 곁에 남아 있었어요."},
+        {"from":"바울","to":"마가","label":"데려오라 함","kind":"ally","directed":true,"weight":2,"verses":"11","note":"바울은 마가가 자신의 일에 유익하다며 데려오라고 해요. 전에 갈등이 있었던 마가를 이제 쓸모 있는 동역자로 여겨요."},
         {"from":"알렉산더","to":"바울","label":"해를 입힘","kind":"conflict","directed":true,"weight":2,"verses":"14-15","note":"구리 세공업자 알렉산더가 바울에게 해를 많이 끼쳤고 말씀을 심히 반대했어요. 바울은 디모데에게도 조심하라고 경고해요."},
-        {"from":"예수","to":"바울","label":"곁에 서심","kind":"ally","directed":true,"weight":3,"verses":"17","note":"첫 변론 때 사람들이 모두 떠났지만 주님이 곁에서 힘을 주셨어요. 그래서 복음이 모든 이방인에게 전파되었어요."}
+        {"from":"예수","to":"바울","label":"곁에 서심","kind":"ally","directed":true,"weight":3,"verses":"16-17절","note":"첫 변론 때 사람들이 모두 떠났지만 주님이 곁에서 힘을 주셨어요. 그래서 복음이 모든 이방인에게 전파되었어요."}
       ],
       "places": [
         {"name":"데살로니가","where":"마게도냐의 도시","what":"데마가 간 곳","weight":1},

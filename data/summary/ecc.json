@@ -91,7 +91,7 @@
       ],
       "rels": [
         {"from":"학대하는 자","to":"학대받는 자","label":"억누르는 자","kind":"conflict","directed":true,"weight":3,"verses":"1","note":"억눌린 사람들은 울어도 위로해 줄 이가 없고, 괴롭히는 쪽은 힘을 쥐고 있어요. 전도자는 이 불공평을 보고 마음 아파해요."},
-        {"from":"지혜로운 소년","to":"늙고 둔한 왕","label":"대조","kind":"conflict","directed":false,"weight":1,"verses":"13","note":"가난해도 지혜로운 젊은이가 충고도 듣지 않는 늙은 왕보다 낫다고 해요. 하지만 그 젊은 왕도 뒤에 오는 사람들에게 기쁨을 얻지 못해요."}
+        {"from":"지혜로운 소년","to":"늙고 둔한 왕","label":"대조","kind":"conflict","directed":false,"weight":1,"verses":"13-16","note":"가난해도 지혜로운 젊은이가 충고도 듣지 않는 늙은 왕보다 낫다고 해요. 하지만 그 젊은 왕도 뒤에 오는 사람들에게 기쁨을 얻지 못해요."}
       ],
       "places": [
 
@@ -138,7 +138,7 @@
         {"name":"하나님","role":"재물을 주시는 분","weight":2}
       ],
       "rels": [
-        {"from":"낯선 사람","to":"누리지 못한 부자","label":"대신 누리는 자","kind":"other","directed":true,"weight":2,"verses":"2","note":"재물을 모은 사람이 누리지 못하고 낯선 사람이 대신 누려요. 하나님이 그가 누리게 하지 않으셨기 때문이에요."},
+        {"from":"낯선 사람","to":"누리지 못한 부자","label":"대신 누리는 자","kind":"other","directed":true,"weight":2,"verses":"2","note":"재물을 모은 사람이 누리지 못하고 다른 사람이 대신 누려요. 하나님이 그가 누리도록 허락하지 않으셨기 때문이에요."},
         {"from":"하나님","to":"누리지 못한 부자","label":"재물 주신 분","kind":"other","directed":true,"weight":2,"verses":"2","note":"하나님이 어떤 사람에게 재물과 영광을 주셨지만, 그것을 누리지 못하게 하셨어요."}
       ],
       "places": [
@@ -188,9 +188,9 @@
         {"name":"하나님","role":"모든 일을 하시는 분","weight":3}
       ],
       "rels": [
-        {"from":"하나님을 경외하는 자","to":"하나님","label":"경외하는 이","kind":"ally","directed":true,"weight":3,"verses":"12","note":"죄인이 100번 악을 행하고 오래 살아도, 하나님을 경외하는 사람이 잘될 것을 안다고 전도자는 확신해요."},
+        {"from":"하나님을 경외하는 자","to":"하나님","label":"경외하는 이","kind":"ally","directed":true,"weight":3,"verses":"12","note":"죄인이 백 번 악을 행하고 오래 살아도, 하나님을 경외하는 사람이 잘될 것을 안다고 전도자는 확신해요."},
         {"from":"악인","to":"하나님을 경외하는 자","label":"대조","kind":"conflict","directed":false,"weight":2,"verses":"13","note":"악인은 하나님을 경외하지 않아서 잘되지 못하고, 그림자 같은 날을 길게 누리지 못해요."},
-        {"from":"전도자","to":"왕","label":"명령을 지킬 이","kind":"ally","directed":true,"weight":1,"verses":"2","note":"전도자는 하나님께 맹세한 것을 생각해서 왕의 명령을 지키라고 해요. 왕에게는 힘이 있으니 서둘러 물러나지 말고 공손해야 해요."}
+        {"from":"전도자","to":"왕","label":"명령을 지키라 권한 이","kind":"ally","directed":true,"weight":1,"verses":"2-4","note":"전도자는 하나님께 맹세한 것을 생각해서 왕의 명령을 지키라고 해요. 왕에게는 힘이 있으니 서둘러 물러나지 말고 공손해야 해요."}
       ],
       "places": [
 
@@ -216,7 +216,7 @@
       "rels": [
         {"from":"큰 왕","to":"가난한 지혜자","label":"에워싼 왕","kind":"conflict","directed":true,"weight":3,"verses":"14-15","note":"큰 왕이 작은 성을 에워쌌을 때 가난한 지혜자가 지혜로 성을 구했어요. 그러나 그 가난한 사람을 기억하는 이가 없었어요."},
         {"from":"사랑하는 아내","to":"전도자","label":"함께 살 아내","kind":"family","directed":true,"weight":1,"verses":"9","note":"덧없는 평생이라도 하나님이 주신 날들 동안 사랑하는 아내와 즐겁게 사는 것이 해 아래 수고에서 얻는 몫이에요."},
-        {"from":"하나님","to":"가난한 지혜자","label":"손에 두신 분","kind":"ally","directed":true,"weight":1,"verses":"1","note":"의인과 지혜로운 사람의 행위가 모두 하나님의 손안에 있어요."}
+        {"from":"하나님","to":"의인과 지혜자","label":"손에 두신 분","kind":"ally","directed":true,"weight":1,"verses":"1","note":"의인과 지혜로운 사람의 행위가 모두 하나님의 손안에 있어요."}
       ],
       "places": [
         {"name":"작은 성","where":"작은 성읍","what":"가난한 지혜자가 지혜로 구한 곳","weight":2}
@@ -241,9 +241,7 @@
       ],
       "rels": [
         {"from":"지혜자","to":"우매자","label":"대조","kind":"conflict","directed":false,"weight":3,"verses":"2, 12","note":"지혜로운 사람의 말은 은혜롭지만 어리석은 사람의 입술은 자기를 삼켜 버려요. 말이 사람을 드러내요."},
-        {"from":"지혜자","to":"주권자","label":"공손히 섬김","kind":"ally","directed":true,"weight":1,"verses":"4","note":"윗사람이 화를 내도 자리를 떠나지 말라고 해요. 침착하면 큰 실수를 막을 수 있대요."},
-        {"from":"게으른 자","to":"우매자","label":"닮은 사람","kind":"ally","directed":false,"weight":1,"verses":"18","note":"게으르면 서까래가 내려앉고 태만히 손을 놀리면 집이 샌대요."}
-      ],
+        {"from":"지혜자","to":"주권자","label":"공손히 섬김","kind":"ally","directed":true,"weight":1,"verses":"4","note":"윗사람이 화를 내도 자리를 떠나지 말라고 해요. 침착하면 큰 실수를 막을 수 있대요."}      ],
       "places": [
 
       ]
@@ -290,7 +288,7 @@
       ],
       "rels": [
         {"from":"전도자","to":"청년","label":"권면한 왕","kind":"ally","directed":true,"weight":3,"verses":"1","note":"어려운 날이 오기 전, 힘이 있을 때 너를 지으신 분을 기억하라고 해요."},
-        {"from":"청년","to":"하나님","label":"기억할 창조주","kind":"ally","directed":true,"weight":3,"verses":"13","note":"결론은 하나님을 두려워하고 그 명령을 지키는 것이에요."},
+        {"from":"청년","to":"하나님","label":"기억할 창조주","kind":"ally","directed":true,"weight":3,"verses":"1, 13","note":"결론은 하나님을 두려워하고 그 명령을 지키는 것이에요."},
         {"from":"한 목자","to":"전도자","label":"말씀 주신 이","kind":"ally","directed":true,"weight":1,"verses":"11","note":"지혜로운 말은 못처럼 단단히 박혀 있고, 모두 한 목자께서 주신 거예요."}
       ],
       "places": [
