@@ -2,8 +2,8 @@
   "date": "2026-10-29",
   "unit": "PAIR_DIALOGUE entry; relationship edge counts may differ",
   "total": 928,
-  "reviewed": 100,
-  "pending": 828,
+  "reviewed": 109,
+  "pending": 819,
   "entries": [
     {
       "id": "pair-2ki-21-people-josiah",
@@ -407,7 +407,9 @@
       "speaker": "다단과 아비람",
       "target": "모세",
       "ref": "시편 106:16–18; 민수기 16:1–35",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-109-enemy-david",
@@ -415,7 +417,9 @@
       "speaker": "대적",
       "target": "다윗",
       "ref": "시편 109:1–5, 21–31",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-122-david-brothers",
@@ -521,7 +525,9 @@
       "speaker": "모세",
       "target": "아론",
       "ref": "시편 105:26–27; 출애굽기 4:14–16",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-134-pilgrims-servants",
@@ -693,7 +699,9 @@
       "speaker": "이삭",
       "target": "아브라함",
       "ref": "시편 105:8–10; 창세기 21:1–7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-105-pharaoh-joseph",
@@ -701,7 +709,9 @@
       "speaker": "바로",
       "target": "요셉",
       "ref": "시편 105:16–22; 창세기 41:34–44",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-106-moses-ancestors",
@@ -709,7 +719,9 @@
       "speaker": "모세",
       "target": "조상들",
       "ref": "시편 106:6–8, 19–23",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-128-wife-husband",
@@ -1483,7 +1495,9 @@
       "speaker": "다윗",
       "target": "다윗의 주",
       "ref": "시편 110:1–4",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-110-people-lord",
@@ -1491,7 +1505,9 @@
       "speaker": "주의 백성",
       "target": "다윗의 주",
       "ref": "시편 110:3",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-110-lord-melchizedek",
@@ -1499,7 +1515,9 @@
       "speaker": "다윗의 주",
       "target": "멜기세덱",
       "ref": "시편 110:4",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-112-wicked-righteous",
