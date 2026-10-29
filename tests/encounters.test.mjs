@@ -29,7 +29,8 @@ test('추상 지시어를 사건의 대상과 행위로 풀고 언급 인물은 
  assert.match(get('pair-214').replyLines[0],/하눈이 우리 수염을 깎고 옷을 잘라/);
  assert.match(get('pair-218').replyLines[0],/타작마당과 번제에 쓸 소와 땔 나무와 곡식/);
  assert.match(get('pair-221').replyLines[0],/성전 건축을 위해 금과 은과 보석/);
- assert.match(get('pair-psa-52-ahimelech-david').lines[1],/진설병과 골리앗의 칼/);
+ assert.match(get('pair-psa-52-ahimelech-david').lines[1],/거룩한 떡.*여자를 가까이하지 않았다면/);
+ assert.doesNotMatch(get('pair-psa-52-ahimelech-david').lines.join(' '),/둘 가운데 무엇/);
  assert.match(get('pair-176').ref,/2사무엘하|사무엘하 17:27–29/);
  assert.match(get('pair-176').detail,/밀·보리.*꿀·버터·양·치즈/);
  assert.match(get('pair-222').detail,/백향목·잣나무·백단목.*밀·보리·포도주·기름/);

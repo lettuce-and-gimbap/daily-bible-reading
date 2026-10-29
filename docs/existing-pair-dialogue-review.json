@@ -2,8 +2,8 @@
   "date": "2026-10-29",
   "unit": "PAIR_DIALOGUE entry; relationship edge counts may differ",
   "total": 928,
-  "reviewed": 52,
-  "pending": 876,
+  "reviewed": 57,
+  "pending": 871,
   "entries": [
     {
       "id": "pair-2ki-21-people-josiah",
@@ -317,7 +317,9 @@
       "speaker": "도엑",
       "target": "다윗",
       "ref": "시편 52:1–8; 사무엘상 22:9–10",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-52-doeg-saul",
@@ -325,7 +327,9 @@
       "speaker": "도엑",
       "target": "사울",
       "ref": "시편 52:1; 사무엘상 22:9–10",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-52-ahimelech-david",
@@ -333,7 +337,9 @@
       "speaker": "아히멜렉",
       "target": "다윗",
       "ref": "시편 52:1; 사무엘상 21:1–9",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-54-ziph-saul",
@@ -453,7 +459,9 @@
       "speaker": "나단",
       "target": "다윗",
       "ref": "시편 51:1–4; 사무엘하 12:1–13",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-55-betraying-friend-david",
@@ -837,7 +845,9 @@
       "speaker": "재물을 의지하는 자",
       "target": "고라 자손",
       "ref": "시편 49:5–12, 16–20",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-58-david-rulers",
