@@ -109,7 +109,7 @@
         {"from":"서기관","to":"예수","label":"귀신 들렸다 함","kind":"conflict","directed":true,"weight":2,"verses":"22","note":"예루살렘에서 내려온 서기관들은 예수님이 바알세불이 들렸고 귀신 왕의 힘으로 귀신을 쫓는다고 했어요."},
         {"from":"예수의 친족","to":"예수","label":"미쳤다 함","kind":"conflict","directed":true,"weight":1,"verses":"21","note":"가족들은 소문이 퍼지고 사람이 몰리자 예수님이 정신이 나갔다며 붙들러 나왔어요. 아직 믿지 못하던 때예요."},
         {"from":"야고보","to":"요한","label":"형제","kind":"family","directed":false,"weight":1,"verses":"17","note":"세베대의 두 아들에게는 우레의 아들이라는 별명이 붙었어요. 성격이 불같았다고 읽는 견해가 많아요."},
-        {"from":"마리아","to":"예수","label":"어머니","kind":"family","directed":false,"weight":1,"verses":"31-35","note":"예수님은 무리가 밖에서 찾는다고 알리자 하나님의 뜻을 행하는 이가 내 형제와 자매와 어머니라고 하셨어요. 마리아는 실제 어머니로 가족과 함께 찾아왔어요."}
+        {"from":"마리아","to":"예수","label":"어머니","kind":"family","directed":true,"weight":1,"verses":"31-35","note":"예수님은 무리가 밖에서 찾는다고 알리자 하나님의 뜻을 행하는 이가 내 형제와 자매와 어머니라고 하셨어요. 마리아는 실제 어머니로 가족과 함께 찾아왔어요."}
       ],
       "places": [
         {"name":"회당","where":"본문에 지명이 나오지 않는 회당","what":"안식일에 손 마른 사람을 고치신 곳이에요.","weight":2},

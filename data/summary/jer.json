@@ -3913,7 +3913,7 @@
           "to": "사반",
           "label": "아들",
           "kind": "family",
-          "directed": false,
+          "directed": true,
           "weight": 2,
           "verses": "10",
           "note": "그마랴는 서기관 사반의 아들이며, 예레미야의 두루마리를 낭독하도록 자기 방을 내주었어요.",

@@ -28,7 +28,7 @@
         {"from":"하나님","to":"유다 백성","label":"변론하자 초청","kind":"ally","directed":true,"weight":3,"verses":"18","note":"하나님이 와서 서로 따져 보자고 부르세요. 죄가 진홍처럼 붉어도 양털처럼 희게 해 주시겠다는 초대예요."},
         {"from":"예루살렘의 관원들","to":"고아와 과부","label":"외면한 지도자","kind":"conflict","directed":true,"weight":2,"verses":"23","note":"지도자들이 뇌물을 좋아하고 고아와 과부의 송사를 맡아 주지 않아요."},
         {"from":"이사야","to":"하나님","label":"말씀 전한 선지자","kind":"ally","directed":true,"weight":2,"verses":"1","note":"이 책은 아모스의 아들 이사야가 유다와 예루살렘에 대해 본 환상이에요. 이사야는 하나님의 말씀을 전하는 선지자예요."},
-        {"from":"이사야","to":"아모츠","label":"아들","kind":"family","directed":false,"weight":2,"verses":"표제","note":"표제의 아버지는 아모츠예요. 선지자 아모스와는 다른 사람입니다.","adminOnly":true}
+        {"from":"이사야","to":"아모츠","label":"아들","kind":"family","directed":true,"weight":2,"verses":"표제","note":"표제의 아버지는 아모츠예요. 선지자 아모스와는 다른 사람입니다.","adminOnly":true}
       ],
       "places": [
         {"name":"예루살렘","where":"유다의 수도","what":"원두막처럼 홀로 남게 될 유다의 도성 예루살렘","weight":3},
@@ -595,7 +595,7 @@
         {"from":"하나님","to":"셉나","label":"내던지실 분","kind":"conflict","directed":true,"weight":3,"verses":"15-19","note":"셉나는 왕궁 일을 맡고도 높은 곳에 자기를 위해 묘실을 팠어요. 하나님이 그를 관직에서 쫓아내세요."},
         {"from":"하나님","to":"엘리아김","label":"열쇠 맡기실 분","kind":"ally","directed":true,"weight":3,"verses":"20-22","note":"하나님은 힐기야의 아들 엘리아김을 '내 종'이라 부르시며 다윗 집의 열쇠를 맡기세요. 열고 닫는 권한이에요."},
         {"from":"엘리아김","to":"셉나","label":"자리를 이을 이","kind":"other","directed":true,"weight":2,"verses":"20-21","note":"엘리아김이 셉나의 옷과 띠와 맡은 일을 이어받아요."},
-        {"from":"엘리아김","to":"힐기야","label":"아들","kind":"family","directed":false,"weight":2,"verses":"20","note":"엘리아김은 힐기야의 아들이며 셉나를 대신해 궁내 대신으로 세워졌어요.","adminOnly":true}
+        {"from":"엘리아김","to":"힐기야","label":"아들","kind":"family","directed":true,"weight":2,"verses":"20","note":"엘리아김은 힐기야의 아들이며 셉나를 대신해 궁내 대신으로 세워졌어요.","adminOnly":true}
       ],
       "places": [
         {"name":"환상의 골짜기","where":"예루살렘","what":"하나님을 바라보지 않고 잔치만 벌인 도시예요.","weight":3},

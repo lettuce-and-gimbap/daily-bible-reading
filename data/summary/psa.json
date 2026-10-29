@@ -70,7 +70,7 @@
         {"from":"압살롬","to":"다윗","label":"쫓는 아들","kind":"conflict","directed":true,"weight":3,"verses":"1","note":"이 시는 다윗이 아들 압살롬의 반란을 피해 도망할 때 지었다고 표제에 적혀 있어요. 사무엘하 15장에 그 이야기가 나와요."},
         {"from":"하나님","to":"다윗","label":"방패 되신 분","kind":"ally","directed":true,"weight":3,"verses":"3-5","note":"다윗은 원수가 많아도 여호와는 자기를 둘러싼 방패요 고개 숙인 머리를 들게 하시는 분이라 고백해요. 그래서 쫓기는 밤에도 누워 자고 깰 수 있었어요. 주님이 그를 붙드셨거든요."},
         {"from":"대적들","to":"다윗","label":"비웃는 무리","kind":"conflict","directed":true,"weight":2,"verses":"1-2","note":"대적들이 점점 많아져 하나님도 다윗을 구해 주지 않을 거라고 말했어요. 다윗은 그래도 여호와를 방패로 의지해요."},
-        {"from":"압살롬","to":"다윗","label":"아들","kind":"family","directed":false,"weight":2,"verses":"표제","note":"이 시는 다윗이 아들 압살롬을 피해 달아날 때 지은 노래예요. 압살롬의 반란은 아버지와 아들의 관계를 무너뜨린 사건이었어요.","adminOnly":true}
+        {"from":"압살롬","to":"다윗","label":"아들","kind":"family","directed":true,"weight":2,"verses":"표제","note":"이 시는 다윗이 아들 압살롬을 피해 달아날 때 지은 노래예요. 압살롬의 반란은 아버지와 아들의 관계를 무너뜨린 사건이었어요.","adminOnly":true}
       ],
       "places": [
 

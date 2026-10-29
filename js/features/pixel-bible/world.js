@@ -39,7 +39,7 @@ import { loveBoothExchange } from './relationship-lines.js?rev=relation-talk-aut
 import { faceBoothFront } from './love-booth.js';
 import { personalLines } from './personal-lines.js';
 import { characterMotion, motionPose, hangingPose, liftedCharacterFrame } from './motion.js';
-import { relationshipLinks, relationshipFocus, advanceRelationshipSelection, relationshipOpacity, drawRelationshipLinks } from './relationship-overlay.js?rev=pair-focus-1';
+import { relationshipLinks, relationshipFocus, advanceRelationshipSelection, relationshipOpacity, drawRelationshipLinks } from './relationship-overlay.js?rev=directed-links-2';
 import { chapterPeople } from './chapter-people.js?rev=so-king-identity-1';
 import { isMentionOnlyPerson, withoutMentionOnlyActors } from './mention-only.js';
 import { opposedDirections, planConversation } from './conversation.js';
@@ -1100,6 +1100,7 @@ export async function mountPixelWorld(shell, options) {
     if(action==='relationships'){
       showRelationships=!showRelationships;
       relationshipPrimary=showRelationships&&selected>=0?npcs[selected]:null;relationshipPair=null;
+      if(showRelationships)say('화살표가 시작하는 인물이 관계 이름에 해당해요. 예: 아들 → 아버지.');
       syncRelationships();draw();return;
     }
     if(b.dataset.replayScene){const scene=ALL_SCENES.find(s=>s.id===b.dataset.replayScene);if(scene&&model.scenes.some(s=>s.id===scene.id)){const o=objects.find(o=>o.kind===scene.object);if(o)queueScene(scene,o);else say(`${objectPhrase(OBJECTS[scene.object])}를 먼저 배치해 주세요.`);}else say('이 장면의 본문을 현재 월드에 포함해 주세요.');return;}
