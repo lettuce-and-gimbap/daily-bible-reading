@@ -2,8 +2,8 @@
   "date": "2026-10-29",
   "unit": "PAIR_DIALOGUE entry; relationship edge counts may differ",
   "total": 928,
-  "reviewed": 83,
-  "pending": 845,
+  "reviewed": 89,
+  "pending": 839,
   "entries": [
     {
       "id": "pair-2ki-21-people-josiah",
@@ -501,7 +501,9 @@
       "speaker": "모세",
       "target": "아론",
       "ref": "시편 77:20; 출애굽기 4:14–16",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-99-moses-aaron",
@@ -639,7 +641,9 @@
       "speaker": "아삽",
       "target": "조상들",
       "ref": "시편 78:1–8, 40–42",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-82-judges-vulnerable",
@@ -647,7 +651,9 @@
       "speaker": "재판관들",
       "target": "가난한 자와 고아",
       "ref": "시편 82:2–4",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-83-sisera-jabin",
@@ -655,7 +661,9 @@
       "speaker": "시스라",
       "target": "야빈",
       "ref": "시편 83:9–10; 사사기 4:2–24",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-88-friends-heman",
@@ -973,7 +981,9 @@
       "speaker": "이방 나라들",
       "target": "주의 종들",
       "ref": "시편 79:1–4, 10–12",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-80-enemies-israel",
@@ -981,7 +991,9 @@
       "speaker": "이스라엘",
       "target": "원수들",
       "ref": "시편 80:4–7, 12–19",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-89-enemies-anointed",
