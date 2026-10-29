@@ -12,7 +12,7 @@ test('본문의 체격 기록을 구분하고 가나안 주민 전체나 바울�
  assert.ok(physiqueFor('가나안 사람','주민',['민수기 13장']).height<1.1);
  assert.ok(physiqueFor('아낙 자손','',['민수기 13장']).height>1.1);
 });
-test('20개 배경의 기본 경관은 등록된 물건으로 구성되고 배치가 서로 다르다',()=>{
+test('40개 배경의 기본 경관은 등록된 물건으로 구성되고 배치가 서로 다르다',()=>{
  const signatures=[];for(const key of Object.keys(BACKGROUNDS)){
   const props=sceneDecorations(key);assert.ok(props.length>10);
   for(const p of props){assert.ok(OBJECT_CATALOG[p.kind],p.kind);assert.ok(p.x>=0&&p.x<80&&p.y>=0&&p.y<45);}

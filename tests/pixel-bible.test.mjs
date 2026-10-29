@@ -751,7 +751,12 @@ test('김밥은 16프레임으로 선명하게 구르고 음식 친구들은 고
  assert.ok(Math.abs(gimbapRollAngle(8)-Math.PI)<1e-10);
  assert.deepEqual(['left','right','up','down'].map(gimbapRollSign),[-1,1,-1,1]);
  assert.deepEqual(['left','right','up','down'].map(gimbapRollAxis),['plane','plane','vertical','vertical']);
- assert.deepEqual(['left','right','up','down'].map(direction=>advanceGimbapRoll(0,.25,direction)),[-2,2,-2,2]);
+ // 24px 타일, 2배 그림, 몸 반지름 21px: 둘레만큼 굴러야 16프레임 한 바퀴가 된다.
+ const circumference=2*Math.PI*21*2/24;
+ assert.ok(Math.abs(advanceGimbapRoll(0,circumference,'right')-GIMBAP_ROLL_FRAMES)<1e-9,'둘레만큼 굴러 한 바퀴(16프레임)');
+ assert.ok(Math.abs(advanceGimbapRoll(0,circumference,'left')+GIMBAP_ROLL_FRAMES)<1e-9,'반대 방향은 부호만 반대');
+ assert.deepEqual(['left','right','up','down'].map(direction=>Math.sign(advanceGimbapRoll(0,.25,direction))),[-1,1,-1,1]);
+ assert.equal(advanceGimbapRoll(3,-5,'right'),3,'뒤로 간 거리는 굴림에 더하지 않음');
  const pixels=new Uint8ClampedArray(5*5*4);pixels.set([18,52,86,255],(2*5+3)*4);
  const turned=rotateGimbapPixels({width:5,height:5,data:pixels},Math.PI/2);
  assert.deepEqual([...turned.data.slice((3*5+2)*4,(3*5+2)*4+4)],[18,52,86,255]);
@@ -1192,9 +1197,9 @@ test('역할명이 달라도 미확정 인물 이름은 월드에서 한 명으�
  assert.equal(same.length,1);assert.deepEqual(same[0].refs,['창세기 12장','느헤미야 3장']);assert.deepEqual(same[0].roles,['제사장','성벽을 재건하는 사람']);
 });
 
-test('배경 20종에 공통 이동 영역과 유효한 팔레트가 있다',async()=>{
+test('배경 40종에 공통 이동 영역과 유효한 팔레트가 있다',async()=>{
  const {BACKGROUNDS,backgroundFor}=await import('../js/features/pixel-bible/backgrounds.js');
- assert.equal(Object.keys(BACKGROUNDS).length,20);assert.equal(backgroundFor('invalid'),BACKGROUNDS.meadow);assert.equal(backgroundFor('__proto__'),BACKGROUNDS.meadow);
+ assert.equal(Object.keys(BACKGROUNDS).length,40);assert.equal(backgroundFor('invalid'),BACKGROUNDS.meadow);assert.equal(backgroundFor('__proto__'),BACKGROUNDS.meadow);
  for(const p of Object.values(BACKGROUNDS)){assert.ok(p.name);assert.equal(p.tile.length,2);for(const k of ['ground','water','path','hill'])assert.match(p[k],/^#[0-9a-f]{6}$/);}
 });
 
@@ -1703,17 +1708,18 @@ test('아모스의 독백은 벧엘 제사장과 맞선 소명·심판 장면을
  const lines=chapterMonologues({name:'아모스'},[{code:'amo',chap:7}]);assert.equal(lines.length,2);assert.ok(lines.every(line=>line.ref.startsWith('아모스 7:')));assert.ok(lines.every(line=>/(?:나는|내가)/.test(line.text)));
 });
 
-test('156종 모든 물건은 의미에 맞는 동작 계열과 운반·접근 규칙을 갖는다',async()=>{
+test('169종 모든 물건은 의미에 맞는 동작 계열과 운반·접근 규칙을 갖는다',async()=>{
  const {OBJECT_CATALOG}=await import('../js/features/pixel-bible/object-catalog.js');
  const {objectBehavior}=await import('../js/features/pixel-bible/object-behavior.js');
  const {INTERACTION_MOTIONS,interactionRoutine}=await import('../js/features/pixel-bible/interaction-motion.js');
  const {interactionApproaches,heldObject,objectWorn}=await import('../js/features/pixel-bible/object-response.js');
+ assert.equal(Object.keys(OBJECT_CATALOG).length,169);
  for(const kind of Object.keys(OBJECT_CATALOG)){
   const behavior=objectBehavior(kind),routine=interactionRoutine({name:'룻'},kind),o={kind,x:10,y:10};
   assert.ok(INTERACTION_MOTIONS[behavior.category],kind);assert.equal(routine.category,kind==='ark-covenant'?'bush':behavior.category,kind);
   if(behavior.frontOnly)assert.ok(interactionApproaches(o).every(p=>p.y>=o.y),kind);
   const n={name:'룻',x:9,y:10,direction:'right',usingObject:o,interaction:{...routine,phase:0},interactionStart:0};
-  assert.equal(!!heldObject(n,routine.period*.3)||objectWorn(n,routine.period*.3),behavior.carry&&!(routine.gesture==='drink'&&kind!=='cup'),kind);
+  assert.equal(!!heldObject(n,routine.period*.3)||objectWorn(n,routine.period*.3),behavior.carry&&!(['drink','sip'].includes(routine.gesture)&&kind!=='cup'),kind);
  }
  for(const [kind,category]of Object.entries({table:'table',bed:'bed',temple:'building',tent:'building',crown:'wear',lamp:'lamp',rainbow:'symbol',chariot:'cart',basket:'basket',book:'scroll',trumpet:'instrument'}))assert.equal(objectBehavior(kind).category,category,kind);
  assert.equal(objectBehavior('ark-covenant').carry,false);
@@ -1757,12 +1763,12 @@ test('커서가 잡은 지점은 이동·배율 변환 뒤에도 같은 상대 �
  assert.ok(Math.abs(after.x-held.p.x-(origin.x-start.x))<1e-9);assert.ok(Math.abs(after.y-held.p.y-(origin.y-start.y))<1e-9);
 });
 
-test('전체 오브젝트는 같은 인물이 여섯 번 방문하면 여섯 결과를 선택한다',async()=>{
+test('전체 오브젝트는 같은 인물이 다섯 번 방문하면 다섯 결과를 선택한다',async()=>{
  const {OBJECT_CATALOG}=await import('../js/features/pixel-bible/object-catalog.js');
  const {interactionOptions,interactionRoutine}=await import('../js/features/pixel-bible/interaction-motion.js');
  for(const kind of Object.keys(OBJECT_CATALOG)){
-  assert.ok(interactionOptions(kind).length>=6,kind);
-  assert.equal(new Set(Array.from({length:6},(_,i)=>interactionRoutine({name:'읽는 사람'},kind,i).id)).size,6,kind);
+  assert.equal(interactionOptions(kind).length,5,kind);
+  assert.equal(new Set(Array.from({length:5},(_,i)=>interactionRoutine({name:'읽는 사람'},kind,i).id)).size,5,kind);
  }
 });
 

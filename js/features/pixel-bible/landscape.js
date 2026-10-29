@@ -151,6 +151,30 @@ export function sceneDecorations(key){
  if(m==='galilee'||m==='lake')for(const x of [19,61])put('net',x,34);
  if(m==='camp'){put('tabernacle',40,9);put('well',63,20);}
  if(m==='city'||m==='babylon'||m==='temple'){put('house',13,23);put('house',67,23);put('well',60,33);}
+ // 같은 분위기(motif)를 쓰는 뒤쪽 배경 20종은 이름에 맞는 소품을 더해 앞선 배경과 경관이 겹치지 않게 한다.
+ const variants={
+  'olive-grove':[['olive-tree',12,26],['olive-tree',68,22],['stone',60,10]],
+  'date-garden':[['palm',12,26],['palm',68,24],['fruit',55,12]],
+  'palm-oasis':[['palm',12,24],['palm',66,26],['reed',20,36]],
+  'spring-river':[['reed',14,22],['stone',66,24],['lily',58,36]],
+  'terraced-valley':[['stone',12,28],['vine',66,12],['basket',60,36]],
+  'cedar-ridge':[['cedar',12,26],['cedar',68,22],['stone',55,34]],
+  'red-canyon':[['stone',10,24],['stone',70,20],['stone',64,36]],
+  'moonlit-shore':[['reed',12,36],['boat',66,36],['lamp',58,12]],
+  'barley-dusk':[['barley',12,26],['barley',68,24],['sickle',58,36]],
+  'stone-ravine':[['stone-pillar',12,26],['stone',68,24],['stone',58,36]],
+  'island-cove':[['boat',14,38],['net',66,38],['basket',60,12]],
+  'high-desert':[['stone',10,26],['bush',70,22],['stone',56,36]],
+  'acacia-camp':[['tent',12,26],['tree',68,22],['basket',58,36]],
+  'walled-quarter':[['wall',12,26],['wall',68,22],['tower',58,10]],
+  'vineyard-twilight':[['vine',12,26],['vine',68,22],['lamp',58,36]],
+  'temple-court':[['stone-pillar',12,26],['stone-pillar',68,22],['censer',58,36]],
+  'shepherd-meadow':[['sheep',12,26],['sheep',68,22],['staff',58,36]],
+  'blue-night-lake':[['reed',12,26],['lamp',68,22],['boat',58,36]],
+  'eastern-palace':[['stone-pillar',12,26],['palm',68,22],['lamp',58,36]],
+  'river-of-life':[['olive-tree',12,26],['lily',68,22],['fruit',58,36]],
+ };
+ for(const [kind,x,y] of variants[key]||[])put(kind,x,y);
  if(key==='nile'){put('reed',54,18);put('basket',55,19);}
  if(key==='river')put('stone',54,19);
  return props.sort((a,b)=>a.y-b.y);

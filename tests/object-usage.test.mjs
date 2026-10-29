@@ -31,9 +31,10 @@ test('침상 동작은 눕고, 활 동작은 장전·겨냥·발사·회수 단�
  assert.ok(objectPresentation('cloak').scale*27<64,'땅의 겉옷도 인물 전체 높이보다 작다');
 });
 
-test('밧줄은 물동이를 드는 동작 대신 감기·풀기·매듭·당기기·내리기를 제공한다',()=>{
+test('밧줄은 물동이를 드는 동작 대신 감기·풀기·매듭·당기기를 제공하고 내리기는 라합 장면에서 쓴다',()=>{
  const gestures=interactionOptions('rope').map(([id])=>id);
- for(const id of ['coil','uncoil','tie','untie','pull','lower-rope'])assert.ok(gestures.includes(id));
+ for(const id of ['coil','uncoil','tie','untie','pull'])assert.ok(gestures.includes(id));
+ assert.ok(!gestures.includes('lower-rope'),'내리기는 일반 방문이 아니라 여호수아 2장 장면 전용');
  const normal=interactionRoutine({name:'라합',readingChapters:[{code:'jos',chap:1}]},'rope');assert.ok(!normal.unique);
  const biblical=interactionRoutine({name:'라합',readingChapters:[{code:'jos',chap:2}]},'rope');
  assert.ok(biblical.unique);assert.equal(biblical.gesture,'lower-rope');
