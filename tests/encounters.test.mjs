@@ -1073,8 +1073,8 @@ test('에스더와 모르드개는 하닥을 통한 두려움·결단의 문답�
  const context=buildChapterDialogue(chapters);assert.equal(context.relations.length,49);
  for(const relation of context.relations){const lines=relationshipLines(relation.from,relation.to,relation,null,{random:()=>0});assert.equal(lines.length,2);assert.ok(lines.every(line=>line.ref));}
  const esther=PAIR_DIALOGUE.find(entry=>entry.id==='pair-41'),mordecai=PAIR_DIALOGUE.find(entry=>entry.id==='pair-42');
- assert.match(esther.lines[0],/부름 없이 왕께 나아가면 죽을 수 있어/);assert.match(esther.lines[1],/죽으면 죽으리라/);
- assert.match(mordecai.lines[1],/유다 민족을 죽이라는 조서를 막으러 왕께 나아갈 때/);assert.match(esther.detail,/하닥을 통해/);assert.match(mordecai.detail,/직접 대면이 아니라 전령을 통한 대화/);
+ assert.match(esther.lines[0],/부름 없이 안뜰에 나아가면 죽게/);assert.match(esther.lines[1],/죽으면 죽으리이다/);
+ assert.match(mordecai.lines[1],/왕후의 자리를 얻은 것이 이때를 위한 것인지/);assert.match(esther.detail,/하닥이.*전달/);assert.match(mordecai.detail,/하닥을 통한 전달/);
  assert.ok(summary.chapters['2'].rels.some(edge=>edge.from==='모르드개'&&edge.to==='아하수에로'&&edge.verses==='21-23'));
  assert.ok(!summary.chapters['2'].rels.some(edge=>edge.from==='모르드개'&&edge.to==='빅단'));
  assert.ok(summary.chapters['4'].rels.some(edge=>edge.from==='하닥'&&edge.to==='모르드개'&&edge.verses==='6-10'));

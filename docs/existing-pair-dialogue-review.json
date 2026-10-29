@@ -2,8 +2,8 @@
   "date": "2026-10-29",
   "unit": "PAIR_DIALOGUE entry; relationship edge counts may differ",
   "total": 928,
-  "reviewed": 316,
-  "pending": 612,
+  "reviewed": 318,
+  "pending": 610,
   "entries": [
     {
       "id": "pair-2ki-21-people-josiah",
@@ -3545,7 +3545,9 @@
       "speaker": "에스더",
       "target": "모르드개",
       "ref": "에스더 4:10–16",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-42",
@@ -3553,7 +3555,9 @@
       "speaker": "모르드개",
       "target": "에스더",
       "ref": "에스더 4:13–14",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-43",
