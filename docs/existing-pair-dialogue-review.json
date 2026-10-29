@@ -2,8 +2,8 @@
   "date": "2026-10-29",
   "unit": "PAIR_DIALOGUE entry; relationship edge counts may differ",
   "total": 928,
-  "reviewed": 57,
-  "pending": 871,
+  "reviewed": 60,
+  "pending": 868,
   "entries": [
     {
       "id": "pair-2ki-21-people-josiah",
@@ -347,7 +347,9 @@
       "speaker": "십 사람들",
       "target": "사울",
       "ref": "시편 54:1–3; 사무엘상 23:19–20",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-54-ziph-david",
@@ -355,7 +357,9 @@
       "speaker": "십 사람들",
       "target": "다윗",
       "ref": "시편 54:1–4; 사무엘상 23:19–20",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-54-saul-david",
@@ -363,7 +367,9 @@
       "speaker": "사울",
       "target": "다윗",
       "ref": "시편 54:3–7; 사무엘상 23:19–28",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-56-philistines-david",
