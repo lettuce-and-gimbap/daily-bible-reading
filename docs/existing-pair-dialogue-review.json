@@ -2,8 +2,8 @@
   "date": "2026-10-29",
   "unit": "PAIR_DIALOGUE entry; relationship edge counts may differ",
   "total": 928,
-  "reviewed": 170,
-  "pending": 758,
+  "reviewed": 195,
+  "pending": 733,
   "entries": [
     {
       "id": "pair-2ki-21-people-josiah",
@@ -1847,7 +1847,9 @@
       "speaker": "부모",
       "target": "아들",
       "ref": "잠언 23:15–26",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-24-righteous-rescues",
@@ -1855,7 +1857,9 @@
       "speaker": "의인",
       "target": "끌려가는 자",
       "ref": "잠언 24:11–12",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-pro-27-friends",
@@ -1863,7 +1867,9 @@
       "speaker": "친구",
       "target": "가까운 이웃",
       "ref": "잠언 27:5–10",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-30-agur-sons",
@@ -1871,7 +1877,9 @@
       "speaker": "아굴",
       "target": "이디엘과 우갈",
       "ref": "잠언 30:1–9",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-31-mother-lemuel",
@@ -1879,7 +1887,9 @@
       "speaker": "르무엘의 어머니",
       "target": "르무엘",
       "ref": "잠언 31:1–9",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-31-wife-family",
@@ -1887,7 +1897,9 @@
       "speaker": "현숙한 여인",
       "target": "현숙한 여인의 남편",
       "ref": "잠언 31:10–31",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-1-wisdom-son",
@@ -1895,7 +1907,9 @@
       "speaker": "지혜",
       "target": "아들",
       "ref": "잠언 1:8–9, 20–23",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-2-evil-son",
@@ -1903,7 +1917,9 @@
       "speaker": "악한 자",
       "target": "아들",
       "ref": "잠언 2:12–15",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-4-father-son",
@@ -1911,7 +1927,9 @@
       "speaker": "아버지",
       "target": "아들",
       "ref": "잠언 4:1–4",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-4-wicked-son",
@@ -1919,7 +1937,9 @@
       "speaker": "악인",
       "target": "아들",
       "ref": "잠언 4:14–19",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-5-seductress-son",
@@ -1947,7 +1967,9 @@
       "speaker": "아버지",
       "target": "아들",
       "ref": "잠언 6:20–23",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-6-othermanswife-son",
@@ -1955,7 +1977,9 @@
       "speaker": "남의 아내",
       "target": "아들",
       "ref": "잠언 6:24–29",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-7-father-son",
@@ -1963,7 +1987,9 @@
       "speaker": "아버지",
       "target": "아들",
       "ref": "잠언 7:1–5",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-9-wisdom-foolish-woman",
@@ -2071,7 +2097,9 @@
       "speaker": "음녀",
       "target": "아들",
       "ref": "잠언 23:26–28",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-pro-24-righteous-wicked",
@@ -2079,7 +2107,9 @@
       "speaker": "의인",
       "target": "악인",
       "ref": "잠언 24:15–20",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-26-lazy-fool",
@@ -2087,7 +2117,9 @@
       "speaker": "게으른 자",
       "target": "미련한 자",
       "ref": "잠언 26:13–16",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-26-hater-tale-bearer",
@@ -2095,7 +2127,9 @@
       "speaker": "미워하는 자",
       "target": "말쟁이",
       "ref": "잠언 26:20–28",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-27-friend-enemy",
@@ -2103,7 +2137,9 @@
       "speaker": "친구",
       "target": "원수",
       "ref": "잠언 27:5–6, 14",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-pro-28-righteous-wicked",
@@ -2111,7 +2147,9 @@
       "speaker": "의인",
       "target": "악인",
       "ref": "잠언 28:1, 4–5, 12",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-28-righteous-poor",
@@ -2119,7 +2157,9 @@
       "speaker": "의인",
       "target": "가난한 자",
       "ref": "잠언 28:3, 8, 27",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-pro-29-righteous-poor",
@@ -2127,7 +2167,9 @@
       "speaker": "의인",
       "target": "가난한 자",
       "ref": "잠언 29:7, 14",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-29-righteous-wicked",
@@ -2135,7 +2177,9 @@
       "speaker": "의인",
       "target": "악인",
       "ref": "잠언 29:2, 6–7, 16",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-pro-30-yage-agur",
@@ -2143,7 +2187,9 @@
       "speaker": "야게",
       "target": "아굴",
       "ref": "잠언 30:1",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-31-children-virtuous-woman",
@@ -2151,7 +2197,9 @@
       "speaker": "자녀들",
       "target": "현숙한 여인",
       "ref": "잠언 31:28–31",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-pro-31-wife-poor",
@@ -2159,7 +2207,9 @@
       "speaker": "현숙한 여인",
       "target": "가난한 자",
       "ref": "잠언 31:19–20",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-ecc-2-preacher-heir",
