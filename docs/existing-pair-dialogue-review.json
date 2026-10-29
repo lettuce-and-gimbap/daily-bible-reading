@@ -2,8 +2,8 @@
   "date": "2026-10-29",
   "unit": "PAIR_DIALOGUE entry; relationship edge counts may differ",
   "total": 928,
-  "reviewed": 136,
-  "pending": 792,
+  "reviewed": 151,
+  "pending": 777,
   "entries": [
     {
       "id": "pair-2ki-21-people-josiah",
@@ -1117,7 +1117,9 @@
       "speaker": "대적들",
       "target": "다윗",
       "ref": "시편 3:1–4; 사무엘하 15:13–17",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-5-enemies-david",
@@ -1635,7 +1637,9 @@
       "speaker": "아버지",
       "target": "아들",
       "ref": "잠언 1:1–9",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-1-gang-son",
@@ -1643,7 +1647,9 @@
       "speaker": "악한 무리",
       "target": "아들",
       "ref": "잠언 1:10–19",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-1-wisdom-fool",
@@ -1651,7 +1657,9 @@
       "speaker": "지혜",
       "target": "어리석은 자",
       "ref": "잠언 1:20–33",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-pro-2-father-son",
@@ -1659,7 +1667,9 @@
       "speaker": "아버지",
       "target": "아들",
       "ref": "잠언 2:1–22",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-3-father-son",
@@ -1667,7 +1677,9 @@
       "speaker": "아버지",
       "target": "아들",
       "ref": "잠언 3:1–4, 11–12, 21–35",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-pro-3-god-son-discipline",
@@ -1675,7 +1687,9 @@
       "speaker": "하나님",
       "target": "아들",
       "ref": "잠언 3:11–12",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-3-son-god-trust",
@@ -1683,7 +1697,9 @@
       "speaker": "아들",
       "target": "하나님",
       "ref": "잠언 3:5–10",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-2-seductress-son",
@@ -1691,7 +1707,9 @@
       "speaker": "음녀",
       "target": "아들",
       "ref": "잠언 2:16–19",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-4-grandfather-father",
@@ -1699,7 +1717,9 @@
       "speaker": "할아버지",
       "target": "아버지",
       "ref": "잠언 4:1–9",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-4-wisdom-son",
@@ -1707,7 +1727,9 @@
       "speaker": "지혜",
       "target": "아들",
       "ref": "잠언 4:5–19",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-5-father-son",
@@ -1723,7 +1745,9 @@
       "speaker": "음녀",
       "target": "어리석은 젊은이",
       "ref": "잠언 7:13–23",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-pro-7-father-young-man",
@@ -1731,7 +1755,9 @@
       "speaker": "아버지",
       "target": "어리석은 젊은이",
       "ref": "잠언 7:1–5, 24–27",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-8-wisdom-people",
@@ -1739,7 +1765,9 @@
       "speaker": "지혜",
       "target": "사람들",
       "ref": "잠언 8:1–21",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-8-rulers-wisdom",
@@ -1747,7 +1775,9 @@
       "speaker": "왕과 방백",
       "target": "지혜",
       "ref": "잠언 8:14–21",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-pro-9-wisdom-foolish",

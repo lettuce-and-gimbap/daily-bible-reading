@@ -606,7 +606,8 @@ test('잠언의 31장 관계 후보는 모두 본문 맥락의 양방향 대화�
  assert.ok(!summary.chapters[6].people.some(person=>person.name==='개미'));
  assert.ok(!summary.chapters[30].people.some(person=>person.name==='개미와 메뚜기'));
  const proverb7=proverbs.find(entry=>entry.id==='pair-pro-7-seductress-young-man');
- assert.match(proverb7.lines[0],/화목제를 드리고 서원을 갚았/);assert.match(proverb7.replyLines[0],/생명이 위험/);
+ assert.match(proverb7.lines[0],/화목제를 드리고 서원을 갚았/);assert.match(proverb7.replyLines[1],/마음이 끌립니다/);
+ assert.match(proverb7.detail,/위험을 깨닫지 못한 채 곧 따라갑니다/);
 });
 
 test('전도서의 관계선 18개는 왕·억압받는 이·지혜자·청년의 상황을 반영한 대화로 잇는다',()=>{
