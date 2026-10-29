@@ -2,8 +2,8 @@
   "date": "2026-10-29",
   "unit": "PAIR_DIALOGUE entry; relationship edge counts may differ",
   "total": 928,
-  "reviewed": 74,
-  "pending": 854,
+  "reviewed": 83,
+  "pending": 845,
   "entries": [
     {
       "id": "pair-2ki-21-people-josiah",
@@ -491,7 +491,9 @@
       "speaker": "형제들",
       "target": "다윗",
       "ref": "시편 69:7–9",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-77-moses-aaron",
@@ -607,7 +609,9 @@
       "speaker": "늙은 시인",
       "target": "후대",
       "ref": "시편 71:9, 17–18",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-72-solomon-poor",
@@ -615,7 +619,9 @@
       "speaker": "솔로몬",
       "target": "가난하고 궁핍한 자",
       "ref": "시편 72:1–4, 12–14",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-72-kings-solomon",
@@ -623,7 +629,9 @@
       "speaker": "다시스와 섬의 왕들",
       "target": "솔로몬",
       "ref": "시편 72:8–11",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-78-asaph-ancestors",
@@ -899,7 +907,9 @@
       "speaker": "원수들",
       "target": "늙은 시인",
       "ref": "시편 71:9–11, 18",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-95-singer-people",
@@ -953,7 +963,9 @@
       "speaker": "아삽",
       "target": "악인",
       "ref": "시편 73:2–12, 16–20",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-79-nations-servants",
@@ -1375,7 +1387,9 @@
       "speaker": "까닭 없이 미워하는 자들",
       "target": "다윗",
       "ref": "시편 69:4, 7–12, 20–21",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-70-life-seekers-david",
@@ -1383,7 +1397,9 @@
       "speaker": "생명을 찾는 자들",
       "target": "다윗",
       "ref": "시편 70:1–5",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-72-sheba-kings-solomon",
@@ -1391,7 +1407,9 @@
       "speaker": "스바와 시바 왕들",
       "target": "솔로몬",
       "ref": "시편 72:10–15",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-86-proud-david",
