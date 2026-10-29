@@ -2,8 +2,8 @@
   "date": "2026-10-29",
   "unit": "PAIR_DIALOGUE entry; relationship edge counts may differ",
   "total": 928,
-  "reviewed": 280,
-  "pending": 648,
+  "reviewed": 295,
+  "pending": 633,
   "entries": [
     {
       "id": "pair-2ki-21-people-josiah",
@@ -5587,7 +5587,9 @@
       "speaker": "여호와의 종",
       "target": "이방",
       "ref": "이사야 42:1, 6",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-isa-42-servant-captives",
@@ -5595,7 +5597,9 @@
       "speaker": "여호와의 종",
       "target": "맹인과 갇힌 자",
       "ref": "이사야 42:6–7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-isa-45-cyrus-jacob",
@@ -5603,7 +5607,9 @@
       "speaker": "고레스",
       "target": "야곱",
       "ref": "이사야 45:13",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-45-nations-jacob",
@@ -5611,7 +5617,9 @@
       "speaker": "애굽과 구스와 스바",
       "target": "야곱",
       "ref": "이사야 45:14",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-47-babylon-israel",
@@ -5619,7 +5627,9 @@
       "speaker": "처녀 딸 바벨론",
       "target": "하나님의 백성",
       "ref": "이사야 47:1, 6",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-47-astrologers-babylon",
@@ -5627,7 +5637,9 @@
       "speaker": "술사와 점성가",
       "target": "처녀 딸 바벨론",
       "ref": "이사야 47:12–15",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-48-chaldeans-jacob",
@@ -5635,7 +5647,9 @@
       "speaker": "갈대아인",
       "target": "야곱 족속",
       "ref": "이사야 48:20–21",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-isa-49-servant-children",
@@ -5643,7 +5657,9 @@
       "speaker": "여호와의 종",
       "target": "시온의 자녀들",
       "ref": "이사야 49:5–6, 22",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-49-rulers-servant",
@@ -5651,7 +5667,9 @@
       "speaker": "왕들과 고관들",
       "target": "여호와의 종",
       "ref": "이사야 49:7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-50-tormentors-servant",
@@ -5659,7 +5677,9 @@
       "speaker": "때리는 자들",
       "target": "여호와의 종",
       "ref": "이사야 50:6–9",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-50-servant-darkness",
@@ -5667,7 +5687,9 @@
       "speaker": "여호와의 종",
       "target": "흑암 중에 행하는 자",
       "ref": "이사야 50:10",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-51-sarah-abraham",
@@ -5675,7 +5697,9 @@
       "speaker": "사라",
       "target": "아브라함",
       "ref": "이사야 51:1–2",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-isa-51-persecutors-zion",
@@ -5683,7 +5707,9 @@
       "speaker": "괴롭게 하던 자들",
       "target": "시온",
       "ref": "이사야 51:22–23",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-52-messenger-zion",
@@ -5691,7 +5717,9 @@
       "speaker": "좋은 소식을 전하는 자",
       "target": "시온",
       "ref": "이사야 52:7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-isa-52-watchmen-zion",
@@ -5699,7 +5727,9 @@
       "speaker": "파수꾼들",
       "target": "시온",
       "ref": "이사야 52:8–10",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-isa-53-servant-us",
