@@ -2,8 +2,8 @@
   "date": "2026-10-29",
   "unit": "PAIR_DIALOGUE entry; relationship edge counts may differ",
   "total": 928,
-  "reviewed": 31,
-  "pending": 897,
+  "reviewed": 43,
+  "pending": 885,
   "entries": [
     {
       "id": "pair-2ki-21-people-josiah",
@@ -297,7 +297,9 @@
       "speaker": "아비멜렉",
       "target": "다윗",
       "ref": "시편 34:1–4, 6",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-41-friend-david",
@@ -439,7 +441,9 @@
       "speaker": "친구들",
       "target": "다윗",
       "ref": "시편 38:11–15",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-51-nathan-david",
@@ -813,7 +817,9 @@
       "speaker": "악인",
       "target": "의인",
       "ref": "시편 37:12–17, 23–26",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-49-wealthy-korahites",
@@ -1153,7 +1159,9 @@
       "speaker": "다윗",
       "target": "경건한 자",
       "ref": "시편 32:1–11",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-34-david-humble",
@@ -1161,7 +1169,9 @@
       "speaker": "다윗",
       "target": "겸손한 자들",
       "ref": "시편 34:1–10",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-35-enemies-david",
@@ -1169,7 +1179,9 @@
       "speaker": "원수들",
       "target": "다윗",
       "ref": "시편 35:7–19",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-35-david-enemies",
@@ -1177,7 +1189,9 @@
       "speaker": "다윗",
       "target": "원수들",
       "ref": "시편 35:11–16",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-35-supporters-david",
@@ -1185,7 +1199,9 @@
       "speaker": "다윗의 의를 즐거워하는 자",
       "target": "다윗",
       "ref": "시편 35:27–28",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-36-wicked-david",
@@ -1193,7 +1209,9 @@
       "speaker": "악인",
       "target": "다윗",
       "ref": "시편 36:1–12",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-37-david-righteous",
@@ -1201,7 +1219,9 @@
       "speaker": "다윗",
       "target": "의인",
       "ref": "시편 37:3–11, 23–26",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-38-enemies-david",
@@ -1209,7 +1229,9 @@
       "speaker": "원수들",
       "target": "다윗",
       "ref": "시편 38:12–22",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-39-david-wicked",
@@ -1217,7 +1239,9 @@
       "speaker": "다윗",
       "target": "악인",
       "ref": "시편 39:1–8",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-40-enemies-david",
