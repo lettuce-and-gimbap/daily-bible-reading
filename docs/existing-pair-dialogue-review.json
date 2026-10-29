@@ -2,8 +2,8 @@
   "date": "2026-10-29",
   "unit": "PAIR_DIALOGUE entry; relationship edge counts may differ",
   "total": 928,
-  "reviewed": 60,
-  "pending": 868,
+  "reviewed": 74,
+  "pending": 854,
   "entries": [
     {
       "id": "pair-2ki-21-people-josiah",
@@ -377,7 +377,9 @@
       "speaker": "블레셋 사람들",
       "target": "다윗",
       "ref": "시편 56:1–4; 사무엘상 21:10–15",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-57-saul-david",
@@ -385,7 +387,9 @@
       "speaker": "사울",
       "target": "다윗",
       "ref": "시편 57:1–6; 사무엘상 24:1–7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-59-saul-sentries-david",
@@ -393,7 +397,9 @@
       "speaker": "사울이 보낸 자들",
       "target": "다윗",
       "ref": "시편 59:1–4, 16–17; 사무엘상 19:11–17",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-106-dathan-moses",
@@ -475,7 +481,9 @@
       "speaker": "배신한 친구",
       "target": "다윗",
       "ref": "시편 55:12–14, 20–21",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-69-brothers-david",
@@ -861,7 +869,9 @@
       "speaker": "다윗",
       "target": "불의한 통치자들",
       "ref": "시편 58:1–11",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-60-joab-david",
@@ -869,7 +879,9 @@
       "speaker": "요압",
       "target": "다윗",
       "ref": "시편 60 표제; 사무엘하 8:13–14",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-62-david-people",
@@ -877,7 +889,9 @@
       "speaker": "다윗",
       "target": "백성",
       "ref": "시편 62:5–10",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-71-enemies-elder",
@@ -929,7 +943,9 @@
       "speaker": "사울",
       "target": "사울이 보낸 자들",
       "ref": "시편 59:1–4; 사무엘상 19:11–17",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-73-asaph-wicked",
@@ -1299,7 +1315,9 @@
       "speaker": "원수들",
       "target": "다윗",
       "ref": "시편 55:3–8, 15, 23",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-56-enemies-david",
@@ -1307,7 +1325,9 @@
       "speaker": "원수들",
       "target": "다윗",
       "ref": "시편 56:1–7; 사무엘상 21:10–15",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-57-enemies-david",
@@ -1315,7 +1335,9 @@
       "speaker": "원수들",
       "target": "다윗",
       "ref": "시편 57:3–6; 사무엘상 24:1–7",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-62-enemies-david",
@@ -1323,7 +1345,9 @@
       "speaker": "대적들",
       "target": "다윗",
       "ref": "시편 62:3–4",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-63-enemies-david",
@@ -1331,7 +1355,9 @@
       "speaker": "원수들",
       "target": "다윗",
       "ref": "시편 63:9–11",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "유지: 본문 권면·찬양의 화자와 공동체 응답이 문맥에 부합함"
     },
     {
       "id": "pair-psa-64-wicked-david",
@@ -1339,7 +1365,9 @@
       "speaker": "악인들",
       "target": "다윗",
       "ref": "시편 64:2–10",
-      "status": "pending"
+      "status": "source-reviewed",
+      "sources": "비공개 개역개정·쉬운성경 및 호크마 참고 정리",
+      "result": "수정: 시적 기도와 대면 발화의 수신자를 구분하고, 창작 문답의 한계를 명시"
     },
     {
       "id": "pair-psa-69-haters-david",
