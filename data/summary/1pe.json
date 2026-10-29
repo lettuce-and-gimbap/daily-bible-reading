@@ -85,7 +85,7 @@
       ],
       "rels": [
         {"from":"남편들","to":"아내들","label":"부부","kind":"family","directed":false,"weight":3,"verses":"1, 7","note":"남편은 아내가 더 연약하다는 것을 알고 이해하며 존중해야 해요. 아내와 남편은 함께 생명의 은혜를 받을 자예요."},
-        {"from":"사라","to":"아브라함","label":"순종한 아내","kind":"family","directed":false,"weight":2,"verses":"6","note":"옛 거룩한 여인들처럼 사라는 아브라함을 주라 부르며 따랐어요. 두려움 없이 선을 행하는 믿음의 본이에요."},
+        {"from":"사라","to":"아브라함","label":"순종한 아내","kind":"family","directed":true,"weight":2,"verses":"6","note":"옛 거룩한 여인들처럼 사라는 아브라함을 주라 부르며 따랐어요. 두려움 없이 선을 행하는 믿음의 본이에요."},
         {"from":"예수","to":"하나님","label":"우리를 인도함","kind":"ally","directed":true,"weight":3,"verses":"18","note":"의로우신 그리스도가 불의한 우리를 위해 단번에 고난받고 죽으셔서 우리를 하나님께로 이끄셨어요."},
         {"from":"베드로","to":"아내들","label":"권면한 사도","kind":"ally","directed":true,"weight":1,"verses":"3-4","note":"겉치장보다 썩지 않는 온유하고 조용한 속사람으로 단장하라고 권했어요. 하나님 앞에서 값진 것이에요."}
       ],

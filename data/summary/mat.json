@@ -793,7 +793,7 @@
         {"from":"베드로","to":"예수","label":"3번 부인함","kind":"conflict","directed":true,"weight":3,"verses":"69-75","note":"끝까지 따르겠다고 장담한 베드로는 대제사장 마당에서 사람들의 말에 3번 모른다고 했어요. 닭이 울자 예수님 말씀이 생각나 울었어요."},
         {"from":"가야바","to":"예수","label":"사형을 정함","kind":"conflict","directed":true,"weight":3,"verses":"63-66","note":"대제사장은 예수님이 하나님의 아들이라고 답하자 옷을 찢으며 신성모독이라 선언했어요."},
         {"from":"향유를 부은 여인","to":"예수","label":"향유를 부음","kind":"ally","directed":true,"weight":2,"verses":"7, 12","note":"여인은 값비싼 향유를 아낌없이 부었어요. 예수님은 곧 있을 장례를 준비한 일로 받아 주셨어요."},
-        {"from":"가룟 유다","to":"대제사장과 장로들","label":"돈을 받음","kind":"ally","directed":false,"weight":2,"verses":"14-16","note":"유다는 먼저 찾아가 얼마 주겠느냐고 물었어요. 은 삼십이 정해졌고 그때부터 기회를 엿봤어요."},
+        {"from":"가룟 유다","to":"대제사장과 장로들","label":"돈을 받음","kind":"ally","directed":true,"weight":2,"verses":"14-16","note":"유다는 먼저 찾아가 얼마 주겠느냐고 물었어요. 은 삼십이 정해졌고 그때부터 기회를 엿봤어요."},
         {"from":"예수","to":"하나님","label":"순종한 아들","kind":"family","directed":true,"weight":2,"verses":"39","note":"예수님은 엎드려 2잔을 지나가게 해 달라 하면서도 내 원대로 말고 아버지의 원대로 하라고 기도하셨어요."}
       ],
       "places": [

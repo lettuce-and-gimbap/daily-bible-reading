@@ -113,7 +113,7 @@
         {"from":"나오미","to":"오벳","label":"양육자","kind":"family","directed":true,"weight":2,"verses":"16","note":"나오미가 아기를 품에 안고 길러 주자 이웃 여인들이 나오미에게 아들이 났다고 했어요. 빈손이라던 나오미의 삶이 이 아이로 다시 채워졌어요."},
         {"from":"이새","to":"오벳","label":"아들","kind":"family","directed":true,"weight":1,"verses":"17","note":"오벳은 이새의 아버지예요. 사사 시대의 어둠 속에서도 하나님은 이 평범한 가정을 통해 다윗 왕으로 이어지는 길을 조용히 준비하고 계셨어요."},
         {"from":"다윗","to":"이새","label":"아들","kind":"family","directed":true,"weight":1,"verses":"17, 22","note":"이새는 다윗의 아버지예요. 이방 모압 여인 룻이 다윗 왕의 증조할머니가 되어, 훗날 예수님의 족보(마태복음 1장)에도 이름이 올랐어요."},
-        {"from":"룻","to":"나오미","label":"며느리","kind":"family","directed":false,"weight":2,"verses":"13-17","note":"룻은 나오미의 며느리예요. 보아스와 결혼해 오벳을 낳았고, 이웃 여인들은 나오미에게 그 아이가 생기를 되찾게 할 것이라고 축하했어요.","adminOnly":true}
+        {"from":"룻","to":"나오미","label":"며느리","kind":"family","directed":true,"weight":2,"verses":"13-17","note":"룻은 나오미의 며느리예요. 보아스와 결혼해 오벳을 낳았고, 이웃 여인들은 나오미에게 그 아이가 생기를 되찾게 할 것이라고 축하했어요.","adminOnly":true}
       ],
       "places": [
         {"name":"베들레헴","where":"유다 땅, 예루살렘 남쪽 약 9km","what":"성문에서 장로 10명 앞에 땅 무르기와 룻과의 결혼을 확정함","weight":3}

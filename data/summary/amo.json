@@ -102,7 +102,7 @@
           "to": "하나님",
           "label": "벌받을 나라",
           "kind": "conflict",
-          "directed": false,
+          "directed": true,
           "weight": 1,
           "verses": "11-12",
           "note": "에돔은 이스라엘과 야곱·에서 형제 사이인데도 칼로 쫓고 분노를 거두지 않았어요. 이 죄 때문에 하나님이 데만과 보스라에 불을 보내세요."

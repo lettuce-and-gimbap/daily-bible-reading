@@ -2170,7 +2170,7 @@
         {"from":"다윗","to":"하나님","label":"아버지라 부를 이","kind":"family","directed":true,"weight":2,"verses":"26","note":"다윗은 하나님을 아버지요 구원의 바위라고 부를 거래요."},
         {"from":"원수들","to":"기름 부음 받은 왕","label":"비방한 자","kind":"conflict","directed":true,"weight":2,"verses":"50-51","note":"원수들이 주님이 기름 부으신 왕을 비방했고, 그 비방을 기억해 달라고 해요."},
         {"from":"에단","to":"하나님","label":"물으며 송축한 이","kind":"ally","directed":true,"weight":2,"verses":"1, 46","note":"에단은 주님의 사랑을 노래하면서도 언제까지 숨으시냐고 물어요."},
-        {"from":"기름 부음 받은 왕","to":"다윗","label":"다윗의 자손","kind":"family","directed":false,"weight":2,"verses":"20, 29, 36","note":"시편은 하나님이 다윗을 택해 기름 부으시고 그의 자손과 왕위를 세우겠다고 하신 언약을 노래해요.","adminOnly":true}
+        {"from":"기름 부음 받은 왕","to":"다윗","label":"다윗의 자손","kind":"family","directed":true,"weight":2,"verses":"20, 29, 36","note":"시편은 하나님이 다윗을 택해 기름 부으시고 그의 자손과 왕위를 세우겠다고 하신 언약을 노래해요.","adminOnly":true}
       ],
       "places": [
         {"name":"다볼과 헤르몬","where":"다볼과 헤르몬 산","what":"주의 이름으로 즐거워하는 산","weight":1}
