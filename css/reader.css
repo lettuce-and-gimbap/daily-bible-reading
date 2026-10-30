@@ -105,14 +105,18 @@ body.full .topbar { position: static; padding: 6px 12px; }
 
 .toast {
   position: fixed; z-index: 40; left: 50%;
-  bottom: calc(min(150px, 22vh) + env(safe-area-inset-bottom, 0px));
+  bottom: max(16px, env(safe-area-inset-bottom, 0px));
   transform: translateX(-50%); box-sizing: border-box;
   display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px;
   width: max-content; max-width: min(560px, calc(100% - 24px));
-  max-height: calc(78dvh - env(safe-area-inset-bottom, 0px) - 16px); overflow: auto;
+  max-height: calc(55vh - 32px);
+  max-height: min(55dvh, calc(100dvh - max(16px, env(safe-area-inset-bottom, 0px)) - 16px)); overflow: auto;
   background: var(--ink); color: var(--bg); padding: 12px 14px; border-radius: 10px;
   font-weight: 600; font-size: .9rem; line-height: 1.5;
   box-shadow: 0 6px 24px rgb(0 0 0 / .22); white-space: normal; overflow-wrap: anywhere;
+}
+@supports (height: 100svh) {
+  .toast { max-height: min(55svh, calc(100svh - max(16px, env(safe-area-inset-bottom, 0px)) - 16px)); }
 }
 .toast-message { flex: 1 1 180px; min-width: 0; }
 .toast-action {
