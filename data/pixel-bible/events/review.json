@@ -1117,7 +1117,7 @@
           "reason": "no-source-confirmed-object"
         },
         {
-          "title": "1번째 포로",
+          "title": "첫 번째 포로",
           "reason": "no-source-confirmed-actor"
         },
         {
@@ -5841,7 +5841,7 @@
       },
       "skipped": [
         {
-          "title": "2번째 돌판",
+          "title": "두 번째 돌판",
           "reason": "no-source-confirmed-actor"
         },
         {
@@ -6789,7 +6789,7 @@
       },
       "skipped": [
         {
-          "title": "2번째 할례",
+          "title": "두 번째 할례",
           "reason": "no-source-confirmed-actor-or-object"
         },
         {
@@ -13110,7 +13110,7 @@
       },
       "skipped": [
         {
-          "title": "1번째 잔치",
+          "title": "첫 번째 잔치",
           "reason": "no-source-confirmed-object"
         },
         {
@@ -13319,7 +13319,7 @@
       },
       "skipped": [
         {
-          "title": "사탄의 2번째 시험",
+          "title": "사탄의 두 번째 시험",
           "reason": "no-source-confirmed-actor-or-object"
         },
         {
