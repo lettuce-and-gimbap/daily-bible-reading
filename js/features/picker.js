@@ -24,12 +24,12 @@ async function renderVersePicker(body, target, idx) {
   const ver3 = picked[2] && ![ver1, ver2].includes(versionFor(picked[2], book)) ? versionFor(picked[2], book) : "";
   const vname = (c) => (VERSIONS.find((v) => v.code === c) || {}).name || c;
 
-  body.innerHTML = `<div class="vp" style="--fz:${fzScale()}"><div class="vp-head" ${target === "reading" ? "hidden" : ""}>
+  body.innerHTML = `<div class="vp ${s.hideEditionNames ? "vp-hide-edition-names" : ""}" style="--fz:${fzScale()}"><div class="vp-head" ${target === "reading" ? "hidden" : ""}>
       <button class="icon-btn" data-go="-1" ${idx0 <= 0 ? "disabled" : ""} aria-label="이전 장">‹</button>
       <b>${esc(book.name)} ${chap}장</b>
       <button class="icon-btn" data-go="1" ${idx0 >= TOTAL_CHAPTERS - 1 ? "disabled" : ""} aria-label="다음 장">›</button>
     </div>
-    <div class="vp-zoom"><span class="muted small">글씨 크기</span>${fzControl()}</div>
+    <div class="vp-zoom"><span class="muted small">글씨 크기</span><div class="vp-tools">${fzControl()}<label class="vp-edition-toggle"><input type="checkbox" data-hide-editions ${s.hideEditionNames ? "checked" : ""}><span>역본 이름 숨기기</span></label></div></div>
     <div class="opts vp-vers">${VERSIONS.map((v) => `<button class="opt ${picked.includes(v.code) ? "on" : ""}" data-pv="${v.code}">${v.name}</button>`).join("")}</div>
     <p class="muted small vp-msg">본문 불러오는 중…</p></div>`;
   const root = body.firstElementChild;
@@ -37,6 +37,7 @@ async function renderVersePicker(body, target, idx) {
     e.stopPropagation();
     const fz = e.target.closest("[data-fz]");
     if (fz) return fzStep(root, Number(fz.dataset.fz));
+    if (e.target.closest("[data-hide-editions]")) return;
     const go = e.target.closest("[data-go]");
     if (go) return renderVersePicker(body, target, idx0 + Number(go.dataset.go));
     const pv = e.target.closest("[data-pv]");
@@ -47,6 +48,13 @@ async function renderVersePicker(body, target, idx) {
       persist();
       renderVersePicker(body, target);
     }
+  });
+  root.addEventListener("change", (e) => {
+    const toggle = e.target.closest("[data-hide-editions]");
+    if (!toggle) return;
+    state.settings.hideEditionNames = toggle.checked;
+    persist();
+    root.classList.toggle("vp-hide-edition-names", toggle.checked);
   });
 
   let verses;

@@ -303,6 +303,7 @@ html.rg-open, html.rg-open body { overflow: hidden; }
 .vp-edition { display: block; padding: 3px 0; }
 .vp-edition + .vp-edition { border-top: 1px solid var(--line); margin-top: 5px; }
 .vp-edition > i { display: block; font-style: normal; font-weight: 700; font-size: calc(.78rem * var(--fz, 1)); color: var(--muted); }
+.vp-hide-edition-names .vp-edition > i { display: none; }
 .vp-edition.vp-empty { min-height: 1.5em; }
 .vp-bar { position: sticky; bottom: -14px; display: flex; align-items: center; gap: 6px; padding: 10px 0 14px; margin-top: 8px; background: var(--bg); }
 .vp-bar .vp-n { flex: 1; font-size: .86rem; color: var(--muted); }
@@ -334,6 +335,9 @@ html.rg-open, html.rg-open body { overflow: hidden; }
 
 /* 글씨 크기 조절 (50%~200%) */
 .vp-zoom, .mp-zoom { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.vp-tools { display: inline-flex; align-items: center; gap: 10px; }
+.vp-edition-toggle { display: inline-flex; align-items: center; gap: 5px; color: var(--muted); font-size: .76rem; white-space: nowrap; cursor: pointer; }
+.vp-edition-toggle input { width: 16px; height: 16px; margin: 0; accent-color: var(--accent); }
 .fz { display: inline-flex; align-items: center; gap: 4px; }
 .fz b { min-width: 3.2em; text-align: center; font-size: .82rem; font-variant-numeric: tabular-nums; }
 .fz-btn { display: inline-flex; align-items: baseline; gap: 1px; padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--ink); font: inherit; font-size: .85rem; font-weight: 700; cursor: pointer; }
