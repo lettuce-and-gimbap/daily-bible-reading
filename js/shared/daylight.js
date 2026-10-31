@@ -48,7 +48,8 @@
   const elapsed=isDay?p.localHour-p.sunrise:(p.localHour-p.sunset+24)%24;
   const phase=Math.PI+Math.max(0,Math.min(1,elapsed/span))*Math.PI;
   const project=a=>({x:Math.cos(a)*112,y:Math.sin(a)*66-Math.cos(a)*24,depth:Math.sin(a)});
-  const pos=project(phase),start=project(phase-.18);
+  const pos=project(phase),start=project(phase-Math.PI);
+  root.style.setProperty('--entrance-orbit-phase',String(phase));
   root.style.setProperty('--entrance-orbit-x',pos.x+'px');root.style.setProperty('--entrance-orbit-y',pos.y+'px');
   root.style.setProperty('--entrance-orbit-start-x',start.x+'px');root.style.setProperty('--entrance-orbit-start-y',start.y+'px');
   root.style.setProperty('--entrance-orbit-scale',String(.9+(pos.depth+1)*.1));
@@ -58,6 +59,16 @@
  function permissionsHtml(){return `<section class="card"><h2>권한</h2><h3>위치 · 지역 날씨</h3><p>선택 사항이에요. 허용하지 않으면 서울 날씨를 사용해요. 위치 좌표는 이 기기에 저장하고 Open-Meteo 날씨 조회에만 보내요.</p><p data-weather-status></p><button type="button" class="btn" data-weather-allow>내 위치 사용 허용</button> <button type="button" class="btn ghost" data-weather-default>서울 기준 사용</button><p class="muted small">차단했다면 기기 설정의 Safari·브라우저·사이트 위치 권한에서 다시 허용해 주세요. 앱이 열려 있을 때 1시간마다 조회해요. 예보를 받지 못하면 시간대 색상을 사용해요.</p><small>날씨: <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a></small></section>`;}
  function bindPermissions(root){root.querySelector('[data-weather-allow]')?.addEventListener('click',useLocation);root.querySelector('[data-weather-default]')?.addEventListener('click',()=>{try{localStorage.removeItem(placeKey);localStorage.removeItem(cacheKey);}catch(_){}weather=null;refresh();});sync();}
 
- function enter(){const ornament=document.createElement('span');ornament.className='reading-weather';ornament.setAttribute('aria-hidden','true');ornament.setAttribute('data-kst-celestial','');document.body.append(ornament);const route=()=>ornament.hidden=!!location.hash&&location.hash!=='#today';addEventListener('hashchange',route);route();sync();const entrance=document.createElement('div');entrance.className='app-entrance';entrance.setAttribute('aria-label','경건생활 시작');entrance.innerHTML='<span class="entrance-scene"><img src="icons/icon-192.png" width="112" height="112" alt="경건생활 십자가 로고"><span class="entrance-celestial" aria-hidden="true" data-kst-celestial></span></span><b>경건생활</b>';document.body.append(entrance);sync();setTimeout(()=>entrance.remove(),3000);}
+ function enter(){const ornament=document.createElement('span');ornament.className='reading-weather';ornament.setAttribute('aria-hidden','true');ornament.setAttribute('data-kst-celestial','');document.body.append(ornament);const route=()=>ornament.hidden=!!location.hash&&location.hash!=='#today';addEventListener('hashchange',route);route();sync();const entrance=document.createElement('div');entrance.className='app-entrance';entrance.setAttribute('aria-label','경건생활 시작');entrance.innerHTML='<span class="entrance-scene"><img src="icons/icon-192.png" width="112" height="112" alt="경건생활 십자가 로고"><span class="entrance-celestial" aria-hidden="true" data-kst-celestial></span></span><b>경건생활</b>';document.body.append(entrance);sync();
+  const celestial=entrance.querySelector('.entrance-celestial');
+  if(celestial.animate&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
+   const phase=Number(document.documentElement.style.getPropertyValue('--entrance-orbit-phase'));
+   const frames=Array.from({length:81},(_,i)=>{
+    const angle=phase-Math.PI+Math.PI*i/80,depth=Math.sin(angle);
+    return {offset:i/80,transform:`translate(-50%,-50%) translate(${Math.cos(angle)*112}px,${depth*66-Math.cos(angle)*24}px) scale(${.9+(depth+1)*.1})`,zIndex:depth<0?0:2,opacity:i<8?i/8:1};
+   });
+   celestial.animate(frames,{duration:3400,easing:'cubic-bezier(.25,.1,.25,1)'});
+  }
+  setTimeout(()=>entrance.remove(),4100);}
  global.KstLight={at,sync,enter,permissionsHtml,bindPermissions,reminderTimeZone};if(typeof document!=='undefined'){weather=stored(cacheKey);if(weather&&Date.now()-weather.saved>10800000)weather=null;sync();refresh();setInterval(()=>{sync();refresh();},60000);document.addEventListener('visibilitychange',()=>{if(!document.hidden){sync();refresh();}});}
 })(globalThis);

@@ -189,10 +189,10 @@ textarea { resize: vertical; line-height: 1.6; }
 .tabs { position: relative; }
 
 /* Hourly sky around the logo: a tilted orbit, without visible rails or badges. */
-.app-entrance{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:24px;background:linear-gradient(155deg,var(--kst-sky),var(--kst-light));color:#2b504b;pointer-events:none;animation:entrance-out .25s 2.75s both}
+.app-entrance{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:24px;background:linear-gradient(155deg,var(--kst-sky),var(--kst-light));color:#2b504b;pointer-events:none;animation:entrance-out .3s 3.8s both}
 .entrance-scene{position:relative;display:grid;place-items:center;width:112px;height:112px;isolation:isolate}
 .app-entrance img{position:relative;z-index:1;border-radius:28px;box-shadow:0 14px 36px #18293826}
-.entrance-celestial{position:absolute;left:50%;top:50%;z-index:var(--entrance-orbit-depth,2);font-size:38px;line-height:1;white-space:nowrap;color:#fff3c4;text-shadow:0 0 18px #fff4ba66;filter:drop-shadow(0 4px 8px #12264026);transform:translate(-50%,-50%) translate(var(--entrance-orbit-x,0px),var(--entrance-orbit-y,-80px)) scale(var(--entrance-orbit-scale,1));animation:entrance-sky-arrive 2.4s ease-out both;transition:transform 1.4s ease}
+.entrance-celestial{position:absolute;left:50%;top:50%;z-index:var(--entrance-orbit-depth,2);font-size:38px;line-height:1;white-space:nowrap;color:#fff3c4;text-shadow:0 0 18px #fff4ba66;filter:drop-shadow(0 4px 8px #12264026);transform:translate(-50%,-50%) translate(var(--entrance-orbit-x,0px),var(--entrance-orbit-y,-80px)) scale(var(--entrance-orbit-scale,1));transition:transform 1.4s ease}
 [data-weather="snow"] .entrance-celestial{color:#effcff}
 [data-weather="overcast"] .entrance-celestial,[data-weather="fog"] .entrance-celestial{color:#e3edf3;text-shadow:0 0 22px #e3edf344}
 [data-kst-light="night"] .app-entrance{color:#e8e9db}
