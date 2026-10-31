@@ -53,7 +53,7 @@
   root.style.setProperty('--entrance-orbit-x',pos.x+'px');root.style.setProperty('--entrance-orbit-y',pos.y+'px');
   root.style.setProperty('--entrance-orbit-start-x',start.x+'px');root.style.setProperty('--entrance-orbit-start-y',start.y+'px');
   root.style.setProperty('--entrance-orbit-scale',String(.9+(pos.depth+1)*.1));
-  root.style.setProperty('--entrance-orbit-depth',pos.depth<-.45?'0':'2');
+  root.style.setProperty('--entrance-orbit-depth',pos.depth<0?'0':'2');
   document.querySelectorAll('[data-kst-celestial]').forEach(e=>{const glyph=c?({storm:'⛈',snow:'❄',rain:'☂',fog:'☁',overcast:'☁',cloudy:isDay?'☀ ☁':'☾ ☁',clear:isDay?'☀':'☾'}[c.kind]):isDay?'☀':'☾';e.textContent=glyph;if(e.classList.contains('entrance-celestial'))e.setAttribute('aria-label',`${weather?.label||'서울'} ${c?({clear:'맑음',cloudy:'구름',overcast:'흐림',fog:'안개',rain:'비',snow:'눈',storm:'뇌우'})[c.kind]:'현재 날씨'}`)});
   document.querySelectorAll('[data-weather-status]').forEach(e=>e.textContent=c?`${weather.label} · ${({clear:'맑음',cloudy:'구름',overcast:'흐림',fog:'안개',rain:'비',snow:'눈',storm:'뇌우'})[c.kind]} · 시간별 예보 반영`: '시간대 색상 적용 · 날씨 연결 대기');}
  function permissionsHtml(){return `<section class="card"><h2>권한</h2><h3>위치 · 지역 날씨</h3><p>선택 사항이에요. 허용하지 않으면 서울 날씨를 사용해요. 위치 좌표는 이 기기에 저장하고 Open-Meteo 날씨 조회에만 보내요.</p><p data-weather-status></p><button type="button" class="btn" data-weather-allow>내 위치 사용 허용</button> <button type="button" class="btn ghost" data-weather-default>서울 기준 사용</button><p class="muted small">차단했다면 기기 설정의 Safari·브라우저·사이트 위치 권한에서 다시 허용해 주세요. 앱이 열려 있을 때 1시간마다 조회해요. 예보를 받지 못하면 시간대 색상을 사용해요.</p><small>날씨: <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a></small></section>`;}
