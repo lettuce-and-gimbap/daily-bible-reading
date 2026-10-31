@@ -14,7 +14,7 @@ import { characterSpriteFrame } from './character-motion.js';
 // 큰 도트의 귀여운 SD 비율. 작은 얼굴과 보이는 목으로 몸통 길이를 살린다.
 import { APPEARANCES, appearanceFor } from "./appearance.js";
 import {drawGimbap} from './gimbap-art.js?rev=gimbap-backface-2';
-import {drawFoodMascot} from './food-mascots.js';
+import {drawFoodMascot} from './food-mascots.js?rev=food-only-1';
 export const CHARACTER_STYLES = Object.fromEntries(Object.entries(APPEARANCES).map(([k,s])=>[k,{...appearanceFor(s.name),...s}]));
 export const characterStyle = (name,index,role,refs,creature=null)=>{if(name==='김밥')return {...appearanceFor(name,index,role,refs),gimbap:true,evidence:'PIXEL BIBLE 창작 길동무',design:'둥근 64×64 김밥 단면 도트와 선명한 16프레임 구르기'};if(name==='상추'||name==='카라멜팝콘')return {...appearanceFor(name,index,role,refs),foodMascot:name,evidence:'PIXEL BIBLE 창작 길동무',design:`개성 있는 도트 ${name} 마스코트`};const d=creature===false?null:creature||creatureForName(name,role);return d?{...appearanceFor(name,index,role,refs),creature:d,evidence:'현재 본문에 언급된 '+d.name,design:'생물의 신체 특징에 맞춘 창작 픽셀 도안'}:appearanceFor(name,index,role,refs);};
 // 네 방향·네 걷기 프레임을 원본 도트로 캐시한다. 실루엣 테두리도 같은 알파에서 만든다.

@@ -1,3 +1,4 @@
+import {startFoodTeam} from './food-team.js';
 import {bindOutsidePanelDismiss} from './panel-dismiss.js';
 import {loadVerseBook} from './verse-data.js';
 import {eventPlan} from './event-animation/timeline.js';
@@ -50,7 +51,7 @@ import { ambientSpeechAllowed, manualSpeechAllowed, dialogueCandidates, SpeechDi
 import { objectPhrase, movementDirection } from './language.js';
 import { resolveIdentity, canonicalPersonName } from './identity.js?rev=person-identity-audit-1';
 import { BACKGROUNDS, defaultBackground, backgroundStorageKey } from './backgrounds.js';
-import { drawPixelCharacter, hitWorldObject, characterStyle, drawWorldObject, drawDesignBoard } from "./art.js";
+import { drawPixelCharacter, hitWorldObject, characterStyle, drawWorldObject, drawDesignBoard } from "./art.js?rev=food-only-1";
 import { renderPersonPreview, easyPersonDescription } from "./collection-preview.js?v=turntable-motion-walk-start-2";
 import { RUTH_SCENES, ELIJAH_SCENES, ALL_SCENES as REVIEWED_SCENES, scenesForChapters } from './scenes.js';
 export { RUTH_SCENES, ELIJAH_SCENES } from './scenes.js';
@@ -907,6 +908,7 @@ export async function mountPixelWorld(shell, options) {
       const spot=adjacent(obj,landing)[0];
       if(spot){n.x=spot.x;n.y=spot.y;n.idle=8;keepInView(n);interact(n,obj);updateEncounters(performance.now());draw();return;}
     }
+    if(['김밥','카라멜팝콘'].includes(n.mascotId)&&waterAt(backgroundKey,landing.x,landing.y)){n.x=held.from.x;n.y=held.from.y;n.path=[];say(`${n.mascotId}은, 빠지지, 않아요`);draw();return;}
     if(!n.creature&&waterAt(backgroundKey,landing.x,landing.y)){const safe=dryLanding(backgroundKey,landing,blocked);if(safe){n.x=landing.x;n.y=landing.y;startWaterEscape(n,safe);say('첨벙! 잠시 뒤 물가로 올라와요.');draw();return;}}
     if(blocked(landing.x,landing.y)){
       n.x=held.from.x;n.y=held.from.y;say('여기는 오브젝트가 있는 자리예요. 빈 땅에 내려놓아 주세요.');
@@ -1305,6 +1307,7 @@ export async function mountPixelWorld(shell, options) {
   window.visualViewport?.addEventListener('resize',refreshCanvas,{signal});
   const canRun=()=>worldCanAnimate({disposed,hidden:document.hidden,allowed:options.allowed()});
   const scheduleFrame=()=>{if(canRun()&&!frameScheduled){frameScheduled=true;frame=requestAnimationFrame(tick);}};
+  let foodTeamLatched=false;
   function tick(stamp) {
     frameScheduled=false;
     if(disposed)return;
@@ -1322,6 +1325,10 @@ export async function mountPixelWorld(shell, options) {
           if(!activeEvent.paused&&!activeEvent.manualClip&&activeEvent.elapsed>Math.max(eventPlan(activeEvent.scene).duration||8.2,activeEvent.scene.lines[activeEvent.step].length*.09) && (!sound || !speechSynthesis.speaking || activeEvent.elapsed>45)) { if(++activeEvent.step>=activeEvent.scene.lines.length) endEvent(); else showLine(); }
         }
       }
+      const foodTeam=['상추','김밥','카라멜팝콘'].map(id=>npcs.find(n=>n.mascotId===id));
+      const assembled=foodTeam.every(Boolean)&&foodTeam.every(n=>!n.waterEscape&&!n.waterHuff)&&foodTeam.every(n=>Math.hypot(n.x-foodTeam[1].x,n.y-foodTeam[1].y)<=3);
+      if(!assembled)foodTeamLatched=false;
+      if(assembled&&!foodTeamLatched&&!activeEvent&&!drag?.active&&!paused){foodTeamLatched=true;startFoodTeam(shell,foodTeam,{signal:abort.signal,reduced});}
       followDraggedCharacter(dt);
       updateEncounters(performance.now());updateSpeech(performance.now());draw();
       frameErrorReported=false;
