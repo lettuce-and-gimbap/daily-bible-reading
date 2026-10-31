@@ -1,4 +1,4 @@
-import {characterStyle,drawPixelCharacter} from './art.js?rev=food-only-1';
+import {characterStyle,drawPixelCharacter} from './art.js?rev=food-cute-2';
 
 // Seven seconds of continuous poses, sampled at the display refresh rate.
 export function startFoodTeam(host,team,{signal,reduced=false}={}){

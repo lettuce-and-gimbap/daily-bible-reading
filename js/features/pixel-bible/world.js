@@ -51,7 +51,7 @@ import { ambientSpeechAllowed, manualSpeechAllowed, dialogueCandidates, SpeechDi
 import { objectPhrase, movementDirection } from './language.js';
 import { resolveIdentity, canonicalPersonName } from './identity.js?rev=person-identity-audit-1';
 import { BACKGROUNDS, defaultBackground, backgroundStorageKey } from './backgrounds.js';
-import { drawPixelCharacter, hitWorldObject, characterStyle, drawWorldObject, drawDesignBoard } from "./art.js?rev=food-only-1";
+import { drawPixelCharacter, hitWorldObject, characterStyle, drawWorldObject, drawDesignBoard } from "./art.js?rev=food-cute-2";
 import { renderPersonPreview, easyPersonDescription } from "./collection-preview.js?v=turntable-motion-walk-start-2";
 import { RUTH_SCENES, ELIJAH_SCENES, ALL_SCENES as REVIEWED_SCENES, scenesForChapters } from './scenes.js';
 export { RUTH_SCENES, ELIJAH_SCENES } from './scenes.js';
