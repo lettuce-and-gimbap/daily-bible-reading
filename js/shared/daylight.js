@@ -43,11 +43,17 @@
    return data.timezone;
   }catch(_){try{return Intl.DateTimeFormat().resolvedOptions().timeZone||'Asia/Seoul';}catch(__){return 'Asia/Seoul';}}
  }
+ // Tilt the shared arrival and animation ellipse from upper right to lower left.
+ function orbitPosition(angle){
+  const along=Math.cos(angle)*118,depth=Math.sin(angle),across=depth*38;
+  const tilt=-35*Math.PI/180;
+  return {x:along*Math.cos(tilt)-across*Math.sin(tilt),y:along*Math.sin(tilt)+across*Math.cos(tilt),depth};
+ }
  function sync(){const p=at();document.documentElement.dataset.kstLight=p.key;document.documentElement.style.setProperty('--kst-sky',p.sky);document.documentElement.style.setProperty('--kst-light',p.light);const c=conditions(),root=document.documentElement;root.dataset.weather=c?.kind||'unknown';const altitude=Math.max(0,Math.sin(Math.PI*(p.localHour-p.sunrise)/(p.sunset-p.sunrise)));root.style.setProperty('--hour-glow',String(.88+altitude*.12));root.style.setProperty('--sun-height',(90-Math.max(0,p.elevation)*1.15)+'%');root.style.setProperty('--sun-x',(50+Math.sin((p.localHour-p.solarNoon)*Math.PI/(p.sunset-p.sunrise))*42)+'%');root.style.setProperty('--weather-cloud',c?String(c.cloud/100):'0');root.style.setProperty('--weather-hour',String(p.localHour));root.style.setProperty('--weather-x',(12+((p.hour*17+(c?.cloud||0))%76))+'%');root.style.setProperty('--weather-y',(16+((p.hour*7+Math.round((c?.cloud||0)/10))%24))+'%');const isDay=p.localHour>=p.sunrise&&p.localHour<p.sunset;
   const span=isDay?p.dayLength:24-p.dayLength;
   const elapsed=isDay?p.localHour-p.sunrise:(p.localHour-p.sunset+24)%24;
   const phase=Math.PI+Math.max(0,Math.min(1,elapsed/span))*Math.PI;
-  const project=a=>({x:Math.cos(a)*112,y:Math.sin(a)*66-Math.cos(a)*24,depth:Math.sin(a)});
+  const project=orbitPosition;
   const pos=project(phase),start=project(phase-Math.PI);
   root.style.setProperty('--entrance-orbit-phase',String(phase));
   root.style.setProperty('--entrance-orbit-x',pos.x+'px');root.style.setProperty('--entrance-orbit-y',pos.y+'px');
@@ -64,8 +70,8 @@
   if(celestial.animate&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
    const phase=Number(document.documentElement.style.getPropertyValue('--entrance-orbit-phase'));
    const frames=Array.from({length:81},(_,i)=>{
-    const angle=phase-Math.PI+Math.PI*i/80,depth=Math.sin(angle);
-    return {offset:i/80,transform:`translate(-50%,-50%) translate(${Math.cos(angle)*112}px,${depth*66-Math.cos(angle)*24}px) scale(${.9+(depth+1)*.1})`,zIndex:depth<0?0:2,opacity:i<8?i/8:1};
+    const angle=phase-Math.PI+Math.PI*i/80,pos=orbitPosition(angle),depth=pos.depth;
+    return {offset:i/80,transform:`translate(-50%,-50%) translate(${pos.x}px,${pos.y}px) scale(${.9+(depth+1)*.1})`,zIndex:depth<0?0:2,opacity:i<8?i/8:1};
    });
    celestial.animate(frames,{duration:3400,easing:'cubic-bezier(.25,.1,.25,1)'});
   }
