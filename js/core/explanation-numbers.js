@@ -16,6 +16,8 @@
   const escapedUnit=/^사\s*람$/;
   function format(text){
     return text.replace(re,(whole,prefix,num,unit)=>{
+      // 구절 is a word meaning passage, not the ninth verse.
+      if(num==='구'&&unit==='절')return whole;
       const normalized=num.replace(/\s/g,'');let value=values.get(normalized);
       if(value===undefined)return whole;
       if(escapedUnit.test(unit))unit='명';else unit=unit.replace(/\s/g,'');
