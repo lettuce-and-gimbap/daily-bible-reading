@@ -1233,7 +1233,7 @@ test('도감 캐릭터는 버튼 없이 밀어서 앞·측면·뒷면·위 시�
  assert.equal(turn('left',2,1),'left');
  for(const face of ['up','down','left','right','top'])assert.equal(previewDirectionFromControl(face),face);
  assert.equal(previewDirectionFromControl('invalid'),'down');
- assert.deepEqual([previewMotionAfterTap('stand'),previewMotionAfterTap('walk'),previewMotionAfterTap('run')],['walk','run','stand']);
+ assert.deepEqual([previewMotionAfterTap('stand'),previewMotionAfterTap('walk'),previewMotionAfterTap('run')],['walk','run','dizzy']);
  const markup=renderPersonPreview({name:'인물'});
  assert.match(markup,/<canvas data-model-canvas/,'시점은 픽셀 스프라이트를 캔버스에서 다시 그린다');
  assert.match(markup,/data-model-motion/,'현재 서기·걷기·달리기 동작을 표시한다');

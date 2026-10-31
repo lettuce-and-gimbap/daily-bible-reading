@@ -1,10 +1,11 @@
+import {impactPose,swimPose} from './collision-motion.js';
 import {drawPixelCharacter,characterStyle} from './art.js';
 import {wardrobeDetails} from './wardrobe.js';
 
 const LABELS={down:'정면',left:'왼쪽 측면',up:'뒷면',right:'오른쪽 측면',top:'위에서 보기'};
 const TURN_ORDER=['down','right','up','left'];
-const MOTIONS=['stand','walk','run'];
-const MOTION_LABELS={stand:'서 있기',walk:'걷기',run:'달리기'};
+const MOTIONS=['walk','run','dizzy','swim'];
+const MOTION_LABELS={stand:'서 있기',walk:'걷기',run:'뛰기',dizzy:'헤롱헤롱',swim:'물에 빠지기'};
 const EXPRESSIONS=['neutral','joy','gentle','worried','surprised','determined','sad'];
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
@@ -42,14 +43,20 @@ export function previewDirectionFromControl(direction){return Object.hasOwn(LABE
 export function previewMotionAfterTap(motion){return MOTIONS[(MOTIONS.indexOf(motion)+1)%MOTIONS.length];}
 
 export function renderPersonPreview(person){
- return `<section class="pb-person-model" data-person-model data-name="${esc(person.name)}" data-role="${esc(person.role||'')}" data-refs="${esc(JSON.stringify(person.refs||[]))}" data-creature="${person.creature?'true':'false'}" aria-label="${esc(person.name)} 캐릭터 동작과 시점 보기"><div class="pb-person-model-stage" tabindex="0" role="group" aria-label="캐릭터를 좌우로 밀어 회전하고 위아래로 밀어 위·정면 시점을 보세요. 짧게 누르면 서기·걷기·달리기를 바꿉니다."><canvas data-model-canvas width="288" height="288" role="img" aria-label="${esc(person.name)} 픽셀 캐릭터 정면"></canvas><button class="pb-person-garment" type="button" data-garment-info aria-label="의복 특징 설명 보기" hidden>의복 특징</button><span class="pb-person-model-name">${esc(person.name)}</span><span class="pb-person-model-motion" data-model-motion aria-live="polite">걷기</span></div><p class="pb-person-model-hint" data-model-status aria-live="polite">걷는 중 · 좌우로 밀어 한 바퀴 보기 · 위로 밀어 내려다보기 · 짧게 눌러 달리기/서기 바꾸기</p><p class="pb-person-garment-note" data-garment-note hidden></p></section>`;
+ return `<section class="pb-person-model" data-person-model data-name="${esc(person.name)}" data-role="${esc(person.role||'')}" data-refs="${esc(JSON.stringify(person.refs||[]))}" data-creature="${person.creature?'true':'false'}" aria-label="${esc(person.name)} 캐릭터 동작과 시점 보기"><div class="pb-person-model-stage" tabindex="0" role="group" aria-label="캐릭터를 좌우로 밀어 회전하고 위아래로 밀어 위·정면 시점을 보세요. 짧게 누르면 걷기·뛰기·헤롱헤롱·물에 빠지기를 바꿉니다."><canvas data-model-canvas width="288" height="288" role="img" aria-label="${esc(person.name)} 픽셀 캐릭터 정면"></canvas><button class="pb-person-garment" type="button" data-garment-info aria-label="의복 특징 설명 보기" hidden>의복 특징</button><span class="pb-person-model-name">${esc(person.name)}</span><span class="pb-person-model-motion" data-model-motion aria-live="polite">걷기</span></div><div class="pb-model-controls"><button type="button" data-model-direction="down">정면</button><button type="button" data-model-direction="up">뒷면</button><button type="button" data-model-direction="left">왼쪽</button><button type="button" data-model-direction="right">오른쪽</button></div><p class="pb-person-model-hint" data-model-status aria-live="polite">네 방향 버튼 또는 밀기로 시점 변경 · 걷기·뛰기·헤롱헤롱·물에 빠지기 자동 재생</p><p class="pb-person-garment-note" data-garment-note hidden></p></section>`;
 }
 
-function drawPreview(canvas,person,direction,walkFrame,expression,time){
+function drawPreview(canvas,person,direction,walkFrame,expression,time,motion){
  const c=canvas.getContext('2d');if(!c)return;
  c.clearRect(0,0,canvas.width,canvas.height);c.imageSmoothingEnabled=false;
  const style=characterStyle(person.name,0,person.role||'',person.refs||[],person.creature||false);
- drawPixelCharacter(c,style,canvas.width/2,canvas.height-36,{scale:3.5,direction,walkFrame,expression,time});
+ c.save();c.translate(canvas.width/2,canvas.height-50);
+ if(motion==='dizzy')c.rotate(Math.sin(time*5)*.16);
+ if(motion==='run')c.translate(0,-Math.abs(Math.sin(time*12))*8);
+ const interaction=motion==='swim'?swimPose(time%3,false):motion==='dizzy'?impactPose(time%1,false):null;
+ drawPixelCharacter(c,style,0,0,{scale:3,direction,walkFrame,expression,time,interaction});c.restore();
+ if(motion==='swim'){c.fillStyle='#69bfd1aa';c.fillRect(12,235,264,20);c.fillStyle='#e0faff';for(let x=16;x<275;x+=24)c.fillRect(x,234+Math.sin(time*5+x)*3,14,2);}
+
 }
 
 export function bindPersonPreview(root){
@@ -61,10 +68,12 @@ export function bindPersonPreview(root){
   let direction='down',motion='walk',drag=null,frame=0,expressionIndex=0,lastStep=0,lastExpression=0,raf=0,disposed=false;
   const startTime=performance.now();
   const garmentDetails=(()=>{const style=characterStyle(person.name,0,person.role,person.refs,person.creature);return wardrobeDetails(style,person.name,person.refs);})();
+  let motionBag=[];
+  let nextMotion=performance.now()+3200;
   let lastStatus='',lastCanvasLabel='';
   const render=()=>{
    const now=performance.now();
-   drawPreview(canvas,person,direction,motion==='stand'?0:frame,EXPRESSIONS[expressionIndex],(now-startTime)/1000);
+   drawPreview(canvas,person,direction,motion==='stand'?0:frame,EXPRESSIONS[expressionIndex],(now-startTime)/1000,motion);
    const canvasLabel=`${person.name} 픽셀 캐릭터 ${LABELS[direction]} · ${MOTION_LABELS[motion]} · 표정 ${EXPRESSIONS[expressionIndex]}`;
    if(canvasLabel!==lastCanvasLabel){canvas.setAttribute('aria-label',canvasLabel);lastCanvasLabel=canvasLabel;}
    if(motionLabel.textContent!==MOTION_LABELS[motion])motionLabel.textContent=MOTION_LABELS[motion];
@@ -75,6 +84,7 @@ export function bindPersonPreview(root){
   const cycleMotion=()=>{motion=previewMotionAfterTap(motion);frame=0;render();};
   const animate=now=>{
    if(disposed||!box.isConnected){if(raf)cancelAnimationFrame(raf);return;}
+   if(now>=nextMotion){if(!motionBag.length)motionBag=MOTIONS.filter(m=>m!==motion).sort(()=>Math.random()-.5);motion=motionBag.pop();direction=TURN_ORDER[Math.floor(Math.random()*4)];nextMotion=now+3200;}
    const interval=motion==='run'?95:motion==='walk'?230:500;
    if(now-lastStep>=interval){lastStep=now;if(motion!=='stand')frame=(frame+1)%4;}
    if(now-lastExpression>=1550){lastExpression=now;expressionIndex=(expressionIndex+1)%EXPRESSIONS.length;}
@@ -104,6 +114,7 @@ export function bindPersonPreview(root){
    direction=previewDirectionAfterSwipe(direction,...delta,8);render();
   });
   box.addEventListener('click',e=>{
+   const control=e.target.closest('[data-model-direction]');if(control){direction=control.dataset.modelDirection;render();return;}
    if(e.target.closest('[data-garment-info]')){const detail=box._garmentDetails?.[0];if(!detail)return;note.hidden=false;note.innerHTML=`<b>${esc(detail.label)}</b><br>${esc(detail.text)}<small>${esc(detail.ref)}</small>`;}
   });
   render();raf=requestAnimationFrame(animate);

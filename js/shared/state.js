@@ -79,6 +79,7 @@ function changeReadingCutoff(hour, now = new Date()) {
 
 // 저장할 때마다 알림 서버에도 오늘 완료 여부를 알림 (features/reminder.js)
 function persist() {
+  globalThis.FoodBond?.sync();
   saveState(state);
   queueReminderSync();
   if (typeof queueAccountSync === "function") queueAccountSync(); // 로그인했으면 서버에도 (features/account.js)
