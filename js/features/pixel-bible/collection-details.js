@@ -10,5 +10,5 @@ export function collectionDetails(record,profiles={}){
  const ordered=[...books.values()].map(b=>({...b,chapters:[...b.chapters].sort((a,b)=>a-b)}));
  ordered.sort((a,b)=>b.chapters.length-a.chapters.length);
  const roles=[...new Map(appearances.filter(a=>a.role).map(a=>[a.role,{text:a.role,ref:`${a.book} ${a.chapter}장`}])).values()];
- return {known:true,books:ordered,roles,refs,firstEncounter:matches(record.firstRef)?record.firstRef:refs[0]||null,firstAppearance:appearances[0]?`${appearances[0].book} ${appearances[0].chapter}장`:null,matches};
+ return {review:profile.review||null,known:true,books:ordered,roles,refs,firstEncounter:matches(record.firstRef)?record.firstRef:refs[0]||null,firstAppearance:appearances[0]?`${appearances[0].book} ${appearances[0].chapter}장`:null,matches};
 }

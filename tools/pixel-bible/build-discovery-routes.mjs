@@ -9,5 +9,7 @@ for(const book of BOOKS){const raw=JSON.parse(fs.readFileSync(`data/summary/${bo
  const profile=profiles[id]||(profiles[id]={name:p.name,appearances:[]});profile.appearances.push({code:book.code,book:book.name,chapter:Number(chapter),role:p.role||''});}
 }}
 for(const id in routes)routes[id]=[...new Set(routes[id])];
+const reviewed=JSON.parse(fs.readFileSync('data/pixel-bible/reviewed-people.json')).entries;
+for(const [id,entry]of Object.entries(reviewed)){if(!profiles[id])throw Error('Unknown reviewed identity '+id);profiles[id].review=entry;}
 fs.writeFileSync('data/pixel-bible/discovery-routes.json',JSON.stringify({chapters,routes,profiles})+'\n');
 console.log(`${chapters} chapters, ${Object.keys(routes).length} identities, ${Object.values(routes).reduce((n,r)=>n+r.length,0)} routes`);
