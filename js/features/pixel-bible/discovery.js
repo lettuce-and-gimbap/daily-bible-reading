@@ -22,7 +22,7 @@ export function discoverySnapshot(person,model){
 }
 export function mergeDiscovery(previous,snapshot,date=kstDate()){
  const unique=(a,b,key)=>[...new Map([...a,...b].map(x=>[key(x),x])).values()];
- return {...snapshot,roles:[...new Set([...(previous?.roles||[]),...snapshot.roles])],refs:[...new Set([...(previous?.refs||[]),...snapshot.refs])],relations:unique(previous?.relations||[],snapshot.relations,r=>r.key+'|'+r.label+'|'+r.ref),stories:unique(previous?.stories||[],snapshot.stories,s=>s.ref+'|'+s.text),days:[...new Set([...(previous?.days||[]),date])],read:previous?.read||[],favorite:!!previous?.favorite,firstSeen:previous?.firstSeen||date};
+ return {...snapshot,roles:[...new Set([...(previous?.roles||[]),...snapshot.roles])],refs:[...new Set([...(previous?.refs||[]),...snapshot.refs])],relations:unique(previous?.relations||[],snapshot.relations,r=>r.key+'|'+r.label+'|'+r.ref),stories:unique(previous?.stories||[],snapshot.stories,s=>s.ref+'|'+s.text),days:[...new Set([...(previous?.days||[]),date])],read:previous?.read||[],favorite:!!previous?.favorite,firstRef:previous?.firstRef||previous?.refs?.[0]||snapshot.refs?.[0]||null,firstSeen:previous?.firstSeen||date};
 }
 export const storyKey=story=>story.ref+'|'+story.text;
 export function learningStage(record,records){
