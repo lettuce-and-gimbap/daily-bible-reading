@@ -378,31 +378,65 @@ Object.assign(POSES, {
  sofa_plead: () => shadow(0,100,120) + softCouch() + g("translate(0,-10)",sheep({expr:"sad,pout"}) + limb([[-52,4],[-32,28],[0,14]]) + limb([[52,4],[32,28],[0,14]])),
 });
 
-// Ten distinct action rigs, each with eight authored timing samples.
-const ACTIONS=['leap','sprint','cartwheel','surf','skate','parachute','dance','kick','bow','spin'];
-for(const [actionIndex,action] of ACTIONS.entries())for(let frame=0;frame<8;frame++){
- POSES[`${action}_${frame+1}`]=()=>{
-  const t=frame/7,wave=Math.sin(t*Math.PI*2),jump=Math.sin(t*Math.PI),side=actionIndex%2?-1:1;
-  let x=0,y=0,angle=0;
-  if(action==='leap'){x=-55+t*110;y=-jump*95;angle=wave*18;}
-  if(action==='sprint'){x=wave*12;y=-Math.abs(wave)*22;angle=side*24;}
-  if(action==='cartwheel'){x=-60+t*120;y=-jump*35;angle=t*360;}
-  if(action==='surf'){x=wave*18;y=-jump*12;angle=wave*18;}
-  if(action==='skate'){x=wave*28;y=-jump*25;angle=-18+wave*14;}
-  if(action==='parachute'){x=wave*28;y=-35+t*50;angle=wave*12;}
-  if(action==='dance'){x=wave*20;y=-Math.abs(wave)*30;angle=wave*35;}
-  if(action==='kick'){y=-jump*45;angle=-jump*28;}
-  if(action==='bow'){y=jump*18;angle=jump*65;}
-  if(action==='spin'){y=-jump*40;angle=t*330;}
-  const arm=action==='bow'?32:action==='parachute'?-70:action==='kick'?-45-jump*45:action==='spin'?-5-jump*65:action==='dance'?-30-jump*65:-20-jump*65;
-  const stride=action==='sprint'?wave*58:action==='kick'?jump*85:wave*28;
-  let prop='';
-  if(action==='surf'||action==='skate')prop=ell(0,100,112,12,action==='surf'?'#67cddd':'#b39be4')+(action==='skate'?circle(-65,116,9,C.ink)+circle(65,116,9,C.ink):line('M-130,120 Q-85,90 -40,120 T70,120','#fff',5));
-  if(action==='parachute')prop=`<path d="M-110,-128 Q0,-235 110,-128Z" fill="#f0ba81"/>`+line('M-110,-128 L-64,-55 M110,-128 L64,-55',C.ink,3);
-  const body=limb([[-24,40],[-30-stride,70],[-38-stride,92]])+limb([[24,40],[30+stride,66],[44+stride,88]])+sheep({expr:frame%3?'^^,blush':'vv,blush',frot:wave*12})+limb([[-50,0],[-78,arm],[-96,arm-14]])+limb([[50,0],[78,-arm/2],[100,-arm/2-12]]);
-  return shadow(0,132,90)+prop+g(`translate(${f(x)},${f(y)}) rotate(${f(angle)})`,body)+line(`M-135,20 L-105,10 M-140,45 L-112,35 M112,15 L140,0`,'#ffffff',5);
- };
+// Entire-pose redesign: forty situations, four different full-body silhouettes.
+const SCENES=['소파 틈에 낌','이불에 말림','청소기에 끌림','빨래통 탈출','쇼핑카트 폭주','스케이트 꽈당','바나나 미끄럼','로켓 매달림','우산 뒤집힘','낙하산 엉킴','튜브 뒤집힘','서핑보드 표류','햄스터 바퀴','런닝머신 패배','의자 뒤로 넘어감','해먹에 접힘','여행가방에 낌','거대 연필 운반','책 더미 붕괴','피자 상자 잠입','도넛에 낌','찻잔 목욕','알람시계와 씨름','다리미판 점령','빗자루 비행','낚싯대에 걸림','스프링 장난감','트램펄린 발사','북에 머리 박음','훌라후프 실패','택배 상자 탈출','풍선에 끌려감','덤벨에 깔림','거대 양말 탈출','회전판에 붙음','젤리 웅덩이','꼬깔에 갇힘','눈사람인 척','꽃병에 꽂힘','카메라 앞 급정지'];
+const POSE_LABELS={};
+function sceneObject(i){
+ const wood='#be8f66',blue='#8fc6dc',pink='#e4a4b8',dark='#665568',cream='#fff0c7';
+ const rect=(x,y,w,h,col,rx=8)=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${rx}" fill="${col}" stroke="${C.ol}" stroke-width="3"/>`;
+ switch(i){
+ case 0:return softCouch();case 1:return littleBed()+`<path d="M-110,0 Q0,-55 110,10 L100,95 L-110,95Z" fill="${blue}"/>`;
+ case 2:return rect(60,20,75,65,pink)+circle(72,92,14,dark)+circle(122,92,14,dark)+line('M65,30 Q5,-95 -80,35',dark,14)+rect(-110,23,58,15,dark);
+ case 3:return rect(-90,15,180,100,blue)+Array.from({length:6},(_,k)=>line(`M${-70+k*28},28 L${-70+k*28},100`,'#e9f6ff',7)).join('');
+ case 4:return line('M-120,-40 L-88,-40 L-65,78 L100,78 M-80,-10 L110,-10 L85,55 L-68,55',dark,8)+circle(-48,100,15,dark)+circle(76,100,15,dark);
+ case 5:return ell(0,90,115,12,pink)+circle(-70,110,13,dark)+circle(70,110,13,dark);
+ case 6:return `<path d="M-100,80 Q-20,160 80,65 Q10,115 0,35 Q-10,110 -100,80Z" fill="#f6d349" stroke="#ac8b36" stroke-width="4"/>`;
+ case 7:return rect(55,-130,60,195,pink,28)+`<path d="M55,65 L115,65 L85,145Z" fill="#ffc85b"/>`+circle(85,-65,18,blue);
+ case 8:return `<path d="M-125,-85 Q0,-170 125,-85 Q90,-15 0,-60 Q-80,5 -125,-85Z" fill="${pink}"/>`+line('M0,-60 L0,85 Q35,120 45,75',dark,7);
+ case 9:return `<path d="M-130,-110 Q0,-225 130,-110Z" fill="${blue}"/>`+line('M-130,-110 L-65,60 M130,-110 L65,60 M-45,-165 L20,80',dark,4);
+ case 10:return ell(0,65,120,48,pink)+ell(0,63,65,22,blue);
+ case 11:return ell(0,100,145,18,blue)+line('M-150,130 Q-90,85 -30,125 T120,120','#fff',8);
+ case 12:return circle(0,0,135,blue)+circle(0,0,115,'#dff5f9')+Array.from({length:8},(_,k)=>{const a=k*Math.PI/4;return line(`M0,0 L${Math.cos(a)*115},${Math.sin(a)*115}`,blue,6)}).join('');
+ case 13:return rect(-130,85,260,35,dark)+line('M75,85 L75,-105 L120,-105',dark,12)+rect(60,-120,70,35,blue);
+ case 14:return stool(0,65);case 15:return line('M-140,-100 L-140,120 M140,-100 L140,120',wood,12)+`<path d="M-140,-60 Q0,155 140,-60 Q0,220 -140,-60Z" fill="${pink}"/>`;
+ case 16:return rect(-100,15,200,110,pink)+line('M-35,15 L-35,-15 L35,-15 L35,15',dark,8)+circle(-70,140,10,dark)+circle(70,140,10,dark);
+ case 17:return g('rotate(-35)',rect(-15,-160,30,270,'#f7d569',0)+`<path d="M-15,110 L15,110 L0,155Z" fill="${wood}"/>`);
+ case 18:return [-2,-1,0,1,2].map((k)=>g(`translate(${k*8},${70+k*20}) rotate(${k*9})`,bible(0,0,140,28,0))).join('');
+ case 19:return rect(-135,40,270,75,wood)+`<path d="M-135,40 L-100,-45 L140,-5 L135,40Z" fill="#efb179"/>`;
+ case 20:return circle(0,30,115,'#dba174')+circle(0,30,54,'#dff4e9')+`<path d="M-102,0 Q-50,-90 35,-65 Q100,-50 108,12" fill="none" stroke="${pink}" stroke-width="28"/>`;
+ case 21:return cup(0,50,2,0);case 22:return circle(0,30,105,pink)+circle(0,30,78,cream)+line('M0,30 L0,-25 M0,30 L45,55',dark,8)+circle(-65,-65,30,dark)+circle(65,-65,30,dark);
+ case 23:return rect(-140,40,280,22,blue)+line('M-100,62 L90,130 M100,62 L-90,130',dark,9);
+ case 24:return line('M-140,60 L100,-70',wood,13)+`<path d="M75,-75 L155,-45 L130,0 L95,-30Z" fill="#dbbd6e"/>`;
+ case 25:return line('M-130,120 Q-140,-100 100,-140',wood,9)+line('M100,-140 L100,55 Q85,90 70,62',dark,3);
+ case 26:return Array.from({length:8},(_,k)=>ell(0,20+k*13,65,14,cream,`stroke="${dark}" stroke-width="3"`)).join('');
+ case 27:return ell(0,90,140,35,blue)+line('M-110,110 L-120,155 M110,110 L120,155',dark,10);
+ case 28:return rect(-100,15,200,105,pink)+ell(0,15,100,25,cream)+line('M-100,15 L100,120 M100,15 L-100,120',wood,7);
+ case 29:return ell(0,40,135,75,'none',`stroke="${pink}" stroke-width="16"`);
+ case 30:return rect(-115,30,230,95,wood)+`<path d="M-115,30 L-165,-20 L-40,-30 L0,30 L70,-30 L155,-5 L115,30Z" fill="#e7c29b"/>`;
+ case 31:return [-1,0,1].map(k=>ell(k*65,-110,40,55,[pink,blue,cream][k+1])+line(`M${k*65},-55 L0,80`,dark,2)).join('');
+ case 32:return line('M-100,75 L100,75',dark,12)+rect(-130,30,50,90,dark)+rect(80,30,50,90,dark);
+ case 33:return `<path d="M-80,-100 L40,-100 L40,35 L120,55 Q150,110 80,125 L-70,95Z" fill="${pink}" stroke="${dark}" stroke-width="5"/>`;
+ case 34:return ell(0,70,145,45,dark)+ell(0,68,110,30,cream)+circle(0,65,18,pink);
+ case 35:return `<path d="M-140,80 Q-130,15 -70,40 Q0,-5 70,40 Q140,10 145,90 Q15,145 -140,80Z" fill="#b7d0aa"/>`;
+ case 36:return `<path d="M-100,120 L0,-150 L100,120Z" fill="${pink}"/>`+line('M-75,65 L75,65 M-45,-20 L45,-20',cream,16);
+ case 37:return circle(0,65,90,'#fff')+circle(0,-40,60,'#fff')+rect(-60,-115,120,20,dark)+rect(-35,-165,70,55,dark);
+ case 38:return `<path d="M-85,0 L85,0 L60,125 L-60,125Z" fill="${blue}"/>`+[-1,0,1].map(k=>line(`M${k*32},10 L${k*55},-95`,'#75a477',6)+circle(k*55,-100,28,pink)).join('');
+ default:return rect(-130,-20,260,120,dark)+circle(0,40,65,blue)+circle(0,40,42,dark)+rect(55,-55,60,35,pink);
+ }
 }
+for(const action of ['leap','sprint','cartwheel','surf','skate','parachute','dance','kick','bow','spin'])for(let frame=1;frame<=8;frame++)POSES[`${action}_${frame}`]=()=>'';
+Object.keys(POSES).forEach((key,i)=>{
+ const scene=i%40,stance=Math.floor(i/40),label=['힘없이 널브러짐','허둥대며 버팀','공중에서 뒤집힘','납작하게 주저앉음'][stance];POSE_LABELS[key]=`${SCENES[scene]} · ${label}`;
+ POSES[key]=say=>{
+  const rotations=[-26,22,135,-8],rx=[87,58,60,102],ry=[32,57,51,25];
+  const arms=[[[[-50,10],[-90,55],[-125,62]],[[45,8],[88,48],[125,52]]],[[[-45,0],[-80,-70],[-115,-95]],[[45,0],[80,-30],[115,-80]]],[[[-45,0],[-90,-40],[-115,-20]],[[45,0],[80,55],[115,75]]],[[[-45,12],[-75,30],[-98,5]],[[45,12],[75,35],[100,10]]]][stance];
+  const x=[-22,-32,20,0][stance],y=[16,-8,-65,45][stance];
+  const body=limb([[-24,35],[-55,70],[-95+stance*18,90]])+limb([[24,35],[65,65],[110-stance*12,70]])+sheep({rx:rx[stance],ry:ry[stance],fx:[-55,-8,25,-65][stance],fy:stance===3?4:-12,expr:['closed,flat','sad,sweat','vv,o','side,pout'][stance],frot:stance*8-10})+limb(arms[0])+limb(arms[1]);
+  const prop=sceneObject(scene);
+  const character=g(`translate(${x},${y}) rotate(${rotations[stance]})`,body);
+  return shadow(0,145,125)+prop+character+dust(stance%2?-125:105,100,.7)+line('M-150,-50 L-130,-70 M135,-65 L155,-45','#fff',4);
+ };
+});
 
 function bubbleText(text, x, y) {
   return `<text x="${x}" y="${y}" text-anchor="middle" font-size="22" font-weight="900" fill="#8C80A6" stroke="#fff" stroke-width="4" paint-order="stroke" font-family="Noto Sans KR, Malgun Gothic, sans-serif">${text}</text>`;
@@ -517,12 +551,12 @@ function renderCard({ tier, pose, say }, measure) {
    POSE_BOUNDS.set(boundsKey,box);
   }
   const s=Math.min(312/box.width,312/box.height),x=180-(box.x+box.width/2)*s,y=180-(box.y+box.height/2)*s;
-  const withBubble = pose !== "sign" && say;
+  const withBubble = say;
   return `<svg xmlns="http://www.w3.org/2000/svg" width="720" height="360" viewBox="0 0 720 360">` +
     `<defs>${SHEEP_DEFS}<linearGradient id="bub" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#ECEAF1"/></linearGradient><filter id="bs" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-opacity="0.18"/></filter></defs>` +
     backdrop(tier) + `<g filter="url(#soft)">${g(`translate(${x},${y}) scale(${s})`, sheep)}</g>` +
     (withBubble ? bubble(say, 372, 24, tail, measure) : "") + `</svg>`;
 }
 
-if (typeof module !== "undefined") module.exports = { renderCard, POSES };
-if (typeof window !== "undefined") window.ReminderArt = { renderCard, POSES };
+if (typeof module !== "undefined") module.exports = { renderCard, POSES, POSE_LABELS };
+if (typeof window !== "undefined") window.ReminderArt = { renderCard, POSES, POSE_LABELS };

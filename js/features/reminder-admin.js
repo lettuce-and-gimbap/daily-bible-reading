@@ -28,7 +28,7 @@ function reminderAdminLoadArt() {
   reminderAdminArtScript = new Promise((resolve, reject) => {
     const script = document.createElement("script");
     script.type = "module";
-    script.src = "tools/notify-art/art.js?v=dynamic-poses-10";
+    script.src = "tools/notify-art/art.js?v=comic-scenes-11";
     script.onload = () => window.ReminderArt?.renderCard ? resolve(window.ReminderArt) : reject(new Error("양 그림 렌더러를 찾지 못했어요."));
     script.onerror = () => reject(new Error("양 그림 렌더러를 불러오지 못했어요."));
     document.head.append(script);
@@ -144,6 +144,7 @@ async function renderReminderAdmin(header) {
       <p class="muted small reminder-admin-caption"></p>
     </div>
     <div class="inline wrap reminder-admin-actions">
+      <button type="button" class="btn ghost small" data-reminder-rebuild>전체 알림에 새 양 모션 배정</button>
       <button type="button" class="btn primary small" data-reminder-save>수정본 저장</button>
       <button type="button" class="btn ghost small" data-reminder-export>JSON 내보내기</button>
       <button type="button" class="btn text small" data-reminder-reset>서버 수정본 지우기</button>
@@ -270,7 +271,7 @@ async function renderReminderAdmin(header) {
   body.addEventListener("input", markTextDirty);
   say.addEventListener("input", markBubbleDirty);
   imageSelect.addEventListener("change", chooseAsset);
-  reminderAdminLoadArt().then((renderer) => { artRenderer = renderer;poseSelect.innerHTML=Object.keys(renderer.POSES).map(p=>`<option value="${esc(p)}">${esc(p)}</option>`).join('');poseSelect.value=entries[position].row[2];poseSelect.disabled=busy||!artworkApiReady; say.disabled = busy || !artworkApiReady; }).catch((error) => {
+  reminderAdminLoadArt().then((renderer) => { artRenderer = renderer;poseSelect.innerHTML=Object.keys(renderer.POSES).map(p=>`<option value="${esc(p)}">${esc(renderer.POSE_LABELS?.[p]||p)}</option>`).join('');poseSelect.value=entries[position].row[2];poseSelect.disabled=busy||!artworkApiReady; say.disabled = busy || !artworkApiReady; }).catch((error) => {
     status.textContent = `${error.message} 말풍선 문구를 바꿀 수 없어요.`;
     say.disabled = true;
   });
@@ -280,6 +281,27 @@ async function renderReminderAdmin(header) {
   root.querySelector("[data-reminder-prev]").addEventListener("click", () => {
     showEntry(history.pop() ?? position - 1);
   });
+  root.querySelector('[data-reminder-rebuild]').addEventListener('click',async()=>{
+    if(busy)return;lockEditor(true);
+    try{
+      artRenderer=artRenderer||await reminderAdminLoadArt();const poses=Object.keys(artRenderer.POSES),version=Date.now();
+      entries.forEach((entry,i)=>{const row=entry.row,key=`${entry.tier}:${entry.index}`;row[2]=poses[i%poses.length];row[3]??='';row[4]??='';row[5]=`${PUSH_SERVER}/reminder-art/${entry.tier}/${entry.index}.jpg?v=${version}`;artNeedsRender.add(key);artDeletes.delete(key);});
+      dirty=true;showEntry(position);status.textContent='전체 알림에 새 모션을 배정했어요. 제목·본문·말풍선·이름은 유지했어요. 수정본 저장을 누르면 모든 그림을 다시 만들어 반영해요.';
+    }catch(error){status.textContent=error.message;}finally{lockEditor(false);}
+  });
+  async function renderPendingArt(progress=()=>{}){
+    const pending=[...artNeedsRender];
+    // Bounded batches keep JPEG encoding responsive without retaining 179 canvases.
+    for(let offset=0;offset<pending.length;offset+=4){
+      const results=await Promise.allSettled(pending.slice(offset,offset+4).map(async key=>{
+        const entry=entries.find(item=>`${item.tier}:${item.index}`===key);if(!entry)return;
+        const svgUrl=reminderAdminSvgUrl(artRenderer,entry,entry.row[2],entry.row[3]||'');
+        try{artUpdates.set(key,await reminderAdminJpegData(svgUrl));}finally{URL.revokeObjectURL(svgUrl);}
+      }));
+      const failure=results.find(result=>result.status==='rejected');if(failure)throw failure.reason;
+      progress(Math.min(offset+4,pending.length),pending.length);
+    }
+  }
   root.querySelector("[data-reminder-save]").addEventListener("click", async (event) => {
     if (busy) return;
     if(!artworkApiReady){status.textContent="Worker를 최신 버전으로 배포한 뒤 다시 저장해 주세요. 이름 수정은 API 4가 필요해요.";return;}
@@ -288,13 +310,7 @@ async function renderReminderAdmin(header) {
     try {
       if (artNeedsRender.size) artRenderer = artRenderer || await reminderAdminLoadArt();
       button.textContent = "그림 만드는 중…";
-      for (const key of artNeedsRender) {
-        const entry = entries.find((item) => `${item.tier}:${item.index}` === key);
-        if (!entry) continue;
-        const svgUrl = reminderAdminSvgUrl(artRenderer, entry, entry.row[2], entry.row[3] || "");
-        try { artUpdates.set(key, await reminderAdminJpegData(svgUrl)); }
-        finally { URL.revokeObjectURL(svgUrl); }
-      }
+      await renderPendingArt((done,total)=>{root.querySelector('[data-reminder-save]').textContent=`그림 만드는 중… ${done}/${total}`;});
       const version = Date.now();
       for (const key of artNeedsRender) {
         const entry = entries.find((item) => `${item.tier}:${item.index}` === key);
@@ -331,13 +347,7 @@ async function renderReminderAdmin(header) {
     lockEditor(true);
     try {
       if (artNeedsRender.size) artRenderer = artRenderer || await reminderAdminLoadArt();
-      for (const key of artNeedsRender) {
-        const entry = entries.find((item) => `${item.tier}:${item.index}` === key);
-        if (!entry) continue;
-        const svgUrl = reminderAdminSvgUrl(artRenderer, entry, entry.row[2], entry.row[3] || "");
-        try { artUpdates.set(key, await reminderAdminJpegData(svgUrl)); }
-        finally { URL.revokeObjectURL(svgUrl); }
-      }
+      await renderPendingArt();
       const blob = new Blob([JSON.stringify({ messages: data, labels, art: Object.fromEntries(artUpdates), artDeletes: [...artDeletes] }, null, 2)], { type: "application/json;charset=utf-8" });
       const url = URL.createObjectURL(blob);
       const link = document.createElement("a"); link.href = url; link.download = "reminder-messages.json"; link.click();

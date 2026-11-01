@@ -76,7 +76,8 @@ test('real browser: all 179 reminders save individual edits, reopen, batch uploa
       saved=await accountApi('admin/reminder-messages');check(saved.messages[tier][index][5]==='icons/notify/'+target.tier+'-'+target.index+'.jpg','art selection not persisted '+i);
     }
     for(let i=0;i<entries.length;i++){select(i);edit('body','오늘 {portion}을 읽어요. {streak}일 '+i);edit('say','모든 그림 수정 '+i);}
-    await save();
+    document.querySelector('[data-reminder-rebuild]').click();for(let n=0;n<1000&&document.querySelector('[data-reminder-save]').disabled;n++)await pause();
+    await save();const rebuilt=await accountApi('admin/reminder-messages');check(new Set(Object.values(rebuilt.messages).flat().map(r=>r[2])).size===160,'rebuild must use all 160 poses');check(rebuilt.messages.morning[0][1]==='오늘 {portion}을 읽어요. {streak}일 0','bulk rebuild changed body');
     select(0);edit('title','실패 후 재시도');edit('say','말풍선 실패 후 재시도');await fetch('/__test/fail-next');await save(true);await save();
     const toBlob=HTMLCanvasElement.prototype.toBlob;
     HTMLCanvasElement.prototype.toBlob=function(callback){HTMLCanvasElement.prototype.toBlob=toBlob;callback(null);};
