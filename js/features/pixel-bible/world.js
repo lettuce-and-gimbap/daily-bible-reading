@@ -1,4 +1,4 @@
-import {collectionDetails} from './collection-details.js?rev=reference-review-3';
+import {collectionDetails} from './collection-details.js?rev=genesis-review-4';
 import {startFoodTeam} from './food-team.js';
 import {bindOutsidePanelDismiss} from './panel-dismiss.js';
 import {loadVerseBook} from './verse-data.js';
@@ -617,7 +617,7 @@ export async function mountPixelWorld(shell, options) {
     const panel=document.createElement('section');panel.className='pb-scripture pb-collection';panel.setAttribute('role','dialog');panel.setAttribute('aria-modal','true');panel.setAttribute('aria-label','발견 도감');
     panel.innerHTML='<header><b>발견 도감 · 알아가기</b><button class="pb-button" data-action="close-scripture">닫기 ✕</button></header><div class="pb-scripture-body"></div>';
     shell.append(panel);panel.querySelector('button').focus();const body=panel.querySelector('.pb-scripture-body');body.textContent='도감을 준비하고 있어요…';
-    if(!discoveryRoutes)discoveryRoutes=fetch(new URL('../../../data/pixel-bible/discovery-routes.json?rev=reference-review-3',import.meta.url)).then(r=>{if(!r.ok)throw Error();return r.json();}).then(d=>d).catch(()=>null);
+    if(!discoveryRoutes)discoveryRoutes=fetch(new URL('../../../data/pixel-bible/discovery-routes.json?rev=genesis-review-4',import.meta.url)).then(r=>{if(!r.ok)throw Error();return r.json();}).then(d=>d).catch(()=>null);
     const routeData=await discoveryRoutes,routes=routeData?.routes;
     if(!panel.isConnected)return;const record=discoveries[key];
     if(!record){

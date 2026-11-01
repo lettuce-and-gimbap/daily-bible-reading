@@ -1,0 +1,38 @@
+{
+  "updated": "2026-11-01",
+  "reviewedIdentities": 62,
+  "totalIdentities": 1945,
+  "rounds": [
+    {
+      "newEntries": 27,
+      "firstAppearanceThrough": {
+        "code": "gen",
+        "chapter": 14
+      }
+    },
+    {
+      "newEntries": 12,
+      "firstAppearanceThrough": {
+        "code": "gen",
+        "chapter": 21
+      }
+    },
+    {
+      "newEntries": 15,
+      "firstAppearanceThrough": {
+        "code": "gen",
+        "chapter": 26
+      }
+    }
+  ],
+  "firstAppearanceCoverage": {
+    "code": "gen",
+    "throughChapter": 26,
+    "basis": "현재 앱 등장 목록을 기준으로 한 소개 대상 선정. 성경 전체 등장 인물·생애 검토 완료를 뜻하지 않음."
+  },
+  "nextFirstAppearance": {
+    "code": "gen",
+    "chapter": 28
+  },
+  "scope": "각 항목의 reviewedRefs와 note에 적힌 소개 범위만 대조. 기존 역할·대사·관계·외형 전체의 검증 완료가 아님."
+}
