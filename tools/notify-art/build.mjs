@@ -133,9 +133,10 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   } else {
     const jobs = allJobs();
     const outDir = join(root, "icons/notify");
+    const rendered = render(jobs);
     rmSync(outDir, { recursive: true, force: true });
     mkdirSync(outDir, { recursive: true });
-    render(jobs).forEach((buf, i) => writeFileSync(join(outDir, jobs[i].file), buf));
+    rendered.forEach((buf, i) => writeFileSync(join(outDir, jobs[i].file), buf));
     console.log(`${jobs.length}장 구움 → icons/notify/`);
   }
 }

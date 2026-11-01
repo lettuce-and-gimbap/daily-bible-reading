@@ -28,7 +28,7 @@ function reminderAdminLoadArt() {
   reminderAdminArtScript = new Promise((resolve, reject) => {
     const script = document.createElement("script");
     script.type = "module";
-    script.src = "tools/notify-art/art.js?v=reminder-stability-9";
+    script.src = "tools/notify-art/art.js?v=dynamic-poses-10";
     script.onload = () => window.ReminderArt?.renderCard ? resolve(window.ReminderArt) : reject(new Error("양 그림 렌더러를 찾지 못했어요."));
     script.onerror = () => reject(new Error("양 그림 렌더러를 불러오지 못했어요."));
     document.head.append(script);
@@ -40,7 +40,7 @@ async function reminderAdminHasCurrentApi() {
   try {
     const response = await fetch(`${PUSH_SERVER}/reminder-capabilities`, { cache: "no-store" });
     const data = await response.json().catch(() => ({}));
-    return response.ok && data.reminderMessagesApiVersion >= 3 && data.reminderArtwork === true;
+    return response.ok && data.reminderMessagesApiVersion >= 4 && data.reminderArtwork === true;
   } catch (_) { return false; }
 }
 
@@ -107,12 +107,13 @@ async function renderReminderAdmin(header) {
   if (!entries.length) return;
   const assets = Object.entries(defaults).flatMap(([tier, rows]) => rows.map((row, index) => ({
     value: `${tier}:${index}`,
-    label: `${tier} ${index + 1} · ${row[3] || row[0]}`,
+    label: `${data[tier]?.[index]?.[6]||`${saved.labels?.[tier]||tier} - ${index+1}`} · ${row[3] || row[0]}`,
     src: row[5] || `icons/notify/${tier}-${index}.jpg`,
     say: row[3] || "",
     pose: row[2],
   })));
   let position = Math.floor(Math.random() * entries.length);
+  const labels={...(saved.labels||{})};
   let history = [];
   let dirty = false;
   let artRenderer = null;
@@ -135,10 +136,10 @@ async function renderReminderAdmin(header) {
     <p class="reminder-admin-count" aria-live="polite"></p>
     <div class="reminder-admin-preview"><img alt="현재 알림에 연결된 양 그림"><p></p></div>
     <div class="reminder-admin-fields">
-      <label>알림 제목<input data-reminder-title maxlength="120"></label>
+      <label>분류 이름<input data-reminder-tier-name maxlength="60" placeholder="예: 아침 말씀"></label><label>항목 이름<input data-reminder-entry-name maxlength="80" placeholder="예: 잠 깨우는 양"></label><label>알림 제목<input data-reminder-title maxlength="120"></label>
       <label>알림 문구<textarea data-reminder-body rows="4" maxlength="600"></textarea></label>
       <label>그림 말풍선 문구<input data-reminder-say maxlength="60" placeholder="그림 안에 표시할 짧은 문구"></label>
-      <label>사용할 양 그림<select data-reminder-image></select></label>
+      <label>양 모션 DB<select data-reminder-pose disabled><option>모션 불러오는 중…</option></select></label><label>사용할 양 그림<select data-reminder-image></select></label>
       <p class="muted small">말풍선을 수정하면 그림을 다시 만들어 이후 알림에 적용해요.</p>
       <p class="muted small reminder-admin-caption"></p>
     </div>
@@ -151,6 +152,7 @@ async function renderReminderAdmin(header) {
   loadingPanel.remove();
   app.append(root);
 
+  const tierName=root.querySelector('[data-reminder-tier-name]'),entryName=root.querySelector('[data-reminder-entry-name]'),poseSelect=root.querySelector('[data-reminder-pose]');
   const title = root.querySelector("[data-reminder-title]");
   const body = root.querySelector("[data-reminder-body]");
   const say = root.querySelector("[data-reminder-say]");
@@ -163,7 +165,7 @@ async function renderReminderAdmin(header) {
   imageSelect.innerHTML = `<option value="current" hidden>현재 수정한 그림</option>` + assets.map((asset) => `<option value="${esc(asset.value)}">${esc(asset.label)}</option>`).join("");
 
   const entrySelect = root.querySelector("[data-reminder-entry]");
-  entrySelect.innerHTML = entries.map(({tier, index, row}, position) => `<option value="${position}">${esc(tier)} ${index + 1} · ${esc(row[0])}</option>`).join("");
+  entrySelect.innerHTML = entries.map(({tier, index, row}, position) => `<option value="${position}">${esc(row[6]||`${labels[tier]||tier} - ${index+1}`)} · ${esc(row[0])}</option>`).join("");
   entrySelect.addEventListener("change", () => { history.push(position); showEntry(Number(entrySelect.value)); });
   let busy = false;
   app.querySelector("#stats-subpage-back")?.addEventListener("click", () => {
@@ -183,6 +185,7 @@ async function renderReminderAdmin(header) {
     entrySelect.value = String(position);
     const entry = entries[position];
     const current = entry.row;
+    tierName.value=labels[entry.tier]||entry.tier;entryName.value=current[6]||"";poseSelect.value=current[2];
     title.value = current[0];
     body.value = current[1];
     say.value = current[3] || "";
@@ -201,14 +204,18 @@ async function renderReminderAdmin(header) {
     image.src = previewUrl || current[5] || asset.src;
     image.alt = `${entry.tier} 알림 ${entry.index + 1}의 양 그림`;
     imageText.textContent = current[3] ? `그림 속 말풍선: ${current[3]}` : "그림 속 말풍선 없음";
-    caption.textContent = `DB 위치: ${entry.tier} ${entry.index + 1} · 포즈 ${current[2]}${current[4] ? ` · 조건 ${current[4]}` : ""}`;
-    count.textContent = `${String(position + 1).padStart(3, "0")} / ${entries.length} · ${entry.tier}`;
+    caption.textContent = `DB 위치: ${current[6]||`${labels[entry.tier]||entry.tier} - ${entry.index+1}`} · 포즈 ${current[2]}${current[4] ? ` · 조건 ${current[4]}` : ""}`;
+    count.textContent = `${String(position + 1).padStart(3, "0")} / ${entries.length} · ${labels[entry.tier]||entry.tier}`;
   }
   function nextRandom() {
     let next = Math.floor(Math.random() * entries.length);
     if (entries.length > 1 && next === position) next = (next + 1) % entries.length;
     showEntry(next);
   }
+  function refreshEntryNames(){for(const [i,entry]of entries.entries())entrySelect.options[i].textContent=`${entry.row[6]||`${labels[entry.tier]||entry.tier} - ${entry.index+1}`} · ${entry.row[0]}`;}
+  tierName.addEventListener('input',()=>{labels[entries[position].tier]=tierName.value;dirty=true;refreshEntryNames();status.textContent='분류 이름을 수정했어요. 저장을 눌러 반영해 주세요.';});
+  entryName.addEventListener('input',()=>{const row=entries[position].row;for(let i=3;i<6;i++)row[i]??='';row[6]=entryName.value;dirty=true;refreshEntryNames();status.textContent='항목 이름을 수정했어요. 저장을 눌러 반영해 주세요.';});
+  poseSelect.addEventListener('change',()=>{entries[position].row[2]=poseSelect.value;markBubbleDirty();});
   function markTextDirty() {
     const row = entries[position].row;
     row[0] = title.value;
@@ -263,7 +270,7 @@ async function renderReminderAdmin(header) {
   body.addEventListener("input", markTextDirty);
   say.addEventListener("input", markBubbleDirty);
   imageSelect.addEventListener("change", chooseAsset);
-  reminderAdminLoadArt().then((renderer) => { artRenderer = renderer; say.disabled = busy || !artworkApiReady; }).catch((error) => {
+  reminderAdminLoadArt().then((renderer) => { artRenderer = renderer;poseSelect.innerHTML=Object.keys(renderer.POSES).map(p=>`<option value="${esc(p)}">${esc(p)}</option>`).join('');poseSelect.value=entries[position].row[2];poseSelect.disabled=busy||!artworkApiReady; say.disabled = busy || !artworkApiReady; }).catch((error) => {
     status.textContent = `${error.message} 말풍선 문구를 바꿀 수 없어요.`;
     say.disabled = true;
   });
@@ -275,6 +282,7 @@ async function renderReminderAdmin(header) {
   });
   root.querySelector("[data-reminder-save]").addEventListener("click", async (event) => {
     if (busy) return;
+    if(!artworkApiReady){status.textContent="Worker를 최신 버전으로 배포한 뒤 다시 저장해 주세요. 이름 수정은 API 4가 필요해요.";return;}
     const button = event.currentTarget;
     lockEditor(true);
     try {
@@ -300,7 +308,7 @@ async function renderReminderAdmin(header) {
         }
       }
       const result = await accountApi("admin/reminder-messages", {
-        messages: data,
+        messages: data, labels,
         art: artwork.length > 10 ? {} : Object.fromEntries(artUpdates),
         artDeletes: [...artDeletes],
       }, "PUT");
@@ -330,7 +338,7 @@ async function renderReminderAdmin(header) {
         try { artUpdates.set(key, await reminderAdminJpegData(svgUrl)); }
         finally { URL.revokeObjectURL(svgUrl); }
       }
-      const blob = new Blob([JSON.stringify({ messages: data, art: Object.fromEntries(artUpdates), artDeletes: [...artDeletes] }, null, 2)], { type: "application/json;charset=utf-8" });
+      const blob = new Blob([JSON.stringify({ messages: data, labels, art: Object.fromEntries(artUpdates), artDeletes: [...artDeletes] }, null, 2)], { type: "application/json;charset=utf-8" });
       const url = URL.createObjectURL(blob);
       const link = document.createElement("a"); link.href = url; link.download = "reminder-messages.json"; link.click();
       setTimeout(() => URL.revokeObjectURL(url), 1000);

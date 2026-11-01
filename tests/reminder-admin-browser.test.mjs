@@ -47,7 +47,7 @@ test('real browser: all 179 reminders save individual edits, reopen, batch uploa
     const button=document.querySelector('[data-reminder-save]');button.click();
     check(document.querySelector('[data-reminder-title]').disabled,'editing must be locked while saving');
     for(let n=0;n<6000&&button.disabled;n++)await pause();
-    check(!button.disabled,'save timeout');
+    check(!button.disabled,'save timeout: '+button.textContent+' / '+document.querySelector('.reminder-admin-status').textContent);
     const status=document.querySelector('.reminder-admin-status').textContent;
     check(status.includes(expectFailure?'저장하지 못했어요':'저장 완료'),status);
   }
@@ -59,8 +59,8 @@ test('real browser: all 179 reminders save individual edits, reopen, batch uploa
     check(entries.length===179,'179 entries expected');
     for(let i=0;i<entries.length;i++){
       const {tier,index}=entries[i];select(i);
-      edit('title','수정 제목 '+i+' 🐑');await save();
-      let saved=await accountApi('admin/reminder-messages');check(saved.messages[tier][index][0]==='수정 제목 '+i+' 🐑','title not persisted '+i);
+      edit('entry-name','항목 이름 '+i);edit('tier-name','분류 '+tier);edit('title','수정 제목 '+i+' 🐑');await save();
+      let saved=await accountApi('admin/reminder-messages');check(saved.messages[tier][index][0]==='수정 제목 '+i+' 🐑','title not persisted '+i);check(saved.messages[tier][index][6]==='항목 이름 '+i,'item name lost');check(saved.labels[tier]==='분류 '+tier,'category name lost');
       edit('body','개별 본문 {portion} '+i);await save();saved=await accountApi('admin/reminder-messages');
       check(saved.messages[tier][index][1]==='개별 본문 {portion} '+i,'body not persisted '+i);
       edit('say',i%2?'말씀 & 함께 <읽어요> '+i:'');

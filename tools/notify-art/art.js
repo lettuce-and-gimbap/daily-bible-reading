@@ -378,6 +378,32 @@ Object.assign(POSES, {
  sofa_plead: () => shadow(0,100,120) + softCouch() + g("translate(0,-10)",sheep({expr:"sad,pout"}) + limb([[-52,4],[-32,28],[0,14]]) + limb([[52,4],[32,28],[0,14]])),
 });
 
+// Ten distinct action rigs, each with eight authored timing samples.
+const ACTIONS=['leap','sprint','cartwheel','surf','skate','parachute','dance','kick','bow','spin'];
+for(const [actionIndex,action] of ACTIONS.entries())for(let frame=0;frame<8;frame++){
+ POSES[`${action}_${frame+1}`]=()=>{
+  const t=frame/7,wave=Math.sin(t*Math.PI*2),jump=Math.sin(t*Math.PI),side=actionIndex%2?-1:1;
+  let x=0,y=0,angle=0;
+  if(action==='leap'){x=-55+t*110;y=-jump*95;angle=wave*18;}
+  if(action==='sprint'){x=wave*12;y=-Math.abs(wave)*22;angle=side*24;}
+  if(action==='cartwheel'){x=-60+t*120;y=-jump*35;angle=t*360;}
+  if(action==='surf'){x=wave*18;y=-jump*12;angle=wave*18;}
+  if(action==='skate'){x=wave*28;y=-jump*25;angle=-18+wave*14;}
+  if(action==='parachute'){x=wave*28;y=-35+t*50;angle=wave*12;}
+  if(action==='dance'){x=wave*20;y=-Math.abs(wave)*30;angle=wave*35;}
+  if(action==='kick'){y=-jump*45;angle=-jump*28;}
+  if(action==='bow'){y=jump*18;angle=jump*65;}
+  if(action==='spin'){y=-jump*40;angle=t*330;}
+  const arm=action==='bow'?32:action==='parachute'?-70:action==='kick'?-45-jump*45:action==='spin'?-5-jump*65:action==='dance'?-30-jump*65:-20-jump*65;
+  const stride=action==='sprint'?wave*58:action==='kick'?jump*85:wave*28;
+  let prop='';
+  if(action==='surf'||action==='skate')prop=ell(0,100,112,12,action==='surf'?'#67cddd':'#b39be4')+(action==='skate'?circle(-65,116,9,C.ink)+circle(65,116,9,C.ink):line('M-130,120 Q-85,90 -40,120 T70,120','#fff',5));
+  if(action==='parachute')prop=`<path d="M-110,-128 Q0,-235 110,-128Z" fill="#f0ba81"/>`+line('M-110,-128 L-64,-55 M110,-128 L64,-55',C.ink,3);
+  const body=limb([[-24,40],[-30-stride,70],[-38-stride,92]])+limb([[24,40],[30+stride,66],[44+stride,88]])+sheep({expr:frame%3?'^^,blush':'vv,blush',frot:wave*12})+limb([[-50,0],[-78,arm],[-96,arm-14]])+limb([[50,0],[78,-arm/2],[100,-arm/2-12]]);
+  return shadow(0,132,90)+prop+g(`translate(${f(x)},${f(y)}) rotate(${f(angle)})`,body)+line(`M-135,20 L-105,10 M-140,45 L-112,35 M112,15 L140,0`,'#ffffff',5);
+ };
+}
+
 function bubbleText(text, x, y) {
   return `<text x="${x}" y="${y}" text-anchor="middle" font-size="22" font-weight="900" fill="#8C80A6" stroke="#fff" stroke-width="4" paint-order="stroke" font-family="Noto Sans KR, Malgun Gothic, sans-serif">${text}</text>`;
 }
@@ -438,7 +464,7 @@ function backdrop(tier) {
 
 // 말풍선: 폭은 measure(글자)로 계산. tail = 꼬리 끝 좌표
 function bubble(text, x, y, tail, measure) {
-  const maxLineWidth = 400;
+  const maxLineWidth = 276;
   const lines = [];
   for (const sourceLine of String(text).split("\n")) {
     let line = "";
@@ -476,14 +502,26 @@ const PLACE = {
   beg: [240, 214, 1.3, [262, 118]], offerbook: [240, 214, 1.3, [262, 118]], wait: [240, 214, 1.3, [262, 118]],
 };
 
+const POSE_BOUNDS=new Map();
 function renderCard({ tier, pose, say }, measure) {
-  const [x, y, s, tail] = PLACE[pose] || [236, 208, 1.4, [258, 116]];
+  const tail=[336,190];
   const sheep = POSES[pose] ? POSES[pose](say) : POSES.shush(say);
+  // Fit the full pose (including props) in a lane separate from the text.
+  let box={x:-190,y:-220,width:380,height:370};
+  const boundsKey=pose==='sign'?pose+say:pose;
+  if(POSE_BOUNDS.has(boundsKey))box=POSE_BOUNDS.get(boundsKey);
+  else if(typeof document!=='undefined'){
+   const probe=document.createElementNS('http://www.w3.org/2000/svg','svg');probe.style.cssText='position:absolute;visibility:hidden;width:1px;height:1px';
+   probe.innerHTML=`<g>${sheep}</g>`;document.body.append(probe);
+   try{const b=probe.firstElementChild.getBBox();if(b.width>0&&b.height>0)box={x:b.x,y:b.y,width:b.width,height:b.height};}finally{probe.remove();}
+   POSE_BOUNDS.set(boundsKey,box);
+  }
+  const s=Math.min(312/box.width,312/box.height),x=180-(box.x+box.width/2)*s,y=180-(box.y+box.height/2)*s;
   const withBubble = pose !== "sign" && say;
   return `<svg xmlns="http://www.w3.org/2000/svg" width="720" height="360" viewBox="0 0 720 360">` +
     `<defs>${SHEEP_DEFS}<linearGradient id="bub" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#ECEAF1"/></linearGradient><filter id="bs" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-opacity="0.18"/></filter></defs>` +
     backdrop(tier) + `<g filter="url(#soft)">${g(`translate(${x},${y}) scale(${s})`, sheep)}</g>` +
-    (withBubble ? bubble(say, 296, 24, tail, measure) : "") + `</svg>`;
+    (withBubble ? bubble(say, 372, 24, tail, measure) : "") + `</svg>`;
 }
 
 if (typeof module !== "undefined") module.exports = { renderCard, POSES };

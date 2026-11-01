@@ -89,7 +89,7 @@ test("shared reminder artwork endpoint serves the saved JPEG bytes", async () =>
 test("worker exposes the API version required for shared reminder edits", async () => {
   const response = await reminderWorker.fetch(new Request("https://worker.test/reminder-capabilities"), {});
   assert.equal(response.status, 200);
-  assert.deepEqual(await response.json(), { reminderMessagesApiVersion: 3, reminderArtwork: true });
+  assert.deepEqual(await response.json(), { reminderMessagesApiVersion: 4, reminderArtwork: true });
 });
 
 test("editing bubble text renders that exact text into the artwork", () => {
@@ -246,4 +246,24 @@ test('failed image uploads leave the published message DB untouched', async () =
   env.SUBS.put=async(key,value)=>{if(key.startsWith('admin:reminder-art:'))throw Error('storage unavailable');return put(key,value);};
   await assert.rejects(savePayload(env,{messages,art:{'night:0':testJpeg}}),/storage unavailable/);
   assert.equal(saved.get('admin:reminder-messages'),previous);
+});
+
+
+test("category labels and item names persist with administrator authorization",async()=>{
+ const {env,saved}=mockEnv();const messages=emptyMessages();messages.morning.push(['제목','본문','leap_1','','','','아침의 도약']);
+ const result=await savePayload(env,{messages,labels:{morning:'아침 말씀'}});
+ assert.equal(result.status,200);
+ const stored=JSON.parse(saved.get('admin:reminder-messages'));
+ assert.equal(stored.labels.morning,'아침 말씀');assert.equal(stored.messages.morning[0][6],'아침의 도약');
+ assert.equal((await savePayload(env,{messages,labels:{unknown:'잘못된 키'}})).status,400);
+ assert.equal((await savePayload(env,{messages,labels:{morning:'가'.repeat(61)}})).status,400);
+});
+test("sheep motion database has 160 distinct SVG poses and separated text lane",()=>{
+ assert.equal(Object.keys(POSES).length,160);
+ const frames=new Set();for(const [pose,render]of Object.entries(POSES)){
+  const svg=renderCard({tier:'morning',pose,say:'오늘 말씀도 함께 읽어요'},(text,size)=>text.length*size);
+  assert.ok(svg.includes('<svg'));assert.ok(!/NaN|undefined/.test(svg),pose);frames.add(render('함께 읽어요'));
+ }
+ assert.ok(frames.size>=157);
+ const newFrames=Object.entries(POSES).slice(80).map(([,render])=>render('함께 읽어요'));assert.equal(new Set(newFrames).size,80);
 });
