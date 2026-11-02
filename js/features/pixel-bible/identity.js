@@ -9,6 +9,9 @@ export function canonicalPersonName(name,{code='',chapter=0}={}) {
   if(code==='gen'&&name==='요셉의 형제 다섯')return '요셉의 형제 다섯';
   if(code==='gen'&&['애굽 사람들','애굽 백성'].includes(name))return '애굽 백성';
   if(code==='exo'&&Number(chapter)===17&&name==='아말렉')return '아말렉 사람들';
+  if(code==='num'&&name==='노아'&&[27,36].includes(Number(chapter)))return '노아(슬로브핫의 딸)';
+  if(code==='num'&&name==='밀가'&&[27,36].includes(Number(chapter)))return '밀가(슬로브핫의 딸)';
+  if(['레위 자손','레위 지파'].includes(name))return '레위 지파';
   if(code==='rev'&&['용','붉은 용','옛 뱀','마귀','옛 뱀 마귀 사탄'].includes(name))return '사탄';
   if(code==='rev'&&['음녀','큰 음녀'].includes(name))return '바벨론';
   if(code==='jas'&&name==='주 예수 그리스도')return '예수';
@@ -84,6 +87,34 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   if(code==='exo'&&Number(chapter)>0&&name==='바로')return {...id('person',Number(chapter)<=2?'exodus-pharaoh-moses-birth':'exodus-pharaoh-deliverance'),canonicalName:Number(chapter)<=2?'바로(모세의 출생 시대)':'바로(출애굽 시대)'};
   if(code==='exo'&&name==='훌')return {...id('person','hur'),canonicalName:'훌'};
   if(code==='exo'&&name==='아말렉'&&Number(chapter)===17)return {...id('group','amalekites'),canonicalName:'아말렉 사람들'};
+  if(name==='아론')return {...id('person','아론'),canonicalName:'아론'};
+  if(['레위 자손','레위 지파'].includes(name))return {...id('group','levites'),canonicalName:'레위 지파',mergeAliases:true};
+  if(name==='아론의 아들들')return {...id('group','aaron-sons'),canonicalName:'아론의 아들들',mergeAliases:true};
+  if(code==='num'&&[27,36].includes(Number(chapter))&&name==='노아')return {...id('person','zelophehad-daughter-noah'),canonicalName:'노아(슬로브핫의 딸)'};
+  if(code==='num'&&[27,36].includes(Number(chapter))&&name==='밀가')return {...id('person','zelophehad-daughter-milcah'),canonicalName:'밀가(슬로브핫의 딸)'};
+  if(code==='num'&&[27,36].includes(Number(chapter))&&name==='말라')return {...id('person','mahlah-daughter-of-zelophehad'),canonicalName:'말라(슬로브핫의 딸)'};
+  if(code==='num'&&[27,36].includes(Number(chapter))&&name==='호글라')return {...id('person','hoglah-daughter-of-zelophehad'),canonicalName:'호글라(슬로브핫의 딸)'};
+  if(code==='num'&&[27,36].includes(Number(chapter))&&name==='디르사')return {...id('person','tirzah-daughter-of-zelophehad'),canonicalName:'디르사(슬로브핫의 딸)'};
+  if(code==='num'&&name==='슬로브핫')return {...id('person','zelophehad'),canonicalName:'슬로브핫'};
+  if(code==='num'&&name==='슬로브핫의 딸들')return {...id('group','zelophehad-daughters'),canonicalName:'슬로브핫의 딸들'};
+  if(code==='num'&&name==='나손')return {...id('person','nahshon-son-of-amminadab'),canonicalName:'나손'};
+  if(code==='num'&&name==='발락')return {...id('person','balak-king-of-moab'),canonicalName:'발락'};
+  if(['num','deu','jos'].includes(code)&&name==='시혼')return {...id('person','sihon-king-of-amorites'),canonicalName:'시혼'};
+  if(['num','deu','jos'].includes(code)&&name==='옥')return {...id('person','og-king-of-bashan'),canonicalName:'옥'};
+  if(code==='num'&&Number(chapter)===25&&name==='시므리')return {...id('person','zimri-son-of-salu'),canonicalName:'시므리(살루의 아들)'};
+  if(code==='1ki'&&Number(chapter)===16&&name==='시므리')return {...id('person','zimri-king-of-israel'),canonicalName:'시므리(이스라엘 왕)'};
+  if(code==='num'&&Number(chapter)===32&&name==='마길'||code==='jos'&&Number(chapter)===17&&name==='마길')return {...id('person','machir-son-of-manasseh'),canonicalName:'마길(므낫세의 아들)'};
+  if(['2sa'].includes(code)&&[9,17].includes(Number(chapter))&&name==='마길')return {...id('person','machir-of-lodebar'),canonicalName:'마길(로드발 사람)'};
+  if(code==='num'&&Number(chapter)===32&&name==='야일')return {...id('person','jair-son-of-manasseh'),canonicalName:'야일(므낫세 자손)'};
+  if(code==='jdg'&&Number(chapter)===10&&name==='야일')return {...id('person','jair-judge-of-gilead'),canonicalName:'야일(길르앗 사사)'};
+  if(code==='num'&&Number(chapter)===16&&name==='다단')return {...id('person','dathan-son-of-eliab'),canonicalName:'다단'};
+  if(code==='num'&&Number(chapter)===16&&name==='아비람')return {...id('person','abiram-son-of-eliab'),canonicalName:'아비람'};
+  if(code==='num'&&Number(chapter)===16&&name==='온')return {...id('person','on-son-of-peleth'),canonicalName:'온'};
+  if(code==='num'&&['시체로 부정하게 된 사람들','다른 정탐꾼들'].includes(name))return {...id('group',name==='다른 정탐꾼들'?'ten-spies':'passover-corpse-unclean'),canonicalName:name};
+  if(code==='num'&&name==='모압 고관들')return {...id('group','moabite-officials'),canonicalName:'모압 고관들'};
+  if(code==='num'&&name==='미디안 다섯 왕')return {...id('group','five-kings-of-midian'),canonicalName:'미디안 다섯 왕'};
+  if(code==='num'&&name==='군대 지휘관들')return {...id('group','israel-army-commanders'),canonicalName:'군대 지휘관들'};
+  if(code==='num'&&name==='길르앗 족장들')return {...id('group','gilead-clan-heads'),canonicalName:'길르앗 족장들'};
   // Genesis aliases and explicit role overrides must precede the broad
   // group-name heuristic (which otherwise classifies singular Joseph as a group).
   if(code==='gen'&&name==='요셉')return {...id('person','joseph-patriarch'),canonicalName:'요셉'};
