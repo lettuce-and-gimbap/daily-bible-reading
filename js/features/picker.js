@@ -152,7 +152,14 @@ async function renderVersePicker(body, target, idx) {
     if (act.act === "clear") {
       pickSel = new Set();
       root.querySelectorAll("input[data-a]:checked").forEach((c) => { c.checked = false; });
+      if (edsel) edsel.hidden = true;
       return refresh();
+    }
+    if (edsel && !edsel.hidden) { // 역본 고르기 창이 열려 있으면 이 버튼이 그 창의 붙이기 역할 (창 안의 버튼이 화면 아래에 가려질 수 있어서)
+      const keep = new Set([...edsel.querySelectorAll("[data-ed]:checked")].map((x) => x.dataset.ed));
+      if (!keep.size) return;
+      edsel.hidden = true;
+      return paste(keep);
     }
     if (!count()) return;
     if (edsel) { // 역본이 여럿이면 붙이기 전에 고르는 창을 띄움
