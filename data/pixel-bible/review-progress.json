@@ -1,7 +1,7 @@
 {
   "updated": "2026-11-02",
-  "reviewedIdentities": 1120,
-  "totalIdentities": 1930,
+  "reviewedIdentities": 1269,
+  "totalIdentities": 1929,
   "rounds": [
     {
       "newEntries": 27,
@@ -163,16 +163,37 @@
         "code": "pro",
         "chapter": 31
       }
+    },
+    {
+      "newEntries": 20,
+      "firstAppearanceThrough": {
+        "code": "ecc",
+        "chapter": 12
+      }
+    },
+    {
+      "newEntries": 11,
+      "firstAppearanceThrough": {
+        "code": "sng",
+        "chapter": 8
+      }
+    },
+    {
+      "newEntries": 118,
+      "firstAppearanceThrough": {
+        "code": "isa",
+        "chapter": 66
+      }
     }
   ],
   "firstAppearanceCoverage": {
-    "code": "pro",
-    "throughChapter": 31,
-    "basis": "현재 앱 등장 목록에서 창세기 50장부터 잠언 31장까지 첫 등장하는 도감 신원을 대조함. 이미 소개된 인물의 욥기·시편·잠언 재등장 사실도 일부 보강했으며 전체 생애·전체 도감 검증 완료를 뜻하지 않음."
+    "code": "isa",
+    "throughChapter": 66,
+    "basis": "현재 앱 등장 목록에서 창세기 50장부터 이사야 66장까지 첫 등장하는 도감 신원을 대조함. 이미 소개된 인물의 전도서·아가·이사야 재등장 사실도 일부 보강했으며 전체 생애·전체 도감 검증 완료를 뜻하지 않음."
   },
   "nextFirstAppearance": {
-    "code": "ecc",
-    "chapter": 1
+    "code": "jer",
+    "chapter": 3
   },
   "scope": "각 항목의 reviewedRefs와 note에 적힌 소개 범위만 대조. 기존 역할·대사·관계·외형 전체의 검증 완료가 아님."
 }
