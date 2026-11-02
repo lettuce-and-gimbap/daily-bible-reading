@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-02",
-  "reviewedIdentities": 1455,
+  "reviewedIdentities": 1459,
   "totalIdentities": 1929,
   "rounds": [
     {
@@ -242,9 +242,9 @@
       }
     },
     {
-      "newEntries": 0,
+      "newEntries": 4,
       "firstAppearanceThrough": {
-        "code": "jon",
+        "code": "jnh",
         "chapter": 4
       }
     },
@@ -301,11 +301,11 @@
   "firstAppearanceCoverage": {
     "code": "mal",
     "throughChapter": 4,
-    "basis": "현재 앱 등장 목록에서 창세기부터 말라기 4장까지 첫 등장 도감 신원을 순차 검토함. 각 항목의 reviewedRefs 및 note 범위만 검토했으며 전체 도감 검증 완료를 뜻하지 않음. 요나서 본문 파일이 제공 자료에 없어 요나서 첫 등장 항목은 본문 대조 보류."
+    "basis": "현재 앱 등장 목록에서 창세기부터 말라기 4장까지 첫 등장 도감 신원을 순차 검토함. 각 항목의 reviewedRefs 및 note 범위만 검토하며 전체 도감 검증 완료를 뜻하지 않음."
   },
   "nextFirstAppearance": {
-    "code": "jnh",
+    "code": "mat",
     "chapter": 1
   },
-  "scope": "각 항목의 reviewedRefs와 note에 적힌 소개 범위만 대조. 기존 역할·대사·관계·외형 전체의 검증 완료가 아님. 요나서 원문 파일 미제공으로 요나서 항목은 대조 보류."
+  "scope": "각 항목의 reviewedRefs와 note에 적힌 소개 범위만 대조. 기존 역할·대사·관계·외형 전체의 검증 완료가 아님."
 }
