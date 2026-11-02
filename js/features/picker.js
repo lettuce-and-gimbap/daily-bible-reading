@@ -97,9 +97,8 @@ async function renderVersePicker(body, target, idx) {
         <span class="vp-txt">${multiple ? r.cells.map((entry, i) => renderCell(entry, editions[i])).join("") : `<span class="study-version" data-edition="${esc(ver1)}">${ScriptureStudy.glossaryHtml(r.cells[0].text)}</span>`}</span>
       </label>`).join("")}</div>
     ${multiple ? `<div class="vp-edsel" hidden>
-      <p class="vp-edsel-title">붙일 역본을 고르세요</p>
+      <div class="vp-edsel-head"><p class="vp-edsel-title">붙일 역본을 고르세요</p><button class="btn text small" data-edsel="cancel">취소</button></div>
       <div class="vp-edsel-list">${editions.map((c) => `<label class="vp-edsel-item"><input type="checkbox" data-ed="${esc(c)}" checked><span>${esc(vname(c))}</span></label>`).join("")}</div>
-      <div class="vp-bar"><button class="btn text small" data-edsel="cancel">취소</button><span class="muted small">아래 "메모에 붙이기"를 누르면 붙어요</span></div>
     </div>` : ""}
     <div class="vp-bar">
       <span class="vp-n"></span>

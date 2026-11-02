@@ -613,8 +613,8 @@ mark.study-mark:focus-visible{outline:2px solid currentColor;outline-offset:2px}
 /* 구절 붙이기 전에 붙일 역본을 고르는 창 */
 .vp-edsel { position: sticky; bottom: 0; margin-top: 8px; padding: 12px; border: 1px solid var(--accent); border-radius: 12px; background: var(--surface); }
 .vp-edsel[hidden] { display: none; }
-.vp-edsel-title { margin: 0 0 8px; font-weight: 700; }
+.vp-edsel-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 8px; }
+.vp-edsel-title { margin: 0; font-weight: 700; }
 .vp-edsel-list { display: flex; flex-wrap: wrap; gap: 8px; }
 .vp-edsel-item { display: flex; align-items: center; gap: 6px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; cursor: pointer; }
 .vp-edsel-item:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); }
-.vp-edsel .vp-bar { position: static; padding: 10px 0 0; margin: 8px 0 0; background: transparent; }
