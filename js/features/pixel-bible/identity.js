@@ -8,9 +8,15 @@ export function canonicalPersonName(name,{code='',chapter=0}={}) {
   if(code==='gen'&&name==='요셉의 손자들')return '요셉의 후손들';
   if(code==='gen'&&name==='요셉의 형제 다섯')return '요셉의 형제 다섯';
   if(code==='gen'&&['애굽 사람들','애굽 백성'].includes(name))return '애굽 백성';
-  if(code==='exo'&&Number(chapter)===17&&name==='아말렉')return '아말렉 사람들';
+  if(['exo','num','deu'].includes(code)&&(code!=='exo'||Number(chapter)===17)&&(code!=='num'||Number(chapter)===14)&&(code!=='deu'||Number(chapter)===25)&&name==='아말렉')return '아말렉 사람들';
   if(code==='num'&&name==='노아'&&[27,36].includes(Number(chapter)))return '노아(슬로브핫의 딸)';
   if(code==='num'&&name==='밀가'&&[27,36].includes(Number(chapter)))return '밀가(슬로브핫의 딸)';
+  if(code==='num'&&name==='말라'&&[27,36].includes(Number(chapter)))return '말라(슬로브핫의 딸)';
+  if(code==='num'&&name==='호글라'&&[27,36].includes(Number(chapter)))return '호글라(슬로브핫의 딸)';
+  if(code==='num'&&name==='디르사'&&[27,36].includes(Number(chapter)))return '디르사(슬로브핫의 딸)';
+  if(code==='num'&&Number(chapter)===25&&name==='시므리')return '시므리(살루의 아들)';
+  if(code==='num'&&Number(chapter)===10&&name==='르우엘')return '이드로';
+  if(code==='deu'&&Number(chapter)===21&&['장로들','성읍의 장로들'].includes(name))return '성읍의 장로들';
   if(['레위 자손','레위 지파'].includes(name))return '레위 지파';
   if(code==='rev'&&['용','붉은 용','옛 뱀','마귀','옛 뱀 마귀 사탄'].includes(name))return '사탄';
   if(code==='rev'&&['음녀','큰 음녀'].includes(name))return '바벨론';
@@ -86,8 +92,15 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   if(name==='모세')return {...id('person','모세'),canonicalName:'모세'};
   if(code==='exo'&&Number(chapter)>0&&name==='바로')return {...id('person',Number(chapter)<=2?'exodus-pharaoh-moses-birth':'exodus-pharaoh-deliverance'),canonicalName:Number(chapter)<=2?'바로(모세의 출생 시대)':'바로(출애굽 시대)'};
   if(code==='exo'&&name==='훌')return {...id('person','hur'),canonicalName:'훌'};
-  if(code==='exo'&&name==='아말렉'&&Number(chapter)===17)return {...id('group','amalekites'),canonicalName:'아말렉 사람들'};
+  if(['exo','num','deu'].includes(code)&&(code!=='exo'||Number(chapter)===17)&&(code!=='num'||Number(chapter)===14)&&(code!=='deu'||Number(chapter)===25)&&name==='아말렉')return {...id('group','amalekites'),canonicalName:'아말렉 사람들',mergeAliases:true};
+  if(code==='deu'&&Number(chapter)===1&&name==='정탐꾼들')return {...id('group','deuteronomy-spies'),canonicalName:'정탐꾼들'};
+  if(code==='deu'&&Number(chapter)===2&&name==='이스라엘 사신들')return {...id('group','deuteronomy-messengers'),canonicalName:'이스라엘 사신들'};
+  if(code==='deu'&&Number(chapter)===20&&['장교들','책임자들'].includes(name))return {...id('group','deuteronomy-officers'),canonicalName:'장교들'};
+  if(code==='deu'&&Number(chapter)===20&&name==='군대 지휘관들')return {...id('group','deuteronomy-commanders'),canonicalName:'군대 지휘관들'};
+  if(code==='deu'&&Number(chapter)===21&&['장로들','성읍의 장로들'].includes(name))return {...id('group','deuteronomy-city-elders'),canonicalName:'성읍의 장로들',mergeAliases:true};
   if(name==='아론')return {...id('person','아론'),canonicalName:'아론'};
+  if(code==='num'&&Number(chapter)===12&&name==='구스 여인')return id('unresolved','구스 여인');
+  if(code==='num'&&Number(chapter)===10&&name==='르우엘')return {...id('person','midianite-priest-jethro'),canonicalName:'이드로'};
   if(['레위 자손','레위 지파'].includes(name))return {...id('group','levites'),canonicalName:'레위 지파',mergeAliases:true};
   if(name==='아론의 아들들')return {...id('group','aaron-sons'),canonicalName:'아론의 아들들',mergeAliases:true};
   if(code==='num'&&[27,36].includes(Number(chapter))&&name==='노아')return {...id('person','zelophehad-daughter-noah'),canonicalName:'노아(슬로브핫의 딸)'};
@@ -263,7 +276,7 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   if(code==='1sa'&&name==='여호수아(벧세메스 사람)')return {...id('person','joshua-bethshemesh'),canonicalName:'여호수아(벧세메스 사람)'};
   if(code==='exo'&&name==='바로'&&Number(chapter)>=1&&Number(chapter)<=2)return {...id('person','exodus-pharaoh-moses-birth'),canonicalName:'바로(모세의 출생 시대)'};
   if(code==='exo'&&name==='바로'&&Number(chapter)>=3)return {...id('person','exodus-pharaoh-deliverance'),canonicalName:'바로(출애굽 시대)'};
-  if(code==='exo'&&name==='아말렉'&&Number(chapter)===17)return id('group','amalekites');
+  if(['exo','num','deu'].includes(code)&&(code!=='exo'||Number(chapter)===17)&&(code!=='num'||Number(chapter)===14)&&(code!=='deu'||Number(chapter)===25)&&name==='아말렉')return {...id('group','amalekites'),canonicalName:'아말렉 사람들',mergeAliases:true};
   if(name==='사울') {
     if(code==='act'||/바울/.test(role))return {...id('person','paul'),canonicalName:'바울'};
     if(['1sa','2sa','1ch'].includes(code)||/이스라엘.*왕|다윗.*왕/.test(role))return id('person','saul-king');
@@ -274,7 +287,7 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   // 열왕기하 17장의 소(So)는 애굽 왕이다. 동물 이름과 구별해 한 인물로 유지한다.
   if(name==='소'&&code==='2ki'&&/왕|애굽|바로/.test(role))return id('person','egyptian-king-so','verse-reviewed');
   if(name==='바울')return id('person','paul');
-  if(name==='발람'&&['num','2pe','rev','jud'].includes(code))return {...id('person','balaam'),canonicalName:'발람'};
+  if(name==='발람'&&['num','deu','2pe','rev','jud'].includes(code))return {...id('person','balaam'),canonicalName:'발람'};
   if(name==='가인')return {...id('person','cain'),canonicalName:'가인'};
   if(name==='고라')return {...id('person','korah'),canonicalName:'고라'};
   if(code==='jas'&&name==='야고보')return {...id('person','james-epistle-author'),canonicalName:'야고보'};
