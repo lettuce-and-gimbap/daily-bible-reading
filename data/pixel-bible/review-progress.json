@@ -1,7 +1,7 @@
 {
   "updated": "2026-11-02",
-  "reviewedIdentities": 286,
-  "totalIdentities": 1944,
+  "reviewedIdentities": 812,
+  "totalIdentities": 1933,
   "rounds": [
     {
       "newEntries": 27,
@@ -79,15 +79,57 @@
         "code": "rut",
         "chapter": 4
       }
+    },
+    {
+      "newEntries": 99,
+      "firstAppearanceThrough": {
+        "code": "1sa",
+        "chapter": 31
+      }
+    },
+    {
+      "newEntries": 145,
+      "firstAppearanceThrough": {
+        "code": "2sa",
+        "chapter": 24
+      }
+    },
+    {
+      "newEntries": 63,
+      "firstAppearanceThrough": {
+        "code": "1ki",
+        "chapter": 22
+      }
+    },
+    {
+      "newEntries": 107,
+      "firstAppearanceThrough": {
+        "code": "2ki",
+        "chapter": 25
+      }
+    },
+    {
+      "newEntries": 55,
+      "firstAppearanceThrough": {
+        "code": "1ch",
+        "chapter": 29
+      }
+    },
+    {
+      "newEntries": 57,
+      "firstAppearanceThrough": {
+        "code": "2ch",
+        "chapter": 36
+      }
     }
   ],
   "firstAppearanceCoverage": {
-    "code": "rut",
-    "throughChapter": 4,
-    "basis": "현재 앱 등장 목록에서 창세기 50장부터 룻기 4장까지 첫 등장하는 도감 신원을 대조함. 이미 소개된 인물의 후속 사실도 일부 보강했으며 전체 생애·전체 도감 검증 완료를 뜻하지 않음."
+    "code": "2ch",
+    "throughChapter": 36,
+    "basis": "현재 앱 등장 목록에서 창세기 50장부터 역대하 36장까지 첫 등장하는 도감 신원을 대조함. 이미 소개된 인물의 사무엘서·열왕기서·역대서 재등장 사실도 일부 보강했으며 전체 생애·전체 도감 검증 완료를 뜻하지 않음."
   },
   "nextFirstAppearance": {
-    "code": "1sa",
+    "code": "ezr",
     "chapter": 1
   },
   "scope": "각 항목의 reviewedRefs와 note에 적힌 소개 범위만 대조. 기존 역할·대사·관계·외형 전체의 검증 완료가 아님."

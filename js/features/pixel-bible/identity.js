@@ -4,6 +4,23 @@ const knownPeople=new Set(Object.values(APPEARANCES).map(p=>p.name).filter(n=>![
 const spiritual=/^(하나님|여호와|성령|주님|천사|천사들|천사장|천만 천사|능력의 천사들|하나님의 사자|여호와의 군대 장관|그룹|사탄|마귀|귀신|어린 양|범죄한 천사들)$/;
 const group=/자손|백성|사람들|여성들|여인들|여종들|성도|교회|형제들|자매들|조상들|증인들|제자들|무리|장로들|장로의 회|제사장들|레위인들|지파|족속|군대|나라들|원수들|악인들|의인들|권력자들|통치자들|주민들|재판관들|관리들|지도자들|신하들|술객들|기술자들|이방인|아들들|딸들|자들|집/;
 export function canonicalPersonName(name,{code='',chapter=0}={}) {
+  if(code==='1sa'&&name==='사무엘')return '사무엘';
+  if(['1sa','2sa','1ki','2ki','1ch','2ch','heb'].includes(code)&&name==='다윗')return '다윗';
+  if(['1sa','2sa','1ch'].includes(code)&&name==='요나단')return '요나단';
+  if(['2sa','1ki','2ki','1ch','2ch','pro'].includes(code)&&name==='솔로몬'||code==='psa'&&[72,127].includes(Number(chapter))&&name==='솔로몬')return '솔로몬';
+  if(code==='2sa'&&name==='압살롬')return '압살롬';
+  if(code==='2sa'&&Number(chapter)===13&&name==='다말')return '다말(다윗의 딸)';
+  if(code==='2sa'&&[8,20].includes(Number(chapter))&&name==='여호사밧'||code==='1ki'&&Number(chapter)===4&&name==='여호사밧')return '여호사밧(사관)';
+  if((code==='1ki'&&[15,22].includes(Number(chapter))||code==='2ki'&&Number(chapter)===3||code==='2ch'&&Number(chapter)>=17)&&name==='여호사밧')return '여호사밧(유다 왕)';
+  if((code==='1ki'&&[11,12,13,14].includes(Number(chapter))||code==='2ch'&&[10,11,12,13].includes(Number(chapter)))&&name==='여로보암')return '여로보암';
+  if((code==='1ki'&&[11,12,14].includes(Number(chapter))||code==='2ch'&&[9,10,11,12].includes(Number(chapter)))&&name==='르호보암')return '르호보암';
+  if(code==='2ch'&&Number(chapter)===15&&name==='마아가')return '마아가';
+  if((code==='2ki'&&[8,11].includes(Number(chapter))||code==='2ch'&&[22,23].includes(Number(chapter)))&&name==='아달랴')return '아달랴';
+  if((code==='2ki'&&[9,10].includes(Number(chapter))||code==='2ch'&&Number(chapter)===22)&&name==='예후')return '예후';
+  if(['2sa','1ch'].includes(code)&&name==='여부스 사람')return '여부스 사람';
+  if(code==='1ch'&&Number(chapter)===20&&name==='요나단(시므아의 아들)')return '요나단(시므아의 아들)';
+  if(code==='1ki'&&Number(chapter)===1&&name==='요나단(아비아달의 아들)')return '요나단(아비아달의 아들)';
+  if(['1ki','2ki','2ch'].includes(code)&&name==='벤하닷')return code==='1ki'&&Number(chapter)===15||code==='2ch'&&Number(chapter)===16?'벤하닷(아사 시대)':'벤하닷(아합 시대)';
   if(code==='jos'&&name==='여호수아')return '여호수아';
   if(code==='jos'&&name==='슬로브핫의 딸들')return '슬로브핫의 딸들';
   if(['jos','jdg'].includes(code)&&name==='옷니엘')return '옷니엘';
@@ -91,6 +108,24 @@ export function canonicalPersonName(name,{code='',chapter=0}={}) {
 // 이름 문자열을 곧 고유 인물로 취급하지 않는다. 모호한 것은 미해결로 남긴다.
 export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   const id=(kind,key,status='reviewed-rule')=>({kind,id:`${kind}:${key}`,status});
+  if(code==='1sa'&&name==='사무엘')return {...id('person','사무엘'),canonicalName:'사무엘'};
+  if(['1sa','2sa','1ki','2ki','1ch','2ch','heb'].includes(code)&&name==='다윗')return {...id('person','다윗'),canonicalName:'다윗'};
+  if((['1sa','2sa'].includes(code)||code==='1ch'&&Number(chapter)===10)&&name==='요나단')return {...id('person','jonathan-son-of-saul'),canonicalName:'요나단'};
+  if(name==='요나단(아비아달의 아들)'&&(['2sa'].includes(code)||code==='1ki'&&Number(chapter)===1))return {...id('person','jonathan-son-of-abiathar'),canonicalName:'요나단(아비아달의 아들)'};
+  if(name==='요나단(시므아의 아들)'&&(['2sa'].includes(code)||code==='1ch'&&Number(chapter)===20))return {...id('person','jonathan-son-of-shimea'),canonicalName:'요나단(시므아의 아들)'};
+  if(['2sa','1ki','2ki','1ch','2ch','pro'].includes(code)&&name==='솔로몬'||code==='psa'&&[72,127].includes(Number(chapter))&&name==='솔로몬')return {...id('person','solomon'),canonicalName:'솔로몬'};
+  if(code==='2sa'&&name==='압살롬')return {...id('person','압살롬'),canonicalName:'압살롬'};
+  if(code==='2sa'&&Number(chapter)===13&&name==='다말')return {...id('person','tamar-daughter-of-david'),canonicalName:'다말(다윗의 딸)'};
+  if((code==='2sa'&&[8,20].includes(Number(chapter))||code==='1ki'&&Number(chapter)===4)&&name==='여호사밧')return {...id('person','jehoshaphat-recorder'),canonicalName:'여호사밧(사관)'};
+  if((code==='1ki'&&[15,22].includes(Number(chapter))||code==='2ki'&&Number(chapter)===3||code==='2ch'&&Number(chapter)>=17)&&name==='여호사밧')return {...id('person','jehoshaphat-king-of-judah'),canonicalName:'여호사밧(유다 왕)'};
+  if((code==='1ki'&&[11,12,13,14].includes(Number(chapter))||code==='2ch'&&[10,11,12,13].includes(Number(chapter)))&&name==='여로보암')return {...id('person','jeroboam-i'),canonicalName:'여로보암'};
+  if((code==='1ki'&&[11,12,14].includes(Number(chapter))||code==='2ch'&&[9,10,11,12].includes(Number(chapter)))&&name==='르호보암')return {...id('person','rehoboam-king-of-judah'),canonicalName:'르호보암'};
+  if(code==='2ch'&&Number(chapter)===15&&name==='마아가')return {...id('person','maacah-daughter-of-uriel'),canonicalName:'마아가'};
+  if((code==='2ki'&&[8,11].includes(Number(chapter))||code==='2ch'&&[22,23].includes(Number(chapter)))&&name==='아달랴')return {...id('person','athaliah-daughter-of-omri'),canonicalName:'아달랴'};
+  if((code==='2ki'&&[9,10].includes(Number(chapter))||code==='2ch'&&Number(chapter)===22)&&name==='예후')return {...id('person','jehu-king-of-israel'),canonicalName:'예후'};
+  if(['2sa','1ch'].includes(code)&&name==='여부스 사람')return {...id('group','jebusites'),canonicalName:'여부스 사람'};
+  if(code==='1ki'&&Number(chapter)===15&&name==='벤하닷'||code==='2ch'&&Number(chapter)===16&&name==='벤하닷')return {...id('person','benhadad-i'),canonicalName:'벤하닷(아사 시대)'};
+  if(code==='1ki'&&Number(chapter)===20&&name==='벤하닷'||code==='2ki'&&[6,8].includes(Number(chapter))&&name==='벤하닷')return {...id('person','benhadad-ii'),canonicalName:'벤하닷(아합 시대)'};
   if(code==='jos'&&name==='여호수아')return {...id('person','여호수아'),canonicalName:'여호수아'};
   if(code==='jos'&&name==='슬로브핫의 딸들')return {...id('group','zelophehad-daughters'),canonicalName:'슬로브핫의 딸들'};
   if(['jos','jdg'].includes(code)&&name==='옷니엘')return {...id('person','othniel'),canonicalName:'옷니엘'};
