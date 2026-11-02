@@ -1,7 +1,7 @@
 {
   "updated": "2026-11-02",
-  "reviewedIdentities": 1459,
-  "totalIdentities": 1929,
+  "reviewedIdentities": 1633,
+  "totalIdentities": 1917,
   "rounds": [
     {
       "newEntries": 27,
@@ -296,15 +296,43 @@
         "code": "mal",
         "chapter": 4
       }
+    },
+    {
+      "newEntries": 71,
+      "firstAppearanceThrough": {
+        "code": "mat",
+        "chapter": 28
+      }
+    },
+    {
+      "newEntries": 25,
+      "firstAppearanceThrough": {
+        "code": "mrk",
+        "chapter": 16
+      }
+    },
+    {
+      "newEntries": 47,
+      "firstAppearanceThrough": {
+        "code": "luk",
+        "chapter": 24
+      }
+    },
+    {
+      "newEntries": 31,
+      "firstAppearanceThrough": {
+        "code": "jhn",
+        "chapter": 21
+      }
     }
   ],
   "firstAppearanceCoverage": {
-    "code": "mal",
-    "throughChapter": 4,
-    "basis": "현재 앱 등장 목록에서 창세기부터 말라기 4장까지 첫 등장 도감 신원을 순차 검토함. 각 항목의 reviewedRefs 및 note 범위만 검토하며 전체 도감 검증 완료를 뜻하지 않음."
+    "code": "jhn",
+    "throughChapter": 21,
+    "basis": "창세기부터 요한복음 21장까지 앱 등장 인물의 첫 등장 신원을 순차 검토함. 기존 도감 인물의 복음서 재등장도 일부 보강했으며 각 항목의 근거 범위만 확인한 것으로 전체 도감 검증 완료를 뜻하지 않음."
   },
   "nextFirstAppearance": {
-    "code": "mat",
+    "code": "act",
     "chapter": 1
   },
   "scope": "각 항목의 reviewedRefs와 note에 적힌 소개 범위만 대조. 기존 역할·대사·관계·외형 전체의 검증 완료가 아님."

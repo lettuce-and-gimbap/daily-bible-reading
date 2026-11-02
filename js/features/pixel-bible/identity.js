@@ -63,6 +63,16 @@ export function canonicalPersonName(name,{code='',chapter=0}={}) {
   if(['jer','ezk','2ki','2ch'].includes(code)&&['여호야긴','여고냐','고니야'].includes(name))return '여호야긴(여고냐)';
   if((code==='jer'&&[21,24,27,28,29,32,34,37,38,39,52].includes(Number(chapter))||code==='ezk'&&[12,17,21].includes(Number(chapter))||code==='2ch'&&Number(chapter)===36||code==='2ki'&&[24,25].includes(Number(chapter)))&&name==='시드기야')return '시드기야(유다 왕)';
   if(code==='jer'&&Number(chapter)===28&&name==='하나냐')return '하나냐(아술의 아들)';
+  if(code==='mat'&&Number(chapter)===2&&name==='헤롯')return '헤롯(대왕)';
+  if((code==='mat'&&[1,2,12].includes(Number(chapter))||code==='luk'&&[1,2].includes(Number(chapter))||code==='mrk'&&[3,6].includes(Number(chapter))||code==='jhn'&&[2,19].includes(Number(chapter)))&&['마리아','예수의 어머니'].includes(name))return '마리아';
+  if(code==='luk'&&Number(chapter)===10&&name==='마리아'||code==='jhn'&&[11,12].includes(Number(chapter))&&name==='마리아')return '마리아(베다니)';
+  if((code==='mat'&&[4,10,17,20,26].includes(Number(chapter))||code==='mrk'&&[1,3,5,9,10,13,14].includes(Number(chapter))||code==='luk'&&[5,9].includes(Number(chapter)))&&name==='야고보')return '야고보(세베대의 아들)';
+  if(name==='세례 요한'||code==='luk'&&Number(chapter)===1&&name==='요한'||code==='jhn'&&Number(chapter)===3&&name==='요한')return '세례 요한';
+  if((code==='mat'&&[4,10,17,20,26].includes(Number(chapter))||code==='mrk'&&[1,3,9,10,13,14].includes(Number(chapter))||code==='luk'&&Number(chapter)===9)&&name==='요한')return '요한';
+  if(['아리마대 요셉','아리마대 사람 요셉'].includes(name)||name==='요셉'&&(code==='mat'&&Number(chapter)===27||code==='mrk'&&Number(chapter)===15||code==='luk'&&Number(chapter)===23||code==='jhn'&&Number(chapter)===19))return '아리마대 요셉';
+  if(name==='시몬 베드로')return '베드로';
+  if(name==='요셉'&&(code==='mat'&&[1,2].includes(Number(chapter))||code==='luk'&&Number(chapter)===2))return '요셉';
+  if((code==='mat'&&Number(chapter)===14||code==='mrk'&&Number(chapter)===6||code==='luk'&&[3,23].includes(Number(chapter)))&&name==='헤롯')return '헤롯 안티파스';
   if(code==='jer'&&[40,41].includes(Number(chapter))&&name==='이스마엘')return '이스마엘(느다냐의 아들)';
   if(code==='jer'&&Number(chapter)===51&&name==='스라야')return '스라야(네리야의 아들)';
   if(code==='jer'&&Number(chapter)===52&&name==='스라야')return '스라야(대제사장)';
@@ -124,6 +134,8 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   if(code==='isa'&&name==='이사야')return {...id('person','이사야'),canonicalName:'이사야'};
   if(code==='jer'&&name==='예레미야')return {...id('person','예레미야'),canonicalName:'예레미야'};
   if(code==='jer'&&Number(chapter)===28&&name==='하나냐')return {...id('person','hananiah-son-of-azzur-jer28'),canonicalName:'하나냐(아술의 아들)'};
+  if(code==='mat'&&Number(chapter)===2&&name==='헤롯')return {...id('person','herod-the-great'),canonicalName:'헤롯(대왕)'};
+  if((code==='mat'&&Number(chapter)===14||code==='mrk'&&Number(chapter)===6||code==='luk'&&[3,23].includes(Number(chapter)))&&name==='헤롯')return {...id('person','herod-antipas'),canonicalName:'헤롯 안티파스'};
   if(['ezr','neh'].includes(code)&&name==='에스라')return {...id('person','에스라'),canonicalName:'에스라'};
   if(code==='neh'&&name==='느헤미야')return {...id('person','느헤미야'),canonicalName:'느헤미야'};
   if(code==='est'&&name==='에스더')return {...id('person','에스더'),canonicalName:'에스더'};
@@ -287,8 +299,17 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   if(code==='jer'&&Number(chapter)===52&&name==='스라야')return {...id('person','seraiah-high-priest-jer52'),canonicalName:'스라야(대제사장)'};
   if(code==='ezr'&&Number(chapter)===4&&['그 땅 사람들','대적들'].includes(name))return {...id('group','samaritan-adversaries-ezra4'),canonicalName:'대적들',mergeAliases:true};
   if(code==='jas'&&/^(고아와 과부|부자|부한 자들|가난한 사람|품꾼들|선생들)$/.test(name)||code==='1pe'&&/^(왕과 총독|사환들|주인들|아내들|남편들|흩어진 나그네들)$/.test(name)||code==='2pe'&&name==='거짓 선생들'||code==='1jn'&&/^(자녀들|하나님의 자녀들|적그리스도|형제를 미워하는 자)$/.test(name)||code==='2jn'&&/^(택하심을 받은 부녀|부녀의 자녀들|미혹하는 자)$/.test(name))return id('group',name);
-  if(group.test(name)||/^(이스라엘|유다)$/.test(name)&&/백성|지파|나라|왕국/.test(role)||/백성|족속|나라|민족|도성|왕국/.test(role))return id('group',name);
   if(['예수','예수님','그리스도'].includes(name))return id('person','jesus');
+  if(name==='세례 요한'||code==='jhn'&&Number(chapter)===3&&name==='요한')return {...id('person','john-baptist'),canonicalName:'세례 요한'};
+  if(name==='예수의 어머니'||name==='마리아'&&(code==='mat'&&[1,2,12].includes(Number(chapter))||code==='luk'&&[1,2].includes(Number(chapter))))return {...id('person','mary-jesus-mother'),canonicalName:'마리아'};
+  if(name==='마리아'&&(code==='luk'&&Number(chapter)===10||code==='jhn'&&[11,12].includes(Number(chapter))))return {...id('person','mary-bethany'),canonicalName:'마리아(베다니)'};
+  if(name==='요셉'&&(code==='mat'&&[1,2].includes(Number(chapter))||code==='luk'&&Number(chapter)===2))return {...id('person','joseph-mary-husband'),canonicalName:'요셉'};
+  if(['아리마대 요셉','아리마대 사람 요셉'].includes(name)||name==='요셉'&&(code==='mat'&&Number(chapter)===27||code==='mrk'&&Number(chapter)===15||code==='luk'&&Number(chapter)===23||code==='jhn'&&Number(chapter)===19))return {...id('person','joseph-arimathea'),canonicalName:'아리마대 요셉'};
+  if(name==='시몬 베드로')return {...id('person','베드로'),canonicalName:'베드로'};
+  if(name==='요한'&&code==='luk'&&Number(chapter)===1||name==='요한'&&code==='jhn'&&Number(chapter)===3)return {...id('person','john-baptist'),canonicalName:'세례 요한'};
+  if(name==='요한'&&(code==='mat'&&[4,10,17,20,26].includes(Number(chapter))||code==='mrk'&&[1,3,9,10,13,14].includes(Number(chapter))||code==='luk'&&Number(chapter)===9))return {...id('person','john-apostle'),canonicalName:'요한'};
+  if(name==='야고보'&&(code==='mat'&&[4,10,17,20,26].includes(Number(chapter))||code==='mrk'&&[1,3,5,9,10,13,14].includes(Number(chapter))||code==='luk'&&[5,9].includes(Number(chapter))))return {...id('person','james-son-of-zebedee'),canonicalName:'야고보(세베대의 아들)'};
+  if(group.test(name)||/^(이스라엘|유다)$/.test(name)&&/백성|지파|나라|왕국/.test(role)||/백성|족속|나라|민족|도성|왕국/.test(role))return id('group',name);
   // 창세기 17장의 개명 전후 호칭은 동일 인물이다. 월드와 도감은 한
   // 캐릭터로 합치되 본문·발화의 시대별 표기는 그대로 둔다.
   if(code==='gen'&&['아브람','아브라함'].includes(name))return {...id('person','아브라함'),canonicalName:'아브라함'};
