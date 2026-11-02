@@ -80,7 +80,7 @@ async function renderVersePicker(body, target, idx) {
     ? `<span class="vp-edition"><i>${esc(vname(edition))}${labelSpan(entry.label)[1] > labelSpan(entry.label)[0] ? ` · ${esc(entry.label)}절` : ""}</i><span class="study-version" data-edition="${esc(edition)}">${ScriptureStudy.glossaryHtml(entry.text)}</span></span>`
     : `<span class="vp-edition vp-empty" aria-label="${esc(vname(edition))} 이 절의 별도 본문 없음"></span>`;
 
-  const count = () => root.querySelectorAll("input:checked").length;
+  const count = () => root.querySelectorAll("input[data-a]:checked").length;
   const refresh = () => {
     const n = count();
     root.querySelector(".vp-n").textContent = n ? `${n}절 선택` : "절을 눌러 고르세요";
@@ -94,6 +94,11 @@ async function renderVersePicker(body, target, idx) {
         <span class="vp-num">${esc(r.label)}</span>
         <span class="vp-txt">${multiple ? r.cells.map((entry, i) => renderCell(entry, editions[i])).join("") : `<span class="study-version" data-edition="${esc(ver1)}">${ScriptureStudy.glossaryHtml(r.cells[0].text)}</span>`}</span>
       </label>`).join("")}</div>
+    ${multiple ? `<div class="vp-edsel" hidden>
+      <p class="vp-edsel-title">붙일 역본을 고르세요</p>
+      <div class="vp-edsel-list">${editions.map((c) => `<label class="vp-edsel-item"><input type="checkbox" data-ed="${esc(c)}" checked><span>${esc(vname(c))}</span></label>`).join("")}</div>
+      <div class="vp-bar"><button class="btn text small" data-edsel="cancel">취소</button><button class="btn primary small" data-edsel="ok">선택한 역본 붙이기</button></div>
+    </div>` : ""}
     <div class="vp-bar">
       <span class="vp-n"></span>
       <button class="btn text small" data-act="clear">해제</button>
@@ -104,15 +109,24 @@ async function renderVersePicker(body, target, idx) {
   refresh();
 
   // 고른 절(번호 집합)을 보기 설정 역본마다 모아 "권 장:절 / 역본1 줄들 / --- / 역본2 줄들" 양식으로
-  const buildQuote = () => {
+  // keep: 붙일 역본 코드 집합(없으면 전부)
+  const buildQuote = (keep) => {
     const nums = new Set();
-    root.querySelectorAll("input:checked").forEach((c) => {
+    root.querySelectorAll("input[data-a]:checked").forEach((c) => {
       for (let n = Number(c.dataset.a); n <= Number(c.dataset.b); n++) nums.add(n);
     });
     const hit = (list) => list.filter((v) => nums.has(labelSpan(v.label)[0]))
       .map((v) => `${v.label} ${v.text}`);
-    const groups = [first, second, third].map(hit).filter((g) => g.length);
+    const groups = lists.map((list, i) => ({ code: editions[i], list }))
+      .filter((g) => !keep || keep.has(g.code))
+      .map((g) => hit(g.list)).filter((g) => g.length);
     return `${versesRef(CHAPTERS[idx0], [...nums])}\n${groups.map((g) => g.join("\n")).join(`\n${VERSION_DIVIDER}\n`)}`;
+  };
+  const paste = (keep) => {
+    const quote = buildQuote(keep);
+    pickSel = new Set();
+    insertQuote(target, quote);
+    renderVersePicker(body, target, idx0);
   };
 
   root.addEventListener("change", (e) => {
@@ -122,18 +136,29 @@ async function renderVersePicker(body, target, idx) {
     refresh();
   });
   root.addEventListener("click", (e) => {
+    const edsel = root.querySelector(".vp-edsel");
+    const es = e.target.closest("[data-edsel]");
+    if (es) { // 역본 고르기 창: 취소하거나, 고른 역본만 붙임
+      if (es.dataset.edsel === "cancel") { edsel.hidden = true; return; }
+      const keep = new Set([...edsel.querySelectorAll("[data-ed]:checked")].map((x) => x.dataset.ed));
+      if (!keep.size) return;
+      edsel.hidden = true;
+      return paste(keep);
+    }
     const act = (e.target.closest("[data-act]") || {}).dataset;
     if (!act) return;
     if (act.act === "clear") {
       pickSel = new Set();
-      root.querySelectorAll("input:checked").forEach((c) => { c.checked = false; });
+      root.querySelectorAll("input[data-a]:checked").forEach((c) => { c.checked = false; });
       return refresh();
     }
     if (!count()) return;
-    const quote = buildQuote();
-    pickSel = new Set();
-    insertQuote(target, quote);
-    renderVersePicker(body, target, idx0);
+    if (edsel) { // 역본이 여럿이면 붙이기 전에 고르는 창을 띄움
+      edsel.querySelectorAll("[data-ed]").forEach((x) => { x.checked = true; });
+      edsel.hidden = false;
+      return;
+    }
+    paste();
   });
 }
 

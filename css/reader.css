@@ -609,3 +609,12 @@ mark.study-mark{cursor:pointer}
 mark.study-mark:focus-visible{outline:2px solid currentColor;outline-offset:2px}
 @media(max-width:640px){.highlight-search-filters{grid-template-columns:1fr 1fr}.highlight-search-filters .highlight-search-text{grid-column:1/-1}.highlight-search-result header{display:grid;gap:4px}.highlight-palette-row,.highlight-palette-add{grid-template-columns:1fr 1fr}.phrase-palette-list{gap:5px}.phrase-pastel-swatches{grid-template-columns:repeat(8,minmax(0,1fr));gap:5px}.pastel-swatch{width:27px;height:27px}}
 .study-version,.study-version mark{-webkit-user-select:text;user-select:text}
+
+/* 구절 붙이기 전에 붙일 역본을 고르는 창 */
+.vp-edsel { position: sticky; bottom: 0; margin-top: 8px; padding: 12px; border: 1px solid var(--accent); border-radius: 12px; background: var(--surface); }
+.vp-edsel[hidden] { display: none; }
+.vp-edsel-title { margin: 0 0 8px; font-weight: 700; }
+.vp-edsel-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.vp-edsel-item { display: flex; align-items: center; gap: 6px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; cursor: pointer; }
+.vp-edsel-item:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); }
+.vp-edsel .vp-bar { position: static; padding: 10px 0 0; margin: 8px 0 0; background: transparent; }
