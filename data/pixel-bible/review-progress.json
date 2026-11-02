@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-02",
-  "reviewedIdentities": 1370,
+  "reviewedIdentities": 1455,
   "totalIdentities": 1929,
   "rounds": [
     {
@@ -205,16 +205,107 @@
         "code": "ezk",
         "chapter": 48
       }
+    },
+    {
+      "newEntries": 24,
+      "firstAppearanceThrough": {
+        "code": "dan",
+        "chapter": 12
+      }
+    },
+    {
+      "newEntries": 4,
+      "firstAppearanceThrough": {
+        "code": "hos",
+        "chapter": 14
+      }
+    },
+    {
+      "newEntries": 1,
+      "firstAppearanceThrough": {
+        "code": "jol",
+        "chapter": 3
+      }
+    },
+    {
+      "newEntries": 14,
+      "firstAppearanceThrough": {
+        "code": "amo",
+        "chapter": 9
+      }
+    },
+    {
+      "newEntries": 0,
+      "firstAppearanceThrough": {
+        "code": "oba",
+        "chapter": 1
+      }
+    },
+    {
+      "newEntries": 0,
+      "firstAppearanceThrough": {
+        "code": "jon",
+        "chapter": 4
+      }
+    },
+    {
+      "newEntries": 0,
+      "firstAppearanceThrough": {
+        "code": "mic",
+        "chapter": 7
+      }
+    },
+    {
+      "newEntries": 1,
+      "firstAppearanceThrough": {
+        "code": "nam",
+        "chapter": 3
+      }
+    },
+    {
+      "newEntries": 6,
+      "firstAppearanceThrough": {
+        "code": "hab",
+        "chapter": 3
+      }
+    },
+    {
+      "newEntries": 9,
+      "firstAppearanceThrough": {
+        "code": "zep",
+        "chapter": 3
+      }
+    },
+    {
+      "newEntries": 1,
+      "firstAppearanceThrough": {
+        "code": "hag",
+        "chapter": 2
+      }
+    },
+    {
+      "newEntries": 18,
+      "firstAppearanceThrough": {
+        "code": "zec",
+        "chapter": 14
+      }
+    },
+    {
+      "newEntries": 7,
+      "firstAppearanceThrough": {
+        "code": "mal",
+        "chapter": 4
+      }
     }
   ],
   "firstAppearanceCoverage": {
-    "code": "ezk",
-    "throughChapter": 48,
-    "basis": "현재 앱 등장 목록에서 창세기 50장부터 에스겔 48장까지 첫 등장하는 도감 신원을 대조함. 이미 소개된 인물의 예레미야·예레미야애가·에스겔 재등장 사실도 일부 보강했으며 전체 생애·전체 도감 검증 완료를 뜻하지 않음."
+    "code": "mal",
+    "throughChapter": 4,
+    "basis": "현재 앱 등장 목록에서 창세기부터 말라기 4장까지 첫 등장 도감 신원을 순차 검토함. 각 항목의 reviewedRefs 및 note 범위만 검토했으며 전체 도감 검증 완료를 뜻하지 않음. 요나서 본문 파일이 제공 자료에 없어 요나서 첫 등장 항목은 본문 대조 보류."
   },
   "nextFirstAppearance": {
-    "code": "dan",
+    "code": "jnh",
     "chapter": 1
   },
-  "scope": "각 항목의 reviewedRefs와 note에 적힌 소개 범위만 대조. 기존 역할·대사·관계·외형 전체의 검증 완료가 아님."
+  "scope": "각 항목의 reviewedRefs와 note에 적힌 소개 범위만 대조. 기존 역할·대사·관계·외형 전체의 검증 완료가 아님. 요나서 원문 파일 미제공으로 요나서 항목은 대조 보류."
 }
