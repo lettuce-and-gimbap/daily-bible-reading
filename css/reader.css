@@ -618,3 +618,12 @@ mark.study-mark:focus-visible{outline:2px solid currentColor;outline-offset:2px}
 .vp-edsel-item { display: flex; align-items: center; gap: 6px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; cursor: pointer; }
 .vp-edsel-item:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); }
 .vp-edsel .vp-bar { position: static; padding: 10px 0 0; margin: 8px 0 0; background: transparent; }
+
+/* 메모 복사 때 붙일 역본 고르기 창 */
+.mp-edition-dialog { border: 1px solid var(--line); border-radius: 16px; background: var(--surface); color: var(--ink); padding: 16px; max-width: min(92vw, 360px); }
+.mp-edition-dialog::backdrop { background: rgb(0 0 0 / .28); }
+.mp-edition-dialog form { display: grid; gap: 10px; }
+.mp-edition-dialog h3 { margin: 0; font-size: 1rem; }
+.mp-edition-list { display: grid; gap: 8px; }
+.mp-edition-list label { display: flex; align-items: center; gap: 8px; }
+.mp-edition-dialog .mp-actions { display: flex; justify-content: flex-end; gap: 8px; }

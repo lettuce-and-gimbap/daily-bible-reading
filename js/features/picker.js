@@ -119,10 +119,10 @@ async function renderVersePicker(body, target, idx) {
     });
     const hit = (list) => list.filter((v) => nums.has(labelSpan(v.label)[0]))
       .map((v) => `${v.label} ${v.text}`);
-    const groups = lists.map((list, i) => ({ code: editions[i], list }))
-      .filter((g) => !keep || keep.has(g.code))
-      .map((g) => hit(g.list)).filter((g) => g.length);
-    return `${versesRef(CHAPTERS[idx0], [...nums])}\n${groups.map((g) => g.join("\n")).join(`\n${VERSION_DIVIDER}\n`)}`;
+    // 역본마다 "[역본:이름]" 줄로 시작해서, 메모에서 붙인 역본을 나중에 골라 복사할 수 있게 함
+    const groups = lists.map((list, i) => ({ code: editions[i], lines: hit(list) }))
+      .filter((g) => (!keep || keep.has(g.code)) && g.lines.length);
+    return `${versesRef(CHAPTERS[idx0], [...nums])}\n${groups.map((g) => `[역본:${vname(g.code)}]\n${g.lines.join("\n")}`).join("\n")}`;
   };
   const paste = (keep) => {
     const quote = buildQuote(keep);

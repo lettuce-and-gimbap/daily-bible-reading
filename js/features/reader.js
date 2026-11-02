@@ -139,7 +139,7 @@ function buildReader() {
       }
       reload = true;
     } else if (t.id === "d-copy-note") {
-      copyText($("#d-note").value, "오늘의 통독 메모를 복사했어요");
+      copyWithEditionPicker($("#d-note").value, "오늘의 통독 메모를 복사했어요");
       return;
     } else if (t.dataset.mode) {
       state.settings.mode = t.dataset.mode;
