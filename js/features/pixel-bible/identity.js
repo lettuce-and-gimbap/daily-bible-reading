@@ -8,6 +8,7 @@ export function canonicalPersonName(name,{code='',chapter=0}={}) {
   if(code==='gen'&&name==='요셉의 손자들')return '요셉의 후손들';
   if(code==='gen'&&name==='요셉의 형제 다섯')return '요셉의 형제 다섯';
   if(code==='gen'&&['애굽 사람들','애굽 백성'].includes(name))return '애굽 백성';
+  if(code==='exo'&&Number(chapter)===17&&name==='아말렉')return '아말렉 사람들';
   if(code==='rev'&&['용','붉은 용','옛 뱀','마귀','옛 뱀 마귀 사탄'].includes(name))return '사탄';
   if(code==='rev'&&['음녀','큰 음녀'].includes(name))return '바벨론';
   if(code==='jas'&&name==='주 예수 그리스도')return '예수';
@@ -77,7 +78,13 @@ export function canonicalPersonName(name,{code='',chapter=0}={}) {
 // 이름 문자열을 곧 고유 인물로 취급하지 않는다. 모호한 것은 미해결로 남긴다.
 export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   const id=(kind,key,status='reviewed-rule')=>({kind,id:`${kind}:${key}`,status});
-  // Genesis cast aliases and explicit role overrides must precede the broad
+  // Explicit person and alias overrides precede the broad role-based group
+  // heuristic, which can otherwise classify individuals as collectives.
+  if(name==='모세')return {...id('person','모세'),canonicalName:'모세'};
+  if(code==='exo'&&Number(chapter)>0&&name==='바로')return {...id('person',Number(chapter)<=2?'exodus-pharaoh-moses-birth':'exodus-pharaoh-deliverance'),canonicalName:Number(chapter)<=2?'바로(모세의 출생 시대)':'바로(출애굽 시대)'};
+  if(code==='exo'&&name==='훌')return {...id('person','hur'),canonicalName:'훌'};
+  if(code==='exo'&&name==='아말렉'&&Number(chapter)===17)return {...id('group','amalekites'),canonicalName:'아말렉 사람들'};
+  // Genesis aliases and explicit role overrides must precede the broad
   // group-name heuristic (which otherwise classifies singular Joseph as a group).
   if(code==='gen'&&name==='요셉')return {...id('person','joseph-patriarch'),canonicalName:'요셉'};
   if(code==='gen'&&['요셉의 형들','형들'].includes(name))return {...id('group','joseph-brothers'),canonicalName:'요셉의 형들',mergeAliases:true};

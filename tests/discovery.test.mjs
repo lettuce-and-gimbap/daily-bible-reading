@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {discoveryKey,discoverySnapshot,mergeDiscovery,learningStage,markStoryRead,importanceFor,prominentKeys,kstDate,loadDiscoveries,DISCOVERY_KEY} from '../js/features/pixel-bible/discovery.js';
+import {resolveIdentity} from '../js/features/pixel-bible/identity.js';
 const ruth={name:'룻',identity:{kind:'person',id:'person:ruth'},role:'이삭을 줍는 며느리',refs:['룻기 2장']};
 const boaz={name:'보아스',identity:{kind:'person',id:'person:boaz'},role:'밭 주인',refs:['룻기 2장']};
 const model={cast:[ruth,boaz],relations:[{from:'룻',to:'보아스',label:'보호받음',kind:'other',sourceRef:'룻기 2장',ref:'룻기 2:8–9',note:'보아스는 룻이 밭에서 안전하게 이삭을 줍도록 도와주었어요.'}],events:[{text:'룻이 이삭을 주워 나오미에게 가져가요.',ref:'룻기 2:17–18'}]};
@@ -39,4 +40,19 @@ test('창세기 후반의 분류 정정은 저장된 요셉·형제·애굽 기�
  assert.equal(records['요셉:group:요셉'],undefined);assert.equal(records['person:joseph-patriarch'].favorite,true);
  assert.equal(records['요셉의 형들:unresolved:요셉의 형들'],undefined);assert.deepEqual(new Set(records['요셉의 형들:group:joseph-brothers'].refs),new Set(['창세기 42장','창세기 50장']));
  assert.equal(records['애굽 사람들:group:애굽 사람들'],undefined);assert.equal(records['애굽 백성:group:egyptians-joseph-era'].name,'애굽 백성');
+});
+test('출애굽기의 모세·바로·훌은 역할 문구 때문에 집단으로 분류되지 않는다',()=>{
+ assert.equal(resolveIdentity('모세',{code:'exo',chapter:12,role:'유월절을 전하고 백성을 이끎'}).id,'person:모세');
+ assert.equal(resolveIdentity('바로',{code:'exo',chapter:12,role:'장자를 잃고 백성을 내보냄'}).id,'person:exodus-pharaoh-deliverance');
+ assert.equal(resolveIdentity('훌',{code:'exo',chapter:24,role:'아론과 함께 백성을 맡음'}).id,'person:hur');
+ assert.equal(resolveIdentity('아말렉',{code:'exo',chapter:17,role:'이스라엘과 싸움'}).id,'group:amalekites');
+ assert.equal(resolveIdentity('아말렉',{code:'exo',chapter:17}).canonicalName,'아말렉 사람들');
+});
+test('출애굽기 신원 정정은 모세·바로·훌의 기존 도감 기록을 통합한다',()=>{
+ const storage={getItem:key=>key===DISCOVERY_KEY?JSON.stringify({'모세:group:모세':{name:'모세',refs:['출애굽기 12장'],favorite:true},'바로:group:바로':{name:'바로',refs:['출애굽기 12장']},'훌:unresolved:훌:exo':{name:'훌',refs:['출애굽기 17장']},'훌:group:훌':{name:'훌',refs:['출애굽기 24장']},'아말렉:group:아말렉':{name:'아말렉',refs:['출애굽기 17장'],favorite:true}}):null};
+ const records=loadDiscoveries(storage);
+ assert.equal(records['모세:group:모세'],undefined);assert.equal(records['person:모세'].favorite,true);
+ assert.equal(records['바로:group:바로'],undefined);assert.equal(records['person:exodus-pharaoh-deliverance'].name,'바로(출애굽 시대)');
+ assert.equal(records['훌:unresolved:훌:exo'],undefined);assert.equal(records['훌:group:훌'],undefined);assert.ok(records['person:hur'].refs.includes('출애굽기 17장'));assert.ok(records['person:hur'].refs.includes('출애굽기 24장'));
+ assert.equal(records['아말렉:group:아말렉'],undefined);assert.equal(records['아말렉 사람들:group:amalekites'].favorite,true);
 });

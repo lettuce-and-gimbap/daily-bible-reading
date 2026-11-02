@@ -14,19 +14,16 @@ test('본문 대조 소개는 실제 도감 신원에 연결되고 모든 사실
  assert.match(entries['person:enoch'].note,/가인의 아들 에녹.*다른/);
  assert.match(entries['person:노아'].note,/수종.*확정/);
 });
-test('창세기 50장까지 앱에 등장하는 도감 항목을 순차 검토하고 다음 범위를 기록한다',()=>{
+test('창세기와 출애굽기까지 앱에 등장하는 도감 항목을 순차 검토하고 다음 범위를 기록한다',()=>{
  const progress=JSON.parse(fs.readFileSync('data/pixel-bible/review-progress.json'));
  assert.equal(progress.reviewedIdentities,Object.keys(entries).length);
  assert.equal(progress.totalIdentities,Object.keys(profiles).length);
- const {code,throughChapter}=progress.firstAppearanceCoverage;
- for(const [id,profile]of Object.entries(profiles)){
-  if(profile.appearances.some(a=>a.code===code&&a.chapter<=throughChapter))assert.ok(entries[id],id);
- }
+ for(const round of progress.rounds){const {code,chapter:throughChapter}=round.firstAppearanceThrough;for(const [id,profile]of Object.entries(profiles))if(profile.appearances.some(a=>a.code===code&&a.chapter<=throughChapter))assert.ok(entries[id],id);}
  const order=new Map(BOOKS.map((book,index)=>[book.code,index]));let next;
  for(const [id,profile]of Object.entries(profiles).filter(([id])=>!entries[id]))for(const appearance of profile.appearances){if(!next||order.get(appearance.code)<order.get(next.code)||order.get(appearance.code)===order.get(next.code)&&appearance.chapter<next.chapter)next=appearance;}
  assert.deepEqual(progress.nextFirstAppearance,{code:next.code,chapter:next.chapter});
- assert.equal(progress.rounds.reduce((sum,r)=>sum+r.newEntries,0),101);
- assert.equal(Object.keys(entries).length,109);
+ assert.equal(progress.rounds.reduce((sum,r)=>sum+r.newEntries,0),134);
+ assert.equal(Object.keys(entries).length,142);
  assert.match(entries['person:라헬'].note,/동기를 단정하지/);
  assert.match(entries['group:라반의 아들들'].note,/이름을 제시하지 않아요/);
  assert.match(entries['person:야곱'].note,/속임을 정당화하지 않아요/);
