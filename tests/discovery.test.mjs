@@ -33,3 +33,10 @@ test('개명 전 아브람·사래의 기존 도감 기록은 통합 인물 기�
  assert.equal(records['unresolved:사래'],undefined);assert.equal(records['person:사라'].name,'사라');assert.ok(records['person:사라'].refs.includes('창세기 16장'));
  assert.equal(records['unresolved:르우엘:exo'],undefined);assert.equal(records['person:midianite-priest-jethro'].name,'이드로');assert.ok(records['person:midianite-priest-jethro'].refs.includes('출애굽기 2장'));
 });
+test('창세기 후반의 분류 정정은 저장된 요셉·형제·애굽 기록을 새 신원으로 합친다',()=>{
+ const storage={getItem:key=>key===DISCOVERY_KEY?JSON.stringify({'요셉:group:요셉':{name:'요셉',refs:['창세기 47장'],favorite:true},'요셉의 형들:unresolved:요셉의 형들':{name:'요셉의 형들',refs:['창세기 42장']},'형들:unresolved:형들':{name:'형들',refs:['창세기 50장']},'애굽 사람들:group:애굽 사람들':{name:'애굽 사람들',refs:['창세기 50장']}}):null};
+ const records=loadDiscoveries(storage);
+ assert.equal(records['요셉:group:요셉'],undefined);assert.equal(records['person:joseph-patriarch'].favorite,true);
+ assert.equal(records['요셉의 형들:unresolved:요셉의 형들'],undefined);assert.deepEqual(new Set(records['요셉의 형들:group:joseph-brothers'].refs),new Set(['창세기 42장','창세기 50장']));
+ assert.equal(records['애굽 사람들:group:애굽 사람들'],undefined);assert.equal(records['애굽 백성:group:egyptians-joseph-era'].name,'애굽 백성');
+});
