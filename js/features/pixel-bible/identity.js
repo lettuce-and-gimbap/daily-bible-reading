@@ -63,6 +63,20 @@ export function canonicalPersonName(name,{code='',chapter=0}={}) {
   if(['jer','ezk','2ki','2ch'].includes(code)&&['여호야긴','여고냐','고니야'].includes(name))return '여호야긴(여고냐)';
   if((code==='jer'&&[21,24,27,28,29,32,34,37,38,39,52].includes(Number(chapter))||code==='ezk'&&[12,17,21].includes(Number(chapter))||code==='2ch'&&Number(chapter)===36||code==='2ki'&&[24,25].includes(Number(chapter)))&&name==='시드기야')return '시드기야(유다 왕)';
   if(code==='jer'&&Number(chapter)===28&&name==='하나냐')return '하나냐(아술의 아들)';
+  if(code==='act'&&Number(chapter)===5&&name==='아나니아')return '아나니아(삽비라의 남편)';
+  if(code==='act'&&[9,22].includes(Number(chapter))&&name==='아나니아')return '아나니아(다메섹)';
+  if(code==='act'&&[23,24].includes(Number(chapter))&&name==='아나니아')return '아나니아(대제사장)';
+  if(code==='act'&&Number(chapter)===12&&name==='마리아')return '마리아(마가의 어머니)';
+  if(code==='act'&&Number(chapter)===8&&name==='시몬')return '시몬(마술사)';
+  if(code==='act'&&[6,8,21].includes(Number(chapter))&&name==='빌립')return '빌립(전도자)';
+  if((code==='act'&&Number(chapter)===12||code==='mat'&&[4,10,17,20,26].includes(Number(chapter))||code==='mrk'&&[1,3,5,9,10,13,14].includes(Number(chapter))||code==='luk'&&[5,9].includes(Number(chapter)))&&name==='야고보')return '야고보(세베대의 아들)';
+  if(code==='act'&&[15,21].includes(Number(chapter))&&name==='야고보'||code==='gal'&&[1,2].includes(Number(chapter))&&name==='야고보')return '야고보(주의 형제)';
+  if(code==='act'&&Number(chapter)===15&&name==='유다')return '유다(바사바)';
+  if(name==='가이오'&&code==='act'&&Number(chapter)===19)return '가이오(마게도냐 사람)';
+  if(name==='가이오'&&code==='act'&&Number(chapter)===20)return '가이오(더베 사람)';
+  if(name==='가이오'&&(code==='rom'&&Number(chapter)===16||code==='1co'&&Number(chapter)===1))return '가이오(고린도 교회)';
+  if(name==='소스데네'&&code==='act'&&Number(chapter)===18)return '소스데네(회당장)';
+  if(name==='소스데네'&&code==='1co'&&Number(chapter)===1)return '소스데네(편지 공동 발신자)';
   if(code==='mat'&&Number(chapter)===2&&name==='헤롯')return '헤롯(대왕)';
   if((code==='mat'&&[1,2,12].includes(Number(chapter))||code==='luk'&&[1,2].includes(Number(chapter))||code==='mrk'&&[3,6].includes(Number(chapter))||code==='jhn'&&[2,19].includes(Number(chapter)))&&['마리아','예수의 어머니'].includes(name))return '마리아';
   if(code==='luk'&&Number(chapter)===10&&name==='마리아'||code==='jhn'&&[11,12].includes(Number(chapter))&&name==='마리아')return '마리아(베다니)';
@@ -271,11 +285,11 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   if(code==='act'&&[12,13,15].includes(Number(chapter))&&['마가','요한','요한 마가'].includes(name))return {...id('person','john-mark'),canonicalName:'요한 마가'};
   if(code==='act'&&[21,22].includes(Number(chapter))&&name==='천부장'||code==='act'&&Number(chapter)===23&&name==='글라우디오 루시아')return {...id('person','claudius-lysias'),canonicalName:'글라우디오 루시아'};
   if(name==='그리스보'&&(code==='act'&&Number(chapter)===18||code==='1co'&&Number(chapter)===1))return {...id('person','crispus-of-corinth'),canonicalName:'그리스보'};
-  if(name==='소스데네'&&code==='act'&&Number(chapter)===18)return id('person','sosthenes-synagogue-ruler-act18');
-  if(name==='소스데네'&&code==='1co'&&Number(chapter)===1)return id('person','sosthenes-letter-sender-1co1');
-  if(name==='가이오'&&code==='act'&&Number(chapter)===19)return id('person','gaius-macedonian-act19');
-  if(name==='가이오'&&code==='act'&&Number(chapter)===20)return id('person','gaius-derbe-act20');
-  if(name==='가이오'&&code==='rom'&&Number(chapter)===16||name==='가이오'&&code==='1co'&&Number(chapter)===1)return id('person','gaius-corinth-host');
+  if(name==='소스데네'&&code==='act'&&Number(chapter)===18)return {...id('person','sosthenes-synagogue-ruler-act18'),canonicalName:'소스데네(회당장)'};
+  if(name==='소스데네'&&code==='1co'&&Number(chapter)===1)return {...id('person','sosthenes-letter-sender-1co1'),canonicalName:'소스데네(편지 공동 발신자)'};
+  if(name==='가이오'&&code==='act'&&Number(chapter)===19)return {...id('person','gaius-macedonian-act19'),canonicalName:'가이오(마게도냐 사람)'};
+  if(name==='가이오'&&code==='act'&&Number(chapter)===20)return {...id('person','gaius-derbe-act20'),canonicalName:'가이오(더베 사람)'};
+  if(name==='가이오'&&code==='rom'&&Number(chapter)===16||name==='가이오'&&code==='1co'&&Number(chapter)===1)return {...id('person','gaius-corinth-host'),canonicalName:'가이오(고린도 교회)'};
   if(name==='가이오'&&code==='3jn')return id('person','gaius-third-john');
   if(spiritual.test(name))return id('spiritual',name);
   if(name==='미가엘')return id('spiritual','michael');
@@ -309,6 +323,15 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   if(name==='요한'&&code==='luk'&&Number(chapter)===1||name==='요한'&&code==='jhn'&&Number(chapter)===3)return {...id('person','john-baptist'),canonicalName:'세례 요한'};
   if(name==='요한'&&(code==='mat'&&[4,10,17,20,26].includes(Number(chapter))||code==='mrk'&&[1,3,9,10,13,14].includes(Number(chapter))||code==='luk'&&Number(chapter)===9))return {...id('person','john-apostle'),canonicalName:'요한'};
   if(name==='야고보'&&(code==='mat'&&[4,10,17,20,26].includes(Number(chapter))||code==='mrk'&&[1,3,5,9,10,13,14].includes(Number(chapter))||code==='luk'&&[5,9].includes(Number(chapter))))return {...id('person','james-son-of-zebedee'),canonicalName:'야고보(세베대의 아들)'};
+  if(name==='아나니아'&&code==='act'&&Number(chapter)===5)return {...id('person','ananias-husband-of-sapphira'),canonicalName:'아나니아(삽비라의 남편)'};
+  if(name==='아나니아'&&code==='act'&&[9,22].includes(Number(chapter)))return {...id('person','ananias-of-damascus'),canonicalName:'아나니아(다메섹)'};
+  if(name==='아나니아'&&code==='act'&&[23,24].includes(Number(chapter)))return {...id('person','ananias-high-priest-act23'),canonicalName:'아나니아(대제사장)'};
+  if(name==='마리아'&&code==='act'&&Number(chapter)===12||name==='마리아'&&code==='act'&&/마가.*어머니/.test(role))return {...id('person','mary-mother-of-john-mark'),canonicalName:'마리아(마가의 어머니)'};
+  if(name==='빌립'&&code==='act'&&(Number(chapter)===6||/일곱/.test(role)))return {...id('person','philip-evangelist'),canonicalName:'빌립(전도자)'};
+  if(name==='시몬'&&code==='act'&&Number(chapter)===8)return {...id('person','simon-magician'),canonicalName:'시몬(마술사)'};
+  if(name==='야고보'&&code==='act'&&Number(chapter)===12)return {...id('person','james-son-of-zebedee'),canonicalName:'야고보(세베대의 아들)'};
+  if(name==='야고보'&&(code==='act'&&[15,21].includes(Number(chapter))||code==='gal'&&[1,2].includes(Number(chapter))))return {...id('person','james-lords-brother'),canonicalName:'야고보(주의 형제)'};
+  if(name==='유다'&&code==='act'&&Number(chapter)===15)return {...id('person','judas-barsabbas'),canonicalName:'유다(바사바)'};
   if(group.test(name)||/^(이스라엘|유다)$/.test(name)&&/백성|지파|나라|왕국/.test(role)||/백성|족속|나라|민족|도성|왕국/.test(role))return id('group',name);
   // 창세기 17장의 개명 전후 호칭은 동일 인물이다. 월드와 도감은 한
   // 캐릭터로 합치되 본문·발화의 시대별 표기는 그대로 둔다.

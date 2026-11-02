@@ -1,7 +1,7 @@
 {
   "updated": "2026-11-02",
-  "reviewedIdentities": 1633,
-  "totalIdentities": 1917,
+  "reviewedIdentities": 1765,
+  "totalIdentities": 1918,
   "rounds": [
     {
       "newEntries": 27,
@@ -324,15 +324,50 @@
         "code": "jhn",
         "chapter": 21
       }
+    },
+    {
+      "newEntries": 120,
+      "firstAppearanceThrough": {
+        "code": "act",
+        "chapter": 28
+      }
+    },
+    {
+      "newEntries": 6,
+      "firstAppearanceThrough": {
+        "code": "rom",
+        "chapter": 16
+      }
+    },
+    {
+      "newEntries": 4,
+      "firstAppearanceThrough": {
+        "code": "1co",
+        "chapter": 16
+      }
+    },
+    {
+      "newEntries": 1,
+      "firstAppearanceThrough": {
+        "code": "2co",
+        "chapter": 13
+      }
+    },
+    {
+      "newEntries": 1,
+      "firstAppearanceThrough": {
+        "code": "gal",
+        "chapter": 6
+      }
     }
   ],
   "firstAppearanceCoverage": {
-    "code": "jhn",
-    "throughChapter": 21,
-    "basis": "창세기부터 요한복음 21장까지 앱 등장 인물의 첫 등장 신원을 순차 검토함. 기존 도감 인물의 복음서 재등장도 일부 보강했으며 각 항목의 근거 범위만 확인한 것으로 전체 도감 검증 완료를 뜻하지 않음."
+    "code": "gal",
+    "throughChapter": 6,
+    "basis": "창세기부터 갈라디아서 6장까지 앱 등장 인물의 첫 등장 신원을 순차 검토함. 사도행전부터 갈라디아서까지 관련 인물의 재등장도 함께 보강했으며, 각 항목의 근거 범위만 확인한 것으로 전체 도감 검증 완료를 뜻하지 않음."
   },
   "nextFirstAppearance": {
-    "code": "act",
+    "code": "php",
     "chapter": 1
   },
   "scope": "각 항목의 reviewedRefs와 note에 적힌 소개 범위만 대조. 기존 역할·대사·관계·외형 전체의 검증 완료가 아님."

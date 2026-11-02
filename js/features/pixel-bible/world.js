@@ -50,7 +50,7 @@ import { scopeChapterSummary } from './qt-scope.js';
 import { buildChapterDialogue, occurrenceMatches } from './chapter-dialogue.js';
 import { ambientSpeechAllowed, manualSpeechAllowed, dialogueCandidates, SpeechDirector } from './dialogue.js';
 import { objectPhrase, movementDirection } from './language.js';
-import { resolveIdentity, canonicalPersonName } from './identity.js?rev=gospel-identity-1';
+import { resolveIdentity, canonicalPersonName } from './identity.js?rev=acts-epistles-identity-1';
 import { BACKGROUNDS, defaultBackground, backgroundStorageKey } from './backgrounds.js';
 import { drawPixelCharacter, hitWorldObject, characterStyle, drawWorldObject, drawDesignBoard } from "./art.js?rev=food-cute-2";
 import { renderPersonPreview, bindPersonPreview, easyPersonDescription } from "./collection-preview.js?v=collection-bond-1";
