@@ -2,17 +2,20 @@
 // 메모를 빈 줄 기준 덩어리로 나눠 목록으로 보여 줌(상자를 누르면 선택). 덩어리 하나 = 붙여넣은 구절 하나(또는 직접 쓴 글 한 단락)
 //   "민수기 18:10\n10 지극히 거룩하게…"  ← 첫 줄이 "권 장:절"이면 구절, 나머지는 직접 쓴 글
 
-const memoPick = { open: false, picked: new Set(), box: null, area: null, save: null, rerender: null };
+const memoPick = { open: false, editions: false, picked: new Set(), box: null, area: null, save: null, rerender: null };
 
 const MEMO_REF = new RegExp(`^(?:${BOOKS.map((b) => b.name).join("|")}) \\d{1,3}(?::[\\d,~-]+|장)$`);
 const MEMO_VERSE_LINE = /^\d{1,3}(?:-\d{1,3})?\s+\S/; // QT 노트는 첫 줄 없이 "10 지극히…"로만 붙음
 // 붙여넣은 구절 줄마다 어느 역본인지 state.verseEditions에 따로 기억함 (메모 글에는 표시하지 않음)
 // 복사할 때 끈(꺼 둔) 역본의 줄만 뺌. 꺼 둔 목록은 state.copyEditionOff
 const editionOfLine = (line) => (state.verseEditions || {})[line.trim()] || null;
-function memoEditionsIn(text) {
-  const names = [];
-  text.split("\n").forEach((l) => { const n = editionOfLine(l); if (n && !names.includes(n)) names.push(n); });
-  return names;
+// 복사할 역본 고르기 토글: 한 번 열면 다시 누를 때까지 열려 있음 (메모 전체 복사·구절 복사 공통)
+function editionPickHtml() {
+  const off = state.copyEditionOff || [];
+  return `<div class="mp-ed">
+    <button class="btn ghost small" data-mp="editions">🌐 복사할 역본 ${memoPick.editions ? "접기 ▴" : "고르기 ▾"}</button>
+    ${memoPick.editions ? `<fieldset class="mp-editions"><legend>복사할 역본</legend>${VERSIONS.map((v) => `<label><input type="checkbox" data-edition="${esc(v.name)}" ${off.includes(v.name) ? "" : "checked"}>${esc(v.name)}</label>`).join("")}</fieldset>` : ""}
+  </div>`;
 }
 function filterMemoEditions(text) {
   const off = state.copyEditionOff || [];
@@ -106,15 +109,13 @@ function memoPickDraw() {
 function memoPickPaint() {
   const { box, area } = memoPick;
   if (!memoPick.open) {
-    box.innerHTML = `<button class="btn ghost small" data-mp="toggle">☑️ 구절 골라 복사 · 지우기</button>`;
+    box.innerHTML = `<div class="mp-top"><button class="btn ghost small" data-mp="toggle">☑️ 구절 골라 복사 · 지우기</button>${editionPickHtml()}</div>`;
     return;
   }
   const blocks = memoBlocks(area.value);
   const keys = new Set(blocks.map((b) => b.key));
   memoPick.picked.forEach((k) => { if (!keys.has(k)) memoPick.picked.delete(k); }); // 사라진 글의 선택은 정리
   const n = memoPick.picked.size;
-  const names = memoEditionsIn(area.value);
-  const off = state.copyEditionOff || [];
   box.innerHTML = `
     <div class="mp-panel" style="--fz:${fzScale()}">
       <div class="mp-bar">
@@ -125,7 +126,7 @@ function memoPickPaint() {
         </span>
       </div>
       <div class="mp-zoom"><span class="muted small">글씨 크기</span>${fzControl()}</div>
-      ${names.length ? `<fieldset class="mp-editions"><legend>복사할 역본</legend>${names.map((n) => `<label><input type="checkbox" data-edition="${esc(n)}" ${off.includes(n) ? "" : "checked"}>${esc(n)}</label>`).join("")}</fieldset>` : ""}
+      ${editionPickHtml()}
       ${blocks.length ? `
         <ul class="mp-list">
           ${blocks.map((b, i) => `
@@ -153,6 +154,8 @@ function memoPickClick(e) {
   if (act === "toggle") {
     memoPick.open = !memoPick.open;
     if (!memoPick.open) memoPick.picked.clear();
+  } else if (act === "editions") {
+    memoPick.editions = !memoPick.editions;
   } else if (act === "all") {
     blocks.forEach((x) => memoPick.picked.add(x.key));
   } else if (act === "none") {
