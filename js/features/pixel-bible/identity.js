@@ -10,6 +10,10 @@ export function canonicalPersonName(name,{code='',chapter=0}={}) {
   if(['2sa','1ki','2ki','1ch','2ch','pro'].includes(code)&&name==='솔로몬'||code==='psa'&&[72,127].includes(Number(chapter))&&name==='솔로몬')return '솔로몬';
   if(code==='2sa'&&name==='압살롬')return '압살롬';
   if(code==='2sa'&&Number(chapter)===13&&name==='다말')return '다말(다윗의 딸)';
+  if(['ezr','neh'].includes(code)&&name==='에스라')return '에스라';
+  if(code==='neh'&&name==='느헤미야')return '느헤미야';
+  if(code==='est'&&name==='에스더')return '에스더';
+  if(['ezr','neh'].includes(code)&&name==='아닥사스다')return '아닥사스다';
   if(code==='2sa'&&[8,20].includes(Number(chapter))&&name==='여호사밧'||code==='1ki'&&Number(chapter)===4&&name==='여호사밧')return '여호사밧(사관)';
   if((code==='1ki'&&[15,22].includes(Number(chapter))||code==='2ki'&&Number(chapter)===3||code==='2ch'&&Number(chapter)>=17)&&name==='여호사밧')return '여호사밧(유다 왕)';
   if((code==='1ki'&&[11,12,13,14].includes(Number(chapter))||code==='2ch'&&[10,11,12,13].includes(Number(chapter)))&&name==='여로보암')return '여로보암';
@@ -116,6 +120,10 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   if(['2sa','1ki','2ki','1ch','2ch','pro'].includes(code)&&name==='솔로몬'||code==='psa'&&[72,127].includes(Number(chapter))&&name==='솔로몬')return {...id('person','solomon'),canonicalName:'솔로몬'};
   if(code==='2sa'&&name==='압살롬')return {...id('person','압살롬'),canonicalName:'압살롬'};
   if(code==='2sa'&&Number(chapter)===13&&name==='다말')return {...id('person','tamar-daughter-of-david'),canonicalName:'다말(다윗의 딸)'};
+  if(['ezr','neh'].includes(code)&&name==='에스라')return {...id('person','에스라'),canonicalName:'에스라'};
+  if(code==='neh'&&name==='느헤미야')return {...id('person','느헤미야'),canonicalName:'느헤미야'};
+  if(code==='est'&&name==='에스더')return {...id('person','에스더'),canonicalName:'에스더'};
+  if(['ezr','neh'].includes(code)&&name==='아닥사스다')return {...id('person','artaxerxes'),canonicalName:'아닥사스다'};
   if((code==='2sa'&&[8,20].includes(Number(chapter))||code==='1ki'&&Number(chapter)===4)&&name==='여호사밧')return {...id('person','jehoshaphat-recorder'),canonicalName:'여호사밧(사관)'};
   if((code==='1ki'&&[15,22].includes(Number(chapter))||code==='2ki'&&Number(chapter)===3||code==='2ch'&&Number(chapter)>=17)&&name==='여호사밧')return {...id('person','jehoshaphat-king-of-judah'),canonicalName:'여호사밧(유다 왕)'};
   if((code==='1ki'&&[11,12,13,14].includes(Number(chapter))||code==='2ch'&&[10,11,12,13].includes(Number(chapter)))&&name==='여로보암')return {...id('person','jeroboam-i'),canonicalName:'여로보암'};

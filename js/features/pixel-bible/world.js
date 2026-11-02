@@ -50,7 +50,7 @@ import { scopeChapterSummary } from './qt-scope.js';
 import { buildChapterDialogue, occurrenceMatches } from './chapter-dialogue.js';
 import { ambientSpeechAllowed, manualSpeechAllowed, dialogueCandidates, SpeechDirector } from './dialogue.js';
 import { objectPhrase, movementDirection } from './language.js';
-import { resolveIdentity, canonicalPersonName } from './identity.js?rev=historical-books-identity-1';
+import { resolveIdentity, canonicalPersonName } from './identity.js?rev=post-exile-identity-1';
 import { BACKGROUNDS, defaultBackground, backgroundStorageKey } from './backgrounds.js';
 import { drawPixelCharacter, hitWorldObject, characterStyle, drawWorldObject, drawDesignBoard } from "./art.js?rev=food-cute-2";
 import { renderPersonPreview, bindPersonPreview, easyPersonDescription } from "./collection-preview.js?v=collection-bond-1";
@@ -617,7 +617,7 @@ export async function mountPixelWorld(shell, options) {
     const panel=document.createElement('section');panel.className='pb-scripture pb-collection';panel.setAttribute('role','dialog');panel.setAttribute('aria-modal','true');panel.setAttribute('aria-label','발견 도감');
     panel.innerHTML='<header><b>발견 도감 · 알아가기</b><button class="pb-button" data-action="close-scripture">닫기 ✕</button></header><div class="pb-scripture-body"></div>';
     shell.append(panel);panel.querySelector('button').focus();const body=panel.querySelector('.pb-scripture-body');body.textContent='도감을 준비하고 있어요…';
-    if(!discoveryRoutes)discoveryRoutes=fetch(new URL('../../../data/pixel-bible/discovery-routes.json?rev=historical-books-guide-1',import.meta.url)).then(r=>{if(!r.ok)throw Error();return r.json();}).then(d=>d).catch(()=>null);
+    if(!discoveryRoutes)discoveryRoutes=fetch(new URL('../../../data/pixel-bible/discovery-routes.json?rev=post-exile-guide-1',import.meta.url)).then(r=>{if(!r.ok)throw Error();return r.json();}).then(d=>d).catch(()=>null);
     const routeData=await discoveryRoutes,routes=routeData?.routes;
     if(!panel.isConnected)return;const record=discoveries[key];
     if(!record){
