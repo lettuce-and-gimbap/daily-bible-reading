@@ -275,7 +275,7 @@ test('amo 보강 장면이 누락 사건을 다루고 본문 범위·표상 방�
 
 test('jnh 보강 장면이 누락 사건을 다루고 본문 범위·표상 방식에 연결된다',()=>{
  const data=JSON.parse(fs.readFileSync(root+'jnh.json')),added=data.scenes.filter(s=>s.id.startsWith('ot-jnh-extra-')),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/jnh.json'));assert.equal(added.length,6);
- for(const title of ["제비가 요나에게 떨어지다","선원들이 바다에 요나를 내리다","큰 물고기 뱃속에서 드린 기도","2번째 부름을 받고 니느웨로 가다","니느웨 왕과 백성이 돌이키다","요나의 분노와 하나님의 마지막 질문"])assert(added.some(s=>s.title===title),title);
+ for(const title of ["제비가 요나에게 떨어지다","선원들이 바다에 요나를 내리다","큰 물고기 뱃속에서 드린 기도","두 번째 부름을 받고 니느웨로 가다","니느웨 왕과 백성이 돌이키다","요나의 분노와 하나님의 마지막 질문"])assert(added.some(s=>s.title===title),title);
  for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
 });
 
@@ -331,7 +331,7 @@ test('mal 보강 장면이 누락 사건을 다루고 본문 범위·표상 방�
 
 test('zec 보강 장면이 누락 사건을 다루고 본문 범위·표상 방식에 연결된다',()=>{
  const data=JSON.parse(fs.readFileSync(root+'zec.json')),added=data.scenes.filter(s=>s.id.startsWith('ot-zec-extra-')),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/zec.json'));assert.equal(added.length,17);
- for(const title of ["말 탄 이들이 땅의 형편을 보고하다","뿔 4개와 대장장이 4명의 환상","바벨론을 떠나 시온으로 나오라 하다","더러운 옷을 벗고 새 옷을 입은 여호수아","순금 등잔대와 감람나무를 보다","날아가는 두루마리와 저주의 환상","에바에 담겨 시날로 옮겨지는 악","네 병거가 사방으로 나가다","금식이 누구를 위한 것인지 묻다","노인과 아이들이 함께 사는 예루살렘","겸손한 왕이 나귀를 타고 오다","목자 없는 양 떼를 모으다","은총과 연합의 막대기를 꺾다","찔린 이를 바라보며 애통하다","죄와 더러움을 씻는 샘을 열다","감람산과 생수의 날을 그리다"])assert(added.some(s=>s.title===title),title);
+ for(const title of ["말 탄 이들이 땅의 형편을 보고하다","뿔 네 개와 대장장이 4명의 환상","바벨론을 떠나 시온으로 나오라 하다","더러운 옷을 벗고 새 옷을 입은 여호수아","순금 등잔대와 감람나무를 보다","날아가는 두루마리와 저주의 환상","에바에 담겨 시날로 옮겨지는 악","네 병거가 사방으로 나가다","금식이 누구를 위한 것인지 묻다","노인과 아이들이 함께 사는 예루살렘","겸손한 왕이 나귀를 타고 오다","목자 없는 양 떼를 모으다","은총과 연합의 막대기를 꺾다","찔린 이를 바라보며 애통하다","죄와 더러움을 씻는 샘을 열다","감람산과 생수의 날을 그리다"])assert(added.some(s=>s.title===title),title);
  for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
 });
 
@@ -629,8 +629,8 @@ test('겹쳐 있던 구약 사건 범위를 인접한 장면으로 나누고 원
 
 
 test('2ki 보강 장면이 누락 사건을 다루고 본문 범위·표상 방식에 연결된다',()=>{
- const data=JSON.parse(fs.readFileSync(root+'2ki.json')),titles=["엘리사를 조롱한 벧엘의 아이들","아침에 골짜기에 가득 찬 물","게하시에게 임한 나병","3번만 친 왕에게 남은 승리","베가의 반란과 브가히야의 죽음"],added=data.scenes.filter(s=>titles.includes(s.title)),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/2ki.json'));assert.equal(added.length,5);
- for(const title of ["엘리사를 조롱한 벧엘의 아이들","아침에 골짜기에 가득 찬 물","게하시에게 임한 나병","3번만 친 왕에게 남은 승리","베가의 반란과 브가히야의 죽음"])assert(added.some(s=>s.title===title),title);
+ const data=JSON.parse(fs.readFileSync(root+'2ki.json')),titles=["엘리사를 조롱한 벧엘의 아이들","아침에 골짜기에 가득 찬 물","게하시에게 임한 나병","세 번만 친 왕에게 남은 승리","베가의 반란과 브가히야의 죽음"],added=data.scenes.filter(s=>titles.includes(s.title)),objects=JSON.parse(fs.readFileSync('data/pixel-bible/objects/2ki.json'));assert.equal(added.length,5);
+ for(const title of ["엘리사를 조롱한 벧엘의 아이들","아침에 골짜기에 가득 찬 물","게하시에게 임한 나병","세 번만 친 왕에게 남은 승리","베가의 반란과 브가히야의 죽음"])assert(added.some(s=>s.title===title),title);
  for(const s of added){assert(s.narrationOnly);assert(objects.chapters[String(s.chapter)].some(o=>o.id===s.object&&o.refs.includes(s.ref)),s.id);}
 });
 
