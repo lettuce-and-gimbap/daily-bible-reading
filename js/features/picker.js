@@ -85,6 +85,8 @@ async function renderVersePicker(body, target, idx) {
     const n = count();
     root.querySelector(".vp-n").textContent = n ? `${n}절 선택` : "절을 눌러 고르세요";
     root.querySelectorAll(".vp-bar .btn:not(.text)").forEach((b) => { b.disabled = !n; });
+    const edsel = root.querySelector(".vp-edsel");
+    if (edsel && !n) edsel.hidden = true; // 고른 절이 없어지면 역본 고르기 창도 닫음
   };
 
   root.insertAdjacentHTML("beforeend", `
