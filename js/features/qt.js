@@ -80,7 +80,7 @@ function renderQt() {
   const body = $("#sheet-body");
   body.addEventListener("click", (e) => {
     if (e.target.closest("#q-copy-note")) {
-      return qtRefFor(qtDate).then(() => copyText(qtTextOf(qtCurrentFromDom()), "묵상 노트를 복사했어요"));
+      return qtRefFor(qtDate).then(() => copyMemoText(qtTextOf(qtCurrentFromDom()), "묵상 노트를 복사했어요"));
     }
     const a = e.target.closest("[data-qt]");
     if (!a) return;
@@ -256,8 +256,8 @@ async function paintQtPassage(date, d) {
     const parts = await Promise.all(ranges.map((r) => versePairs(r.idx, (n) => n >= r.lo && n <= r.hi, vers)));
     if (date !== qtDate || !box.isConnected) return;
     const rows = parts.flatMap((p, k) => p.map((r) => ({ idx: ranges[k].idx, ...r })));
-    qtPassage = { rows, d };
     const names = vers.map(vname);
+    qtPassage = { rows, d, names };
     box.querySelector(".qp-body").innerHTML = `<div class="vp-list">${rows.map((r, i) => `
         <label class="vp-row">
           <input type="checkbox" class="sr-only" data-ri="${i}">
@@ -290,6 +290,11 @@ function qtPassageQuote() {
     const nums = rows.flatMap((r) => { const [a, b] = labelSpan(r.label); return Array.from({ length: b - a + 1 }, (_, k) => a + k); });
     const g1 = rows.map((r) => `${r.label} ${r.texts[0]}`);
     const g2 = rows.filter((r) => r.texts[1]).map((r) => `${r.label} ${r.texts[1]}`);
+    const [n1, n2] = qtPassage.names || []; // 어느 역본 줄인지 기억해 둠 (메모 복사 때 역본별로 거름)
+    const where = state.verseEditions || (state.verseEditions = {});
+    if (n1) rows.forEach((r) => { where[`${r.label} ${r.texts[0]}`.trim()] = n1; });
+    if (n2) rows.forEach((r) => { if (r.texts[1]) where[`${r.label} ${r.texts[1]}`.trim()] = n2; });
+    persist();
     return { idx, text: `${versesRef(CHAPTERS[idx], nums)}\n${g1.join("\n")}${g2.length ? `\n${VERSION_DIVIDER}\n${g2.join("\n")}` : ""}` };
   });
 }

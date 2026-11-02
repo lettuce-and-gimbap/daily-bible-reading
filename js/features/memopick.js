@@ -4,25 +4,29 @@
 
 const memoPick = { open: false, picked: new Set(), box: null, area: null, save: null, rerender: null };
 
-const MEMO_REF = new RegExp(`^(?:${BOOKS.map((b) => b.name).join("|")}) \\d{1,3}(?::\\d{1,3}(?:-\\d{1,3})?|장)$`);
+const MEMO_REF = new RegExp(`^(?:${BOOKS.map((b) => b.name).join("|")}) \\d{1,3}(?::[\\d,~-]+|장)$`);
 const MEMO_VERSE_LINE = /^\d{1,3}(?:-\d{1,3})?\s+\S/; // QT 노트는 첫 줄 없이 "10 지극히…"로만 붙음
-const COPY_EDITION_KEY = "memoCopyEditions";
-const copyEditionChoices = () => state.settings[COPY_EDITION_KEY] || VERSIONS.map(v=>v.code);
-function filterMemoEditions(text, editions) {
-  const chosen=new Set(editions), blocks=memoBlocks(text);
-  return blocks.map(block=>{
-    if(block.kind!=="quote")return block.text.trim();
-    const lines=block.text.trim().split("\n");
-    const ref=MEMO_REF.test(lines[0])?lines.shift():null;
-    let active=null, kept=[];
-    for(const line of lines){
-      const tag=line.match(/^\[역본:([^\]]+)\]$/);
-      if(tag){active=tag[1];continue;}
-      if(active===null||chosen.has(active))kept.push(line);
-    }
-    return [ref,...kept].filter(Boolean).join("\n");
-  }).filter(Boolean).join("\n\n");
+// 붙여넣은 구절 줄마다 어느 역본인지 state.verseEditions에 따로 기억함 (메모 글에는 표시하지 않음)
+// 복사할 때 끈(꺼 둔) 역본의 줄만 뺌. 꺼 둔 목록은 state.copyEditionOff
+const editionOfLine = (line) => (state.verseEditions || {})[line.trim()] || null;
+function memoEditionsIn(text) {
+  const names = [];
+  text.split("\n").forEach((l) => { const n = editionOfLine(l); if (n && !names.includes(n)) names.push(n); });
+  return names;
 }
+function filterMemoEditions(text) {
+  const off = state.copyEditionOff || [];
+  const kept = text.split("\n").filter((l) => { const n = editionOfLine(l); return !(n && off.includes(n)); });
+  // 역본 줄을 뺀 뒤 남은 구분선은 정리: 앞·뒤, 빈 줄 옆, 구분선끼리 붙은 것은 뺌
+  const out = kept.filter((l, i) => {
+    if (l.trim() !== VERSION_DIVIDER) return true;
+    const prev = kept[i - 1], next = kept[i + 1];
+    return prev !== undefined && next !== undefined && prev.trim() && next.trim() && prev.trim() !== VERSION_DIVIDER && next.trim() !== VERSION_DIVIDER;
+  });
+  return out.join("\n").replace(/\n{3,}/g, "\n\n").trim();
+}
+// 메모 복사 (전체·구절 골라 복사 공통): 체크 해제한 역본을 뺀 글을 복사
+function copyMemoText(text, msg) { copyText(filterMemoEditions(text), msg); }
 
 // 메모 → [{ text, sep, kind: "quote" | "note", label, preview, key }]
 // sep은 그 덩어리 뒤의 구분(빈 줄)이라, 일부만 지워도 남은 글의 띄어쓰기는 그대로 둠
@@ -65,10 +69,13 @@ function memoPickMount(box, area, save, rerender) {
   area.addEventListener("input", memoPickDraw); // 글을 고치면 목록도 바로 따라감
   box.addEventListener("click", memoPickClick);
   box.addEventListener("change", (e) => {
-    const edition=e.target.closest("input[data-edition]");
-    if(edition){
-      const selected=[...box.querySelectorAll("[data-edition]:checked")].map(x=>x.dataset.edition);
-      state.settings[COPY_EDITION_KEY]=selected;persist();return;
+    const edition = e.target.closest("input[data-edition]");
+    if (edition) { // 체크를 바꾼 역본만 꺼 둔 목록을 고쳐 씀
+      const shown = [...box.querySelectorAll("input[data-edition]")];
+      const others = (state.copyEditionOff || []).filter((n) => !shown.some((x) => x.dataset.edition === n));
+      state.copyEditionOff = [...others, ...shown.filter((x) => !x.checked).map((x) => x.dataset.edition)];
+      persist();
+      return memoPickDraw();
     }
     const cb = e.target.closest("input[data-k]");
     if (!cb) return;
@@ -106,7 +113,8 @@ function memoPickPaint() {
   const keys = new Set(blocks.map((b) => b.key));
   memoPick.picked.forEach((k) => { if (!keys.has(k)) memoPick.picked.delete(k); }); // 사라진 글의 선택은 정리
   const n = memoPick.picked.size;
-  const editions=copyEditionChoices();
+  const names = memoEditionsIn(area.value);
+  const off = state.copyEditionOff || [];
   box.innerHTML = `
     <div class="mp-panel" style="--fz:${fzScale()}">
       <div class="mp-bar">
@@ -117,7 +125,7 @@ function memoPickPaint() {
         </span>
       </div>
       <div class="mp-zoom"><span class="muted small">글씨 크기</span>${fzControl()}</div>
-      <fieldset class="mp-editions"><legend>전체 복사할 역본</legend>${VERSIONS.map(v=>`<label><input type="checkbox" data-edition="${v.code}" ${editions.includes(v.code)?"checked":""}>${esc(v.name)}</label>`).join("")}</fieldset>
+      ${names.length ? `<fieldset class="mp-editions"><legend>복사할 역본</legend>${names.map((n) => `<label><input type="checkbox" data-edition="${esc(n)}" ${off.includes(n) ? "" : "checked"}>${esc(n)}</label>`).join("")}</fieldset>` : ""}
       ${blocks.length ? `
         <ul class="mp-list">
           ${blocks.map((b, i) => `
@@ -151,7 +159,7 @@ function memoPickClick(e) {
     memoPick.picked.clear();
   } else if (act === "copy") {
     const chosen = blocks.filter((x) => memoPick.picked.has(x.key));
-    copyText(filterMemoEditions(chosen.map((x) => x.text.trim()).join("\n\n"),copyEditionChoices()), `${chosen.length}개 항목을 복사했어요`);
+    copyMemoText(chosen.map((x) => x.text.trim()).join("\n\n"), `${chosen.length}개 항목을 복사했어요`);
     return;
   } else if (act === "del") {
     const chosen = blocks.filter((x) => memoPick.picked.has(x.key));

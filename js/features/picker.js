@@ -119,10 +119,13 @@ async function renderVersePicker(body, target, idx) {
     });
     const hit = (list) => list.filter((v) => nums.has(labelSpan(v.label)[0]))
       .map((v) => `${v.label} ${v.text}`);
-    const groups = lists.map((list, i) => ({ code: editions[i], list }))
-      .filter((g) => !keep || keep.has(g.code))
-      .map((g) => hit(g.list)).filter((g) => g.length);
-    return `${versesRef(CHAPTERS[idx0], [...nums])}\n${groups.map((g) => g.join("\n")).join(`\n${VERSION_DIVIDER}\n`)}`;
+    const groups = lists.map((list, i) => ({ code: editions[i], lines: hit(list) }))
+      .filter((g) => (!keep || keep.has(g.code)) && g.lines.length);
+    // 붙이는 줄마다 어느 역본인지 기억해 둠 (메모 복사 때 역본별로 거르는 데 씀)
+    const where = state.verseEditions || (state.verseEditions = {});
+    groups.forEach((g) => g.lines.forEach((l) => { where[l.trim()] = vname(g.code); }));
+    persist();
+    return `${versesRef(CHAPTERS[idx0], [...nums])}\n${groups.map((g) => g.lines.join("\n")).join(`\n${VERSION_DIVIDER}\n`)}`;
   };
   const paste = (keep) => {
     const quote = buildQuote(keep);
