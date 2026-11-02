@@ -1,7 +1,7 @@
 {
   "updated": "2026-11-02",
-  "reviewedIdentities": 1765,
-  "totalIdentities": 1918,
+  "reviewedIdentities": 1923,
+  "totalIdentities": 1923,
   "rounds": [
     {
       "newEntries": 27,
@@ -359,16 +359,20 @@
         "code": "gal",
         "chapter": 6
       }
+    },
+    {
+      "newEntries": 158,
+      "firstAppearanceThrough": {
+        "code": "rev",
+        "chapter": 22
+      }
     }
   ],
   "firstAppearanceCoverage": {
-    "code": "gal",
-    "throughChapter": 6,
-    "basis": "창세기부터 갈라디아서 6장까지 앱 등장 인물의 첫 등장 신원을 순차 검토함. 사도행전부터 갈라디아서까지 관련 인물의 재등장도 함께 보강했으며, 각 항목의 근거 범위만 확인한 것으로 전체 도감 검증 완료를 뜻하지 않음."
+    "code": "rev",
+    "throughChapter": 22,
+    "basis": "창세기부터 요한계시록 22장까지 앱 도감에 등장하는 모든 인물·무리의 첫 등장 신원을 순차 검토함. 빌립보서부터 요한계시록까지 관련 인물의 재등장도 확인했으며, 상징 해석과 저자 추정은 본문에 명시된 내용과 구분함. 각 항목의 reviewedRefs와 note에 적힌 범위만 대조했으며 전체 도감 검증 완료를 뜻하지 않음."
   },
-  "nextFirstAppearance": {
-    "code": "php",
-    "chapter": 1
-  },
+  "nextFirstAppearance": null,
   "scope": "각 항목의 reviewedRefs와 note에 적힌 소개 범위만 대조. 기존 역할·대사·관계·외형 전체의 검증 완료가 아님."
 }

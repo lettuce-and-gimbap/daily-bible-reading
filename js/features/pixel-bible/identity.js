@@ -44,6 +44,10 @@ export function canonicalPersonName(name,{code='',chapter=0}={}) {
   if(code==='deu'&&Number(chapter)===21&&['장로들','성읍의 장로들'].includes(name))return '성읍의 장로들';
   if(['레위 자손','레위 지파'].includes(name))return '레위 지파';
   if(code==='rev'&&['용','붉은 용','옛 뱀','마귀','옛 뱀 마귀 사탄'].includes(name))return '사탄';
+  if(code==='rev'&&name==='요한')return '밧모 섬의 요한';
+  if(code==='1jn'&&name==='요한')return '요한일서의 저자';
+  if(code==='2jn'&&name==='장로')return '요한이서의 장로';
+  if(code==='3jn'&&name==='장로')return '요한삼서의 장로';
   if(code==='rev'&&['음녀','큰 음녀'].includes(name))return '바벨론';
   if(code==='jas'&&name==='주 예수 그리스도')return '예수';
   if(code==='2pe'&&name==='시몬 베드로')return '베드로';
@@ -68,7 +72,8 @@ export function canonicalPersonName(name,{code='',chapter=0}={}) {
   if(code==='act'&&[23,24].includes(Number(chapter))&&name==='아나니아')return '아나니아(대제사장)';
   if(code==='act'&&Number(chapter)===12&&name==='마리아')return '마리아(마가의 어머니)';
   if(code==='act'&&Number(chapter)===8&&name==='시몬')return '시몬(마술사)';
-  if(code==='act'&&[6,8,21].includes(Number(chapter))&&name==='빌립')return '빌립(전도자)';
+  if(code==='act'&&Number(chapter)===8&&name==='빌립')return '빌립';
+  if(code==='act'&&[6,21].includes(Number(chapter))&&name==='빌립')return '빌립(전도자)';
   if((code==='act'&&Number(chapter)===12||code==='mat'&&[4,10,17,20,26].includes(Number(chapter))||code==='mrk'&&[1,3,5,9,10,13,14].includes(Number(chapter))||code==='luk'&&[5,9].includes(Number(chapter)))&&name==='야고보')return '야고보(세베대의 아들)';
   if(code==='act'&&[15,21].includes(Number(chapter))&&name==='야고보'||code==='gal'&&[1,2].includes(Number(chapter))&&name==='야고보')return '야고보(주의 형제)';
   if(code==='act'&&Number(chapter)===15&&name==='유다')return '유다(바사바)';
@@ -220,7 +225,7 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   if(code==='gen'&&['애굽 사람들','애굽 백성'].includes(name))return {...id('group','egyptians-joseph-era'),canonicalName:'애굽 백성',mergeAliases:true};
   if(name==='세 용사')return {...id('group','three-warriors'),canonicalName:'세 용사'};
   if(code==='rev'){
-    if(name==='요한')return {...id('person','john-apostle'),canonicalName:'요한'};
+    if(name==='요한')return {...id('person','john-of-patmos'),canonicalName:'밧모 섬의 요한'};
     if(name==='다윗')return {...id('person','david'),canonicalName:'다윗'};
     if(name==='모세')return {...id('person','moses'),canonicalName:'모세'};
     if(name==='안디바')return {...id('person','antipas-pergamum'),canonicalName:'안디바'};
@@ -229,10 +234,9 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
     if(name==='네 생물 중 하나')return id('spiritual','revelation:one-of-four-living-creatures');
     if(name==='일곱 우레')return id('spiritual','revelation:seven-thunders');
     if(name==='측량을 명하신 이')return id('spiritual','revelation:temple-measure-voice');
-    // The chapter's own study summary follows the leading Reformed reading:
-    // the first rider is Christ going out to conquer by the gospel.
-    if(name==='흰 말 탄 자')return {...id('person','jesus'),canonicalName:'예수'};
-    if(['어린 양','백마 탄 자','인자 같은 이','사내아이'].includes(name))return {...id('person','jesus'),canonicalName:'예수'};
+    if(name==='흰 말 탄 자')return {...id('unresolved','revelation-white-horse-rider'),canonicalName:'흰 말 탄 자(계시록 6장)'};
+    if(name==='백마 탄 자'&&Number(chapter)===19)return {...id('person','jesus'),canonicalName:'예수'};
+    if(['어린 양','인자 같은 이','사내아이'].includes(name))return {...id('person','jesus'),canonicalName:'예수'};
     if(name==='보좌에 앉으신 이')return {...id('spiritual','하나님'),canonicalName:'하나님'};
     if(['용','붉은 용','옛 뱀','사탄','마귀','옛 뱀 마귀 사탄'].includes(name))return {...id('spiritual','satan'),canonicalName:'사탄'};
     if(['바다에서 나온 짐승','붉은빛 짐승','무저갱의 짐승','짐승'].includes(name))return {...id('spiritual','beast-from-sea'),canonicalName:'짐승'};
@@ -258,14 +262,17 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   const creature=creatureForName(name,role,code);if(creature)return id(creature.kind,creature.id);
   if(name==='베드로'||code==='mrk'&&[1,3].includes(Number(chapter))&&name==='시몬')return {...id('person','베드로'),canonicalName:'베드로'};
   if(code==='2pe'&&['베드로','시몬 베드로'].includes(name))return {...id('person','베드로'),canonicalName:'베드로'};
-  if(code==='1jn'&&name==='요한')return {...id('person','john-apostle'),canonicalName:'요한'};
+  if(code==='1jn'&&name==='요한')return {...id('unresolved','1jn-author'),canonicalName:'요한일서의 저자'};
   if(code==='jud'&&name==='유다')return {...id('person','jude-letter-author'),canonicalName:'유다'};
   if(code==='jud'&&name==='야고보')return {...id('person','james-brother-of-jude'),canonicalName:'야고보'};
-  // The elder who writes 2–3 John is traditionally identified with John;
-  // keep the two letter voices together without treating the title as a new person.
-  if(['2jn','3jn'].includes(code)&&name==='장로')return {...id('person','john-apostle'),canonicalName:'요한'};
+  if(code==='2jn'&&name==='장로')return {...id('unresolved','2jn-elder'),canonicalName:'요한이서의 장로'};
+  if(code==='3jn'&&name==='장로')return {...id('unresolved','3jn-elder'),canonicalName:'요한삼서의 장로'};
   if(code==='3jn'&&name==='디오드레베')return {...id('person','diotrephes'),canonicalName:'디오드레베'};
   if(code==='3jn'&&name==='데메드리오')return {...id('person','demetrius-third-john'),canonicalName:'데메드리오'};
+  if(name==='두기고'&&['act','eph','col','2ti'].includes(code))return {...id('person','tychicus'),canonicalName:'두기고'};
+  if(name==='에바브라'&&['col','phm'].includes(code))return {...id('person','epaphras'),canonicalName:'에바브라'};
+  if(name==='아킵보'&&['col','phm'].includes(code))return {...id('person','archippus'),canonicalName:'아킵보'};
+  if(name==='데마'&&['col','phm','2ti'].includes(code))return {...id('person','demas'),canonicalName:'데마'};
   if(name==='게바')return {...id('person','베드로'),canonicalName:'베드로'};
   if(['실라','실루아노'].includes(name))return {...id('person','silas'),canonicalName:'실라'};
   if(name==='후메내오'&&['1ti','2ti'].includes(code))return id('person','hymenaeus');
@@ -327,7 +334,7 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   if(name==='아나니아'&&code==='act'&&[9,22].includes(Number(chapter)))return {...id('person','ananias-of-damascus'),canonicalName:'아나니아(다메섹)'};
   if(name==='아나니아'&&code==='act'&&[23,24].includes(Number(chapter)))return {...id('person','ananias-high-priest-act23'),canonicalName:'아나니아(대제사장)'};
   if(name==='마리아'&&code==='act'&&Number(chapter)===12||name==='마리아'&&code==='act'&&/마가.*어머니/.test(role))return {...id('person','mary-mother-of-john-mark'),canonicalName:'마리아(마가의 어머니)'};
-  if(name==='빌립'&&code==='act'&&(Number(chapter)===6||/일곱/.test(role)))return {...id('person','philip-evangelist'),canonicalName:'빌립(전도자)'};
+  if(name==='빌립'&&code==='act'&&([6,21].includes(Number(chapter))||/일곱/.test(role)))return {...id('person','philip-evangelist'),canonicalName:'빌립(전도자)'};
   if(name==='시몬'&&code==='act'&&Number(chapter)===8)return {...id('person','simon-magician'),canonicalName:'시몬(마술사)'};
   if(name==='야고보'&&code==='act'&&Number(chapter)===12)return {...id('person','james-son-of-zebedee'),canonicalName:'야고보(세베대의 아들)'};
   if(name==='야고보'&&(code==='act'&&[15,21].includes(Number(chapter))||code==='gal'&&[1,2].includes(Number(chapter))))return {...id('person','james-lords-brother'),canonicalName:'야고보(주의 형제)'};

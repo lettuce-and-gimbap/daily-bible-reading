@@ -21,13 +21,13 @@ test('요한계시록은 상징적 인물·집단·영적 존재와 실제 인�
  assert.equal(resolveIdentity('네 생물',{code:'rev',chapter:4}).kind,'spiritual');
  assert.equal(resolveIdentity('황충',{code:'rev',chapter:9}).kind,'group');
  assert.equal(resolveIdentity('다섯째 천사',{code:'rev',chapter:9}).kind,'spiritual');
- assert.equal(resolveIdentity('요한',{code:'rev',chapter:22}).id,resolveIdentity('요한',{code:'jhn',chapter:21,role:'예수께서 사랑하시는 제자'}).id);
+ assert.notEqual(resolveIdentity('요한',{code:'rev',chapter:22}).id,resolveIdentity('요한',{code:'jhn',chapter:21,role:'예수께서 사랑하시는 제자'}).id,'요한계시록은 요한이라는 이름만 밝히므로 사도 요한과 같은 인물로 단정하지 않음');
  assert.equal(resolveIdentity('안디바',{code:'rev',chapter:2}).id,'person:antipas-pergamum');
  assert.equal(resolveIdentity('니골라당',{code:'rev',chapter:2}).kind,'group');
  assert.equal(resolveIdentity('사탄의 회당',{code:'rev',chapter:3}).kind,'group');
  assert.equal(resolveIdentity('24 장로',{code:'rev',chapter:19}).kind,'spiritual');
- assert.equal(resolveIdentity('흰 말 탄 자',{code:'rev',chapter:6}).kind,'person');
- assert.equal(resolveIdentity('흰 말 탄 자',{code:'rev',chapter:6}).id,resolveIdentity('백마 탄 자',{code:'rev',chapter:19}).id,'요한계시록 6장의 첫 흰 말 기사는 본문 해설의 주된 개혁주의 해석을 따라 그리스도와 통합');
+ assert.equal(resolveIdentity('흰 말 탄 자',{code:'rev',chapter:6}).kind,'unresolved');
+ assert.notEqual(resolveIdentity('흰 말 탄 자',{code:'rev',chapter:6}).id,resolveIdentity('백마 탄 자',{code:'rev',chapter:19}).id,'요한계시록 6장의 기사는 해석이 갈리고 이름이 없어 19장의 그리스도와 합치지 않음');
  assert.ok(isMentionOnlyPerson({name:'발람'},{code:'rev',chapter:2}));
  assert.ok(isMentionOnlyPerson({name:'모세'},{code:'rev',chapter:15}));
  for(const chapter of [3,5])assert.ok(isMentionOnlyPerson({name:'다윗'},{code:'rev',chapter}));

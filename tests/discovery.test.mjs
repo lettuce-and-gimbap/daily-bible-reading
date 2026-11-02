@@ -34,6 +34,22 @@ test('개명 전 아브람·사래의 기존 도감 기록은 통합 인물 기�
  assert.equal(records['unresolved:사래'],undefined);assert.equal(records['person:사라'].name,'사라');assert.ok(records['person:사라'].refs.includes('창세기 16장'));
  assert.equal(records['unresolved:르우엘:exo'],undefined);assert.equal(records['person:midianite-priest-jethro'].name,'이드로');assert.ok(records['person:midianite-priest-jethro'].refs.includes('출애굽기 2장'));
 });
+test('새 신원 구분은 저장된 서신 저자·계시록 기수·천사 기록을 안전하게 옮긴다',()=>{
+ const storage={getItem:key=>key===DISCOVERY_KEY?JSON.stringify({
+  'person:john-apostle':{name:'요한',refs:['요한복음 21장','요한일서 1장','요한이서 1장','요한삼서 1장','요한계시록 22장'],stories:[{ref:'요한계시록 22:8',text:'요한이 이 모든 것을 보고 들었어요.'}],read:['요한계시록 22:8|요한이 이 모든 것을 보고 들었어요.'],favorite:true},
+  'person:jesus':{name:'예수',refs:['요한복음 3장','요한계시록 6장'],roles:['그리스도','흰 말 탄 자'],stories:[{ref:'요한계시록 6:1-2',text:'첫째 인의 흰 말 탄 자가 이기고 나가요.'},{ref:'요한복음 3:16',text:'하나님이 세상을 사랑하셨어요.'}],read:['요한계시록 6:1-2|첫째 인의 흰 말 탄 자가 이기고 나가요.']},
+  '10000000 천사:unresolved:10000000 천사':{name:'10000000 천사',refs:['히브리서 12장'],favorite:true},
+  'unresolved:두기고':{name:'두기고',refs:['에베소서 6장'],favorite:true}
+ }):null};
+ const records=loadDiscoveries(storage);
+ assert.equal(records['person:john-apostle'].refs.includes('요한계시록 22장'),false);
+ assert.ok(records['person:john-of-patmos'].refs.includes('요한계시록 22장'));
+ assert.equal(records['person:john-apostle'].favorite,false);assert.equal(records['unresolved:1jn-author'].favorite,true);
+ const rider=records['흰 말 탄 자(계시록 6장):unresolved:revelation-white-horse-rider'];assert.ok(rider.roles.includes('흰 말 탄 자'));assert.equal(rider.stories.length,1);assert.equal(rider.read.length,1);
+ assert.ok(records['person:jesus'].roles.includes('그리스도'));assert.equal(records['person:jesus'].stories.length,1);
+ assert.equal(records['10000000 천사:unresolved:10000000 천사'],undefined);assert.equal(records['천만 천사:spiritual:천만 천사'].favorite,true);
+ assert.equal(records['unresolved:두기고'],undefined);assert.equal(records['person:tychicus'].name,'두기고');assert.equal(records['person:tychicus'].favorite,true);
+});
 test('창세기 후반의 분류 정정은 저장된 요셉·형제·애굽 기록을 새 신원으로 합친다',()=>{
  const storage={getItem:key=>key===DISCOVERY_KEY?JSON.stringify({'요셉:group:요셉':{name:'요셉',refs:['창세기 47장'],favorite:true},'요셉의 형들:unresolved:요셉의 형들':{name:'요셉의 형들',refs:['창세기 42장']},'형들:unresolved:형들':{name:'형들',refs:['창세기 50장']},'애굽 사람들:group:애굽 사람들':{name:'애굽 사람들',refs:['창세기 50장']}}):null};
  const records=loadDiscoveries(storage);
