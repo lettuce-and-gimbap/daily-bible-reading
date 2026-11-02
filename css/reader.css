@@ -611,10 +611,28 @@ mark.study-mark:focus-visible{outline:2px solid currentColor;outline-offset:2px}
 .study-version,.study-version mark{-webkit-user-select:text;user-select:text}
 
 /* 구절 붙이기 전에 붙일 역본을 고르는 창 */
-.vp-edsel { position: sticky; bottom: 0; margin-top: 8px; padding: 12px; border: 1px solid var(--accent); border-radius: 12px; background: var(--surface); }
+.vp-edsel { position: sticky; bottom: calc(64px + env(safe-area-inset-bottom, 0px)); z-index: 2; margin: 8px 0 0; padding: 12px; border: 1px solid var(--accent); border-radius: 12px; background: var(--surface); box-shadow: 0 -4px 16px rgb(0 0 0 / .12); scroll-margin-block: 16px; }
 .vp-edsel[hidden] { display: none; }
-.vp-edsel-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 8px; }
+.vp-edsel-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 44px; margin-bottom: 8px; }
 .vp-edsel-title { margin: 0; font-weight: 700; }
 .vp-edsel-list { display: flex; flex-wrap: wrap; gap: 8px; }
-.vp-edsel-item { display: flex; align-items: center; gap: 6px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; cursor: pointer; }
+.vp-edsel-item { display: flex; align-items: center; gap: 6px; min-height: 44px; box-sizing: border-box; padding: 8px 12px; border: 1px solid var(--line); border-radius: 999px; cursor: pointer; }
 .vp-edsel-item:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); }
+
+/* 역본 선택 UI: 스크롤 중에도 하단 작업 막대 위에 유지하고 iOS safe area와 작은 화면을 지원 */
+.vp-bar { z-index: 3; padding-bottom: calc(14px + env(safe-area-inset-bottom, 0px)); }
+.vp-edsel-item input { width: 18px; height: 18px; margin: 0; accent-color: var(--accent); }
+.vp-edsel-head [data-edsel="cancel"] { min-width: 44px; min-height: 44px; touch-action: manipulation; }
+@media (max-width: 640px) {
+  .vp-edsel { bottom: calc(60px + env(safe-area-inset-bottom, 0px)); padding: 10px; border-radius: 14px 14px 10px 10px; }
+  .vp-edsel-head { gap: 6px; }
+  .vp-edsel-title { font-size: .96rem; }
+  .vp-edsel-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 145px), 1fr)); gap: 6px; }
+  .vp-edsel-item { min-width: 0; justify-content: flex-start; overflow-wrap: anywhere; }
+  .vp-bar { bottom: calc(-14px - env(safe-area-inset-bottom, 0px)); gap: 8px; }
+  .vp-bar .btn { min-height: 44px; }
+}
+@media (min-width: 900px) {
+  .vp-edsel { max-width: 100%; }
+  .vp-edsel-list { gap: 10px; }
+}

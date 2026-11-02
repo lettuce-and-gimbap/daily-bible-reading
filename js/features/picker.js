@@ -167,6 +167,7 @@ async function renderVersePicker(body, target, idx) {
     if (edsel) { // 역본이 여럿이면 붙이기 전에 고르는 창을 띄움
       edsel.querySelectorAll("[data-ed]").forEach((x) => { x.checked = true; });
       edsel.hidden = false;
+      requestAnimationFrame(() => edsel.scrollIntoView({ block: "nearest" }));
       return;
     }
     paste();
