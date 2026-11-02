@@ -1,7 +1,7 @@
 {
-  "updated": "2026-11-01",
-  "reviewedIdentities": 62,
-  "totalIdentities": 1945,
+  "updated": "2026-11-02",
+  "reviewedIdentities": 109,
+  "totalIdentities": 1943,
   "rounds": [
     {
       "newEntries": 27,
@@ -23,16 +23,30 @@
         "code": "gen",
         "chapter": 26
       }
+    },
+    {
+      "newEntries": 18,
+      "firstAppearanceThrough": {
+        "code": "gen",
+        "chapter": 31
+      }
+    },
+    {
+      "newEntries": 29,
+      "firstAppearanceThrough": {
+        "code": "gen",
+        "chapter": 50
+      }
     }
   ],
   "firstAppearanceCoverage": {
     "code": "gen",
-    "throughChapter": 26,
-    "basis": "현재 앱 등장 목록을 기준으로 한 소개 대상 선정. 성경 전체 등장 인물·생애 검토 완료를 뜻하지 않음."
+    "throughChapter": 50,
+    "basis": "현재 앱 등장 목록에서 창세기 50장까지 처음 등장하는 도감 신원의 소개를 대조함. 이미 소개된 인물의 창세기 후속 사실도 일부 추가 검토했으며, 전체 생애·전체 도감 검증 완료를 뜻하지 않음."
   },
   "nextFirstAppearance": {
-    "code": "gen",
-    "chapter": 28
+    "code": "exo",
+    "chapter": 1
   },
   "scope": "각 항목의 reviewedRefs와 note에 적힌 소개 범위만 대조. 기존 역할·대사·관계·외형 전체의 검증 완료가 아님."
 }
