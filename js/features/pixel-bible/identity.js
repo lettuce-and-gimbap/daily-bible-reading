@@ -62,6 +62,7 @@ export function canonicalPersonName(name,{code='',chapter=0}={}) {
   if(code==='luk'&&Number(chapter)===24&&name==='야고보의 어머니 마리아')return '야고보의 어머니 마리아';
   if(['jer','ezk','2ki','2ch'].includes(code)&&['여호야긴','여고냐','고니야'].includes(name))return '여호야긴(여고냐)';
   if((code==='jer'&&[21,24,27,28,29,32,34,37,38,39,52].includes(Number(chapter))||code==='ezk'&&[12,17,21].includes(Number(chapter))||code==='2ch'&&Number(chapter)===36||code==='2ki'&&[24,25].includes(Number(chapter)))&&name==='시드기야')return '시드기야(유다 왕)';
+  if(code==='jer'&&Number(chapter)===28&&name==='하나냐')return '하나냐(아술의 아들)';
   if(code==='jer'&&[40,41].includes(Number(chapter))&&name==='이스마엘')return '이스마엘(느다냐의 아들)';
   if(code==='jer'&&Number(chapter)===51&&name==='스라야')return '스라야(네리야의 아들)';
   if(code==='jer'&&Number(chapter)===52&&name==='스라야')return '스라야(대제사장)';
@@ -121,6 +122,8 @@ export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   if(code==='2sa'&&name==='압살롬')return {...id('person','압살롬'),canonicalName:'압살롬'};
   if(code==='2sa'&&Number(chapter)===13&&name==='다말')return {...id('person','tamar-daughter-of-david'),canonicalName:'다말(다윗의 딸)'};
   if(code==='isa'&&name==='이사야')return {...id('person','이사야'),canonicalName:'이사야'};
+  if(code==='jer'&&name==='예레미야')return {...id('person','예레미야'),canonicalName:'예레미야'};
+  if(code==='jer'&&Number(chapter)===28&&name==='하나냐')return {...id('person','hananiah-son-of-azzur-jer28'),canonicalName:'하나냐(아술의 아들)'};
   if(['ezr','neh'].includes(code)&&name==='에스라')return {...id('person','에스라'),canonicalName:'에스라'};
   if(code==='neh'&&name==='느헤미야')return {...id('person','느헤미야'),canonicalName:'느헤미야'};
   if(code==='est'&&name==='에스더')return {...id('person','에스더'),canonicalName:'에스더'};

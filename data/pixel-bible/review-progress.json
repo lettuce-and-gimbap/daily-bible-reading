@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-02",
-  "reviewedIdentities": 1269,
+  "reviewedIdentities": 1370,
   "totalIdentities": 1929,
   "rounds": [
     {
@@ -184,16 +184,37 @@
         "code": "isa",
         "chapter": 66
       }
+    },
+    {
+      "newEntries": 73,
+      "firstAppearanceThrough": {
+        "code": "jer",
+        "chapter": 52
+      }
+    },
+    {
+      "newEntries": 7,
+      "firstAppearanceThrough": {
+        "code": "lam",
+        "chapter": 5
+      }
+    },
+    {
+      "newEntries": 21,
+      "firstAppearanceThrough": {
+        "code": "ezk",
+        "chapter": 48
+      }
     }
   ],
   "firstAppearanceCoverage": {
-    "code": "isa",
-    "throughChapter": 66,
-    "basis": "현재 앱 등장 목록에서 창세기 50장부터 이사야 66장까지 첫 등장하는 도감 신원을 대조함. 이미 소개된 인물의 전도서·아가·이사야 재등장 사실도 일부 보강했으며 전체 생애·전체 도감 검증 완료를 뜻하지 않음."
+    "code": "ezk",
+    "throughChapter": 48,
+    "basis": "현재 앱 등장 목록에서 창세기 50장부터 에스겔 48장까지 첫 등장하는 도감 신원을 대조함. 이미 소개된 인물의 예레미야·예레미야애가·에스겔 재등장 사실도 일부 보강했으며 전체 생애·전체 도감 검증 완료를 뜻하지 않음."
   },
   "nextFirstAppearance": {
-    "code": "jer",
-    "chapter": 3
+    "code": "dan",
+    "chapter": 1
   },
   "scope": "각 항목의 reviewedRefs와 note에 적힌 소개 범위만 대조. 기존 역할·대사·관계·외형 전체의 검증 완료가 아님."
 }
