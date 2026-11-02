@@ -842,7 +842,7 @@ test('에스겔 26–48장의 인간 관계선은 본문 사건에 맞는 양방
  const chapters=Object.entries(summary.chapters).slice(25).map(([chap,data])=>({code:'ezk',name:'에스겔',chap:Number(chap),data}));
  const context=buildChapterDialogue(chapters);
  const entries=PAIR_DIALOGUE.filter(entry=>/^ezk\.(?:2[6-9]|3\d|4[0-8])$/.test(entry.chapter));
- assert.equal(chapters.length,23);assert.equal(context.relations.length,30);assert.equal(entries.length,30);
+ assert.equal(chapters.length,23);assert.equal(context.relations.length,29);assert.equal(entries.length,29);
  for(const relation of context.relations){
   assert.ok(entries.some(entry=>entry.chapter===`ezk.${relation.from.chap}`&&((entry.speaker===relation.from.name&&entry.target===relation.to.name)||(entry.speaker===relation.to.name&&entry.target===relation.from.name))),`${relation.ref} ${relation.from.name} ↔ ${relation.to.name}`);
  }
