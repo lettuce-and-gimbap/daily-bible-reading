@@ -4,6 +4,10 @@ const knownPeople=new Set(Object.values(APPEARANCES).map(p=>p.name).filter(n=>![
 const spiritual=/^(하나님|여호와|성령|주님|천사|천사들|천사장|천만 천사|능력의 천사들|하나님의 사자|여호와의 군대 장관|그룹|사탄|마귀|귀신|어린 양|범죄한 천사들)$/;
 const group=/자손|백성|사람들|여성들|여인들|여종들|성도|교회|형제들|자매들|조상들|증인들|제자들|무리|장로들|장로의 회|제사장들|레위인들|지파|족속|군대|나라들|원수들|악인들|의인들|권력자들|통치자들|주민들|재판관들|관리들|지도자들|신하들|술객들|기술자들|이방인|아들들|딸들|자들|집/;
 export function canonicalPersonName(name,{code='',chapter=0}={}) {
+  if(code==='jos'&&name==='여호수아')return '여호수아';
+  if(code==='jos'&&name==='슬로브핫의 딸들')return '슬로브핫의 딸들';
+  if(['jos','jdg'].includes(code)&&name==='옷니엘')return '옷니엘';
+  if(code==='jos'&&name==='악사')return '악사';
   if(code==='gen'&&['요셉의 형들','형들'].includes(name))return '요셉의 형들';
   if(code==='gen'&&name==='요셉의 손자들')return '요셉의 후손들';
   if(code==='gen'&&name==='요셉의 형제 다섯')return '요셉의 형제 다섯';
@@ -87,6 +91,12 @@ export function canonicalPersonName(name,{code='',chapter=0}={}) {
 // 이름 문자열을 곧 고유 인물로 취급하지 않는다. 모호한 것은 미해결로 남긴다.
 export function resolveIdentity(name,{code='',chapter=0,role=''}={}) {
   const id=(kind,key,status='reviewed-rule')=>({kind,id:`${kind}:${key}`,status});
+  if(code==='jos'&&name==='여호수아')return {...id('person','여호수아'),canonicalName:'여호수아'};
+  if(code==='jos'&&name==='슬로브핫의 딸들')return {...id('group','zelophehad-daughters'),canonicalName:'슬로브핫의 딸들'};
+  if(['jos','jdg'].includes(code)&&name==='옷니엘')return {...id('person','othniel'),canonicalName:'옷니엘'};
+  if(['jos','jdg'].includes(code)&&name==='악사')return {...id('person','achsah'),canonicalName:'악사'};
+  if(code==='jdg'&&name==='바락')return {...id('person','barak'),canonicalName:'바락'};
+  if(code==='jdg'&&name==='기드온'||code==='jdg'&&name==='여룹바알')return {...id('person','gideon-jerubbaal'),canonicalName:'기드온'};
   // Explicit person and alias overrides precede the broad role-based group
   // heuristic, which can otherwise classify individuals as collectives.
   if(name==='모세')return {...id('person','모세'),canonicalName:'모세'};

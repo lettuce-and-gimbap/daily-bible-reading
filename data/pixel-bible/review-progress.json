@@ -1,7 +1,7 @@
 {
   "updated": "2026-11-02",
-  "reviewedIdentities": 195,
-  "totalIdentities": 1946,
+  "reviewedIdentities": 286,
+  "totalIdentities": 1944,
   "rounds": [
     {
       "newEntries": 27,
@@ -58,15 +58,36 @@
         "code": "deu",
         "chapter": 34
       }
+    },
+    {
+      "newEntries": 23,
+      "firstAppearanceThrough": {
+        "code": "jos",
+        "chapter": 24
+      }
+    },
+    {
+      "newEntries": 62,
+      "firstAppearanceThrough": {
+        "code": "jdg",
+        "chapter": 21
+      }
+    },
+    {
+      "newEntries": 6,
+      "firstAppearanceThrough": {
+        "code": "rut",
+        "chapter": 4
+      }
     }
   ],
   "firstAppearanceCoverage": {
-    "code": "deu",
-    "throughChapter": 34,
-    "basis": "현재 앱 등장 목록에서 창세기 50장, 출애굽기 40장, 레위기 27장, 민수기 36장과 신명기 34장까지 첫 등장하는 도감 신원을 대조함. 이미 소개된 인물의 후속 사실도 일부 보강했으며 전체 생애·전체 도감 검증 완료를 뜻하지 않음."
+    "code": "rut",
+    "throughChapter": 4,
+    "basis": "현재 앱 등장 목록에서 창세기 50장부터 룻기 4장까지 첫 등장하는 도감 신원을 대조함. 이미 소개된 인물의 후속 사실도 일부 보강했으며 전체 생애·전체 도감 검증 완료를 뜻하지 않음."
   },
   "nextFirstAppearance": {
-    "code": "jos",
+    "code": "1sa",
     "chapter": 1
   },
   "scope": "각 항목의 reviewedRefs와 note에 적힌 소개 범위만 대조. 기존 역할·대사·관계·외형 전체의 검증 완료가 아님."
