@@ -1,19 +1,20 @@
 // User marks contain only reference keys, colors and notes, never a second stored copy of scripture.
 window.ScriptureStudy=(()=>{
  const data=window.ScriptureNotesData||{terms:[],sources:{}};
- const glossary=Object.fromEntries([...data.terms,...(data.passages||[])].map(t=>[t.id,t]));
- const aliases=data.terms.flatMap(t=>t.aliases.map(word=>({word,term:t}))).sort((a,b)=>b.word.length-a.word.length);
+ const contextualTerms=data.contextualTerms||[];
+ const glossary=Object.fromEntries([...data.terms,...(data.passages||[]),...contextualTerms].map(t=>[t.id,t]));
+ const aliases=[...contextualTerms,...data.terms].flatMap(t=>t.aliases.map(word=>({word,term:t}))).sort((a,b)=>b.word.length-a.word.length);
  const regexEscape=s=>Array.from(s,c=>'.*+?^${}()|[]'.includes(c)||c.charCodeAt(0)===92?String.fromCharCode(92)+c:c).join('');
  const storage='scripture-study:v1';let records={};try{records=JSON.parse(localStorage.getItem(storage))||{};}catch(_){}
  const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  function save(){try{localStorage.setItem(storage,JSON.stringify(records));return true;}catch(_){alert('표시를 저장하지 못했어요. 저장 공간을 확인해 주세요.');return false;}}
  function glossaryHtml(text,context={}){
-  const available=aliases.filter(a=>!a.term.books||a.term.books.includes(context.code));if(!available.length)return esc(text);
+  const available=aliases.filter(({term})=>{if(term.books&&!term.books.includes(context.code))return false;if(!term.locations)return true;return Number.isInteger(context.lo)&&context.lo===context.hi&&term.locations.some(l=>l.code===context.code&&l.chapter===context.chapter&&context.lo>=l.lo&&context.lo<=l.hi&&(!l.editions||l.editions.includes(context.edition)));});if(!available.length)return esc(text);
   const pattern=new RegExp(available.map(a=>regexEscape(a.word)).join('|'),'g');let start=0,out='';
   for(const m of text.matchAll(pattern)){const g=available.find(a=>a.word===m[0]).term;out+=esc(text.slice(start,m.index))+`<span class="study-term" role="button" tabindex="0" data-study-term="${esc(g.id)}" aria-label="${esc(g.title)} 뜻 보기">${esc(m[0])}</span>`;start=m.index+m[0].length;}return out+esc(text.slice(start));
  }
  function showTerm(g){
-  const body=modal(g.title);body.innerHTML=`<small>${esc(g.category)} · 직접 정리한 설명</small><p>${esc(g.summary)}</p>${g.detail?`<p>${esc(g.detail)}</p>`:''}${g.caution?`<p class="study-caution"><strong>읽을 때 유의해요</strong><br>${esc(g.caution)}</p>`:''}${g.lens?`<details><summary>개혁주의 관점</summary><p>${esc(g.lens)}</p><small>웨스트민스터 신앙고백 ${g.wcf.map(n=>n+'장').join(' · ')}</small></details>`:''}<p class="study-reference">관련 구절: ${g.refs.map(r=>`<button type="button" data-study-reference="${esc(r)}">${esc(r)}</button>`).join(' ')}</p><details><summary>설명의 기준과 출처</summary><p>두 역본과 제공받은 호크마 참고 자료를 바탕으로 앱에서 정리한 설명이에요. 교단이 발행한 공식 주석은 아니에요. 교리적 설명은 예장합동이 표준으로 삼는 웨스트민스터 신앙고백을 참고해요.</p>${Object.values(data.sources).map(x=>`<p><a target="_blank" rel="noopener noreferrer" href="${esc(x.url)}">${esc(x.label)} ↗</a></p>`).join('')}</details>`;
+  const body=modal(g.title);body.innerHTML=`<small>${esc(g.category)} · 직접 정리한 설명</small><p>${esc(g.summary)}</p>${g.detail?`<p>${esc(g.detail)}</p>`:''}${g.caution?`<p class="study-caution"><strong>읽을 때 유의해요</strong><br>${esc(g.caution)}</p>`:''}${g.lens?`<details><summary>개혁주의 관점</summary><p>${esc(g.lens)}</p><small>웨스트민스터 신앙고백 ${g.wcf.map(n=>n+'장').join(' · ')}</small></details>`:''}<p class="study-reference">관련 구절: ${g.refs.map(r=>`<button type="button" data-study-reference="${esc(r)}">${esc(r)}</button>`).join(' ')}</p><details><summary>설명의 기준과 출처</summary><p>두 역본과 제공받은 호크마 참고 자료를 바탕으로 앱에서 정리한 설명이에요. 교단이 발행한 공식 주석은 아니에요. 교리적 설명은 예장합동이 표준으로 삼는 웨스트민스터 신앙고백을 참고해요.</p>${[...Object.values(data.sources),...(g.sourceLinks||[])].map(x=>`<p><a target="_blank" rel="noopener noreferrer" href="${esc(x.url)}">${esc(x.label)} ↗</a></p>`).join('')}</details>`;
  }
  document.addEventListener('click',async e=>{
   const button=e.target.closest('[data-study-reference]');if(!button)return;e.preventDefault();const body=button.closest('.study-dialog-body');let output=body.querySelector('.study-reference-verses');if(!output){output=document.createElement('section');output.className='study-reference-verses';output.setAttribute('aria-live','polite');body.append(output);}const request=button.dataset.studyReference;output.dataset.request=request;output.textContent='구절을 불러오는 중이에요…';
@@ -42,7 +43,7 @@ window.ScriptureStudy=(()=>{
  function renderSegment(segment){
   const text=segment.dataset.studyText,entry=records[segment.dataset.studySegment]||{},hash=fingerprint(text);
   const ranges=(entry.ranges||[]).filter(r=>r.hash===hash&&r.start>=0&&r.end<=text.length&&r.end>r.start&&validColor(r.color));
-  segment.innerHTML=glossaryHtml(text,{code:segment.dataset.studyBook});
+  segment.innerHTML=glossaryHtml(text,{code:segment.dataset.studyBook,chapter:Number(segment.dataset.studyChapter),lo:Number(segment.dataset.studyLo),hi:Number(segment.dataset.studyHi),edition:segment.dataset.edition});
   // Keep a term's accessible button intact even when a highlight covers only part of it.
   const walker=document.createTreeWalker(segment,NodeFilter.SHOW_TEXT),nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);let offset=0;
   for(const node of nodes){const base=offset,end=base+node.textContent.length;offset=end;const points=[...new Set([base,end,...ranges.flatMap(r=>[r.start,r.end]).filter(n=>n>base&&n<end)])].sort((a,b)=>a-b);const fragment=document.createDocumentFragment();for(let i=0;i<points.length-1;i++){const start=points[i],stop=points[i+1],match=ranges.slice().reverse().find(r=>r.start<=start&&r.end>=stop),part=document.createTextNode(node.textContent.slice(start-base,stop-base));if(match){const mark=document.createElement('mark');mark.className='study-mark';mark.dataset.studyStart=String(match.start);mark.dataset.studyEnd=String(match.end);mark.tabIndex=0;mark.setAttribute('role','note');mark.setAttribute('aria-label','이 구의 하이라이트와 메모 보기');mark.style.background=match.color;mark.style.color=[1,3,5].map((i,n)=>parseInt(match.color.slice(i,i+2),16)*[.299,.587,.114][n]).reduce((a,b)=>a+b,0)>145?'#243c32':'#fffaf1';mark.append(part);fragment.append(mark);}else fragment.append(part);}node.replaceWith(fragment);}
@@ -87,7 +88,7 @@ window.ScriptureStudy=(()=>{
   const rows=[...root.querySelectorAll('.vp-row')];
   rows.forEach((row,i)=>{row.dataset.studyKey=keys[i];const [idx]=keys[i].split(':');const context=typeof CHAPTERS!=='undefined'?CHAPTERS[Number(idx)]:null;const span=row.querySelector('.vp-num').textContent.match(/\d+/g)||[];const lo=Number(span[0]),hi=Number(span[1]||span[0]);
    row.querySelector('.study-passage-links')?.remove();const notes=(data.passages||[]).filter(n=>n.code===context?.book.code&&n.chapter===context?.chap&&n.lo<=hi&&n.hi>=lo);if(notes.length){const links=document.createElement('div');links.className='study-passage-links';for(const n of notes){const button=document.createElement('button');button.type='button';button.textContent='주석 · '+n.title;button.onclick=e=>{e.preventDefault();e.stopPropagation();showTerm(n);};links.append(button);}row.querySelector('.vp-txt')?.append(links);}
-   row.querySelectorAll('.study-version').forEach(segment=>{segment.dataset.studySegment=`${idx}:${segment.dataset.edition}:${row.querySelector('.vp-num').textContent.trim()}`;segment.dataset.studyText=segment.textContent;segment.dataset.studyBook=typeof CHAPTERS!=='undefined'?CHAPTERS[Number(idx)]?.book?.code||'':'';
+   row.querySelectorAll('.study-version').forEach(segment=>{segment.dataset.studySegment=`${idx}:${segment.dataset.edition}:${row.querySelector('.vp-num').textContent.trim()}`;segment.dataset.studyText=segment.textContent;segment.dataset.studyBook=context?.book?.code||'';segment.dataset.studyChapter=String(context?.chap||'');segment.dataset.studyLo=String(lo||'');segment.dataset.studyHi=String(hi||'');
     // Keep earlier whole-verse marks visible when moving to text ranges.
     const old=records[keys[i]],colors={yellow:'#fff0a3',green:'#d7efbd',pink:'#f7d0dd'};
     if(old?.color&&!records[segment.dataset.studySegment])records[segment.dataset.studySegment]={ranges:[{start:0,end:segment.textContent.length,color:colors[old.color]||'#fff0a3',hash:fingerprint(segment.textContent)}]};

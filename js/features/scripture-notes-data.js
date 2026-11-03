@@ -1406,3 +1406,11 @@ window.ScriptureNotesData={
     }
   }
 };
+
+// 문맥 각주는 단어가 속한 절이 정확히 확인될 때에만 일반 용어보다 우선한다.
+window.ScriptureNotesData.contextualTerms = [
+ {id:'chron-1-13-cart',title:'새 수레',aliases:['새 수레'],locations:[{code:'1ch',chapter:13,lo:7,hi:7}],summary:'다윗과 백성은 하나님의 궤를 새 수레에 실어 옮겼어요.',detail:'이어지는 역대상 15장에서 다윗은 앞선 운반을 돌아보며 규례를 언급하고, 레위 사람들이 궤를 채에 꿰어 어깨에 메게 해요.',caution:'13장 자체가 웃사의 마음이나 모든 참석자의 의도를 설명하는 것은 아니에요.',refs:['역대상 13:7','역대상 15:12-15'],category:'본문 문맥',lens:'하나님을 섬기는 일에서 하나님의 말씀에 주의를 기울이는 중요성을 생각하게 해요. 이는 본문에 대한 적용이에요.',wcf:[21]},
+ {id:'chron-1-13-uzzah',title:'웃사',aliases:['웃사'],locations:[{code:'1ch',chapter:13,lo:9,hi:10}],summary:'웃사는 소들이 뛰자 손을 뻗어 하나님의 궤를 붙들었고, 그 자리에서 죽었어요.',detail:'다윗은 뒤에 레위 사람들이 궤를 메지 않았고 규례대로 구하지 않았다고 말해요. 사건과 다윗의 후속 설명을 함께 읽어 보세요.',caution:'본문이 밝히지 않는 웃사의 속마음을 확정하거나 사건을 웃사 개인만의 문제로 좁히지 않아요.',refs:['역대상 13:9-10','역대상 15:12-15'],category:'본문 문맥',lens:'',wcf:[]},
+ {id:'chron-1-15-shoulder',title:'어깨에 멘 궤',aliases:['어깨'],locations:[{code:'1ch',chapter:15,lo:15,hi:15}],summary:'레위 자손이 채를 이용해 하나님의 궤를 어깨에 메었어요.',detail:'이 장은 앞선 수레 운반과 달리 모세가 전한 명령에 따른 운반을 설명해요. 다윗은 앞선 일에 대해 “우리”가 규례대로 구하지 않았다고 말했어요.',caution:'운반 방법은 당시 성물에 관한 구체적인 지시의 문맥에서 읽어요.',refs:['역대상 15:12-15','민수기 4:15'],category:'본문 문맥',lens:'',wcf:[]},
+ {id:'chron-2-20-trust',title:'하나님과 선지자들을 신뢰하라는 말',aliases:['신뢰하라','믿으시오'],locations:[{code:'2ch',chapter:20,lo:20,hi:20}],summary:'여호사밧은 전쟁을 앞둔 백성에게 하나님과 그의 선지자들을 신뢰하라고 권했어요.',detail:'앞서 야하시엘을 통해 주신 말씀은 하나님께서 유다와 함께하시며 구원하신다는 것이에요. 요나서 주석의 편집자 주 44도 이 구절을 하나님의 말씀과 선지자의 말을 믿는 사례로 언급해요.',caution:'이 말씀을 모든 개인의 계획이 언제나 성공한다는 보장으로 바꾸지 않고, 유다 공동체가 받은 말씀의 문맥에서 읽어요.',refs:['역대하 20:15-20'],category:'본문 문맥',lens:'',wcf:[],sourceLinks:[{label:'CCEL 요나 주석 · 편집자 주 44 확인',url:'https://ccel.org/ccel/calvin/calcom28.html'}]}
+];
