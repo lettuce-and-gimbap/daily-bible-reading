@@ -34,6 +34,10 @@ test('문맥 각주는 정확한 권·장·단일 절에서만 일반 용어보�
  assert.doesNotMatch(render('믿으니',{code:'gen',chapter:15,lo:5,hi:5,edition:'gae'}),/context-gen-15-6/);
  assert.match(render('마음을 돌리셨습니다',{code:'exo',chapter:32,lo:14,hi:14,edition:'easy'}),/context-exo-32-14/);
  assert.doesNotMatch(render('마음을 돌리셨습니다',{code:'exo',chapter:32,lo:14,hi:14,edition:'niv'}),/context-exo-32-14/);
+ assert.match(render('에녹이 하나님과 동행하더니',{code:'gen',chapter:5,lo:24,hi:24,edition:'gae'}),/context-gen-5-24/);
+ assert.match(render('저를 남겨 두어',{code:'gen',chapter:44,lo:33,hi:33,edition:'easy'}),/context-gen-44-33/);
+ assert.doesNotMatch(render('휘장',{code:'exo',chapter:26,lo:32,hi:32,edition:'gae'}),/context-exo-26-33/);
+ assert.match(render('휘장',{code:'exo',chapter:26,lo:33,hi:33,edition:'gae'}),/context-exo-26-33/);
  assert.match(render('새 수레',{code:'1ch',chapter:13,lo:7,hi:7,edition:'gae'}),/chron-1-13-cart/);
  assert.doesNotMatch(render('새 수레',{code:'1ch',chapter:13,lo:6,hi:8,edition:'gae'}),/chron-1-13-cart/);
  assert.equal(render('<script>',current),'&lt;script&gt;');
@@ -52,7 +56,7 @@ test('합쳐진 역본 절은 행 번호가 한 절이어도 문맥 각주를 �
  assert.match(segment.innerHTML,/chron-2-20-trust/);
 });
 test('문맥 각주는 근거 절과 범위 및 별칭을 갖는다',()=>{
- const notes=ctx.window.ScriptureNotesData.contextualTerms;assert.equal(notes.length,156);
+ const notes=ctx.window.ScriptureNotesData.contextualTerms;assert.equal(notes.length,202);
  const ids=new Set([...terms,...passages].map(n=>n.id));
- for(const n of notes){assert(!ids.has(n.id));ids.add(n.id);assert(n.aliases.length&&n.refs.length&&n.locations.length&&n.summary);for(const l of n.locations){assert(['gen','exo','1ch','2ch'].includes(l.code));assert(l.chapter>0&&l.lo>0&&l.hi>=l.lo);}for(const ref of n.refs){const m=ref.match(/^(.+?) (\d+):(\d+)(?:[-–](\d+))?$/);assert(m,ref);const book=books.find(b=>b.name===m[1]);assert(book&&Number(m[2])<=book.chapters,ref);assert(Number(m[3])>0&&Number(m[4]||m[3])>=Number(m[3]),ref);}for(const link of n.sourceLinks||[])assert.equal(new URL(link.url).protocol,'https:');} for(const [code,count] of [['1ch',29],['2ch',36]]){const chapters=new Set(notes.flatMap(n=>n.locations).filter(l=>l.code===code).map(l=>l.chapter));assert.equal(chapters.size,count);}
+ for(const n of notes){assert(!ids.has(n.id));ids.add(n.id);assert(n.aliases.length&&n.refs.length&&n.locations.length&&n.summary);for(const l of n.locations){assert(['gen','exo','1ch','2ch'].includes(l.code));assert(l.chapter>0&&l.lo>0&&l.hi>=l.lo);}for(const ref of n.refs){const m=ref.match(/^(.+?) (\d+):(\d+)(?:[-–](\d+))?$/);assert(m,ref);const book=books.find(b=>b.name===m[1]);assert(book&&Number(m[2])<=book.chapters,ref);assert(Number(m[3])>0&&Number(m[4]||m[3])>=Number(m[3]),ref);}for(const link of n.sourceLinks||[])assert.equal(new URL(link.url).protocol,'https:');} for(const [code,count] of [['gen',50],['exo',40],['1ch',29],['2ch',36]]){const chapters=new Set(notes.flatMap(n=>n.locations).filter(l=>l.code===code).map(l=>l.chapter));assert.equal(chapters.size,count);}
 });
