@@ -14,7 +14,7 @@ window.ScriptureStudy=(()=>{
   for(const m of text.matchAll(pattern)){const g=available.find(a=>a.word===m[0]).term;out+=esc(text.slice(start,m.index))+`<span class="study-term" role="button" tabindex="0" data-study-term="${esc(g.id)}" aria-label="${esc(g.title)} 뜻 보기">${esc(m[0])}</span>`;start=m.index+m[0].length;}return out+esc(text.slice(start));
  }
  function showTerm(g){
-  const contexts=[...new Set((g.locations||[]).map(x=>`${x.code==='1ch'?'역대상':x.code==='2ch'?'역대하':x.code} ${x.chapter}장`))];
+  const contexts=[...new Set((g.locations||[]).map(x=>`${x.code==='gen'?'창세기':x.code==='exo'?'출애굽기':x.code==='1ch'?'역대상':x.code==='2ch'?'역대하':x.code} ${x.chapter}장`))];
   const sourceText=contexts.length?`개역개정 4판과 쉬운성경의 관련 절 및 제공받은 호크마 ${contexts.join(' · ')} 정리를 대조하여 앱에서 작성했어요. 교단이 발행한 공식 주석은 아니에요. 칼뱅이나 편집자 주석을 참고한 경우 해당 항목에 따로 밝혀요.`:'두 역본과 제공받은 호크마 참고 자료를 바탕으로 앱에서 정리한 설명이에요. 교단이 발행한 공식 주석은 아니에요. 교리적 설명은 예장합동이 표준으로 삼는 웨스트민스터 신앙고백을 참고해요.';
   const body=modal(g.title);body.innerHTML=`<small>${esc(g.category)} · 직접 정리한 설명</small><p>${esc(g.summary)}</p>${g.detail?`<p>${esc(g.detail)}</p>`:''}${g.caution?`<p class="study-caution"><strong>읽을 때 유의해요</strong><br>${esc(g.caution)}</p>`:''}${g.lens?`<details><summary>개혁주의 관점</summary><p>${esc(g.lens)}</p><small>웨스트민스터 신앙고백 ${g.wcf.map(n=>n+'장').join(' · ')}</small></details>`:''}<p class="study-reference">관련 구절: ${g.refs.map(r=>`<button type="button" data-study-reference="${esc(r)}">${esc(r)}</button>`).join(' ')}</p><details><summary>설명의 기준과 출처</summary><p>${esc(sourceText)}</p>${[...(contexts.length&&!g.lens?[]:Object.values(data.sources)),...(g.sourceLinks||[])].map(x=>`<p><a target="_blank" rel="noopener noreferrer" href="${esc(x.url)}">${esc(x.label)} ↗</a></p>`).join('')}</details>`;
  }
