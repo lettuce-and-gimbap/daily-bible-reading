@@ -65653,7 +65653,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-9-3",
     "title": "하나님의 응답",
     "aliases": [
-      "네 기도와 네가 내 앞에서 간구한 바를 내가 들었은즉"
+      "네 기도와 네가 내 앞에서 간구한 바를 내가 들었은즉",
+        "내 앞에서 기도한 것과 네가 나에게 구한 것을 들었다"
     ],
     "locations": [
       {
@@ -65683,7 +65684,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-9-4",
     "title": "다윗처럼 마음을 온전히",
     "aliases": [
-      "네가 만일 네 아버지 다윗이 행함 같이 마음을 온전히 하고 바르게 하여"
+      "네가 만일 네 아버지 다윗이 행함 같이 마음을 온전히 하고 바르게 하여",
+        "네 아버지 다윗처럼 올바르고 성실하게"
     ],
     "locations": [
       {
@@ -65713,7 +65715,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-9-9",
     "title": "재앙의 이유 설명",
     "aliases": [
-      "그들이 그들의 조상들을 애굽 땅에서 인도하여 내신 그들의 하나님 여호와를 버리고"
+      "그들이 그들의 조상들을 애굽 땅에서 인도하여 내신 그들의 하나님 여호와를 버리고",
+        "그래서 여호와께서 이런 재앙을 그들에게 내린 것이다"
     ],
     "locations": [
       {
@@ -65743,7 +65746,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-9-11",
     "title": "히람에게 준 스무 성읍",
     "aliases": [
-      "갈릴리 땅의 성읍 스무 곳을 히람에게 주었으니"
+      "갈릴리 땅의 성읍 스무 곳을 히람에게 주었으니",
+        "갈릴리에 있는 스무 개의 마을"
     ],
     "locations": [
       {
@@ -65773,7 +65777,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-9-13",
     "title": "가불 땅",
     "aliases": [
-      "이름하여 가불 땅이라 하였더니"
+      "이름하여 가불 땅이라 하였더니",
+        "쓸모없는 땅"
     ],
     "locations": [
       {
@@ -65803,7 +65808,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-9-16",
     "title": "게셀과 바로의 딸",
     "aliases": [
-      "전에 애굽 왕 바로가 올라와서 게셀을 탈취하여 불사르고"
+      "전에 애굽 왕 바로가 올라와서 게셀을 탈취하여 불사르고",
+        "이집트 왕이 게셀을 공격하여 점령한 일"
     ],
     "locations": [
       {
@@ -65834,7 +65840,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-9-22",
     "title": "이스라엘은 노예가 아님",
     "aliases": [
-      "다만 이스라엘 자손은 솔로몬이 노예를 삼지 아니하였으니"
+      "다만 이스라엘 자손은 솔로몬이 노예를 삼지 아니하였으니",
+        "어느 누구도 노예로 삼지 않았습니다"
     ],
     "locations": [
       {
@@ -65864,7 +65871,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-9-25",
     "title": "해마다 세 번의 제사",
     "aliases": [
-      "솔로몬이 여호와를 위하여 쌓은 제단 위에 해마다 세 번씩 번제와 감사의 제물을 드리고"
+      "솔로몬이 여호와를 위하여 쌓은 제단 위에 해마다 세 번씩 번제와 감사의 제물을 드리고",
+        "한 해에 세 번씩"
     ],
     "locations": [
       {
@@ -65894,7 +65902,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-9-28",
     "title": "오빌의 금",
     "aliases": [
-      "그들이 오빌에 이르러 거기서 금 사백이십 달란트를 얻고"
+      "그들이 오빌에 이르러 거기서 금 사백이십 달란트를 얻고",
+        "오빌에 이르러 금 사백이십 달란트"
     ],
     "locations": [
       {
@@ -65924,7 +65933,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-10-1",
     "title": "스바 여왕의 방문",
     "aliases": [
-      "스바의 여왕이 여호와의 이름으로 말미암은 솔로몬의 명성을 듣고"
+      "스바의 여왕이 여호와의 이름으로 말미암은 솔로몬의 명성을 듣고",
+        "스바의 여왕이 솔로몬의 명성을 듣고"
     ],
     "locations": [
       {
@@ -65954,7 +65964,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-10-9",
     "title": "여왕의 찬양",
     "aliases": [
-      "당신의 하나님 여호와를 송축할지로다"
+      "당신의 하나님 여호와를 송축할지로다",
+        "왕의 하나님 여호와를 찬양합니다"
     ],
     "locations": [
       {
@@ -65984,7 +65995,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-10-12",
     "title": "백단목 난간",
     "aliases": [
-      "왕이 백단목으로 여호와의 성전과 왕궁의 난간을 만들고"
+      "왕이 백단목으로 여호와의 성전과 왕궁의 난간을 만들고",
+        "백단목을 여호와의 성전과 왕궁의 계단"
     ],
     "locations": [
       {
@@ -66014,7 +66026,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-10-16",
     "title": "금 방패",
     "aliases": [
-      "솔로몬 왕이 쳐서 늘인 금으로 큰 방패 이백 개를 만들었으니"
+      "솔로몬 왕이 쳐서 늘인 금으로 큰 방패 이백 개를 만들었으니",
+        "큰 방패 이백 개를 만들었습니다"
     ],
     "locations": [
       {
@@ -66044,7 +66057,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-10-21",
     "title": "은을 귀히 여기지 않음",
     "aliases": [
-      "은 기물이 없으니 솔로몬의 시대에 은을 귀히 여기지 아니함은"
+      "은 기물이 없으니 솔로몬의 시대에 은을 귀히 여기지 아니함은",
+        "은을 귀하게 여기지 않았기 때문입니다"
     ],
     "locations": [
       {
@@ -66074,7 +66088,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-10-26",
     "title": "병거와 마병",
     "aliases": [
-      "솔로몬이 병거와 마병을 모으매 병거가 천사백 대요 마병이 만 이천 명이라"
+      "솔로몬이 병거와 마병을 모으매 병거가 천사백 대요 마병이 만 이천 명이라",
+        "전차 천사백 대와 전차를 모는 사람 만 이천 명"
     ],
     "locations": [
       {
@@ -66104,7 +66119,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-10-28",
     "title": "애굽에서 들여온 말",
     "aliases": [
-      "솔로몬의 말들은 애굽에서 들여왔으니"
+      "솔로몬의 말들은 애굽에서 들여왔으니",
+        "이집트와 길리기아에서 말을 수입했습니다"
     ],
     "locations": [
       {
@@ -66135,7 +66151,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-11-1",
     "title": "이방 여인들",
     "aliases": [
-      "솔로몬 왕이 바로의 딸 외에 이방의 많은 여인을 사랑하였으니"
+      "솔로몬 왕이 바로의 딸 외에 이방의 많은 여인을 사랑하였으니",
+        "모압 여자, 암몬 여자, 에돔 여자"
     ],
     "locations": [
       {
@@ -66165,7 +66182,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-11-4",
     "title": "늙은 솔로몬의 마음",
     "aliases": [
-      "왕의 마음이 그의 아버지 다윗의 마음과 같지 아니하여"
+      "왕의 마음이 그의 아버지 다윗의 마음과 같지 아니하여",
+        "솔로몬이 늙어감에 따라"
     ],
     "locations": [
       {
@@ -66195,7 +66213,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-11-9",
     "title": "두 번 나타나신 하나님",
     "aliases": [
-      "여호와께서 일찍이 두 번이나 그에게 나타나시고"
+      "여호와께서 일찍이 두 번이나 그에게 나타나시고",
+        "솔로몬에게 두 번이나 나타나셔서"
     ],
     "locations": [
       {
@@ -66225,7 +66244,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-11-11",
     "title": "나라를 빼앗는 선언",
     "aliases": [
-      "내가 반드시 이 나라를 네게서 빼앗아 네 신하에게 주리라"
+      "내가 반드시 이 나라를 네게서 빼앗아 네 신하에게 주리라",
+        "네 나라를 너에게서 빼앗아 네 신하에게 줄 것이다"
     ],
     "locations": [
       {
@@ -66255,7 +66275,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-11-14",
     "title": "에돔의 하닷",
     "aliases": [
-      "여호와께서 에돔 사람 하닷을 일으켜 솔로몬의 대적이 되게 하시니"
+      "여호와께서 에돔 사람 하닷을 일으켜 솔로몬의 대적이 되게 하시니",
+        "에돔 사람 하닷"
     ],
     "locations": [
       {
@@ -66285,7 +66306,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-11-26",
     "title": "느밧의 아들 여로보암",
     "aliases": [
-      "솔로몬의 신하 느밧의 아들 여로보암이 또한 손을 들어 왕을 대적하였으니"
+      "솔로몬의 신하 느밧의 아들 여로보암이 또한 손을 들어 왕을 대적하였으니",
+        "느밧의 아들 여로보암은 솔로몬의 신하였습니다"
     ],
     "locations": [
       {
@@ -66315,7 +66337,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-11-33",
     "title": "우상숭배의 이유",
     "aliases": [
-      "나 보기에 정직한 일과 내 법도와 내 율례를 행하지 아니함이니라"
+      "나 보기에 정직한 일과 내 법도와 내 율례를 행하지 아니함이니라",
+        "시돈 사람의 신 아스다롯과 모압 사람의 신 그모스"
     ],
     "locations": [
       {
@@ -66345,7 +66368,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-11-38",
     "title": "견고한 집의 약속",
     "aliases": [
-      "내 종 다윗이 행함 같이 내 율례와 명령을 지키면"
+      "내 종 다윗이 행함 같이 내 율례와 명령을 지키면",
+        "네 집안을 왕의 집안에서 끊이지 않게 하겠다"
     ],
     "locations": [
       {
@@ -66375,7 +66399,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-12-4",
     "title": "무거운 멍에",
     "aliases": [
-      "왕의 아버지가 우리의 멍에를 무겁게 하였으나"
+      "왕의 아버지가 우리의 멍에를 무겁게 하였으나",
+        "우리에게 매우 고된 일을 시켰습니다"
     ],
     "locations": [
       {
@@ -66406,7 +66431,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-12-11",
     "title": "전갈 채찍",
     "aliases": [
-      "내 아버지는 채찍으로 너희를 징계하였으나 나는 전갈 채찍으로 너희를 징계하리라"
+      "내 아버지는 채찍으로 너희를 징계하였으나 나는 전갈 채찍으로 너희를 징계하리라",
+        "가시 돋친 채찍으로 치겠다"
     ],
     "locations": [
       {
@@ -66436,7 +66462,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-12-15",
     "title": "여호와께로 말미암은 분열",
     "aliases": [
-      "이 일은 여호와께로 말미암아 난 것이라"
+      "이 일은 여호와께로 말미암아 난 것이라",
+        "이 일은 여호와께서 그렇게 되도록 하신 것이었는데"
     ],
     "locations": [
       {
@@ -66466,7 +66493,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-12-16",
     "title": "이새의 아들에게 받을 유산",
     "aliases": [
-      "우리가 다윗과 무슨 관계가 있느냐 이새의 아들에게서 받을 유산이 없도다"
+      "우리가 다윗과 무슨 관계가 있느냐 이새의 아들에게서 받을 유산이 없도다",
+        "우리는 이새의 아들과 상관이 없다"
     ],
     "locations": [
       {
@@ -66496,7 +66524,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-12-18",
     "title": "아도람과 아도니람",
     "aliases": [
-      "온 이스라엘이 그를 돌로 쳐죽인지라"
+      "온 이스라엘이 그를 돌로 쳐죽인지라",
+        "돌을 던져 아도니람을 죽였습니다"
     ],
     "locations": [
       {
@@ -66526,7 +66555,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-12-19",
     "title": "다윗의 집을 배반",
     "aliases": [
-      "이에 이스라엘이 다윗의 집을 배반하여 오늘까지 이르렀더라"
+      "이에 이스라엘이 다윗의 집을 배반하여 오늘까지 이르렀더라",
+        "다윗의 집안을 반역하기 시작하여"
     ],
     "locations": [
       {
@@ -66556,7 +66586,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-12-28",
     "title": "두 금송아지",
     "aliases": [
-      "이에 계획하고 두 금송아지를 만들고"
+      "이에 계획하고 두 금송아지를 만들고",
+        "금송아지 두 개를 만들고"
     ],
     "locations": [
       {
@@ -66586,7 +66617,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-12-32",
     "title": "여덟째 달의 절기",
     "aliases": [
-      "여덟째 달 곧 그 달 열다섯째 날로 절기를 정하여"
+      "여덟째 달 곧 그 달 열다섯째 날로 절기를 정하여",
+        "여덟째 달 십오 일에 새로운 절기를 정했습니다"
     ],
     "locations": [
       {
@@ -66620,7 +66652,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-13-2",
     "title": "제단을 향한 예언",
     "aliases": [
-      "제단아 제단아"
+      "제단아 제단아",
+        "제단아, 제단아!"
     ],
     "locations": [
       {
@@ -66650,7 +66683,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-13-4",
     "title": "마른 손",
     "aliases": [
-      "그를 향하여 편 손이 말라 다시 거두지 못하며"
+      "그를 향하여 편 손이 말라 다시 거두지 못하며",
+        "왕이 내민 팔은 마비되어 움직일 수가 없었습니다"
     ],
     "locations": [
       {
@@ -66680,7 +66714,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-13-9",
     "title": "먹지 말고 돌아가지 말라",
     "aliases": [
-      "떡도 먹지 말며 물도 마시지 말고 왔던 길로 되돌아가지 말라"
+      "떡도 먹지 말며 물도 마시지 말고 왔던 길로 되돌아가지 말라",
+        "내가 온 길로 되돌아가지도 말라고"
     ],
     "locations": [
       {
@@ -66710,7 +66745,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-13-18",
     "title": "거짓말로 데려감",
     "aliases": [
-      "나도 그대와 같은 선지자라"
+      "나도 그대와 같은 선지자라",
+        "나도 그대와 같은 예언자요"
     ],
     "locations": [
       {
@@ -66740,7 +66776,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-13-22",
     "title": "묘실에 들지 못함",
     "aliases": [
-      "네 시체가 네 조상들의 묘실에 들어가지 못하리라"
+      "네 시체가 네 조상들의 묘실에 들어가지 못하리라",
+        "너의 시체는 너의 가족 무덤에 묻히지 못할 것이다"
     ],
     "locations": [
       {
@@ -66770,7 +66807,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-13-24",
     "title": "사자에게 죽음",
     "aliases": [
-      "사자가 길에서 그를 만나 물어 죽이매"
+      "사자가 길에서 그를 만나 물어 죽이매",
+        "사자 한 마리가 나타나 그를 물어 죽였습니다"
     ],
     "locations": [
       {
@@ -66800,7 +66838,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-13-33",
     "title": "돌이키지 않음",
     "aliases": [
-      "여로보암이 이 일 후에도 그의 악한 길에서 떠나 돌이키지 아니하고"
+      "여로보암이 이 일 후에도 그의 악한 길에서 떠나 돌이키지 아니하고",
+        "나쁜 짓을 그만두지 않았습니다"
     ],
     "locations": [
       {
@@ -66830,7 +66869,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-14-2",
     "title": "변장한 아내",
     "aliases": [
-      "그는 이전에 내가 이 백성의 왕이 될 것을 내게 말한 사람이니라"
+      "그는 이전에 내가 이 백성의 왕이 될 것을 내게 말한 사람이니라",
+        "사람들이 모르게 변장하고 가시오"
     ],
     "locations": [
       {
@@ -66860,7 +66900,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-14-6",
     "title": "발소리로 알아봄",
     "aliases": [
-      "여로보암의 아내여 들어오라"
+      "여로보암의 아내여 들어오라",
+        "여로보암의 아내가 문에 들어서는 소리를 듣고"
     ],
     "locations": [
       {
@@ -66890,7 +66931,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-14-9",
     "title": "이전 사람보다 더 악함",
     "aliases": [
-      "네 이전 사람들보다도 더 악을 행하고"
+      "네 이전 사람들보다도 더 악을 행하고",
+        "너보다 먼저 나라를 다스렸던 자들보다도 더 나쁜 일을 했다"
     ],
     "locations": [
       {
@@ -66920,7 +66962,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-14-10",
     "title": "집을 쓸어 버림",
     "aliases": [
-      "여로보암의 집을 말갛게 쓸어 버릴지라"
+      "여로보암의 집을 말갛게 쓸어 버릴지라",
+        "쓰레기를 불로 태우듯이 네 집안을 완전히 멸망시키겠다"
     ],
     "locations": [
       {
@@ -66950,7 +66993,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-14-13",
     "title": "묘실에 드는 한 사람",
     "aliases": [
-      "여로보암의 집 가운데에서 그가 이스라엘의 하나님 여호와를 향하여 선한 뜻을 품었음이니라"
+      "여로보암의 집 가운데에서 그가 이스라엘의 하나님 여호와를 향하여 선한 뜻을 품었음이니라",
+        "그 아들만이 무덤에 묻힐 수 있을 것이오"
     ],
     "locations": [
       {
@@ -66980,7 +67024,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-14-15",
     "title": "아세라 상과 강 너머",
     "aliases": [
-      "그들이 아세라 상을 만들어 여호와를 진노하게 하였음이니라"
+      "그들이 아세라 상을 만들어 여호와를 진노하게 하였음이니라",
+        "유프라테스 강 저쪽으로 흩어 버리실 것이오"
     ],
     "locations": [
       {
@@ -67010,7 +67055,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-15-5",
     "title": "우리아의 일 외에는",
     "aliases": [
-      "이는 다윗이 헷 사람 우리아의 일 외에는 평생에 여호와 보시기에 정직하게 행하고"
+      "이는 다윗이 헷 사람 우리아의 일 외에는 평생에 여호와 보시기에 정직하게 행하고",
+        "헷 사람 우리아의 일 외에는"
     ],
     "locations": [
       {
@@ -67040,7 +67086,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-15-4",
     "title": "예루살렘의 등불",
     "aliases": [
-      "그의 하나님 여호와께서 다윗을 위하여 예루살렘에서 그에게 등불을 주시되"
+      "그의 하나님 여호와께서 다윗을 위하여 예루살렘에서 그에게 등불을 주시되",
+        "다윗을 위하여 예루살렘을 지켜 주셨습니다"
     ],
     "locations": [
       {
@@ -67070,7 +67117,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-15-11",
     "title": "아사의 정직",
     "aliases": [
-      "아사가 그의 조상 다윗 같이 여호와 보시기에 정직하게 행하여"
+      "아사가 그의 조상 다윗 같이 여호와 보시기에 정직하게 행하여",
+        "그의 조상 다윗처럼 여호와께서 보시기에 올바르게 살았습니다"
     ],
     "locations": [
       {
@@ -67100,7 +67148,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-15-13",
     "title": "마아가와 아세라 상",
     "aliases": [
-      "또 그의 어머니 마아가가 혐오스러운 아세라 상을 만들었으므로 태후의 위를 폐하고"
+      "또 그의 어머니 마아가가 혐오스러운 아세라 상을 만들었으므로 태후의 위를 폐하고",
+        "그의 할머니 마아가"
     ],
     "locations": [
       {
@@ -67130,7 +67179,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-15-14",
     "title": "산당은 남음",
     "aliases": [
-      "다만 산당은 없애지 아니하니라"
+      "다만 산당은 없애지 아니하니라",
+        "그러나 그는 산당만은 없애지 않았습니다"
     ],
     "locations": [
       {
@@ -67160,7 +67210,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-15-19",
     "title": "조약을 깨뜨려 달라",
     "aliases": [
-      "나와 당신 사이에 약조가 있고 내 아버지와 당신의 아버지 사이에도 있었느니라"
+      "나와 당신 사이에 약조가 있고 내 아버지와 당신의 아버지 사이에도 있었느니라",
+        "이스라엘 왕 바아사와 맺은 조약을 끊고"
     ],
     "locations": [
       {
@@ -67190,7 +67241,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-15-26",
     "title": "아버지의 길을 따른 나답",
     "aliases": [
-      "그가 여호와 보시기에 악을 행하되 그의 아버지의 길로 행하며"
+      "그가 여호와 보시기에 악을 행하되 그의 아버지의 길로 행하며",
+        "여로보암이 지은 모든 죄를 그대로 따라 했습니다"
     ],
     "locations": [
       {
@@ -67220,7 +67272,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-16-2",
     "title": "티끌에서 들어 올림",
     "aliases": [
-      "내가 너를 티끌에서 들어 내 백성 이스라엘 위에 주권자가 되게 하였거늘"
+      "내가 너를 티끌에서 들어 내 백성 이스라엘 위에 주권자가 되게 하였거늘",
+        "내가 너를 높여서 내 백성 이스라엘의 지도자로 삼았다"
     ],
     "locations": [
       {
@@ -67250,7 +67303,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-16-3",
     "title": "바아사 집의 운명",
     "aliases": [
-      "내가 너 바아사와 네 집을 쓸어버려 네 집이 느밧의 아들 여로보암의 집 같이 되게 하리니"
+      "내가 너 바아사와 네 집을 쓸어버려 네 집이 느밧의 아들 여로보암의 집 같이 되게 하리니",
+        "바아사야, 그러므로 내가 너와 네 집안을 멸망시키겠다"
     ],
     "locations": [
       {
@@ -67280,7 +67334,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-16-7",
     "title": "여로보암 집을 쳤음",
     "aliases": [
-      "그가 여로보암의 집과 같이 여호와 보시기에 모든 악을 행하며"
+      "그가 여로보암의 집과 같이 여호와 보시기에 모든 악을 행하며",
+        "여로보암의 집안 사람들을 다 죽여"
     ],
     "locations": [
       {
@@ -67310,7 +67365,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-16-9",
     "title": "시므리의 반역",
     "aliases": [
-      "그 신하 곧 병거 절반을 통솔한 지휘관 시므리가 왕을 모반하여"
+      "그 신하 곧 병거 절반을 통솔한 지휘관 시므리가 왕을 모반하여",
+        "시므리는 엘라를 반역했습니다"
     ],
     "locations": [
       {
@@ -67340,7 +67396,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-16-16",
     "title": "오므리를 왕으로 세움",
     "aliases": [
-      "그 날에 이스라엘의 무리가 진에서 군대 지휘관 오므리를 이스라엘의 왕으로 삼으매"
+      "그 날에 이스라엘의 무리가 진에서 군대 지휘관 오므리를 이스라엘의 왕으로 삼으매",
+        "그 날로 군대 사령관인 오므리를 이스라엘의 왕으로 세웠습니다"
     ],
     "locations": [
       {
@@ -67370,7 +67427,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-16-24",
     "title": "사마리아 산",
     "aliases": [
-      "그가 은 두 달란트로 세멜에게서 사마리아 산을 사고"
+      "그가 은 두 달란트로 세멜에게서 사마리아 산을 사고",
+        "세멜에게 은 두 달란트를 주고 사마리아 언덕을 샀습니다"
     ],
     "locations": [
       {
@@ -67400,7 +67458,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-16-31",
     "title": "이세벨과 바알 숭배",
     "aliases": [
-      "시돈 사람의 왕 엣바알의 딸 이세벨을 아내로 삼고"
+      "시돈 사람의 왕 엣바알의 딸 이세벨을 아내로 삼고",
+        "엣바알의 딸 이세벨과 결혼했습니다"
     ],
     "locations": [
       {
@@ -67434,7 +67493,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-17-1",
     "title": "가뭄 선포",
     "aliases": [
-      "디셉 사람 엘리야가 아합에게 말하되"
+      "디셉 사람 엘리야가 아합에게 말하되",
+        "비나 이슬이 내리지 않을 것입니다"
     ],
     "locations": [
       {
@@ -67464,7 +67524,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-17-4",
     "title": "까마귀가 먹임",
     "aliases": [
-      "그 시냇물을 마시라 내가 까마귀들에게 명령하여 거기서 너를 먹이게 하리라"
+      "그 시냇물을 마시라 내가 까마귀들에게 명령하여 거기서 너를 먹이게 하리라",
+        "내가 까마귀들을 시켜 네게 먹을 것을 가져다 주겠다"
     ],
     "locations": [
       {
@@ -67494,7 +67555,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-17-9",
     "title": "사르밧의 과부",
     "aliases": [
-      "내가 그 곳 과부에게 명령하여 네게 음식을 주게 하였느니라"
+      "내가 그 곳 과부에게 명령하여 네게 음식을 주게 하였느니라",
+        "시돈 땅 사르밧으로 가서 살아라"
     ],
     "locations": [
       {
@@ -67524,7 +67586,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-17-14",
     "title": "마르지 않는 가루와 기름",
     "aliases": [
-      "그 통의 가루가 떨어지지 아니하고 그 병의 기름이 없어지지 아니하리라"
+      "그 통의 가루가 떨어지지 아니하고 그 병의 기름이 없어지지 아니하리라",
+        "병의 기름도 떨어지지 않을 것이다"
     ],
     "locations": [
       {
@@ -67554,7 +67617,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-17-18",
     "title": "죄를 생각나게 함",
     "aliases": [
-      "당신이 나와 더불어 무슨 상관이 있기로 내 죄를 생각나게 하고"
+      "당신이 나와 더불어 무슨 상관이 있기로 내 죄를 생각나게 하고",
+        "내 죄를 생각나게 하십니까"
     ],
     "locations": [
       {
@@ -67584,7 +67648,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-17-21",
     "title": "아이를 살림",
     "aliases": [
-      "이 아이의 혼으로 그의 몸에 돌아오게 하옵소서"
+      "이 아이의 혼으로 그의 몸에 돌아오게 하옵소서",
+        "이 아이가 다시 살아나게 해 주십시오"
     ],
     "locations": [
       {
@@ -67614,7 +67679,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-17-24",
     "title": "하나님의 사람이라는 고백",
     "aliases": [
-      "당신은 하나님의 사람이시요 당신의 입에 있는 여호와의 말씀이 진실한 줄 아노라"
+      "당신은 하나님의 사람이시요 당신의 입에 있는 여호와의 말씀이 진실한 줄 아노라",
+        "당신은 정말로 하나님의 사람입니다"
     ],
     "locations": [
       {
@@ -67644,7 +67710,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-18-1",
     "title": "삼 년째의 말씀",
     "aliases": [
-      "제삼년에 여호와의 말씀이 엘리야에게 임하여"
+      "제삼년에 여호와의 말씀이 엘리야에게 임하여",
+        "가뭄이 든 지 삼 년째 되던 해에"
     ],
     "locations": [
       {
@@ -67674,7 +67741,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-18-4",
     "title": "오바댜의 숨김",
     "aliases": [
-      "오바댜가 선지자 백 명을 가지고 오십 명씩 굴에 숨기고 떡과 물을 먹였더라"
+      "오바댜가 선지자 백 명을 가지고 오십 명씩 굴에 숨기고 떡과 물을 먹였더라",
+        "예언자 백 명을 오십 명씩 두 동굴에 나누어 숨겨 주고"
     ],
     "locations": [
       {
@@ -67704,7 +67772,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-18-21",
     "title": "둘 사이에서 머뭇거림",
     "aliases": [
-      "너희가 어느 때까지 둘 사이에서 머뭇머뭇 하려느냐"
+      "너희가 어느 때까지 둘 사이에서 머뭇머뭇 하려느냐",
+        "바알과 여호와 두 사이에서 머뭇거리고 있으렵니까"
     ],
     "locations": [
       {
@@ -67734,7 +67803,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-18-24",
     "title": "불로 응답하는 신",
     "aliases": [
-      "이에 불로 응답하는 신 그가 하나님이니라"
+      "이에 불로 응답하는 신 그가 하나님이니라",
+        "불을 내리시는 신이 참하나님이시오"
     ],
     "locations": [
       {
@@ -67764,7 +67834,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-18-27",
     "title": "조롱",
     "aliases": [
-      "그는 신인즉 묵상하고 있는지 혹은 그가 잠깐 나갔는지"
+      "그는 신인즉 묵상하고 있는지 혹은 그가 잠깐 나갔는지",
+        "바알이 정말로 신이라면"
     ],
     "locations": [
       {
@@ -67794,7 +67865,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-18-31",
     "title": "열두 돌",
     "aliases": [
-      "야곱의 아들들의 지파의 수효를 따라 엘리야가 돌 열두 개를 취하니"
+      "야곱의 아들들의 지파의 수효를 따라 엘리야가 돌 열두 개를 취하니",
+        "야곱의 아들들의 지파 수에 따라 돌 열두 개를 준비했습니다"
     ],
     "locations": [
       {
@@ -67824,7 +67896,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-18-38",
     "title": "여호와의 불",
     "aliases": [
-      "이에 여호와의 불이 내려서 번제물과 나무와 돌과 흙을 태우고 또 도랑의 물을 핥은지라"
+      "이에 여호와의 불이 내려서 번제물과 나무와 돌과 흙을 태우고 또 도랑의 물을 핥은지라",
+        "여호와의 불이 하늘에서 떨어져"
     ],
     "locations": [
       {
@@ -67854,7 +67927,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-18-39",
     "title": "여호와만이 하나님",
     "aliases": [
-      "여호와 그는 하나님이시로다 여호와 그는 하나님이시로다"
+      "여호와 그는 하나님이시로다 여호와 그는 하나님이시로다",
+        "여호와 그는 하나님이시다!"
     ],
     "locations": [
       {
@@ -67884,7 +67958,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-19-4",
     "title": "로뎀 나무 아래의 기도",
     "aliases": [
-      "여호와여 넉넉하오니 지금 내 생명을 거두시옵소서"
+      "여호와여 넉넉하오니 지금 내 생명을 거두시옵소서",
+        "한 로뎀 나무 밑에 앉아서 하나님께 죽여 달라고 기도했습니다"
     ],
     "locations": [
       {
@@ -67914,7 +67989,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-19-6",
     "title": "숯불 떡과 물",
     "aliases": [
-      "본즉 머리맡에 숯불에 구운 떡과 한 병 물이 있더라"
+      "본즉 머리맡에 숯불에 구운 떡과 한 병 물이 있더라",
+        "구운 과자 하나와 물 한 병"
     ],
     "locations": [
       {
@@ -67944,7 +68020,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-19-8",
     "title": "사십 일의 길",
     "aliases": [
-      "사십 주 사십 야를 가서 하나님의 산 호렙에 이르니라"
+      "사십 주 사십 야를 가서 하나님의 산 호렙에 이르니라",
+        "사십 일 동안, 밤낮으로 걸어서"
     ],
     "locations": [
       {
@@ -67974,7 +68051,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-19-11",
     "title": "바람, 지진, 불 가운데 아닌 임재",
     "aliases": [
-      "바람 가운데에 여호와께서 계시지 아니하며 바람 후에 지진이 있으나"
+      "바람 가운데에 여호와께서 계시지 아니하며 바람 후에 지진이 있으나",
+        "여호와께서는 그 바람 속에 계시지 않았습니다"
     ],
     "locations": [
       {
@@ -68004,7 +68082,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-19-15",
     "title": "다메섹으로 가라",
     "aliases": [
-      "너는 네 길을 돌이켜 광야를 통하여 다메섹에 가서"
+      "너는 네 길을 돌이켜 광야를 통하여 다메섹에 가서",
+        "하사엘에게 기름을 부어 아람 왕으로 세워라"
     ],
     "locations": [
       {
@@ -68034,7 +68113,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-19-18",
     "title": "칠천 명을 남기심",
     "aliases": [
-      "그러나 내가 이스라엘 가운데에 칠천 명을 남기리니"
+      "그러나 내가 이스라엘 가운데에 칠천 명을 남기리니",
+        "이스라엘에 칠천 명을 남겨 두었는데"
     ],
     "locations": [
       {
@@ -68064,7 +68144,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-19-19",
     "title": "엘리사를 부르심",
     "aliases": [
-      "엘리야가 거기서 떠나 사밧의 아들 엘리사를 만나니"
+      "엘리야가 거기서 떠나 사밧의 아들 엘리사를 만나니",
+        "입고 있던 겉옷을 그에게 입혀 주었습니다"
     ],
     "locations": [
       {
@@ -68094,7 +68175,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-20-13",
     "title": "이름 없는 선지자의 예언",
     "aliases": [
-      "내가 오늘 그들을 네 손에 넘기리니"
+      "내가 오늘 그들을 네 손에 넘기리니",
+        "내가 오늘 저 군대를 너에게 넘겨 주어"
     ],
     "locations": [
       {
@@ -68124,7 +68206,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-20-22",
     "title": "이듬해의 재침입",
     "aliases": [
-      "해가 바뀌면 아람 왕이 왕을 치러 오리이다"
+      "해가 바뀌면 아람 왕이 왕을 치러 오리이다",
+        "이듬해 봄에 다시 쳐들어올 것입니다"
     ],
     "locations": [
       {
@@ -68154,7 +68237,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-20-23",
     "title": "산의 신 논리",
     "aliases": [
-      "그들의 신은 산의 신이므로 그들이 우리보다 강하였거니와"
+      "그들의 신은 산의 신이므로 그들이 우리보다 강하였거니와",
+        "이스라엘의 신은 산의 신입니다"
     ],
     "locations": [
       {
@@ -68184,7 +68268,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-20-28",
     "title": "골짜기의 신도 되심",
     "aliases": [
-      "여호와는 산의 신이요 골짜기의 신은 아니라 하는도다"
+      "여호와는 산의 신이요 골짜기의 신은 아니라 하는도다",
+        "나 여호와가 산의 신이지 평지의 신이 아니라고"
     ],
     "locations": [
       {
@@ -68214,7 +68299,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-20-31",
     "title": "베옷을 입고 항복",
     "aliases": [
-      "만일 우리가 굵은 베로 허리를 동이고 테두리를 머리에 쓰고 이스라엘의 왕에게로 나아가면"
+      "만일 우리가 굵은 베로 허리를 동이고 테두리를 머리에 쓰고 이스라엘의 왕에게로 나아가면",
+        "베옷을 입어 우리의 슬픔을 나타내고"
     ],
     "locations": [
       {
@@ -68244,7 +68330,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-20-34",
     "title": "조약을 맺고 놓아줌",
     "aliases": [
-      "이에 더불어 조약을 맺고 그를 놓았더라"
+      "이에 더불어 조약을 맺고 그를 놓았더라",
+        "두 왕은 평화 조약을 맺었습니다"
     ],
     "locations": [
       {
@@ -68274,7 +68361,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-20-36",
     "title": "불순종한 예언자의 죽음",
     "aliases": [
-      "네가 여호와의 말씀을 듣지 아니하였으니 네가 나를 떠나갈 때에 사자가 너를 죽이리라"
+      "네가 여호와의 말씀을 듣지 아니하였으니 네가 나를 떠나갈 때에 사자가 너를 죽이리라",
+        "여호와의 명령에 복종하지 않았소"
     ],
     "locations": [
       {
@@ -68304,7 +68392,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-20-42",
     "title": "아합의 목숨을 대신함",
     "aliases": [
-      "네 목숨은 그의 목숨을 대신하고 네 백성은 그의 백성을 대신하리라"
+      "네 목숨은 그의 목숨을 대신하고 네 백성은 그의 백성을 대신하리라",
+        "그의 백성 대신에 네 백성이 죽을 것이다"
     ],
     "locations": [
       {
@@ -68334,7 +68423,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-21-3",
     "title": "조상의 유산",
     "aliases": [
-      "내 조상의 유산을 왕에게 주기를 여호와께서 금하실지로다"
+      "내 조상의 유산을 왕에게 주기를 여호와께서 금하실지로다",
+        "여호와께서 금하신 일입니다"
     ],
     "locations": [
       {
@@ -68364,7 +68454,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-21-7",
     "title": "이세벨의 질책",
     "aliases": [
-      "왕이 지금 이스라엘 나라를 다스리시나이까"
+      "왕이 지금 이스라엘 나라를 다스리시나이까",
+        "그러고도 당신이 이스라엘의 왕이십니까?"
     ],
     "locations": [
       {
@@ -68394,7 +68485,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-21-10",
     "title": "거짓 증인을 세움",
     "aliases": [
-      "불량자 두 사람을 그의 앞에 마주 앉히고 그에게 대하여 증거하기를"
+      "불량자 두 사람을 그의 앞에 마주 앉히고 그에게 대하여 증거하기를",
+        "들었다고 거짓으로 말하게 하시오"
     ],
     "locations": [
       {
@@ -68424,7 +68516,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-21-13",
     "title": "돌로 쳐 죽임",
     "aliases": [
-      "무리가 그를 성읍 밖으로 끌고 나가서 돌로 쳐죽이고"
+      "무리가 그를 성읍 밖으로 끌고 나가서 돌로 쳐죽이고",
+        "백성이 나봇을 성 밖으로 끌고 가서 돌로 쳐죽였습니다"
     ],
     "locations": [
       {
@@ -68454,7 +68547,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-21-19",
     "title": "개가 핥을 피",
     "aliases": [
-      "개들이 나봇의 피를 핥은 곳에서 개들이 네 피 곧 네 몸의 피도 핥으리라"
+      "개들이 나봇의 피를 핥은 곳에서 개들이 네 피 곧 네 몸의 피도 핥으리라",
+        "개들이 나봇의 피를 핥았던 그 곳에서 네 피도 핥을 것이다"
     ],
     "locations": [
       {
@@ -68484,7 +68578,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-21-27",
     "title": "아합의 겸비",
     "aliases": [
-      "아합이 이 모든 말씀을 들을 때에 그의 옷을 찢고 굵은 베로 몸을 동이고 금식하고"
+      "아합이 이 모든 말씀을 들을 때에 그의 옷을 찢고 굵은 베로 몸을 동이고 금식하고",
+        "그는 베옷을 입고 음식을 먹지 않았습니다"
     ],
     "locations": [
       {
@@ -68514,7 +68609,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-22-4",
     "title": "여호사밧의 동행",
     "aliases": [
-      "나는 당신과 같고 내 백성은 당신의 백성과 같고 내 말들도 당신의 말들과 같으니이다"
+      "나는 당신과 같고 내 백성은 당신의 백성과 같고 내 말들도 당신의 말들과 같으니이다",
+        "내 군대와 말들은 당신의 군대와 말들과 마찬가지입니다"
     ],
     "locations": [
       {
@@ -68544,7 +68640,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-22-6",
     "title": "사백 명의 예언자",
     "aliases": [
-      "올라가소서 주께서 그 성읍을 왕의 손에 넘기시리이다"
+      "올라가소서 주께서 그 성읍을 왕의 손에 넘기시리이다",
+        "모인 예언자는 사백 명 가량 되었습니다"
     ],
     "locations": [
       {
@@ -68574,7 +68671,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-22-8",
     "title": "미가야를 미워하는 아합",
     "aliases": [
-      "그는 내게 대하여 길한 일은 예언하지 아니하고 흉한 일만 예언하기로 내가 그를 미워하나이다"
+      "그는 내게 대하여 길한 일은 예언하지 아니하고 흉한 일만 예언하기로 내가 그를 미워하나이다",
+        "나는 그를 미워합니다"
     ],
     "locations": [
       {
@@ -68604,7 +68702,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-22-14",
     "title": "여호와께서 말씀하시는 것만",
     "aliases": [
-      "여호와께서 내게 말씀하시는 것 곧 그것을 내가 말하리라"
+      "여호와께서 내게 말씀하시는 것 곧 그것을 내가 말하리라",
+        "오직 여호와께서 말씀해 주시는 것만을 전할 뿐이오"
     ],
     "locations": [
       {
@@ -68634,7 +68733,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-22-20",
     "title": "하늘 회의와 거짓말하는 영",
     "aliases": [
-      "여호와께서 말씀하시기를 누가 아합을 꾀어 그를 길르앗 라못에 올라가서 죽게 할꼬 하시니"
+      "여호와께서 말씀하시기를 누가 아합을 꾀어 그를 길르앗 라못에 올라가서 죽게 할꼬 하시니",
+        "누가 아합을 속여 길르앗 라못으로 싸우러 나가게 하겠느냐"
     ],
     "locations": [
       {
@@ -68665,7 +68765,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-22-24",
     "title": "뺨을 친 시드기야",
     "aliases": [
-      "여호와의 영이 나를 떠나 어디로 가서 네게 말씀하시더냐"
+      "여호와의 영이 나를 떠나 어디로 가서 네게 말씀하시더냐",
+        "여호와의 영이 언제 내게서 나가 너에게 말씀하셨느냐"
     ],
     "locations": [
       {
@@ -68695,7 +68796,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-22-28",
     "title": "모든 백성에게 들으라",
     "aliases": [
-      "또 이르되 너희 백성들아 다 들을지어다 하니라"
+      "또 이르되 너희 백성들아 다 들을지어다 하니라",
+        "여기에 있는 모든 백성이여, 내 말을 기억하시오"
     ],
     "locations": [
       {
@@ -68725,7 +68827,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-22-34",
     "title": "우연한 화살",
     "aliases": [
-      "한 사람이 무심코 활을 당겨 이스라엘 왕의 갑옷 솔기를 맞힌지라"
+      "한 사람이 무심코 활을 당겨 이스라엘 왕의 갑옷 솔기를 맞힌지라",
+        "그 화살이 우연히 이스라엘의 아합 왕에게 맞았습니다"
     ],
     "locations": [
       {
@@ -68755,7 +68858,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-22-38",
     "title": "개가 피를 핥음",
     "aliases": [
-      "그 병거를 사마리아 못에서 씻으매 개들이 그의 피를 핥았으니"
+      "그 병거를 사마리아 못에서 씻으매 개들이 그의 피를 핥았으니",
+        "개들이 와서 아합의 피를 핥았습니다"
     ],
     "locations": [
       {
@@ -68785,7 +68889,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-22-43",
     "title": "여호사밧의 산당",
     "aliases": [
-      "산당은 폐하지 아니하였으므로 백성이 아직도 산당에서 제사를 드리며 분향하였더라"
+      "산당은 폐하지 아니하였으므로 백성이 아직도 산당에서 제사를 드리며 분향하였더라",
+        "그러나 산당은 없애 버리지 않았습니다"
     ],
     "locations": [
       {
@@ -76321,7 +76426,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-1-8",
     "title": "옷차림으로 알아본 엘리야",
     "aliases": [
-      "허리에 가죽 띠를"
+      "허리에 가죽 띠를",
+        "털옷을 입고, 허리에는 가죽띠를 매고 있었습니다"
     ],
     "locations": [
       {
@@ -76350,7 +76456,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-1-10",
     "title": "하늘에서 내려온 불",
     "aliases": [
-      "불이 곧 하늘에서 내려와"
+      "불이 곧 하늘에서 내려와",
+        "하늘에서 불이 내려와 오십부장과 그의 부하 오십 명을 태워 버렸습니다"
     ],
     "locations": [
       {
@@ -76380,7 +76487,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-1-13",
     "title": "무릎 꿇은 셋째 오십부장",
     "aliases": [
-      "나의 생명과 당신의 종인"
+      "나의 생명과 당신의 종인",
+        "세 번째 오십부장이 가서 엘리야 앞에 무릎을 꿇었습니다"
     ],
     "locations": [
       {
@@ -76411,7 +76519,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-1-15",
     "title": "두려워하지 말고 내려가라",
     "aliases": [
-      "두려워하지 말고"
+      "두려워하지 말고",
+        "저 사람을 두려워하지 마라"
     ],
     "locations": [
       {
@@ -76441,7 +76550,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-1-17",
     "title": "엘리야의 말씀대로 죽은 왕",
     "aliases": [
-      "엘리야가 전한 여호와의 말씀대로"
+      "엘리야가 전한 여호와의 말씀대로",
+        "여호와께서 엘리야를 통해 하신 말씀대로 죽었습니다"
     ],
     "locations": [
       {
@@ -76472,7 +76582,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-2-1",
     "title": "엘리야가 하늘로 올라갈 때",
     "aliases": [
-      "회오리 바람으로 엘리야를 하늘로"
+      "회오리 바람으로 엘리야를 하늘로",
+        "엘리야를 회오리바람에 실어 하늘로 데려가려고 하셨습니다"
     ],
     "locations": [
       {
@@ -76502,7 +76613,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-2-2",
     "title": "떠나지 않겠다는 맹세",
     "aliases": [
-      "여호와께서 살아 계심과 당신의 영혼이 살아 있음을 두고 맹세하노니"
+      "여호와께서 살아 계심과 당신의 영혼이 살아 있음을 두고 맹세하노니",
+        "저는 결코 선생님을 떠나지 않겠습니다"
     ],
     "locations": [
       {
@@ -76533,7 +76645,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-2-8",
     "title": "겉옷으로 가른 요단 강",
     "aliases": [
-      "엘리야가 겉옷을 가지고 말아 물을 치매"
+      "엘리야가 겉옷을 가지고 말아 물을 치매",
+        "그것으로 강물을 쳤습니다"
     ],
     "locations": [
       {
@@ -76564,7 +76677,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-2-9",
     "title": "갑절의 영을 구하다",
     "aliases": [
-      "당신의 성령이 하시는 역사가 갑절이나"
+      "당신의 성령이 하시는 역사가 갑절이나",
+        "선생님의 영적인 능력에 두 배를 나에게 주십시오"
     ],
     "locations": [
       {
@@ -76595,7 +76709,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-2-11",
     "title": "불수레와 엘리야의 승천",
     "aliases": [
-      "불수레와 불말들이"
+      "불수레와 불말들이",
+        "불전차와 불말들이 나타나 두 사람을 갈라 놓았습니다"
     ],
     "locations": [
       {
@@ -76656,7 +76771,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-2-21",
     "title": "샘을 고친 소금",
     "aliases": [
-      "내가 이 물을 고쳤으니"
+      "내가 이 물을 고쳤으니",
+        "내가 이 물을 고치니"
     ],
     "locations": [
       {
@@ -76687,7 +76803,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-2-23",
     "title": "벧엘 아이들의 조롱",
     "aliases": [
-      "대머리여 올라가라"
+      "대머리여 올라가라",
+        "가거라, 이 대머리야"
     ],
     "locations": [
       {
@@ -76718,7 +76835,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-3-2",
     "title": "바알 주상을 없앤 요람",
     "aliases": [
-      "그의 아버지가 만든 바알의 주상을 없이하였음이라"
+      "그의 아버지가 만든 바알의 주상을 없이하였음이라",
+        "그의 아버지가 바알을 위해 세운 돌 우상들을 없애 버렸습니다"
     ],
     "locations": [
       {
@@ -76807,7 +76925,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-3-9",
     "title": "물이 떨어진 세 왕",
     "aliases": [
-      "군사와 따라가는 가축을 먹일 물이 없는지라"
+      "군사와 따라가는 가축을 먹일 물이 없는지라",
+        "군인들과 짐승들이 마실 물이 다 떨어졌습니다"
     ],
     "locations": [
       {
@@ -76868,7 +76987,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-3-15",
     "title": "거문고 소리와 여호와의 손",
     "aliases": [
-      "거문고 타는 자가 거문고를 탈 때에"
+      "거문고 타는 자가 거문고를 탈 때에",
+        "여호와께서 엘리사에게 능력을 주셨습니다"
     ],
     "locations": [
       {
@@ -76898,7 +77018,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-3-22",
     "title": "피처럼 붉은 물",
     "aliases": [
-      "맞은편 물이 붉어 피와 같음을"
+      "맞은편 물이 붉어 피와 같음을",
+        "건너편 물이 피처럼 붉게 보였습니다"
     ],
     "locations": [
       {
@@ -76960,7 +77081,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-4-1",
     "title": "빚에 몰린 과부의 호소",
     "aliases": [
-      "나의 남편이 이미 죽었는데"
+      "나의 남편이 이미 죽었는데",
+        "빚쟁이가 찾아와 내 두 아들을 데려다가 종으로 삼으려 하고 있습니다"
     ],
     "locations": [
       {
@@ -76991,7 +77113,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-4-2",
     "title": "기름 한 그릇",
     "aliases": [
-      "기름 한 그릇 외에는"
+      "기름 한 그릇 외에는",
+        "가진 것이라고는 기름 한 병이 전부입니다"
     ],
     "locations": [
       {
@@ -77021,7 +77144,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-4-6",
     "title": "기름이 그친 자리",
     "aliases": [
-      "기름이 곧 그쳤더라"
+      "기름이 곧 그쳤더라",
+        "그러자 기름이 더 이상 나오지 않았습니다"
     ],
     "locations": [
       {
@@ -77051,7 +77175,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-4-8",
     "title": "수넴 여인의 환대",
     "aliases": [
-      "그를 간권하여 음식을 먹게 하였으므로"
+      "그를 간권하여 음식을 먹게 하였으므로",
+        "그 곳을 지날 때마다 그 집에 들러"
     ],
     "locations": [
       {
@@ -77083,7 +77208,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-4-16",
     "title": "한 해 뒤의 아들 약속",
     "aliases": [
-      "아들을 안으리라"
+      "아들을 안으리라",
+        "내년 이맘때쯤에 당신은 아들을 품에 안고 있을 것이오"
     ],
     "locations": [
       {
@@ -77114,7 +77240,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-4-19",
     "title": "아이의 갑작스러운 두통",
     "aliases": [
-      "내 머리야 내 머리야"
+      "내 머리야 내 머리야",
+        "아이고, 내 머리야"
     ],
     "locations": [
       {
@@ -77146,7 +77273,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-4-35",
     "title": "아이를 살린 엘리사",
     "aliases": [
-      "일곱 번 재채기 하고"
+      "일곱 번 재채기 하고",
+        "아이가 재채기를 일곱 번 하더니 눈을 떴습니다"
     ],
     "locations": [
       {
@@ -77177,7 +77305,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-4-40",
     "title": "솥의 독을 없애다",
     "aliases": [
-      "솥에 죽음의 독이 있나이다"
+      "솥에 죽음의 독이 있나이다",
+        "국에 독이 있습니다"
     ],
     "locations": [
       {
@@ -77208,7 +77337,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-4-42",
     "title": "보리떡 이십 개로 백 명을",
     "aliases": [
-      "보리떡 이십 개"
+      "보리떡 이십 개",
+        "그것을 사람들에게 주어서 먹게 하여라"
     ],
     "locations": [
       {
@@ -77239,7 +77369,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-5-1",
     "title": "나병에 걸린 아람 장군",
     "aliases": [
-      "그는 큰 용사이나 나병환자더라"
+      "그는 큰 용사이나 나병환자더라",
+        "강하고 용감한 사람이었지만 문둥병에 걸려 있었습니다"
     ],
     "locations": [
       {
@@ -77299,7 +77430,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-5-7",
     "title": "사람을 살리는 하나님이냐",
     "aliases": [
-      "내가 사람을 죽이고 살리는 하나님이냐"
+      "내가 사람을 죽이고 살리는 하나님이냐",
+        "내가 어떻게 사람을 죽이기도 하고 살리기도 하겠느냐"
     ],
     "locations": [
       {
@@ -77330,7 +77462,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-5-10",
     "title": "요단 강에 일곱 번 씻으라",
     "aliases": [
-      "요단 강에 몸을 일곱 번 씻으라"
+      "요단 강에 몸을 일곱 번 씻으라",
+        "요단 강으로 가서 일곱 번 씻으시오"
     ],
     "locations": [
       {
@@ -77361,7 +77494,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-5-14",
     "title": "어린아이 살처럼 깨끗해지다",
     "aliases": [
-      "어린 아이의 살 같이"
+      "어린 아이의 살 같이",
+        "마치 어린아이의 살결처럼 깨끗해졌습니다"
     ],
     "locations": [
       {
@@ -77391,7 +77525,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-5-15",
     "title": "이스라엘 밖에는 신이 없다는 고백",
     "aliases": [
-      "이스라엘 외에는 온 천하에 신이 없는 줄을"
+      "이스라엘 외에는 온 천하에 신이 없는 줄을",
+        "오직 이스라엘밖에 없다는 것을 이제야 알았소"
     ],
     "locations": [
       {
@@ -77421,7 +77556,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-5-17",
     "title": "흙을 청한 나아만",
     "aliases": [
-      "여호와 외 다른 신에게는 드리지 아니하고"
+      "여호와 외 다른 신에게는 드리지 아니하고",
+        "오직 여호와께만 바치겠소"
     ],
     "locations": [
       {
@@ -77451,7 +77587,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-5-20",
     "title": "게하시의 욕심",
     "aliases": [
-      "내가 그를 쫓아가서"
+      "내가 그를 쫓아가서",
+        "나아만을 뒤쫓아가서 뭔가 하나라도 꼭 받아 오고 말 것이다"
     ],
     "locations": [
       {
@@ -77482,7 +77619,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-5-27",
     "title": "게하시에게 옮은 나병",
     "aliases": [
-      "나병이 발하여 눈같이 되었더라"
+      "나병이 발하여 눈같이 되었더라",
+        "너와 네 자손에게 영원히 옮겨질 것이다"
     ],
     "locations": [
       {
@@ -77516,7 +77654,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-6-6",
     "title": "빌려 온 도끼를 건지다",
     "aliases": [
-      "쇠도끼를 떠오르게 하고"
+      "쇠도끼를 떠오르게 하고",
+        "나뭇가지 하나를 꺾어서 그 곳에 던지자, 도끼가 떠올랐습니다"
     ],
     "locations": [
       {
@@ -77546,7 +77685,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-6-17",
     "title": "눈이 열린 종",
     "aliases": [
-      "불말과 불병거가 산에 가득하여"
+      "불말과 불병거가 산에 가득하여",
+        "내 종의 눈을 열어 주셔서 볼 수 있게 해 주십시오"
     ],
     "locations": [
       {
@@ -77577,7 +77717,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-6-18",
     "title": "눈을 어둡게 하다",
     "aliases": [
-      "원하건대 저 무리의 눈을 어둡게 하옵소서"
+      "원하건대 저 무리의 눈을 어둡게 하옵소서",
+        "저 사람들의 눈이 멀게 해 주십시오"
     ],
     "locations": [
       {
@@ -77610,7 +77751,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-6-22",
     "title": "적을 죽이지 말고 먹여 돌려보내라",
     "aliases": [
-      "떡과 물을 그들 앞에 두어 먹고 마시게 하고"
+      "떡과 물을 그들 앞에 두어 먹고 마시게 하고",
+        "그들에게 먹을 것과 물을 주어서 먹고 마시게 한 다음"
     ],
     "locations": [
       {
@@ -77640,7 +77782,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-6-25",
     "title": "사마리아의 기근",
     "aliases": [
-      "나귀 머리 하나에"
+      "나귀 머리 하나에",
+        "나귀 머리 하나가 은 팔십 세겔 가량에 팔리고"
     ],
     "locations": [
       {
@@ -77671,7 +77814,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-6-28",
     "title": "아이를 나눠 먹자는 약속",
     "aliases": [
-      "내일은 내 아들을 먹자"
+      "내일은 내 아들을 먹자",
+        "오늘은 당신 아들을 잡아먹고 내일은 내 아들을 잡아먹자"
     ],
     "locations": [
       {
@@ -77764,7 +77908,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-7-2",
     "title": "하늘의 창을 의심한 장관",
     "aliases": [
-      "여호와께서 하늘에 창을 내신들"
+      "여호와께서 하늘에 창을 내신들",
+        "그러나 그것을 먹지는 못할 것이오"
     ],
     "locations": [
       {
@@ -77794,7 +77939,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-7-3",
     "title": "성문 어귀의 나병환자 넷",
     "aliases": [
-      "성문 어귀에 나병환자 네 사람이"
+      "성문 어귀에 나병환자 네 사람이",
+        "문둥병자 네 명이 있었습니다"
     ],
     "locations": [
       {
@@ -77824,7 +77970,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-7-6",
     "title": "들리지 않는 군대 소리",
     "aliases": [
-      "병거 소리와 말 소리와 큰 군대의 소리를"
+      "병거 소리와 말 소리와 큰 군대의 소리를",
+        "아람 군대의 귀에 전차와 말과 큰 군대의 소리가 들리도록 하셨습니다"
     ],
     "locations": [
       {
@@ -77854,7 +78001,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-7-8",
     "title": "은과 금을 감춘 나병환자들",
     "aliases": [
-      "은과 금과 의복을 가지고 가서 감추고"
+      "은과 금과 의복을 가지고 가서 감추고",
+        "은과 금과 옷가지들을 진에서 가지고 나와 숨겨 두었습니다"
     ],
     "locations": [
       {
@@ -77884,7 +78032,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-7-17",
     "title": "예언대로 밟혀 죽은 장관",
     "aliases": [
-      "백성이 성문에서 그를 밟으매"
+      "백성이 성문에서 그를 밟으매",
+        "백성들이 그를 밟고 지나가 죽고 말았습니다"
     ],
     "locations": [
       {
@@ -77946,7 +78095,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-8-6",
     "title": "왕 앞에서 되찾은 땅",
     "aliases": [
-      "이 여인에게 속한 모든 것과"
+      "이 여인에게 속한 모든 것과",
+        "이 여자의 재산을 다 돌려 주어라"
     ],
     "locations": [
       {
@@ -77976,7 +78126,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-8-7",
     "title": "병든 벤하닷과 하사엘",
     "aliases": [
-      "하나님의 사람이 여기 이르렀나이다"
+      "하나님의 사람이 여기 이르렀나이다",
+        "아람 왕 벤하닷은 병들어 있었습니다"
     ],
     "locations": [
       {
@@ -78008,7 +78159,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-8-10",
     "title": "나을 것이나 죽을 것이라",
     "aliases": [
-      "여호와께서 그가 반드시 죽으리라고 내게 알게 하셨느니라"
+      "여호와께서 그가 반드시 죽으리라고 내게 알게 하셨느니라",
+        "그가 틀림없이 죽을 것이라고 나에게 가르쳐 주셨소"
     ],
     "locations": [
       {
@@ -78040,7 +78192,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-8-12",
     "title": "하사엘이 저지를 악",
     "aliases": [
-      "네가 이스라엘 자손에게 행할 모든 악을 내가 앎이라"
+      "네가 이스라엘 자손에게 행할 모든 악을 내가 앎이라",
+        "이스라엘의 강하고 굳건한 성을 불태울 것이고"
     ],
     "locations": [
       {
@@ -78101,7 +78254,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-8-20",
     "title": "에돔과 립나의 반역",
     "aliases": [
-      "에돔이 유다의 손에서 배반하여"
+      "에돔이 유다의 손에서 배반하여",
+        "에돔 백성은 자기들의 왕을 따로 세웠습니다"
     ],
     "locations": [
       {
@@ -78162,7 +78316,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-9-1",
     "title": "예후에게 기름을 붓다",
     "aliases": [
-      "기름병을 손에 가지고 길르앗 라못으로 가라"
+      "기름병을 손에 가지고 길르앗 라못으로 가라",
+        "이 작은 기름병을 손에 들고 길르앗 땅 라못으로 가거라"
     ],
     "locations": [
       {
@@ -78192,7 +78347,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-9-7",
     "title": "아합의 집을 치라",
     "aliases": [
-      "네 주 아합의 집을 치라"
+      "네 주 아합의 집을 치라",
+        "네 주인인 아합의 집안을 멸망시켜야 한다"
     ],
     "locations": [
       {
@@ -78224,7 +78380,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-9-13",
     "title": "옷을 깔고 세운 왕",
     "aliases": [
-      "예후는 왕이라 하니라"
+      "예후는 왕이라 하니라",
+        "돌 층계 위에 깔고 예후를 그 위에 모셨습니다"
     ],
     "locations": [
       {
@@ -78285,7 +78442,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-9-22",
     "title": "요람을 쏘다",
     "aliases": [
-      "네 어머니 이세벨의 음행과 술수가"
+      "네 어머니 이세벨의 음행과 술수가",
+        "예후여, 좋은 소식을 가지고 오는가?"
     ],
     "locations": [
       {
@@ -78348,7 +78506,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-9-27",
     "title": "도망하던 아하시야",
     "aliases": [
-      "그도 병거 가운데서 죽이라"
+      "그도 병거 가운데서 죽이라",
+        "아하시야는 므깃도까지 도망쳤지만 그 곳에서 죽고 말았습니다"
     ],
     "locations": [
       {
@@ -78378,7 +78537,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-9-30",
     "title": "창에서 내다본 이세벨",
     "aliases": [
-      "눈을 그리고 머리를 꾸미고"
+      "눈을 그리고 머리를 꾸미고",
+        "이세벨은 눈에 화장을 하고 머리를 손질한 뒤에 창 밖을 내다보았습니다"
     ],
     "locations": [
       {
@@ -78441,7 +78601,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-10-6",
     "title": "왕자들의 머리",
     "aliases": [
-      "너희 주의 아들된 사람들의 머리를"
+      "너희 주의 아들된 사람들의 머리를",
+        "왕의 집안에는 아들이 칠십 명 있었습니다"
     ],
     "locations": [
       {
@@ -78471,7 +78632,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-10-10",
     "title": "땅에 떨어지지 않는 말씀",
     "aliases": [
-      "하나도 땅에 떨어지지 아니하리라"
+      "하나도 땅에 떨어지지 아니하리라",
+        "여호와께서 아합의 집안에 대해 하신 말씀은 다 이루어질 것이오"
     ],
     "locations": [
       {
@@ -78501,7 +78663,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-10-11",
     "title": "아합 집안의 끝",
     "aliases": [
-      "하나도 생존자를 남기지 아니하였더라"
+      "하나도 생존자를 남기지 아니하였더라",
+        "한 사람도 살아 남은 사람이 없었습니다"
     ],
     "locations": [
       {
@@ -78563,7 +78726,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-10-21",
     "title": "바알 신당의 학살",
     "aliases": [
-      "바알의 신당 이쪽부터 저쪽까지 가득하였더라"
+      "바알의 신당 이쪽부터 저쪽까지 가득하였더라",
+        "바알을 섬기는 사람들이 하나도 빠짐없이 다 모였습니다"
     ],
     "locations": [
       {
@@ -78595,7 +78759,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-10-27",
     "title": "바알 신당을 변소로",
     "aliases": [
-      "신당을 헐어서 변소를 만들었더니"
+      "신당을 헐어서 변소를 만들었더니",
+        "그 곳을 변소로 만들었습니다"
     ],
     "locations": [
       {
@@ -78625,7 +78790,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-10-29",
     "title": "여로보암의 죄는 그대로",
     "aliases": [
-      "벧엘과 단에 있는 금송아지를 섬기는 죄에서는 떠나지 아니하였더라"
+      "벧엘과 단에 있는 금송아지를 섬기는 죄에서는 떠나지 아니하였더라",
+        "완전히 돌아서지는 않았습니다"
     ],
     "locations": [
       {
@@ -78786,7 +78952,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-11-15",
     "title": "성전 밖에서 죽은 아달랴",
     "aliases": [
-      "그를 따르는 자는 모두 칼로 죽이라"
+      "그를 따르는 자는 모두 칼로 죽이라",
+        "여호와의 성전 안에서 아달랴를 죽이지 마시오"
     ],
     "locations": [
       {
@@ -78816,7 +78983,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-11-18",
     "title": "바알 신당을 허물다",
     "aliases": [
-      "그 신당을 허물고"
+      "그 신당을 허물고",
+        "제단과 우상들을 부숴 버리고 신전을 무너뜨렸습니다"
     ],
     "locations": [
       {
@@ -78877,7 +79045,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-12-4",
     "title": "성전 수리를 위한 헌금",
     "aliases": [
-      "각 사람의 몸값으로 드리는 은"
+      "각 사람의 몸값으로 드리는 은",
+        "백성들이 여호와의 성전에 예물로 바친 모든 돈"
     ],
     "locations": [
       {
@@ -78942,7 +79111,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-12-15",
     "title": "회계하지 않은 이유",
     "aliases": [
-      "그들이 성실히 일을 하였음이라"
+      "그들이 성실히 일을 하였음이라",
+        "일꾼들이 정직했기 때문에 그 돈을 어디에 썼는지 물어 보지 않았습니다"
     ],
     "locations": [
       {
@@ -79001,7 +79171,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-12-20",
     "title": "신복에게 죽은 요아스",
     "aliases": [
-      "요아스의 신복들이 일어나 반역하여"
+      "요아스의 신복들이 일어나 반역하여",
+        "밀로 궁에서 요아스를 죽였습니다"
     ],
     "locations": [
       {
@@ -79062,7 +79233,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-13-4",
     "title": "구원자를 보내신 여호와",
     "aliases": [
-      "여호와께서 들으셨으니"
+      "여호와께서 들으셨으니",
+        "여호와께서는 그의 기도를 들으시고"
     ],
     "locations": [
       {
@@ -79214,7 +79386,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-14-3",
     "title": "정직하지만 불완전한 아마샤",
     "aliases": [
-      "여호와 보시기에 정직히 행하였으나"
+      "여호와 보시기에 정직히 행하였으나",
+        "그러나 그의 조상 다윗만큼은 못했습니다"
     ],
     "locations": [
       {
@@ -79244,7 +79417,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-14-6",
     "title": "율법대로 지킨 자녀들",
     "aliases": [
-      "왕을 죽인 자의 자녀들은 죽이지 아니하였으니"
+      "왕을 죽인 자의 자녀들은 죽이지 아니하였으니",
+        "각 사람은 자기가 지은 죄에 따라 죽어야 한다"
     ],
     "locations": [
       {
@@ -79305,7 +79479,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-14-9",
     "title": "가시나무와 백향목의 비유",
     "aliases": [
-      "레바논 가시나무가 레바논 백향목에게"
+      "레바논 가시나무가 레바논 백향목에게",
+        "레바논의 가시나무가 레바논의 백향목에게 사자를 보내어"
     ],
     "locations": [
       {
@@ -79336,7 +79511,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-14-14",
     "title": "성벽을 헐고 성전을 약탈하다",
     "aliases": [
-      "여호와의 성전과 왕궁 곳간에 있는 금 은과"
+      "여호와의 성전과 왕궁 곳간에 있는 금 은과",
+        "여호와의 성전 안에 있는 금과 은과 그 밖의 모든 것을 빼앗아 갔습니다"
     ],
     "locations": [
       {
@@ -79366,7 +79542,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-14-19",
     "title": "라기스에서 죽은 아마샤",
     "aliases": [
-      "라기스로 도망하였더니"
+      "라기스로 도망하였더니",
+        "백성들은 라기스로 사람들을 보내어 아마샤를 죽였습니다"
     ],
     "locations": [
       {
@@ -79396,7 +79573,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-14-25",
     "title": "요나를 통한 영토 회복",
     "aliases": [
-      "선지자 요나를 통하여"
+      "선지자 요나를 통하여",
+        "그의 종 요나를 통해 말씀하신 대로였습니다"
     ],
     "locations": [
       {
@@ -79427,7 +79605,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-15-3",
     "title": "정직했으나 산당이 남은 아사랴",
     "aliases": [
-      "정직히 행하였으나"
+      "정직히 행하였으나",
+        "그의 아버지 아마샤처럼 여호와께서 보시기에 옳은 일을 하였습니다"
     ],
     "locations": [
       {
@@ -79457,7 +79636,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-15-5",
     "title": "나병에 걸린 왕",
     "aliases": [
-      "여호와께서 왕을 치셨으므로"
+      "여호와께서 왕을 치셨으므로",
+        "여호와께서 아사랴에게 벌을 내리셔서"
     ],
     "locations": [
       {
@@ -79550,7 +79730,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-15-16",
     "title": "딥사의 학살",
     "aliases": [
-      "아이 밴 부녀를 갈랐더라"
+      "아이 밴 부녀를 갈랐더라",
+        "임신한 여자들의 배를 갈랐습니다"
     ],
     "locations": [
       {
@@ -79644,7 +79825,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-16-3",
     "title": "아들을 불 가운데로 지나게 한 아하스",
     "aliases": [
-      "자기 아들을 불 가운데로"
+      "자기 아들을 불 가운데로",
+        "자기 아들까지도 불에 태워 제물로 바쳤습니다"
     ],
     "locations": [
       {
@@ -79738,7 +79920,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-16-15",
     "title": "놋 제단을 밀어낸 명령",
     "aliases": [
-      "놋 제단은 내가"
+      "놋 제단은 내가",
+        "놋제단은 내가 여호와의 뜻을 여쭈어 볼 때만 쓰겠소"
     ],
     "locations": [
       {
@@ -79768,7 +79951,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-16-18",
     "title": "앗수르를 두려워해 성전을 옮기다",
     "aliases": [
-      "앗수르 왕을 두려워하여"
+      "앗수르 왕을 두려워하여",
+        "앗시리아 왕에게 잘 보이기 위한 것이었습니다"
     ],
     "locations": [
       {
@@ -79798,7 +79982,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-17-2",
     "title": "덜 악했지만 악했던 호세아",
     "aliases": [
-      "다만 그 전 이스라엘 여러 왕들과 같이 하지는 아니하였더라"
+      "다만 그 전 이스라엘 여러 왕들과 같이 하지는 아니하였더라",
+        "그전의 이스라엘 왕들만큼 악하지는 않았습니다"
     ],
     "locations": [
       {
@@ -79889,7 +80074,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-17-7",
     "title": "멸망의 이유를 신앙에서 찾다",
     "aliases": [
-      "애굽 땅에서 인도하여 내사"
+      "애굽 땅에서 인도하여 내사",
+        "그런데도 이스라엘 백성은 다른 신들을 섬겼습니다"
     ],
     "locations": [
       {
@@ -79979,7 +80165,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-17-25",
     "title": "사자와 제사장, 혼합된 이주민",
     "aliases": [
-      "사자들을 그들 가운데에 보내시매"
+      "사자들을 그들 가운데에 보내시매",
+        "여호와께서 사나운 사자들을 그들 가운데 보내어"
     ],
     "locations": [
       {
@@ -80105,7 +80292,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-18-15",
     "title": "은과 금을 바친 히스기야",
     "aliases": [
-      "여호와의 성전과 왕궁 곳간에 있는 은"
+      "여호와의 성전과 왕궁 곳간에 있는 은",
+        "여호와의 성전과 왕궁 보물 창고에 있는 모든 은을 산헤립에게 주었습니다"
     ],
     "locations": [
       {
@@ -80168,7 +80356,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-18-28",
     "title": "성벽 위 백성에게 외친 랍사게",
     "aliases": [
-      "유다 말로 크게 소리 질러"
+      "유다 말로 크게 소리 질러",
+        "히브리 말로 크게 외쳤습니다"
     ],
     "locations": [
       {
@@ -80200,7 +80389,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-18-36",
     "title": "잠잠한 백성",
     "aliases": [
-      "백성이 잠잠하고 한 마디도"
+      "백성이 잠잠하고 한 마디도",
+        "히스기야 왕이 그에게 대답하지 말라고 명령했기 때문입니다"
     ],
     "locations": [
       {
@@ -80230,7 +80420,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-19-1",
     "title": "베옷을 입고 성전으로",
     "aliases": [
-      "굵은 베를 두르고"
+      "굵은 베를 두르고",
+        "베옷을 입고 여호와의 성전으로 갔습니다"
     ],
     "locations": [
       {
@@ -80260,7 +80451,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-19-3",
     "title": "환난의 날, 해산할 힘이 없는 날",
     "aliases": [
-      "환난과 징벌과 모욕의 날이라"
+      "환난과 징벌과 모욕의 날이라",
+        "아이를 낳을 힘이 없는 여자와도 같소"
     ],
     "locations": [
       {
@@ -80289,7 +80481,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-19-6",
     "title": "두려워하지 말라는 이사야의 말씀",
     "aliases": [
-      "나를 모욕하는 말 때문에 두려워하지 말라"
+      "나를 모욕하는 말 때문에 두려워하지 말라",
+        "앗시리아 왕의 신하들이 한 말 때문에 두려워하지 마라"
     ],
     "locations": [
       {
@@ -80414,7 +80607,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-20-1",
     "title": "집을 정리하라",
     "aliases": [
-      "집을 정리하라"
+      "집을 정리하라",
+        "네 집안 일을 정리하여라"
     ],
     "locations": [
       {
@@ -80445,7 +80639,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-20-3",
     "title": "기억하옵소서",
     "aliases": [
-      "진실과 전심으로"
+      "진실과 전심으로",
+        "여호와께서 보시기에 옳은 일을 한 것을 기억해 주십시오"
     ],
     "locations": [
       {
@@ -80507,7 +80702,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-20-11",
     "title": "해 그림자가 뒤로 물러가다",
     "aliases": [
-      "해 그림자를 십도 뒤로 물러가게 하셨더라"
+      "해 그림자를 십도 뒤로 물러가게 하셨더라",
+        "해시계의 해 그림자를 열 칸 뒤로 물러나게 해 주셨습니다"
     ],
     "locations": [
       {
@@ -80538,7 +80734,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-20-13",
     "title": "보물고를 보여 준 히스기야",
     "aliases": [
-      "자기 보물고의 금은과 향품과 보배로운 기름"
+      "자기 보물고의 금은과 향품과 보배로운 기름",
+        "자기 보물 창고에 있는 것을 다 보여 주었습니다"
     ],
     "locations": [
       {
@@ -80570,7 +80767,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-20-19",
     "title": "나만 평안하면 되는가",
     "aliases": [
-      "당신이 전한 바 여호와의 말씀이 선하니이다"
+      "당신이 전한 바 여호와의 말씀이 선하니이다",
+        "내가 왕으로 있는 동안에는 평화와 안정이 있겠지"
     ],
     "locations": [
       {
@@ -80633,7 +80831,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-21-4",
     "title": "성전 안에 쌓은 제단",
     "aliases": [
-      "여호와의 성전에 제단들을 쌓고"
+      "여호와의 성전에 제단들을 쌓고",
+        "여호와의 성전에 제단들을 쌓았습니다"
     ],
     "locations": [
       {
@@ -80663,7 +80862,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-21-6",
     "title": "점과 사술, 그리고 자녀를 불로 지나게 함",
     "aliases": [
-      "점치며 사술을 행하며"
+      "점치며 사술을 행하며",
+        "그는 요술을 부렸으며 표적과 꿈을 풀어 점을 치기도 했습니다"
     ],
     "locations": [
       {
@@ -80693,7 +80893,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-21-7",
     "title": "성전에 세운 아세라 목상",
     "aliases": [
-      "아로새긴 아세라 목상을 성전에"
+      "아로새긴 아세라 목상을 성전에",
+        "아세라 우상을 새겨서 성전 안에 놓아 두었습니다"
     ],
     "locations": [
       {
@@ -80724,7 +80925,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-21-10",
     "title": "선지자들의 심판 말씀",
     "aliases": [
-      "여호와께서 그의 종 모든 선지자들을 통하여 말씀하여"
+      "여호와께서 그의 종 모든 선지자들을 통하여 말씀하여",
+        "여호와께서 그의 종인 예언자들을 통해 말씀하셨습니다"
     ],
     "locations": [
       {
@@ -80756,7 +80958,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-21-16",
     "title": "무죄한 자의 피",
     "aliases": [
-      "무죄한 자의 피를 심히 많이 흘려"
+      "무죄한 자의 피를 심히 많이 흘려",
+        "죄 없는 사람을 많이 죽여"
     ],
     "locations": [
       {
@@ -80823,7 +81026,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-22-7",
     "title": "회계하지 말라는 명령",
     "aliases": [
-      "회계하지 말지니"
+      "회계하지 말지니",
+        "그 돈을 어디에 썼는지 보고하게 할 필요는 없소"
     ],
     "locations": [
       {
@@ -80887,7 +81091,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-22-13",
     "title": "여호와께 물으라",
     "aliases": [
-      "우리 조상들이 이 책의 말씀을 듣지 아니하며"
+      "우리 조상들이 이 책의 말씀을 듣지 아니하며",
+        "여호와의 뜻을 여쭈어 보도록 하시오"
     ],
     "locations": [
       {
@@ -80919,7 +81124,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-22-19",
     "title": "평안히 묘실로 들어가리라",
     "aliases": [
-      "나도 네 말을 들었노라"
+      "나도 네 말을 들었노라",
+        "나는 네 기도를 들어 주겠다"
     ],
     "locations": [
       {
@@ -80952,7 +81158,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-23-2",
     "title": "언약책을 백성 앞에서 읽다",
     "aliases": [
-      "언약책의 모든 말씀을 읽어"
+      "언약책의 모든 말씀을 읽어",
+        "여호와의 성전에서 발견한 언약의 책에 있는 모든 말씀을 읽어 주었습니다"
     ],
     "locations": [
       {
@@ -80983,7 +81190,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-23-3",
     "title": "마음을 다하여 세운 언약",
     "aliases": [
-      "마음을 다하고 뜻을 다하여"
+      "마음을 다하고 뜻을 다하여",
+        "마음과 정성을 다하여 지키기로 약속했습니다"
     ],
     "locations": [
       {
@@ -81134,7 +81342,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-24-2",
     "title": "여호와의 말씀대로 이루어진 침공",
     "aliases": [
-      "여호와께서 그의 종 선지자들을 통하여 하신 말씀과 같이"
+      "여호와께서 그의 종 선지자들을 통하여 하신 말씀과 같이",
+        "그의 종인 예언자들을 통해서 하신 말씀을 이루셨습니다"
     ],
     "locations": [
       {
@@ -81169,7 +81378,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-24-12",
     "title": "항복한 여호야긴",
     "aliases": [
-      "그의 어머니와 신복과 지도자들과 내시들과"
+      "그의 어머니와 신복과 지도자들과 내시들과",
+        "느부갓네살 왕에게 항복했습니다"
     ],
     "locations": [
       {
@@ -81202,7 +81412,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-24-13",
     "title": "성전 보물과 금 그릇을 빼앗다",
     "aliases": [
-      "여호와의 성전의 모든 보물과 왕궁 보물을 집어내고"
+      "여호와의 성전의 모든 보물과 왕궁 보물을 집어내고",
+        "여호와의 성전과 왕궁에 있는 보물을 다 빼앗아 갔습니다"
     ],
     "locations": [
       {
@@ -81328,7 +81539,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-25-7",
     "title": "두 눈이 빠진 시드기야",
     "aliases": [
-      "시드기야의 두 눈을 빼고"
+      "시드기야의 두 눈을 빼고",
+        "그의 눈을 뺀 뒤 쇠사슬로 묶어 바빌론으로 끌고 갔습니다"
     ],
     "locations": [
       {
@@ -81360,7 +81572,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-25-9",
     "title": "성전과 왕궁을 불사르다",
     "aliases": [
-      "여호와의 성전과 왕궁을 불사르고"
+      "여호와의 성전과 왕궁을 불사르고",
+        "여호와의 성전과 왕궁에 불을 지르고"
     ],
     "locations": [
       {
@@ -81393,7 +81606,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-25-13",
     "title": "놋 기둥과 바다를 깨뜨리다",
     "aliases": [
-      "여호와의 성전의 두 놋 기둥과 받침들과"
+      "여호와의 성전의 두 놋 기둥과 받침들과",
+        "바다라고 부르는 커다란 놋대야를 깨뜨려"
     ],
     "locations": [
       {
@@ -81458,7 +81672,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-25-29",
     "title": "왕의 식탁에서 먹은 여호야긴",
     "aliases": [
-      "그의 일평생에 항상 왕의 앞에서 양식을 먹게 하였고"
+      "그의 일평생에 항상 왕의 앞에서 양식을 먹게 하였고",
+        "그는 죽기 전까지 왕의 상에서 왕과 함께 먹었습니다"
     ],
     "locations": [
       {
@@ -81494,7 +81709,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-1-1",
     "title": "아담에서 시작하는 계보",
     "aliases": [
-      "아담, 셋, 에노스,"
+      "아담, 셋, 에노스,",
+        "아담은 셋의 아버지입니다"
     ],
     "locations": [
       {
@@ -81525,7 +81741,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-1-10",
     "title": "세상에서 첫 영걸 니므롯",
     "aliases": [
-      "세상에서 첫 영걸이며"
+      "세상에서 첫 영걸이며",
+        "니므롯은 그 땅에서 뛰어난 용사가 되었습니다"
     ],
     "locations": [
       {
@@ -81555,7 +81772,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-1-19",
     "title": "땅이 나뉜 때",
     "aliases": [
-      "그 때에 땅이 나뉘었음이요"
+      "그 때에 땅이 나뉘었음이요",
+        "그 시대에 그 땅이 나누어졌기 때문입니다"
     ],
     "locations": [
       {
@@ -81615,7 +81833,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-2-3",
     "title": "에르의 죽음",
     "aliases": [
-      "여호와께서 죽이셨고"
+      "여호와께서 죽이셨고",
+        "여호와 앞에서 악한 일을 하였으므로"
     ],
     "locations": [
       {
@@ -81645,7 +81864,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-2-7",
     "title": "진멸시킬 물건을 범한 아간",
     "aliases": [
-      "진멸시킬 물건을 범하여"
+      "진멸시킬 물건을 범하여",
+        "완전히 없애 버려야 할 물건들을 숨겨 놓았다가"
     ],
     "locations": [
       {
@@ -81735,7 +81955,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-3-17",
     "title": "포로 뒤에도 이어진 다윗 왕계",
     "aliases": [
-      "사로잡혀 간 여고냐의 아들들은"
+      "사로잡혀 간 여고냐의 아들들은",
+        "여호야긴은 포로로 끌려갔습니다"
     ],
     "locations": [
       {
@@ -81767,7 +81988,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-4-10",
     "title": "야베스의 기도",
     "aliases": [
-      "주께서 내게 복을 주시려거든"
+      "주께서 내게 복을 주시려거든",
+        "나에게 복을 주십시오. 나에게 땅을 더 많이 주십시오"
     ],
     "locations": [
       {
@@ -81796,7 +82018,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-4-23",
     "title": "토기장이들이 왕을 섬기다",
     "aliases": [
-      "토기장이가 되어"
+      "토기장이가 되어",
+        "느다임과 그데라에서 왕을 섬기면서 살았습니다"
     ],
     "locations": [
       {
@@ -81826,7 +82049,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-4-40",
     "title": "기름지고 아름다운 목장",
     "aliases": [
-      "기름지고 아름다운 목장을 발견하였는데"
+      "기름지고 아름다운 목장을 발견하였는데",
+        "이들은 기름지고 좋은 목장을 발견했습니다"
     ],
     "locations": [
       {
@@ -81860,7 +82084,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-5-18",
     "title": "싸움에 익숙한 동편 지파",
     "aliases": [
-      "능히 방패와 칼을 들며 활을 당겨 싸움에 익숙한 자는"
+      "능히 방패와 칼을 들며 활을 당겨 싸움에 익숙한 자는",
+        "사만 사천칠백육십 명의 군인을 두고 있었습니다"
     ],
     "locations": [
       {
@@ -81891,7 +82116,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-5-20",
     "title": "싸움에서 하나님께 부르짖다",
     "aliases": [
-      "이는 그들이 싸울 때에 하나님께 의뢰하고 부르짖으므로"
+      "이는 그들이 싸울 때에 하나님께 의뢰하고 부르짖으므로",
+        "하나님께 도와 달라고 기도드렸습니다"
     ],
     "locations": [
       {
@@ -81921,7 +82147,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-5-26",
     "title": "포로로 옮겨진 동편 지파",
     "aliases": [
-      "이스라엘 하나님이 앗수르 왕 불의 마음을 일으키시며"
+      "이스라엘 하나님이 앗수르 왕 불의 마음을 일으키시며",
+        "르우벤과 갓과 동쪽 므낫세 반 지파의 백성을 사로잡아서"
     ],
     "locations": [
       {
@@ -81951,7 +82178,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-6-31",
     "title": "다윗이 세운 찬양 직분",
     "aliases": [
-      "찬송하는 직분을 맡긴 자들은"
+      "찬송하는 직분을 맡긴 자들은",
+        "여호와의 집에서 음악을 맡을 사람들을 뽑았습니다"
     ],
     "locations": [
       {
@@ -81983,7 +82211,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-6-49",
     "title": "속죄를 맡은 아론 자손",
     "aliases": [
-      "하나님의 종 모세의 모든 명령대로 이스라엘을 위하여 속죄하니"
+      "하나님의 종 모세의 모든 명령대로 이스라엘을 위하여 속죄하니",
+        "속죄 제물을 하나님께 바쳤으며"
     ],
     "locations": [
       {
@@ -82044,7 +82273,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-9-22",
     "title": "다윗과 사무엘이 세운 문지기",
     "aliases": [
-      "택함을 입어 문지기 된 자가 모두 이백열두 명이니"
+      "택함을 입어 문지기 된 자가 모두 이백열두 명이니",
+        "문지기로 뽑힌 사람은 모두 이백십이 명입니다"
     ],
     "locations": [
       {
@@ -82078,7 +82308,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-10-4",
     "title": "사울이 자기 칼 위에 엎드리다",
     "aliases": [
-      "할례 받지 못한 자들이 와서 나를 욕되게 할까 두려워하노라"
+      "할례 받지 못한 자들이 와서 나를 욕되게 할까 두려워하노라",
+        "자기 칼을 뽑아 세우고 그 위에 자기 몸을 던졌습니다"
     ],
     "locations": [
       {
@@ -82110,7 +82341,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-10-6",
     "title": "사울과 그 집안이 함께 죽다",
     "aliases": [
-      "그 온 집안이 함께 죽으니라"
+      "그 온 집안이 함께 죽으니라",
+        "사울과 사울의 세 아들과 그의 온 집안 사람들이 함께 죽었습니다"
     ],
     "locations": [
       {
@@ -82140,7 +82372,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-11-1",
     "title": "헤브론에 모인 이스라엘",
     "aliases": [
-      "우리는 왕의 가까운 혈족이니이다"
+      "우리는 왕의 가까운 혈족이니이다",
+        "모든 이스라엘 백성이 헤브론에 있는 다윗에게 와서 말했습니다"
     ],
     "locations": [
       {
@@ -82171,7 +82404,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-11-6",
     "title": "여부스를 먼저 친 요압",
     "aliases": [
-      "스루야의 아들 요압이 먼저 올라갔으므로"
+      "스루야의 아들 요압이 먼저 올라갔으므로",
+        "스루야의 아들 요압이 앞장 서서 공격했습니다"
     ],
     "locations": [
       {
@@ -82203,7 +82437,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-11-9",
     "title": "함께 계신 만군의 여호와",
     "aliases": [
-      "만군의 여호와께서 함께 계시니"
+      "만군의 여호와께서 함께 계시니",
+        "만군의 여호와께서 다윗과 함께 계셨으므로"
     ],
     "locations": [
       {
@@ -82233,7 +82468,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-11-10",
     "title": "다윗을 세운 용사들",
     "aliases": [
-      "이 사람들이 온 이스라엘과 더불어 다윗을 힘껏 도와"
+      "이 사람들이 온 이스라엘과 더불어 다윗을 힘껏 도와",
+        "여호와께서 약속하신 대로 모든 이스라엘과 더불어 다윗을 도와"
     ],
     "locations": [
       {
@@ -82264,7 +82500,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-11-14",
     "title": "보리밭을 지킨 엘르아살",
     "aliases": [
-      "그가 그 밭 가운데에 서서 그 밭을 보호하여"
+      "그가 그 밭 가운데에 서서 그 밭을 보호하여",
+        "보리밭 한가운데에서 블레셋 사람들과 싸워 그들을 죽였습니다"
     ],
     "locations": [
       {
@@ -82295,7 +82532,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-12-17",
     "title": "조건을 단 환영",
     "aliases": [
-      "다윗이 나가서 맞아"
+      "다윗이 나가서 맞아",
+        "나에게 아무 잘못이 없는데도 나를 내 원수들에게 넘겨 주러 왔다면"
     ],
     "locations": [
       {
@@ -82325,7 +82563,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-12-18",
     "title": "성령이 감싼 아마새",
     "aliases": [
-      "성령이 삼십 명의 우두머리 아마새를"
+      "성령이 삼십 명의 우두머리 아마새를",
+        "아마새에게 성령이 들어갔습니다"
     ],
     "locations": [
       {
@@ -82355,7 +82594,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-12-19",
     "title": "블레셋 방백의 의심",
     "aliases": [
-      "블레셋 사람들의 방백이 서로 의논하고"
+      "블레셋 사람들의 방백이 서로 의논하고",
+        "블레셋의 지도자들이 서로 의논한 뒤에 다윗을 돌려 보냈기 때문입니다"
     ],
     "locations": [
       {
@@ -82385,7 +82625,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-12-38",
     "title": "한 마음으로 모인 군대",
     "aliases": [
-      "이 모든 군사가 전열을 갖추고 다 성심으로"
+      "이 모든 군사가 전열을 갖추고 다 성심으로",
+        "단 한 마음으로 나아왔습니다"
     ],
     "locations": [
       {
@@ -82416,7 +82657,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-13-2",
     "title": "궤를 옮기자는 다윗의 제안",
     "aliases": [
-      "우리의 하나님 여호와께로 말미암았으면"
+      "우리의 하나님 여호와께로 말미암았으면",
+        "제사장과 레위 사람들에게 편지를 보내어"
     ],
     "locations": [
       {
@@ -82446,7 +82688,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-13-12",
     "title": "두려워한 다윗",
     "aliases": [
-      "내가 어떻게 하나님의 궤를 내 곳으로 오게 하리요"
+      "내가 어떻게 하나님의 궤를 내 곳으로 오게 하리요",
+        "다윗은 그 날, 하나님을 무서워했습니다"
     ],
     "locations": [
       {
@@ -82477,7 +82720,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-14-8",
     "title": "다윗을 찾아 올라온 블레셋",
     "aliases": [
-      "모든 블레셋 사람들이 다윗을 찾으러 올라오매"
+      "모든 블레셋 사람들이 다윗을 찾으러 올라오매",
+        "그를 잡으러 왔습니다"
     ],
     "locations": [
       {
@@ -82508,7 +82752,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-14-15",
     "title": "뽕나무 꼭대기의 소리",
     "aliases": [
-      "뽕나무 꼭대기에서 걸음 걷는 소리가 들리거든"
+      "뽕나무 꼭대기에서 걸음 걷는 소리가 들리거든",
+        "뽕나무 밭 위쪽에서 행군하는 소리가 나거든"
     ],
     "locations": [
       {
@@ -82538,7 +82783,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-14-17",
     "title": "온 세상에 퍼진 다윗의 명성",
     "aliases": [
-      "다윗의 명성이 온 세상에 퍼졌고"
+      "다윗의 명성이 온 세상에 퍼졌고",
+        "다윗의 이름이 모든 나라에 알려졌습니다"
     ],
     "locations": [
       {
@@ -82573,7 +82819,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-15-2",
     "title": "레위 사람만 궤를 멘다",
     "aliases": [
-      "레위 사람 외에는 하나님의 궤를 멜 수 없나니"
+      "레위 사람 외에는 하나님의 궤를 멜 수 없나니",
+        "레위 사람만이 하나님의 궤를 멜 수 있다"
     ],
     "locations": [
       {
@@ -82604,7 +82851,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-15-14",
     "title": "몸을 성결하게 한 제사장과 레위인",
     "aliases": [
-      "제사장들과 레위 사람들이 이스라엘 하나님 여호와의 궤를 메고 올라가려 하여 몸을 성결하게 하고"
+      "제사장들과 레위 사람들이 이스라엘 하나님 여호와의 궤를 메고 올라가려 하여 몸을 성결하게 하고",
+        "스스로를 거룩하게 준비했습니다"
     ],
     "locations": [
       {
@@ -82635,7 +82883,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-15-25",
     "title": "즐거이 옮긴 언약궤",
     "aliases": [
-      "여호와의 언약궤를 즐거이 메고"
+      "여호와의 언약궤를 즐거이 메고",
+        "기쁜 마음으로 올라왔습니다"
     ],
     "locations": [
       {
@@ -82665,7 +82914,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-16-7",
     "title": "아삽에게 맡긴 첫 감사",
     "aliases": [
-      "먼저 여호와께 감사하게"
+      "먼저 여호와께 감사하게",
+        "아삽과 그의 친척들을 시켜 여호와께 감사하게 하고"
     ],
     "locations": [
       {
@@ -82696,7 +82946,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-16-23",
     "title": "날마다 구원을 선포하라",
     "aliases": [
-      "그의 구원을 날마다 선포할지어다"
+      "그의 구원을 날마다 선포할지어다",
+        "날마다 그의 구원을 전하여라"
     ],
     "locations": [
       {
@@ -82727,7 +82978,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-16-37",
     "title": "궤 앞의 상시 찬양",
     "aliases": [
-      "항상 그 궤 앞에서 섬기게"
+      "항상 그 궤 앞에서 섬기게",
+        "거기에서 날마다 규정대로 섬기게 했습니다"
     ],
     "locations": [
       {
@@ -82758,7 +83010,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-17-11",
     "title": "다윗의 씨를 세우시겠다",
     "aliases": [
-      "네 씨 곧 네 아들 중 하나를 세우고"
+      "네 씨 곧 네 아들 중 하나를 세우고",
+        "너의 아들 중 하나를 새 왕으로 삼겠다"
     ],
     "locations": [
       {
@@ -82789,7 +83042,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-17-13",
     "title": "사울에게서 거둔 인자",
     "aliases": [
-      "나의 인자를 그에게서 빼앗지 아니하기를"
+      "나의 인자를 그에게서 빼앗지 아니하기를",
+        "사울에게 베푼 사랑을 거두어들였으나"
     ],
     "locations": [
       {
@@ -82820,7 +83074,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-17-16",
     "title": "다윗의 겸손한 기도",
     "aliases": [
-      "여호와 하나님이여 나는 누구이오며"
+      "여호와 하나님이여 나는 누구이오며",
+        "제 집안이 무엇이기에 그토록 위해 주십니까"
     ],
     "locations": [
       {
@@ -82851,7 +83106,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-17-20",
     "title": "주와 같은 이가 없다",
     "aliases": [
-      "여호와여 우리 귀로 들은 대로는 주와 같은 이가 없고"
+      "여호와여 우리 귀로 들은 대로는 주와 같은 이가 없고",
+        "주밖에는 다른 참 신이 없습니다"
     ],
     "locations": [
       {
@@ -82881,7 +83137,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-18-6",
     "title": "가는 곳마다 이기게 하시니",
     "aliases": [
-      "다윗이 어디로 가든지 여호와께서 이기게 하시니라"
+      "다윗이 어디로 가든지 여호와께서 이기게 하시니라",
+        "다윗이 가는 곳마다 승리하게 해 주셨습니다"
     ],
     "locations": [
       {
@@ -82911,7 +83168,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-18-11",
     "title": "전리품을 여호와께 드리다",
     "aliases": [
-      "그것도 여호와께 드리되"
+      "그것도 여호와께 드리되",
+        "그 물건들을 받아서 여호와께 바쳤습니다"
     ],
     "locations": [
       {
@@ -82941,7 +83199,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-18-15",
     "title": "다윗의 관료와 제사장 이름",
     "aliases": [
-      "스루야의 아들 요압은 군대사령관이 되고"
+      "스루야의 아들 요압은 군대사령관이 되고",
+        "스루야의 아들 요압은 다윗의 군대 사령관이고"
     ],
     "locations": [
       {
@@ -82972,7 +83231,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-19-2",
     "title": "조문 사절을 보낸 다윗",
     "aliases": [
-      "하눈의 아버지 나하스가 전에 내게 호의를 베풀었으니"
+      "하눈의 아버지 나하스가 전에 내게 호의를 베풀었으니",
+        "나도 그의 아들 하눈에게 은혜를 베풀어야겠다"
     ],
     "locations": [
       {
@@ -83003,7 +83263,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-19-4",
     "title": "옷이 잘린 사절들",
     "aliases": [
-      "그 의복을 볼기 중간까지 자르고"
+      "그 의복을 볼기 중간까지 자르고",
+        "수염을 절반쯤 깎고 엉덩이 부분의 옷을 잘라 내어"
     ],
     "locations": [
       {
@@ -83033,7 +83294,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-19-14",
     "title": "요압의 승리",
     "aliases": [
-      "요압과 그 추종자가 싸우려고 아람 사람 앞에 나아가니"
+      "요압과 그 추종자가 싸우려고 아람 사람 앞에 나아가니",
+        "요압과 그의 군대가 아람 사람들을 공격하자"
     ],
     "locations": [
       {
@@ -83065,7 +83327,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-19-18",
     "title": "아람의 큰 패배",
     "aliases": [
-      "다윗이 아람 병거 칠천 대의 군사와 보병 사만 명을 죽이고"
+      "다윗이 아람 병거 칠천 대의 군사와 보병 사만 명을 죽이고",
+        "아람의 전차병 칠천 명과 아람의 보병 사만 명을 죽였습니다"
     ],
     "locations": [
       {
@@ -83129,7 +83392,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-20-2",
     "title": "랍바 왕의 금관",
     "aliases": [
-      "보석 있는 왕관을 빼앗아"
+      "보석 있는 왕관을 빼앗아",
+        "그들 왕의 머리에서 금관을 벗겨 냈습니다"
     ],
     "locations": [
       {
@@ -83158,7 +83422,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-20-5",
     "title": "골리앗의 아우 라흐미",
     "aliases": [
-      "가드 사람 골리앗의 아우 라흐미를 죽였는데"
+      "가드 사람 골리앗의 아우 라흐미를 죽였는데",
+        "야일의 아들 엘하난이 가드 사람 골리앗의 동생 라흐미를 죽였습니다"
     ],
     "locations": [
       {
@@ -83188,7 +83453,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-20-6",
     "title": "여섯 가락의 거인",
     "aliases": [
-      "손과 발에 가락이 여섯씩 모두 스물넷이 있는데"
+      "손과 발에 가락이 여섯씩 모두 스물넷이 있는데",
+        "손가락과 발가락이 여섯 개씩 모두 스물네 개가 있었습니다"
     ],
     "locations": [
       {
@@ -83218,7 +83484,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-21-3",
     "title": "요압의 반대",
     "aliases": [
-      "여호와께서 그 백성을 지금보다 백 배나 더하시기를 원하나이다"
+      "여호와께서 그 백성을 지금보다 백 배나 더하시기를 원하나이다",
+        "여호와께서는 왕에게 백 배나 더 많은 백성을 주시기 원하십니다"
     ],
     "locations": [
       {
@@ -83248,7 +83515,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-21-5",
     "title": "백십만과 사십칠만",
     "aliases": [
-      "이스라엘 중에 칼을 뺄 만한 자가 백십만 명이요"
+      "이스라엘 중에 칼을 뺄 만한 자가 백십만 명이요",
+        "칼을 쓸 수 있는 사람이 모두 백십만 명이었고"
     ],
     "locations": [
       {
@@ -83279,7 +83547,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-21-8",
     "title": "다윗의 고백",
     "aliases": [
-      "내가 이 일을 행함으로 큰 죄를 범하였나이다"
+      "내가 이 일을 행함으로 큰 죄를 범하였나이다",
+        "제가 큰 죄를 지었습니다"
     ],
     "locations": [
       {
@@ -83311,7 +83580,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-21-12",
     "title": "세 가지 벌",
     "aliases": [
-      "혹 삼년 기근이든지"
+      "혹 삼년 기근이든지",
+        "삼 년 동안, 가뭄이 들게 할 것인지"
     ],
     "locations": [
       {
@@ -83341,7 +83611,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-21-15",
     "title": "뉘우치신 여호와",
     "aliases": [
-      "이 재앙 내림을 뉘우치사"
+      "이 재앙 내림을 뉘우치사",
+        "이젠 되었다. 그만두어라."
     ],
     "locations": [
       {
@@ -83403,7 +83674,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-21-30",
     "title": "천사의 칼 앞에서 묻지 못한 다윗",
     "aliases": [
-      "여호와의 천사의 칼을 두려워하여"
+      "여호와의 천사의 칼을 두려워하여",
+        "하나님의 뜻을 여쭈어 볼 수 없었습니다"
     ],
     "locations": [
       {
@@ -83433,7 +83705,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-22-1",
     "title": "성전 터 선언",
     "aliases": [
-      "이는 여호와 하나님의 성전이요"
+      "이는 여호와 하나님의 성전이요",
+        "이 곳에 여호와 하나님의 성전을 짓고 번제단을 쌓을 것이다"
     ],
     "locations": [
       {
@@ -83466,7 +83739,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-22-5",
     "title": "웅장한 성전과 어린 솔로몬",
     "aliases": [
-      "여호와를 위하여 건축할 성전은 극히 웅장하여"
+      "여호와를 위하여 건축할 성전은 극히 웅장하여",
+        "내 아들은 아직 어리고 배워야 할 것도 많으므로"
     ],
     "locations": [
       {
@@ -83496,7 +83770,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-22-9",
     "title": "온순한 솔로몬",
     "aliases": [
-      "그는 온순한 사람이라"
+      "그는 온순한 사람이라",
+        "그는 평화의 사람이 될 것이다"
     ],
     "locations": [
       {
@@ -83526,7 +83801,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-22-13",
     "title": "율법을 삼가 지키면 형통하리니",
     "aliases": [
-      "삼가 행하면 형통하리니"
+      "삼가 행하면 형통하리니",
+        "규례와 율법을 잘 지켜라"
     ],
     "locations": [
       {
@@ -83588,7 +83864,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-22-18",
     "title": "방백들에게 내린 명령",
     "aliases": [
-      "너희 하나님 여호와께서 너희와 함께 계시지 아니하시느냐"
+      "너희 하나님 여호와께서 너희와 함께 계시지 아니하시느냐",
+        "여러분의 하나님 여호와께서 여러분과 함께 계셔"
     ],
     "locations": [
       {
@@ -83648,7 +83925,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-23-13",
     "title": "아론과 그 자손의 구별",
     "aliases": [
-      "아론은 그 자손들과 함께 구별되어"
+      "아론은 그 자손들과 함께 구별되어",
+        "아론은 그의 자손과 함께 영원히 구별되었습니다"
     ],
     "locations": [
       {
@@ -83678,7 +83956,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-23-26",
     "title": "메지 않아도 되는 레위인",
     "aliases": [
-      "레위 사람이 다시는 성막과 그 가운데에서 쓰는 모든 기구를 멜 필요가 없다"
+      "레위 사람이 다시는 성막과 그 가운데에서 쓰는 모든 기구를 멜 필요가 없다",
+        "레위 사람이 주님의 장막인 성막을 옮길 필요가 없고"
     ],
     "locations": [
       {
@@ -83713,7 +83992,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-23-30",
     "title": "아침저녁으로 감사하고 찬송",
     "aliases": [
-      "아침과 저녁마다 서서 여호와께 감사하고 찬송하며"
+      "아침과 저녁마다 서서 여호와께 감사하고 찬송하며",
+        "날마다 아침 저녁으로 여호와 앞에 서서 감사드리고 찬양하는 일을 했습니다"
     ],
     "locations": [
       {
@@ -83743,7 +84023,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-24-2",
     "title": "먼저 죽은 나답과 아비후",
     "aliases": [
-      "나답과 아비후가 그들의 아버지보다 먼저 죽고"
+      "나답과 아비후가 그들의 아버지보다 먼저 죽고",
+        "나답과 아비후는 그들의 아버지보다도 먼저 죽었습니다"
     ],
     "locations": [
       {
@@ -83774,7 +84055,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-24-4",
     "title": "열여섯과 여덟",
     "aliases": [
-      "엘르아살의 자손 중에 우두머리가 이다말의 자손보다 많으므로"
+      "엘르아살의 자손 중에 우두머리가 이다말의 자손보다 많으므로",
+        "엘르아살의 가문에는 지도자가 열여섯 명 있었고"
     ],
     "locations": [
       {
@@ -83804,7 +84086,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-24-19",
     "title": "반열의 직무",
     "aliases": [
-      "이와 같은 직무에 따라 여호와의 성전에 들어가서 그의 아버지 아론을 도왔으니"
+      "이와 같은 직무에 따라 여호와의 성전에 들어가서 그의 아버지 아론을 도왔으니",
+        "아론이 세운 규례에 복종했습니다"
     ],
     "locations": [
       {
@@ -83835,7 +84118,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-24-31",
     "title": "제비는 공평하게",
     "aliases": [
-      "장자의 가문과 막내 동생의 가문이 다름이 없더라"
+      "장자의 가문과 막내 동생의 가문이 다름이 없더라",
+        "맏아들의 집안이나 막내아들의 집안이나 똑같이 제비를 뽑았습니다"
     ],
     "locations": [
       {
@@ -83869,7 +84153,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-25-7",
     "title": "배워 익숙한 찬양대",
     "aliases": [
-      "그들과 모든 형제 곧 여호와 찬송하기를 배워 익숙한 자의 수효가 이백팔십팔 명이라"
+      "그들과 모든 형제 곧 여호와 찬송하기를 배워 익숙한 자의 수효가 이백팔십팔 명이라",
+        "여호와께 찬양하는 일에 익숙한 사람들입니다"
     ],
     "locations": [
       {
@@ -83900,7 +84185,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-25-8",
     "title": "스승과 제자가 함께 뽑다",
     "aliases": [
-      "이 무리의 큰 자나 작은 자나 스승이나 제자를 막론하고"
+      "이 무리의 큰 자나 작은 자나 스승이나 제자를 막론하고",
+        "선생이나 배우는 사람이나 모두 똑같이 제비를 뽑았습니다"
     ],
     "locations": [
       {
@@ -83930,7 +84216,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-26-14",
     "title": "동쪽과 북쪽 문",
     "aliases": [
-      "셀레먀는 동쪽을 뽑았고"
+      "셀레먀는 동쪽을 뽑았고",
+        "제비를 뽑아 북문을 지키게 되었습니다"
     ],
     "locations": [
       {
@@ -83960,7 +84247,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-26-20",
     "title": "곳간을 맡은 레위인",
     "aliases": [
-      "레위 사람 중에 아히야는 하나님의 전 곳간과 성물 곳간을 맡았으며"
+      "레위 사람 중에 아히야는 하나님의 전 곳간과 성물 곳간을 맡았으며",
+        "하나님의 성전 창고와 거룩한 물건"
     ],
     "locations": [
       {
@@ -83991,7 +84279,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-26-27",
     "title": "전리품을 바친 성물 곳간",
     "aliases": [
-      "그들이 싸울 때에 노략하여 얻은 물건 중에서 구별하여 드려"
+      "그들이 싸울 때에 노략하여 얻은 물건 중에서 구별하여 드려",
+        "전쟁에서 빼앗은 물건도 여호와의 성전을 고치는 데에 쓰라고 바쳤습니다"
     ],
     "locations": [
       {
@@ -84021,7 +84310,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-26-31",
     "title": "사십 년째에 찾은 용사",
     "aliases": [
-      "다윗이 왕 위에 있은 지 사십 년에"
+      "다윗이 왕 위에 있은 지 사십 년에",
+        "다윗이 왕으로 있은 지 사십 년째 되던 해에"
     ],
     "locations": [
       {
@@ -84051,7 +84341,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-27-1",
     "title": "달마다 교대하는 열두 반",
     "aliases": [
-      "각 반열이 이만 사천 명씩이라"
+      "각 반열이 이만 사천 명씩이라",
+        "각 부대는 한 해에 한 달씩 당번을 맡았습니다"
     ],
     "locations": [
       {
@@ -84082,7 +84373,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-27-16",
     "title": "지파의 지도자들",
     "aliases": [
-      "르우벤 사람의 지도자는 시그리의 아들 엘리에셀이요"
+      "르우벤 사람의 지도자는 시그리의 아들 엘리에셀이요",
+        "르우벤 지파의 지도자는 시그리의 아들 엘리에셀이고"
     ],
     "locations": [
       {
@@ -84113,7 +84405,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-27-23",
     "title": "세지 않은 이십 세 이하",
     "aliases": [
-      "이십 세 이하의 수효는 다윗이 조사하지 아니하였으니"
+      "이십 세 이하의 수효는 다윗이 조사하지 아니하였으니",
+        "이십 세 이상의 사람들의 수만 세었습니다"
     ],
     "locations": [
       {
@@ -84144,7 +84437,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-28-2",
     "title": "다윗의 성전 고백",
     "aliases": [
-      "나의 형제들, 나의 백성들아 내 말을 들으라"
+      "나의 형제들, 나의 백성들아 내 말을 들으라",
+        "하나님께 예배드릴 성전을 지으려고 준비해 왔소"
     ],
     "locations": [
       {
@@ -84174,7 +84468,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-28-3",
     "title": "피 흘린 사람은 성전을 짓지 못한다",
     "aliases": [
-      "너는 전쟁을 많이 한 사람이라 피를 많이 흘렸으니"
+      "너는 전쟁을 많이 한 사람이라 피를 많이 흘렸으니",
+        "너무나 많은 사람을 죽였기 때문에"
     ],
     "locations": [
       {
@@ -84205,7 +84500,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-28-5",
     "title": "택하신 솔로몬",
     "aliases": [
-      "내 아들 솔로몬을 택하사"
+      "내 아들 솔로몬을 택하사",
+        "그 아들들 가운데서 솔로몬을 뽑으셨소"
     ],
     "locations": [
       {
@@ -84267,7 +84563,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-28-16",
     "title": "금과 은의 무게를 정하다",
     "aliases": [
-      "진설병의 각 상을 만들 금의 무게를 정하고"
+      "진설병의 각 상을 만들 금의 무게를 정하고",
+        "진설병을 놓을 상에는 금이 얼마씩 들어가며"
     ],
     "locations": [
       {
@@ -84299,7 +84596,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-28-20",
     "title": "강하고 담대하게 이 일을 행하라",
     "aliases": [
-      "너는 강하고 담대하게 이 일을 행하라"
+      "너는 강하고 담대하게 이 일을 행하라",
+        "강하고 용감한 마음으로 이 일을 하여라"
     ],
     "locations": [
       {
@@ -84329,7 +84627,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-29-1",
     "title": "사람을 위한 성전이 아니다",
     "aliases": [
-      "여호와 하나님을 위한 것이라"
+      "여호와 하나님을 위한 것이라",
+        "인간을 위한 집이 아니라 하나님을 위한 집"
     ],
     "locations": [
       {
@@ -84360,7 +84659,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-29-3",
     "title": "사유한 금과 은을 드리다",
     "aliases": [
-      "내가 사유한 금, 은으로"
+      "내가 사유한 금, 은으로",
+        "가지고 있던 은과 금도 바쳤습니다"
     ],
     "locations": [
       {
@@ -84390,7 +84690,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-29-6",
     "title": "즐거이 드린 지도자들",
     "aliases": [
-      "다 즐거이 드리되"
+      "다 즐거이 드리되",
+        "각 가문의 지도자와 이스라엘 각 지파의 지도자"
     ],
     "locations": [
       {
@@ -84421,7 +84722,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-29-11",
     "title": "다윗의 송축",
     "aliases": [
-      "여호와여 위대하심과 권능과 영광과 승리와 위엄이 다 주께 속하였사오니"
+      "여호와여 위대하심과 권능과 영광과 승리와 위엄이 다 주께 속하였사오니",
+        "여호와여, 여호와는 위대하시고 능력이 많으시며"
     ],
     "locations": [
       {
@@ -84453,7 +84755,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-29-15",
     "title": "나그네 같은 우리",
     "aliases": [
-      "우리는 우리 조상들과 같이 주님 앞에서 이방 나그네와 거류민들이라"
+      "우리는 우리 조상들과 같이 주님 앞에서 이방 나그네와 거류민들이라",
+        "외국인이나 나그네에 지나지 않습니다"
     ],
     "locations": [
       {
@@ -84483,7 +84786,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-29-22",
     "title": "두 번째 기름 부음",
     "aliases": [
-      "사독에게도 기름을 부어 제사장이 되게 하니라"
+      "사독에게도 기름을 부어 제사장이 되게 하니라",
+        "솔로몬에게 기름을 부어 왕으로 세웠습니다"
     ],
     "locations": [
       {
@@ -84515,7 +84819,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ch-29-27",
     "title": "다윗의 사십 년",
     "aliases": [
-      "이스라엘을 다스린 기간은 사십 년이라"
+      "이스라엘을 다스린 기간은 사십 년이라",
+        "사십 년 동안, 왕으로 있었습니다"
     ],
     "locations": [
       {
@@ -132200,7 +132505,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-36-2",
     "title": "두루마리에 기록하라",
     "aliases": [
-      "너는 두루마리 책을 가져다가 내가 네게 말하던 날 곧 요시야의 날부터 오늘까지"
+      "너는 두루마리 책을 가져다가 내가 네게 말하던 날 곧 요시야의 날부터 오늘까지",
+        "두루마리 책을 가져다가 요시야가 왕이었을 때부터 지금까지"
     ],
     "locations": [
       {
@@ -132229,7 +132535,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-36-3",
     "title": "돌이키면 용서하리라",
     "aliases": [
-      "유다 가문이 내가 그들에게 내리려 한 모든 재난을 듣고 각기 악한 길에서 돌이키리니"
+      "유다 가문이 내가 그들에게 내리려 한 모든 재난을 듣고 각기 악한 길에서 돌이키리니",
+        "그러면 내가 그들의 모든 허물과 죄를 용서해 주겠다"
     ],
     "locations": [
       {
@@ -132258,7 +132565,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-36-23",
     "title": "두루마리를 태운 왕",
     "aliases": [
-      "왕이 면도칼로 그것을 연하여 베어 화로 불에 던져서 두루마리를 모두 태웠더라"
+      "왕이 면도칼로 그것을 연하여 베어 화로 불에 던져서 두루마리를 모두 태웠더라",
+        "왕은 두루마리 전체를 난롯불에 넣어 태워 버렸습니다"
     ],
     "locations": [
       {
@@ -132287,7 +132595,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-36-24",
     "title": "두려워하지도 않은 신하들",
     "aliases": [
-      "왕과 그의 신하들이 이 모든 말을 듣고도 두려워하거나 자기들의 옷을 찢지 아니하였고"
+      "왕과 그의 신하들이 이 모든 말을 듣고도 두려워하거나 자기들의 옷을 찢지 아니하였고",
+        "슬퍼하는 표시로 자기들의 옷을 찢지도 않았습니다"
     ],
     "locations": [
       {
@@ -132316,7 +132625,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-36-32",
     "title": "다시 받아 적은 두루마리",
     "aliases": [
-      "이에 예레미야가 다른 두루마리를 가져다가 네리야의 아들 서기관 바룩에게 주매"
+      "이에 예레미야가 다른 두루마리를 가져다가 네리야의 아들 서기관 바룩에게 주매",
+        "예레미야가 불러 주면 바룩이 두루마리에 받아 적었습니다"
     ],
     "locations": [
       {
@@ -132345,7 +132655,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-37-1",
     "title": "시드기야가 세워지다",
     "aliases": [
-      "요시야의 아들 시드기야가 여호야김의 아들 고니야의 뒤를 이어 왕이 되었으니"
+      "요시야의 아들 시드기야가 여호야김의 아들 고니야의 뒤를 이어 왕이 되었으니",
+        "바빌로니아 왕 느부갓네살이 요시야의 아들 시드기야를 유다 왕으로 세웠습니다"
     ],
     "locations": [
       {
@@ -132374,7 +132685,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-37-5",
     "title": "잠시 떠난 갈대아 군대",
     "aliases": [
-      "바로의 군대가 애굽에서 나오매 예루살렘을 에워쌌던 갈대아인이 그 소문을 듣고 예루살렘에서 떠났더라"
+      "바로의 군대가 애굽에서 나오매 예루살렘을 에워쌌던 갈대아인이 그 소문을 듣고 예루살렘에서 떠났더라",
+        "그 소식을 듣고 예루살렘에서 철수했습니다"
     ],
     "locations": [
       {
@@ -132403,7 +132715,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-37-13",
     "title": "베냐민 문에서 체포되다",
     "aliases": [
-      "베냐민 문에 이른즉 하나냐의 손자요 셀레먀의 아들인 이리야라 이름하는 문지기의 우두머리가 선지자 예레미야를 붙잡아"
+      "베냐민 문에 이른즉 하나냐의 손자요 셀레먀의 아들인 이리야라 이름하는 문지기의 우두머리가 선지자 예레미야를 붙잡아",
+        "문지기들 가운데 우두머리 되는 사람이 그를 체포했습니다"
     ],
     "locations": [
       {
@@ -132432,7 +132745,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-37-16",
     "title": "웅덩이에 갇힌 예레미야",
     "aliases": [
-      "예레미야가 뚜껑 씌운 웅덩이에 들어간 지 여러 날 만에"
+      "예레미야가 뚜껑 씌운 웅덩이에 들어간 지 여러 날 만에",
+        "지하 감옥에 끌려가 여러 날 동안 갇혀 있었습니다"
     ],
     "locations": [
       {
@@ -132461,7 +132775,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-37-21",
     "title": "감옥 뜰의 떡",
     "aliases": [
-      "이에 시드기야 왕이 명령하여 예레미야를 감옥 뜰에 두고 떡 만드는 자의 거리에서 매일 떡 한 개씩 그에게 주게 하매"
+      "이에 시드기야 왕이 명령하여 예레미야를 감옥 뜰에 두고 떡 만드는 자의 거리에서 매일 떡 한 개씩 그에게 주게 하매",
+        "성 안에 빵이 떨어질 때까지 날마다"
     ],
     "locations": [
       {
@@ -132490,7 +132805,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-38-4",
     "title": "군사와 백성의 사기를 꺾다",
     "aliases": [
-      "그가 이같이 말하여 이 성에 남은 군사의 손과 모든 백성의 손을 약하게 하나이다"
+      "그가 이같이 말하여 이 성에 남은 군사의 손과 모든 백성의 손을 약하게 하나이다",
+        "군인들과 모든 백성들의 사기를 떨어뜨리고 있기 때문입니다"
     ],
     "locations": [
       {
@@ -132519,7 +132835,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-38-6",
     "title": "웅덩이에 던져지다",
     "aliases": [
-      "그들이 예레미야를 끌어다가 감옥 뜰에 있는 왕의 아들 말기야의 구덩이에 던져 넣을 때에"
+      "그들이 예레미야를 끌어다가 감옥 뜰에 있는 왕의 아들 말기야의 구덩이에 던져 넣을 때에",
+        "그 웅덩이에는 물은 없고 진흙만 있었습니다"
     ],
     "locations": [
       {
@@ -132548,7 +132865,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-38-9",
     "title": "에벳멜렉의 항의",
     "aliases": [
-      "내 주 왕이여 저 사람들이 선지자 예레미야에게 행한 모든 일은 악하니이다"
+      "내 주 왕이여 저 사람들이 선지자 예레미야에게 행한 모든 일은 악하니이다",
+        "예레미야를 웅덩이에 집어넣고 거기서 죽게 내버려 두었습니다"
     ],
     "locations": [
       {
@@ -132577,7 +132895,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-38-16",
     "title": "비밀의 맹세",
     "aliases": [
-      "시드기야 왕이 비밀히 예레미야에게 맹세하여 이르되"
+      "시드기야 왕이 비밀히 예레미야에게 맹세하여 이르되",
+        "여호와의 살아 계심을 두고 맹세하지만 결코 그대를 죽이지 않겠소"
     ],
     "locations": [
       {
@@ -132606,7 +132925,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-38-17",
     "title": "항복하면 산다는 말씀",
     "aliases": [
-      "네가 만일 바벨론의 왕의 고관들에게 항복하면 네 생명이 살겠고 이 성이 불사름을 당하지 아니하겠고"
+      "네가 만일 바벨론의 왕의 고관들에게 항복하면 네 생명이 살겠고 이 성이 불사름을 당하지 아니하겠고",
+        "너는 바빌로니아 왕의 신하들에게 항복해야 한다"
     ],
     "locations": [
       {
@@ -132635,7 +132955,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-39-1",
     "title": "느부갓네살의 포위",
     "aliases": [
-      "유다의 시드기야 왕의 제구년 열째 달에 바벨론의 느부갓네살 왕과 그의 모든 군대가 와서 예루살렘을 에워싸고 치더니"
+      "유다의 시드기야 왕의 제구년 열째 달에 바벨론의 느부갓네살 왕과 그의 모든 군대가 와서 예루살렘을 에워싸고 치더니",
+        "예루살렘으로 쳐들어와서 성을 에워싸고 공격했습니다"
     ],
     "locations": [
       {
@@ -132664,7 +132985,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-39-2",
     "title": "성이 함락되다",
     "aliases": [
-      "시드기야의 제십일년 넷째 달 아홉째 날에 성이 함락되니라"
+      "시드기야의 제십일년 넷째 달 아홉째 날에 성이 함락되니라",
+        "넷째 달 구 일에 마침내 성벽이 뚫렸습니다"
     ],
     "locations": [
       {
@@ -132693,7 +133015,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-39-7",
     "title": "시드기야의 눈이 뽑히다",
     "aliases": [
-      "왕이 또 시드기야의 눈을 빼게 하고 바벨론으로 옮기려고 사슬로 결박하였더라"
+      "왕이 또 시드기야의 눈을 빼게 하고 바벨론으로 옮기려고 사슬로 결박하였더라",
+        "시드기야의 눈을 빼고 그를 쇠사슬로 묶어 바빌론으로 끌고 갔습니다"
     ],
     "locations": [
       {
@@ -132723,7 +133046,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-39-10",
     "title": "가난한 자들에게 남긴 땅",
     "aliases": [
-      "사령관 느부사라단이 아무 소유가 없는 빈민을 유다 땅에 남겨 두고 그 날에 포도원과 밭을 그들에게 주었더라"
+      "사령관 느부사라단이 아무 소유가 없는 빈민을 유다 땅에 남겨 두고 그 날에 포도원과 밭을 그들에게 주었더라",
+        "아무것도 없는 가난한 백성들을 유다 땅에 남겨 두고"
     ],
     "locations": [
       {
@@ -132752,7 +133076,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-39-18",
     "title": "믿음으로 얻은 목숨",
     "aliases": [
-      "내가 반드시 너를 구원할 것인즉 네가 칼에 죽지 아니하고"
+      "내가 반드시 너를 구원할 것인즉 네가 칼에 죽지 아니하고",
+        "네가 나 여호와를 의지했으므로 내가 너를 살려 주겠다"
     ],
     "locations": [
       {
@@ -132781,7 +133106,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-40-1",
     "title": "라마에서 풀려난 예레미야",
     "aliases": [
-      "라마에서 풀려난 후에 말씀이 여호와께로부터 예레미야에게 임하니라"
+      "라마에서 풀려난 후에 말씀이 여호와께로부터 예레미야에게 임하니라",
+        "경호대장 느부사라단이 라마 성에서 예레미야를 풀어 준 뒤에"
     ],
     "locations": [
       {
@@ -132810,7 +133136,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-40-3",
     "title": "죄와 순종 못 함의 결과",
     "aliases": [
-      "여호와께서 그가 말씀하신 대로 행하셨으니 이는 너희가 여호와께 범죄하고 그의 목소리에 순종하지 아니하였으므로"
+      "여호와께서 그가 말씀하신 대로 행하셨으니 이는 너희가 여호와께 범죄하고 그의 목소리에 순종하지 아니하였으므로",
+        "여호와께 죄를 짓고 여호와의 말씀에 순종하지 않았기 때문이오"
     ],
     "locations": [
       {
@@ -132839,7 +133166,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-40-5",
     "title": "그다랴에게 돌아가라",
     "aliases": [
-      "그 사령관이 그에게 양식과 선물을 주어 보내매"
+      "그 사령관이 그에게 양식과 선물을 주어 보내매",
+        "사반의 손자요, 아히감의 아들인 그다랴에게 돌아가시오"
     ],
     "locations": [
       {
@@ -132868,7 +133196,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-40-9",
     "title": "그다랴의 맹세",
     "aliases": [
-      "사반의 손자 아히감의 아들 그다랴가 그들과 그들의 사람들에게 맹세하며 이르되"
+      "사반의 손자 아히감의 아들 그다랴가 그들과 그들의 사람들에게 맹세하며 이르되",
+        "바빌로니아 사람을 섬기는 것에 대해 두려워하지 마시오"
     ],
     "locations": [
       {
@@ -132897,7 +133226,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-40-16",
     "title": "요하난의 경고를 믿지 않음",
     "aliases": [
-      "그러나 아히감의 아들 그다랴가 가레아의 아들 요하난에게 이르되 네가 이 일을 행하지 말 것이니라"
+      "그러나 아히감의 아들 그다랴가 가레아의 아들 요하난에게 이르되 네가 이 일을 행하지 말 것이니라",
+        "이스마엘을 죽이지 마시오"
     ],
     "locations": [
       {
@@ -132930,7 +133260,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-41-2",
     "title": "그다랴를 죽인 이스마엘",
     "aliases": [
-      "느다냐의 아들 이스마엘과 그와 함께 있던 열 사람이 일어나서"
+      "느다냐의 아들 이스마엘과 그와 함께 있던 열 사람이 일어나서",
+        "이스마엘이 부하 열 명과 함께 자리에서 일어나더니"
     ],
     "locations": [
       {
@@ -132959,7 +133290,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-41-4",
     "title": "아무도 모르던 이틀",
     "aliases": [
-      "그가 그다랴를 죽인 지 이틀이 되었어도 이를 아는 사람이 없었더라"
+      "그가 그다랴를 죽인 지 이틀이 되었어도 이를 아는 사람이 없었더라",
+        "그다랴가 죽임을 당한 이튿날"
     ],
     "locations": [
       {
@@ -132988,7 +133320,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-41-7",
     "title": "구덩이에 던져진 사람들",
     "aliases": [
-      "그들을 죽여 구덩이 가운데에 던지니라"
+      "그들을 죽여 구덩이 가운데에 던지니라",
+        "그 시체를 깊은 웅덩이에 던져 넣었습니다"
     ],
     "locations": [
       {
@@ -133017,7 +133350,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-41-12",
     "title": "기브온 큰 물가에서 만남",
     "aliases": [
-      "기브온 큰 물 가에서 그를 만나매"
+      "기브온 큰 물 가에서 그를 만나매",
+        "기브온에 있는 큰 연못 근처에서 이스마엘을 만났습니다"
     ],
     "locations": [
       {
@@ -133046,7 +133380,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-41-18",
     "title": "바벨론을 두려워한 이유",
     "aliases": [
-      "그들이 갈대아 사람을 두려워함이었더라"
+      "그들이 갈대아 사람을 두려워함이었더라",
+        "바빌로니아 군대가 두려워서 이집트로 도망가기로 했습니다"
     ],
     "locations": [
       {
@@ -133075,7 +133410,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-42-2",
     "title": "기도를 청한 백성",
     "aliases": [
-      "당신은 우리의 탄원을 듣고 이 남아 있는 모든 자를 위하여 당신의 하나님 여호와께 기도해 주소서"
+      "당신은 우리의 탄원을 듣고 이 남아 있는 모든 자를 위하여 당신의 하나님 여호와께 기도해 주소서",
+        "우리를 위하여 당신의 하나님 여호와께 기도해 주십시오"
     ],
     "locations": [
       {
@@ -133104,7 +133440,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-42-10",
     "title": "세우고 심으시겠다는 약속",
     "aliases": [
-      "너희가 이 땅에 눌러 앉아 산다면 내가 너희를 세우고 헐지 아니하며 너희를 심고 뽑지 아니하리니"
+      "너희가 이 땅에 눌러 앉아 산다면 내가 너희를 세우고 헐지 아니하며 너희를 심고 뽑지 아니하리니",
+        "너희를 허물지 않고 세우겠으며 뽑지 않고 심을 것이다"
     ],
     "locations": [
       {
@@ -133133,7 +133470,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-42-14",
     "title": "애굽에 가면 평안하리라는 생각",
     "aliases": [
-      "우리는 전쟁도 보이지 아니하며 나팔 소리도 들리지 아니하며"
+      "우리는 전쟁도 보이지 아니하며 나팔 소리도 들리지 아니하며",
+        "이집트로 가면 전쟁에 시달리지도 않고"
     ],
     "locations": [
       {
@@ -133162,7 +133500,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-42-17",
     "title": "애굽에 머무는 자의 결말",
     "aliases": [
-      "무릇 애굽으로 들어가서 거기에 머물러 살기로 고집하는 모든 사람은 이와 같이 되리니"
+      "무릇 애굽으로 들어가서 거기에 머물러 살기로 고집하는 모든 사람은 이와 같이 되리니",
+        "전쟁과 굶주림과 무서운 병으로 죽게 될 것이다"
     ],
     "locations": [
       {
@@ -133191,7 +133530,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-42-20",
     "title": "속였다는 책망",
     "aliases": [
-      "너희가 나를 너희 하나님 여호와께 보내며"
+      "너희가 나를 너희 하나님 여호와께 보내며",
+        "여러분은 죽음을 부를지도 모르는 실수를 저질렀소"
     ],
     "locations": [
       {
@@ -133220,7 +133560,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-43-2",
     "title": "거짓말이라는 반박",
     "aliases": [
-      "네가 거짓을 말하는도다"
+      "네가 거짓을 말하는도다",
+        "당신은 거짓말을 하고 있소"
     ],
     "locations": [
       {
@@ -133249,7 +133590,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-43-3",
     "title": "바룩을 탓하는 사람들",
     "aliases": [
-      "이는 네리야의 아들 바룩이 너를 부추겨서"
+      "이는 네리야의 아들 바룩이 너를 부추겨서",
+        "네리야의 아들 바룩이 당신을 꾀어서 이렇게 된 것이 분명하오"
     ],
     "locations": [
       {
@@ -133278,7 +133620,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-43-4",
     "title": "유다 땅에 살라는 명령을 거절함",
     "aliases": [
-      "유다 땅에 살라 하시는 여호와의 목소리를 순종하지 아니하고"
+      "유다 땅에 살라 하시는 여호와의 목소리를 순종하지 아니하고",
+        "유다 땅에 머물러 살라는 여호와의 명령에 따르지 않았습니다"
     ],
     "locations": [
       {
@@ -133307,7 +133650,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-43-7",
     "title": "다바네스에 이르다",
     "aliases": [
-      "애굽 땅에 들어가 다바네스에 이르렀으니"
+      "애굽 땅에 들어가 다바네스에 이르렀으니",
+        "다바네스 마을에 이르렀습니다"
     ],
     "locations": [
       {
@@ -133336,7 +133680,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-43-10",
     "title": "내 종 느부갓네살",
     "aliases": [
-      "내가 내 종 바벨론의 느부갓네살 왕을 불러오리니"
+      "내가 내 종 바벨론의 느부갓네살 왕을 불러오리니",
+        "내 종 바빌로니아 왕 느부갓네살을 데려오겠다"
     ],
     "locations": [
       {
@@ -133365,7 +133710,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-44-2",
     "title": "보고 겪은 재난",
     "aliases": [
-      "너희가 예루살렘과 유다 모든 성읍에 내린 나의 모든 재난을 보았느니라"
+      "너희가 예루살렘과 유다 모든 성읍에 내린 나의 모든 재난을 보았느니라",
+        "너희는 내가 예루살렘과 유다 여러 마을에 내린 재앙을 보았다"
     ],
     "locations": [
       {
@@ -133394,7 +133740,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-44-3",
     "title": "다른 신에게 분향한 악",
     "aliases": [
-      "너희 조상들이 알지 못하는 다른 신들에게 나아가 분향하여 섬겨서"
+      "너희 조상들이 알지 못하는 다른 신들에게 나아가 분향하여 섬겨서",
+        "다른 신들에게 향을 피우며 제사하여"
     ],
     "locations": [
       {
@@ -133423,7 +133770,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-44-5",
     "title": "듣지 않고 돌이키지 않음",
     "aliases": [
-      "그들이 듣지 아니하며 귀를 기울이지 아니하고"
+      "그들이 듣지 아니하며 귀를 기울이지 아니하고",
+        "그들은 악한 짓에서 돌아서지 않고"
     ],
     "locations": [
       {
@@ -133452,7 +133800,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-44-10",
     "title": "겸손하지 않은 백성",
     "aliases": [
-      "그들이 오늘까지 겸손하지 아니하며 두려워하지도 아니하고"
+      "그들이 오늘까지 겸손하지 아니하며 두려워하지도 아니하고",
+        "유다 백성은 오늘날까지도 너무 교만하다"
     ],
     "locations": [
       {
@@ -133481,7 +133830,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-44-14",
     "title": "남은 자도 돌아가지 못함",
     "aliases": [
-      "애굽 땅에 들어가서 거기에 머물러 살려는 유다의 남은 자"
+      "애굽 땅에 들어가서 거기에 머물러 살려는 유다의 남은 자",
+        "도망간 사람 몇 명을 빼고는 아무도 돌아가지 못할 것이다"
     ],
     "locations": [
       {
@@ -133511,7 +133861,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-45-1",
     "title": "바룩이 받아 적은 말씀",
     "aliases": [
-      "네리야의 아들 바룩이 예레미야가 불러 주는 대로 이 모든 말을 책에 기록하니라"
+      "네리야의 아들 바룩이 예레미야가 불러 주는 대로 이 모든 말을 책에 기록하니라",
+        "네리야의 아들 바룩에게 불러 주어 책에 받아 적게 했습니다"
     ],
     "locations": [
       {
@@ -133540,7 +133891,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-45-2",
     "title": "바룩에게 주신 말씀",
     "aliases": [
-      "바룩아 이스라엘의 하나님 여호와께서 네게 이같이 말씀하셨느니라"
+      "바룩아 이스라엘의 하나님 여호와께서 네게 이같이 말씀하셨느니라",
+        "이스라엘의 하나님 여호와께서 너 바룩에게 이렇게 말씀하셨다"
     ],
     "locations": [
       {
@@ -133569,7 +133921,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-45-3",
     "title": "고통에 지친 바룩",
     "aliases": [
-      "네가 일찍이 말하기를 화로다 여호와께서 나의 고통에 슬픔을 더하셨으니"
+      "네가 일찍이 말하기를 화로다 여호와께서 나의 고통에 슬픔을 더하셨으니",
+        "여호와께서 내 고통에 슬픔을 더하셨다"
     ],
     "locations": [
       {
@@ -133598,7 +133951,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-45-4",
     "title": "세운 것을 헐고 심은 것을 뽑음",
     "aliases": [
-      "내가 세운 것을 헐기도 하며 내가 심은 것을 뽑기도 하나니"
+      "내가 세운 것을 헐기도 하며 내가 심은 것을 뽑기도 하나니",
+        "내가 세운 것을 허물겠고 내가 심은 것을 뽑겠다"
     ],
     "locations": [
       {
@@ -133627,7 +133981,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-45-5",
     "title": "큰 일을 찾지 말라",
     "aliases": [
-      "네가 너를 위하여 큰 일을 찾느냐 그것을 찾지 말라"
+      "네가 너를 위하여 큰 일을 찾느냐 그것을 찾지 말라",
+        "네가 너 자신을 위하여 큰 일을 찾고 있느냐"
     ],
     "locations": [
       {
@@ -133660,7 +134015,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-46-2",
     "title": "갈그미스 패전의 애굽",
     "aliases": [
-      "유브라데 강 가 갈그미스에서 바벨론의 느부갓네살 왕에게 패한 애굽의 왕 바로느고의 군대에 대한 말씀이라"
+      "유브라데 강 가 갈그미스에서 바벨론의 느부갓네살 왕에게 패한 애굽의 왕 바로느고의 군대에 대한 말씀이라",
+        "유프라테스 강가의 갈그미스에서 바빌로니아 왕 느부갓네살에게 졌습니다"
     ],
     "locations": [
       {
@@ -133689,7 +134045,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-46-5",
     "title": "사방의 두려움",
     "aliases": [
-      "두려움이 그들의 사방에 있음이로다"
+      "두려움이 그들의 사방에 있음이로다",
+        "온통 겁에 질려 뒤도 돌아보지 않고 도망간다"
     ],
     "locations": [
       {
@@ -133718,7 +134075,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-46-10",
     "title": "원수 갚는 날",
     "aliases": [
-      "그 날은 주 만군의 여호와께서 그의 대적에게 원수 갚는 보복일이라"
+      "그 날은 주 만군의 여호와께서 그의 대적에게 원수 갚는 보복일이라",
+        "그러나 그 날은 주 만군의 여호와의 날이다"
     ],
     "locations": [
       {
@@ -133747,7 +134105,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-46-25",
     "title": "노의 아몬과 애굽",
     "aliases": [
-      "보라 내가 노의 아몬과 바로와 애굽과 애굽 신들과 왕들 곧 바로와 및 그를 의지하는 자들을 벌할 것이라"
+      "보라 내가 노의 아몬과 바로와 애굽과 애굽 신들과 왕들 곧 바로와 및 그를 의지하는 자들을 벌할 것이라",
+        "내가 노의 신 아몬에게 벌을 내리겠다"
     ],
     "locations": [
       {
@@ -133776,7 +134135,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-46-27",
     "title": "두려워하지 말라는 야곱",
     "aliases": [
-      "내 종 야곱아 두려워하지 말라 이스라엘아 놀라지 말라"
+      "내 종 야곱아 두려워하지 말라 이스라엘아 놀라지 말라",
+        "내 종, 야곱 백성아, 너는 두려워하지 마라"
     ],
     "locations": [
       {
@@ -133805,7 +134165,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-47-1",
     "title": "블레셋에 대한 말씀",
     "aliases": [
-      "바로가 가사를 치기 전에 블레셋 사람에 대하여"
+      "바로가 가사를 치기 전에 블레셋 사람에 대하여",
+        "이집트 군대가 가사 성을 치기 전에"
     ],
     "locations": [
       {
@@ -133834,7 +134195,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-47-2",
     "title": "북쪽에서 밀려오는 물",
     "aliases": [
-      "보라 물이 북쪽에서 일어나 물결치는 시내를 이루어"
+      "보라 물이 북쪽에서 일어나 물결치는 시내를 이루어",
+        "불어 오른 물처럼 북쪽에서부터 적군이 몰려온다"
     ],
     "locations": [
       {
@@ -133863,7 +134225,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-47-4",
     "title": "두로와 시돈의 도움이 끊김",
     "aliases": [
-      "두로와 시돈에 남아 있는 바 도와 줄 자를 다 끊어 버리시는 날이 올 것임이라"
+      "두로와 시돈에 남아 있는 바 도와 줄 자를 다 끊어 버리시는 날이 올 것임이라",
+        "두로와 시돈에서 지원하러 오는 모든 군대를 멸망시킬 날이 왔다"
     ],
     "locations": [
       {
@@ -133892,7 +134255,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-47-6",
     "title": "여호와의 칼",
     "aliases": [
-      "오호라 여호와의 칼이여 네가 언제까지 쉬지 않겠느냐"
+      "오호라 여호와의 칼이여 네가 언제까지 쉬지 않겠느냐",
+        "여호와의 칼아, 언제 잠잠해지려느냐"
     ],
     "locations": [
       {
@@ -133921,7 +134285,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-47-7",
     "title": "칼이 쉴 수 없는 이유",
     "aliases": [
-      "여호와께서 이를 명령하셨은즉 어떻게 잠잠하며 쉬겠느냐"
+      "여호와께서 이를 명령하셨은즉 어떻게 잠잠하며 쉬겠느냐",
+        "여호와께서 명령하셨으니 어떻게 여호와의 칼이 잠잠할 수 있겠느냐"
     ],
     "locations": [
       {
@@ -133950,7 +134315,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-48-10",
     "title": "게으른 자의 저주",
     "aliases": [
-      "여호와의 일을 게을리 하는 자는 저주를 받을 것이요"
+      "여호와의 일을 게을리 하는 자는 저주를 받을 것이요",
+        "여호와의 일을 속임수로 행하는 사람은 저주를 받을 것이며"
     ],
     "locations": [
       {
@@ -133979,7 +134345,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-48-26",
     "title": "모압의 교만",
     "aliases": [
-      "모압으로 취하게 할지어다 이는 그가 여호와에 대하여 교만함이라"
+      "모압으로 취하게 할지어다 이는 그가 여호와에 대하여 교만함이라",
+        "모압 백성이 나 여호와를 거슬러 자만하였으니"
     ],
     "locations": [
       {
@@ -134008,7 +134375,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-48-29",
     "title": "들려온 모압의 교만",
     "aliases": [
-      "우리가 모압의 교만을 들었나니 심한 교만"
+      "우리가 모압의 교만을 들었나니 심한 교만",
+        "모압 백성이 교만하고 으스댄다는 소문을 들었다"
     ],
     "locations": [
       {
@@ -134037,7 +134405,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-48-42",
     "title": "다시 나라를 이루지 못함",
     "aliases": [
-      "모압이 여호와를 거슬러 자만하였으므로 멸망하고 다시 나라를 이루지 못하리로다"
+      "모압이 여호와를 거슬러 자만하였으므로 멸망하고 다시 나라를 이루지 못하리로다",
+        "모압은 망하여 더 이상 나라를 이루지 못할 것이다"
     ],
     "locations": [
       {
@@ -134067,7 +134436,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-48-47",
     "title": "마지막 날의 포로 귀환",
     "aliases": [
-      "그러나 내가 마지막 날에 모압의 포로를 돌려보내리라"
+      "그러나 내가 마지막 날에 모압의 포로를 돌려보내리라",
+        "그러나 마지막 때에 내가 모압을 회복시켜 주겠다"
     ],
     "locations": [
       {
@@ -134096,7 +134466,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-49-1",
     "title": "상속자가 없느냐",
     "aliases": [
-      "이스라엘이 자식이 없느냐 상속자가 없느냐"
+      "이스라엘이 자식이 없느냐 상속자가 없느냐",
+        "너희는 이스라엘에 아들이 없다고 생각하느냐?"
     ],
     "locations": [
       {
@@ -134125,7 +134496,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-49-7",
     "title": "데만의 지혜",
     "aliases": [
-      "데만에 다시는 지혜가 없게 되었느냐"
+      "데만에 다시는 지혜가 없게 되었느냐",
+        "이제 데만에는 지혜가 없느냐?"
     ],
     "locations": [
       {
@@ -134154,7 +134526,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-49-11",
     "title": "고아를 살리시는 하나님",
     "aliases": [
-      "네 고아들을 버려도 내가 그들을 살리리라"
+      "네 고아들을 버려도 내가 그들을 살리리라",
+        "고아들은 남겨 두어라. 내가 길러 주겠다"
     ],
     "locations": [
       {
@@ -134183,7 +134556,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-49-16",
     "title": "교만이 속임",
     "aliases": [
-      "네 마음의 교만이 너를 속였도다"
+      "네 마음의 교만이 너를 속였도다",
+        "에돔아, 너의 잔인함과 네 마음의 교만이 너를 속였다"
     ],
     "locations": [
       {
@@ -134212,7 +134586,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-49-23",
     "title": "다메섹의 하맛과 아르밧",
     "aliases": [
-      "다메섹에 대한 말씀이라 하맛과 아르밧이 수치를 당하리니"
+      "다메섹에 대한 말씀이라 하맛과 아르밧이 수치를 당하리니",
+        "하맛과 아르밧이 부끄러움을 당했으며 나쁜 소식을 듣고 두려워한다"
     ],
     "locations": [
       {
@@ -134241,7 +134616,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-50-2",
     "title": "바벨론 함락의 선포",
     "aliases": [
-      "너희는 나라들 가운데에 전파하라 공포하라 깃발을 세우라"
+      "너희는 나라들 가운데에 전파하라 공포하라 깃발을 세우라",
+        "바빌론이 정복당했다"
     ],
     "locations": [
       {
@@ -134270,7 +134646,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-50-4",
     "title": "함께 돌아오는 이스라엘과 유다",
     "aliases": [
-      "그 날 그 때에 이스라엘 자손이 돌아오며 유다 자손도 함께 돌아오되"
+      "그 날 그 때에 이스라엘 자손이 돌아오며 유다 자손도 함께 돌아오되",
+        "그 날 그 때에 이스라엘과 유다 백성이 함께 돌아올 것이다"
     ],
     "locations": [
       {
@@ -134299,7 +134676,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-50-5",
     "title": "시온을 향한 얼굴",
     "aliases": [
-      "그들이 그 얼굴을 시온으로 향하여 그 길을 물으며"
+      "그들이 그 얼굴을 시온으로 향하여 그 길을 물으며",
+        "그들이 시온으로 가는 길을 물으며 그 곳으로 향할 것이다"
     ],
     "locations": [
       {
@@ -134328,7 +134706,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-50-19",
     "title": "목장으로 돌아가는 이스라엘",
     "aliases": [
-      "이스라엘을 다시 그의 목장으로 돌아가게 하리니"
+      "이스라엘을 다시 그의 목장으로 돌아가게 하리니",
+        "그들이 갈멜 산과 바산에서 풀을 뜯고"
     ],
     "locations": [
       {
@@ -134357,7 +134736,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-50-20",
     "title": "찾을 수 없는 죄악",
     "aliases": [
-      "그 날 그 때에는 이스라엘의 죄악을 찾을지라도 없겠고"
+      "그 날 그 때에는 이스라엘의 죄악을 찾을지라도 없겠고",
+        "그것은 내가 그 남겨 둔 사람들을 용서해 줄 것이기 때문이다"
     ],
     "locations": [
       {
@@ -134386,7 +134766,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-51-7",
     "title": "여호와의 손의 금잔",
     "aliases": [
-      "바벨론은 여호와의 손에 잡혀 있어 온 세계가 취하게 하는 금잔이라"
+      "바벨론은 여호와의 손에 잡혀 있어 온 세계가 취하게 하는 금잔이라",
+        "바빌로니아는 여호와의 손에 들린 금잔과 같았다"
     ],
     "locations": [
       {
@@ -134415,7 +134796,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-51-10",
     "title": "드러난 공의",
     "aliases": [
-      "여호와께서 우리 공의를 드러내셨으니"
+      "여호와께서 우리 공의를 드러내셨으니",
+        "여호와께서 우리의 옳음을 보여 주셨다"
     ],
     "locations": [
       {
@@ -134444,7 +134826,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-51-15",
     "title": "지으신 하나님",
     "aliases": [
-      "여호와께서 그의 능력으로 땅을 지으셨고 그의 지혜로 세계를 세우셨고"
+      "여호와께서 그의 능력으로 땅을 지으셨고 그의 지혜로 세계를 세우셨고",
+        "여호와께서 그 능력으로 땅을 지으셨고"
     ],
     "locations": [
       {
@@ -134473,7 +134856,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-51-20",
     "title": "여호와의 철퇴",
     "aliases": [
-      "너는 나의 철퇴 곧 무기라"
+      "너는 나의 철퇴 곧 무기라",
+        "너는 나의 쇠몽둥이요, 전쟁 무기다"
     ],
     "locations": [
       {
@@ -134502,7 +134886,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-51-34",
     "title": "삼켜진 이스라엘",
     "aliases": [
-      "바벨론의 느부갓네살 왕이 나를 먹으며 나를 멸하며"
+      "바벨론의 느부갓네살 왕이 나를 먹으며 나를 멸하며",
+        "그는 용처럼 우리를 삼켰고"
     ],
     "locations": [
       {
@@ -134531,7 +134916,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-52-1",
     "title": "시드기야의 나이와 재위",
     "aliases": [
-      "시드기야가 왕위에 오를 때에 나이가 이십일 세라"
+      "시드기야가 왕위에 오를 때에 나이가 이십일 세라",
+        "시드기야가 왕이 되었을 때의 그의 나이는 스물한 살이었습니다"
     ],
     "locations": [
       {
@@ -134560,7 +134946,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-52-4",
     "title": "느부갓네살의 포위 시작",
     "aliases": [
-      "시드기야 제구년 열째 달 열째 날에 바벨론 왕 느부갓네살이"
+      "시드기야 제구년 열째 달 열째 날에 바벨론 왕 느부갓네살이",
+        "그러자 바빌로니아 왕 느부갓네살이 온 군대를 이끌고 예루살렘으로 쳐들어왔습니다"
     ],
     "locations": [
       {
@@ -134589,7 +134976,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jer-52-12",
     "title": "느부사라단의 예루살렘 도착",
     "aliases": [
-      "바벨론의 느부갓네살 왕의 열아홉째 해 다섯째 달 열째 날에"
+      "바벨론의 느부갓네살 왕의 열아홉째 해 다섯째 달 열째 날에",
+        "경호대장 느부사라단이 바빌로니아 왕의 명을 받고 예루살렘으로 왔습니다"
     ],
     "locations": [
       {
@@ -134651,7 +135039,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-lam-1-1",
     "title": "열국 중의 과부",
     "aliases": [
-      "전에는 열국 중에 크던 자가 이제는 과부 같이 되었고"
+      "전에는 열국 중에 크던 자가 이제는 과부 같이 되었고",
+        "예전에는 나라들 중에서 큰 성이더니 이제는 과부처럼 되었구나"
     ],
     "locations": [
       {
@@ -134680,7 +135069,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-lam-1-2",
     "title": "위로받지 못하는 밤",
     "aliases": [
-      "밤에는 슬피 우니 눈물이 뺨에 흐름이여"
+      "밤에는 슬피 우니 눈물이 뺨에 흐름이여",
+        "아무도 위로해 주는 사람이 없다"
     ],
     "locations": [
       {
@@ -134709,7 +135099,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-lam-1-5",
     "title": "죄 때문에 곤고하게 하심",
     "aliases": [
-      "그의 죄가 많으므로 여호와께서 그를 곤고하게 하셨음이라"
+      "그의 죄가 많으므로 여호와께서 그를 곤고하게 하셨음이라",
+        "죄가 많은 예루살렘을 여호와께서 벌하셨다"
     ],
     "locations": [
       {
@@ -134738,7 +135129,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-lam-1-12",
     "title": "지나가는 사람들에게 던진 물음",
     "aliases": [
-      "지나가는 모든 사람들이여 너희에게는 관계가 없는가"
+      "지나가는 모든 사람들이여 너희에게는 관계가 없는가",
+        "길 가는 사람들아, 이 일이 너희에게는 상관이 없느냐?"
     ],
     "locations": [
       {
@@ -134767,7 +135159,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-lam-1-18",
     "title": "의로우신 여호와와 거역한 백성",
     "aliases": [
-      "여호와는 의로우시도다 그러나 내가 그의 명령을 거역하였도다"
+      "여호와는 의로우시도다 그러나 내가 그의 명령을 거역하였도다",
+        "여호와께서는 의로우시나 나는 여호와의 말씀을 따르지 않았다"
     ],
     "locations": [
       {
@@ -134796,7 +135189,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-lam-2-1",
     "title": "구름으로 덮으신 시온",
     "aliases": [
-      "주께서 어찌 그리 진노하사 딸 시온을 구름으로 덮으셨는가"
+      "주께서 어찌 그리 진노하사 딸 시온을 구름으로 덮으셨는가",
+        "주께서 진노하셔서 딸 시온을 비참하게 만드시고"
     ],
     "locations": [
       {
@@ -134825,7 +135219,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-lam-2-11",
     "title": "울며 쓰러진 아이들",
     "aliases": [
-      "내 눈이 눈물에 상하며 내 창자가 끊어지며 내 간이 땅에 쏟아졌으니"
+      "내 눈이 눈물에 상하며 내 창자가 끊어지며 내 간이 땅에 쏟아졌으니",
+        "어린이와 아기들이 성 광장에서 쓰러져 죽어 가고 있다"
     ],
     "locations": [
       {
@@ -134854,7 +135249,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-lam-2-19",
     "title": "마음을 쏟아 부르짖으라",
     "aliases": [
-      "네 마음을 주의 얼굴 앞에 물 쏟듯 할지어다"
+      "네 마음을 주의 얼굴 앞에 물 쏟듯 할지어다",
+        "물을 쏟듯 네 마음을 주님 앞에 쏟아 부어라"
     ],
     "locations": [
       {
@@ -134883,7 +135279,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-lam-2-21",
     "title": "길에 쓰러진 청년과 노인",
     "aliases": [
-      "늙은이와 젊은이가 다 길바닥에 엎드러졌사오며"
+      "늙은이와 젊은이가 다 길바닥에 엎드러졌사오며",
+        "젊은이와 늙은이가 길바닥에 쓰러져 있습니다"
     ],
     "locations": [
       {
@@ -134912,7 +135309,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-lam-3-22",
     "title": "끝나지 않는 인자와 긍휼",
     "aliases": [
-      "여호와의 인자와 긍휼이 무궁하시므로 우리가 진멸되지 아니함이니이다"
+      "여호와의 인자와 긍휼이 무궁하시므로 우리가 진멸되지 아니함이니이다",
+        "여호와의 자비는 끝이 없다"
     ],
     "locations": [
       {
@@ -134941,7 +135339,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-lam-3-23",
     "title": "아침마다 새로운 자비",
     "aliases": [
-      "이것들이 아침마다 새로우니 주의 성실하심이 크시도소이다"
+      "이것들이 아침마다 새로우니 주의 성실하심이 크시도소이다",
+        "주의 사랑과 자비가 아침마다 새롭고"
     ],
     "locations": [
       {
@@ -134970,7 +135369,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-lam-3-24",
     "title": "여호와는 나의 기업",
     "aliases": [
-      "여호와는 나의 기업이시니 그러므로 내가 그를 바라리라"
+      "여호와는 나의 기업이시니 그러므로 내가 그를 바라리라",
+        "여호와께서 내가 받을 수 있는 유산의 전부이시니"
     ],
     "locations": [
       {
@@ -134999,7 +135399,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-lam-3-40",
     "title": "행위를 살피고 돌아가자",
     "aliases": [
-      "우리가 스스로 우리의 행위들을 조사하고 여호와께로 돌아가자"
+      "우리가 스스로 우리의 행위들을 조사하고 여호와께로 돌아가자",
+        "우리가 한 일을 살펴서 돌이켜보고 여호와께 돌아가자"
     ],
     "locations": [
       {
@@ -135028,7 +135429,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-lam-3-42",
     "title": "용서하지 않으신 것 같은 고백",
     "aliases": [
-      "우리의 범죄함과 우리의 반역함을 주께서 사하지 아니하시고"
+      "우리의 범죄함과 우리의 반역함을 주께서 사하지 아니하시고",
+        "주께서는 우리를 용서하지 않으셨습니다"
     ],
     "locations": [
       {
@@ -135057,7 +135459,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-lam-4-6",
     "title": "소돔보다 무거운 죄",
     "aliases": [
-      "전에 소돔이 사람의 손을 대지 아니하였는데도 순식간에 무너지더니"
+      "전에 소돔이 사람의 손을 대지 아니하였는데도 순식간에 무너지더니",
+        "가련한 내 백성의 죄악이 더 컸다"
     ],
     "locations": [
       {
@@ -135086,7 +135489,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-lam-4-10",
     "title": "자녀를 삶아 먹은 참상",
     "aliases": [
-      "딸 내 백성이 멸망할 때에 자비로운 부녀들이 자기들의 손으로 자기들의 자녀들을 삶아 먹었도다"
+      "딸 내 백성이 멸망할 때에 자비로운 부녀들이 자기들의 손으로 자기들의 자녀들을 삶아 먹었도다",
+        "착한 여자들마저 제 손으로 자기 자식을 잡아먹어서"
     ],
     "locations": [
       {
@@ -135115,7 +135519,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-lam-4-13",
     "title": "선지자와 제사장의 죄",
     "aliases": [
-      "그의 선지자들의 죄들과 제사장들의 죄악들 때문이니"
+      "그의 선지자들의 죄들과 제사장들의 죄악들 때문이니",
+        "예언자들이 죄를 짓고 제사장들이 악한 일을 했기 때문이다"
     ],
     "locations": [
       {
@@ -135144,7 +135549,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-lam-4-20",
     "title": "기름 부으신 자의 함정",
     "aliases": [
-      "여호와께서 기름 부으신 자가 그들의 함정에 빠졌음이여"
+      "여호와께서 기름 부으신 자가 그들의 함정에 빠졌음이여",
+        "여호와께서 기름을 부어 세우신 왕"
     ],
     "locations": [
       {
@@ -135173,7 +135579,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-lam-4-21",
     "title": "에돔을 향한 말씀",
     "aliases": [
-      "우스 땅에 사는 딸 에돔아 즐거워하며 기뻐하라"
+      "우스 땅에 사는 딸 에돔아 즐거워하며 기뻐하라",
+        "우스 땅에 사는 딸 에돔아, 기뻐하고 즐거워하여라"
     ],
     "locations": [
       {
@@ -135202,7 +135609,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-lam-5-7",
     "title": "조상의 죄악을 담당함",
     "aliases": [
-      "우리의 조상들은 범죄하고 없어졌으며 우리는 그들의 죄악을 담당하였나이다"
+      "우리의 조상들은 범죄하고 없어졌으며 우리는 그들의 죄악을 담당하였나이다",
+        "우리 조상들이 죄를 지었으나 이제는 가고 없습니다"
     ],
     "locations": [
       {
@@ -135232,7 +135640,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-lam-5-19",
     "title": "영원하신 주의 보좌",
     "aliases": [
-      "여호와여 주는 영원히 계시오며 주의 보좌는 대대에 이르나이다"
+      "여호와여 주는 영원히 계시오며 주의 보좌는 대대에 이르나이다",
+        "주님의 보좌는 영원무궁합니다"
     ],
     "locations": [
       {
@@ -135261,7 +135670,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-lam-5-20",
     "title": "잊으신 것 같은 하나님",
     "aliases": [
-      "주께서 어찌하여 우리를 영원히 잊으시오며 우리를 이같이 오래 버리시나이까"
+      "주께서 어찌하여 우리를 영원히 잊으시오며 우리를 이같이 오래 버리시나이까",
+        "어찌하여 주께서는 그토록 철저히 우리를 잊으셨습니까?"
     ],
     "locations": [
       {
@@ -135290,7 +135700,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-lam-5-21",
     "title": "돌이켜 주소서",
     "aliases": [
-      "여호와여 우리를 주께로 돌이키소서 그리하시면 우리가 주께로 돌아가겠사오니"
+      "여호와여 우리를 주께로 돌이키소서 그리하시면 우리가 주께로 돌아가겠사오니",
+        "여호와여, 우리를 주께 돌이켜 주십시오"
     ],
     "locations": [
       {
@@ -135319,7 +135730,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-lam-5-22",
     "title": "끝맺는 질문",
     "aliases": [
-      "주께서 우리를 아주 버리셨사오며 우리에게 진노하심이 참으로 크시니이다"
+      "주께서 우리를 아주 버리셨사오며 우리에게 진노하심이 참으로 크시니이다",
+        "주께서 우리를 아주 버리셨습니까?"
     ],
     "locations": [
       {
@@ -135352,7 +135764,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-1-1",
     "title": "솔로몬 왕위의 견고함",
     "aliases": [
-      "그의 하나님 여호와께서 그와 함께 하사"
+      "그의 하나님 여호와께서 그와 함께 하사",
+        "여호와께서 솔로몬을 위대한 왕으로 만드셨습니다"
     ],
     "locations": [
       {
@@ -135381,7 +135794,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-1-5",
     "title": "브살렐의 놋 제단",
     "aliases": [
-      "옛적에 훌의 손자 우리의 아들 브살렐이 지은 놋 제단은"
+      "옛적에 훌의 손자 우리의 아들 브살렐이 지은 놋 제단은",
+        "브살렐이 놋제단을 만들었는데"
     ],
     "locations": [
       {
@@ -135413,7 +135827,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-1-7",
     "title": "하나님이 구하라고 하심",
     "aliases": [
-      "내가 네게 무엇을 주랴 너는 구하라"
+      "내가 네게 무엇을 주랴 너는 구하라",
+        "무엇이든지 네가 원하는 것을 구하여라"
     ],
     "locations": [
       {
@@ -135442,7 +135857,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-1-12",
     "title": "지혜 외에 부와 영광을 더하심",
     "aliases": [
-      "그러므로 내가 네게 지혜와 지식을 주고 부와 재물과 영광도 주리니"
+      "그러므로 내가 네게 지혜와 지식을 주고 부와 재물과 영광도 주리니",
+        "어떤 왕도 누리지 못할 부와 명예를 주겠다"
     ],
     "locations": [
       {
@@ -135471,7 +135887,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-1-14",
     "title": "병거와 마병",
     "aliases": [
-      "솔로몬이 병거와 마병을 모으매 병거가 천사백 대요"
+      "솔로몬이 병거와 마병을 모으매 병거가 천사백 대요",
+        "전차와 기마병을 모았는데"
     ],
     "locations": [
       {
@@ -135502,7 +135919,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-1-16",
     "title": "말을 들여온 곳",
     "aliases": [
-      "솔로몬의 말들은 애굽과 구에에서 사들였으니"
+      "솔로몬의 말들은 애굽과 구에에서 사들였으니",
+        "이집트와 길리기아에서 말을 수입했는데"
     ],
     "locations": [
       {
@@ -135531,7 +135949,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-1-17",
     "title": "병거와 말의 값과 재판매",
     "aliases": [
-      "애굽에서 사들인 병거는 한 대에 은 육백 세겔이요"
+      "애굽에서 사들인 병거는 한 대에 은 육백 세겔이요",
+        "전차 한 대의 값은 은 육백 세겔이었습니다"
     ],
     "locations": [
       {
@@ -135559,7 +135978,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-2-3",
     "title": "두로 왕에게 보낸 사절",
     "aliases": [
-      "솔로몬이 사절을 두로 왕 후람에게 보내어"
+      "솔로몬이 사절을 두로 왕 후람에게 보내어",
+        "두로 성의 왕 히람에게 사람을 보내어"
     ],
     "locations": [
       {
@@ -135588,7 +136008,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-2-4",
     "title": "성전의 목적과 예배 규례",
     "aliases": [
-      "주 앞에서 향 재료를 사르며 항상 떡을 차려 놓으며"
+      "주 앞에서 향 재료를 사르며 항상 떡을 차려 놓으며",
+        "예배드릴 성전을 지어서 바치려고 합니다"
     ],
     "locations": [
       {
@@ -135617,7 +136038,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-2-6",
     "title": "하늘도 하나님을 담지 못함",
     "aliases": [
-      "누가 능히 하나님을 위하여 성전을 건축하리요"
+      "누가 능히 하나님을 위하여 성전을 건축하리요",
+        "하늘과 하늘의 하늘이라도 하나님을 모실 수 없는데"
     ],
     "locations": [
       {
@@ -135646,7 +136068,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-2-7",
     "title": "재주 있는 장인을 청함",
     "aliases": [
-      "재주 있는 사람 하나를 내게 보내어"
+      "재주 있는 사람 하나를 내게 보내어",
+        "금과 은과 놋과 쇠를 다루는 일에 익숙한 사람"
     ],
     "locations": [
       {
@@ -135675,7 +136098,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-2-10",
     "title": "벌목꾼에게 줄 곡식과 기름",
     "aliases": [
-      "찧은 밀 이만 고르와 보리 이만 고르와 포도주 이만 밧과 기름 이만 밧을 주리이다"
+      "찧은 밀 이만 고르와 보리 이만 고르와 포도주 이만 밧과 기름 이만 밧을 주리이다",
+        "나무를 베는 왕의 종들에게는"
     ],
     "locations": [
       {
@@ -135704,7 +136128,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-2-12",
     "title": "히람의 고백과 답신",
     "aliases": [
-      "다윗 왕에게 지혜로운 아들을 주시고 명철과 총명을 주시사"
+      "다윗 왕에게 지혜로운 아들을 주시고 명철과 총명을 주시사",
+        "하늘과 땅을 지으신 이스라엘의 하나님 여호와를 찬양합니다"
     ],
     "locations": [
       {
@@ -135733,7 +136158,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-2-16",
     "title": "뗏목으로 욥바까지",
     "aliases": [
-      "떼를 엮어 바다에 띄워 욥바로 보내리니"
+      "떼를 엮어 바다에 띄워 욥바로 보내리니",
+        "뗏목으로 엮어서 바다에 띄워 욥바까지 보내겠습니다"
     ],
     "locations": [
       {
@@ -135762,7 +136188,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-2-17",
     "title": "이스라엘 땅의 이방인 조사",
     "aliases": [
-      "전에 솔로몬의 아버지 다윗이 이스라엘 땅에 사는 이방 사람들을 조사하였더니"
+      "전에 솔로몬의 아버지 다윗이 이스라엘 땅에 사는 이방 사람들을 조사하였더니",
+        "이스라엘에 사는 이방인의 수를 다시 세어 보았습니다"
     ],
     "locations": [
       {
@@ -135791,7 +136218,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-3-2",
     "title": "성전 건축 시작 시기",
     "aliases": [
-      "솔로몬이 왕위에 오른 지 넷째 해 둘째 달 둘째 날 건축을 시작하였더라"
+      "솔로몬이 왕위에 오른 지 넷째 해 둘째 달 둘째 날 건축을 시작하였더라",
+        "그가 이스라엘을 다스린 지 사 년째 되던 해의 둘째 달"
     ],
     "locations": [
       {
@@ -135820,7 +136248,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-3-3",
     "title": "성전의 규모 60×20 규빗",
     "aliases": [
-      "옛날에 쓰던 자로 길이가 육십 규빗이요 너비가 이십 규빗이며"
+      "옛날에 쓰던 자로 길이가 육십 규빗이요 너비가 이십 규빗이며",
+        "성전은 길이가 육십 규빗, 너비가 이십 규빗이었습니다"
     ],
     "locations": [
       {
@@ -135849,7 +136278,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-3-6",
     "title": "보석과 바르와임 금",
     "aliases": [
-      "또 보석으로 성전을 꾸며 화려하게 하였으니 그 금은 바르와임 금이며"
+      "또 보석으로 성전을 꾸며 화려하게 하였으니 그 금은 바르와임 금이며",
+        "금은 바르와임에서 가져온 것을 썼습니다"
     ],
     "locations": [
       {
@@ -135878,7 +136308,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-3-8",
     "title": "지성소와 순금 600달란트",
     "aliases": [
-      "또 지성소를 지었으니 성전 넓이대로 길이가 이십 규빗이요"
+      "또 지성소를 지었으니 성전 넓이대로 길이가 이십 규빗이요",
+        "솔로몬은 그 벽에 순금 육백 달란트를 입혔습니다"
     ],
     "locations": [
       {
@@ -135907,7 +136338,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-3-13",
     "title": "두 그룹의 날개",
     "aliases": [
-      "이 두 그룹이 편 날개가 모두 이십 규빗이라"
+      "이 두 그룹이 편 날개가 모두 이십 규빗이라",
+        "두 그룹의 날개 길이는 모두 이십 규빗이 되었습니다"
     ],
     "locations": [
       {
@@ -135936,7 +136368,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-3-14",
     "title": "휘장과 그룹 수놓기",
     "aliases": [
-      "청색 자색 홍색 실과 고운 베로 휘장문을 짓고 그 위에 그룹의 형상을 수놓았더라"
+      "청색 자색 홍색 실과 고운 베로 휘장문을 짓고 그 위에 그룹의 형상을 수놓았더라",
+        "거기에 그룹 모양을 수놓았습니다"
     ],
     "locations": [
       {
@@ -135965,7 +136398,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-3-15",
     "title": "두 기둥의 높이 35규빗",
     "aliases": [
-      "성전 앞에 기둥 둘을 만들었으니 높이가 삼십오 규빗이요"
+      "성전 앞에 기둥 둘을 만들었으니 높이가 삼십오 규빗이요",
+        "각 기둥의 높이는 삼십오 규빗이었습니다"
     ],
     "locations": [
       {
@@ -135994,7 +136428,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-4-1",
     "title": "놋 제단의 크기",
     "aliases": [
-      "솔로몬이 또 놋으로 제단을 만들었으니 길이가 이십 규빗이요"
+      "솔로몬이 또 놋으로 제단을 만들었으니 길이가 이십 규빗이요",
+        "놋제단은 길이가 이십 규빗, 너비가 이십 규빗"
     ],
     "locations": [
       {
@@ -136023,7 +136458,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-4-2",
     "title": "놋 바다의 크기",
     "aliases": [
-      "또 놋을 부어 바다를 만들었으니 지름이 십 규빗이요 그 모양이 둥글며"
+      "또 놋을 부어 바다를 만들었으니 지름이 십 규빗이요 그 모양이 둥글며",
+        "바다는 지름이 십 규빗, 깊이가 오 규빗"
     ],
     "locations": [
       {
@@ -136053,7 +136489,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-4-4",
     "title": "놋쇠 황소 열두 마리",
     "aliases": [
-      "그 바다를 놋쇠 황소 열두 마리가 받쳤으니"
+      "그 바다를 놋쇠 황소 열두 마리가 받쳤으니",
+        "놋황소 열두 마리의 등 위에 올려져 있었습니다"
     ],
     "locations": [
       {
@@ -136082,7 +136519,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-4-7",
     "title": "금 등잔대 열 개",
     "aliases": [
-      "또 규례대로 금으로 등잔대 열 개를 만들어 내전 안에 두었으니"
+      "또 규례대로 금으로 등잔대 열 개를 만들어 내전 안에 두었으니",
+        "금등대 열 개를 만들어"
     ],
     "locations": [
       {
@@ -136111,7 +136549,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-4-11",
     "title": "후람의 기구 제작",
     "aliases": [
-      "후람이 또 솥과 부삽과 대접을 만들었더라"
+      "후람이 또 솥과 부삽과 대접을 만들었더라",
+        "후람은 솥과 부삽과 작은 그릇들도 만들었습니다"
     ],
     "locations": [
       {
@@ -136141,7 +136580,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-4-18",
     "title": "놋의 무게를 잴 수 없음",
     "aliases": [
-      "그 놋 무게를 능히 측량할 수 없었더라"
+      "그 놋 무게를 능히 측량할 수 없었더라",
+        "솔로몬은 그것들의 무게를 달아 보지 않았습니다"
     ],
     "locations": [
       {
@@ -136169,7 +136609,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-4-19",
     "title": "금 기구 목록",
     "aliases": [
-      "곧 금 제단과 진설병 상들과"
+      "곧 금 제단과 진설병 상들과",
+        "금으로도 여러 가지 물건을 만들게 했습니다"
     ],
     "locations": [
       {
@@ -136198,7 +136639,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-5-1",
     "title": "성전 기구를 곳간에 둠",
     "aliases": [
-      "솔로몬이 여호와의 전을 위하여 만드는 모든 일을 마친지라"
+      "솔로몬이 여호와의 전을 위하여 만드는 모든 일을 마친지라",
+        "성전의 창고에 넣어 두었습니다"
     ],
     "locations": [
       {
@@ -136227,7 +136669,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-5-3",
     "title": "일곱째 달 절기의 모임",
     "aliases": [
-      "일곱째 달 절기에 이스라엘 모든 사람이 다 왕에게로 모이고"
+      "일곱째 달 절기에 이스라엘 모든 사람이 다 왕에게로 모이고",
+        "그 때는 칠 월의 초막절 때였습니다"
     ],
     "locations": [
       {
@@ -136256,7 +136699,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-5-4",
     "title": "레위인이 궤를 멤",
     "aliases": [
-      "이스라엘 장로들이 이르매 레위 사람들이 궤를 메니라"
+      "이스라엘 장로들이 이르매 레위 사람들이 궤를 메니라",
+        "레위 사람들이 궤를 어깨에 메고 옮기기 시작했습니다"
     ],
     "locations": [
       {
@@ -136285,7 +136729,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-5-7",
     "title": "언약궤를 지성소에 둠",
     "aliases": [
-      "제사장들이 여호와의 언약궤를 그 처소로 메어 들였으니"
+      "제사장들이 여호와의 언약궤를 그 처소로 메어 들였으니",
+        "곧 성전 안의 지성소에 놓아 두었습니다"
     ],
     "locations": [
       {
@@ -136314,7 +136759,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-5-9",
     "title": "궤의 채와 '오늘까지'",
     "aliases": [
-      "그 궤가 오늘까지 그 곳에 있으며"
+      "그 궤가 오늘까지 그 곳에 있으며",
+        "그 채들은 아직까지도 거기에 놓여 있습니다"
     ],
     "locations": [
       {
@@ -136343,7 +136789,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-5-12",
     "title": "아삽과 헤만과 여두둔의 찬양",
     "aliases": [
-      "노래하는 레위 사람 아삽과 헤만과 여두둔과 그의 아들들과 형제들이"
+      "노래하는 레위 사람 아삽과 헤만과 여두둔과 그의 아들들과 형제들이",
+        "아삽과 헤만과 여두둔과 그들의 아들과 형제들은"
     ],
     "locations": [
       {
@@ -136372,7 +136819,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-5-14",
     "title": "여호와의 영광이 성전에 가득함",
     "aliases": [
-      "여호와의 영광이 하나님의 전에 가득함이었더라"
+      "여호와의 영광이 하나님의 전에 가득함이었더라",
+        "여호와의 영광이 하나님의 성전을 가득 채웠습니다"
     ],
     "locations": [
       {
@@ -136406,7 +136854,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-6-1",
     "title": "캄캄한 데 계시겠다는 말씀",
     "aliases": [
-      "여호와께서 캄캄한 데 계시겠다"
+      "여호와께서 캄캄한 데 계시겠다",
+        "캄캄한 구름 속에 계시겠다고 말씀하셨습니다"
     ],
     "locations": [
       {
@@ -136435,7 +136884,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-6-4",
     "title": "다윗에게 하신 말씀을 이루심",
     "aliases": [
-      "그의 손으로 이루셨도다"
+      "그의 손으로 이루셨도다",
+        "내 아버지 다윗에게 약속하신 것을 이루어 주셨습니다"
     ],
     "locations": [
       {
@@ -136465,7 +136915,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-6-6",
     "title": "예루살렘을 택하고 다윗을 택하심",
     "aliases": [
-      "예루살렘을 택하여 내 이름을 거기 두고"
+      "예루살렘을 택하여 내 이름을 거기 두고",
+        "예배받을 곳으로 예루살렘을 선택했고, 다윗을 선택하여"
     ],
     "locations": [
       {
@@ -136494,7 +136945,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-6-9",
     "title": "다윗은 성전을 짓지 못함",
     "aliases": [
-      "그러나 너는 그 성전을 건축하지 못할 것이요 네 허리에서 나올 네 아들"
+      "그러나 너는 그 성전을 건축하지 못할 것이요 네 허리에서 나올 네 아들",
+        "너는 성전을 지을 사람이 아니다"
     ],
     "locations": [
       {
@@ -136524,7 +136976,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-6-13",
     "title": "놋대 위에서 무릎 꿇고 기도함",
     "aliases": [
-      "이스라엘의 모든 회중 앞에서 무릎을 꿇고 하늘을 향하여 손을 펴고"
+      "이스라엘의 모든 회중 앞에서 무릎을 꿇고 하늘을 향하여 손을 펴고",
+        "무릎을 꿇고, 하늘을 향해 팔을 치켜들었습니다"
     ],
     "locations": [
       {
@@ -136553,7 +137006,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-6-14",
     "title": "여호와 같은 신이 없음",
     "aliases": [
-      "천지에 주와 같은 신이 없나이다"
+      "천지에 주와 같은 신이 없나이다",
+        "주와 같으신 신은 저 위 하늘에도 없고, 저 아래 땅에도 없습니다"
     ],
     "locations": [
       {
@@ -136582,7 +137036,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-6-20",
     "title": "이 곳을 향한 기도",
     "aliases": [
-      "종이 이 곳을 향하여 비는 기도를 들으시옵소서"
+      "종이 이 곳을 향하여 비는 기도를 들으시옵소서",
+        "이 성전을 향해 기도드릴 때에 그 기도를 들어 주십시오"
     ],
     "locations": [
       {
@@ -136611,7 +137066,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-6-37",
     "title": "포로지에서 드리는 자백의 기도",
     "aliases": [
-      "우리가 범죄하여 패역을 행하며 악을 행하였나이다"
+      "우리가 범죄하여 패역을 행하며 악을 행하였나이다",
+        "우리가 죄를 지었습니다. 우리가 잘못했습니다"
     ],
     "locations": [
       {
@@ -136640,7 +137096,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-7-1",
     "title": "불이 내려와 제물을 사름",
     "aliases": [
-      "불이 하늘에서부터 내려와서 그 번제물과 제물들을 사르고"
+      "불이 하늘에서부터 내려와서 그 번제물과 제물들을 사르고",
+        "번제물과 제물들을 불태웠습니다"
     ],
     "locations": [
       {
@@ -136669,7 +137126,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-7-5",
     "title": "소와 양을 드린 봉헌 제사",
     "aliases": [
-      "솔로몬 왕이 드린 제물이 소가 이만 이천 마리요 양이 십이만 마리라"
+      "솔로몬 왕이 드린 제물이 소가 이만 이천 마리요 양이 십이만 마리라",
+        "소 이만 이천 마리와 양 십이만 마리를 잡아서 제물로 바쳤습니다"
     ],
     "locations": [
       {
@@ -136698,7 +137156,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-7-6",
     "title": "다윗이 만든 악기로 찬양함",
     "aliases": [
-      "이 악기는 전에 다윗 왕이 레위 사람들에게 여호와께 감사하게 하려고 만들어서"
+      "이 악기는 전에 다윗 왕이 레위 사람들에게 여호와께 감사하게 하려고 만들어서",
+        "다윗 왕이 여호와를 찬양하려고 만든 악기들입니다"
     ],
     "locations": [
       {
@@ -136728,7 +137187,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-7-7",
     "title": "뜰 가운데를 거룩하게 하고 제물을 드림",
     "aliases": [
-      "솔로몬이 또 여호와의 전 앞뜰 가운데를 거룩하게 하고"
+      "솔로몬이 또 여호와의 전 앞뜰 가운데를 거룩하게 하고",
+        "여호와의 성전 앞에 있는 뜰 한가운데를 거룩하게 구별했습니다"
     ],
     "locations": [
       {
@@ -136758,7 +137218,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-7-9",
     "title": "여덟째 날 성회",
     "aliases": [
-      "여덟째 날에 무리가 한 성회를 여니라"
+      "여덟째 날에 무리가 한 성회를 여니라",
+        "칠 일 동안, 절기를 지키고, 팔 일째 되는 날에 모임을 가졌습니다"
     ],
     "locations": [
       {
@@ -136787,7 +137248,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-7-10",
     "title": "백성을 돌려보냄",
     "aliases": [
-      "일곱째 달 제이십삼일에 왕이 백성을 그들의 장막으로 돌려보내매"
+      "일곱째 달 제이십삼일에 왕이 백성을 그들의 장막으로 돌려보내매",
+        "솔로몬은 일곱째 달 이십삼 일에 백성을 집으로 돌려 보냈습니다"
     ],
     "locations": [
       {
@@ -136816,7 +137278,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-7-12",
     "title": "밤에 나타나신 하나님",
     "aliases": [
-      "내가 이미 네 기도를 듣고 이 곳을 택하여"
+      "내가 이미 네 기도를 듣고 이 곳을 택하여",
+        "나는 네가 지은 이 성전을 선택해서"
     ],
     "locations": [
       {
@@ -136845,7 +137308,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-7-19",
     "title": "돌아서면 성전을 버리겠다는 경고",
     "aliases": [
-      "그러나 너희가 만일 돌아서서 내가 너희 앞에 둔 내 율례와 명령을 버리고"
+      "그러나 너희가 만일 돌아서서 내가 너희 앞에 둔 내 율례와 명령을 버리고",
+        "내가 너희에게 준 계명과 율법을 어기면 안 된다"
     ],
     "locations": [
       {
@@ -136874,7 +137338,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-7-21",
     "title": "지나가는 자마다 놀람",
     "aliases": [
-      "이 성전이 비록 높을지라도 그리로 지나가는 자마다 놀라"
+      "이 성전이 비록 높을지라도 그리로 지나가는 자마다 놀라",
+        "이 곳을 지나는 사람마다 놀라며"
     ],
     "locations": [
       {
@@ -136904,7 +137369,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-8-1",
     "title": "성전과 궁궐을 이십 년에 지음",
     "aliases": [
-      "솔로몬이 여호와의 전과 자기의 궁궐을 이십 년 동안에 건축하기를 마치고"
+      "솔로몬이 여호와의 전과 자기의 궁궐을 이십 년 동안에 건축하기를 마치고",
+        "솔로몬이 여호와의 성전과 왕궁을 다 짓는 데는 이십 년이 걸렸습니다"
     ],
     "locations": [
       {
@@ -136933,7 +137399,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-8-2",
     "title": "히람이 돌려준 성읍을 재건함",
     "aliases": [
-      "후람이 솔로몬에게 되돌려 준 성읍들을 솔로몬이 건축하여"
+      "후람이 솔로몬에게 되돌려 준 성읍들을 솔로몬이 건축하여",
+        "히람 왕이 준 마을들도 다시 건설하였습니다"
     ],
     "locations": [
       {
@@ -136962,7 +137429,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-8-6",
     "title": "건축하고자 하던 것을 다 이룸",
     "aliases": [
-      "예루살렘과 레바논과 그가 다스리는 온 땅에 건축하고자 하던 것을 다 건축하니라"
+      "예루살렘과 레바논과 그가 다스리는 온 땅에 건축하고자 하던 것을 다 건축하니라",
+        "바알랏을 다시 짓고"
     ],
     "locations": [
       {
@@ -136991,7 +137459,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-8-8",
     "title": "남은 가나안 사람들을 노역에 씀",
     "aliases": [
-      "그 땅에 남아 있는 그들의 자손들을 솔로몬이 역군으로 삼아"
+      "그 땅에 남아 있는 그들의 자손들을 솔로몬이 역군으로 삼아",
+        "그들은 이스라엘 백성이 멸망시키지 않고 남겨 둔 사람들의 자손입니다"
     ],
     "locations": [
       {
@@ -137021,7 +137490,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-8-11",
     "title": "바로의 딸을 다윗 성 밖 궁으로 옮김",
     "aliases": [
-      "내 아내가 이스라엘 왕 다윗의 왕궁에 살지 못하리니"
+      "내 아내가 이스라엘 왕 다윗의 왕궁에 살지 못하리니",
+        "이집트 왕의 딸을, 다윗 성에서 왕궁으로 데려왔습니다"
     ],
     "locations": [
       {
@@ -137052,7 +137522,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-8-13",
     "title": "모세의 명령대로 드리는 제사와 절기",
     "aliases": [
-      "모세의 명령을 따라 매일의 일과대로 안식일과 초하루와 정한 절기"
+      "모세의 명령을 따라 매일의 일과대로 안식일과 초하루와 정한 절기",
+        "그는 모세가 명령한 대로 날마다 제물을 바쳤습니다"
     ],
     "locations": [
       {
@@ -137081,7 +137552,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-8-14",
     "title": "다윗의 반열대로 섬김",
     "aliases": [
-      "이는 하나님의 사람 다윗이 전에 이렇게 명령하였음이라"
+      "이는 하나님의 사람 다윗이 전에 이렇게 명령하였음이라",
+        "제사장들을 뽑아 지파의 순서대로 일을 나누어 맡기고"
     ],
     "locations": [
       {
@@ -137110,7 +137582,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-9-1",
     "title": "스바 여왕의 방문",
     "aliases": [
-      "스바 여왕이 솔로몬의 명성을 듣고 와서 어려운 질문으로 솔로몬을 시험하고자 하여"
+      "스바 여왕이 솔로몬의 명성을 듣고 와서 어려운 질문으로 솔로몬을 시험하고자 하여",
+        "스바의 여왕이 솔로몬의 명성을 듣고"
     ],
     "locations": [
       {
@@ -137139,7 +137612,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-9-5",
     "title": "여왕이 들은 소문이 사실이었음",
     "aliases": [
-      "내가 내 나라에서 당신의 행위와 당신의 지혜에 대하여 들은 소문이 진실하도다"
+      "내가 내 나라에서 당신의 행위와 당신의 지혜에 대하여 들은 소문이 진실하도다",
+        "내 나라에서 들은 왕의 업적과 지혜에 대한 소문이 사실이군요"
     ],
     "locations": [
       {
@@ -137168,7 +137642,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-9-9",
     "title": "스바 여왕의 예물",
     "aliases": [
-      "이에 그가 금 백이십 달란트와 매우 많은 향품과 보석을 왕께 드렸으니"
+      "이에 그가 금 백이십 달란트와 매우 많은 향품과 보석을 왕께 드렸으니",
+        "금 백이십 달란트와 많은 향료와 보석을 주었습니다"
     ],
     "locations": [
       {
@@ -137197,7 +137672,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-9-11",
     "title": "백단목으로 만든 계단과 악기",
     "aliases": [
-      "왕이 백단목으로 여호와의 전과 왕궁의 층대를 만들고"
+      "왕이 백단목으로 여호와의 전과 왕궁의 층대를 만들고",
+        "백단목을 여호와의 성전과 왕궁의 계단을 만드는 데 썼습니다"
     ],
     "locations": [
       {
@@ -137226,7 +137702,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-9-15",
     "title": "금 방패 이백 개와 삼백 개",
     "aliases": [
-      "큰 방패 이백 개를 만들었으니 방패 하나에 든 금이 육백 세겔이며"
+      "큰 방패 이백 개를 만들었으니 방패 하나에 든 금이 육백 세겔이며",
+        "솔로몬 왕은 금을 두드려서 큰 방패 이백 개를 만들었습니다"
     ],
     "locations": [
       {
@@ -137255,7 +137732,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-9-18",
     "title": "상아 보좌와 사자 열두 마리",
     "aliases": [
-      "그 보좌에는 여섯 층계와 금 발판이 있어"
+      "그 보좌에는 여섯 층계와 금 발판이 있어",
+        "보좌로 올라가는 계단은 여섯 개였습니다"
     ],
     "locations": [
       {
@@ -137284,7 +137762,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-9-25",
     "title": "말과 병거를 둔 외양간",
     "aliases": [
-      "솔로몬의 병거 메는 말의 외양간은 사천이요"
+      "솔로몬의 병거 메는 말의 외양간은 사천이요",
+        "솔로몬은 말과 전차들을 두는 마구간을 사천 개나 가지고 있었고"
     ],
     "locations": [
       {
@@ -137314,7 +137793,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-9-29",
     "title": "솔로몬의 나머지 행적의 자료",
     "aliases": [
-      "선지자 나단의 글과 실로 사람 아히야의 예언과 선견자 잇도의 묵시 책"
+      "선지자 나단의 글과 실로 사람 아히야의 예언과 선견자 잇도의 묵시 책",
+        "솔로몬이 한 다른 일은 처음부터 끝까지, 예언자 나단의 기록"
     ],
     "locations": [
       {
@@ -137344,7 +137824,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-10-1",
     "title": "르호보암이 세겜에 감",
     "aliases": [
-      "르호보암이 세겜으로 갔으니"
+      "르호보암이 세겜으로 갔으니",
+        "모든 이스라엘 백성이 르호보암을 왕으로 세우려고 세겜에 모이자"
     ],
     "locations": [
       {
@@ -137373,7 +137854,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-10-2",
     "title": "여로보암이 애굽에서 돌아옴",
     "aliases": [
-      "느밧의 아들 여로보암이 전에 솔로몬 왕의 낯을 피하여 애굽으로 도망하여 있었더니"
+      "느밧의 아들 여로보암이 전에 솔로몬 왕의 낯을 피하여 애굽으로 도망하여 있었더니",
+        "이스라엘 백성이 르호보암을 왕으로 세우려 한다는 소식을 듣고"
     ],
     "locations": [
       {
@@ -137402,7 +137884,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-10-4",
     "title": "멍에를 가볍게 해 달라는 요청",
     "aliases": [
-      "왕은 이제 왕의 아버지께서 우리에게 시킨 고역과 메운 무거운 멍에를 가볍게 하소서"
+      "왕은 이제 왕의 아버지께서 우리에게 시킨 고역과 메운 무거운 멍에를 가볍게 하소서",
+        "왕의 아버지는 우리에게 매우 고된 일을 시켰습니다"
     ],
     "locations": [
       {
@@ -137432,7 +137915,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-10-7",
     "title": "원로들의 조언",
     "aliases": [
-      "왕이 만일 이 백성을 후대하여 기쁘게 하고 선한 말을 하시면 그들이 영원히 왕의 종이 되리이다"
+      "왕이 만일 이 백성을 후대하여 기쁘게 하고 선한 말을 하시면 그들이 영원히 왕의 종이 되리이다",
+        "왕은 이 백성에게 너그러워야 합니다"
     ],
     "locations": [
       {
@@ -137461,7 +137945,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-10-8",
     "title": "젊은 신하들과 의논함",
     "aliases": [
-      "왕은 원로들이 가르치는 것을 버리고"
+      "왕은 원로들이 가르치는 것을 버리고",
+        "그러나 르호보암은 그들의 충고를 듣지 않고"
     ],
     "locations": [
       {
@@ -137491,7 +137976,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-10-10",
     "title": "젊은 신하들의 말: 새끼 손가락",
     "aliases": [
-      "내 새끼 손가락이 내 아버지의 허리보다 굵으니"
+      "내 새끼 손가락이 내 아버지의 허리보다 굵으니",
+        "내 새끼 손가락은 내 아버지의 허리보다 더 굵다"
     ],
     "locations": [
       {
@@ -137520,7 +138006,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-10-16",
     "title": "다윗과 관계없다는 선언",
     "aliases": [
-      "우리가 다윗과 무슨 관계가 있느냐 이새의 아들에게서 받을 유산이 없도다"
+      "우리가 다윗과 무슨 관계가 있느냐 이새의 아들에게서 받을 유산이 없도다",
+        "다윗에게 우리가 받을 몫이 없다"
     ],
     "locations": [
       {
@@ -137549,7 +138036,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-10-18",
     "title": "하도람이 돌에 맞아 죽음",
     "aliases": [
-      "르호보암 왕이 역군의 감독 하도람을 보냈더니"
+      "르호보암 왕이 역군의 감독 하도람을 보냈더니",
+        "하도람은 강제로 동원된 일꾼들을 감독하는 사람이었는데"
     ],
     "locations": [
       {
@@ -137582,7 +138070,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-11-2",
     "title": "스마야를 통한 중단 명령",
     "aliases": [
-      "여호와의 말씀이 하나님의 사람 스마야에게 임하여"
+      "여호와의 말씀이 하나님의 사람 스마야에게 임하여",
+        "그러나 여호와께서 하나님의 사람 스마야에게 말씀하셨습니다"
     ],
     "locations": [
       {
@@ -137611,7 +138100,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-11-5",
     "title": "유다 땅의 방비 성읍 건축",
     "aliases": [
-      "르호보암이 예루살렘에 살면서 유다 땅에 방비하는 성읍들을 건축하였으니"
+      "르호보암이 예루살렘에 살면서 유다 땅에 방비하는 성읍들을 건축하였으니",
+        "르호보암은 예루살렘에 살면서, 유다의 여러 성을 요새로 만들었습니다"
     ],
     "locations": [
       {
@@ -137639,7 +138129,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-11-14",
     "title": "북이스라엘의 레위인이 남쪽으로 옴",
     "aliases": [
-      "레위 사람들이 자기들의 마을들과 산업을 떠나 유다와 예루살렘에 이르렀으니"
+      "레위 사람들이 자기들의 마을들과 산업을 떠나 유다와 예루살렘에 이르렀으니",
+        "레위 사람들은 목초지와 밭까지 버리고"
     ],
     "locations": [
       {
@@ -137669,7 +138160,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-11-15",
     "title": "여로보암이 세운 제사장",
     "aliases": [
-      "여로보암이 여러 산당과 숫염소 우상과 자기가 만든 송아지 우상을 위하여 친히 제사장들을 세움이라"
+      "여로보암이 여러 산당과 숫염소 우상과 자기가 만든 송아지 우상을 위하여 친히 제사장들을 세움이라",
+        "여로보암은 자기 마음대로 제사장을 뽑았습니다"
     ],
     "locations": [
       {
@@ -137699,7 +138191,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-11-16",
     "title": "북쪽 지파에서 예루살렘으로 온 신앙인들",
     "aliases": [
-      "이스라엘 모든 지파 중에 마음을 굳게 하여 이스라엘의 하나님 여호와를 찾는 자들이"
+      "이스라엘 모든 지파 중에 마음을 굳게 하여 이스라엘의 하나님 여호와를 찾는 자들이",
+        "여호와를 섬기려는 사람들이 있었습니다"
     ],
     "locations": [
       {
@@ -137727,7 +138220,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-11-17",
     "title": "삼 년 동안 다윗과 솔로몬의 길",
     "aliases": [
-      "이는 무리가 삼 년 동안을 다윗과 솔로몬의 길로 행하였음이더라"
+      "이는 무리가 삼 년 동안을 다윗과 솔로몬의 길로 행하였음이더라",
+        "삼 년 동안, 도와 주었습니다"
     ],
     "locations": [
       {
@@ -137756,7 +138250,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-11-21",
     "title": "르호보암의 많은 아내와 자녀",
     "aliases": [
-      "르호보암은 아내 열여덟 명과 첩 예순 명을 거느려"
+      "르호보암은 아내 열여덟 명과 첩 예순 명을 거느려",
+        "르호보암에게는 아내 십팔 명과 첩 육십 명이 있었고"
     ],
     "locations": [
       {
@@ -137785,7 +138280,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-12-1",
     "title": "율법을 버린 르호보암",
     "aliases": [
-      "그가 여호와의 율법을 버리니 온 이스라엘이 본받은지라"
+      "그가 여호와의 율법을 버리니 온 이스라엘이 본받은지라",
+        "르호보암은 강한 왕이 되고 나라도 견고하게 세웠습니다"
     ],
     "locations": [
       {
@@ -137814,7 +138310,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-12-2",
     "title": "시삭의 예루살렘 침공",
     "aliases": [
-      "그들이 여호와께 범죄하였으므로 르호보암 왕 제오년에 애굽 왕 시삭이 예루살렘을 치러 올라오니"
+      "그들이 여호와께 범죄하였으므로 르호보암 왕 제오년에 애굽 왕 시삭이 예루살렘을 치러 올라오니",
+        "이집트의 왕 시삭이 예루살렘에 쳐들어왔습니다"
     ],
     "locations": [
       {
@@ -137843,7 +138340,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-12-7",
     "title": "스스로 겸비한 왕과 백성",
     "aliases": [
-      "여호와께서 그들이 스스로 겸비함을 보신지라"
+      "여호와께서 그들이 스스로 겸비함을 보신지라",
+        "여호와께서는 그들이 자기 잘못을 뉘우치는 모습을 보시고"
     ],
     "locations": [
       {
@@ -137872,7 +138370,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-12-10",
     "title": "금방패 대신 놋방패",
     "aliases": [
-      "르호보암 왕이 그 대신에 놋으로 방패를 만들어"
+      "르호보암 왕이 그 대신에 놋으로 방패를 만들어",
+        "그래서 르호보암 왕은 금방패 대신에 놋방패를 만들어서"
     ],
     "locations": [
       {
@@ -137902,7 +138401,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-12-12",
     "title": "노를 돌이키심",
     "aliases": [
-      "여호와께서 노를 돌이키사 다 멸하지 아니하셨더라"
+      "여호와께서 노를 돌이키사 다 멸하지 아니하셨더라",
+        "르호보암이 잘못을 뉘우치자, 여호와께서 분노를 거두셨습니다"
     ],
     "locations": [
       {
@@ -137932,7 +138432,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-12-14",
     "title": "여호와를 구하지 않은 르호보암",
     "aliases": [
-      "르호보암이 악을 행하였으니 이는 그가 여호와를 구하는 마음을 굳게 하지 아니함이었더라"
+      "르호보암이 악을 행하였으니 이는 그가 여호와를 구하는 마음을 굳게 하지 아니함이었더라",
+        "르호보암은 무슨 일을 할 때든지 여호와의 뜻을 여쭈어 보지 않고"
     ],
     "locations": [
       {
@@ -137961,7 +138462,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-13-3",
     "title": "사십만 대 팔십만의 전쟁 준비",
     "aliases": [
-      "아비야는 싸움에 용감한 군사 사십만 명을 택하여"
+      "아비야는 싸움에 용감한 군사 사십만 명을 택하여",
+        "아비야는 뛰어난 군인 사십만 명을 이끌고 전쟁터로 나갔고"
     ],
     "locations": [
       {
@@ -137989,7 +138491,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-13-6",
     "title": "주인을 배반한 여로보암",
     "aliases": [
-      "다윗의 아들 솔로몬의 신하 느밧의 아들 여로보암이 일어나 자기의 주를 배반하고"
+      "다윗의 아들 솔로몬의 신하 느밧의 아들 여로보암이 일어나 자기의 주를 배반하고",
+        "여로보암이 자기 주인을 배반했다"
     ],
     "locations": [
       {
@@ -138019,7 +138522,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-13-8",
     "title": "여호와의 나라를 대적함",
     "aliases": [
-      "이제 너희가 또 다윗 자손의 손으로 다스리는 여호와의 나라를 대적하려 하는도다"
+      "이제 너희가 또 다윗 자손의 손으로 다스리는 여호와의 나라를 대적하려 하는도다",
+        "여호와의 나라는 다윗의 아들들의 것이다"
     ],
     "locations": [
       {
@@ -138048,7 +138552,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-13-9",
     "title": "아무나 제사장이 된 북이스라엘",
     "aliases": [
-      "너희가 아론 자손인 여호와의 제사장들과 레위 사람들을 쫓아내고"
+      "너희가 아론 자손인 여호와의 제사장들과 레위 사람들을 쫓아내고",
+        "수송아지 한 마리와 숫양 일곱 마리만 갖다 바치면 제사장이 되었다"
     ],
     "locations": [
       {
@@ -138078,7 +138583,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-13-11",
     "title": "남유다의 예배 규례 주장",
     "aliases": [
-      "매일 아침 저녁으로 여호와 앞에 번제를 드리며 분향하며 또 깨끗한 상에 진설병을 놓고"
+      "매일 아침 저녁으로 여호와 앞에 번제를 드리며 분향하며 또 깨끗한 상에 진설병을 놓고",
+        "우리는 우리 여호와 하나님의 명령에 복종하지만"
     ],
     "locations": [
       {
@@ -138108,7 +138614,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-13-14",
     "title": "앞뒤로 공격받자 부르짖은 유다",
     "aliases": [
-      "유다 사람이 뒤를 돌아보고 자기 앞 뒤의 적병으로 말미암아 여호와께 부르짖고"
+      "유다 사람이 뒤를 돌아보고 자기 앞 뒤의 적병으로 말미암아 여호와께 부르짖고",
+        "그래서 그들은 여호와께 부르짖었습니다"
     ],
     "locations": [
       {
@@ -138137,7 +138644,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-13-17",
     "title": "이스라엘에서 오십만이 쓰러짐",
     "aliases": [
-      "이스라엘이 택한 병사들이 죽임을 당하고 엎드러진 자들이 오십만 명이었더라"
+      "이스라엘이 택한 병사들이 죽임을 당하고 엎드러진 자들이 오십만 명이었더라",
+        "이스라엘의 용사 오십만 명이 죽었습니다"
     ],
     "locations": [
       {
@@ -138165,7 +138673,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-13-20",
     "title": "여로보암의 죽음",
     "aliases": [
-      "아비야 때에 여로보암이 다시 강성하지 못하고 여호와의 치심을 입어 죽었고"
+      "아비야 때에 여로보암이 다시 강성하지 못하고 여호와의 치심을 입어 죽었고",
+        "여호와께서 여로보암을 치시니, 여로보암이 죽었습니다"
     ],
     "locations": [
       {
@@ -138194,7 +138703,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-14-1",
     "title": "아사 시대의 십 년 평안",
     "aliases": [
-      "그의 시대에 그의 땅이 십 년 동안 평안하니라"
+      "그의 시대에 그의 땅이 십 년 동안 평안하니라",
+        "아비야의 아들 아사가 그의 뒤를 이어 왕이 되었습니다"
     ],
     "locations": [
       {
@@ -138222,7 +138732,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-14-3",
     "title": "우상과 산당을 없앰",
     "aliases": [
-      "이방 제단과 산당을 없애고 주상을 깨뜨리며 아세라 상을 찍고"
+      "이방 제단과 산당을 없애고 주상을 깨뜨리며 아세라 상을 찍고",
+        "아사는 우상을 섬기는 데에 썼던 이방 제단과 산당들을 없애 버렸습니다"
     ],
     "locations": [
       {
@@ -138251,7 +138762,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-14-4",
     "title": "조상의 하나님을 찾고 율법을 행함",
     "aliases": [
-      "유다 사람에게 명하여 그 조상들의 하나님 여호와를 찾게 하며 그의 율법과 명령을 행하게 하고"
+      "유다 사람에게 명하여 그 조상들의 하나님 여호와를 찾게 하며 그의 율법과 명령을 행하게 하고",
+        "그들의 조상이 섬기던 하나님께 복종하게 했습니다"
     ],
     "locations": [
       {
@@ -138280,7 +138792,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-14-6",
     "title": "평안 속에서 세운 요새",
     "aliases": [
-      "그가 견고한 성읍들을 유다에 건축하니라"
+      "그가 견고한 성읍들을 유다에 건축하니라",
+        "여호와께서 아사에게 평화를 주셨기 때문에"
     ],
     "locations": [
       {
@@ -138308,7 +138821,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-14-8",
     "title": "유다와 베냐민의 군대 수",
     "aliases": [
-      "아사의 군대는 유다 중에서 큰 방패와 창을 잡는 자가 삼십만 명이요"
+      "아사의 군대는 유다 중에서 큰 방패와 창을 잡는 자가 삼십만 명이요",
+        "아사에게는 유다 백성으로 이루어진 군대가 삼십만 명이 있었고"
     ],
     "locations": [
       {
@@ -138336,7 +138850,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-14-9",
     "title": "구스 사람 세라의 침입",
     "aliases": [
-      "구스 사람 세라가 그들을 치려 하여 군사 백만 명과 병거 삼백 대를 거느리고"
+      "구스 사람 세라가 그들을 치려 하여 군사 백만 명과 병거 삼백 대를 거느리고",
+        "에티오피아 사람 세라가 아사의 군대와 싸우러 왔습니다"
     ],
     "locations": [
       {
@@ -138364,7 +138879,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-14-12",
     "title": "여호와께서 구스를 치심",
     "aliases": [
-      "여호와께서 구스 사람들을 아사와 유다 사람들 앞에서 치시니"
+      "여호와께서 구스 사람들을 아사와 유다 사람들 앞에서 치시니",
+        "여호와께서 에티오피아 사람들을 물리쳐 주셨습니다"
     ],
     "locations": [
       {
@@ -138392,7 +138908,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-15-2",
     "title": "아사랴의 선포: 찾으면 만나 주심",
     "aliases": [
-      "너희가 여호와와 함께 하면 여호와께서 너희와 함께 하실지라"
+      "너희가 여호와와 함께 하면 여호와께서 너희와 함께 하실지라",
+        "여러분이 여호와와 함께 있는 한, 여호와도 여러분과 함께 계실 것이오"
     ],
     "locations": [
       {
@@ -138421,7 +138938,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-15-4",
     "title": "환난 때에 돌아와 찾으면 만나 주심",
     "aliases": [
-      "그들이 그 환난 때에 이스라엘 하나님 여호와께로 돌아가서 찾으매 그가 그들과 만나게 되셨나니"
+      "그들이 그 환난 때에 이스라엘 하나님 여호와께로 돌아가서 찾으매 그가 그들과 만나게 되셨나니",
+        "주를 구하여 찾았소"
     ],
     "locations": [
       {
@@ -138450,7 +138968,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-15-8",
     "title": "선지자의 예언을 듣고 개혁을 계속함",
     "aliases": [
-      "선지자 오뎃의 예언을 듣고 마음을 강하게 하여"
+      "선지자 오뎃의 예언을 듣고 마음을 강하게 하여",
+        "아사는 이 모든 말과 예언자 오뎃의 예언을 듣고 용기를 내어"
     ],
     "locations": [
       {
@@ -138480,7 +138999,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-15-9",
     "title": "북쪽 백성이 아사에게 돌아옴",
     "aliases": [
-      "이스라엘 사람들이 아사의 하나님 여호와께서 그와 함께 하심을 보고 아사에게로 돌아오는 자가 많았음이더라"
+      "이스라엘 사람들이 아사의 하나님 여호와께서 그와 함께 하심을 보고 아사에게로 돌아오는 자가 많았음이더라",
+        "아사의 하나님 여호와께서 아사와 함께 계시는 것을 보고"
     ],
     "locations": [
       {
@@ -138509,7 +139029,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-15-12",
     "title": "마음과 목숨을 다해 찾기로 한 언약",
     "aliases": [
-      "또 마음을 다하고 목숨을 다하여 조상들의 하나님 여호와를 찾기로 언약하고"
+      "또 마음을 다하고 목숨을 다하여 조상들의 하나님 여호와를 찾기로 언약하고",
+        "마음을 다해 그들의 조상이 섬기던 여호와 하나님을 따르기로 약속했습니다"
     ],
     "locations": [
       {
@@ -138538,7 +139059,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-15-16",
     "title": "마아가의 태후 자리를 폐함",
     "aliases": [
-      "아사가 그의 태후의 자리를 폐하고"
+      "아사가 그의 태후의 자리를 폐하고",
+        "아사 왕은 자기 어머니 마아가를 태후의 자리에서 물러나게 했습니다"
     ],
     "locations": [
       {
@@ -138567,7 +139089,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-15-17",
     "title": "산당은 제하지 않았으나 마음은 온전함",
     "aliases": [
-      "산당은 이스라엘 중에서 제하지 아니하였으나 아사의 마음이 일평생 온전하였더라"
+      "산당은 이스라엘 중에서 제하지 아니하였으나 아사의 마음이 일평생 온전하였더라",
+        "아사는 평생토록 온전한 마음으로 주를 섬겼습니다"
     ],
     "locations": [
       {
@@ -138596,7 +139119,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-15-19",
     "title": "아사 35년까지 전쟁이 없음",
     "aliases": [
-      "이 때부터 아사 왕 제삼십오년까지 다시는 전쟁이 없으니라"
+      "이 때부터 아사 왕 제삼십오년까지 다시는 전쟁이 없으니라",
+        "아사가 왕으로 있은 지 삼십오 년째 되던 해까지 전쟁이 없었습니다"
     ],
     "locations": [
       {
@@ -138629,7 +139153,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-16-1",
     "title": "바아사의 라마 건축",
     "aliases": [
-      "아사 왕 제삼십육년에 이스라엘 왕 바아사가 유다를 치러 올라와서 라마를 건축하여"
+      "아사 왕 제삼십육년에 이스라엘 왕 바아사가 유다를 치러 올라와서 라마를 건축하여",
+        "이스라엘의 바아사 왕이 유다로 쳐들어왔습니다"
     ],
     "locations": [
       {
@@ -138659,7 +139184,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-16-2",
     "title": "아사가 아람 왕에게 보물을 보냄",
     "aliases": [
-      "아사가 여호와의 전 곳간과 왕궁 곳간의 은금을 내어다가 다메섹에 사는 아람 왕 벤하닷에게 보내며"
+      "아사가 여호와의 전 곳간과 왕궁 곳간의 은금을 내어다가 다메섹에 사는 아람 왕 벤하닷에게 보내며",
+        "보물 가운데 남아 있는 금과 은을 꺼내어"
     ],
     "locations": [
       {
@@ -138688,7 +139214,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-16-4",
     "title": "벤하닷의 이스라엘 성읍 공격",
     "aliases": [
-      "벤하닷이 아사 왕의 말을 듣고 그의 군대 지휘관들을 보내어 이스라엘 성읍들을 치되"
+      "벤하닷이 아사 왕의 말을 듣고 그의 군대 지휘관들을 보내어 이스라엘 성읍들을 치되",
+        "이욘과 단과 아벨마임을 점령했습니다"
     ],
     "locations": [
       {
@@ -138717,7 +139244,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-16-7",
     "title": "하나니의 책망: 아람 왕을 의지함",
     "aliases": [
-      "왕이 아람 왕을 의지하고 왕의 하나님 여호와를 의지하지 아니하였으므로"
+      "왕이 아람 왕을 의지하고 왕의 하나님 여호와를 의지하지 아니하였으므로",
+        "왕은 왕의 하나님 여호와를 의지하지 않고, 아람 왕을 의지했습니다"
     ],
     "locations": [
       {
@@ -138746,7 +139274,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-16-10",
     "title": "선견자를 옥에 가둠",
     "aliases": [
-      "아사가 노하여 선견자를 옥에 가두었으니"
+      "아사가 노하여 선견자를 옥에 가두었으니",
+        "아사는 선견자 하나니의 말을 듣고 화가 나서 그를 감옥에 가두었습니다"
     ],
     "locations": [
       {
@@ -138775,7 +139304,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-16-13",
     "title": "아사의 죽음과 장례",
     "aliases": [
-      "아사가 왕위에 있은 지 사십일 년 후에 죽어 그의 조상들과 함께 누우매"
+      "아사가 왕위에 있은 지 사십일 년 후에 죽어 그의 조상들과 함께 누우매",
+        "왕으로 있은 지 사십일 년째 되던 해에 죽었습니다"
     ],
     "locations": [
       {
@@ -138804,7 +139334,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-17-2",
     "title": "여호사밧의 군사 배치",
     "aliases": [
-      "그의 아버지 아사가 정복한 에브라임 성읍들에 영문을 두었더라"
+      "그의 아버지 아사가 정복한 에브라임 성읍들에 영문을 두었더라",
+        "그는 유다의 모든 요새에 군대를 두고"
     ],
     "locations": [
       {
@@ -138833,7 +139364,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-17-3",
     "title": "다윗의 처음 길로 행함",
     "aliases": [
-      "그가 그의 조상 다윗의 처음 길로 행하여 바알들에게 구하지 아니하고"
+      "그가 그의 조상 다윗의 처음 길로 행하여 바알들에게 구하지 아니하고",
+        "여호사밧이 올바른 일을 하였으므로, 여호와께서 그와 함께 계셨습니다"
     ],
     "locations": [
       {
@@ -138862,7 +139394,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-17-5",
     "title": "나라가 견고해지고 예물이 들어옴",
     "aliases": [
-      "그러므로 여호와께서 나라를 그의 손에서 견고하게 하시매"
+      "그러므로 여호와께서 나라를 그의 손에서 견고하게 하시매",
+        "여호와께서 여호사밧을 유다의 강한 왕으로 만들어 주셨습니다"
     ],
     "locations": [
       {
@@ -138891,7 +139424,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-17-6",
     "title": "산당과 아세라 목상을 제거함",
     "aliases": [
-      "그가 전심으로 여호와의 길을 걸어 산당들과 아세라 목상들도 유다에서 제거하였더라"
+      "그가 전심으로 여호와의 길을 걸어 산당들과 아세라 목상들도 유다에서 제거하였더라",
+        "여호사밧은 열심으로 여호와를 섬겼습니다"
     ],
     "locations": [
       {
@@ -138922,7 +139456,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-17-7",
     "title": "율법책으로 백성을 가르치게 함",
     "aliases": [
-      "그가 왕위에 있은 지 삼 년에 그의 방백들 벤하일과 오바댜와 스가랴와 느다넬과 미가야를 보내어"
+      "그가 왕위에 있은 지 삼 년에 그의 방백들 벤하일과 오바댜와 스가랴와 느다넬과 미가야를 보내어",
+        "자기 신하들을 유다의 모든 마을에 보내어 백성을 가르치게 했습니다"
     ],
     "locations": [
       {
@@ -138951,7 +139486,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-17-10",
     "title": "주변 나라들이 두려워함",
     "aliases": [
-      "여호와께서 유다 사방의 모든 나라에 두려움을 주사 여호사밧과 싸우지 못하게 하시매"
+      "여호와께서 유다 사방의 모든 나라에 두려움을 주사 여호사밧과 싸우지 못하게 하시매",
+        "유다 근처의 나라들은 여호와를 두려워했습니다"
     ],
     "locations": [
       {
@@ -138980,7 +139516,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-17-14",
     "title": "유다 군대의 천부장 명단",
     "aliases": [
-      "유다에 속한 천부장 중에는 아드나가 으뜸이 되어 큰 용사 삼십만 명을 거느렸고"
+      "유다에 속한 천부장 중에는 아드나가 으뜸이 되어 큰 용사 삼십만 명을 거느렸고",
+        "그 군인들은 집안별로 이름이 올라 있었습니다"
     ],
     "locations": [
       {
@@ -139008,7 +139545,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-18-1",
     "title": "아합 가문과의 혼인",
     "aliases": [
-      "아합 가문과 혼인함으로 인척 관계를 맺었더라"
+      "아합 가문과 혼인함으로 인척 관계를 맺었더라",
+        "그는 결혼을 통해서 아합 왕과 동맹을 맺었습니다"
     ],
     "locations": [
       {
@@ -139038,7 +139576,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-18-2",
     "title": "사마리아 방문과 길르앗 라못 권유",
     "aliases": [
-      "이 년 후에 그가 사마리아의 아합에게 내려갔더니"
+      "이 년 후에 그가 사마리아의 아합에게 내려갔더니",
+        "아합은 여호사밧을 부추겨 길르앗 라못을 치게 했습니다"
     ],
     "locations": [
       {
@@ -139067,7 +139606,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-18-7",
     "title": "미가야를 미워하는 아합",
     "aliases": [
-      "항상 나쁜 일로만 예언하기로 내가 그를 미워하나이다"
+      "항상 나쁜 일로만 예언하기로 내가 그를 미워하나이다",
+        "그는 이믈라의 아들 미가야라고 하는데"
     ],
     "locations": [
       {
@@ -139096,7 +139636,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-18-10",
     "title": "철 뿔을 든 시드기야의 거짓 예언",
     "aliases": [
-      "그나아나의 아들 시드기야는 철로 뿔들을 만들어 가지고 말하되"
+      "그나아나의 아들 시드기야는 철로 뿔들을 만들어 가지고 말하되",
+        "너는 이 뿔들을 가지고 아람 사람과 싸워라"
     ],
     "locations": [
       {
@@ -139125,7 +139666,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-18-16",
     "title": "목자 없는 양처럼 흩어질 군대",
     "aliases": [
-      "이 무리가 주인이 없으니 각각 평안히 자기들의 집으로 돌아갈 것이니라"
+      "이 무리가 주인이 없으니 각각 평안히 자기들의 집으로 돌아갈 것이니라",
+        "목자 없는 양처럼 이 산 저 산에 흩어져 있는 것이 보이오"
     ],
     "locations": [
       {
@@ -139155,7 +139697,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-18-18",
     "title": "보좌에 앉으신 여호와와 하늘 군대",
     "aliases": [
-      "여호와께서 그의 보좌에 앉으셨고 하늘의 만군이 그의 좌우편에 모시고 섰는데"
+      "여호와께서 그의 보좌에 앉으셨고 하늘의 만군이 그의 좌우편에 모시고 섰는데",
+        "여호와께서 보좌에 앉아 계시고"
     ],
     "locations": [
       {
@@ -139185,7 +139728,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-18-21",
     "title": "거짓말하는 영의 제안",
     "aliases": [
-      "내가 나가서 거짓말하는 영이 되어 그의 모든 선지자들의 입에 있겠나이다"
+      "내가 나가서 거짓말하는 영이 되어 그의 모든 선지자들의 입에 있겠나이다",
+        "아합의 예언자들에게 가서 거짓말을 하게 하겠습니다"
     ],
     "locations": [
       {
@@ -139214,7 +139758,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-18-33",
     "title": "무심코 쏜 화살이 아합을 맞힘",
     "aliases": [
-      "한 사람이 무심코 활을 당겨 이스라엘 왕의 갑옷 솔기를 쏜지라"
+      "한 사람이 무심코 활을 당겨 이스라엘 왕의 갑옷 솔기를 쏜지라",
+        "그 화살이 우연히 이스라엘의 아합 왕에게 맞았습니다"
     ],
     "locations": [
       {
@@ -139244,7 +139789,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-19-2",
     "title": "예후의 책망과 선한 일",
     "aliases": [
-      "왕이 악한 자를 돕고 여호와를 미워하는 자들을 사랑하는 것이 옳으니이까"
+      "왕이 악한 자를 돕고 여호와를 미워하는 자들을 사랑하는 것이 옳으니이까",
+        "예후는 선견자였습니다"
     ],
     "locations": [
       {
@@ -139274,7 +139820,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-19-4",
     "title": "백성을 여호와께 돌아오게 함",
     "aliases": [
-      "브엘세바에서부터 에브라임 산지까지 민간에 두루 다니며"
+      "브엘세바에서부터 에브라임 산지까지 민간에 두루 다니며",
+        "여호사밧은 예루살렘에서 살았습니다"
     ],
     "locations": [
       {
@@ -139303,7 +139850,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-19-6",
     "title": "재판은 여호와를 위하여",
     "aliases": [
-      "너희가 재판하는 것이 사람을 위하여 할 것인지 여호와를 위하여 할 것인지를 잘 살피라"
+      "너희가 재판하는 것이 사람을 위하여 할 것인지 여호와를 위하여 할 것인지를 잘 살피라",
+        "여호와를 위해 재판하는 것이오"
     ],
     "locations": [
       {
@@ -139332,7 +139880,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-19-8",
     "title": "예루살렘의 재판 조직",
     "aliases": [
-      "여호와께 속한 일과 예루살렘 주민의 모든 송사를 재판하게 하고"
+      "여호와께 속한 일과 예루살렘 주민의 모든 송사를 재판하게 하고",
+        "레위 사람과 제사장과 이스라엘 각 집안의 지도자들을 재판관으로 세웠습니다"
     ],
     "locations": [
       {
@@ -139361,7 +139910,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-19-9",
     "title": "진실과 성심으로 여호와를 경외함",
     "aliases": [
-      "너희는 진실과 성심을 다하여 여호와를 경외하라"
+      "너희는 진실과 성심을 다하여 여호와를 경외하라",
+        "여러분은 언제나 마음을 다해 여호와를 섬겨야 하오"
     ],
     "locations": [
       {
@@ -139390,7 +139940,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-20-2",
     "title": "연합군이 엔게디에 이름",
     "aliases": [
-      "하사손다말 곧 엔게디에 있나이다"
+      "하사손다말 곧 엔게디에 있나이다",
+        "큰 군대가 에돔, 곧 사해 건너편에서 왕을 향해 오고 있습니다"
     ],
     "locations": [
       {
@@ -139419,7 +139970,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-20-3",
     "title": "두려움 속의 간구와 금식",
     "aliases": [
-      "여호사밧이 두려워하여 여호와께로 낯을 향하여 간구하고 온 유다 백성에게 금식하라 공포하매"
+      "여호사밧이 두려워하여 여호와께로 낯을 향하여 간구하고 온 유다 백성에게 금식하라 공포하매",
+        "여호사밧은 두려웠습니다"
     ],
     "locations": [
       {
@@ -139448,7 +140000,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-20-6",
     "title": "여호와의 권세와 능력을 고백함",
     "aliases": [
-      "주의 손에 권세와 능력이 있사오니 능히 주와 맞설 사람이 없나이다"
+      "주의 손에 권세와 능력이 있사오니 능히 주와 맞설 사람이 없나이다",
+        "주께서 세계 모든 민족의 나라들을 다스리십니다"
     ],
     "locations": [
       {
@@ -139478,7 +140031,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-20-9",
     "title": "성전 앞에서 부르짖는 기도의 근거",
     "aliases": [
-      "우리가 이 성전 앞과 주 앞에 서서 이 환난 가운데에서 주께 부르짖은즉 들으시고 구원하시리라 하였나이다"
+      "우리가 이 성전 앞과 주 앞에 서서 이 환난 가운데에서 주께 부르짖은즉 들으시고 구원하시리라 하였나이다",
+        "주의 이름이 있는 이 성전 앞에"
     ],
     "locations": [
       {
@@ -139507,7 +140061,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-20-15",
     "title": "전쟁은 하나님께 속함",
     "aliases": [
-      "이 전쟁은 너희에게 속한 것이 아니요 하나님께 속한 것이니라"
+      "이 전쟁은 너희에게 속한 것이 아니요 하나님께 속한 것이니라",
+        "이 전쟁은 너희의 전쟁이 아니라 하나님의 전쟁이다"
     ],
     "locations": [
       {
@@ -139536,7 +140091,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-20-17",
     "title": "서서 여호와의 구원을 봄",
     "aliases": [
-      "이 전쟁에는 너희가 싸울 것이 없나니 대열을 이루고 서서 너희와 함께 한 여호와가 구원하는 것을 보라"
+      "이 전쟁에는 너희가 싸울 것이 없나니 대열을 이루고 서서 너희와 함께 한 여호와가 구원하는 것을 보라",
+        "너희는 이 전쟁에서 싸울 필요가 없다"
     ],
     "locations": [
       {
@@ -139565,7 +140121,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-20-21",
     "title": "찬양대가 군대 앞에서 행진함",
     "aliases": [
-      "여호와께 감사하세 그의 인자하심이 영원하도다"
+      "여호와께 감사하세 그의 인자하심이 영원하도다",
+        "여호사밧은 백성과 의논하여 여호와께 노래할 사람"
     ],
     "locations": [
       {
@@ -139595,7 +140152,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-20-22",
     "title": "찬양 중에 여호와께서 복병을 두심",
     "aliases": [
-      "그 노래와 찬송이 시작될 때에 여호와께서 복병을 두어"
+      "그 노래와 찬송이 시작될 때에 여호와께서 복병을 두어",
+        "공격할 복병을 숨겨 놓으셨습니다"
     ],
     "locations": [
       {
@@ -139628,7 +140186,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-21-3",
     "title": "장자 여호람에게 왕위를 줌",
     "aliases": [
-      "여호람은 장자이므로 왕위를 주었더니"
+      "여호람은 장자이므로 왕위를 주었더니",
+        "그러나 여호람이 맏아들이기 때문에 나라는 여호람에게 주었습니다"
     ],
     "locations": [
       {
@@ -139657,7 +140216,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-21-6",
     "title": "아합의 딸과 혼인한 여호람",
     "aliases": [
-      "그가 이스라엘 왕들의 길로 행하여 아합의 집과 같이 하였으니 이는 아합의 딸이 그의 아내가 되었음이라"
+      "그가 이스라엘 왕들의 길로 행하여 아합의 집과 같이 하였으니 이는 아합의 딸이 그의 아내가 되었음이라",
+        "여호람은 아합의 집안처럼 이스라엘 왕들의 길을 그대로 따랐습니다"
     ],
     "locations": [
       {
@@ -139687,7 +140247,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-21-10",
     "title": "에돔과 립나의 반역",
     "aliases": [
-      "이는 그가 그의 조상들의 하나님 여호와를 버렸음이더라"
+      "이는 그가 그의 조상들의 하나님 여호와를 버렸음이더라",
+        "에돔 나라는 유다에게 반역을 해서"
     ],
     "locations": [
       {
@@ -139716,7 +140277,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-21-11",
     "title": "산당을 세우고 백성을 미혹함",
     "aliases": [
-      "여호람이 또 유다 여러 산에 산당을 세워 예루살렘 주민으로 음행하게 하고"
+      "여호람이 또 유다 여러 산에 산당을 세워 예루살렘 주민으로 음행하게 하고",
+        "여호람은 유다의 언덕들 위에 헛된 신들을 섬기는 산당을 지었습니다"
     ],
     "locations": [
       {
@@ -139746,7 +140308,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-21-12",
     "title": "엘리야의 편지",
     "aliases": [
-      "선지자 엘리야가 여호람에게 글을 보내어 이르되"
+      "선지자 엘리야가 여호람에게 글을 보내어 이르되",
+        "여호람이 예언자 엘리야로부터 편지를 받았는데"
     ],
     "locations": [
       {
@@ -139774,7 +140337,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-21-15",
     "title": "창자의 중병 예고",
     "aliases": [
-      "또 너는 창자에 중병이 들고 그 병이 날로 중하여 창자가 빠져나오리라"
+      "또 너는 창자에 중병이 들고 그 병이 날로 중하여 창자가 빠져나오리라",
+        "네 창자에 심한 병이 걸릴 텐데"
     ],
     "locations": [
       {
@@ -139803,7 +140367,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-21-19",
     "title": "여호람을 위한 분향을 하지 않음",
     "aliases": [
-      "백성이 그들의 조상들에게 분향하던 것 같이 그에게 분향하지 아니하였으며"
+      "백성이 그들의 조상들에게 분향하던 것 같이 그에게 분향하지 아니하였으며",
+        "여호람을 위해서는 향불을 피우지 않았습니다"
     ],
     "locations": [
       {
@@ -139832,7 +140397,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-22-1",
     "title": "아라비아 부대가 형들을 죽임",
     "aliases": [
-      "이는 전에 아라비아 사람들과 함께 와서 진을 치던 부대가 그의 모든 형들을 죽였음이라"
+      "이는 전에 아라비아 사람들과 함께 와서 진을 치던 부대가 그의 모든 형들을 죽였음이라",
+        "아라비아 사람들과 더불어 여호람의 진에 쳐들어온 도둑들이"
     ],
     "locations": [
       {
@@ -139861,7 +140427,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-22-3",
     "title": "어머니의 꾐에 빠진 아하시야",
     "aliases": [
-      "아하시야도 아합의 집 길로 행하였으니 이는 그의 어머니가 꾀어 악을 행하게 하였음이라"
+      "아하시야도 아합의 집 길로 행하였으니 이는 그의 어머니가 꾀어 악을 행하게 하였음이라",
+        "그의 어머니가 그를 부추겨 악한 일을 하게 했기 때문입니다"
     ],
     "locations": [
       {
@@ -139890,7 +140457,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-22-5",
     "title": "라못 전투에서 요람이 상함",
     "aliases": [
-      "아람 사람들이 요람을 상하게 한지라"
+      "아람 사람들이 요람을 상하게 한지라",
+        "그 싸움에서 아람 사람들이 요람에게 부상을 입혔습니다"
     ],
     "locations": [
       {
@@ -139919,7 +140487,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-22-7",
     "title": "하나님께로 말미암은 아하시야의 해",
     "aliases": [
-      "아하시야가 요람에게 가므로 해를 입었으니 이는 하나님께로 말미암은 것이라"
+      "아하시야가 요람에게 가므로 해를 입었으니 이는 하나님께로 말미암은 것이라",
+        "이는 하나님께서 계획하신 일입니다"
     ],
     "locations": [
       {
@@ -139948,7 +140517,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-22-9",
     "title": "여호사밧의 아들이라는 장사",
     "aliases": [
-      "그는 전심으로 여호와를 구하던 여호사밧의 아들이라 하고 장사하였더라"
+      "그는 전심으로 여호와를 구하던 여호사밧의 아들이라 하고 장사하였더라",
+        "아하시야는 여호사밧의 자손이다"
     ],
     "locations": [
       {
@@ -139978,7 +140548,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-22-10",
     "title": "아달랴가 왕족을 멸하려 함",
     "aliases": [
-      "아하시야의 어머니 아달랴가 자기의 아들이 죽은 것을 보고 일어나 유다 집의 왕국의 씨를 모두 진멸하였으나"
+      "아하시야의 어머니 아달랴가 자기의 아들이 죽은 것을 보고 일어나 유다 집의 왕국의 씨를 모두 진멸하였으나",
+        "아하시야의 어머니 아달랴는 자기 아들이 죽은 것을 보고"
     ],
     "locations": [
       {
@@ -140007,7 +140578,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-23-2",
     "title": "레위인과 족장을 모아 예루살렘으로 감",
     "aliases": [
-      "그들이 유다를 두루 다니며 유다 모든 고을에서 레위 사람들과 이스라엘 족장들을 모아 예루살렘에 이른지라"
+      "그들이 유다를 두루 다니며 유다 모든 고을에서 레위 사람들과 이스라엘 족장들을 모아 예루살렘에 이른지라",
+        "그들은 유다 모든 마을을 다니면서 레위 사람들을 불러 모았습니다"
     ],
     "locations": [
       {
@@ -140036,7 +140608,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-23-6",
     "title": "성전에 들어갈 수 있는 자",
     "aliases": [
-      "제사장들과 수종 드는 레위 사람들은 거룩한즉 여호와의 전에 들어오려니와 그 외의 다른 사람은 들어오지 못할 것이니"
+      "제사장들과 수종 드는 레위 사람들은 거룩한즉 여호와의 전에 들어오려니와 그 외의 다른 사람은 들어오지 못할 것이니",
+        "아무도 여호와의 성전에 들어오지 못하게 하시오"
     ],
     "locations": [
       {
@@ -140065,7 +140638,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-23-9",
     "title": "다윗의 창과 방패를 나눠 줌",
     "aliases": [
-      "제사장 여호야다가 하나님의 전 안에 있는 다윗 왕의 창과 큰 방패와 작은 방패를 백부장들에게 주고"
+      "제사장 여호야다가 하나님의 전 안에 있는 다윗 왕의 창과 큰 방패와 작은 방패를 백부장들에게 주고",
+        "여호야다가 백부장들에게 창과 크고 작은 방패를 나누어 주었습니다"
     ],
     "locations": [
       {
@@ -140094,7 +140668,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-23-11",
     "title": "요아스를 왕으로 세움",
     "aliases": [
-      "무리가 왕자를 인도해 내어 면류관을 씌우며 율법책을 주고 세워 왕으로 삼을새"
+      "무리가 왕자를 인도해 내어 면류관을 씌우며 율법책을 주고 세워 왕으로 삼을새",
+        "그 때에 여호야다와 그의 아들들이 왕자를 데려와서"
     ],
     "locations": [
       {
@@ -140123,7 +140698,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-23-13",
     "title": "아달랴의 반역 외침",
     "aliases": [
-      "이에 아달랴가 그의 옷을 찢으며 외치되 반역이로다 반역이로다"
+      "이에 아달랴가 그의 옷을 찢으며 외치되 반역이로다 반역이로다",
+        "아달랴는 너무나 놀란 나머지 옷을 찢으며"
     ],
     "locations": [
       {
@@ -140152,7 +140728,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-23-16",
     "title": "여호와의 백성이 되기로 한 언약",
     "aliases": [
-      "여호야다가 자기와 모든 백성과 왕 사이에 언약을 세워 여호와의 백성이 되리라 한지라"
+      "여호야다가 자기와 모든 백성과 왕 사이에 언약을 세워 여호와의 백성이 되리라 한지라",
+        "그들은 여호와의 백성이 되기로 약속했습니다"
     ],
     "locations": [
       {
@@ -140181,7 +140758,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-23-18",
     "title": "다윗의 규례대로 세운 직원",
     "aliases": [
-      "다윗이 정한 규례대로 즐거이 부르고 노래하게 하였던 자들이더라"
+      "다윗이 정한 규례대로 즐거이 부르고 노래하게 하였던 자들이더라",
+        "여호와의 성전을 맡을 레위 사람 제사장들을 뽑았습니다"
     ],
     "locations": [
       {
@@ -140211,7 +140789,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-24-5",
     "title": "성전 수리 돈을 서둘러 거두지 않은 레위인",
     "aliases": [
-      "레위 사람이 빨리 하지 아니한지라"
+      "레위 사람이 빨리 하지 아니한지라",
+        "여호와의 성전에 바치는 돈을 해마다 모으시오"
     ],
     "locations": [
       {
@@ -140240,7 +140819,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-24-6",
     "title": "모세가 정한 성막 세",
     "aliases": [
-      "여호와의 종 모세와 이스라엘의 회중이 성막을 위하여 정한 세를"
+      "여호와의 종 모세와 이스라엘의 회중이 성막을 위하여 정한 세를",
+        "그 돈으로 거룩한 장막을 짓지 않았소"
     ],
     "locations": [
       {
@@ -140269,7 +140849,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-24-8",
     "title": "헌금 궤를 두고 돈을 모음",
     "aliases": [
-      "이에 왕이 말하여 한 궤를 만들어 여호와의 전 문 밖에 두게 하고"
+      "이에 왕이 말하여 한 궤를 만들어 여호와의 전 문 밖에 두게 하고",
+        "헌금을 넣을 상자를 만들어서"
     ],
     "locations": [
       {
@@ -140298,7 +140879,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-24-12",
     "title": "석수와 목수를 고용한 공사",
     "aliases": [
-      "왕과 여호야다가 그 돈을 여호와의 전 감독자에게 주어 석수와 목수를 고용하여 여호와의 전을 보수하며"
+      "왕과 여호야다가 그 돈을 여호와의 전 감독자에게 주어 석수와 목수를 고용하여 여호와의 전을 보수하며",
+        "성전 공사를 맡은 사람들에게 주었습니다"
     ],
     "locations": [
       {
@@ -140327,7 +140909,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-24-15",
     "title": "여호야다의 죽음",
     "aliases": [
-      "여호야다가 나이가 많고 늙어서 죽으니 죽을 때에 백삼십 세라"
+      "여호야다가 나이가 많고 늙어서 죽으니 죽을 때에 백삼십 세라",
+        "그는 백삼십 세까지 살다가 죽었습니다"
     ],
     "locations": [
       {
@@ -140356,7 +140939,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-24-18",
     "title": "요아스가 우상을 섬기기 시작함",
     "aliases": [
-      "그의 조상들의 하나님 여호와의 전을 버리고 아세라 목상과 우상을 섬겼으므로"
+      "그의 조상들의 하나님 여호와의 전을 버리고 아세라 목상과 우상을 섬겼으므로",
+        "왕과 관리들은 아세라 우상들과 그 밖의 우상들을 섬기기 시작했습니다"
     ],
     "locations": [
       {
@@ -140385,7 +140969,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-24-22",
     "title": "스가랴를 죽인 요아스",
     "aliases": [
-      "요아스 왕이 이와 같이 스가랴의 아버지 여호야다가 베푼 은혜를 기억하지 아니하고 그의 아들을 죽이니"
+      "요아스 왕이 이와 같이 스가랴의 아버지 여호야다가 베푼 은혜를 기억하지 아니하고 그의 아들을 죽이니",
+        "여호야다의 아들 스가랴를 죽였습니다"
     ],
     "locations": [
       {
@@ -140414,7 +140999,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-24-25",
     "title": "요아스의 죽음과 반역",
     "aliases": [
-      "그의 신하들이 제사장 여호야다의 아들들의 피로 말미암아 반역하여 그를 그의 침상에서 쳐죽인지라"
+      "그의 신하들이 제사장 여호야다의 아들들의 피로 말미암아 반역하여 그를 그의 침상에서 쳐죽인지라",
+        "그리하여 그들은 요아스를 그의 침대 위에서 죽였습니다"
     ],
     "locations": [
       {
@@ -140443,7 +141029,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-25-2",
     "title": "정직했으나 온전하지 않은 아마샤",
     "aliases": [
-      "아마샤가 여호와께서 보시기에 정직하게 행하기는 하였으나 온전한 마음으로 행하지 아니하였더라"
+      "아마샤가 여호와께서 보시기에 정직하게 행하기는 하였으나 온전한 마음으로 행하지 아니하였더라",
+        "참마음으로 여호와를 섬기지는 않았습니다"
     ],
     "locations": [
       {
@@ -140473,7 +141060,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-25-5",
     "title": "이십 세 이상의 군사 30만 명",
     "aliases": [
-      "이십 세 이상으로 계수하여 창과 방패를 잡고 능히 전장에 나갈 만한 자 삼십만 명을 얻고"
+      "이십 세 이상으로 계수하여 창과 방패를 잡고 능히 전장에 나갈 만한 자 삼십만 명을 얻고",
+        "아마샤가 이십 세 이상 된 남자들의 수를 세어 보니"
     ],
     "locations": [
       {
@@ -140502,7 +141090,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-25-7",
     "title": "이스라엘 군대를 돌려보내라는 경고",
     "aliases": [
-      "여호와께서는 이스라엘 곧 온 에브라임 자손과 함께 하지 아니하시나니"
+      "여호와께서는 이스라엘 곧 온 에브라임 자손과 함께 하지 아니하시나니",
+        "내 왕이여, 이스라엘 군대와 함께 가지 마십시오"
     ],
     "locations": [
       {
@@ -140531,7 +141120,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-25-11",
     "title": "소금 골짜기의 승리",
     "aliases": [
-      "아마샤가 담력을 내어 그의 백성을 거느리고 소금 골짜기에 이르러 세일 자손 만 명을 죽이고"
+      "아마샤가 담력을 내어 그의 백성을 거느리고 소금 골짜기에 이르러 세일 자손 만 명을 죽이고",
+        "아마샤는 거기에서 세일 사람 만 명을 죽였습니다"
     ],
     "locations": [
       {
@@ -140560,7 +141150,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-25-14",
     "title": "에돔의 신들을 섬김",
     "aliases": [
-      "세일 자손의 신들을 가져와서 자기의 신으로 세우고"
+      "세일 자손의 신들을 가져와서 자기의 신으로 세우고",
+        "그는 돌아오면서 에돔 사람들이 섬기던 우상들을 가져와서"
     ],
     "locations": [
       {
@@ -140589,7 +141180,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-25-18",
     "title": "가시나무와 백향목의 비유",
     "aliases": [
-      "레바논 가시나무가 레바논 백향목에게 전갈을 보내어 이르기를 네 딸을 내 아들에게 주어 아내로 삼게 하라"
+      "레바논 가시나무가 레바논 백향목에게 전갈을 보내어 이르기를 네 딸을 내 아들에게 주어 아내로 삼게 하라",
+        "레바논의 가시나무가 레바논의 백향목에 사자를 보내어"
     ],
     "locations": [
       {
@@ -140618,7 +141210,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-25-23",
     "title": "벧세메스에서 사로잡힌 아마샤와 헐린 성벽",
     "aliases": [
-      "예루살렘 성벽을 에브라임 문에서부터 성 모퉁이 문까지 사백 규빗을 헐고"
+      "예루살렘 성벽을 에브라임 문에서부터 성 모퉁이 문까지 사백 규빗을 헐고",
+        "벧세메스에서 이스라엘의 요아스 왕은 유다의 아마샤 왕을 사로잡아"
     ],
     "locations": [
       {
@@ -140647,7 +141240,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-25-28",
     "title": "아마샤의 장사 장소",
     "aliases": [
-      "그의 시체를 말에 실어다가 그의 조상들과 함께 유다 성읍에 장사하였더라"
+      "그의 시체를 말에 실어다가 그의 조상들과 함께 유다 성읍에 장사하였더라",
+        "그들은 아마샤의 시체를 말 위에 실어와서"
     ],
     "locations": [
       {
@@ -140680,7 +141274,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-26-1",
     "title": "웃시야를 왕으로 세움",
     "aliases": [
-      "유다 온 백성이 나이가 십육 세 된 웃시야를 세워"
+      "유다 온 백성이 나이가 십육 세 된 웃시야를 세워",
+        "유다의 모든 백성이 웃시야를 왕으로 뽑았습니다"
     ],
     "locations": [
       {
@@ -140709,7 +141304,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-26-5",
     "title": "스가랴 때 형통하던 웃시야",
     "aliases": [
-      "그가 여호와를 찾을 동안에는 하나님이 형통하게 하셨더라"
+      "그가 여호와를 찾을 동안에는 하나님이 형통하게 하셨더라",
+        "웃시야는 스가랴가 살아 있는 동안, 하나님께 복종했습니다"
     ],
     "locations": [
       {
@@ -140738,7 +141334,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-26-6",
     "title": "블레셋 성벽을 헐고 성읍을 세움",
     "aliases": [
-      "가드 성벽과 야브네 성벽과 아스돗 성벽을 헐고"
+      "가드 성벽과 야브네 성벽과 아스돗 성벽을 헐고",
+        "웃시야는 블레셋 백성과 전쟁을 했습니다"
     ],
     "locations": [
       {
@@ -140767,7 +141364,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-26-9",
     "title": "예루살렘 성문과 망대",
     "aliases": [
-      "웃시야가 예루살렘에서 성 모퉁이 문과 골짜기 문과 성굽이에 망대를 세워 견고하게 하고"
+      "웃시야가 예루살렘에서 성 모퉁이 문과 골짜기 문과 성굽이에 망대를 세워 견고하게 하고",
+        "웃시야는 예루살렘에 망대들을 세워 놓고"
     ],
     "locations": [
       {
@@ -140796,7 +141394,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-26-15",
     "title": "성벽 위의 고안된 무기",
     "aliases": [
-      "또 예루살렘에서 재주 있는 사람들에게 무기를 고안하게 하여 망대와 성곽 위에 두어"
+      "또 예루살렘에서 재주 있는 사람들에게 무기를 고안하게 하여 망대와 성곽 위에 두어",
+        "웃시야는 예루살렘에서 기술자들이 생각해 낸 기구를 만들어서"
     ],
     "locations": [
       {
@@ -140824,7 +141423,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-26-16",
     "title": "교만한 웃시야의 분향 시도",
     "aliases": [
-      "곧 여호와의 성전에 들어가서 향단에 분향하려 한지라"
+      "곧 여호와의 성전에 들어가서 향단에 분향하려 한지라",
+        "그러나 웃시야는 강해지면서 교만해지기 시작했습니다"
     ],
     "locations": [
       {
@@ -140853,7 +141453,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-26-19",
     "title": "웃시야의 이마에 생긴 나병",
     "aliases": [
-      "그의 이마에 나병이 생긴지라"
+      "그의 이마에 나병이 생긴지라",
+        "그의 이마에 문둥병이 생겨났습니다"
     ],
     "locations": [
       {
@@ -140882,7 +141483,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-26-22",
     "title": "이사야가 기록한 웃시야의 행적",
     "aliases": [
-      "웃시야의 남은 시종 행적은 아모스의 아들 선지자 이사야가 기록하였더라"
+      "웃시야의 남은 시종 행적은 아모스의 아들 선지자 이사야가 기록하였더라",
+        "웃시야가 한 다른 일은 예언자 이사야의 글에 적혀 있습니다"
     ],
     "locations": [
       {
@@ -140911,7 +141513,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-27-1",
     "title": "요담의 즉위와 재위 기간",
     "aliases": [
-      "요담이 왕위에 오를 때에 나이가 이십오 세라 예루살렘에서 십육 년 동안 다스리니라"
+      "요담이 왕위에 오를 때에 나이가 이십오 세라 예루살렘에서 십육 년 동안 다스리니라",
+        "요담이 왕이 되었을 때의 나이는 이십오 세였습니다"
     ],
     "locations": [
       {
@@ -140940,7 +141543,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-27-3",
     "title": "성전 윗문과 성벽 증축",
     "aliases": [
-      "그가 여호와의 전 윗문을 건축하고 또 오벨 성벽을 많이 증축하고"
+      "그가 여호와의 전 윗문을 건축하고 또 오벨 성벽을 많이 증축하고",
+        "오벨 성벽도 더 연장하여 쌓았습니다"
     ],
     "locations": [
       {
@@ -140969,7 +141573,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-27-5",
     "title": "암몬의 조공 3년",
     "aliases": [
-      "암몬 자손이 은 백 달란트와 밀 만 고르와 보리 만 고르를 바쳤고"
+      "암몬 자손이 은 백 달란트와 밀 만 고르와 보리 만 고르를 바쳤고",
+        "은 백 달란트와 밀 만 고르와 보리 만 고르를 바쳤습니다"
     ],
     "locations": [
       {
@@ -140997,7 +141602,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-27-6",
     "title": "바른 길을 걸어 점점 강해짐",
     "aliases": [
-      "요담이 그의 하나님 여호와 앞에서 바른 길을 걸었으므로 점점 강하여졌더라"
+      "요담이 그의 하나님 여호와 앞에서 바른 길을 걸었으므로 점점 강하여졌더라",
+        "요담은 언제나 여호와 하나님께 복종했기 때문에 점점 강해졌습니다"
     ],
     "locations": [
       {
@@ -141026,7 +141632,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-28-3",
     "title": "힌놈 골짜기의 분향과 자녀 불사름",
     "aliases": [
-      "또 힌놈의 아들 골짜기에서 분향하고"
+      "또 힌놈의 아들 골짜기에서 분향하고",
+        "자기 아들까지도 불에 태워 제물로 바쳤습니다"
     ],
     "locations": [
       {
@@ -141056,7 +141663,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-28-5",
     "title": "아람과 이스라엘에게 넘기심",
     "aliases": [
-      "그러므로 그의 하나님 여호와께서 그를 아람 왕의 손에 넘기시매"
+      "그러므로 그의 하나님 여호와께서 그를 아람 왕의 손에 넘기시매",
+        "그래서 하나님께서 아람 왕으로 하여금 아하스를 치게 하셨습니다"
     ],
     "locations": [
       {
@@ -141085,7 +141693,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-28-8",
     "title": "형제 20만 명의 포로",
     "aliases": [
-      "이스라엘 자손이 그들의 형제 중에서 그들의 아내와 자녀를 합하여 이십만 명을 사로잡고"
+      "이스라엘 자손이 그들의 형제 중에서 그들의 아내와 자녀를 합하여 이십만 명을 사로잡고",
+        "이스라엘 군대는 자기들의 동족 이십만 명을 사로잡았습니다"
     ],
     "locations": [
       {
@@ -141113,7 +141722,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-28-10",
     "title": "동족을 노예로 삼으려 함",
     "aliases": [
-      "그러나 너희는 너희의 하나님 여호와께 범죄함이 없느냐"
+      "그러나 너희는 너희의 하나님 여호와께 범죄함이 없느냐",
+        "여러분도 여호와 하나님께 죄를 지었다는 것을 알아야 합니다"
     ],
     "locations": [
       {
@@ -141142,7 +141752,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-28-12",
     "title": "에브라임 지도자들이 포로를 돌려보냄",
     "aliases": [
-      "요하난의 아들 아사랴와 무실레못의 아들 베레갸와"
+      "요하난의 아들 아사랴와 무실레못의 아들 베레갸와",
+        "에브라임의 어떤 지도자들이 전쟁에서 돌아오는 군인들을 만났습니다"
     ],
     "locations": [
       {
@@ -141170,7 +141781,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-28-19",
     "title": "아하스를 유다 왕으로 본 자리",
     "aliases": [
-      "여호와께서 유다를 낮추심이라"
+      "여호와께서 유다를 낮추심이라",
+        "여호와께서 유다에게 재앙을 내리신 것은 그들의 왕 아하스 때문입니다"
     ],
     "locations": [
       {
@@ -141198,7 +141810,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-28-23",
     "title": "다메섹 신에게 제사함",
     "aliases": [
-      "아람 왕들의 신들이 그들을 도왔으니 나도 그 신에게 제사하여 나를 돕게 하리라"
+      "아람 왕들의 신들이 그들을 도왔으니 나도 그 신에게 제사하여 나를 돕게 하리라",
+        "다마스커스의 백성이 섬기던 신들에게 제물을 바쳤습니다"
     ],
     "locations": [
       {
@@ -141227,7 +141840,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-28-24",
     "title": "성전 기구를 부수고 문을 닫음",
     "aliases": [
-      "아하스가 하나님의 전의 기구들을 모아 하나님의 전의 기구들을 부수고 또 여호와의 전 문들을 닫고"
+      "아하스가 하나님의 전의 기구들을 모아 하나님의 전의 기구들을 부수고 또 여호와의 전 문들을 닫고",
+        "성전의 문들을 잠가 버렸습니다"
     ],
     "locations": [
       {
@@ -141257,7 +141871,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-29-2",
     "title": "다윗처럼 정직하게 행한 히스기야",
     "aliases": [
-      "히스기야가 그의 조상 다윗의 모든 행실과 같이 여호와 보시기에 정직하게 행하여"
+      "히스기야가 그의 조상 다윗의 모든 행실과 같이 여호와 보시기에 정직하게 행하여",
+        "히스기야는 그의 조상 다윗처럼 여호와께서 보시기에 옳은 일을 했습니다"
     ],
     "locations": [
       {
@@ -141286,7 +141901,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-29-5",
     "title": "레위인에게 성결을 명함",
     "aliases": [
-      "이제 너희는 성결하게 하고 또 너희 조상들의 하나님 여호와의 전을 성결하게 하여 그 더러운 것을 성소에서 없애라"
+      "이제 너희는 성결하게 하고 또 너희 조상들의 하나님 여호와의 전을 성결하게 하여 그 더러운 것을 성소에서 없애라",
+        "레위 사람들이여, 내 말을 들으시오"
     ],
     "locations": [
       {
@@ -141315,7 +141931,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-29-6",
     "title": "조상들이 성소를 등짐",
     "aliases": [
-      "우리 조상들이 범죄하여 우리 하나님 여호와 보시기에 악을 행하여 하나님을 버리고 얼굴을 돌려 여호와의 성소를 등지고"
+      "우리 조상들이 범죄하여 우리 하나님 여호와 보시기에 악을 행하여 하나님을 버리고 얼굴을 돌려 여호와의 성소를 등지고",
+        "우리 조상들은 하나님께 복종하지 않았고"
     ],
     "locations": [
       {
@@ -141345,7 +141962,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-29-8",
     "title": "두려움과 비웃음거리가 된 유다",
     "aliases": [
-      "여호와께서 유다와 예루살렘에 진노하시고 내버리사 두려움과 놀람과 비웃음거리가 되게 하신 것을 너희가 똑똑히 보는 바라"
+      "여호와께서 유다와 예루살렘에 진노하시고 내버리사 두려움과 놀람과 비웃음거리가 되게 하신 것을 너희가 똑똑히 보는 바라",
+        "다른 백성들은 유다 백성을 조롱했소"
     ],
     "locations": [
       {
@@ -141374,7 +141992,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-29-17",
     "title": "정결 작업의 날짜",
     "aliases": [
-      "첫째 달 초하루에 성결하게 하기를 시작하여 그 달 초팔일에 여호와의 낭실에 이르고"
+      "첫째 달 초하루에 성결하게 하기를 시작하여 그 달 초팔일에 여호와의 낭실에 이르고",
+        "그들은 첫째 달 초하루에 여호와의 성전을 깨끗하게 하기 시작했습니다"
     ],
     "locations": [
       {
@@ -141403,7 +142022,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-29-19",
     "title": "아하스가 버린 그릇의 회복",
     "aliases": [
-      "아하스 왕이 왕위에 있어 범죄할 때에 버린 모든 그릇들도"
+      "아하스 왕이 왕위에 있어 범죄할 때에 버린 모든 그릇들도",
+        "아하스 왕은 성전 안에 있는 물건들을 없앴지만"
     ],
     "locations": [
       {
@@ -141432,7 +142052,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-29-21",
     "title": "나라와 성소와 유다를 위한 속죄제",
     "aliases": [
-      "수송아지 일곱 마리와 숫양 일곱 마리와 어린 양 일곱 마리와 숫염소 일곱 마리를 끌어다가 나라와 성소와 유다를 위하여 속죄제물로 삼고"
+      "수송아지 일곱 마리와 숫양 일곱 마리와 어린 양 일곱 마리와 숫염소 일곱 마리를 끌어다가 나라와 성소와 유다를 위하여 속죄제물로 삼고",
+        "백성과 유다 나라의 죄를 씻고"
     ],
     "locations": [
       {
@@ -141461,7 +142082,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-29-25",
     "title": "레위인의 악기 연주 명령",
     "aliases": [
-      "왕이 레위 사람들을 여호와의 전에 두어서 다윗과 왕의 선견자 갓과 선지자 나단이 명령한 대로"
+      "왕이 레위 사람들을 여호와의 전에 두어서 다윗과 왕의 선견자 갓과 선지자 나단이 명령한 대로",
+        "제금과 비파와 수금을 연주하게 했습니다"
     ],
     "locations": [
       {
@@ -141491,7 +142113,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-30-3",
     "title": "둘째 달에 유월절을 지킨 이유",
     "aliases": [
-      "이는 성결하게 한 제사장들이 부족하고 백성도 예루살렘에 모이지 못하였으므로 그 정한 때에 지킬수 없었음이라"
+      "이는 성결하게 한 제사장들이 부족하고 백성도 예루살렘에 모이지 못하였으므로 그 정한 때에 지킬수 없었음이라",
+        "유월절을 제때에 지키지 못한 것은"
     ],
     "locations": [
       {
@@ -141520,7 +142143,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-30-5",
     "title": "브엘세바에서 단까지 유월절 공포",
     "aliases": [
-      "이는 기록한 규례대로 오랫동안 지키지 못하였음이더라"
+      "이는 기록한 규례대로 오랫동안 지키지 못하였음이더라",
+        "브엘세바에서 단까지 모든 이스라엘에 선포하고"
     ],
     "locations": [
       {
@@ -141549,7 +142173,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-30-6",
     "title": "여호와께 돌아오라는 편지",
     "aliases": [
-      "너희는 아브라함과 이삭과 이스라엘의 하나님 여호와께로 돌아오라"
+      "너희는 아브라함과 이삭과 이스라엘의 하나님 여호와께로 돌아오라",
+        "아브라함과 이삭과 이스라엘의 하나님이신 여호와께로 돌아오시오"
     ],
     "locations": [
       {
@@ -141578,7 +142203,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-30-8",
     "title": "목을 곧게 하지 말라",
     "aliases": [
-      "그런즉 너희 조상들 같이 목을 곧게 하지 말고 여호와께 돌아와"
+      "그런즉 너희 조상들 같이 목을 곧게 하지 말고 여호와께 돌아와",
+        "그대들의 조상처럼 고집을 부리지 마시오"
     ],
     "locations": [
       {
@@ -141607,7 +142233,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-30-9",
     "title": "사로잡힌 자들의 자비",
     "aliases": [
-      "너희가 만일 여호와께 돌아오면 너희 형제들과 너희 자녀가 사로잡은 자들에게서 자비를 입어 다시 이 땅으로 돌아오리라"
+      "너희가 만일 여호와께 돌아오면 너희 형제들과 너희 자녀가 사로잡은 자들에게서 자비를 입어 다시 이 땅으로 돌아오리라",
+        "여호와 하나님께서는 자비롭고 은혜로우신 분이오"
     ],
     "locations": [
       {
@@ -141636,7 +142263,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-30-10",
     "title": "보발꾼을 조롱한 백성",
     "aliases": [
-      "사람들이 그들을 조롱하며 비웃었더라"
+      "사람들이 그들을 조롱하며 비웃었더라",
+        "그 곳 백성은 그 사람들을 조롱하고 비웃었습니다"
     ],
     "locations": [
       {
@@ -141665,7 +142293,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-30-17",
     "title": "부정한 자를 위한 레위인의 유월절 양",
     "aliases": [
-      "레위 사람들이 모든 부정한 사람을 위하여 유월절 양을 잡아"
+      "레위 사람들이 모든 부정한 사람을 위하여 유월절 양을 잡아",
+        "모든 부정한 사람을 위해 유월절 양을 잡는 책임을 맡았습니다"
     ],
     "locations": [
       {
@@ -141694,7 +142323,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-30-20",
     "title": "히스기야의 기도에 대한 응답",
     "aliases": [
-      "여호와께서 히스기야의 기도를 들으시고 백성을 고치셨더라"
+      "여호와께서 히스기야의 기도를 들으시고 백성을 고치셨더라",
+        "여호와께서 히스기야의 기도를 들으시고 백성을 벌하지 않으셨습니다"
     ],
     "locations": [
       {
@@ -141727,7 +142357,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-31-1",
     "title": "우상과 산당을 제거한 백성",
     "aliases": [
-      "유다와 베냐민과 에브라임과 므낫세 온 땅에서 산당들과 제단들을 제거하여 없애고"
+      "유다와 베냐민과 에브라임과 므낫세 온 땅에서 산당들과 제단들을 제거하여 없애고",
+        "아세라 우상들을 찍어 버렸습니다"
     ],
     "locations": [
       {
@@ -141758,7 +142389,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-31-2",
     "title": "제사장과 레위인의 반열 정함",
     "aliases": [
-      "히스기야가 제사장들과 레위 사람들의 반열을 정하고"
+      "히스기야가 제사장들과 레위 사람들의 반열을 정하고",
+        "제사장과 레위 사람들의 무리에게 특별한 임무를 맡겼는데"
     ],
     "locations": [
       {
@@ -141787,7 +142419,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-31-4",
     "title": "제사장과 레위인의 몫을 주라는 명령",
     "aliases": [
-      "또 예루살렘에 사는 백성을 명령하여 제사장들과 레위 사람들 몫의 음식을 주어"
+      "또 예루살렘에 사는 백성을 명령하여 제사장들과 레위 사람들 몫의 음식을 주어",
+        "제사장과 레위 사람들의 몫을 주게 했습니다"
     ],
     "locations": [
       {
@@ -141816,7 +142449,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-31-5",
     "title": "첫 열매와 십일조를 풍성히 드림",
     "aliases": [
-      "곡식과 포도주와 기름과 꿀과 밭의 모든 소산의 첫 열매들을 풍성히 드렸고"
+      "곡식과 포도주와 기름과 꿀과 밭의 모든 소산의 첫 열매들을 풍성히 드렸고",
+        "모든 것의 십분의 일을 넉넉하게 가져왔습니다"
     ],
     "locations": [
       {
@@ -141845,7 +142479,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-31-7",
     "title": "쌓기 시작한 셋째 달과 마친 일곱째 달",
     "aliases": [
-      "셋째 달에 그 더미들을 쌓기 시작하여 일곱째 달에 마친지라"
+      "셋째 달에 그 더미들을 쌓기 시작하여 일곱째 달에 마친지라",
+        "백성이 물건들을 가져오기 시작한 때는 셋째 달이었고"
     ],
     "locations": [
       {
@@ -141873,7 +142508,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-31-10",
     "title": "여호와께서 복을 주셔서 남은 것이 많음",
     "aliases": [
-      "이는 여호와께서 그의 백성에게 복을 주셨음이라"
+      "이는 여호와께서 그의 백성에게 복을 주셨음이라",
+        "백성이 여호와의 성전에 예물을 가져오기 시작한 뒤로부터"
     ],
     "locations": [
       {
@@ -141902,7 +142538,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-31-12",
     "title": "예물 창고의 책임자",
     "aliases": [
-      "레위 사람 고나냐가 그 일의 책임자가 되고 그의 아우 시므이는 부책임자가 되며"
+      "레위 사람 고나냐가 그 일의 책임자가 되고 그의 아우 시므이는 부책임자가 되며",
+        "레위 사람 고나냐가 그 모든 것을 관리했고"
     ],
     "locations": [
       {
@@ -141930,7 +142567,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-31-20",
     "title": "히스기야의 평가: 선과 정의와 진실함",
     "aliases": [
-      "히스기야가 온 유다에 이같이 행하되 그의 하나님 여호와 보시기에 선과 정의와 진실함으로 행하였으니"
+      "히스기야가 온 유다에 이같이 행하되 그의 하나님 여호와 보시기에 선과 정의와 진실함으로 행하였으니",
+        "그는 하나님 여호와 앞에서 올바른 일을 했으며"
     ],
     "locations": [
       {
@@ -141959,7 +142597,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-32-1",
     "title": "산헤립의 유다 침공",
     "aliases": [
-      "앗수르 왕 산헤립이 유다에 들어와서 견고한 성읍들을 향하여 진을 치고"
+      "앗수르 왕 산헤립이 유다에 들어와서 견고한 성읍들을 향하여 진을 치고",
+        "산헤립 왕이 유다에 쳐들어왔습니다"
     ],
     "locations": [
       {
@@ -141988,7 +142627,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-32-5",
     "title": "성벽 보수와 밀로 견고화",
     "aliases": [
-      "다윗 성의 밀로를 견고하게 하고"
+      "다윗 성의 밀로를 견고하게 하고",
+        "성벽의 무너진 부분을 다시 지었습니다"
     ],
     "locations": [
       {
@@ -142017,7 +142657,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-32-7",
     "title": "우리와 함께하시는 이가 더 크심",
     "aliases": [
-      "우리와 함께 하시는 이가 그와 함께 하는 자보다 크니"
+      "우리와 함께 하시는 이가 그와 함께 하는 자보다 크니",
+        "앗시리아 왕과 함께 있는 자보다 더 크신 분이 우리와 함께 계시오"
     ],
     "locations": [
       {
@@ -142046,7 +142687,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-32-15",
     "title": "히스기야를 믿지 말라는 산헤립의 말",
     "aliases": [
-      "히스기야에게 속지 말라 꾀임을 받지 말라 그를 믿지도 말라"
+      "히스기야에게 속지 말라 꾀임을 받지 말라 그를 믿지도 말라",
+        "히스기야를 믿지 마라"
     ],
     "locations": [
       {
@@ -142075,7 +142717,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-32-18",
     "title": "유다 방언으로 외친 신하들",
     "aliases": [
-      "산헤립의 신하가 유다 방언으로 크게 소리 질러"
+      "산헤립의 신하가 유다 방언으로 크게 소리 질러",
+        "산헤립 왕의 신하들은 히브리 말로 외쳐댔습니다"
     ],
     "locations": [
       {
@@ -142104,7 +142747,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-32-21",
     "title": "천사가 앗수르 진영을 치심",
     "aliases": [
-      "여호와께서 한 천사를 보내어 앗수르 왕의 진영에서 모든 큰 용사와 대장과 지휘관들을 멸하신지라"
+      "여호와께서 한 천사를 보내어 앗수르 왕의 진영에서 모든 큰 용사와 대장과 지휘관들을 멸하신지라",
+        "그 천사는 앗시리아 군대의 군인과 지휘관과 장교들을 다 죽였습니다"
     ],
     "locations": [
       {
@@ -142135,7 +142779,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-32-24",
     "title": "히스기야의 병과 응답",
     "aliases": [
-      "그 때에 히스기야가 병들어 죽게 되었으므로 여호와께 기도하매"
+      "그 때에 히스기야가 병들어 죽게 되었으므로 여호와께 기도하매",
+        "그 때에 히스기야가 심한 병에 걸려 죽게 되었습니다"
     ],
     "locations": [
       {
@@ -142164,7 +142809,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-32-31",
     "title": "바벨론 사신 앞의 시험",
     "aliases": [
-      "하나님이 히스기야를 떠나시고 그의 심중에 있는 것을 다 알고자 하사 시험하셨더라"
+      "하나님이 히스기야를 떠나시고 그의 심중에 있는 것을 다 알고자 하사 시험하셨더라",
+        "마음속에 어떤 생각을 품고 있는지를"
     ],
     "locations": [
       {
@@ -142195,7 +142841,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-33-1",
     "title": "므낫세의 즉위와 재위 기간",
     "aliases": [
-      "므낫세가 왕위에 오를 때에 나이가 십이 세라 예루살렘에서 오십오 년 동안 다스리며"
+      "므낫세가 왕위에 오를 때에 나이가 십이 세라 예루살렘에서 오십오 년 동안 다스리며",
+        "므낫세가 왕이 되었을 때의 나이는 십이 세였습니다"
     ],
     "locations": [
       {
@@ -142224,7 +142871,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-33-3",
     "title": "히스기야가 헌 산당을 다시 세움",
     "aliases": [
-      "그의 아버지 히스기야가 헐어 버린 산당을 다시 세우며 바알들을 위하여 제단을 쌓으며"
+      "그의 아버지 히스기야가 헐어 버린 산당을 다시 세우며 바알들을 위하여 제단을 쌓으며",
+        "므낫세는 그것들을 다시 쌓았습니다"
     ],
     "locations": [
       {
@@ -142254,7 +142902,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-33-6",
     "title": "아들을 불에 지나게 하고 점과 요술을 행함",
     "aliases": [
-      "또 힌놈의 아들 골짜기에서 그의 아들들을 불 가운데로 지나가게 하며 또 점치며 사술과 요술을 행하며"
+      "또 힌놈의 아들 골짜기에서 그의 아들들을 불 가운데로 지나가게 하며 또 점치며 사술과 요술을 행하며",
+        "그는 자기 아들들까지도 '힌놈의 아들 골짜기'에서 제물로 바쳤습니다"
     ],
     "locations": [
       {
@@ -142284,7 +142933,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-33-9",
     "title": "므낫세의 꾀임으로 더 심해진 악",
     "aliases": [
-      "유다와 예루살렘 주민이 므낫세의 꾀임을 받고 악을 행한 것이 여호와께서 이스라엘 자손 앞에서 멸하신 모든 나라보다 더욱 심하였더라"
+      "유다와 예루살렘 주민이 므낫세의 꾀임을 받고 악을 행한 것이 여호와께서 이스라엘 자손 앞에서 멸하신 모든 나라보다 더욱 심하였더라",
+        "므낫세는 유다와 예루살렘 백성을 그릇된 길로 이끌었습니다"
     ],
     "locations": [
       {
@@ -142313,7 +142963,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-33-11",
     "title": "므낫세의 포로 됨",
     "aliases": [
-      "그들이 므낫세를 사로잡고 쇠사슬로 결박하여 바벨론으로 끌고 간지라"
+      "그들이 므낫세를 사로잡고 쇠사슬로 결박하여 바벨론으로 끌고 간지라",
+        "그들은 므낫세를 사로잡아 쇠사슬로 손을 묶어 바빌론으로 끌고 갔습니다"
     ],
     "locations": [
       {
@@ -142341,7 +142992,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-33-13",
     "title": "므낫세가 여호와를 하나님으로 앎",
     "aliases": [
-      "므낫세가 그제서야 여호와께서 하나님이신 줄을 알았더라"
+      "므낫세가 그제서야 여호와께서 하나님이신 줄을 알았더라",
+        "그 때서야 므낫세는 여호와께서 참하나님이신 것을 깨달았습니다"
     ],
     "locations": [
       {
@@ -142370,7 +143022,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-33-16",
     "title": "여호와의 제단을 보수함",
     "aliases": [
-      "여호와의 제단을 보수하고 화목제와 감사제를 그 제단 위에 드리고"
+      "여호와의 제단을 보수하고 화목제와 감사제를 그 제단 위에 드리고",
+        "그 위에 화목 제물과 감사 제물을 여호와께 바쳤습니다"
     ],
     "locations": [
       {
@@ -142399,7 +143052,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-34-1",
     "title": "요시야의 즉위와 재위 기간",
     "aliases": [
-      "요시야가 왕위에 오를 때에 나이가 팔 세라 예루살렘에서 삼십일 년 동안 다스리며"
+      "요시야가 왕위에 오를 때에 나이가 팔 세라 예루살렘에서 삼십일 년 동안 다스리며",
+        "요시야가 왕이 되었을 때의 나이는 팔 세였습니다"
     ],
     "locations": [
       {
@@ -142428,7 +143082,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-34-3",
     "title": "요시야가 하나님을 찾고 정결하게 함",
     "aliases": [
-      "아직도 어렸을 때 곧 왕위에 있은 지 팔 년에 그의 조상 다윗의 하나님을 비로소 찾고"
+      "아직도 어렸을 때 곧 왕위에 있은 지 팔 년에 그의 조상 다윗의 하나님을 비로소 찾고",
+        "거짓 신들을 몰아 내기 시작했습니다"
     ],
     "locations": [
       {
@@ -142457,7 +143112,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-34-5",
     "title": "우상 제사장의 뼈를 불사름",
     "aliases": [
-      "제사장들의 뼈를 제단 위에서 불살라 유다와 예루살렘을 정결하게 하였으며"
+      "제사장들의 뼈를 제단 위에서 불살라 유다와 예루살렘을 정결하게 하였으며",
+        "그는 또 우상을 섬기던 제사장들의 뼈도 그 제단 위에서 불태웠습니다"
     ],
     "locations": [
       {
@@ -142486,7 +143142,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-34-8",
     "title": "열여덟째 해의 성전 수리 명령",
     "aliases": [
-      "요시야가 왕위에 있은 지 열여덟째 해에 그 땅과 성전을 정결하게 하기를 마치고"
+      "요시야가 왕위에 있은 지 열여덟째 해에 그 땅과 성전을 정결하게 하기를 마치고",
+        "그 땅과 성전을 깨끗하게 했습니다"
     ],
     "locations": [
       {
@@ -142515,7 +143172,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-34-15",
     "title": "힐기야가 율법책을 발견함",
     "aliases": [
-      "내가 여호와의 전에서 율법책을 발견하였노라"
+      "내가 여호와의 전에서 율법책을 발견하였노라",
+        "여호와의 성전에서 율법책을 발견했다"
     ],
     "locations": [
       {
@@ -142544,7 +143202,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-34-22",
     "title": "여선지자 훌다",
     "aliases": [
-      "그는 하스라의 손자 독핫의 아들로서 예복을 관리하는 살룸의 아내라"
+      "그는 하스라의 손자 독핫의 아들로서 예복을 관리하는 살룸의 아내라",
+        "훌다는 하스라의 손자이며, 독핫의 아들인 살룸의 아내였습니다"
     ],
     "locations": [
       {
@@ -142573,7 +143232,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-34-24",
     "title": "훌다가 전한 재앙의 말씀",
     "aliases": [
-      "내가 이 곳과 그 주민에게 재앙을 내리되 곧 유다 왕 앞에서 읽은 책에 기록된 모든 저주대로 하리니"
+      "내가 이 곳과 그 주민에게 재앙을 내리되 곧 유다 왕 앞에서 읽은 책에 기록된 모든 저주대로 하리니",
+        "내가 이 곳과 여기에 사는 백성에게 재앙을 내리겠다"
     ],
     "locations": [
       {
@@ -142602,7 +143262,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-34-27",
     "title": "겸손히 통곡한 요시야",
     "aliases": [
-      "옷을 찢고 통곡하였으므로 나도 네 말을 들었노라"
+      "옷을 찢고 통곡하였으므로 나도 네 말을 들었노라",
+        "너는 이 곳과 여기에 사는 백성에 대한 내 말을 듣고"
     ],
     "locations": [
       {
@@ -142632,7 +143293,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-34-31",
     "title": "요시야의 기둥 곁 언약",
     "aliases": [
-      "왕이 자기 처소에 서서 여호와 앞에서 언약을 세우되 마음을 다하고 목숨을 다하여 여호와를 순종하고"
+      "왕이 자기 처소에 서서 여호와 앞에서 언약을 세우되 마음을 다하고 목숨을 다하여 여호와를 순종하고",
+        "왕은 여호와 앞에서 언약을 맺었습니다"
     ],
     "locations": [
       {
@@ -142661,7 +143323,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-34-33",
     "title": "요시야가 제거한 가증한 것들",
     "aliases": [
-      "요시야가 이스라엘 자손에게 속한 모든 땅에서 가증한 것들을 다 제거하여 버리고"
+      "요시야가 이스라엘 자손에게 속한 모든 땅에서 가증한 것들을 다 제거하여 버리고",
+        "온 땅에서 역겨운 우상들을 없애 버렸습니다"
     ],
     "locations": [
       {
@@ -142694,7 +143357,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-35-1",
     "title": "요시야의 큰 유월절",
     "aliases": [
-      "첫째 달 열넷째 날에 유월절 어린 양을 잡으니라"
+      "첫째 달 열넷째 날에 유월절 어린 양을 잡으니라",
+        "요시야 왕이 예루살렘에서 여호와께 유월절을 지켰습니다"
     ],
     "locations": [
       {
@@ -142724,7 +143388,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-35-3",
     "title": "궤를 다시 메지 말라는 명령",
     "aliases": [
-      "거룩한 궤를 이스라엘 왕 다윗의 아들 솔로몬이 건축한 전 가운데 두고 다시는 너희 어깨에 메지 말고"
+      "거룩한 궤를 이스라엘 왕 다윗의 아들 솔로몬이 건축한 전 가운데 두고 다시는 너희 어깨에 메지 말고",
+        "다윗의 아들 솔로몬이 이스라엘의 왕으로 있으면서 지은 성전에"
     ],
     "locations": [
       {
@@ -142754,7 +143419,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-35-7",
     "title": "백성에게 준 유월절 제물",
     "aliases": [
-      "자기의 소유 양 떼 중에서 어린 양과 어린 염소 삼만 마리와 수소 삼천 마리를 내어 유월절 제물로 주매"
+      "자기의 소유 양 떼 중에서 어린 양과 어린 염소 삼만 마리와 수소 삼천 마리를 내어 유월절 제물로 주매",
+        "양과 염소 삼만 마리를 주어"
     ],
     "locations": [
       {
@@ -142783,7 +143449,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-35-13",
     "title": "유월절 양을 굽고 나머지를 삶음",
     "aliases": [
-      "이에 규례대로 유월절 양을 불에 굽고 그 나머지 성물은 솥과 가마와 냄비에 삶아"
+      "이에 규례대로 유월절 양을 불에 굽고 그 나머지 성물은 솥과 가마와 냄비에 삶아",
+        "레위 사람들은 명령을 받은 대로 유월절 제물을 불에 구웠습니다"
     ],
     "locations": [
       {
@@ -142813,7 +143480,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-35-21",
     "title": "느고의 경고",
     "aliases": [
-      "유다 왕이여 내가 그대와 무슨 관계가 있느냐"
+      "유다 왕이여 내가 그대와 무슨 관계가 있느냐",
+        "나는 내 원수와 싸우러 온 것이지 그대와 싸우러 온 것이 아니오"
     ],
     "locations": [
       {
@@ -142842,7 +143510,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-35-22",
     "title": "변장하고 므깃도에서 싸운 요시야",
     "aliases": [
-      "요시야가 몸을 돌이켜 떠나기를 싫어하고 오히려 변장하고 그와 싸우고자 하여 하나님의 입에서 나온 느고의 말을 듣지 아니하고"
+      "요시야가 몸을 돌이켜 떠나기를 싫어하고 오히려 변장하고 그와 싸우고자 하여 하나님의 입에서 나온 느고의 말을 듣지 아니하고",
+        "요시야는 므깃도 골짜기로 싸우러 나갔습니다"
     ],
     "locations": [
       {
@@ -142871,7 +143540,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-35-25",
     "title": "예레미야의 애가와 요시야 애도",
     "aliases": [
-      "예레미야는 그를 위하여 애가를 지었으며"
+      "예레미야는 그를 위하여 애가를 지었으며",
+        "예레미야가 요시야에 관해 슬픈 노래들을 지었습니다"
     ],
     "locations": [
       {
@@ -142900,7 +143570,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-36-1",
     "title": "여호아하스의 즉위와 석 달 재위",
     "aliases": [
-      "그 땅의 백성이 요시야의 아들 여호아하스를 세워"
+      "그 땅의 백성이 요시야의 아들 여호아하스를 세워",
+        "유다 백성이 요시야의 아들 여호아하스를 뽑아"
     ],
     "locations": [
       {
@@ -142929,7 +143600,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-36-3",
     "title": "느고의 폐위와 벌금",
     "aliases": [
-      "애굽 왕이 예루살렘에서 그의 왕위를 폐하고 또 그 나라에 은 백 달란트와 금 한 달란트를 벌금으로 내게 하며"
+      "애굽 왕이 예루살렘에서 그의 왕위를 폐하고 또 그 나라에 은 백 달란트와 금 한 달란트를 벌금으로 내게 하며",
+        "이집트의 느고 왕이 여호아하스를 예루살렘의 왕의 자리에서 쫓아 냈습니다"
     ],
     "locations": [
       {
@@ -142958,7 +143630,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-36-5",
     "title": "여호야김의 악정",
     "aliases": [
-      "여호야김이 왕위에 오를 때에 나이가 이십오 세라 예루살렘에서 십일 년 동안 다스리며 그의 하나님 여호와 보시기에 악을 행하였더라"
+      "여호야김이 왕위에 오를 때에 나이가 이십오 세라 예루살렘에서 십일 년 동안 다스리며 그의 하나님 여호와 보시기에 악을 행하였더라",
+        "여호야김은 여호와께서 보시기에 악한 일을 했습니다"
     ],
     "locations": [
       {
@@ -142987,7 +143660,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-36-9",
     "title": "여호야긴의 나이 기록",
     "aliases": [
-      "여호야긴이 왕위에 오를 때에 나이가 팔 세라 예루살렘에서 석달 열흘 동안 다스리며"
+      "여호야긴이 왕위에 오를 때에 나이가 팔 세라 예루살렘에서 석달 열흘 동안 다스리며",
+        "여호야긴이 유다 왕이 되었을 때의 나이는 십팔 세였습니다"
     ],
     "locations": [
       {
@@ -143016,7 +143690,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-36-16",
     "title": "하나님의 사신을 비웃은 백성",
     "aliases": [
-      "그의 백성이 하나님의 사신들을 비웃고 그의 말씀을 멸시하며 그의 선지자를 욕하여"
+      "그의 백성이 하나님의 사신들을 비웃고 그의 말씀을 멸시하며 그의 선지자를 욕하여",
+        "그러나 그들은 하나님의 예언자들을 비웃었으며 하나님의 말씀을 미워했습니다"
     ],
     "locations": [
       {
@@ -143045,7 +143720,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-36-17",
     "title": "갈대아 왕에게 넘겨진 예루살렘",
     "aliases": [
-      "하나님이 갈대아 왕의 손에 그들을 다 넘기시매"
+      "하나님이 갈대아 왕의 손에 그들을 다 넘기시매",
+        "느부갓네살이 유다와 예루살렘의 백성에게 벌을 준 이 모든 것은"
     ],
     "locations": [
       {
@@ -143074,7 +143750,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-36-20",
     "title": "바벨론 포로와 칠십 년",
     "aliases": [
-      "칼에서 살아 남은 자를 그가 바벨론으로 사로잡아가매"
+      "칼에서 살아 남은 자를 그가 바벨론으로 사로잡아가매",
+        "그들은 페르시아 왕국이 바빌로니아를 물리칠 때까지도 노예로 있었습니다"
     ],
     "locations": [
       {
@@ -143104,7 +143781,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ch-36-23",
     "title": "고레스의 칙령",
     "aliases": [
-      "하늘의 신 여호와께서 세상 만국을 내게 주셨고 나에게 명령하여 유다 예루살렘에 성전을 건축하라 하셨나니"
+      "하늘의 신 여호와께서 세상 만국을 내게 주셨고 나에게 명령하여 유다 예루살렘에 성전을 건축하라 하셨나니",
+        "하늘의 하나님이신 여호와께서 이 세상의 온 나라들을 나에게 주셨다"
     ],
     "locations": [
       {
@@ -143137,7 +143815,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-1-1",
     "title": "고레스의 마음을 감동시키심",
     "aliases": [
-      "여호와께서 예레미야의 입을 통하여 하신 말씀을 이루게 하시려고 바사 왕 고레스의 마음을 감동시키시매"
+      "여호와께서 예레미야의 입을 통하여 하신 말씀을 이루게 하시려고 바사 왕 고레스의 마음을 감동시키시매",
+        "고레스의 마음을 움직이셨습니다"
     ],
     "locations": [
       {
@@ -143167,7 +143846,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-1-2",
     "title": "고레스의 칙령",
     "aliases": [
-      "하늘의 하나님 여호와께서 세상 모든 나라를 내게 주셨고 나에게 명령하사 유다 예루살렘에 성전을 건축하라 하셨나니"
+      "하늘의 하나님 여호와께서 세상 모든 나라를 내게 주셨고 나에게 명령하사 유다 예루살렘에 성전을 건축하라 하셨나니",
+        "페르시아 왕 고레스가 말한다"
     ],
     "locations": [
       {
@@ -143196,7 +143876,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-1-5",
     "title": "마음이 감동된 귀환자들",
     "aliases": [
-      "그 마음이 하나님께 감동을 받고 올라가서"
+      "그 마음이 하나님께 감동을 받고 올라가서",
+        "하나님께서 그 모든 사람의 마음을 움직이셔서"
     ],
     "locations": [
       {
@@ -143225,7 +143906,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-1-8",
     "title": "성전 그릇을 세스바살에게 넘김",
     "aliases": [
-      "바사 왕 고레스가 창고지기 미드르닷에게 명령하여 그 그릇들을 꺼내어 세어서 유다 총독 세스바살에게 넘겨주니"
+      "바사 왕 고레스가 창고지기 미드르닷에게 명령하여 그 그릇들을 꺼내어 세어서 유다 총독 세스바살에게 넘겨주니",
+        "유다 총독 세스바살에게 넘겨 주었습니다"
     ],
     "locations": [
       {
@@ -143255,7 +143937,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-1-11",
     "title": "그릇 합계 오천사백 개",
     "aliases": [
-      "금, 은 그릇이 모두 오천사백 개라"
+      "금, 은 그릇이 모두 오천사백 개라",
+        "금그릇과 은그릇을 모두 합하면 오천사백 개입니다"
     ],
     "locations": [
       {
@@ -143283,7 +143966,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-2-1",
     "title": "돌아온 포로의 자손 명단",
     "aliases": [
-      "옛적에 바벨론 왕 느부갓네살에게 사로잡혀 바벨론으로 갔던 자들의 자손들 중에서 놓임을 받고"
+      "옛적에 바벨론 왕 느부갓네살에게 사로잡혀 바벨론으로 갔던 자들의 자손들 중에서 놓임을 받고",
+        "바빌론으로 사로잡혀 간 사람들이었습니다"
     ],
     "locations": [
       {
@@ -143312,7 +143996,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-2-2",
     "title": "지도자 명단",
     "aliases": [
-      "곧 스룹바벨과 예수아와 느헤미야와 스라야와 르엘라야와 모르드개와 빌산과 미스발과 비그왜와 르훔과 바아나"
+      "곧 스룹바벨과 예수아와 느헤미야와 스라야와 르엘라야와 모르드개와 빌산과 미스발과 비그왜와 르훔과 바아나",
+        "그들의 지도자 스룹바벨과 예수아와 느헤미야와 스라야"
     ],
     "locations": [
       {
@@ -143341,7 +144026,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-2-62",
     "title": "족보에서 이름을 찾지 못한 제사장",
     "aliases": [
-      "이 사람들은 계보 중에서 자기 이름을 찾아도 얻지 못하므로"
+      "이 사람들은 계보 중에서 자기 이름을 찾아도 얻지 못하므로",
+        "그래서 그들을 부정하게 여겨 제사장 일을 하지 못하게 했습니다"
     ],
     "locations": [
       {
@@ -143370,7 +144056,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-2-64",
     "title": "돌아온 회중의 합계",
     "aliases": [
-      "온 회중의 합계가 사만 이천삼백육십 명이요"
+      "온 회중의 합계가 사만 이천삼백육십 명이요",
+        "돌아온 무리의 수는 모두 사만 이천삼백육십 명입니다"
     ],
     "locations": [
       {
@@ -143399,7 +144086,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-2-69",
     "title": "공사 금고에 바친 금과 은",
     "aliases": [
-      "힘 자라는 대로 공사하는 금고에 들이니 금이 육만 천 다릭이요 은이 오천 마네요"
+      "힘 자라는 대로 공사하는 금고에 들이니 금이 육만 천 다릭이요 은이 오천 마네요",
+        "제사장을 위한 옷 백 벌을 바쳤습니다"
     ],
     "locations": [
       {
@@ -143428,7 +144116,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-3-1",
     "title": "일곱째 달에 모인 백성",
     "aliases": [
-      "일곱째 달에 이르러 일제히 예루살렘에 모인지라"
+      "일곱째 달에 이르러 일제히 예루살렘에 모인지라",
+        "그들은 예루살렘에 모였습니다"
     ],
     "locations": [
       {
@@ -143457,7 +144146,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-3-2",
     "title": "제단을 세우고 번제를 드림",
     "aliases": [
-      "하나님의 사람 모세의 율법에 기록한 대로 번제를 그 위에서 드리려 할새"
+      "하나님의 사람 모세의 율법에 기록한 대로 번제를 그 위에서 드리려 할새",
+        "요사닥의 아들 예수아와 그의 동료 제사장들과 스알디엘의 아들 스룹바벨이"
     ],
     "locations": [
       {
@@ -143486,7 +144176,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-3-4",
     "title": "초막절과 날마다의 번제",
     "aliases": [
-      "기록된 규례대로 초막절을 지켜 번제를 매일 정수대로 날마다 드리고"
+      "기록된 규례대로 초막절을 지켜 번제를 매일 정수대로 날마다 드리고",
+        "그런 뒤에 율법에 적혀 있는 대로 초막절을 지켰습니다"
     ],
     "locations": [
       {
@@ -143515,7 +144206,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-3-7",
     "title": "레바논 백향목의 운송",
     "aliases": [
-      "바사 왕 고레스의 명령대로 백향목을 레바논에서 욥바 해변까지 운송하게 하였더라"
+      "바사 왕 고레스의 명령대로 백향목을 레바논에서 욥바 해변까지 운송하게 하였더라",
+        "레바논에서 욥바 항구까지 백향목을 실어 오게 했습니다"
     ],
     "locations": [
       {
@@ -143544,7 +144236,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-3-12",
     "title": "첫 성전을 기억하며 운 노인들",
     "aliases": [
-      "제사장들과 레위 사람들과 나이 많은 족장들은 첫 성전을 보았으므로"
+      "제사장들과 레위 사람들과 나이 많은 족장들은 첫 성전을 보았으므로",
+        "솔로몬 왕 때에 처음 지었던 아름다운 성전"
     ],
     "locations": [
       {
@@ -143573,7 +144266,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-4-2",
     "title": "대적들이 함께 짓자고 함",
     "aliases": [
-      "우리도 너희와 함께 건축하게 하라 우리도 너희 같이 너희 하나님을 찾노라"
+      "우리도 너희와 함께 건축하게 하라 우리도 너희 같이 너희 하나님을 찾노라",
+        "성전 짓는 일을 우리도 돕게 해 주시오"
     ],
     "locations": [
       {
@@ -143602,7 +144296,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-4-3",
     "title": "스룹바벨의 거절",
     "aliases": [
-      "우리 하나님의 성전을 건축하는 데 너희는 우리와 상관이 없느니라"
+      "우리 하나님의 성전을 건축하는 데 너희는 우리와 상관이 없느니라",
+        "우리 하나님의 성전을 짓는 일에 끼어들 필요가 없소"
     ],
     "locations": [
       {
@@ -143631,7 +144326,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-4-6",
     "title": "아하수에로 때의 고발",
     "aliases": [
-      "또 아하수에로가 즉위할 때에 그들이 글을 올려 유다와 예루살렘 주민을 고발하니라"
+      "또 아하수에로가 즉위할 때에 그들이 글을 올려 유다와 예루살렘 주민을 고발하니라",
+        "유다와 예루살렘 백성을 고발하는 편지를 썼습니다"
     ],
     "locations": [
       {
@@ -143660,7 +144356,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-4-12",
     "title": "패역한 성읍이라는 고발",
     "aliases": [
-      "이 패역하고 악한 성읍을 건축하는데"
+      "이 패역하고 악한 성읍을 건축하는데",
+        "저 악한 성을 다시 짓고 있습니다"
     ],
     "locations": [
       {
@@ -143689,7 +144386,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-4-21",
     "title": "아닥사스다의 중단 명령",
     "aliases": [
-      "이제 너희는 명령을 전하여 그 사람들에게 공사를 그치게 하여 그 성을 건축하지 못하게 하고"
+      "이제 너희는 명령을 전하여 그 사람들에게 공사를 그치게 하여 그 성을 건축하지 못하게 하고",
+        "이제 그들에게 명령을 내려 일을 멈추게 하여라"
     ],
     "locations": [
       {
@@ -143718,7 +144416,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-5-1",
     "title": "학개와 스가랴의 예언",
     "aliases": [
-      "선지자 학개와 잇도의 손자 스가랴가"
+      "선지자 학개와 잇도의 손자 스가랴가",
+        "학개와 잇도의 아들 스가랴는 예언자입니다"
     ],
     "locations": [
       {
@@ -143748,7 +144447,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-5-2",
     "title": "하나님의 선지자들이 도움",
     "aliases": [
-      "하나님의 선지자들이 함께 있어 그들을 돕더니"
+      "하나님의 선지자들이 함께 있어 그들을 돕더니",
+        "하나님의 예언자들이 그들에게 도움을 주었습니다"
     ],
     "locations": [
       {
@@ -143777,7 +144477,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-5-3",
     "title": "누가 허락했느냐는 총독의 질문",
     "aliases": [
-      "누가 너희에게 명령하여 이 성전을 건축하고 이 성곽을 마치게 하였느냐"
+      "누가 너희에게 명령하여 이 성전을 건축하고 이 성곽을 마치게 하였느냐",
+        "누구의 허락으로 이 성전을 다시 짓고"
     ],
     "locations": [
       {
@@ -143806,7 +144507,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-5-11",
     "title": "유대인들이 밝힌 근거",
     "aliases": [
-      "우리는 천지의 하나님의 종이라 예전에 건축되었던 성전을 우리가 다시 건축하노라"
+      "우리는 천지의 하나님의 종이라 예전에 건축되었던 성전을 우리가 다시 건축하노라",
+        "우리는 하늘과 땅을 다스리시는 하나님의 종입니다"
     ],
     "locations": [
       {
@@ -143835,7 +144537,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-5-13",
     "title": "고레스 원년의 조서",
     "aliases": [
-      "바벨론 왕 고레스 원년에 고레스 왕이 조서를 내려 하나님의 이 성전을 다시 건축하게 하고"
+      "바벨론 왕 고레스 원년에 고레스 왕이 조서를 내려 하나님의 이 성전을 다시 건축하게 하고",
+        "고레스가 바빌로니아 왕이 된 첫해에 특별 명령을 내려"
     ],
     "locations": [
       {
@@ -143865,7 +144568,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-5-17",
     "title": "바벨론 기록의 조사 요청",
     "aliases": [
-      "바벨론에서 왕의 보물전각에서 조사하사"
+      "바벨론에서 왕의 보물전각에서 조사하사",
+        "바빌론의 왕실 기록을 조사해서"
     ],
     "locations": [
       {
@@ -143898,7 +144602,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-6-1",
     "title": "기록 조사 명령",
     "aliases": [
-      "이에 다리오 왕이 조서를 내려 문서창고 곧 바벨론의 보물을 쌓아둔 보물전각에서 조사하게 하여"
+      "이에 다리오 왕이 조서를 내려 문서창고 곧 바벨론의 보물을 쌓아둔 보물전각에서 조사하게 하여",
+        "그리하여 다리오 왕이 기록을 조사해 보라고 명령했습니다"
     ],
     "locations": [
       {
@@ -143927,7 +144632,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-6-3",
     "title": "고레스 칙령의 성전 규격",
     "aliases": [
-      "이 성전 곧 제사 드리는 처소를 건축하되 지대를 견고히 쌓고"
+      "이 성전 곧 제사 드리는 처소를 건축하되 지대를 견고히 쌓고",
+        "성전은 높이가 육십 규빗, 너비도 육십 규빗이 되어야 한다"
     ],
     "locations": [
       {
@@ -143957,7 +144663,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-6-9",
     "title": "날마다 주는 제물과 경비",
     "aliases": [
-      "예루살렘 제사장의 요구대로 어김없이 날마다 주어"
+      "예루살렘 제사장의 요구대로 어김없이 날마다 주어",
+        "밀과 소금과 포도주와 올리브 기름도 주어라"
     ],
     "locations": [
       {
@@ -143986,7 +144693,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-6-12",
     "title": "명령을 바꾸는 자에 대한 경고",
     "aliases": [
-      "그 곳에 이름을 두신 하나님이 그들을 멸하시기를 원하노라"
+      "그 곳에 이름을 두신 하나님이 그들을 멸하시기를 원하노라",
+        "이 명령을 바꾸려 하거나 성전을 무너뜨리려는 사람은"
     ],
     "locations": [
       {
@@ -144016,7 +144724,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-6-16",
     "title": "성전 봉헌과 드린 제물",
     "aliases": [
-      "이스라엘 자손과 제사장들과 레위 사람들과 기타 사로잡혔던 자의 자손이 즐거이 하나님의 성전 봉헌식을 행하니"
+      "이스라엘 자손과 제사장들과 레위 사람들과 기타 사로잡혔던 자의 자손이 즐거이 하나님의 성전 봉헌식을 행하니",
+        "이스라엘 백성이 기뻐하며 성전을 하나님께 바치는 예배를 드렸습니다"
     ],
     "locations": [
       {
@@ -144045,7 +144754,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-7-1",
     "title": "아닥사스다 때 에스라의 계보",
     "aliases": [
-      "이 일 후에 바사 왕 아닥사스다가 왕위에 있을 때에 에스라라 하는 자가 있으니라"
+      "이 일 후에 바사 왕 아닥사스다가 왕위에 있을 때에 에스라라 하는 자가 있으니라",
+        "에스라는 스라야의 아들이고"
     ],
     "locations": [
       {
@@ -144074,7 +144784,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-7-6",
     "title": "율법에 익숙한 학자 에스라",
     "aliases": [
-      "이 에스라가 바벨론에서 올라왔으니 그는 이스라엘의 하나님 여호와께서 주신 모세의 율법에 익숙한 학자로서"
+      "이 에스라가 바벨론에서 올라왔으니 그는 이스라엘의 하나님 여호와께서 주신 모세의 율법에 익숙한 학자로서",
+        "모세의 율법을 연구한 학자입니다"
     ],
     "locations": [
       {
@@ -144103,7 +144814,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-7-10",
     "title": "율법을 연구하고 가르치기로 한 결심",
     "aliases": [
-      "에스라가 여호와의 율법을 연구하여 준행하며 율례와 규례를 이스라엘에게 가르치기로 결심하였었더라"
+      "에스라가 여호와의 율법을 연구하여 준행하며 율례와 규례를 이스라엘에게 가르치기로 결심하였었더라",
+        "여호와의 가르침을 알기 위해, 그리고 그것을 지키기 위해 열심히 일했습니다"
     ],
     "locations": [
       {
@@ -144132,7 +144844,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-7-13",
     "title": "예루살렘으로 올라갈 자의 허락",
     "aliases": [
-      "예루살렘으로 올라갈 뜻이 있는 자는 누구든지 너와 함께 갈지어다"
+      "예루살렘으로 올라갈 뜻이 있는 자는 누구든지 너와 함께 갈지어다",
+        "원하는 사람은 그대와 함께 예루살렘으로 가도 좋다"
     ],
     "locations": [
       {
@@ -144161,7 +144874,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-7-25",
     "title": "율법을 아는 재판관 세움",
     "aliases": [
-      "네 하나님의 율법을 아는 자를 법관과 재판관을 삼아"
+      "네 하나님의 율법을 아는 자를 법관과 재판관을 삼아",
+        "하나님의 율법을 잘 아는 사람이어야 한다"
     ],
     "locations": [
       {
@@ -144191,7 +144905,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-8-1",
     "title": "함께 올라온 족장들",
     "aliases": [
-      "아닥사스다 왕이 왕위에 있을 때에 나와 함께 바벨론에서 올라온 족장들과 그들의 계보는 이러하니라"
+      "아닥사스다 왕이 왕위에 있을 때에 나와 함께 바벨론에서 올라온 족장들과 그들의 계보는 이러하니라",
+        "각 집안의 지도자들과 그들의 족보"
     ],
     "locations": [
       {
@@ -144220,7 +144935,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-8-15",
     "title": "레위 자손이 한 명도 없음",
     "aliases": [
-      "그 중에 레위 자손이 한 사람도 없는지라"
+      "그 중에 레위 자손이 한 사람도 없는지라",
+        "레위 사람은 한 사람도 보이지 않았습니다"
     ],
     "locations": [
       {
@@ -144249,7 +144965,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-8-22",
     "title": "왕에게 군사를 청하지 않은 부끄러움",
     "aliases": [
-      "길에서 적군을 막고 우리를 도울 보병과 마병을 왕에게 구하기를 부끄러워 하였음이라"
+      "길에서 적군을 막고 우리를 도울 보병과 마병을 왕에게 구하기를 부끄러워 하였음이라",
+        "왕에게 군대와 기마병을 보내 달라는 말을 하기가 부끄러웠습니다"
     ],
     "locations": [
       {
@@ -144278,7 +144995,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-8-30",
     "title": "성전 기구를 무게대로 받음",
     "aliases": [
-      "그 무게대로 받으니라"
+      "그 무게대로 받으니라",
+        "무게를 달아 놓은 은과 금과 그릇들을 넘겨 받았습니다"
     ],
     "locations": [
       {
@@ -144307,7 +145025,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-8-35",
     "title": "돌아온 자들의 번제와 속죄제",
     "aliases": [
-      "이스라엘 전체를 위한 수송아지가 열두 마리요 또 숫양이 아흔여섯 마리요 어린 양이 일흔일곱 마리요 또 속죄제의 숫염소가 열두 마리니"
+      "이스라엘 전체를 위한 수송아지가 열두 마리요 또 숫양이 아흔여섯 마리요 어린 양이 일흔일곱 마리요 또 속죄제의 숫염소가 열두 마리니",
+        "온 이스라엘을 위해 수소 열두 마리"
     ],
     "locations": [
       {
@@ -144336,7 +145055,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-9-1",
     "title": "방백들의 고발: 이방 민족과 섞임",
     "aliases": [
-      "이스라엘 백성과 제사장들과 레위 사람들이 이 땅 백성들에게서 떠나지 아니하고"
+      "이스라엘 백성과 제사장들과 레위 사람들이 이 땅 백성들에게서 떠나지 아니하고",
+        "다른 민족들과 구별된 생활을 하지 못하고 있습니다"
     ],
     "locations": [
       {
@@ -144365,7 +145085,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-9-6",
     "title": "에스라의 부끄러운 고백",
     "aliases": [
-      "나의 하나님이여 내가 부끄럽고 낯이 뜨거워서 감히 나의 하나님을 향하여 얼굴을 들지 못하오니"
+      "나의 하나님이여 내가 부끄럽고 낯이 뜨거워서 감히 나의 하나님을 향하여 얼굴을 들지 못하오니",
+        "하나님께 얼굴을 들기가 너무나 부끄러워"
     ],
     "locations": [
       {
@@ -144394,7 +145115,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-9-8",
     "title": "남은 자를 못처럼 박아 두심",
     "aliases": [
-      "이제 우리 하나님 여호와께서 우리에게 잠시 동안 은혜를 베푸사 얼마를 남겨 두어 피하게 하신 우리를 그 거룩한 처소에 박힌 못과 같게 하시고"
+      "이제 우리 하나님 여호와께서 우리에게 잠시 동안 은혜를 베푸사 얼마를 남겨 두어 피하게 하신 우리를 그 거룩한 처소에 박힌 못과 같게 하시고",
+        "여호와의 거룩한 곳에서 잠시나마"
     ],
     "locations": [
       {
@@ -144422,7 +145144,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-9-11",
     "title": "주의 종 선지자들의 명령",
     "aliases": [
-      "전에 주께서 주의 종 선지자들에게 명령하여 이르시되 너희가 가서 얻으려 하는 땅은 더러운 땅이니"
+      "전에 주께서 주의 종 선지자들에게 명령하여 이르시되 너희가 가서 얻으려 하는 땅은 더러운 땅이니",
+        "하나님의 종인 예언자들을 통해서 이렇게 명령하셨습니다"
     ],
     "locations": [
       {
@@ -144451,7 +145174,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-9-13",
     "title": "죄보다 가볍게 벌하시고 남기심",
     "aliases": [
-      "우리의 악한 행실과 큰 죄로 말미암아 이 모든 일을 당하였사오나 우리 하나님이 우리 죄악보다 형벌을 가볍게 하시고 이만큼 백성을 남겨 주셨사오니"
+      "우리의 악한 행실과 큰 죄로 말미암아 이 모든 일을 당하였사오나 우리 하나님이 우리 죄악보다 형벌을 가볍게 하시고 이만큼 백성을 남겨 주셨사오니",
+        "우리가 마땅히 받아야 할 벌보다 더 적게 벌을 내리시고"
     ],
     "locations": [
       {
@@ -144480,7 +145204,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-10-1",
     "title": "에스라의 자복 기도와 모인 백성",
     "aliases": [
-      "에스라가 하나님의 성전 앞에 엎드려 울며 기도하여 죄를 자복할 때에 많은 백성이 크게 통곡하매"
+      "에스라가 하나님의 성전 앞에 엎드려 울며 기도하여 죄를 자복할 때에 많은 백성이 크게 통곡하매",
+        "에스라가 죄를 고백하는 기도를 드리며 성전 앞에 엎드려 울었습니다"
     ],
     "locations": [
       {
@@ -144509,7 +145234,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-10-2",
     "title": "스가냐의 제안과 소망",
     "aliases": [
-      "우리가 우리 하나님께 범죄하여 이 땅 이방 여자를 맞이하여 아내로 삼았으나 이스라엘에게 아직도 소망이 있나니"
+      "우리가 우리 하나님께 범죄하여 이 땅 이방 여자를 맞이하여 아내로 삼았으나 이스라엘에게 아직도 소망이 있나니",
+        "그러나 이스라엘에게는 희망이 있습니다"
     ],
     "locations": [
       {
@@ -144538,7 +145264,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-10-9",
     "title": "삼 일 안의 모임",
     "aliases": [
-      "유다와 베냐민 모든 사람들이 삼 일 내에 예루살렘에 모이니 때는 아홉째 달 이십일이라"
+      "유다와 베냐민 모든 사람들이 삼 일 내에 예루살렘에 모이니 때는 아홉째 달 이십일이라",
+        "삼 일 안에 유다와 베냐민 사람들이 다 예루살렘에 모였습니다"
     ],
     "locations": [
       {
@@ -144567,7 +145294,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-10-17",
     "title": "조사 기간: 열째 달부터 다음 해 첫째 달까지",
     "aliases": [
-      "첫째 달 초하루에 이르러 이방 여인을 아내로 맞이한 자의 일 조사하기를 마치니라"
+      "첫째 달 초하루에 이르러 이방 여인을 아내로 맞이한 자의 일 조사하기를 마치니라",
+        "그 다음 해 첫째 달 초하루에 그 일이 다 끝났습니다"
     ],
     "locations": [
       {
@@ -144596,7 +145324,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-ezr-10-44",
     "title": "이방 여인과 혼인한 자의 명단 결론",
     "aliases": [
-      "이상은 모두 이방 여인을 아내로 맞이한 자라 그 중에는 자녀를 낳은 여인도 있었더라"
+      "이상은 모두 이방 여인을 아내로 맞이한 자라 그 중에는 자녀를 낳은 여인도 있었더라",
+        "이 사람들은 다 이방인 여자와 결혼했고"
     ],
     "locations": [
       {
@@ -144629,7 +145358,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-1-2",
     "title": "하나니가 전한 예루살렘 소식",
     "aliases": [
-      "내 형제들 가운데 하나인 하나니가 두어 사람과 함께 유다에서 내게 이르렀기로"
+      "내 형제들 가운데 하나인 하나니가 두어 사람과 함께 유다에서 내게 이르렀기로",
+        "나의 형제인 하나니가 다른 사람들과 함께 유다에서 왔습니다"
     ],
     "locations": [
       {
@@ -144658,7 +145388,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-1-4",
     "title": "울며 금식하고 기도함",
     "aliases": [
-      "내가 이 말을 듣고 앉아서 울고 수일 동안 슬퍼하며 하늘의 하나님 앞에 금식하며 기도하여"
+      "내가 이 말을 듣고 앉아서 울고 수일 동안 슬퍼하며 하늘의 하나님 앞에 금식하며 기도하여",
+        "그 말을 듣고 자리에 주저앉아 여러 날 동안, 울었습니다"
     ],
     "locations": [
       {
@@ -144687,7 +145418,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-1-5",
     "title": "언약을 지키시는 하나님께 드린 기도",
     "aliases": [
-      "주를 사랑하고 주의 계명을 지키는 자에게 언약을 지키시며 긍휼을 베푸시는 주여 간구하나이다"
+      "주를 사랑하고 주의 계명을 지키는 자에게 언약을 지키시며 긍휼을 베푸시는 주여 간구하나이다",
+        "사랑의 언약을 지키시는 하나님이십니다"
     ],
     "locations": [
       {
@@ -144716,7 +145448,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-1-9",
     "title": "흩어진 자를 모아 돌아오게 하겠다는 약속",
     "aliases": [
-      "내가 거기서부터 그들을 모아 내 이름을 두려고 택한 곳에 돌아오게 하리라"
+      "내가 거기서부터 그들을 모아 내 이름을 두려고 택한 곳에 돌아오게 하리라",
+        "흩어진 백성이 땅 끝에 있더라도, 내가 그들을 모을 것이다"
     ],
     "locations": [
       {
@@ -144745,7 +145478,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-1-11",
     "title": "느헤미야가 술 관원이 됨",
     "aliases": [
-      "그 때에 내가 왕의 술 관원이 되었느니라"
+      "그 때에 내가 왕의 술 관원이 되었느니라",
+        "나는 왕에게 술을 따라 올리던 사람이었습니다"
     ],
     "locations": [
       {
@@ -144774,7 +145508,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-2-2",
     "title": "왕 앞에서 드러난 수심",
     "aliases": [
-      "왕이 내게 이르시되 네가 병이 없거늘 어찌하여 얼굴에 수심이 있느냐"
+      "왕이 내게 이르시되 네가 병이 없거늘 어찌하여 얼굴에 수심이 있느냐",
+        "어찌하여 그렇게 슬픈 얼굴을 하고 있소?"
     ],
     "locations": [
       {
@@ -144803,7 +145538,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-2-5",
     "title": "성읍 재건을 청함",
     "aliases": [
-      "나를 유다 땅 나의 조상들의 묘실이 있는 성읍에 보내어 그 성을 건축하게 하옵소서"
+      "나를 유다 땅 나의 조상들의 묘실이 있는 성읍에 보내어 그 성을 건축하게 하옵소서",
+        "제 조상이 묻혀 있는 유다의 그 성으로 저를 보내 주십시오"
     ],
     "locations": [
       {
@@ -144832,7 +145568,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-2-10",
     "title": "산발랏과 도비야의 근심",
     "aliases": [
-      "호론 사람 산발랏과 종이었던 암몬 사람 도비야가 이스라엘 자손을 흥왕하게 하려는 사람이 왔다 함을 듣고 심히 근심하더라"
+      "호론 사람 산발랏과 종이었던 암몬 사람 도비야가 이스라엘 자손을 흥왕하게 하려는 사람이 왔다 함을 듣고 심히 근심하더라",
+        "호론 사람 산발랏과 암몬 사람의 지도자 도비야가"
     ],
     "locations": [
       {
@@ -144862,7 +145599,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-2-13",
     "title": "밤에 살펴본 무너진 성벽",
     "aliases": [
-      "그 밤에 골짜기 문으로 나가서"
+      "그 밤에 골짜기 문으로 나가서",
+        "성벽은 무너져 있었고, 문들은 불에 타 있었습니다"
     ],
     "locations": [
       {
@@ -144890,7 +145628,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-2-20",
     "title": "하늘의 하나님이 형통하게 하심",
     "aliases": [
-      "하늘의 하나님이 우리를 형통하게 하시리니"
+      "하늘의 하나님이 우리를 형통하게 하시리니",
+        "하늘의 하나님께서 우리가 하는 일이 성공할 수 있도록 도와 주실 것이오"
     ],
     "locations": [
       {
@@ -144919,7 +145658,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-3-1",
     "title": "대제사장 엘리아십과 양문",
     "aliases": [
-      "그 때에 대제사장 엘리아십이 그의 형제 제사장들과 함께 일어나 양문을 건축하여 성별하고"
+      "그 때에 대제사장 엘리아십이 그의 형제 제사장들과 함께 일어나 양문을 건축하여 성별하고",
+        "대제사장 엘리아십과 그의 동료 제사장들이 일을 하러 나섰습니다"
     ],
     "locations": [
       {
@@ -144948,7 +145688,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-3-3",
     "title": "물고기 문(어문)",
     "aliases": [
-      "어문은 하스나아의 자손들이 건축하여 그 들보를 얹고 문짝을 달고 자물쇠와 빗장을 갖추었고"
+      "어문은 하스나아의 자손들이 건축하여 그 들보를 얹고 문짝을 달고 자물쇠와 빗장을 갖추었고",
+        "하스나아의 아들들은"
     ],
     "locations": [
       {
@@ -144977,7 +145718,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-3-8",
     "title": "넓은 성벽의 복구",
     "aliases": [
-      "그들이 예루살렘의 넓은 성벽까지 하였고"
+      "그들이 예루살렘의 넓은 성벽까지 하였고",
+        "향품을 만드는 사람인 하나냐가"
     ],
     "locations": [
       {
@@ -145006,7 +145748,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-3-15",
     "title": "샘문과 실로암 연못의 성벽",
     "aliases": [
-      "샘문은 미스바 지방을 다스리는 골호세의 아들 살룬이 중수하여 문을 세우고 덮었으며"
+      "샘문은 미스바 지방을 다스리는 골호세의 아들 살룬이 중수하여 문을 세우고 덮었으며",
+        "골호세의 아들 살룬이 보수했습니다"
     ],
     "locations": [
       {
@@ -145035,7 +145778,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-3-16",
     "title": "아스북의 아들 느헤미야",
     "aliases": [
-      "그 다음은 벧술 지방 절반을 다스리는 아스북의 아들 느헤미야가 중수하여"
+      "그 다음은 벧술 지방 절반을 다스리는 아스북의 아들 느헤미야가 중수하여",
+        "아스북의 아들 느헤미야가 보수했습니다"
     ],
     "locations": [
       {
@@ -145064,7 +145808,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-4-1",
     "title": "산발랏의 분노와 비웃음",
     "aliases": [
-      "산발랏이 우리가 성을 건축한다 함을 듣고 크게 분노하여 유다 사람들을 비웃으며"
+      "산발랏이 우리가 성을 건축한다 함을 듣고 크게 분노하여 유다 사람들을 비웃으며",
+        "몹시 화를 내며 분을 참지 못했습니다"
     ],
     "locations": [
       {
@@ -145093,7 +145838,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-4-2",
     "title": "미약한 유다를 업신여김",
     "aliases": [
-      "이 미약한 유다 사람들이 하는 일이 무엇인가"
+      "이 미약한 유다 사람들이 하는 일이 무엇인가",
+        "이 미약한 유다 사람들이 도대체 무슨 일을 하고 있는 건가?"
     ],
     "locations": [
       {
@@ -145122,7 +145868,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-4-4",
     "title": "대적의 욕이 그들에게 돌아가기를 구함",
     "aliases": [
-      "그들이 욕하는 것을 자기들의 머리에 돌리사 노략거리가 되어 이방에 사로잡히게 하시고"
+      "그들이 욕하는 것을 자기들의 머리에 돌리사 노략거리가 되어 이방에 사로잡히게 하시고",
+        "산발랏과 도비야가 하는 욕이 그들에게 되돌아가게 해 주십시오"
     ],
     "locations": [
       {
@@ -145151,7 +145898,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-4-6",
     "title": "성벽이 절반에 이름",
     "aliases": [
-      "이에 우리가 성을 건축하여 전부가 연결되고 높이가 절반에 이르렀으니"
+      "이에 우리가 성을 건축하여 전부가 연결되고 높이가 절반에 이르렀으니",
+        "우리는 성벽 쌓는 일을 계속하여 절반쯤 쌓았습니다"
     ],
     "locations": [
       {
@@ -145180,7 +145928,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-4-16",
     "title": "절반은 일하고 절반은 무장함",
     "aliases": [
-      "그 때로부터 내 수하 사람들의 절반은 일하고 절반은 갑옷을 입고 창과 방패와 활을 가졌고"
+      "그 때로부터 내 수하 사람들의 절반은 일하고 절반은 갑옷을 입고 창과 방패와 활을 가졌고",
+        "나머지 절반은 창과 방패와 활과 갑옷으로 무장했습니다"
     ],
     "locations": [
       {
@@ -145209,7 +145958,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-5-2",
     "title": "양식을 구하는 백성의 불평",
     "aliases": [
-      "어떤 사람은 말하기를 우리와 우리 자녀가 많으니 양식을 얻어 먹고 살아야 하겠다 하고"
+      "어떤 사람은 말하기를 우리와 우리 자녀가 많으니 양식을 얻어 먹고 살아야 하겠다 하고",
+        "우리는 자식들이 많아서 식구가 많다"
     ],
     "locations": [
       {
@@ -145238,7 +145988,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-5-5",
     "title": "자녀를 종으로 파는 현실",
     "aliases": [
-      "우리 육체도 우리 형제의 육체와 같고 우리 자녀도 그들의 자녀와 같거늘 이제 우리 자녀를 종으로 파는도다"
+      "우리 육체도 우리 형제의 육체와 같고 우리 자녀도 그들의 자녀와 같거늘 이제 우리 자녀를 종으로 파는도다",
+        "우리는 아들딸을 노예로 팔아야 한다"
     ],
     "locations": [
       {
@@ -145267,7 +146018,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-5-7",
     "title": "형제에게 높은 이자를 받음을 책망함",
     "aliases": [
-      "너희가 각기 형제에게 높은 이자를 취하는도다"
+      "너희가 각기 형제에게 높은 이자를 취하는도다",
+        "형제들에게 빌려 준 돈에 대해서 이자를 너무나 많이 받고 있소"
     ],
     "locations": [
       {
@@ -145296,7 +146048,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-5-11",
     "title": "밭과 집과 이자를 돌려주라는 요구",
     "aliases": [
-      "그들에게 오늘이라도 그들의 밭과 포도원과 감람원과 집이며"
+      "그들에게 오늘이라도 그들의 밭과 포도원과 감람원과 집이며",
+        "그들의 밭과 포도원과 올리브 나무와 집을 당장 돌려 주시오"
     ],
     "locations": [
       {
@@ -145325,7 +146078,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-5-14",
     "title": "총독의 녹을 받지 않음",
     "aliases": [
-      "나와 내 형제들이 총독의 녹을 먹지 아니하였느니라"
+      "나와 내 형제들이 총독의 녹을 먹지 아니하였느니라",
+        "총독에게 지급되는 음식을 먹지 않았습니다"
     ],
     "locations": [
       {
@@ -145358,7 +146112,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-6-2",
     "title": "오노 평지에서 만나자는 제안의 속셈",
     "aliases": [
-      "오라 우리가 오노 평지 한 촌에서 서로 만나자 하니 실상은 나를 해하고자 함이었더라"
+      "오라 우리가 오노 평지 한 촌에서 서로 만나자 하니 실상은 나를 해하고자 함이었더라",
+        "오노 평야의 한 마을에서 만납시다"
     ],
     "locations": [
       {
@@ -145387,7 +146142,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-6-6",
     "title": "반역 소문을 담은 편지",
     "aliases": [
-      "너와 유다 사람들이 모반하려 하여 성벽을 건축한다 하나니"
+      "너와 유다 사람들이 모반하려 하여 성벽을 건축한다 하나니",
+        "왕에게 반역할 계획을 세우고 있다는 소문이"
     ],
     "locations": [
       {
@@ -145416,7 +146172,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-6-10",
     "title": "성전에 숨자는 스마야의 권유",
     "aliases": [
-      "우리가 하나님의 전으로 가서 외소 안에 머물고 그 문을 닫자"
+      "우리가 하나님의 전으로 가서 외소 안에 머물고 그 문을 닫자",
+        "하나님의 성전에서 만납시다"
     ],
     "locations": [
       {
@@ -145445,7 +146202,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-6-15",
     "title": "52일 만에 끝난 성벽",
     "aliases": [
-      "성벽 역사가 오십이 일 만인 엘룰월 이십오일에 끝나매"
+      "성벽 역사가 오십이 일 만인 엘룰월 이십오일에 끝나매",
+        "성벽을 다 쌓는 데 오십이 일이 걸렸습니다"
     ],
     "locations": [
       {
@@ -145474,7 +146232,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-6-18",
     "title": "도비야와 맺어진 유다 귀족들의 동맹",
     "aliases": [
-      "도비야는 아라의 아들 스가냐의 사위가 되었고 도비야의 아들 여호하난도 베레갸의 아들 므술람의 딸을 아내로 맞이하였으므로"
+      "도비야는 아라의 아들 스가냐의 사위가 되었고 도비야의 아들 여호하난도 베레갸의 아들 므술람의 딸을 아내로 맞이하였으므로",
+        "많은 유다 사람들이 도비야에게 충성을 맹세했습니다"
     ],
     "locations": [
       {
@@ -145503,7 +146262,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-7-2",
     "title": "하나니와 하나냐에게 맡긴 예루살렘",
     "aliases": [
-      "내 아우 하나니와 영문의 관원 하나냐가 함께 예루살렘을 다스리게 하였는데"
+      "내 아우 하나니와 영문의 관원 하나냐가 함께 예루살렘을 다스리게 하였는데",
+        "내 동생인 하나니에게 왕궁의 지휘관인 하나냐와 더불어 예루살렘을 맡겼습니다"
     ],
     "locations": [
       {
@@ -145532,7 +146292,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-7-3",
     "title": "성문 여는 때와 파수 방법",
     "aliases": [
-      "해가 높이 뜨기 전에는 예루살렘 성문을 열지 말고"
+      "해가 높이 뜨기 전에는 예루살렘 성문을 열지 말고",
+        "해가 떠서 더워지기 전에는 예루살렘의 문을 열지 마시오"
     ],
     "locations": [
       {
@@ -145561,7 +146322,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-7-4",
     "title": "넓은 성에 적은 주민",
     "aliases": [
-      "그 성읍은 광대하고 그 주민은 적으며 가옥은 미처 건축하지 못하였음이니라"
+      "그 성읍은 광대하고 그 주민은 적으며 가옥은 미처 건축하지 못하였음이니라",
+        "거기에 사는 사람은 얼마 되지 않았습니다"
     ],
     "locations": [
       {
@@ -145590,7 +146352,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-7-5",
     "title": "처음 돌아온 자의 계보를 찾음",
     "aliases": [
-      "내 하나님이 내 마음을 감동하사 귀족들과 민장들과 백성을 모아 그 계보대로 등록하게 하시므로"
+      "내 하나님이 내 마음을 감동하사 귀족들과 민장들과 백성을 모아 그 계보대로 등록하게 하시므로",
+        "나는 가장 먼저 유다로 돌아온 사람들의 족보를 찾았습니다"
     ],
     "locations": [
       {
@@ -145619,7 +146382,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-7-70",
     "title": "총독과 족장들의 헌금",
     "aliases": [
-      "총독은 금 천 드라크마와 대접 오십과 제사장의 의복 오백삼십 벌을 보물 곳간에 드렸고"
+      "총독은 금 천 드라크마와 대접 오십과 제사장의 의복 오백삼십 벌을 보물 곳간에 드렸고",
+        "총독은 창고에 금 천 다릭과 그릇 오십 개와 제사장의 옷 오백삼십 벌을 내놓았습니다"
     ],
     "locations": [
       {
@@ -145648,7 +146412,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-8-1",
     "title": "일곱째 달 수문 앞 광장의 모임",
     "aliases": [
-      "일곱째 달에 이르러 모든 백성이 일제히 수문 앞 광장에 모여 학사 에스라에게"
+      "일곱째 달에 이르러 모든 백성이 일제히 수문 앞 광장에 모여 학사 에스라에게",
+        "모세의 율법책을 읽어 줄 것을 요청했습니다"
     ],
     "locations": [
       {
@@ -145677,7 +146442,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-8-5",
     "title": "책을 펼 때 일어선 백성",
     "aliases": [
-      "에스라가 모든 백성 위에 서서 그들 목전에 책을 펴니 책을 펼 때에 모든 백성이 일어서니라"
+      "에스라가 모든 백성 위에 서서 그들 목전에 책을 펴니 책을 펼 때에 모든 백성이 일어서니라",
+        "에스라가 책을 펴자, 모든 백성이 자리에서 일어섰습니다"
     ],
     "locations": [
       {
@@ -145706,7 +146472,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-8-8",
     "title": "낭독과 해석으로 깨닫게 함",
     "aliases": [
-      "하나님의 율법책을 낭독하고 그 뜻을 해석하여 백성에게 그 낭독하는 것을 다 깨닫게 하니"
+      "하나님의 율법책을 낭독하고 그 뜻을 해석하여 백성에게 그 낭독하는 것을 다 깨닫게 하니",
+        "그 뜻을 설명해 주었으므로 백성들은 그들이 읽어 주는 말씀을 깨달았습니다"
     ],
     "locations": [
       {
@@ -145735,7 +146502,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-8-9",
     "title": "오늘은 거룩한 날이니 울지 말라",
     "aliases": [
-      "오늘은 너희 하나님 여호와의 성일이니 슬퍼하지 말며 울지 말라"
+      "오늘은 너희 하나님 여호와의 성일이니 슬퍼하지 말며 울지 말라",
+        "오늘은 여러분의 하나님 여호와의 거룩한 날이오"
     ],
     "locations": [
       {
@@ -145764,7 +146532,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-8-17",
     "title": "여호수아 이후 없던 초막절의 기쁨",
     "aliases": [
-      "눈의 아들 여호수아 때로부터 그 날까지 이스라엘 자손이 이같이 행한 일이 없었으므로"
+      "눈의 아들 여호수아 때로부터 그 날까지 이스라엘 자손이 이같이 행한 일이 없었으므로",
+        "눈의 아들 여호수아 때로부터 이 때까지"
     ],
     "locations": [
       {
@@ -145794,7 +146563,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-9-1",
     "title": "금식하고 굵은 베옷을 입은 백성",
     "aliases": [
-      "그 달 스무나흗 날에 이스라엘 자손이 다 모여 금식하며 굵은 베 옷을 입고 티끌을 무릅쓰며"
+      "그 달 스무나흗 날에 이스라엘 자손이 다 모여 금식하며 굵은 베 옷을 입고 티끌을 무릅쓰며",
+        "그들은 금식했으며 거친 베옷을 입고 머리에 재를 뒤집어 썼습니다"
     ],
     "locations": [
       {
@@ -145823,7 +146593,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-9-2",
     "title": "이방과 절교하고 조상의 허물을 자복함",
     "aliases": [
-      "모든 이방 사람들과 절교하고 서서 자기의 죄와 조상들의 허물을 자복하고"
+      "모든 이방 사람들과 절교하고 서서 자기의 죄와 조상들의 허물을 자복하고",
+        "다른 모든 민족과의 관계를 끊었습니다"
     ],
     "locations": [
       {
@@ -145853,7 +146624,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-9-8",
     "title": "아브라함과 맺은 땅의 언약",
     "aliases": [
-      "그와 더불어 언약을 세우사 가나안 족속과 헷 족속과 아모리 족속과 브리스 족속과 여부스 족속과 기르가스 족속의 땅을 그의 씨에게 주리라 하시더니"
+      "그와 더불어 언약을 세우사 가나안 족속과 헷 족속과 아모리 족속과 브리스 족속과 여부스 족속과 기르가스 족속의 땅을 그의 씨에게 주리라 하시더니",
+        "아브라함의 마음이 주 앞에서 진실됨을 보시고 그와 언약을 맺으셨습니다"
     ],
     "locations": [
       {
@@ -145882,7 +146654,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-9-17",
     "title": "용서하시는 하나님의 긍휼",
     "aliases": [
-      "은혜로우시며 긍휼히 여기시며 더디 노하시며 인자가 풍부하시므로"
+      "은혜로우시며 긍휼히 여기시며 더디 노하시며 인자가 풍부하시므로",
+        "주는 용서하는 하나님이십니다"
     ],
     "locations": [
       {
@@ -145911,7 +146684,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-9-36",
     "title": "자기 땅에서 종이 된 백성",
     "aliases": [
-      "우리가 오늘날 종이 되었는데 곧 주께서 우리 조상들에게 주사 그것의 열매를 먹고 그것의 아름다운 소산을 누리게 하신 땅에서 우리가 종이 되었나이다"
+      "우리가 오늘날 종이 되었는데 곧 주께서 우리 조상들에게 주사 그것의 열매를 먹고 그것의 아름다운 소산을 누리게 하신 땅에서 우리가 종이 되었나이다",
+        "우리는 지금 주께서 주신 땅에서 노예가 되었습니다"
     ],
     "locations": [
       {
@@ -145944,7 +146718,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-10-29",
     "title": "저주로 맹세하고 율법을 지키기로 함",
     "aliases": [
-      "다 그들의 형제 귀족들을 따라 저주로 맹세하기를 우리가 하나님의 종 모세를 통하여 주신 하나님의 율법을 따라"
+      "다 그들의 형제 귀족들을 따라 저주로 맹세하기를 우리가 하나님의 종 모세를 통하여 주신 하나님의 율법을 따라",
+        "그 맹세를 어기면 저주를 받게 됩니다"
     ],
     "locations": [
       {
@@ -145973,7 +146748,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-10-30",
     "title": "이방 혼인을 하지 않겠다는 맹세",
     "aliases": [
-      "우리의 딸들을 이 땅 백성에게 주지 아니하고 우리의 아들들을 위하여 그들의 딸들을 데려오지 아니하며"
+      "우리의 딸들을 이 땅 백성에게 주지 아니하고 우리의 아들들을 위하여 그들의 딸들을 데려오지 아니하며",
+        "우리는 우리 딸과 아들을 외국인과 결혼시키지 않기로 약속합니다"
     ],
     "locations": [
       {
@@ -146003,7 +146779,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-10-31",
     "title": "안식일과 안식년 준수의 맹세",
     "aliases": [
-      "우리가 안식일이나 성일에는 그들에게서 사지 않겠고 일곱째 해마다 땅을 쉬게 하고 모든 빚을 탕감하리라"
+      "우리가 안식일이나 성일에는 그들에게서 사지 않겠고 일곱째 해마다 땅을 쉬게 하고 모든 빚을 탕감하리라",
+        "안식일이나 그 밖의 거룩한 날에는 물건을 사지 않겠습니다"
     ],
     "locations": [
       {
@@ -146033,7 +146810,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-10-32",
     "title": "성전 경비로 세겔의 삼분의 일을 냄",
     "aliases": [
-      "우리가 또 스스로 규례를 정하기를 해마다 각기 세겔의 삼분의 일을 수납하여 하나님의 전을 위하여 쓰게 하되"
+      "우리가 또 스스로 규례를 정하기를 해마다 각기 세겔의 삼분의 일을 수납하여 하나님의 전을 위하여 쓰게 하되",
+        "우리는 해마다 각기 삼분의 일 세겔씩 바치겠습니다"
     ],
     "locations": [
       {
@@ -146062,7 +146840,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-10-38",
     "title": "레위인의 십일조와 곳간",
     "aliases": [
-      "레위 사람들이 십일조를 받을 때에는 아론의 자손 제사장 한 사람이 함께 있을 것이요"
+      "레위 사람들이 십일조를 받을 때에는 아론의 자손 제사장 한 사람이 함께 있을 것이요",
+        "그것을 성전 창고에 넣어 두어야 합니다"
     ],
     "locations": [
       {
@@ -146091,7 +146870,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-11-1",
     "title": "제비 뽑아 예루살렘에 거주함",
     "aliases": [
-      "그 남은 백성은 제비 뽑아 십분의 일은 거룩한 성 예루살렘에서 거주하게 하고"
+      "그 남은 백성은 제비 뽑아 십분의 일은 거룩한 성 예루살렘에서 거주하게 하고",
+        "제비를 뽑아 십분의 일은 거룩한 성 예루살렘에서 살게 하고"
     ],
     "locations": [
       {
@@ -146120,7 +146900,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-11-17",
     "title": "감사의 말씀을 인도한 맛다냐",
     "aliases": [
-      "그는 기도할 때에 감사하는 말씀을 인도하는 자가 되었고"
+      "그는 기도할 때에 감사하는 말씀을 인도하는 자가 되었고",
+        "맛다냐는 기도와 감사의 찬송을 이끄는 지휘자입니다"
     ],
     "locations": [
       {
@@ -146149,7 +146930,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-11-20",
     "title": "나머지 백성은 각자의 기업에 흩어져 삶",
     "aliases": [
-      "그 나머지 이스라엘 백성과 제사장과 레위 사람은 유다 모든 성읍에 흩어져 각각 자기 기업에 살았고"
+      "그 나머지 이스라엘 백성과 제사장과 레위 사람은 유다 모든 성읍에 흩어져 각각 자기 기업에 살았고",
+        "유다 모든 성에 흩어져 각각 자기 땅에서 살았습니다"
     ],
     "locations": [
       {
@@ -146178,7 +146960,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-11-36",
     "title": "유다의 레위인 일부가 베냐민에 삶",
     "aliases": [
-      "유다에 있던 레위 사람의 일부는 베냐민과 합하였느니라"
+      "유다에 있던 레위 사람의 일부는 베냐민과 합하였느니라",
+        "유다에서 온 레위 사람들 가운데 일부는 베냐민 땅에서 살았습니다"
     ],
     "locations": [
       {
@@ -146207,7 +146990,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-12-27",
     "title": "성벽 봉헌을 위해 레위인을 모음",
     "aliases": [
-      "예루살렘 성벽을 봉헌하게 되니 각처에서 레위 사람들을 찾아 예루살렘으로 데려다가"
+      "예루살렘 성벽을 봉헌하게 되니 각처에서 레위 사람들을 찾아 예루살렘으로 데려다가",
+        "사람들이 레위 사람들을 그 살던 곳에서부터 예루살렘으로 데려왔습니다"
     ],
     "locations": [
       {
@@ -146236,7 +147020,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-12-31",
     "title": "두 감사 찬송 대열이 성벽 위를 행진함",
     "aliases": [
-      "감사 찬송하는 자의 큰 무리를 둘로 나누어 성벽 위로 대오를 지어 가게 하였는데"
+      "감사 찬송하는 자의 큰 무리를 둘로 나누어 성벽 위로 대오를 지어 가게 하였는데",
+        "두 팀의 합창단을 세워 감사의 노래를 부르게 했습니다"
     ],
     "locations": [
       {
@@ -146265,7 +147050,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-12-43",
     "title": "하나님이 기쁘게 하신 봉헌의 날",
     "aliases": [
-      "이 날에 무리가 큰 제사를 드리고 심히 즐거워하였으니"
+      "이 날에 무리가 큰 제사를 드리고 심히 즐거워하였으니",
+        "하나님께서 기쁨을 주셨기 때문에 그들은 즐거워했습니다"
     ],
     "locations": [
       {
@@ -146294,7 +147080,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-12-44",
     "title": "제사장과 레위인의 몫을 맡은 곳간",
     "aliases": [
-      "그 날에 사람을 세워 곳간을 맡기고"
+      "그 날에 사람을 세워 곳간을 맡기고",
+        "지도자들이 창고를 맡을 사람들을 세웠습니다"
     ],
     "locations": [
       {
@@ -146323,7 +147110,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-13-1",
     "title": "암몬과 모압은 총회에 들어오지 못함",
     "aliases": [
-      "그 날 모세의 책을 낭독하여 백성에게 들렸는데 그 책에 기록하기를 암몬 사람과 모압 사람은 영원히 하나님의 총회에 들어오지 못하리니"
+      "그 날 모세의 책을 낭독하여 백성에게 들렸는데 그 책에 기록하기를 암몬 사람과 모압 사람은 영원히 하나님의 총회에 들어오지 못하리니",
+        "암몬 사람이나 모압 사람은 하나님의 회중에 참석할 수 없다고"
     ],
     "locations": [
       {
@@ -146352,7 +147140,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-13-2",
     "title": "저주를 복으로 바꾸심",
     "aliases": [
-      "그러나 우리 하나님이 그 저주를 돌이켜 복이 되게 하셨다 하였는지라"
+      "그러나 우리 하나님이 그 저주를 돌이켜 복이 되게 하셨다 하였는지라",
+        "그 저주를 복으로 바꾸어 주셨습니다"
     ],
     "locations": [
       {
@@ -146381,7 +147170,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-13-5",
     "title": "도비야에게 내어 준 성전 방",
     "aliases": [
-      "도비야를 위하여 한 큰 방을 만들었으니 그 방은 원래 소제물과 유향과 그릇과"
+      "도비야를 위하여 한 큰 방을 만들었으니 그 방은 원래 소제물과 유향과 그릇과",
+        "엘리아십은 도비야가 큰 창고 가운데 하나를 쓰도록 허락했습니다"
     ],
     "locations": [
       {
@@ -146410,7 +147200,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-13-10",
     "title": "레위인의 몫을 주지 않아 흩어진 레위인",
     "aliases": [
-      "내가 또 알아본즉 레위 사람들이 받을 몫을 주지 아니하였으므로 그 직무를 행하는 레위 사람들과 노래하는 자들이 각각 자기 밭으로 도망하였기로"
+      "내가 또 알아본즉 레위 사람들이 받을 몫을 주지 아니하였으므로 그 직무를 행하는 레위 사람들과 노래하는 자들이 각각 자기 밭으로 도망하였기로",
+        "백성들이 레위 사람들에게 주어야 할 몫을 주지 않은 것을"
     ],
     "locations": [
       {
@@ -146439,7 +147230,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-neh-13-15",
     "title": "안식일에 술틀을 밟고 짐을 나름",
     "aliases": [
-      "유다에서 어떤 사람이 안식일에 술틀을 밟고 곡식단을 나귀에 실어 운반하며"
+      "유다에서 어떤 사람이 안식일에 술틀을 밟고 곡식단을 나귀에 실어 운반하며",
+        "유다 백성이 안식일에도 술틀을 밟는 것을 보았습니다"
     ],
     "locations": [
       {
@@ -146472,7 +147264,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-1-1",
     "title": "아하수에로의 영토",
     "aliases": [
-      "아하수에로는 인도로부터 구스까지 백이십칠 지방을 다스리는 왕이라"
+      "아하수에로는 인도로부터 구스까지 백이십칠 지방을 다스리는 왕이라",
+        "인도에서 에티오피아까지 백이십칠 지역을 다스린 왕으로"
     ],
     "locations": [
       {
@@ -146501,7 +147294,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-1-6",
     "title": "잔치의 화려한 장식",
     "aliases": [
-      "백색, 녹색, 청색 휘장을 자색 가는 베 줄로 대리석 기둥 은고리에 매고"
+      "백색, 녹색, 청색 휘장을 자색 가는 베 줄로 대리석 기둥 은고리에 매고",
+        "금의자와 은의자가 놓여 있었습니다"
     ],
     "locations": [
       {
@@ -146530,7 +147324,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-1-12",
     "title": "와스디 왕후의 거부",
     "aliases": [
-      "그러나 왕후 와스디는 내시가 전하는 왕명을 따르기를 싫어하니 왕이 진노하여"
+      "그러나 왕후 와스디는 내시가 전하는 왕명을 따르기를 싫어하니 왕이 진노하여",
+        "그러나 왕후는 왕에게 나오지 않았습니다"
     ],
     "locations": [
       {
@@ -146559,7 +147354,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-1-16",
     "title": "므무간의 조언",
     "aliases": [
-      "왕후 와스디가 왕에게만 잘못했을 뿐 아니라"
+      "왕후 와스디가 왕에게만 잘못했을 뿐 아니라",
+        "이 나라의 모든 귀족과 백성에게도 잘못한 것입니다"
     ],
     "locations": [
       {
@@ -146588,7 +147384,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-1-22",
     "title": "남편이 집을 주관하라는 조서",
     "aliases": [
-      "남편이 자기의 집을 주관하게 하고 자기 민족의 언어로 말하게 하라 하였더라"
+      "남편이 자기의 집을 주관하게 하고 자기 민족의 언어로 말하게 하라 하였더라",
+        "각 가정을 남편이 다스리게 하고"
     ],
     "locations": [
       {
@@ -146617,7 +147414,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-2-5",
     "title": "수산의 유다인 모르드개",
     "aliases": [
-      "도성 수산에 한 유다인이 있으니 이름은 모르드개라"
+      "도성 수산에 한 유다인이 있으니 이름은 모르드개라",
+        "모르드개라는 유다 사람이 있었는데"
     ],
     "locations": [
       {
@@ -146645,7 +147443,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-2-9",
     "title": "헤개가 에스더를 돌봄",
     "aliases": [
-      "헤개가 이 처녀를 좋게 보고 은혜를 베풀어 몸을 정결하게 할 물품과 일용품을 곧 주며"
+      "헤개가 이 처녀를 좋게 보고 은혜를 베풀어 몸을 정결하게 할 물품과 일용품을 곧 주며",
+        "에스더와 그녀의 일곱 궁녀들을 후궁에서 가장 좋은 곳으로 옮기게 했습니다"
     ],
     "locations": [
       {
@@ -146674,7 +147473,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-2-12",
     "title": "열두 달의 정결 규례",
     "aliases": [
-      "처녀마다 차례대로 아하수에로 왕에게 나아가기 전에 여자에 대하여 정한 규례대로 열두 달 동안을 행하되"
+      "처녀마다 차례대로 아하수에로 왕에게 나아가기 전에 여자에 대하여 정한 규례대로 열두 달 동안을 행하되",
+        "여섯 달 동안은 기름과 몰약으로"
     ],
     "locations": [
       {
@@ -146702,7 +147502,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-2-15",
     "title": "헤개의 말만 따른 에스더",
     "aliases": [
-      "궁녀를 주관하는 내시 헤개가 정한 것 외에는 다른 것을 구하지 아니하였으나 모든 보는 자에게 사랑을 받더라"
+      "궁녀를 주관하는 내시 헤개가 정한 것 외에는 다른 것을 구하지 아니하였으나 모든 보는 자에게 사랑을 받더라",
+        "헤개가 말한 꼭 필요한 장식 말고는 아무것도 요구하지 않았으나"
     ],
     "locations": [
       {
@@ -146731,7 +147532,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-2-17",
     "title": "에스더가 왕후가 됨",
     "aliases": [
-      "왕이 모든 여자보다 에스더를 더 사랑하므로 그가 모든 처녀보다 왕 앞에 더 은총을 얻은지라"
+      "왕이 모든 여자보다 에스더를 더 사랑하므로 그가 모든 처녀보다 왕 앞에 더 은총을 얻은지라",
+        "와스디를 대신해서 에스더를 왕후로 삼았습니다"
     ],
     "locations": [
       {
@@ -146760,7 +147562,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-3-2",
     "title": "모르드개가 하만에게 절하지 않음",
     "aliases": [
-      "모르드개는 꿇지도 아니하고 절하지도 아니하니"
+      "모르드개는 꿇지도 아니하고 절하지도 아니하니",
+        "모르드개는 절을 하지도 않았으며, 무릎을 꿇지도 않았습니다"
     ],
     "locations": [
       {
@@ -146789,7 +147592,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-3-6",
     "title": "모든 유다인을 멸하려는 하만",
     "aliases": [
-      "하만이 모르드개만 죽이는 것이 부족하다고 생각하고 아하수에로의 온 나라에 있는 유다인 곧 모르드개의 민족을 다 멸하고자 하더라"
+      "하만이 모르드개만 죽이는 것이 부족하다고 생각하고 아하수에로의 온 나라에 있는 유다인 곧 모르드개의 민족을 다 멸하고자 하더라",
+        "모르드개만 죽이는 것으로는 충분치 않다고 생각하여"
     ],
     "locations": [
       {
@@ -146818,7 +147622,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-3-7",
     "title": "부르 제비로 정한 날",
     "aliases": [
-      "아하수에로 왕 제십이년 첫째 달 곧 니산월에 무리가 하만 앞에서 날과 달에 대하여 부르 곧 제비를 뽑아 열두째 달 곧 아달월을 얻은지라"
+      "아하수에로 왕 제십이년 첫째 달 곧 니산월에 무리가 하만 앞에서 날과 달에 대하여 부르 곧 제비를 뽑아 열두째 달 곧 아달월을 얻은지라",
+        "그리고 그 날을 열두째 달인 아달 월로 정했습니다"
     ],
     "locations": [
       {
@@ -146848,7 +147653,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-3-9",
     "title": "하만의 제안: 은 만 달란트",
     "aliases": [
-      "왕이 옳게 여기시거든 조서를 내려 그들을 진멸하소서 내가 은 일만 달란트를 왕의 일을 맡은 자의 손에 맡겨 왕의 금고에 드리리이다"
+      "왕이 옳게 여기시거든 조서를 내려 그들을 진멸하소서 내가 은 일만 달란트를 왕의 일을 맡은 자의 손에 맡겨 왕의 금고에 드리리이다",
+        "은 만 달란트를 주어, 왕의 금고에 넣도록 하겠습니다"
     ],
     "locations": [
       {
@@ -146877,7 +147683,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-3-13",
     "title": "열두째 달 십삼일의 멸절 조서",
     "aliases": [
-      "열두째 달 곧 아달월 십삼일 하루 동안에 모든 유다인을 젊은이 늙은이 어린이 여인들을 막론하고 죽이고"
+      "열두째 달 곧 아달월 십삼일 하루 동안에 모든 유다인을 젊은이 늙은이 어린이 여인들을 막론하고 죽이고",
+        "아달 월 십삼 일에 유다인을"
     ],
     "locations": [
       {
@@ -146906,7 +147713,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-4-1",
     "title": "모르드개의 통곡",
     "aliases": [
-      "모르드개가 이 모든 일을 알고 자기의 옷을 찢고 굵은 베 옷을 입고 재를 뒤집어쓰고 성중에 나가서 대성 통곡하며"
+      "모르드개가 이 모든 일을 알고 자기의 옷을 찢고 굵은 베 옷을 입고 재를 뒤집어쓰고 성중에 나가서 대성 통곡하며",
+        "재를 뒤집어쓴 채 성 안으로 들어가 큰 소리로 슬피 울었습니다"
     ],
     "locations": [
       {
@@ -146935,7 +147743,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-4-3",
     "title": "각 지방 유다인의 애통",
     "aliases": [
-      "왕의 명령과 조서가 각 지방에 이르매 유다인이 크게 애통하여 금식하며 울며 부르짖고"
+      "왕의 명령과 조서가 각 지방에 이르매 유다인이 크게 애통하여 금식하며 울며 부르짖고",
+        "유다인들은 크게 슬퍼하고 금식하며 통곡했습니다"
     ],
     "locations": [
       {
@@ -146964,7 +147773,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-4-11",
     "title": "부르지 않으면 죽는 왕의 법",
     "aliases": [
-      "부름을 받지 아니하고 안뜰에 들어가서 왕에게 나가면 오직 죽이는 법이요"
+      "부름을 받지 아니하고 안뜰에 들어가서 왕에게 나가면 오직 죽이는 법이요",
+        "왕이 부르시지 않으면 안뜰로 들어갈 수 없습니다"
     ],
     "locations": [
       {
@@ -146993,7 +147803,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-4-14",
     "title": "이 때를 위함일지도 모른다는 권면",
     "aliases": [
-      "네가 왕후의 자리를 얻은 것이 이 때를 위함이 아닌지 누가 알겠느냐"
+      "네가 왕후의 자리를 얻은 것이 이 때를 위함이 아닌지 누가 알겠느냐",
+        "바로 이런 때를 위한 것인지 누가 압니까"
     ],
     "locations": [
       {
@@ -147022,7 +147833,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-4-16",
     "title": "에스더의 삼 일 금식 요청",
     "aliases": [
-      "나를 위하여 금식하되 밤낮 삼 일을 먹지도 말고 마시지도 마소서"
+      "나를 위하여 금식하되 밤낮 삼 일을 먹지도 말고 마시지도 마소서",
+        "밤낮으로 삼 일 동안 먹지 말고, 마시지도 말게 하십시오"
     ],
     "locations": [
       {
@@ -147051,7 +147863,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-5-1",
     "title": "삼 일째 왕 앞에 선 에스더",
     "aliases": [
-      "제삼일에 에스더가 왕후의 예복을 입고 왕궁 안 뜰 곧 어전 맞은편에 서니"
+      "제삼일에 에스더가 왕후의 예복을 입고 왕궁 안 뜰 곧 어전 맞은편에 서니",
+        "왕비의 옷을 입고 왕의 방이 마주 보이는 왕궁 안뜰에 섰습니다"
     ],
     "locations": [
       {
@@ -147080,7 +147893,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-5-2",
     "title": "왕이 내민 금 규",
     "aliases": [
-      "손에 잡았던 금 규를 그에게 내미니"
+      "손에 잡았던 금 규를 그에게 내미니",
+        "그러자 에스더가 가까이 다가가 금홀 끝에 손을 대었습니다"
     ],
     "locations": [
       {
@@ -147109,7 +147923,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-5-6",
     "title": "나라의 절반이라도 들어주겠다는 왕",
     "aliases": [
-      "나라의 절반이라 할지라도 시행하겠노라"
+      "나라의 절반이라 할지라도 시행하겠노라",
+        "내 나라의 절반이라도 주겠소"
     ],
     "locations": [
       {
@@ -147138,7 +147953,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-5-9",
     "title": "모르드개를 보고 노한 하만",
     "aliases": [
-      "모르드개가 대궐 문에 있어 일어나지도 아니하고 몸을 움직이지도 아니하는 것을 보고 매우 노하나"
+      "모르드개가 대궐 문에 있어 일어나지도 아니하고 몸을 움직이지도 아니하는 것을 보고 매우 노하나",
+        "모르드개는 여전히 일어나지도 않고, 자기를 두려워하지도 않았습니다"
     ],
     "locations": [
       {
@@ -147167,7 +147983,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-5-14",
     "title": "오십 규빗 나무를 세움",
     "aliases": [
-      "높이가 오십 규빗 되는 나무를 세우고 내일 왕에게 모르드개를 그 나무에 매달기를 구하고"
+      "높이가 오십 규빗 되는 나무를 세우고 내일 왕에게 모르드개를 그 나무에 매달기를 구하고",
+        "오십 규빗 되는 장대를 세우고"
     ],
     "locations": [
       {
@@ -147200,7 +148017,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-6-1",
     "title": "왕의 불면과 궁중 일기",
     "aliases": [
-      "왕이 잠이 오지 아니하므로 명령하여 역대 일기를 가져다가"
+      "왕이 잠이 오지 아니하므로 명령하여 역대 일기를 가져다가",
+        "왕궁 일지를 가져오게 하여"
     ],
     "locations": [
       {
@@ -147229,7 +148047,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-6-3",
     "title": "모르드개에게 상이 없었다는 대답",
     "aliases": [
-      "측근 신하들이 대답하되 아무것도 베풀지 아니하였나이다"
+      "측근 신하들이 대답하되 아무것도 베풀지 아니하였나이다",
+        "아무것도 주지 않았습니다"
     ],
     "locations": [
       {
@@ -147258,7 +148077,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-6-6",
     "title": "스스로 높이는 하만",
     "aliases": [
-      "왕이 존귀하게 하기를 원하시는 자는 나 외에 누구리요"
+      "왕이 존귀하게 하기를 원하시는 자는 나 외에 누구리요",
+        "왕이 높여 주고 싶은 사람이 나 말고 또 누가 있을까"
     ],
     "locations": [
       {
@@ -147287,7 +148107,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-6-10",
     "title": "하만의 제안을 모르드개에게 적용하라는 명령",
     "aliases": [
-      "너는 네 말대로 속히 왕복과 말을 가져다가 대궐 문에 앉은 유다 사람 모르드개에게 행하되"
+      "너는 네 말대로 속히 왕복과 말을 가져다가 대궐 문에 앉은 유다 사람 모르드개에게 행하되",
+        "그대가 말한 것에서 하나도 빠뜨리지 말고 그대로 하시오"
     ],
     "locations": [
       {
@@ -147316,7 +148137,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-6-13",
     "title": "아내와 친구들의 경고",
     "aliases": [
-      "당신이 그 앞에서 굴욕을 당하기 시작하였으니 능히 그를 이기지 못하고 분명히 그 앞에 엎드러지리이다"
+      "당신이 그 앞에서 굴욕을 당하기 시작하였으니 능히 그를 이기지 못하고 분명히 그 앞에 엎드러지리이다",
+        "유다인인 모르드개 앞에서 무릎을 꿇었으니, 이제 그에게 맞서 이길 수 없소"
     ],
     "locations": [
       {
@@ -147345,7 +148167,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-7-2",
     "title": "둘째 날 잔치의 질문",
     "aliases": [
-      "왕이 이 둘째 날 잔치에 술을 마실 때에 다시 에스더에게 물어"
+      "왕이 이 둘째 날 잔치에 술을 마실 때에 다시 에스더에게 물어",
+        "둘째 날에도 왕은 하만과 더불어 술을 마시다가"
     ],
     "locations": [
       {
@@ -147374,7 +148197,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-7-4",
     "title": "에스더의 청원: 생명과 민족",
     "aliases": [
-      "나와 내 민족이 팔려서 죽임과 도륙함과 진멸함을 당하게 되었나이다"
+      "나와 내 민족이 팔려서 죽임과 도륙함과 진멸함을 당하게 되었나이다",
+        "제 민족이나 저나 이제는 다 죽고 망하여, 완전히 없어지게 되었습니다"
     ],
     "locations": [
       {
@@ -147403,7 +148227,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-7-6",
     "title": "대적은 악한 하만",
     "aliases": [
-      "대적과 원수는 이 악한 하만이니이다"
+      "대적과 원수는 이 악한 하만이니이다",
+        "우리의 적, 우리의 원수는 바로 이 악한 하만입니다"
     ],
     "locations": [
       {
@@ -147432,7 +148257,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-7-8",
     "title": "왕이 본 하만과 에스더의 걸상",
     "aliases": [
-      "하만이 에스더가 앉은 걸상 위에 엎드렸거늘"
+      "하만이 에스더가 앉은 걸상 위에 엎드렸거늘",
+        "하만이 에스더가 기대는 침상에 엎드려 있었습니다"
     ],
     "locations": [
       {
@@ -147461,7 +148287,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-7-10",
     "title": "하만이 세운 나무에 달린 하만",
     "aliases": [
-      "모르드개를 매달려고 한 나무에 하만을 다니 왕의 노가 그치니라"
+      "모르드개를 매달려고 한 나무에 하만을 다니 왕의 노가 그치니라",
+        "하만이 세워 놓은 바로 그 장대에 하만을 매달았습니다"
     ],
     "locations": [
       {
@@ -147490,7 +148317,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-8-2",
     "title": "하만의 반지를 모르드개에게 줌",
     "aliases": [
-      "왕이 하만에게서 거둔 반지를 빼어 모르드개에게 준지라"
+      "왕이 하만에게서 거둔 반지를 빼어 모르드개에게 준지라",
+        "자기의 인장 반지를 빼서 모르드개에게 주었습니다"
     ],
     "locations": [
       {
@@ -147519,7 +148347,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-8-5",
     "title": "하만이 쓴 조서의 철회 청원",
     "aliases": [
-      "아각 사람 함므다다의 아들 하만이 왕의 각 지방에 있는 유다인을 진멸하려고 꾀하고 쓴 조서를 철회하소서"
+      "아각 사람 함므다다의 아들 하만이 왕의 각 지방에 있는 유다인을 진멸하려고 꾀하고 쓴 조서를 철회하소서",
+        "하만이 쓴 조서를 취소해 주십시오"
     ],
     "locations": [
       {
@@ -147549,7 +148378,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-8-8",
     "title": "철회할 수 없는 왕의 조서",
     "aliases": [
-      "왕의 이름을 쓰고 왕의 반지로 인친 조서는 누구든지 철회할 수 없음이니라"
+      "왕의 이름을 쓰고 왕의 반지로 인친 조서는 누구든지 철회할 수 없음이니라",
+        "나의 인장 반지로 봉인된 조서는 아무도 취소할 수 없소"
     ],
     "locations": [
       {
@@ -147578,7 +148408,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-8-11",
     "title": "새 조서: 유다인의 자기 보호",
     "aliases": [
-      "그들이 함께 모여 스스로 생명을 보호하여"
+      "그들이 함께 모여 스스로 생명을 보호하여",
+        "각 성에 사는 유다인들이 함께 모여서 목숨을 지킬 수 있도록 한 것이었습니다"
     ],
     "locations": [
       {
@@ -147607,7 +148438,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-8-17",
     "title": "유다인이 되는 본토 백성",
     "aliases": [
-      "본토 백성이 유다인을 두려워하여 유다인 되는 자가 많더라"
+      "본토 백성이 유다인을 두려워하여 유다인 되는 자가 많더라",
+        "그 땅에 사는 많은 사람이 유다인을 두려워하여 스스로 유다인이 되었습니다"
     ],
     "locations": [
       {
@@ -147636,7 +148468,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-9-1",
     "title": "아달월 십삼일의 뒤바뀐 날",
     "aliases": [
-      "아달월 곧 열두째 달 십삼일은 왕의 어명을 시행하게 된 날이라"
+      "아달월 곧 열두째 달 십삼일은 왕의 어명을 시행하게 된 날이라",
+        "이제는 유다인이 그 원수들을 물리칠 수 있는 날로 바뀌었습니다"
     ],
     "locations": [
       {
@@ -147665,7 +148498,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-9-5",
     "title": "대적을 쳐 도륙함",
     "aliases": [
-      "유다인이 칼로 그 모든 대적들을 쳐서 도륙하고 진멸하고 자기를 미워하는 자에게 마음대로 행하고"
+      "유다인이 칼로 그 모든 대적들을 쳐서 도륙하고 진멸하고 자기를 미워하는 자에게 마음대로 행하고",
+        "유다인들은 모든 원수를 칼로 쳐죽여 없앴습니다"
     ],
     "locations": [
       {
@@ -147694,7 +148528,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-9-10",
     "title": "재산에 손대지 않음",
     "aliases": [
-      "그들의 재산에는 손을 대지 아니하였더라"
+      "그들의 재산에는 손을 대지 아니하였더라",
+        "그러나 유다인은 그들의 재산에는 손을 대지 않았습니다"
     ],
     "locations": [
       {
@@ -147723,7 +148558,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-9-13",
     "title": "하만 열 아들의 시체를 나무에 매닮",
     "aliases": [
-      "하만의 열 아들의 시체를 나무에 매달게 하소서"
+      "하만의 열 아들의 시체를 나무에 매달게 하소서",
+        "하만의 열 아들의 주검을 장대에 매달아 주십시오"
     ],
     "locations": [
       {
@@ -147753,7 +148589,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-9-21",
     "title": "해마다 지킬 두 날의 규례",
     "aliases": [
-      "한 규례를 세워 해마다 아달월 십사일과 십오일을 지키라"
+      "한 규례를 세워 해마다 아달월 십사일과 십오일을 지키라",
+        "해마다 아달 월 십사 일과 십오 일을 명절로 지키게 했습니다"
     ],
     "locations": [
       {
@@ -147782,7 +148619,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-10-1",
     "title": "본토와 바다 섬들의 조공",
     "aliases": [
-      "아하수에로 왕이 그의 본토와 바다 섬들로 하여금 조공을 바치게 하였더라"
+      "아하수에로 왕이 그의 본토와 바다 섬들로 하여금 조공을 바치게 하였더라",
+        "본토뿐만 아니라 바닷가의 성들도 조공을 바치게 했습니다"
     ],
     "locations": [
       {
@@ -147811,7 +148649,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-est-10-3",
     "title": "아하수에로 다음가는 모르드개",
     "aliases": [
-      "유다인 모르드개가 아하수에로 왕의 다음이 되고 유다인 중에 크게 존경받고"
+      "유다인 모르드개가 아하수에로 왕의 다음이 되고 유다인 중에 크게 존경받고",
+        "유다인 모르드개는 아하수에로 왕 다음으로 높은 사람이었습니다"
     ],
     "locations": [
       {
@@ -147844,7 +148683,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-1-1",
     "title": "태초의 말씀",
     "aliases": [
-      "태초에 말씀이 계시니라"
+      "태초에 말씀이 계시니라",
+        "태초에 말씀이 계셨습니다"
     ],
     "locations": [
       {
@@ -147873,7 +148713,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-1-12",
     "title": "하나님의 자녀가 되는 권세",
     "aliases": [
-      "영접하는 자 곧 그 이름을 믿는 자들에게는 하나님의 자녀가 되는 권세를 주셨으니"
+      "영접하는 자 곧 그 이름을 믿는 자들에게는 하나님의 자녀가 되는 권세를 주셨으니",
+        "하나님의 자녀가 되는 자격을 주셨습니다"
     ],
     "locations": [
       {
@@ -147902,7 +148743,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-1-14",
     "title": "말씀이 육신이 되심",
     "aliases": [
-      "말씀이 육신이 되어 우리 가운데 거하시매"
+      "말씀이 육신이 되어 우리 가운데 거하시매",
+        "말씀이 사람이 되셔서, 우리 가운데에서 사셨습니다"
     ],
     "locations": [
       {
@@ -147932,7 +148774,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-1-18",
     "title": "하나님을 나타내신 독생자",
     "aliases": [
-      "본래 하나님을 본 사람이 없으되"
+      "본래 하나님을 본 사람이 없으되",
+        "아버지 곁에 계시던 독생자이신 분이"
     ],
     "locations": [
       {
@@ -147962,7 +148805,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-1-20",
     "title": "요한의 분명한 부인",
     "aliases": [
-      "나는 그리스도가 아니라"
+      "나는 그리스도가 아니라",
+        "나는 그리스도가 아닙니다"
     ],
     "locations": [
       {
@@ -147991,7 +148835,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-1-29",
     "title": "세상 죄를 지고 가는 하나님의 어린양",
     "aliases": [
-      "보라 세상 죄를 지고 가는 하나님의 어린 양이로다"
+      "보라 세상 죄를 지고 가는 하나님의 어린 양이로다",
+        "세상 죄를 지고 가시는 하나님의 어린양이십니다"
     ],
     "locations": [
       {
@@ -148021,7 +148866,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-1-32",
     "title": "성령이 머무신 예수",
     "aliases": [
-      "성령이 비둘기 같이 하늘로부터 내려와서 그의 위에 머물렀더라"
+      "성령이 비둘기 같이 하늘로부터 내려와서 그의 위에 머물렀더라",
+        "성령께서 비둘기처럼 하늘로부터 내려와 그분 위에 머물러 계신 것을"
     ],
     "locations": [
       {
@@ -148050,7 +148896,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-1-51",
     "title": "하늘이 열리고 인자 위의 사자들",
     "aliases": [
-      "하늘이 열리고 하나님의 사자들이 인자 위에 오르락 내리락 하는 것을 보리라"
+      "하늘이 열리고 하나님의 사자들이 인자 위에 오르락 내리락 하는 것을 보리라",
+        "하나님의 천사들이 인자 위에서 오르락내리락하는 것을"
     ],
     "locations": [
       {
@@ -148080,7 +148927,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-2-4",
     "title": "'내 때'라는 말씀",
     "aliases": [
-      "내 때가 아직 이르지 아니하였나이다"
+      "내 때가 아직 이르지 아니하였나이다",
+        "저의 때가 아직 오지 않았습니다"
     ],
     "locations": [
       {
@@ -148109,7 +148957,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-2-9",
     "title": "물을 떠 온 하인들은 알았다",
     "aliases": [
-      "물 떠온 하인들은 알더라"
+      "물 떠온 하인들은 알더라",
+        "물을 가져온 하인들은 알고 있었습니다"
     ],
     "locations": [
       {
@@ -148138,7 +148987,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-2-11",
     "title": "갈릴리 가나의 첫 표적",
     "aliases": [
-      "예수께서 이 첫 표적을 갈릴리 가나에서 행하여 그의 영광을 나타내시매"
+      "예수께서 이 첫 표적을 갈릴리 가나에서 행하여 그의 영광을 나타내시매",
+        "갈릴리 가나에서 행하셨으며"
     ],
     "locations": [
       {
@@ -148167,7 +149017,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-2-16",
     "title": "아버지의 집을 장사하는 집으로",
     "aliases": [
-      "내 아버지의 집으로 장사하는 집을 만들지 말라"
+      "내 아버지의 집으로 장사하는 집을 만들지 말라",
+        "내 아버지의 집을 시장터로 만들지 마라"
     ],
     "locations": [
       {
@@ -148196,7 +149047,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-2-19",
     "title": "이 성전을 헐라",
     "aliases": [
-      "이 성전을 헐라 내가 사흘 동안에 일으키리라"
+      "이 성전을 헐라 내가 사흘 동안에 일으키리라",
+        "이 성전을 허물어라"
     ],
     "locations": [
       {
@@ -148225,7 +149077,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-2-24",
     "title": "사람을 아시는 예수",
     "aliases": [
-      "예수는 그의 몸을 그들에게 의탁하지 아니하셨으니"
+      "예수는 그의 몸을 그들에게 의탁하지 아니하셨으니",
+        "모든 사람을 알고 계셨기 때문에"
     ],
     "locations": [
       {
@@ -148254,7 +149107,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-3-3",
     "title": "거듭나야 볼 수 있는 하나님 나라",
     "aliases": [
-      "사람이 거듭나지 아니하면 하나님의 나라를 볼 수 없느니라"
+      "사람이 거듭나지 아니하면 하나님의 나라를 볼 수 없느니라",
+        "누구든지 다시 태어나지 않으면, 하나님의 나라를 볼 수 없다"
     ],
     "locations": [
       {
@@ -148283,7 +149137,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-3-5",
     "title": "물과 성령으로 남",
     "aliases": [
-      "사람이 물과 성령으로 나지 아니하면 하나님의 나라에 들어갈 수 없느니라"
+      "사람이 물과 성령으로 나지 아니하면 하나님의 나라에 들어갈 수 없느니라",
+        "물과 성령으로 태어나지 않는다면"
     ],
     "locations": [
       {
@@ -148312,7 +149167,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-3-8",
     "title": "바람처럼 부는 성령",
     "aliases": [
-      "바람이 임의로 불매"
+      "바람이 임의로 불매",
+        "바람은 제 맘대로 부는 법이다"
     ],
     "locations": [
       {
@@ -148341,7 +149197,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-3-14",
     "title": "들려야 하는 인자",
     "aliases": [
-      "모세가 광야에서 뱀을 든 것 같이 인자도 들려야 하리니"
+      "모세가 광야에서 뱀을 든 것 같이 인자도 들려야 하리니",
+        "모세가 광야에서 뱀을 높이 들었던 것처럼"
     ],
     "locations": [
       {
@@ -148370,7 +149227,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-3-16",
     "title": "세상을 이처럼 사랑하신 하나님",
     "aliases": [
-      "하나님이 세상을 이처럼 사랑하사 독생자를 주셨으니"
+      "하나님이 세상을 이처럼 사랑하사 독생자를 주셨으니",
+        "이와 같이 하나님께서는 세상을 사랑하여 독생자를 주셨다"
     ],
     "locations": [
       {
@@ -148399,7 +149257,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-3-19",
     "title": "빛보다 어둠을 더 사랑함",
     "aliases": [
-      "그 정죄는 이것이니"
+      "그 정죄는 이것이니",
+        "빛보다는 어두움을 더 좋아하였다"
     ],
     "locations": [
       {
@@ -148428,7 +149287,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-3-30",
     "title": "흥하고 쇠하는 두 사람",
     "aliases": [
-      "그는 흥하여야 하겠고 나는 쇠하여야 하리라"
+      "그는 흥하여야 하겠고 나는 쇠하여야 하리라",
+        "그분은 점점 더 위대해질 것이고"
     ],
     "locations": [
       {
@@ -148457,7 +149317,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-4-10",
     "title": "하나님의 선물과 생수",
     "aliases": [
-      "하나님의 선물과 또 네게 물 좀 달라 하는 이가 누구인 줄 알았더라면"
+      "하나님의 선물과 또 네게 물 좀 달라 하는 이가 누구인 줄 알았더라면",
+        "당신이 하나님께서 주시는 선물이 무엇인지"
     ],
     "locations": [
       {
@@ -148486,7 +149347,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-4-24",
     "title": "영과 진리로 드리는 예배",
     "aliases": [
-      "하나님은 영이시니 예배하는 자가 영과 진리로 예배할지니라"
+      "하나님은 영이시니 예배하는 자가 영과 진리로 예배할지니라",
+        "영과 진리로 예배해야만 하오"
     ],
     "locations": [
       {
@@ -148515,7 +149377,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-4-26",
     "title": "'내가 그라'",
     "aliases": [
-      "네게 말하는 내가 그라"
+      "네게 말하는 내가 그라",
+        "지금 당신과 이야기하고 있는 내가 바로 그 메시아요"
     ],
     "locations": [
       {
@@ -148544,7 +149407,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-4-34",
     "title": "아버지 뜻이 예수님의 양식",
     "aliases": [
-      "나의 양식은 나를 보내신 이의 뜻을 행하며 그의 일을 온전히 이루는 이것이니라"
+      "나의 양식은 나를 보내신 이의 뜻을 행하며 그의 일을 온전히 이루는 이것이니라",
+        "나를 보내신 분의 뜻을 행하고, 그분의 일을 완수하는 것이다"
     ],
     "locations": [
       {
@@ -148574,7 +149438,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-4-35",
     "title": "밭이 희어져 추수할 때",
     "aliases": [
-      "너희 눈을 들어 밭을 보라"
+      "너희 눈을 들어 밭을 보라",
+        "이미 곡식이 익어 추수할 때가 되었다"
     ],
     "locations": [
       {
@@ -148603,7 +149468,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-4-39",
     "title": "여자의 증언으로 믿은 사마리아인",
     "aliases": [
-      "그 동네 중에 많은 사마리아인이 예수를 믿는지라"
+      "그 동네 중에 많은 사마리아인이 예수를 믿는지라",
+        "그분은 내 과거의 모든 일들을 나에게 말씀해 주셨어요"
     ],
     "locations": [
       {
@@ -148632,7 +149498,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-4-50",
     "title": "말씀으로 살아난 아들",
     "aliases": [
-      "가라 네 아들이 살아 있다"
+      "가라 네 아들이 살아 있다",
+        "당신 아들은 살 것이오"
     ],
     "locations": [
       {
@@ -148662,7 +149529,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-5-6",
     "title": "낫고자 하느냐",
     "aliases": [
-      "네가 낫고자 하느냐"
+      "네가 낫고자 하느냐",
+        "낫기를 원하시오?"
     ],
     "locations": [
       {
@@ -148691,7 +149559,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-5-8",
     "title": "일어나 자리를 들고 걸어가라",
     "aliases": [
-      "일어나 네 자리를 들고 걸어가라 하시니"
+      "일어나 네 자리를 들고 걸어가라 하시니",
+        "일어나서 당신의 침상을 들고 걸어가시오"
     ],
     "locations": [
       {
@@ -148720,7 +149589,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-5-14",
     "title": "다시는 죄를 짓지 말라",
     "aliases": [
-      "다시는 죄를 범하지 말라"
+      "다시는 죄를 범하지 말라",
+        "다시는 죄를 짓지 마시오"
     ],
     "locations": [
       {
@@ -148749,7 +149619,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-5-17",
     "title": "내 아버지께서 일하시니 나도 일한다",
     "aliases": [
-      "내 아버지께서 이제까지 일하시니 나도 일한다"
+      "내 아버지께서 이제까지 일하시니 나도 일한다",
+        "내 아버지께서 지금까지 항상 일하시니, 나도 일한다"
     ],
     "locations": [
       {
@@ -148778,7 +149649,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-5-19",
     "title": "아들은 아버지께서 하시는 일을 본다",
     "aliases": [
-      "아들이 아버지께서 하시는 일을 보지 않고는 아무 것도 스스로 할 수 없나니"
+      "아들이 아버지께서 하시는 일을 보지 않고는 아무 것도 스스로 할 수 없나니",
+        "아들은 다만 아버지께서 하시는 일을 보고서야"
     ],
     "locations": [
       {
@@ -148807,7 +149679,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-5-24",
     "title": "영생을 얻고 사망에서 옮긴 사람",
     "aliases": [
-      "내 말을 듣고 또 나 보내신 이를 믿는 자는 영생을 얻었고"
+      "내 말을 듣고 또 나 보내신 이를 믿는 자는 영생을 얻었고",
+        "사망에서 생명으로 옮겨졌다"
     ],
     "locations": [
       {
@@ -148836,7 +149709,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-5-39",
     "title": "성경이 나를 증언한다",
     "aliases": [
-      "이 성경이 곧 내게 대하여 증언하는 것이니라"
+      "이 성경이 곧 내게 대하여 증언하는 것이니라",
+        "바로 그 성경이 나를 증언하는 것이다"
     ],
     "locations": [
       {
@@ -148870,7 +149744,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-6-5",
     "title": "빌립을 시험하신 질문",
     "aliases": [
-      "우리가 어디서 떡을 사서 이 사람들을 먹이겠느냐"
+      "우리가 어디서 떡을 사서 이 사람들을 먹이겠느냐",
+        "이 사람들이 먹을 빵을 어디서 살 수 있겠느냐"
     ],
     "locations": [
       {
@@ -148899,7 +149774,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-6-15",
     "title": "억지로 임금 삼으려는 무리",
     "aliases": [
-      "그들이 와서 자기를 억지로 붙들어 임금으로 삼으려는 줄 아시고"
+      "그들이 와서 자기를 억지로 붙들어 임금으로 삼으려는 줄 아시고",
+        "그들의 왕으로 세우려 한다는 것을"
     ],
     "locations": [
       {
@@ -148928,7 +149804,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-6-35",
     "title": "나는 생명의 떡이다",
     "aliases": [
-      "나는 생명의 떡이니 내게 오는 자는 결코 주리지 아니할 터이요"
+      "나는 생명의 떡이니 내게 오는 자는 결코 주리지 아니할 터이요",
+        "나는 생명의 빵이다"
     ],
     "locations": [
       {
@@ -148960,7 +149837,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-6-37",
     "title": "아버지께서 주신 자는 다 온다",
     "aliases": [
-      "아버지께서 내게 주시는 자는 다 내게로 올 것이요"
+      "아버지께서 내게 주시는 자는 다 내게로 올 것이요",
+        "아버지께서 나에게 주신 사람은 다 내게로 올 것이며"
     ],
     "locations": [
       {
@@ -148989,7 +149867,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-6-51",
     "title": "하늘에서 내려온 살아 있는 떡",
     "aliases": [
-      "나는 하늘에서 내려온 살아 있는 떡이니"
+      "나는 하늘에서 내려온 살아 있는 떡이니",
+        "나는 하늘에서 내려온, 생명을 주는 빵이다"
     ],
     "locations": [
       {
@@ -149020,7 +149899,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-6-63",
     "title": "살리는 것은 영이다",
     "aliases": [
-      "살리는 것은 영이니 육은 무익하니라"
+      "살리는 것은 영이니 육은 무익하니라",
+        "생명을 주시는 분은 성령이시다"
     ],
     "locations": [
       {
@@ -149050,7 +149930,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-6-68",
     "title": "영생의 말씀이 계신 곳",
     "aliases": [
-      "주여 영생의 말씀이 주께 있사오니"
+      "주여 영생의 말씀이 주께 있사오니",
+        "주님께 영생의 말씀이 있는데"
     ],
     "locations": [
       {
@@ -149080,7 +149961,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-7-6",
     "title": "때가 다른 형제들과 예수",
     "aliases": [
-      "내 때는 아직 이르지 아니하였거니와 너희 때는 늘 준비되어 있느니라"
+      "내 때는 아직 이르지 아니하였거니와 너희 때는 늘 준비되어 있느니라",
+        "내 때는 아직 오지 않았다"
     ],
     "locations": [
       {
@@ -149110,7 +149992,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-7-7",
     "title": "세상의 미움과 증언",
     "aliases": [
-      "세상이 너희를 미워하지 아니하되 나를 미워하나니"
+      "세상이 너희를 미워하지 아니하되 나를 미워하나니",
+        "세상이 행하는 일들에 대하여 악하다고 증언하기 때문이다"
     ],
     "locations": [
       {
@@ -149139,7 +150022,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-7-17",
     "title": "뜻을 행하면 교훈을 안다",
     "aliases": [
-      "사람이 하나님의 뜻을 행하려 하면"
+      "사람이 하나님의 뜻을 행하려 하면",
+        "하나님의 뜻을 행하기를 원하는 사람이라면"
     ],
     "locations": [
       {
@@ -149168,7 +150052,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-7-24",
     "title": "겉모양으로 판단하지 말라",
     "aliases": [
-      "외모로 판단하지 말고 공의롭게 판단하라"
+      "외모로 판단하지 말고 공의롭게 판단하라",
+        "겉모양만 보고 판단하지 말고"
     ],
     "locations": [
       {
@@ -149197,7 +150082,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-7-37",
     "title": "목마른 자는 와서 마시라",
     "aliases": [
-      "누구든지 목마르거든 내게로 와서 마시라"
+      "누구든지 목마르거든 내게로 와서 마시라",
+        "누구든지 목마르거든 내게로 와서 마셔라"
     ],
     "locations": [
       {
@@ -149227,7 +150113,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-7-42",
     "title": "베들레헴과 그리스도",
     "aliases": [
-      "그리스도는 다윗의 씨로 또 다윗이 살던 마을 베들레헴에서 나오리라"
+      "그리스도는 다윗의 씨로 또 다윗이 살던 마을 베들레헴에서 나오리라",
+        "다윗이 살던 마을 베들레헴에서 태어나실 것이라고"
     ],
     "locations": [
       {
@@ -149257,7 +150144,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-7-51",
     "title": "율법은 먼저 들어 보고 심판하는가",
     "aliases": [
-      "우리 율법은 사람의 말을 듣고 그 행한 것을 알기 전에 심판하느냐"
+      "우리 율법은 사람의 말을 듣고 그 행한 것을 알기 전에 심판하느냐",
+        "먼저 그 사람의 말을 들어 보지 않거나"
     ],
     "locations": [
       {
@@ -149286,7 +150174,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-8-7",
     "title": "죄 없는 자가 먼저 돌을 던지라",
     "aliases": [
-      "너희 중에 죄 없는 자가 먼저 돌로 치라"
+      "너희 중에 죄 없는 자가 먼저 돌로 치라",
+        "죄 지은 적이 없는 사람이 먼저 이 여인에게 돌을 던져라"
     ],
     "locations": [
       {
@@ -149315,7 +150204,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-8-12",
     "title": "나는 세상의 빛이다",
     "aliases": [
-      "나는 세상의 빛이니 나를 따르는 자는 어둠에 다니지 아니하고 생명의 빛을 얻으리라"
+      "나는 세상의 빛이니 나를 따르는 자는 어둠에 다니지 아니하고 생명의 빛을 얻으리라",
+        "나는 세상의 빛이다"
     ],
     "locations": [
       {
@@ -149345,7 +150235,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-8-24",
     "title": "'내가 그'를 믿지 않으면",
     "aliases": [
-      "너희가 만일 내가 그인 줄 믿지 아니하면 너희 죄 가운데서 죽으리라"
+      "너희가 만일 내가 그인 줄 믿지 아니하면 너희 죄 가운데서 죽으리라",
+        "너희 죄 가운데서 죽을 것이라고 말했던 것이다"
     ],
     "locations": [
       {
@@ -149374,7 +150265,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-8-32",
     "title": "진리가 자유롭게 한다",
     "aliases": [
-      "진리를 알지니 진리가 너희를 자유롭게 하리라"
+      "진리를 알지니 진리가 너희를 자유롭게 하리라",
+        "진리가 너희를 자유롭게 할 것이다"
     ],
     "locations": [
       {
@@ -149403,7 +150295,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-8-44",
     "title": "마귀에게서 났다는 말씀",
     "aliases": [
-      "너희는 너희 아비 마귀에게서 났으니"
+      "너희는 너희 아비 마귀에게서 났으니",
+        "마귀는 처음부터 살인자였다"
     ],
     "locations": [
       {
@@ -149432,7 +150325,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-8-58",
     "title": "아브라함이 나기 전부터 있었다",
     "aliases": [
-      "아브라함이 나기 전부터 내가 있느니라"
+      "아브라함이 나기 전부터 내가 있느니라",
+        "아브라함이 태어나기 전에도 나는 존재한다"
     ],
     "locations": [
       {
@@ -149462,7 +150356,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-9-3",
     "title": "맹인이 된 것은 누구의 죄인가",
     "aliases": [
-      "이 사람이나 그 부모의 죄로 인한 것이 아니라"
+      "이 사람이나 그 부모의 죄로 인한 것이 아니라",
+        "이 사람이나 그의 부모가 죄를 지어 이렇게 된 것이 아니다"
     ],
     "locations": [
       {
@@ -149491,7 +150386,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-9-7",
     "title": "실로암 못에 가서 씻으라",
     "aliases": [
-      "실로암 못에 가서 씻으라"
+      "실로암 못에 가서 씻으라",
+        "실로암 샘에 가서 씻어라"
     ],
     "locations": [
       {
@@ -149520,7 +150416,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-9-25",
     "title": "한 가지 아는 것",
     "aliases": [
-      "내가 맹인으로 있다가 지금 보는 그것이니이다"
+      "내가 맹인으로 있다가 지금 보는 그것이니이다",
+        "다만 제가 아는 한 가지는"
     ],
     "locations": [
       {
@@ -149550,7 +150447,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-9-34",
     "title": "쫓겨난 사람",
     "aliases": [
-      "네가 온전히 죄 가운데서 나서 우리를 가르치느냐"
+      "네가 온전히 죄 가운데서 나서 우리를 가르치느냐",
+        "그 사람을 쫓아 내 버렸습니다"
     ],
     "locations": [
       {
@@ -149579,7 +150477,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-9-35",
     "title": "인자를 믿느냐",
     "aliases": [
-      "네가 인자를 믿느냐"
+      "네가 인자를 믿느냐",
+        "너는 인자를 믿느냐?"
     ],
     "locations": [
       {
@@ -149609,7 +150508,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-9-39",
     "title": "심판하러 오셨다",
     "aliases": [
-      "내가 심판하러 이 세상에 왔으니"
+      "내가 심판하러 이 세상에 왔으니",
+        "나는 심판하러 이 세상에 왔다"
     ],
     "locations": [
       {
@@ -149638,7 +150538,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-10-3",
     "title": "목자가 양을 이름으로 부르다",
     "aliases": [
-      "그가 자기 양의 이름을 각각 불러 인도하여 내느니라"
+      "그가 자기 양의 이름을 각각 불러 인도하여 내느니라",
+        "양들의 이름을 부르며 그들을 밖으로 인도한다"
     ],
     "locations": [
       {
@@ -149667,7 +150568,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-10-7",
     "title": "나는 양의 문이다",
     "aliases": [
-      "나는 양의 문이라"
+      "나는 양의 문이라",
+        "나는 양들의 문이다"
     ],
     "locations": [
       {
@@ -149697,7 +150599,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-10-11",
     "title": "선한 목자는 목숨을 버린다",
     "aliases": [
-      "나는 선한 목자라 선한 목자는 양들을 위하여 목숨을 버리거니와"
+      "나는 선한 목자라 선한 목자는 양들을 위하여 목숨을 버리거니와",
+        "선한 목자는 양을 위하여 자기 목숨을 내놓는다"
     ],
     "locations": [
       {
@@ -149727,7 +150630,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-10-14",
     "title": "양과 목자가 서로 아는 관계",
     "aliases": [
-      "나는 내 양을 알고 양도 나를 아는 것이"
+      "나는 내 양을 알고 양도 나를 아는 것이",
+        "나도 내 양을 알고, 내 양도 나를 알아본다"
     ],
     "locations": [
       {
@@ -149756,7 +150660,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-10-27",
     "title": "양은 음성을 듣고 따른다",
     "aliases": [
-      "내 양은 내 음성을 들으며 나는 그들을 알며 그들은 나를 따르느니라"
+      "내 양은 내 음성을 들으며 나는 그들을 알며 그들은 나를 따르느니라",
+        "내 양은 나의 음성을 듣고"
     ],
     "locations": [
       {
@@ -149785,7 +150690,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-10-30",
     "title": "나와 아버지는 하나",
     "aliases": [
-      "나와 아버지는 하나이니라"
+      "나와 아버지는 하나이니라",
+        "아버지와 나는 하나다"
     ],
     "locations": [
       {
@@ -149820,7 +150726,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-11-4",
     "title": "죽을 병이 아닌 병",
     "aliases": [
-      "이 병은 죽을 병이 아니라 하나님의 영광을 위함이요"
+      "이 병은 죽을 병이 아니라 하나님의 영광을 위함이요",
+        "죽게 될 병이 아니라 하나님의 영광을 위한 것이다"
     ],
     "locations": [
       {
@@ -149850,7 +150757,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-11-9",
     "title": "낮과 밤의 빛",
     "aliases": [
-      "낮이 열두 시간이 아니냐"
+      "낮이 열두 시간이 아니냐",
+        "이 세상의 빛을 보기 때문에 넘어지지 않는다"
     ],
     "locations": [
       {
@@ -149880,7 +150788,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-11-25",
     "title": "나는 부활이요 생명이다",
     "aliases": [
-      "나는 부활이요 생명이니 나를 믿는 자는 죽어도 살겠고"
+      "나는 부활이요 생명이니 나를 믿는 자는 죽어도 살겠고",
+        "나는 부활이요 생명이다"
     ],
     "locations": [
       {
@@ -149909,7 +150818,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-11-35",
     "title": "예수께서 우시다",
     "aliases": [
-      "예수께서 눈물을 흘리시더라"
+      "예수께서 눈물을 흘리시더라",
+        "눈물을 흘리셨습니다"
     ],
     "locations": [
       {
@@ -149938,7 +150848,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-11-43",
     "title": "나사로야 나오라",
     "aliases": [
-      "나사로야 나오라"
+      "나사로야 나오라",
+        "나사로야, 나오너라!"
     ],
     "locations": [
       {
@@ -149967,7 +150878,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-11-50",
     "title": "한 사람이 백성을 위하여 죽는 것",
     "aliases": [
-      "한 사람이 백성을 위하여 죽어서 온 민족이 망하지 않게 되는 것이 너희에게 유익한 줄을"
+      "한 사람이 백성을 위하여 죽어서 온 민족이 망하지 않게 되는 것이 너희에게 유익한 줄을",
+        "한 사람이 백성을 위하여 죽는 것이 더 낫다"
     ],
     "locations": [
       {
@@ -149996,7 +150908,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-12-3",
     "title": "나드 향유를 부은 마리아",
     "aliases": [
-      "마리아는 지극히 비싼 향유 곧 순전한 나드 한 근을"
+      "마리아는 지극히 비싼 향유 곧 순전한 나드 한 근을",
+        "매우 비싼 나드 향유"
     ],
     "locations": [
       {
@@ -150025,7 +150938,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-12-13",
     "title": "호산나와 이스라엘의 왕",
     "aliases": [
-      "호산나 찬송하리로다 주의 이름으로 오시는 이 곧 이스라엘의 왕이시여"
+      "호산나 찬송하리로다 주의 이름으로 오시는 이 곧 이스라엘의 왕이시여",
+        "호산나! 주님의 이름으로 오시는 자"
     ],
     "locations": [
       {
@@ -150055,7 +150969,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-12-24",
     "title": "떨어져 죽는 밀알",
     "aliases": [
-      "한 알의 밀이 땅에 떨어져 죽지 아니하면 한 알 그대로 있고 죽으면 많은 열매를 맺느니라"
+      "한 알의 밀이 땅에 떨어져 죽지 아니하면 한 알 그대로 있고 죽으면 많은 열매를 맺느니라",
+        "밀알이 땅에 떨어져 죽지 않으면"
     ],
     "locations": [
       {
@@ -150084,7 +150999,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-12-27",
     "title": "괴로운 마음과 이 때",
     "aliases": [
-      "지금 내 마음이 괴로우니 무슨 말을 하리요"
+      "지금 내 마음이 괴로우니 무슨 말을 하리요",
+        "지금 내 마음이 무척 괴로우니"
     ],
     "locations": [
       {
@@ -150113,7 +151029,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-12-32",
     "title": "땅에서 들리면 모두를 이끈다",
     "aliases": [
-      "내가 땅에서 들리면 모든 사람을 내게로 이끌겠노라"
+      "내가 땅에서 들리면 모든 사람을 내게로 이끌겠노라",
+        "모든 사람을 내게로 이끌 것이다"
     ],
     "locations": [
       {
@@ -150143,7 +151060,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-12-35",
     "title": "빛이 있을 동안 다니라",
     "aliases": [
-      "빛이 있을 동안에 다녀 어둠에 붙잡히지 않게 하라"
+      "빛이 있을 동안에 다녀 어둠에 붙잡히지 않게 하라",
+        "빛이 있을 때에 다니면"
     ],
     "locations": [
       {
@@ -150173,7 +151091,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-12-44",
     "title": "나를 믿는 것은 보내신 이를 믿는 것",
     "aliases": [
-      "나를 믿는 자는 나를 믿는 것이 아니요 나를 보내신 이를 믿는 것이며"
+      "나를 믿는 자는 나를 믿는 것이 아니요 나를 보내신 이를 믿는 것이며",
+        "나를 보내신 분을 믿는 것이다"
     ],
     "locations": [
       {
@@ -150203,7 +151122,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-13-1",
     "title": "끝까지 사랑하시니라",
     "aliases": [
-      "세상에 있는 자기 사람들을 사랑하시되 끝까지 사랑하시니라"
+      "세상에 있는 자기 사람들을 사랑하시되 끝까지 사랑하시니라",
+        "끝까지 사랑하셨습니다"
     ],
     "locations": [
       {
@@ -150232,7 +151152,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-13-5",
     "title": "제자들의 발을 씻기시다",
     "aliases": [
-      "대야에 물을 떠서 제자들의 발을 씻으시고 그 두르신 수건으로 닦기를 시작하여"
+      "대야에 물을 떠서 제자들의 발을 씻으시고 그 두르신 수건으로 닦기를 시작하여",
+        "제자들의 발을 씻기시고"
     ],
     "locations": [
       {
@@ -150262,7 +151183,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-13-10",
     "title": "온몸이 깨끗하다",
     "aliases": [
-      "이미 목욕한 자는 발밖에 씻을 필요가 없느니라"
+      "이미 목욕한 자는 발밖에 씻을 필요가 없느니라",
+        "온몸이 깨끗하다"
     ],
     "locations": [
       {
@@ -150291,7 +151213,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-13-21",
     "title": "너희 중 하나가 나를 팔리라",
     "aliases": [
-      "너희 중 하나가 나를 팔리라"
+      "너희 중 하나가 나를 팔리라",
+        "너희 중 하나가 나를 배반할 것이다"
     ],
     "locations": [
       {
@@ -150321,7 +151244,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-13-34",
     "title": "새 계명: 서로 사랑하라",
     "aliases": [
-      "새 계명을 너희에게 주노니 서로 사랑하라"
+      "새 계명을 너희에게 주노니 서로 사랑하라",
+        "새 계명을 준다"
     ],
     "locations": [
       {
@@ -150350,7 +151274,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-13-38",
     "title": "세 번 부인을 예고하시다",
     "aliases": [
-      "닭 울기 전에 네가 세 번 나를 부인하리라"
+      "닭 울기 전에 네가 세 번 나를 부인하리라",
+        "닭이 울기 전에 네가 세 번 나를 모른다고 할 것이다"
     ],
     "locations": [
       {
@@ -150379,7 +151304,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-14-1",
     "title": "근심하지 말고 믿으라",
     "aliases": [
-      "너희는 마음에 근심하지 말라 하나님을 믿으니 또 나를 믿으라"
+      "너희는 마음에 근심하지 말라 하나님을 믿으니 또 나를 믿으라",
+        "마음에 근심하지 마라"
     ],
     "locations": [
       {
@@ -150408,7 +151334,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-14-6",
     "title": "나는 길이요 진리요 생명",
     "aliases": [
-      "내가 곧 길이요 진리요 생명이니 나로 말미암지 않고는 아버지께로 올 자가 없느니라"
+      "내가 곧 길이요 진리요 생명이니 나로 말미암지 않고는 아버지께로 올 자가 없느니라",
+        "내가 바로 그 길이요, 진리요, 생명이다"
     ],
     "locations": [
       {
@@ -150437,7 +151364,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-14-12",
     "title": "더 큰 일을 하리라",
     "aliases": [
-      "나를 믿는 자는 내가 하는 일을 그도 할 것이요 또한 그보다 큰 일도 하리니"
+      "나를 믿는 자는 내가 하는 일을 그도 할 것이요 또한 그보다 큰 일도 하리니",
+        "이보다 더 큰 일들도 행할 것이다"
     ],
     "locations": [
       {
@@ -150466,7 +151394,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-14-17",
     "title": "진리의 영, 보혜사",
     "aliases": [
-      "그는 진리의 영이라 세상은 능히 그를 받지 못하나니"
+      "그는 진리의 영이라 세상은 능히 그를 받지 못하나니",
+        "그분은 진리의 성령이시다"
     ],
     "locations": [
       {
@@ -150496,7 +151425,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-14-27",
     "title": "세상과 다른 평안",
     "aliases": [
-      "평안을 너희에게 끼치노니 곧 나의 평안을 너희에게 주노라"
+      "평안을 너희에게 끼치노니 곧 나의 평안을 너희에게 주노라",
+        "세상이 주는 것과 같지 않다"
     ],
     "locations": [
       {
@@ -150526,7 +151456,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-14-28",
     "title": "아버지는 나보다 크심",
     "aliases": [
-      "아버지는 나보다 크심이라"
+      "아버지는 나보다 크심이라",
+        "아버지가 나보다 더 크신 분이기 때문이다"
     ],
     "locations": [
       {
@@ -150556,7 +151487,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-15-1",
     "title": "참포도나무와 농부",
     "aliases": [
-      "나는 참포도나무요 내 아버지는 농부라"
+      "나는 참포도나무요 내 아버지는 농부라",
+        "나는 참포도나무요, 내 아버지는 정원사이시다"
     ],
     "locations": [
       {
@@ -150585,7 +151517,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-15-4",
     "title": "내 안에 거하라",
     "aliases": [
-      "내 안에 거하라 나도 너희 안에 거하리라"
+      "내 안에 거하라 나도 너희 안에 거하리라",
+        "내 안에 있어라"
     ],
     "locations": [
       {
@@ -150614,7 +151547,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-15-9",
     "title": "사랑 안에 거하라",
     "aliases": [
-      "아버지께서 나를 사랑하신 것 같이 나도 너희를 사랑하였으니 나의 사랑 안에 거하라"
+      "아버지께서 나를 사랑하신 것 같이 나도 너희를 사랑하였으니 나의 사랑 안에 거하라",
+        "내 사랑 안에 머물러 있어라"
     ],
     "locations": [
       {
@@ -150643,7 +151577,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-15-13",
     "title": "친구를 위한 목숨 버림",
     "aliases": [
-      "사람이 친구를 위하여 자기 목숨을 버리면 이보다 더 큰 사랑이 없나니"
+      "사람이 친구를 위하여 자기 목숨을 버리면 이보다 더 큰 사랑이 없나니",
+        "자기 친구를 위해 자기 목숨을 내놓는"
     ],
     "locations": [
       {
@@ -150673,7 +151608,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-15-15",
     "title": "종이 아니라 친구",
     "aliases": [
-      "이제부터는 너희를 종이라 하지 아니하리니"
+      "이제부터는 너희를 종이라 하지 아니하리니",
+        "너희를 더 이상 종이라고 부르지 않겠다"
     ],
     "locations": [
       {
@@ -150701,7 +151637,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-15-18",
     "title": "세상의 미움을 예고하시다",
     "aliases": [
-      "세상이 너희를 미워하면 너희보다 먼저 나를 미워한 줄을 알라"
+      "세상이 너희를 미워하면 너희보다 먼저 나를 미워한 줄을 알라",
+        "세상이 너희를 미워하면"
     ],
     "locations": [
       {
@@ -150731,7 +151668,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-15-26",
     "title": "아버지께로부터 오시는 진리의 성령",
     "aliases": [
-      "내가 아버지께로부터 너희에게 보낼 보혜사 곧 아버지께로부터 나오시는 진리의 성령이"
+      "내가 아버지께로부터 너희에게 보낼 보혜사 곧 아버지께로부터 나오시는 진리의 성령이",
+        "아버지께로부터 오시는 진리의 성령"
     ],
     "locations": [
       {
@@ -150765,7 +151703,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-16-8",
     "title": "보혜사가 세상을 책망하심",
     "aliases": [
-      "그가 와서 죄에 대하여, 의에 대하여, 심판에 대하여 세상을 책망하시리라"
+      "그가 와서 죄에 대하여, 의에 대하여, 심판에 대하여 세상을 책망하시리라",
+        "세상이 잘못 생각한 것들을 책망하실 것이다"
     ],
     "locations": [
       {
@@ -150795,7 +151734,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-16-13",
     "title": "진리의 성령이 들은 것을 말씀하심",
     "aliases": [
-      "그가 스스로 말하지 않고 오직 들은 것을 말하며 장래 일을 너희에게 알리시리라"
+      "그가 스스로 말하지 않고 오직 들은 것을 말하며 장래 일을 너희에게 알리시리라",
+        "그가 들은 것만을 말씀하시며"
     ],
     "locations": [
       {
@@ -150824,7 +151764,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-16-20",
     "title": "울지만 기쁨이 된다",
     "aliases": [
-      "너희는 곡하고 애통하겠으나 세상은 기뻐하리라"
+      "너희는 곡하고 애통하겠으나 세상은 기뻐하리라",
+        "너희의 슬픔은 기쁨이 될 것이다"
     ],
     "locations": [
       {
@@ -150852,7 +151793,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-16-23",
     "title": "내 이름으로 구하라",
     "aliases": [
-      "너희가 무엇이든지 아버지께 구하는 것을 내 이름으로 주시리라"
+      "너희가 무엇이든지 아버지께 구하는 것을 내 이름으로 주시리라",
+        "내 이름으로 아버지께 무엇이든지 구하면"
     ],
     "locations": [
       {
@@ -150881,7 +151823,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-16-33",
     "title": "세상을 이기었노라",
     "aliases": [
-      "세상에서는 너희가 환난을 당하나 담대하라 내가 세상을 이기었노라"
+      "세상에서는 너희가 환난을 당하나 담대하라 내가 세상을 이기었노라",
+        "내가 세상을 이기었다"
     ],
     "locations": [
       {
@@ -150910,7 +151853,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-17-3",
     "title": "영생은 아는 것",
     "aliases": [
-      "영생은 곧 유일하신 참 하나님과 그가 보내신 자 예수 그리스도를 아는 것이니이다"
+      "영생은 곧 유일하신 참 하나님과 그가 보내신 자 예수 그리스도를 아는 것이니이다",
+        "예수 그리스도를 아는 것입니다"
     ],
     "locations": [
       {
@@ -150940,7 +151884,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-17-4",
     "title": "주신 일을 이루었다",
     "aliases": [
-      "아버지께서 내게 하라고 주신 일을 내가 이루어 아버지를 이 세상에서 영화롭게 하였사오니"
+      "아버지께서 내게 하라고 주신 일을 내가 이루어 아버지를 이 세상에서 영화롭게 하였사오니",
+        "아버지께서 제게 하라고 주신 일을 완전히 행하였습니다"
     ],
     "locations": [
       {
@@ -150969,7 +151914,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-17-6",
     "title": "아버지의 이름을 나타내다",
     "aliases": [
-      "내게 주신 사람들에게 내가 아버지의 이름을 나타내었나이다"
+      "내게 주신 사람들에게 내가 아버지의 이름을 나타내었나이다",
+        "아버지의 이름을 나타냈습니다"
     ],
     "locations": [
       {
@@ -150999,7 +151945,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-17-11",
     "title": "보전하사 하나 되게 하옵소서",
     "aliases": [
-      "거룩하신 아버지여 내게 주신 아버지의 이름으로 그들을 보전하사 우리와 같이 그들도 하나가 되게 하옵소서"
+      "거룩하신 아버지여 내게 주신 아버지의 이름으로 그들을 보전하사 우리와 같이 그들도 하나가 되게 하옵소서",
+        "우리가 하나인 것같이 그들도 하나가 되게 하여 주십시오"
     ],
     "locations": [
       {
@@ -151028,7 +151975,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-17-12",
     "title": "멸망의 자식",
     "aliases": [
-      "다만 멸망의 자식뿐이오니"
+      "다만 멸망의 자식뿐이오니",
+        "멸망의 자식을 빼놓고는"
     ],
     "locations": [
       {
@@ -151058,7 +152006,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-17-17",
     "title": "진리로 거룩하게 하옵소서",
     "aliases": [
-      "그들을 진리로 거룩하게 하옵소서 아버지의 말씀은 진리니이다"
+      "그들을 진리로 거룩하게 하옵소서 아버지의 말씀은 진리니이다",
+        "그들을 진리로 거룩하게 해 주십시오"
     ],
     "locations": [
       {
@@ -151087,7 +152036,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-18-5",
     "title": "내가 그니라",
     "aliases": [
-      "내가 그니라 하시니라"
+      "내가 그니라 하시니라",
+        "내가 그 사람이다"
     ],
     "locations": [
       {
@@ -151116,7 +152066,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-18-11",
     "title": "아버지께서 주신 잔",
     "aliases": [
-      "아버지께서 주신 잔을 내가 마시지 아니하겠느냐"
+      "아버지께서 주신 잔을 내가 마시지 아니하겠느냐",
+        "아버지께서 내게 주신 잔"
     ],
     "locations": [
       {
@@ -151145,7 +152096,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-18-36",
     "title": "내 나라는 이 세상에 속하지 않다",
     "aliases": [
-      "내 나라는 이 세상에 속한 것이 아니니라"
+      "내 나라는 이 세상에 속한 것이 아니니라",
+        "내 나라는 이 세상에 속하지 않았다"
     ],
     "locations": [
       {
@@ -151175,7 +152127,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-18-38",
     "title": "진리가 무엇이냐",
     "aliases": [
-      "진리가 무엇이냐"
+      "진리가 무엇이냐",
+        "진리가 무엇이오?"
     ],
     "locations": [
       {
@@ -151204,7 +152157,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-19-17",
     "title": "자기 십자가를 지시고",
     "aliases": [
-      "예수께서 자기의 십자가를 지시고"
+      "예수께서 자기의 십자가를 지시고",
+        "자신이 매달릴 십자가를 직접 지고"
     ],
     "locations": [
       {
@@ -151234,7 +152188,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-19-19",
     "title": "나사렛 예수 유대인의 왕",
     "aliases": [
-      "나사렛 예수 유대인의 왕이라 기록되었더라"
+      "나사렛 예수 유대인의 왕이라 기록되었더라",
+        "유대인의 왕, 나사렛 예수"
     ],
     "locations": [
       {
@@ -151263,7 +152218,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-19-26",
     "title": "여자여 보소서 아들이니이다",
     "aliases": [
-      "여자여 보소서 아들이니이다"
+      "여자여 보소서 아들이니이다",
+        "여자여, 보십시오! 어머님의 아들입니다"
     ],
     "locations": [
       {
@@ -151292,7 +152248,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-19-30",
     "title": "다 이루었다",
     "aliases": [
-      "다 이루었다 하시고"
+      "다 이루었다 하시고",
+        "다 이루었다"
     ],
     "locations": [
       {
@@ -151321,7 +152278,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-19-34",
     "title": "피와 물",
     "aliases": [
-      "곧 피와 물이 나오더라"
+      "곧 피와 물이 나오더라",
+        "피와 물이 쏟아져 나왔습니다"
     ],
     "locations": [
       {
@@ -151350,7 +152308,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-20-8",
     "title": "먼저 무덤에 간 제자가 믿다",
     "aliases": [
-      "그 다른 제자도 들어가 보고 믿더라"
+      "그 다른 제자도 들어가 보고 믿더라",
+        "무덤에 먼저 왔던 다른 제자도 무덤 안으로 들어와 보고 믿었습니다"
     ],
     "locations": [
       {
@@ -151379,7 +152338,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-20-16",
     "title": "마리아야",
     "aliases": [
-      "예수께서 마리아야 하시거늘"
+      "예수께서 마리아야 하시거늘",
+        "마리아야!"
     ],
     "locations": [
       {
@@ -151408,7 +152368,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-20-17",
     "title": "나를 붙들지 말라",
     "aliases": [
-      "나를 붙들지 말라 내가 아직 아버지께로 올라가지 아니하였노라"
+      "나를 붙들지 말라 내가 아직 아버지께로 올라가지 아니하였노라",
+        "나를 계속 붙잡고 있지 마라"
     ],
     "locations": [
       {
@@ -151467,7 +152428,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-20-22",
     "title": "성령을 받으라",
     "aliases": [
-      "성령을 받으라"
+      "성령을 받으라",
+        "성령을 받아라"
     ],
     "locations": [
       {
@@ -151496,7 +152458,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-20-27",
     "title": "믿음 없는 자가 되지 말라",
     "aliases": [
-      "믿음 없는 자가 되지 말고 믿는 자가 되라"
+      "믿음 없는 자가 되지 말고 믿는 자가 되라",
+        "믿지 않는 자가 되지 말고 믿는 자가 되어라"
     ],
     "locations": [
       {
@@ -151524,7 +152487,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-20-31",
     "title": "기록한 목적",
     "aliases": [
-      "오직 이것을 기록함은 너희로 예수께서 하나님의 아들 그리스도이심을 믿게 하려 함이요"
+      "오직 이것을 기록함은 너희로 예수께서 하나님의 아들 그리스도이심을 믿게 하려 함이요",
+        "하나님의 아들 그리스도이심을 믿게 하고"
     ],
     "locations": [
       {
@@ -151557,7 +152521,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-21-6",
     "title": "오른편에 던진 그물",
     "aliases": [
-      "그물을 배 오른편에 던지라 그리하면 잡으리라"
+      "그물을 배 오른편에 던지라 그리하면 잡으리라",
+        "그물을 배 오른편에 던져라"
     ],
     "locations": [
       {
@@ -151587,7 +152552,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-21-7",
     "title": "주님이시다",
     "aliases": [
-      "예수께서 사랑하시는 그 제자가 베드로에게 이르되 주님이시라"
+      "예수께서 사랑하시는 그 제자가 베드로에게 이르되 주님이시라",
+        "주님이시다!"
     ],
     "locations": [
       {
@@ -151617,7 +152583,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-21-12",
     "title": "와서 조반을 먹으라",
     "aliases": [
-      "와서 조반을 먹으라"
+      "와서 조반을 먹으라",
+        "와서 아침 식사를 하여라"
     ],
     "locations": [
       {
@@ -151646,7 +152613,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-21-15",
     "title": "나를 더 사랑하느냐",
     "aliases": [
-      "요한의 아들 시몬아 네가 이 사람들보다 나를 더 사랑하느냐"
+      "요한의 아들 시몬아 네가 이 사람들보다 나를 더 사랑하느냐",
+        "이 모든 사람들보다 나를 더 사랑하느냐"
     ],
     "locations": [
       {
@@ -151675,7 +152643,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-21-18",
     "title": "늙어서 팔을 벌리리라",
     "aliases": [
-      "네가 젊어서는 스스로 띠 띠고 원하는 곳으로 다녔거니와"
+      "네가 젊어서는 스스로 띠 띠고 원하는 곳으로 다녔거니와",
+        "나이가 들게 되면 네가 팔을 벌리겠고"
     ],
     "locations": [
       {
@@ -151704,7 +152673,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-21-21",
     "title": "이 사람은 어떻게 되겠습니까",
     "aliases": [
-      "주님 이 사람은 어떻게 되겠사옵나이까"
+      "주님 이 사람은 어떻게 되겠사옵나이까",
+        "이 사람은 어떻게 되겠습니까?"
     ],
     "locations": [
       {
@@ -151733,7 +152703,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-jhn-21-24",
     "title": "증언하고 기록한 제자",
     "aliases": [
-      "이 일들을 증언하고 이 일들을 기록한 제자가 이 사람이라"
+      "이 일들을 증언하고 이 일들을 기록한 제자가 이 사람이라",
+        "그것을 기록한 제자가 바로 이 사람입니다"
     ],
     "locations": [
       {
@@ -151766,7 +152737,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-1-1",
     "title": "택정받은 사도 바울",
     "aliases": [
-      "예수 그리스도의 종 바울은 사도로 부르심을 받아"
+      "예수 그리스도의 종 바울은 사도로 부르심을 받아",
+        "하나님의 복음을 위해 특별히 선택되었습니다"
     ],
     "locations": [
       {
@@ -151796,7 +152768,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-1-4",
     "title": "부활로 선포된 하나님의 아들",
     "aliases": [
-      "성결의 영으로는 죽은 자들 가운데서 부활하사 능력으로 하나님의 아들로 선포되셨으니"
+      "성결의 영으로는 죽은 자들 가운데서 부활하사 능력으로 하나님의 아들로 선포되셨으니",
+        "능력 있는 하나님의 아들로 선언되셨습니다"
     ],
     "locations": [
       {
@@ -151825,7 +152798,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-1-16",
     "title": "믿는 모든 자에게 능력인 복음",
     "aliases": [
-      "모든 믿는 자에게 구원을 주시는 하나님의 능력이 됨이라"
+      "모든 믿는 자에게 구원을 주시는 하나님의 능력이 됨이라",
+        "모든 믿는 사람을 구원에 이르게 하는 하나님의 능력이기 때문입니다"
     ],
     "locations": [
       {
@@ -151854,7 +152828,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-1-20",
     "title": "만물에 보이는 하나님의 능력",
     "aliases": [
-      "창세로부터 그의 보이지 아니하는 것들 곧 그의 영원하신 능력과 신성이 그가 만드신 만물에 분명히 보여 알려졌나니"
+      "창세로부터 그의 보이지 아니하는 것들 곧 그의 영원하신 능력과 신성이 그가 만드신 만물에 분명히 보여 알려졌나니",
+        "그가 만드신 만물을 보고서 분명히 알 수 있게 되었습니다"
     ],
     "locations": [
       {
@@ -151883,7 +152858,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-1-24",
     "title": "내버려 두신 하나님",
     "aliases": [
-      "그러므로 하나님께서 그들을 마음의 정욕대로 더러움에 내버려 두사"
+      "그러므로 하나님께서 그들을 마음의 정욕대로 더러움에 내버려 두사",
+        "사람들이 원하는 대로 죄악된 행동을 하도록 내버려 두셨습니다"
     ],
     "locations": [
       {
@@ -151913,7 +152889,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-1-32",
     "title": "악을 행하고 두둔하는 사람들",
     "aliases": [
-      "이같은 일을 행하는 자는 사형에 해당한다고 하나님께서 정하심을 알고도"
+      "이같은 일을 행하는 자는 사형에 해당한다고 하나님께서 정하심을 알고도",
+        "그런 행동을 저지르는 다른 사람들까지 잘한다고 두둔합니다"
     ],
     "locations": [
       {
@@ -151942,7 +152919,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-2-1",
     "title": "남을 판단하는 사람도 핑계할 수 없다",
     "aliases": [
-      "남을 판단하는 사람아, 누구를 막론하고"
+      "남을 판단하는 사람아, 누구를 막론하고",
+        "다른 사람을 판단하는 사람도 변명할 수 없게 되었습니다"
     ],
     "locations": [
       {
@@ -151971,7 +152949,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-2-4",
     "title": "인자하심이 회개로 이끈다",
     "aliases": [
-      "하나님의 인자하심이 너를 인도하여 회개하게 하심을 알지 못하여"
+      "하나님의 인자하심이 너를 인도하여 회개하게 하심을 알지 못하여",
+        "하나님의 자비로우심이 여러분을 회개로 이끄신다는 것을"
     ],
     "locations": [
       {
@@ -152000,7 +152979,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-2-6",
     "title": "행한 대로 보응하심",
     "aliases": [
-      "하나님께서 각 사람에게 그 행한 대로 보응하시되"
+      "하나님께서 각 사람에게 그 행한 대로 보응하시되",
+        "각 사람이 행한 그대로 갚아 주실 것입니다"
     ],
     "locations": [
       {
@@ -152030,7 +153010,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-2-13",
     "title": "율법을 듣는 것과 행하는 것",
     "aliases": [
-      "오직 율법을 행하는 자라야 의롭다 하심을 얻으리니"
+      "오직 율법을 행하는 자라야 의롭다 하심을 얻으리니",
+        "오직 율법을 행하는 사람이라야 의롭다고 인정받기 때문입니다"
     ],
     "locations": [
       {
@@ -152060,7 +153041,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-2-29",
     "title": "마음의 할례",
     "aliases": [
-      "오직 이면적 유대인이 유대인이며 할례는 마음에 할지니"
+      "오직 이면적 유대인이 유대인이며 할례는 마음에 할지니",
+        "성령을 따라 마음에 받는 할례가 진정한 의미의 할례입니다"
     ],
     "locations": [
       {
@@ -152090,7 +153072,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-3-4",
     "title": "사람은 거짓되어도 하나님은 참되시다",
     "aliases": [
-      "사람은 다 거짓되되 오직 하나님은 참되시다"
+      "사람은 다 거짓되되 오직 하나님은 참되시다",
+        "설령 모든 사람이 거짓말쟁이라 하더라도, 하나님은 참되십니다"
     ],
     "locations": [
       {
@@ -152119,7 +153102,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-3-10",
     "title": "의인은 하나도 없다",
     "aliases": [
-      "기록된 바 의인은 없나니 하나도 없으며"
+      "기록된 바 의인은 없나니 하나도 없으며",
+        "의인은 한 사람도 없다"
     ],
     "locations": [
       {
@@ -152149,7 +153133,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-3-20",
     "title": "율법으로는 죄를 깨달음",
     "aliases": [
-      "그러므로 율법의 행위로 그의 앞에 의롭다 하심을 얻을 육체가 없나니 율법으로는 죄를 깨달음이니라"
+      "그러므로 율법의 행위로 그의 앞에 의롭다 하심을 얻을 육체가 없나니 율법으로는 죄를 깨달음이니라",
+        "율법은 우리가 죄인이라는 사실을 알게 해 주기 때문입니다"
     ],
     "locations": [
       {
@@ -152178,7 +153163,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-3-21",
     "title": "율법 외에 나타난 하나님의 의",
     "aliases": [
-      "이제는 율법 외에 하나님의 한 의가 나타났으니"
+      "이제는 율법 외에 하나님의 한 의가 나타났으니",
+        "율법 없이도 하나님께로부터 오는 의가 나타났습니다"
     ],
     "locations": [
       {
@@ -152208,7 +153194,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-3-24",
     "title": "값 없이 의롭다 하심",
     "aliases": [
-      "하나님의 은혜로 값 없이 의롭다 하심을 얻은 자 되었느니라"
+      "하나님의 은혜로 값 없이 의롭다 하심을 얻은 자 되었느니라",
+        "하나님께서 거저 주시는 선물입니다"
     ],
     "locations": [
       {
@@ -152237,7 +153224,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-3-25",
     "title": "화목제물로 세우신 예수",
     "aliases": [
-      "이 예수를 하나님이 그의 피로써 믿음으로 말미암는 화목제물로 세우셨으니"
+      "이 예수를 하나님이 그의 피로써 믿음으로 말미암는 화목제물로 세우셨으니",
+        "하나님께서 예수님을 화목 제물로 내어 주셨으며"
     ],
     "locations": [
       {
@@ -152266,7 +153254,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-3-28",
     "title": "율법의 행위가 아니라 믿음으로",
     "aliases": [
-      "그러므로 사람이 의롭다 하심을 얻는 것은 율법의 행위에 있지 않고 믿음으로 되는 줄 우리가 인정하노라"
+      "그러므로 사람이 의롭다 하심을 얻는 것은 율법의 행위에 있지 않고 믿음으로 되는 줄 우리가 인정하노라",
+        "율법을 지키는 것과는 상관없이 믿음으로 의롭게 된다고 우리는 생각합니다"
     ],
     "locations": [
       {
@@ -152295,7 +153284,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-4-3",
     "title": "믿음이 의로 여겨짐",
     "aliases": [
-      "아브라함이 하나님을 믿으매 그것이 그에게 의로 여겨진 바 되었느니라"
+      "아브라함이 하나님을 믿으매 그것이 그에게 의로 여겨진 바 되었느니라",
+        "그 믿음을 그의 의로 여기셨다"
     ],
     "locations": [
       {
@@ -152324,7 +153314,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-4-5",
     "title": "경건하지 않은 자를 의롭다 하시는 하나님",
     "aliases": [
-      "일을 아니할지라도 경건하지 아니한 자를 의롭다 하시는 이를 믿는 자에게는"
+      "일을 아니할지라도 경건하지 아니한 자를 의롭다 하시는 이를 믿는 자에게는",
+        "경건하지 않은 사람을 의롭다고 여기시는 하나님을 믿기 때문에"
     ],
     "locations": [
       {
@@ -152354,7 +153345,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-4-11",
     "title": "할례의 표와 믿음의 의",
     "aliases": [
-      "그가 할례의 표를 받은 것은 무할례시에 믿음으로 된 의를 인친 것이니"
+      "그가 할례의 표를 받은 것은 무할례시에 믿음으로 된 의를 인친 것이니",
+        "할례를 받기 전에 믿음으로 의롭다 함을 받았으며"
     ],
     "locations": [
       {
@@ -152383,7 +153375,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-4-18",
     "title": "바랄 수 없는 중에 바라고 믿다",
     "aliases": [
-      "아브라함이 바랄 수 없는 중에 바라고 믿었으니"
+      "아브라함이 바랄 수 없는 중에 바라고 믿었으니",
+        "아브라함은 소망이 전혀 없었지만"
     ],
     "locations": [
       {
@@ -152413,7 +153406,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-4-20",
     "title": "약속을 의심하지 않은 믿음",
     "aliases": [
-      "하나님의 약속을 의심하지 않고 믿음으로 견고하여져서"
+      "하나님의 약속을 의심하지 않고 믿음으로 견고하여져서",
+        "하나님의 약속에 대해 불신하거나 의심하지 않고"
     ],
     "locations": [
       {
@@ -152442,7 +153436,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-4-25",
     "title": "범죄 때문에 내줌이 되고 의롭게 하려고 살아나심",
     "aliases": [
-      "예수는 우리가 범죄한 것 때문에 내줌이 되고 또한 우리를 의롭다 하시기 위하여 살아나셨느니라"
+      "예수는 우리가 범죄한 것 때문에 내줌이 되고 또한 우리를 의롭다 하시기 위하여 살아나셨느니라",
+        "우리를 의롭게 하시려고 다시 살아나셨습니다"
     ],
     "locations": [
       {
@@ -152475,7 +153470,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-5-1",
     "title": "믿음으로 얻은 하나님과의 화평",
     "aliases": [
-      "그러므로 우리가 믿음으로 의롭다 하심을 받았으니"
+      "그러므로 우리가 믿음으로 의롭다 하심을 받았으니",
+        "하나님과 함께하는 평강을 누리고 있습니다"
     ],
     "locations": [
       {
@@ -152504,7 +153500,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-5-4",
     "title": "환난에서 소망까지",
     "aliases": [
-      "인내는 연단을, 연단은 소망을 이루는 줄 앎이로다"
+      "인내는 연단을, 연단은 소망을 이루는 줄 앎이로다",
+        "연단된 인품은 소망을 낳는 것을 알기 때문입니다"
     ],
     "locations": [
       {
@@ -152532,7 +153529,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-5-8",
     "title": "죄인일 때 죽으신 사랑",
     "aliases": [
-      "그리스도께서 우리를 위하여 죽으심으로 하나님께서 우리에 대한 자기의 사랑을 확증하셨느니라"
+      "그리스도께서 우리를 위하여 죽으심으로 하나님께서 우리에 대한 자기의 사랑을 확증하셨느니라",
+        "우리가 아직 죄인이었을 때에 우리를 위해 죽으셨습니다"
     ],
     "locations": [
       {
@@ -152561,7 +153559,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-5-12",
     "title": "한 사람을 통한 죄와 사망",
     "aliases": [
-      "한 사람으로 말미암아 죄가 세상에 들어오고 죄로 말미암아 사망이 들어왔나니"
+      "한 사람으로 말미암아 죄가 세상에 들어오고 죄로 말미암아 사망이 들어왔나니",
+        "한 사람을 통해 죄가 세상에 들어왔고"
     ],
     "locations": [
       {
@@ -152590,7 +153589,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-5-20",
     "title": "죄가 더한 곳에 넘친 은혜",
     "aliases": [
-      "율법이 들어온 것은 범죄를 더하게 하려 함이라"
+      "율법이 들어온 것은 범죄를 더하게 하려 함이라",
+        "죄가 많아진 곳에 하나님의 은혜가 더욱 넘치게 되었습니다"
     ],
     "locations": [
       {
@@ -152619,7 +153619,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-6-4",
     "title": "세례로 그와 함께 장사되다",
     "aliases": [
-      "그의 죽으심과 합하여 세례를 받음으로 그와 함께 장사되었나니"
+      "그의 죽으심과 합하여 세례를 받음으로 그와 함께 장사되었나니",
+        "죽음에 이르는 세례를 받음으로 그리스도와 함께 묻힌 것은"
     ],
     "locations": [
       {
@@ -152648,7 +153649,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-6-6",
     "title": "옛 사람이 함께 못 박히다",
     "aliases": [
-      "우리의 옛 사람이 예수와 함께 십자가에 못 박힌 것은"
+      "우리의 옛 사람이 예수와 함께 십자가에 못 박힌 것은",
+        "우리의 옛 사람이 그리스도와 함께 십자가에 못박혀"
     ],
     "locations": [
       {
@@ -152677,7 +153679,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-6-11",
     "title": "죄에 대해 죽고 하나님께 살다",
     "aliases": [
-      "그리스도 예수 안에서 하나님께 대하여는 살아 있는 자로 여길지어다"
+      "그리스도 예수 안에서 하나님께 대하여는 살아 있는 자로 여길지어다",
+        "죄에 대해서는 죽은 사람으로"
     ],
     "locations": [
       {
@@ -152706,7 +153709,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-6-14",
     "title": "율법이 아니라 은혜 아래",
     "aliases": [
-      "죄가 너희를 주장하지 못하리니 이는 너희가 법 아래에 있지 아니하고 은혜 아래에 있음이라"
+      "죄가 너희를 주장하지 못하리니 이는 너희가 법 아래에 있지 아니하고 은혜 아래에 있음이라",
+        "율법 아래 있지 않고 은혜 아래 있으므로"
     ],
     "locations": [
       {
@@ -152736,7 +153740,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-6-16",
     "title": "순종의 종이 되다",
     "aliases": [
-      "너희 자신을 종으로 내주어 누구에게 순종하든지 그 순종함을 받는 자의 종이 되는 줄을"
+      "너희 자신을 종으로 내주어 누구에게 순종하든지 그 순종함을 받는 자의 종이 되는 줄을",
+        "의에 이르는 순종의 종이 될 수도 있습니다"
     ],
     "locations": [
       {
@@ -152764,7 +153769,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-6-23",
     "title": "죄의 삯과 하나님의 은사",
     "aliases": [
-      "죄의 삯은 사망이요 하나님의 은사는 그리스도 예수 우리 주 안에 있는 영생이니라"
+      "죄의 삯은 사망이요 하나님의 은사는 그리스도 예수 우리 주 안에 있는 영생이니라",
+        "하나님의 선물은 우리 주 예수 그리스도 안에 있는 영생입니다"
     ],
     "locations": [
       {
@@ -152793,7 +153799,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-7-4",
     "title": "율법에 대해 죽고 다른 이에게 속함",
     "aliases": [
-      "너희도 그리스도의 몸으로 말미암아 율법에 대하여 죽임을 당하였으니"
+      "너희도 그리스도의 몸으로 말미암아 율법에 대하여 죽임을 당하였으니",
+        "그리스도의 몸으로 말미암아 율법에 대해 죽었습니다"
     ],
     "locations": [
       {
@@ -152822,7 +153829,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-7-7",
     "title": "율법이 있어 알게 된 탐심",
     "aliases": [
-      "율법이 탐내지 말라 하지 아니하였더라면 내가 탐심을 알지 못하였으리라"
+      "율법이 탐내지 말라 하지 아니하였더라면 내가 탐심을 알지 못하였으리라",
+        "나는 탐내는 것이 무엇인지 알지 못했을 것입니다"
     ],
     "locations": [
       {
@@ -152851,7 +153859,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-7-12",
     "title": "율법과 계명은 거룩하다",
     "aliases": [
-      "이로 보건대 율법은 거룩하고 계명도 거룩하고 의로우며 선하도다"
+      "이로 보건대 율법은 거룩하고 계명도 거룩하고 의로우며 선하도다",
+        "그러므로 율법은 거룩하며, 계명도 거룩하고, 의롭고 선합니다"
     ],
     "locations": [
       {
@@ -152879,7 +153888,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-7-15",
     "title": "원하는 선을 행하지 못하는 나",
     "aliases": [
-      "내가 원하는 것은 행하지 아니하고 도리어 미워하는 것을 행함이라"
+      "내가 원하는 것은 행하지 아니하고 도리어 미워하는 것을 행함이라",
+        "내가 하고 싶어하는 일은 하지 않고, 미워하는 일을 행하고 있으니 말입니다"
     ],
     "locations": [
       {
@@ -152908,7 +153918,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-7-24",
     "title": "사망의 몸에서 건져낼 자",
     "aliases": [
-      "오호라 나는 곤고한 사람이로다 이 사망의 몸에서 누가 나를 건져내랴"
+      "오호라 나는 곤고한 사람이로다 이 사망의 몸에서 누가 나를 건져내랴",
+        "이 사망의 몸에서 구원해 내겠습니까"
     ],
     "locations": [
       {
@@ -152937,7 +153948,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-8-1",
     "title": "그리스도 안에서 정죄함이 없다",
     "aliases": [
-      "그러므로 이제 그리스도 예수 안에 있는 자에게는 결코 정죄함이 없나니"
+      "그러므로 이제 그리스도 예수 안에 있는 자에게는 결코 정죄함이 없나니",
+        "그리스도 예수 안에 있는 사람은 정죄를 받지 않습니다"
     ],
     "locations": [
       {
@@ -152966,7 +153978,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-8-3",
     "title": "죄 있는 육신의 모양으로 보내신 아들",
     "aliases": [
-      "곧 죄로 말미암아 자기 아들을 죄 있는 육신의 모양으로 보내어"
+      "곧 죄로 말미암아 자기 아들을 죄 있는 육신의 모양으로 보내어",
+        "자신의 아들을 죄 있는 사람의 모양으로 보내심"
     ],
     "locations": [
       {
@@ -152995,7 +154008,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-8-14",
     "title": "하나님의 영으로 인도받는 자녀",
     "aliases": [
-      "무릇 하나님의 영으로 인도함을 받는 사람은 곧 하나님의 아들이라"
+      "무릇 하나님의 영으로 인도함을 받는 사람은 곧 하나님의 아들이라",
+        "하나님의 영으로 인도받는 사람들은 누구나 하나님의 자녀"
     ],
     "locations": [
       {
@@ -153025,7 +154039,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-8-18",
     "title": "현재의 고난과 장차 나타날 영광",
     "aliases": [
-      "생각하건대 현재의 고난은 장차 우리에게 나타날 영광과 비교할 수 없도다"
+      "생각하건대 현재의 고난은 장차 우리에게 나타날 영광과 비교할 수 없도다",
+        "장차 우리에게 나타날 영광"
     ],
     "locations": [
       {
@@ -153055,7 +154070,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-8-26",
     "title": "성령의 탄식과 기도",
     "aliases": [
-      "이와 같이 성령도 우리의 연약함을 도우시나니"
+      "이와 같이 성령도 우리의 연약함을 도우시나니",
+        "성령께서는 우리의 약함을 도와 주십니다"
     ],
     "locations": [
       {
@@ -153084,7 +154100,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-8-28",
     "title": "모든 것이 합력하여 선을 이룬다",
     "aliases": [
-      "하나님을 사랑하는 자 곧 그의 뜻대로 부르심을 입은 자들에게는 모든 것이 합력하여 선을 이루느니라"
+      "하나님을 사랑하는 자 곧 그의 뜻대로 부르심을 입은 자들에게는 모든 것이 합력하여 선을 이루느니라",
+        "사람들의 선을 위하여 하신다"
     ],
     "locations": [
       {
@@ -153112,7 +154129,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-8-31",
     "title": "하나님이 우리를 위하시면",
     "aliases": [
-      "만일 하나님이 우리를 위하시면 누가 우리를 대적하리요"
+      "만일 하나님이 우리를 위하시면 누가 우리를 대적하리요",
+        "하나님께서 우리 편이시라면"
     ],
     "locations": [
       {
@@ -153142,7 +154160,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-8-38",
     "title": "아무것도 하나님의 사랑에서 끊을 수 없다",
     "aliases": [
-      "내가 확신하노니 사망이나 생명이나"
+      "내가 확신하노니 사망이나 생명이나",
+        "죽음이나 생명이나, 천사들이나 하늘의 권세자들이나"
     ],
     "locations": [
       {
@@ -153176,7 +154195,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-9-3",
     "title": "동족을 위한 바울의 마음",
     "aliases": [
-      "내 자신이 저주를 받아 그리스도에게서 끊어질지라도"
+      "내 자신이 저주를 받아 그리스도에게서 끊어질지라도",
+        "내 동포, 내 동족들을 위해서라면"
     ],
     "locations": [
       {
@@ -153204,7 +154224,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-9-4",
     "title": "이스라엘이 받은 특권",
     "aliases": [
-      "그들에게는 양자 됨과 영광과 언약들과 율법을 세우신 것과 예배와 약속들이 있고"
+      "그들에게는 양자 됨과 영광과 언약들과 율법을 세우신 것과 예배와 약속들이 있고",
+        "그들에게는 하나님의 영광이 있고"
     ],
     "locations": [
       {
@@ -153233,7 +154254,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-9-7",
     "title": "이삭에게서 난 자라야 씨",
     "aliases": [
-      "오직 이삭으로부터 난 자라야 네 씨라 불리리라"
+      "오직 이삭으로부터 난 자라야 네 씨라 불리리라",
+        "이삭에게서 난 자라야 네 자손이라 부르리라"
     ],
     "locations": [
       {
@@ -153263,7 +154285,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-9-11",
     "title": "행위 전에 택하심",
     "aliases": [
-      "그 자식들이 아직 나지도 아니하고 무슨 선이나 악을 행하지 아니한 때에"
+      "그 자식들이 아직 나지도 아니하고 무슨 선이나 악을 행하지 아니한 때에",
+        "그들이 무슨 선이나 악을 행하기도 전에"
     ],
     "locations": [
       {
@@ -153292,7 +154315,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-9-15",
     "title": "긍휼은 하나님께 달려 있다",
     "aliases": [
-      "내가 긍휼히 여길 자를 긍휼히 여기고 불쌍히 여길 자를 불쌍히 여기리라"
+      "내가 긍휼히 여길 자를 긍휼히 여기고 불쌍히 여길 자를 불쌍히 여기리라",
+        "내가 자비를 베풀고자 하는 사람에게 자비를 베풀고"
     ],
     "locations": [
       {
@@ -153322,7 +154346,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-9-20",
     "title": "토기장이와 그릇",
     "aliases": [
-      "이 사람아 네가 누구이기에 감히 하나님께 반문하느냐"
+      "이 사람아 네가 누구이기에 감히 하나님께 반문하느냐",
+        "토기그릇이 자기를 만든 사람에게"
     ],
     "locations": [
       {
@@ -153351,7 +154376,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-9-30",
     "title": "믿음에서 난 의와 행위를 의지한 이스라엘",
     "aliases": [
-      "의를 따르지 아니한 이방인들이 의를 얻었으니 곧 믿음에서 난 의요"
+      "의를 따르지 아니한 이방인들이 의를 얻었으니 곧 믿음에서 난 의요",
+        "믿음에서 나오는 의를 얻었습니다"
     ],
     "locations": [
       {
@@ -153381,7 +154407,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-10-2",
     "title": "열심은 있으나 지식이 없다",
     "aliases": [
-      "그들이 하나님께 열심이 있으나 올바른 지식을 따른 것이 아니니라"
+      "그들이 하나님께 열심이 있으나 올바른 지식을 따른 것이 아니니라",
+        "그 열심이 지식에 기초하고 있지 않다는"
     ],
     "locations": [
       {
@@ -153411,7 +154438,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-10-9",
     "title": "입으로 시인하고 마음으로 믿음",
     "aliases": [
-      "네가 만일 네 입으로 예수를 주로 시인하며"
+      "네가 만일 네 입으로 예수를 주로 시인하며",
+        "그리스도를 죽은 자들 가운데서 다시 살리신 것을 믿으면"
     ],
     "locations": [
       {
@@ -153440,7 +154468,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-10-13",
     "title": "주의 이름을 부르는 자",
     "aliases": [
-      "누구든지 주의 이름을 부르는 자는 구원을 받으리라"
+      "누구든지 주의 이름을 부르는 자는 구원을 받으리라",
+        "주님의 이름을 부르는 자는 구원을 얻을 것"
     ],
     "locations": [
       {
@@ -153469,7 +154498,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-10-17",
     "title": "믿음은 들음에서 난다",
     "aliases": [
-      "믿음은 들음에서 나며 들음은 그리스도의 말씀으로 말미암았느니라"
+      "믿음은 들음에서 나며 들음은 그리스도의 말씀으로 말미암았느니라",
+        "믿음은 말씀을 듣는 것에서 얻게 되고"
     ],
     "locations": [
       {
@@ -153498,7 +154528,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-10-21",
     "title": "거역하는 백성에게 종일 벌린 손",
     "aliases": [
-      "순종하지 아니하고 거슬러 말하는 백성에게 내가 종일 내 손을 벌렸노라"
+      "순종하지 아니하고 거슬러 말하는 백성에게 내가 종일 내 손을 벌렸노라",
+        "복종하지 않고 거역하는 백성을 향해"
     ],
     "locations": [
       {
@@ -153527,7 +154558,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-11-2",
     "title": "미리 아신 백성을 버리지 않으심",
     "aliases": [
-      "하나님이 그 미리 아신 자기 백성을 버리지 아니하셨나니"
+      "하나님이 그 미리 아신 자기 백성을 버리지 아니하셨나니",
+        "하나님께서는 전에 택하신 자기 백성을 버리지 않으셨습니다"
     ],
     "locations": [
       {
@@ -153557,7 +154589,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-11-5",
     "title": "지금도 남은 자가 있다",
     "aliases": [
-      "그런즉 이와 같이 지금도 은혜로 택하심을 따라 남은 자가 있느니라"
+      "그런즉 이와 같이 지금도 은혜로 택하심을 따라 남은 자가 있느니라",
+        "택함을 받은 남은 자들"
     ],
     "locations": [
       {
@@ -153586,7 +154619,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-11-11",
     "title": "넘어짐과 이방인의 구원",
     "aliases": [
-      "그들이 넘어짐으로 구원이 이방인에게 이르러 이스라엘로 시기나게 함이니라"
+      "그들이 넘어짐으로 구원이 이방인에게 이르러 이스라엘로 시기나게 함이니라",
+        "구원이 이방인들에게 이르게 되었고"
     ],
     "locations": [
       {
@@ -153615,7 +154649,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-11-17",
     "title": "돌감람나무가 접붙여짐",
     "aliases": [
-      "돌감람나무인 네가 그들 중에 접붙임이 되어"
+      "돌감람나무인 네가 그들 중에 접붙임이 되어",
+        "야생 올리브 나뭇가지인 여러분을 원가지에 접붙이면"
     ],
     "locations": [
       {
@@ -153644,7 +154679,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-11-22",
     "title": "인자하심과 준엄하심",
     "aliases": [
-      "하나님의 인자하심과 준엄하심을 보라"
+      "하나님의 인자하심과 준엄하심을 보라",
+        "하나님의 인자하심과 엄격하심을 깊이 생각하십시오"
     ],
     "locations": [
       {
@@ -153673,7 +154709,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-11-26",
     "title": "온 이스라엘이 구원을 받으리라",
     "aliases": [
-      "그리하여 온 이스라엘이 구원을 받으리라"
+      "그리하여 온 이스라엘이 구원을 받으리라",
+        "온 이스라엘이 구원을 얻을 것입니다"
     ],
     "locations": [
       {
@@ -153703,7 +154740,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-11-33",
     "title": "깊은 하나님의 지혜와 지식",
     "aliases": [
-      "깊도다 하나님의 지혜와 지식의 풍성함이여"
+      "깊도다 하나님의 지혜와 지식의 풍성함이여",
+        "하나님의 지혜와 지식의 부유함은 참으로 깊습니다"
     ],
     "locations": [
       {
@@ -153735,7 +154773,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-12-1",
     "title": "몸을 산 제물로 드리라",
     "aliases": [
-      "너희 몸을 하나님이 기뻐하시는 거룩한 산 제물로 드리라"
+      "너희 몸을 하나님이 기뻐하시는 거룩한 산 제물로 드리라",
+        "하나님을 기쁘시게 하는 거룩한 살아 있는 제물로"
     ],
     "locations": [
       {
@@ -153764,7 +154803,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-12-2",
     "title": "세대를 본받지 말고 마음을 새롭게",
     "aliases": [
-      "너희는 이 세대를 본받지 말고 오직 마음을 새롭게 함으로 변화를 받아"
+      "너희는 이 세대를 본받지 말고 오직 마음을 새롭게 함으로 변화를 받아",
+        "이 세상을 본받지 말고, 마음을 새롭게 하여"
     ],
     "locations": [
       {
@@ -153792,7 +154832,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-12-5",
     "title": "그리스도 안의 한 몸",
     "aliases": [
-      "우리 많은 사람이 그리스도 안에서 한 몸이 되어 서로 지체가 되었느니라"
+      "우리 많은 사람이 그리스도 안에서 한 몸이 되어 서로 지체가 되었느니라",
+        "그리스도 안에서 한 몸을 이루었고"
     ],
     "locations": [
       {
@@ -153822,7 +154863,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-12-6",
     "title": "은혜대로 받은 각각 다른 은사",
     "aliases": [
-      "우리에게 주신 은혜대로 받은 은사가 각각 다르니"
+      "우리에게 주신 은혜대로 받은 은사가 각각 다르니",
+        "하나님께서 우리에게 주신 은혜에 따라 저마다 다른 선물을"
     ],
     "locations": [
       {
@@ -153851,7 +154893,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-12-14",
     "title": "박해하는 자를 축복하라",
     "aliases": [
-      "너희를 박해하는 자를 축복하라 축복하고 저주하지 말라"
+      "너희를 박해하는 자를 축복하라 축복하고 저주하지 말라",
+        "여러분을 핍박하는 사람들을 축복하십시오"
     ],
     "locations": [
       {
@@ -153880,7 +154923,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-12-19",
     "title": "원수 갚는 일은 하나님께",
     "aliases": [
-      "원수 갚는 것이 내게 있으니 내가 갚으리라"
+      "원수 갚는 것이 내게 있으니 내가 갚으리라",
+        "여러분이 직접 원수를 갚지 말고 하나님의 진노에 맡기십시오"
     ],
     "locations": [
       {
@@ -153910,7 +154954,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-13-1",
     "title": "위에 있는 권세에 복종하라",
     "aliases": [
-      "각 사람은 위에 있는 권세들에게 복종하라"
+      "각 사람은 위에 있는 권세들에게 복종하라",
+        "국가의 권세 잡은 사람들에게 복종하십시오"
     ],
     "locations": [
       {
@@ -153939,7 +154984,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-13-4",
     "title": "하나님의 사역자가 된 권세",
     "aliases": [
-      "그는 하나님의 사역자가 되어 네게 선을 베푸는 자니라"
+      "그는 하나님의 사역자가 되어 네게 선을 베푸는 자니라",
+        "통치자는 여러분에게 유익을 주기 위해 일하는 하나님의 일꾼입니다"
     ],
     "locations": [
       {
@@ -153968,7 +155014,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-13-8",
     "title": "사랑의 빚",
     "aliases": [
-      "피차 사랑의 빚 외에는 아무에게든지 아무 빚도 지지 말라"
+      "피차 사랑의 빚 외에는 아무에게든지 아무 빚도 지지 말라",
+        "다른 사람을 사랑하는 빚"
     ],
     "locations": [
       {
@@ -153998,7 +155045,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-13-11",
     "title": "자다가 깰 때",
     "aliases": [
-      "자다가 깰 때가 벌써 되었으니"
+      "자다가 깰 때가 벌써 되었으니",
+        "잠에서 깨어날 때가 되었기 때문입니다"
     ],
     "locations": [
       {
@@ -154027,7 +155075,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-14-1",
     "title": "믿음이 약한 자를 받으라",
     "aliases": [
-      "믿음이 연약한 자를 너희가 받되 그의 의견을 비판하지 말라"
+      "믿음이 연약한 자를 너희가 받되 그의 의견을 비판하지 말라",
+        "믿음이 약한 사람을 받아들이고"
     ],
     "locations": [
       {
@@ -154055,7 +155104,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-14-5",
     "title": "날을 확정하는 마음",
     "aliases": [
-      "각각 자기 마음으로 확정할지니라"
+      "각각 자기 마음으로 확정할지니라",
+        "어떤 날을 다른 날보다 더 중요하다고 생각하는 사람"
     ],
     "locations": [
       {
@@ -154083,7 +155133,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-14-7",
     "title": "주의 것",
     "aliases": [
-      "우리 중에 누구든지 자기를 위하여 사는 자가 없고"
+      "우리 중에 누구든지 자기를 위하여 사는 자가 없고",
+        "자기 자신만을 위해 사는 사람은 한 명도 없으며"
     ],
     "locations": [
       {
@@ -154111,7 +155162,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-14-10",
     "title": "하나님의 심판대 앞에 설 우리",
     "aliases": [
-      "우리가 다 하나님의 심판대 앞에 서리라"
+      "우리가 다 하나님의 심판대 앞에 서리라",
+        "하나님의 심판대 앞에 설 사람들입니다"
     ],
     "locations": [
       {
@@ -154140,7 +155192,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-14-14",
     "title": "스스로 속된 것은 없다",
     "aliases": [
-      "무엇이든지 스스로 속된 것이 없으되"
+      "무엇이든지 스스로 속된 것이 없으되",
+        "그 자체로 부정한 음식은 하나도 없습니다"
     ],
     "locations": [
       {
@@ -154169,7 +155222,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-15-1",
     "title": "강한 자가 약한 자의 약점을 담당하라",
     "aliases": [
-      "믿음이 강한 우리는 마땅히 믿음이 약한 자의 약점을 담당하고"
+      "믿음이 강한 우리는 마땅히 믿음이 약한 자의 약점을 담당하고",
+        "강한 우리는 약한 사람들의 약점을 돌보아 주고"
     ],
     "locations": [
       {
@@ -154198,7 +155252,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-15-4",
     "title": "전에 기록된 바는 우리의 교훈을 위하여",
     "aliases": [
-      "무엇이든지 전에 기록된 바는 우리의 교훈을 위하여 기록된 것이니"
+      "무엇이든지 전에 기록된 바는 우리의 교훈을 위하여 기록된 것이니",
+        "우리를 가르치기 위해 기록된 것입니다"
     ],
     "locations": [
       {
@@ -154226,7 +155281,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-15-7",
     "title": "그리스도처럼 서로 받으라",
     "aliases": [
-      "그리스도께서 우리를 받아 하나님께 영광을 돌리심과 같이 너희도 서로 받으라"
+      "그리스도께서 우리를 받아 하나님께 영광을 돌리심과 같이 너희도 서로 받으라",
+        "그리스도께서 여러분을 받으신 것처럼"
     ],
     "locations": [
       {
@@ -154254,7 +155310,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-15-12",
     "title": "이새의 뿌리가 열방의 소망",
     "aliases": [
-      "이새의 뿌리 곧 열방을 다스리기 위하여 일어나시는 이가 있으리니"
+      "이새의 뿌리 곧 열방을 다스리기 위하여 일어나시는 이가 있으리니",
+        "이새의 뿌리에서 나와"
     ],
     "locations": [
       {
@@ -154284,7 +155341,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-15-19",
     "title": "표적과 성령의 능력으로 전한 복음",
     "aliases": [
-      "표적과 기사의 능력으로 성령의 능력으로"
+      "표적과 기사의 능력으로 성령의 능력으로",
+        "표적과 놀라운 일과 성령의 능력으로"
     ],
     "locations": [
       {
@@ -154314,7 +155372,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-16-1",
     "title": "자매 뵈뵈의 추천",
     "aliases": [
-      "내가 겐그레아 교회의 일꾼으로 있는 우리 자매 뵈뵈를 너희에게 추천하노니"
+      "내가 겐그레아 교회의 일꾼으로 있는 우리 자매 뵈뵈를 너희에게 추천하노니",
+        "우리의 자매 뵈뵈를 여러분에게 추천합니다"
     ],
     "locations": [
       {
@@ -154342,7 +155401,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-16-4",
     "title": "목을 내놓은 브리스가와 아굴라",
     "aliases": [
-      "그들은 내 목숨을 위하여 자기들의 목까지도 내놓았나니"
+      "그들은 내 목숨을 위하여 자기들의 목까지도 내놓았나니",
+        "생명의 위협을 무릅쓰고 내 목숨을 구해 준 사람들"
     ],
     "locations": [
       {
@@ -154371,7 +155431,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-16-7",
     "title": "먼저 그리스도 안에 있던 안드로니고와 유니아",
     "aliases": [
-      "그들은 사도들에게 존중히 여겨지고 또한 나보다 먼저 그리스도 안에 있는 자라"
+      "그들은 사도들에게 존중히 여겨지고 또한 나보다 먼저 그리스도 안에 있는 자라",
+        "안드로니고와 유니아"
     ],
     "locations": [
       {
@@ -154400,7 +155461,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-16-17",
     "title": "분쟁을 일으키는 자에게서 떠나라",
     "aliases": [
-      "거치게 하는 자들을 살피고 그들에게서 떠나라"
+      "거치게 하는 자들을 살피고 그들에게서 떠나라",
+        "분열을 일으키고"
     ],
     "locations": [
       {
@@ -154429,7 +155491,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-16-20",
     "title": "사탄을 발 아래에서 상하게 하시리라",
     "aliases": [
-      "평강의 하나님께서 속히 사탄을 너희 발 아래에서 상하게 하시리라"
+      "평강의 하나님께서 속히 사탄을 너희 발 아래에서 상하게 하시리라",
+        "사탄을 여러분의 발 아래 짓밟히게 하실 것입니다"
     ],
     "locations": [
       {
@@ -154459,7 +155522,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-rom-16-25",
     "title": "영세 전부터 감추어졌다가 나타난 복음",
     "aliases": [
-      "나의 복음과 예수 그리스도를 전파함은 영세 전부터 감추어졌다가"
+      "나의 복음과 예수 그리스도를 전파함은 영세 전부터 감추어졌다가",
+        "감추어 두셨던 비밀을 밝히 드러내심으로써"
     ],
     "locations": [
       {
@@ -161517,7 +162581,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-1-1",
     "title": "아브라함과 다윗의 자손",
     "aliases": [
-      "아브라함과 다윗의 자손 예수 그리스도의 계보라"
+      "아브라함과 다윗의 자손 예수 그리스도의 계보라",
+        "다윗의 후손인 예수 그리스도의 족보입니다"
     ],
     "locations": [
       {
@@ -161547,7 +162612,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-1-5",
     "title": "라합과 룻의 이름",
     "aliases": [
-      "살몬은 라합에게서 보아스를 낳고 보아스는 룻에게서 오벳을 낳고"
+      "살몬은 라합에게서 보아스를 낳고 보아스는 룻에게서 오벳을 낳고",
+        "보아스의 어머니는 라합입니다"
     ],
     "locations": [
       {
@@ -161578,7 +162644,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-1-6",
     "title": "다윗과 우리야의 아내",
     "aliases": [
-      "다윗은 우리야의 아내에게서 솔로몬을 낳고"
+      "다윗은 우리야의 아내에게서 솔로몬을 낳고",
+        "솔로몬의 어머니는 우리야의 아내, 밧세바였습니다"
     ],
     "locations": [
       {
@@ -161608,7 +162675,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-1-16",
     "title": "요셉을 거쳐 마리아에게서",
     "aliases": [
-      "마리아에게서 그리스도라 칭하는 예수가 나시니라"
+      "마리아에게서 그리스도라 칭하는 예수가 나시니라",
+        "그리스도라고 하는 예수님은 마리아에게서 태어났습니다"
     ],
     "locations": [
       {
@@ -161638,7 +162706,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-1-17",
     "title": "열네 대씩 세 묶음",
     "aliases": [
-      "아브라함부터 다윗까지 열네 대요"
+      "아브라함부터 다윗까지 열네 대요",
+        "아브라함부터 다윗까지 십사 대이고"
     ],
     "locations": [
       {
@@ -161667,7 +162736,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-1-18",
     "title": "성령으로 잉태된 일",
     "aliases": [
-      "성령으로 잉태된 것이 나타났더니"
+      "성령으로 잉태된 것이 나타났더니",
+        "성령에 의해서 마리아가 임신하게 된 사실이 밝혀졌습니다"
     ],
     "locations": [
       {
@@ -161697,7 +162767,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-1-21",
     "title": "이름 예수의 뜻",
     "aliases": [
-      "그가 자기 백성을 그들의 죄에서 구원할 자이심이라"
+      "그가 자기 백성을 그들의 죄에서 구원할 자이심이라",
+        "그가 자기의 백성을 죄에서 구원해 낼 것이다"
     ],
     "locations": [
       {
@@ -161726,7 +162797,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-1-23",
     "title": "임마누엘의 뜻",
     "aliases": [
-      "이를 번역한즉 하나님이 우리와 함께 계시다 함이라"
+      "이를 번역한즉 하나님이 우리와 함께 계시다 함이라",
+        "우리와 함께 계시는 하나님"
     ],
     "locations": [
       {
@@ -161756,7 +162828,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-1-25",
     "title": "낳기까지 동침하지 않음",
     "aliases": [
-      "아들을 낳기까지 동침하지 아니하더니"
+      "아들을 낳기까지 동침하지 아니하더니",
+        "마리아가 아들을 낳을 때까지 요셉은 잠자리를 같이하지 않았습니다"
     ],
     "locations": [
       {
@@ -161785,7 +162858,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-2-2",
     "title": "유대인의 왕으로 나신 이",
     "aliases": [
-      "유대인의 왕으로 나신 이가 어디 계시냐"
+      "유대인의 왕으로 나신 이가 어디 계시냐",
+        "유대인의 왕으로 태어나신 아기가 어디 계십니까?"
     ],
     "locations": [
       {
@@ -161815,7 +162889,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-2-6",
     "title": "미가서의 베들레헴",
     "aliases": [
-      "네게서 한 다스리는 자가 나와서 내 백성 이스라엘의 목자가 되리라"
+      "네게서 한 다스리는 자가 나와서 내 백성 이스라엘의 목자가 되리라",
+        "네게서 한 통치자가 나올 것이다"
     ],
     "locations": [
       {
@@ -161844,7 +162919,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-2-8",
     "title": "헤롯의 거짓 경배",
     "aliases": [
-      "나도 가서 그에게 경배하게 하라"
+      "나도 가서 그에게 경배하게 하라",
+        "가서 아기를 잘 찾아보시오"
     ],
     "locations": [
       {
@@ -161873,7 +162949,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-2-9",
     "title": "다시 나타난 별",
     "aliases": [
-      "아기 있는 곳 위에 머물러 서 있는지라"
+      "아기 있는 곳 위에 머물러 서 있는지라",
+        "동쪽 나라에서 보았던 바로 그 별이 박사들 앞에 나타나"
     ],
     "locations": [
       {
@@ -161902,7 +162979,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-2-11",
     "title": "박사들의 예물",
     "aliases": [
-      "보배합을 열어 황금과 유향과 몰약을 예물로 드리니라"
+      "보배합을 열어 황금과 유향과 몰약을 예물로 드리니라",
+        "황금과 유향과 몰약을 예물로 드렸습니다"
     ],
     "locations": [
       {
@@ -161931,7 +163009,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-2-15",
     "title": "애굽에서 부르신 아들",
     "aliases": [
-      "애굽으로부터 내 아들을 불렀다"
+      "애굽으로부터 내 아들을 불렀다",
+        "내가 나의 아들을 이집트에서 불러 내었다"
     ],
     "locations": [
       {
@@ -161961,7 +163040,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-2-18",
     "title": "라마의 통곡",
     "aliases": [
-      "라마에서 슬퍼하며 크게 통곡하는 소리가 들리니"
+      "라마에서 슬퍼하며 크게 통곡하는 소리가 들리니",
+        "라헬이 자기 아이들을 위해 우는데"
     ],
     "locations": [
       {
@@ -161993,7 +163073,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-2-23",
     "title": "나사렛 사람",
     "aliases": [
-      "나사렛이란 동네에 가서 사니"
+      "나사렛이란 동네에 가서 사니",
+        "그는 나사렛이라는 마을로 가서, 거기서 살았습니다"
     ],
     "locations": [
       {
@@ -162022,7 +163103,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-3-2",
     "title": "회개하라, 천국이 가까이",
     "aliases": [
-      "회개하라 천국이 가까이 왔느니라"
+      "회개하라 천국이 가까이 왔느니라",
+        "회개하시오. 하늘 나라가 가까이 왔습니다"
     ],
     "locations": [
       {
@@ -162051,7 +163133,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-3-3",
     "title": "광야에서 외치는 소리",
     "aliases": [
-      "광야에 외치는 자의 소리가 있어 이르되 너희는 주의 길을 준비하라"
+      "광야에 외치는 자의 소리가 있어 이르되 너희는 주의 길을 준비하라",
+        "예언자 이사야가 말한 바로 그 사람입니다"
     ],
     "locations": [
       {
@@ -162080,7 +163163,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-3-4",
     "title": "요한의 옷과 음식",
     "aliases": [
-      "낙타털 옷을 입고 허리에 가죽 띠를 띠고"
+      "낙타털 옷을 입고 허리에 가죽 띠를 띠고",
+        "요한은 낙타털로 만든 옷을 입고"
     ],
     "locations": [
       {
@@ -162140,7 +163224,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-3-9",
     "title": "혈통을 믿지 말라",
     "aliases": [
-      "속으로 아브라함이 우리 조상이라고 생각하지 말라"
+      "속으로 아브라함이 우리 조상이라고 생각하지 말라",
+        "하나님께서는 이 돌로도 아브라함의 자손이 되게 하실 수 있다"
     ],
     "locations": [
       {
@@ -162170,7 +163255,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-3-11",
     "title": "물과 성령과 불",
     "aliases": [
-      "그는 성령과 불로 너희에게 세례를 베푸실 것이요"
+      "그는 성령과 불로 너희에게 세례를 베푸실 것이요",
+        "그분은 너희에게 성령과 불로 세례를 주실 것이다"
     ],
     "locations": [
       {
@@ -162200,7 +163286,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-3-15",
     "title": "모든 의를 이루심",
     "aliases": [
-      "이제 허락하라 우리가 이와 같이 하여 모든 의를 이루는 것이 합당하니라"
+      "이제 허락하라 우리가 이와 같이 하여 모든 의를 이루는 것이 합당하니라",
+        "우리가 이와 같이 하여 모든 의를 이루는 것이 옳다"
     ],
     "locations": [
       {
@@ -162230,7 +163317,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-3-17",
     "title": "사랑하는 아들",
     "aliases": [
-      "이는 내 사랑하는 아들이요 내 기뻐하는 자라"
+      "이는 내 사랑하는 아들이요 내 기뻐하는 자라",
+        "이는 내 사랑하는 아들이며, 내가 기뻐하는 아들이다"
     ],
     "locations": [
       {
@@ -162261,7 +163349,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-4-1",
     "title": "시험을 받으러 광야로",
     "aliases": [
-      "성령에게 이끌리어 마귀에게 시험을 받으러 광야로 가사"
+      "성령에게 이끌리어 마귀에게 시험을 받으러 광야로 가사",
+        "성령에게 이끌려 광야로 가셔서"
     ],
     "locations": [
       {
@@ -162291,7 +163380,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-4-4",
     "title": "말씀으로 사는 삶",
     "aliases": [
-      "사람이 떡으로만 살 것이 아니요 하나님의 입으로부터 나오는 모든 말씀으로 살 것이라"
+      "사람이 떡으로만 살 것이 아니요 하나님의 입으로부터 나오는 모든 말씀으로 살 것이라",
+        "하나님의 입에서 나오는 모든 말씀으로 살 것이다"
     ],
     "locations": [
       {
@@ -162320,7 +163410,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-4-6",
     "title": "성전 꼭대기에서의 시험",
     "aliases": [
-      "네가 만일 하나님의 아들이어든 뛰어내리라"
+      "네가 만일 하나님의 아들이어든 뛰어내리라",
+        "만일 당신이 하나님의 아들이라면 뛰어내리시오"
     ],
     "locations": [
       {
@@ -162351,7 +163442,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-4-10",
     "title": "오직 주께만 경배",
     "aliases": [
-      "주 너의 하나님께 경배하고 다만 그를 섬기라"
+      "주 너의 하나님께 경배하고 다만 그를 섬기라",
+        "오직 주 너희 하나님께만 경배하고, 그를 섬겨라"
     ],
     "locations": [
       {
@@ -162381,7 +163473,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-4-15",
     "title": "이방의 갈릴리",
     "aliases": [
-      "스불론 땅과 납달리 땅과 요단 강 저편 해변 길과 이방의 갈릴리여"
+      "스불론 땅과 납달리 땅과 요단 강 저편 해변 길과 이방의 갈릴리여",
+        "이방 사람들이 사는 갈릴리"
     ],
     "locations": [
       {
@@ -162411,7 +163504,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-4-17",
     "title": "회개하라, 천국이 가까이",
     "aliases": [
-      "회개하라 천국이 가까이 왔느니라"
+      "회개하라 천국이 가까이 왔느니라",
+        "회개하라. 하늘 나라가 가까이 왔다"
     ],
     "locations": [
       {
@@ -162441,7 +163535,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-4-19",
     "title": "사람을 낚는 어부",
     "aliases": [
-      "나를 따라오라 내가 너희를 사람을 낚는 어부가 되게 하리라"
+      "나를 따라오라 내가 너희를 사람을 낚는 어부가 되게 하리라",
+        "내가 너희를 사람을 낚는 어부로 삼겠다"
     ],
     "locations": [
       {
@@ -162473,7 +163568,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-4-23",
     "title": "가르치고 전파하고 고치심",
     "aliases": [
-      "그들의 회당에서 가르치시며 천국 복음을 전파하시며"
+      "그들의 회당에서 가르치시며 천국 복음을 전파하시며",
+        "하늘 나라에 대한 기쁜 소식을 전해 주셨습니다"
     ],
     "locations": [
       {
@@ -162507,7 +163603,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-5-3",
     "title": "팔복의 시작",
     "aliases": [
-      "심령이 가난한 자는 복이 있나니"
+      "심령이 가난한 자는 복이 있나니",
+        "마음이 가난한 사람은 복이 있다"
     ],
     "locations": [
       {
@@ -162537,7 +163634,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-5-14",
     "title": "세상의 빛",
     "aliases": [
-      "너희는 세상의 빛이라"
+      "너희는 세상의 빛이라",
+        "너희는 세상의 빛이다"
     ],
     "locations": [
       {
@@ -162567,7 +163665,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-5-17",
     "title": "율법을 완전하게 하러 오심",
     "aliases": [
-      "폐하러 온 것이 아니요 완전하게 하려 함이라"
+      "폐하러 온 것이 아니요 완전하게 하려 함이라",
+        "나는 그들의 말씀을 깨뜨리러 온 것이 아니라 완성하러 왔다"
     ],
     "locations": [
       {
@@ -162597,7 +163696,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-5-20",
     "title": "더 나은 의",
     "aliases": [
-      "너희 의가 서기관과 바리새인보다 더 낫지 못하면"
+      "너희 의가 서기관과 바리새인보다 더 낫지 못하면",
+        "너희 의가 율법학자들이나 바리새파 사람보다 훨씬 낫지 않으면"
     ],
     "locations": [
       {
@@ -162627,7 +163727,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-5-22",
     "title": "형제에게 노하는 것",
     "aliases": [
-      "형제에게 노하는 자마다 심판을 받게 되고"
+      "형제에게 노하는 자마다 심판을 받게 되고",
+        "자기 형제에게 화를 내는 사람은 재판정에 설 것이며"
     ],
     "locations": [
       {
@@ -162657,7 +163758,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-5-28",
     "title": "마음으로 짓는 간음",
     "aliases": [
-      "음욕을 품고 여자를 보는 자마다 마음에 이미 간음하였느니라"
+      "음욕을 품고 여자를 보는 자마다 마음에 이미 간음하였느니라",
+        "음란한 생각으로 여자를 바라보는 사람은"
     ],
     "locations": [
       {
@@ -162687,7 +163789,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-5-32",
     "title": "이혼과 음행의 이유",
     "aliases": [
-      "누구든지 음행한 이유 없이 아내를 버리면"
+      "누구든지 음행한 이유 없이 아내를 버리면",
+        "음행한 경우 외에 자기 아내와 이혼하는 사람은"
     ],
     "locations": [
       {
@@ -162718,7 +163821,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-5-39",
     "title": "악한 자를 대적하지 말라",
     "aliases": [
-      "악한 자를 대적하지 말라"
+      "악한 자를 대적하지 말라",
+        "나쁜 사람과 맞서지 마라"
     ],
     "locations": [
       {
@@ -162749,7 +163853,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-5-44",
     "title": "원수를 사랑하라",
     "aliases": [
-      "너희 원수를 사랑하며 너희를 박해하는 자를 위하여 기도하라"
+      "너희 원수를 사랑하며 너희를 박해하는 자를 위하여 기도하라",
+        "너희의 원수를 사랑하여라"
     ],
     "locations": [
       {
@@ -162780,7 +163885,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-5-48",
     "title": "온전하라",
     "aliases": [
-      "하늘에 계신 너희 아버지의 온전하심과 같이 너희도 온전하라"
+      "하늘에 계신 너희 아버지의 온전하심과 같이 너희도 온전하라",
+        "너희 아버지가 완전하신 것처럼"
     ],
     "locations": [
       {
@@ -162810,7 +163916,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-6-1",
     "title": "사람에게 보이려는 의",
     "aliases": [
-      "사람에게 보이려고 그들 앞에서 너희 의를 행하지 않도록 주의하라"
+      "사람에게 보이려고 그들 앞에서 너희 의를 행하지 않도록 주의하라",
+        "남들에게 보이려고"
     ],
     "locations": [
       {
@@ -162840,7 +163947,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-6-4",
     "title": "은밀한 구제",
     "aliases": [
-      "네 구제함을 은밀하게 하라"
+      "네 구제함을 은밀하게 하라",
+        "아무도 너의 구제함을 모르게 하여라"
     ],
     "locations": [
       {
@@ -162870,7 +163978,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-6-7",
     "title": "중언부언하지 말라",
     "aliases": [
-      "이방인과 같이 중언부언하지 말라"
+      "이방인과 같이 중언부언하지 말라",
+        "아무 의미 없는 말을 되풀이하지 마라"
     ],
     "locations": [
       {
@@ -162901,7 +164010,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-6-9",
     "title": "하늘에 계신 우리 아버지",
     "aliases": [
-      "하늘에 계신 우리 아버지여"
+      "하늘에 계신 우리 아버지여",
+        "하늘에 계신 우리 아버지"
     ],
     "locations": [
       {
@@ -162931,7 +164041,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-6-11",
     "title": "일용할 양식",
     "aliases": [
-      "오늘 우리에게 일용할 양식을 주시옵고"
+      "오늘 우리에게 일용할 양식을 주시옵고",
+        "오늘 우리에게 필요한 양식을 주소서"
     ],
     "locations": [
       {
@@ -162961,7 +164072,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-6-12",
     "title": "용서하는 자가 받는 용서",
     "aliases": [
-      "우리가 우리에게 죄 지은 자를 사하여 준 것 같이 우리 죄를 사하여 주시옵고"
+      "우리가 우리에게 죄 지은 자를 사하여 준 것 같이 우리 죄를 사하여 주시옵고",
+        "우리에게 잘못한 사람을 우리가 용서해 준 것처럼"
     ],
     "locations": [
       {
@@ -162991,7 +164103,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-6-21",
     "title": "마음이 있는 곳",
     "aliases": [
-      "네 보물 있는 그 곳에는 네 마음도 있느니라"
+      "네 보물 있는 그 곳에는 네 마음도 있느니라",
+        "네 재물이 있는 곳에 네 마음도 있다"
     ],
     "locations": [
       {
@@ -163022,7 +164135,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-6-24",
     "title": "두 주인을 섬길 수 없다",
     "aliases": [
-      "너희가 하나님과 재물을 겸하여 섬기지 못하느니라"
+      "너희가 하나님과 재물을 겸하여 섬기지 못하느니라",
+        "아무도 두 주인을 섬기지 못한다"
     ],
     "locations": [
       {
@@ -163053,7 +164167,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-6-25",
     "title": "염려하지 말라",
     "aliases": [
-      "목숨이 음식보다 중하지 아니하며 몸이 의복보다 중하지 아니하냐"
+      "목숨이 음식보다 중하지 아니하며 몸이 의복보다 중하지 아니하냐",
+        "무엇을 먹을까, 또는 무엇을 마실까 걱정하지 마라"
     ],
     "locations": [
       {
@@ -163084,7 +164199,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-6-33",
     "title": "먼저 그의 나라와 그의 의를",
     "aliases": [
-      "그런즉 너희는 먼저 그의 나라와 그의 의를 구하라"
+      "그런즉 너희는 먼저 그의 나라와 그의 의를 구하라",
+        "먼저 아버지의 나라와 아버지의 의를 구하여라"
     ],
     "locations": [
       {
@@ -163114,7 +164230,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-7-1",
     "title": "비판하지 말라",
     "aliases": [
-      "비판을 받지 아니하려거든 비판하지 말라"
+      "비판을 받지 아니하려거든 비판하지 말라",
+        "비판을 받지 않으려면, 비판하지 마라"
     ],
     "locations": [
       {
@@ -163146,7 +164263,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-7-6",
     "title": "개와 돼지에게 진주를",
     "aliases": [
-      "거룩한 것을 개에게 주지 말며"
+      "거룩한 것을 개에게 주지 말며",
+        "거룩한 것을 개에게 주지 마라"
     ],
     "locations": [
       {
@@ -163176,7 +164294,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-7-7",
     "title": "구하라, 찾으라, 두드리라",
     "aliases": [
-      "구하라 그리하면 너희에게 주실 것이요"
+      "구하라 그리하면 너희에게 주실 것이요",
+        "구하라, 그러면 너희에게 주실 것이다"
     ],
     "locations": [
       {
@@ -163207,7 +164326,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-7-12",
     "title": "남을 대접하라, 율법과 선지자",
     "aliases": [
-      "이것이 율법이요 선지자니라"
+      "이것이 율법이요 선지자니라",
+        "이것이 율법과 예언서의 내용이다"
     ],
     "locations": [
       {
@@ -163238,7 +164358,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-7-13",
     "title": "좁은 문",
     "aliases": [
-      "좁은 문으로 들어가라"
+      "좁은 문으로 들어가라",
+        "좁은 문으로 들어가거라"
     ],
     "locations": [
       {
@@ -163268,7 +164389,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-7-16",
     "title": "열매로 알라",
     "aliases": [
-      "그들의 열매로 그들을 알지니"
+      "그들의 열매로 그들을 알지니",
+        "그들의 열매를 보고, 그들을 알 것이다"
     ],
     "locations": [
       {
@@ -163299,7 +164421,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-7-21",
     "title": "주여 주여 하는 자",
     "aliases": [
-      "나더러 주여 주여 하는 자마다 다 천국에 들어갈 것이 아니요"
+      "나더러 주여 주여 하는 자마다 다 천국에 들어갈 것이 아니요",
+        "나에게 '주님, 주님'이라고 말하는 사람"
     ],
     "locations": [
       {
@@ -163329,7 +164452,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-7-24",
     "title": "반석 위에 지은 집",
     "aliases": [
-      "그 집을 반석 위에 지은 지혜로운 사람 같으리니"
+      "그 집을 반석 위에 지은 지혜로운 사람 같으리니",
+        "바위 위에 집을 지은 지혜로운 사람과 같다"
     ],
     "locations": [
       {
@@ -163359,7 +164483,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-7-28",
     "title": "가르치심에 놀람",
     "aliases": [
-      "무리들이 그의 가르치심에 놀라니"
+      "무리들이 그의 가르치심에 놀라니",
+        "사람들은 예수님의 가르침에 놀랐습니다"
     ],
     "locations": [
       {
@@ -163389,7 +164514,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-8-3",
     "title": "내가 원하노니 깨끗함을 받으라",
     "aliases": [
-      "내가 원하노니 깨끗함을 받으라"
+      "내가 원하노니 깨끗함을 받으라",
+        "내가 너를 고쳐 주길 원한다"
     ],
     "locations": [
       {
@@ -163420,7 +164546,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-8-10",
     "title": "이만한 믿음",
     "aliases": [
-      "이스라엘 중 아무에게서도 이만한 믿음을 보지 못하였노라"
+      "이스라엘 중 아무에게서도 이만한 믿음을 보지 못하였노라",
+        "이같이 큰 믿음을 가진 사람을 본 적이 없다"
     ],
     "locations": [
       {
@@ -163451,7 +164578,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-8-11",
     "title": "동서에서 오는 사람들",
     "aliases": [
-      "아브라함과 이삭과 야곱과 함께 천국에 앉으려니와"
+      "아브라함과 이삭과 야곱과 함께 천국에 앉으려니와",
+        "많은 사람들이 동쪽과 서쪽에서 와서"
     ],
     "locations": [
       {
@@ -163482,7 +164610,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-8-13",
     "title": "네 믿은 대로 될지어다",
     "aliases": [
-      "가라 네 믿은 대로 될지어다"
+      "가라 네 믿은 대로 될지어다",
+        "네가 믿은 대로, 네게 이루어질 것이다"
     ],
     "locations": [
       {
@@ -163511,7 +164640,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-8-17",
     "title": "연약함을 담당하심",
     "aliases": [
-      "우리의 연약한 것을 친히 담당하시고 병을 짊어지셨도다"
+      "우리의 연약한 것을 친히 담당하시고 병을 짊어지셨도다",
+        "우리의 연약함을 짊어지셨고 우리의 질병을 떠맡으셨다"
     ],
     "locations": [
       {
@@ -163541,7 +164671,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-8-20",
     "title": "머리 둘 곳이 없는 인자",
     "aliases": [
-      "인자는 머리 둘 곳이 없다"
+      "인자는 머리 둘 곳이 없다",
+        "인자는 머리 둘 곳조차 없다"
     ],
     "locations": [
       {
@@ -163572,7 +164703,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-8-22",
     "title": "죽은 자의 장례",
     "aliases": [
-      "죽은 자들이 그들의 죽은 자들을 장사하게 하고"
+      "죽은 자들이 그들의 죽은 자들을 장사하게 하고",
+        "죽은 사람의 장례는 죽은 사람이 치르도록 하여라"
     ],
     "locations": [
       {
@@ -163602,7 +164734,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-8-26",
     "title": "믿음이 작은 자들아",
     "aliases": [
-      "어찌하여 무서워하느냐 믿음이 작은 자들아"
+      "어찌하여 무서워하느냐 믿음이 작은 자들아",
+        "믿음이 적은 자들아"
     ],
     "locations": [
       {
@@ -163632,7 +164765,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-8-27",
     "title": "이이가 어떠한 사람이기에",
     "aliases": [
-      "이이가 어떠한 사람이기에 바람과 바다도 순종하는가"
+      "이이가 어떠한 사람이기에 바람과 바다도 순종하는가",
+        "도대체 예수님은 어떤 분이길래"
     ],
     "locations": [
       {
@@ -163662,7 +164796,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-8-32",
     "title": "돼지 떼로 들어간 귀신",
     "aliases": [
-      "귀신들이 나와서 돼지에게로 들어가는지라"
+      "귀신들이 나와서 돼지에게로 들어가는지라",
+        "돼지 떼 속으로 들어갔습니다"
     ],
     "locations": [
       {
@@ -163696,7 +164831,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-9-6",
     "title": "죄를 사하는 권능",
     "aliases": [
-      "인자가 세상에서 죄를 사하는 권능이 있는 줄을"
+      "인자가 세상에서 죄를 사하는 권능이 있는 줄을",
+        "땅에서 죄를 용서할 권세를 가지고 있다는 것을"
     ],
     "locations": [
       {
@@ -163727,7 +164863,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-9-9",
     "title": "세리 마태를 부르심",
     "aliases": [
-      "나를 따르라 하시니 일어나 따르니라"
+      "나를 따르라 하시니 일어나 따르니라",
+        "마태라는 사람이 세관에 앉아 있는 것을 보셨습니다"
     ],
     "locations": [
       {
@@ -163759,7 +164896,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-9-13",
     "title": "의인이 아니라 죄인을",
     "aliases": [
-      "나는 의인을 부르러 온 것이 아니요 죄인을 부르러 왔노라"
+      "나는 의인을 부르러 온 것이 아니요 죄인을 부르러 왔노라",
+        "나는 의인을 부르러 온 것이 아니라, 죄인을 부르러 왔다"
     ],
     "locations": [
       {
@@ -163789,7 +164927,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-9-15",
     "title": "신랑을 빼앗길 날",
     "aliases": [
-      "그러나 신랑을 빼앗길 날이 이르리니"
+      "그러나 신랑을 빼앗길 날이 이르리니",
+        "신랑을 빼앗길 날이 올 텐데"
     ],
     "locations": [
       {
@@ -163849,7 +164988,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-9-24",
     "title": "죽은 것이 아니라 잔다",
     "aliases": [
-      "이 소녀가 죽은 것이 아니라 잔다"
+      "이 소녀가 죽은 것이 아니라 잔다",
+        "소녀는 죽은 것이 아니라 자고 있는 것이다"
     ],
     "locations": [
       {
@@ -163880,7 +165020,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-9-28",
     "title": "능히 이 일 할 줄을 믿느냐",
     "aliases": [
-      "내가 능히 이 일 할 줄을 믿느냐"
+      "내가 능히 이 일 할 줄을 믿느냐",
+        "내가 너희를 보게 할 수 있다고 믿느냐"
     ],
     "locations": [
       {
@@ -163910,7 +165051,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-9-34",
     "title": "귀신의 왕을 의지한다는 비난",
     "aliases": [
-      "그가 귀신의 왕을 의지하여 귀신을 쫓아낸다 하더라"
+      "그가 귀신의 왕을 의지하여 귀신을 쫓아낸다 하더라",
+        "우두머리 귀신의 힘으로 귀신을 내쫓는 것이다"
     ],
     "locations": [
       {
@@ -163940,7 +165082,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-9-36",
     "title": "목자 없는 양 같은 무리",
     "aliases": [
-      "목자 없는 양과 같이 고생하며 기진함이라"
+      "목자 없는 양과 같이 고생하며 기진함이라",
+        "마치 목자 없는 양처럼"
     ],
     "locations": [
       {
@@ -163971,7 +165114,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-9-37",
     "title": "추수는 많고 일꾼은 적다",
     "aliases": [
-      "추수할 것은 많되 일꾼이 적으니"
+      "추수할 것은 많되 일꾼이 적으니",
+        "추수할 것은 넘쳐나는데, 일꾼이 적구나"
     ],
     "locations": [
       {
@@ -164001,7 +165145,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-10-1",
     "title": "열두 제자에게 권능을 주심",
     "aliases": [
-      "그의 열두 제자를 부르사"
+      "그의 열두 제자를 부르사",
+        "모든 병과 허약함을 치료하는 권능을 주셨습니다"
     ],
     "locations": [
       {
@@ -164031,7 +165176,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-10-4",
     "title": "예수를 판 가룟 유다",
     "aliases": [
-      "가룟 유다 곧 예수를 판 자라"
+      "가룟 유다 곧 예수를 판 자라",
+        "유다는 예수님을 배반한 사람입니다"
     ],
     "locations": [
       {
@@ -164062,7 +165208,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-10-5",
     "title": "이스라엘 집의 잃은 양에게",
     "aliases": [
-      "이방인의 길로도 가지 말고 사마리아인의 고을에도 들어가지 말고"
+      "이방인의 길로도 가지 말고 사마리아인의 고을에도 들어가지 말고",
+        "이방 사람의 길로 가지 말고"
     ],
     "locations": [
       {
@@ -164093,7 +165240,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-10-16",
     "title": "양을 이리 가운데 보냄",
     "aliases": [
-      "뱀 같이 지혜롭고 비둘기 같이 순결하라"
+      "뱀 같이 지혜롭고 비둘기 같이 순결하라",
+        "늑대 무리 속으로 양을 보내는 것과 같다"
     ],
     "locations": [
       {
@@ -164123,7 +165271,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-10-20",
     "title": "너희 속에서 말씀하시는 성령",
     "aliases": [
-      "말하는 이는 너희가 아니라 너희 속에서 말씀하시는 이"
+      "말하는 이는 너희가 아니라 너희 속에서 말씀하시는 이",
+        "너희 아버지의 영이 너희 속에서 말씀하시는 것이다"
     ],
     "locations": [
       {
@@ -164154,7 +165303,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-10-28",
     "title": "몸을 죽여도 영혼은 못 죽이는 자",
     "aliases": [
-      "몸은 죽여도 영혼은 능히 죽이지 못하는 자들을 두려워하지 말고"
+      "몸은 죽여도 영혼은 능히 죽이지 못하는 자들을 두려워하지 말고",
+        "몸은 죽일 수 있으나 영혼은 죽일 수 없는 사람들을"
     ],
     "locations": [
       {
@@ -164184,7 +165334,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-10-29",
     "title": "참새 하나도 땅에 떨어지지 않음",
     "aliases": [
-      "참새 두 마리가 한 앗사리온에 팔리지 않느냐"
+      "참새 두 마리가 한 앗사리온에 팔리지 않느냐",
+        "너희 아버지가 아니고서는 한 마리도 땅에 떨어질 수 없다"
     ],
     "locations": [
       {
@@ -164215,7 +165366,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-10-34",
     "title": "화평이 아니요 검을 주러 왔노라",
     "aliases": [
-      "화평이 아니요 검을 주러 왔노라"
+      "화평이 아니요 검을 주러 왔노라",
+        "평화가 아니라 칼을 주러 왔다"
     ],
     "locations": [
       {
@@ -164245,7 +165397,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-10-37",
     "title": "나보다 더 사랑하는 자",
     "aliases": [
-      "아버지나 어머니를 나보다 더 사랑하는 자는 내게 합당하지 아니하고"
+      "아버지나 어머니를 나보다 더 사랑하는 자는 내게 합당하지 아니하고",
+        "나를 사랑하는 것보다 자기 부모를 더 사랑하면"
     ],
     "locations": [
       {
@@ -164276,7 +165429,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-10-40",
     "title": "너희를 영접하는 자",
     "aliases": [
-      "너희를 영접하는 자는 나를 영접하는 것이요"
+      "너희를 영접하는 자는 나를 영접하는 것이요",
+        "너희를 맞아들이는 사람은 나를 맞아들이는 것이다"
     ],
     "locations": [
       {
@@ -164306,7 +165460,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-11-3",
     "title": "오실 그이가 당신인가",
     "aliases": [
-      "오실 그이가 당신이오니이까"
+      "오실 그이가 당신이오니이까",
+        "오신다고 했던 분이 바로 당신입니까"
     ],
     "locations": [
       {
@@ -164338,7 +165493,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-11-5",
     "title": "보고 듣는 것을 알리라",
     "aliases": [
-      "맹인이 보며 못 걷는 사람이 걸으며"
+      "맹인이 보며 못 걷는 사람이 걸으며",
+        "보지 못하는 사람이 보고, 걷지 못하는 사람이 걷고"
     ],
     "locations": [
       {
@@ -164369,7 +165525,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-11-7",
     "title": "광야에 나간 이유",
     "aliases": [
-      "바람에 흔들리는 갈대냐"
+      "바람에 흔들리는 갈대냐",
+        "너희는 무엇을 보러 광야에 나갔느냐"
     ],
     "locations": [
       {
@@ -164401,7 +165558,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-11-11",
     "title": "세례 요한보다 큰 이",
     "aliases": [
-      "여자가 낳은 자 중에 세례 요한보다 큰 이가 일어남이 없도다"
+      "여자가 낳은 자 중에 세례 요한보다 큰 이가 일어남이 없도다",
+        "세례자 요한보다 더 위대한 사람은 없다"
     ],
     "locations": [
       {
@@ -164431,7 +165589,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-11-12",
     "title": "침노를 당하는 하늘 나라",
     "aliases": [
-      "천국은 침노를 당하나니"
+      "천국은 침노를 당하나니",
+        "하늘 나라는 힘있게 성장하고 있다"
     ],
     "locations": [
       {
@@ -164461,7 +165620,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-11-14",
     "title": "오리라 한 엘리야",
     "aliases": [
-      "오리라 한 엘리야가 곧 이 사람이니라"
+      "오리라 한 엘리야가 곧 이 사람이니라",
+        "오기로 되어 있는 엘리야가 바로 요한이다"
     ],
     "locations": [
       {
@@ -164493,7 +165653,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-11-21",
     "title": "고라신과 벳새다에 화",
     "aliases": [
-      "화 있을진저 고라신아 화 있을진저 벳새다야"
+      "화 있을진저 고라신아 화 있을진저 벳새다야",
+        "고라신아! 화가 있을 것이다"
     ],
     "locations": [
       {
@@ -164524,7 +165685,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-11-25",
     "title": "지혜로운 자에게 숨기시고",
     "aliases": [
-      "지혜롭고 슬기 있는 자들에게는 숨기시고"
+      "지혜롭고 슬기 있는 자들에게는 숨기시고",
+        "지혜롭고 영리한 사람에게는 감추시고"
     ],
     "locations": [
       {
@@ -164555,7 +165717,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-11-28",
     "title": "수고하고 무거운 짐 진 자들아",
     "aliases": [
-      "수고하고 무거운 짐 진 자들아 다 내게로 오라 내가 너희를 쉬게 하리라"
+      "수고하고 무거운 짐 진 자들아 다 내게로 오라 내가 너희를 쉬게 하리라",
+        "무거운 짐을 지고 지친 사람은 모두 나에게 오너라"
     ],
     "locations": [
       {
@@ -164586,7 +165749,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-12-1",
     "title": "안식일에 밀 이삭을 먹음",
     "aliases": [
-      "예수께서 안식일에 밀밭 사이로 가실새"
+      "예수께서 안식일에 밀밭 사이로 가실새",
+        "밀 이삭을 잘라 먹기 시작했습니다"
     ],
     "locations": [
       {
@@ -164620,7 +165784,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-12-3",
     "title": "다윗이 굶주렸을 때",
     "aliases": [
-      "다윗이 자기와 그 함께 한 자들이 시장할 때에 한 일을 읽지 못하였느냐"
+      "다윗이 자기와 그 함께 한 자들이 시장할 때에 한 일을 읽지 못하였느냐",
+        "다윗과 그 군사들이 굶주렸을 때에 했던 일을"
     ],
     "locations": [
       {
@@ -164650,7 +165815,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-12-7",
     "title": "자비를 원하고 제사를 원하지 아니하노라",
     "aliases": [
-      "나는 자비를 원하고 제사를 원하지 아니하노라"
+      "나는 자비를 원하고 제사를 원하지 아니하노라",
+        "나는 희생 제물보다 자비를 원한다"
     ],
     "locations": [
       {
@@ -164682,7 +165848,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-12-12",
     "title": "안식일에 선을 행함",
     "aliases": [
-      "그러므로 안식일에 선을 행하는 것이 옳으니라"
+      "그러므로 안식일에 선을 행하는 것이 옳으니라",
+        "안식일에 선한 일을 하는 것이 옳다"
     ],
     "locations": [
       {
@@ -164713,7 +165880,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-12-20",
     "title": "상한 갈대를 꺾지 아니하며",
     "aliases": [
-      "상한 갈대를 꺾지 아니하며 꺼져가는 심지를 끄지 아니하기를"
+      "상한 갈대를 꺾지 아니하며 꺼져가는 심지를 끄지 아니하기를",
+        "그는 상한 갈대도 꺾지 않을 것이고"
     ],
     "locations": [
       {
@@ -164744,7 +165912,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-12-24",
     "title": "바알세불을 힘입었다는 비난",
     "aliases": [
-      "귀신의 왕 바알세불을 힘입지 않고는 귀신을 쫓아내지 못하느니라"
+      "귀신의 왕 바알세불을 힘입지 않고는 귀신을 쫓아내지 못하느니라",
+        "귀신의 우두머리인 바알세불의 힘을 빌려 귀신을 내쫓는다"
     ],
     "locations": [
       {
@@ -164774,7 +165943,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-12-28",
     "title": "하나님의 나라가 이미 임함",
     "aliases": [
-      "하나님의 나라가 이미 너희에게 임하였느니라"
+      "하나님의 나라가 이미 너희에게 임하였느니라",
+        "하나님의 나라가 이미 너희에게 온 것이다"
     ],
     "locations": [
       {
@@ -164805,7 +165975,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-12-31",
     "title": "성령을 모독하는 죄",
     "aliases": [
-      "성령을 모독하는 것은 사하심을 얻지 못하겠고"
+      "성령을 모독하는 것은 사하심을 얻지 못하겠고",
+        "성령을 모독하는 죄는 용서받을 수 없다"
     ],
     "locations": [
       {
@@ -164836,7 +166007,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-12-34",
     "title": "마음에 가득한 것을 입으로",
     "aliases": [
-      "이는 마음에 가득한 것을 입으로 말함이라"
+      "이는 마음에 가득한 것을 입으로 말함이라",
+        "입은 그 마음속에 가득 찬 것을 말하는 것이다"
     ],
     "locations": [
       {
@@ -164869,7 +166041,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-12-39",
     "title": "선지자 요나의 표적",
     "aliases": [
-      "선지자 요나의 표적 밖에는 보일 표적이 없느니라"
+      "선지자 요나의 표적 밖에는 보일 표적이 없느니라",
+        "예언자 요나의 증거 외에는 보여 줄 것이 없다"
     ],
     "locations": [
       {
@@ -164901,7 +166074,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-12-41",
     "title": "니느웨 사람들이 일어나",
     "aliases": [
-      "니느웨 사람들이 일어나 이 세대 사람을 정죄하리니"
+      "니느웨 사람들이 일어나 이 세대 사람을 정죄하리니",
+        "심판의 날에 니느웨 사람들이 이 세대와 함께 일어서서"
     ],
     "locations": [
       {
@@ -164931,7 +166105,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-12-43",
     "title": "돌아온 더러운 귀신",
     "aliases": [
-      "더러운 귀신이 사람에게서 나갔을 때에"
+      "더러운 귀신이 사람에게서 나갔을 때에",
+        "더러운 영이 어떤 사람에게서 나와"
     ],
     "locations": [
       {
@@ -164962,7 +166137,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-12-48",
     "title": "누가 내 어머니이며 내 동생들이냐",
     "aliases": [
-      "누가 내 어머니이며 내 동생들이냐"
+      "누가 내 어머니이며 내 동생들이냐",
+        "누가 나의 어머니이고, 누가 나의 형제들이냐?"
     ],
     "locations": [
       {
@@ -164997,7 +166173,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-13-11",
     "title": "비유로 말씀하시는 이유",
     "aliases": [
-      "천국의 비밀을 아는 것이 너희에게는 허락되었으나"
+      "천국의 비밀을 아는 것이 너희에게는 허락되었으나",
+        "하늘 나라의 비밀을 아는 것이 허락되었으나"
     ],
     "locations": [
       {
@@ -165030,7 +166207,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-13-16",
     "title": "보고 듣는 눈과 귀의 복",
     "aliases": [
-      "너희 눈은 봄으로, 너희 귀는 들음으로 복이 있도다"
+      "너희 눈은 봄으로, 너희 귀는 들음으로 복이 있도다",
+        "너희 눈은 보고 있으니 복되다"
     ],
     "locations": [
       {
@@ -165060,7 +166238,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-13-22",
     "title": "가시떨기 밭의 씨",
     "aliases": [
-      "세상의 염려와 재물의 유혹에 말씀이 막혀"
+      "세상의 염려와 재물의 유혹에 말씀이 막혀",
+        "가시덤불에 떨어진 씨와 같은 사람은"
     ],
     "locations": [
       {
@@ -165091,7 +166270,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-13-30",
     "title": "가라지를 추수 때까지 두라",
     "aliases": [
-      "둘 다 추수 때까지 함께 자라게 두라"
+      "둘 다 추수 때까지 함께 자라게 두라",
+        "추수할 때까지 함께 자라게 놔 두어라"
     ],
     "locations": [
       {
@@ -165121,7 +166301,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-13-32",
     "title": "겨자씨 같은 천국",
     "aliases": [
-      "이는 모든 씨보다 작은 것이로되"
+      "이는 모든 씨보다 작은 것이로되",
+        "이 씨는 다른 어떤 씨보다도 작다"
     ],
     "locations": [
       {
@@ -165151,7 +166332,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-13-38",
     "title": "밭은 세상, 좋은 씨는 천국의 아들들",
     "aliases": [
-      "밭은 세상이요 좋은 씨는 천국의 아들들이요"
+      "밭은 세상이요 좋은 씨는 천국의 아들들이요",
+        "좋은 씨는 하늘 나라의 모든 아들들이다"
     ],
     "locations": [
       {
@@ -165182,7 +166364,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-13-43",
     "title": "의인은 해와 같이 빛나리라",
     "aliases": [
-      "의인들은 자기 아버지 나라에서 해와 같이 빛나리라"
+      "의인들은 자기 아버지 나라에서 해와 같이 빛나리라",
+        "의인은 아버지의 나라에서 해처럼 빛날 것이다"
     ],
     "locations": [
       {
@@ -165212,7 +166395,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-13-44",
     "title": "밭에 감추인 보화",
     "aliases": [
-      "천국은 마치 밭에 감추인 보화와 같으니"
+      "천국은 마치 밭에 감추인 보화와 같으니",
+        "하늘 나라는 밭에 숨겨진 보물과 같다"
     ],
     "locations": [
       {
@@ -165241,7 +166425,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-13-52",
     "title": "천국의 제자된 서기관",
     "aliases": [
-      "천국의 제자된 서기관마다"
+      "천국의 제자된 서기관마다",
+        "하늘 나라의 제자가 된 율법학자는"
     ],
     "locations": [
       {
@@ -165271,7 +166456,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-13-57",
     "title": "고향에서 존경받지 못하심",
     "aliases": [
-      "선지자가 자기 고향과 자기 집 외에서는 존경을 받지 않음이 없느니라"
+      "선지자가 자기 고향과 자기 집 외에서는 존경을 받지 않음이 없느니라",
+        "자기 고향이나 자기 집에서는 존경을 받지 못하나"
     ],
     "locations": [
       {
@@ -165303,7 +166489,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-14-2",
     "title": "헤롯의 오해",
     "aliases": [
-      "이는 세례 요한이라 그가 죽은 자 가운데서 살아났으니"
+      "이는 세례 요한이라 그가 죽은 자 가운데서 살아났으니",
+        "이 사람은 세례자 요한이다"
     ],
     "locations": [
       {
@@ -165335,7 +166522,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-14-4",
     "title": "옳지 않다고 한 요한",
     "aliases": [
-      "당신이 그 여자를 차지한 것이 옳지 않다 하였음이라"
+      "당신이 그 여자를 차지한 것이 옳지 않다 하였음이라",
+        "당신이 헤로디아를 아내로 삼은 것은 잘못이오"
     ],
     "locations": [
       {
@@ -165366,7 +166554,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-14-7",
     "title": "맹세로 약속한 헤롯",
     "aliases": [
-      "헤롯이 맹세로 그에게 무엇이든지 달라는 대로 주겠다고 약속하거늘"
+      "헤롯이 맹세로 그에게 무엇이든지 달라는 대로 주겠다고 약속하거늘",
+        "딸이 요청하는 것은 무엇이든지 주겠다고 맹세하였습니다"
     ],
     "locations": [
       {
@@ -165397,7 +166586,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-14-16",
     "title": "너희가 먹을 것을 주라",
     "aliases": [
-      "너희가 먹을 것을 주라"
+      "너희가 먹을 것을 주라",
+        "너희가 그들에게 먹을 것을 주어라"
     ],
     "locations": [
       {
@@ -165428,7 +166618,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-14-19",
     "title": "떡을 축사하여 나눔",
     "aliases": [
-      "하늘을 우러러 축사하시고 떡을 떼어 제자들에게 주시매"
+      "하늘을 우러러 축사하시고 떡을 떼어 제자들에게 주시매",
+        "빵 다섯 개와 생선 두 마리를"
     ],
     "locations": [
       {
@@ -165458,7 +166649,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-14-23",
     "title": "기도하러 산에 오르심",
     "aliases": [
-      "기도하러 따로 산에 올라가시니라"
+      "기도하러 따로 산에 올라가시니라",
+        "기도하러 홀로 산 위에 올라가셨습니다"
     ],
     "locations": [
       {
@@ -165489,7 +166681,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-14-27",
     "title": "나니 두려워하지 말라",
     "aliases": [
-      "안심하라 나니 두려워하지 말라"
+      "안심하라 나니 두려워하지 말라",
+        "안심해라! 나다! 두려워하지 마라"
     ],
     "locations": [
       {
@@ -165519,7 +166712,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-14-31",
     "title": "믿음이 작은 자여",
     "aliases": [
-      "믿음이 작은 자여 왜 의심하였느냐"
+      "믿음이 작은 자여 왜 의심하였느냐",
+        "믿음이 적은 사람아, 왜 의심하느냐?"
     ],
     "locations": [
       {
@@ -165550,7 +166744,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-14-33",
     "title": "진실로 하나님의 아들",
     "aliases": [
-      "진실로 하나님의 아들이로소이다"
+      "진실로 하나님의 아들이로소이다",
+        "주님은 분명히 하나님의 아들이십니다"
     ],
     "locations": [
       {
@@ -165580,7 +166775,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-15-3",
     "title": "전통이 계명을 범하게 함",
     "aliases": [
-      "너희는 어찌하여 너희의 전통으로 하나님의 계명을 범하느냐"
+      "너희는 어찌하여 너희의 전통으로 하나님의 계명을 범하느냐",
+        "장로들의 전통을 지키려고 하나님의 명령을 지키지 않느냐"
     ],
     "locations": [
       {
@@ -165611,7 +166807,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-15-8",
     "title": "입술과 마음",
     "aliases": [
-      "이 백성이 입술로는 나를 공경하되 마음은 내게서 멀도다"
+      "이 백성이 입술로는 나를 공경하되 마음은 내게서 멀도다",
+        "입술로는 나를 공경하나, 마음은 내게서 멀구나"
     ],
     "locations": [
       {
@@ -165641,7 +166838,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-15-11",
     "title": "사람을 더럽게 하는 것",
     "aliases": [
-      "입으로 들어가는 것이 사람을 더럽게 하는 것이 아니라"
+      "입으로 들어가는 것이 사람을 더럽게 하는 것이 아니라",
+        "입에서 나오는 것이 사람을 더럽힌다"
     ],
     "locations": [
       {
@@ -165671,7 +166869,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-15-18",
     "title": "마음에서 나오는 것",
     "aliases": [
-      "입에서 나오는 것들은 마음에서 나오나니"
+      "입에서 나오는 것들은 마음에서 나오나니",
+        "입에서 나오는 것은 마음에서 나온다"
     ],
     "locations": [
       {
@@ -165701,7 +166900,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-15-22",
     "title": "가나안 여자의 간구",
     "aliases": [
-      "주 다윗의 자손이여 나를 불쌍히 여기소서"
+      "주 다윗의 자손이여 나를 불쌍히 여기소서",
+        "주님, 다윗의 자손이여, 저를 불쌍히 생각하시고 도와 주세요"
     ],
     "locations": [
       {
@@ -165731,7 +166931,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-15-24",
     "title": "이스라엘 집의 잃은 양",
     "aliases": [
-      "나는 이스라엘 집의 잃어버린 양 외에는 다른 데로 보내심을 받지 아니하였노라"
+      "나는 이스라엘 집의 잃어버린 양 외에는 다른 데로 보내심을 받지 아니하였노라",
+        "이스라엘 집의 잃어버린 양에게로만 보냄을 받았다"
     ],
     "locations": [
       {
@@ -165761,7 +166962,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-15-26",
     "title": "자녀의 떡과 개",
     "aliases": [
-      "자녀의 떡을 취하여 개들에게 던짐이 마땅하지 아니하니라"
+      "자녀의 떡을 취하여 개들에게 던짐이 마땅하지 아니하니라",
+        "자기 자식의 빵을 집어서, 개에게 던져 주는 것은 옳지 않다"
     ],
     "locations": [
       {
@@ -165791,7 +166993,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-15-28",
     "title": "여자의 믿음이 크도다",
     "aliases": [
-      "여자여 네 믿음이 크도다 네 소원대로 되리라"
+      "여자여 네 믿음이 크도다 네 소원대로 되리라",
+        "여자야, 너의 믿음이 크구나!"
     ],
     "locations": [
       {
@@ -165821,7 +167024,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-15-36",
     "title": "떡 일곱 개로 사천 명을",
     "aliases": [
-      "떡 일곱 개와 그 생선을 가지사 축사하시고 떼어 제자들에게 주시니"
+      "떡 일곱 개와 그 생선을 가지사 축사하시고 떼어 제자들에게 주시니",
+        "일곱 개의 빵과 생선을 들고 감사 기도를 드린 후"
     ],
     "locations": [
       {
@@ -165852,7 +167056,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-16-3",
     "title": "시대의 표적을 분별하라",
     "aliases": [
-      "너희가 날씨는 분별할 줄 알면서 시대의 표적은 분별할 수 없느냐"
+      "너희가 날씨는 분별할 줄 알면서 시대의 표적은 분별할 수 없느냐",
+        "어찌 시대의 증거는 구별하지 못하느냐?"
     ],
     "locations": [
       {
@@ -165883,7 +167088,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-16-6",
     "title": "바리새인과 사두개인의 누룩",
     "aliases": [
-      "삼가 바리새인과 사두개인들의 누룩을 주의하라"
+      "삼가 바리새인과 사두개인들의 누룩을 주의하라",
+        "바리새파 사람과 사두개파 사람의 누룩을 조심하여라"
     ],
     "locations": [
       {
@@ -165915,7 +167121,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-16-8",
     "title": "믿음이 작은 자들",
     "aliases": [
-      "믿음이 작은 자들아 어찌 떡이 없으므로 서로 논의하느냐"
+      "믿음이 작은 자들아 어찌 떡이 없으므로 서로 논의하느냐",
+        "빵이 없는 것을 두고 서로 수군대느냐"
     ],
     "locations": [
       {
@@ -165947,7 +167154,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-16-16",
     "title": "그리스도이시며 하나님의 아들",
     "aliases": [
-      "주는 그리스도시요 살아 계신 하나님의 아들이시니이다"
+      "주는 그리스도시요 살아 계신 하나님의 아들이시니이다",
+        "주님은 그리스도시며, 살아 계신 하나님의 아들이십니다"
     ],
     "locations": [
       {
@@ -165978,7 +167186,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-16-18",
     "title": "이 반석 위에 세우리니",
     "aliases": [
-      "내가 이 반석 위에 내 교회를 세우리니"
+      "내가 이 반석 위에 내 교회를 세우리니",
+        "이 돌 위에 내 교회를 지을 것이니"
     ],
     "locations": [
       {
@@ -166009,7 +167218,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-16-21",
     "title": "첫 수난 예고",
     "aliases": [
-      "제삼일에 살아나야 할 것을 제자들에게 비로소 나타내시니"
+      "제삼일에 살아나야 할 것을 제자들에게 비로소 나타내시니",
+        "삼 일째 되는 날에 다시 살아나실"
     ],
     "locations": [
       {
@@ -166040,7 +167250,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-16-23",
     "title": "사탄아 내 뒤로 물러 가라",
     "aliases": [
-      "사탄아 내 뒤로 물러 가라"
+      "사탄아 내 뒤로 물러 가라",
+        "사탄아, 내 뒤로 썩 물러가라!"
     ],
     "locations": [
       {
@@ -166070,7 +167281,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-16-24",
     "title": "자기를 부인하고 십자가를",
     "aliases": [
-      "자기를 부인하고 자기 십자가를 지고 나를 따를 것이니라"
+      "자기를 부인하고 자기 십자가를 지고 나를 따를 것이니라",
+        "자기 십자가를 지고, 나를 따르라"
     ],
     "locations": [
       {
@@ -166100,7 +167312,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-16-26",
     "title": "온 천하와 제 목숨",
     "aliases": [
-      "사람이 만일 온 천하를 얻고도 제 목숨을 잃으면 무엇이 유익하리요"
+      "사람이 만일 온 천하를 얻고도 제 목숨을 잃으면 무엇이 유익하리요",
+        "온 세상을 얻고도 자기 영혼을 잃으면"
     ],
     "locations": [
       {
@@ -166130,7 +167343,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-16-28",
     "title": "죽기 전에 인자가 오는 것을 볼 자",
     "aliases": [
-      "죽기 전에 인자가 그 왕권을 가지고 오는 것을 볼 자들도 있느니라"
+      "죽기 전에 인자가 그 왕권을 가지고 오는 것을 볼 자들도 있느니라",
+        "인자가 자신의 나라에 오는 것을 볼 때까지"
     ],
     "locations": [
       {
@@ -166165,7 +167379,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-17-2",
     "title": "예수님의 변형",
     "aliases": [
-      "그 얼굴이 해 같이 빛나며"
+      "그 얼굴이 해 같이 빛나며",
+        "예수님의 얼굴은 해같이 빛나고"
     ],
     "locations": [
       {
@@ -166197,7 +167412,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-17-4",
     "title": "초막을 짓자는 베드로",
     "aliases": [
-      "주여 우리가 여기 있는 것이 좋사오니"
+      "주여 우리가 여기 있는 것이 좋사오니",
+        "여기에 천막 세 개를 세우겠습니다"
     ],
     "locations": [
       {
@@ -166228,7 +167444,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-17-5",
     "title": "그의 말을 들으라",
     "aliases": [
-      "너희는 그의 말을 들으라"
+      "너희는 그의 말을 들으라",
+        "너희는 그의 말을 들어라"
     ],
     "locations": [
       {
@@ -166259,7 +167476,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-17-9",
     "title": "본 것을 말하지 말라",
     "aliases": [
-      "본 것을 아무에게도 이르지 말라"
+      "본 것을 아무에게도 이르지 말라",
+        "너희가 본 것을 아무에게도 말하지 마라"
     ],
     "locations": [
       {
@@ -166289,7 +167507,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-17-12",
     "title": "이미 온 엘리야",
     "aliases": [
-      "엘리야가 이미 왔으되 사람들이 알지 못하고 임의로 대우하였도다"
+      "엘리야가 이미 왔으되 사람들이 알지 못하고 임의로 대우하였도다",
+        "엘리야는 이미 왔다"
     ],
     "locations": [
       {
@@ -166321,7 +167540,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-17-17",
     "title": "믿음이 없고 패역한 세대",
     "aliases": [
-      "믿음이 없고 패역한 세대여"
+      "믿음이 없고 패역한 세대여",
+        "믿음이 없고, 뒤틀어진 세대여!"
     ],
     "locations": [
       {
@@ -166353,7 +167573,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-17-20",
     "title": "겨자씨 한 알만큼의 믿음",
     "aliases": [
-      "만일 너희에게 믿음이 겨자씨 한 알 만큼만 있어도"
+      "만일 너희에게 믿음이 겨자씨 한 알 만큼만 있어도",
+        "겨자씨 한 알만한 믿음이 있으면"
     ],
     "locations": [
       {
@@ -166384,7 +167605,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-17-23",
     "title": "둘째 수난 예고",
     "aliases": [
-      "죽임을 당하고 제삼일에 살아나리라"
+      "죽임을 당하고 제삼일에 살아나리라",
+        "삼 일째 되는 날에 다시 살아날 것이다"
     ],
     "locations": [
       {
@@ -166415,7 +167637,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-17-27",
     "title": "물고기 입의 한 세겔",
     "aliases": [
-      "그러나 우리가 그들이 실족하지 않게 하기 위하여"
+      "그러나 우리가 그들이 실족하지 않게 하기 위하여",
+        "은돈 한 개가 있을 것이다"
     ],
     "locations": [
       {
@@ -166445,7 +167668,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-18-4",
     "title": "자기를 낮추는 사람이 큰 자",
     "aliases": [
-      "자기를 낮추는 사람이 천국에서 큰 자니라"
+      "자기를 낮추는 사람이 천국에서 큰 자니라",
+        "자신을 낮추는 사람이 하늘 나라에서 가장 높은 사람이다"
     ],
     "locations": [
       {
@@ -166477,7 +167701,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-18-6",
     "title": "작은 자를 실족하게 함",
     "aliases": [
-      "차라리 연자 맷돌이 그 목에 달려서 깊은 바다에 빠뜨려지는 것이 나으니라"
+      "차라리 연자 맷돌이 그 목에 달려서 깊은 바다에 빠뜨려지는 것이 나으니라",
+        "차라리 자기 목에 연자 맷돌을 매고"
     ],
     "locations": [
       {
@@ -166508,7 +167733,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-18-10",
     "title": "작은 자를 업신여기지 말라",
     "aliases": [
-      "삼가 이 작은 자 중의 하나도 업신여기지 말라"
+      "삼가 이 작은 자 중의 하나도 업신여기지 말라",
+        "이 어린아이 한 명이라도 업신여기지 마라"
     ],
     "locations": [
       {
@@ -166538,7 +167764,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-18-12",
     "title": "길 잃은 양 한 마리",
     "aliases": [
-      "그 중의 하나가 길을 잃었으면"
+      "그 중의 하나가 길을 잃었으면",
+        "길 잃은 그 양을 찾으러 가지 않겠느냐"
     ],
     "locations": [
       {
@@ -166569,7 +167796,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-18-15",
     "title": "형제를 단둘이 권고하라",
     "aliases": [
-      "너와 그 사람과만 상대하여 권고하라"
+      "너와 그 사람과만 상대하여 권고하라",
+        "가서 단 둘이 있을 때에 잘못을 지적하여라"
     ],
     "locations": [
       {
@@ -166601,7 +167829,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-18-18",
     "title": "땅에서 매고 푸는 것",
     "aliases": [
-      "무엇이든지 너희가 땅에서 매면 하늘에서도 매일 것이요"
+      "무엇이든지 너희가 땅에서 매면 하늘에서도 매일 것이요",
+        "하늘에서도 묶여 있을 것이다"
     ],
     "locations": [
       {
@@ -166632,7 +167861,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-18-20",
     "title": "두세 사람이 모인 곳",
     "aliases": [
-      "두세 사람이 내 이름으로 모인 곳에는 나도 그들 중에 있느니라"
+      "두세 사람이 내 이름으로 모인 곳에는 나도 그들 중에 있느니라",
+        "두세 사람이 나의 이름으로 모인 곳에는"
     ],
     "locations": [
       {
@@ -166662,7 +167892,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-18-22",
     "title": "일곱 번을 일흔 번까지",
     "aliases": [
-      "일곱 번뿐 아니라 일곱 번을 일흔 번까지라도 할지니라"
+      "일곱 번뿐 아니라 일곱 번을 일흔 번까지라도 할지니라",
+        "일곱 번씩 일흔 번까지라도 용서해 주어야 한다"
     ],
     "locations": [
       {
@@ -166692,7 +167923,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-18-33",
     "title": "동료를 불쌍히 여김",
     "aliases": [
-      "내가 너를 불쌍히 여김과 같이 너도 네 동료를 불쌍히 여김이 마땅하지 아니하냐"
+      "내가 너를 불쌍히 여김과 같이 너도 네 동료를 불쌍히 여김이 마땅하지 아니하냐",
+        "너도 네 동료에게 자비를 베풀어야 하지 않느냐"
     ],
     "locations": [
       {
@@ -166724,7 +167956,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-18-35",
     "title": "마음으로부터 용서",
     "aliases": [
-      "너희가 각각 마음으로부터 형제를 용서하지 아니하면"
+      "너희가 각각 마음으로부터 형제를 용서하지 아니하면",
+        "형제를 마음으로부터 용서하지 않는다면"
     ],
     "locations": [
       {
@@ -166754,7 +167987,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-19-6",
     "title": "하나님이 짝지어 주신 것",
     "aliases": [
-      "하나님이 짝지어 주신 것을 사람이 나누지 못할지니라"
+      "하나님이 짝지어 주신 것을 사람이 나누지 못할지니라",
+        "하나님께서 묶으신 것을 사람이 나누지 마라"
     ],
     "locations": [
       {
@@ -166785,7 +168019,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-19-8",
     "title": "모세의 허락과 본래 뜻",
     "aliases": [
-      "모세가 너희 마음의 완악함 때문에 아내 버림을 허락하였거니와"
+      "모세가 너희 마음의 완악함 때문에 아내 버림을 허락하였거니와",
+        "모세가 아내와의 이혼을 허락한 것은"
     ],
     "locations": [
       {
@@ -166816,7 +168051,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-19-14",
     "title": "어린 아이를 용납하라",
     "aliases": [
-      "어린 아이들을 용납하고 내게 오는 것을 금하지 말라"
+      "어린 아이들을 용납하고 내게 오는 것을 금하지 말라",
+        "어린아이들이 내게 오는 것을 막지 마라"
     ],
     "locations": [
       {
@@ -166847,7 +168083,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-19-17",
     "title": "선한 이는 오직 한 분",
     "aliases": [
-      "어찌하여 선한 일을 내게 묻느냐 선한 이는 오직 한 분이시니라"
+      "어찌하여 선한 일을 내게 묻느냐 선한 이는 오직 한 분이시니라",
+        "선하신 분은 오직 한 분뿐이다"
     ],
     "locations": [
       {
@@ -166879,7 +168116,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-19-21",
     "title": "소유를 팔아 가난한 자에게",
     "aliases": [
-      "네가 온전하고자 할진대 가서 네 소유를 팔아 가난한 자들에게 주라"
+      "네가 온전하고자 할진대 가서 네 소유를 팔아 가난한 자들에게 주라",
+        "네가 가진 것을 다 팔아 가난한 사람에게 나누어 주어라"
     ],
     "locations": [
       {
@@ -166911,7 +168149,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-19-23",
     "title": "부자와 하나님 나라",
     "aliases": [
-      "부자는 천국에 들어가기가 어려우니라"
+      "부자는 천국에 들어가기가 어려우니라",
+        "부자가 하늘 나라에 들어가는 것은 어렵다"
     ],
     "locations": [
       {
@@ -166942,7 +168181,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-19-26",
     "title": "하나님께는 다 가능하다",
     "aliases": [
-      "사람으로는 할 수 없으나 하나님으로서는 다 하실 수 있느니라"
+      "사람으로는 할 수 없으나 하나님으로서는 다 하실 수 있느니라",
+        "사람은 할 수 없지만, 하나님께서는 모든 것을 하실 수 있다"
     ],
     "locations": [
       {
@@ -166972,7 +168212,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-19-28",
     "title": "열두 보좌와 열두 지파",
     "aliases": [
-      "나를 따르는 너희도 열두 보좌에 앉아 이스라엘 열두 지파를 심판하리라"
+      "나를 따르는 너희도 열두 보좌에 앉아 이스라엘 열두 지파를 심판하리라",
+        "열두 보좌에 앉아 이스라엘 열두 부족을 심판하게 될 것이다"
     ],
     "locations": [
       {
@@ -167003,7 +168244,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-19-30",
     "title": "먼저 된 자가 나중 되고",
     "aliases": [
-      "먼저 된 자로서 나중 되고 나중 된 자로서 먼저 될 자가 많으니라"
+      "먼저 된 자로서 나중 되고 나중 된 자로서 먼저 될 자가 많으니라",
+        "첫째가 꼴찌가 되고, 꼴찌가 첫째가 되는 사람이 많을 것이다"
     ],
     "locations": [
       {
@@ -167034,7 +168276,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-20-2",
     "title": "하루 한 데나리온의 약속",
     "aliases": [
-      "그가 하루 한 데나리온씩 품꾼들과 약속하여"
+      "그가 하루 한 데나리온씩 품꾼들과 약속하여",
+        "하루 품삯으로 한 데나리온을 주기로 하고"
     ],
     "locations": [
       {
@@ -167065,7 +168308,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-20-6",
     "title": "제십일시에 서 있는 사람들",
     "aliases": [
-      "너희는 어찌하여 종일토록 놀고 여기 서 있느냐"
+      "너희는 어찌하여 종일토록 놀고 여기 서 있느냐",
+        "하루 종일 빈둥거리며 서 있습니까"
     ],
     "locations": [
       {
@@ -167095,7 +168339,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-20-15",
     "title": "내가 선하므로",
     "aliases": [
-      "내가 선하므로 네가 악하게 보느냐"
+      "내가 선하므로 네가 악하게 보느냐",
+        "내가 자비로운 사람이라서 당신의 눈에 거슬리오"
     ],
     "locations": [
       {
@@ -167127,7 +168372,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-20-18",
     "title": "셋째 수난 예고",
     "aliases": [
-      "그들이 죽이기로 결의하고"
+      "그들이 죽이기로 결의하고",
+        "인자가 대제사장들과 율법학자들에게 넘겨질 것이고"
     ],
     "locations": [
       {
@@ -167158,7 +168404,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-20-23",
     "title": "좌우편 자리는 아버지가 예비하신 것",
     "aliases": [
-      "내 좌우편에 앉는 것은 내가 주는 것이 아니라"
+      "내 좌우편에 앉는 것은 내가 주는 것이 아니라",
+        "그 자리는 내 아버지께서 미리 정하신 사람들의 것이다"
     ],
     "locations": [
       {
@@ -167189,7 +168436,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-20-26",
     "title": "크고자 하는 자는 섬기는 자가 되고",
     "aliases": [
-      "너희 중에 누구든지 크고자 하는 자는 너희를 섬기는 자가 되고"
+      "너희 중에 누구든지 크고자 하는 자는 너희를 섬기는 자가 되고",
+        "먼저 섬기는 자가 되어야 한다"
     ],
     "locations": [
       {
@@ -167220,7 +168468,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-20-28",
     "title": "많은 사람을 위한 대속물",
     "aliases": [
-      "자기 목숨을 많은 사람의 대속물로 주려 함이니라"
+      "자기 목숨을 많은 사람의 대속물로 주려 함이니라",
+        "자기 목숨을 많은 사람들을 위하여 주려고 왔다"
     ],
     "locations": [
       {
@@ -167251,7 +168500,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-20-30",
     "title": "다윗의 자손이여 불쌍히 여기소서",
     "aliases": [
-      "주여 우리를 불쌍히 여기소서 다윗의 자손이여"
+      "주여 우리를 불쌍히 여기소서 다윗의 자손이여",
+        "주님, 저희들을 불쌍히 여겨 주십시오!"
     ],
     "locations": [
       {
@@ -167282,7 +168532,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-20-34",
     "title": "눈을 만지시니 보게 되어",
     "aliases": [
-      "곧 보게 되어 그들이 예수를 따르니라"
+      "곧 보게 되어 그들이 예수를 따르니라",
+        "그들의 눈을 만지셨습니다"
     ],
     "locations": [
       {
@@ -167317,7 +168568,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-21-5",
     "title": "겸손한 왕이 나귀를 타고",
     "aliases": [
-      "네 왕이 네게 임하나니 그는 겸손하여"
+      "네 왕이 네게 임하나니 그는 겸손하여",
+        "그는 겸손하여 당나귀를 탔는데"
     ],
     "locations": [
       {
@@ -167349,7 +168601,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-21-9",
     "title": "호산나 다윗의 자손이여",
     "aliases": [
-      "호산나 다윗의 자손이여 찬송하리로다"
+      "호산나 다윗의 자손이여 찬송하리로다",
+        "다윗의 아들에게 호산나!"
     ],
     "locations": [
       {
@@ -167380,7 +168633,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-21-13",
     "title": "기도하는 집",
     "aliases": [
-      "내 집은 기도하는 집이라 일컬음을 받으리라"
+      "내 집은 기도하는 집이라 일컬음을 받으리라",
+        "내 집은 기도하는 집이라 불릴 것이다"
     ],
     "locations": [
       {
@@ -167412,7 +168666,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-21-16",
     "title": "어린아이의 찬미",
     "aliases": [
-      "어린 아기와 젖먹이들의 입에서 나오는 찬미를 온전하게 하셨나이다"
+      "어린 아기와 젖먹이들의 입에서 나오는 찬미를 온전하게 하셨나이다",
+        "이 어린이들이 말하는 것이 들립니까"
     ],
     "locations": [
       {
@@ -167442,7 +168697,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-21-19",
     "title": "열매 없는 무화과나무",
     "aliases": [
-      "이제부터 영원토록 네가 열매를 맺지 못하리라"
+      "이제부터 영원토록 네가 열매를 맺지 못하리라",
+        "잎사귀만 있을 뿐 열매는 보이지 않았습니다"
     ],
     "locations": [
       {
@@ -167473,7 +168729,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-21-22",
     "title": "믿고 구하는 기도",
     "aliases": [
-      "너희가 기도할 때에 무엇이든지 믿고 구하는 것은 다 받으리라"
+      "너희가 기도할 때에 무엇이든지 믿고 구하는 것은 다 받으리라",
+        "너희가 믿고 기도로 구하는 것은 모두 받을 것이다"
     ],
     "locations": [
       {
@@ -167503,7 +168760,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-21-25",
     "title": "요한의 세례는 어디서",
     "aliases": [
-      "요한의 세례가 어디로부터 왔느냐 하늘로부터냐 사람으로부터냐"
+      "요한의 세례가 어디로부터 왔느냐 하늘로부터냐 사람으로부터냐",
+        "요한의 세례가 하늘로부터 온 것이냐"
     ],
     "locations": [
       {
@@ -167534,7 +168792,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-21-33",
     "title": "포도원 농부 비유",
     "aliases": [
-      "한 집 주인이 포도원을 만들어"
+      "한 집 주인이 포도원을 만들어",
+        "포도밭을 농부들에게 빌려 주고 여행을 떠났다"
     ],
     "locations": [
       {
@@ -167565,7 +168824,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-21-42",
     "title": "모퉁이의 머릿돌",
     "aliases": [
-      "건축자들이 버린 돌이 모퉁이의 머릿돌이 되었나니"
+      "건축자들이 버린 돌이 모퉁이의 머릿돌이 되었나니",
+        "건축자가 버린 돌이 모퉁이의 머릿돌이 되었다"
     ],
     "locations": [
       {
@@ -167597,7 +168857,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-22-2",
     "title": "혼인 잔치 비유",
     "aliases": [
-      "자기 아들을 위하여 혼인 잔치를 베푼 어떤 임금과 같으니"
+      "자기 아들을 위하여 혼인 잔치를 베푼 어떤 임금과 같으니",
+        "아들의 결혼 잔치를 마련한 왕에 빗댈 수 있다"
     ],
     "locations": [
       {
@@ -167631,7 +168892,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-22-12",
     "title": "예복을 입지 않은 사람",
     "aliases": [
-      "어찌하여 예복을 입지 않고 여기 들어왔느냐"
+      "어찌하여 예복을 입지 않고 여기 들어왔느냐",
+        "결혼 잔치 예복을 입지 않고 어떻게 여기에 들어왔는가"
     ],
     "locations": [
       {
@@ -167663,7 +168925,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-22-17",
     "title": "가이사에게 세금",
     "aliases": [
-      "가이사에게 세금을 바치는 것이 옳으니이까 옳지 아니하니이까"
+      "가이사에게 세금을 바치는 것이 옳으니이까 옳지 아니하니이까",
+        "가이사에게 세금을 바치는 것이 옳습니까"
     ],
     "locations": [
       {
@@ -167695,7 +168958,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-22-21",
     "title": "가이사의 것과 하나님의 것",
     "aliases": [
-      "그런즉 가이사의 것은 가이사에게, 하나님의 것은 하나님께 바치라"
+      "그런즉 가이사의 것은 가이사에게, 하나님의 것은 하나님께 바치라",
+        "가이사의 것은 가이사에게 주어라"
     ],
     "locations": [
       {
@@ -167726,7 +168990,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-22-24",
     "title": "형을 위한 상속자",
     "aliases": [
-      "그 동생이 그 아내에게 장가 들어 형을 위하여 상속자를 세울지니라"
+      "그 동생이 그 아내에게 장가 들어 형을 위하여 상속자를 세울지니라",
+        "그 동생이 형수와 결혼해서"
     ],
     "locations": [
       {
@@ -167758,7 +169023,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-22-30",
     "title": "부활 때에는 천사와 같으니",
     "aliases": [
-      "부활 때에는 장가도 아니 가고 시집도 아니 가고 하늘에 있는 천사들과 같으니라"
+      "부활 때에는 장가도 아니 가고 시집도 아니 가고 하늘에 있는 천사들과 같으니라",
+        "오직 사람들이 하늘에 있는 천사처럼 될 것이다"
     ],
     "locations": [
       {
@@ -167789,7 +169055,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-22-32",
     "title": "아브라함의 하나님",
     "aliases": [
-      "나는 아브라함의 하나님이요 이삭의 하나님이요 야곱의 하나님이로라"
+      "나는 아브라함의 하나님이요 이삭의 하나님이요 야곱의 하나님이로라",
+        "하나님은 살아 있는 사람들의 하나님이시지"
     ],
     "locations": [
       {
@@ -167820,7 +169087,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-22-37",
     "title": "가장 큰 계명",
     "aliases": [
-      "네 마음을 다하고 목숨을 다하고 뜻을 다하여 주 너의 하나님을 사랑하라"
+      "네 마음을 다하고 목숨을 다하고 뜻을 다하여 주 너의 하나님을 사랑하라",
+        "네 모든 마음과 모든 목숨과 모든 정성을 다해서"
     ],
     "locations": [
       {
@@ -167852,7 +169120,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-22-40",
     "title": "율법과 선지자의 강령",
     "aliases": [
-      "이 두 계명이 온 율법과 선지자의 강령이니라"
+      "이 두 계명이 온 율법과 선지자의 강령이니라",
+        "이 두 계명에서 나온 것이다"
     ],
     "locations": [
       {
@@ -167884,7 +169153,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-22-44",
     "title": "내 우편에 앉아 있으라",
     "aliases": [
-      "내 우편에 앉아 있으라"
+      "내 우편에 앉아 있으라",
+        "너는 내 오른쪽에 앉아 있어라"
     ],
     "locations": [
       {
@@ -167915,7 +169185,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-23-3",
     "title": "말은 하고 행하지 않는 자들",
     "aliases": [
-      "그들은 말만 하고 행하지 아니하며"
+      "그들은 말만 하고 행하지 아니하며",
+        "그들은 말만 하고 행하지는 않는다"
     ],
     "locations": [
       {
@@ -167945,7 +169216,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-23-5",
     "title": "사람에게 보이려는 행위",
     "aliases": [
-      "그들의 모든 행위를 사람에게 보이고자 하나니"
+      "그들의 모든 행위를 사람에게 보이고자 하나니",
+        "다른 사람들에게 보이려고 모든 일을 한다"
     ],
     "locations": [
       {
@@ -167976,7 +169248,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-23-8",
     "title": "랍비라 칭함을 받지 말라",
     "aliases": [
-      "너희는 랍비라 칭함을 받지 말라"
+      "너희는 랍비라 칭함을 받지 말라",
+        "너희의 선생님은 오직 한 분이고"
     ],
     "locations": [
       {
@@ -168007,7 +169280,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-23-12",
     "title": "자기를 높이는 자는 낮아지고",
     "aliases": [
-      "누구든지 자기를 높이는 자는 낮아지고"
+      "누구든지 자기를 높이는 자는 낮아지고",
+        "자신을 높이는 사람은 낮아질 것이고"
     ],
     "locations": [
       {
@@ -168038,7 +169312,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-23-13",
     "title": "천국 문을 닫는 자들에게 화",
     "aliases": [
-      "너희는 천국 문을 사람들 앞에서 닫고"
+      "너희는 천국 문을 사람들 앞에서 닫고",
+        "너희는 사람들 앞에서 하늘 나라의 문을 막는다"
     ],
     "locations": [
       {
@@ -168068,7 +169343,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-23-15",
     "title": "교인 한 사람을 얻으려는 열심",
     "aliases": [
-      "교인 한 사람을 얻기 위하여 바다와 육지를 두루 다니다가"
+      "교인 한 사람을 얻기 위하여 바다와 육지를 두루 다니다가",
+        "너희는 개종자 하나를 만들려고 바다와 육지를 두루 다닌다"
     ],
     "locations": [
       {
@@ -168098,7 +169374,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-23-23",
     "title": "더 중한 바 정의와 긍휼과 믿음",
     "aliases": [
-      "율법의 더 중한 바 정의와 긍휼과 믿음은 버렸도다"
+      "율법의 더 중한 바 정의와 긍휼과 믿음은 버렸도다",
+        "정의, 자비, 믿음과 같은 율법의 더 중요한 부분은"
     ],
     "locations": [
       {
@@ -168129,7 +169406,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-23-25",
     "title": "잔과 대접의 겉과 안",
     "aliases": [
-      "잔과 대접의 겉은 깨끗이 하되"
+      "잔과 대접의 겉은 깨끗이 하되",
+        "잔과 접시의 겉을 깨끗하게 하지만"
     ],
     "locations": [
       {
@@ -168161,7 +169439,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-23-27",
     "title": "회칠한 무덤",
     "aliases": [
-      "회칠한 무덤 같으니"
+      "회칠한 무덤 같으니",
+        "너희는 하얗게 칠한 무덤과 같다"
     ],
     "locations": [
       {
@@ -168191,7 +169470,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-23-37",
     "title": "예루살렘아 예루살렘아",
     "aliases": [
-      "예루살렘아 예루살렘아 선지자들을 죽이고 네게 파송된 자들을 돌로 치는 자여"
+      "예루살렘아 예루살렘아 선지자들을 죽이고 네게 파송된 자들을 돌로 치는 자여",
+        "예루살렘아, 예언자들을 죽이고"
     ],
     "locations": [
       {
@@ -168222,7 +169502,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-24-2",
     "title": "돌 하나도 남지 않음",
     "aliases": [
-      "돌 하나도 돌 위에 남지 않고 다 무너뜨려지리라"
+      "돌 하나도 돌 위에 남지 않고 다 무너뜨려지리라",
+        "여기에 있는 돌 하나도 돌 위에 남지 않고 다 무너질 것이다"
     ],
     "locations": [
       {
@@ -168253,7 +169534,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-24-6",
     "title": "난리 소문과 아직 끝은 아님",
     "aliases": [
-      "이런 일이 있어야 하되 아직 끝은 아니니라"
+      "이런 일이 있어야 하되 아직 끝은 아니니라",
+        "그러나 아직 마지막 때는 아니다"
     ],
     "locations": [
       {
@@ -168284,7 +169566,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-24-14",
     "title": "천국 복음이 모든 민족에게",
     "aliases": [
-      "이 천국 복음이 모든 민족에게 증언되기 위하여 온 세상에 전파되리니"
+      "이 천국 복음이 모든 민족에게 증언되기 위하여 온 세상에 전파되리니",
+        "이 하늘 나라의 복음이 온 세상에 전파될 것이며"
     ],
     "locations": [
       {
@@ -168315,7 +169598,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-24-15",
     "title": "멸망의 가증한 것",
     "aliases": [
-      "멸망의 가증한 것이 거룩한 곳에 선 것을 보거든"
+      "멸망의 가증한 것이 거룩한 곳에 선 것을 보거든",
+        "멸망케 하는 혐오할 만한 것"
     ],
     "locations": [
       {
@@ -168348,7 +169632,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-24-21",
     "title": "큰 환난",
     "aliases": [
-      "창세로부터 지금까지 이런 환난이 없었고 후에도 없으리라"
+      "창세로부터 지금까지 이런 환난이 없었고 후에도 없으리라",
+        "이 같은 환난은 일어난 적이 없었고"
     ],
     "locations": [
       {
@@ -168379,7 +169664,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-24-36",
     "title": "그 날과 그 때는 아무도 모름",
     "aliases": [
-      "그 날과 그 때는 아무도 모르나니"
+      "그 날과 그 때는 아무도 모르나니",
+        "그 날과 그 때는 아무도 모른다"
     ],
     "locations": [
       {
@@ -168412,7 +169698,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-24-40",
     "title": "데려감과 버려둠",
     "aliases": [
-      "한 사람은 데려가고 한 사람은 버려둠을 당할 것이요"
+      "한 사람은 데려가고 한 사람은 버려둠을 당할 것이요",
+        "두 사람이 밭에 있는데 한 사람은 데려가고"
     ],
     "locations": [
       {
@@ -168443,7 +169730,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-24-42",
     "title": "그러므로 깨어 있으라",
     "aliases": [
-      "그러므로 깨어 있으라"
+      "그러므로 깨어 있으라",
+        "그러므로 항상 깨어 있어라"
     ],
     "locations": [
       {
@@ -168473,7 +169761,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-24-48",
     "title": "악한 종의 생각",
     "aliases": [
-      "만일 그 악한 종이 마음에 생각하기를 주인이 더디 오리라 하여"
+      "만일 그 악한 종이 마음에 생각하기를 주인이 더디 오리라 하여",
+        "주인이 오랫동안 돌아오지 않을 것이라고"
     ],
     "locations": [
       {
@@ -168508,7 +169797,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-25-1",
     "title": "열 처녀 비유",
     "aliases": [
-      "천국은 마치 등을 들고 신랑을 맞으러 나간 열 처녀와 같다"
+      "천국은 마치 등을 들고 신랑을 맞으러 나간 열 처녀와 같다",
+        "등을 들고 신랑을 맞으러 나간, 열 명의 처녀"
     ],
     "locations": [
       {
@@ -168540,7 +169830,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-25-8",
     "title": "기름을 나눌 수 없는 때",
     "aliases": [
-      "우리 등불이 꺼져가니 너희 기름을 좀 나눠 달라 하거늘"
+      "우리 등불이 꺼져가니 너희 기름을 좀 나눠 달라 하거늘",
+        "우리에게 기름을 조금만 나누어 다오"
     ],
     "locations": [
       {
@@ -168571,7 +169862,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-25-12",
     "title": "내가 너희를 알지 못하노라",
     "aliases": [
-      "내가 너희를 알지 못하노라"
+      "내가 너희를 알지 못하노라",
+        "나는 너희를 알지 못한다"
     ],
     "locations": [
       {
@@ -168602,7 +169894,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-25-15",
     "title": "재능대로 맡긴 달란트",
     "aliases": [
-      "각각 그 재능대로"
+      "각각 그 재능대로",
+        "주인은 종들의 능력에 따라"
     ],
     "locations": [
       {
@@ -168633,7 +169926,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-25-21",
     "title": "착하고 충성된 종",
     "aliases": [
-      "착하고 충성된 종아 네가 적은 일에 충성하였으매 내가 많은 것을 네게 맡기리니"
+      "착하고 충성된 종아 네가 적은 일에 충성하였으매 내가 많은 것을 네게 맡기리니",
+        "너는 착하고 신실한 종이다"
     ],
     "locations": [
       {
@@ -168696,7 +169990,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-25-31",
     "title": "인자의 영광과 양과 염소",
     "aliases": [
-      "인자가 자기 영광으로 모든 천사와 함께 올 때에 자기 영광의 보좌에 앉으리니"
+      "인자가 자기 영광으로 모든 천사와 함께 올 때에 자기 영광의 보좌에 앉으리니",
+        "인자가 모든 천사들과 함께 영광 가운데 다시 와서"
     ],
     "locations": [
       {
@@ -168727,7 +170022,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-25-34",
     "title": "예비된 나라를 상속받으라",
     "aliases": [
-      "창세로부터 너희를 위하여 예비된 나라를 상속받으라"
+      "창세로부터 너희를 위하여 예비된 나라를 상속받으라",
+        "하나님께서 너희를 위해 준비하신 나라를 물려받아라"
     ],
     "locations": [
       {
@@ -168759,7 +170055,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-25-40",
     "title": "지극히 작은 자 하나에게 한 것",
     "aliases": [
-      "너희가 여기 내 형제 중에 지극히 작은 자 하나에게 한 것이 곧 내게 한 것이니라"
+      "너희가 여기 내 형제 중에 지극히 작은 자 하나에게 한 것이 곧 내게 한 것이니라",
+        "가장 보잘것 없는 사람에게 한 일이 곧 나에게 한 것이다"
     ],
     "locations": [
       {
@@ -168790,7 +170087,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-25-46",
     "title": "영벌과 영생",
     "aliases": [
-      "그들은 영벌에, 의인들은 영생에 들어가리라"
+      "그들은 영벌에, 의인들은 영생에 들어가리라",
+        "의로운 사람들은 영원한 생명에 들어갈 것이다"
     ],
     "locations": [
       {
@@ -168820,7 +170118,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-26-2",
     "title": "유월절과 인자가 팔림",
     "aliases": [
-      "인자가 십자가에 못 박히기 위하여 팔리리라"
+      "인자가 십자가에 못 박히기 위하여 팔리리라",
+        "이틀 뒤가 유월절이다"
     ],
     "locations": [
       {
@@ -168851,7 +170150,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-26-7",
     "title": "향유를 부은 여인",
     "aliases": [
-      "한 여자가 매우 귀한 향유 한 옥합을 가지고 나아와서"
+      "한 여자가 매우 귀한 향유 한 옥합을 가지고 나아와서",
+        "비싼 향유 한 병을 가지고 와"
     ],
     "locations": [
       {
@@ -168883,7 +170183,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-26-15",
     "title": "은 삼십에 넘기기로 함",
     "aliases": [
-      "내가 예수를 너희에게 넘겨 주리니 얼마나 주려느냐"
+      "내가 예수를 너희에게 넘겨 주리니 얼마나 주려느냐",
+        "내가 예수를 당신들에게 넘기면, 나에게 얼마를 주겠소?"
     ],
     "locations": [
       {
@@ -168916,7 +170217,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-26-21",
     "title": "너희 중의 한 사람이 나를 팔리라",
     "aliases": [
-      "너희 중의 한 사람이 나를 팔리라"
+      "너희 중의 한 사람이 나를 팔리라",
+        "너희 중에 하나가 나를 배반할 것이다"
     ],
     "locations": [
       {
@@ -168947,7 +170249,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-26-28",
     "title": "언약의 피",
     "aliases": [
-      "죄 사함을 얻게 하려고 많은 사람을 위하여 흘리는 바 나의 피"
+      "죄 사함을 얻게 하려고 많은 사람을 위하여 흘리는 바 나의 피",
+        "나의 피, 곧 언약의 피이다"
     ],
     "locations": [
       {
@@ -168979,7 +170282,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-26-34",
     "title": "닭 울기 전에 세 번 부인",
     "aliases": [
-      "오늘 밤 닭 울기 전에 네가 세 번 나를 부인하리라"
+      "오늘 밤 닭 울기 전에 네가 세 번 나를 부인하리라",
+        "바로 오늘 밤 닭이 울기 전에"
     ],
     "locations": [
       {
@@ -169010,7 +170314,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-26-39",
     "title": "이 잔을 지나가게 하옵소서",
     "aliases": [
-      "그러나 나의 원대로 마시옵고 아버지의 원대로 하옵소서"
+      "그러나 나의 원대로 마시옵고 아버지의 원대로 하옵소서",
+        "제게서 이 잔을 지나가게 해 주십시오"
     ],
     "locations": [
       {
@@ -169042,7 +170347,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-26-52",
     "title": "칼을 가지는 자는 칼로 망하느니라",
     "aliases": [
-      "칼을 가지는 자는 다 칼로 망하느니라"
+      "칼을 가지는 자는 다 칼로 망하느니라",
+        "칼을 쓰는 사람은 칼로 죽을 것이다"
     ],
     "locations": [
       {
@@ -169073,7 +170379,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-26-64",
     "title": "네가 말하였느니라",
     "aliases": [
-      "네가 말하였느니라"
+      "네가 말하였느니라",
+        "네가 말했다"
     ],
     "locations": [
       {
@@ -169105,7 +170412,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-26-75",
     "title": "베드로가 심히 통곡함",
     "aliases": [
-      "밖에 나가서 심히 통곡하니라"
+      "밖에 나가서 심히 통곡하니라",
+        "베드로는 밖으로 나가 몹시 울었습니다"
     ],
     "locations": [
       {
@@ -169136,7 +170444,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-27-3",
     "title": "뉘우친 유다",
     "aliases": [
-      "스스로 뉘우쳐 그 은 삼십을 대제사장들과 장로들에게 도로 갖다 주며"
+      "스스로 뉘우쳐 그 은 삼십을 대제사장들과 장로들에게 도로 갖다 주며",
+        "양심에 가책을 느꼈습니다"
     ],
     "locations": [
       {
@@ -169167,7 +170476,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-27-9",
     "title": "토기장이의 밭",
     "aliases": [
-      "이에 선지자 예레미야를 통하여 하신 말씀이 이루어졌나니"
+      "이에 선지자 예레미야를 통하여 하신 말씀이 이루어졌나니",
+        "예언자 예레미야가 말한 것이 이루어졌습니다"
     ],
     "locations": [
       {
@@ -169199,7 +170509,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-27-14",
     "title": "침묵하신 예수",
     "aliases": [
-      "한 마디도 대답하지 아니하시니 총독이 크게 놀라워하더라"
+      "한 마디도 대답하지 아니하시니 총독이 크게 놀라워하더라",
+        "단 한 마디도 대답하지 않으셨습니다"
     ],
     "locations": [
       {
@@ -169229,7 +170540,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-27-17",
     "title": "바라바냐 그리스도라 하는 예수냐",
     "aliases": [
-      "바라바냐 그리스도라 하는 예수냐"
+      "바라바냐 그리스도라 하는 예수냐",
+        "바라바냐, 아니면 그리스도라고 하는 예수냐"
     ],
     "locations": [
       {
@@ -169260,7 +170572,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-27-24",
     "title": "손을 씻으며 무죄하다",
     "aliases": [
-      "이 사람의 피에 대하여 나는 무죄하니 너희가 당하라"
+      "이 사람의 피에 대하여 나는 무죄하니 너희가 당하라",
+        "나는 이 사람의 피에 대하여 아무런 책임이 없다"
     ],
     "locations": [
       {
@@ -169291,7 +170604,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-27-29",
     "title": "가시관과 조롱",
     "aliases": [
-      "가시관을 엮어 그 머리에 씌우고"
+      "가시관을 엮어 그 머리에 씌우고",
+        "가시로 왕관을 엮어, 예수님의 머리 위에 씌웠습니다"
     ],
     "locations": [
       {
@@ -169322,7 +170636,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-27-46",
     "title": "엘리 엘리 라마 사박다니",
     "aliases": [
-      "엘리 엘리 라마 사박다니"
+      "엘리 엘리 라마 사박다니",
+        "엘리, 엘리, 라마 사박다니"
     ],
     "locations": [
       {
@@ -169354,7 +170669,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-27-51",
     "title": "성소 휘장이 찢어짐",
     "aliases": [
-      "성소 휘장이 위로부터 아래까지 찢어져 둘이 되고"
+      "성소 휘장이 위로부터 아래까지 찢어져 둘이 되고",
+        "성전 휘장이 위에서부터 아래까지 두 조각으로 갈라졌습니다"
     ],
     "locations": [
       {
@@ -169386,7 +170702,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-27-54",
     "title": "진실로 하나님의 아들",
     "aliases": [
-      "이는 진실로 하나님의 아들이었도다"
+      "이는 진실로 하나님의 아들이었도다",
+        "이 사람은 정말로 하나님의 아들이었다!"
     ],
     "locations": [
       {
@@ -169419,7 +170736,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-27-63",
     "title": "사흘 후에 살아나리라",
     "aliases": [
-      "내가 사흘 후에 다시 살아나리라 한 것을 우리가 기억하노니"
+      "내가 사흘 후에 다시 살아나리라 한 것을 우리가 기억하노니",
+        "내가 삼 일 뒤에 살아날 것이다"
     ],
     "locations": [
       {
@@ -169450,7 +170768,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-28-2",
     "title": "천사가 돌을 굴림",
     "aliases": [
-      "주의 천사가 하늘로부터 내려와 돌을 굴려 내고"
+      "주의 천사가 하늘로부터 내려와 돌을 굴려 내고",
+        "하나님의 천사가 하늘에서 내려왔습니다"
     ],
     "locations": [
       {
@@ -169481,7 +170800,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-28-6",
     "title": "그가 말씀하시던 대로 살아나셨느니라",
     "aliases": [
-      "그가 여기 계시지 않고 그가 말씀 하시던 대로 살아나셨느니라"
+      "그가 여기 계시지 않고 그가 말씀 하시던 대로 살아나셨느니라",
+        "말씀하신 대로 다시 살아나셨다"
     ],
     "locations": [
       {
@@ -169512,7 +170832,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-28-7",
     "title": "갈릴리에서 뵈오리라",
     "aliases": [
-      "너희보다 먼저 갈릴리로 가시나니 거기서 너희가 뵈오리라"
+      "너희보다 먼저 갈릴리로 가시나니 거기서 너희가 뵈오리라",
+        "먼저 갈릴리로 가셨습니다"
     ],
     "locations": [
       {
@@ -169545,7 +170866,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-28-9",
     "title": "예수께서 여자들을 만나심",
     "aliases": [
-      "예수께서 그들을 만나 이르시되 평안하냐 하시거늘"
+      "예수께서 그들을 만나 이르시되 평안하냐 하시거늘",
+        "그분의 발을 붙잡고 절했습니다"
     ],
     "locations": [
       {
@@ -169576,7 +170898,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-28-13",
     "title": "제자들이 도둑질했다는 말",
     "aliases": [
-      "그의 제자들이 밤에 와서 우리가 잘 때에 그를 도둑질하여 갔다 하라"
+      "그의 제자들이 밤에 와서 우리가 잘 때에 그를 도둑질하여 갔다 하라",
+        "우리가 잠든 사이에 그 시체를 훔쳐 갔다"
     ],
     "locations": [
       {
@@ -169607,7 +170930,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-28-17",
     "title": "예수를 뵈옵고 경배하나 의심",
     "aliases": [
-      "아직도 의심하는 사람들이 있더라"
+      "아직도 의심하는 사람들이 있더라",
+        "그러나 몇 명은 의심하기도 했습니다"
     ],
     "locations": [
       {
@@ -169638,7 +170962,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-28-18",
     "title": "하늘과 땅의 모든 권세",
     "aliases": [
-      "하늘과 땅의 모든 권세를 내게 주셨으니"
+      "하늘과 땅의 모든 권세를 내게 주셨으니",
+        "하늘과 땅의 모든 권세가 내게 주어졌다"
     ],
     "locations": [
       {
@@ -169669,7 +170994,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-28-19",
     "title": "모든 민족을 제자로 삼으라",
     "aliases": [
-      "가서 모든 민족을 제자로 삼아 아버지와 아들과 성령의 이름으로 세례를 베풀고"
+      "가서 모든 민족을 제자로 삼아 아버지와 아들과 성령의 이름으로 세례를 베풀고",
+        "모든 민족을 제자로 삼아라"
     ],
     "locations": [
       {
@@ -169701,7 +171027,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-mat-28-20",
     "title": "세상 끝날까지 함께 있으리라",
     "aliases": [
-      "내가 세상 끝날까지 너희와 항상 함께 있으리라"
+      "내가 세상 끝날까지 너희와 항상 함께 있으리라",
+        "내가 너희와 세상 끝날까지 항상 함께 있겠다"
     ],
     "locations": [
       {
@@ -169736,7 +171063,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-1-1",
     "title": "두 권으로 이어지는 글",
     "aliases": [
-      "데오빌로여 내가 먼저 쓴 글에는"
+      "데오빌로여 내가 먼저 쓴 글에는",
+        "제가 먼저 쓴 책에서"
     ],
     "locations": [
       {
@@ -169765,7 +171093,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-1-3",
     "title": "사십 일 동안의 나타나심",
     "aliases": [
-      "사십 일 동안 그들에게 보이시며"
+      "사십 일 동안 그들에게 보이시며",
+        "사십 일 동안이나 이 사람들에게 나타나셨으며"
     ],
     "locations": [
       {
@@ -169794,7 +171123,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-1-8",
     "title": "증인이 되는 순서",
     "aliases": [
-      "오직 성령이 너희에게 임하시면 너희가 권능을 받고"
+      "오직 성령이 너희에게 임하시면 너희가 권능을 받고",
+        "예루살렘과 온 유대와 사마리아와 그리고 땅 끝까지"
     ],
     "locations": [
       {
@@ -169823,7 +171153,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-1-9",
     "title": "승천과 흰 옷 입은 두 사람",
     "aliases": [
-      "이 말씀을 마치시고 그들이 보는데 올려져 가시니"
+      "이 말씀을 마치시고 그들이 보는데 올려져 가시니",
+        "그들이 보는 앞에서 하늘로 올라가셨습니다"
     ],
     "locations": [
       {
@@ -169852,7 +171183,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-1-11",
     "title": "본 그대로 다시 오실 예수님",
     "aliases": [
-      "하늘로 가심을 본 그대로 오시리라"
+      "하늘로 가심을 본 그대로 오시리라",
+        "여러분이 본 그대로 다시 오실 것입니다"
     ],
     "locations": [
       {
@@ -169881,7 +171213,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-1-17",
     "title": "유다에 대한 성경의 말씀",
     "aliases": [
-      "이 사람은 본래 우리 수 가운데 참여하여 이 직무의 한 부분을 맡았던 자라"
+      "이 사람은 본래 우리 수 가운데 참여하여 이 직무의 한 부분을 맡았던 자라",
+        "우리처럼 사도직을 맡았던 사람이었습니다"
     ],
     "locations": [
       {
@@ -169912,7 +171245,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-1-18",
     "title": "유다의 죽음과 피밭",
     "aliases": [
-      "이 사람이 불의의 삯으로 밭을 사고"
+      "이 사람이 불의의 삯으로 밭을 사고",
+        "의롭지 못한 행동을 한 대가로 받은 돈으로 밭을 샀습니다"
     ],
     "locations": [
       {
@@ -169941,7 +171275,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-1-26",
     "title": "맛디아가 뽑히다",
     "aliases": [
-      "제비 뽑아 맛디아를 얻으니"
+      "제비 뽑아 맛디아를 얻으니",
+        "제비를 뽑아 보니 맛디아가 뽑혔습니다"
     ],
     "locations": [
       {
@@ -169970,7 +171305,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-2-1",
     "title": "오순절 성령 강림",
     "aliases": [
-      "오순절 날이 이미 이르매 그들이 다같이 한 곳에 모였더니"
+      "오순절 날이 이미 이르매 그들이 다같이 한 곳에 모였더니",
+        "오순절이 되어 제자들이 한 곳에 모두 모였습니다"
     ],
     "locations": [
       {
@@ -170000,7 +171336,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-2-4",
     "title": "여러 언어로 말하다",
     "aliases": [
-      "성령이 말하게 하심을 따라 다른 언어들로 말하기를 시작하니라"
+      "성령이 말하게 하심을 따라 다른 언어들로 말하기를 시작하니라",
+        "다른 외국어로 말하기 시작했습니다"
     ],
     "locations": [
       {
@@ -170029,7 +171366,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-2-16",
     "title": "요엘의 예언이 이루어지다",
     "aliases": [
-      "이는 곧 선지자 요엘을 통하여 말씀하신 것이니"
+      "이는 곧 선지자 요엘을 통하여 말씀하신 것이니",
+        "요엘 예언자가 예언했던 대로 이루어진 것입니다"
     ],
     "locations": [
       {
@@ -170059,7 +171397,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-2-23",
     "title": "하나님의 뜻과 사람의 책임",
     "aliases": [
-      "너희가 법 없는 자들의 손을 빌려 못 박아 죽였으나"
+      "너희가 법 없는 자들의 손을 빌려 못 박아 죽였으나",
+        "하나님께서 오래 전에 세워 놓으신 계획대로 된 것이었습니다"
     ],
     "locations": [
       {
@@ -170088,7 +171427,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-2-25",
     "title": "다윗의 시편으로 부활을 말하다",
     "aliases": [
-      "내가 항상 내 앞에 계신 주를 뵈었음이여"
+      "내가 항상 내 앞에 계신 주를 뵈었음이여",
+        "다윗이 예수님을 가리켜 말한 것이 있습니다"
     ],
     "locations": [
       {
@@ -170118,7 +171458,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-2-38",
     "title": "회개와 세례로 받는 약속",
     "aliases": [
-      "너희가 회개하여 각각 예수 그리스도의 이름으로 세례를 받고 죄 사함을 받으라"
+      "너희가 회개하여 각각 예수 그리스도의 이름으로 세례를 받고 죄 사함을 받으라",
+        "예수 그리스도의 이름으로 세례를 받으십시오"
     ],
     "locations": [
       {
@@ -170148,7 +171489,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-2-41",
     "title": "삼천 명이 더해지다",
     "aliases": [
-      "이 날에 신도의 수가 삼천이나 더하더라"
+      "이 날에 신도의 수가 삼천이나 더하더라",
+        "믿은 사람의 수는 삼천 명이나 되었습니다"
     ],
     "locations": [
       {
@@ -170177,7 +171519,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-2-45",
     "title": "모든 것을 나누는 공동체",
     "aliases": [
-      "또 재산과 소유를 팔아 각 사람의 필요를 따라 나눠 주며"
+      "또 재산과 소유를 팔아 각 사람의 필요를 따라 나눠 주며",
+        "재산과 모든 소유를 팔아서 필요한 사람들에게 나누어 주었습니다"
     ],
     "locations": [
       {
@@ -170206,7 +171549,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-3-6",
     "title": "은과 금 대신 주는 것",
     "aliases": [
-      "내게 있는 이것을 네게 주노니 나사렛 예수 그리스도의 이름으로 일어나 걸으라"
+      "내게 있는 이것을 네게 주노니 나사렛 예수 그리스도의 이름으로 일어나 걸으라",
+        "은과 금은 내게 없으나, 내게 있는 것을 당신에게 주겠소"
     ],
     "locations": [
       {
@@ -170235,7 +171579,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-3-12",
     "title": "능력과 경건은 누구의 것인가",
     "aliases": [
-      "우리 개인의 권능과 경건으로 이 사람을 걷게 한 것처럼"
+      "우리 개인의 권능과 경건으로 이 사람을 걷게 한 것처럼",
+        "우리의 능력이나 우리의 경건함 때문에"
     ],
     "locations": [
       {
@@ -170264,7 +171609,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-3-19",
     "title": "회개하고 돌이키라",
     "aliases": [
-      "너희가 회개하고 돌이켜 너희 죄 없이 함을 받으라"
+      "너희가 회개하고 돌이켜 너희 죄 없이 함을 받으라",
+        "회개하고 하나님께로 돌아오십시오"
     ],
     "locations": [
       {
@@ -170293,7 +171639,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-3-22",
     "title": "모세와 같은 선지자",
     "aliases": [
-      "주 하나님이 너희를 위하여 너희 형제 가운데서 나 같은 선지자 하나를 세울 것이니"
+      "주 하나님이 너희를 위하여 너희 형제 가운데서 나 같은 선지자 하나를 세울 것이니",
+        "나와 같은 예언자 한 사람을 세우실 것이다"
     ],
     "locations": [
       {
@@ -170322,7 +171669,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-3-25",
     "title": "아브라함을 통한 복",
     "aliases": [
-      "땅 위의 모든 족속이 너의 씨로 말미암아 복을 받으리라"
+      "땅 위의 모든 족속이 너의 씨로 말미암아 복을 받으리라",
+        "네 자손으로 말미암아 땅에 있는 모든 민족이 복을 받을 것이다"
     ],
     "locations": [
       {
@@ -170351,7 +171699,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-4-4",
     "title": "남자만 오천 명",
     "aliases": [
-      "남자의 수가 약 오천이나 되었더라"
+      "남자의 수가 약 오천이나 되었더라",
+        "그 수가 오천 명 정도나 되었습니다"
     ],
     "locations": [
       {
@@ -170380,7 +171729,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-4-12",
     "title": "구원은 예수 이름에만",
     "aliases": [
-      "다른 이로써는 구원을 받을 수 없나니"
+      "다른 이로써는 구원을 받을 수 없나니",
+        "다른 어떤 이에게서도 구원을 받을 수 없습니다"
     ],
     "locations": [
       {
@@ -170409,7 +171759,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-4-13",
     "title": "학문 없는 범인의 담대함",
     "aliases": [
-      "그들을 본래 학문 없는 범인으로 알았다가"
+      "그들을 본래 학문 없는 범인으로 알았다가",
+        "교육을 받지 못한 평범한 사람인 줄 알고 있었는데"
     ],
     "locations": [
       {
@@ -170438,7 +171789,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-4-20",
     "title": "보고 들은 것을 말해야 한다",
     "aliases": [
-      "우리는 보고 들은 것을 말하지 아니할 수 없다"
+      "우리는 보고 들은 것을 말하지 아니할 수 없다",
+        "우리가 보고 들은 것을 말하지 않을 수가 없습니다"
     ],
     "locations": [
       {
@@ -170467,7 +171819,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-4-29",
     "title": "담대하게 말씀을 전하게 해 달라는 기도",
     "aliases": [
-      "주여 이제도 그들의 위협함을 굽어보시옵고"
+      "주여 이제도 그들의 위협함을 굽어보시옵고",
+        "주님의 말씀을 담대하게 말할 수 있도록"
     ],
     "locations": [
       {
@@ -170498,7 +171851,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-4-34",
     "title": "가난한 사람이 없었다",
     "aliases": [
-      "그 중에 가난한 사람이 없으니"
+      "그 중에 가난한 사람이 없으니",
+        "그들 중에 부족한 것이 있는 사람은 한 사람도 없었습니다"
     ],
     "locations": [
       {
@@ -170528,7 +171882,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-4-36",
     "title": "바나바라는 이름",
     "aliases": [
-      "사도들이 일컬어 바나바라"
+      "사도들이 일컬어 바나바라",
+        "사도들은 그 사람을 바나바라고 불렀습니다"
     ],
     "locations": [
       {
@@ -170557,7 +171912,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-5-2",
     "title": "감춘 값과 거짓",
     "aliases": [
-      "그 값에서 얼마를 감추매 그 아내도 알더라"
+      "그 값에서 얼마를 감추매 그 아내도 알더라",
+        "땅을 판 돈에서 얼마를 떼어 몰래 숨겨 놓고"
     ],
     "locations": [
       {
@@ -170586,7 +171942,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-5-5",
     "title": "아나니아가 쓰러지다",
     "aliases": [
-      "아나니아가 이 말을 듣고 엎드러져 혼이 떠나니"
+      "아나니아가 이 말을 듣고 엎드러져 혼이 떠나니",
+        "이 말을 듣자마자 쓰러져 죽었습니다"
     ],
     "locations": [
       {
@@ -170615,7 +171972,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-5-15",
     "title": "그림자라도 닿기를 바라다",
     "aliases": [
-      "베드로가 지날 때에 혹 그의 그림자라도 누구에게 덮일까 바라고"
+      "베드로가 지날 때에 혹 그의 그림자라도 누구에게 덮일까 바라고",
+        "베드로의 그림자라도 그들에게 덮이기를 바랐습니다"
     ],
     "locations": [
       {
@@ -170645,7 +172003,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-5-19",
     "title": "주의 사자가 옥문을 열다",
     "aliases": [
-      "주의 사자가 밤에 옥문을 열고 끌어내어"
+      "주의 사자가 밤에 옥문을 열고 끌어내어",
+        "주님의 천사가 감옥 문을 열고"
     ],
     "locations": [
       {
@@ -170674,7 +172033,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-5-29",
     "title": "사람보다 하나님께 순종하라",
     "aliases": [
-      "사람보다 하나님께 순종하는 것이 마땅하니라"
+      "사람보다 하나님께 순종하는 것이 마땅하니라",
+        "사람이 아니라 하나님께 복종해야 하는 것은 당연한 일입니다"
     ],
     "locations": [
       {
@@ -170704,7 +172064,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-5-35",
     "title": "가말리엘의 신중한 충고",
     "aliases": [
-      "너희가 이 사람들에게 대하여 어떻게 하려는지 조심하라"
+      "너희가 이 사람들에게 대하여 어떻게 하려는지 조심하라",
+        "이 사람들에게 어떤 행동을 하려 하는지 깊이 생각해 보십시오"
     ],
     "locations": [
       {
@@ -170733,7 +172094,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-5-41",
     "title": "이름 때문에 받는 모욕을 기뻐하다",
     "aliases": [
-      "그 이름을 위하여 능욕 받는 일에 합당한 자로 여기심을 기뻐하면서"
+      "그 이름을 위하여 능욕 받는 일에 합당한 자로 여기심을 기뻐하면서",
+        "예수님 때문에 모욕당하는 것을 영광이라고 생각하여"
     ],
     "locations": [
       {
@@ -170766,7 +172128,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-6-4",
     "title": "기도와 말씀에 힘쓰는 사도들",
     "aliases": [
-      "우리는 오로지 기도하는 일과 말씀 사역에 힘쓰리라"
+      "우리는 오로지 기도하는 일과 말씀 사역에 힘쓰리라",
+        "기도하는 일과 하나님의 말씀을 가르치는 일에 온 힘을 기울이겠습니다"
     ],
     "locations": [
       {
@@ -170795,7 +172158,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-6-5",
     "title": "일곱 사람을 세우다",
     "aliases": [
-      "믿음과 성령이 충만한 사람 스데반과"
+      "믿음과 성령이 충만한 사람 스데반과",
+        "믿음이 좋고 성령이 충만한 스데반을 비롯하여"
     ],
     "locations": [
       {
@@ -170824,7 +172188,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-6-8",
     "title": "스데반의 은혜와 권능",
     "aliases": [
-      "스데반이 은혜와 권능이 충만하여"
+      "스데반이 은혜와 권능이 충만하여",
+        "하나님의 은혜와 능력이 가득한 사람이었습니다"
     ],
     "locations": [
       {
@@ -170853,7 +172218,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-6-11",
     "title": "돈으로 세운 거짓 증인",
     "aliases": [
-      "사람들을 매수하여 말하게 하되"
+      "사람들을 매수하여 말하게 하되",
+        "돈을 주고 사람들을 사서"
     ],
     "locations": [
       {
@@ -170882,7 +172248,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-6-15",
     "title": "천사의 얼굴",
     "aliases": [
-      "그 얼굴이 천사의 얼굴과 같더라"
+      "그 얼굴이 천사의 얼굴과 같더라",
+        "그의 얼굴은 마치 천사의 얼굴과 같았습니다"
     ],
     "locations": [
       {
@@ -170911,7 +172278,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-7-2",
     "title": "하란 이전의 아브라함",
     "aliases": [
-      "우리 조상 아브라함이 하란에 있기 전"
+      "우리 조상 아브라함이 하란에 있기 전",
+        "우리의 조상 아브라함이 하란에서 살기 전"
     ],
     "locations": [
       {
@@ -170941,7 +172309,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-7-6",
     "title": "사백 년의 나그네살이",
     "aliases": [
-      "그 땅 사람들이 종으로 삼아 사백 년 동안을 괴롭게 하리라"
+      "그 땅 사람들이 종으로 삼아 사백 년 동안을 괴롭게 하리라",
+        "그 곳 백성이 사백 년 동안 네 자손을 종으로 삼을 것이며"
     ],
     "locations": [
       {
@@ -170971,7 +172340,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-7-30",
     "title": "가시나무 떨기 불꽃 가운데 나타난 천사",
     "aliases": [
-      "사십 년이 차매 천사가 시내 산 광야 가시나무 떨기 불꽃 가운데서 그에게 보이거늘"
+      "사십 년이 차매 천사가 시내 산 광야 가시나무 떨기 불꽃 가운데서 그에게 보이거늘",
+        "한 천사가 가시나무 떨기 불꽃 가운데"
     ],
     "locations": [
       {
@@ -171003,7 +172373,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-7-35",
     "title": "거절당한 모세가 해방자로 보내지다",
     "aliases": [
-      "거절하던 그 모세를 하나님은 가시나무 떨기 가운데서 보이던 천사의 손으로"
+      "거절하던 그 모세를 하나님은 가시나무 떨기 가운데서 보이던 천사의 손으로",
+        "지도자와 해방자로 삼으시고, 그들에게 보내셨습니다"
     ],
     "locations": [
       {
@@ -171032,7 +172403,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-7-42",
     "title": "하늘의 군대를 섬기게 두시다",
     "aliases": [
-      "하나님이 외면하사 그들을 그 하늘의 군대 섬기는 일에 버려 두셨으니"
+      "하나님이 외면하사 그들을 그 하늘의 군대 섬기는 일에 버려 두셨으니",
+        "그들이 천체들을 섬기게 내버려 두셨습니다"
     ],
     "locations": [
       {
@@ -171061,7 +172433,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-7-48",
     "title": "손으로 지은 곳에 계시지 않는 하나님",
     "aliases": [
-      "그러나 지극히 높으신 이는 손으로 지은 곳에 계시지 아니하시나니"
+      "그러나 지극히 높으신 이는 손으로 지은 곳에 계시지 아니하시나니",
+        "사람이 손으로 지은 집에 살지 않으십니다"
     ],
     "locations": [
       {
@@ -171091,7 +172464,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-7-56",
     "title": "열린 하늘과 서 계신 인자",
     "aliases": [
-      "하늘이 열리고 인자가 하나님 우편에 서신 것을 보노라"
+      "하늘이 열리고 인자가 하나님 우편에 서신 것을 보노라",
+        "하늘이 열리고 하나님의 오른편에"
     ],
     "locations": [
       {
@@ -171120,7 +172494,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-7-59",
     "title": "돌에 맞으며 드린 기도",
     "aliases": [
-      "주 예수여 내 영혼을 받으시옵소서"
+      "주 예수여 내 영혼을 받으시옵소서",
+        "주 예수님, 내 영혼을 받아 주십시오"
     ],
     "locations": [
       {
@@ -171150,7 +172525,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-8-1",
     "title": "박해로 흩어진 교회",
     "aliases": [
-      "그 날에 예루살렘에 있는 교회에 큰 박해가 있어"
+      "그 날에 예루살렘에 있는 교회에 큰 박해가 있어",
+        "그 날에 예루살렘 교회에 큰 박해가 시작되었습니다"
     ],
     "locations": [
       {
@@ -171180,7 +172556,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-8-4",
     "title": "흩어져도 말씀을 전하다",
     "aliases": [
-      "그 흩어진 사람들이 두루 다니며 복음의 말씀을 전할새"
+      "그 흩어진 사람들이 두루 다니며 복음의 말씀을 전할새",
+        "흩어진 사람들은 어디를 가든지 하나님의 말씀을 전했습니다"
     ],
     "locations": [
       {
@@ -171209,7 +172586,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-8-13",
     "title": "시몬도 믿고 세례를 받다",
     "aliases": [
-      "시몬도 믿고 세례를 받은 후에"
+      "시몬도 믿고 세례를 받은 후에",
+        "시몬도 믿고 세례를 받았습니다"
     ],
     "locations": [
       {
@@ -171238,7 +172616,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-8-20",
     "title": "하나님의 선물을 돈으로 살 수 없다",
     "aliases": [
-      "네가 하나님의 선물을 돈 주고 살 줄로 생각하였으니"
+      "네가 하나님의 선물을 돈 주고 살 줄로 생각하였으니",
+        "하나님의 선물을 돈으로 살 수 있다고 생각했으니"
     ],
     "locations": [
       {
@@ -171267,7 +172646,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-8-30",
     "title": "이사야를 읽는 내시",
     "aliases": [
-      "선지자 이사야의 글 읽는 것을 듣고"
+      "선지자 이사야의 글 읽는 것을 듣고",
+        "예언자 이사야의 글을 읽는 것을"
     ],
     "locations": [
       {
@@ -171298,7 +172678,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-8-36",
     "title": "물이 있으니 세례를 받을 수 있는가",
     "aliases": [
-      "보라 물이 있으니 내가 세례를 받음에 무슨 거리낌이 있느냐"
+      "보라 물이 있으니 내가 세례를 받음에 무슨 거리낌이 있느냐",
+        "제가 세례를 받는 데 장애 될 만한 것이 있습니까"
     ],
     "locations": [
       {
@@ -171327,7 +172708,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-9-1",
     "title": "사울의 살기와 공문",
     "aliases": [
-      "사울이 주의 제자들에 대하여 여전히 위협과 살기가 등등하여"
+      "사울이 주의 제자들에 대하여 여전히 위협과 살기가 등등하여",
+        "주님의 제자들을 죽이겠다는 생각으로"
     ],
     "locations": [
       {
@@ -171356,7 +172738,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-9-5",
     "title": "나는 네가 박해하는 예수다",
     "aliases": [
-      "나는 네가 박해하는 예수라"
+      "나는 네가 박해하는 예수라",
+        "나는 네가 박해하는 예수다"
     ],
     "locations": [
       {
@@ -171386,7 +172769,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-9-15",
     "title": "이방인과 임금들에게 이름을 전할 그릇",
     "aliases": [
-      "이 사람은 내 이름을 이방인과 임금들과 이스라엘 자손들에게 전하기 위하여 택한 나의 그릇이라"
+      "이 사람은 내 이름을 이방인과 임금들과 이스라엘 자손들에게 전하기 위하여 택한 나의 그릇이라",
+        "선택된 나의 도구이다"
     ],
     "locations": [
       {
@@ -171415,7 +172799,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-9-17",
     "title": "형제 사울아",
     "aliases": [
-      "형제 사울아 주 곧 네가 오는 길에서 나타나셨던 예수께서 나를 보내어"
+      "형제 사울아 주 곧 네가 오는 길에서 나타나셨던 예수께서 나를 보내어",
+        "사울 형제여"
     ],
     "locations": [
       {
@@ -171444,7 +172829,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-9-27",
     "title": "바나바가 사울을 사도들에게 데려가다",
     "aliases": [
-      "바나바가 데리고 사도들에게 가서"
+      "바나바가 데리고 사도들에게 가서",
+        "바나바는 사울을 데리고 사도들에게로 갔습니다"
     ],
     "locations": [
       {
@@ -171473,7 +172859,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-9-31",
     "title": "평안을 얻은 교회",
     "aliases": [
-      "그리하여 온 유대와 갈릴리와 사마리아 교회가 평안하여 든든히 서 가고"
+      "그리하여 온 유대와 갈릴리와 사마리아 교회가 평안하여 든든히 서 가고",
+        "평화를 되찾았으며, 터전을 든든하게 잡았습니다"
     ],
     "locations": [
       {
@@ -171503,7 +172890,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-9-36",
     "title": "선행과 구제를 많이 한 다비다",
     "aliases": [
-      "선행과 구제하는 일이 심히 많더니"
+      "선행과 구제하는 일이 심히 많더니",
+        "언제나 착한 일을 하고, 가난한 사람들을 돕는 일에 힘썼습니다"
     ],
     "locations": [
       {
@@ -171532,7 +172920,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-9-40",
     "title": "다비다야 일어나라",
     "aliases": [
-      "다비다야 일어나라"
+      "다비다야 일어나라",
+        "다비다여, 일어나시오!"
     ],
     "locations": [
       {
@@ -171561,7 +172950,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-10-1",
     "title": "가이사랴의 고넬료",
     "aliases": [
-      "가이사랴에 고넬료라 하는 사람이 있으니"
+      "가이사랴에 고넬료라 하는 사람이 있으니",
+        "가이사랴에 고넬료라는 사람이 있었습니다"
     ],
     "locations": [
       {
@@ -171590,7 +172980,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-10-4",
     "title": "기도와 구제가 기억되다",
     "aliases": [
-      "네 기도와 구제가 하나님 앞에 상달되어 기억하신 바가 되었으니"
+      "네 기도와 구제가 하나님 앞에 상달되어 기억하신 바가 되었으니",
+        "하나님께서 네 기도를 들으셨다"
     ],
     "locations": [
       {
@@ -171619,7 +173010,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-10-13",
     "title": "잡아먹으라는 음성과 속되다는 말",
     "aliases": [
-      "베드로야 일어나 잡아 먹어라"
+      "베드로야 일어나 잡아 먹어라",
+        "베드로야, 일어나 그것들을 잡아먹어라"
     ],
     "locations": [
       {
@@ -171650,7 +173042,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-10-20",
     "title": "의심하지 말고 함께 가라",
     "aliases": [
-      "일어나 내려가 의심하지 말고 함께 가라"
+      "일어나 내려가 의심하지 말고 함께 가라",
+        "주저하지 말고 그들을 따라가거라"
     ],
     "locations": [
       {
@@ -171680,7 +173073,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-10-28",
     "title": "사람을 속되다 하지 말라",
     "aliases": [
-      "아무도 속되다 하거나 깨끗하지 않다 하지 말라 하시기로"
+      "아무도 속되다 하거나 깨끗하지 않다 하지 말라 하시기로",
+        "어떤 사람도 속되거나 부정하다고 해서는 안 된다는 것을"
     ],
     "locations": [
       {
@@ -171710,7 +173104,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-10-34",
     "title": "외모로 차별하지 않으시는 하나님",
     "aliases": [
-      "하나님은 사람의 외모를 보지 아니하시고"
+      "하나님은 사람의 외모를 보지 아니하시고",
+        "사람을 외모로 차별하지 않는 분이시라는 것을"
     ],
     "locations": [
       {
@@ -171741,7 +173136,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-10-44",
     "title": "말씀을 듣는 이방인에게 성령이 내리다",
     "aliases": [
-      "성령이 말씀 듣는 모든 사람에게 내려오시니"
+      "성령이 말씀 듣는 모든 사람에게 내려오시니",
+        "말씀을 듣고 있던 모든 사람들 위에 성령께서 내려오셨습니다"
     ],
     "locations": [
       {
@@ -171775,7 +173171,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-11-15",
     "title": "처음과 같은 성령 강림",
     "aliases": [
-      "성령이 그들에게 임하시기를 처음 우리에게 하신 것과 같이 하는지라"
+      "성령이 그들에게 임하시기를 처음 우리에게 하신 것과 같이 하는지라",
+        "처음에 우리에게 내리셨던 것과 똑같이"
     ],
     "locations": [
       {
@@ -171805,7 +173202,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-11-17",
     "title": "같은 선물을 주셨으니",
     "aliases": [
-      "주 예수 그리스도를 믿을 때에 주신 것과 같은 선물을 그들에게도 주셨으니"
+      "주 예수 그리스도를 믿을 때에 주신 것과 같은 선물을 그들에게도 주셨으니",
+        "똑같은 선물을 그들에게도 주셨는데"
     ],
     "locations": [
       {
@@ -171834,7 +173232,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-11-20",
     "title": "헬라인에게도 전한 안디옥 사람들",
     "aliases": [
-      "헬라인에게도 말하여 주 예수를 전파하니"
+      "헬라인에게도 말하여 주 예수를 전파하니",
+        "그리스 사람들에게도 주 예수님에 관한 복음을 전했습니다"
     ],
     "locations": [
       {
@@ -171863,7 +173262,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-11-26",
     "title": "안디옥에서 처음 그리스도인이라 불리다",
     "aliases": [
-      "제자들이 안디옥에서 비로소 그리스도인이라 일컬음을 받게 되었더라"
+      "제자들이 안디옥에서 비로소 그리스도인이라 일컬음을 받게 되었더라",
+        "안디옥에서 처음으로"
     ],
     "locations": [
       {
@@ -171892,7 +173292,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-11-28",
     "title": "아가보의 예언",
     "aliases": [
-      "천하에 큰 흉년이 들리라 하더니"
+      "천하에 큰 흉년이 들리라 하더니",
+        "아가보라는 사람이 있었습니다"
     ],
     "locations": [
       {
@@ -171921,7 +173322,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-11-29",
     "title": "형편대로 보낸 구제 헌금",
     "aliases": [
-      "제자들이 각각 그 힘대로 유대에 사는 형제들에게 부조를 보내기로 작정하고"
+      "제자들이 각각 그 힘대로 유대에 사는 형제들에게 부조를 보내기로 작정하고",
+        "자기 형편대로 헌금하여 유대에 사는 형제들을 돕기로 결정하였습니다"
     ],
     "locations": [
       {
@@ -171950,7 +173352,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-12-2",
     "title": "야고보의 죽음",
     "aliases": [
-      "요한의 형제 야고보를 칼로 죽이니"
+      "요한의 형제 야고보를 칼로 죽이니",
+        "요한의 형제 야고보를 칼로 죽였습니다"
     ],
     "locations": [
       {
@@ -171979,7 +173382,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-12-5",
     "title": "교회의 간절한 기도",
     "aliases": [
-      "교회는 그를 위하여 간절히 하나님께 기도하더라"
+      "교회는 그를 위하여 간절히 하나님께 기도하더라",
+        "교회는 베드로를 위해 하나님께 열심히 기도했습니다"
     ],
     "locations": [
       {
@@ -172008,7 +173412,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-12-7",
     "title": "주의 사자가 옥에 나타나다",
     "aliases": [
-      "홀연히 주의 사자가 나타나매 옥중에 광채가 빛나며"
+      "홀연히 주의 사자가 나타나매 옥중에 광채가 빛나며",
+        "주님의 천사가 나타나고, 환한 빛이 감옥을 비추었습니다"
     ],
     "locations": [
       {
@@ -172037,7 +173442,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-12-14",
     "title": "로데가 베드로를 알아보다",
     "aliases": [
-      "베드로의 음성인 줄 알고 기뻐하여 문을 미처 열지 못하고"
+      "베드로의 음성인 줄 알고 기뻐하여 문을 미처 열지 못하고",
+        "베드로의 목소리를 알아듣고"
     ],
     "locations": [
       {
@@ -172066,7 +173472,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-12-15",
     "title": "그의 천사라 하더라",
     "aliases": [
-      "그러면 그의 천사라 하더라"
+      "그러면 그의 천사라 하더라",
+        "베드로의 천사인가 보다"
     ],
     "locations": [
       {
@@ -172095,7 +173502,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-12-23",
     "title": "영광을 돌리지 않은 헤롯",
     "aliases": [
-      "헤롯이 영광을 하나님께로 돌리지 아니하므로"
+      "헤롯이 영광을 하나님께로 돌리지 아니하므로",
+        "헤롯이 하나님께 영광을 돌리지 않았기 때문에"
     ],
     "locations": [
       {
@@ -172124,7 +173532,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-13-1",
     "title": "안디옥 교회의 지도자들",
     "aliases": [
-      "안디옥 교회에 선지자들과 교사들이 있으니"
+      "안디옥 교회에 선지자들과 교사들이 있으니",
+        "안디옥 교회에는 예언자와 교사들이 있었습니다"
     ],
     "locations": [
       {
@@ -172153,7 +173562,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-13-2",
     "title": "바나바와 사울을 따로 세우라",
     "aliases": [
-      "내가 불러 시키는 일을 위하여 바나바와 사울을 따로 세우라 하시니"
+      "내가 불러 시키는 일을 위하여 바나바와 사울을 따로 세우라 하시니",
+        "바나바와 사울을 따로 세워 내가 그들에게 맡긴 일을 하게 하여라"
     ],
     "locations": [
       {
@@ -172182,7 +173592,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-13-11",
     "title": "마술사 엘루마가 맹인이 되다",
     "aliases": [
-      "보라 이제 주의 손이 네 위에 있으니 네가 맹인이 되어"
+      "보라 이제 주의 손이 네 위에 있으니 네가 맹인이 되어",
+        "곧 안개와 어둠이 그에게 내려"
     ],
     "locations": [
       {
@@ -172211,7 +173622,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-13-16",
     "title": "비시디아 안디옥의 첫 설교",
     "aliases": [
-      "이스라엘 사람들과 및 하나님을 경외하는 사람들아 들으라"
+      "이스라엘 사람들과 및 하나님을 경외하는 사람들아 들으라",
+        "이스라엘 사람들 그리고 하나님을 경외하는 이방인 여러분"
     ],
     "locations": [
       {
@@ -172241,7 +173653,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-13-39",
     "title": "믿음으로 얻는 의롭다 하심",
     "aliases": [
-      "이 사람을 힘입어 믿는 자마다 의롭다 하심을 얻는 이것이라"
+      "이 사람을 힘입어 믿는 자마다 의롭다 하심을 얻는 이것이라",
+        "믿는 사람은 누구나 예수님을 통해서 의롭다함을 얻습니다"
     ],
     "locations": [
       {
@@ -172271,7 +173684,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-13-46",
     "title": "이방인에게로 향하다",
     "aliases": [
-      "우리가 이방인에게로 향하노라"
+      "우리가 이방인에게로 향하노라",
+        "이제 이방인들에게 갑니다"
     ],
     "locations": [
       {
@@ -172300,7 +173714,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-13-48",
     "title": "영생을 작정받은 사람들이 믿다",
     "aliases": [
-      "영생을 주시기로 작정된 자는 다 믿더라"
+      "영생을 주시기로 작정된 자는 다 믿더라",
+        "영원한 생명을 얻기로 선택된 사람들은 모두 예수님을 믿었습니다"
     ],
     "locations": [
       {
@@ -172330,7 +173745,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-14-3",
     "title": "표적과 기사가 은혜의 말씀을 증언하다",
     "aliases": [
-      "주께서 그들의 손으로 표적과 기사를 행하게 하여 주사"
+      "주께서 그들의 손으로 표적과 기사를 행하게 하여 주사",
+        "그 은혜의 말씀이 참되다는 것을 보여 주셨습니다"
     ],
     "locations": [
       {
@@ -172360,7 +173776,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-14-9",
     "title": "구원 받을 만한 믿음",
     "aliases": [
-      "바울이 주목하여 구원 받을 만한 믿음이 그에게 있는 것을 보고"
+      "바울이 주목하여 구원 받을 만한 믿음이 그에게 있는 것을 보고",
+        "고침을 받을 만한 믿음이 있다는 것을 알 수 있었습니다"
     ],
     "locations": [
       {
@@ -172389,7 +173806,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-14-11",
     "title": "신들이 사람의 형상으로 내려오다",
     "aliases": [
-      "신들이 사람의 형상으로 우리 가운데 내려오셨다"
+      "신들이 사람의 형상으로 우리 가운데 내려오셨다",
+        "신들이 사람의 모습을 하고 우리에게 내려왔다"
     ],
     "locations": [
       {
@@ -172418,7 +173836,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-14-15",
     "title": "우리도 여러분과 같은 사람이다",
     "aliases": [
-      "우리도 여러분과 같은 성정을 가진 사람이라"
+      "우리도 여러분과 같은 성정을 가진 사람이라",
+        "우리도 여러분과 똑같은 사람에 지나지 않습니다"
     ],
     "locations": [
       {
@@ -172447,7 +173866,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-14-19",
     "title": "돌에 맞고 성 밖으로 끌려나간 바울",
     "aliases": [
-      "그들이 돌로 바울을 쳐서 죽은 줄로 알고 시외로 끌어 내치니라"
+      "그들이 돌로 바울을 쳐서 죽은 줄로 알고 시외로 끌어 내치니라",
+        "바울이 죽은 줄 알고 도시 밖으로 끌어 냈습니다"
     ],
     "locations": [
       {
@@ -172476,7 +173896,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-14-22",
     "title": "많은 환난을 겪어야 하나님 나라에 들어간다",
     "aliases": [
-      "하나님의 나라에 들어가려면 많은 환난을 겪어야 할 것이라"
+      "하나님의 나라에 들어가려면 많은 환난을 겪어야 할 것이라",
+        "하나님 나라에 들어가려면 많은 고난을 겪어야 한다"
     ],
     "locations": [
       {
@@ -172506,7 +173927,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-14-23",
     "title": "각 교회의 장로를 세우다",
     "aliases": [
-      "각 교회에서 장로들을 택하여 금식 기도 하며"
+      "각 교회에서 장로들을 택하여 금식 기도 하며",
+        "각 교회에 장로들을 임명하고"
     ],
     "locations": [
       {
@@ -172535,7 +173957,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-14-27",
     "title": "이방인에게 열린 믿음의 문",
     "aliases": [
-      "이방인들에게 믿음의 문을 여신 것을"
+      "이방인들에게 믿음의 문을 여신 것을",
+        "이방인들에게 믿음의 문을 열어 주신 것을"
     ],
     "locations": [
       {
@@ -172565,7 +173988,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-15-1",
     "title": "할례 없이는 구원이 없다는 주장",
     "aliases": [
-      "너희가 모세의 법대로 할례를 받지 아니하면 능히 구원을 받지 못하리라"
+      "너희가 모세의 법대로 할례를 받지 아니하면 능히 구원을 받지 못하리라",
+        "할례를 받지 않으면 여러분은 구원받을 수 없습니다"
     ],
     "locations": [
       {
@@ -172595,7 +174019,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-15-7",
     "title": "베드로가 이방인의 복음을 증언하다",
     "aliases": [
-      "하나님이 이방인들로 내 입에서 복음의 말씀을 들어 믿게 하시려고"
+      "하나님이 이방인들로 내 입에서 복음의 말씀을 들어 믿게 하시려고",
+        "이방인들에게 복음을 전하게 하셔서"
     ],
     "locations": [
       {
@@ -172624,7 +174049,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-15-10",
     "title": "감당하지 못한 멍에",
     "aliases": [
-      "우리 조상과 우리도 능히 메지 못하던 멍에를 제자들의 목에 두려느냐"
+      "우리 조상과 우리도 능히 메지 못하던 멍에를 제자들의 목에 두려느냐",
+        "우리 조상들이나 우리나 모두 질 수 없었던 짐을"
     ],
     "locations": [
       {
@@ -172653,7 +174079,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-15-19",
     "title": "이방인 신자에게 짐을 지우지 말자",
     "aliases": [
-      "이방인 중에서 하나님께로 돌아오는 자들을 괴롭게 하지 말고"
+      "이방인 중에서 하나님께로 돌아오는 자들을 괴롭게 하지 말고",
+        "하나님께로 돌아온 이방 형제들을 괴롭히지 말고"
     ],
     "locations": [
       {
@@ -172683,7 +174110,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-15-28",
     "title": "요긴한 것 외에는 짐을 지우지 않다",
     "aliases": [
-      "성령과 우리는 이 요긴한 것들 외에는 아무 짐도 너희에게 지우지 아니하는 것이 옳은 줄 알았노니"
+      "성령과 우리는 이 요긴한 것들 외에는 아무 짐도 너희에게 지우지 아니하는 것이 옳은 줄 알았노니",
+        "다른 어떠한 짐도 지우지 않는 것이 성령과 우리의 생각입니다"
     ],
     "locations": [
       {
@@ -172712,7 +174140,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-15-39",
     "title": "바나바와 바울이 갈라서다",
     "aliases": [
-      "서로 심히 다투어 피차 갈라서니"
+      "서로 심히 다투어 피차 갈라서니",
+        "둘은 마침내 갈라서고 말았습니다"
     ],
     "locations": [
       {
@@ -172746,7 +174175,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-16-3",
     "title": "디모데에게 행한 할례",
     "aliases": [
-      "그 지역에 있는 유대인으로 말미암아 그를 데려다가 할례를 행하니"
+      "그 지역에 있는 유대인으로 말미암아 그를 데려다가 할례를 행하니",
+        "바울은 디모데에게 할례를 베풀었습니다"
     ],
     "locations": [
       {
@@ -172776,7 +174206,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-16-9",
     "title": "마게도냐 사람의 환상",
     "aliases": [
-      "밤에 환상이 바울에게 보이니"
+      "밤에 환상이 바울에게 보이니",
+        "마케도니아로 건너와서 우리를 도와 주십시오"
     ],
     "locations": [
       {
@@ -172805,7 +174236,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-16-14",
     "title": "마음을 여신 루디아",
     "aliases": [
-      "주께서 그 마음을 열어 바울의 말을 따르게 하신지라"
+      "주께서 그 마음을 열어 바울의 말을 따르게 하신지라",
+        "주님께서 그녀의 마음을 여셨습니다"
     ],
     "locations": [
       {
@@ -172834,7 +174266,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-16-18",
     "title": "귀신을 명하여 나오게 하다",
     "aliases": [
-      "예수 그리스도의 이름으로 내가 네게 명하노니 그에게서 나오라"
+      "예수 그리스도의 이름으로 내가 네게 명하노니 그에게서 나오라",
+        "내가 예수 그리스도의 이름으로 네게 명령한다"
     ],
     "locations": [
       {
@@ -172863,7 +174296,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-16-25",
     "title": "한밤중의 기도와 찬송",
     "aliases": [
-      "한밤중에 바울과 실라가 기도하고 하나님을 찬송하매"
+      "한밤중에 바울과 실라가 기도하고 하나님을 찬송하매",
+        "한밤중에 바울과 실라는 하나님께 기도를 하며 찬송을 불렀습니다"
     ],
     "locations": [
       {
@@ -172892,7 +174326,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-16-31",
     "title": "너와 네 집이 구원을 받으리라",
     "aliases": [
-      "주 예수를 믿으라 그리하면 너와 네 집이 구원을 받으리라"
+      "주 예수를 믿으라 그리하면 너와 네 집이 구원을 받으리라",
+        "당신과 당신의 집안이 구원을 얻을 것입니다"
     ],
     "locations": [
       {
@@ -172922,7 +174357,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-16-37",
     "title": "로마 시민이라는 말",
     "aliases": [
-      "로마 사람인 우리를 죄도 정하지 아니하고"
+      "로마 사람인 우리를 죄도 정하지 아니하고",
+        "로마 시민인 우리를 재판도 하지 않고"
     ],
     "locations": [
       {
@@ -172951,7 +174387,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-17-3",
     "title": "성경으로 풀어 준 그리스도의 고난과 부활",
     "aliases": [
-      "그리스도가 해를 받고 죽은 자 가운데서 다시 살아나야 할 것을"
+      "그리스도가 해를 받고 죽은 자 가운데서 다시 살아나야 할 것을",
+        "그리스도가 고난을 받고 죽은 자 가운데서 다시 살아나야 한다는 것을"
     ],
     "locations": [
       {
@@ -172980,7 +174417,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-17-11",
     "title": "날마다 성경을 상고한 베뢰아 사람들",
     "aliases": [
-      "날마다 성경을 상고하므로"
+      "날마다 성경을 상고하므로",
+        "날마다 성경을 연구했습니다"
     ],
     "locations": [
       {
@@ -173009,7 +174447,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-17-16",
     "title": "우상으로 가득한 아덴",
     "aliases": [
-      "그 성에 우상이 가득한 것을 보고 마음에 격분하여"
+      "그 성에 우상이 가득한 것을 보고 마음에 격분하여",
+        "온 도시가 우상들로 가득 찬 것을 보고 대단히 화가 났습니다"
     ],
     "locations": [
       {
@@ -173038,7 +174477,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-17-22",
     "title": "종교심이 많은 아덴 사람들",
     "aliases": [
-      "너희를 보니 범사에 종교심이 많도다"
+      "너희를 보니 범사에 종교심이 많도다",
+        "모든 면에서 종교심이 강한 사람들입니다"
     ],
     "locations": [
       {
@@ -173067,7 +174507,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-17-24",
     "title": "손으로 지은 전에 계시지 않는 창조주",
     "aliases": [
-      "손으로 지은 전에 계시지 아니하시고"
+      "손으로 지은 전에 계시지 아니하시고",
+        "사람이 지은 신전에서 살지 않으십니다"
     ],
     "locations": [
       {
@@ -173096,7 +174537,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-17-30",
     "title": "알지 못하던 때를 지나 이제는 회개하라",
     "aliases": [
-      "이제는 어디든지 사람에게 다 명하사 회개하라 하셨으니"
+      "이제는 어디든지 사람에게 다 명하사 회개하라 하셨으니",
+        "이제는 어디서나 온 세상 사람들에게 회개하라고 명령하십니다"
     ],
     "locations": [
       {
@@ -173125,7 +174567,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-17-34",
     "title": "아덴에서 믿은 사람들",
     "aliases": [
-      "몇 사람이 그를 가까이하여 믿으니"
+      "몇 사람이 그를 가까이하여 믿으니",
+        "디오누시오와 다마리라는 여자와"
     ],
     "locations": [
       {
@@ -173154,7 +174597,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-18-3",
     "title": "천막 만드는 일로 함께 지내다",
     "aliases": [
-      "그 생업은 천막을 만드는 것이더라"
+      "그 생업은 천막을 만드는 것이더라",
+        "천막 만드는 것이 그들의 직업이었습니다"
     ],
     "locations": [
       {
@@ -173183,7 +174627,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-18-6",
     "title": "피가 머리로 돌아갈 것이다",
     "aliases": [
-      "너희 피가 너희 머리로 돌아갈 것이요 나는 깨끗하니라"
+      "너희 피가 너희 머리로 돌아갈 것이요 나는 깨끗하니라",
+        "여러분이 구원받지 못한다면 그것은 여러분의 책임입니다"
     ],
     "locations": [
       {
@@ -173213,7 +174658,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-18-9",
     "title": "두려워하지 말고 계속 말하라",
     "aliases": [
-      "두려워하지 말며 침묵하지 말고 말하라"
+      "두려워하지 말며 침묵하지 말고 말하라",
+        "조용히 있지 말고 계속해서 말하여라"
     ],
     "locations": [
       {
@@ -173242,7 +174688,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-18-15",
     "title": "갈리오의 판단",
     "aliases": [
-      "언어와 명칭과 너희 법에 관한 것이면 너희가 스스로 처리하라"
+      "언어와 명칭과 너희 법에 관한 것이면 너희가 스스로 처리하라",
+        "이런 문제는 여러분 스스로 해결하도록 하시오"
     ],
     "locations": [
       {
@@ -173271,7 +174718,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-18-18",
     "title": "서원을 따라 머리를 깎다",
     "aliases": [
-      "바울이 일찍이 서원이 있었으므로 겐그레아에서 머리를 깎았더라"
+      "바울이 일찍이 서원이 있었으므로 겐그레아에서 머리를 깎았더라",
+        "이전에 맹세한 것이 있어서 겐그레아에서 머리를 깎았습니다"
     ],
     "locations": [
       {
@@ -173300,7 +174748,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-18-25",
     "title": "요한의 세례만 알던 아볼로",
     "aliases": [
-      "요한의 세례만 알 따름이라"
+      "요한의 세례만 알 따름이라",
+        "그러나 그는 요한의 세례밖에 몰랐습니다"
     ],
     "locations": [
       {
@@ -173329,7 +174778,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-18-28",
     "title": "성경으로 예수가 그리스도임을 증언하다",
     "aliases": [
-      "성경으로써 예수는 그리스도라고 증언하여"
+      "성경으로써 예수는 그리스도라고 증언하여",
+        "성경을 이용해서 예수님께서 그리스도이심을 증명했습니다"
     ],
     "locations": [
       {
@@ -173359,7 +174809,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-19-2",
     "title": "믿을 때 성령을 받았느냐",
     "aliases": [
-      "너희가 믿을 때에 성령을 받았느냐"
+      "너희가 믿을 때에 성령을 받았느냐",
+        "여러분은 믿을 때에 성령을 받았습니까?"
     ],
     "locations": [
       {
@@ -173389,7 +174840,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-19-6",
     "title": "안수로 성령이 임하다",
     "aliases": [
-      "바울이 그들에게 안수하매 성령이 그들에게 임하시므로"
+      "바울이 그들에게 안수하매 성령이 그들에게 임하시므로",
+        "성령께서 그들에게 내려오셨습니다"
     ],
     "locations": [
       {
@@ -173419,7 +174871,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-19-10",
     "title": "두 해 동안 두란노 서원에서",
     "aliases": [
-      "두 해 동안 이같이 하니"
+      "두 해 동안 이같이 하니",
+        "아시아 지방의 모든 유대인과 그리스인이 주님의 말씀을 듣게 되었습니다"
     ],
     "locations": [
       {
@@ -173448,7 +174901,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-19-12",
     "title": "손수건과 앞치마",
     "aliases": [
-      "사람들이 바울의 몸에서 손수건이나 앞치마를 가져다가"
+      "사람들이 바울의 몸에서 손수건이나 앞치마를 가져다가",
+        "바울이 몸에 지니던 손수건이나 앞치마를"
     ],
     "locations": [
       {
@@ -173477,7 +174931,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-19-19",
     "title": "마술책을 불사르다",
     "aliases": [
-      "그 책 값을 계산한즉 은 오만이나 되더라"
+      "그 책 값을 계산한즉 은 오만이나 되더라",
+        "자기들의 마술책을 가져다가 사람들 앞에서 다 태워 버렸습니다"
     ],
     "locations": [
       {
@@ -173505,7 +174960,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-19-26",
     "title": "사람 손으로 만든 것은 신이 아니다",
     "aliases": [
-      "사람의 손으로 만든 것들은 신이 아니라 하니"
+      "사람의 손으로 만든 것들은 신이 아니라 하니",
+        "사람이 만든 신은 신이 아니라고 말합니다"
     ],
     "locations": [
       {
@@ -173534,7 +174990,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-19-35",
     "title": "에베소는 아데미의 신전지기",
     "aliases": [
-      "에베소 시가 큰 아데미와 제우스에게서 내려온 우상의 신전지기가 된 줄을 누가 알지 못하겠느냐"
+      "에베소 시가 큰 아데미와 제우스에게서 내려온 우상의 신전지기가 된 줄을 누가 알지 못하겠느냐",
+        "위대한 아데미 여신의 신전과"
     ],
     "locations": [
       {
@@ -173563,7 +175020,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-20-7",
     "title": "주간 첫날에 떡을 떼려 모이다",
     "aliases": [
-      "그 주간의 첫날에 우리가 떡을 떼려 하여 모였더니"
+      "그 주간의 첫날에 우리가 떡을 떼려 하여 모였더니",
+        "우리가 교제의 식사를 나누기 위해 모였을 때에"
     ],
     "locations": [
       {
@@ -173592,7 +175050,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-20-9",
     "title": "졸다가 떨어진 유두고",
     "aliases": [
-      "유두고라 하는 청년이 창에 걸터 앉아 있다가 깊이 졸더니"
+      "유두고라 하는 청년이 창에 걸터 앉아 있다가 깊이 졸더니",
+        "잠이 들어 그만 삼층에서 떨어졌습니다"
     ],
     "locations": [
       {
@@ -173621,7 +175080,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-20-18",
     "title": "바울이 지내 온 삶을 장로들이 안다",
     "aliases": [
-      "아시아에 들어온 첫날부터 지금까지 내가 항상 여러분 가운데서 어떻게 행하였는지를"
+      "아시아에 들어온 첫날부터 지금까지 내가 항상 여러분 가운데서 어떻게 행하였는지를",
+        "여러분과 함께 지내면서 어떻게 생활해 왔는지 여러분들은 잘 아실 겁니다"
     ],
     "locations": [
       {
@@ -173649,7 +175109,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-20-24",
     "title": "생명보다 귀한 사명",
     "aliases": [
-      "나의 생명조차 조금도 귀한 것으로 여기지 아니하노라"
+      "나의 생명조차 조금도 귀한 것으로 여기지 아니하노라",
+        "내 목숨을 아깝게 생각하지 않습니다"
     ],
     "locations": [
       {
@@ -173678,7 +175139,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-20-28",
     "title": "하나님이 자기 피로 사신 교회",
     "aliases": [
-      "하나님이 자기 피로 사신 교회를 보살피게 하셨느니라"
+      "하나님이 자기 피로 사신 교회를 보살피게 하셨느니라",
+        "자기 아들의 피로 사신 교회를"
     ],
     "locations": [
       {
@@ -173707,7 +175169,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-20-35",
     "title": "주는 것이 받는 것보다 복이 있다",
     "aliases": [
-      "주는 것이 받는 것보다 복이 있다 하심을"
+      "주는 것이 받는 것보다 복이 있다 하심을",
+        "주는 것이 받는 것보다 복이 있다"
     ],
     "locations": [
       {
@@ -173740,7 +175203,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-21-4",
     "title": "두로 제자들의 만류",
     "aliases": [
-      "그 제자들이 성령의 감동으로 바울더러 예루살렘에 들어가지 말라 하더라"
+      "그 제자들이 성령의 감동으로 바울더러 예루살렘에 들어가지 말라 하더라",
+        "성령께서 알려 주신 대로 바울에게 예루살렘에 가지 말라고 만류했습니다"
     ],
     "locations": [
       {
@@ -173770,7 +175234,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-21-11",
     "title": "아가보가 띠로 바울의 결박을 예언하다",
     "aliases": [
-      "예루살렘에서 유대인들이 이같이 이 띠 임자를 결박하여 이방인의 손에 넘겨 주리라"
+      "예루살렘에서 유대인들이 이같이 이 띠 임자를 결박하여 이방인의 손에 넘겨 주리라",
+        "바울의 허리띠를 가져다가 자기 손과 발을 묶고"
     ],
     "locations": [
       {
@@ -173800,7 +175265,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-21-21",
     "title": "바울에 대한 소문",
     "aliases": [
-      "모세를 배반하고 아들들에게 할례를 행하지 말고"
+      "모세를 배반하고 아들들에게 할례를 행하지 말고",
+        "모세의 율법에서 떠나 자녀에게 할례도 행하지 말고"
     ],
     "locations": [
       {
@@ -173830,7 +175296,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-21-24",
     "title": "정결 예식으로 소문을 풀다",
     "aliases": [
-      "그들을 데리고 함께 결례를 행하고 그들을 위하여 비용을 내어 머리를 깎게 하라"
+      "그들을 데리고 함께 결례를 행하고 그들을 위하여 비용을 내어 머리를 깎게 하라",
+        "이 사람들을 데리고 가서 함께 정결 의식을 행하십시오"
     ],
     "locations": [
       {
@@ -173859,7 +175326,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-21-28",
     "title": "성전을 더럽혔다는 고발",
     "aliases": [
-      "이 사람은 각처에서 우리 백성과 율법과 이 곳을 비방하여"
+      "이 사람은 각처에서 우리 백성과 율법과 이 곳을 비방하여",
+        "이 거룩한 곳을 더럽혀 놓았습니다"
     ],
     "locations": [
       {
@@ -173888,7 +175356,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-21-39",
     "title": "다소 시민 바울",
     "aliases": [
-      "나는 유대인이라 소읍이 아닌 길리기아 다소 시의 시민이니"
+      "나는 유대인이라 소읍이 아닌 길리기아 다소 시의 시민이니",
+        "길리기아 지방의 다소에서 태어난 유대인이며"
     ],
     "locations": [
       {
@@ -173917,7 +175386,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-22-3",
     "title": "가말리엘 문하에서 자란 바울",
     "aliases": [
-      "가말리엘의 문하에서 우리 조상들의 율법의 엄한 교훈을 받았고"
+      "가말리엘의 문하에서 우리 조상들의 율법의 엄한 교훈을 받았고",
+        "가말리엘의 제자로서 그 밑에서 우리 조상의 율법대로 엄격한 교육을 받았습니다"
     ],
     "locations": [
       {
@@ -173947,7 +175417,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-22-4",
     "title": "도를 박해한 과거 고백",
     "aliases": [
-      "내가 이 도를 박해하여 사람을 죽이기까지 하고"
+      "내가 이 도를 박해하여 사람을 죽이기까지 하고",
+        "남자든 여자든 가리지 않고 그들을 붙잡아 감옥에 넣었습니다"
     ],
     "locations": [
       {
@@ -173976,7 +175447,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-22-8",
     "title": "나는 네가 박해하는 나사렛 예수",
     "aliases": [
-      "나는 네가 박해하는 나사렛 예수라 하시더라"
+      "나는 네가 박해하는 나사렛 예수라 하시더라",
+        "나는 네가 박해하는 나사렛 예수다"
     ],
     "locations": [
       {
@@ -174005,7 +175477,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-22-16",
     "title": "일어나 세례를 받고 죄를 씻으라",
     "aliases": [
-      "일어나 주의 이름을 불러 세례를 받고 너의 죄를 씻으라"
+      "일어나 주의 이름을 불러 세례를 받고 너의 죄를 씻으라",
+        "일어나 세례를 받으십시오"
     ],
     "locations": [
       {
@@ -174034,7 +175507,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-22-21",
     "title": "이방인에게 보내심을 받다",
     "aliases": [
-      "내가 너를 멀리 이방인에게로 보내리라"
+      "내가 너를 멀리 이방인에게로 보내리라",
+        "내가 너를 멀리 이방인들에게 보내겠다"
     ],
     "locations": [
       {
@@ -174064,7 +175538,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-22-25",
     "title": "로마 시민을 채찍질할 수 있느냐",
     "aliases": [
-      "너희가 로마 시민 된 자를 죄도 정하지 아니하고 채찍질할 수 있느냐"
+      "너희가 로마 시민 된 자를 죄도 정하지 아니하고 채찍질할 수 있느냐",
+        "죄가 있다는 것이 밝혀지지도 않은 로마 시민을"
     ],
     "locations": [
       {
@@ -174093,7 +175568,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-23-1",
     "title": "양심을 따라 섬긴 하나님",
     "aliases": [
-      "나는 범사에 양심을 따라 하나님을 섬겼노라"
+      "나는 범사에 양심을 따라 하나님을 섬겼노라",
+        "하나님 앞에서 선한 양심을 가지고 살아왔습니다"
     ],
     "locations": [
       {
@@ -174122,7 +175598,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-23-3",
     "title": "회칠한 담이라는 말",
     "aliases": [
-      "회칠한 담이여 하나님이 너를 치시리로다"
+      "회칠한 담이여 하나님이 너를 치시리로다",
+        "겉만 하얗게 회칠한 벽과 같소"
     ],
     "locations": [
       {
@@ -174151,7 +175628,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-23-6",
     "title": "바리새인의 아들이라는 말",
     "aliases": [
-      "나는 바리새인이요 또 바리새인의 아들이라"
+      "나는 바리새인이요 또 바리새인의 아들이라",
+        "나는 바리새파 사람이며 바리새파 사람의 아들입니다"
     ],
     "locations": [
       {
@@ -174180,7 +175658,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-23-11",
     "title": "로마에서도 증언하라",
     "aliases": [
-      "네가 예루살렘에서 나의 일을 증언한 것 같이 로마에서도 증언하여야 하리라"
+      "네가 예루살렘에서 나의 일을 증언한 것 같이 로마에서도 증언하여야 하리라",
+        "로마에서도 나를 증언하여야 한다"
     ],
     "locations": [
       {
@@ -174210,7 +175689,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-23-14",
     "title": "바울을 죽이려는 맹세",
     "aliases": [
-      "우리가 바울을 죽이기 전에는 아무 것도 먹지 않기로 굳게 맹세하였으니"
+      "우리가 바울을 죽이기 전에는 아무 것도 먹지 않기로 굳게 맹세하였으니",
+        "우리는 바울을 죽이기 전에는 아무것도 입에 대지 않겠다고 맹세했습니다"
     ],
     "locations": [
       {
@@ -174239,7 +175719,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-23-16",
     "title": "바울의 조카가 음모를 알리다",
     "aliases": [
-      "바울의 생질이 그들이 매복하여 있다 함을 듣고"
+      "바울의 생질이 그들이 매복하여 있다 함을 듣고",
+        "바울의 조카가 이 음모를 듣고 병영으로 가서"
     ],
     "locations": [
       {
@@ -174269,7 +175750,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-24-11",
     "title": "예배하러 올라온 지 열이틀",
     "aliases": [
-      "내가 예루살렘에 예배하러 올라간 지 열이틀밖에 안 되었고"
+      "내가 예루살렘에 예배하러 올라간 지 열이틀밖에 안 되었고",
+        "십이 일밖에 되지 않습니다"
     ],
     "locations": [
       {
@@ -174298,7 +175780,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-24-15",
     "title": "의인과 악인의 부활",
     "aliases": [
-      "곧 의인과 악인의 부활이 있으리라 함이니이다"
+      "곧 의인과 악인의 부활이 있으리라 함이니이다",
+        "의로운 사람이든 불의한 사람이든 모든 사람이 다시 부활하리라는 소망입니다"
     ],
     "locations": [
       {
@@ -174327,7 +175810,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-24-16",
     "title": "양심에 거리낌이 없기를 힘쓰다",
     "aliases": [
-      "하나님과 사람에 대하여 항상 양심에 거리낌이 없기를 힘쓰나이다"
+      "하나님과 사람에 대하여 항상 양심에 거리낌이 없기를 힘쓰나이다",
+        "저의 깨끗한 양심을 간직하려고 힘쓰고 있습니다"
     ],
     "locations": [
       {
@@ -174357,7 +175841,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-24-17",
     "title": "구제와 예물을 가지고 온 바울",
     "aliases": [
-      "여러 해 만에 내가 내 민족을 구제할 것과 제물을 가지고 와서"
+      "여러 해 만에 내가 내 민족을 구제할 것과 제물을 가지고 와서",
+        "저희 민족에게 구제금을 전하고 하나님께 예물을 바치려고"
     ],
     "locations": [
       {
@@ -174387,7 +175872,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-24-25",
     "title": "의와 절제와 장차 오는 심판",
     "aliases": [
-      "바울이 의와 절제와 장차 오는 심판을 강론하니"
+      "바울이 의와 절제와 장차 오는 심판을 강론하니",
+        "장차 임할 심판에 대해"
     ],
     "locations": [
       {
@@ -174416,7 +175902,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-24-27",
     "title": "이 년 뒤 바뀐 총독",
     "aliases": [
-      "이태가 지난 후 보르기오 베스도가 벨릭스의 소임을 이어받으니"
+      "이태가 지난 후 보르기오 베스도가 벨릭스의 소임을 이어받으니",
+        "두 해가 지난 후에 보르기오 베스도가 벨릭스의 후임으로 총독이 되었습니다"
     ],
     "locations": [
       {
@@ -174445,7 +175932,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-25-3",
     "title": "길에 매복하려던 음모",
     "aliases": [
-      "이는 길에 매복하였다가 그를 죽이고자 함이더라"
+      "이는 길에 매복하였다가 그를 죽이고자 함이더라",
+        "길에 사람들을 매복시켰다가 바울을 죽일 계획이었습니다"
     ],
     "locations": [
       {
@@ -174475,7 +175963,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-25-8",
     "title": "율법과 성전과 가이사에게 죄가 없다",
     "aliases": [
-      "유대인의 율법이나 성전이나 가이사에게나 내가 도무지 죄를 범하지 아니하였노라"
+      "유대인의 율법이나 성전이나 가이사에게나 내가 도무지 죄를 범하지 아니하였노라",
+        "유대인의 율법이나 성전이나 로마 황제를 거스르는 죄를 지은 적이 없었습니다"
     ],
     "locations": [
       {
@@ -174504,7 +175993,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-25-11",
     "title": "가이사께 상소하다",
     "aliases": [
-      "내가 가이사께 상소하노라"
+      "내가 가이사께 상소하노라",
+        "나는 로마 황제에게 상소하겠습니다"
     ],
     "locations": [
       {
@@ -174533,7 +176023,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-25-16",
     "title": "변명할 기회 없이 넘기지 않는 로마 법",
     "aliases": [
-      "무릇 피고가 원고들 앞에서 고소 사건에 대하여 변명할 기회가 있기 전에 내주는 것은 로마 사람의 법이 아니라"
+      "무릇 피고가 원고들 앞에서 고소 사건에 대하여 변명할 기회가 있기 전에 내주는 것은 로마 사람의 법이 아니라",
+        "고소한 것에 대해 변명할 기회를 주지 않고"
     ],
     "locations": [
       {
@@ -174563,7 +176054,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-25-19",
     "title": "살아 있다고 주장하는 예수",
     "aliases": [
-      "예수라 하는 이가 죽은 것을 살아 있다고 바울이 주장하는 그 일에 관한 문제로"
+      "예수라 하는 이가 죽은 것을 살아 있다고 바울이 주장하는 그 일에 관한 문제로",
+        "바울은 그 자가 살아 있다고 주장합니다"
     ],
     "locations": [
       {
@@ -174592,7 +176084,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-25-26",
     "title": "황제께 보낼 확실한 사실이 없다",
     "aliases": [
-      "그에 대하여 황제께 확실한 사실을 아뢸 것이 없으므로"
+      "그에 대하여 황제께 확실한 사실을 아뢸 것이 없으므로",
+        "황제께 써 보낼 만한 자료가 내게는 없습니다"
     ],
     "locations": [
       {
@@ -174625,7 +176118,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-26-5",
     "title": "가장 엄한 바리새인으로 살았다",
     "aliases": [
-      "우리 종교의 가장 엄한 파를 따라 바리새인의 생활을 하였다고"
+      "우리 종교의 가장 엄한 파를 따라 바리새인의 생활을 하였다고",
+        "우리 종교의 가장 엄격한 바리새파 사람이고"
     ],
     "locations": [
       {
@@ -174654,7 +176148,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-26-6",
     "title": "조상에게 주신 약속을 바라는 소망",
     "aliases": [
-      "하나님이 우리 조상에게 약속하신 것을 바라는 까닭이니"
+      "하나님이 우리 조상에게 약속하신 것을 바라는 까닭이니",
+        "하나님께서 우리 조상들에게 약속하신 것에 대한 소망"
     ],
     "locations": [
       {
@@ -174683,7 +176178,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-26-15",
     "title": "나는 네가 박해하는 예수다",
     "aliases": [
-      "나는 네가 박해하는 예수라"
+      "나는 네가 박해하는 예수라",
+        "나는 네가 박해하는 예수다"
     ],
     "locations": [
       {
@@ -174713,7 +176209,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-26-18",
     "title": "어둠에서 빛으로 돌아오게 하라는 사명",
     "aliases": [
-      "그 눈을 뜨게 하여 어둠에서 빛으로, 사탄의 권세에서 하나님께로 돌아오게 하고"
+      "그 눈을 뜨게 하여 어둠에서 빛으로, 사탄의 권세에서 하나님께로 돌아오게 하고",
+        "어둠에서 빛으로, 사탄의 세력에서 하나님께로"
     ],
     "locations": [
       {
@@ -174743,7 +176240,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-26-20",
     "title": "회개에 합당한 일을 하라",
     "aliases": [
-      "회개에 합당한 일을 하라 전하므로"
+      "회개에 합당한 일을 하라 전하므로",
+        "회개한 모습을 행동으로써 보이라고"
     ],
     "locations": [
       {
@@ -174772,7 +176270,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-26-22",
     "title": "모세와 선지자들이 말한 것",
     "aliases": [
-      "선지자들과 모세가 반드시 되리라고 말한 것밖에 없으니"
+      "선지자들과 모세가 반드시 되리라고 말한 것밖에 없으니",
+        "모세와 예언자들이 앞으로 일어나리라고 예언한 것"
     ],
     "locations": [
       {
@@ -174801,7 +176300,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-26-28",
     "title": "짧은 말로 그리스도인이 되라고 하다",
     "aliases": [
-      "네가 적은 말로 나를 권하여 그리스도인이 되게 하려 하는도다"
+      "네가 적은 말로 나를 권하여 그리스도인이 되게 하려 하는도다",
+        "그토록 짧은 시간에 나를 설득하여 그리스도인이 되게 할 수 있다고 생각하는가"
     ],
     "locations": [
       {
@@ -174830,7 +176330,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-27-10",
     "title": "항해가 생명까지 위태롭게 한다는 충고",
     "aliases": [
-      "이번 항해가 하물과 배만 아니라 우리 생명에도 타격과 많은 손해를 끼치리라"
+      "이번 항해가 하물과 배만 아니라 우리 생명에도 타격과 많은 손해를 끼치리라",
+        "우리 목숨까지도 잃게 될 것입니다"
     ],
     "locations": [
       {
@@ -174859,7 +176360,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-27-14",
     "title": "유라굴로라는 광풍",
     "aliases": [
-      "유라굴로라는 광풍이 크게 일어나니"
+      "유라굴로라는 광풍이 크게 일어나니",
+        "폭풍이 섬 쪽에서 불어 왔습니다"
     ],
     "locations": [
       {
@@ -174888,7 +176390,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-27-21",
     "title": "바울의 말을 들었더라면",
     "aliases": [
-      "내 말을 듣고 그레데에서 떠나지 아니하여"
+      "내 말을 듣고 그레데에서 떠나지 아니하여",
+        "내가 크레타 섬을 떠나지 말자고 한 말을 들었어야 했습니다"
     ],
     "locations": [
       {
@@ -174917,7 +176420,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-27-24",
     "title": "두려워하지 말라, 가이사 앞에 서야 한다",
     "aliases": [
-      "바울아 두려워하지 말라 네가 가이사 앞에 서야 하겠고"
+      "바울아 두려워하지 말라 네가 가이사 앞에 서야 하겠고",
+        "너는 반드시 황제 가이사 앞에 서야 한다"
     ],
     "locations": [
       {
@@ -174947,7 +176451,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-27-31",
     "title": "배에 남아 있어야 구원을 얻는다",
     "aliases": [
-      "이 사람들이 배에 있지 아니하면 너희가 구원을 얻지 못하리라"
+      "이 사람들이 배에 있지 아니하면 너희가 구원을 얻지 못하리라",
+        "이 사람들이 배에 남아 있지 않으면 당신들마저 구조되지 못합니다"
     ],
     "locations": [
       {
@@ -174977,7 +176482,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-27-35",
     "title": "떡을 떼어 먹다",
     "aliases": [
-      "떡을 가져다가 모든 사람 앞에서 하나님께 축사하고 떼어 먹기를 시작하매"
+      "떡을 가져다가 모든 사람 앞에서 하나님께 축사하고 떼어 먹기를 시작하매",
+        "빵을 떼어 먹기 시작했습니다"
     ],
     "locations": [
       {
@@ -175007,7 +176513,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-27-44",
     "title": "모두 육지에 오르다",
     "aliases": [
-      "마침내 사람들이 다 상륙하여 구조되니라"
+      "마침내 사람들이 다 상륙하여 구조되니라",
+        "그들은 모두 무사히 육지로 올라왔습니다"
     ],
     "locations": [
       {
@@ -175038,7 +176545,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-28-3",
     "title": "나무 불에서 나온 독사",
     "aliases": [
-      "바울이 나무 한 묶음을 거두어 불에 넣으니"
+      "바울이 나무 한 묶음을 거두어 불에 넣으니",
+        "뜨거운 불 때문에 독사가 튀어나와 바울의 손을 물었습니다"
     ],
     "locations": [
       {
@@ -175066,7 +176574,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-28-6",
     "title": "신이라 하다",
     "aliases": [
-      "그를 신이라 하더라"
+      "그를 신이라 하더라",
+        "그들은 바울을 신이라고 불렀습니다"
     ],
     "locations": [
       {
@@ -175095,7 +176604,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-28-8",
     "title": "보블리오의 아버지를 고치다",
     "aliases": [
-      "바울이 들어가서 기도하고 그에게 안수하여 낫게 하매"
+      "바울이 들어가서 기도하고 그에게 안수하여 낫게 하매",
+        "그 사람의 몸에 손을 얹어 그를 낫게 하였습니다"
     ],
     "locations": [
       {
@@ -175124,7 +176634,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-28-16",
     "title": "로마에서 따로 지내다",
     "aliases": [
-      "바울에게는 자기를 지키는 한 군인과 함께 따로 있게 허락하더라"
+      "바울에게는 자기를 지키는 한 군인과 함께 따로 있게 허락하더라",
+        "혼자 지내도 된다는 허락을 받았습니다"
     ],
     "locations": [
       {
@@ -175154,7 +176665,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-28-23",
     "title": "아침부터 저녁까지 하나님 나라를 증언하다",
     "aliases": [
-      "바울이 아침부터 저녁까지 강론하여 하나님의 나라를 증언하고"
+      "바울이 아침부터 저녁까지 강론하여 하나님의 나라를 증언하고",
+        "아침부터 저녁까지 그들에게 하나님의 나라를 설명하고 선포했습니다"
     ],
     "locations": [
       {
@@ -175184,7 +176696,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-28-28",
     "title": "구원이 이방인에게 보내어졌다",
     "aliases": [
-      "하나님의 이 구원이 이방인에게로 보내어진 줄 알라"
+      "하나님의 이 구원이 이방인에게로 보내어진 줄 알라",
+        "하나님의 이 구원이 이방인들에게도 전파되었다는 것을 알아야 합니다"
     ],
     "locations": [
       {
@@ -175214,7 +176727,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-act-28-30",
     "title": "셋집에서 두 해를 지내다",
     "aliases": [
-      "바울이 온 이태를 자기 셋집에 머물면서"
+      "바울이 온 이태를 자기 셋집에 머물면서",
+        "자기 셋집에서 꼬박 이 년을 지내면서"
     ],
     "locations": [
       {
@@ -175247,7 +176761,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-1-4",
     "title": "환난 중에 위로하시는 하나님",
     "aliases": [
-      "우리의 모든 환난 중에서 우리를 위로하사"
+      "우리의 모든 환난 중에서 우리를 위로하사",
+        "하나님은 우리가 여러 가지 환난을 당할 때 위로해 주셔서"
     ],
     "locations": [
       {
@@ -175276,7 +176791,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-1-5",
     "title": "넘치는 고난과 넘치는 위로",
     "aliases": [
-      "그리스도의 고난이 우리에게 넘친 것 같이"
+      "그리스도의 고난이 우리에게 넘친 것 같이",
+        "그리스도의 고난이 우리에게 넘쳐나는 것처럼"
     ],
     "locations": [
       {
@@ -175305,7 +176821,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-1-9",
     "title": "사형 선고를 받은 듯한 절망",
     "aliases": [
-      "우리는 우리 자신이 사형 선고를 받은 줄 알았으니"
+      "우리는 우리 자신이 사형 선고를 받은 줄 알았으니",
+        "마음속으로는 사망 선고를 받았다는 느낌마저 들었습니다"
     ],
     "locations": [
       {
@@ -175334,7 +176851,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-1-12",
     "title": "양심이 증언하는 자랑",
     "aliases": [
-      "우리 양심이 증언하는 바니"
+      "우리 양심이 증언하는 바니",
+        "우리의 양심이 증언합니다"
     ],
     "locations": [
       {
@@ -175363,7 +176881,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-1-18",
     "title": "예 하고 아니라 함이 없다",
     "aliases": [
-      "우리가 너희에게 한 말은 예 하고 아니라 함이 없노라"
+      "우리가 너희에게 한 말은 예 하고 아니라 함이 없노라",
+        "하나님께서 신실하신 것처럼"
     ],
     "locations": [
       {
@@ -175392,7 +176911,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-1-22",
     "title": "인치시고 보증으로 주신 성령",
     "aliases": [
-      "그가 또한 우리에게 인치시고 보증으로 우리 마음에 성령을 주셨느니라"
+      "그가 또한 우리에게 인치시고 보증으로 우리 마음에 성령을 주셨느니라",
+        "그 보증으로 우리 마음에 성령을 주셨습니다"
     ],
     "locations": [
       {
@@ -175421,7 +176941,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-2-4",
     "title": "눈물로 쓴 편지",
     "aliases": [
-      "많은 눈물로 너희에게 썼노니"
+      "많은 눈물로 너희에게 썼노니",
+        "많은 눈물을 흘리며 쓴 것입니다"
     ],
     "locations": [
       {
@@ -175451,7 +176972,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-2-8",
     "title": "사랑을 나타내라",
     "aliases": [
-      "그러므로 너희를 권하노니 사랑을 그들에게 나타내라"
+      "그러므로 너희를 권하노니 사랑을 그들에게 나타내라",
+        "그 사람을 향한 여러분의 사랑을 다시 한 번 보여 주십시오"
     ],
     "locations": [
       {
@@ -175480,7 +177002,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-2-11",
     "title": "사탄에게 틈을 주지 않으려고",
     "aliases": [
-      "우리는 그 계책을 알지 못하는 바가 아니로라"
+      "우리는 그 계책을 알지 못하는 바가 아니로라",
+        "사탄에게 속지 않기 위해서였습니다"
     ],
     "locations": [
       {
@@ -175509,7 +177032,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-2-14",
     "title": "그리스도를 아는 향기",
     "aliases": [
-      "우리로 말미암아 각처에서 그리스도를 아는 냄새를 나타내시는"
+      "우리로 말미암아 각처에서 그리스도를 아는 냄새를 나타내시는",
+        "그분을 아는 지식의 향기를 풍기게"
     ],
     "locations": [
       {
@@ -175538,7 +177062,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-2-16",
     "title": "사망에 이르는 냄새와 생명에 이르는 냄새",
     "aliases": [
-      "이 사람에게는 사망으로부터 사망에 이르는 냄새요"
+      "이 사람에게는 사망으로부터 사망에 이르는 냄새요",
+        "생명에 이르게 하는 생명의 향기입니다"
     ],
     "locations": [
       {
@@ -175567,7 +177092,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-3-2",
     "title": "우리의 편지인 교인들",
     "aliases": [
-      "너희는 우리의 편지라 우리 마음에 썼고 뭇 사람이 알고 읽는 바라"
+      "너희는 우리의 편지라 우리 마음에 썼고 뭇 사람이 알고 읽는 바라",
+        "여러분 자신이 바로 우리 마음속에 썼고"
     ],
     "locations": [
       {
@@ -175597,7 +177123,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-3-5",
     "title": "자격은 하나님에게서 나온다",
     "aliases": [
-      "우리의 만족은 오직 하나님으로부터 나느니라"
+      "우리의 만족은 오직 하나님으로부터 나느니라",
+        "우리의 자격은 하나님께로부터 나옵니다"
     ],
     "locations": [
       {
@@ -175626,7 +177153,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-3-6",
     "title": "율법 조문과 영",
     "aliases": [
-      "율법 조문은 죽이는 것이요 영은 살리는 것이니라"
+      "율법 조문은 죽이는 것이요 영은 살리는 것이니라",
+        "성령의 언약인 새 언약의 일꾼"
     ],
     "locations": [
       {
@@ -175656,7 +177184,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-3-18",
     "title": "주의 영광을 보며 변화하다",
     "aliases": [
-      "그와 같은 형상으로 변화하여 영광에서 영광에 이르니"
+      "그와 같은 형상으로 변화하여 영광에서 영광에 이르니",
+        "주님의 형상으로 변화하여 점점 더 큰 영광에 이릅니다"
     ],
     "locations": [
       {
@@ -175686,7 +177215,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-4-2",
     "title": "진리를 나타내어 양심에 추천하다",
     "aliases": [
-      "오직 진리를 나타냄으로 하나님 앞에서 각 사람의 양심에 대하여 스스로 추천하노라"
+      "오직 진리를 나타냄으로 하나님 앞에서 각 사람의 양심에 대하여 스스로 추천하노라",
+        "우리는 진리를 밝히 드러냈으므로"
     ],
     "locations": [
       {
@@ -175715,7 +177245,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-4-4",
     "title": "이 세상의 신이 눈멀게 하다",
     "aliases": [
-      "이 세상의 신이 믿지 아니하는 자들의 마음을 혼미하게 하여"
+      "이 세상의 신이 믿지 아니하는 자들의 마음을 혼미하게 하여",
+        "이 시대의 신이 믿지 아니하는 사람들의 마음을 어둡게 하여"
     ],
     "locations": [
       {
@@ -175745,7 +177276,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-4-6",
     "title": "어둠에 빛을 비추신 하나님",
     "aliases": [
-      "어두운 데에 빛이 비치라 말씀하셨던 그 하나님께서"
+      "어두운 데에 빛이 비치라 말씀하셨던 그 하나님께서",
+        "그리스도의 얼굴에 나타난 하나님의 영광을"
     ],
     "locations": [
       {
@@ -175774,7 +177306,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-4-7",
     "title": "질그릇에 담긴 보배",
     "aliases": [
-      "우리가 이 보배를 질그릇에 가졌으니"
+      "우리가 이 보배를 질그릇에 가졌으니",
+        "우리는 이 보화를 질그릇에 담고 있습니다"
     ],
     "locations": [
       {
@@ -175803,7 +177336,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-4-10",
     "title": "예수의 죽음을 몸에 짊어짐",
     "aliases": [
-      "예수의 생명이 또한 우리 몸에 나타나게 하려 함이라"
+      "예수의 생명이 또한 우리 몸에 나타나게 하려 함이라",
+        "예수님의 죽으심을 우리 몸에 짊어지고 다닙니다"
     ],
     "locations": [
       {
@@ -175832,7 +177366,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-4-16",
     "title": "겉사람은 낡아지고 속사람은 새로워지다",
     "aliases": [
-      "우리의 겉사람은 낡아지나 우리의 속사람은 날로 새로워지도다"
+      "우리의 겉사람은 낡아지나 우리의 속사람은 날로 새로워지도다",
+        "우리의 속사람은 날마다 새로워지고 있습니다"
     ],
     "locations": [
       {
@@ -175861,7 +177396,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-5-1",
     "title": "하늘에 있는 영원한 집",
     "aliases": [
-      "하늘에 있는 영원한 집이 우리에게 있는 줄 아느니라"
+      "하늘에 있는 영원한 집이 우리에게 있는 줄 아느니라",
+        "하늘에 있는 영원한 집이 우리에게 있다는 것을"
     ],
     "locations": [
       {
@@ -175891,7 +177427,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-5-4",
     "title": "죽을 것이 생명에 삼켜지게 하려 함",
     "aliases": [
-      "죽을 것이 생명에 삼킨 바 되게 하려 함이라"
+      "죽을 것이 생명에 삼킨 바 되게 하려 함이라",
+        "죽을 것이 생명에 의해 삼킴당하게"
     ],
     "locations": [
       {
@@ -175920,7 +177457,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-5-10",
     "title": "그리스도의 심판대 앞에 나타나다",
     "aliases": [
-      "그리스도의 심판대 앞에 나타나게 되어"
+      "그리스도의 심판대 앞에 나타나게 되어",
+        "그리스도의 심판대 앞에 서야 합니다"
     ],
     "locations": [
       {
@@ -175949,7 +177487,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-5-14",
     "title": "그리스도의 사랑이 강권하다",
     "aliases": [
-      "그리스도의 사랑이 우리를 강권하시는도다"
+      "그리스도의 사랑이 우리를 강권하시는도다",
+        "그리스도의 사랑이 우리를 사로잡고 있습니다"
     ],
     "locations": [
       {
@@ -175978,7 +177517,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-5-17",
     "title": "새로운 피조물",
     "aliases": [
-      "그런즉 누구든지 그리스도 안에 있으면 새로운 피조물이라"
+      "그런즉 누구든지 그리스도 안에 있으면 새로운 피조물이라",
+        "누구든지 그리스도 안에 있으면 새로운 창조입니다"
     ],
     "locations": [
       {
@@ -176007,7 +177547,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-5-18",
     "title": "화목하게 하는 직분",
     "aliases": [
-      "우리를 자기와 화목하게 하시고 또 우리에게 화목하게 하는 직분을 주셨으니"
+      "우리를 자기와 화목하게 하시고 또 우리에게 화목하게 하는 직분을 주셨으니",
+        "하나님께서는 그리스도를 통해 우리를 자신과 화목시키시고"
     ],
     "locations": [
       {
@@ -176037,7 +177578,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-5-21",
     "title": "죄로 삼으신 그리스도, 하나님의 의",
     "aliases": [
-      "죄를 알지도 못하신 이를 우리를 대신하여 죄로 삼으신 것은"
+      "죄를 알지도 못하신 이를 우리를 대신하여 죄로 삼으신 것은",
+        "하나님의 의가 되게 하기 위해서였습니다"
     ],
     "locations": [
       {
@@ -176070,7 +177612,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-6-2",
     "title": "지금은 구원의 날",
     "aliases": [
-      "보라 지금은 은혜 받을 만한 때요 보라 지금은 구원의 날이로다"
+      "보라 지금은 은혜 받을 만한 때요 보라 지금은 구원의 날이로다",
+        "지금이 구원의 날입니다"
     ],
     "locations": [
       {
@@ -176099,7 +177642,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-6-4",
     "title": "하나님의 일꾼으로 자천하는 고난",
     "aliases": [
-      "오직 모든 일에 하나님의 일꾼으로 자천하여 많이 견디는 것과"
+      "오직 모든 일에 하나님의 일꾼으로 자천하여 많이 견디는 것과",
+        "하나님의 일꾼답게 행동했습니다"
     ],
     "locations": [
       {
@@ -176130,7 +177674,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-6-7",
     "title": "의의 무기",
     "aliases": [
-      "진리의 말씀과 하나님의 능력으로 의의 무기를 좌우에 가지고"
+      "진리의 말씀과 하나님의 능력으로 의의 무기를 좌우에 가지고",
+        "의를 무기 삼아 양손에 지니고 다녔습니다"
     ],
     "locations": [
       {
@@ -176160,7 +177705,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-6-8",
     "title": "속이는 자 같으나 참되다",
     "aliases": [
-      "우리는 속이는 자 같으나 참되고"
+      "우리는 속이는 자 같으나 참되고",
+        "거짓말쟁이로 취급받았지만, 사실은 진리를 말하였습니다"
     ],
     "locations": [
       {
@@ -176189,7 +177735,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-6-14",
     "title": "믿지 않는 자와 멍에를 함께 메지 말라",
     "aliases": [
-      "너희는 믿지 않는 자와 멍에를 함께 메지 말라"
+      "너희는 믿지 않는 자와 멍에를 함께 메지 말라",
+        "믿지 않는 사람들과 멍에를 함께 메지 마십시오"
     ],
     "locations": [
       {
@@ -176219,7 +177766,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-6-16",
     "title": "우리는 살아 계신 하나님의 성전",
     "aliases": [
-      "우리는 살아 계신 하나님의 성전이라"
+      "우리는 살아 계신 하나님의 성전이라",
+        "우리는 살아 계신 하나님의 성전입니다"
     ],
     "locations": [
       {
@@ -176250,7 +177798,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-7-1",
     "title": "거룩함을 온전히 이루자",
     "aliases": [
-      "하나님을 두려워하는 가운데서 거룩함을 온전히 이루어"
+      "하나님을 두려워하는 가운데서 거룩함을 온전히 이루어",
+        "거룩함을 온전히 이룹시다"
     ],
     "locations": [
       {
@@ -176279,7 +177828,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-7-4",
     "title": "환난 중에도 위로가 가득하다",
     "aliases": [
-      "위로가 가득하고 기쁨이 넘치는도다"
+      "위로가 가득하고 기쁨이 넘치는도다",
+        "모든 환난 중에서도 여러분은 내게 많은 위로가 되었으며"
     ],
     "locations": [
       {
@@ -176308,7 +177858,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-7-6",
     "title": "디도가 와서 위로하시다",
     "aliases": [
-      "그러나 낙심한 자들을 위로하시는 하나님이 디도가 옴으로 우리를 위로하셨으니"
+      "그러나 낙심한 자들을 위로하시는 하나님이 디도가 옴으로 우리를 위로하셨으니",
+        "디도를 보내어 우리를 위로하셨습니다"
     ],
     "locations": [
       {
@@ -176337,7 +177888,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-7-10",
     "title": "하나님의 뜻을 따르는 근심과 세상의 근심",
     "aliases": [
-      "하나님의 뜻대로 하는 근심은 후회할 것이 없는 구원에 이르게 하는 회개를 이루는 것이요"
+      "하나님의 뜻대로 하는 근심은 후회할 것이 없는 구원에 이르게 하는 회개를 이루는 것이요",
+        "하나님의 뜻에 맞는 슬픔은 회개하여 구원에 이르게 하므로"
     ],
     "locations": [
       {
@@ -176367,7 +177919,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-7-14",
     "title": "디도 앞에서 한 자랑이 참이 되다",
     "aliases": [
-      "디도 앞에서 우리가 자랑한 것도 참되게 되었도다"
+      "디도 앞에서 우리가 자랑한 것도 참되게 되었도다",
+        "디도에게 여러분을 자랑한 것도 진실이었음이 밝혀졌습니다"
     ],
     "locations": [
       {
@@ -176396,7 +177949,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-8-2",
     "title": "마게도냐 교회의 넘치는 연보",
     "aliases": [
-      "그들의 넘치는 기쁨과 극심한 가난이 그들의 풍성한 연보를 넘치도록"
+      "그들의 넘치는 기쁨과 극심한 가난이 그들의 풍성한 연보를 넘치도록",
+        "마케도니아 지역 교회들은"
     ],
     "locations": [
       {
@@ -176426,7 +177980,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-8-3",
     "title": "힘에 지나도록 자원하다",
     "aliases": [
-      "그들이 힘대로 할 뿐 아니라 힘에 지나도록 자원하여"
+      "그들이 힘대로 할 뿐 아니라 힘에 지나도록 자원하여",
+        "능력 이상의 것을 드렸다고"
     ],
     "locations": [
       {
@@ -176455,7 +178010,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-8-5",
     "title": "먼저 자신을 주께 드리다",
     "aliases": [
-      "그들이 먼저 자신을 주께 드리고 또 하나님의 뜻을 따라 우리에게 주었도다"
+      "그들이 먼저 자신을 주께 드리고 또 하나님의 뜻을 따라 우리에게 주었도다",
+        "먼저 자신을 주님께 드리고 난 후에"
     ],
     "locations": [
       {
@@ -176484,7 +178040,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-8-7",
     "title": "이 은혜에도 풍성하라",
     "aliases": [
-      "이 은혜에도 풍성하게 할지니라"
+      "이 은혜에도 풍성하게 할지니라",
+        "이 헌금하는 일에 있어서도 뛰어나게"
     ],
     "locations": [
       {
@@ -176513,7 +178070,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-8-9",
     "title": "부요하신 분이 가난하게 되심",
     "aliases": [
-      "부요하신 이로서 너희를 위하여 가난하게 되심은"
+      "부요하신 이로서 너희를 위하여 가난하게 되심은",
+        "그분은 부요한 분이시지만, 여러분을 위해 가난하게 되셨습니다"
     ],
     "locations": [
       {
@@ -176542,7 +178100,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-8-12",
     "title": "있는 대로 받으시는 하나님",
     "aliases": [
-      "할 마음만 있으면 있는 대로 받으실 터이요 없는 것은 받지 아니하시리라"
+      "할 마음만 있으면 있는 대로 받으실 터이요 없는 것은 받지 아니하시리라",
+        "원하는 마음으로 있는 것을 바칠 때는 하나님께서 받으실 것입니다"
     ],
     "locations": [
       {
@@ -176572,7 +178131,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-8-20",
     "title": "거액의 연보를 맡은 조심",
     "aliases": [
-      "우리가 맡은 이 거액의 연보에 대하여 아무도 우리를 비방하지 못하게 하려 함이니"
+      "우리가 맡은 이 거액의 연보에 대하여 아무도 우리를 비방하지 못하게 하려 함이니",
+        "많은 액수의 헌금을 전달하는 봉사의 일"
     ],
     "locations": [
       {
@@ -176600,7 +178160,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-9-6",
     "title": "심는 대로 거둔다",
     "aliases": [
-      "적게 심는 자는 적게 거두고 많이 심는 자는 많이 거둔다"
+      "적게 심는 자는 적게 거두고 많이 심는 자는 많이 거둔다",
+        "적게 심는 사람은 적게 거두고"
     ],
     "locations": [
       {
@@ -176630,7 +178191,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-9-7",
     "title": "즐겨 내는 자를 사랑하시는 하나님",
     "aliases": [
-      "하나님은 즐겨 내는 자를 사랑하시느니라"
+      "하나님은 즐겨 내는 자를 사랑하시느니라",
+        "하나님께서는 흔쾌히 내는 사람을 사랑하십니다"
     ],
     "locations": [
       {
@@ -176660,7 +178222,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-9-10",
     "title": "씨와 양식을 주시는 하나님",
     "aliases": [
-      "심는 자에게 씨와 먹을 양식을 주시는 이가"
+      "심는 자에게 씨와 먹을 양식을 주시는 이가",
+        "씨 뿌리는 자에게 씨를 주시고, 먹을 양식을 주시는 하나님"
     ],
     "locations": [
       {
@@ -176689,7 +178252,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-9-11",
     "title": "하나님께 감사하게 하는 연보",
     "aliases": [
-      "그들이 우리로 말미암아 하나님께 감사하게 하는 것이라"
+      "그들이 우리로 말미암아 하나님께 감사하게 하는 것이라",
+        "많은 사람들이 하나님께 감사하게 될 것입니다"
     ],
     "locations": [
       {
@@ -176718,7 +178282,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-9-15",
     "title": "말할 수 없는 은사에 감사하다",
     "aliases": [
-      "말할 수 없는 그의 은사로 말미암아 하나님께 감사하노라"
+      "말할 수 없는 그의 은사로 말미암아 하나님께 감사하노라",
+        "말로 다할 수 없는 선물을 주신 하나님께 감사합니다"
     ],
     "locations": [
       {
@@ -176747,7 +178312,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-10-1",
     "title": "그리스도의 온유와 관용으로 권하다",
     "aliases": [
-      "그리스도의 온유와 관용으로 친히 너희를 권하고"
+      "그리스도의 온유와 관용으로 친히 너희를 권하고",
+        "그리스도의 온유함과 너그러움을 의지하여"
     ],
     "locations": [
       {
@@ -176776,7 +178342,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-10-4",
     "title": "싸우는 무기는 하나님의 능력",
     "aliases": [
-      "우리의 싸우는 무기는 육신에 속한 것이 아니요 오직 어떤 견고한 진도 무너뜨리는 하나님의 능력이라"
+      "우리의 싸우는 무기는 육신에 속한 것이 아니요 오직 어떤 견고한 진도 무너뜨리는 하나님의 능력이라",
+        "강한 요새라도 파괴하는 하나님의 능력입니다"
     ],
     "locations": [
       {
@@ -176805,7 +178372,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-10-7",
     "title": "외모만 보는 사람들",
     "aliases": [
-      "너희는 외모만 보는도다"
+      "너희는 외모만 보는도다",
+        "여러분은 사물의 겉모습만 보고 있습니다"
     ],
     "locations": [
       {
@@ -176834,7 +178402,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-10-8",
     "title": "무너뜨리지 않고 세우는 권세",
     "aliases": [
-      "주께서 주신 권세는 너희를 무너뜨리려고 하신 것이 아니요 세우려고 하신 것이니"
+      "주께서 주신 권세는 너희를 무너뜨리려고 하신 것이 아니요 세우려고 하신 것이니",
+        "여러분을 넘어뜨리라고 준 것이 아니라 덕을 세우라고 주신 것"
     ],
     "locations": [
       {
@@ -176863,7 +178432,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-10-10",
     "title": "편지는 무겁고 몸은 약하다는 평가",
     "aliases": [
-      "그의 편지들은 무게가 있고 힘이 있으나 그가 몸으로 대할 때는 약하고"
+      "그의 편지들은 무게가 있고 힘이 있으나 그가 몸으로 대할 때는 약하고",
+        "그 사람을 직접 대해 보면 약골이고 말재주도 없다"
     ],
     "locations": [
       {
@@ -176892,7 +178462,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-10-12",
     "title": "스스로 재고 비교하는 자들",
     "aliases": [
-      "그러나 그들이 자기로써 자기를 헤아리고 자기로써 자기를 비교하니 지혜가 없도다"
+      "그러나 그들이 자기로써 자기를 헤아리고 자기로써 자기를 비교하니 지혜가 없도다",
+        "자기들이 만든 표준에다 자신들을 재거나 비교하는데"
     ],
     "locations": [
       {
@@ -176922,7 +178493,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-10-17",
     "title": "주 안에서 자랑하라",
     "aliases": [
-      "자랑하는 자는 주 안에서 자랑할지니라"
+      "자랑하는 자는 주 안에서 자랑할지니라",
+        "자랑하는 자는 주님 안에서 자랑해야 합니다"
     ],
     "locations": [
       {
@@ -176955,7 +178527,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-11-2",
     "title": "정결한 처녀를 그리스도께 드리려는 중매",
     "aliases": [
-      "정결한 처녀로 한 남편인 그리스도께 드리려고 중매함이로다"
+      "정결한 처녀로 한 남편인 그리스도께 드리려고 중매함이로다",
+        "순결한 처녀로, 한 분이신 남편 그리스도께 바치려고 정혼을 시켰습니다"
     ],
     "locations": [
       {
@@ -176985,7 +178558,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-11-4",
     "title": "다른 예수, 다른 영, 다른 복음",
     "aliases": [
-      "우리가 전파하지 아니한 다른 예수를 전파하거나"
+      "우리가 전파하지 아니한 다른 예수를 전파하거나",
+        "전혀 다른 예수님을 전파하는데도"
     ],
     "locations": [
       {
@@ -177014,7 +178588,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-11-5",
     "title": "지극히 크다는 사도들과 견줌",
     "aliases": [
-      "지극히 크다는 사도들보다 부족한 것이 조금도 없는 줄로 생각하노라"
+      "지극히 크다는 사도들보다 부족한 것이 조금도 없는 줄로 생각하노라",
+        "가장 위대한 사도들"
     ],
     "locations": [
       {
@@ -177043,7 +178618,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-11-7",
     "title": "값없이 전한 복음",
     "aliases": [
-      "하나님의 복음을 값없이 너희에게 전함으로 죄를 지었느냐"
+      "하나님의 복음을 값없이 너희에게 전함으로 죄를 지었느냐",
+        "아무런 보수도 받지 않고 하나님의 복음을 전파하면서"
     ],
     "locations": [
       {
@@ -177073,7 +178649,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-11-14",
     "title": "사탄도 광명의 천사로 가장한다",
     "aliases": [
-      "사탄도 자기를 광명의 천사로 가장하나니"
+      "사탄도 자기를 광명의 천사로 가장하나니",
+        "사탄도 자신을 빛의 천사로 가장하기 때문입니다"
     ],
     "locations": [
       {
@@ -177102,7 +178679,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-11-23",
     "title": "수고와 매와 옥을 넘치도록 겪다",
     "aliases": [
-      "내가 수고를 넘치도록 하고 옥에 갇히기도 더 많이 하고 매도 수없이 맞고 여러 번 죽을 뻔하였으니"
+      "내가 수고를 넘치도록 하고 옥에 갇히기도 더 많이 하고 매도 수없이 맞고 여러 번 죽을 뻔하였으니",
+        "감옥에도 더 많이 갇혔으며"
     ],
     "locations": [
       {
@@ -177132,7 +178710,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-11-28",
     "title": "모든 교회를 위한 날마다의 염려",
     "aliases": [
-      "날마다 내 속에 눌리는 일이 있으니 곧 모든 교회를 위하여 염려하는 것이라"
+      "날마다 내 속에 눌리는 일이 있으니 곧 모든 교회를 위하여 염려하는 것이라",
+        "날마다 모든 교회들에 대한 염려로 마음이 짓눌렸습니다"
     ],
     "locations": [
       {
@@ -177161,7 +178740,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-11-33",
     "title": "광주리를 타고 성벽을 내려가다",
     "aliases": [
-      "나는 광주리를 타고 들창문으로 성벽을 내려가"
+      "나는 광주리를 타고 들창문으로 성벽을 내려가",
+        "광주리를 타고 성벽 창문 아래로 내려와"
     ],
     "locations": [
       {
@@ -177190,7 +178770,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-12-2",
     "title": "셋째 하늘에 이끌려 간 사람",
     "aliases": [
-      "그는 십사 년 전에 셋째 하늘에 이끌려 간 자라"
+      "그는 십사 년 전에 셋째 하늘에 이끌려 간 자라",
+        "셋째 하늘로 들려 올라간"
     ],
     "locations": [
       {
@@ -177219,7 +178800,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-12-7",
     "title": "육체의 가시",
     "aliases": [
-      "내 육체에 가시 곧 사탄의 사자를 주셨으니"
+      "내 육체에 가시 곧 사탄의 사자를 주셨으니",
+        "내 몸에 사탄의 사신인 가시를 주셨습니다"
     ],
     "locations": [
       {
@@ -177249,7 +178831,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-12-9",
     "title": "내 은혜가 네게 족하다",
     "aliases": [
-      "내 은혜가 네게 족하도다"
+      "내 은혜가 네게 족하도다",
+        "내 은혜가 네게 족하다"
     ],
     "locations": [
       {
@@ -177279,7 +178862,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-12-10",
     "title": "약할 때에 강함",
     "aliases": [
-      "이는 내가 약한 그 때에 강함이라"
+      "이는 내가 약한 그 때에 강함이라",
+        "나는 약할 그 때에 강하기 때문입니다"
     ],
     "locations": [
       {
@@ -177308,7 +178892,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-12-14",
     "title": "재물이 아니라 너희를 구한다",
     "aliases": [
-      "내가 구하는 것은 너희의 재물이 아니요 오직 너희니라"
+      "내가 구하는 것은 너희의 재물이 아니요 오직 너희니라",
+        "나는 단지 여러분을 바랄 뿐, 여러분이 가진 재물을 바라지 않습니다"
     ],
     "locations": [
       {
@@ -177337,7 +178922,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-12-18",
     "title": "디도와 형제가 이득을 취하지 않았다",
     "aliases": [
-      "내가 디도를 권하고 함께 한 형제를 보내었으니 디도가 너희의 이득을 취하더냐"
+      "내가 디도를 권하고 함께 한 형제를 보내었으니 디도가 너희의 이득을 취하더냐",
+        "디도가 여러분을 속여 착취한 적이 있었습니까"
     ],
     "locations": [
       {
@@ -177367,7 +178953,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-12-19",
     "title": "너희의 덕을 세우기 위함",
     "aliases": [
-      "이 모든 것은 너희의 덕을 세우기 위함이니라"
+      "이 모든 것은 너희의 덕을 세우기 위함이니라",
+        "여러분의 덕을 세우기 위함입니다"
     ],
     "locations": [
       {
@@ -177397,7 +178984,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-12-20",
     "title": "다툼과 분열이 있을까 두려움",
     "aliases": [
-      "다툼과 시기와 분냄과 당 짓는 것과 비방과 수군거림과 거만함과 혼란이 있을까 두려워하고"
+      "다툼과 시기와 분냄과 당 짓는 것과 비방과 수군거림과 거만함과 혼란이 있을까 두려워하고",
+        "말다툼과 시기와 분냄과 편 가름"
     ],
     "locations": [
       {
@@ -177426,7 +179014,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-13-1",
     "title": "두세 증인의 입으로 확정하다",
     "aliases": [
-      "두세 증인의 입으로 말마다 확정하리라"
+      "두세 증인의 입으로 말마다 확정하리라",
+        "모든 사건은 두 세 증인의 증언으로 확증해야 한다"
     ],
     "locations": [
       {
@@ -177456,7 +179045,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-13-2",
     "title": "다시 가면 용서하지 않겠다",
     "aliases": [
-      "내가 다시 가면 용서하지 아니하리라"
+      "내가 다시 가면 용서하지 아니하리라",
+        "내가 이번에 가면 그들을 용서하지 않겠습니다"
     ],
     "locations": [
       {
@@ -177486,7 +179076,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-13-4",
     "title": "약하셨으나 하나님의 능력으로 살아 계시다",
     "aliases": [
-      "그리스도께서 약하심으로 십자가에 못 박히셨으나 하나님의 능력으로 살아 계시니"
+      "그리스도께서 약하심으로 십자가에 못 박히셨으나 하나님의 능력으로 살아 계시니",
+        "그리스도께서는 약하셔서 십자가에 달려 돌아가셨으나"
     ],
     "locations": [
       {
@@ -177516,7 +179107,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-13-5",
     "title": "너희 자신을 시험하라",
     "aliases": [
-      "너희 자신을 시험하고 너희 자신을 확증하라"
+      "너희 자신을 시험하고 너희 자신을 확증하라",
+        "자신이 믿음 안에 있는지 점검하고"
     ],
     "locations": [
       {
@@ -177545,7 +179137,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-13-7",
     "title": "악을 행하지 않게 해 달라는 기도",
     "aliases": [
-      "우리는 버림 받은 자 같을지라도 너희는 선을 행하게 하고자 함이라"
+      "우리는 버림 받은 자 같을지라도 너희는 선을 행하게 하고자 함이라",
+        "여러분이 악한 일을 행하지 않게 해 달라고 하나님께 기도합니다"
     ],
     "locations": [
       {
@@ -177574,7 +179167,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-13-10",
     "title": "넘어뜨리지 않고 세우려 하는 권한",
     "aliases": [
-      "주께서 너희를 넘어뜨리려 하지 않고 세우려 하여 내게 주신 그 권한을 따라"
+      "주께서 너희를 넘어뜨리려 하지 않고 세우려 하여 내게 주신 그 권한을 따라",
+        "여러분에게 덕을 세우라고 주신 것이지"
     ],
     "locations": [
       {
@@ -177604,7 +179198,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-13-11",
     "title": "기뻐하고 온전하며 평안하라",
     "aliases": [
-      "기뻐하라 온전하게 되며 위로를 받으며 마음을 같이하며 평안할지어다"
+      "기뻐하라 온전하게 되며 위로를 받으며 마음을 같이하며 평안할지어다",
+        "사랑과 평강의 하나님께서 여러분과 함께하실 것입니다"
     ],
     "locations": [
       {
@@ -177633,7 +179228,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2co-13-13",
     "title": "삼위 하나님의 축복",
     "aliases": [
-      "주 예수 그리스도의 은혜와 하나님의 사랑과 성령의 교통하심이 너희 무리와 함께 있을지어다"
+      "주 예수 그리스도의 은혜와 하나님의 사랑과 성령의 교통하심이 너희 무리와 함께 있을지어다",
+        "우리 주 예수 그리스도의 은혜와 하나님의 사랑과 성령의 친교가"
     ],
     "locations": [
       {
@@ -177754,7 +179350,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-1-21",
     "title": "전도의 어리석음과 구원",
     "aliases": [
-      "믿는 자들을 구원하시기를 기뻐하셨도다"
+      "믿는 자들을 구원하시기를 기뻐하셨도다",
+        "우리가 전하는 어리석어 보이는 말씀 선포로"
     ],
     "locations": [
       {
@@ -177812,7 +179409,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-1-30",
     "title": "그리스도는 우리의 지혜",
     "aliases": [
-      "지혜와 의로움과 거룩함과 구원함이 되셨으니"
+      "지혜와 의로움과 거룩함과 구원함이 되셨으니",
+        "예수님은 하나님께로부터 오는 우리의 지혜와"
     ],
     "locations": [
       {
@@ -177842,7 +179440,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-2-2",
     "title": "십자가만 전하기로 함",
     "aliases": [
-      "예수 그리스도와 그가 십자가에 못 박히신 것"
+      "예수 그리스도와 그가 십자가에 못 박히신 것",
+        "예수 그리스도와 그분께서 십자가에 못박히셨다는 것"
     ],
     "locations": [
       {
@@ -177872,7 +179471,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-2-3",
     "title": "약하고 떨던 바울",
     "aliases": [
-      "약하고 두려워하고 심히 떨었노라"
+      "약하고 두려워하고 심히 떨었노라",
+        "나는 약하였고 두려웠으며 몹시 떨었습니다"
     ],
     "locations": [
       {
@@ -177988,7 +179588,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-2-14",
     "title": "육에 속한 사람",
     "aliases": [
-      "육에 속한 사람은 하나님의 성령의 일들을 받지 아니하나니"
+      "육에 속한 사람은 하나님의 성령의 일들을 받지 아니하나니",
+        "성령에 속하지 않은 사람은"
     ],
     "locations": [
       {
@@ -178046,7 +179647,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-3-2",
     "title": "젖과 밥",
     "aliases": [
-      "젖으로 먹이고 밥으로 아니하였노니"
+      "젖으로 먹이고 밥으로 아니하였노니",
+        "여러분에게 단단한 음식이 아니라 우유를 먹였습니다"
     ],
     "locations": [
       {
@@ -178106,7 +179708,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-3-10",
     "title": "기초를 놓은 건축자",
     "aliases": [
-      "지혜로운 건축자와 같이 터를 닦아 두매"
+      "지혜로운 건축자와 같이 터를 닦아 두매",
+        "유능한 건축가처럼 기초를 놓았습니다"
     ],
     "locations": [
       {
@@ -178136,7 +179739,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-3-11",
     "title": "터는 예수 그리스도",
     "aliases": [
-      "이 터는 곧 예수 그리스도라"
+      "이 터는 곧 예수 그리스도라",
+        "그 기초는 예수 그리스도이시기 때문입니다"
     ],
     "locations": [
       {
@@ -178195,7 +179799,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-3-18",
     "title": "스스로 지혜롭다 여기지 말라",
     "aliases": [
-      "이 세상에서 지혜 있는 줄로 생각하거든"
+      "이 세상에서 지혜 있는 줄로 생각하거든",
+        "진정 지혜 있는 자가 되기 위해서 어리석은 사람이 되십시오"
     ],
     "locations": [
       {
@@ -178225,7 +179830,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-3-21",
     "title": "사람을 자랑하지 말라",
     "aliases": [
-      "만물이 다 너희 것임이라"
+      "만물이 다 너희 것임이라",
+        "아무도 사람과 관련하여 자랑하지 마십시오"
     ],
     "locations": [
       {
@@ -178313,7 +179919,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-4-6",
     "title": "기록된 말씀 밖으로",
     "aliases": [
-      "기록된 말씀 밖으로 넘어가지 말라"
+      "기록된 말씀 밖으로 넘어가지 말라",
+        "기록된 말씀의 범위 이상을 벗어나지 마라"
     ],
     "locations": [
       {
@@ -178342,7 +179949,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-4-7",
     "title": "받은 것을 자랑하지 말라",
     "aliases": [
-      "받지 아니한 것이 무엇이냐"
+      "받지 아니한 것이 무엇이냐",
+        "모두 받은 것인데 왜 받지 않은 것처럼 자랑하고 있습니까"
     ],
     "locations": [
       {
@@ -178465,7 +180073,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-5-2",
     "title": "알고도 슬퍼하지 않은 교회",
     "aliases": [
-      "교만하여져서"
+      "교만하여져서",
+        "오히려 여러분은 슬퍼하고"
     ],
     "locations": [
       {
@@ -178494,7 +180103,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-5-5",
     "title": "사탄에게 내주는 목적",
     "aliases": [
-      "사탄에게 내주었으니"
+      "사탄에게 내주었으니",
+        "그 사람을 사탄에게 내어 주어"
     ],
     "locations": [
       {
@@ -178554,7 +180164,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-5-11",
     "title": "형제라 하면서 죄를 짓는 자와 사귀지 말라",
     "aliases": [
-      "사귀지도 말고 그런 자와는 함께 먹지도 말라"
+      "사귀지도 말고 그런 자와는 함께 먹지도 말라",
+        "그런 사람들과 어울리지 말라는 말입니다"
     ],
     "locations": [
       {
@@ -178584,7 +180195,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-5-13",
     "title": "교회 안의 악한 자를 내쫓으라",
     "aliases": [
-      "너희 중에서 내쫓으라"
+      "너희 중에서 내쫓으라",
+        "여러분 중에서 악한 자를 쫓아 내십시오"
     ],
     "locations": [
       {
@@ -178613,7 +180225,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-6-1",
     "title": "성도끼리의 다툼을 교회 안에서",
     "aliases": [
-      "불의한 자들 앞에서 고발하고"
+      "불의한 자들 앞에서 고발하고",
+        "성도들에게 해결해 달라고 하지 않고"
     ],
     "locations": [
       {
@@ -178643,7 +180256,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-6-9",
     "title": "하나님 나라를 유업으로 받지 못할 자들",
     "aliases": [
-      "불의한 자가 하나님의 나라를 유업으로 받지 못할 줄을"
+      "불의한 자가 하나님의 나라를 유업으로 받지 못할 줄을",
+        "불의한 자들이 하나님 나라를 기업으로 상속받지 못한다"
     ],
     "locations": [
       {
@@ -178734,7 +180348,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-6-20",
     "title": "값으로 산 몸으로 영광을 돌리라",
     "aliases": [
-      "값으로 산 것이 되었으니"
+      "값으로 산 것이 되었으니",
+        "하나님께서 값을 치르고 산 몸입니다"
     ],
     "locations": [
       {
@@ -178764,7 +180379,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-7-1",
     "title": "결혼하지 않는 편이 좋다는 말",
     "aliases": [
-      "남자가 여자를 가까이 아니함이 좋으나"
+      "남자가 여자를 가까이 아니함이 좋으나",
+        "사람이 결혼하지 않는 편이 더 낫다"
     ],
     "locations": [
       {
@@ -178794,7 +180410,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-7-5",
     "title": "기도를 위한 잠시 떨어짐",
     "aliases": [
-      "기도할 틈을 얻기 위하여"
+      "기도할 틈을 얻기 위하여",
+        "기도에 전념하기 위해 얼마 동안 떨어져 있는"
     ],
     "locations": [
       {
@@ -178824,7 +180441,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-7-10",
     "title": "결혼한 자는 갈라서지 말라",
     "aliases": [
-      "여자는 남편에게서 갈라서지 말고"
+      "여자는 남편에게서 갈라서지 말고",
+        "아내는 남편과 헤어지지 마십시오"
     ],
     "locations": [
       {
@@ -178854,7 +180472,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-7-12",
     "title": "믿지 않는 배우자를 버리지 말라",
     "aliases": [
-      "믿지 아니하는 아내가 있어"
+      "믿지 아니하는 아내가 있어",
+        "그 아내를 버려서는 안 됩니다"
     ],
     "locations": [
       {
@@ -178884,7 +180503,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-7-14",
     "title": "믿는 배우자로 말미암은 거룩함",
     "aliases": [
-      "아내로 말미암아 거룩하게 되고"
+      "아내로 말미암아 거룩하게 되고",
+        "믿지 않는 남편이 아내를 통해 거룩해지고"
     ],
     "locations": [
       {
@@ -178944,7 +180564,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-7-29",
     "title": "때가 단축되었으니",
     "aliases": [
-      "그 때가 단축하여진 고로"
+      "그 때가 단축하여진 고로",
+        "시간이 얼마 남지 않았습니다"
     ],
     "locations": [
       {
@@ -178973,7 +180594,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-8-1",
     "title": "지식은 교만하게 하고 사랑은 덕을 세운다",
     "aliases": [
-      "지식은 교만하게 하며 사랑은 덕을 세우나니"
+      "지식은 교만하게 하며 사랑은 덕을 세우나니",
+        "지식은 교만하게 하고 사랑은 덕을 세운다"
     ],
     "locations": [
       {
@@ -179003,7 +180625,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-8-6",
     "title": "한 하나님과 한 주 예수 그리스도",
     "aliases": [
-      "한 하나님 곧 아버지가 계시니"
+      "한 하나님 곧 아버지가 계시니",
+        "아버지가 되시는 하나님 한 분만 계십니다"
     ],
     "locations": [
       {
@@ -179033,7 +180656,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-8-7",
     "title": "약한 양심이 더러워짐",
     "aliases": [
-      "양심이 약하여지고 더러워지느니라"
+      "양심이 약하여지고 더러워지느니라",
+        "그 사람들의 양심은 약해졌고, 더럽혀졌습니다"
     ],
     "locations": [
       {
@@ -179094,7 +180718,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-8-13",
     "title": "형제를 넘어지게 하지 않겠다",
     "aliases": [
-      "음식이 내 형제를 실족하게 한다면"
+      "음식이 내 형제를 실족하게 한다면",
+        "내 동료 성도들이 걸려 넘어지게 되면"
     ],
     "locations": [
       {
@@ -179243,7 +180868,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-9-19",
     "title": "모든 사람에게 종이 된 자유인",
     "aliases": [
-      "스스로 모든 사람에게 종이 된 것은"
+      "스스로 모든 사람에게 종이 된 것은",
+        "스스로 많은 사람의 종이 되었습니다"
     ],
     "locations": [
       {
@@ -179273,7 +180899,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-9-24",
     "title": "상을 받으려고 달리라",
     "aliases": [
-      "상을 받는 사람은 한 사람인 줄을"
+      "상을 받는 사람은 한 사람인 줄을",
+        "상을 받을 수 있도록 달리십시오"
     ],
     "locations": [
       {
@@ -179336,7 +180963,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-10-4",
     "title": "광야의 반석은 그리스도",
     "aliases": [
-      "그 반석은 곧 그리스도시라"
+      "그 반석은 곧 그리스도시라",
+        "그런데 이 반석은 그리스도였습니다"
     ],
     "locations": [
       {
@@ -179396,7 +181024,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-10-13",
     "title": "감당할 수 있게 하시는 피할 길",
     "aliases": [
-      "피할 길을 내사"
+      "피할 길을 내사",
+        "여러분이 감당할 수 있는 능력 이상의 시험을"
     ],
     "locations": [
       {
@@ -179486,7 +181115,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-10-29",
     "title": "남의 양심과 나의 자유",
     "aliases": [
-      "내 자유가 남의 양심으로"
+      "내 자유가 남의 양심으로",
+        "다른 사람의 양심에 의해 판단을 받아야 합니까"
     ],
     "locations": [
       {
@@ -179517,7 +181147,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-11-1",
     "title": "그리스도를 본받는 바울을 본받으라",
     "aliases": [
-      "본받는 자가 되라"
+      "본받는 자가 되라",
+        "내가 그리스도의 본을 따른 것처럼"
     ],
     "locations": [
       {
@@ -179607,7 +181238,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-11-17",
     "title": "모임이 유익보다 해가 됨",
     "aliases": [
-      "도리어 해로움이라"
+      "도리어 해로움이라",
+        "여러분의 모임이 유익이 되는 것보다는 해가 되기 때문입니다"
     ],
     "locations": [
       {
@@ -179667,7 +181299,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-11-24",
     "title": "나를 기념하라",
     "aliases": [
-      "너희를 위하는 내 몸이니"
+      "너희를 위하는 내 몸이니",
+        "나를 기억하면서 이것을 행하여라"
     ],
     "locations": [
       {
@@ -179727,7 +181360,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-12-3",
     "title": "성령 없이는 예수를 주라 할 수 없다",
     "aliases": [
-      "성령으로 아니하고는 누구든지 예수를 주시라 할 수 없느니라"
+      "성령으로 아니하고는 누구든지 예수를 주시라 할 수 없느니라",
+        "성령을 통하지 않고는"
     ],
     "locations": [
       {
@@ -179757,7 +181391,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-12-4",
     "title": "여러 은사와 같은 성령",
     "aliases": [
-      "은사는 여러 가지나"
+      "은사는 여러 가지나",
+        "선물은 다양하지만 성령은 같은 성령이십니다"
     ],
     "locations": [
       {
@@ -179817,7 +181452,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-12-21",
     "title": "서로 필요한 지체",
     "aliases": [
-      "쓸 데가 없다"
+      "쓸 데가 없다",
+        "너는 내게 쓸데없어!"
     ],
     "locations": [
       {
@@ -179936,7 +181572,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-13-1",
     "title": "사랑이 없는 말은 소리일 뿐",
     "aliases": [
-      "사랑이 없으면 소리 나는 구리와"
+      "사랑이 없으면 소리 나는 구리와",
+        "울리는 종과 시끄러운 꽹과리와 다를 게 없습니다"
     ],
     "locations": [
       {
@@ -179996,7 +181633,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-13-8",
     "title": "사랑은 떨어지지 않는다",
     "aliases": [
-      "언제까지나 떨어지지 아니하되"
+      "언제까지나 떨어지지 아니하되",
+        "사랑은 영원합니다"
     ],
     "locations": [
       {
@@ -180090,7 +181728,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-14-2",
     "title": "방언은 하나님께 말하는 것",
     "aliases": [
-      "사람에게 하지 아니하고"
+      "사람에게 하지 아니하고",
+        "사람에게 말하는 것이 아니라 하나님께 말하기 때문에"
     ],
     "locations": [
       {
@@ -180151,7 +181790,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-14-22",
     "title": "방언은 믿지 않는 자를 위한 표적",
     "aliases": [
-      "믿지 아니하는 자들을 위하는 표적이나"
+      "믿지 아니하는 자들을 위하는 표적이나",
+        "믿지 않는 사람들을 위해 주신 표적"
     ],
     "locations": [
       {
@@ -180182,7 +181822,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-14-26",
     "title": "모일 때 모든 것을 덕을 세우기 위해",
     "aliases": [
-      "각각 찬송시도 있으며"
+      "각각 찬송시도 있으며",
+        "이 모든 것은 교회의 덕이 되게 행하십시오"
     ],
     "locations": [
       {
@@ -180243,7 +181884,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-14-34",
     "title": "여자는 교회에서 잠잠하라는 말",
     "aliases": [
-      "여자는 교회에서 잠잠하라"
+      "여자는 교회에서 잠잠하라",
+        "여자는 교회에서 말 없이 있어야 합니다"
     ],
     "locations": [
       {
@@ -180393,7 +182035,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-15-28",
     "title": "하나님이 만유 안에 계시려 하심",
     "aliases": [
-      "만유 안에 계시려"
+      "만유 안에 계시려",
+        "하나님께서 우주의 주님으로서 만물을 지배하실 것입니다"
     ],
     "locations": [
       {
@@ -180542,7 +182185,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1co-16-22",
     "title": "주를 사랑하지 않는 자와 마라나타",
     "aliases": [
-      "저주를 받을지어다"
+      "저주를 받을지어다",
+        "주님을 사랑하지 않는 사람이 있다면"
     ],
     "locations": [
       {
@@ -180576,7 +182220,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-gal-1-1",
     "title": "사람이 아닌 하나님께로 받은 사도직",
     "aliases": [
-      "사람들에게서 난 것도 아니요"
+      "사람들에게서 난 것도 아니요",
+        "사람들이 뽑은 것도 아니요, 사람들이 보낸 것도 아니요"
     ],
     "locations": [
       {
@@ -180695,7 +182340,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-gal-1-16",
     "title": "아들을 내 속에 나타내심",
     "aliases": [
-      "그를 내 속에"
+      "그를 내 속에",
+        "하나님께서 그 아들을 내게 보이셨습니다"
     ],
     "locations": [
       {
@@ -180725,7 +182371,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-gal-2-2",
     "title": "계시를 따라 올라가 복음을 제시함",
     "aliases": [
-      "계시를 따라"
+      "계시를 따라",
+        "하나님께서 그렇게 하라고 계시하셨기 때문입니다"
     ],
     "locations": [
       {
@@ -180785,7 +182432,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-gal-2-6",
     "title": "사람을 외모로 취하지 않으시는 하나님",
     "aliases": [
-      "하나님은 사람을 외모로 취하지 아니하시나니"
+      "하나님은 사람을 외모로 취하지 아니하시나니",
+        "하나님께서는 사람을 겉으로 판단하지 않으시기 때문입니다"
     ],
     "locations": [
       {
@@ -180875,7 +182523,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-gal-2-20",
     "title": "내 안에 그리스도께서 사시는 삶",
     "aliases": [
-      "내가 사는 것이 아니요 오직 내 안에 그리스도께서 사시는 것이라"
+      "내가 사는 것이 아니요 오직 내 안에 그리스도께서 사시는 것이라",
+        "내 안에 계신 그리스도께서 사시는 것입니다"
     ],
     "locations": [
       {
@@ -180905,7 +182554,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-gal-3-1",
     "title": "어리석은 갈라디아 교인들",
     "aliases": [
-      "어리석도다 갈라디아 사람들아"
+      "어리석도다 갈라디아 사람들아",
+        "어리석기 이를 데 없습니다"
     ],
     "locations": [
       {
@@ -180964,7 +182614,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-gal-3-10",
     "title": "율법 행위에 속한 자들의 저주",
     "aliases": [
-      "율법 행위에 속한 자들은"
+      "율법 행위에 속한 자들은",
+        "율법을 의지하는 사람은 다 저주를 받습니다"
     ],
     "locations": [
       {
@@ -181056,7 +182707,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-gal-3-24",
     "title": "율법은 그리스도께로 인도하는 초등교사",
     "aliases": [
-      "초등교사가 되어"
+      "초등교사가 되어",
+        "율법이 우리의 선생이었습니다"
     ],
     "locations": [
       {
@@ -181150,7 +182802,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-gal-4-6",
     "title": "아들의 영으로 아빠 아버지라 부름",
     "aliases": [
-      "아빠 아버지라 부르게"
+      "아빠 아버지라 부르게",
+        "그 아들의 영을 여러분 마음에 보내 주셔서"
     ],
     "locations": [
       {
@@ -181180,7 +182833,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-gal-4-9",
     "title": "약하고 천박한 초등학문으로 돌아가려는 교인들",
     "aliases": [
-      "약하고 천박한 초등학문으로"
+      "약하고 천박한 초등학문으로",
+        "약하고 헛된 가르침으로 다시 돌아가려 합니까"
     ],
     "locations": [
       {
@@ -181210,7 +182864,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-gal-4-19",
     "title": "그리스도의 형상을 이루기까지 해산하는 수고",
     "aliases": [
-      "너희 속에 그리스도의 형상을 이루기까지"
+      "너희 속에 그리스도의 형상을 이루기까지",
+        "다시 아기를 낳는 어머니의 고통을 느낍니다"
     ],
     "locations": [
       {
@@ -181300,7 +182955,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-gal-5-1",
     "title": "자유를 주신 그리스도, 종의 멍에를 메지 말라",
     "aliases": [
-      "자유를 주셨으니"
+      "자유를 주셨으니",
+        "다시는 율법의 종이 되지 마십시오"
     ],
     "locations": [
       {
@@ -181541,7 +183197,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-gal-6-7",
     "title": "심은 대로 거둠",
     "aliases": [
-      "사람이 무엇으로 심든지 그대로 거두리라"
+      "사람이 무엇으로 심든지 그대로 거두리라",
+        "사람은 자기가 심은 대로 거둘 것입니다"
     ],
     "locations": [
       {
@@ -181695,7 +183352,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-eph-1-3",
     "title": "하늘에 속한 신령한 복",
     "aliases": [
-      "하늘에 속한 모든 신령한 복을"
+      "하늘에 속한 모든 신령한 복을",
+        "하늘에 있는 모든 영적인 복을 그리스도 안에서"
     ],
     "locations": [
       {
@@ -181725,7 +183383,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-eph-1-4",
     "title": "창세 전에 택하심",
     "aliases": [
-      "창세 전에"
+      "창세 전에",
+        "이 세상이 창조되기 전, 그리스도의 사랑 안에서"
     ],
     "locations": [
       {
@@ -181755,7 +183414,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-eph-1-7",
     "title": "그의 피로 말미암은 속량과 죄 사함",
     "aliases": [
-      "그의 피로 말미암아 속량"
+      "그의 피로 말미암아 속량",
+        "그의 보혈로 자유함을 얻었습니다"
     ],
     "locations": [
       {
@@ -181784,7 +183444,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-eph-1-10",
     "title": "하늘과 땅을 그리스도 안에서 통일하심",
     "aliases": [
-      "그리스도 안에서 통일되게"
+      "그리스도 안에서 통일되게",
+        "땅과 하늘에 있는 모든 것의 으뜸이 되신 그리스도 예수 안에서"
     ],
     "locations": [
       {
@@ -181874,7 +183535,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-eph-1-20",
     "title": "그리스도를 높이 앉히심",
     "aliases": [
-      "오른편에 앉히사"
+      "오른편에 앉히사",
+        "하늘에 계신 하나님 우편에 앉게 하셨습니다"
     ],
     "locations": [
       {
@@ -181904,7 +183566,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-eph-2-1",
     "title": "허물과 죄로 죽었던 교인들",
     "aliases": [
-      "허물과 죄로 죽었던"
+      "허물과 죄로 죽었던",
+        "불순종과 죄로 인하여 여러분은 영적으로 죽은 사람들이었습니다"
     ],
     "locations": [
       {
@@ -181994,7 +183657,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-eph-2-14",
     "title": "우리의 화평이신 그리스도",
     "aliases": [
-      "그는 우리의 화평이신지라"
+      "그는 우리의 화평이신지라",
+        "그 미움의 벽을 허물어뜨리셨습니다"
     ],
     "locations": [
       {
@@ -182054,7 +183718,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-eph-2-20",
     "title": "모퉁잇돌이신 그리스도",
     "aliases": [
-      "모퉁잇돌이 되셨느니라"
+      "모퉁잇돌이 되셨느니라",
+        "그리스도 예수께서 친히 그 건물의 머릿돌이 되어 주십니다"
     ],
     "locations": [
       {
@@ -182084,7 +183749,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-eph-3-1",
     "title": "이방인을 위해 갇힌 바울",
     "aliases": [
-      "갇힌 자 된"
+      "갇힌 자 된",
+        "이방인인 여러분을 위해 감옥에 갇혀 있습니다"
     ],
     "locations": [
       {
@@ -182114,7 +183780,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-eph-3-6",
     "title": "이방인도 함께 상속자가 됨",
     "aliases": [
-      "함께 상속자가 되고"
+      "함께 상속자가 되고",
+        "함께 상속받을 수 있다는 것입니다"
     ],
     "locations": [
       {
@@ -182174,7 +183841,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-eph-3-13",
     "title": "나의 환난에 낙심하지 말라",
     "aliases": [
-      "너희를 위한 나의 여러 환난에"
+      "너희를 위한 나의 여러 환난에",
+        "이 고난이 오히려 여러분에게 영광이 되는 것입니다"
     ],
     "locations": [
       {
@@ -182204,7 +183872,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-eph-3-16",
     "title": "속사람을 강건하게 하시라는 기도",
     "aliases": [
-      "너희 속사람을 능력으로 강건하게"
+      "너희 속사람을 능력으로 강건하게",
+        "여러분의 속 사람을 튼튼하게 하여 주시기를 기도합니다"
     ],
     "locations": [
       {
@@ -182234,7 +183903,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-eph-3-20",
     "title": "구하고 생각하는 것보다 더 넘치게 하실 하나님",
     "aliases": [
-      "우리가 구하거나 생각하는 모든 것에 더 넘치도록"
+      "우리가 구하거나 생각하는 모든 것에 더 넘치도록",
+        "우리가 구하고 생각하는 것보다 훨씬 더 많은 것을 채워 주실 것입니다"
     ],
     "locations": [
       {
@@ -182298,7 +183968,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-eph-4-7",
     "title": "그리스도의 선물의 분량대로 주신 은혜",
     "aliases": [
-      "그리스도의 선물의 분량대로"
+      "그리스도의 선물의 분량대로",
+        "그리스도께서 나눠 주신 은혜대로"
     ],
     "locations": [
       {
@@ -182359,7 +184030,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-eph-4-17",
     "title": "이방인처럼 행하지 말라",
     "aliases": [
-      "그 마음의 허망한 것으로"
+      "그 마음의 허망한 것으로",
+        "믿지 않는 사람들이 생각하고 행동하는 것처럼 살지 마십시오"
     ],
     "locations": [
       {
@@ -182391,7 +184063,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-eph-4-22",
     "title": "옛 사람을 벗고 새 사람을 입음",
     "aliases": [
-      "옛 사람을 벗어 버리고"
+      "옛 사람을 벗어 버리고",
+        "옛 모습을 벗어 버리십시오"
     ],
     "locations": [
       {
@@ -182482,7 +184155,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-eph-5-2",
     "title": "사랑 가운데 행하며 드리신 향기로운 제물",
     "aliases": [
-      "향기로운 제물과 희생제물로"
+      "향기로운 제물과 희생제물로",
+        "하나님 앞에 향기나는 희생 제물이 되셨습니다"
     ],
     "locations": [
       {
@@ -182512,7 +184186,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-eph-5-8",
     "title": "전에는 어둠이던 너희",
     "aliases": [
-      "너희가 전에는 어둠이더니"
+      "너희가 전에는 어둠이더니",
+        "이전에는 여러분도 어둠 가운데 있었으나"
     ],
     "locations": [
       {
@@ -182542,7 +184217,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-eph-5-18",
     "title": "술 취하지 말고 성령으로 충만하라",
     "aliases": [
-      "술 취하지 말라 이는 방탕한 것이니"
+      "술 취하지 말라 이는 방탕한 것이니",
+        "성령으로 충만해지도록 힘쓰십시오"
     ],
     "locations": [
       {
@@ -182572,7 +184248,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-eph-5-22",
     "title": "아내가 남편에게 복종하는 것",
     "aliases": [
-      "아내들이여 자기 남편에게 복종하기를"
+      "아내들이여 자기 남편에게 복종하기를",
+        "남편의 권위에 순종하십시오"
     ],
     "locations": [
       {
@@ -182693,7 +184370,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-eph-6-5",
     "title": "종들의 성실한 순종",
     "aliases": [
-      "종들아 두려워하고 떨며"
+      "종들아 두려워하고 떨며",
+        "그리스도께 복종하듯이 참마음으로 순종하기 바랍니다"
     ],
     "locations": [
       {
@@ -182723,7 +184401,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-eph-6-9",
     "title": "상전도 같은 태도로 대하라",
     "aliases": [
-      "사람을 외모로 취하는 일이 없는"
+      "사람을 외모로 취하는 일이 없는",
+        "주인들도 똑같이 종들에게 잘해 주고, 윽박지르지 마십시오"
     ],
     "locations": [
       {
@@ -182753,7 +184432,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-eph-6-11",
     "title": "마귀의 간계를 대적하는 전신 갑주",
     "aliases": [
-      "마귀의 간계를"
+      "마귀의 간계를",
+        "하나님의 무기로 완전 무장하시기 바랍니다"
     ],
     "locations": [
       {
@@ -182783,7 +184463,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-eph-6-14",
     "title": "진리의 허리띠와 의의 호심경",
     "aliases": [
-      "진리로 너희 허리 띠를 띠고"
+      "진리로 너희 허리 띠를 띠고",
+        "진리의 허리띠를 띠고, 가슴에 의의 흉배를 붙이십시오"
     ],
     "locations": [
       {
@@ -182848,7 +184529,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-php-1-6",
     "title": "착한 일을 시작하신 하나님",
     "aliases": [
-      "착한 일을 시작하신 이가"
+      "착한 일을 시작하신 이가",
+        "하나님께서는 여러분 안에서 선한 일을 시작하셨습니다"
     ],
     "locations": [
       {
@@ -182878,7 +184560,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-php-1-9",
     "title": "지식과 총명으로 자라는 사랑",
     "aliases": [
-      "사랑을 지식과 모든 총명으로"
+      "사랑을 지식과 모든 총명으로",
+        "그 사랑으로 더 풍성한 지식과 통찰력을 갖게 되기를"
     ],
     "locations": [
       {
@@ -182908,7 +184591,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-php-1-12",
     "title": "갇힘이 복음 전파의 진전이 됨",
     "aliases": [
-      "복음 전파에 진전이 된"
+      "복음 전파에 진전이 된",
+        "오히려 하나님의 복음을 전하는 데 도움이 되었다는 것"
     ],
     "locations": [
       {
@@ -182938,7 +184622,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-php-1-15",
     "title": "투기와 분쟁으로, 또 착한 뜻으로 전파함",
     "aliases": [
-      "투기와 분쟁으로"
+      "투기와 분쟁으로",
+        "나를 시기하고 질투하는 마음에서 복음을 전하는 자들도"
     ],
     "locations": [
       {
@@ -182998,7 +184683,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-php-1-23",
     "title": "떠나 그리스도와 함께 있는 것이 더 좋음",
     "aliases": [
-      "차라리 세상을 떠나서"
+      "차라리 세상을 떠나서",
+        "이 세상을 떠나 그리스도 곁에 있고 싶은 까닭은"
     ],
     "locations": [
       {
@@ -183028,7 +184714,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-php-1-27",
     "title": "그리스도의 복음에 합당하게 생활하라",
     "aliases": [
-      "그리스도의 복음에 합당하게 생활하라"
+      "그리스도의 복음에 합당하게 생활하라",
+        "그리스도의 기쁜 소식을 들은 자로서"
     ],
     "locations": [
       {
@@ -183058,7 +184745,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-php-2-2",
     "title": "마음을 같이하여 같은 사랑으로",
     "aliases": [
-      "마음을 같이하여 같은 사랑을"
+      "마음을 같이하여 같은 사랑을",
+        "서로 한 마음으로 사랑을 나누고, 한 뜻으로 하나가 되십시오"
     ],
     "locations": [
       {
@@ -183088,7 +184776,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-php-2-3",
     "title": "자기보다 남을 낫게 여김",
     "aliases": [
-      "자기보다 남을 낫게 여기고"
+      "자기보다 남을 낫게 여기고",
+        "겸손한 마음으로 나보다 다른 사람을 더 존중해 주십시오"
     ],
     "locations": [
       {
@@ -183118,7 +184807,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-php-2-5",
     "title": "그리스도 예수의 마음을 품으라",
     "aliases": [
-      "그리스도 예수의 마음"
+      "그리스도 예수의 마음",
+        "예수님처럼 생각하고 행동합시다"
     ],
     "locations": [
       {
@@ -183147,7 +184837,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-php-2-7",
     "title": "자기를 비우고 종의 형체로 오심",
     "aliases": [
-      "자기를 비워"
+      "자기를 비워",
+        "종과 같이 겸손한 모습을 취하셨습니다"
     ],
     "locations": [
       {
@@ -183208,7 +184899,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-php-2-15",
     "title": "어그러진 세대 가운데서 빛으로 나타남",
     "aliases": [
-      "흠이 없고 순전하여"
+      "흠이 없고 순전하여",
+        "어두운 세상에서 밝은 빛을 발하는 흠 없는 하나님의 자녀들"
     ],
     "locations": [
       {
@@ -183238,7 +184930,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-php-3-2",
     "title": "개들을 삼가라는 경고",
     "aliases": [
-      "개들을 삼가고"
+      "개들을 삼가고",
+        "그들은 마치 개와 같은 자들입니다"
     ],
     "locations": [
       {
@@ -183298,7 +184991,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-php-3-7",
     "title": "유익하던 것을 해로 여김",
     "aliases": [
-      "내게 유익하던"
+      "내게 유익하던",
+        "그 모든 것이 아무 쓸모 없는 것임을 알았습니다"
     ],
     "locations": [
       {
@@ -183328,7 +185022,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-php-3-10",
     "title": "그리스도와 부활의 권능, 고난에 참여함",
     "aliases": [
-      "그리스도와 그 부활의 권능과"
+      "그리스도와 그 부활의 권능과",
+        "죽음에서 부활하신 그 능력을 체험하며"
     ],
     "locations": [
       {
@@ -183358,7 +185053,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-php-3-13",
     "title": "뒤를 잊고 앞을 향해 달림",
     "aliases": [
-      "뒤에 있는 것은 잊어버리고"
+      "뒤에 있는 것은 잊어버리고",
+        "앞에 있는 목표를 향해 힘껏 달리고 있다는 것입니다"
     ],
     "locations": [
       {
@@ -183477,7 +185173,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-php-4-5",
     "title": "관용을 알게 하라, 주께서 가까우시다",
     "aliases": [
-      "주께서 가까우시니라"
+      "주께서 가까우시니라",
+        "여러분이 선하고 친절하다는 것을 모든 사람이 알도록"
     ],
     "locations": [
       {
@@ -183506,7 +185203,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-php-4-6",
     "title": "염려 대신 기도와 감사로",
     "aliases": [
-      "아무 것도 염려하지 말고"
+      "아무 것도 염려하지 말고",
+        "걱정하지 말고 필요한 것을 하나님께 구하고 아뢰십시오"
     ],
     "locations": [
       {
@@ -183536,7 +185234,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-php-4-8",
     "title": "참되고 아름다운 것을 생각하라",
     "aliases": [
-      "무엇에든지 참되며"
+      "무엇에든지 참되며",
+        "참되고, 고상하고, 옳고, 순결하며, 아름답고, 존경할 만한 것들을"
     ],
     "locations": [
       {
@@ -183565,7 +185264,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-php-4-11",
     "title": "어떤 형편에서도 자족하기를 배움",
     "aliases": [
-      "자족하기를 배웠노니"
+      "자족하기를 배웠노니",
+        "나는 내가 가진 것에 만족하고 있으며"
     ],
     "locations": [
       {
@@ -183629,7 +185329,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-col-1-5",
     "title": "하늘에 쌓아 둔 소망",
     "aliases": [
-      "하늘에 쌓아 둔 소망"
+      "하늘에 쌓아 둔 소망",
+        "하나님께서 여러분을 위해 하늘에 예비해 두신 것에 대한 소망"
     ],
     "locations": [
       {
@@ -183689,7 +185390,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-col-1-13",
     "title": "흑암의 권세에서 사랑의 아들의 나라로",
     "aliases": [
-      "흑암의 권세에서 건져내사"
+      "흑암의 권세에서 건져내사",
+        "어둠의 세력에서 우리를 구원하셨으며"
     ],
     "locations": [
       {
@@ -183719,7 +185421,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-col-1-15",
     "title": "보이지 않는 하나님의 형상",
     "aliases": [
-      "보이지 아니하는 하나님의 형상이시요"
+      "보이지 아니하는 하나님의 형상이시요",
+        "예수님께서 하나님의 모습을 보여 주셨습니다"
     ],
     "locations": [
       {
@@ -183750,7 +185453,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-col-1-20",
     "title": "십자가의 피로 이루신 화평",
     "aliases": [
-      "그의 십자가의 피로 화평을 이루사"
+      "그의 십자가의 피로 화평을 이루사",
+        "그리스도께서 십자가에서 흘리신 보혈로 평화의 길을 열어 놓으신"
     ],
     "locations": [
       {
@@ -183810,7 +185514,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-col-2-2",
     "title": "하나님의 비밀인 그리스도를 깨닫게 함",
     "aliases": [
-      "하나님의 비밀인 그리스도"
+      "하나님의 비밀인 그리스도",
+        "하나님의 놀랍고 비밀스런 진리"
     ],
     "locations": [
       {
@@ -183840,7 +185545,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-col-2-8",
     "title": "철학과 헛된 속임수를 경계함",
     "aliases": [
-      "철학과 헛된 속임수로"
+      "철학과 헛된 속임수로",
+        "헛된 말과 거짓 철학에 속아 잘못된 길로 가지 않도록"
     ],
     "locations": [
       {
@@ -183871,7 +185577,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-col-2-11",
     "title": "손으로 하지 않은 그리스도의 할례",
     "aliases": [
-      "손으로 하지 아니한 할례를"
+      "손으로 하지 아니한 할례를",
+        "손으로 행하는 육체적인 할례가 아니라"
     ],
     "locations": [
       {
@@ -183901,7 +185608,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-col-2-14",
     "title": "우리를 거스르던 증서를 지우심",
     "aliases": [
-      "증서를 지우시고"
+      "증서를 지우시고",
+        "우리를 거스르는 기록된 빚의 문서들"
     ],
     "locations": [
       {
@@ -183961,7 +185669,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-col-2-20",
     "title": "세상의 규례에서 죽은 자",
     "aliases": [
-      "그리스도와 함께 죽었거든"
+      "그리스도와 함께 죽었거든",
+        "이 세상의 헛된 규칙들로부터 자유로운 사람들입니다"
     ],
     "locations": [
       {
@@ -183991,7 +185700,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-col-3-1",
     "title": "위의 것을 찾으라",
     "aliases": [
-      "위의 것을 찾으라"
+      "위의 것을 찾으라",
+        "하늘에 있는 것에 마음을 두십시오"
     ],
     "locations": [
       {
@@ -184081,7 +185791,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-col-3-10",
     "title": "새 사람을 입음",
     "aliases": [
-      "새 사람을 입었으니"
+      "새 사람을 입었으니",
+        "여러분의 삶 속에 새로운 삶이 시작되었습니다"
     ],
     "locations": [
       {
@@ -184111,7 +185822,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-col-3-11",
     "title": "차별 없이 그리스도가 만유",
     "aliases": [
-      "오직 그리스도는 만유시요"
+      "오직 그리스도는 만유시요",
+        "오직 모든 믿는 자의 마음속에 계신 그리스도만이"
     ],
     "locations": [
       {
@@ -184141,7 +185853,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-col-3-13",
     "title": "서로 용납하고 피차 용서하라",
     "aliases": [
-      "서로 용납하여 피차 용서하되"
+      "서로 용납하여 피차 용서하되",
+        "화를 내기보다는 용서하고"
     ],
     "locations": [
       {
@@ -184171,7 +185884,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-col-4-1",
     "title": "상전은 의와 공평을 베풀라",
     "aliases": [
-      "의와 공평을 종들에게"
+      "의와 공평을 종들에게",
+        "주인 된 자들은 종들에게 공정하게 대하며"
     ],
     "locations": [
       {
@@ -184201,7 +185915,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-col-4-2",
     "title": "기도를 계속하고 감사로 깨어 있으라",
     "aliases": [
-      "기도를 계속하고 기도에 감사함으로"
+      "기도를 계속하고 기도에 감사함으로",
+        "항상 기도하며 깨어 있으십시오"
     ],
     "locations": [
       {
@@ -184261,7 +185976,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-col-4-5",
     "title": "밖에 있는 사람을 지혜롭게 대함",
     "aliases": [
-      "외인에게 대해서는 지혜로"
+      "외인에게 대해서는 지혜로",
+        "믿지 않는 사람들을 대할 때는 지혜롭게 행동하십시오"
     ],
     "locations": [
       {
@@ -184354,7 +186070,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1th-1-3",
     "title": "믿음의 역사와 사랑의 수고와 소망의 인내",
     "aliases": [
-      "소망의 인내"
+      "소망의 인내",
+        "사랑으로 행한 수고와"
     ],
     "locations": [
       {
@@ -184384,7 +186101,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1th-1-4",
     "title": "하나님께 택하심을 받은 형제들",
     "aliases": [
-      "너희를 택하심을 아노라"
+      "너희를 택하심을 아노라",
+        "하나님께서 여러분을 사랑하셔서 그분의 백성으로 삼으신 것"
     ],
     "locations": [
       {
@@ -184414,7 +186132,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1th-1-6",
     "title": "환난 중의 기쁨으로 말씀을 받음",
     "aliases": [
-      "많은 환난 가운데서 성령의 기쁨으로"
+      "많은 환난 가운데서 성령의 기쁨으로",
+        "고난을 받는 중에도 성령이 주는 기쁨을 통해"
     ],
     "locations": [
       {
@@ -184473,7 +186192,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1th-1-10",
     "title": "장래의 노하심에서 건지시는 예수",
     "aliases": [
-      "장래의 노하심에서 우리를 건지시는"
+      "장래의 노하심에서 우리를 건지시는",
+        "하나님의 노여운 심판에서 우리를 구해 주실 것입니다"
     ],
     "locations": [
       {
@@ -184503,7 +186223,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1th-2-2",
     "title": "빌립보에서 고난당하고도 담대히 전함",
     "aliases": [
-      "빌립보에서 고난과 능욕"
+      "빌립보에서 고난과 능욕",
+        "여러분에게 담대하게 하나님의 복음을 전할 수 있도록"
     ],
     "locations": [
       {
@@ -184533,7 +186254,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1th-2-4",
     "title": "사람이 아닌 마음을 감찰하시는 하나님을 기쁘시게",
     "aliases": [
-      "사람을 기쁘게 하려 함이 아니요"
+      "사람을 기쁘게 하려 함이 아니요",
+        "우리 마음을 살피시는 하나님을 기쁘시게 해 드리기 원합니다"
     ],
     "locations": [
       {
@@ -184563,7 +186285,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1th-2-7",
     "title": "유모가 자녀를 기르듯 한 온유함",
     "aliases": [
-      "유모가 자기 자녀를 기름과 같이"
+      "유모가 자기 자녀를 기름과 같이",
+        "어린 자녀를 돌보는 어머니의 심정으로"
     ],
     "locations": [
       {
@@ -184593,7 +186316,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1th-2-11",
     "title": "아버지가 자녀에게 하듯 권면함",
     "aliases": [
-      "아버지가 자기 자녀에게 하듯"
+      "아버지가 자기 자녀에게 하듯",
+        "아버지가 자녀를 대하듯 여러분 한 사람 한 사람을 돌보아 주었습니다"
     ],
     "locations": [
       {
@@ -184653,7 +186377,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1th-2-19",
     "title": "소망과 기쁨과 자랑의 면류관",
     "aliases": [
-      "자랑의 면류관이 무엇이냐"
+      "자랑의 면류관이 무엇이냐",
+        "여러분은 우리의 소망이요, 기쁨이요, 면류관입니다"
     ],
     "locations": [
       {
@@ -184683,7 +186408,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1th-3-2",
     "title": "믿음을 굳게 하려고 보낸 디모데",
     "aliases": [
-      "그리스도의 복음을 전하는 하나님의 일꾼인 디모데"
+      "그리스도의 복음을 전하는 하나님의 일꾼인 디모데",
+        "그가 여러분을 굳세게 하고, 믿음 안에서 여러분을 위로해 줄 것입니다"
     ],
     "locations": [
       {
@@ -184743,7 +186469,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1th-3-9",
     "title": "교인들로 말미암은 모든 기쁨",
     "aliases": [
-      "너희로 말미암아 모든 기쁨으로 기뻐"
+      "너희로 말미암아 모든 기쁨으로 기뻐",
+        "이 모든 기쁨과 감사를 어떻게 다 표현할 수 있겠습니까"
     ],
     "locations": [
       {
@@ -184773,7 +186500,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1th-3-13",
     "title": "재림 때 거룩함에 흠이 없기를",
     "aliases": [
-      "거룩함에 흠이 없게"
+      "거룩함에 흠이 없게",
+        "여러분은 아버지 하나님 앞에서 거룩하고 흠없이 서게 될 것입니다"
     ],
     "locations": [
       {
@@ -184833,7 +186561,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1th-4-3",
     "title": "하나님의 뜻은 너희의 거룩함",
     "aliases": [
-      "하나님의 뜻은 이것이니 너희의 거룩함이라"
+      "하나님의 뜻은 이것이니 너희의 거룩함이라",
+        "성적인 모든 죄를 피하고 거룩하고 순결하게 살기를 원하십니다"
     ],
     "locations": [
       {
@@ -184863,7 +186592,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1th-4-7",
     "title": "부르심은 거룩하게 하심",
     "aliases": [
-      "부정하게 하심이 아니요"
+      "부정하게 하심이 아니요",
+        "하나님께서는 거룩하게 살아가도록 우리를 불러 주셨으며"
     ],
     "locations": [
       {
@@ -184893,7 +186623,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1th-4-11",
     "title": "조용히 자기 일을 하고 손으로 일함",
     "aliases": [
-      "조용히 자기 일을 하고"
+      "조용히 자기 일을 하고",
+        "자신의 일에도 정성을 다하기 바랍니다"
     ],
     "locations": [
       {
@@ -184923,7 +186654,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1th-4-13",
     "title": "자는 자들에 관한 소망",
     "aliases": [
-      "자는 자들에 관하여는"
+      "자는 자들에 관하여는",
+        "죽은 자들에 관해서 아무것도 모르는 것을 원하지 않습니다"
     ],
     "locations": [
       {
@@ -184983,7 +186715,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1th-5-2",
     "title": "주의 날은 도둑같이 이른다",
     "aliases": [
-      "주의 날이 밤에 도둑 같이 이를 줄을"
+      "주의 날이 밤에 도둑 같이 이를 줄을",
+        "한밤중의 도적같이 임할 것이기 때문입니다"
     ],
     "locations": [
       {
@@ -185043,7 +186776,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1th-5-9",
     "title": "노하심이 아니라 구원을 얻게 하심",
     "aliases": [
-      "구원을 받게 하심이라"
+      "구원을 받게 하심이라",
+        "우리를 벌하기 위해 택하신 것이 아니라"
     ],
     "locations": [
       {
@@ -185073,7 +186807,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1th-5-12",
     "title": "수고하며 다스리는 지도자를 존경하라",
     "aliases": [
-      "주 안에서 너희를 다스리며 권하는 자들을"
+      "주 안에서 너희를 다스리며 권하는 자들을",
+        "수고하고 주님의 말씀을 가르치며 지도하는 분들을 존경하십시오"
     ],
     "locations": [
       {
@@ -185162,7 +186897,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1th-5-23",
     "title": "영과 혼과 몸이 흠 없게 보전되기를",
     "aliases": [
-      "온 영과 혼과 몸이"
+      "온 영과 혼과 몸이",
+        "여러분의 온몸, 즉 영과 혼과 육신 모두를"
     ],
     "locations": [
       {
@@ -185226,7 +186962,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2th-1-4",
     "title": "박해 중에도 인내와 믿음을 자랑함",
     "aliases": [
-      "너희 인내와 믿음으로 말미암아"
+      "너희 인내와 믿음으로 말미암아",
+        "심한 핍박을 받고 많은 어려움을 겪으면서도 믿음을 굳게 지키고 있는"
     ],
     "locations": [
       {
@@ -185256,7 +186993,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2th-1-6",
     "title": "환난을 주는 자에게 갚으시는 하나님",
     "aliases": [
-      "환난으로 갚으시고"
+      "환난으로 갚으시고",
+        "여러분에게 괴로움과 고통을 준 사람들에게 그대로 갚으십니다"
     ],
     "locations": [
       {
@@ -185286,7 +187024,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2th-1-10",
     "title": "그 날에 강림하사 영광을 받으심",
     "aliases": [
-      "그 날에 그가 강림하사"
+      "그 날에 그가 강림하사",
+        "주님을 찬양하는 거룩한 백성에게 영광을 받으실 것입니다"
     ],
     "locations": [
       {
@@ -185316,7 +187055,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2th-2-1",
     "title": "주의 강림과 우리가 그 앞에 모임",
     "aliases": [
-      "우리 주 예수 그리스도의 강림하심과 우리가 그 앞에 모임"
+      "우리 주 예수 그리스도의 강림하심과 우리가 그 앞에 모임",
+        "그분 앞에서 우리 모두가 함께 모이게 될 그 시간"
     ],
     "locations": [
       {
@@ -185376,7 +187116,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2th-2-4",
     "title": "하나님의 성전에 앉아 자기를 하나님이라 함",
     "aliases": [
-      "하나님의 성전에 앉아"
+      "하나님의 성전에 앉아",
+        "그 곳에 앉아서 자기가 하나님이라 주장할 것입니다"
     ],
     "locations": [
       {
@@ -185406,7 +187147,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2th-2-8",
     "title": "주께서 입의 기운으로 멸하심",
     "aliases": [
-      "그 입의 기운으로"
+      "그 입의 기운으로",
+        "그분의 입에서 나오는 입김으로 그를 죽이고 말 것입니다"
     ],
     "locations": [
       {
@@ -185436,7 +187178,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2th-2-10",
     "title": "진리의 사랑을 받지 않아 멸망함",
     "aliases": [
-      "진리의 사랑을 받지 아니하여"
+      "진리의 사랑을 받지 아니하여",
+        "진리를 사랑하고 따르기를 거부한 사람들"
     ],
     "locations": [
       {
@@ -185467,7 +187210,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2th-2-15",
     "title": "배운 전통을 굳게 지키라",
     "aliases": [
-      "가르침을 받은 전통을 지키라"
+      "가르침을 받은 전통을 지키라",
+        "우리가 말과 편지로 전했던 복음을 계속 간직하기 바랍니다"
     ],
     "locations": [
       {
@@ -185497,7 +187241,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2th-3-1",
     "title": "주의 말씀이 퍼져 나가도록 기도해 달라",
     "aliases": [
-      "주의 말씀이 너희 가운데서와 같이 퍼져"
+      "주의 말씀이 너희 가운데서와 같이 퍼져",
+        "주님의 말씀이 하루 빨리 전해지도록 기도하시기 바랍니다"
     ],
     "locations": [
       {
@@ -185557,7 +187302,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2th-3-6",
     "title": "게으르게 행하는 형제에게서 떠나라",
     "aliases": [
-      "게으르게 행하고"
+      "게으르게 행하고",
+        "일하기를 싫어하는 형제들을 멀리하십시오"
     ],
     "locations": [
       {
@@ -185588,7 +187334,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2th-3-12",
     "title": "조용히 일하여 자기 양식을 먹으라",
     "aliases": [
-      "조용히 일하여 자기 양식을 먹으라"
+      "조용히 일하여 자기 양식을 먹으라",
+        "조용히 일하며 자기 양식을 스스로 마련하도록 하십시오"
     ],
     "locations": [
       {
@@ -185618,7 +187365,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2th-3-14",
     "title": "편지를 따르지 않는 자를 부끄럽게 하라",
     "aliases": [
-      "그 사람을 지목하여 사귀지 말고"
+      "그 사람을 지목하여 사귀지 말고",
+        "그 사람 스스로 부끄러움을 느끼게 될 것입니다"
     ],
     "locations": [
       {
