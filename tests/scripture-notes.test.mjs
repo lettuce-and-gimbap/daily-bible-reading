@@ -60,7 +60,7 @@ test('합쳐진 역본 절은 행 번호가 한 절이어도 문맥 각주를 �
  assert.match(segment.innerHTML,/chron-2-20-trust/);
 });
 test('문맥 각주는 근거 절과 범위 및 별칭을 갖는다',()=>{
- const notes=ctx.window.ScriptureNotesData.contextualTerms;assert.equal(notes.length,5935);
+ const notes=ctx.window.ScriptureNotesData.contextualTerms;assert.equal(notes.length,5954);
  const ids=new Set([...terms,...passages].map(n=>n.id));
  for(const n of notes){assert(!ids.has(n.id));ids.add(n.id);assert(n.aliases.length&&n.refs.length&&n.locations.length&&n.summary);for(const l of n.locations){assert(['gen','exo','lev','num','deu','jos','jdg','rut','1sa','2sa','1ki','2ki','1ch','2ch','ezr','neh','est','job','psa','pro','ecc','sng','isa','jer','lam','ezk','dan','hos','jol','amo','oba','jnh','mic','nam','hab','zep','hag','zec','mal','mat','mrk','luk','jhn','act','rom','1co','2co','gal','eph','php','col','1th','2th','1ti','2ti','tit','phm','heb','jas','1pe','2pe','1jn','2jn','3jn','jud','rev'].includes(l.code));assert(l.chapter>0&&l.lo>0&&l.hi>=l.lo);}for(const ref of n.refs){const m=ref.match(/^(.+?) (\d+):(\d+)(?:[-–](\d+))?$/);assert(m,ref);const book=books.find(b=>b.name===m[1]);assert(book&&Number(m[2])<=book.chapters,ref);assert(Number(m[3])>0&&Number(m[4]||m[3])>=Number(m[3]),ref);}for(const link of n.sourceLinks||[])assert.equal(new URL(link.url).protocol,'https:');} for(const [code,count] of [['gen',50],['exo',40],['1ch',29],['2ch',36]]){const chapters=new Set(notes.flatMap(n=>n.locations).filter(l=>l.code===code).map(l=>l.chapter));assert.equal(chapters.size,count);}
 });
