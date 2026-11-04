@@ -29,12 +29,26 @@ test('문맥 각주는 정확한 권·장·단일 절에서만 일반 용어보�
  assert.match(render('여호와를 믿으시오',{...current,edition:'easy'}),/data-study-term="chron-2-20-trust"/);
  assert.doesNotMatch(render('신뢰하라',{...current,chapter:19}),/chron-2-20-trust/);
  assert.doesNotMatch(render('신뢰하라',{...current,lo:19}),/chron-2-20-trust/);
+ assert.doesNotMatch(render('신뢰하라',{...current,edition:'saenew'}),/chron-2-20-trust/);
  assert.match(render('새 수레',{code:'1ch',chapter:13,lo:7,hi:7,edition:'gae'}),/chron-1-13-cart/);
  assert.doesNotMatch(render('새 수레',{code:'1ch',chapter:13,lo:6,hi:8,edition:'gae'}),/chron-1-13-cart/);
  assert.equal(render('<script>',current),'&lt;script&gt;');
 });
+test('합쳐진 역본 절은 행 번호가 한 절이어도 문맥 각주를 적용하지 않는다',()=>{
+ const document={addEventListener(){},createTreeWalker(){return {nextNode(){return false}}}};
+ const localStorage={getItem(){return null},setItem(){}};
+ const env={window:{ScriptureNotesData:ctx.window.ScriptureNotesData},document,localStorage,NodeFilter:{SHOW_TEXT:4},CHAPTERS:[{book:{code:'2ch'},chap:20}],console};
+ vm.runInNewContext(fs.readFileSync('js/features/scripture-study.js','utf8'),env);
+ const segment={dataset:{edition:'easy',studyLabel:'20-21'},textContent:'여호와를 믿으시오',hasAttribute(name){return name==='data-study-label'},innerHTML:''};
+ const row={dataset:{},querySelector(s){return s==='.vp-num'?{textContent:'20'}:null},querySelectorAll(s){return s==='.study-version'?[segment]:[]},nextElementSibling:null};
+ const root={dataset:{},querySelectorAll(s){return s==='.vp-row'?[row]:[]},querySelector(){return null}};
+ env.window.ScriptureStudy.mount(root,['0:gae:easy:20']);
+ assert.doesNotMatch(segment.innerHTML,/chron-2-20-trust/);
+ segment.dataset.studyLabel='20';env.window.ScriptureStudy.mount(root,['0:gae:easy:20']);
+ assert.match(segment.innerHTML,/chron-2-20-trust/);
+});
 test('문맥 각주는 근거 절과 범위 및 별칭을 갖는다',()=>{
- const notes=ctx.window.ScriptureNotesData.contextualTerms;assert.equal(notes.length,4);
+ const notes=ctx.window.ScriptureNotesData.contextualTerms;assert.equal(notes.length,111);
  const ids=new Set([...terms,...passages].map(n=>n.id));
- for(const n of notes){assert(!ids.has(n.id));ids.add(n.id);assert(n.aliases.length&&n.refs.length&&n.locations.length&&n.summary);for(const l of n.locations){assert(['1ch','2ch'].includes(l.code));assert(l.chapter>0&&l.lo>0&&l.hi>=l.lo);}for(const link of n.sourceLinks||[])assert.equal(new URL(link.url).protocol,'https:');}
+ for(const n of notes){assert(!ids.has(n.id));ids.add(n.id);assert(n.aliases.length&&n.refs.length&&n.locations.length&&n.summary);for(const l of n.locations){assert(['1ch','2ch'].includes(l.code));assert(l.chapter>0&&l.lo>0&&l.hi>=l.lo);}for(const ref of n.refs){const m=ref.match(/^(.+?) (\d+):(\d+)(?:[-–](\d+))?$/);assert(m,ref);const book=books.find(b=>b.name===m[1]);assert(book&&Number(m[2])<=book.chapters,ref);assert(Number(m[3])>0&&Number(m[4]||m[3])>=Number(m[3]),ref);}for(const link of n.sourceLinks||[])assert.equal(new URL(link.url).protocol,'https:');} for(const [code,count] of [['1ch',29],['2ch',36]]){const chapters=new Set(notes.flatMap(n=>n.locations).filter(l=>l.code===code).map(l=>l.chapter));assert.equal(chapters.size,count);}
 });

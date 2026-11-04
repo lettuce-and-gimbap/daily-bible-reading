@@ -365,7 +365,8 @@ test('창세기부터 요한계시록까지 1,189장 관계선은 모두 양방�
    }
   }
  }
- assert.equal(chapterCount,1189);assert.equal(edgeCount,3799);assert.ok(fallbackCount>1000);
+ // 에스겔 34장의 비유 속 양 떼는 인물 간 조우 관계에서 제외한다.
+ assert.equal(chapterCount,1189);assert.equal(edgeCount,3798);assert.ok(fallbackCount>1000);
 });
 
 test('창세기부터 룻기까지 모든 관계도 연결은 양방향 특수 대화 후보를 만든다',()=>{

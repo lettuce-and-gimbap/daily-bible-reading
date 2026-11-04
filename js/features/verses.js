@@ -256,7 +256,8 @@ async function versePairs(idx, want, vers) {
   const second = list.filter((v) => v2 && of(v) === v2);
   return list.filter((v) => of(v) === v1 && hit(v)).map((v) => {
     const [a, b] = labelSpan(v.label);
-    return { label: v.label, texts: [v.text, ...second.filter((w) => { const s = labelSpan(w.label)[0]; return s >= a && s <= b; }).map((w) => w.text).slice(0, 1)] };
+    const matched = second.filter((w) => { const s = labelSpan(w.label)[0]; return s >= a && s <= b; }).slice(0, 1);
+    return { label: v.label, texts: [v.text, ...matched.map((w) => w.text)], labels: [v.label, ...matched.map((w) => w.label)] };
   });
 }
 function versePairsHtml(rows, names) {

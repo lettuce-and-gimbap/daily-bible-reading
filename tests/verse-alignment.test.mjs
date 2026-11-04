@@ -1,6 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {createRequire} from 'node:module';
+import fs from 'node:fs';
+import vm from 'node:vm';
 
 const require=createRequire(import.meta.url);
 const {alignVerseRows}=require('../js/features/verse-alignment.js');
@@ -24,4 +26,11 @@ test('두세 역본은 첫 절에 병합 본문을 놓고 다음 절 칸을 비�
   assert.equal(rows[1].cells[1].text,'23절');
   if(lists.length===3) assert.equal(rows[1].cells[2].text,'Verse 23');
  }
+});
+
+test('QT 절 쌍은 각 역본의 실제 병합 범위를 별도로 보존한다',async()=>{
+ const env={CHAPTERS:[{book:{code:'2ch'}}],versionFor:code=>code,fixture:[{ver:'gae',label:'20',text:'첫 역본'},{ver:'easy',label:'20-21',text:'병합된 역본'}]};
+ vm.runInNewContext(fs.readFileSync('js/features/verses.js','utf8')+'\nchapterVerses=async()=>fixture;globalThis.testPairs=versePairs;',env);
+ const rows=await env.testPairs(0,()=>true,['gae','easy']);
+ assert.equal(rows[0].label,'20');assert.deepEqual([...rows[0].labels],['20','20-21']);
 });

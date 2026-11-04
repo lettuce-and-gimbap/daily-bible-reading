@@ -77,7 +77,7 @@ async function renderVersePicker(body, target, idx) {
   const rows = alignVerseRows(lists);
   const multiple = lists.length > 1;
   const renderCell = (entry, edition) => entry
-    ? `<span class="vp-edition"><i>${esc(vname(edition))}${labelSpan(entry.label)[1] > labelSpan(entry.label)[0] ? ` · ${esc(entry.label)}절` : ""}</i><span class="study-version" data-edition="${esc(edition)}">${ScriptureStudy.glossaryHtml(entry.text)}</span></span>`
+    ? `<span class="vp-edition"><i>${esc(vname(edition))}${labelSpan(entry.label)[1] > labelSpan(entry.label)[0] ? ` · ${esc(entry.label)}절` : ""}</i><span class="study-version" data-edition="${esc(edition)}" data-study-label="${esc(entry.label)}">${ScriptureStudy.glossaryHtml(entry.text)}</span></span>`
     : `<span class="vp-edition vp-empty" aria-label="${esc(vname(edition))} 이 절의 별도 본문 없음"></span>`;
 
   const count = () => root.querySelectorAll("input[data-a]:checked").length;
@@ -94,7 +94,7 @@ async function renderVersePicker(body, target, idx) {
       <label class="vp-row">
         <input type="checkbox" class="sr-only" data-a="${r.a}" data-b="${r.b}" ${[...pickSel].some((n) => n >= r.a && n <= r.b) ? "checked" : ""}>
         <span class="vp-num">${esc(r.label)}</span>
-        <span class="vp-txt">${multiple ? r.cells.map((entry, i) => renderCell(entry, editions[i])).join("") : `<span class="study-version" data-edition="${esc(ver1)}">${ScriptureStudy.glossaryHtml(r.cells[0].text)}</span>`}</span>
+        <span class="vp-txt">${multiple ? r.cells.map((entry, i) => renderCell(entry, editions[i])).join("") : `<span class="study-version" data-edition="${esc(ver1)}" data-study-label="${esc(r.cells[0].label)}">${ScriptureStudy.glossaryHtml(r.cells[0].text)}</span>`}</span>
       </label>`).join("")}</div>
     ${multiple ? `<div class="vp-edsel" hidden>
       <div class="vp-edsel-head"><p class="vp-edsel-title">붙일 역본을 고르세요</p><button class="btn text small" data-edsel="cancel">취소</button></div>
