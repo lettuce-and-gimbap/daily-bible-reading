@@ -38,6 +38,10 @@ test('문맥 각주는 정확한 권·장·단일 절에서만 일반 용어보�
  assert.match(render('저를 남겨 두어',{code:'gen',chapter:44,lo:33,hi:33,edition:'easy'}),/context-gen-44-33/);
  assert.doesNotMatch(render('휘장',{code:'exo',chapter:26,lo:32,hi:32,edition:'gae'}),/context-exo-26-33/);
  assert.match(render('휘장',{code:'exo',chapter:26,lo:33,hi:33,edition:'gae'}),/context-exo-26-33/);
+ assert.match(render('동물들을 다스려라',{code:'gen',chapter:1,lo:28,hi:28,edition:'easy'}),/context-gen-1-28/);
+ assert.match(render('남자가 혼자 있는 것이 좋지 않으니, 그를 도울 짝',{code:'gen',chapter:2,lo:18,hi:18,edition:'easy'}),/context-gen-2-18/);
+ assert.doesNotMatch(render('그를 도울 짝',{code:'gen',chapter:2,lo:17,hi:17,edition:'easy'}),/context-gen-2-18/);
+ assert.match(render('여호와께서는 모세와 대면하여 말씀하시며',{code:'exo',chapter:33,lo:11,hi:11,edition:'gae'}),/context-exo-33-11/);
  assert.match(render('새 수레',{code:'1ch',chapter:13,lo:7,hi:7,edition:'gae'}),/chron-1-13-cart/);
  assert.doesNotMatch(render('새 수레',{code:'1ch',chapter:13,lo:6,hi:8,edition:'gae'}),/chron-1-13-cart/);
  assert.equal(render('<script>',current),'&lt;script&gt;');
@@ -56,7 +60,11 @@ test('합쳐진 역본 절은 행 번호가 한 절이어도 문맥 각주를 �
  assert.match(segment.innerHTML,/chron-2-20-trust/);
 });
 test('문맥 각주는 근거 절과 범위 및 별칭을 갖는다',()=>{
- const notes=ctx.window.ScriptureNotesData.contextualTerms;assert.equal(notes.length,202);
+ const notes=ctx.window.ScriptureNotesData.contextualTerms;assert.equal(notes.length,303);
  const ids=new Set([...terms,...passages].map(n=>n.id));
  for(const n of notes){assert(!ids.has(n.id));ids.add(n.id);assert(n.aliases.length&&n.refs.length&&n.locations.length&&n.summary);for(const l of n.locations){assert(['gen','exo','1ch','2ch'].includes(l.code));assert(l.chapter>0&&l.lo>0&&l.hi>=l.lo);}for(const ref of n.refs){const m=ref.match(/^(.+?) (\d+):(\d+)(?:[-–](\d+))?$/);assert(m,ref);const book=books.find(b=>b.name===m[1]);assert(book&&Number(m[2])<=book.chapters,ref);assert(Number(m[3])>0&&Number(m[4]||m[3])>=Number(m[3]),ref);}for(const link of n.sourceLinks||[])assert.equal(new URL(link.url).protocol,'https:');} for(const [code,count] of [['gen',50],['exo',40],['1ch',29],['2ch',36]]){const chapters=new Set(notes.flatMap(n=>n.locations).filter(l=>l.code===code).map(l=>l.chapter));assert.equal(chapters.size,count);}
+});
+
+test('창세기와 출애굽기 문맥 각주는 연결 절 자체를 근거에 포함한다',()=>{
+ for(const n of ctx.window.ScriptureNotesData.contextualTerms.filter(n=>n.id.startsWith('context-gen-')||n.id.startsWith('context-exo-'))){const l=n.locations[0],name=l.code==='gen'?'창세기':'출애굽기';assert(n.refs.some(ref=>{const m=ref.match(/^(.+?) (\d+):(\d+)(?:[-–](\d+))?$/);return m&&m[1]===name&&Number(m[2])===l.chapter&&Number(m[3])<=l.lo&&Number(m[4]||m[3])>=l.hi;}),n.id);}
 });
