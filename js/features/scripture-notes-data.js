@@ -15334,35 +15334,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-gen-26-8",
-    "title": "창으로 내다본 아비멜렉",
-    "aliases": [
-      "창으로",
-      "창 밖"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 26,
-        "lo": 8,
-        "hi": 8,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "아비멜렉이 창으로 내다보다가 이삭이 리브가를 껴안은 모습을 보게 돼요.",
-    "detail": "이 장면이 9절에서 아비멜렉이 이삭을 불러 따지는 계기가 돼요.",
-    "caution": "이삭의 거짓말이 드러난 과정을 본문이 기록한 그대로 읽어요.",
-    "refs": [
-      "창세기 26:8-9"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-26-12",
     "title": "흉년 가운데 거둔 백 배",
     "aliases": [
@@ -20697,35 +20668,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "refs": [
       "창세기 45:22",
       "창세기 43:34"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-45-24",
-    "title": "길에서 다투지 말라",
-    "aliases": [
-      "다투지 말라",
-      "다투지 마세요"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 45,
-        "lo": 24,
-        "hi": 24,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "요셉은 형들을 돌려보내며 길에서 다투지 말라고 말해요.",
-    "detail": "본문은 이 당부의 이유를 설명하지 않아요.",
-    "caution": "형들이 서로 탓할까 염려한 말로 읽는 해석이 있지만, 본문이 이유를 밝히지 않으므로 단정하지 않아요.",
-    "refs": [
-      "창세기 45:24"
     ],
     "category": "본문 문맥",
     "lens": "",
