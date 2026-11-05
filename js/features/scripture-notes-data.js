@@ -6275,36 +6275,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-gen-47-12",
-    "title": "요셉이 가족을 봉양함",
-    "aliases": [
-      "식구",
-      "음식"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 47,
-        "lo": 12,
-        "hi": 12,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "요셉은 아버지와 형제들과 그 집안에 먹을 것을 공급해요.",
-    "detail": "야곱의 가족은 고센에 자리 잡고, 기근이 심해진 애굽과 가나안의 상황도 이어서 기록돼요.",
-    "caution": "가족을 위한 공급과 뒤에 나오는 애굽 백성의 처지를 함께 살펴요.",
-    "refs": [
-      "창세기 47:12",
-      "창세기 47:11-13"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-48-19",
     "title": "에브라임과 므낫세의 축복",
     "aliases": [
@@ -10456,35 +10426,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "caution": "이름의 정확한 어원과 뜻에는 여러 설명이 있으므로 단정하지 않아요.",
     "refs": [
       "창세기 41:41-45"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-45-11",
-    "title": "남은 흉년 동안 가족을 돌볼 계획",
-    "aliases": [
-      "흉년",
-      "가뭄"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 45,
-        "lo": 11,
-        "hi": 11,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "요셉은 앞으로도 흉년이 이어질 것이므로 아버지와 가족을 봉양하겠다고 전해요.",
-    "detail": "그는 가족을 가까운 고센으로 오게 하라고 형들에게 부탁해요.",
-    "caution": "이 약속은 당시 기근 속의 가족에게 한 구체적인 말이에요.",
-    "refs": [
-      "창세기 45:9-11"
     ],
     "category": "본문 문맥",
     "lens": "",
@@ -22578,36 +22519,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "refs": [
       "창세기 49:33",
       "창세기 25:8"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-50-2",
-    "title": "야곱의 시신을 준비함",
-    "aliases": [
-      "의원",
-      "의사"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 50,
-        "lo": 2,
-        "hi": 2,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "요셉은 의원들에게 명하여 아버지의 몸을 향으로 처리하게 해요.",
-    "detail": "3절은 사십 일이 걸렸고 애굽 사람들이 칠십 일 동안 곡했다고 말해요. 26절에서 요셉의 몸도 처리해 입관해요.",
-    "caution": "본문이 말한 기간과 절차를 그대로 읽고, 다른 문화의 장례 방식과 단정해서 연결하지 않아요.",
-    "refs": [
-      "창세기 50:1-3",
-      "창세기 50:26"
     ],
     "category": "본문 문맥",
     "lens": "",
