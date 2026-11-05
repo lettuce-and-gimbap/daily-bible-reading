@@ -6656,65 +6656,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-exo-36-7",
-    "title": "넉넉하게 모인 성막 재료",
-    "aliases": [
-      "재료",
-      "물건"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 36,
-        "lo": 7,
-        "hi": 7,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "백성이 가져온 성막 재료가 모든 일에 충분하고도 남았어요.",
-    "detail": "일하는 사람들이 더 이상 가져오지 못하게 해 달라고 모세에게 알렸고 모세는 추가 예물을 그치게 했어요.",
-    "caution": "공동체의 자원을 필요한 목적에 맞게 다룬 앞뒤 상황도 함께 보아요.",
-    "refs": [
-      "출애굽기 36:7",
-      "출애굽기 36:4-7"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-exo-37-1",
-    "title": "브살렐이 만든 궤",
-    "aliases": [
-      "궤"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 37,
-        "lo": 1,
-        "hi": 1,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "브살렐은 앞서 주어진 성막 제작 지시에 따라 조각목으로 궤를 만들어요.",
-    "detail": "이 장은 궤와 속죄소뿐 아니라 상과 등잔대와 분향단의 제작도 기록해요.",
-    "caution": "궤 자체가 하나님을 조종하는 물건이라는 뜻은 아니에요.",
-    "refs": [
-      "출애굽기 37:1",
-      "출애굽기 37:1-5"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-exo-38-8",
     "title": "여인들의 거울로 만든 물두멍",
     "aliases": [
@@ -30711,37 +30652,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "caution": "같은 말이 반복되는 점을 순종의 강조로 읽어요.",
     "refs": [
       "출애굽기 39:42-43"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-exo-40-2",
-    "title": "성막을 세울 날",
-    "aliases": [
-      "첫째 달 초하루",
-      "첫째 달 초하루에"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 40,
-        "lo": 2,
-        "hi": 2,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "여호와께서 첫째 달 초하루에 성막 곧 회막을 세우라고 하세요.",
-    "detail": "17절은 둘째 해 첫째 달 초하루에 성막을 세웠다고 해요. 민수기 1장 1절은 애굽에서 나온 후 둘째 해 둘째 달 첫째 날의 일을 기록해요.",
-    "caution": "날짜를 이어서 읽되, 기간의 의미를 본문 밖에서 덧붙여 단정하지 않아요.",
-    "refs": [
-      "출애굽기 40:2",
-      "출애굽기 40:17",
-      "민수기 1:1"
     ],
     "category": "본문 문맥",
     "lens": "",
