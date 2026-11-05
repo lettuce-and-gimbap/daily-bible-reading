@@ -122619,36 +122619,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-2ch-1-7",
-    "title": "하나님이 구하라고 하심",
-    "aliases": [
-      "내가 네게 무엇을 주랴 너는 구하라",
-        "무엇이든지 네가 원하는 것을 구하여라"
-    ],
-    "locations": [
-      {
-        "code": "2ch",
-        "chapter": 1,
-        "lo": 7,
-        "hi": 7,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "그 밤 하나님이 솔로몬에게 나타나 무엇이든 구하라고 하셨다고 말해요.",
-    "detail": "솔로몬의 간구(8~10절)는 이 질문에 대한 대답이에요. 하나님이 먼저 물으신 것이 이 장의 출발점이에요.",
-    "caution": "본문은 하나님이 나타나신 방식(꿈인지 환상인지)을 설명하지 않아요.",
-    "refs": [
-      "역대하 1:7",
-      "역대하 1:8-10"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-2ch-1-12",
     "title": "지혜 외에 부와 영광을 더하심",
     "aliases": [
