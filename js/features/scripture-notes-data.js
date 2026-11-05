@@ -14860,35 +14860,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-gen-24-65",
-    "title": "얼굴을 가린 리브가",
-    "aliases": [
-      "너울",
-      "베일"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 24,
-        "lo": 65,
-        "hi": 65,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "리브가는 맞은편에서 오는 사람이 종의 주인이라는 말을 듣고 너울로 얼굴을 가려요.",
-    "detail": "개역개정은 '너울', 쉬운성경은 '베일'로 옮겨요.",
-    "caution": "이 풍습의 의미를 본문이 설명하지 않으므로 뜻을 덧붙이지 않아요.",
-    "refs": [
-      "창세기 24:64-65"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-24-67",
     "title": "사라의 장막에서 얻은 위로",
     "aliases": [
@@ -20272,35 +20243,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "refs": [
       "창세기 43:32",
       "창세기 46:34"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-43-33",
-    "title": "나이순의 자리",
-    "aliases": [
-      "나이에 따라",
-      "나이 순서대로"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 43,
-        "lo": 33,
-        "hi": 33,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "형들은 나이에 따라 요셉 앞에 앉게 되어 서로 이상히 여겨요.",
-    "detail": "본문은 요셉이 어떻게 나이를 알았는지 설명하지 않아요.",
-    "caution": "형들이 놀란 이유를 본문이 말한 범위에서만 읽어요.",
-    "refs": [
-      "창세기 43:33"
     ],
     "category": "본문 문맥",
     "lens": "",
