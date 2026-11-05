@@ -58791,7 +58791,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1sa-21-11",
     "title": "블레셋 왕 앞의 다윗",
     "aliases": [
-      "이 사람은 이스라엘 사람들의 왕 다윗입니다"
+      "이 사람은 이스라엘 사람들의 왕 다윗입니다",
+        "이는 그 땅의 왕 다윗이 아니니이까"
     ],
     "locations": [
       {
@@ -60566,7 +60567,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "title": "야베스 용사들의 은혜",
     "aliases": [
       "사울과 그의 아들들의 시체를 벧산의 성벽에서 내려가지고",
-      "사울과 그의 아들들의 시체를 벧산의 성벽에서 내려가지고"
+      "사울의 시체와 그의 아들들의 시체를 벧산 성벽에서 내려 가지고"
     ],
     "locations": [
       {
@@ -62938,7 +62939,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "title": "얼굴을 보지 못하게",
     "aliases": [
       "나의 얼굴을 보지 못할 것이다",
-      "압살롬을 자기 집으로 가게 하여라"
+      "압살롬을 자기 집으로 가게 하여라",
+        "내 얼굴을 볼 수 없게 하라"
     ],
     "locations": [
       {
@@ -64592,7 +64594,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-1-30",
     "title": "오늘 시행하겠소",
     "aliases": [
-      "오늘 시행하겠소"
+      "오늘 시행하겠소",
+        "내가 오늘 그대로 행하리라"
     ],
     "locations": [
       {
