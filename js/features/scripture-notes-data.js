@@ -20290,35 +20290,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-38-7",
-    "title": "엘의 악함",
-    "aliases": [
-      "악하므로",
-      "나쁜 일을 했으므로"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 38,
-        "lo": 7,
-        "hi": 7,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "유다의 맏아들 엘이 여호와가 보시기에 악하므로 여호와께서 그를 죽이세요.",
-    "detail": "본문은 엘이 어떤 악을 행했는지 구체적으로 말하지 않아요.",
-    "caution": "본문에 없는 죄목을 짐작해서 덧붙이지 않아요.",
-    "refs": [
-      "창세기 38:6-7"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
+
   {
     "id": "context-gen-38-9",
     "title": "오난이 거절한 책임",
@@ -27546,35 +27518,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-exo-16-13",
-    "title": "메추라기와 이슬",
-    "aliases": [
-      "메추라기"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 16,
-        "lo": 13,
-        "hi": 13,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "저녁에는 메추라기가 와서 진에 덮이고 아침에는 이슬이 진 주위에 있어요.",
-    "detail": "민수기 11장 31절에서도 바람이 메추라기를 몰아왔다고 기록해요.",
-    "caution": "두 기록의 상황을 서로 구분해서 읽어요.",
-    "refs": [
-      "출애굽기 16:13",
-      "민수기 11:31"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
+
   {
     "id": "context-exo-16-15b",
     "title": "이것이 무엇이냐",
@@ -29258,36 +29202,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-exo-23-13",
-    "title": "다른 신들의 이름",
-    "aliases": [
-      "다른 신들의 이름",
-      "다른 신들의 이름은"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 23,
-        "lo": 13,
-        "hi": 13,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "다른 신들의 이름은 부르지도 말며 입에서 들리게도 하지 말라고 해요.",
-    "detail": "여호수아 23장 7절도 민족들의 신들의 이름을 부르지 말라고 해요.",
-    "caution": "신들의 이름을 말하는 일을 금지하는 본문의 범위에서 읽어요.",
-    "refs": [
-      "출애굽기 23:13",
-      "여호수아 23:7"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
+
   {
     "id": "context-exo-23-14",
     "title": "해마다 세 번의 절기",
