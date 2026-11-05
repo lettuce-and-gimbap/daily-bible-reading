@@ -5029,34 +5029,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-exo-16-4",
-    "title": "날마다 거두는 양식",
-    "aliases": [
-      "양식"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 16,
-        "lo": 4,
-        "hi": 4,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "하나님은 광야에서 백성에게 하늘에서 양식을 내려 주겠다고 약속하세요.",
-    "detail": "백성은 날마다 필요한 만큼 거두고 여섯째 날에는 이틀분을 준비해야 했어요.",
-    "caution": "이 사건은 하나님의 공급과 그 말씀에 대한 이스라엘의 순종을 함께 보여 줘요.",
-    "refs": [
-      "출애굽기 16:4-5"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
+
   {
     "id": "context-exo-17-12",
     "title": "모세의 손을 붙든 아론과 훌",
