@@ -5199,34 +5199,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-exo-24-8",
-    "title": "시내산 언약의 피",
-    "aliases": [
-      "언약의 피"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 24,
-        "lo": 8,
-        "hi": 8,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "모세는 제물의 피를 백성에게 뿌리며 하나님이 세우신 언약을 선포해요.",
-    "detail": "앞에서 백성은 언약의 말씀을 듣고 따르겠다고 응답했어요.",
-    "caution": "예수님의 새 언약 말씀과 연결할 때도 이 사건의 본래 문맥을 먼저 읽어요.",
-    "refs": [
-      "출애굽기 24:3-8"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-exo-25-8",
     "title": "백성 가운데 거하실 성소",
     "aliases": [
@@ -10023,34 +9995,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "caution": "재판과 공동체의 공의를 함께 생각해요.",
     "refs": [
       "출애굽기 23:6-8"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-exo-25-16",
-    "title": "궤 안에 두는 증거판",
-    "aliases": [
-      "증거판"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 25,
-        "lo": 16,
-        "hi": 16,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "하나님은 모세에게 주실 증거판을 궤 안에 두라고 말씀하세요.",
-    "detail": "이어 궤 위에 놓을 속죄소와 두 그룹을 만드는 지시가 나와요.",
-    "caution": "하나님의 언약의 말씀과 궤를 만드는 지시를 함께 살펴요.",
-    "refs": [
-      "출애굽기 25:16-22"
     ],
     "category": "본문 문맥",
     "lens": "",
@@ -26519,36 +26463,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-
-  {
-    "id": "context-exo-16-15b",
-    "title": "이것이 무엇이냐",
-    "aliases": [
-      "이것이 무엇이냐"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 16,
-        "lo": 15,
-        "hi": 15,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "이스라엘 자손이 그것이 무엇인지 알지 못해 서로 이것이 무엇이냐 하고 묻고, 모세는 여호와께서 주신 양식이라고 말해요.",
-    "detail": "31절은 이스라엘 족속이 그 이름을 만나라 하였다고 해요.",
-    "caution": "이름의 뜻풀이는 본문이 자세히 설명하지 않으므로, 질문과 이름이 이어진 흐름으로만 읽어요.",
-    "refs": [
-      "출애굽기 16:15",
-      "출애굽기 16:31"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
   {
     "id": "context-exo-16-20",
     "title": "남겨 둔 만나",
@@ -26732,34 +26646,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-exo-17-9",
-    "title": "처음 나오는 여호수아",
-    "aliases": [
-      "여호수아"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 17,
-        "lo": 9,
-        "hi": 9,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "모세가 여호수아에게 사람들을 택하여 아말렉과 싸우라고 하는 장면에서 여호수아가 처음 나와요.",
-    "detail": "이 구절은 여호수아를 소개하는 설명 없이 부르는 이름으로 적어요.",
-    "caution": "여호수아의 배경은 이 구절에서 설명되지 않으므로 뒤의 기록과 이어서 읽어요.",
-    "refs": [
-      "출애굽기 17:9-10"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-exo-17-14",
     "title": "책에 기록하게 하신 말씀",
     "aliases": [
@@ -26884,36 +26770,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-exo-18-12",
-    "title": "하나님 앞의 식사",
-    "aliases": [
-      "떡을 먹으니라",
-      "거룩한 음식을 함께"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 18,
-        "lo": 12,
-        "hi": 12,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "이드로가 하나님께 제물을 가져오자 아론과 장로들이 하나님 앞에서 이드로와 떡을 먹어요.",
-    "detail": "24장 11절에서도 이스라엘의 존귀한 자들이 하나님을 뵙고 먹고 마셨어요.",
-    "caution": "식사의 구체적인 의미를 본문이 설명하지 않으므로 하나님 앞에서 함께 나눈 자리로 읽어요.",
-    "refs": [
-      "출애굽기 18:12",
-      "출애굽기 24:11"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-exo-18-15",
     "title": "하나님께 묻는 일",
     "aliases": [
@@ -26967,68 +26823,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "refs": [
       "출애굽기 18:21-26",
       "신명기 1:9-15"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-exo-19-1",
-    "title": "시내 광야에 이른 때",
-    "aliases": [
-      "삼 개월",
-      "석 달"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 19,
-        "lo": 1,
-        "hi": 1,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "이스라엘은 애굽 땅을 떠난 지 삼 개월이 되던 날 시내 광야에 이르러요.",
-    "detail": "12장 2절에서 출애굽의 달이 첫 달이 되었고, 16장 1절에서 둘째 달 십오일에 신 광야에 이르렀어요.",
-    "caution": "날짜를 이어서 읽되, 정확한 일수는 본문이 말한 범위를 넘어 단정하지 않아요.",
-    "refs": [
-      "출애굽기 19:1",
-      "출애굽기 12:2",
-      "출애굽기 16:1"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-exo-19-8",
-    "title": "백성의 응답",
-    "aliases": [
-      "일제히 응답",
-      "한 목소리로"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 19,
-        "lo": 8,
-        "hi": 8,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "백성은 일제히 여호와께서 명령하신 대로 다 행하겠다고 응답해요.",
-    "detail": "24장 3절과 7절에서도 백성은 여호와께서 말씀하신 모든 것을 준행하겠다고 응답해요.",
-    "caution": "약속의 말과 이후 이야기에서 드러나는 모습을 함께 읽어요.",
-    "refs": [
-      "출애굽기 19:8",
-      "출애굽기 24:3",
-      "출애굽기 24:7"
     ],
     "category": "본문 문맥",
     "lens": "",
@@ -27095,36 +26889,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-exo-19-18",
-    "title": "산을 덮은 연기",
-    "aliases": [
-      "옹기 가마",
-      "가마에서 나는 연기"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 19,
-        "lo": 18,
-        "hi": 18,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "시내 산에 연기가 자욱하고 그 연기가 옹기 가마 연기 같이 떠오르며 온 산이 진동해요.",
-    "detail": "창세기 19장 28절에서 아브라함이 본 소돔의 연기도 옹기 가마의 연기같이 치솟았다고 표현해요.",
-    "caution": "같은 비유를 쓰는 두 장면을 이어서 읽되, 서로를 같은 사건으로 읽지 않아요.",
-    "refs": [
-      "출애굽기 19:18",
-      "창세기 19:28"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-exo-19-22",
     "title": "산 앞의 제사장들",
     "aliases": [
@@ -27178,36 +26942,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "refs": [
       "출애굽기 20:1",
       "신명기 4:13"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-exo-20-6",
-    "title": "삼사 대와 천 대",
-    "aliases": [
-      "천 대까지",
-      "수천 대"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 20,
-        "lo": 6,
-        "hi": 6,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "하나님은 사랑하고 계명을 지키는 자에게는 천 대까지 은혜를 베푸신다고 하세요.",
-    "detail": "5절에서는 미워하는 자의 죄를 삼사 대까지 이르게 하신다고 해요. 34장 6–7절에도 같은 대비가 나와요.",
-    "caution": "두 숫자를 함께 읽어, 은혜의 범위가 훨씬 크다는 본문의 대비를 놓치지 않아요.",
-    "refs": [
-      "출애굽기 20:5-6",
-      "출애굽기 34:6-7"
     ],
     "category": "본문 문맥",
     "lens": "",
@@ -27419,36 +27153,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "refs": [
       "출애굽기 20:26",
       "출애굽기 28:42"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-exo-21-1",
-    "title": "언약서의 시작",
-    "aliases": [
-      "법규",
-      "법은"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 21,
-        "lo": 1,
-        "hi": 1,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "십계명 뒤에 백성 앞에 세울 법규가 시작돼요.",
-    "detail": "24장 7절에서 모세는 언약서를 가져다가 백성에게 낭독해요.",
-    "caution": "21–23장의 규정이 구체적인 상황에 대한 법이라는 점을 알고, 각 규정이 말하는 범위를 따로 읽어요.",
-    "refs": [
-      "출애굽기 21:1",
-      "출애굽기 24:7"
     ],
     "category": "본문 문맥",
     "lens": "",
@@ -28676,35 +28380,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
       "출애굽기 24:14",
       "출애굽기 17:12",
       "출애굽기 32:1"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-exo-24-16",
-    "title": "구름이 엿새 동안 가림",
-    "aliases": [
-      "엿새 동안",
-      "육 일 동안"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 24,
-        "lo": 16,
-        "hi": 16,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "여호와의 영광이 시내 산 위에 머무르고 구름이 엿새 동안 산을 가린 뒤 일곱째 날에 모세를 부르세요.",
-    "detail": "15절에서 모세가 산에 오르니 구름이 산을 가렸어요.",
-    "caution": "기간의 상징을 본문이 설명하지 않으므로 의미를 덧붙이지 않아요.",
-    "refs": [
-      "출애굽기 24:15-16"
     ],
     "category": "본문 문맥",
     "lens": "",
