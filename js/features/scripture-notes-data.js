@@ -13168,34 +13168,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-gen-19-11",
-    "title": "눈이 어두워진 무리",
-    "aliases": [
-      "눈을 어둡게"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 19,
-        "lo": 11,
-        "hi": 11,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "손님들이 문 밖의 무리의 눈을 어둡게 하여 무리가 문을 찾지 못해요.",
-    "detail": "쉬운성경은 젊은이나 노인이나 할 것 없이 문을 찾지 못했다고 기록해요.",
-    "caution": "어떤 현상이었는지 설명하려 하지 않고 본문이 기록한 결과대로 읽어요.",
-    "refs": [
-      "창세기 19:10-11"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-19-14",
     "title": "사위들이 농담으로 여김",
     "aliases": [
@@ -14089,35 +14061,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "caution": "나무를 심은 일의 의미는 본문이 설명하지 않으므로, 이름을 불렀다는 기록을 중심으로 읽어요.",
     "refs": [
       "창세기 21:33"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-22-3",
-    "title": "일찍 떠난 아브라함",
-    "aliases": [
-      "아침에 일찍",
-      "아침 일찍"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 22,
-        "lo": 3,
-        "hi": 3,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "아브라함은 이른 아침에 번제에 쓸 나무를 쪼개고 이삭과 두 종을 데리고 떠나요.",
-    "detail": "본문은 아브라함이 하나님이 일러 주신 곳으로 갔다고만 말해요.",
-    "caution": "아브라함의 마음을 본문이 말하지 않은 만큼 상상해서 덧붙이지 않아요.",
-    "refs": [
-      "창세기 22:3"
     ],
     "category": "본문 문맥",
     "lens": "",
@@ -25822,34 +25765,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "caution": "이 말씀을 건강에 대한 일반 약속으로 넓히지 않고, 이스라엘에게 주신 말씀의 문맥에서 읽어요.",
     "refs": [
       "출애굽기 15:25-26"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-exo-15-27",
-    "title": "엘림의 샘과 종려나무",
-    "aliases": [
-      "종려나무"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 15,
-        "lo": 27,
-        "hi": 27,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "이스라엘이 엘림에 이르러 물 샘 열둘과 종려나무 일흔 그루 곁에 장막을 쳐요.",
-    "detail": "개역개정은 '물 샘 열둘', 쉬운성경은 '우물이 열두 곳'으로 옮겨요.",
-    "caution": "숫자의 상징은 본문이 설명하지 않으므로 의미를 덧붙이지 않아요.",
-    "refs": [
-      "출애굽기 15:27"
     ],
     "category": "본문 문맥",
     "lens": "",
