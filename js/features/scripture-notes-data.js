@@ -2376,30 +2376,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ]
   },
   {
-    "id": "chron-1ch-23-1",
-    "title": "솔로몬을 왕으로 세움",
-    "aliases": [
-      "솔로몬"
-    ],
-    "locations": [
-      {
-        "code": "1ch",
-        "chapter": 23,
-        "lo": 1,
-        "hi": 1
-      }
-    ],
-    "summary": "나이 든 다윗은 아들 솔로몬을 이스라엘의 왕으로 세워요.",
-    "detail": "이어 지도자와 제사장과 레위인을 모으고 레위인의 봉사 직무를 정리해요.",
-    "caution": "이 장은 레위인의 배치에 초점을 두므로 왕위 계승의 모든 사건을 여기에 다 담지는 않아요.",
-    "refs": [
-      "역대상 23:1-5"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "chron-1ch-24-1",
     "title": "아론 자손의 제사장 반열",
     "aliases": [
@@ -8553,34 +8529,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-exo-29-38",
-    "title": "날마다 드리는 제물",
-    "aliases": [
-      "어린 양"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 29,
-        "lo": 38,
-        "hi": 38,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "제단 위에 매일 일 년 된 어린 양 두 마리를 드리도록 명하세요.",
-    "detail": "한 마리는 아침에, 다른 한 마리는 저녁 무렵에 곡식과 전제와 함께 드려요.",
-    "caution": "이 규정은 앞의 제사장 위임식과 연결되지만 같은 절차로 혼동하지 않아요.",
-    "refs": [
-      "출애굽기 29:38-42"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-exo-30-15",
     "title": "동일하게 내는 속전",
     "aliases": [
@@ -9711,34 +9659,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "caution": "얼굴의 빛을 사람이 스스로 만들어 내야 할 영적 능력으로 읽지 않아요.",
     "refs": [
       "출애굽기 34:29-35"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-exo-39-32",
-    "title": "성막 작업의 완성",
-    "aliases": [
-      "명령"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 39,
-        "lo": 32,
-        "hi": 32,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "이스라엘 자손은 여호와께서 모세에게 명령하신 대로 회막의 모든 일을 마쳤어요.",
-    "detail": "뒤에서는 완성한 성막과 기구와 옷을 모세에게 가져오고, 40장에서 성막을 세워요.",
-    "caution": "제작의 완료와 성막을 실제로 세우는 다음 단계는 구별해요.",
-    "refs": [
-      "출애굽기 39:32-33"
     ],
     "category": "본문 문맥",
     "lens": "",
@@ -25406,35 +25326,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-exo-8-7",
-    "title": "마술사들의 개구리",
-    "aliases": [
-      "요술사들도",
-      "마술사들도"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 8,
-        "lo": 7,
-        "hi": 7,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "요술사들도 자기 요술대로 개구리가 애굽 땅에 올라오게 해요.",
-    "detail": "바로는 8절에서 개구리를 떠나게 해 달라고 모세와 아론에게 청해요.",
-    "caution": "마술사들이 할 수 있었던 일과 없었던 일을 본문이 말한 범위에서 읽어요.",
-    "refs": [
-      "출애굽기 8:7-8"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-exo-8-8",
     "title": "바로의 요청과 약속",
     "aliases": [
@@ -26003,35 +25894,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "caution": "바로의 제안과 모세의 요구가 어떻게 다른지를 본문의 대화대로 읽어요.",
     "refs": [
       "출애굽기 10:9-11"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-exo-10-13",
-    "title": "동풍이 불어 들인 메뚜기",
-    "aliases": [
-      "동풍"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 10,
-        "lo": 13,
-        "hi": 13,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "여호와께서 동풍을 온 낮과 온 밤에 불게 하시고 아침에 동풍이 메뚜기를 불어 들여요.",
-    "detail": "19절에서 여호와께서 강렬한 서풍을 불게 하여 메뚜기를 홍해에 몰아넣으세요.",
-    "caution": "바람의 방향이 바뀌어 재앙이 시작되고 끝나는 모습을 본문이 말한 순서대로 읽어요.",
-    "refs": [
-      "출애굽기 10:13",
-      "출애굽기 10:19"
     ],
     "category": "본문 문맥",
     "lens": "",
@@ -30301,36 +30163,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-exo-27-21",
-    "title": "저녁부터 아침까지의 등불",
-    "aliases": [
-      "저녁부터 아침까지"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 27,
-        "lo": 21,
-        "hi": 21,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "아론과 그의 아들들이 증거궤 앞 휘장 밖에서 저녁부터 아침까지 여호와 앞에 등불을 보살피게 해요.",
-    "detail": "레위기 24장 2–4절에도 같은 규정이 있어요. 사무엘상 3장 3절은 하나님의 등불이 아직 꺼지지 않았다고 말해요.",
-    "caution": "밤 동안 꺼지지 않게 돌보는 제사장의 일로 읽어요.",
-    "refs": [
-      "출애굽기 27:20-21",
-      "레위기 24:2-4",
-      "사무엘상 3:3"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-exo-28-1",
     "title": "제사장이 된 아론의 네 아들",
     "aliases": [
@@ -31698,36 +31530,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-exo-35-25",
-    "title": "솜씨 있는 여인들",
-    "aliases": [
-      "여인",
-      "여자들"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 35,
-        "lo": 25,
-        "hi": 25,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "마음이 슬기로운 모든 여인은 손수 실을 빼고 청색 자색 홍색 실과 가는 베 실을 가져와요.",
-    "detail": "26절에서도 마음에 감동을 받은 여인들이 염소 털로 실을 뽑았어요. 38장 8절은 회막 문에서 수종드는 여인들의 거울로 물두멍을 만들었다고 해요.",
-    "caution": "여인들의 기여를 본문이 기록한 그대로 읽어요.",
-    "refs": [
-      "출애굽기 35:25-26",
-      "출애굽기 38:8"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-exo-36-8",
     "title": "지시대로 만든 성막",
     "aliases": [
@@ -31761,36 +31563,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
 
 // 출애굽기 37–40장의 추가 문맥 설명.
 window.ScriptureNotesData.contextualTerms.push(...[
-  {
-    "id": "context-exo-37-29",
-    "title": "관유와 향의 제조",
-    "aliases": [
-      "거룩한 관유",
-      "거룩한 의식에 쓸 기름"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 37,
-        "lo": 29,
-        "hi": 29,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "브살렐은 거룩한 관유와 정결한 향을 향을 만드는 법대로 만들어요.",
-    "detail": "30장 22–38절에서 관유와 향의 재료와 만드는 법이 정해졌어요. 이 구절은 그 지시가 실행되었다고 짧게 말해요.",
-    "caution": "이 구절의 짧은 기록을 30장의 규정과 함께 읽어요.",
-    "refs": [
-      "출애굽기 37:29",
-      "출애굽기 30:22-38"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
   {
     "id": "context-exo-38-26",
     "title": "계수된 사람과 은의 계산",
@@ -83137,37 +82909,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-1ch-18-6",
-    "title": "가는 곳마다 이기게 하시니",
-    "aliases": [
-      "다윗이 어디로 가든지 여호와께서 이기게 하시니라",
-        "다윗이 가는 곳마다 승리하게 해 주셨습니다"
-    ],
-    "locations": [
-      {
-        "code": "1ch",
-        "chapter": 18,
-        "lo": 6,
-        "hi": 6,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "다윗이 어디로 가든지 여호와께서 이기게 하셨다고 해요. 아람의 다메섹에도 수비대를 두어 아람 사람들이 조공을 바쳐요.",
-    "detail": "13절에서 에돔에서도 같은 말이 반복돼요. 사무엘하 8:6의 같은 기록과 이어져요.",
-    "caution": "쉬운성경은 '가는 곳마다 승리하게 해 주셨습니다'로 옮겨요.",
-    "refs": [
-      "역대상 18:6",
-      "역대상 18:13",
-      "사무엘하 8:6"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-1ch-18-11",
     "title": "전리품을 여호와께 드리다",
     "aliases": [
@@ -84112,37 +83853,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
       "역대상 24:18",
       "역대상 24:19",
       "누가복음 1:5"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-1ch-24-31",
-    "title": "제비는 공평하게",
-    "aliases": [
-      "장자의 가문과 막내 동생의 가문이 다름이 없더라",
-        "맏아들의 집안이나 막내아들의 집안이나 똑같이 제비를 뽑았습니다"
-    ],
-    "locations": [
-      {
-        "code": "1ch",
-        "chapter": 24,
-        "lo": 31,
-        "hi": 31,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "여러 사람이 다윗 왕과 사독과 아히멜렉 앞에서 아론 자손처럼 제비를 뽑았고, 장자의 가문과 막내의 가문이 다름없이 똑같았어요.",
-    "detail": "24장 전체가 제비 뽑기로 순서를 정하는 공정함을 보여 줘요. 1절과 5절의 나눔 원칙과 이어져요.",
-    "caution": "쉬운성경은 '맏아들의 집안이나 막내아들의 집안이나 똑같이'로 옮겨요.",
-    "refs": [
-      "역대상 24:1",
-      "역대상 24:5",
-      "역대상 24:31"
     ],
     "category": "본문 문맥",
     "lens": "",
