@@ -9835,34 +9835,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-exo-3-2",
-    "title": "꺼지지 않는 떨기나무",
-    "aliases": [
-      "떨기나무"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 3,
-        "lo": 2,
-        "hi": 2,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "여호와의 사자가 떨기나무 불꽃 가운데 나타나셨고 모세가 보니 나무가 타서 없어지지 않았어요.",
-    "detail": "모세가 가까이 가서 보려 할 때 하나님이 그를 부르세요.",
-    "caution": "나무의 종류나 불의 모든 상징을 본문이 확정했다고 생각하지 않아요.",
-    "refs": [
-      "출애굽기 3:1-4"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-exo-6-9",
     "title": "고된 노동에 지친 백성",
     "aliases": [
@@ -10426,63 +10398,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "caution": "이름의 정확한 어원과 뜻에는 여러 설명이 있으므로 단정하지 않아요.",
     "refs": [
       "창세기 41:41-45"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-exo-1-16",
-    "title": "히브리 산파에게 내린 명령",
-    "aliases": [
-      "아들이",
-      "아기"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 1,
-        "lo": 16,
-        "hi": 16,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "애굽 왕은 산파들에게 히브리 여인의 아들이 태어나면 죽이고 딸이면 살려 두라고 명령해요.",
-    "detail": "다음 절에서 산파들은 하나님을 두려워하여 왕의 명령을 따르지 않고 아이들을 살려요.",
-    "caution": "산파들의 행동을 왕이 행한 억압의 상황과 함께 읽어요.",
-    "refs": [
-      "출애굽기 1:15-17"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-exo-2-15",
-    "title": "미디안으로 도망한 모세",
-    "aliases": [
-      "미디안"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 2,
-        "lo": 15,
-        "hi": 15,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "바로가 모세를 죽이려 찾자 모세는 애굽을 피해 미디안 땅에 머물러요.",
-    "detail": "그곳 우물가에서 목자들에게 괴롭힘을 당하는 여인들을 돕는 이야기가 이어져요.",
-    "caution": "도망한 이유를 앞의 폭력 사건과 바로의 반응 속에서 살펴요.",
-    "refs": [
-      "출애굽기 2:11-17"
     ],
     "category": "본문 문맥",
     "lens": "",
