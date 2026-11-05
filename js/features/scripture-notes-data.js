@@ -10378,34 +10378,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-gen-14-14",
-    "title": "롯을 구하러 간 아브람",
-    "aliases": [
-      "삼백십팔"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 14,
-        "lo": 14,
-        "hi": 14,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "아브람은 조카 롯이 사로잡혔다는 소식을 듣고 집에서 길리고 훈련된 사람들을 이끌고 추격했어요.",
-    "detail": "그는 롯과 재물과 사람들을 되찾아 돌아와요.",
-    "caution": "훈련된 사람의 수를 다른 사건에 적용하는 상징적 암호로 만들지 않아요.",
-    "refs": [
-      "창세기 14:12-16"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-17-17",
     "title": "약속을 듣고 웃은 아브라함",
     "aliases": [
