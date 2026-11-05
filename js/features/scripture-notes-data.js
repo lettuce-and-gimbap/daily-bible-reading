@@ -63925,37 +63925,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-1ki-15-26",
-    "title": "아버지의 길을 따른 나답",
-    "aliases": [
-      "그가 여호와 보시기에 악을 행하되 그의 아버지의 길로 행하며",
-        "여로보암이 지은 모든 죄를 그대로 따라 했습니다"
-    ],
-    "locations": [
-      {
-        "code": "1ki",
-        "chapter": 15,
-        "lo": 26,
-        "hi": 26,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "나답은 아버지 여로보암의 길을 따라 악을 행했어요.",
-    "detail": "짧은 통치에도 같은 평가 틀이 반복돼요.",
-    "caution": "쉬운성경은 '여로보암이 지은 모든 죄를 그대로 따라 했다'로 옮겨요.",
-    "refs": [
-      "열왕기상 15:26",
-      "열왕기상 15:30",
-      "열왕기상 12:28"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-1ki-16-2",
     "title": "티끌에서 들어 올림",
     "aliases": [
