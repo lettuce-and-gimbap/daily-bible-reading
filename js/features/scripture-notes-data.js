@@ -7453,35 +7453,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-gen-25-34",
-    "title": "에서가 넘긴 장자의 명분",
-    "aliases": [
-      "장자의 명분",
-      "맏아들의 권리"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 25,
-        "lo": 34,
-        "hi": 34,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "에서는 배고픈 상태에서 야곱에게 장자의 명분을 넘기고 음식을 먹어요.",
-    "detail": "서술자는 에서가 장자의 명분을 가볍게 여겼다고 평가해요.",
-    "caution": "에서의 선택과 야곱이 내건 요구를 각각 이야기의 문맥에서 살펴요.",
-    "refs": [
-      "창세기 25:29-34"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-28-12",
     "title": "벧엘에서 본 꿈",
     "aliases": [
@@ -11229,34 +11200,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-gen-21-1",
-    "title": "사라에게 이루어진 말씀",
-    "aliases": [
-      "사라"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 21,
-        "lo": 1,
-        "hi": 1,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "여호와께서 말씀하신 대로 사라를 돌보시고 약속을 이루세요.",
-    "detail": "사라는 아브라함의 노년에 이삭을 낳고, 아브라함은 아들의 이름을 이삭이라 지어요.",
-    "caution": "약속과 성취를 이 가족에게 주신 구체적인 이야기 안에서 읽어요.",
-    "refs": [
-      "창세기 21:1-3"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-22-1",
     "title": "아브라함을 시험하심",
     "aliases": [
@@ -11279,34 +11222,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "caution": "이 장면을 사람을 해치라는 개인적 명령의 근거로 삼지 않아요.",
     "refs": [
       "창세기 22:1-2"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-25-9",
-    "title": "함께 아브라함을 장사한 두 아들",
-    "aliases": [
-      "이스마엘"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 25,
-        "lo": 9,
-        "hi": 9,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "이삭과 이스마엘은 아버지 아브라함을 막벨라 굴에 함께 장사해요.",
-    "detail": "그곳은 앞서 아브라함이 사라의 매장지로 산 굴이에요.",
-    "caution": "장례 기록이 두 형제 관계의 모든 역사를 설명하는 것은 아니에요.",
-    "refs": [
-      "창세기 25:7-10"
     ],
     "category": "본문 문맥",
     "lens": "",
@@ -14569,34 +14484,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "refs": [
       "창세기 21:6",
       "창세기 18:12"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-21-8",
-    "title": "젖을 떼는 날의 잔치",
-    "aliases": [
-      "젖을 떼"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 21,
-        "lo": 8,
-        "hi": 8,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "이삭이 젖을 떼는 날 아브라함이 큰 잔치를 베풀어요.",
-    "detail": "바로 다음 9절에서 사라가 이스마엘이 이삭을 놀리는 것을 봐요.",
-    "caution": "젖을 뗀 나이는 본문에 나오지 않으므로 이삭과 이스마엘의 나이를 짐작해서 단정하지 않아요.",
-    "refs": [
-      "창세기 21:8-9"
     ],
     "category": "본문 문맥",
     "lens": "",
