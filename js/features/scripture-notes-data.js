@@ -5516,35 +5516,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "sourceLinks": [{"label": "초원 성경 창세기 장별 목차 (장 주제)", "url": "https://chowon.in/bible/nkrv/gen"}]
   },
   {
-    "id": "context-gen-7-16",
-    "title": "방주의 문을 닫으심",
-    "aliases": [
-      "문을 닫"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 7,
-        "lo": 16,
-        "hi": 16,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "노아의 가족과 동물들이 하나님이 명하신 대로 방주에 들어간 뒤 여호와께서 문을 닫으셨어요.",
-    "detail": "이 장은 홍수 심판 가운데 방주 안의 생명들이 보존되는 일을 기록해요.",
-    "caution": "동물의 수에 관한 7:2–3과 7:8–9도 함께 살펴요.",
-    "refs": [
-      "창세기 7:16",
-      "창세기 7:13-16"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-8-1",
     "title": "노아와 생물들을 기억하심",
     "aliases": [
@@ -9698,34 +9669,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-gen-8-20",
-    "title": "방주에서 나온 노아의 제사",
-    "aliases": [
-      "번제"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 8,
-        "lo": 20,
-        "hi": 20,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "노아는 방주에서 나온 뒤 제단을 쌓고 정결한 짐승과 새 가운데서 번제를 드려요.",
-    "detail": "앞서 하나님은 노아에게 가족과 생물들을 데리고 방주에서 나오라고 말씀하셨어요.",
-    "caution": "정결한 짐승에 관한 앞선 지시와 홍수 뒤의 이야기 흐름을 함께 살펴요.",
-    "refs": [
-      "창세기 8:15-20"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-9-22",
     "title": "노아의 하체를 본 함",
     "aliases": [
@@ -10405,34 +10348,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
 
 // 창세기·출애굽기 추가 문맥 설명.
 window.ScriptureNotesData.contextualTerms.push(...[
-  {
-    "id": "context-gen-10-9",
-    "title": "사냥꾼 니므롯",
-    "aliases": [
-      "니므롯"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 10,
-        "lo": 9,
-        "hi": 9,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "니므롯은 여호와 앞에서 뛰어난 사냥꾼으로 소개돼요.",
-    "detail": "이어서 그의 나라와 여러 성읍의 이름이 기록돼요.",
-    "caution": "이 절이 밝히지 않는 니므롯의 모든 동기와 행적을 확정하지 않아요.",
-    "refs": [
-      "창세기 10:8-10"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
   {
     "id": "context-gen-12-10",
     "title": "기근을 피해 애굽으로 간 아브람",
@@ -11145,34 +11060,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
 
 // 창세기와 출애굽기의 추가 절별 설명.
 window.ScriptureNotesData.contextualTerms.push(...[
-  {
-    "id": "context-gen-1-1",
-    "title": "하나님의 창조",
-    "aliases": [
-      "태초"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 1,
-        "lo": 1,
-        "hi": 1,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "성경은 태초에 하나님이 하늘과 땅을 창조하셨다고 시작해요.",
-    "detail": "이어 땅의 상태와 하나님이 말씀으로 창조하시는 과정이 펼쳐져요.",
-    "caution": "이 첫 문장의 목적과 다음 절들의 흐름을 함께 살펴요.",
-    "refs": [
-      "창세기 1:1-3"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
   {
     "id": "context-gen-3-1",
     "title": "뱀의 질문",
@@ -12559,34 +12446,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-gen-5-1",
-    "title": "아담의 계보",
-    "aliases": [
-      "아담"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 5,
-        "lo": 1,
-        "hi": 1,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "이 장은 아담의 계보를 시작하며 하나님이 사람을 하나님의 모습대로 지으셨음을 다시 말해요.",
-    "detail": "이어 남자와 여자를 창조하셨다는 말씀과 아담의 후손 목록이 나와요.",
-    "caution": "족보의 목적을 살피며 창세기 1장의 창조 기록과 함께 읽어요.",
-    "refs": [
-      "창세기 5:1-3"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-5-29",
     "title": "라멕이 아들에게 붙인 이름",
     "aliases": [
@@ -12785,62 +12644,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-gen-7-23",
-    "title": "방주 안에 남은 생명",
-    "aliases": [
-      "노아"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 7,
-        "lo": 23,
-        "hi": 23,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "홍수로 사람과 땅의 생물들이 멸망했지만 노아와 그와 함께 방주에 있던 생명들은 남았어요.",
-    "detail": "이 기록은 앞의 심판과 하나님이 방주의 문을 닫으신 장면에 이어져요.",
-    "caution": "심판의 무게와 방주 안 생명을 보존하신 이야기를 함께 읽어요.",
-    "refs": [
-      "창세기 7:21-23"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-8-8",
-    "title": "물을 살피려고 보낸 비둘기",
-    "aliases": [
-      "비둘기"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 8,
-        "lo": 8,
-        "hi": 8,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "노아는 땅의 물이 줄었는지 알아보려고 비둘기를 내보내요.",
-    "detail": "처음에는 발붙일 곳을 찾지 못해 돌아왔고, 칠 일 뒤에는 잎을 물고 돌아와요.",
-    "caution": "비둘기의 행동을 기록된 상황을 넘어 미래를 알아내는 방법으로 만들지 않아요.",
-    "refs": [
-      "창세기 8:8-11"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-8-11",
     "title": "비둘기가 물고 온 잎",
     "aliases": [
@@ -12863,34 +12666,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "caution": "개역개정이 말하는 물이 줄어든 상태와 땅이 완전히 마른 뒤의 서술을 구별해요.",
     "refs": [
       "창세기 8:10-14"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-8-16",
-    "title": "방주에서 나오라는 말씀",
-    "aliases": [
-      "나오"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 8,
-        "lo": 16,
-        "hi": 16,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "하나님은 노아에게 가족과 함께 방주에서 나오라고 말씀하세요.",
-    "detail": "이어 함께 있던 모든 생물도 이끌어 내고 땅에서 번성하게 하라고 하세요.",
-    "caution": "물이 걷히고 땅이 마르는 앞선 과정과 하나님의 명령을 함께 살펴요.",
-    "refs": [
-      "창세기 8:13-19"
     ],
     "category": "본문 문맥",
     "lens": "",
@@ -13007,34 +12782,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "caution": "이 구절을 피부색이나 인종에 대한 저주 또는 노예제와 차별의 정당화로 사용하지 않아요.",
     "refs": [
       "창세기 9:24-27"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-10-1",
-    "title": "홍수 이후의 족보",
-    "aliases": [
-      "노아"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 10,
-        "lo": 1,
-        "hi": 1,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "이 장은 노아의 세 아들 셈과 함과 야벳의 후손을 소개해요.",
-    "detail": "이어 각 가계와 민족들이 땅에 퍼진 모습이 기록돼요.",
-    "caution": "목록의 이름과 관계를 오늘날의 인종 분류에 기계적으로 대응하지 않아요.",
-    "refs": [
-      "창세기 10:1-5"
     ],
     "category": "본문 문맥",
     "lens": "",
