@@ -14212,35 +14212,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-gen-22-9",
-    "title": "제단에 올려진 이삭",
-    "aliases": [
-      "결박",
-      "묶어"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 22,
-        "lo": 9,
-        "hi": 9,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "아브라함은 제단을 쌓고 아들 이삭을 묶어 제단 나무 위에 올려요.",
-    "detail": "개역개정은 '결박하여', 쉬운성경은 '묶어'로 옮겨요. 10절에서 아브라함이 칼을 잡는 순간 사자가 부르세요.",
-    "caution": "이삭의 나이나 반응을 본문이 자세히 말하지 않으므로 그 부분을 단정하지 않아요.",
-    "refs": [
-      "창세기 22:9-10"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-22-11",
     "title": "하늘에서 부른 여호와의 사자",
     "aliases": [
