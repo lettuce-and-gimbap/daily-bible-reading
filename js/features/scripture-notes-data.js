@@ -79919,37 +79919,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-job-3-1",
-    "title": "욥이 입을 열다",
-    "aliases": [
-      "그 후에 욥이 입을 열어 자기의 생일을 저주하니라",
-      "욥은 입을 열어 자기의 생일을 저주하며"
-    ],
-    "locations": [
-      {
-        "code": "job",
-        "chapter": 3,
-        "lo": 1,
-        "hi": 1,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "칠 일 침묵 뒤에 욥이 입을 열어 자기의 생일을 저주해요.",
-    "detail": "1~2장의 평온한 신앙 고백과 다른 목소리예요. 3장부터 욥과 친구들의 긴 대화가 이어져요.",
-    "caution": "'생일을 저주하다'는 표현에서 욥이 하나님을 직접 비난하는지는 바로 드러나지 않아요. 3장은 태어난 날 자체를 향한 탄식이에요.",
-    "refs": [
-      "욥기 3:1",
-      "욥기 2:13",
-      "욥기 3:3"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-job-3-3",
     "title": "태어난 날의 저주",
     "aliases": [
