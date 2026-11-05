@@ -16451,36 +16451,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
 // 창세기 29–31장의 추가 문맥 설명.
 window.ScriptureNotesData.contextualTerms.push(...[
   {
-    "id": "context-gen-29-2",
-    "title": "우물을 덮은 큰 돌",
-    "aliases": [
-      "우물 아귀",
-      "우물 위에는 큰 돌"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 29,
-        "lo": 2,
-        "hi": 2,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "야곱이 하란 들에서 큰 돌로 덮인 우물과 그 곁의 양 떼 세 무리를 봐요.",
-    "detail": "8절에서 목자들은 떼가 다 모여야 돌을 옮기고 물을 먹인다고 말해요. 10절에서 야곱은 라헬과 라반의 양 떼를 보고 나아가 돌을 옮기고 물을 먹여요.",
-    "caution": "돌의 크기와 야곱이 옮긴 방법은 본문이 자세히 말하지 않으므로 짐작해서 덧붙이지 않아요.",
-    "refs": [
-      "창세기 29:2-3",
-      "창세기 29:8-10"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-29-12",
     "title": "야곱이 밝힌 관계",
     "aliases": [
@@ -43733,36 +43703,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "refs": [
       "여호수아 6:2",
       "신명기 7:24"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-jos-6-4",
-    "title": "숫양의 뿔로 만든 나팔",
-    "aliases": [
-      "일곱 양각 나팔",
-      "숫양의 뿔로 만든 나팔"
-    ],
-    "locations": [
-      {
-        "code": "jos",
-        "chapter": 6,
-        "lo": 4,
-        "hi": 4,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "제사장 일곱이 양각 나팔을 잡고 언약궤 앞에서 성을 돌라고 명하세요.",
-    "detail": "레위기 25장 9절은 속죄일에 뿔나팔을 울리라고 해요. 개역개정은 '양각 나팔', 쉬운성경은 '숫양의 뿔로 만든 나팔'이라고 옮겨요. 일곱이라는 수가 6–7장에 여러 번 반복돼요.",
-    "caution": "나팔의 정확한 모양과 소리는 본문이 자세히 말하지 않으므로 음색을 단정하지 않아요.",
-    "refs": [
-      "여호수아 6:4-5",
-      "레위기 25:9"
     ],
     "category": "본문 문맥",
     "lens": "",
