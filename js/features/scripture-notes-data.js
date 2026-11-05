@@ -7482,34 +7482,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-gen-31-19",
-    "title": "라헬이 가져간 드라빔",
-    "aliases": [
-      "드라빔"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 31,
-        "lo": 19,
-        "hi": 19,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "야곱의 가족이 떠날 때 라헬은 아버지 라반의 드라빔을 훔쳤어요.",
-    "detail": "뒤에서 라반이 그것을 찾지만 발견하지 못하는 이야기가 이어져요.",
-    "caution": "라헬이 훔친 이유나 물건의 법적 기능은 본문이 분명하게 밝히지 않아요.",
-    "refs": [
-      "창세기 31:19-35"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-37-3",
     "title": "요셉이 받은 특별한 옷",
     "aliases": [
@@ -8928,34 +8900,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-gen-37-4",
-    "title": "편애와 형제의 미움",
-    "aliases": [
-      "미워"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 37,
-        "lo": 4,
-        "hi": 4,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "형들은 아버지가 요셉을 더 사랑하는 것을 보고 요셉을 미워했어요.",
-    "detail": "다음에는 요셉이 꾼 꿈과 형들의 미움이 더해지는 이야기가 나와요.",
-    "caution": "가족 사이의 갈등을 정당한 폭력의 근거로 바꾸지 않아요.",
-    "refs": [
-      "창세기 37:3-8"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-38-11",
     "title": "기다리게 된 다말",
     "aliases": [
@@ -9006,35 +8950,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "caution": "형통을 고난이 없거나 언제나 사회적으로 성공한다는 뜻으로 한정하지 않아요.",
     "refs": [
       "창세기 39:1-3"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-40-23",
-    "title": "요셉을 잊은 관원장",
-    "aliases": [
-      "기억하지"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 40,
-        "lo": 23,
-        "hi": 23,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "술 맡은 관원장은 복직한 뒤 자신을 기억해 달라는 요셉의 부탁을 잊어요.",
-    "detail": "요셉은 억울하게 갇힌 사정을 말하며 바로에게 자기 일을 알려 달라고 청했어요.",
-    "caution": "곧이어 바로의 꿈이 나오기까지 요셉의 기다림이 계속돼요.",
-    "refs": [
-      "창세기 40:23",
-      "창세기 40:14-15"
     ],
     "category": "본문 문맥",
     "lens": "",
@@ -10462,34 +10377,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-gen-31-24",
-    "title": "라반에게 주신 경고",
-    "aliases": [
-      "라반"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 31,
-        "lo": 24,
-        "hi": 24,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "하나님은 야곱을 뒤쫓는 라반에게 꿈에서 조심하라고 경고하세요.",
-    "detail": "이어 라반은 야곱을 만나 떠난 일과 드라빔에 관해 따져 물어요.",
-    "caution": "이 표현의 범위를 라반이 뒤에서 실제로 하는 대화와 함께 살펴요.",
-    "refs": [
-      "창세기 31:22-25"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-32-26",
     "title": "야곱의 씨름과 축복 요청",
     "aliases": [
@@ -11278,34 +11165,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "caution": "정결에 관한 이 장면을 현대인의 외모나 위생으로 신앙을 판단하는 근거로 쓰지 않아요.",
     "refs": [
       "창세기 35:1-4"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-37-21",
-    "title": "요셉을 살리려 한 르우벤",
-    "aliases": [
-      "르우벤"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 37,
-        "lo": 21,
-        "hi": 21,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "르우벤은 형제들의 계획을 듣고 요셉의 생명을 해치지 말자고 말해요.",
-    "detail": "다음 절은 르우벤이 요셉을 구해 아버지에게 돌려보내려 했다고 설명해요.",
-    "caution": "각 형제의 말과 그 뒤 실제로 일어난 일을 구별해 읽어요.",
-    "refs": [
-      "창세기 37:18-22"
     ],
     "category": "본문 문맥",
     "lens": "",
@@ -20017,35 +19876,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-gen-38-28",
-    "title": "손에 맨 홍색 실",
-    "aliases": [
-      "홍색 실",
-      "붉은 줄"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 38,
-        "lo": 28,
-        "hi": 28,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "산파가 먼저 나온 아이의 손에 홍색 실을 매어요.",
-    "detail": "29절에서 그 아이는 손을 들이고, 아우가 먼저 나와 베레스라고 불려요. 30절에서 홍색 실이 있는 아이는 세라라고 불려요.",
-    "caution": "실을 맨 아이가 먼저 나왔다는 산파의 말과 실제 출생 순서를 구분해서 읽어요.",
-    "refs": [
-      "창세기 38:27-30"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-39-3",
     "title": "보디발이 본 여호와의 함께하심",
     "aliases": [
@@ -20135,35 +19965,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-gen-39-10",
-    "title": "날마다 거절한 요셉",
-    "aliases": [
-      "날마다",
-      "매일"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 39,
-        "lo": 10,
-        "hi": 10,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "주인의 아내는 날마다 청했으나 요셉은 듣지 않고 함께 있지도 않아요.",
-    "detail": "11–12절에서 요셉이 집에 있던 때에 주인의 아내가 옷을 잡고 다시 청해요.",
-    "caution": "요셉이 거절한 일이 한 번이 아니라 반복되었다는 본문을 먼저 읽어요.",
-    "refs": [
-      "창세기 39:10-12"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-39-12",
     "title": "증거로 쓰인 옷",
     "aliases": [
@@ -20245,34 +20046,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "refs": [
       "창세기 39:20",
       "창세기 40:3"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-39-22",
-    "title": "옥에서 맡은 일",
-    "aliases": [
-      "간수장"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 39,
-        "lo": 22,
-        "hi": 22,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "간수장은 옥중 죄수를 다 요셉의 손에 맡기고 요셉이 모든 사무를 처리해요.",
-    "detail": "23절은 이 일의 이유를 여호와께서 요셉과 함께하시므로 범사에 형통하게 하셨기 때문이라고 말해요.",
-    "caution": "맡겨진 일의 이유를 본문이 말한 여호와께서 함께하심에서 먼저 읽어요.",
-    "refs": [
-      "창세기 39:21-23"
     ],
     "category": "본문 문맥",
     "lens": "",
@@ -20427,34 +20200,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "refs": [
       "창세기 40:13",
       "창세기 40:19-22"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-40-20",
-    "title": "바로의 생일 잔치",
-    "aliases": [
-      "생일"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 40,
-        "lo": 20,
-        "hi": 20,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "사흘째는 바로의 생일이라 잔치를 베풀 때 두 관원장이 각각 다른 결과를 맞아요.",
-    "detail": "21절은 술 맡은 관원장의 복직을, 22절은 떡 굽는 관원장의 처형을 기록해요.",
-    "caution": "한 날에 두 사람에게 다른 일이 일어난 것을 요셉의 해석이 이루어진 일로 읽어요.",
-    "refs": [
-      "창세기 40:20-22"
     ],
     "category": "본문 문맥",
     "lens": "",
