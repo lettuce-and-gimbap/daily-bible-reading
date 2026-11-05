@@ -93090,37 +93090,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-jnh-1-12",
-    "title": "나를 바다에 던지라",
-    "aliases": [
-      "나를 들어 바다에 던지라",
-      "나를 바다에 던져 넣으십시오"
-    ],
-    "locations": [
-      {
-        "code": "jnh",
-        "chapter": 1,
-        "lo": 12,
-        "hi": 12,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "요나가 자기 때문에 폭풍이 왔다는 것을 알고, 자기를 바다에 던지면 잔잔해질 것이라고 말해요.",
-    "detail": "요나가 자기 몸을 던져 다른 사람을 살리는 장면은 예수님이 요나의 표징을 말씀하신 마태복음 12장 40절과 이어져 읽혀요.",
-    "caution": "요나의 자기희생이 하나님의 뜻에 따른 것인지, 도망자의 체념인지 해석이 나뉘어요.",
-    "refs": [
-      "요나 1:12",
-      "요나 1:17",
-      "마태복음 12:40"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-jnh-1-16",
     "title": "선원들의 두려움과 서원",
     "aliases": [
