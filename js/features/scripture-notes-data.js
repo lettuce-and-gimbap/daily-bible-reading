@@ -9804,35 +9804,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-exo-10-21",
-    "title": "애굽에 내린 어둠",
-    "aliases": [
-      "흑암",
-      "어두움"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 10,
-        "lo": 21,
-        "hi": 21,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "하나님은 모세에게 손을 내밀어 애굽 땅에 짙은 어둠이 있게 하라고 말씀하세요.",
-    "detail": "이어 사흘 동안 서로 볼 수 없었으나 이스라엘 자손이 사는 곳에는 빛이 있었다고 기록돼요.",
-    "caution": "어둠의 원인을 본문이 설명하지 않은 자연 현상으로 확정하지 않아요.",
-    "refs": [
-      "출애굽기 10:21-23"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-exo-12-11",
     "title": "서둘러 먹는 유월절 음식",
     "aliases": [
@@ -25954,36 +25925,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-exo-14-5",
-    "title": "바로의 변심",
-    "aliases": [
-      "마음이 변하여",
-      "마음을 바꾸었습니다"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 14,
-        "lo": 5,
-        "hi": 5,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "이스라엘 백성이 도망했다는 소식을 들은 바로와 신하들은 마음이 변해 보낸 것을 후회해요.",
-    "detail": "12장 31–33절에서 바로와 애굽 사람들은 서둘러 이스라엘을 내보냈어요.",
-    "caution": "내보냄과 후회가 이어진 순서를 본문대로 읽어요.",
-    "refs": [
-      "출애굽기 14:5",
-      "출애굽기 12:31-33"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-exo-14-8",
     "title": "담대히 나간 이스라엘",
     "aliases": [
@@ -26426,37 +26367,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "refs": [
       "출애굽기 15:22",
       "출애굽기 3:18"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-exo-15-24",
-    "title": "마라의 원망",
-    "aliases": [
-      "원망하여",
-      "불평을"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 15,
-        "lo": 24,
-        "hi": 24,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "백성이 마라에서 쓴 물을 만나 모세에게 우리가 무엇을 마실까 하고 원망해요.",
-    "detail": "14장 31절에서 백성이 여호와를 경외하고 믿었어요. 16장 2절과 17장 3절에서도 원망이 이어져요.",
-    "caution": "믿음과 원망을 같은 백성의 모습으로 함께 읽어요.",
-    "refs": [
-      "출애굽기 15:23-24",
-      "출애굽기 14:31",
-      "출애굽기 16:2"
     ],
     "category": "본문 문맥",
     "lens": "",
