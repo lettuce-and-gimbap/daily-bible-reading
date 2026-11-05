@@ -5255,34 +5255,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-exo-30-10",
-    "title": "향단을 위한 속죄",
-    "aliases": [
-      "일 년에 한 번"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 30,
-        "lo": 10,
-        "hi": 10,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "아론은 해마다 한 번 속죄제의 피로 향단을 위한 속죄를 행해야 했어요.",
-    "detail": "본문은 이 제단이 여호와께 지극히 거룩하다고 말해요.",
-    "caution": "이 규정은 성막의 제단에 관한 것이며 모든 속죄 제사의 전체 절차를 여기서 설명하지는 않아요.",
-    "refs": [
-      "출애굽기 30:7-10"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-exo-31-3",
     "title": "브살렐에게 주신 지혜와 재주",
     "aliases": [
@@ -5392,34 +5364,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "caution": "하나님의 긍휼과 공의를 어느 하나만 남기고 읽지 않아요.",
     "refs": [
       "출애굽기 34:6-7"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-exo-35-21",
-    "title": "자원하여 드린 예물",
-    "aliases": [
-      "예물"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 35,
-        "lo": 21,
-        "hi": 21,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "마음이 움직인 사람들이 회막과 그 기구와 옷을 만드는 데 쓸 예물을 가져왔어요.",
-    "detail": "앞에서 필요한 재료를 자원하는 마음으로 가져오라는 요청이 주어졌어요.",
-    "caution": "헌금을 강요하거나 드린 액수로 믿음의 정도를 재는 근거로 삼지 않아요.",
-    "refs": [
-      "출애굽기 35:20-22"
     ],
     "category": "본문 문맥",
     "lens": "",
@@ -6654,37 +6598,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "category": "본문 문맥",
     "lens": "",
     "wcf": []
-  },
-  {
-    "id": "context-exo-39-43",
-    "title": "완성된 일을 살핀 모세",
-    "aliases": [
-      "모세"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 39,
-        "lo": 43,
-        "hi": 43,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "모세는 성막 제작이 여호와의 명령대로 이루어진 것을 보고 일한 이들을 축복해요.",
-    "detail": "앞에서는 제사장 옷을 비롯한 작업이 완료되어 모세에게 가져온 내용이 기록돼요.",
-    "caution": "작업의 완료와 그 다음 장에서 하나님이 성막에 임하시는 장면을 구별해 읽어요.",
-    "refs": [
-      "출애굽기 39:43",
-      "출애굽기 39:32-43"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  }
-]);
+  }]);
 
 // 창세기·출애굽기의 핵심 어구를 절별로 추가 설명한다.
 window.ScriptureNotesData.contextualTerms.push(...[
@@ -8271,34 +8185,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-exo-28-12",
-    "title": "어깨에 메는 이스라엘의 이름",
-    "aliases": [
-      "보석"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 28,
-        "lo": 12,
-        "hi": 12,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "대제사장의 에봇 어깨받이에 단 두 보석은 이스라엘 아들들의 이름을 기억하게 해요.",
-    "detail": "앞 절들은 이름을 보석에 나누어 새기라고 명하고, 뒤에서는 이름을 가슴에 지니는 흉패도 설명해요.",
-    "caution": "기념은 하나님 앞에서 백성을 대표하는 제사장 복장의 문맥에서 살펴요.",
-    "refs": [
-      "출애굽기 28:9-12"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-exo-30-15",
     "title": "동일하게 내는 속전",
     "aliases": [
@@ -8321,35 +8207,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "caution": "이 금액을 사람이 돈으로 영원한 구원을 살 수 있다는 뜻으로 읽지 않아요.",
     "refs": [
       "출애굽기 30:11-16"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-exo-30-18",
-    "title": "제사장이 씻는 물두멍",
-    "aliases": [
-      "물두멍",
-      "물동이"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 30,
-        "lo": 18,
-        "hi": 18,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "놋 물두멍은 회막과 제단 사이에 두고 물을 담아 씻는 데 사용해요.",
-    "detail": "아론과 아들들은 회막에 들어가거나 제단에서 섬길 때 손과 발을 씻어야 했어요.",
-    "caution": "정결 의식의 규정을 현대인의 위생 상태로 사람의 죄를 판단하는 기준으로 바꾸지 않아요.",
-    "refs": [
-      "출애굽기 30:17-21"
     ],
     "category": "본문 문맥",
     "lens": "",
@@ -8552,64 +8409,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "category": "본문 문맥",
     "lens": "",
     "wcf": []
-  },
-  {
-    "id": "context-exo-38-21",
-    "title": "성막 재료의 결산",
-    "aliases": [
-      "이다말"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 38,
-        "lo": 21,
-        "hi": 21,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "모세의 명령에 따라 레위 사람들이 성막에 쓴 재료를 계산했고 아론의 아들 이다말이 그 일을 맡았어요.",
-    "detail": "이어 건축에 쓰인 금과 은과 놋의 양을 기록해요.",
-    "caution": "공동체가 낸 재료를 기록하고 책임 있게 다룬 문맥을 살펴요.",
-    "refs": [
-      "출애굽기 38:21-25"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-exo-40-36",
-    "title": "구름이 떠오를 때의 행진",
-    "aliases": [
-      "구름"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 40,
-        "lo": 36,
-        "hi": 36,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "성막 위의 구름이 떠오르면 이스라엘은 길을 떠났어요.",
-    "detail": "구름이 떠오르지 않으면 떠오르는 날까지 머물렀으며, 낮의 구름과 밤의 불이 이스라엘 앞에 있었어요.",
-    "caution": "이 광야 행진의 표지를 모든 신자가 오늘 동일하게 보아야 하는 표지로 일반화하지 않아요.",
-    "refs": [
-      "출애굽기 40:34-38"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  }
-]);
+  }]);
 
 // 가족사와 출애굽의 이어지는 장면별 설명.
 window.ScriptureNotesData.contextualTerms.push(...[
@@ -9348,36 +9148,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "category": "본문 문맥",
     "lens": "",
     "wcf": []
-  },
-  {
-    "id": "context-exo-34-29",
-    "title": "모세의 얼굴에서 난 광채",
-    "aliases": [
-      "얼굴"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 34,
-        "lo": 29,
-        "hi": 29,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "모세는 두 돌판을 들고 시내산에서 내려올 때 여호와와 말씀을 나누었기 때문에 얼굴에서 광채가 났지만 자신은 알지 못했어요.",
-    "detail": "백성은 그를 가까이하기를 두려워했고 모세는 그들에게 하나님이 주신 명령을 전했어요.",
-    "caution": "얼굴의 빛을 사람이 스스로 만들어 내야 할 영적 능력으로 읽지 않아요.",
-    "refs": [
-      "출애굽기 34:29-35"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  }
-]);
+  }]);
 
 // 창세기와 출애굽기의 추가 절별 문맥.
 window.ScriptureNotesData.contextualTerms.push(...[
@@ -10514,63 +10285,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-exo-31-2",
-    "title": "이름을 불러 세우신 브살렐",
-    "aliases": [
-      "브살렐"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 31,
-        "lo": 2,
-        "hi": 2,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "하나님은 유다 지파 브살렐을 지명해 성막을 만드는 일에 세우세요.",
-    "detail": "이어 하나님의 영과 지혜와 지식과 재주를 주셨다고 말씀하세요.",
-    "caution": "사람의 기술과 공동체의 협력이 하나님의 명령을 따르는 일에 사용된 장면이에요.",
-    "refs": [
-      "출애굽기 31:1-6"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-exo-32-19",
-    "title": "금송아지를 보고 돌판을 깨뜨림",
-    "aliases": [
-      "송아지",
-      "모세"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 32,
-        "lo": 19,
-        "hi": 19,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "모세는 진 가까이에서 송아지와 춤을 보고 화를 내며 손의 돌판들을 산 아래로 던져 깨뜨려요.",
-    "detail": "앞에서 하나님은 백성의 우상 숭배를 알리셨고 모세는 백성을 위해 간구했어요.",
-    "caution": "이 장면을 화가 날 때 물건을 파괴해도 된다는 일반적 허가로 만들지 않아요.",
-    "refs": [
-      "출애굽기 32:15-20"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-exo-34-14",
     "title": "다른 신에게 절하지 말라는 말씀",
     "aliases": [
@@ -11249,34 +10963,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-exo-31-18",
-    "title": "하나님이 주신 두 돌판",
-    "aliases": [
-      "증거판"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 31,
-        "lo": 18,
-        "hi": 18,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "하나님은 시내산에서 말씀을 마치신 뒤 모세에게 친히 쓰신 두 증거판을 주셨어요.",
-    "detail": "다음 장에서는 백성의 금송아지 사건과 모세가 돌판을 깨뜨리는 장면이 나와요.",
-    "caution": "돌판의 기록과 뒤에 다시 주어지는 돌판의 이야기를 구별해 살펴요.",
-    "refs": [
-      "출애굽기 31:18"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-exo-33-14",
     "title": "하나님의 동행에 관한 응답",
     "aliases": [
@@ -11303,36 +10989,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "category": "본문 문맥",
     "lens": "",
     "wcf": []
-  },
-  {
-    "id": "context-exo-36-6",
-    "title": "예물을 더 가져오지 말라는 명령",
-    "aliases": [
-      "예물"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 36,
-        "lo": 6,
-        "hi": 6,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "모세가 성소에 쓸 예물을 더 가져오지 말라고 알리자 백성은 가져오기를 그쳤어요.",
-    "detail": "일하는 사람들이 필요한 재료가 넉넉하다고 모세에게 보고한 다음에 내린 명령이에요.",
-    "caution": "앞의 자원하는 예물과 뒤의 재료 결산을 함께 살펴요.",
-    "refs": [
-      "출애굽기 36:4-7"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  }
-]);
+  }]);
 
 // 창세기 1–3장의 추가 문맥 설명.
 window.ScriptureNotesData.contextualTerms.push(...[
@@ -28905,69 +28562,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-exo-28-35",
-    "title": "방울 소리와 죽지 않음",
-    "aliases": [
-      "그 소리가 들릴",
-      "방울 소리"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 28,
-        "lo": 35,
-        "hi": 35,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "아론이 성소에 들어갈 때와 나올 때에 방울 소리가 들릴 것이며 그리하면 죽지 않는다고 해요.",
-    "detail": "30장 20–21절은 씻지 않고 회막에 들어가면 죽는다고 하고, 28장 43절은 속바지를 입지 않으면 죄를 짊어진 채 죽는다고 해요.",
-    "caution": "방울 소리의 의미를 본문이 자세히 설명하지 않으므로 주어진 규정으로 읽어요.",
-    "refs": [
-      "출애굽기 28:35",
-      "출애굽기 28:43",
-      "출애굽기 30:20-21"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-exo-29-1",
-    "title": "위임식에 쓸 제물",
-    "aliases": [
-      "어린 수소",
-      "수송아지"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 29,
-        "lo": 1,
-        "hi": 1,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "제사장 직분을 위임하려면 어린 수소 하나와 흠 없는 숫양 둘을 택하라고 해요.",
-    "detail": "14절은 수소를 속죄제로, 18절은 첫째 숫양을 번제로, 22절은 둘째 숫양을 위임식의 숫양으로 말해요.",
-    "caution": "각 제물이 쓰이는 순서와 이름을 본문대로 구분해서 읽어요.",
-    "refs": [
-      "출애굽기 29:1",
-      "출애굽기 29:14",
-      "출애굽기 29:18",
-      "출애굽기 29:22"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-exo-29-4",
     "title": "물로 씻기고",
     "aliases": [
@@ -29211,36 +28805,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-exo-30-13",
-    "title": "성소의 세겔로 반 세겔",
-    "aliases": [
-      "반 세겔",
-      "은 반 세겔"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 30,
-        "lo": 13,
-        "hi": 13,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "계수에 드는 모든 사람은 성소의 세겔로 반 세겔을 여호와께 드리라고 해요.",
-    "detail": "38장 25–26절에서 계수된 자가 이십 세 이상으로 육십만 삼천오백오십 명이며 각 사람이 반 세겔씩 냈다고 해요.",
-    "caution": "금액을 오늘의 돈으로 환산하려 하지 않고, 속전으로 내는 액수라는 점을 읽어요.",
-    "refs": [
-      "출애굽기 30:13-16",
-      "출애굽기 38:25-26"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-exo-30-32",
     "title": "관유를 붓지 말 것",
     "aliases": [
@@ -29264,36 +28828,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "caution": "제사장에게 바르는 일과 보통 사람의 몸에 붓는 일을 본문의 구분대로 읽어요.",
     "refs": [
       "출애굽기 30:30-33"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-exo-31-6",
-    "title": "브살렐과 오홀리압",
-    "aliases": [
-      "오홀리압"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 31,
-        "lo": 6,
-        "hi": 6,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "하나님은 단 지파 아히사막의 아들 오홀리압을 세워 브살렐과 함께하게 하세요.",
-    "detail": "브살렐은 유다 지파이고 오홀리압은 단 지파예요. 35장 30–35절과 36장 1절에서도 두 사람이 함께 이름이 나와요.",
-    "caution": "두 지파의 사람이 함께 일하게 하신 점을 본문이 기록한 그대로 읽어요.",
-    "refs": [
-      "출애굽기 31:2",
-      "출애굽기 31:6",
-      "출애굽기 36:1"
     ],
     "category": "본문 문맥",
     "lens": "",
@@ -29539,36 +29073,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "refs": [
       "출애굽기 32:11-13",
       "창세기 22:16-17"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-exo-32-20",
-    "title": "가루가 된 금송아지",
-    "aliases": [
-      "가루를 만들어",
-      "가루로 만들었습니다"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 32,
-        "lo": 20,
-        "hi": 20,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "모세는 송아지를 불살라 가루로 만들어 물에 뿌려 이스라엘 자손에게 마시게 해요.",
-    "detail": "신명기 9장 21절은 이 일을 송아지를 불살라 찧고 가늘게 갈아 시내에 뿌린 일로 회고해요.",
-    "caution": "행동의 뜻을 본문이 직접 설명하지 않으므로 우상이 완전히 없어졌음을 보인 장면으로 읽어요.",
-    "refs": [
-      "출애굽기 32:20",
-      "신명기 9:21"
     ],
     "category": "본문 문맥",
     "lens": "",
@@ -29972,36 +29476,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-exo-34-21",
-    "title": "바쁜 때의 안식일",
-    "aliases": [
-      "밭 갈 때에나 거둘 때에도",
-      "밭을 갈거나 거두는 계절에도"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 34,
-        "lo": 21,
-        "hi": 21,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "엿새 동안 일하고 일곱째 날에는 쉬되 밭 갈 때에나 거둘 때에도 쉬라고 하세요.",
-    "detail": "31장 13–17절과 35장 2–3절에서도 안식일 규정이 이어져요.",
-    "caution": "가장 바쁜 때에도 쉬라는 본문의 강조를 먼저 읽어요.",
-    "refs": [
-      "출애굽기 34:21",
-      "출애굽기 31:13-17"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-exo-34-28",
     "title": "사십 일의 금식과 십계명",
     "aliases": [
@@ -30062,36 +29536,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-exo-35-3",
-    "title": "안식일의 불",
-    "aliases": [
-      "불도 피우지",
-      "불을 피우지"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 35,
-        "lo": 3,
-        "hi": 3,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "안식일에는 너희의 모든 처소에서 불도 피우지 말라고 해요.",
-    "detail": "2절은 일곱째 날을 여호와께 엄숙한 안식일이라 하며 일하는 자는 죽는다고 해요. 31장 14–15절에도 같은 규정이 있어요.",
-    "caution": "이 규정의 범위를 본문이 정한 안식일 규정으로 읽고, 다른 상황에 그대로 옮겨 적용하지 않아요.",
-    "refs": [
-      "출애굽기 35:2-3",
-      "출애굽기 31:14-15"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-exo-35-22",
     "title": "성막을 위해 내놓은 금붙이",
     "aliases": [
@@ -30119,38 +29563,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "category": "본문 문맥",
     "lens": "",
     "wcf": []
-  },
-  {
-    "id": "context-exo-36-8",
-    "title": "지시대로 만든 성막",
-    "aliases": [
-      "성막",
-      "회막"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 36,
-        "lo": 8,
-        "hi": 8,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "일하는 사람 중에 마음이 지혜로운 사람들이 열 폭 휘장으로 성막을 지어요.",
-    "detail": "26장 1–6절의 지시가 그대로 만들어지는 장면이에요. 36–39장은 25–31장의 명령을 실행한 기록이에요.",
-    "caution": "명령과 실행이 거의 같은 말로 기록된 점을 확인하며 읽어요.",
-    "refs": [
-      "출애굽기 36:8-13",
-      "출애굽기 26:1-6"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  }
-]);
+  }]);
 
 // 출애굽기 37–40장의 추가 문맥 설명.
 window.ScriptureNotesData.contextualTerms.push(...[
@@ -30209,34 +29622,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "refs": [
       "출애굽기 39:3",
       "출애굽기 28:6"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-exo-39-42",
-    "title": "명령하신 대로 마침",
-    "aliases": [
-      "명령하신 대로"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 39,
-        "lo": 42,
-        "hi": 42,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "이스라엘 자손이 여호와께서 모세에게 명령하신 대로 모든 역사를 마쳐요.",
-    "detail": "이 장에서는 '여호와께서 모세에게 명령하신 대로'라는 표현이 여러 번 반복돼요. 43절에서 모세는 일이 명령대로 된 것을 보고 그들에게 축복해요.",
-    "caution": "같은 말이 반복되는 점을 순종의 강조로 읽어요.",
-    "refs": [
-      "출애굽기 39:42-43"
     ],
     "category": "본문 문맥",
     "lens": "",
@@ -30334,38 +29719,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "category": "본문 문맥",
     "lens": "",
     "wcf": []
-  },
-  {
-    "id": "context-exo-40-37",
-    "title": "구름을 따라 움직인 행진",
-    "aliases": [
-      "떠오르지 않을 때",
-      "걷힐 때까지"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 40,
-        "lo": 37,
-        "hi": 37,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "구름이 떠오르지 않을 때에는 떠오르는 날까지 나아가지 않았다고 해요.",
-    "detail": "36절은 구름이 떠오르면 이스라엘 자손이 앞으로 나아갔다고 해요. 민수기 9장 17–18절도 구름이 머무는 동안 진영에 머물렀다고 말해요.",
-    "caution": "행진과 머묾이 모두 하나님이 구름으로 보이신 인도에 따랐다는 점을 읽어요.",
-    "refs": [
-      "출애굽기 40:36-38",
-      "민수기 9:17-18"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  }
-]);
+  }]);
 
 // 레위기 1–7장의 추가 문맥 설명.
 window.ScriptureNotesData.contextualTerms.push(...[
@@ -202995,3 +202349,18 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   }
 ]);
+
+// 출애굽기 36장의 제작 기록은 25–31장의 성막 지시를 실행하는 문맥에 놓인다.
+window.ScriptureNotesData.contextualTerms.push({
+  "id": "context-exo-36-8",
+  "title": "명령과 성막 제작의 반복 구조",
+  "aliases": ["열 폭 휘장", "성막을 지어요"],
+  "locations": [{"code":"exo","chapter":36,"lo":8,"hi":8,"editions":["gae","easy"]}],
+  "summary": "25–31장의 성막 지시 뒤에 36–39장은 재료와 기구를 실제로 만든 일을 다시 기록해요.",
+  "detail": "제작 기록은 지시의 세부를 되풀이하면서 여러 차례 여호와께서 모세에게 명하신 대로 했다고 밝힙니다. 이 반복은 성막이 임의로 설계된 것이 아니라 주어진 명령에 따라 세워졌음을 강조해요.",
+  "caution": "각 제작 절차의 설명은 앞선 지시와 겹치므로, 두 부분을 같은 시점의 사건으로 혼동하지 않아요.",
+  "refs": ["출애굽기 25:8-9", "출애굽기 36:8", "출애굽기 39:42-43"],
+  "category": "본문 문맥",
+  "lens": "",
+  "wcf": []
+});
