@@ -42,13 +42,14 @@ function buildReader() {
         <div class="rd-nav">
           <div class="seg rd-seg" id="r-tabs">${READER_TABS.map(([k, label]) => `<button data-rtab="${k}">${label}</button>`).join("")}</div>
           <div class="rd-chap" id="r-chap"></div>
+          <button type="button" class="reader-auto-trigger" id="r-auto-toggle" aria-expanded="false" aria-controls="reading-scroll-controls" hidden>자동 OFF</button>
         </div>
       </div>
       <div class="rd-clip">${sheetShell()}</div>
     </div>`;
 
   readerAutoScroll?.destroy();
-  readerAutoScroll = createReadingAutoScroll($("#sheet-body"), $("#sheet"));
+  readerAutoScroll = createReadingAutoScroll($("#sheet-body"), $(".rd-top"), $("#r-auto-toggle"));
   bindSheetChrome(renderReaderSheet);
   // ‹ 사무엘하 3장 › : 통독 순서대로 앞뒤 장 (Day가 바뀌면 따라감). 가운데 장 이름을 누르면 권·장 고르기
   $("#r-chap").addEventListener("click", (e) => {

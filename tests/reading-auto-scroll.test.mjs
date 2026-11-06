@@ -4,17 +4,17 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 function setup() {
  const element=()=>({textContent:'',value:'7',listeners:{},addEventListener(k,fn){this.listeners[k]=fn;},removeEventListener(k){delete this.listeners[k];},setAttribute(k,v){this[k]=v;},contains(){return false;}});
- const controls=Object.fromEntries(['[data-play]','input','[data-speed]','[data-eta]','[data-status]','[data-expand]','[data-settings]','[data-chevron]'].map(k=>[k,element()]));
- controls['[data-settings]'].hidden=true;
+ const controls=Object.fromEntries(['[data-play]','input','[data-speed]','[data-eta]','[data-status]'].map(k=>[k,element()]));
  const bar={...element(),querySelector:k=>controls[k],remove(){},hidden:true};
  const body={...element(),scrollHeight:1000,clientHeight:300,scrollTop:0,isConnected:true};
  const document={...element(),createElement:()=>bar,querySelector:()=>null,hidden:false};
  let callback,now=0;
  const env={document,MutationObserver:class{observe(){}disconnect(){}},requestAnimationFrame(fn){callback=fn;return 1;},cancelAnimationFrame(){callback=null;}};
  vm.createContext(env);vm.runInContext(fs.readFileSync('js/features/reading-auto-scroll.js','utf8'),env);
- const controller=env.createReadingAutoScroll(body,{insertBefore(){},parentElement:{parentElement:{parentElement:{}}}});
- controller.setVisible(true);
- return {body,controls,controller,advance(ms){now+=ms;const fn=callback;callback=null;fn?.(now);}};
+ const trigger=element();
+ const controller=env.createReadingAutoScroll(body,{append(){},parentElement:{parentElement:{}}},trigger);
+ controller.setVisible(true);trigger.listeners.click();
+ return {body,controls,controller,trigger,bar,advance(ms){now+=ms;const fn=callback;callback=null;fn?.(now);}};
 }
 test('속도를 실시간 반영하고 소수 픽셀을 누적하며 ETA를 계산한다',()=>{
  const s=setup(),c=s.controls;
@@ -38,17 +38,19 @@ test('끝에 도착하면 정지하고 외부 스크롤 및 숨김도 정지한�
  s.controller.destroy();
 });
 
-test('기본 접힘과 펼침 토글은 재생을 중단하지 않는다',()=>{
+test('상단 토글이 속도 바를 열고 닫으며 닫을 때 자동 스크롤을 멈춘다',()=>{
  const s=setup(),c=s.controls;
- assert.equal(c['[data-settings]'].hidden,true);
- c['[data-expand]'].listeners.click();
- assert.equal(c['[data-settings]'].hidden,false);
- assert.equal(c['[data-expand]']['aria-expanded'],'true');
- c['[data-play]'].listeners.click();s.advance(0);
- c['[data-expand]'].listeners.click();
- assert.equal(c['[data-settings]'].hidden,true);
- assert.equal(c['[data-expand]']['aria-expanded'],'false');
- s.advance(100);
+ assert.equal(s.trigger.textContent,'자동 ON');
+ assert.equal(s.bar.hidden,false);
+ c['[data-play]'].listeners.click();s.advance(0);s.advance(100);
  assert.ok(s.body.scrollTop>0);
- assert.equal(c['[data-status]'].textContent,'재생 중');
+ s.trigger.listeners.click();
+ assert.equal(s.bar.hidden,true);
+ assert.equal(s.trigger.textContent,'자동 OFF');
+ assert.equal(s.trigger['aria-expanded'],'false');
+ const top=s.body.scrollTop;s.advance(1000);
+ assert.equal(s.body.scrollTop,top);
+ s.trigger.listeners.click();
+ assert.equal(s.bar.hidden,false);
+ assert.equal(s.trigger.textContent,'자동 ON');
 });

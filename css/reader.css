@@ -637,11 +637,14 @@ mark.study-mark:focus-visible{outline:2px solid currentColor;outline-offset:2px}
   .vp-edsel-list { gap: 10px; }
 }
 
-/* 본문 위의 접이식 컨트롤: 스크롤 영역 밖에 두어 항상 조작할 수 있다. */
-.reading-auto-scroll { flex: 0 0 auto; padding: 4px 12px; border-bottom: 1px solid var(--line); background: var(--bg); color: var(--ink); font-size: .78rem; }
-.reading-auto-scroll[hidden], .reading-auto-scroll [data-settings][hidden] { display: none; }
+/* 통독 상단의 간단한 토글과 펼쳐지는 속도 조절. */
+.reading-auto-scroll { padding: 8px 0 2px; border-top: 1px solid var(--line); background: var(--surface); color: var(--ink); font-size: .78rem; }
+.reading-auto-scroll[hidden], .reader-auto-trigger[hidden] { display: none; }
 .auto-scroll-main { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
-.auto-scroll-expand { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 4px 0; border: 0; background: none; color: inherit; font: inherit; font-weight: 600; cursor: pointer; }
+.reader-auto-trigger { flex: none; min-height: 34px; padding: 4px 8px; border: 1px solid var(--line); border-radius: 9px; background: var(--surface-2); color: var(--muted); font: inherit; font-size: .75rem; font-weight: 700; white-space: nowrap; cursor: pointer; }
+.reader-auto-trigger[aria-expanded="true"] { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }
+.auto-scroll-heading { font-weight: 700; }
+@media (max-width: 580px) { .rd.reading .rd-nav { flex-wrap: wrap; } .rd.reading .rd-chap { min-width: 130px; } .rd.reading .rd-nav .reader-auto-trigger { margin-left: auto; } }
 .auto-scroll-main output, .auto-scroll-speed output { font-variant-numeric: tabular-nums; white-space: nowrap; }
 .auto-scroll-main .btn { min-height: 44px; padding: 6px 12px; white-space: nowrap; }
 .auto-scroll-info { display: grid; justify-items: end; font-size: .72rem; color: var(--muted); }
