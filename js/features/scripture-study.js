@@ -10,8 +10,9 @@ window.ScriptureStudy=(()=>{
  function save(){try{localStorage.setItem(storage,JSON.stringify(records));return true;}catch(_){alert('표시를 저장하지 못했어요. 저장 공간을 확인해 주세요.');return false;}}
  function glossaryHtml(text,context={}){
   const available=aliases.filter(({term})=>{if(term.books&&!term.books.includes(context.code))return false;if(!term.locations)return true;return Number.isInteger(context.lo)&&context.lo===context.hi&&term.locations.some(l=>l.code===context.code&&l.chapter===context.chapter&&context.lo>=l.lo&&context.lo<=l.hi&&(!l.editions||l.editions.includes(context.edition)));});if(!available.length)return esc(text);
-  const pattern=new RegExp(available.map(a=>regexEscape(a.word)).join('|'),'g');let start=0,out='';
-  for(const m of text.matchAll(pattern)){const g=available.find(a=>a.word===m[0]).term;out+=esc(text.slice(start,m.index))+`<span class="study-term" role="button" tabindex="0" data-study-term="${esc(g.id)}" aria-label="${esc(g.title)} 뜻 보기">${esc(m[0])}</span>`;start=m.index+m[0].length;}return out+esc(text.slice(start));
+  // 한글 낱말 중간에서 짧은 별칭이 우연히 맞는 일을 막는다 (예: 바아사도 안의 '사도').
+  const pattern=new RegExp(`(^|[^ㄱ-ㅎㅏ-ㅣ가-힣])(${available.map(a=>regexEscape(a.word)).join('|')})`,'g');let start=0,out='';
+  for(const m of text.matchAll(pattern)){const word=m[2],at=m.index+m[1].length,g=available.find(a=>a.word===word).term;out+=esc(text.slice(start,at))+`<span class="study-term" role="button" tabindex="0" data-study-term="${esc(g.id)}" aria-label="${esc(g.title)} 뜻 보기">${esc(word)}</span>`;start=at+word.length;}return out+esc(text.slice(start));
  }
  function showTerm(g){
   const contexts=[...new Set((g.locations||[]).map(x=>`${x.code==='gen'?'창세기':x.code==='exo'?'출애굽기':x.code==='1ch'?'역대상':x.code==='2ch'?'역대하':x.code} ${x.chapter}장`))];
