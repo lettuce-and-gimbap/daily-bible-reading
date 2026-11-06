@@ -4633,35 +4633,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-37-28",
-    "title": "요셉을 데려간 상인들",
-    "aliases": [
-      "미디안"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 37,
-        "lo": 28,
-        "hi": 28,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "이 절은 지나가던 미디안 상인들과 요셉을 사들인 이스마엘 사람들을 함께 언급해요.",
-    "detail": "형들이 요셉을 팔았고 상인들이 그를 애굽으로 데려갔어요.",
-    "caution": "두 이름의 정확한 관계는 본문이 자세히 설명하지 않으므로 단정하지 않아요.",
-    "refs": [
-      "창세기 37:25-28"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-gen-39-9",
     "title": "요셉이 거절한 이유",
     "aliases": [
@@ -5780,65 +5752,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-35-3",
-    "title": "벧엘로 돌아가 제단을 쌓음",
-    "aliases": [
-      "벧엘"
-    ],
-    "locations": [
       {
-        "code": "gen",
-        "chapter": 35,
-        "lo": 3,
-        "hi": 3,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "야곱은 집안사람들에게 벧엘로 올라가 하나님께 제단을 쌓자고 말해요.",
-    "detail": "그는 환난 때 응답하시고 길에서 함께하신 하나님을 기억하며 이방 신상들을 버리게 했어요.",
-    "caution": "벧엘이라는 장소 자체에 독립적인 힘이 있다는 뜻은 아니에요.",
-    "refs": [
-      "창세기 35:3",
-      "창세기 35:1-4"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-36-1",
-    "title": "에서와 에돔의 계보",
-    "aliases": [
-      "에서"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 36,
-        "lo": 1,
-        "hi": 1,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "이 장은 야곱의 형 에서가 에돔이라고도 불렸으며 그의 자손이 이어졌음을 기록해요.",
-    "detail": "가족과 거주지, 족장과 왕에 관한 목록이 나오고 세일 지역의 주민들도 언급돼요.",
-    "caution": "계보에 실린 모든 사람의 신앙이나 도덕적 상태를 일괄 판단하지 않아요.",
-    "refs": [
-      "창세기 36:1",
-      "창세기 36:1-8"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-38-26",
     "title": "다말을 대면한 유다",
     "aliases": [
@@ -8322,35 +8236,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-33-4",
-    "title": "야곱을 맞은 에서",
-    "aliases": [
-      "에서"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 33,
-        "lo": 4,
-        "hi": 4,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "에서는 야곱에게 달려와 안고 입을 맞추었으며 두 사람은 함께 울었어요.",
-    "detail": "앞에서 야곱은 에서가 사백 명을 거느리고 온다는 소식을 듣고 두려워했어요.",
-    "caution": "이 장면이 두 형제 사이의 모든 문제가 자세히 해결됐다고 말하지는 않아요.",
-    "refs": [
-      "창세기 33:1-4"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-gen-34-2",
     "title": "디나가 당한 폭력",
     "aliases": [
@@ -15353,36 +15239,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-31-7",
-    "title": "열 번이나 바뀐 품삯",
-    "aliases": [
-      "열 번이나"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 31,
-        "lo": 7,
-        "hi": 7,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "야곱은 라반이 자기를 속여 품삯을 열 번이나 바꾸었다고 말해요.",
-    "detail": "41절에서 야곱은 같은 말을 다시 해요. 하나님이 라반이 자기를 해치지 못하게 막으셨다고도 말해요.",
-    "caution": "열 번이라는 횟수는 야곱의 말이므로, 라반의 행동에 대한 야곱의 주장으로 읽어요.",
-    "refs": [
-      "창세기 31:7",
-      "창세기 31:41"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-gen-31-11",
     "title": "꿈에 나타난 하나님의 사자",
     "aliases": [
@@ -15618,36 +15475,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-31-38",
-    "title": "야곱이 말한 이십 년",
-    "aliases": [
-      "이십 년"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 31,
-        "lo": 38,
-        "hi": 38,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "야곱은 라반과 이십 년을 지내며 가축을 정직하게 돌보았다고 말해요.",
-    "detail": "41절에서 야곱은 십사 년은 두 딸을 위해, 육 년은 양 떼를 위해 섬겼다고 설명해요. 29장 18–30절의 일과 이어져요.",
-    "caution": "이십 년을 야곱의 항변으로 읽고, 라반의 대답(43절)과 함께 읽어요.",
-    "refs": [
-      "창세기 31:38-41",
-      "창세기 29:18-30"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-gen-31-42",
     "title": "이삭이 경외하는 이",
     "aliases": [
@@ -15798,36 +15626,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-32-6",
-    "title": "사백 명을 거느린 에서",
-    "aliases": [
-      "사백 명"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 32,
-        "lo": 6,
-        "hi": 6,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "야곱이 보낸 사람들은 에서가 사백 명을 거느리고 오고 있다고 알려요.",
-    "detail": "7절에서 야곱은 매우 두렵고 답답해서 사람들과 가축을 두 떼로 나눠요. 33장에서 에서는 야곱을 달려와 맞이해요.",
-    "caution": "사백 명을 거느린 이유를 이 구절에서 단정하지 않고, 33장 4절의 만남까지 이어서 읽어요.",
-    "refs": [
-      "창세기 32:6-8",
-      "창세기 33:4"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-gen-32-9",
     "title": "약속을 아뢰는 야곱의 기도",
     "aliases": [
@@ -16005,35 +15804,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-32-29",
-    "title": "이름을 묻는 야곱",
-    "aliases": [
-      "내 이름"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 32,
-        "lo": 29,
-        "hi": 29,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "야곱이 상대의 이름을 묻자 그 사람은 왜 내 이름을 묻느냐 하며 야곱에게 복을 주어요.",
-    "detail": "27–28절에서는 그 사람이 야곱의 이름을 묻고 이스라엘이라는 새 이름을 줘요.",
-    "caution": "이름을 알려 주지 않은 이유를 본문이 설명하지 않으므로 짐작해서 덧붙이지 않아요.",
-    "refs": [
-      "창세기 32:27-29"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-gen-32-30",
     "title": "브니엘",
     "aliases": [
@@ -16766,65 +16537,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-35-20",
-    "title": "라헬의 묘비",
-    "aliases": [
-      "묘비",
-      "돌 기둥"
-    ],
-    "locations": [
       {
-        "code": "gen",
-        "chapter": 35,
-        "lo": 20,
-        "hi": 20,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "야곱은 라헬의 묘에 비를 세우고 그것이 지금까지 라헬의 묘비라 불린다고 해요.",
-    "detail": "개역개정은 '비', 쉬운성경은 '돌 기둥'으로 옮겨요. 19절은 라헬이 에브랏 곧 베들레헴 길에 장사되었다고 해요.",
-    "caution": "묘비가 있던 정확한 위치를 오늘의 지도에서 단정하지 않아요.",
-    "refs": [
-      "창세기 35:19-20"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-35-21",
-    "title": "에델 망대",
-    "aliases": [
-      "에델 망대",
-      "에델 탑"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 35,
-        "lo": 21,
-        "hi": 21,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "이스라엘이 다시 길을 떠나 에델 망대를 지나 장막을 쳐요.",
-    "detail": "개역개정은 '에델 망대', 쉬운성경은 '에델 탑'으로 옮겨요. 이 구절은 야곱을 이스라엘이라는 이름으로 불러요.",
-    "caution": "에델의 위치를 단정하지 않고 번역 차이로만 알아 두어요.",
-    "refs": [
-      "창세기 35:21"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-35-22",
     "title": "르우벤의 일",
     "aliases": [
@@ -17185,39 +16898,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-37-15",
-    "title": "도단을 알려 준 사람",
-    "aliases": [
-      "어떤 사람"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 37,
-        "lo": 15,
-        "hi": 15,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "들에서 헤매는 요셉에게 어떤 사람이 형들이 도단으로 갔다고 알려 줘요.",
-    "detail": "본문은 그 사람의 이름이나 정체를 밝히지 않아요. 45장 5–8절과 50장 20절에서 요셉은 이 모든 일을 하나님이 보내신 일로 고백해요.",
-    "caution": "이 사람의 정체를 단정하지 않고, 요셉이 나중에 고백한 말과 함께 읽어요.",
-    "refs": [
-      "창세기 37:15-17",
-      "창세기 45:5",
-      "창세기 50:20"
-    ],
-    "category": "본문 문맥",
-    "lens": "개혁주의 전통은 작은 만남과 우연처럼 보이는 일에서도 하나님의 섭리를 읽어요.",
-    "wcf": [
-      5
-    ]
-  },
-  {
+    {
     "id": "context-gen-37-25",
     "title": "이스마엘 사람들과 미디안 상인",
     "aliases": [
@@ -17662,36 +17343,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
 
 // 창세기 40–44장의 추가 문맥 설명.
 window.ScriptureNotesData.contextualTerms.push(...[
-  {
-    "id": "context-gen-40-1",
-    "title": "왕에게 범죄한 두 신하",
-    "aliases": [
-      "범죄한지라",
-      "미움을 샀습니다"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 40,
-        "lo": 1,
-        "hi": 1,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "이집트 왕의 술 맡은 자와 떡 굽는 자가 왕에게 잘못을 해 갇히게 돼요.",
-    "detail": "개역개정은 '범죄한지라', 쉬운성경은 '미움을 샀습니다'로 옮겨요. 2절에서 파라오가 두 관원장에게 노해요.",
-    "caution": "그들이 무슨 잘못을 했는지 본문이 밝히지 않으므로 짐작해서 덧붙이지 않아요.",
-    "refs": [
-      "창세기 40:1-3"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-gen-40-3",
     "title": "친위대장의 집 안에 있는 옥",
     "aliases": [
