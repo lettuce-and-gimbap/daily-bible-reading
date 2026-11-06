@@ -13063,66 +13063,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
 
 // 창세기 21–25장의 추가 문맥 설명.
 window.ScriptureNotesData.contextualTerms.push(...[
-  {
-    "id": "context-gen-21-6",
-    "title": "사라의 웃음",
-    "aliases": [
-      "웃게",
-      "웃음"
-    ],
-    "locations": [
       {
-        "code": "gen",
-        "chapter": 21,
-        "lo": 6,
-        "hi": 6,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "사라는 하나님이 자기에게 웃음을 주셨고 이 소식을 듣는 사람도 함께 웃을 것이라고 말해요.",
-    "detail": "17장 17절에서 아브라함이, 18장 12절에서 사라가 약속을 듣고 웃었어요. 이 구절에서 사라는 하나님이 자신을 웃게 하셨다고 말해요.",
-    "caution": "이삭이라는 이름의 뜻풀이는 이 구절이 직접 설명하지 않으므로, 앞 장면의 웃음과 이어 읽되 뜻을 덧붙여 단정하지 않아요.",
-    "refs": [
-      "창세기 21:6",
-      "창세기 18:12"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-21-9",
-    "title": "이삭을 놀리는 모습",
-    "aliases": [
-      "놀리는",
-      "놀리고"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 21,
-        "lo": 9,
-        "hi": 9,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "사라는 하갈의 아들이 이삭을 놀리는 것을 보아요.",
-    "detail": "개역개정은 '아브라함의 아들 애굽 여인 하갈의 아들'이라고 쓰고, 쉬운성경은 '이스마엘'이라는 이름을 넣어 풀어 써요.",
-    "caution": "'놀리다'가 구체적으로 어떤 행동이었는지는 본문이 자세히 말하지 않으므로, 그 이상을 덧붙여 단정하지 않아요.",
-    "refs": [
-      "창세기 21:9"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-21-10",
     "title": "사라의 요구",
     "aliases": [
@@ -13181,36 +13122,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-21-14",
-    "title": "가죽부대와 브엘세바 광야",
-    "aliases": [
-      "가죽부대",
-      "가죽 부대"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 21,
-        "lo": 14,
-        "hi": 14,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "아브라함은 아침 일찍 먹을 것과 물이 든 가죽부대를 하갈에게 주고 보내요.",
-    "detail": "15절에서 가죽부대의 물이 떨어져요. 하갈은 브엘세바 광야에서 헤매요.",
-    "caution": "하갈이 얼마나 오래 헤맸는지는 본문이 밝히지 않으므로 기간을 짐작해서 단정하지 않아요.",
-    "refs": [
-      "창세기 21:14-15"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-gen-21-15",
     "title": "아이를 둔 나무 아래",
     "aliases": [
@@ -13326,35 +13238,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-21-22",
-    "title": "아비멜렉과 비골의 말",
-    "aliases": [
-      "비골"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 21,
-        "lo": 22,
-        "hi": 22,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "아비멜렉이 군대 장관 비골과 함께 와서 아브라함이 하는 모든 일에 하나님이 함께하신다고 말해요.",
-    "detail": "개역개정은 '군대 장관', 쉬운성경은 '군대 사령관'으로 옮겨요. 이어서 23절에서 서로 거짓되게 행하지 않겠다는 맹세를 요구해요.",
-    "caution": "이방 사람의 말을 그의 믿음 전체를 보여 주는 것으로 확대하지 않고, 아브라함에게 하나님이 함께하심이 드러났다는 말로 읽어요.",
-    "refs": [
-      "창세기 21:22-24"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-gen-21-25",
     "title": "우물을 빼앗은 일",
     "aliases": [
@@ -13441,65 +13325,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-21-33",
-    "title": "에셀 나무와 영원하신 하나님",
-    "aliases": [
-      "영원하신 하나님",
-      "영원토록 살아 계신"
-    ],
-    "locations": [
       {
-        "code": "gen",
-        "chapter": 21,
-        "lo": 33,
-        "hi": 33,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "아브라함은 브엘세바에 에셀 나무를 심고 여호와의 이름을 불러요.",
-    "detail": "개역개정은 '영원하신 하나님 여호와', 쉬운성경은 '영원토록 살아 계신 여호와 하나님'으로 옮겨요.",
-    "caution": "나무를 심은 일의 의미는 본문이 설명하지 않으므로, 이름을 불렀다는 기록을 중심으로 읽어요.",
-    "refs": [
-      "창세기 21:33"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-22-4",
-    "title": "삼 일째 보인 그 곳",
-    "aliases": [
-      "제삼일",
-      "삼 일째"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 22,
-        "lo": 4,
-        "hi": 4,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "셋째 날에 아브라함이 눈을 들어 그곳을 멀리서 바라봐요.",
-    "detail": "5절에서 아브라함은 종들에게 나귀와 함께 기다리라고 하고 아이와 저기 가서 예배하고 돌아오겠다고 말해요.",
-    "caution": "여정의 길이를 오늘의 거리로 환산하지 않아요.",
-    "refs": [
-      "창세기 22:4-5"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-22-5",
     "title": "예배하고 돌아오겠다는 말",
     "aliases": [
@@ -13678,36 +13504,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-22-23",
-    "title": "리브가의 등장",
-    "aliases": [
-      "리브가"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 22,
-        "lo": 23,
-        "hi": 23,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "나홀의 아들 브두엘이 리브가를 낳았다고 기록해요.",
-    "detail": "20–24절의 가계는 아브라함의 친족을 소개하는 기록이고, 24장에서 리브가가 이삭의 아내가 되어요.",
-    "caution": "가계 기록을 건너뛰지 않고 다음 이야기를 준비하는 소개로 읽어요.",
-    "refs": [
-      "창세기 22:23",
-      "창세기 24:15"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-gen-23-2",
     "title": "헤브론과 기럇아르바",
     "aliases": [
@@ -13766,36 +13563,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-23-6",
-    "title": "헷 사람들의 대답",
-    "aliases": [
-      "하나님이 세우신 지도자",
-      "위대한 지도자"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 23,
-        "lo": 6,
-        "hi": 6,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "헷 사람들은 아브라함을 높여 부르며 가장 좋은 묘실을 쓰라고 말해요.",
-    "detail": "개역개정은 '하나님이 세우신 지도자', 쉬운성경은 '위대한 지도자'로 옮겨요.",
-    "caution": "이방 사람들의 호칭을 아브라함에 대한 그들의 평가로 읽고, 표현의 뜻을 본문 밖으로 넓히지 않아요.",
-    "refs": [
-      "창세기 23:5-6"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-gen-23-11",
     "title": "에브론의 호의",
     "aliases": [
@@ -13940,66 +13708,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-24-7",
-    "title": "앞서 보내실 사자",
-    "aliases": [
-      "사자",
-      "천사"
-    ],
-    "locations": [
       {
-        "code": "gen",
-        "chapter": 24,
-        "lo": 7,
-        "hi": 7,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "아브라함은 하나님이 사자를 종보다 앞서 보내실 것이라고 말해요.",
-    "detail": "개역개정은 '사자', 쉬운성경은 '천사'로 옮겨요. 40절에서 종은 이 말을 신부 집에 다시 전해요.",
-    "caution": "종의 길이 평탄하리라는 약속을 아브라함이 하나님의 앞선 약속에 근거해 말한 것으로 읽어요.",
-    "refs": [
-      "창세기 24:7",
-      "창세기 24:40"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-24-10",
-    "title": "메소보다미아의 나홀의 성",
-    "aliases": [
-      "메소보다미아",
-      "메소포타미아"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 24,
-        "lo": 10,
-        "hi": 10,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "종은 열 필의 낙타와 좋은 것들을 가지고 메소보다미아의 나홀의 성에 이르러요.",
-    "detail": "개역개정은 '메소보다미아', 쉬운성경은 '메소포타미아'로 같은 지역 이름을 서로 다르게 적어요.",
-    "caution": "본문이 말하는 지역 이름을 오늘의 나라 이름으로 단정하지 않아요.",
-    "refs": [
-      "창세기 24:10"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-24-14",
     "title": "종이 구한 표징",
     "aliases": [
@@ -14206,36 +13915,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-24-67",
-    "title": "사라의 장막에서 얻은 위로",
-    "aliases": [
-      "사라의 장막"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 24,
-        "lo": 67,
-        "hi": 67,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "이삭은 리브가를 어머니 사라의 장막으로 데려와 아내로 맞이하고 사랑해요.",
-    "detail": "본문은 이삭이 어머니를 장례한 후 위로를 얻었다고 말해요. 23장에서 사라의 죽음과 장례가 기록돼 있어요.",
-    "caution": "위로의 이유를 본문이 적은 범위를 넘어 짐작하지 않아요.",
-    "refs": [
-      "창세기 24:67",
-      "창세기 23:1-2"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-gen-25-1",
     "title": "아브라함의 후처 그두라",
     "aliases": [
@@ -14294,36 +13974,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-25-8",
-    "title": "열조에게로 돌아간 아브라함",
-    "aliases": [
-      "열조",
-      "조상들"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 25,
-        "lo": 8,
-        "hi": 8,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "아브라함은 나이가 높고 늙어서 기운이 다하여 죽고 열조에게로 돌아가요.",
-    "detail": "개역개정은 '열조', 쉬운성경은 '조상들'로 옮겨요. 9절에서 이삭과 이스마엘이 막벨라 굴에 장사해요.",
-    "caution": "'조상들에게로 돌아가다'는 표현과 장사 기록(9절)을 서로 같은 말로 읽지 않아요.",
-    "refs": [
-      "창세기 25:8-9"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-gen-25-16",
     "title": "이스마엘의 열두 지도자",
     "aliases": [
@@ -14382,66 +14033,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-25-20",
-    "title": "리브가의 고향 밧단 아람",
-    "aliases": [
-      "밧단 아람",
-      "밧단아람"
-    ],
-    "locations": [
       {
-        "code": "gen",
-        "chapter": 25,
-        "lo": 20,
-        "hi": 20,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "이삭은 마흔 살에 밧단 아람 출신 브두엘의 딸 리브가를 아내로 맞이해요.",
-    "detail": "개역개정은 '밧단 아람', 쉬운성경은 '밧단아람'으로 같은 곳을 적어요. 24장에서 종이 이르러 간 나홀의 성 지역과 이어서 읽을 수 있어요.",
-    "caution": "밧단 아람의 정확한 위치를 오늘의 지도와 연결해서 단정하지 않아요.",
-    "refs": [
-      "창세기 25:20",
-      "창세기 24:10"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-25-22",
-    "title": "태 속에서 다투는 아이들",
-    "aliases": [
-      "서로 싸우",
-      "서로 다투"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 25,
-        "lo": 22,
-        "hi": 22,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "리브가의 태 속에서 아이들이 서로 싸우자 리브가는 여호와께 묻으러 가요.",
-    "detail": "23절에서 여호와께서 두 민족이 나누어지고 큰 자가 어린 자를 섬기리라고 답하세요.",
-    "caution": "여호와께 묻는 구체적인 방법은 본문이 말하지 않으므로, 하나님이 직접 답하셨다는 기록을 중심으로 읽어요.",
-    "refs": [
-      "창세기 25:22-23"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-25-26",
     "title": "발꿈치를 잡은 야곱",
     "aliases": [
@@ -14471,35 +14063,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-25-27",
-    "title": "들사람 에서와 조용한 야곱",
-    "aliases": [
-      "조용한"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 25,
-        "lo": 27,
-        "hi": 27,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "에서는 익숙한 사냥꾼이 되고 야곱은 조용한 사람으로 장막에 머물러요.",
-    "detail": "28절에서 이삭은 에서를, 리브가는 야곱을 사랑해요.",
-    "caution": "두 사람을 선과 악으로만 나누지 않고, 부모의 편애까지 함께 기록하는 본문을 읽어요.",
-    "refs": [
-      "창세기 25:27-28"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-gen-25-30",
     "title": "붉은 것과 에돔",
     "aliases": [
@@ -14562,37 +14126,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
 
 // 창세기 26–28장의 추가 문맥 설명.
 window.ScriptureNotesData.contextualTerms.push(...[
-  {
-    "id": "context-gen-26-1",
-    "title": "아브라함 때와 같은 흉년",
-    "aliases": [
-      "흉년",
-      "기근"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 26,
-        "lo": 1,
-        "hi": 1,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "아브라함 때처럼 땅에 흉년이 들자 이삭은 그랄로 가서 블레셋 왕 아비멜렉에게 이르러요.",
-    "detail": "20장과 21장에도 그랄의 아비멜렉이 나와요. 이 구절은 그를 '블레셋 왕 아비멜렉'이라고 불러요.",
-    "caution": "아브라함 때의 아비멜렉과 같은 사람인지는 본문이 밝히지 않으므로 단정하지 않아요.",
-    "refs": [
-      "창세기 26:1",
-      "창세기 20:2"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-gen-26-2",
     "title": "이집트로 내려가지 말라",
     "aliases": [
@@ -14680,35 +14214,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-26-12",
-    "title": "흉년 가운데 거둔 백 배",
-    "aliases": [
-      "백 배"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 26,
-        "lo": 12,
-        "hi": 12,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "이삭은 그 땅에서 씨를 뿌려 그해에 백 배를 얻고 여호와께서 복을 주세요.",
-    "detail": "1절에서 땅에는 흉년이 들었어요. 13–14절에서 이삭은 큰 부자가 되고 블레셋 사람들은 그를 시기해요.",
-    "caution": "복을 재산이 늘어난 일로만 읽지 않고, 본문이 말한 '여호와께서 복을 주시므로'를 먼저 읽어요.",
-    "refs": [
-      "창세기 26:12-14"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-gen-26-14",
     "title": "블레셋 사람의 시기",
     "aliases": [
@@ -14965,68 +14471,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-26-34",
-    "title": "에서의 헷 사람 아내들",
-    "aliases": [
-      "헷 족속",
-      "헷 여자"
-    ],
-    "locations": [
       {
-        "code": "gen",
-        "chapter": 26,
-        "lo": 34,
-        "hi": 34,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "에서는 마흔 살에 헷 사람의 딸 유딧과 바스맛을 아내로 맞이해요.",
-    "detail": "35절은 이 일이 이삭과 리브가에게 근심이 되었다고 기록해요. 27장 46절과 28장 1절에서 이 근심이 이어져요.",
-    "caution": "특정 민족을 낮추는 말로 읽지 않고, 본문이 말한 부모의 근심과 이어지는 당부를 읽어요.",
-    "refs": [
-      "창세기 26:34-35",
-      "창세기 27:46"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-27-4",
-    "title": "이삭이 청한 별미",
-    "aliases": [
-      "별미",
-      "맛있는 요리"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 27,
-        "lo": 4,
-        "hi": 4,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "이삭은 에서에게 사냥하여 별미를 만들어 주면 죽기 전에 복을 빌어 주겠다고 해요.",
-    "detail": "25장 28절은 이삭이 에서가 사냥한 고기를 좋아했다고 기록해요.",
-    "caution": "음식이 복의 조건처럼 보여도, 복의 근원이 하나님이라는 점과 25장 23절의 말씀을 함께 읽어요.",
-    "refs": [
-      "창세기 27:1-4",
-      "창세기 25:23",
-      "창세기 25:28"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-27-7",
     "title": "여호와 앞에서 빌 복",
     "aliases": [
@@ -15056,36 +14501,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-27-12",
-    "title": "야곱이 걱정한 저주",
-    "aliases": [
-      "속이는 자",
-      "속이려 한"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 27,
-        "lo": 12,
-        "hi": 12,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "야곱은 아버지가 자기를 만지시면 속이는 자로 보여 복은커녕 저주를 받을까 걱정해요.",
-    "detail": "11절에서 야곱은 형 에서는 털이 많고 자기는 살결이 부드럽다고 말해요.",
-    "caution": "이 걱정을 계략을 정당화하는 근거로 읽지 않고, 속임수가 들통날 때의 결과를 두려워한 말로 읽어요.",
-    "refs": [
-      "창세기 27:11-12"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-gen-27-13",
     "title": "리브가가 맡은 저주",
     "aliases": [
@@ -15114,37 +14530,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-27-15",
-    "title": "야곱에게 입힌 에서의 옷",
-    "aliases": [
-      "의복",
-      "좋은 옷"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 27,
-        "lo": 15,
-        "hi": 15,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "리브가는 집에 있던 에서의 좋은 옷을 야곱에게 입혀요.",
-    "detail": "16절에서 염소 새끼의 가죽을 야곱의 손과 목에 둘러 주어요. 22–23절에서 이삭은 야곱의 손을 만지고 에서의 손으로 착각해요.",
-    "caution": "계획이 자세히 기록되었다는 점이 그 계획을 옳다고 하는 것은 아니에요.",
-    "refs": [
-      "창세기 27:15-16",
-      "창세기 27:22-23"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-gen-27-19",
     "title": "야곱의 거짓말",
     "aliases": [
@@ -15324,36 +14710,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-27-41",
-    "title": "에서의 다짐",
-    "aliases": [
-      "곡할 때",
-      "장사지낸 뒤"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 27,
-        "lo": 41,
-        "hi": 41,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "에서는 야곱에게 복을 빼앗겼다며 아버지를 곡할 때가 가까우니 야곱을 죽이겠다고 속으로 다짐해요.",
-    "detail": "개역개정은 '아버지를 곡할 때가 가까웠은즉', 쉬운성경은 '아버지를 장사지낸 뒤'로 풀어 써요. 42절에서 이 말이 리브가에게 들려요.",
-    "caution": "에서의 분노가 생긴 경위와 그의 살해 다짐을 구분해서 읽고, 다짐을 정당화하지 않아요.",
-    "refs": [
-      "창세기 27:41-42"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-gen-27-43",
     "title": "하란으로의 피신",
     "aliases": [
@@ -15472,96 +14829,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-28-9",
-    "title": "에서가 맞이한 마할랏",
-    "aliases": [
-      "마할랏"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 28,
-        "lo": 9,
-        "hi": 9,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "에서는 이스마엘의 딸 마할랏을 아내로 맞이해요.",
-    "detail": "마할랏은 이스마엘의 아들 느바욧의 누이예요(25장 13절). 쉬운성경은 에서가 이미 아내들이 있었다고 분명히 밝혀요.",
-    "caution": "8절의 에서가 아버지의 마음을 보고 한 행동과 이어서 읽되, 본문이 평가하지 않은 부분은 단정하지 않아요.",
-    "refs": [
-      "창세기 28:8-9",
-      "창세기 25:13"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-28-13",
-    "title": "조상의 하나님으로 나타나심",
-    "aliases": [
-      "아브라함의 하나님",
-      "이삭의 하나님",
-      "할아버지 아브라함"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 28,
-        "lo": 13,
-        "hi": 13,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "꿈에서 여호와께서 자신을 아브라함의 하나님이요 이삭의 하나님이라고 소개하세요.",
-    "detail": "27장 20절에서 야곱은 여호와를 '아버지의 하나님'이라고 불렀어요. 이 구절에서는 하나님이 직접 야곱에게 말씀하세요.",
-    "caution": "조상의 하나님이라는 소개가 야곱이 직접 만난 하나님이라는 약속으로 이어지는 흐름을 읽어요.",
-    "refs": [
-      "창세기 28:13-15",
-      "창세기 27:20"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-28-14",
-    "title": "땅의 티끌 같은 자손",
-    "aliases": [
-      "티끌"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 28,
-        "lo": 14,
-        "hi": 14,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "하나님은 야곱의 자손이 땅의 티끌 같이 되어 사방으로 퍼지리라고 약속하세요.",
-    "detail": "13장 16절에서 하나님이 아브라함에게 같은 비유를 쓰셨어요. 이 구절에서는 땅의 모든 족속이 복을 받으리라는 약속도 이어져요.",
-    "caution": "아브라함에게 주신 약속이 야곱에게 이어지는 말씀임을 먼저 읽어요.",
-    "refs": [
-      "창세기 28:14",
-      "창세기 13:16"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+        {
     "id": "context-gen-28-16",
     "title": "여기 계신데 몰랐도다",
     "aliases": [
@@ -15739,36 +15007,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-29-14",
-    "title": "내 혈육이로다",
-    "aliases": [
-      "혈육",
-      "뼈요"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 29,
-        "lo": 14,
-        "hi": 14,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "라반은 야곱에게 너는 내 혈육이라고 말하고, 야곱은 한 달 동안 함께 지내요.",
-    "detail": "개역개정은 '내 혈육', 쉬운성경은 '내 뼈요, 내 살'로 옮겨요. 이어서 15절에서 라반은 품삯을 이야기해요.",
-    "caution": "가족이라는 말과 품삯 이야기를 따로 나누지 않고, 한 대화의 흐름으로 읽어요.",
-    "refs": [
-      "창세기 29:13-15"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-gen-29-17",
     "title": "레아와 라헬의 모습",
     "aliases": [
@@ -15998,123 +15237,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-30-6",
-    "title": "단의 이름에 담긴 라헬의 말",
-    "aliases": [
-      "호소",
-      "기도"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 30,
-        "lo": 6,
-        "hi": 6,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "라헬은 하나님이 자기 억울함을 푸시고 호소를 들으셨다고 말하며 이름을 단이라고 지어요.",
-    "detail": "개역개정은 '내 호소를 들으사', 쉬운성경은 '내 기도를 들어 주셔서'로 옮겨요.",
-    "caution": "라헬의 말은 자기 상황에 대한 해석이므로, 그 해석을 본문이 보증한다고 읽지 않아요.",
-    "refs": [
-      "창세기 30:5-6"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-30-8",
-    "title": "납달리와 자매의 경쟁",
-    "aliases": [
-      "경쟁",
-      "겨루어"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 30,
-        "lo": 8,
-        "hi": 8,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "라헬은 언니와 크게 경쟁하여 이겼다고 말하며 빌하의 둘째 아들을 납달리라고 불러요.",
-    "detail": "개역개정은 '크게 경쟁하여', 쉬운성경은 '크게 겨루어서'로 옮겨요.",
-    "caution": "자매의 경쟁심을 하나님의 뜻으로 읽지 않고, 본문이 기록한 마음으로 읽어요.",
-    "refs": [
-      "창세기 30:7-8"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-30-11",
-    "title": "갓과 레아의 말",
-    "aliases": [
-      "복되도다",
-      "운이 좋다"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 30,
-        "lo": 11,
-        "hi": 11,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "레아는 실바가 아들을 낳자 복되다고 말하며 이름을 갓이라고 지어요.",
-    "detail": "개역개정은 '복되도다', 쉬운성경은 '나는 운이 좋다'로 옮겨서 어감이 달라요.",
-    "caution": "'운'이라는 말을 신앙의 가르침으로 읽지 않고 레아가 한 말로 읽어요.",
-    "refs": [
-      "창세기 30:9-11"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-30-13",
-    "title": "아셀과 레아의 말",
-    "aliases": [
-      "기쁘도다",
-      "행복하다"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 30,
-        "lo": 13,
-        "hi": 13,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "레아는 모든 딸들이 자기를 기쁜 자라고 부르리라고 말하며 이름을 아셀이라고 지어요.",
-    "detail": "개역개정은 '기쁘도다', 쉬운성경은 '나는 행복하다'로 옮겨요.",
-    "caution": "레아가 이름에 담은 마음을 본문에 적힌 말대로 읽어요.",
-    "refs": [
-      "창세기 30:12-13"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+          {
     "id": "context-gen-30-14",
     "title": "르우벤이 가져온 합환채",
     "aliases": [
@@ -16171,122 +15294,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-30-18",
-    "title": "잇사갈과 레아의 해석",
-    "aliases": [
-      "그 값"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 30,
-        "lo": 18,
-        "hi": 18,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "레아는 몸종을 남편에게 준 값을 하나님이 주셨다고 말하며 이름을 잇사갈이라고 불러요.",
-    "detail": "개역개정은 '내게 그 값을 주셨다', 쉬운성경은 '그 값을 갚아 주셨구나'로 옮겨요.",
-    "caution": "레아의 해석을 하나님이 그렇게 평가하셨다는 본문의 확인으로 읽지 않아요.",
-    "refs": [
-      "창세기 30:17-18"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-30-20",
-    "title": "스불론과 레아의 기대",
-    "aliases": [
-      "후한 선물",
-      "좋은 선물"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 30,
-        "lo": 20,
-        "hi": 20,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "레아는 하나님이 후한 선물을 주셨다고 말하며 이제 남편이 자기와 함께 살리라고 기대해요.",
-    "detail": "개역개정은 '나와 함께 살리라', 쉬운성경은 '남편이 나를 존중해 주겠지'로 옮겨요.",
-    "caution": "레아의 기대는 이 구절의 말이고, 이루어졌는지는 본문이 여기서 말하지 않아요.",
-    "refs": [
-      "창세기 30:19-20"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-30-24",
-    "title": "요셉의 이름과 라헬의 소원",
-    "aliases": [
-      "요셉"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 30,
-        "lo": 24,
-        "hi": 24,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "라헬은 아들의 이름을 요셉이라 하고 여호와께서 다른 아들을 더하시기를 원한다고 말해요.",
-    "detail": "쉬운성경은 '하나님께서 나에게 아들을 더 주셨으면 좋겠다'로 옮겨요. 35장 16–18절에서 라헬은 다시 아들을 낳으며 힘든 해산을 겪어요.",
-    "caution": "이름과 소원이 이어지는 본문의 설명을 따라 읽고, 이후 일은 35장에서 이어서 읽어요.",
-    "refs": [
-      "창세기 30:22-24",
-      "창세기 35:16-18"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-30-27",
-    "title": "라반이 말한 복",
-    "aliases": [
-      "깨달았노니",
-      "예측하여"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 30,
-        "lo": 27,
-        "hi": 27,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "라반은 여호와께서 야곱으로 말미암아 자기에게 복을 주신 줄 알았다고 말하며 야곱에게 머물라고 청해요.",
-    "detail": "개역개정은 '내가 깨달았노니', 쉬운성경은 '내가 예측하여 알고 있었네'로 옮겨요.",
-    "caution": "라반이 어떻게 알았는지 표현이 번역마다 다르므로 한 가지 방법으로 단정하지 않아요.",
-    "refs": [
-      "창세기 30:27-28"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+          {
     "id": "context-gen-30-37",
     "title": "무늬를 낸 나뭇가지",
     "aliases": [
