@@ -3,6 +3,7 @@
 let currentChapter = null; // 지금 보고 있는 장 (전체 장 일련번호)
 let viewingDay = null; // 지금 보고 있는 Day (0부터)
 let freeChapter = null; // 통독 계획 밖의 장을 직접 골라 읽는 중이면 그 장 (권·장 고르기)
+let readerAutoScroll = null;
 let gotoBook = null; // 권·장 고르기 패널에서 고른 권 코드
 
 // tab: "table"이면 통독표 패널을 연 채로 (위 메뉴의 통독표)
@@ -46,6 +47,8 @@ function buildReader() {
       <div class="rd-clip">${sheetShell()}</div>
     </div>`;
 
+  readerAutoScroll?.destroy();
+  readerAutoScroll = createReadingAutoScroll($("#sheet-body"), $("#sheet"));
   bindSheetChrome(renderReaderSheet);
   // ‹ 사무엘하 3장 › : 통독 순서대로 앞뒤 장 (Day가 바뀌면 따라감). 가운데 장 이름을 누르면 권·장 고르기
   $("#r-chap").addEventListener("click", (e) => {
@@ -285,6 +288,7 @@ const READER_TABS = [["summary", "요약"], ["verses", "본문"], ["tools", "묵
 
 // 열린 탭 표시 (패널이 닫혀 있으면 갓피아 원문)
 function syncReaderTabs() {
+  readerAutoScroll?.setVisible(sheetTab === "verses");
   if(!sheetTab && document.querySelector(".rd.reading") && location.hash === "#today")return openSheet("verses",renderReaderSheet);
   document.querySelectorAll("#r-tabs [data-rtab]").forEach((b) => {
     b.classList.toggle("on", b.dataset.rtab === (sheetTab || "godpia"));
@@ -293,6 +297,8 @@ function syncReaderTabs() {
 onSheetChange = syncReaderTabs;
 
 function renderReaderSheet() {
+  readerAutoScroll?.pause();
+  readerAutoScroll?.setVisible(sheetTab === "verses");
   if (sheetTab === "godpia") return closeSheet();
   const pr = progress();
   const body = $("#sheet-body");
