@@ -17611,36 +17611,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-41-42",
-    "title": "요셉에게 준 인장 반지와 옷",
-    "aliases": [
-      "인장 반지",
-      "도장이 찍힌 반지"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 41,
-        "lo": 42,
-        "hi": 42,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "바로는 요셉에게 인장 반지와 세마포 옷과 금 사슬을 주어요.",
-    "detail": "개역개정은 '인장 반지', 쉬운성경은 '왕의 도장이 찍힌 반지'로 옮겨요. 43절에서 요셉은 버금 수레에 타요.",
-    "caution": "각 물건의 상징 의미는 본문이 설명하지 않으므로, 권한을 맡겼다는 흐름 안에서만 읽어요.",
-    "refs": [
-      "창세기 41:41-43"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-gen-41-43",
     "title": "요셉 앞의 외침",
     "aliases": [
@@ -17958,37 +17929,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-42-25",
-    "title": "자루에 되돌려 넣은 돈",
-    "aliases": [
-      "돈은",
-      "돈도"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 42,
-        "lo": 25,
-        "hi": 25,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "요셉은 곡식을 채우고 각 사람의 돈을 자루에 도로 넣게 해요.",
-    "detail": "27–28절에서 한 사람이 돈을 발견하고 형들이 떨며 하나님이 왜 이런 일을 행하셨는가 말해요. 43장 21–23절에서 청지기가 돈에 대해 설명해요.",
-    "caution": "요셉이 돈을 넣게 한 의도를 본문이 직접 설명하지 않으므로 단정하지 않아요.",
-    "refs": [
-      "창세기 42:25-28",
-      "창세기 43:21-23"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-gen-42-36",
     "title": "야곱의 한탄",
     "aliases": [
@@ -18049,96 +17990,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-43-3",
-    "title": "그 사람의 경고",
-    "aliases": [
-      "내 얼굴을 보지 못하리라",
-      "다시는 나를 볼 수 없을"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 43,
-        "lo": 3,
-        "hi": 3,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "유다는 총리가 아우가 오지 않으면 얼굴을 보지 못하리라고 엄히 경고했다고 아버지에게 말해요.",
-    "detail": "5절에서 유다는 같은 말을 한 번 더 해요. 44장 23절에서도 같은 말이 나와요.",
-    "caution": "유다의 말을 총리의 말을 그대로 전한 것으로 읽어요.",
-    "refs": [
-      "창세기 43:3-5",
-      "창세기 44:23"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-43-11",
-    "title": "야곱이 보낸 예물",
-    "aliases": [
-      "감복숭아",
-      "아몬드"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 43,
-        "lo": 11,
-        "hi": 11,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "야곱은 이 땅의 아름다운 소산을 담아 그 사람에게 예물로 드리라고 해요.",
-    "detail": "개역개정은 '감복숭아', 쉬운성경은 '아몬드'로 옮겨요. 37장 25절에서 이스마엘 상인들도 향품과 유향과 몰약을 싣고 애굽으로 가고 있었어요.",
-    "caution": "열매 이름은 번역이 다르므로 한 가지로 확정하지 않고, 가나안의 특산물을 예물로 보냈다는 흐름으로 읽어요.",
-    "refs": [
-      "창세기 43:11",
-      "창세기 37:25"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-43-12",
-    "title": "두 배의 돈",
-    "aliases": [
-      "갑절",
-      "두 배"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 43,
-        "lo": 12,
-        "hi": 12,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "야곱은 아들들에게 돈을 갑절로 가지고 가고 자루에 도로 넣어졌던 돈도 다시 가져가라고 해요.",
-    "detail": "개역개정은 '혹 잘못이 있었을까 두렵도다', 쉬운성경은 '아마 실수로 그런 일이 있었던 것 같다'로 옮겨요.",
-    "caution": "야곱이 돈의 일을 실수로 여긴 말로 읽고, 요셉의 의도는 아직 밝혀지지 않았다는 점을 함께 읽어요.",
-    "refs": [
-      "창세기 43:12-13"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+        {
     "id": "context-gen-43-23",
     "title": "청지기의 말",
     "aliases": [
@@ -18255,37 +18107,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-44-2",
-    "title": "요셉의 은잔",
-    "aliases": [
-      "은잔"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 44,
-        "lo": 2,
-        "hi": 2,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "요셉은 자기 은잔을 막내의 자루에 넣게 해요.",
-    "detail": "5절과 15절에서 이 잔과 점을 치는 일이 말해져요. 이 말들은 요셉이 정체를 숨긴 채 한 말이에요.",
-    "caution": "요셉이 실제 점을 쳤다는 증거로 읽지 않아요. 신명기 18장 10–11절은 점을 금해요.",
-    "refs": [
-      "창세기 44:2",
-      "창세기 44:5",
-      "신명기 18:10-11"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-gen-44-5",
     "title": "점치는 데 쓴다는 잔",
     "aliases": [
@@ -18315,97 +18137,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-44-9",
-    "title": "형들이 정한 조건",
-    "aliases": [
-      "죽을 것이요",
-      "죽여도 좋습니다"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 44,
-        "lo": 9,
-        "hi": 9,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "형들은 잔이 발견되는 사람은 죽고 나머지는 종이 되겠다고 스스로 말해요.",
-    "detail": "10절에서 청지기는 조건을 바꾸어 발견된 사람만 종이 되고 나머지는 죄가 없다고 해요. 31장 32절에서 야곱도 비슷한 형식으로 말했어요.",
-    "caution": "스스로 정한 조건이 베냐민을 향하게 되는 흐름을 본문의 순서대로 읽어요.",
-    "refs": [
-      "창세기 44:9-12",
-      "창세기 31:32"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-44-10",
-    "title": "청지기가 바꾼 조건",
-    "aliases": [
-      "너희의 말과 같이",
-      "당신들 말대로"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 44,
-        "lo": 10,
-        "hi": 10,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "청지기는 형들의 제안을 받아들이되 잔이 발견된 사람만 종이 되고 나머지는 죄가 없다고 해요.",
-    "detail": "형들의 제안은 9절에서 발견된 사람은 죽고 나머지는 종이 되겠다는 것이었어요.",
-    "caution": "청지기의 말이 형들의 제안보다 좁다는 점을 비교해서 읽어요.",
-    "refs": [
-      "창세기 44:9-10"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-44-13",
-    "title": "옷을 찢은 형들",
-    "aliases": [
-      "옷을 찢고",
-      "옷을 찢었습니다"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 44,
-        "lo": 13,
-        "hi": 13,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "잔이 베냐민의 자루에서 발견되자 형들은 옷을 찢고 성으로 돌아가요.",
-    "detail": "37장 29절에서 르우벤이, 34절에서 야곱이 요셉의 일로 옷을 찢었어요.",
-    "caution": "옷을 찢는 행동을 슬픔과 절망의 표현으로 읽고, 앞 장면의 같은 행동과 나란히 읽어요.",
-    "refs": [
-      "창세기 44:13",
-      "창세기 37:29",
-      "창세기 37:34"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+        {
     "id": "context-gen-44-16",
     "title": "유다의 고백",
     "aliases": [
@@ -18530,37 +18262,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-45-4",
-    "title": "요셉이 밝힌 지난 일",
-    "aliases": [
-      "애굽에 판",
-      "노예로 팔았던"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 45,
-        "lo": 4,
-        "hi": 4,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "요셉은 자기가 형들이 애굽에 판 아우 요셉이라고 분명히 말해요.",
-    "detail": "5절에서 요셉은 근심하지 말라고 하며 하나님이 먼저 보내셨다고 말해요.",
-    "caution": "요셉은 지난 일을 숨기지 않고 말한 다음 하나님의 보내심을 말해요. 이 순서를 그대로 읽어요.",
-    "refs": [
-      "창세기 45:4-5",
-      "창세기 37:28"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-gen-45-7",
     "title": "큰 구원으로 보존하심",
     "aliases": [
@@ -18858,37 +18560,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-46-29",
-    "title": "요셉과 야곱의 재회",
-    "aliases": [
-      "목을 어긋맞춰",
-      "오랫동안 울"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 46,
-        "lo": 29,
-        "hi": 29,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "요셉은 고센으로 올라가 아버지 이스라엘을 만나 목을 어긋맞춰 안고 한참 울어요.",
-    "detail": "30절에서 이스라엘은 네가 살아 있고 얼굴을 보았으니 지금 죽어도 족하다고 말해요. 45장 28절의 말과 이어져요.",
-    "caution": "37장에서 요셉이 죽은 줄 알았던 아버지의 슬픔이 풀리는 장면으로 읽어요.",
-    "refs": [
-      "창세기 46:29-30",
-      "창세기 45:28"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-gen-46-34",
     "title": "목축하는 사람들",
     "aliases": [
@@ -18918,66 +18590,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-47-4",
-    "title": "고센에 거류하고자 한 형들",
-    "aliases": [
-      "거류하고자",
-      "살려고 왔습니다"
-    ],
-    "locations": [
       {
-        "code": "gen",
-        "chapter": 47,
-        "lo": 4,
-        "hi": 4,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "요셉의 형들은 가나안에 기근이 심해 이곳에 거류하고자 왔으니 고센 땅에 살게 해 달라고 청해요.",
-    "detail": "개역개정은 '거류하고자', 쉬운성경은 '살려고'로 옮겨요. 15장 13절에서 하나님은 아브람의 자손이 이방에서 객이 되리라고 말씀하셨어요.",
-    "caution": "'거류'가 임시 체류인지 정착인지 번역마다 다르게 느껴지므로 한쪽으로 단정하지 않아요.",
-    "refs": [
-      "창세기 47:4",
-      "창세기 15:13"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-47-6",
-    "title": "바로의 가축을 맡을 사람",
-    "aliases": [
-      "능력 있는 자",
-      "뛰어난 목자"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 47,
-        "lo": 6,
-        "hi": 6,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "바로는 요셉의 가족을 고센에 살게 하고 능력 있는 사람이 있으면 자기 가축을 관리하게 하라고 해요.",
-    "detail": "쉬운성경은 '뛰어난 목자가 있으면'으로 풀어 써요.",
-    "caution": "이 말을 가족 전체가 맡은 일로 읽지 않고, 능력 있는 사람에게 해당하는 제안으로 읽어요.",
-    "refs": [
-      "창세기 47:5-6"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-47-7",
     "title": "바로를 축복한 야곱",
     "aliases": [
@@ -19365,36 +18978,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-48-20",
-    "title": "에브라임과 므낫세 같게",
-    "aliases": [
-      "에브라임 같고",
-      "에브라임과 므낫세같이"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 48,
-        "lo": 20,
-        "hi": 20,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "야곱은 이스라엘이 이 아이들로 인해 축복하며 에브라임 같고 므낫세 같게 하시기를 빌어요.",
-    "detail": "개역개정은 '에브라임 같고 므낫세 같게', 쉬운성경은 '에브라임과 므낫세같이'로 옮기며 모두 에브라임을 앞세웠다고 말해요.",
-    "caution": "축복의 말이 되풀이되는 표현이 되리라는 야곱의 말을 본문 그대로 읽어요.",
-    "refs": [
-      "창세기 48:20"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-gen-48-22",
     "title": "칼과 활로 얻은 세겜",
     "aliases": [
@@ -19426,37 +19010,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-gen-49-1",
-    "title": "후일에 당할 일",
-    "aliases": [
-      "후일에",
-      "앞으로 무슨 일이"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 49,
-        "lo": 1,
-        "hi": 1,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "야곱은 아들들을 불러 후일에 당할 일을 말하겠다고 해요.",
-    "detail": "이어지는 말은 아들 한 사람씩과 그 후손의 장래를 말해요. 28절은 이들이 이스라엘의 열두 지파라고 말해요.",
-    "caution": "49장 전체를 한 번에 해석하려 하지 않고 각 아들에게 한 말을 따로 읽어요.",
-    "refs": [
-      "창세기 49:1-2",
-      "창세기 49:28"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-gen-49-4",
     "title": "르우벤에게 한 말",
     "aliases": [
@@ -19607,36 +19161,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       8
     ]
   },
-  {
-    "id": "context-gen-49-18",
-    "title": "야곱의 기도",
-    "aliases": [
-      "주의 구원",
-      "구원을 기다립니다"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 49,
-        "lo": 18,
-        "hi": 18,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "단에게 말한 뒤 야곱은 여호와의 구원을 기다린다고 말해요.",
-    "detail": "앞뒤는 단과 갓에게 한 말이에요.",
-    "caution": "앞뒤 말과 이 기도의 연결을 본문이 설명하지 않으므로 단정하지 않아요.",
-    "refs": [
-      "창세기 49:16-19"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-gen-49-22",
     "title": "요셉에 대한 비유",
     "aliases": [
