@@ -63,7 +63,8 @@ function createReadingAutoScroll(body, host, trigger) {
   // 본문 로딩·화면 전환 시 다시 계산하고 화면이 제거되면 리스너도 해제한다.
   const observer = new MutationObserver(() => {
     if (!body.isConnected) { destroy(); return; }
-    if (running) pause();
+    // 늦게 로드되는 본문·주석 표시로 DOM이 바뀌어도 재생 상태를 유지한다.
+    if (running) position = expected = body.scrollTop;
     updateEta();
   });
   observer.observe(body, {childList:true, subtree:true});

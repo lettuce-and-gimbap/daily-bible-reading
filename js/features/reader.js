@@ -298,7 +298,6 @@ function syncReaderTabs() {
 onSheetChange = syncReaderTabs;
 
 function renderReaderSheet() {
-  readerAutoScroll?.pause();
   readerAutoScroll?.setVisible(sheetTab === "verses");
   if (sheetTab === "godpia") return closeSheet();
   const pr = progress();

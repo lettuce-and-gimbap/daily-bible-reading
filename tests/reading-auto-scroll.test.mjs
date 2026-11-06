@@ -8,13 +8,13 @@ function setup() {
  const bar={...element(),querySelector:k=>controls[k],remove(){},hidden:true};
  const body={...element(),scrollHeight:1000,clientHeight:300,scrollTop:0,isConnected:true};
  const document={...element(),createElement:()=>bar,querySelector:()=>null,hidden:false};
- let callback,now=0;
- const env={document,MutationObserver:class{observe(){}disconnect(){}},requestAnimationFrame(fn){callback=fn;return 1;},cancelAnimationFrame(){callback=null;}};
+ let callback,mutation,now=0;
+ const env={document,MutationObserver:class{constructor(fn){mutation??=fn;}observe(){}disconnect(){}},requestAnimationFrame(fn){callback=fn;return 1;},cancelAnimationFrame(){callback=null;}};
  vm.createContext(env);vm.runInContext(fs.readFileSync('js/features/reading-auto-scroll.js','utf8'),env);
  const trigger=element();
  const controller=env.createReadingAutoScroll(body,{append(){},parentElement:{parentElement:{}}},trigger);
  controller.setVisible(true);trigger.listeners.click();
- return {body,controls,controller,trigger,bar,advance(ms){now+=ms;const fn=callback;callback=null;fn?.(now);}};
+ return {body,controls,controller,trigger,bar,mutate(){mutation();},advance(ms){now+=ms;const fn=callback;callback=null;fn?.(now);}};
 }
 test('속도를 실시간 반영하고 소수 픽셀을 누적하며 ETA를 계산한다',()=>{
  const s=setup(),c=s.controls;
@@ -63,4 +63,17 @@ test('상단 버튼은 패널만 열고 닫으며 ON/OFF는 실제 재생 상태
  c['[data-play]'].listeners.click();
  assert.equal(s.trigger.textContent,'자동 OFF');
  assert.equal(s.trigger['aria-pressed'],'false');
+});
+
+test('본문이 비동기로 바뀌거나 손으로 스크롤해도 재생과 ETA가 유지된다',()=>{
+ const s=setup(),c=s.controls;
+ c['[data-play]'].listeners.click();s.advance(0);
+ s.bar.hidden=true;
+ s.body.scrollTop=350;s.body.listeners.scroll();
+ assert.equal(c['[data-eta]'].textContent,'00:50');
+ s.mutate();
+ assert.equal(s.trigger.textContent,'자동 ON');
+ s.advance(100);
+ assert.ok(s.body.scrollTop>350);
+ assert.equal(c['[data-status]'].textContent,'재생 중');
 });
