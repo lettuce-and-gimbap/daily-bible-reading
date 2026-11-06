@@ -4652,7 +4652,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "요셉은 주인의 아내의 요구를 거절하면서 주인의 신뢰와 하나님 앞에서의 죄를 말해요.",
-    "detail": "그는 이후 억울하게 고발당해 감옥에 갇혀요.",
     "caution": "옳은 선택을 하면 당장 고난이 사라진다는 약속은 아니에요.",
     "refs": [
       "창세기 39:7-20"
@@ -4708,7 +4707,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "요셉은 형들이 자신을 해하려 했지만 하나님은 그 일을 통해 많은 생명을 보존하셨다고 말해요.",
-    "detail": "사람들의 의도와 하나님의 뜻을 함께 언급해요.",
     "caution": "악 자체가 선해지거나 가해자의 책임이 없어졌다는 말은 아니에요.",
     "refs": [
       "창세기 50:19-21"
@@ -5772,7 +5770,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "감옥의 두 관원이 꿈을 해석할 사람이 없다고 하자 요셉은 해석이 하나님께 속한다고 말해요.",
-    "detail": "요셉은 두 꿈을 듣고 각 관원의 앞날을 설명해 줘요.",
     "caution": "모든 꿈이 반드시 미래에 관한 계시라고 일반화하지 않아요.",
     "refs": [
       "창세기 40:8",
@@ -7265,7 +7262,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "애굽의 술객들은 이를 만들어 내지 못하고 이것이 하나님의 권능이라고 바로에게 말해요.",
-    "detail": "그런데 바로는 여전히 그들의 말을 듣지 않아요.",
     "caution": "술객들의 발언만으로 그들의 신앙 전체를 단정하지 않아요.",
     "refs": [
       "출애굽기 8:16-19"
@@ -7857,7 +7853,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "하나님은 증거궤 위 속죄소의 두 그룹 사이에서 모세를 만나 이스라엘에게 주실 명령을 말씀하시겠다고 하세요.",
-    "detail": "앞에서 속죄소와 그룹을 만드는 방법을 지시하셨어요.",
     "caution": "그룹을 하나님 자신이나 예배의 대상으로 여기지 않아요.",
     "refs": [
       "출애굽기 25:17-22"
@@ -9332,7 +9327,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "하나님은 모세에게 반석을 치라고 하시고 백성이 마실 물을 주셨어요.",
-    "detail": "모세는 장로들이 보는 앞에서 명령대로 행했어요.",
     "caution": "이 사건을 목마른 백성의 실제 필요와 하나님을 시험한 앞뒤 맥락 속에서 살펴요.",
     "refs": [
       "출애굽기 17:1-6"
@@ -10667,7 +10661,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "하나님이 먹지 말라고 한 열매를 먹었느냐고 물으시자 남자는 하나님이 주신 여자가 열매를 주어 먹었다고 말해요.",
-    "detail": "이어 여자는 뱀이 자신을 속였다고 대답해요.",
     "caution": "각 사람의 대답을 한쪽에게만 모든 책임을 돌리는 근거로 삼지 않아요.",
     "refs": [
       "창세기 3:11-13"
@@ -17923,7 +17916,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "요셉의 청지기는 형들에게 안심하라며 너희 아버지의 하나님이 재물을 주신 것이라고 말해요.",
-    "detail": "청지기는 곧 시므온을 그들에게 이끌어 내요.",
     "caution": "청지기의 말이 요셉의 뜻을 반영한 것인지 그 자신의 믿음인지 본문이 말하지 않으므로 단정하지 않아요.",
     "refs": [
       "창세기 43:23"
@@ -21349,7 +21341,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "여호와께서 서풍으로 메뚜기를 홍해에 몰아넣으시니 애굽에 메뚜기가 하나도 남지 않아요.",
-    "detail": "14장에서도 바다가 큰 사건의 자리가 돼요.",
     "caution": "홍해의 정확한 위치를 오늘의 지도에서 단정하지 않고, 본문이 쓴 이름대로 읽어요.",
     "refs": [
       "출애굽기 10:19",
