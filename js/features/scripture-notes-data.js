@@ -5570,34 +5570,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-gen-29-35",
-    "title": "레아가 낳은 유다",
-    "aliases": [
-      "유다"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 29,
-        "lo": 35,
-        "hi": 35,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "레아는 넷째 아들을 낳고 여호와를 찬양하며 그의 이름을 유다라고 지어요.",
-    "caution": "이 한 장면으로 레아 가정의 갈등이 모두 해결됐다고 단정하지 않아요.",
-    "refs": [
-      "창세기 29:35",
-      "창세기 29:31-35"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-30-22",
     "title": "라헬을 기억하신 하나님",
     "aliases": [
@@ -5970,34 +5942,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "refs": [
       "창세기 49:10",
       "창세기 49:8-12"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-exo-1-17",
-    "title": "하나님을 두려워한 산파들",
-    "aliases": [
-      "산파"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 1,
-        "lo": 17,
-        "hi": 17,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "산파들은 애굽 왕이 남자아이들을 죽이라고 명령했지만 하나님을 두려워하여 아이들을 살려 두었어요.",
-    "caution": "산파들의 행동을 설명하면서 억압받은 가족과 아이들의 처지를 놓치지 않아요.",
-    "refs": [
-      "출애굽기 1:17",
-      "출애굽기 1:15-21"
     ],
     "category": "본문 문맥",
     "lens": "",
@@ -58633,36 +58577,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
       "열왕기상 11:1",
       "열왕기상 11:2",
       "신명기 7:3"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-1ki-11-4",
-    "title": "늙은 솔로몬의 마음",
-    "aliases": [
-      "왕의 마음이 그의 아버지 다윗의 마음과 같지 아니하여",
-        "솔로몬이 늙어감에 따라"
-    ],
-    "locations": [
-      {
-        "code": "1ki",
-        "chapter": 11,
-        "lo": 4,
-        "hi": 4,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "솔로몬이 나이가 많을 때 아내들이 그의 마음을 돌려 다른 신을 따르게 했고, 그래서 그의 마음이 다윗과 같지 않고 여호와 앞에 온전하지 못했다고 해요.",
-    "caution": "'나이가 많을 때'라는 시점만 본문이 말하고, 정확한 나이는 적지 않아요.",
-    "refs": [
-      "열왕기상 11:4",
-      "열왕기상 11:6",
-      "열왕기상 3:14"
     ],
     "category": "본문 문맥",
     "lens": "",
