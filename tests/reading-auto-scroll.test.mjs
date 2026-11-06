@@ -26,15 +26,20 @@ test('속도를 실시간 반영하고 소수 픽셀을 누적하며 ETA를 계�
  assert.equal(c['[data-eta]'].textContent,'00:24');
  for(let i=0;i<60;i++)s.advance(1000/60);
  assert.ok(Math.abs(s.body.scrollTop-37)<0.001);
- s.body.listeners.touchstart();const top=s.body.scrollTop,eta=c['[data-eta]'].textContent;s.advance(1000);
- assert.equal(s.body.scrollTop,top);assert.equal(c['[data-eta]'].textContent,eta);assert.equal(c['[data-status]'].textContent,'일시정지');
+ s.body.scrollTop=200;s.body.listeners.scroll();
+ assert.equal(c['[data-eta]'].textContent,'00:17');
+ assert.equal(s.trigger.textContent,'자동 ON');
+ s.advance(1000);
+ assert.ok(s.body.scrollTop>200);
+ assert.equal(c['[data-status]'].textContent,'재생 중');
 });
-test('끝에 도착하면 정지하고 외부 스크롤 및 숨김도 정지한다',()=>{
+test('끝에 도착하거나 다른 탭으로 이동하면 정지한다',()=>{
  const s=setup(),c=s.controls;s.body.scrollTop=700;c['[data-play]'].listeners.click();
  assert.equal(c['[data-status]'].textContent,'도착');
  s.body.scrollTop=0;c['[data-play]'].listeners.click();s.advance(0);s.body.scrollTop=100;s.body.listeners.scroll();
- assert.equal(c['[data-status]'].textContent,'일시정지');
- c['[data-play]'].listeners.click();s.controller.setVisible(false);assert.equal(c['[data-status]'].textContent,'일시정지');
+ assert.equal(c['[data-status]'].textContent,'재생 중');
+ assert.equal(s.trigger.textContent,'자동 ON');
+ s.controller.setVisible(false);assert.equal(c['[data-status]'].textContent,'일시정지');
  s.controller.destroy();
 });
 

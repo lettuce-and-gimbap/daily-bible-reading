@@ -30,6 +30,7 @@ function createReadingAutoScroll(body, host, trigger) {
   function tick(time) {
     if (!running) return;
     if (!body.isConnected || trigger.hidden || document.hidden || document.querySelector('dialog[open]')) { pause(); return; }
+    if (Math.abs(body.scrollTop - expected) > 1) position = expected = body.scrollTop;
     if (last !== null) {
       // 소수 픽셀을 누적해 낮은 속도에서도 브라우저의 정수 반올림으로 멈추지 않는다.
       position = Math.min(body.scrollHeight - body.clientHeight, position + speed * Math.min((time - last) / 1000, 0.1));
@@ -50,14 +51,15 @@ function createReadingAutoScroll(body, host, trigger) {
     frame = requestAnimationFrame(tick);
   }
   function changeSpeed() { speed = Math.max(3, Math.min(30, Number(slider.value) || 7)); speedLabel.textContent = `${speed} px/s`; updateEta(); }
-  function userInput() { if (running) pause(); }
-  function keyInput(e) { if (['ArrowDown','ArrowUp','PageDown','PageUp','Home','End',' '].includes(e.key) && !bar.contains(e.target)) userInput(); }
-  function scrolled() { if (running && Math.abs(body.scrollTop - expected) > 1) pause(); }
+  function scrolled() {
+    if (!running || Math.abs(body.scrollTop - expected) <= 1) return;
+    position = expected = body.scrollTop;
+    updateEta();
+  }
   function visibility() { if (document.hidden) pause(); }
   play.addEventListener('click', toggle); slider.addEventListener('input', changeSpeed);
-  for (const event of ['wheel','touchstart','pointerdown']) body.addEventListener(event, userInput, {passive:true});
   body.addEventListener('scroll', scrolled, {passive:true});
-  document.addEventListener('keydown', keyInput); document.addEventListener('visibilitychange', visibility);
+  document.addEventListener('visibilitychange', visibility);
   // 본문 로딩·화면 전환 시 다시 계산하고 화면이 제거되면 리스너도 해제한다.
   const observer = new MutationObserver(() => {
     if (!body.isConnected) { destroy(); return; }
@@ -70,8 +72,7 @@ function createReadingAutoScroll(body, host, trigger) {
   function destroy() {
     if (destroyed) return;
     destroyed = true; pause(); observer.disconnect(); routeObserver.disconnect();
-    for (const event of ['wheel','touchstart','pointerdown']) body.removeEventListener(event, userInput);
-    body.removeEventListener('scroll', scrolled); document.removeEventListener('keydown', keyInput); document.removeEventListener('visibilitychange', visibility); trigger.removeEventListener('click', togglePanel); bar.remove();
+    body.removeEventListener('scroll', scrolled); document.removeEventListener('visibilitychange', visibility); trigger.removeEventListener('click', togglePanel); bar.remove();
   }
   updateEta(); syncRunning();
   return {pause, destroy, setVisible(visible) { trigger.hidden = !visible; if (!visible) { bar.hidden = true; trigger.setAttribute('aria-expanded', 'false'); pause(); } }};
