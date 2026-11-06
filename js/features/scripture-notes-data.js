@@ -110415,36 +110415,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
 // 예레미야애가 1-5장
 window.ScriptureNotesData.contextualTerms.push(...[
   {
-    "id": "context-lam-1-1",
-    "title": "열국 중의 과부",
-    "aliases": [
-      "전에는 열국 중에 크던 자가 이제는 과부 같이 되었고",
-        "예전에는 나라들 중에서 큰 성이더니 이제는 과부처럼 되었구나"
-    ],
-    "locations": [
-      {
-        "code": "lam",
-        "chapter": 1,
-        "lo": 1,
-        "hi": 1,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "예루살렘이 한때 열국 중에 크던 성이었으나 이제는 과부처럼 되었다고 슬퍼해요.",
-    "detail": "이사야 47장 8절도 과부로 앉지 않겠다고 자랑하던 바벨론의 몰락을 말해요.",
-    "caution": "과부와 공주의 비유를 정치적 몰락으로 읽을지 여성 이미지를 쓴 애도로 읽을지 해석이 나뉘어요.",
-    "refs": [
-      "예레미야애가 1:1",
-      "이사야 47:8"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-lam-1-5",
     "title": "죄 때문에 곤고하게 하심",
     "aliases": [
@@ -110505,36 +110475,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-lam-3-22",
-    "title": "끝나지 않는 인자와 긍휼",
-    "aliases": [
-      "여호와의 인자와 긍휼이 무궁하시므로 우리가 진멸되지 아니함이니이다",
-        "여호와의 자비는 끝이 없다"
-    ],
-    "locations": [
-      {
-        "code": "lam",
-        "chapter": 3,
-        "lo": 22,
-        "hi": 22,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "여호와의 인자와 긍휼이 끝이 없어서 백성이 아직 멸망하지 않았다고 고백해요.",
-    "detail": "출애굽기 34장 6절도 여호와께서 자비롭고 은혜롭다고 자기를 선포하셔요.",
-    "caution": "이 고백을 절망 속의 소망으로 읽을지 고난을 받아들이는 고백으로 읽을지 해석이 나뉘어요. 3장 안에서는 소망으로 이어져요.",
-    "refs": [
-      "예레미야애가 3:22",
-      "출애굽기 34:6"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-lam-3-24",
     "title": "여호와는 나의 기업",
     "aliases": [
@@ -110559,36 +110499,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "refs": [
       "예레미야애가 3:24",
       "민수기 18:20"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-lam-3-40",
-    "title": "행위를 살피고 돌아가자",
-    "aliases": [
-      "우리가 스스로 우리의 행위들을 조사하고 여호와께로 돌아가자",
-        "우리가 한 일을 살펴서 돌이켜보고 여호와께 돌아가자"
-    ],
-    "locations": [
-      {
-        "code": "lam",
-        "chapter": 3,
-        "lo": 40,
-        "hi": 40,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "백성이 자기 행위를 살펴보고 여호와께 돌아가자고 서로 권해요.",
-    "detail": "예레미야 3장 22절도 패역한 자식들에게 돌아오라고 말씀하셔요.",
-    "caution": "스스로 살피자는 권면을 회개의 주도로 읽을지 여호와의 부르심에 응답하는 행위로 읽을지 해석이 나뉘어요.",
-    "refs": [
-      "예레미야애가 3:40",
-      "예레미야 3:22"
     ],
     "category": "본문 문맥",
     "lens": "",
@@ -110655,36 +110565,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-lam-4-13",
-    "title": "선지자와 제사장의 죄",
-    "aliases": [
-      "그의 선지자들의 죄들과 제사장들의 죄악들 때문이니",
-        "예언자들이 죄를 짓고 제사장들이 악한 일을 했기 때문이다"
-    ],
-    "locations": [
-      {
-        "code": "lam",
-        "chapter": 4,
-        "lo": 13,
-        "hi": 13,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "예루살렘이 이런 재앙을 당한 원인을 예언자와 제사장의 죄라고 설명해요.",
-    "detail": "예레미야 5장 31절도 선지자가 거짓을 예언하고 제사장이 그 권세로 다스린다고 말해요.",
-    "caution": "지도자의 죄를 원인으로 드는 설명이 강조돼요. 백성 전체의 책임과 어떻게 함께 놓이는지 해석이 나뉘어요.",
-    "refs": [
-      "예레미야애가 4:13",
-      "예레미야 5:31"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-lam-4-20",
     "title": "기름 부으신 자의 함정",
     "aliases": [
@@ -110709,36 +110589,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "refs": [
       "예레미야애가 4:20",
       "사무엘상 24:6"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-lam-4-21",
-    "title": "에돔을 향한 말씀",
-    "aliases": [
-      "우스 땅에 사는 딸 에돔아 즐거워하며 기뻐하라",
-        "우스 땅에 사는 딸 에돔아, 기뻐하고 즐거워하여라"
-    ],
-    "locations": [
-      {
-        "code": "lam",
-        "chapter": 4,
-        "lo": 21,
-        "hi": 21,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "예루살렘의 재난을 기뻐하는 에돔에게 잔이 이를 것이라고 말해요.",
-    "detail": "오바댜 1장 12절도 형제의 날에 즐거워하지 말라고 경고해요.",
-    "caution": "'잔이 네게도 이를지니'라는 말씀을 에돔에 대한 심판 선포로 읽을지 경고로 읽을지 해석이 나뉘어요.",
-    "refs": [
-      "예레미야애가 4:21",
-      "오바댜 1:12"
     ],
     "category": "본문 문맥",
     "lens": "",
@@ -110770,36 +110620,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
       "예레미야애가 5:7",
       "출애굽기 20:5",
       "예레미야 31:29"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-lam-5-19",
-    "title": "영원하신 주의 보좌",
-    "aliases": [
-      "여호와여 주는 영원히 계시오며 주의 보좌는 대대에 이르나이다",
-        "주님의 보좌는 영원무궁합니다"
-    ],
-    "locations": [
-      {
-        "code": "lam",
-        "chapter": 5,
-        "lo": 19,
-        "hi": 19,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "백성은 여호와께서 영원히 계시고 보좌가 대대에 이른다고 고백하며 기도해요.",
-    "detail": "시편 102편 12절도 여호와여 주는 영원히 계시니이다 하고 노래해요.",
-    "caution": "이 고백은 바로 뒤의 '잊으시오며'와 대비돼요. 두 구절을 함께 읽는 해석이 많아요.",
-    "refs": [
-      "예레미야애가 5:19",
-      "시편 102:12"
     ],
     "category": "본문 문맥",
     "lens": "",
