@@ -19550,37 +19550,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
 
 // 출애굽기 1–4장의 추가 문맥 설명.
 window.ScriptureNotesData.contextualTerms.push(...[
-  {
-    "id": "context-exo-1-1",
-    "title": "창세기에서 이어지는 이름",
-    "aliases": [
-      "이스라엘 아들들",
-      "이스라엘의 아들들"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 1,
-        "lo": 1,
-        "hi": 1,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "출애굽기는 야곱과 함께 애굽에 내려간 이스라엘 아들들의 이름을 다시 말하며 시작해요.",
-    "detail": "창세기 46장 8–27절에도 같은 명단이 나와요. 5절은 야곱의 허리에서 나온 사람이 모두 칠십이며 요셉은 이미 애굽에 있었다고 해요.",
-    "caution": "명단을 되풀이로 건너뛰지 않고, 창세기 이야기가 이어진다는 표시로 읽어요.",
-    "refs": [
-      "출애굽기 1:1-5",
-      "창세기 46:8"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-exo-1-7",
     "title": "창조 때의 말씀을 닮은 번성",
     "aliases": [
@@ -19816,37 +19786,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-exo-2-1",
-    "title": "레위 집안의 부모",
-    "aliases": [
-      "레위"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 2,
-        "lo": 1,
-        "hi": 1,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "레위 가족 중 한 사람이 레위 여자에게 장가들어요.",
-    "detail": "이 구절은 부모의 이름을 적지 않아요. 6장 20절은 아므람과 요게벳이 아론과 모세를 낳았다고 말하고, 민수기 26장 59절도 같은 가계를 말해요.",
-    "caution": "이름이 적히지 않은 부분은 다른 구절의 설명을 참고해서 읽어요.",
-    "refs": [
-      "출애굽기 2:1",
-      "출애굽기 6:20",
-      "민수기 26:59"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-exo-2-2",
     "title": "아름다운 아기",
     "aliases": [
@@ -19877,67 +19817,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-exo-2-5",
-    "title": "나일 강으로 내려온 바로의 딸",
-    "aliases": [
-      "바로의 딸",
-      "공주"
-    ],
-    "locations": [
       {
-        "code": "exo",
-        "chapter": 2,
-        "lo": 5,
-        "hi": 5,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "바로의 딸이 목욕하러 나일 강으로 내려와 갈대 사이의 상자를 보고 시녀를 보내 가져오게 해요.",
-    "detail": "1장 22절에서 바로는 아들을 나일 강에 던지라고 명령했어요.",
-    "caution": "이 대조를 본문이 따로 설명하지 않으므로, 두 장면을 나란히 놓고 읽는 정도로 두어요.",
-    "refs": [
-      "출애굽기 2:5-6",
-      "출애굽기 1:22"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-exo-2-7",
-    "title": "아기의 누이",
-    "aliases": [
-      "누이"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 2,
-        "lo": 7,
-        "hi": 7,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "아기의 누이가 바로의 딸에게 히브리 여인 가운데서 유모를 불러오겠다고 말해요.",
-    "detail": "이 장은 누이의 이름을 밝히지 않아요. 출애굽기 15장 20절은 아론의 누이 선지자 미리암을 말하고, 민수기 26장 59절은 아므람의 자녀로 미리암을 적어요.",
-    "caution": "이 누이를 미리암으로 읽는 것은 다른 구절을 근거로 한 읽기로 구분해요.",
-    "refs": [
-      "출애굽기 2:7-8",
-      "출애굽기 15:20",
-      "민수기 26:59"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-exo-2-12",
     "title": "애굽 사람을 죽인 모세",
     "aliases": [
@@ -20085,37 +19965,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-exo-2-25",
-    "title": "돌보시고 기억하심",
-    "aliases": [
-      "돌보셨고",
-      "관심을"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 2,
-        "lo": 25,
-        "hi": 25,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "하나님이 이스라엘 자손을 돌보시고 기억하세요.",
-    "detail": "24절은 하나님이 고통 소리를 들으시고 언약을 기억하셨다고 하고, 3장 7절은 여호와께서 보시고 듣고 아신다고 말해요.",
-    "caution": "하나님의 행동이 모세를 부르시는 장면으로 이어지는 흐름을 읽어요.",
-    "refs": [
-      "출애굽기 2:23-25",
-      "출애굽기 3:7"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-exo-3-1",
     "title": "하나님의 산 호렙",
     "aliases": [
@@ -20536,37 +20386,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-exo-4-31",
-    "title": "믿고 경배한 백성",
-    "aliases": [
-      "머리 숙여",
-      "머리를 숙여"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 4,
-        "lo": 31,
-        "hi": 31,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "백성은 모세와 아론의 말과 이적을 믿고 여호와께서 자기들의 고난을 살피셨다는 말을 듣고 머리 숙여 경배해요.",
-    "detail": "5장에서 모세와 아론이 바로에게 나아가자 압제가 더 심해져요.",
-    "caution": "백성의 믿음과 경배를 뒤따르는 시련과 함께 읽어요.",
-    "refs": [
-      "출애굽기 4:29-31",
-      "출애굽기 5:1-9"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  }
-]);
+  ]);
 
 // 출애굽기 5–8장의 추가 문맥 설명.
 window.ScriptureNotesData.contextualTerms.push(...[
@@ -20630,36 +20450,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-exo-5-7b",
-    "title": "짚 없이 만드는 벽돌",
-    "aliases": [
-      "짚"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 5,
-        "lo": 7,
-        "hi": 7,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "바로는 벽돌에 쓸 짚을 주지 말고 백성이 스스로 줍게 하라고 명령해요.",
-    "detail": "11–13절에서 백성은 애굽 온 땅에 흩어져 곡초 그루터기를 거두고, 감독들은 그날의 벽돌 수를 채우라고 독촉해요. 1장 14절에서도 벽돌 굽기가 힘든 노동으로 나와요.",
-    "caution": "일의 양은 줄이지 않고 재료만 빼앗는 명령의 무게를 본문이 기록한 그대로 읽어요.",
-    "refs": [
-      "출애굽기 5:7-13",
-      "출애굽기 1:14"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-exo-5-9",
     "title": "거짓말이라 부른 말",
     "aliases": [
@@ -20899,38 +20690,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-exo-6-6b",
-    "title": "속량하시겠다는 약속",
-    "aliases": [
-      "속량",
-      "풀어 주어"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 6,
-        "lo": 6,
-        "hi": 6,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "하나님은 무거운 짐 밑에서 빼내며 노역에서 건지며 편 팔과 큰 심판으로 속량하겠다고 하세요.",
-    "detail": "개역개정은 '속량하여', 쉬운성경은 '노예 생활에서 풀어 주어 자유로운 몸이 되게'로 옮겨요. 7–8절에서도 하나님이 하시겠다는 일이 이어져요.",
-    "caution": "본문 안에서는 이스라엘이 애굽에서 풀려나는 일을 먼저 읽고, 그리스도의 구속과 연결하는 읽기와 구분해요.",
-    "refs": [
-      "출애굽기 6:6-8"
-    ],
-    "category": "본문 문맥",
-    "lens": "개혁주의 전통은 이스라엘의 속량을 그리스도의 구속을 비추는 그림자로 읽어요.",
-    "wcf": [
-      8
-    ]
-  },
-  {
+    {
     "id": "context-exo-6-12",
     "title": "이스라엘도 듣지 않았는데",
     "aliases": [
@@ -20989,67 +20749,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-exo-6-23",
-    "title": "아론의 아내",
-    "aliases": [
-      "엘리세바"
-    ],
-    "locations": [
       {
-        "code": "exo",
-        "chapter": 6,
-        "lo": 23,
-        "hi": 23,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "아론은 암미나답의 딸이며 나손의 누이인 엘리세바를 아내로 맞아요.",
-    "detail": "민수기 1장 7절은 유다 지파에서 암미나답의 아들 나손을 소개하고, 룻기 4장 20절은 암미나답이 나손을 낳았다고 기록해요.",
-    "caution": "엘리세바의 가문이 유다 지파와 이어지는 기록임을 본문이 말한 범위에서 읽어요.",
-    "refs": [
-      "출애굽기 6:23",
-      "민수기 1:7",
-      "룻기 4:20"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-exo-6-30",
-    "title": "족보 뒤에 되풀이된 말",
-    "aliases": [
-      "입이 둔한",
-      "말을 잘 할 줄"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 6,
-        "lo": 30,
-        "hi": 30,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "모세는 입이 둔하므로 바로가 어찌 자기 말을 듣겠느냐고 여호와 앞에서 아뢰어요.",
-    "detail": "12절에서 모세는 거의 같은 말을 했어요. 14–27절의 족보가 두 말 사이에 들어 있어요.",
-    "caution": "족보를 사이에 두고 같은 장면이 이어져 있다는 점을 알고 읽어요.",
-    "refs": [
-      "출애굽기 6:12",
-      "출애굽기 6:28-30"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-exo-7-1",
     "title": "바로에게 신 같이",
     "aliases": [
@@ -21171,36 +20871,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-exo-7-10",
-    "title": "뱀이 된 아론의 지팡이",
-    "aliases": [
-      "뱀"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 7,
-        "lo": 10,
-        "hi": 10,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "아론이 바로와 그의 신하 앞에 지팡이를 던지니 뱀이 되어요.",
-    "detail": "4장 3절에서는 모세의 지팡이가 뱀이 되었어요. 12절에서 아론의 지팡이가 그들의 지팡이를 삼켜요.",
-    "caution": "모세의 지팡이와 아론의 지팡이가 각각 나오는 장면을 구분해서 읽어요.",
-    "refs": [
-      "출애굽기 7:10-12",
-      "출애굽기 4:3"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-exo-7-11",
     "title": "바로의 현인과 마술사",
     "aliases": [
@@ -21260,64 +20931,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-exo-7-20",
-    "title": "피로 변한 나일 강",
-    "aliases": [
-      "피로 변하고",
-      "피로 변했습니다"
-    ],
-    "locations": [
       {
-        "code": "exo",
-        "chapter": 7,
-        "lo": 20,
-        "hi": 20,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "모세와 아론이 바로와 신하의 눈앞에서 나일 강을 치자 그 물이 다 피로 변해요.",
-    "detail": "21절은 고기가 죽고 악취가 나며 애굽 온 땅에 피가 있었다고 말해요. 24절에서 애굽 사람들은 마실 물을 구하려고 땅을 파요.",
-    "caution": "일어난 일을 자연 현상으로 설명하려 하지 않고, 본문이 기록한 재앙으로 읽어요.",
-    "refs": [
-      "출애굽기 7:20-24"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-exo-8-3",
-    "title": "개구리 재앙의 예고",
-    "aliases": [
-      "개구리"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 8,
-        "lo": 3,
-        "hi": 3,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "하나님은 거절하면 개구리가 나일 강에서 올라와 궁과 침실과 화덕까지 들어가리라고 미리 말씀하세요.",
-    "detail": "쉬운성경은 개구리가 신하와 백성의 집, 화덕과 반죽 그릇에도 들어갈 것이라고 풀어 써요.",
-    "caution": "재앙이 일상의 자리까지 이르는 모습을 본문의 목록대로 읽어요.",
-    "refs": [
-      "출애굽기 8:2-4"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-exo-8-8",
     "title": "바로의 요청과 약속",
     "aliases": [
@@ -21378,37 +20992,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-exo-8-16",
-    "title": "티끌이 이가 되다",
-    "aliases": [
-      "땅의 티끌",
-      "땅 위의 먼지"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 8,
-        "lo": 16,
-        "hi": 16,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "여호와께서 아론에게 지팡이로 땅의 티끌을 치게 하여 애굽 온 땅의 티끌이 이가 되게 하세요.",
-    "detail": "개역개정은 '땅의 티끌', 쉬운성경은 '땅 위의 먼지'로 옮겨요. 이 재앙은 바로에게 가서 말하라는 명령 없이 곧바로 일어나요.",
-    "caution": "재앙마다 같은 방식으로 경고가 있다고 단정하지 않고, 각 재앙의 기록을 따로 읽어요.",
-    "refs": [
-      "출애굽기 8:16-17",
-      "출애굽기 8:20"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-exo-8-25",
     "title": "바로의 첫 번째 타협",
     "aliases": [
@@ -21501,37 +21085,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
 
 // 출애굽기 9–12장의 추가 문맥 설명.
 window.ScriptureNotesData.contextualTerms.push(...[
-  {
-    "id": "context-exo-9-3",
-    "title": "가축에게 내린 돌림병",
-    "aliases": [
-      "돌림병",
-      "끔찍한 병"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 9,
-        "lo": 3,
-        "hi": 3,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "여호와의 손이 들에 있는 가축에게 심한 돌림병을 내리리라고 바로에게 미리 말씀하세요.",
-    "detail": "개역개정은 '심한 돌림병', 쉬운성경은 '끔찍한 병'으로 옮겨요. 15절에서 하나님은 같은 돌림병으로 바로와 그 백성을 쳤다면 세상에서 끊어졌으리라고 하세요.",
-    "caution": "가축에게 내린 재앙과 사람에게 내리지 않으신 일을 구분해서 읽어요.",
-    "refs": [
-      "출애굽기 9:3",
-      "출애굽기 9:15"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-exo-9-4",
     "title": "구별하시는 하나님",
     "aliases": [
@@ -21591,37 +21145,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-exo-9-11",
-    "title": "모세 앞에 서지 못한 요술사들",
-    "aliases": [
-      "모세 앞에 서지 못하니",
-      "모세 앞에 서 있을 수"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 9,
-        "lo": 11,
-        "hi": 11,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "요술사들도 악성 종기로 말미암아 모세 앞에 서지 못해요.",
-    "detail": "개역개정 본문에서 요술사들은 이 구절 이후 출애굽기에 다시 나오지 않아요. 8장 18절에서도 그들은 이를 생기게 하지 못했어요.",
-    "caution": "그들이 할 수 있었던 일과 할 수 없었던 일을 본문이 기록한 범위에서 읽어요.",
-    "refs": [
-      "출애굽기 9:11",
-      "출애굽기 8:18"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-exo-9-17",
     "title": "바로의 교만",
     "aliases": [
@@ -21651,36 +21175,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-exo-9-24",
-    "title": "우박과 섞인 불",
-    "aliases": [
-      "불덩이",
-      "번개"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 9,
-        "lo": 24,
-        "hi": 24,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "우박과 불덩이가 섞여 내려 나라가 생긴 때부터 애굽에 그런 일이 없었다고 본문이 기록해요.",
-    "detail": "개역개정은 '불덩이가 우박에 섞여', 쉬운성경은 '번개도 쳤습니다'로 옮겨요. 23절에서도 개역개정은 '불', 쉬운성경은 '번개'라고 해요.",
-    "caution": "번역 표현이 달라 현상을 하나로 단정하지 않고, 본문이 말한 맹렬함을 읽어요.",
-    "refs": [
-      "출애굽기 9:23-24"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-exo-9-29",
     "title": "세상이 여호와께 속한 줄",
     "aliases": [
@@ -21770,38 +21265,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-exo-9-34",
-    "title": "다시 범죄한 바로",
-    "aliases": [
-      "다시 범죄하여",
-      "또다시"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 9,
-        "lo": 34,
-        "hi": 34,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "바로는 비와 우박과 우렛소리가 그친 것을 보고 다시 범죄하여 마음을 완악하게 해요.",
-    "detail": "27절에서 바로는 이번은 내가 범죄하였다고 말했어요. 10장 16–17절에서도 비슷한 고백과 변심이 이어져요.",
-    "caution": "고백의 말과 뒤따른 행동을 함께 읽어요.",
-    "refs": [
-      "출애굽기 9:27",
-      "출애굽기 9:34",
-      "출애굽기 10:16-17"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-exo-10-2",
     "title": "자손에게 전할 표징",
     "aliases": [
@@ -22011,38 +21475,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-exo-10-28",
-    "title": "얼굴을 다시 보지 말라",
-    "aliases": [
-      "내 얼굴을 보지 말라",
-      "다시는 나타나지 마라"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 10,
-        "lo": 28,
-        "hi": 28,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "바로는 모세에게 다시 내 얼굴을 보지 말라, 보는 날에는 죽으리라고 말해요.",
-    "detail": "29절에서 모세는 다시 왕의 얼굴을 보지 않겠다고 대답해요. 11장 4–8절에서 모세가 바로 앞에서 마지막 재앙을 말하고, 12장 31절에서 바로가 모세와 아론을 불러요.",
-    "caution": "이 말과 11장, 12장 사이의 순서를 해석이 나뉘는 부분으로 두고 단정하지 않아요.",
-    "refs": [
-      "출애굽기 10:28-29",
-      "출애굽기 11:4-8",
-      "출애굽기 12:31"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-exo-11-1",
     "title": "마지막 한 가지 재앙",
     "aliases": [
