@@ -21627,37 +21627,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-exo-12-16",
-    "title": "성회",
-    "aliases": [
-      "성회",
-      "거룩한 모임"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 12,
-        "lo": 16,
-        "hi": 16,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "첫날과 일곱째 날에는 성회로 모이고 먹을 것만 갖출 뿐 아무 일도 하지 말라고 해요.",
-    "detail": "레위기 23장 7–8절도 첫날과 일곱째 날에 성회로 모이고 노동하지 말라고 해요.",
-    "caution": "절기의 날짜와 규례를 본문이 정한 대로 읽어요.",
-    "refs": [
-      "출애굽기 12:16",
-      "레위기 23:7-8"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-exo-12-17",
     "title": "무교절",
     "aliases": [
