@@ -3,8 +3,15 @@ function createReadingAutoScroll(body, sheet) {
   const bar = document.createElement('div');
   bar.className = 'reading-auto-scroll';
   bar.hidden = true;
-  bar.innerHTML = `<div class="auto-scroll-main"><span>자동 스크롤 <output data-speed>7 px/s</output></span><button type="button" class="btn" data-play aria-pressed="false">▶ 재생</button><span><span data-status>일시정지</span> · <output data-eta aria-label="맨 아래까지 남은 시간">00:00</output></span></div><label class="auto-scroll-speed">느리게 <input type="range" min="3" max="30" step="0.5" value="7" aria-label="자동 스크롤 속도 (초당 픽셀)"> 빠르게</label>`;
-  sheet.append(bar);
+  bar.innerHTML = `<div class="auto-scroll-main"><button type="button" class="auto-scroll-expand" data-expand aria-expanded="false" aria-controls="reading-scroll-settings">자동 스크롤 <span data-chevron aria-hidden="true">▾</span></button><button type="button" class="btn" data-play aria-pressed="false">▶ 시작</button><span class="auto-scroll-info"><span data-status>일시정지</span><output data-eta aria-label="맨 아래까지 남은 시간" title="맨 아래까지 남은 시간">00:00</output></span></div><div id="reading-scroll-settings" data-settings hidden><label class="auto-scroll-speed">느리게 <input type="range" min="3" max="30" step="0.5" value="7" aria-label="자동 스크롤 속도 (초당 픽셀)"> 빠르게 <output data-speed>7 px/s</output></label></div>`;
+  sheet.insertBefore(bar, body);
+  const expand = bar.querySelector('[data-expand]'), settings = bar.querySelector('[data-settings]'), chevron = bar.querySelector('[data-chevron]');
+  expand.addEventListener('click', () => {
+    settings.hidden = !settings.hidden;
+    expand.setAttribute('aria-expanded', String(!settings.hidden));
+    chevron.textContent = settings.hidden ? '▾' : '▴';
+    updateEta();
+  });
   const play = bar.querySelector('[data-play]'), slider = bar.querySelector('input');
   const speedLabel = bar.querySelector('[data-speed]'), eta = bar.querySelector('[data-eta]'), status = bar.querySelector('[data-status]');
   let speed = 7, running = false, frame = 0, last = null, position = 0, expected = 0, destroyed = false;
@@ -17,7 +24,7 @@ function createReadingAutoScroll(body, sheet) {
     running = false;
     cancelAnimationFrame(frame);
     frame = 0; last = null;
-    play.textContent = '▶ 재생'; play.setAttribute('aria-pressed', 'false'); status.textContent = label;
+    play.textContent = '▶ 시작'; play.setAttribute('aria-pressed', 'false'); status.textContent = label;
   }
   function tick(time) {
     if (!running) return;
@@ -38,7 +45,7 @@ function createReadingAutoScroll(body, sheet) {
     updateEta();
     if (distance() <= 0) return pause('도착');
     position = expected = body.scrollTop; last = null; running = true;
-    play.textContent = 'Ⅱ 일시정지'; play.setAttribute('aria-pressed', 'true'); status.textContent = '재생 중';
+    play.textContent = 'Ⅱ 멈춤'; play.setAttribute('aria-pressed', 'true'); status.textContent = '재생 중';
     frame = requestAnimationFrame(tick);
   }
   function changeSpeed() { speed = Math.max(3, Math.min(30, Number(slider.value) || 7)); speedLabel.textContent = `${speed} px/s`; updateEta(); }
