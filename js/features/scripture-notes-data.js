@@ -5312,35 +5312,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-exo-40-34",
-    "title": "성막에 가득한 여호와의 영광",
-    "aliases": [
-      "영광"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 40,
-        "lo": 34,
-        "hi": 34,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "성막을 세운 뒤 구름이 회막을 덮고 여호와의 영광이 그곳에 가득해요.",
-    "detail": "이어 구름이 떠오를 때 이스라엘이 길을 떠났다는 설명이 나와요.",
-    "caution": "하나님의 임재를 건물에 제한하지 않고 이스라엘을 인도하신 문맥에서 읽어요.",
-    "refs": [
-      "출애굽기 40:34-38"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  }
-]);
+  ]);
 
 // 창세기·출애굽기에서 아직 문맥 각주가 없던 장을 보강한다.
 window.ScriptureNotesData.contextualTerms.push(...[
@@ -25176,102 +25148,11 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-exo-31-14",
-    "title": "안식일을 더럽히는 자",
-    "aliases": [
-      "죽일지며",
-      "죽을 것이다"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 31,
-        "lo": 14,
-        "hi": 14,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "안식일을 더럽히는 자는 죽이고, 그날 일하는 자는 백성 중에서 끊어진다고 해요.",
-    "detail": "민수기 15장 32–36절에는 안식일에 나무를 한 사람이 돌에 맞아 죽은 사건이 기록돼요.",
-    "caution": "안식일을 언약의 표징으로 말하는 13절의 문맥에서 읽고, 오늘 공동체의 규범으로 그대로 옮겨 적용하지 않아요.",
-    "refs": [
-      "출애굽기 31:13-14",
-      "민수기 15:32-36"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  }
-]);
+  ]);
 
 // 출애굽기 32–36장의 추가 문맥 설명.
 window.ScriptureNotesData.contextualTerms.push(...[
-  {
-    "id": "context-exo-32-1",
-    "title": "더딘 모세와 백성의 요구",
-    "aliases": [
-      "더딤",
-      "늦어지자"
-    ],
-    "locations": [
       {
-        "code": "exo",
-        "chapter": 32,
-        "lo": 1,
-        "hi": 1,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "백성은 모세가 산에서 내려옴이 더디자 아론에게 우리를 인도할 신을 만들라고 요구해요.",
-    "detail": "24장 18절에서 모세는 사십 일 사십 야를 산에 있었어요. 24장 14절에서 모세는 장로들에게 아론과 훌에게 가라고 했어요.",
-    "caution": "백성이 모세를 애굽에서 인도한 사람으로만 말하고 하나님을 말하지 않는 점을 본문이 기록한 그대로 읽어요.",
-    "refs": [
-      "출애굽기 32:1",
-      "출애굽기 24:14",
-      "출애굽기 24:18"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-exo-32-2",
-    "title": "아론이 요구한 금 고리",
-    "aliases": [
-      "금 고리",
-      "금귀고리"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 32,
-        "lo": 2,
-        "hi": 2,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "아론은 백성에게 아내와 자녀의 귀에서 금 고리를 빼어 가져오라고 말해요.",
-    "detail": "35장 22절에서는 마음에 원하는 사람들이 귀고리 같은 금품을 여호와께 예물로 드려요.",
-    "caution": "같은 종류의 금이 송아지를 만드는 데 쓰인 일과 성막 예물로 드려진 일을 나란히 놓고 읽어요.",
-    "refs": [
-      "출애굽기 32:2-3",
-      "출애굽기 35:22"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-exo-32-5",
     "title": "여호와의 절일이라 한 아론",
     "aliases": [
@@ -25301,37 +25182,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-exo-32-6",
-    "title": "앉아서 먹고 뛰놀던 백성",
-    "aliases": [
-      "뛰놀더라",
-      "마음껏 즐기며 놀았습니다"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 32,
-        "lo": 6,
-        "hi": 6,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "백성은 번제와 화목제를 드리고 앉아서 먹고 마시며 일어나서 뛰놀아요.",
-    "detail": "고린도전서 10장 7절은 이 구절을 인용하여 우상 숭배하는 자가 되지 말라고 경계해요.",
-    "caution": "제사의 모양이 있어도 우상 숭배가 되었다는 본문과 신약의 경고를 함께 읽어요.",
-    "refs": [
-      "출애굽기 32:6",
-      "고린도전서 10:7"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-exo-32-7",
     "title": "네 백성이라 부르신 하나님",
     "aliases": [
@@ -25910,67 +25761,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
 
 // 출애굽기 37–40장의 추가 문맥 설명.
 window.ScriptureNotesData.contextualTerms.push(...[
-  {
-    "id": "context-exo-38-26",
-    "title": "계수된 사람과 은의 계산",
-    "aliases": [
-      "육십만 삼천오백오십 명"
-    ],
-    "locations": [
       {
-        "code": "exo",
-        "chapter": 38,
-        "lo": 26,
-        "hi": 26,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "계수된 스무 살 이상은 육십만 삼천오백오십 명이고 각 사람이 반 세겔씩 냈다고 본문이 기록해요.",
-    "detail": "25절의 은 백 달란트와 천칠백칠십오 세겔은 한 달란트를 삼천 세겔로 셀 때 301,775세겔이고, 603,550명이 반 세겔씩 낸 합과 같아요. 30장 13절과 12장 37절에도 같은 규모가 나와요.",
-    "caution": "본문 안에서 숫자가 서로 맞게 기록되었다는 점을 확인하고, 숫자 해석에 대한 논의는 따로 다뤄요.",
-    "refs": [
-      "출애굽기 38:25-26",
-      "출애굽기 30:13",
-      "출애굽기 12:37"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-exo-39-3",
-    "title": "금실을 만드는 법",
-    "aliases": [
-      "금을 얇게",
-      "금을 얇게 두드려서"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 39,
-        "lo": 3,
-        "hi": 3,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "금을 얇게 쳐서 오려서 실을 만들어 청색 자색 홍색 실과 가는 베 실에 섞어 정교하게 짜요.",
-    "detail": "28장 6절은 금 실과 여러 실로 에봇을 짜라고만 말하고, 이 구절이 금실을 만드는 방법을 설명해요.",
-    "caution": "지시와 실행에서 설명이 더해지는 부분을 본문이 기록한 범위에서 읽어요.",
-    "refs": [
-      "출애굽기 39:3",
-      "출애굽기 28:6"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-exo-40-15",
     "title": "대대로 영영한 제사장",
     "aliases": [
@@ -26001,38 +25792,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-exo-40-20",
-    "title": "궤에 넣은 증거판",
-    "aliases": [
-      "증거판을 궤 속에",
-      "증거판을 언약궤 안에"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 40,
-        "lo": 20,
-        "hi": 20,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "모세는 증거판을 궤 속에 넣고 채를 꿰고 속죄소를 궤 위에 두어요.",
-    "detail": "히브리서 9장 4절은 궤 안에 만나 항아리와 아론의 싹난 지팡이와 언약의 돌판들이 있다고 말하고, 열왕기상 8장 9절은 솔로몬 때 궤 안에 두 돌판 외에 아무것도 없었다고 말해요.",
-    "caution": "궤 안에 무엇이 있었는지는 구절마다 말하는 때와 범위가 다르므로 하나로 합쳐 단정하지 않아요.",
-    "refs": [
-      "출애굽기 40:20",
-      "히브리서 9:4",
-      "열왕기상 8:9"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-exo-40-35",
     "title": "영광이 가득하여 들어갈 수 없음",
     "aliases": [
@@ -145782,3 +145542,36 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   }
 ]);
+
+
+// 출애굽기 39장의 직물 제작 문맥 설명 복구.
+window.ScriptureNotesData.contextualTerms.push({
+  "id": "context-exo-39-3",
+  "title": "금실을 만드는 법",
+  "aliases": [
+    "금을 얇게",
+    "금을 얇게 두드려서"
+  ],
+  "locations": [
+    {
+      "code": "exo",
+      "chapter": 39,
+      "lo": 3,
+      "hi": 3,
+      "editions": [
+        "gae",
+        "easy"
+      ]
+    }
+  ],
+  "summary": "금을 얇게 쳐서 오려서 실을 만들어 청색 자색 홍색 실과 가는 베 실에 섞어 정교하게 짜요.",
+  "detail": "28장 6절은 금 실과 여러 실로 에봇을 짜라고만 말하고, 이 구절이 금실을 만드는 방법을 설명해요.",
+  "caution": "지시와 실행에서 설명이 더해지는 부분을 본문이 기록한 범위에서 읽어요.",
+  "refs": [
+    "출애굽기 39:3",
+    "출애굽기 28:6"
+  ],
+  "category": "본문 문맥",
+  "lens": "",
+  "wcf": []
+});
