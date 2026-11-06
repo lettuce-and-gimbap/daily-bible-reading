@@ -7894,36 +7894,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-exo-25-30",
-    "title": "하나님 앞에 두는 진설병",
-    "aliases": [
-      "진설병"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 25,
-        "lo": 30,
-        "hi": 30,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "성막 안의 상 위에는 진설병을 항상 놓도록 명하셨어요.",
-    "detail": "레위기 24장에는 떡 열두 개를 차리고 정기적으로 새로 놓는 규정이 나와요.",
-    "caution": "이 절 자체가 떡의 모든 제조법과 교체 시기를 설명하지는 않아요.",
-    "refs": [
-      "출애굽기 25:30",
-      "레위기 24:5-9"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-exo-30-15",
     "title": "동일하게 내는 속전",
     "aliases": [
@@ -9938,36 +9909,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-exo-29-7",
-    "title": "아론에게 붓는 기름",
-    "aliases": [
-      "관유",
-      "기름"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 29,
-        "lo": 7,
-        "hi": 7,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "제사장 위임식에서 모세는 아론의 머리에 기름을 부어요.",
-    "detail": "앞에서는 아론을 씻기고 제사장의 옷과 관을 입히며 뒤에서는 그의 아들들도 세워요.",
-    "caution": "기름을 부은 사건을 제사장으로 구별하는 위임식의 문맥에서 읽어요.",
-    "refs": [
-      "출애굽기 29:4-9"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-exo-34-14",
     "title": "다른 신에게 절하지 말라는 말씀",
     "aliases": [
@@ -23876,36 +23818,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-exo-23-2b",
-    "title": "다수와 악",
-    "aliases": [
-      "다수를 따라",
-      "다 악한 일을 한다고"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 23,
-        "lo": 2,
-        "hi": 2,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "다수를 따라 악을 행하지 말고 송사에 다수를 따라 부당한 증언을 하지 말라고 해요.",
-    "detail": "1절에서는 거짓된 풍설을 퍼뜨리거나 악인과 연합해 위증하지 말라고 해요.",
-    "caution": "많은 사람이 한다는 이유로 옳다고 여기지 말라는 본문의 요구를 재판 문맥에서 읽어요.",
-    "refs": [
-      "출애굽기 23:1-2"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
+    {
     "id": "context-exo-23-6",
     "title": "가난한 자와 재판",
     "aliases": [
