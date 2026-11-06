@@ -8,8 +8,6 @@ function createReadingAutoScroll(body, host, trigger) {
   host.append(bar);
   function togglePanel() {
     bar.hidden = !bar.hidden;
-    if (bar.hidden) pause();
-    trigger.textContent = bar.hidden ? '자동 OFF' : '자동 ON';
     trigger.setAttribute('aria-expanded', String(!bar.hidden));
     updateEta();
   }
@@ -17,6 +15,7 @@ function createReadingAutoScroll(body, host, trigger) {
   const play = bar.querySelector('[data-play]'), slider = bar.querySelector('input');
   const speedLabel = bar.querySelector('[data-speed]'), eta = bar.querySelector('[data-eta]'), status = bar.querySelector('[data-status]');
   let speed = 7, running = false, frame = 0, last = null, position = 0, expected = 0, destroyed = false;
+  function syncRunning() { trigger.textContent = running ? '자동 ON' : '자동 OFF'; trigger.setAttribute('aria-pressed', String(running)); }
   const distance = () => Math.max(0, body.scrollHeight - body.clientHeight - body.scrollTop);
   function updateEta() {
     const seconds = Math.ceil(distance() / speed);
@@ -26,11 +25,11 @@ function createReadingAutoScroll(body, host, trigger) {
     running = false;
     cancelAnimationFrame(frame);
     frame = 0; last = null;
-    play.textContent = '▶ 시작'; play.setAttribute('aria-pressed', 'false'); status.textContent = label;
+    play.textContent = '▶ 시작'; play.setAttribute('aria-pressed', 'false'); status.textContent = label; syncRunning();
   }
   function tick(time) {
     if (!running) return;
-    if (!body.isConnected || bar.hidden || document.hidden || document.querySelector('dialog[open]')) { pause(); return; }
+    if (!body.isConnected || trigger.hidden || document.hidden || document.querySelector('dialog[open]')) { pause(); return; }
     if (last !== null) {
       // 소수 픽셀을 누적해 낮은 속도에서도 브라우저의 정수 반올림으로 멈추지 않는다.
       position = Math.min(body.scrollHeight - body.clientHeight, position + speed * Math.min((time - last) / 1000, 0.1));
@@ -47,7 +46,7 @@ function createReadingAutoScroll(body, host, trigger) {
     updateEta();
     if (distance() <= 0) return pause('도착');
     position = expected = body.scrollTop; last = null; running = true;
-    play.textContent = 'Ⅱ 멈춤'; play.setAttribute('aria-pressed', 'true'); status.textContent = '재생 중';
+    play.textContent = 'Ⅱ 멈춤'; play.setAttribute('aria-pressed', 'true'); status.textContent = '재생 중'; syncRunning();
     frame = requestAnimationFrame(tick);
   }
   function changeSpeed() { speed = Math.max(3, Math.min(30, Number(slider.value) || 7)); speedLabel.textContent = `${speed} px/s`; updateEta(); }
@@ -74,6 +73,6 @@ function createReadingAutoScroll(body, host, trigger) {
     for (const event of ['wheel','touchstart','pointerdown']) body.removeEventListener(event, userInput);
     body.removeEventListener('scroll', scrolled); document.removeEventListener('keydown', keyInput); document.removeEventListener('visibilitychange', visibility); trigger.removeEventListener('click', togglePanel); bar.remove();
   }
-  updateEta();
-  return {pause, destroy, setVisible(visible) { trigger.hidden = !visible; if (!visible) { bar.hidden = true; trigger.textContent = '자동 OFF'; trigger.setAttribute('aria-expanded', 'false'); pause(); } }};
+  updateEta(); syncRunning();
+  return {pause, destroy, setVisible(visible) { trigger.hidden = !visible; if (!visible) { bar.hidden = true; trigger.setAttribute('aria-expanded', 'false'); pause(); } }};
 }

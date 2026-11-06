@@ -42,7 +42,7 @@ function buildReader() {
         <div class="rd-nav">
           <div class="seg rd-seg" id="r-tabs">${READER_TABS.map(([k, label]) => `<button data-rtab="${k}">${label}</button>`).join("")}</div>
           <div class="rd-chap" id="r-chap"></div>
-          <button type="button" class="reader-auto-trigger" id="r-auto-toggle" aria-expanded="false" aria-controls="reading-scroll-controls" hidden>자동 OFF</button>
+          <button type="button" class="reader-auto-trigger" id="r-auto-toggle" aria-expanded="false" aria-pressed="false" aria-controls="reading-scroll-controls" hidden>자동 OFF</button>
         </div>
       </div>
       <div class="rd-clip">${sheetShell()}</div>

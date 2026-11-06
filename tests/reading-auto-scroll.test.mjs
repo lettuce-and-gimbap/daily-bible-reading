@@ -38,19 +38,24 @@ test('끝에 도착하면 정지하고 외부 스크롤 및 숨김도 정지한�
  s.controller.destroy();
 });
 
-test('상단 토글이 속도 바를 열고 닫으며 닫을 때 자동 스크롤을 멈춘다',()=>{
+test('상단 버튼은 패널만 열고 닫으며 ON/OFF는 실제 재생 상태를 따른다',()=>{
  const s=setup(),c=s.controls;
- assert.equal(s.trigger.textContent,'자동 ON');
+ assert.equal(s.trigger.textContent,'자동 OFF');
  assert.equal(s.bar.hidden,false);
  c['[data-play]'].listeners.click();s.advance(0);s.advance(100);
  assert.ok(s.body.scrollTop>0);
+ assert.equal(s.trigger.textContent,'자동 ON');
+ assert.equal(s.trigger['aria-pressed'],'true');
  s.trigger.listeners.click();
  assert.equal(s.bar.hidden,true);
- assert.equal(s.trigger.textContent,'자동 OFF');
  assert.equal(s.trigger['aria-expanded'],'false');
- const top=s.body.scrollTop;s.advance(1000);
- assert.equal(s.body.scrollTop,top);
+ assert.equal(s.trigger.textContent,'자동 ON');
+ const top=s.body.scrollTop;s.advance(100);
+ assert.ok(s.body.scrollTop>top);
  s.trigger.listeners.click();
  assert.equal(s.bar.hidden,false);
  assert.equal(s.trigger.textContent,'자동 ON');
+ c['[data-play]'].listeners.click();
+ assert.equal(s.trigger.textContent,'자동 OFF');
+ assert.equal(s.trigger['aria-pressed'],'false');
 });
