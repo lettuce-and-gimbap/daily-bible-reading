@@ -61699,35 +61699,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": []
   },
-  {
-    "id": "context-ezk-5-1",
-    "title": "머리털을 저울에 달아 나눔",
-    "aliases": [
-      "날카로운 칼을 가져다가"
-    ],
-    "locations": [
-      {
-        "code": "ezk",
-        "chapter": 5,
-        "lo": 1,
-        "hi": 1,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "하나님은 에스겔에게 머리털과 수염을 깎아 저울에 달아 나누라고 하셨다고 말해요.",
-    "detail": "2절은 나눈 머리털을 불, 칼, 바람으로 처리하라는 명령이에요. 4장의 토판 행위처럼 몸으로 하는 상징이에요.",
-    "caution": "머리털을 셋으로 나누는 의미는 12절에서 풀려요. 그 전까지는 뜻을 밝히지 않으니, 5장 끝까지 함께 읽어야 해요.",
-    "refs": [
-      "에스겔 5:1-4",
-      "에스겔 5:12"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
+
   {
     "id": "context-ezk-5-11",
     "title": "성소를 더럽혀 긍휼이 없음",
