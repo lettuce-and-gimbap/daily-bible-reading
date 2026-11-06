@@ -4296,35 +4296,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-gen-3-15",
-    "title": "뱀과 여자의 후손",
-    "aliases": [
-      "여자의 후손",
-      "여자의 자손"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 3,
-        "lo": 15,
-        "hi": 15,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "하나님은 뱀에게 여자와 그 후손 사이의 적대와 상처를 말씀하세요.",
-    "detail": "그리스도인들은 이 구절을 죄와 악에 대한 승리의 약속을 미리 비추는 말씀으로 읽어 왔어요.",
-    "caution": "먼저 뱀에게 하신 심판의 말씀이라는 본래 문맥을 살펴요.",
-    "refs": [
-      "창세기 3:14-15"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-4-7",
     "title": "문 앞에 있는 죄",
     "aliases": [
@@ -5402,36 +5373,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
 // 창세기·출애굽기에서 아직 문맥 각주가 없던 장을 보강한다.
 window.ScriptureNotesData.contextualTerms.push(...[
   {
-    "id": "context-gen-5-24",
-    "title": "하나님과 동행한 에녹",
-    "aliases": [
-      "에녹"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 5,
-        "lo": 24,
-        "hi": 24,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "아담에서 노아에 이르는 계보에서 에녹은 하나님과 동행한 사람으로 소개돼요.",
-    "detail": "이 계보의 여러 사람에게 죽었다는 말이 반복되는 가운데 에녹은 하나님이 데려가셨다고 서술돼요. 히브리서 11:5도 이 사건을 언급해요.",
-    "caution": "본문이 설명하지 않는 에녹의 일상이나 마지막 순간을 상상으로 채우지 않아요.",
-    "refs": [
-      "창세기 5:24",
-      "창세기 5:21-24"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": [],
-    "sourceLinks": [{"label": "초원 성경 창세기 장별 목차 (장 주제)", "url": "https://chowon.in/bible/nkrv/gen"}]
-  },
-  {
     "id": "context-gen-8-1",
     "title": "노아와 생물들을 기억하심",
     "aliases": [
@@ -5455,35 +5396,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "refs": [
       "창세기 8:1",
       "창세기 8:1-5"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-10-5",
-    "title": "홍수 뒤 민족의 분포",
-    "aliases": [
-      "나라"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 10,
-        "lo": 5,
-        "hi": 5,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "이 절은 야벳의 후손들이 지역과 언어와 종족과 나라에 따라 퍼진 것을 설명해요.",
-    "detail": "창세기 10장은 세 아들의 후손을 나누어 서술하고, 다음 장은 언어가 혼잡해진 바벨 사건을 따로 들려줘요.",
-    "caution": "족보의 배열을 모든 사건의 시간순으로 단순하게 읽지 않아요.",
-    "refs": [
-      "창세기 10:5",
-      "창세기 10:1-5"
     ],
     "category": "본문 문맥",
     "lens": "",
@@ -10317,118 +10229,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
 // 창세기와 출애굽기의 추가 절별 설명.
 window.ScriptureNotesData.contextualTerms.push(...[
   {
-    "id": "context-gen-3-1",
-    "title": "뱀의 질문",
-    "aliases": [
-      "뱀"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 3,
-        "lo": 1,
-        "hi": 1,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "뱀은 하나님이 동산의 모든 나무 열매를 먹지 말라고 하셨는지 여자에게 물어요.",
-    "detail": "하나님은 앞서 동산의 나무를 먹도록 허락하시면서 선악을 알게 하는 나무만 금하셨어요.",
-    "caution": "뱀의 질문을 하나님의 실제 명령과 구별해 읽어요.",
-    "refs": [
-      "창세기 3:1-3"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-4-5",
-    "title": "가인과 그의 제물",
-    "aliases": [
-      "가인"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 4,
-        "lo": 5,
-        "hi": 5,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "여호와께서 가인과 그의 제물은 받지 않으시자 가인은 크게 화를 내요.",
-    "detail": "하나님은 이어 가인에게 죄를 다스리라고 경고하세요.",
-    "caution": "이 절은 제물이 곡식이라는 사실만을 거절의 이유로 명시하지 않아요.",
-    "refs": [
-      "창세기 4:3-7"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-6-5",
-    "title": "사람의 죄악을 보심",
-    "aliases": [
-      "악"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 6,
-        "lo": 5,
-        "hi": 5,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "여호와는 사람의 죄악이 세상에 가득하고 마음의 계획이 악함을 보세요.",
-    "detail": "홍수 심판의 예고와 노아가 은혜를 입는 이야기가 이어져요.",
-    "caution": "본문이 묘사하는 인간의 악과 하나님의 슬픔을 함께 살펴요.",
-    "refs": [
-      "창세기 6:5-8"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-9-4",
-    "title": "생명과 피",
-    "aliases": [
-      "피"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 9,
-        "lo": 4,
-        "hi": 4,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "하나님은 노아와 아들들에게 고기를 먹도록 허락하시면서 피째 먹지 말라고 하세요.",
-    "detail": "본문은 피를 생명과 연결하며 이어 사람의 생명에 대한 책임을 말씀해요.",
-    "caution": "식생활 규정을 홍수 뒤 주어진 명령의 문맥에서 읽어요.",
-    "refs": [
-      "창세기 9:3-6"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-12-1",
     "title": "아브람의 부르심",
     "aliases": [
@@ -10994,91 +10794,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
 // 창세기 1–3장의 추가 문맥 설명.
 window.ScriptureNotesData.contextualTerms.push(...[
   {
-    "id": "context-gen-1-3",
-    "title": "빛이 있으라는 말씀",
-    "aliases": [
-      "빛"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 1,
-        "lo": 3,
-        "hi": 3,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "하나님이 말씀하시자 빛이 생겨요.",
-    "detail": "하나님은 빛과 어둠을 나누시고 빛을 낮, 어둠을 밤이라 부르세요. 해와 달은 넷째 날의 이야기에서 언급돼요.",
-    "caution": "이 절이 첫 빛의 물리적 근원을 구체적으로 설명한다고 단정하지 않아요.",
-    "refs": [
-      "창세기 1:3-5"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-1-6",
-    "title": "물 사이에 놓인 궁창",
-    "aliases": [
-      "궁창",
-      "공간"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 1,
-        "lo": 6,
-        "hi": 6,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "하나님은 물 가운데 궁창이 있어 물과 물을 나누라고 말씀하세요.",
-    "detail": "쉬운성경은 궁창을 둥근 공간으로 풀고, 다음 절들은 공간 위아래의 물과 하늘이라는 이름을 설명해요.",
-    "caution": "본문의 표현에서 하늘의 구조에 관한 현대 과학적 세부를 확정하지 않아요.",
-    "refs": [
-      "창세기 1:6-8"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-1-11",
-    "title": "땅이 내는 식물",
-    "aliases": [
-      "씨"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 1,
-        "lo": 11,
-        "hi": 11,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "하나님은 땅에 풀과 씨 맺는 식물과 열매 맺는 나무를 내라고 말씀하세요.",
-    "detail": "다음 절은 땅이 종류대로 식물을 냈고 하나님이 보시기에 좋았다고 말해요.",
-    "caution": "본문의 종류를 현대 생물학의 분류 단위와 기계적으로 동일시하지 않아요.",
-    "refs": [
-      "창세기 1:11-12"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-1-14",
     "title": "하늘의 광명체와 때",
     "aliases": [
@@ -11157,34 +10872,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "caution": "선하게 지어진 피조 세계와 이후 3장의 불순종 이야기를 함께 읽어요.",
     "refs": [
       "창세기 1:29-31"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-2-9",
-    "title": "동산 가운데의 두 나무",
-    "aliases": [
-      "생명"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 2,
-        "lo": 9,
-        "hi": 9,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "동산에는 아름답고 먹기 좋은 나무들과 함께 생명 나무와 선악을 알게 하는 나무가 있어요.",
-    "detail": "뒤에서는 선악을 알게 하는 나무에 대한 금지와 불순종 뒤 생명 나무의 길이 지켜지는 장면이 나와요.",
-    "caution": "나무의 종류나 위치를 본문이 말한 것 이상으로 확정하지 않아요.",
-    "refs": [
-      "창세기 2:8-9"
     ],
     "category": "본문 문맥",
     "lens": "",
@@ -11271,62 +10958,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "caution": "창조의 순서를 사람의 존엄이나 우열을 가르는 근거로 삼지 않아요.",
     "refs": [
       "창세기 2:21-24"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-3-4",
-    "title": "하나님의 경고를 부정한 뱀",
-    "aliases": [
-      "죽지"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 3,
-        "lo": 4,
-        "hi": 4,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "뱀은 여자에게 너희가 죽지 않을 것이라고 말해요.",
-    "detail": "이는 금지된 열매를 먹으면 반드시 죽으리라는 하나님의 앞선 경고와 맞서요.",
-    "caution": "뱀의 말을 성경이 승인하는 사실로 읽지 않아요.",
-    "refs": [
-      "창세기 3:2-5"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-3-7",
-    "title": "열매를 먹은 뒤 밝아진 눈",
-    "aliases": [
-      "눈이"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 3,
-        "lo": 7,
-        "hi": 7,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "두 사람은 열매를 먹고 자신들이 벌거벗은 것을 알게 되어 나뭇잎으로 몸을 가려요.",
-    "detail": "앞에서 뱀은 눈이 밝아질 것이라고 말했고, 뒤에서는 두 사람이 하나님을 피해 숨는 이야기가 나와요.",
-    "caution": "깨달음이 생겼다는 표현을 불순종이 좋은 결과였다는 뜻으로 바꾸지 않아요.",
-    "refs": [
-      "창세기 3:6-8"
     ],
     "category": "본문 문맥",
     "lens": "",
@@ -11897,34 +11528,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "caution": "이 구절을 피부색이나 인종에 대한 저주 또는 노예제와 차별의 정당화로 사용하지 않아요.",
     "refs": [
       "창세기 9:24-27"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-10-25",
-    "title": "벨렉의 시대에 나뉜 땅",
-    "aliases": [
-      "벨렉"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 10,
-        "lo": 25,
-        "hi": 25,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "에벨의 아들 벨렉의 이름은 그의 시대에 땅이 나뉘었다는 말과 연결돼요.",
-    "detail": "같은 절은 벨렉의 형제로 욕단을 소개하고 그 자손들의 목록이 이어져요.",
-    "caution": "무엇이 어떻게 나뉘었는지는 본문이 구체적으로 설명하지 않아요.",
-    "refs": [
-      "창세기 10:25"
     ],
     "category": "본문 문맥",
     "lens": "",
@@ -149110,3 +148713,72 @@ window.ScriptureNotesData.contextualTerms.push({
   "lens": "",
   "wcf": []
 });
+
+
+// 창세기 앞부분의 검토에서 유지한 문맥 각주.
+window.ScriptureNotesData.contextualTerms.push(...[
+  {
+    "id": "context-gen-5-24",
+    "title": "하나님과 동행한 에녹",
+    "aliases": [
+      "에녹"
+    ],
+    "locations": [
+      {
+        "code": "gen",
+        "chapter": 5,
+        "lo": 24,
+        "hi": 24,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "아담에서 노아에 이르는 계보에서 에녹은 하나님과 동행한 사람으로 소개돼요.",
+    "detail": "이 계보의 여러 사람에게 죽었다는 말이 반복되는 가운데 에녹은 하나님이 데려가셨다고 서술돼요. 히브리서 11:5도 이 사건을 언급해요.",
+    "caution": "본문이 설명하지 않는 에녹의 일상이나 마지막 순간을 상상으로 채우지 않아요.",
+    "refs": [
+      "창세기 5:24",
+      "창세기 5:21-24"
+    ],
+    "category": "본문 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "초원 성경 창세기 장별 목차 (장 주제)",
+        "url": "https://chowon.in/bible/nkrv/gen"
+      }
+    ]
+  },
+  {
+    "id": "context-gen-10-5",
+    "title": "홍수 뒤 민족의 분포",
+    "aliases": [
+      "나라"
+    ],
+    "locations": [
+      {
+        "code": "gen",
+        "chapter": 10,
+        "lo": 5,
+        "hi": 5,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "이 절은 야벳의 후손들이 지역과 언어와 종족과 나라에 따라 퍼진 것을 설명해요.",
+    "detail": "창세기 10장은 세 아들의 후손을 나누어 서술하고, 다음 장은 언어가 혼잡해진 바벨 사건을 따로 들려줘요.",
+    "caution": "족보의 배열을 모든 사건의 시간순으로 단순하게 읽지 않아요.",
+    "refs": [
+      "창세기 10:5",
+      "창세기 10:1-5"
+    ],
+    "category": "본문 문맥",
+    "lens": "",
+    "wcf": []
+  }
+]);
