@@ -5402,36 +5402,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-gen-13-9",
-    "title": "아브람과 롯의 분리",
-    "aliases": [
-      "왼쪽",
-      "좌하면"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 13,
-        "lo": 9,
-        "hi": 9,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "가축을 치는 사람들 사이에 다툼이 생기자 아브람은 롯에게 서로 떨어져 살자고 제안해요.",
-    "detail": "롯이 먼저 요단 지역을 선택한 뒤 하나님은 아브람에게 땅의 약속을 다시 말씀하세요.",
-    "caution": "선택한 방향 자체를 오늘의 선택에 적용할 징조로 만들지 않아요.",
-    "refs": [
-      "창세기 13:9",
-      "창세기 13:5-12"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-14-18",
     "title": "살렘 왕이자 제사장",
     "aliases": [
@@ -5485,35 +5455,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "refs": [
       "창세기 16:13",
       "창세기 16:7-13"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-19-26",
-    "title": "롯의 아내가 뒤돌아봄",
-    "aliases": [
-      "뒤를 돌아"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 19,
-        "lo": 26,
-        "hi": 26,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "성을 벗어날 때 뒤돌아보지 말라는 지시가 있었으나 롯의 아내는 뒤를 돌아보고 소금 기둥이 돼요.",
-    "detail": "이 사건은 소돔에서 피하라는 명령과 심판 이야기 안에 놓여 있어요.",
-    "caution": "본문이 밝히지 않은 개인적인 생각이나 동기를 사실처럼 단정하지 않아요.",
-    "refs": [
-      "창세기 19:26",
-      "창세기 19:15-17"
     ],
     "category": "본문 문맥",
     "lens": "",
@@ -6987,34 +6928,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "caution": "사백 년과 출애굽기 12:40의 수치를 비교할 때 각 기간의 시작점과 범위에 관한 해석이 다름을 살펴요.",
     "refs": [
       "창세기 15:13-14"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-15-17",
-    "title": "쪼갠 제물 사이를 지나는 불",
-    "aliases": [
-      "횃불"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 15,
-        "lo": 17,
-        "hi": 17,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "해가 진 뒤 연기 나는 화로와 타는 횃불이 쪼갠 제물 사이를 지나가요.",
-    "detail": "하나님은 아브람에게 땅과 후손을 약속하시고 그날 언약을 세우세요.",
-    "caution": "각 물건의 모양이나 모든 상징적 세부에 관해 본문이 직접 밝힌 것 이상으로 단정하지 않아요.",
-    "refs": [
-      "창세기 15:17-18"
     ],
     "category": "본문 문맥",
     "lens": "",
@@ -9745,34 +9658,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-gen-17-17",
-    "title": "약속을 듣고 웃은 아브라함",
-    "aliases": [
-      "웃"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 17,
-        "lo": 17,
-        "hi": 17,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "아브라함은 사라가 아들을 낳으리라는 말씀을 듣고 엎드려 웃으며 두 사람의 나이를 생각해요.",
-    "detail": "하나님은 이어 사라가 이삭을 낳고 그와 언약을 세우겠다고 말씀하세요.",
-    "caution": "아브라함의 웃음이 가진 감정의 모든 세부를 본문 이상으로 확정하지 않아요.",
-    "refs": [
-      "창세기 17:15-19"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-20-12",
     "title": "아브라함이 설명한 사라와의 관계",
     "aliases": [
@@ -11590,34 +11475,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-gen-11-30",
-    "title": "자녀가 없던 사래",
-    "aliases": [
-      "사래"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 11,
-        "lo": 30,
-        "hi": 30,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "데라의 가족 이야기에서 사래가 임신하지 못해 자녀가 없었다고 밝혀요.",
-    "detail": "다음 장에서 하나님은 아브람에게 큰 민족을 이루겠다는 약속을 주세요.",
-    "caution": "자녀의 유무를 사람의 가치나 믿음을 판단하는 기준으로 삼지 않아요.",
-    "refs": [
-      "창세기 11:29-31"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-11-31",
     "title": "우르에서 하란으로 간 가족",
     "aliases": [
@@ -11790,34 +11647,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-gen-13-16",
-    "title": "티끌처럼 많은 후손",
-    "aliases": [
-      "티끌"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 13,
-        "lo": 16,
-        "hi": 16,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "하나님은 아브람의 자손을 땅의 티끌처럼 셀 수 없을 만큼 많게 하겠다고 말씀하세요.",
-    "detail": "이 약속은 롯이 떠난 후 아브람에게 주신 땅의 약속과 함께 나와요.",
-    "caution": "티끌이라는 비교를 정확한 인구 수를 나타내는 숫자 암호로 바꾸지 않아요.",
-    "refs": [
-      "창세기 13:14-17"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
     "id": "context-gen-14-20",
     "title": "멜기세덱에게 드린 십분의 일",
     "aliases": [
@@ -11868,34 +11697,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "caution": "아브람의 개인적 결정을 동행한 사람들의 몫까지 빼앗는 규칙으로 바꾸지 않아요.",
     "refs": [
       "창세기 14:21-24"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
-  {
-    "id": "context-gen-15-5",
-    "title": "별처럼 많은 자손",
-    "aliases": [
-      "별"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 15,
-        "lo": 5,
-        "hi": 5,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "하나님은 아브람에게 하늘의 별을 세어 보라고 하시며 자손이 그와 같을 것이라고 약속하세요.",
-    "detail": "앞에서 아브람은 자녀가 없어 상속 문제를 질문했고 다음 절은 그의 믿음을 말해요.",
-    "caution": "하늘의 별이라는 비교를 계산 가능한 자손의 정확한 숫자로 취급하지 않아요.",
-    "refs": [
-      "창세기 15:2-6"
     ],
     "category": "본문 문맥",
     "lens": "",
