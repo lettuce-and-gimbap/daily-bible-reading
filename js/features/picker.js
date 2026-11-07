@@ -130,7 +130,9 @@ async function renderVersePicker(body, target, idx) {
     const quote = buildQuote(keep);
     pickSel = new Set();
     insertQuote(target, quote);
-    renderVersePicker(body, target, idx0);
+    // 붙이기는 본문을 다시 그릴 필요가 없다. 다시 그리면 읽던 위치가 맨 위로 돌아간다.
+    root.querySelectorAll('input[data-a]:checked').forEach((c) => { c.checked = false; });
+    refresh();
   };
 
   root.addEventListener("change", (e) => {
@@ -167,7 +169,7 @@ async function renderVersePicker(body, target, idx) {
     if (edsel) { // 역본이 여럿이면 붙이기 전에 고르는 창을 띄움
       edsel.querySelectorAll("[data-ed]").forEach((x) => { x.checked = true; });
       edsel.hidden = false;
-      requestAnimationFrame(() => edsel.scrollIntoView({ block: "nearest" }));
+      if (target !== "reading") requestAnimationFrame(() => edsel.scrollIntoView({ block: "nearest" }));
       return;
     }
     paste();
