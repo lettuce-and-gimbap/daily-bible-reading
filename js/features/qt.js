@@ -257,13 +257,18 @@ async function paintQtPassage(date, d) {
     if (date !== qtDate || !box.isConnected) return;
     const rows = parts.flatMap((p, k) => p.map((r) => ({ idx: ranges[k].idx, ...r })));
     const names = vers.map(vname);
-    qtPassage = { rows, d, names };
+    qtPassage = { rows, d, names, versions: vers };
     box.querySelector(".qp-body").innerHTML = `<div class="vp-list">${rows.map((r, i) => `
         <label class="vp-row">
           <input type="checkbox" class="sr-only" data-ri="${i}">
           <span class="vp-num">${esc(r.label)}</span>
           <span class="vp-txt"><span class="study-version" data-edition="${esc(versionFor(vers[0],CHAPTERS[r.idx].book))}" data-study-label="${esc(r.labels?.[0]||r.label)}">${ScriptureStudy.glossaryHtml(r.texts[0])}</span>${r.texts[1] ? `<small><i>${esc(names[1] || "")}</i> <span class="study-version" data-edition="${esc(versionFor(vers[1],CHAPTERS[r.idx].book))}" data-study-label="${esc(r.labels?.[1]||'')}">${ScriptureStudy.glossaryHtml(r.texts[1])}</span></small>` : ""}</span>
         </label>`).join("")}</div>`;
+    box.insertAdjacentHTML("beforeend", `<div class="vp-edsel" data-qt-editions hidden>
+      <div class="vp-edsel-head"><p class="vp-edsel-title">붙일 역본을 고르세요</p><button type="button" class="btn text small" data-qt-edsel="cancel">취소</button></div>
+      <div class="vp-edsel-list">${vers.map((code) => `<label class="vp-edsel-item"><input type="checkbox" data-qt-ed="${esc(code)}" checked><span>${esc(vname(code))}</span></label>`).join("")}</div>
+      <button type="button" class="btn primary small" data-qt-edsel="paste">노트에 붙이기</button>
+    </div>`);
     $("#q-selbar").hidden = false;
     ScriptureStudy.mount(box,rows.map(r=>`${r.idx}:${versionFor(vers[0],CHAPTERS[r.idx].book)}:${vers[1]&&versionFor(vers[1],CHAPTERS[r.idx].book)!==versionFor(vers[0],CHAPTERS[r.idx].book)?versionFor(vers[1],CHAPTERS[r.idx].book):''}:${r.label}`));
     qtPassageCount();
@@ -279,24 +284,28 @@ function qtPassageCount() {
   const n = $("#q-passage").querySelectorAll("input[data-ri]:checked").length;
   bar.querySelector(".vp-n").textContent = n ? `${n}절 선택` : "절을 눌러 고르세요";
   bar.querySelectorAll('[data-qa="paste"]').forEach((b) => { b.disabled = !n; });
+  if (!n) $("#q-passage").querySelector("[data-qt-editions]")?.setAttribute("hidden", "");
 }
 
 // 고른 절 → 장마다 "권 장:절 / 역본1 줄들 / --- / 역본2 줄들" 양식 (장이 둘이면 빈 줄로 나눔)
-function qtPassageQuote() {
+function qtPassageQuote(keep) {
   const picked = [...$("#q-passage").querySelectorAll("input[data-ri]:checked")].map((c) => qtPassage.rows[Number(c.dataset.ri)]);
   const byChap = new Map();
   picked.forEach((r) => byChap.set(r.idx, [...(byChap.get(r.idx) || []), r]));
   return [...byChap].map(([idx, rows]) => {
-    const nums = rows.flatMap((r) => { const [a, b] = labelSpan(r.label); return Array.from({ length: b - a + 1 }, (_, k) => a + k); });
-    const g1 = rows.map((r) => `${r.label} ${r.texts[0]}`);
-    const g2 = rows.filter((r) => r.texts[1]).map((r) => `${r.label} ${r.texts[1]}`);
+    const versions = qtPassage.versions || [];
+    const g1 = !keep || keep.has(versions[0]) ? rows.map((r) => `${r.label} ${r.texts[0]}`) : [];
+    const g2 = (!keep || keep.has(versions[1])) ? rows.filter((r) => r.texts[1]).map((r) => `${r.label} ${r.texts[1]}`) : [];
+    const included = g1.length ? rows : rows.filter((r) => r.texts[1]);
+    const nums = included.flatMap((r) => { const [a, b] = labelSpan(r.label); return Array.from({ length: b - a + 1 }, (_, k) => a + k); });
     const [n1, n2] = qtPassage.names || []; // 어느 역본 줄인지 기억해 둠 (메모 복사 때 역본별로 거름)
     const where = state.verseEditions || (state.verseEditions = {});
-    if (n1) rows.forEach((r) => { where[`${r.label} ${r.texts[0]}`.trim()] = n1; });
-    if (n2) rows.forEach((r) => { if (r.texts[1]) where[`${r.label} ${r.texts[1]}`.trim()] = n2; });
+    if (n1 && g1.length) rows.forEach((r) => { where[`${r.label} ${r.texts[0]}`.trim()] = n1; });
+    if (n2 && g2.length) rows.forEach((r) => { if (r.texts[1]) where[`${r.label} ${r.texts[1]}`.trim()] = n2; });
     persist();
-    return { idx, text: `${versesRef(CHAPTERS[idx], nums)}\n${g1.join("\n")}${g2.length ? `\n${VERSION_DIVIDER}\n${g2.join("\n")}` : ""}` };
-  });
+    if (!g1.length && !g2.length) return null;
+    return { idx, text: `${versesRef(CHAPTERS[idx], nums)}\n${[g1.join("\n"), g2.join("\n")].filter(Boolean).join(`\n${VERSION_DIVIDER}\n`)}` };
+  }).filter(Boolean);
 }
 
 // 본문 · 묵상 화면(#q-content) 안의 눌림·입력을 모아 처리 (화면 안쪽만 바뀌어도 한 번만 연결)
@@ -328,6 +337,22 @@ function bindQtContent() {
   clip.addEventListener("click", (e) => {
     const box = $("#q-passage");
     if (!box) return;
+    const editions = box.querySelector("[data-qt-editions]");
+    const editionAction = e.target.closest("[data-qt-edsel]");
+    const pasteSelected = (keep) => {
+      const quotes = qtPassageQuote(keep);
+      if (!quotes.length) return;
+      insertQuote("qt", quotes.map((q) => q.text).join("\n\n"));
+      box.querySelectorAll("input[data-ri]:checked").forEach((c) => { c.checked = false; });
+      if (editions) editions.hidden = true;
+      qtPassageCount();
+    };
+    if (editionAction) {
+      if (editionAction.dataset.qtEdsel === "cancel") { editions.hidden = true; return; }
+      const keep = new Set([...editions.querySelectorAll("[data-qt-ed]:checked")].map((c) => c.dataset.qtEd));
+      if (keep.size) pasteSelected(keep);
+      return;
+    }
     const fz = e.target.closest("[data-fz]");
     if (fz) return fzStep(box, Number(fz.dataset.fz));
     const pv = e.target.closest("[data-pv]");
@@ -343,13 +368,17 @@ function bindQtContent() {
     if (!act) return;
     if (act.qa === "all" || act.qa === "clear") {
       box.querySelectorAll("input[data-ri]").forEach((c) => { c.checked = act.qa === "all"; });
+      if (editions) editions.hidden = true;
       return qtPassageCount();
     }
-    const quotes = qtPassageQuote();
-    if (!quotes.length) return;
-    insertQuote("qt", quotes.map((q) => q.text).join("\n\n"));
-    box.querySelectorAll("input[data-ri]").forEach((c) => { c.checked = false; });
-    qtPassageCount();
+    const chosen = [...box.querySelectorAll("input[data-ri]:checked")];
+    if (!chosen.length) return;
+    if (qtPassage.versions?.length > 1 && chosen.some((c) => qtPassage.rows[Number(c.dataset.ri)]?.texts[1])) {
+      editions.querySelectorAll("[data-qt-ed]").forEach((c) => { c.checked = true; });
+      editions.hidden = false;
+      return;
+    }
+    pasteSelected();
   });
   const timers = {};
   content.addEventListener("input", (e) => {
