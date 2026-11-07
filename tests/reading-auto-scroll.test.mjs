@@ -10,9 +10,9 @@ function setup() {
  const document={...element(),createElement:()=>bar,querySelector:()=>null,hidden:false};
  let callback,mutation,now=0;
  const env={document,MutationObserver:class{constructor(fn){mutation??=fn;}observe(){}disconnect(){}},requestAnimationFrame(fn){callback=fn;return 1;},cancelAnimationFrame(){callback=null;}};
- vm.createContext(env);vm.runInContext(fs.readFileSync('js/features/reading-auto-scroll.js','utf8'),env);
+ vm.createContext(env);vm.runInContext(fs.readFileSync('js/features/scripture-auto-scroll.js','utf8'),env);
  const trigger=element();
- const controller=env.createReadingAutoScroll(body,{append(){},parentElement:{parentElement:{}}},trigger);
+ const controller=env.createScriptureAutoScroll(body,{append(){},parentElement:{parentElement:{}}},trigger);
  controller.setVisible(true);trigger.listeners.click();
  return {body,controls,controller,trigger,bar,mutate(){mutation();},advance(ms){now+=ms;const fn=callback;callback=null;fn?.(now);}};
 }

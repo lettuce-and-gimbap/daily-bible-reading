@@ -644,6 +644,9 @@ mark.study-mark:focus-visible{outline:2px solid currentColor;outline-offset:2px}
 .reading-auto-scroll[hidden], .reader-auto-trigger[hidden] { display: none; }
 .auto-scroll-main { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
 .reader-auto-trigger { flex: none; min-height: 34px; padding: 4px 8px; border: 1px solid var(--line); border-radius: 9px; background: var(--surface-2); color: var(--muted); font: inherit; font-size: .75rem; font-weight: 700; white-space: nowrap; cursor: pointer; }
+.qt-tabs-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.rd.qt .reading-auto-scroll { border-color: var(--qt); }
+.rd.qt .reader-auto-trigger[aria-expanded="true"] { border-color: var(--qt); background: var(--qt-soft); color: var(--qt); }
 .reader-auto-trigger[aria-expanded="true"] { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }
 .auto-scroll-heading { font-weight: 700; }
 @media (max-width: 580px) { .rd.reading .rd-nav { flex-wrap: wrap; } .rd.reading .rd-chap { min-width: 130px; } .rd.reading .rd-nav .reader-auto-trigger { margin-left: auto; } }

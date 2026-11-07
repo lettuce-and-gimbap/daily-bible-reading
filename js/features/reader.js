@@ -49,7 +49,7 @@ function buildReader() {
     </div>`;
 
   readerAutoScroll?.destroy();
-  readerAutoScroll = createReadingAutoScroll($("#sheet-body"), $(".rd-top"), $("#r-auto-toggle"));
+  readerAutoScroll = createScriptureAutoScroll($("#sheet-body"), $(".rd-top"), $("#r-auto-toggle"));
   bindSheetChrome(renderReaderSheet);
   // ‹ 사무엘하 3장 › : 통독 순서대로 앞뒤 장 (Day가 바뀌면 따라감). 가운데 장 이름을 누르면 권·장 고르기
   $("#r-chap").addEventListener("click", (e) => {

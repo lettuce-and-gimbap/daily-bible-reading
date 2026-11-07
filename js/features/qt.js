@@ -3,6 +3,7 @@
 
 let qtDate = todayStr();
 let qtSelectionAbort=null;
+let qtAutoScroll=null;
 
 // 일요일(0)에는 QT를 열지 않아요
 function isQtSunday(date) {
@@ -31,7 +32,8 @@ function renderQt() {
           ${isToday ? "" : `<button class="chip-btn" id="q-today">오늘</button>`}
           <span class="q-check" id="q-check"></span>
         </div>
-        <div class="seg rd-seg" id="q-tabs">${QT_TABS.map(([k, label]) => `<button data-qtab="${k}">${label}</button>`).join("")}</div>
+        <div class="qt-tabs-row"><div class="seg rd-seg" id="q-tabs">${QT_TABS.map(([k, label]) => `<button data-qtab="${k}">${label}</button>`).join("")}</div>
+          <button type="button" class="reader-auto-trigger" id="q-auto-toggle" aria-expanded="false" aria-pressed="false" aria-controls="reading-scroll-controls" hidden>자동 OFF</button></div>
       </div>
       <div class="rd-clip"><div class="qt-read" id="q-read"><div id="q-content"><p class="muted small">본문 불러오는 중…</p></div></div>
         <div class="qp-fixed" id="q-selbar" hidden>
@@ -41,6 +43,8 @@ function renderQt() {
           <button class="btn primary small" data-qa="paste">노트에 붙이기</button>
         </div><button type="button" class="qt-selection-note" id="q-selection-note" hidden>선택 문구를 노트에 넣기</button>${sheetShell()}</div>
     </div>`;
+  qtAutoScroll?.destroy();
+  qtAutoScroll=createScriptureAutoScroll($("#q-read"),$(".rd-top"),$("#q-auto-toggle"));
   onSheetChange = syncQtTabs;
   $("#q-tabs").addEventListener("click", (e) => {
     const b = e.target.closest("[data-qtab]");
@@ -203,6 +207,7 @@ function refreshQtBar() {
 const QT_TABS = [["read", "QT"], ["note", "묵상 노트"], ["relations", "관계도"]];
 
 function syncQtTabs() {
+  qtAutoScroll?.setVisible(!sheetTab && !isQtSunday(qtDate));
   refreshQtAnswerBoxes();
   document.querySelectorAll("#q-tabs [data-qtab]").forEach((b) => {
     b.classList.toggle("on", b.dataset.qtab === (sheetTab || "read"));

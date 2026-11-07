@@ -1,5 +1,5 @@
-// 통독 본문의 실제 스크롤 영역을 기준으로 이동 거리와 남은 시간을 계산한다.
-function createReadingAutoScroll(body, host, trigger) {
+// 통독과 QT가 같은 스크롤 컨트롤을 사용한다. 전달된 본문 영역의 남은 거리를 계산한다.
+function createScriptureAutoScroll(body, host, trigger) {
   const bar = document.createElement('div');
   bar.className = 'reading-auto-scroll';
   bar.id = 'reading-scroll-controls';
