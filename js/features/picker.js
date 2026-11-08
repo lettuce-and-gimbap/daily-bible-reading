@@ -99,6 +99,7 @@ async function renderVersePicker(body, target, idx) {
     ${multiple ? `<div class="vp-edsel" hidden>
       <div class="vp-edsel-head"><p class="vp-edsel-title">붙일 역본을 고르세요</p><button class="btn text small" data-edsel="cancel">취소</button></div>
       <div class="vp-edsel-list">${editions.map((c) => `<label class="vp-edsel-item"><input type="checkbox" data-ed="${esc(c)}" checked><span>${esc(vname(c))}</span></label>`).join("")}</div>
+      <button type="button" class="btn primary small vp-edsel-paste" data-edsel="paste">${target === "qt" ? "노트" : "메모"}에 붙이기</button>
     </div>` : ""}
     <div class="vp-bar">
       <span class="vp-n"></span>

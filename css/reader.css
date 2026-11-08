@@ -612,14 +612,14 @@ mark.study-mark:focus-visible{outline:2px solid currentColor;outline-offset:2px}
 
 /* 구절 붙이기 전에 붙일 역본을 고르는 창 */
 .vp-edsel { position: sticky; bottom: calc(64px + env(safe-area-inset-bottom, 0px)); z-index: 2; margin: 8px 0 0; padding: 12px; border: 1px solid var(--accent); border-radius: 12px; background: var(--surface); box-shadow: 0 -4px 16px rgb(0 0 0 / .12); scroll-margin-block: 16px; }
-.rd.reading .vp-edsel { position: fixed; left: 50%; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); width: min(540px, calc(100vw - 24px)); max-height: min(50dvh, 320px); overflow-y: auto; box-sizing: border-box; transform: translateX(-50%); z-index: 35; }
-.rd.qt .qt-passage .vp-edsel { position: fixed; left: 50%; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); width: min(540px, calc(100vw - 24px)); max-height: min(50dvh, 320px); overflow-y: auto; box-sizing: border-box; transform: translateX(-50%); z-index: 35; }
+.rd.reading .vp-edsel, .rd.qt .qt-passage .vp-edsel { position: fixed; left: 50%; bottom: calc(clamp(88px, 12dvh, 180px) + env(safe-area-inset-bottom, 0px)); width: min(540px, calc(100vw - 24px)); max-height: min(50dvh, 320px); overflow-y: auto; box-sizing: border-box; transform: translateX(-50%); z-index: 35; }
 .vp-edsel[hidden] { display: none; }
 .vp-edsel-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 44px; margin-bottom: 8px; }
 .vp-edsel-title { margin: 0; font-weight: 700; }
 .vp-edsel-list { display: flex; flex-wrap: wrap; gap: 8px; }
 .vp-edsel-item { display: flex; align-items: center; gap: 6px; min-height: 44px; box-sizing: border-box; padding: 8px 12px; border: 1px solid var(--line); border-radius: 999px; cursor: pointer; }
 .vp-edsel-item:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); }
+.vp-edsel-paste, .vp-edsel > [data-qt-edsel="paste"] { display: block; margin: 10px 0 0 auto; min-height: 44px; }
 
 /* 역본 선택 UI: 스크롤 중에도 하단 작업 막대 위에 유지하고 iOS safe area와 작은 화면을 지원 */
 .vp-bar { z-index: 3; padding-bottom: calc(14px + env(safe-area-inset-bottom, 0px)); }
