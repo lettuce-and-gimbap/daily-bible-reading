@@ -12671,35 +12671,39 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-gen-20-7",
-    "title": "선지자 아브라함",
-    "aliases": [
-      "선지자",
-      "예언자"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 20,
-        "lo": 7,
-        "hi": 7,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "하나님은 아브라함을 선지자라고 부르시며 그가 아비멜렉을 위해 기도하리라고 하세요.",
-    "detail": "개역개정은 '선지자', 쉬운성경은 '예언자'로 옮겨요. 창세기에서 아브라함이 선지자로 불리는 곳은 이 구절이에요. 17절에서 아브라함이 기도하자 하나님이 아비멜렉의 집을 치료하세요.",
-    "caution": "선지자의 기도를 사람이 하나님을 움직이는 힘으로 읽지 않고, 하나님이 세우신 중보의 자리로 읽어요.",
-    "refs": [
-      "창세기 20:7",
-      "창세기 20:17"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
+  "id": "context-gen-20-7",
+  "title": "아브라함의 선지자 호칭과 중보",
+  "aliases": [
+    "선지자",
+    "예언자"
+  ],
+  "locations": [
+    {
+      "code": "gen",
+      "chapter": 20,
+      "lo": 7,
+      "hi": 7,
+      "editions": [
+        "gae",
+        "easy"
+      ]
+    }
+  ],
+  "summary": "히브리어 נָבִיא(나비)는 하나님의 말씀을 전하는 이를 가리켜요. 여기서는 미래 예고보다 하나님과의 관계 및 다른 사람을 위한 중보가 부각돼요. 선지자라는 직함이 아브라함의 앞선 행동까지 정당화하지는 않아요.",
+  "caution": "",
+  "refs": [
+    "창세기 20:7"
+  ],
+  "category": "원어·선지자 문맥",
+  "lens": "",
+  "wcf": [],
+  "sourceLinks": [
+    {
+      "label": "נָבִיא — BDB·Strong",
+      "url": "https://biblehub.com/hebrew/5030.htm"
+    }
+  ]
+},
   {
     "id": "context-gen-20-11",
     "title": "아브라함의 변명",
@@ -36103,39 +36107,39 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ]
   },
   {
-    "id": "context-deu-18-15",
-    "title": "모세와 같은 선지자",
-    "aliases": [
-      "나와 같은 선지자 하나를 일으키시리니",
-      "나와 같은 예언자 하나를 세워 주실 것이오"
-    ],
-    "locations": [
-      {
-        "code": "deu",
-        "chapter": 18,
-        "lo": 15,
-        "hi": 15,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "여호와께서 형제 중에서 모세와 같은 선지자를 일으키시겠다는 약속이에요.",
-    "detail": "이 약속은 이어지는 선지자들을 가리키기도 하고 한 선지자를 가리키기도 한다고 읽혀요. 신명기 34장 10절은 그 후에 모세와 같은 선지자가 이스라엘에 일어나지 못했다고 하고, 요한복음 1장 21절과 6장 14절에서 사람들이 '그 선지자'를 기다려요. 사도행전 3장 22절에서 베드로는 이 약속을 예수께 적용해요.",
-    "caution": "선지자 직분의 계승과 마지막에 오실 한 선지자라는 읽기가 함께 있다는 점을 구별해서 읽어요.",
-    "refs": [
-      "신명기 18:15-19",
-      "신명기 34:10",
-      "요한복음 6:14",
-      "사도행전 3:22"
-    ],
-    "category": "본문 문맥",
-    "lens": "개혁주의 전통은 모세와 같은 선지자의 약속을 그리스도의 선지자직에서 이루어졌다고 읽어요.",
-    "wcf": [
-      8
-    ]
-  },
+  "id": "context-deu-18-15",
+  "title": "모세 같은 선지자의 약속",
+  "aliases": [
+    "선지자",
+    "예언자"
+  ],
+  "locations": [
+    {
+      "code": "deu",
+      "chapter": 18,
+      "lo": 15,
+      "hi": 15,
+      "editions": [
+        "gae",
+        "easy"
+      ]
+    }
+  ],
+  "summary": "נָבִיא(나비)는 점술을 대신하는 하나님의 말씀 전달자예요. 9~14절의 이방 점술 금지와 16절의 호렙 중재 요청이 배경이에요. 사도행전 3:22는 이 약속을 예수님에게 적용하므로, 이스라엘의 선지자 직무와 그리스도 안의 성취를 함께 살펴요.",
+  "caution": "",
+  "refs": [
+    "신명기 18:15"
+  ],
+  "category": "원어·선지자 문맥",
+  "lens": "",
+  "wcf": [],
+  "sourceLinks": [
+    {
+      "label": "נָבִיא — BDB·Strong",
+      "url": "https://biblehub.com/hebrew/5030.htm"
+    }
+  ]
+},
   {
     "id": "context-deu-19-9",
     "title": "세 성읍을 더하라",
@@ -48725,36 +48729,44 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-1sa-9-9",
-    "title": "선견자와 선지자",
-    "aliases": [
-      "지금 선지자라 하는 자를 옛적에는 선견자라 일컬었더라",
-      "옛날에 선견자라고 부르던 사람을 지금은 예언자라고 부릅니다"
-    ],
-    "locations": [
-      {
-        "code": "1sa",
-        "chapter": 9,
-        "lo": 9,
-        "hi": 9,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "본문은 옛날에 선견자라 부르던 사람을 지금은 선지자라고 부른다고 설명해요.",
-    "detail": "이 말은 독자가 '선견자'라는 옛 말을 알아듣도록 돕는 괄호 설명이에요. 신명기 18장 15절은 하나님이 선지자를 세우신다고 말해요. 선견자와 선지자의 차이를 본문은 길게 풀지 않아요.",
-    "caution": "'선견자'와 '선지자'의 차이가 시대별로 어떻게 달랐는지는 본문이 자세히 말하지 않아요.",
-    "refs": [
-      "사무엘상 9:9",
-      "신명기 18:15",
-      "사무엘상 9:19"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
+  "id": "context-1sa-9-9",
+  "title": "선지자와 선견자의 명칭",
+  "aliases": [
+    "선지자",
+    "선견자",
+    "예언자"
+  ],
+  "locations": [
+    {
+      "code": "1sa",
+      "chapter": 9,
+      "lo": 9,
+      "hi": 9,
+      "editions": [
+        "gae",
+        "easy"
+      ]
+    }
+  ],
+  "summary": "이 절의 선지자는 נָבִיא(나비), 선견자는 רֹאֶה(로에)예요. 로에는 보다라는 동사에서 나온 표현이에요. 서술자가 옛 호칭을 독자에게 설명하는 대목으로, 서로 다른 종교나 더 높은 직급을 뜻하는 명칭은 아니에요.",
+  "caution": "",
+  "refs": [
+    "사무엘상 9:9"
+  ],
+  "category": "원어·선지자 문맥",
+  "lens": "",
+  "wcf": [],
+  "sourceLinks": [
+    {
+      "label": "נָבִיא — BDB·Strong",
+      "url": "https://biblehub.com/hebrew/5030.htm"
+    },
+    {
+      "label": "רֹאֶה — BDB·Strong",
+      "url": "https://biblehub.com/hebrew/7203.htm"
+    }
+  ]
+},
   {
     "id": "context-1sa-9-19",
     "title": "내가 선견자이니라",
@@ -61685,35 +61697,41 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-ezk-13-2",
-    "title": "마음대로 예언하는 자들",
-    "aliases": [
-      "자기 마음대로 예언하는 자에게",
-      "자기들 마음대로 예언하는 자들에게"
-    ],
-    "locations": [
-      {
-        "code": "ezk",
-        "chapter": 13,
-        "lo": 2,
-        "hi": 2,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "하나님은 자기 마음대로 예언하는 이스라엘의 선지자들에게 여호와의 말씀을 들으라고 하셔요.",
-    "detail": "3절에서 본 것 없이 자기 심령을 따라 예언하는 자들에게 화가 선포돼요. 예레미야 23장 16절도 같은 경고를 해요.",
-    "caution": "본문은 거짓 선지자를 '자기 마음대로'로 정의해요. 참 선지자와의 구분은 '본 것이 있는가'로 말하지만, 실제 판별 방법은 이 장에서 자세히 나오지 않아요.",
-    "refs": [
-      "에스겔 13:2-3",
-      "예레미야 23:16"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
+  "id": "context-ezk-13-2",
+  "title": "자기 마음대로 예언하는 선지자",
+  "aliases": [
+    "예언하는 자",
+    "선지자",
+    "예언하는",
+    "예언자"
+  ],
+  "locations": [
+    {
+      "code": "ezk",
+      "chapter": 13,
+      "lo": 2,
+      "hi": 2,
+      "editions": [
+        "gae",
+        "easy"
+      ]
+    }
+  ],
+  "summary": "נְבִיאִים(느비임)은 여기서 비판받는 예언자들에게 쓰여요. 같은 직함이라도 참된 계시가 보장되는 것은 아니에요. 3절의 자기 심령을 따라 말한다는 비판은 하나님의 말씀을 전하는 직무와 개인의 기대를 예언처럼 제시하는 행위를 구별해요.",
+  "caution": "",
+  "refs": [
+    "에스겔 13:2"
+  ],
+  "category": "원어·선지자 문맥",
+  "lens": "",
+  "wcf": [],
+  "sourceLinks": [
+    {
+      "label": "נָבִיא — BDB·Strong",
+      "url": "https://biblehub.com/hebrew/5030.htm"
+    }
+  ]
+},
   {
     "id": "context-ezk-13-5",
     "title": "무너진 성벽을 고치지 않음",
@@ -80062,36 +80080,39 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-hos-12-13",
-    "title": "선지자로 인도하시고 보호하신 하나님",
-    "aliases": [
-      "여호와께서는 한 선지자로 이스라엘을 애굽에서 인도하여 내셨고",
-      "여호와께서 예언자를 시켜 야곱의 자손들, 즉 이스라엘 백성을 이집트에서 인도해 내셨다"
-    ],
-    "locations": [
-      {
-        "code": "hos",
-        "chapter": 12,
-        "lo": 13,
-        "hi": 13,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "하나님이 선지자 한 사람을 통해 이스라엘을 애굽에서 인도하시고, 또 선지자로 백성을 보호하셨다고 말해요.",
-    "detail": "'한 선지자'는 모세를 가리키는 것으로 읽혀요(신명기 18:15). 호세아는 선지자를 통한 보호를 말하면서, 6장 5절에서 선지자들이 백성을 친 심판과 대비해요.",
-    "caution": "'한 선지자'가 모세 한 사람을 가리키는지 예언자 직분 전체를 가리키는지 해석이 나뉘어요.",
-    "refs": [
-      "호세아 12:13",
-      "호세아 6:5",
-      "신명기 18:15"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
+  "id": "context-hos-12-13",
+  "title": "출애굽을 이끈 선지자",
+  "aliases": [
+    "선지자",
+    "예언자"
+  ],
+  "locations": [
+    {
+      "code": "hos",
+      "chapter": 12,
+      "lo": 13,
+      "hi": 13,
+      "editions": [
+        "gae",
+        "easy"
+      ]
+    }
+  ],
+  "summary": "נָבִיא(나비)는 이 문맥에서 이름을 적지 않고도 출애굽을 이끈 모세를 가리켜요. 선지자의 역할이 미래를 말하는 일에만 한정되지 않고 하나님의 말씀으로 백성을 인도하는 사역을 포함함을 보여 줘요. 모세와 다른 선지자들의 권위를 동일한 정도로 평평하게 만들지는 않아요.",
+  "caution": "",
+  "refs": [
+    "호세아 12:13"
+  ],
+  "category": "원어·선지자 문맥",
+  "lens": "",
+  "wcf": [],
+  "sourceLinks": [
+    {
+      "label": "נָבִיא — BDB·Strong",
+      "url": "https://biblehub.com/hebrew/5030.htm"
+    }
+  ]
+},
   {
     "id": "context-hos-13-1",
     "title": "떨게 하던 에브라임의 몰락",
@@ -83247,36 +83268,39 @@ window.ScriptureNotesData.contextualTerms.push(...[
 // 학개 1-2장
 window.ScriptureNotesData.contextualTerms.push(...[
   {
-    "id": "context-hag-1-1",
-    "title": "다리오 2년 여섯째 달 초하루",
-    "aliases": [
-      "여호와의 말씀이 선지자 학개로 말미암아",
-      "예언자 학개가 여호와의 말씀을"
-    ],
-    "locations": [
-      {
-        "code": "hag",
-        "chapter": 1,
-        "lo": 1,
-        "hi": 1,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "다리오 2년 여섯째 달 초하루에 학개가 스룹바벨과 대제사장 여호수아에게 여호와의 말씀을 전했다고 날짜를 분명히 적어요.",
-    "detail": "같은 시기 스가랴 1장 1절도 다리오 2년에 여호와의 말씀이 임했다고 말해요. 학개와 스가랴가 함께 성전 재건을 일으켜요(에스라 5:1).",
-    "caution": "'다리오 왕 제이년'을 본문은 왕의 연차로만 적어요. 그리스도 이전 몇 년인지는 참고 자료로 맞춰야 해요.",
-    "refs": [
-      "학개 1:1",
-      "스가랴 1:1",
-      "에스라 5:1"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
+  "id": "context-hag-1-1",
+  "title": "학개가 전하는 날짜 있는 말씀",
+  "aliases": [
+    "선지자",
+    "예언자"
+  ],
+  "locations": [
+    {
+      "code": "hag",
+      "chapter": 1,
+      "lo": 1,
+      "hi": 1,
+      "editions": [
+        "gae",
+        "easy"
+      ]
+    }
+  ],
+  "summary": "נָבִיא(나비)는 여호와의 말씀을 총독과 대제사장에게 전달하는 학개의 직무를 나타내요. 포로 귀환 뒤 성전 재건이라는 구체적 과제에 대한 말씀이므로 단순한 먼 미래 예고가 아니에요. 스룹바벨의 행정적 역할, 여호수아의 제사장 역할과 구별돼요.",
+  "caution": "",
+  "refs": [
+    "학개 1:1"
+  ],
+  "category": "원어·선지자 문맥",
+  "lens": "",
+  "wcf": [],
+  "sourceLinks": [
+    {
+      "label": "נָבִיא — BDB·Strong",
+      "url": "https://biblehub.com/hebrew/5030.htm"
+    }
+  ]
+},
   {
     "id": "context-hag-1-4",
     "title": "판벽한 집과 황폐한 성전",
@@ -84875,37 +84899,39 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-mal-4-5",
-    "title": "엘리야를 보내시리라",
-    "aliases": [
-      "여호와의 크고 두려운 날이 이르기 전에 내가 선지자 엘리야를 너희에게 보내리니",
-      "내가 예언자 엘리야를 너희에게 보내 주겠다"
-    ],
-    "locations": [
-      {
-        "code": "mal",
-        "chapter": 4,
-        "lo": 5,
-        "hi": 5,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "여호와의 크고 두려운 날이 오기 전에 선지자 엘리야를 보내시겠다고 말씀해요.",
-    "detail": "신약 마태복음 11장 14절은 이 엘리야를 세례 요한으로 읽어요. 엘리야가 회오리바람으로 올라간 열왕기하 2장 11절과 이어져 읽히는 예고이기도 해요.",
-    "caution": "'엘리야'가 실제 엘리야 자신인지 같은 사명을 가진 사람인지 본문에서 명확하지 않아요. 신약은 세례 요한으로 읽어요.",
-    "refs": [
-      "말라기 4:5",
-      "말라기 4:6",
-      "열왕기하 2:11",
-      "마태복음 11:14"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
+  "id": "context-mal-4-5",
+  "title": "엘리야 선지자의 약속",
+  "aliases": [
+    "선지자",
+    "예언자"
+  ],
+  "locations": [
+    {
+      "code": "mal",
+      "chapter": 4,
+      "lo": 5,
+      "hi": 5,
+      "editions": [
+        "gae",
+        "easy"
+      ]
+    }
+  ],
+  "summary": "נָבִיא(나비)라는 호칭과 함께 여호와의 날을 앞둔 돌이킴의 사명이 제시돼요. 누가복음 1:17은 세례 요한의 사명을 엘리야의 심령과 능력으로 설명해요. 그러므로 이름의 일치만으로 단순한 환생이나 동일 인물의 재등장을 단정하지 않아요.",
+  "caution": "",
+  "refs": [
+    "말라기 4:5"
+  ],
+  "category": "원어·선지자 문맥",
+  "lens": "",
+  "wcf": [],
+  "sourceLinks": [
+    {
+      "label": "נָבִיא — BDB·Strong",
+      "url": "https://biblehub.com/hebrew/5030.htm"
+    }
+  ]
+},
   {
     "id": "context-mal-4-6",
     "title": "아버지의 마음을 자녀에게로",
@@ -100059,35 +100085,40 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-jer-28-9",
-    "title": "응한 뒤에야 인정받는 선지자",
-    "aliases": [
-      "평화를 예언하는 선지자는 그 예언자의 말이 응한 후에야",
-      "평화를 예언하는 예언자는 그의 예언이 이루어진 뒤에야"
-    ],
-    "locations": [
-      {
-        "code": "jer",
-        "chapter": 28,
-        "lo": 9,
-        "hi": 9,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "예레미야가 평화를 예언하는 선지자는 그 말이 응한 뒤에야 여호와께서 보내신 선지자로 인정받는다고 말해요.",
-    "detail": "신명기 18장 22절은 선지자가 여호와의 이름으로 말했으나 그 말이 응하지 않으면 여호와께서 말씀하신 것이 아니라고 가르쳐요.",
-    "caution": "예언의 검증을 시간이 지난 뒤 응함으로만 볼지 말씀에 대한 순종의 삶으로도 볼지 해석이 나뉘어요.",
-    "refs": [
-      "신명기 18:22",
-      "예레미야 28:9"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
+  "id": "context-jer-28-9",
+  "title": "평화를 예고한 선지자의 검증",
+  "aliases": [
+    "선지자",
+    "예언자",
+    "예언하는"
+  ],
+  "locations": [
+    {
+      "code": "jer",
+      "chapter": 28,
+      "lo": 9,
+      "hi": 9,
+      "editions": [
+        "gae",
+        "easy"
+      ]
+    }
+  ],
+  "summary": "נָבִיא(나비)의 말은 단지 듣기 좋은 내용이라는 이유로 신뢰할 수 없어요. 하나냐의 평화 예고와 예레미야의 경고가 충돌하는 문맥이에요. 성취의 검증을 말하지만 신명기 13장은 성취된 표적도 다른 신을 따르게 하면 거부하라고 하므로 성취만이 유일한 기준은 아니에요.",
+  "caution": "",
+  "refs": [
+    "예레미야 28:9"
+  ],
+  "category": "원어·선지자 문맥",
+  "lens": "",
+  "wcf": [],
+  "sourceLinks": [
+    {
+      "label": "נָבִיא — BDB·Strong",
+      "url": "https://biblehub.com/hebrew/5030.htm"
+    }
+  ]
+},
   {
     "id": "context-jer-28-14",
     "title": "쇠 멍에",
@@ -121775,35 +121806,39 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-act-3-22",
-    "title": "모세와 같은 선지자",
-    "aliases": [
-      "주 하나님이 너희를 위하여 너희 형제 가운데서 나 같은 선지자 하나를 세울 것이니",
-        "나와 같은 예언자 한 사람을 세우실 것이다"
-    ],
-    "locations": [
-      {
-        "code": "act",
-        "chapter": 3,
-        "lo": 22,
-        "hi": 22,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "베드로는 모세가 말한 '나 같은 선지자'가 예수님이라고 말해요.",
-    "detail": "이 인용은 신명기 18장의 말씀이에요. 그 선지자의 말을 듣지 않는 자가 백성 가운데서 끊어진다는 경고도 같이 나와요.",
-    "caution": "신명기 본문의 '선지자'를 누구로 볼지에 대해서는 여러 해석이 있어요. 본문은 베드로의 적용을 분명히 말해요.",
-    "refs": [
-      "사도행전 3:22-23",
-      "신명기 18:15-19"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
+  "id": "context-act-3-22",
+  "title": "예수님에게 적용되는 모세 같은 선지자",
+  "aliases": [
+    "선지자",
+    "예언자"
+  ],
+  "locations": [
+    {
+      "code": "act",
+      "chapter": 3,
+      "lo": 22,
+      "hi": 22,
+      "editions": [
+        "gae",
+        "easy"
+      ]
+    }
+  ],
+  "summary": "προφήτης(프로페테스)는 신명기 18:15의 약속을 인용하는 말이에요. 베드로는 그 약속을 예수님을 듣고 돌이켜야 한다는 요청에 적용해요. 구약의 말씀 전달 사역과 그리스도의 성취를 연결하지만, 모든 후대 지도자가 그와 같은 권위를 가진다는 뜻은 아니에요.",
+  "caution": "",
+  "refs": [
+    "사도행전 3:22"
+  ],
+  "category": "원어·선지자 문맥",
+  "lens": "",
+  "wcf": [],
+  "sourceLinks": [
+    {
+      "label": "προφήτης — Thayer·Strong",
+      "url": "https://biblehub.com/greek/4396.htm"
+    }
+  ]
+},
   {
     "id": "context-act-3-25",
     "title": "아브라함을 통한 복",
@@ -123213,35 +123248,39 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-act-13-1",
-    "title": "안디옥 교회의 지도자들",
-    "aliases": [
-      "안디옥 교회에 선지자들과 교사들이 있으니",
-        "안디옥 교회에는 예언자와 교사들이 있었습니다"
-    ],
-    "locations": [
-      {
-        "code": "act",
-        "chapter": 13,
-        "lo": 1,
-        "hi": 1,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "안디옥 교회에는 선지자와 교사들이 있었고, 바나바와 사울도 그 가운데 있었다고 말해요.",
-    "detail": "시므온, 루기오, 마나엔 같은 다양한 배경의 사람들이 함께 있었다는 점이 드러나요. 마나엔은 분봉왕 헤롯과 함께 자란 사람으로 소개돼요.",
-    "caution": "교사와 선지자의 직분을 어떻게 나눌지는 본문이 자세히 구분하지 않아요.",
-    "refs": [
-      "사도행전 13:1",
-      "사도행전 11:26"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": []
-  },
+  "id": "context-act-13-1",
+  "title": "안디옥 교회의 선지자와 교사",
+  "aliases": [
+    "선지자",
+    "예언자"
+  ],
+  "locations": [
+    {
+      "code": "act",
+      "chapter": 13,
+      "lo": 1,
+      "hi": 1,
+      "editions": [
+        "gae",
+        "easy"
+      ]
+    }
+  ],
+  "summary": "προφῆται(프로페타이)는 교회 공동체 안에서 봉사하는 선지자들을 가리켜요. 교사와 나란히 언급되지만 명단의 각 사람이 어느 한 직무에만 속했는지는 본문이 구분하지 않아요. 이 사역을 구약 왕정기의 선지자 집단과 동일한 조직으로 보지는 않아요.",
+  "caution": "",
+  "refs": [
+    "사도행전 13:1"
+  ],
+  "category": "원어·선지자 문맥",
+  "lens": "",
+  "wcf": [],
+  "sourceLinks": [
+    {
+      "label": "προφήτης — Thayer·Strong",
+      "url": "https://biblehub.com/greek/4396.htm"
+    }
+  ]
+},
   {
     "id": "context-act-13-2",
     "title": "바나바와 사울을 따로 세우라",
@@ -144452,3 +144491,1660 @@ window.ScriptureNotesData.contextualTerms.push({
   "lens": "",
   "wcf": []
 });
+
+// 선지자 호칭은 인물·직무·참거짓 분별의 문맥을 따라 해당 절에서만 연결한다.
+window.ScriptureNotesData.contextualTerms.push(...[
+  {
+    "id": "prophet-context-exo-7-1",
+    "title": "아론이 모세의 대언자라는 뜻",
+    "aliases": [
+      "대언자"
+    ],
+    "locations": [
+      {
+        "code": "exo",
+        "chapter": 7,
+        "lo": 1,
+        "hi": 1,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "대언자는 히브리어 נָבִיא(나비)예요. 모세가 받은 지시를 아론이 바로에게 전하는 관계가 선지자의 대변 역할을 설명해요. 모세를 하나님과 같은 본질의 존재로 만들었다는 뜻은 아니에요.",
+    "caution": "",
+    "refs": [
+      "출애굽기 7:1"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "נָבִיא — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/5030.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-exo-15-20",
+    "title": "미리암을 여선지자로 부름",
+    "aliases": [
+      "선지자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "exo",
+        "chapter": 15,
+        "lo": 20,
+        "hi": 20,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "נְבִיאָה(느비아)는 나비의 여성형이에요. 미리암은 출애굽 구원을 찬양하도록 여성들을 이끄는 인물로 소개돼요. 여선지자라는 말이 단순히 선지자의 아내를 뜻하는 것은 아니며, 이 문맥은 예배를 이끄는 미리암 자신의 역할을 가리켜요.",
+    "caution": "",
+    "refs": [
+      "출애굽기 15:20"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "נְבִיאָה — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/5031.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-num-12-6",
+    "title": "선지자의 계시와 모세의 독특한 위치",
+    "aliases": [
+      "선지자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "num",
+        "chapter": 12,
+        "lo": 6,
+        "hi": 6,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "נָבִיא(나비)는 하나님께 계시를 받아 전하는 사람이에요. 꿈과 환상은 여기서 언급된 계시 방식이지만, 7~8절은 모세와의 대화를 구별해요. 모든 선지자가 항상 같은 방식으로 말씀을 받았다는 획일적 분류는 아니에요.",
+    "caution": "",
+    "refs": [
+      "민수기 12:6"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "נָבִיא — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/5030.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-deu-13-1",
+    "title": "표적을 행하는 선지자의 분별",
+    "aliases": [
+      "선지자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "deu",
+        "chapter": 13,
+        "lo": 1,
+        "hi": 1,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "נָבִיא(나비)라는 호칭이나 성취된 표적만으로 참된 권위가 보장되지는 않아요. 이 문맥에서는 다른 신을 섬기게 하는지가 결정적이에요. 선지자의 말은 이미 주어진 여호와의 언약에 대한 충성과 함께 분별해야 해요.",
+    "caution": "",
+    "refs": [
+      "신명기 13:1"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "נָבִיא — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/5030.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-deu-34-10",
+    "title": "모세와 같은 선지자가 없었다는 평가",
+    "aliases": [
+      "선지자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "deu",
+        "chapter": 34,
+        "lo": 10,
+        "hi": 10,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "נָבִיא(나비) 중 모세의 특별함은 미래를 많이 맞힌 데 있지 않아요. 여호와께서 대면하여 아셨다는 관계와 출애굽의 사명이 평가의 기준이에요. 신명기 18장의 약속을 읽는 배경이 되지만, 이 절만으로 후대 선지자들의 권위를 부정하지는 않아요.",
+    "caution": "",
+    "refs": [
+      "신명기 34:10"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "נָבִיא — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/5030.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-jdg-4-4",
+    "title": "드보라의 여선지자 직무",
+    "aliases": [
+      "여선지자",
+      "선지자",
+      "여선지",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "jdg",
+        "chapter": 4,
+        "lo": 4,
+        "hi": 4,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "נְבִיאָה(느비아)는 여성인 말씀 전달자를 뜻해요. 드보라는 재판하는 사사이면서 바락에게 여호와의 명령을 전하는 인물이에요. 사사와 선지자는 같은 직함이 아니지만, 이 인물에게 두 역할이 함께 나타나요.",
+    "caution": "",
+    "refs": [
+      "사사기 4:4"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "נְבִיאָה — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/5031.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-1sa-3-20",
+    "title": "사무엘이 선지자로 인정받음",
+    "aliases": [
+      "선지자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "1sa",
+        "chapter": 3,
+        "lo": 20,
+        "hi": 20,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "נָבִיא(나비)라는 인정은 엘리 집안의 혈통을 잇는 제사장 지위와 구별돼요. 어린 사무엘이 받은 말씀과 그것을 이루시는 하나님의 신실하심이 그의 사역을 확증해요. 임명장이나 예언 기술의 습득을 설명하는 장면은 아니에요.",
+    "caution": "",
+    "refs": [
+      "사무엘상 3:20"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "נָבִיא — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/5030.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-1sa-10-5",
+    "title": "선지자 무리와 음악",
+    "aliases": [
+      "선지자",
+      "예언자",
+      "예언을"
+    ],
+    "locations": [
+      {
+        "code": "1sa",
+        "chapter": 10,
+        "lo": 5,
+        "hi": 5,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "선지자들은 נְבִיאִים(느비임), 곧 나비의 복수형이에요. 음악과 함께 활동하는 무리가 묘사되지만 학교의 입학·수료 제도는 나오지 않아요. 사울의 일시적 예언 경험과 지속적인 선지자 직무도 구별해야 해요.",
+    "caution": "",
+    "refs": [
+      "사무엘상 10:5"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "נָבִיא — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/5030.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-1sa-19-20",
+    "title": "사무엘과 함께한 선지자 무리",
+    "aliases": [
+      "선지자",
+      "예언하는",
+      "예언을",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "1sa",
+        "chapter": 19,
+        "lo": 20,
+        "hi": 20,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "선지자의 복수형 נְבִיאִים(느비임)이 쓰여요. 이 장면에서는 사울의 체포 시도가 하나님의 영의 역사로 제지돼요. 사울의 사자들이 예언했다는 사실이 그들의 사명이나 사울의 행동에 대한 승인을 뜻하지는 않아요.",
+    "caution": "",
+    "refs": [
+      "사무엘상 19:20"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "נָבִיא — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/5030.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-2sa-7-2",
+    "title": "왕에게 말하는 선지자 나단",
+    "aliases": [
+      "선지자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "2sa",
+        "chapter": 7,
+        "lo": 2,
+        "hi": 2,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "נָבִיא(나비)는 왕의 계획을 무조건 지지하는 궁중 참모라는 뜻이 아니에요. 나단은 처음에 다윗의 계획을 좋게 보지만, 그 밤에 받은 말씀에 따라 다른 답을 전해요. 선지자 개인의 판단과 하나님께 받은 말씀을 본문 자체가 구별해요.",
+    "caution": "",
+    "refs": [
+      "사무엘하 7:2"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "נָבִיא — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/5030.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-2sa-24-11",
+    "title": "선지자이자 선견자인 갓",
+    "aliases": [
+      "선지자",
+      "선견자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "2sa",
+        "chapter": 24,
+        "lo": 11,
+        "hi": 11,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "이 절은 갓에게 נָבִיא(나비)와 חֹזֶה(호제)를 함께 써요. 호제도 보는 자를 뜻하는 말로, 나비와 별개의 계급을 뜻하지 않아요. 다윗의 선견자라는 관계가 왕의 잘못을 감추거나 왕에게 종속된 진리만 전한다는 뜻도 아니에요.",
+    "caution": "",
+    "refs": [
+      "사무엘하 24:11"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "נָבִיא — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/5030.htm"
+      },
+      {
+        "label": "חֹזֶה — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/2374.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-1ki-13-18",
+    "title": "거짓말한 늙은 선지자",
+    "aliases": [
+      "선지자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "1ki",
+        "chapter": 13,
+        "lo": 18,
+        "hi": 18,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "נָבִיא(나비)라는 직함이 등장해도 인용된 말이 모두 참이라는 뜻은 아니에요. 이 절에서 서술자는 그가 거짓말했다고 명시해요. 다른 선지자의 체험 주장으로 이미 받은 명령을 뒤집는 위험을 보여 주는 장면이에요.",
+    "caution": "",
+    "refs": [
+      "열왕기상 13:18"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "נָבִיא — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/5030.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-1ki-18-19",
+    "title": "여호와의 선지자와 바알의 선지자",
+    "aliases": [
+      "선지자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "1ki",
+        "chapter": 18,
+        "lo": 19,
+        "hi": 19,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "נָבִיא(나비)는 바알·아세라를 섬기는 이들에게도 사용돼요. 명칭 자체가 여호와에게서 파송되었다는 판정을 담지는 않아요. 갈멜 사건에서는 누가 참 하나님인지와 어느 신에게 속한 예언자인지가 대립의 핵심이에요.",
+    "caution": "",
+    "refs": [
+      "열왕기상 18:19"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "נָבִיא — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/5030.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-1ki-22-6",
+    "title": "왕이 듣고 싶은 말을 하는 선지자들",
+    "aliases": [
+      "선지자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "1ki",
+        "chapter": 22,
+        "lo": 6,
+        "hi": 6,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "נְבִיאִים(느비임)은 선지자들의 복수형이에요. 많은 사람의 일치나 왕궁의 지지가 여호와의 말씀임을 확증하지는 않아요. 뒤이어 미가야가 제시하는 다른 말씀이 숫자나 권력으로 참과 거짓을 결정할 수 없게 해요.",
+    "caution": "",
+    "refs": [
+      "열왕기상 22:6"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "נָבִיא — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/5030.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-2ki-2-3",
+    "title": "선지자의 아들들이라는 표현",
+    "aliases": [
+      "선지자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "2ki",
+        "chapter": 2,
+        "lo": 3,
+        "hi": 3,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "בְּנֵי הַנְּבִיאִים(브네 한느비임)은 문자적으로 선지자들의 아들들이지만, 여기서는 예언자 공동체의 구성원들을 가리켜요. 모두가 특정 선지자의 친아들이라는 뜻은 아니에요. 벧엘과 여리고의 무리가 나오지만 현대적 학교 제도를 그대로 대입하지는 않아요.",
+    "caution": "",
+    "refs": [
+      "열왕기하 2:3"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "נָבִיא — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/5030.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-2ki-4-1",
+    "title": "선지자 공동체의 가족과 생계",
+    "aliases": [
+      "선지자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "2ki",
+        "chapter": 4,
+        "lo": 1,
+        "hi": 1,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "선지자의 제자는 히브리어로 선지자들의 아들들에 속한 사람이라는 표현이에요. 이 절에서는 그 공동체에 속한 사람의 아내와 자녀가 등장하므로, 공동체가 반드시 독신 집단이었다고 볼 수 없어요. 빚의 원인이나 정규 봉급 제도는 설명하지 않아요.",
+    "caution": "",
+    "refs": [
+      "열왕기하 4:1"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "נָבִיא — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/5030.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-2ki-17-13",
+    "title": "왕국을 경고한 선지자와 선견자",
+    "aliases": [
+      "선지자",
+      "선견자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "2ki",
+        "chapter": 17,
+        "lo": 13,
+        "hi": 13,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "נָבִיא(나비)와 חֹזֶה(호제)가 나란히 쓰여요. 여기서 두 호칭은 서로 다른 메시지 체계를 가리키지 않고, 이스라엘과 유다에 언약의 길로 돌아오라고 경고한 말씀 전달자들을 함께 지칭해요. 미래 예측보다 언약 위반에 대한 경고가 전면에 있어요.",
+    "caution": "",
+    "refs": [
+      "열왕기하 17:13"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "נָבִיא — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/5030.htm"
+      },
+      {
+        "label": "חֹזֶה — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/2374.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-2ki-22-14",
+    "title": "훌다의 여선지자 호칭",
+    "aliases": [
+      "여선지",
+      "여자 예언자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "2ki",
+        "chapter": 22,
+        "lo": 14,
+        "hi": 14,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "נְבִיאָה(느비아)는 훌다 자신의 선지자 역할을 가리켜요. 율법책이 발견된 뒤 왕의 사자들이 훌다에게 묻는 문맥이므로, 단지 선지자의 아내라는 뜻으로 읽을 수 없어요. 전달되는 말씀은 왕의 의도보다 발견된 율법에 대한 응답을 중심으로 해요.",
+    "caution": "",
+    "refs": [
+      "열왕기하 22:14"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "נְבִיאָה — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/5031.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-1ch-25-5",
+    "title": "왕의 선견자 헤만",
+    "aliases": [
+      "선견자"
+    ],
+    "locations": [
+      {
+        "code": "1ch",
+        "chapter": 25,
+        "lo": 5,
+        "hi": 5,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "חֹזֶה(호제)는 보는 자라는 뜻의 선견자 호칭이에요. 헤만은 찬양을 담당하는 사람으로도 소개되므로, 역대기에서 예언적 봉사와 성전 음악이 무관한 영역은 아니에요. 그렇다고 모든 성전 노래를 개인에게 주는 새 예언으로 취급하지는 않아요.",
+    "caution": "",
+    "refs": [
+      "역대상 25:5"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "נָבִיא — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/5030.htm"
+      },
+      {
+        "label": "חֹזֶה — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/2374.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-1ch-29-29",
+    "title": "사무엘·나단·갓에게 쓴 세 호칭",
+    "aliases": [
+      "선지자",
+      "선견자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "1ch",
+        "chapter": 29,
+        "lo": 29,
+        "hi": 29,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "히브리어는 사무엘에게 רֹאֶה(로에), 나단에게 נָבִיא(나비), 갓에게 חֹזֶה(호제)를 써요. 세 호칭이 한 절에 병렬로 놓여 왕의 행적을 전하는 증언자를 가리켜요. 세 단계의 서열이나 반드시 서로 다른 계시 방식을 정한 목록은 아니에요.",
+    "caution": "",
+    "refs": [
+      "역대상 29:29"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "נָבִיא — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/5030.htm"
+      },
+      {
+        "label": "רֹאֶה — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/7203.htm"
+      },
+      {
+        "label": "חֹזֶה — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/2374.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-2ch-16-7",
+    "title": "왕을 책망한 선견자 하나니",
+    "aliases": [
+      "선견자"
+    ],
+    "locations": [
+      {
+        "code": "2ch",
+        "chapter": 16,
+        "lo": 7,
+        "hi": 7,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "선견자는 רֹאֶה(로에)로, 보는 자라는 말이에요. 사무엘에게만 한정된 개인 별명이 아니라 하나니에게도 쓰이는 호칭이에요. 아사의 외교를 비판하는 문맥에서는 현실을 꿰뚫는 재주보다 여호와를 의지했는지가 판단의 기준이에요.",
+    "caution": "",
+    "refs": [
+      "역대하 16:7"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "נָבִיא — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/5030.htm"
+      },
+      {
+        "label": "רֹאֶה — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/7203.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-ezr-5-1",
+    "title": "귀환 공동체의 선지자 학개와 스가랴",
+    "aliases": [
+      "선지자",
+      "예언자",
+      "예언을"
+    ],
+    "locations": [
+      {
+        "code": "ezr",
+        "chapter": 5,
+        "lo": 1,
+        "hi": 1,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "이 부분은 아람어로 기록되었고 선지자는 נְבִיא(느비) 계열의 표현이에요. 페르시아 지배 아래 성전 재건을 독려하는 두 사람의 역할을 뜻해요. 제국 왕의 허가와 하나님의 말씀을 전하는 선지자의 권위는 구별되면서 같은 역사 속에 등장해요.",
+    "caution": "",
+    "refs": [
+      "에스라 5:1"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "아람어 נְבִיא — Strong",
+        "url": "https://biblehub.com/hebrew/5029.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-neh-6-14",
+    "title": "방해 세력에 속한 여선지자 노아댜",
+    "aliases": [
+      "선지자",
+      "여선지",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "neh",
+        "chapter": 6,
+        "lo": 14,
+        "hi": 14,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "נְבִיאָה(느비아)는 여성 선지자를 가리키는 직함이지만 이 구절은 그 직함만으로 노아댜의 말을 승인하지 않아요. 성벽 공사를 방해하며 두려움을 일으키는 역할이 기도 속에 지적돼요. 사람의 직함과 전달하는 말의 진실성은 구별해야 해요.",
+    "caution": "",
+    "refs": [
+      "느헤미야 6:14"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "נְבִיאָה — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/5031.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-psa-105-15",
+    "title": "족장들을 선지자라 부르는 시",
+    "aliases": [
+      "선지자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "psa",
+        "chapter": 105,
+        "lo": 15,
+        "hi": 15,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "히브리어 נְבִיאַי(느비아이)는 나의 선지자들이라는 뜻이에요. 앞부분의 아브라함·이삭·야곱 문맥에서 하나님이 보호하신 족장들을 가리켜요. 창세기 20:7에서 아브라함을 선지자라 부르는 용례와 연결되며, 현대 지도자를 비판할 수 없다는 포괄적 명령으로 옮기지 않아요.",
+    "caution": "",
+    "refs": [
+      "시편 105:15"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "נָבִיא — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/5030.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-isa-8-3",
+    "title": "이사야서의 여선지자 호칭",
+    "aliases": [
+      "내 아내",
+      "아내"
+    ],
+    "locations": [
+      {
+        "code": "isa",
+        "chapter": 8,
+        "lo": 3,
+        "hi": 3,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "נְבִיאָה(느비아)는 미리암·드보라·훌다에게도 쓰이지만, 이 구절에서는 이사야와 아들을 낳는 여성을 가리켜요. 그녀 자신의 예언 활동은 여기서 기록되지 않아 선지자의 아내라는 관계적 호칭인지 별도의 선지자 직무인지 단정하지 않아요.",
+    "caution": "",
+    "refs": [
+      "이사야 8:3"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "נְבִיאָה — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/5031.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-isa-30-10",
+    "title": "선견자에게 듣기 좋은 말만 요구함",
+    "aliases": [
+      "선지자",
+      "선견자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "isa",
+        "chapter": 30,
+        "lo": 10,
+        "hi": 10,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "히브리어 רֹאִים(로임)과 חֹזִים(호짐)은 각각 로에와 호제의 복수형이에요. 두 호칭 모두 계시를 받아 전하는 이들을 가리켜요. 보는 방식의 차이를 설명하는 구절이 아니라, 백성이 불편한 진실을 거부하고 메시지를 바꾸라고 요구하는 문맥이에요.",
+    "caution": "",
+    "refs": [
+      "이사야 30:10"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "נָבִיא — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/5030.htm"
+      },
+      {
+        "label": "רֹאֶה — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/7203.htm"
+      },
+      {
+        "label": "חֹזֶה — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/2374.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-jer-1-5",
+    "title": "열방의 선지자로 부르심",
+    "aliases": [
+      "선지자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "jer",
+        "chapter": 1,
+        "lo": 5,
+        "hi": 5,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "נָבִיא(나비)는 하나님의 말씀을 위임받아 전하는 사람이에요. 열방이라는 표현은 예레미야의 사명이 유다 왕궁의 이해관계에 제한되지 않음을 보여 줘요. 출생 이전의 부르심은 사역의 주도권이 하나님께 있음을 말하며 모든 사람의 출생 전 활동을 설명하는 문장은 아니에요.",
+    "caution": "",
+    "refs": [
+      "예레미야 1:5"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "נָבִיא — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/5030.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-jer-23-16",
+    "title": "자기 마음의 환상을 말하는 선지자",
+    "aliases": [
+      "선지자",
+      "예언하는",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "jer",
+        "chapter": 23,
+        "lo": 16,
+        "hi": 16,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "נְבִיאִים(느비임)이라는 직함을 가졌어도 계시의 출처를 따져야 해요. 이 문맥은 자신이 만든 환상과 여호와에게서 나온 말씀을 구별하고, 악에서 돌아서게 하는 열매를 함께 살펴요. 환상이라는 형식이나 확신에 찬 말투만으로 진실성을 판단하지 않아요.",
+    "caution": "",
+    "refs": [
+      "예레미야 23:16"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "נָבִיא — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/5030.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-dan-9-6",
+    "title": "왕과 백성에게 보냄받은 선지자들",
+    "aliases": [
+      "선지자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "dan",
+        "chapter": 9,
+        "lo": 6,
+        "hi": 6,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "נְבִיאִים(느비임)은 언약을 어긴 공동체에게 하나님의 말씀을 전한 종들이에요. 이 기도에서 선지자는 비밀스러운 미래의 해독자보다 왕과 지도자와 백성 모두를 돌이키려 했던 증언자로 회고돼요. 다니엘의 고백은 실패의 책임을 선지자들의 전달 능력에 돌리지 않아요.",
+    "caution": "",
+    "refs": [
+      "다니엘 9:6"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "נָבִיא — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/5030.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-amo-3-7",
+    "title": "종 선지자들에게 알리시는 뜻",
+    "aliases": [
+      "선지자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "amo",
+        "chapter": 3,
+        "lo": 7,
+        "hi": 7,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "נְבִיאִים(느비임)은 심판을 경고하도록 하나님의 뜻을 맡은 종들이에요. 비밀이라는 번역은 임의의 사생활이나 모든 미래 사건의 정보를 뜻하지 않고, 이어지는 사자의 부르짖음처럼 피할 수 없는 경고의 맥락에 있어요. 현대인의 모든 행동에 사전 예언이 있어야 한다는 규칙은 아니에요.",
+    "caution": "",
+    "refs": [
+      "아모스 3:7"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "נָבִיא — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/5030.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-amo-7-12",
+    "title": "아마샤가 아모스를 선견자라 부름",
+    "aliases": [
+      "선견자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "amo",
+        "chapter": 7,
+        "lo": 12,
+        "hi": 12,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "선견자는 חֹזֶה(호제)예요. 아마샤는 아모스에게 유다로 가서 먹고살며 예언하라고 하여 그의 사역을 생업처럼 취급해요. 이 호칭이 아마샤의 승인이나 아모스가 왕의 허가 아래 고용되었다는 뜻을 담는 것은 아니에요.",
+    "caution": "",
+    "refs": [
+      "아모스 7:12"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "נָבִיא — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/5030.htm"
+      },
+      {
+        "label": "חֹזֶה — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/2374.htm"
+      }
+    ]
+  },
+  {
+  "id": "prophet-context-amo-7-14",
+  "title": "선지자도 선지자의 아들도 아니라는 말",
+  "aliases": [
+    "선지자",
+    "예언자"
+  ],
+  "locations": [
+    {
+      "code": "amo",
+      "chapter": 7,
+      "lo": 14,
+      "hi": 14,
+      "editions": [
+        "gae",
+        "easy"
+      ]
+    }
+  ],
+  "summary": "נָבִיא(나비)와 בֶּן־נָבִיא(벤 나비)가 쓰여요. 아모스가 하나님의 부르심 자체를 부정한다기보다 직업적 예언자나 예언자 집단 출신이 아니었음을 밝힌다고 읽는 해석이 있어요. 히브리어 명사문은 시제를 명시하지 않으며, 15절의 부르심과 함께 읽어야 해요.",
+  "caution": "",
+  "refs": [
+    "아모스 7:14"
+  ],
+  "category": "원어·선지자 문맥",
+  "lens": "",
+  "wcf": [],
+  "sourceLinks": [
+    {
+      "label": "נָבִיא — BDB·Strong",
+      "url": "https://biblehub.com/hebrew/5030.htm"
+    },
+    {
+      "label": "구절별 비교 주석 — 해석 차이 확인",
+      "url": "https://biblehub.com/commentaries/amos/7-14.htm"
+    }
+  ]
+},
+  {
+    "id": "prophet-context-mic-3-5",
+    "title": "대가에 따라 말을 바꾸는 선지자들",
+    "aliases": [
+      "선지자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "mic",
+        "chapter": 3,
+        "lo": 5,
+        "hi": 5,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "נְבִיאִים(느비임)은 이 문맥에서 백성을 잘못 이끄는 예언자들을 가리켜요. 음식이나 대접에 따라 평화와 전쟁의 메시지가 달라지는 모습은 계시가 후원자의 이해관계에 종속된 문제를 드러내요. 모든 선물이나 사역자의 생계 지원을 금지하는 조항으로 일반화하지는 않아요.",
+    "caution": "",
+    "refs": [
+      "미가 3:5"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "נָבִיא — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/5030.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-zec-1-4",
+    "title": "이전 선지자들의 경고를 되새김",
+    "aliases": [
+      "선지자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "zec",
+        "chapter": 1,
+        "lo": 4,
+        "hi": 4,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "נְבִיאִים(느비임)은 포로 이전 세대에게 회개를 촉구한 선지자들을 가리켜요. 이전이라는 말은 반드시 히브리 성경의 분류명인 전기 예언서만을 뜻하지 않아요. 귀환 공동체는 조상들이 거절했던 같은 언약의 말씀에 응답하도록 부름받아요.",
+    "caution": "",
+    "refs": [
+      "스가랴 1:4"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "נָבִיא — BDB·Strong",
+        "url": "https://biblehub.com/hebrew/5030.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-mat-7-15",
+    "title": "거짓 선지자의 외양과 열매",
+    "aliases": [
+      "선지자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "mat",
+        "chapter": 7,
+        "lo": 15,
+        "hi": 15,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "헬라어 ψευδοπροφήτης(프세우도프로페테스)는 거짓 선지자예요. 겉으로는 안전한 양처럼 보인다는 문맥이므로 외형이나 종교적 말투가 판단의 충분한 기준이 아니에요. 이어지는 열매의 비유와 아버지의 뜻을 행하는가 하는 문맥에서 분별을 설명해요.",
+    "caution": "",
+    "refs": [
+      "마태복음 7:15"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "ψευδοπροφήτης — Thayer·Strong",
+        "url": "https://biblehub.com/greek/5578.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-mat-11-9",
+    "title": "선지자보다 더한 세례 요한",
+    "aliases": [
+      "선지자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "mat",
+        "chapter": 11,
+        "lo": 9,
+        "hi": 9,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "προφήτης(프로페테스)는 하나님의 뜻을 받아 선포하는 이를 뜻해요. 요한이 더하다는 말은 그가 모세나 이사야보다 더 많은 미래 정보를 알았다는 뜻이 아니라, 메시아 앞에서 길을 준비하는 특별한 위치와 연결돼요.",
+    "caution": "",
+    "refs": [
+      "마태복음 11:9"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "προφήτης — Thayer·Strong",
+        "url": "https://biblehub.com/greek/4396.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-luk-2-36",
+    "title": "여선지자 안나",
+    "aliases": [
+      "선지자",
+      "여자 예언자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "luk",
+        "chapter": 2,
+        "lo": 36,
+        "hi": 36,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "προφῆτις(프로페티스)는 여성 선지자라는 뜻이에요. 성전에서 하나님을 섬기던 안나가 아기 예수님에 관해 구원을 기다리는 사람들에게 말하는 역할과 연결돼요. 제사장 직무나 선지자의 아내라는 관계만을 가리키는 말은 아니에요.",
+    "caution": "",
+    "refs": [
+      "누가복음 2:36"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "προφήτις — Thayer·Strong",
+        "url": "https://biblehub.com/greek/4398.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-jhn-1-21",
+    "title": "세례 요한에게 묻는 그 선지자",
+    "aliases": [
+      "선지자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "jhn",
+        "chapter": 1,
+        "lo": 21,
+        "hi": 21,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "προφήτης(프로페테스)에 정관사가 붙은 질문은 신명기 18:15의 모세 같은 선지자 기대와 관련돼요. 요한이 아니라고 한 것은 하나님의 말씀을 전하는 자신의 사역 전부를 부정했다기보다 질문자들이 기다린 그 인물과 자신을 구별한 대답으로 읽혀요.",
+    "caution": "",
+    "refs": [
+      "요한복음 1:21"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "προφήτης — Thayer·Strong",
+        "url": "https://biblehub.com/greek/4396.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-jhn-4-19",
+    "title": "사마리아 여인이 알아본 선지자",
+    "aliases": [
+      "선지자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "jhn",
+        "chapter": 4,
+        "lo": 19,
+        "hi": 19,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "προφήτης(프로페테스)는 이 장면에서 예수님이 감추어진 사정을 아신다는 사실을 접한 여인의 판단이에요. 이 호칭은 여인이 그 순간 이해한 수준을 보여 주므로, 예수님의 정체를 선지자 한 범주로만 제한하는 최종 결론은 아니에요.",
+    "caution": "",
+    "refs": [
+      "요한복음 4:19"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "προφήτης — Thayer·Strong",
+        "url": "https://biblehub.com/greek/4396.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-act-11-27",
+    "title": "예루살렘에서 온 선지자들과 아가보",
+    "aliases": [
+      "선지자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "act",
+        "chapter": 11,
+        "lo": 27,
+        "hi": 27,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "προφῆται(프로페타이)는 프로페테스의 복수형이에요. 이 문맥에서는 아가보의 기근 예고가 안디옥 교회의 구제 준비로 이어져요. 신약의 예언 사역에는 미래 사건 예고도 포함되지만, 그 목적은 호기심보다 공동체의 실제적인 섬김과 연결돼요.",
+    "caution": "",
+    "refs": [
+      "사도행전 11:27"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "προφήτης — Thayer·Strong",
+        "url": "https://biblehub.com/greek/4396.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-act-21-9",
+    "title": "빌립의 네 딸이 예언함",
+    "aliases": [
+      "예언하는 자",
+      "예언하는"
+    ],
+    "locations": [
+      {
+        "code": "act",
+        "chapter": 21,
+        "lo": 9,
+        "hi": 9,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "이 절은 선지자라는 명사 대신 προφητεύω(프로페튜오), 곧 예언하다라는 동사의 분사형을 써요. 빌립의 딸들에게 예언의 활동이 있었다는 뜻이지만, 그들이 전한 개별 메시지는 여기에 적혀 있지 않아요. 이어지는 아가보의 말과 합쳐 딸들의 발언으로 만들지 않아요.",
+    "caution": "",
+    "refs": [
+      "사도행전 21:9"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "προφήτης — Thayer·Strong",
+        "url": "https://biblehub.com/greek/4396.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-1co-14-29",
+    "title": "예언하는 자의 말을 분별함",
+    "aliases": [
+      "예언하는 자",
+      "예언하는"
+    ],
+    "locations": [
+      {
+        "code": "1co",
+        "chapter": 14,
+        "lo": 29,
+        "hi": 29,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "προφῆται(프로페타이)는 회중 안에서 말하는 선지자들을 뜻해요. 이 문맥은 말하는 순서와 다른 이들의 분별을 함께 요구해요. 예언을 자칭한 말이 검토 없이 받아들여져야 한다는 뜻이 아니며, 바울이 제시한 질서와 복음의 기준 아래 놓여요.",
+    "caution": "",
+    "refs": [
+      "고린도전서 14:29"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "προφήτης — Thayer·Strong",
+        "url": "https://biblehub.com/greek/4396.htm"
+      }
+    ]
+  },
+  {
+  "id": "prophet-context-eph-2-20",
+  "title": "사도들과 함께 기초에 놓인 선지자들",
+  "aliases": [
+    "선지자",
+    "예언자"
+  ],
+  "locations": [
+    {
+      "code": "eph",
+      "chapter": 2,
+      "lo": 20,
+      "hi": 20,
+      "editions": [
+        "gae",
+        "easy"
+      ]
+    }
+  ],
+  "summary": "προφῆται(프로페타이)의 범위에는 해석 차이가 있지만, 에베소서 3:5와 4:11의 병렬을 근거로 신약의 선지자 사역을 가리킨다고 보는 해석이 있어요. 이 절의 중심은 그리스도가 모퉁잇돌이라는 점이에요. 오늘의 개인적 예언 주장이 같은 기초적 권위를 가진다고 확대하지 않아요.",
+  "caution": "",
+  "refs": [
+    "에베소서 2:20"
+  ],
+  "category": "원어·선지자 문맥",
+  "lens": "",
+  "wcf": [],
+  "sourceLinks": [
+    {
+      "label": "προφήτης — Thayer·Strong",
+      "url": "https://biblehub.com/greek/4396.htm"
+    },
+    {
+      "label": "구절별 비교 주석 — 해석 차이 확인",
+      "url": "https://biblehub.com/commentaries/ephesians/2-20.htm"
+    }
+  ]
+},
+  {
+    "id": "prophet-context-heb-1-1",
+    "title": "선지자들을 통해 말씀하신 하나님",
+    "aliases": [
+      "선지자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "heb",
+        "chapter": 1,
+        "lo": 1,
+        "hi": 1,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "προφῆται(프로페타이)는 조상들에게 말씀을 전한 구약의 선지자들을 가리켜요. 여러 부분과 여러 방식이라는 표현은 계시의 다양성을 인정하며, 2절의 아들을 통한 말씀과 대비돼요. 선지자들의 증언을 거짓으로 버리는 대조가 아니라 아들 안의 성취를 강조해요.",
+    "caution": "",
+    "refs": [
+      "히브리서 1:1"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "προφήτης — Thayer·Strong",
+        "url": "https://biblehub.com/greek/4396.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-1pe-1-10",
+    "title": "자신이 전한 구원을 살핀 선지자들",
+    "aliases": [
+      "선지자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "1pe",
+        "chapter": 1,
+        "lo": 10,
+        "hi": 10,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "προφῆται(프로페타이)는 장차 올 은혜를 증언한 구약 선지자들이에요. 11절은 그들이 전한 고난과 영광의 때를 탐구했다고 설명해요. 계시를 참되게 전하는 일과 성취의 모든 세부를 미리 완전히 파악하는 일은 같지 않아요.",
+    "caution": "",
+    "refs": [
+      "베드로전서 1:10"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "προφήτης — Thayer·Strong",
+        "url": "https://biblehub.com/greek/4396.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-2pe-2-1",
+    "title": "거짓 선지자와 거짓 교사",
+    "aliases": [
+      "선지자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "2pe",
+        "chapter": 2,
+        "lo": 1,
+        "hi": 1,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "ψευδοπροφήτης(프세우도프로페테스)는 거짓 선지자예요. 과거 백성 가운데 있던 거짓 선지자와 독자들 가운데 나타날 거짓 교사를 비교해요. 예언이라는 직함의 문제만이 아니라 구원하신 주를 부인하는 가르침의 내용을 경계하는 문맥이에요.",
+    "caution": "",
+    "refs": [
+      "베드로후서 2:1"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "ψευδοπροφήτης — Thayer·Strong",
+        "url": "https://biblehub.com/greek/5578.htm"
+      }
+    ]
+  },
+  {
+    "id": "prophet-context-1jn-4-1",
+    "title": "영들을 시험해야 하는 이유",
+    "aliases": [
+      "선지자",
+      "예언자"
+    ],
+    "locations": [
+      {
+        "code": "1jn",
+        "chapter": 4,
+        "lo": 1,
+        "hi": 1,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "ψευδοπροφήτης(프세우도프로페테스)는 거짓 선지자예요. 영적 권위를 주장하는 말이라고 곧바로 믿지 말라는 문맥이며, 이어지는 기준은 예수 그리스도에 대한 고백과 사도적 증언을 듣는가 하는 점이에요. 강렬한 체험이나 자신감만으로 진위를 판정하지 않아요.",
+    "caution": "",
+    "refs": [
+      "요한일서 4:1"
+    ],
+    "category": "원어·선지자 문맥",
+    "lens": "",
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "ψευδοπροφήτης — Thayer·Strong",
+        "url": "https://biblehub.com/greek/5578.htm"
+      }
+    ]
+  }
+]);
