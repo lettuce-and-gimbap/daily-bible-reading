@@ -8,7 +8,7 @@
     "basis": "역대상·하의 두 한글 역본; 다른 성경권의 평가를 자동 합산하지 않음",
     "dialogueRows": 109,
     "speakerLabels": 59,
-    "genealogyGranularity": "1–9장의 계보 축과 왕실 주요 연결. 모든 계보 이름의 개별 부모 간선을 확정한 데이터가 아님"
+    "genealogyGranularity": "1–9장의 계보 축·왕실 주요 연결 및 별도 chronicles-nodes.json의 선별 확장 노드. 모든 인명 전수 전사나 모든 친자 간선 확정은 아님"
   },
   "genealogySections": [
     {
@@ -1875,5 +1875,15 @@
       ],
       "note": "아달랴의 통치 삽입은 요아스의 어머니라는 뜻이 아니다. 왕위 계승선과 혼인·혈통선을 분리한다."
     }
-  ]
+  ],
+  "nodeGraph": {
+    "path": "data/chronicles-nodes.json",
+    "counts": {
+      "nodes": 341,
+      "edges": 332,
+      "speakerLinks": 109,
+      "pendingRelations": 8
+    },
+    "purpose": "역대서 인물·관계를 UI 노드로 옮기기 위한 추가 자료; 검토 중 관계는 별도"
+  }
 }

@@ -1,0 +1,8517 @@
+{
+  "schemaVersion": 1,
+  "scope": {
+    "books": [
+      "1ch",
+      "2ch"
+    ],
+    "status": "검토된 주요 연결의 노드 확장; 전 인명 전수 전사 아님",
+    "sourcePolicy": "직접 작성한 요약·이름·근거만 포함. 다른 권의 계보나 도덕 평가를 추가하지 않음",
+    "counts": {
+      "nodes": 341,
+      "edges": 332,
+      "speakerLinks": 109,
+      "pendingRelations": 8
+    },
+    "verification": "관계의 근거 범위를 두 한글 역본에서 대조하고, 동일 이름과 대명사·계보의 연결 문맥을 검토했다. 전 인물의 생애를 검증했다는 의미는 아님",
+    "reviewNotes": "확정하기 어려운 관계는 pendingRelations에만 두고 그 관계의 확정 간선은 만들지 않음"
+  },
+  "relationshipTypes": {
+    "parent_child": "본문 계보의 부모→자녀 방향. 모든 세대가 생략 없이 생물학적으로 직접 연결된다는 보증은 아님",
+    "marriage": "혼인 관계",
+    "sibling": "형제자매 관계; 양방향 의미",
+    "grandparent_descendant": "명시된 조부모·손자녀 관계",
+    "royal_succession": "왕위 계승; 혈연 아님",
+    "protects": "보호 행동",
+    "guides": "후견·가르침",
+    "message_to": "말씀·경고 전달; 전달자의 주장이 곧 하나님의 승인이라는 뜻은 아님",
+    "advises": "사람의 조언; 권위·내용은 사건별 구분",
+    "rejects_warning": "책망을 거절한 행위"
+  },
+  "nodes": [
+    {
+      "id": "ancestor-1",
+      "label": "아담",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 1:1-34"
+      ]
+    },
+    {
+      "id": "ancestor-2",
+      "label": "셋",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 1:1-34"
+      ]
+    },
+    {
+      "id": "ancestor-3",
+      "label": "에노스",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 1:1-34"
+      ]
+    },
+    {
+      "id": "ancestor-4",
+      "label": "게난",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 1:1-34"
+      ]
+    },
+    {
+      "id": "ancestor-5",
+      "label": "마할랄렐",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 1:1-34"
+      ]
+    },
+    {
+      "id": "ancestor-6",
+      "label": "야렛",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 1:1-34"
+      ]
+    },
+    {
+      "id": "ancestor-7",
+      "label": "에녹",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 1:1-34"
+      ]
+    },
+    {
+      "id": "ancestor-8",
+      "label": "므두셀라",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 1:1-34"
+      ]
+    },
+    {
+      "id": "ancestor-9",
+      "label": "라멕",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 1:1-34"
+      ]
+    },
+    {
+      "id": "ancestor-10",
+      "label": "노아",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 1:1-34"
+      ]
+    },
+    {
+      "id": "ancestor-11",
+      "label": "셈",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 1:1-34"
+      ]
+    },
+    {
+      "id": "ancestor-12",
+      "label": "아르박삿",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 1:1-34"
+      ]
+    },
+    {
+      "id": "ancestor-13",
+      "label": "셀라",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 1:1-34"
+      ],
+      "disambiguation": {
+        "label": "셀라 · 역대상 1:1-34",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "ancestor-14",
+      "label": "에벨",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 1:1-34"
+      ]
+    },
+    {
+      "id": "ancestor-15",
+      "label": "벨렉",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 1:1-34"
+      ]
+    },
+    {
+      "id": "ancestor-16",
+      "label": "르우",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 1:1-34"
+      ]
+    },
+    {
+      "id": "ancestor-17",
+      "label": "스룩",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 1:1-34"
+      ]
+    },
+    {
+      "id": "ancestor-18",
+      "label": "나홀",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 1:1-34"
+      ]
+    },
+    {
+      "id": "ancestor-19",
+      "label": "데라",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 1:1-34"
+      ]
+    },
+    {
+      "id": "ancestor-20",
+      "label": "아브라함",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 1:1-34"
+      ]
+    },
+    {
+      "id": "ancestor-21",
+      "label": "이삭",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 1:1-34"
+      ]
+    },
+    {
+      "id": "ancestor-22",
+      "label": "이스라엘",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 1:1-34",
+        "역대상 6:38"
+      ]
+    },
+    {
+      "id": "ancestor-23",
+      "label": "유다",
+      "type": "person",
+      "roles": [
+        "지파의 조상"
+      ],
+      "refs": [
+        "역대상 2:4-15",
+        "역대상 2:1-2"
+      ]
+    },
+    {
+      "id": "ancestor-24",
+      "label": "베레스",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 2:4-15"
+      ]
+    },
+    {
+      "id": "ancestor-25",
+      "label": "헤스론",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 2:4-15"
+      ]
+    },
+    {
+      "id": "ancestor-26",
+      "label": "람",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 2:4-15"
+      ]
+    },
+    {
+      "id": "ancestor-27",
+      "label": "암미나답",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 2:4-15"
+      ]
+    },
+    {
+      "id": "ancestor-28",
+      "label": "나손",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 2:4-15"
+      ]
+    },
+    {
+      "id": "ancestor-29",
+      "label": "살마",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 2:4-15"
+      ]
+    },
+    {
+      "id": "ancestor-30",
+      "label": "보아스",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 2:4-15"
+      ]
+    },
+    {
+      "id": "ancestor-31",
+      "label": "오벳",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 2:4-15"
+      ]
+    },
+    {
+      "id": "ancestor-32",
+      "label": "이새",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 2:4-15"
+      ]
+    },
+    {
+      "id": "ancestor-33",
+      "label": "다윗",
+      "type": "person",
+      "roles": [
+        "통치자",
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대상 2:4-15",
+        "역대상 14:2",
+        "역대상 17:1",
+        "역대상 28:1-21",
+        "역대상 29:10-20",
+        "역대상 21:1-24",
+        "역대상 12:16-17",
+        "역대상 14:8-17",
+        "역대상 16:7-36",
+        "역대상 19:1-5",
+        "역대상 13:1-14",
+        "역대상 15:1-29",
+        "역대상 17:16-27",
+        "역대상 22:5-19",
+        "역대상 11:5-6",
+        "역대상 11:15-19",
+        "역대상 23:25-27"
+      ],
+      "rulerRef": "david",
+      "assessmentRef": {
+        "path": "data/chronicles-guide.json",
+        "rulerId": "david"
+      }
+    },
+    {
+      "id": "ruler-saul",
+      "label": "사울",
+      "type": "person",
+      "roles": [
+        "통치자",
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대상 9:39",
+        "역대상 10:4"
+      ],
+      "rulerRef": "saul",
+      "disambiguation": {
+        "label": "사울 · 역대상 9:39",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      },
+      "assessmentRef": {
+        "path": "data/chronicles-guide.json",
+        "rulerId": "saul"
+      }
+    },
+    {
+      "id": "ruler-solomon",
+      "label": "솔로몬",
+      "type": "person",
+      "roles": [
+        "통치자",
+        "다윗의 아들",
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대상 3:5",
+        "역대하 6:1-42",
+        "역대하 1:7-12",
+        "역대하 8:11"
+      ],
+      "rulerRef": "solomon",
+      "assessmentRef": {
+        "path": "data/chronicles-guide.json",
+        "rulerId": "solomon"
+      }
+    },
+    {
+      "id": "ruler-rehoboam",
+      "label": "르호보암",
+      "type": "person",
+      "roles": [
+        "통치자",
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대상 3:10",
+        "역대하 10:6-14"
+      ],
+      "rulerRef": "rehoboam",
+      "assessmentRef": {
+        "path": "data/chronicles-guide.json",
+        "rulerId": "rehoboam"
+      }
+    },
+    {
+      "id": "ruler-abijah",
+      "label": "아비야",
+      "type": "person",
+      "roles": [
+        "통치자",
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대상 3:10",
+        "역대하 13:4-12"
+      ],
+      "rulerRef": "abijah",
+      "assessmentRef": {
+        "path": "data/chronicles-guide.json",
+        "rulerId": "abijah"
+      }
+    },
+    {
+      "id": "ruler-asa",
+      "label": "아사",
+      "type": "person",
+      "roles": [
+        "통치자",
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대상 3:10",
+        "역대하 14:7-11",
+        "역대하 16:2-3"
+      ],
+      "rulerRef": "asa",
+      "assessmentRef": {
+        "path": "data/chronicles-guide.json",
+        "rulerId": "asa"
+      }
+    },
+    {
+      "id": "ruler-jehoshaphat",
+      "label": "여호사밧",
+      "type": "person",
+      "roles": [
+        "통치자",
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대상 3:10",
+        "역대하 17:7-9",
+        "역대하 19:6-11",
+        "역대하 18:3-7",
+        "역대하 20:5-12",
+        "역대하 20:20"
+      ],
+      "rulerRef": "jehoshaphat",
+      "assessmentRef": {
+        "path": "data/chronicles-guide.json",
+        "rulerId": "jehoshaphat"
+      }
+    },
+    {
+      "id": "ruler-jehoram-judah",
+      "label": "여호람",
+      "type": "person",
+      "roles": [
+        "통치자"
+      ],
+      "refs": [
+        "역대상 3:11"
+      ],
+      "rulerRef": "jehoram-judah",
+      "disambiguation": {
+        "label": "여호람 · 역대상 3:11",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      },
+      "sourceNames": [
+        {
+          "name": "요람",
+          "ref": "역대상 3:11",
+          "basis": "두 역본의 해당 계보·문맥 대응; 이름이 같은 다른 인물과의 병합 규칙이 아님"
+        }
+      ],
+      "assessmentRef": {
+        "path": "data/chronicles-guide.json",
+        "rulerId": "jehoram-judah"
+      }
+    },
+    {
+      "id": "ruler-ahaziah-judah",
+      "label": "아하시야",
+      "type": "person",
+      "roles": [
+        "통치자"
+      ],
+      "refs": [
+        "역대상 3:11"
+      ],
+      "rulerRef": "ahaziah-judah",
+      "disambiguation": {
+        "label": "아하시야 · 역대상 3:11",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      },
+      "assessmentRef": {
+        "path": "data/chronicles-guide.json",
+        "rulerId": "ahaziah-judah"
+      }
+    },
+    {
+      "id": "ruler-athaliah",
+      "label": "아달랴",
+      "type": "person",
+      "roles": [
+        "통치자",
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 21:6",
+        "역대하 23:13"
+      ],
+      "rulerRef": "athaliah",
+      "assessmentRef": {
+        "path": "data/chronicles-guide.json",
+        "rulerId": "athaliah"
+      }
+    },
+    {
+      "id": "ruler-joash-judah",
+      "label": "요아스",
+      "type": "person",
+      "roles": [
+        "통치자",
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대상 3:11",
+        "역대하 24:5-6"
+      ],
+      "rulerRef": "joash-judah",
+      "assessmentRef": {
+        "path": "data/chronicles-guide.json",
+        "rulerId": "joash-judah"
+      }
+    },
+    {
+      "id": "ruler-amaziah",
+      "label": "아마샤",
+      "type": "person",
+      "roles": [
+        "통치자",
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대상 3:12",
+        "역대하 25:9",
+        "역대하 25:15-19"
+      ],
+      "rulerRef": "amaziah",
+      "assessmentRef": {
+        "path": "data/chronicles-guide.json",
+        "rulerId": "amaziah"
+      }
+    },
+    {
+      "id": "ruler-uzziah",
+      "label": "웃시야",
+      "type": "person",
+      "roles": [
+        "통치자"
+      ],
+      "refs": [
+        "역대상 3:12"
+      ],
+      "rulerRef": "uzziah",
+      "sourceNames": [
+        {
+          "name": "아사랴",
+          "ref": "역대상 3:12",
+          "basis": "두 역본의 해당 계보·문맥 대응; 이름이 같은 다른 인물과의 병합 규칙이 아님"
+        }
+      ],
+      "assessmentRef": {
+        "path": "data/chronicles-guide.json",
+        "rulerId": "uzziah"
+      }
+    },
+    {
+      "id": "ruler-jotham",
+      "label": "요담",
+      "type": "person",
+      "roles": [
+        "통치자"
+      ],
+      "refs": [
+        "역대상 3:12"
+      ],
+      "rulerRef": "jotham",
+      "assessmentRef": {
+        "path": "data/chronicles-guide.json",
+        "rulerId": "jotham"
+      }
+    },
+    {
+      "id": "ruler-ahaz",
+      "label": "아하스",
+      "type": "person",
+      "roles": [
+        "통치자"
+      ],
+      "refs": [
+        "역대상 3:13"
+      ],
+      "rulerRef": "ahaz",
+      "disambiguation": {
+        "label": "아하스 · 역대상 3:13",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      },
+      "assessmentRef": {
+        "path": "data/chronicles-guide.json",
+        "rulerId": "ahaz"
+      }
+    },
+    {
+      "id": "ruler-hezekiah",
+      "label": "히스기야",
+      "type": "person",
+      "roles": [
+        "통치자",
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대상 3:13",
+        "역대하 29:5-11",
+        "역대하 29:31",
+        "역대하 30:1-9",
+        "역대하 30:18-20",
+        "역대하 30:22",
+        "역대하 32:6-8",
+        "역대하 31:9-11"
+      ],
+      "rulerRef": "hezekiah",
+      "assessmentRef": {
+        "path": "data/chronicles-guide.json",
+        "rulerId": "hezekiah"
+      }
+    },
+    {
+      "id": "ruler-manasseh",
+      "label": "므낫세",
+      "type": "person",
+      "roles": [
+        "통치자",
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대상 3:13",
+        "역대하 33:12-13"
+      ],
+      "rulerRef": "manasseh",
+      "assessmentRef": {
+        "path": "data/chronicles-guide.json",
+        "rulerId": "manasseh"
+      }
+    },
+    {
+      "id": "ruler-amon",
+      "label": "아몬",
+      "type": "person",
+      "roles": [
+        "통치자"
+      ],
+      "refs": [
+        "역대상 3:14"
+      ],
+      "rulerRef": "amon",
+      "assessmentRef": {
+        "path": "data/chronicles-guide.json",
+        "rulerId": "amon"
+      }
+    },
+    {
+      "id": "ruler-josiah",
+      "label": "요시야",
+      "type": "person",
+      "roles": [
+        "통치자",
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대상 3:14-15",
+        "역대하 34:14-28",
+        "역대하 34:20-21",
+        "역대하 34:29-33",
+        "역대하 35:3-6",
+        "역대하 35:23"
+      ],
+      "rulerRef": "josiah",
+      "assessmentRef": {
+        "path": "data/chronicles-guide.json",
+        "rulerId": "josiah"
+      }
+    },
+    {
+      "id": "ruler-jehoahaz",
+      "label": "여호아하스",
+      "type": "person",
+      "roles": [
+        "통치자"
+      ],
+      "refs": [
+        "역대하 36:1-4",
+        "역대하 36:1"
+      ],
+      "rulerRef": "jehoahaz",
+      "disambiguation": {
+        "label": "여호아하스 · 역대하 36:1-4",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      },
+      "assessmentRef": {
+        "path": "data/chronicles-guide.json",
+        "rulerId": "jehoahaz"
+      }
+    },
+    {
+      "id": "ruler-jehoiakim",
+      "label": "여호야김",
+      "type": "person",
+      "roles": [
+        "통치자"
+      ],
+      "refs": [
+        "역대상 3:15-16",
+        "역대상 3:15"
+      ],
+      "rulerRef": "jehoiakim",
+      "assessmentRef": {
+        "path": "data/chronicles-guide.json",
+        "rulerId": "jehoiakim"
+      }
+    },
+    {
+      "id": "ruler-jehoiachin",
+      "label": "여호야긴",
+      "type": "person",
+      "roles": [
+        "통치자"
+      ],
+      "refs": [
+        "역대상 3:16-17"
+      ],
+      "rulerRef": "jehoiachin",
+      "sourceNames": [
+        {
+          "name": "여고냐",
+          "ref": "역대상 3:16-17",
+          "basis": "두 역본의 해당 계보·문맥 대응; 이름이 같은 다른 인물과의 병합 규칙이 아님"
+        }
+      ],
+      "assessmentRef": {
+        "path": "data/chronicles-guide.json",
+        "rulerId": "jehoiachin"
+      }
+    },
+    {
+      "id": "ruler-zedekiah",
+      "label": "시드기야",
+      "type": "person",
+      "roles": [
+        "통치자"
+      ],
+      "refs": [
+        "역대상 3:15"
+      ],
+      "rulerRef": "zedekiah",
+      "assessmentRef": {
+        "path": "data/chronicles-guide.json",
+        "rulerId": "zedekiah"
+      }
+    },
+    {
+      "id": "tribe-ancestor-1",
+      "label": "르우벤",
+      "type": "person",
+      "roles": [
+        "지파의 조상"
+      ],
+      "refs": [
+        "역대상 2:1-2"
+      ],
+      "events": [
+        {
+          "assessment": "장자권 상실",
+          "ref": "역대상 5:1-2",
+          "summary": "아버지의 침상을 더럽힌 일과 장자권 문제; 지파의 모든 후손에 대한 낙인으로 사용하지 않음"
+        }
+      ]
+    },
+    {
+      "id": "tribe-ancestor-2",
+      "label": "시므온",
+      "type": "person",
+      "roles": [
+        "지파의 조상"
+      ],
+      "refs": [
+        "역대상 2:1-2"
+      ]
+    },
+    {
+      "id": "tribe-ancestor-3",
+      "label": "레위",
+      "type": "person",
+      "roles": [
+        "지파의 조상",
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 2:1-2",
+        "역대상 6:38",
+        "역대상 6:43",
+        "역대상 6:47"
+      ]
+    },
+    {
+      "id": "tribe-ancestor-5",
+      "label": "잇사갈",
+      "type": "person",
+      "roles": [
+        "지파의 조상"
+      ],
+      "refs": [
+        "역대상 2:1-2"
+      ]
+    },
+    {
+      "id": "tribe-ancestor-6",
+      "label": "스불론",
+      "type": "person",
+      "roles": [
+        "지파의 조상"
+      ],
+      "refs": [
+        "역대상 2:1-2"
+      ]
+    },
+    {
+      "id": "tribe-ancestor-7",
+      "label": "단",
+      "type": "person",
+      "roles": [
+        "지파의 조상"
+      ],
+      "refs": [
+        "역대상 2:1-2"
+      ]
+    },
+    {
+      "id": "tribe-ancestor-8",
+      "label": "요셉",
+      "type": "person",
+      "roles": [
+        "지파의 조상"
+      ],
+      "refs": [
+        "역대상 2:1-2"
+      ]
+    },
+    {
+      "id": "tribe-ancestor-9",
+      "label": "베냐민",
+      "type": "person",
+      "roles": [
+        "지파의 조상"
+      ],
+      "refs": [
+        "역대상 2:1-2"
+      ]
+    },
+    {
+      "id": "tribe-ancestor-10",
+      "label": "납달리",
+      "type": "person",
+      "roles": [
+        "지파의 조상"
+      ],
+      "refs": [
+        "역대상 2:1-2"
+      ]
+    },
+    {
+      "id": "tribe-ancestor-11",
+      "label": "갓",
+      "type": "person",
+      "roles": [
+        "지파의 조상"
+      ],
+      "refs": [
+        "역대상 2:1-2"
+      ],
+      "disambiguation": {
+        "label": "갓 · 역대상 2:1-2",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "tribe-ancestor-12",
+      "label": "아셀",
+      "type": "person",
+      "roles": [
+        "지파의 조상"
+      ],
+      "refs": [
+        "역대상 2:1-2"
+      ],
+      "disambiguation": {
+        "label": "아셀 · 역대상 2:1-2",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "ishmael",
+      "label": "이스마엘",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 1:28"
+      ],
+      "disambiguation": {
+        "label": "이스마엘 · 역대상 1:28",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "esau",
+      "label": "에서",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 1:34"
+      ]
+    },
+    {
+      "id": "judah-son-에르",
+      "label": "에르",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 2:3-4"
+      ],
+      "events": [
+        {
+          "assessment": "악행 명시",
+          "ref": "역대상 2:3",
+          "summary": "에르의 악행이 명시되나 구체적 행위는 이 절에 적혀 있지 않음"
+        }
+      ]
+    },
+    {
+      "id": "judah-son-오난",
+      "label": "오난",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 2:3-4"
+      ]
+    },
+    {
+      "id": "judah-son-셀라",
+      "label": "셀라",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 2:3-4"
+      ],
+      "disambiguation": {
+        "label": "셀라 · 역대상 2:3-4",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "judah-son-세라",
+      "label": "세라",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 2:3-4"
+      ],
+      "disambiguation": {
+        "label": "세라 · 역대상 2:3-4",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "hamul",
+      "label": "하물",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 2:5"
+      ]
+    },
+    {
+      "id": "hezron-son-여라므엘",
+      "label": "여라므엘",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 2:9"
+      ]
+    },
+    {
+      "id": "hezron-son-글루배",
+      "label": "글루배",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 2:9"
+      ]
+    },
+    {
+      "id": "jesse-son-엘리압",
+      "label": "엘리압",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 2:13-15"
+      ]
+    },
+    {
+      "id": "jesse-son-아비나답",
+      "label": "아비나답",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 2:13-15"
+      ],
+      "disambiguation": {
+        "label": "아비나답 · 역대상 2:13-15",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "jesse-son-시므아",
+      "label": "시므아",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 2:13-15"
+      ],
+      "disambiguation": {
+        "label": "시므아 · 역대상 2:13-15",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "jesse-son-느다넬",
+      "label": "느다넬",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 2:13-15"
+      ]
+    },
+    {
+      "id": "jesse-son-랏대",
+      "label": "랏대",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 2:13-15"
+      ]
+    },
+    {
+      "id": "jesse-son-오셈",
+      "label": "오셈",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 2:13-15"
+      ]
+    },
+    {
+      "id": "david-son-암논",
+      "label": "암논",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:1"
+      ]
+    },
+    {
+      "id": "david-wife-아히노암",
+      "label": "아히노암",
+      "type": "person",
+      "roles": [
+        "다윗 자녀의 어머니"
+      ],
+      "refs": [
+        "역대상 3:1"
+      ]
+    },
+    {
+      "id": "david-son-다니엘",
+      "label": "다니엘",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:1"
+      ]
+    },
+    {
+      "id": "david-wife-아비가일",
+      "label": "아비가일",
+      "type": "person",
+      "roles": [
+        "다윗 자녀의 어머니"
+      ],
+      "refs": [
+        "역대상 3:1"
+      ],
+      "disambiguation": {
+        "label": "아비가일 · 역대상 3:1",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "david-son-압살롬",
+      "label": "압살롬",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:2"
+      ]
+    },
+    {
+      "id": "david-wife-마아가",
+      "label": "마아가",
+      "type": "person",
+      "roles": [
+        "다윗 자녀의 어머니"
+      ],
+      "refs": [
+        "역대상 3:2"
+      ],
+      "disambiguation": {
+        "label": "마아가 · 역대상 3:2",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "david-son-아도니야",
+      "label": "아도니야",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:2"
+      ]
+    },
+    {
+      "id": "david-wife-학깃",
+      "label": "학깃",
+      "type": "person",
+      "roles": [
+        "다윗 자녀의 어머니"
+      ],
+      "refs": [
+        "역대상 3:2"
+      ]
+    },
+    {
+      "id": "david-son-스바댜",
+      "label": "스바댜",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:3"
+      ]
+    },
+    {
+      "id": "david-wife-아비달",
+      "label": "아비달",
+      "type": "person",
+      "roles": [
+        "다윗 자녀의 어머니"
+      ],
+      "refs": [
+        "역대상 3:3"
+      ]
+    },
+    {
+      "id": "david-son-이드르암",
+      "label": "이드르암",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:3"
+      ]
+    },
+    {
+      "id": "david-wife-에글라",
+      "label": "에글라",
+      "type": "person",
+      "roles": [
+        "다윗 자녀의 어머니"
+      ],
+      "refs": [
+        "역대상 3:3"
+      ]
+    },
+    {
+      "id": "bathshua",
+      "label": "밧수아",
+      "type": "person",
+      "roles": [
+        "암미엘의 딸"
+      ],
+      "refs": [
+        "역대상 3:5"
+      ],
+      "sourceNames": [
+        {
+          "name": "밧세바",
+          "ref": "역대상 3:5",
+          "basis": "두 역본의 해당 계보·문맥 대응; 이름이 같은 다른 인물과의 병합 규칙이 아님"
+        }
+      ]
+    },
+    {
+      "id": "ammiel-bathshua",
+      "label": "암미엘",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:5"
+      ]
+    },
+    {
+      "id": "david-jerusalem-son-시므아",
+      "label": "시므아",
+      "type": "person",
+      "roles": [
+        "다윗의 아들"
+      ],
+      "refs": [
+        "역대상 3:5"
+      ],
+      "disambiguation": {
+        "label": "시므아 · 역대상 3:5",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "david-jerusalem-son-소밥",
+      "label": "소밥",
+      "type": "person",
+      "roles": [
+        "다윗의 아들"
+      ],
+      "refs": [
+        "역대상 3:5"
+      ]
+    },
+    {
+      "id": "david-jerusalem-son-나단",
+      "label": "나단",
+      "type": "person",
+      "roles": [
+        "다윗의 아들"
+      ],
+      "refs": [
+        "역대상 3:5"
+      ],
+      "disambiguation": {
+        "label": "나단 · 역대상 3:5",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "david-son-6-입할",
+      "label": "입할",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:6"
+      ]
+    },
+    {
+      "id": "david-son-6-엘리사마",
+      "label": "엘리사마",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:6"
+      ],
+      "disambiguation": {
+        "label": "엘리사마 · 역대상 3:6",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      },
+      "identityStatus": "본문의 출현별 분리; 별개 인물로 최종 확정한 것이 아님"
+    },
+    {
+      "id": "david-son-6-엘리벨렛",
+      "label": "엘리벨렛",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:6"
+      ],
+      "disambiguation": {
+        "label": "엘리벨렛 · 역대상 3:6",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      },
+      "identityStatus": "본문의 출현별 분리; 별개 인물로 최종 확정한 것이 아님"
+    },
+    {
+      "id": "david-son-7-노가",
+      "label": "노가",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:7"
+      ]
+    },
+    {
+      "id": "david-son-7-네벡",
+      "label": "네벡",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:7"
+      ]
+    },
+    {
+      "id": "david-son-7-야비아",
+      "label": "야비아",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:7"
+      ],
+      "sourceNames": [
+        {
+          "name": "야비야",
+          "ref": "역대상 3:7",
+          "basis": "두 역본의 해당 계보·문맥 대응; 이름이 같은 다른 인물과의 병합 규칙이 아님"
+        }
+      ]
+    },
+    {
+      "id": "david-son-8-엘리사마",
+      "label": "엘리사마",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:8"
+      ],
+      "disambiguation": {
+        "label": "엘리사마 · 역대상 3:8",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      },
+      "identityStatus": "본문의 출현별 분리; 별개 인물로 최종 확정한 것이 아님"
+    },
+    {
+      "id": "david-son-8-엘랴다",
+      "label": "엘랴다",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:8"
+      ]
+    },
+    {
+      "id": "david-son-8-엘리벨렛",
+      "label": "엘리벨렛",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:8"
+      ],
+      "disambiguation": {
+        "label": "엘리벨렛 · 역대상 3:8",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      },
+      "identityStatus": "본문의 출현별 분리; 별개 인물로 최종 확정한 것이 아님"
+    },
+    {
+      "id": "tamar-david",
+      "label": "다말",
+      "type": "person",
+      "roles": [
+        "다윗의 딸"
+      ],
+      "refs": [
+        "역대상 3:9"
+      ],
+      "disambiguation": {
+        "label": "다말 · 역대상 3:9",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "zeruiah",
+      "label": "스루야",
+      "type": "person",
+      "roles": [
+        "다윗의 자매"
+      ],
+      "refs": [
+        "역대상 2:16"
+      ]
+    },
+    {
+      "id": "abigail-sister-david",
+      "label": "아비가일",
+      "type": "person",
+      "roles": [
+        "다윗의 자매"
+      ],
+      "refs": [
+        "역대상 2:16-17"
+      ],
+      "disambiguation": {
+        "label": "아비가일 · 역대상 2:16-17",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "zeruiah-son-아비새",
+      "label": "아비새",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 2:16"
+      ]
+    },
+    {
+      "id": "zeruiah-son-요압",
+      "label": "요압",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 2:16"
+      ]
+    },
+    {
+      "id": "zeruiah-son-아사헬",
+      "label": "아사헬",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 2:16"
+      ]
+    },
+    {
+      "id": "amasa",
+      "label": "아마사",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 2:17"
+      ]
+    },
+    {
+      "id": "jether-amasa",
+      "label": "예델",
+      "type": "person",
+      "roles": [
+        "이스마엘 사람"
+      ],
+      "refs": [
+        "역대상 2:17"
+      ]
+    },
+    {
+      "id": "johanan-josiah",
+      "label": "요하난",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:15"
+      ],
+      "disambiguation": {
+        "label": "요하난 · 역대상 3:15",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "shallum-josiah",
+      "label": "살룸",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:15"
+      ],
+      "disambiguation": {
+        "label": "살룸 · 역대상 3:15",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "omri",
+      "label": "오므리",
+      "type": "person",
+      "roles": [
+        "북이스라엘 왕실"
+      ],
+      "refs": [
+        "역대하 22:2"
+      ]
+    },
+    {
+      "id": "jehoshabeath",
+      "label": "여호사브앗",
+      "type": "person",
+      "roles": [
+        "요아스를 보호한 왕녀"
+      ],
+      "refs": [
+        "역대하 22:11"
+      ]
+    },
+    {
+      "id": "jehoiada",
+      "label": "여호야다",
+      "type": "person",
+      "roles": [
+        "제사장",
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 22:11",
+        "역대하 23:3-7",
+        "역대하 23:14-20"
+      ]
+    },
+    {
+      "id": "exile-son-스알디엘",
+      "label": "스알디엘",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:17-18"
+      ]
+    },
+    {
+      "id": "exile-son-말기람",
+      "label": "말기람",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:17-18"
+      ]
+    },
+    {
+      "id": "exile-son-브다야",
+      "label": "브다야",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:17-18"
+      ]
+    },
+    {
+      "id": "exile-son-세낫살",
+      "label": "세낫살",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:17-18"
+      ]
+    },
+    {
+      "id": "exile-son-여가먀",
+      "label": "여가먀",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:17-18"
+      ]
+    },
+    {
+      "id": "exile-son-호사마",
+      "label": "호사마",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:17-18"
+      ]
+    },
+    {
+      "id": "exile-son-느다뱌",
+      "label": "느다뱌",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:17-18"
+      ]
+    },
+    {
+      "id": "pedaiah-son-스룹바벨",
+      "label": "스룹바벨",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:19"
+      ]
+    },
+    {
+      "id": "pedaiah-son-시므이",
+      "label": "시므이",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:19"
+      ],
+      "disambiguation": {
+        "label": "시므이 · 역대상 3:19",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "zerubbabel-son-므술람",
+      "label": "므술람",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:19"
+      ]
+    },
+    {
+      "id": "zerubbabel-son-하나냐",
+      "label": "하나냐",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:19"
+      ]
+    },
+    {
+      "id": "zerubbabel-son-하수바",
+      "label": "하수바",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:20"
+      ]
+    },
+    {
+      "id": "zerubbabel-son-오헬",
+      "label": "오헬",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:20"
+      ]
+    },
+    {
+      "id": "zerubbabel-son-베레갸",
+      "label": "베레갸",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:20"
+      ],
+      "disambiguation": {
+        "label": "베레갸 · 역대상 3:20",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "zerubbabel-son-하사댜",
+      "label": "하사댜",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:20"
+      ]
+    },
+    {
+      "id": "zerubbabel-son-유삽헤셋",
+      "label": "유삽헤셋",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 3:20"
+      ]
+    },
+    {
+      "id": "gershon",
+      "label": "게르손",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:1",
+        "역대상 6:43"
+      ]
+    },
+    {
+      "id": "kohath",
+      "label": "그핫",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:1",
+        "역대상 6:38"
+      ],
+      "sourceNames": [
+        {
+          "name": "고핫",
+          "ref": "역대상 6:1",
+          "basis": "두 역본의 해당 계보·문맥 대응; 이름이 같은 다른 인물과의 병합 규칙이 아님"
+        }
+      ]
+    },
+    {
+      "id": "merari",
+      "label": "므라리",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:1",
+        "역대상 6:47"
+      ]
+    },
+    {
+      "id": "kohath-son-아므람",
+      "label": "아므람",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 6:2"
+      ]
+    },
+    {
+      "id": "kohath-son-이스할",
+      "label": "이스할",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:2",
+        "역대상 6:38"
+      ]
+    },
+    {
+      "id": "kohath-son-헤브론",
+      "label": "헤브론",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 6:2"
+      ]
+    },
+    {
+      "id": "kohath-son-웃시엘",
+      "label": "웃시엘",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 6:2"
+      ]
+    },
+    {
+      "id": "amram-child-아론",
+      "label": "아론",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 6:3"
+      ]
+    },
+    {
+      "id": "amram-child-모세",
+      "label": "모세",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 6:3"
+      ]
+    },
+    {
+      "id": "amram-child-미리암",
+      "label": "미리암",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 6:3"
+      ]
+    },
+    {
+      "id": "aaron-son-나답",
+      "label": "나답",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 6:3"
+      ],
+      "disambiguation": {
+        "label": "나답 · 역대상 6:3",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "aaron-son-아비후",
+      "label": "아비후",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 6:3"
+      ]
+    },
+    {
+      "id": "aaron-son-엘르아살",
+      "label": "엘르아살",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 6:3"
+      ]
+    },
+    {
+      "id": "aaron-son-이다말",
+      "label": "이다말",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 6:3"
+      ]
+    },
+    {
+      "id": "priest-line-1",
+      "label": "비느하스",
+      "type": "person",
+      "roles": [
+        "아론 계열 제사장 계보"
+      ],
+      "refs": [
+        "역대상 6:4"
+      ]
+    },
+    {
+      "id": "priest-line-2",
+      "label": "아비수아",
+      "type": "person",
+      "roles": [
+        "아론 계열 제사장 계보"
+      ],
+      "refs": [
+        "역대상 6:4"
+      ]
+    },
+    {
+      "id": "priest-line-3",
+      "label": "북기",
+      "type": "person",
+      "roles": [
+        "아론 계열 제사장 계보"
+      ],
+      "refs": [
+        "역대상 6:5"
+      ]
+    },
+    {
+      "id": "priest-line-4",
+      "label": "웃시",
+      "type": "person",
+      "roles": [
+        "아론 계열 제사장 계보"
+      ],
+      "refs": [
+        "역대상 6:5"
+      ]
+    },
+    {
+      "id": "priest-line-5",
+      "label": "스라히야",
+      "type": "person",
+      "roles": [
+        "아론 계열 제사장 계보"
+      ],
+      "refs": [
+        "역대상 6:6"
+      ]
+    },
+    {
+      "id": "priest-line-6",
+      "label": "므라욧",
+      "type": "person",
+      "roles": [
+        "아론 계열 제사장 계보"
+      ],
+      "refs": [
+        "역대상 6:6"
+      ]
+    },
+    {
+      "id": "priest-line-7",
+      "label": "아마랴",
+      "type": "person",
+      "roles": [
+        "아론 계열 제사장 계보"
+      ],
+      "refs": [
+        "역대상 6:7"
+      ],
+      "disambiguation": {
+        "label": "아마랴 · 역대상 6:7",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "priest-line-8",
+      "label": "아히둡",
+      "type": "person",
+      "roles": [
+        "아론 계열 제사장 계보"
+      ],
+      "refs": [
+        "역대상 6:7"
+      ],
+      "disambiguation": {
+        "label": "아히둡 · 역대상 6:7",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "priest-line-9",
+      "label": "사독",
+      "type": "person",
+      "roles": [
+        "아론 계열 제사장 계보"
+      ],
+      "refs": [
+        "역대상 6:8"
+      ],
+      "disambiguation": {
+        "label": "사독 · 역대상 6:8",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "priest-line-10",
+      "label": "아히마아스",
+      "type": "person",
+      "roles": [
+        "아론 계열 제사장 계보"
+      ],
+      "refs": [
+        "역대상 6:8"
+      ]
+    },
+    {
+      "id": "priest-line-11",
+      "label": "아사랴",
+      "type": "person",
+      "roles": [
+        "아론 계열 제사장 계보"
+      ],
+      "refs": [
+        "역대상 6:9"
+      ],
+      "disambiguation": {
+        "label": "아사랴 · 역대상 6:9",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "priest-line-12",
+      "label": "요하난",
+      "type": "person",
+      "roles": [
+        "아론 계열 제사장 계보"
+      ],
+      "refs": [
+        "역대상 6:9"
+      ],
+      "disambiguation": {
+        "label": "요하난 · 역대상 6:9",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "priest-line-13",
+      "label": "아사랴",
+      "type": "person",
+      "roles": [
+        "아론 계열 제사장 계보"
+      ],
+      "refs": [
+        "역대상 6:10"
+      ],
+      "disambiguation": {
+        "label": "아사랴 · 역대상 6:10",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "priest-line-14",
+      "label": "아마랴",
+      "type": "person",
+      "roles": [
+        "아론 계열 제사장 계보"
+      ],
+      "refs": [
+        "역대상 6:11"
+      ],
+      "disambiguation": {
+        "label": "아마랴 · 역대상 6:11",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "priest-line-15",
+      "label": "아히둡",
+      "type": "person",
+      "roles": [
+        "아론 계열 제사장 계보"
+      ],
+      "refs": [
+        "역대상 6:11"
+      ],
+      "disambiguation": {
+        "label": "아히둡 · 역대상 6:11",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "priest-line-16",
+      "label": "사독",
+      "type": "person",
+      "roles": [
+        "아론 계열 제사장 계보"
+      ],
+      "refs": [
+        "역대상 6:12"
+      ],
+      "disambiguation": {
+        "label": "사독 · 역대상 6:12",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "priest-line-17",
+      "label": "살룸",
+      "type": "person",
+      "roles": [
+        "아론 계열 제사장 계보"
+      ],
+      "refs": [
+        "역대상 6:12"
+      ],
+      "disambiguation": {
+        "label": "살룸 · 역대상 6:12",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "priest-line-18",
+      "label": "힐기야",
+      "type": "person",
+      "roles": [
+        "아론 계열 제사장 계보"
+      ],
+      "refs": [
+        "역대상 6:13"
+      ],
+      "disambiguation": {
+        "label": "힐기야 · 역대상 6:13",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "priest-line-19",
+      "label": "아사랴",
+      "type": "person",
+      "roles": [
+        "아론 계열 제사장 계보"
+      ],
+      "refs": [
+        "역대상 6:13"
+      ],
+      "disambiguation": {
+        "label": "아사랴 · 역대상 6:13",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "priest-line-20",
+      "label": "스라야",
+      "type": "person",
+      "roles": [
+        "아론 계열 제사장 계보"
+      ],
+      "refs": [
+        "역대상 6:14"
+      ]
+    },
+    {
+      "id": "priest-line-21",
+      "label": "여호사닥",
+      "type": "person",
+      "roles": [
+        "아론 계열 제사장 계보"
+      ],
+      "refs": [
+        "역대상 6:14"
+      ]
+    },
+    {
+      "id": "music-heman-0",
+      "label": "헤만",
+      "type": "person",
+      "roles": [
+        "찬양 담당"
+      ],
+      "refs": [
+        "역대상 6:33"
+      ]
+    },
+    {
+      "id": "music-heman-1",
+      "label": "요엘",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:33"
+      ],
+      "disambiguation": {
+        "label": "요엘 · 역대상 6:33",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "music-heman-2",
+      "label": "사무엘",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:34"
+      ]
+    },
+    {
+      "id": "music-heman-3",
+      "label": "엘가나",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:34"
+      ],
+      "disambiguation": {
+        "label": "엘가나 · 역대상 6:34",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "music-heman-4",
+      "label": "여로함",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:34"
+      ]
+    },
+    {
+      "id": "music-heman-5",
+      "label": "엘리엘",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:34"
+      ]
+    },
+    {
+      "id": "music-heman-6",
+      "label": "도아",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:35"
+      ]
+    },
+    {
+      "id": "music-heman-7",
+      "label": "숩",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:35"
+      ]
+    },
+    {
+      "id": "music-heman-8",
+      "label": "엘가나",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:35"
+      ],
+      "disambiguation": {
+        "label": "엘가나 · 역대상 6:35",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "music-heman-9",
+      "label": "마핫",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:35"
+      ]
+    },
+    {
+      "id": "music-heman-10",
+      "label": "아마새",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:36"
+      ],
+      "disambiguation": {
+        "label": "아마새 · 역대상 6:36",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "music-heman-11",
+      "label": "엘가나",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:36"
+      ],
+      "disambiguation": {
+        "label": "엘가나 · 역대상 6:36",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "music-heman-12",
+      "label": "요엘",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:36"
+      ],
+      "disambiguation": {
+        "label": "요엘 · 역대상 6:36",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "music-heman-13",
+      "label": "아사랴",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:36"
+      ],
+      "disambiguation": {
+        "label": "아사랴 · 역대상 6:36",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "music-heman-14",
+      "label": "스바냐",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:37"
+      ]
+    },
+    {
+      "id": "music-heman-15",
+      "label": "다핫",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:37"
+      ]
+    },
+    {
+      "id": "music-heman-16",
+      "label": "앗실",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:37"
+      ]
+    },
+    {
+      "id": "music-heman-17",
+      "label": "에비아삽",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:37"
+      ]
+    },
+    {
+      "id": "music-heman-18",
+      "label": "고라",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:38"
+      ]
+    },
+    {
+      "id": "music-asaph-0",
+      "label": "아삽",
+      "type": "person",
+      "roles": [
+        "찬양 담당"
+      ],
+      "refs": [
+        "역대상 6:39"
+      ]
+    },
+    {
+      "id": "music-asaph-1",
+      "label": "베레갸",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:39"
+      ],
+      "disambiguation": {
+        "label": "베레갸 · 역대상 6:39",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "music-asaph-2",
+      "label": "시므아",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:40"
+      ],
+      "disambiguation": {
+        "label": "시므아 · 역대상 6:40",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "music-asaph-3",
+      "label": "미가엘",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:40"
+      ]
+    },
+    {
+      "id": "music-asaph-4",
+      "label": "바아세야",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:40"
+      ]
+    },
+    {
+      "id": "music-asaph-5",
+      "label": "말기야",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:41"
+      ]
+    },
+    {
+      "id": "music-asaph-6",
+      "label": "에드니",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:41"
+      ]
+    },
+    {
+      "id": "music-asaph-7",
+      "label": "세라",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:41"
+      ],
+      "disambiguation": {
+        "label": "세라 · 역대상 6:41",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "music-asaph-8",
+      "label": "아다야",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:42"
+      ]
+    },
+    {
+      "id": "music-asaph-9",
+      "label": "에단",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:42"
+      ],
+      "disambiguation": {
+        "label": "에단 · 역대상 6:42",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "music-asaph-10",
+      "label": "심마",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:42"
+      ]
+    },
+    {
+      "id": "music-asaph-11",
+      "label": "시므이",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:43"
+      ],
+      "disambiguation": {
+        "label": "시므이 · 역대상 6:43",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "music-asaph-12",
+      "label": "야핫",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:43"
+      ]
+    },
+    {
+      "id": "music-ethan-0",
+      "label": "에단",
+      "type": "person",
+      "roles": [
+        "찬양 담당"
+      ],
+      "refs": [
+        "역대상 6:44"
+      ],
+      "disambiguation": {
+        "label": "에단 · 역대상 6:44",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "music-ethan-1",
+      "label": "기시",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:44"
+      ]
+    },
+    {
+      "id": "music-ethan-2",
+      "label": "압디",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:44"
+      ]
+    },
+    {
+      "id": "music-ethan-3",
+      "label": "말룩",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:45"
+      ]
+    },
+    {
+      "id": "music-ethan-4",
+      "label": "하사뱌",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:45"
+      ]
+    },
+    {
+      "id": "music-ethan-5",
+      "label": "아마시야",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:45"
+      ]
+    },
+    {
+      "id": "music-ethan-6",
+      "label": "힐기야",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:46"
+      ],
+      "disambiguation": {
+        "label": "힐기야 · 역대상 6:46",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "music-ethan-7",
+      "label": "암시",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:46"
+      ]
+    },
+    {
+      "id": "music-ethan-8",
+      "label": "바니",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:46"
+      ]
+    },
+    {
+      "id": "music-ethan-9",
+      "label": "세멜",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:47"
+      ]
+    },
+    {
+      "id": "music-ethan-10",
+      "label": "말리",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:47"
+      ],
+      "sourceNames": [
+        {
+          "name": "마흘리",
+          "ref": "역대상 6:47",
+          "basis": "두 역본의 해당 계보·문맥 대응; 이름이 같은 다른 인물과의 병합 규칙이 아님"
+        }
+      ]
+    },
+    {
+      "id": "music-ethan-11",
+      "label": "무시",
+      "type": "person",
+      "roles": [
+        "찬양 담당자의 계보"
+      ],
+      "refs": [
+        "역대상 6:47"
+      ]
+    },
+    {
+      "id": "jeiel-gibeon",
+      "label": "여이엘",
+      "type": "person",
+      "roles": [
+        "기브온의 조상"
+      ],
+      "refs": [
+        "역대상 9:35"
+      ]
+    },
+    {
+      "id": "maacah-jeiel",
+      "label": "마아가",
+      "type": "person",
+      "roles": [
+        "여이엘의 아내"
+      ],
+      "refs": [
+        "역대상 9:35"
+      ],
+      "disambiguation": {
+        "label": "마아가 · 역대상 9:35",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "jeiel-son-압돈",
+      "label": "압돈",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:36-37"
+      ]
+    },
+    {
+      "id": "jeiel-son-술",
+      "label": "술",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:36-37"
+      ]
+    },
+    {
+      "id": "jeiel-son-기스",
+      "label": "기스",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:36-37"
+      ],
+      "disambiguation": {
+        "label": "기스 · 역대상 9:36-37",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "jeiel-son-바알",
+      "label": "바알",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:36-37"
+      ]
+    },
+    {
+      "id": "jeiel-son-넬",
+      "label": "넬",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:36-37"
+      ]
+    },
+    {
+      "id": "jeiel-son-나답",
+      "label": "나답",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:36-37"
+      ],
+      "disambiguation": {
+        "label": "나답 · 역대상 9:36-37",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "jeiel-son-그돌",
+      "label": "그돌",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:36-37"
+      ]
+    },
+    {
+      "id": "jeiel-son-아히오",
+      "label": "아히오",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:36-37"
+      ]
+    },
+    {
+      "id": "jeiel-son-스가랴",
+      "label": "스가랴",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:36-37"
+      ]
+    },
+    {
+      "id": "jeiel-son-미글롯",
+      "label": "미글롯",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:36-37"
+      ]
+    },
+    {
+      "id": "shimeam",
+      "label": "시므암",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:38"
+      ]
+    },
+    {
+      "id": "kish-saul-father",
+      "label": "기스",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:39"
+      ],
+      "disambiguation": {
+        "label": "기스 · 역대상 9:39",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "saul-son-요나단",
+      "label": "요나단",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:39"
+      ]
+    },
+    {
+      "id": "saul-son-말기수아",
+      "label": "말기수아",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:39"
+      ]
+    },
+    {
+      "id": "saul-son-아비나답",
+      "label": "아비나답",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:39"
+      ],
+      "disambiguation": {
+        "label": "아비나답 · 역대상 9:39",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "saul-son-에스바알",
+      "label": "에스바알",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:39"
+      ]
+    },
+    {
+      "id": "saul-descendant-0",
+      "label": "므립바알",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:40"
+      ]
+    },
+    {
+      "id": "saul-descendant-1",
+      "label": "미가",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:40"
+      ]
+    },
+    {
+      "id": "micah-son-비돈",
+      "label": "비돈",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:41"
+      ]
+    },
+    {
+      "id": "micah-son-멜렉",
+      "label": "멜렉",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:41"
+      ]
+    },
+    {
+      "id": "micah-son-다레아",
+      "label": "다레아",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:41"
+      ]
+    },
+    {
+      "id": "micah-son-아하스",
+      "label": "아하스",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:41"
+      ],
+      "disambiguation": {
+        "label": "아하스 · 역대상 9:41",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "saul-yarah-0",
+      "label": "야라",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:42"
+      ]
+    },
+    {
+      "id": "saul-yarah-1",
+      "label": "알레멧",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:42"
+      ]
+    },
+    {
+      "id": "yarah-son-아스마웻",
+      "label": "아스마웻",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:42"
+      ]
+    },
+    {
+      "id": "yarah-son-시므리",
+      "label": "시므리",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:42"
+      ]
+    },
+    {
+      "id": "saul-later-0",
+      "label": "모사",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:42-44"
+      ]
+    },
+    {
+      "id": "saul-later-1",
+      "label": "비느아",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:42-44"
+      ]
+    },
+    {
+      "id": "saul-later-2",
+      "label": "르바야",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:42-44"
+      ]
+    },
+    {
+      "id": "saul-later-3",
+      "label": "엘르아사",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:42-44"
+      ]
+    },
+    {
+      "id": "saul-later-4",
+      "label": "아셀",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:42-44"
+      ],
+      "disambiguation": {
+        "label": "아셀 · 역대상 9:42-44",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "azel-son-아스리감",
+      "label": "아스리감",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:44"
+      ]
+    },
+    {
+      "id": "azel-son-보그루",
+      "label": "보그루",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:44"
+      ]
+    },
+    {
+      "id": "azel-son-이스마엘",
+      "label": "이스마엘",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:44"
+      ],
+      "disambiguation": {
+        "label": "이스마엘 · 역대상 9:44",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "azel-son-스아랴",
+      "label": "스아랴",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:44"
+      ]
+    },
+    {
+      "id": "azel-son-오바댜",
+      "label": "오바댜",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:44"
+      ]
+    },
+    {
+      "id": "azel-son-하난",
+      "label": "하난",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 9:44"
+      ]
+    },
+    {
+      "id": "benjamin-son-벨라",
+      "label": "벨라",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 8:1-2"
+      ],
+      "disambiguation": {
+        "label": "벨라 · 역대상 8:1-2",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "benjamin-son-아스벨",
+      "label": "아스벨",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 8:1-2"
+      ]
+    },
+    {
+      "id": "benjamin-son-아하라",
+      "label": "아하라",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 8:1-2"
+      ]
+    },
+    {
+      "id": "benjamin-son-노하",
+      "label": "노하",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 8:1-2"
+      ]
+    },
+    {
+      "id": "benjamin-son-라바",
+      "label": "라바",
+      "type": "person",
+      "roles": [],
+      "refs": [
+        "역대상 8:1-2"
+      ]
+    },
+    {
+      "id": "speaker-764ed3d6a850",
+      "label": "나단",
+      "type": "person",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대상 17:2",
+        "역대상 17:4-15"
+      ],
+      "disambiguation": {
+        "label": "나단 · 역대상 17:2",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "speaker-7fd690f13fe9",
+      "label": "레위인들",
+      "type": "group",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 29:18-19"
+      ],
+      "disambiguation": {
+        "label": "레위인들 · 역대하 29:18-19",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "speaker-86c809d044bf",
+      "label": "산헤립의 신하들",
+      "type": "group",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 32:9-19"
+      ]
+    },
+    {
+      "id": "speaker-573377fda096",
+      "label": "산헤립",
+      "type": "person",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 32:17"
+      ]
+    },
+    {
+      "id": "speaker-bb9dd5ec1562",
+      "label": "갓",
+      "type": "person",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대상 21:9-12"
+      ],
+      "disambiguation": {
+        "label": "갓 · 역대상 21:9-12",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "speaker-aa3160f42963",
+      "label": "오르난",
+      "type": "person",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대상 21:20-24"
+      ]
+    },
+    {
+      "id": "speaker-ee3890c9c57f",
+      "label": "후람",
+      "type": "person",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 2:11-16"
+      ]
+    },
+    {
+      "id": "speaker-8eb069dfdbf4",
+      "label": "스바 여왕",
+      "type": "person",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 9:1-12"
+      ]
+    },
+    {
+      "id": "speaker-cc1c83ff9a99",
+      "label": "스마야",
+      "type": "person",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 11:2-4",
+        "역대하 12:5-8"
+      ]
+    },
+    {
+      "id": "speaker-8c96697bf125",
+      "label": "예후(하나니의 아들)",
+      "type": "person",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 19:2-3"
+      ]
+    },
+    {
+      "id": "speaker-b417e70cca86",
+      "label": "아마새",
+      "type": "person",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대상 12:18"
+      ],
+      "disambiguation": {
+        "label": "아마새 · 역대상 12:18",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "speaker-68da5de3bdc3",
+      "label": "하나님",
+      "type": "divine",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대상 14:10-16",
+        "역대하 1:7-12",
+        "역대하 7:11-22"
+      ]
+    },
+    {
+      "id": "speaker-2899bff57529",
+      "label": "암몬 방백들",
+      "type": "group",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대상 19:2-4"
+      ]
+    },
+    {
+      "id": "speaker-f449aed2fc3a",
+      "label": "이스라엘 자손",
+      "type": "group",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 10:3-5",
+        "역대하 10:16"
+      ],
+      "disambiguation": {
+        "label": "이스라엘 자손 · 역대하 10:3-5",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "speaker-63fd6bffbb26",
+      "label": "노인들",
+      "type": "group",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 10:6-7"
+      ]
+    },
+    {
+      "id": "speaker-56fcb2ca30e8",
+      "label": "젊은이들",
+      "type": "group",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 10:8-11"
+      ]
+    },
+    {
+      "id": "speaker-dab99ab8c0e9",
+      "label": "르호보암과 유다 지도자들",
+      "type": "group",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 12:6"
+      ]
+    },
+    {
+      "id": "speaker-be9a32a1e08a",
+      "label": "유다 사람들",
+      "type": "group",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 13:14-15"
+      ]
+    },
+    {
+      "id": "speaker-e86897d91729",
+      "label": "아사랴(오뎃의 아들)",
+      "type": "person",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 15:1-7"
+      ]
+    },
+    {
+      "id": "speaker-134b92563d2b",
+      "label": "아사와 유다 백성",
+      "type": "group",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 15:12-15"
+      ]
+    },
+    {
+      "id": "speaker-df954b6da099",
+      "label": "하나니",
+      "type": "person",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 16:7-9"
+      ]
+    },
+    {
+      "id": "speaker-8feeb19cd546",
+      "label": "아합",
+      "type": "person",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 18:3-8",
+        "역대하 18:14-17",
+        "역대하 18:25-29",
+        "역대하 18:33-34"
+      ]
+    },
+    {
+      "id": "speaker-53129c7102e9",
+      "label": "시드기야(그나아나의 아들)",
+      "type": "person",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 18:10-11",
+        "역대하 18:23-24"
+      ]
+    },
+    {
+      "id": "speaker-091d5414fc94",
+      "label": "미가야",
+      "type": "person",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 18:12-27",
+        "역대하 18:23-27"
+      ]
+    },
+    {
+      "id": "speaker-8c1e262e5036",
+      "label": "아람 왕",
+      "type": "person",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 18:30"
+      ]
+    },
+    {
+      "id": "speaker-80d700dc5437",
+      "label": "야하시엘",
+      "type": "person",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 20:14-17"
+      ]
+    },
+    {
+      "id": "speaker-db64681a2887",
+      "label": "노래하는 이들",
+      "type": "group",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 20:21-22"
+      ]
+    },
+    {
+      "id": "speaker-7095292ad371",
+      "label": "엘리에셀",
+      "type": "person",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 20:37"
+      ]
+    },
+    {
+      "id": "speaker-dcf8be7f7f02",
+      "label": "엘리야",
+      "type": "person",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 21:12-15"
+      ]
+    },
+    {
+      "id": "speaker-f4eec7d2fddd",
+      "label": "스가랴(여호야다의 아들)",
+      "type": "person",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 24:20-22"
+      ]
+    },
+    {
+      "id": "speaker-7dfc17869a36",
+      "label": "하나님의 사람",
+      "type": "person",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 25:7-9"
+      ]
+    },
+    {
+      "id": "speaker-a5f75648f8a1",
+      "label": "힐기야",
+      "type": "person",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 34:14-15"
+      ],
+      "disambiguation": {
+        "label": "힐기야 · 역대하 34:14-15",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "speaker-519e604ab70c",
+      "label": "사반",
+      "type": "person",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 34:16-18"
+      ]
+    },
+    {
+      "id": "speaker-a660b4acd25b",
+      "label": "훌다",
+      "type": "person",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 34:23-28"
+      ]
+    },
+    {
+      "id": "speaker-cec91ce17c4d",
+      "label": "느고",
+      "type": "person",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 35:21"
+      ]
+    },
+    {
+      "id": "speaker-a2729a65bcfa",
+      "label": "고레스",
+      "type": "person",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 36:22-23"
+      ]
+    },
+    {
+      "id": "speaker-e47eabb30635",
+      "label": "요아스(여호아하스의 아들)",
+      "type": "person",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 25:18-19"
+      ]
+    },
+    {
+      "id": "speaker-7064d1ca3d67",
+      "label": "아사랴(제사장)",
+      "type": "person",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 26:18"
+      ]
+    },
+    {
+      "id": "speaker-40bef680a590",
+      "label": "오뎃",
+      "type": "person",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 28:9-11"
+      ]
+    },
+    {
+      "id": "speaker-16f754821564",
+      "label": "에브라임 지도자들",
+      "type": "group",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 28:12-13"
+      ]
+    },
+    {
+      "id": "speaker-d046cc19c594",
+      "label": "아사랴(대제사장)",
+      "type": "person",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 31:10"
+      ]
+    },
+    {
+      "id": "speaker-abe5cd9d72a2",
+      "label": "야베스",
+      "type": "person",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대상 4:9-10"
+      ],
+      "events": [
+        {
+          "assessment": "형제보다 존귀·기도",
+          "ref": "역대상 4:9-10",
+          "summary": "부모의 이름이나 구체적 혈연 연결을 새로 만들지 않음"
+        }
+      ]
+    },
+    {
+      "id": "speaker-3ed3b36dc38e",
+      "label": "이스라엘 장로들",
+      "type": "group",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대상 11:1-3"
+      ]
+    },
+    {
+      "id": "speaker-6603398b960e",
+      "label": "여부스 사람",
+      "type": "group",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대상 11:4-6"
+      ]
+    },
+    {
+      "id": "speaker-5b882696ea4a",
+      "label": "레위인들",
+      "type": "group",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 5:11-14"
+      ],
+      "disambiguation": {
+        "label": "레위인들 · 역대하 5:11-14",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "speaker-3621ab40ee51",
+      "label": "이스라엘 자손",
+      "type": "group",
+      "roles": [
+        "본문 기반 발화의 표시 대상"
+      ],
+      "refs": [
+        "역대하 7:1-10"
+      ],
+      "disambiguation": {
+        "label": "이스라엘 자손 · 역대하 7:1-10",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "judah-assembly-24",
+      "label": "유다 백성",
+      "type": "group",
+      "roles": [
+        "스가랴의 경고를 들은 백성"
+      ],
+      "refs": [
+        "역대하 24:20"
+      ]
+    },
+    {
+      "id": "unnamed-prophet-amaziah-idols",
+      "label": "선지자(아마샤 우상숭배 경고)",
+      "type": "person",
+      "roles": [
+        "이름이 기록되지 않은 선지자"
+      ],
+      "refs": [
+        "역대하 25:15-16"
+      ]
+    },
+    {
+      "id": "carmi-achar-father",
+      "label": "갈미",
+      "type": "person",
+      "roles": [
+        "아갈의 아버지"
+      ],
+      "refs": [
+        "역대상 2:7"
+      ],
+      "sourceNames": [
+        {
+          "name": "가르미",
+          "ref": "역대상 2:7",
+          "basis": "두 역본의 해당 계보·문맥 대응; 이름이 같은 다른 인물과의 병합 규칙이 아님"
+        }
+      ]
+    },
+    {
+      "id": "achar",
+      "label": "아갈",
+      "type": "person",
+      "roles": [
+        "진멸할 물건과 관련해 범죄한 인물"
+      ],
+      "refs": [
+        "역대상 2:7"
+      ],
+      "events": [
+        {
+          "assessment": "범죄 명시",
+          "ref": "역대상 2:7",
+          "summary": "이스라엘을 괴롭게 한 범죄가 기록됨; 다른 권의 이름 표기와 이 자료만으로 자동 병합하지 않음"
+        }
+      ],
+      "sourceNames": [
+        {
+          "name": "아간",
+          "ref": "역대상 2:7",
+          "basis": "두 역본의 해당 계보·문맥 대응; 이름이 같은 다른 인물과의 병합 규칙이 아님"
+        }
+      ]
+    },
+    {
+      "id": "tamar-judah",
+      "label": "다말",
+      "type": "person",
+      "roles": [
+        "유다의 며느리, 베레스·세라의 어머니"
+      ],
+      "refs": [
+        "역대상 2:4"
+      ],
+      "disambiguation": {
+        "label": "다말 · 역대상 2:4",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "north-jeroboam",
+      "label": "여로보암",
+      "type": "person",
+      "roles": [
+        "북이스라엘 왕; 유다의 동명이인과 구분"
+      ],
+      "refs": [
+        "역대하 10:2-4"
+      ]
+    },
+    {
+      "id": "north-baasha",
+      "label": "바아사",
+      "type": "person",
+      "roles": [
+        "북이스라엘 왕; 유다의 동명이인과 구분"
+      ],
+      "refs": [
+        "역대하 16:1"
+      ]
+    },
+    {
+      "id": "north-ahaziah-israel",
+      "label": "아하시야",
+      "type": "person",
+      "roles": [
+        "북이스라엘 왕; 유다의 동명이인과 구분"
+      ],
+      "refs": [
+        "역대하 20:35"
+      ],
+      "disambiguation": {
+        "label": "아하시야 · 역대하 20:35",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "north-jehoram-israel",
+      "label": "여호람",
+      "type": "person",
+      "roles": [
+        "북이스라엘 왕; 유다의 동명이인과 구분"
+      ],
+      "refs": [
+        "역대하 22:5"
+      ],
+      "disambiguation": {
+        "label": "여호람 · 역대하 22:5",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      },
+      "sourceNames": [
+        {
+          "name": "요람",
+          "ref": "역대하 22:5",
+          "basis": "두 역본의 해당 계보·문맥 대응; 이름이 같은 다른 인물과의 병합 규칙이 아님"
+        }
+      ]
+    },
+    {
+      "id": "north-jehu-king",
+      "label": "예후",
+      "type": "person",
+      "roles": [
+        "북이스라엘 왕; 유다의 동명이인과 구분"
+      ],
+      "refs": [
+        "역대하 22:7"
+      ]
+    },
+    {
+      "id": "north-pekah",
+      "label": "베가",
+      "type": "person",
+      "roles": [
+        "북이스라엘 왕; 유다의 동명이인과 구분"
+      ],
+      "refs": [
+        "역대하 28:6"
+      ]
+    },
+    {
+      "id": "jehoahaz-israel",
+      "label": "여호아하스",
+      "type": "person",
+      "roles": [
+        "북왕국 요아스의 아버지"
+      ],
+      "refs": [
+        "역대하 25:17"
+      ],
+      "disambiguation": {
+        "label": "여호아하스 · 역대하 25:17",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "foreign-hadadezer",
+      "label": "하닷에셀",
+      "type": "person",
+      "roles": [
+        "주변국 통치자; 이 두 권의 개별 사건으로 전체 생애의 선악을 확정하지 않음"
+      ],
+      "refs": [
+        "역대상 18:3"
+      ]
+    },
+    {
+      "id": "foreign-nahash",
+      "label": "나하스",
+      "type": "person",
+      "roles": [
+        "주변국 통치자; 이 두 권의 개별 사건으로 전체 생애의 선악을 확정하지 않음"
+      ],
+      "refs": [
+        "역대상 19:1"
+      ]
+    },
+    {
+      "id": "foreign-hanun",
+      "label": "하눈",
+      "type": "person",
+      "roles": [
+        "주변국 통치자; 이 두 권의 개별 사건으로 전체 생애의 선악을 확정하지 않음"
+      ],
+      "refs": [
+        "역대상 19:2"
+      ]
+    },
+    {
+      "id": "foreign-shishak",
+      "label": "시삭",
+      "type": "person",
+      "roles": [
+        "주변국 통치자; 이 두 권의 개별 사건으로 전체 생애의 선악을 확정하지 않음"
+      ],
+      "refs": [
+        "역대하 12:2"
+      ]
+    },
+    {
+      "id": "foreign-benhadad",
+      "label": "벤하닷",
+      "type": "person",
+      "roles": [
+        "주변국 통치자; 이 두 권의 개별 사건으로 전체 생애의 선악을 확정하지 않음"
+      ],
+      "refs": [
+        "역대하 16:2"
+      ]
+    },
+    {
+      "id": "foreign-pul",
+      "label": "불",
+      "type": "person",
+      "roles": [
+        "주변국 통치자; 이 두 권의 개별 사건으로 전체 생애의 선악을 확정하지 않음"
+      ],
+      "refs": [
+        "역대상 5:26"
+      ]
+    },
+    {
+      "id": "foreign-tiglath",
+      "label": "디글랏빌레셀",
+      "type": "person",
+      "roles": [
+        "주변국 통치자; 이 두 권의 개별 사건으로 전체 생애의 선악을 확정하지 않음"
+      ],
+      "refs": [
+        "역대상 5:26"
+      ]
+    },
+    {
+      "id": "foreign-nebuchadnezzar",
+      "label": "느부갓네살",
+      "type": "person",
+      "roles": [
+        "주변국 통치자; 이 두 권의 개별 사건으로 전체 생애의 선악을 확정하지 않음"
+      ],
+      "refs": [
+        "역대하 36:6"
+      ]
+    },
+    {
+      "id": "huram-craftsman",
+      "label": "후람아비",
+      "type": "person",
+      "roles": [
+        "성전 기술자; 두로 왕 후람과 분리"
+      ],
+      "refs": [
+        "역대하 4:16"
+      ]
+    },
+    {
+      "id": "edom-bela",
+      "label": "벨라",
+      "type": "person",
+      "roles": [
+        "에돔 왕; 후계 관계와 친자 관계를 구별"
+      ],
+      "refs": [
+        "역대상 1:43"
+      ],
+      "disambiguation": {
+        "label": "벨라 · 역대상 1:43",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "edom-jobab",
+      "label": "요밥",
+      "type": "person",
+      "roles": [
+        "에돔 왕; 후계 관계와 친자 관계를 구별"
+      ],
+      "refs": [
+        "역대상 1:44"
+      ]
+    },
+    {
+      "id": "edom-husham",
+      "label": "후삼",
+      "type": "person",
+      "roles": [
+        "에돔 왕; 후계 관계와 친자 관계를 구별"
+      ],
+      "refs": [
+        "역대상 1:45"
+      ]
+    },
+    {
+      "id": "edom-hadad-bedad",
+      "label": "하닷",
+      "type": "person",
+      "roles": [
+        "에돔 왕; 후계 관계와 친자 관계를 구별"
+      ],
+      "refs": [
+        "역대상 1:46"
+      ],
+      "disambiguation": {
+        "label": "하닷 · 역대상 1:46",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "edom-samlah",
+      "label": "사믈라",
+      "type": "person",
+      "roles": [
+        "에돔 왕; 후계 관계와 친자 관계를 구별"
+      ],
+      "refs": [
+        "역대상 1:47"
+      ]
+    },
+    {
+      "id": "edom-shaul",
+      "label": "사울",
+      "type": "person",
+      "roles": [
+        "에돔 왕; 후계 관계와 친자 관계를 구별"
+      ],
+      "refs": [
+        "역대상 1:48"
+      ],
+      "disambiguation": {
+        "label": "사울 · 역대상 1:48",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "edom-baalhanan",
+      "label": "바알하난",
+      "type": "person",
+      "roles": [
+        "에돔 왕; 후계 관계와 친자 관계를 구별"
+      ],
+      "refs": [
+        "역대상 1:49"
+      ]
+    },
+    {
+      "id": "edom-hadad-pai",
+      "label": "하닷",
+      "type": "person",
+      "roles": [
+        "에돔 왕; 후계 관계와 친자 관계를 구별"
+      ],
+      "refs": [
+        "역대상 1:50"
+      ],
+      "disambiguation": {
+        "label": "하닷 · 역대상 1:50",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "edom-father-beor",
+      "label": "브올",
+      "type": "person",
+      "roles": [
+        "에돔 왕의 아버지"
+      ],
+      "refs": [
+        "역대상 1:43"
+      ]
+    },
+    {
+      "id": "edom-father-zerah",
+      "label": "세라",
+      "type": "person",
+      "roles": [
+        "에돔 왕의 아버지"
+      ],
+      "refs": [
+        "역대상 1:44"
+      ],
+      "disambiguation": {
+        "label": "세라 · 역대상 1:44",
+        "identityRule": "동일 이름으로 자동 병합 금지; 부모·직무·등장 문맥 확인"
+      }
+    },
+    {
+      "id": "edom-father-bedad",
+      "label": "브닷",
+      "type": "person",
+      "roles": [
+        "에돔 왕의 아버지"
+      ],
+      "refs": [
+        "역대상 1:46"
+      ]
+    },
+    {
+      "id": "edom-father-achbor",
+      "label": "악볼",
+      "type": "person",
+      "roles": [
+        "에돔 왕의 아버지"
+      ],
+      "refs": [
+        "역대상 1:49"
+      ]
+    },
+    {
+      "id": "mehetabel",
+      "label": "므헤다벨",
+      "type": "person",
+      "roles": [
+        "에돔 마지막 하닷의 아내"
+      ],
+      "refs": [
+        "역대상 1:50"
+      ]
+    },
+    {
+      "id": "matred",
+      "label": "마드렛",
+      "type": "person",
+      "roles": [
+        "므헤다벨의 부모"
+      ],
+      "refs": [
+        "역대상 1:50"
+      ]
+    },
+    {
+      "id": "mezahab",
+      "label": "메사합",
+      "type": "person",
+      "roles": [
+        "므헤다벨의 조부모"
+      ],
+      "refs": [
+        "역대상 1:50"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "chron-edge-0001",
+      "from": "ancestor-1",
+      "to": "ancestor-2",
+      "type": "parent_child",
+      "refs": [
+        "역대상 1:1-34"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0002",
+      "from": "ancestor-2",
+      "to": "ancestor-3",
+      "type": "parent_child",
+      "refs": [
+        "역대상 1:1-34"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0003",
+      "from": "ancestor-3",
+      "to": "ancestor-4",
+      "type": "parent_child",
+      "refs": [
+        "역대상 1:1-34"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0004",
+      "from": "ancestor-4",
+      "to": "ancestor-5",
+      "type": "parent_child",
+      "refs": [
+        "역대상 1:1-34"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0005",
+      "from": "ancestor-5",
+      "to": "ancestor-6",
+      "type": "parent_child",
+      "refs": [
+        "역대상 1:1-34"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0006",
+      "from": "ancestor-6",
+      "to": "ancestor-7",
+      "type": "parent_child",
+      "refs": [
+        "역대상 1:1-34"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0007",
+      "from": "ancestor-7",
+      "to": "ancestor-8",
+      "type": "parent_child",
+      "refs": [
+        "역대상 1:1-34"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0008",
+      "from": "ancestor-8",
+      "to": "ancestor-9",
+      "type": "parent_child",
+      "refs": [
+        "역대상 1:1-34"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0009",
+      "from": "ancestor-9",
+      "to": "ancestor-10",
+      "type": "parent_child",
+      "refs": [
+        "역대상 1:1-34"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0010",
+      "from": "ancestor-10",
+      "to": "ancestor-11",
+      "type": "parent_child",
+      "refs": [
+        "역대상 1:1-34"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0011",
+      "from": "ancestor-11",
+      "to": "ancestor-12",
+      "type": "parent_child",
+      "refs": [
+        "역대상 1:1-34"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0012",
+      "from": "ancestor-12",
+      "to": "ancestor-13",
+      "type": "parent_child",
+      "refs": [
+        "역대상 1:1-34"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0013",
+      "from": "ancestor-13",
+      "to": "ancestor-14",
+      "type": "parent_child",
+      "refs": [
+        "역대상 1:1-34"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0014",
+      "from": "ancestor-14",
+      "to": "ancestor-15",
+      "type": "parent_child",
+      "refs": [
+        "역대상 1:1-34"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0015",
+      "from": "ancestor-15",
+      "to": "ancestor-16",
+      "type": "parent_child",
+      "refs": [
+        "역대상 1:1-34"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0016",
+      "from": "ancestor-16",
+      "to": "ancestor-17",
+      "type": "parent_child",
+      "refs": [
+        "역대상 1:1-34"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0017",
+      "from": "ancestor-17",
+      "to": "ancestor-18",
+      "type": "parent_child",
+      "refs": [
+        "역대상 1:1-34"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0018",
+      "from": "ancestor-18",
+      "to": "ancestor-19",
+      "type": "parent_child",
+      "refs": [
+        "역대상 1:1-34"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0019",
+      "from": "ancestor-19",
+      "to": "ancestor-20",
+      "type": "parent_child",
+      "refs": [
+        "역대상 1:1-34"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0020",
+      "from": "ancestor-20",
+      "to": "ancestor-21",
+      "type": "parent_child",
+      "refs": [
+        "역대상 1:1-34"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0021",
+      "from": "ancestor-21",
+      "to": "ancestor-22",
+      "type": "parent_child",
+      "refs": [
+        "역대상 1:1-34"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0022",
+      "from": "ancestor-23",
+      "to": "ancestor-24",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:4-15"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0023",
+      "from": "ancestor-24",
+      "to": "ancestor-25",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:4-15"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0024",
+      "from": "ancestor-25",
+      "to": "ancestor-26",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:4-15"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0025",
+      "from": "ancestor-26",
+      "to": "ancestor-27",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:4-15"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0026",
+      "from": "ancestor-27",
+      "to": "ancestor-28",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:4-15"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0027",
+      "from": "ancestor-28",
+      "to": "ancestor-29",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:4-15"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0028",
+      "from": "ancestor-29",
+      "to": "ancestor-30",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:4-15"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0029",
+      "from": "ancestor-30",
+      "to": "ancestor-31",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:4-15"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0030",
+      "from": "ancestor-31",
+      "to": "ancestor-32",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:4-15"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0031",
+      "from": "ancestor-32",
+      "to": "ancestor-33",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:4-15"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0032",
+      "from": "ancestor-22",
+      "to": "tribe-ancestor-1",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:1-2"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0033",
+      "from": "ancestor-22",
+      "to": "tribe-ancestor-2",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:1-2"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0034",
+      "from": "ancestor-22",
+      "to": "tribe-ancestor-3",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:1-2"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0035",
+      "from": "ancestor-22",
+      "to": "ancestor-23",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:1-2"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0036",
+      "from": "ancestor-22",
+      "to": "tribe-ancestor-5",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:1-2"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0037",
+      "from": "ancestor-22",
+      "to": "tribe-ancestor-6",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:1-2"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0038",
+      "from": "ancestor-22",
+      "to": "tribe-ancestor-7",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:1-2"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0039",
+      "from": "ancestor-22",
+      "to": "tribe-ancestor-8",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:1-2"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0040",
+      "from": "ancestor-22",
+      "to": "tribe-ancestor-9",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:1-2"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0041",
+      "from": "ancestor-22",
+      "to": "tribe-ancestor-10",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:1-2"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0042",
+      "from": "ancestor-22",
+      "to": "tribe-ancestor-11",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:1-2"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0043",
+      "from": "ancestor-22",
+      "to": "tribe-ancestor-12",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:1-2"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0044",
+      "from": "ancestor-20",
+      "to": "ishmael",
+      "type": "parent_child",
+      "refs": [
+        "역대상 1:28"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0045",
+      "from": "ancestor-21",
+      "to": "esau",
+      "type": "parent_child",
+      "refs": [
+        "역대상 1:34"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0046",
+      "from": "ancestor-23",
+      "to": "judah-son-에르",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:3-4"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0047",
+      "from": "ancestor-23",
+      "to": "judah-son-오난",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:3-4"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0048",
+      "from": "ancestor-23",
+      "to": "judah-son-셀라",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:3-4"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0049",
+      "from": "ancestor-23",
+      "to": "judah-son-세라",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:3-4"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0050",
+      "from": "ancestor-24",
+      "to": "hamul",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:5"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0051",
+      "from": "ancestor-25",
+      "to": "hezron-son-여라므엘",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:9"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0052",
+      "from": "ancestor-25",
+      "to": "hezron-son-글루배",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:9"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0053",
+      "from": "ancestor-32",
+      "to": "jesse-son-엘리압",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:13-15"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0054",
+      "from": "ancestor-32",
+      "to": "jesse-son-아비나답",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:13-15"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0055",
+      "from": "ancestor-32",
+      "to": "jesse-son-시므아",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:13-15"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0056",
+      "from": "ancestor-32",
+      "to": "jesse-son-느다넬",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:13-15"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0057",
+      "from": "ancestor-32",
+      "to": "jesse-son-랏대",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:13-15"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0058",
+      "from": "ancestor-32",
+      "to": "jesse-son-오셈",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:13-15"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0059",
+      "from": "ancestor-33",
+      "to": "david-son-암논",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:1-9"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0060",
+      "from": "david-wife-아히노암",
+      "to": "david-son-암논",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:1"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0061",
+      "from": "ancestor-33",
+      "to": "david-son-다니엘",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:1-9"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0062",
+      "from": "david-wife-아비가일",
+      "to": "david-son-다니엘",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:1"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0063",
+      "from": "ancestor-33",
+      "to": "david-son-압살롬",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:1-9"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0064",
+      "from": "david-wife-마아가",
+      "to": "david-son-압살롬",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:2"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0065",
+      "from": "ancestor-33",
+      "to": "david-son-아도니야",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:1-9"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0066",
+      "from": "david-wife-학깃",
+      "to": "david-son-아도니야",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:2"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0067",
+      "from": "ancestor-33",
+      "to": "david-son-스바댜",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:1-9"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0068",
+      "from": "david-wife-아비달",
+      "to": "david-son-스바댜",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:3"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0069",
+      "from": "ancestor-33",
+      "to": "david-son-이드르암",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:1-9"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0070",
+      "from": "david-wife-에글라",
+      "to": "david-son-이드르암",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:3"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0071",
+      "from": "ancestor-33",
+      "to": "david-wife-에글라",
+      "type": "marriage",
+      "refs": [
+        "역대상 3:3"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0072",
+      "from": "ammiel-bathshua",
+      "to": "bathshua",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:5"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0073",
+      "from": "ancestor-33",
+      "to": "david-jerusalem-son-시므아",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:1-9"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0074",
+      "from": "bathshua",
+      "to": "david-jerusalem-son-시므아",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:5"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0075",
+      "from": "ancestor-33",
+      "to": "david-jerusalem-son-소밥",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:1-9"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0076",
+      "from": "bathshua",
+      "to": "david-jerusalem-son-소밥",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:5"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0077",
+      "from": "ancestor-33",
+      "to": "david-jerusalem-son-나단",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:1-9"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0078",
+      "from": "bathshua",
+      "to": "david-jerusalem-son-나단",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:5"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0079",
+      "from": "ancestor-33",
+      "to": "ruler-solomon",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:1-9"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0080",
+      "from": "bathshua",
+      "to": "ruler-solomon",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:5"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0081",
+      "from": "ancestor-33",
+      "to": "david-son-6-입할",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:1-9"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0082",
+      "from": "ancestor-33",
+      "to": "david-son-6-엘리사마",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:1-9"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0083",
+      "from": "ancestor-33",
+      "to": "david-son-6-엘리벨렛",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:1-9"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0084",
+      "from": "ancestor-33",
+      "to": "david-son-7-노가",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:1-9"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0085",
+      "from": "ancestor-33",
+      "to": "david-son-7-네벡",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:1-9"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0086",
+      "from": "ancestor-33",
+      "to": "david-son-7-야비아",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:1-9"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0087",
+      "from": "ancestor-33",
+      "to": "david-son-8-엘리사마",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:1-9"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0088",
+      "from": "ancestor-33",
+      "to": "david-son-8-엘랴다",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:1-9"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0089",
+      "from": "ancestor-33",
+      "to": "david-son-8-엘리벨렛",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:1-9"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0090",
+      "from": "ancestor-33",
+      "to": "tamar-david",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:1-9"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0091",
+      "from": "ancestor-33",
+      "to": "zeruiah",
+      "type": "sibling",
+      "refs": [
+        "역대상 2:13-17"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0092",
+      "from": "ancestor-33",
+      "to": "abigail-sister-david",
+      "type": "sibling",
+      "refs": [
+        "역대상 2:13-17"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0093",
+      "from": "zeruiah",
+      "to": "zeruiah-son-아비새",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:16"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0094",
+      "from": "zeruiah",
+      "to": "zeruiah-son-요압",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:16"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0095",
+      "from": "zeruiah",
+      "to": "zeruiah-son-아사헬",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:16"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0096",
+      "from": "abigail-sister-david",
+      "to": "amasa",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:17"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0097",
+      "from": "jether-amasa",
+      "to": "amasa",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:17"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0098",
+      "from": "ruler-solomon",
+      "to": "ruler-rehoboam",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:10"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0099",
+      "from": "ruler-rehoboam",
+      "to": "ruler-abijah",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:10"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0100",
+      "from": "ruler-abijah",
+      "to": "ruler-asa",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:10"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0101",
+      "from": "ruler-asa",
+      "to": "ruler-jehoshaphat",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:10"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0102",
+      "from": "ruler-jehoshaphat",
+      "to": "ruler-jehoram-judah",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:10-11"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0103",
+      "from": "ruler-jehoram-judah",
+      "to": "ruler-ahaziah-judah",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:11"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0104",
+      "from": "ruler-ahaziah-judah",
+      "to": "ruler-joash-judah",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:11"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0105",
+      "from": "ruler-joash-judah",
+      "to": "ruler-amaziah",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:11-12"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0106",
+      "from": "ruler-amaziah",
+      "to": "ruler-uzziah",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:12"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0107",
+      "from": "ruler-uzziah",
+      "to": "ruler-jotham",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:12"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0108",
+      "from": "ruler-jotham",
+      "to": "ruler-ahaz",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:12-13"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0109",
+      "from": "ruler-ahaz",
+      "to": "ruler-hezekiah",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:13"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0110",
+      "from": "ruler-hezekiah",
+      "to": "ruler-manasseh",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:13"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0111",
+      "from": "ruler-manasseh",
+      "to": "ruler-amon",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:13-14"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0112",
+      "from": "ruler-amon",
+      "to": "ruler-josiah",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:14"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0113",
+      "from": "ruler-josiah",
+      "to": "johanan-josiah",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:15"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0114",
+      "from": "ruler-josiah",
+      "to": "ruler-jehoiakim",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:15"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0115",
+      "from": "ruler-josiah",
+      "to": "ruler-zedekiah",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:15"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0116",
+      "from": "ruler-josiah",
+      "to": "shallum-josiah",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:15"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0117",
+      "from": "ruler-josiah",
+      "to": "ruler-jehoahaz",
+      "type": "parent_child",
+      "refs": [
+        "역대하 36:1"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0118",
+      "from": "ruler-jehoiakim",
+      "to": "ruler-jehoiachin",
+      "type": "parent_child",
+      "refs": [
+        "역대하 36:8-9"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0119",
+      "from": "ruler-saul",
+      "to": "ancestor-33",
+      "type": "royal_succession",
+      "refs": [
+        "역대상 10:14",
+        "역대상 11:1-3"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "통치 순서만 표시하며 혈연을 뜻하지 않음"
+    },
+    {
+      "id": "chron-edge-0120",
+      "from": "ancestor-33",
+      "to": "ruler-solomon",
+      "type": "royal_succession",
+      "refs": [
+        "역대상 29:22-25"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "통치 순서만 표시하며 혈연을 뜻하지 않음"
+    },
+    {
+      "id": "chron-edge-0121",
+      "from": "ruler-solomon",
+      "to": "ruler-rehoboam",
+      "type": "royal_succession",
+      "refs": [
+        "역대하 9:31",
+        "역대하 10:1"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "통치 순서만 표시하며 혈연을 뜻하지 않음"
+    },
+    {
+      "id": "chron-edge-0122",
+      "from": "ruler-rehoboam",
+      "to": "ruler-abijah",
+      "type": "royal_succession",
+      "refs": [
+        "역대하 12:16"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "통치 순서만 표시하며 혈연을 뜻하지 않음"
+    },
+    {
+      "id": "chron-edge-0123",
+      "from": "ruler-abijah",
+      "to": "ruler-asa",
+      "type": "royal_succession",
+      "refs": [
+        "역대하 14:1"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "통치 순서만 표시하며 혈연을 뜻하지 않음"
+    },
+    {
+      "id": "chron-edge-0124",
+      "from": "ruler-asa",
+      "to": "ruler-jehoshaphat",
+      "type": "royal_succession",
+      "refs": [
+        "역대하 17:1"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "통치 순서만 표시하며 혈연을 뜻하지 않음"
+    },
+    {
+      "id": "chron-edge-0125",
+      "from": "ruler-jehoshaphat",
+      "to": "ruler-jehoram-judah",
+      "type": "royal_succession",
+      "refs": [
+        "역대하 21:1-3"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "통치 순서만 표시하며 혈연을 뜻하지 않음"
+    },
+    {
+      "id": "chron-edge-0126",
+      "from": "ruler-jehoram-judah",
+      "to": "ruler-ahaziah-judah",
+      "type": "royal_succession",
+      "refs": [
+        "역대하 22:1"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "통치 순서만 표시하며 혈연을 뜻하지 않음"
+    },
+    {
+      "id": "chron-edge-0127",
+      "from": "ruler-ahaziah-judah",
+      "to": "ruler-athaliah",
+      "type": "royal_succession",
+      "refs": [
+        "역대하 22:10-12"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "통치 순서만 표시하며 혈연을 뜻하지 않음"
+    },
+    {
+      "id": "chron-edge-0128",
+      "from": "ruler-athaliah",
+      "to": "ruler-joash-judah",
+      "type": "royal_succession",
+      "refs": [
+        "역대하 23:11-15"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "통치 순서만 표시하며 혈연을 뜻하지 않음"
+    },
+    {
+      "id": "chron-edge-0129",
+      "from": "ruler-joash-judah",
+      "to": "ruler-amaziah",
+      "type": "royal_succession",
+      "refs": [
+        "역대하 24:27"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "통치 순서만 표시하며 혈연을 뜻하지 않음"
+    },
+    {
+      "id": "chron-edge-0130",
+      "from": "ruler-amaziah",
+      "to": "ruler-uzziah",
+      "type": "royal_succession",
+      "refs": [
+        "역대하 26:1"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "통치 순서만 표시하며 혈연을 뜻하지 않음"
+    },
+    {
+      "id": "chron-edge-0131",
+      "from": "ruler-uzziah",
+      "to": "ruler-jotham",
+      "type": "royal_succession",
+      "refs": [
+        "역대하 26:23"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "통치 순서만 표시하며 혈연을 뜻하지 않음"
+    },
+    {
+      "id": "chron-edge-0132",
+      "from": "ruler-jotham",
+      "to": "ruler-ahaz",
+      "type": "royal_succession",
+      "refs": [
+        "역대하 27:9"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "통치 순서만 표시하며 혈연을 뜻하지 않음"
+    },
+    {
+      "id": "chron-edge-0133",
+      "from": "ruler-ahaz",
+      "to": "ruler-hezekiah",
+      "type": "royal_succession",
+      "refs": [
+        "역대하 28:27"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "통치 순서만 표시하며 혈연을 뜻하지 않음"
+    },
+    {
+      "id": "chron-edge-0134",
+      "from": "ruler-hezekiah",
+      "to": "ruler-manasseh",
+      "type": "royal_succession",
+      "refs": [
+        "역대하 32:33"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "통치 순서만 표시하며 혈연을 뜻하지 않음"
+    },
+    {
+      "id": "chron-edge-0135",
+      "from": "ruler-manasseh",
+      "to": "ruler-amon",
+      "type": "royal_succession",
+      "refs": [
+        "역대하 33:20"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "통치 순서만 표시하며 혈연을 뜻하지 않음"
+    },
+    {
+      "id": "chron-edge-0136",
+      "from": "ruler-amon",
+      "to": "ruler-josiah",
+      "type": "royal_succession",
+      "refs": [
+        "역대하 33:25"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "통치 순서만 표시하며 혈연을 뜻하지 않음"
+    },
+    {
+      "id": "chron-edge-0137",
+      "from": "ruler-josiah",
+      "to": "ruler-jehoahaz",
+      "type": "royal_succession",
+      "refs": [
+        "역대하 36:1"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "통치 순서만 표시하며 혈연을 뜻하지 않음"
+    },
+    {
+      "id": "chron-edge-0138",
+      "from": "ruler-jehoahaz",
+      "to": "ruler-jehoiakim",
+      "type": "royal_succession",
+      "refs": [
+        "역대하 36:4"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "통치 순서만 표시하며 혈연을 뜻하지 않음"
+    },
+    {
+      "id": "chron-edge-0139",
+      "from": "ruler-jehoiakim",
+      "to": "ruler-jehoiachin",
+      "type": "royal_succession",
+      "refs": [
+        "역대하 36:8-9"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "통치 순서만 표시하며 혈연을 뜻하지 않음"
+    },
+    {
+      "id": "chron-edge-0140",
+      "from": "ruler-jehoiachin",
+      "to": "ruler-zedekiah",
+      "type": "royal_succession",
+      "refs": [
+        "역대하 36:10"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "통치 순서만 표시하며 혈연을 뜻하지 않음"
+    },
+    {
+      "id": "chron-edge-0141",
+      "from": "omri",
+      "to": "ruler-athaliah",
+      "type": "grandparent_descendant",
+      "refs": [
+        "역대하 22:2"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0142",
+      "from": "ruler-athaliah",
+      "to": "ruler-ahaziah-judah",
+      "type": "parent_child",
+      "refs": [
+        "역대하 22:2"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0143",
+      "from": "ruler-jehoram-judah",
+      "to": "ruler-athaliah",
+      "type": "marriage",
+      "refs": [
+        "역대하 21:5-6",
+        "역대하 22:2"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "아합의 딸인 아내와 아하시야의 어머니 소개를 함께 참조"
+    },
+    {
+      "id": "chron-edge-0144",
+      "from": "ruler-jehoram-judah",
+      "to": "jehoshabeath",
+      "type": "parent_child",
+      "refs": [
+        "역대하 22:11"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0145",
+      "from": "jehoshabeath",
+      "to": "jehoiada",
+      "type": "marriage",
+      "refs": [
+        "역대하 22:11"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0146",
+      "from": "jehoshabeath",
+      "to": "ruler-joash-judah",
+      "type": "protects",
+      "refs": [
+        "역대하 22:11-12"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0147",
+      "from": "jehoiada",
+      "to": "ruler-joash-judah",
+      "type": "guides",
+      "refs": [
+        "역대하 23:16-21",
+        "역대하 24:2"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "제사장 여호야다의 언약·성전 질서 회복과 왕의 초기 정직한 통치 문맥"
+    },
+    {
+      "id": "chron-edge-0148",
+      "from": "ruler-jehoiachin",
+      "to": "exile-son-스알디엘",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:17-18"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0149",
+      "from": "ruler-jehoiachin",
+      "to": "exile-son-말기람",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:17-18"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0150",
+      "from": "ruler-jehoiachin",
+      "to": "exile-son-브다야",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:17-18"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0151",
+      "from": "ruler-jehoiachin",
+      "to": "exile-son-세낫살",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:17-18"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0152",
+      "from": "ruler-jehoiachin",
+      "to": "exile-son-여가먀",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:17-18"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0153",
+      "from": "ruler-jehoiachin",
+      "to": "exile-son-호사마",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:17-18"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0154",
+      "from": "ruler-jehoiachin",
+      "to": "exile-son-느다뱌",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:17-18"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0155",
+      "from": "exile-son-브다야",
+      "to": "pedaiah-son-스룹바벨",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:19"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0156",
+      "from": "exile-son-브다야",
+      "to": "pedaiah-son-시므이",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:19"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0157",
+      "from": "pedaiah-son-스룹바벨",
+      "to": "zerubbabel-son-므술람",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:19-20"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0158",
+      "from": "pedaiah-son-스룹바벨",
+      "to": "zerubbabel-son-하나냐",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:19-20"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0159",
+      "from": "pedaiah-son-스룹바벨",
+      "to": "zerubbabel-son-하수바",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:19-20"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0160",
+      "from": "pedaiah-son-스룹바벨",
+      "to": "zerubbabel-son-오헬",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:19-20"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0161",
+      "from": "pedaiah-son-스룹바벨",
+      "to": "zerubbabel-son-베레갸",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:19-20"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0162",
+      "from": "pedaiah-son-스룹바벨",
+      "to": "zerubbabel-son-하사댜",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:19-20"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0163",
+      "from": "pedaiah-son-스룹바벨",
+      "to": "zerubbabel-son-유삽헤셋",
+      "type": "parent_child",
+      "refs": [
+        "역대상 3:19-20"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0164",
+      "from": "tribe-ancestor-3",
+      "to": "gershon",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:1"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0165",
+      "from": "tribe-ancestor-3",
+      "to": "kohath",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:1"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0166",
+      "from": "tribe-ancestor-3",
+      "to": "merari",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:1"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0167",
+      "from": "kohath",
+      "to": "kohath-son-아므람",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:2"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0168",
+      "from": "kohath",
+      "to": "kohath-son-이스할",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:2"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0169",
+      "from": "kohath",
+      "to": "kohath-son-헤브론",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:2"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0170",
+      "from": "kohath",
+      "to": "kohath-son-웃시엘",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:2"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0171",
+      "from": "kohath-son-아므람",
+      "to": "amram-child-아론",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:3"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0172",
+      "from": "kohath-son-아므람",
+      "to": "amram-child-모세",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:3"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0173",
+      "from": "kohath-son-아므람",
+      "to": "amram-child-미리암",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:3"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0174",
+      "from": "amram-child-아론",
+      "to": "aaron-son-나답",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:3"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0175",
+      "from": "amram-child-아론",
+      "to": "aaron-son-아비후",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:3"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0176",
+      "from": "amram-child-아론",
+      "to": "aaron-son-엘르아살",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:3"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0177",
+      "from": "amram-child-아론",
+      "to": "aaron-son-이다말",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:3"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0178",
+      "from": "aaron-son-엘르아살",
+      "to": "priest-line-1",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:4"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0179",
+      "from": "priest-line-1",
+      "to": "priest-line-2",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:4"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0180",
+      "from": "priest-line-2",
+      "to": "priest-line-3",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:5"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0181",
+      "from": "priest-line-3",
+      "to": "priest-line-4",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:5"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0182",
+      "from": "priest-line-4",
+      "to": "priest-line-5",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:6"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0183",
+      "from": "priest-line-5",
+      "to": "priest-line-6",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:6"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0184",
+      "from": "priest-line-6",
+      "to": "priest-line-7",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:7"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0185",
+      "from": "priest-line-7",
+      "to": "priest-line-8",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:7"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0186",
+      "from": "priest-line-8",
+      "to": "priest-line-9",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:8"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0187",
+      "from": "priest-line-9",
+      "to": "priest-line-10",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:8"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0188",
+      "from": "priest-line-10",
+      "to": "priest-line-11",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:9"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0189",
+      "from": "priest-line-11",
+      "to": "priest-line-12",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:9"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0190",
+      "from": "priest-line-12",
+      "to": "priest-line-13",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:10"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0191",
+      "from": "priest-line-13",
+      "to": "priest-line-14",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:11"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0192",
+      "from": "priest-line-14",
+      "to": "priest-line-15",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:11"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0193",
+      "from": "priest-line-15",
+      "to": "priest-line-16",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:12"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0194",
+      "from": "priest-line-16",
+      "to": "priest-line-17",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:12"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0195",
+      "from": "priest-line-17",
+      "to": "priest-line-18",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:13"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0196",
+      "from": "priest-line-18",
+      "to": "priest-line-19",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:13"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0197",
+      "from": "priest-line-19",
+      "to": "priest-line-20",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:14"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0198",
+      "from": "priest-line-20",
+      "to": "priest-line-21",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:14"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0199",
+      "from": "music-heman-1",
+      "to": "music-heman-0",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:33"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0200",
+      "from": "music-heman-2",
+      "to": "music-heman-1",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:33"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0201",
+      "from": "music-heman-3",
+      "to": "music-heman-2",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:34"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0202",
+      "from": "music-heman-4",
+      "to": "music-heman-3",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:34"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0203",
+      "from": "music-heman-5",
+      "to": "music-heman-4",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:34"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0204",
+      "from": "music-heman-6",
+      "to": "music-heman-5",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:34"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0205",
+      "from": "music-heman-7",
+      "to": "music-heman-6",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:35"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0206",
+      "from": "music-heman-8",
+      "to": "music-heman-7",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:35"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0207",
+      "from": "music-heman-9",
+      "to": "music-heman-8",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:35"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0208",
+      "from": "music-heman-10",
+      "to": "music-heman-9",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:35"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0209",
+      "from": "music-heman-11",
+      "to": "music-heman-10",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:36"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0210",
+      "from": "music-heman-12",
+      "to": "music-heman-11",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:36"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0211",
+      "from": "music-heman-13",
+      "to": "music-heman-12",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:36"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0212",
+      "from": "music-heman-14",
+      "to": "music-heman-13",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:36"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0213",
+      "from": "music-heman-15",
+      "to": "music-heman-14",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:37"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0214",
+      "from": "music-heman-16",
+      "to": "music-heman-15",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:37"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0215",
+      "from": "music-heman-17",
+      "to": "music-heman-16",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:37"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0216",
+      "from": "music-heman-18",
+      "to": "music-heman-17",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:37"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0217",
+      "from": "kohath-son-이스할",
+      "to": "music-heman-18",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:38"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0218",
+      "from": "music-asaph-1",
+      "to": "music-asaph-0",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:39"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0219",
+      "from": "music-asaph-2",
+      "to": "music-asaph-1",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:39"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0220",
+      "from": "music-asaph-3",
+      "to": "music-asaph-2",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:40"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0221",
+      "from": "music-asaph-4",
+      "to": "music-asaph-3",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:40"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0222",
+      "from": "music-asaph-5",
+      "to": "music-asaph-4",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:40"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0223",
+      "from": "music-asaph-6",
+      "to": "music-asaph-5",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:41"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0224",
+      "from": "music-asaph-7",
+      "to": "music-asaph-6",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:41"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0225",
+      "from": "music-asaph-8",
+      "to": "music-asaph-7",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:41"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0226",
+      "from": "music-asaph-9",
+      "to": "music-asaph-8",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:42"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0227",
+      "from": "music-asaph-10",
+      "to": "music-asaph-9",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:42"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0228",
+      "from": "music-asaph-11",
+      "to": "music-asaph-10",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:42"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0229",
+      "from": "music-asaph-12",
+      "to": "music-asaph-11",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:43"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0230",
+      "from": "gershon",
+      "to": "music-asaph-12",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:43"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0231",
+      "from": "music-ethan-1",
+      "to": "music-ethan-0",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:44"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0232",
+      "from": "music-ethan-2",
+      "to": "music-ethan-1",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:44"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0233",
+      "from": "music-ethan-3",
+      "to": "music-ethan-2",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:44"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0234",
+      "from": "music-ethan-4",
+      "to": "music-ethan-3",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:45"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0235",
+      "from": "music-ethan-5",
+      "to": "music-ethan-4",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:45"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0236",
+      "from": "music-ethan-6",
+      "to": "music-ethan-5",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:45"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0237",
+      "from": "music-ethan-7",
+      "to": "music-ethan-6",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:46"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0238",
+      "from": "music-ethan-8",
+      "to": "music-ethan-7",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:46"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0239",
+      "from": "music-ethan-9",
+      "to": "music-ethan-8",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:46"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0240",
+      "from": "music-ethan-10",
+      "to": "music-ethan-9",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:47"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0241",
+      "from": "music-ethan-11",
+      "to": "music-ethan-10",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:47"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0242",
+      "from": "merari",
+      "to": "music-ethan-11",
+      "type": "parent_child",
+      "refs": [
+        "역대상 6:47"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0243",
+      "from": "jeiel-gibeon",
+      "to": "maacah-jeiel",
+      "type": "marriage",
+      "refs": [
+        "역대상 9:35"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0244",
+      "from": "jeiel-gibeon",
+      "to": "jeiel-son-압돈",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:35-37"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0245",
+      "from": "jeiel-gibeon",
+      "to": "jeiel-son-술",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:35-37"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0246",
+      "from": "jeiel-gibeon",
+      "to": "jeiel-son-기스",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:35-37"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0247",
+      "from": "jeiel-gibeon",
+      "to": "jeiel-son-바알",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:35-37"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0248",
+      "from": "jeiel-gibeon",
+      "to": "jeiel-son-넬",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:35-37"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0249",
+      "from": "jeiel-gibeon",
+      "to": "jeiel-son-나답",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:35-37"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0250",
+      "from": "jeiel-gibeon",
+      "to": "jeiel-son-그돌",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:35-37"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0251",
+      "from": "jeiel-gibeon",
+      "to": "jeiel-son-아히오",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:35-37"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0252",
+      "from": "jeiel-gibeon",
+      "to": "jeiel-son-스가랴",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:35-37"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0253",
+      "from": "jeiel-gibeon",
+      "to": "jeiel-son-미글롯",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:35-37"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0254",
+      "from": "jeiel-son-미글롯",
+      "to": "shimeam",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:38"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0255",
+      "from": "jeiel-son-넬",
+      "to": "kish-saul-father",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:39"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0256",
+      "from": "kish-saul-father",
+      "to": "ruler-saul",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:39"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0257",
+      "from": "ruler-saul",
+      "to": "saul-son-요나단",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:39"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0258",
+      "from": "ruler-saul",
+      "to": "saul-son-말기수아",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:39"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0259",
+      "from": "ruler-saul",
+      "to": "saul-son-아비나답",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:39"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0260",
+      "from": "ruler-saul",
+      "to": "saul-son-에스바알",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:39"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0261",
+      "from": "saul-descendant-0",
+      "to": "saul-descendant-1",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:40"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0262",
+      "from": "saul-son-요나단",
+      "to": "saul-descendant-0",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:40"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0263",
+      "from": "saul-descendant-1",
+      "to": "micah-son-비돈",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:41"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0264",
+      "from": "saul-descendant-1",
+      "to": "micah-son-멜렉",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:41"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0265",
+      "from": "saul-descendant-1",
+      "to": "micah-son-다레아",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:41"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0266",
+      "from": "saul-descendant-1",
+      "to": "micah-son-아하스",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:41"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0267",
+      "from": "saul-yarah-0",
+      "to": "saul-yarah-1",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:42"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0268",
+      "from": "micah-son-아하스",
+      "to": "saul-yarah-0",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:42"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0269",
+      "from": "saul-yarah-0",
+      "to": "yarah-son-아스마웻",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:42"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0270",
+      "from": "saul-yarah-0",
+      "to": "yarah-son-시므리",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:42"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0271",
+      "from": "saul-later-0",
+      "to": "saul-later-1",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:42-44"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0272",
+      "from": "saul-later-1",
+      "to": "saul-later-2",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:42-44"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0273",
+      "from": "saul-later-2",
+      "to": "saul-later-3",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:42-44"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0274",
+      "from": "saul-later-3",
+      "to": "saul-later-4",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:42-44"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0275",
+      "from": "yarah-son-시므리",
+      "to": "saul-later-0",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:42"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0276",
+      "from": "saul-later-4",
+      "to": "azel-son-아스리감",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:44"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0277",
+      "from": "saul-later-4",
+      "to": "azel-son-보그루",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:44"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0278",
+      "from": "saul-later-4",
+      "to": "azel-son-이스마엘",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:44"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0279",
+      "from": "saul-later-4",
+      "to": "azel-son-스아랴",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:44"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0280",
+      "from": "saul-later-4",
+      "to": "azel-son-오바댜",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:44"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0281",
+      "from": "saul-later-4",
+      "to": "azel-son-하난",
+      "type": "parent_child",
+      "refs": [
+        "역대상 9:44"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0282",
+      "from": "tribe-ancestor-9",
+      "to": "benjamin-son-벨라",
+      "type": "parent_child",
+      "refs": [
+        "역대상 8:1-2"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0283",
+      "from": "tribe-ancestor-9",
+      "to": "benjamin-son-아스벨",
+      "type": "parent_child",
+      "refs": [
+        "역대상 8:1-2"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0284",
+      "from": "tribe-ancestor-9",
+      "to": "benjamin-son-아하라",
+      "type": "parent_child",
+      "refs": [
+        "역대상 8:1-2"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0285",
+      "from": "tribe-ancestor-9",
+      "to": "benjamin-son-노하",
+      "type": "parent_child",
+      "refs": [
+        "역대상 8:1-2"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0286",
+      "from": "tribe-ancestor-9",
+      "to": "benjamin-son-라바",
+      "type": "parent_child",
+      "refs": [
+        "역대상 8:1-2"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0287",
+      "from": "jehoiada",
+      "to": "speaker-f4eec7d2fddd",
+      "type": "parent_child",
+      "refs": [
+        "역대하 24:20"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0288",
+      "from": "speaker-df954b6da099",
+      "to": "ruler-asa",
+      "type": "message_to",
+      "refs": [
+        "역대하 16:7-10"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "전달 경로와 수신 범위를 근거 본문에서 확인; 혈연 아님"
+    },
+    {
+      "id": "chron-edge-0289",
+      "from": "speaker-8c96697bf125",
+      "to": "ruler-jehoshaphat",
+      "type": "message_to",
+      "refs": [
+        "역대하 19:2-3"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "전달 경로와 수신 범위를 근거 본문에서 확인; 혈연 아님"
+    },
+    {
+      "id": "chron-edge-0290",
+      "from": "speaker-dcf8be7f7f02",
+      "to": "ruler-jehoram-judah",
+      "type": "message_to",
+      "refs": [
+        "역대하 21:12-15"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "전달 경로와 수신 범위를 근거 본문에서 확인; 혈연 아님",
+      "delivery": "편지"
+    },
+    {
+      "id": "chron-edge-0291",
+      "from": "speaker-7064d1ca3d67",
+      "to": "ruler-uzziah",
+      "type": "message_to",
+      "refs": [
+        "역대하 26:17-19"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "전달 경로와 수신 범위를 근거 본문에서 확인; 혈연 아님"
+    },
+    {
+      "id": "chron-edge-0292",
+      "from": "speaker-a660b4acd25b",
+      "to": "ruler-josiah",
+      "type": "message_to",
+      "refs": [
+        "역대하 34:23-28"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "전달 경로와 수신 범위를 근거 본문에서 확인; 혈연 아님",
+      "delivery": "왕의 사자들을 통해 전달"
+    },
+    {
+      "id": "chron-edge-0293",
+      "from": "speaker-cec91ce17c4d",
+      "to": "ruler-josiah",
+      "type": "message_to",
+      "refs": [
+        "역대하 35:21-22"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "전달 경로와 수신 범위를 근거 본문에서 확인; 혈연 아님",
+      "delivery": "사신을 통한 경고"
+    },
+    {
+      "id": "chron-edge-0294",
+      "from": "speaker-764ed3d6a850",
+      "to": "ancestor-33",
+      "type": "message_to",
+      "refs": [
+        "역대상 17:2"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "나단의 첫 개인적 조언"
+    },
+    {
+      "id": "chron-edge-0295",
+      "from": "speaker-764ed3d6a850",
+      "to": "ancestor-33",
+      "type": "message_to",
+      "refs": [
+        "역대상 17:4-15"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "여호와의 말씀을 나단이 전달"
+    },
+    {
+      "id": "chron-edge-0296",
+      "from": "speaker-bb9dd5ec1562",
+      "to": "ancestor-33",
+      "type": "message_to",
+      "refs": [
+        "역대상 21:9-12"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "여호와의 명령을 전달"
+    },
+    {
+      "id": "chron-edge-0297",
+      "from": "speaker-cc1c83ff9a99",
+      "to": "ruler-rehoboam",
+      "type": "message_to",
+      "refs": [
+        "역대하 11:2-4"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "형제와 싸우지 말라는 말씀"
+    },
+    {
+      "id": "chron-edge-0298",
+      "from": "speaker-cc1c83ff9a99",
+      "to": "ruler-rehoboam",
+      "type": "message_to",
+      "refs": [
+        "역대하 12:5-8"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "율법을 버린 일에 대한 책망"
+    },
+    {
+      "id": "chron-edge-0299",
+      "from": "speaker-e86897d91729",
+      "to": "ruler-asa",
+      "type": "message_to",
+      "refs": [
+        "역대하 15:1-7"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "하나님을 찾으라는 권면"
+    },
+    {
+      "id": "chron-edge-0300",
+      "from": "speaker-80d700dc5437",
+      "to": "ruler-jehoshaphat",
+      "type": "message_to",
+      "refs": [
+        "역대하 20:14-17"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "온 회중을 향한 말씀; 왕도 청중에 포함"
+    },
+    {
+      "id": "chron-edge-0301",
+      "from": "speaker-7095292ad371",
+      "to": "ruler-jehoshaphat",
+      "type": "message_to",
+      "refs": [
+        "역대하 20:37"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "북왕국 아하시야와의 동맹을 책망"
+    },
+    {
+      "id": "chron-edge-0302",
+      "from": "speaker-7dfc17869a36",
+      "to": "ruler-amaziah",
+      "type": "message_to",
+      "refs": [
+        "역대하 25:7-9"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "북왕국 군사를 동원하지 말라는 권고"
+    },
+    {
+      "id": "chron-edge-0303",
+      "from": "ancestor-33",
+      "to": "ruler-solomon",
+      "type": "message_to",
+      "refs": [
+        "역대상 22:6-16",
+        "역대상 28:9-21"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "성전 건축·여호와를 찾는 삶에 대한 아버지의 당부"
+    },
+    {
+      "id": "chron-edge-0304",
+      "from": "speaker-68da5de3bdc3",
+      "to": "ruler-solomon",
+      "type": "message_to",
+      "refs": [
+        "역대하 1:7-12"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "지혜를 구한 요청에 응답"
+    },
+    {
+      "id": "chron-edge-0305",
+      "from": "speaker-68da5de3bdc3",
+      "to": "ruler-solomon",
+      "type": "message_to",
+      "refs": [
+        "역대하 7:12-22"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "봉헌 기도에 대한 응답과 언약의 경고"
+    },
+    {
+      "id": "chron-edge-0306",
+      "from": "speaker-63fd6bffbb26",
+      "to": "ruler-rehoboam",
+      "type": "advises",
+      "refs": [
+        "역대하 10:6-14"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "서로 다른 조언이며 하나님의 말씀과 동일시하지 않음"
+    },
+    {
+      "id": "chron-edge-0307",
+      "from": "speaker-56fcb2ca30e8",
+      "to": "ruler-rehoboam",
+      "type": "advises",
+      "refs": [
+        "역대하 10:6-14"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "서로 다른 조언이며 하나님의 말씀과 동일시하지 않음"
+    },
+    {
+      "id": "chron-edge-0308",
+      "from": "speaker-091d5414fc94",
+      "to": "speaker-8feeb19cd546",
+      "type": "message_to",
+      "refs": [
+        "역대하 18:16-27"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "아합이 듣기 싫어한 경고"
+    },
+    {
+      "id": "chron-edge-0309",
+      "from": "speaker-53129c7102e9",
+      "to": "speaker-8feeb19cd546",
+      "type": "message_to",
+      "refs": [
+        "역대하 18:10-11"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "거짓 예언자의 주장; 승인된 하나님의 말씀으로 표시하지 않음",
+      "authority": "claim-rejected-by-narrative"
+    },
+    {
+      "id": "chron-edge-0310",
+      "from": "speaker-f4eec7d2fddd",
+      "to": "judah-assembly-24",
+      "type": "message_to",
+      "refs": [
+        "역대하 24:20"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "백성에게 전한 경고"
+    },
+    {
+      "id": "chron-edge-0311",
+      "from": "ruler-joash-judah",
+      "to": "speaker-f4eec7d2fddd",
+      "type": "rejects_warning",
+      "refs": [
+        "역대하 24:21-22"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "돌로 죽이라는 왕의 명령"
+    },
+    {
+      "id": "chron-edge-0312",
+      "from": "unnamed-prophet-amaziah-idols",
+      "to": "ruler-amaziah",
+      "type": "message_to",
+      "refs": [
+        "역대하 25:15-16"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "승리 뒤 우상숭배를 책망함; 왕이 위협하며 거부"
+    },
+    {
+      "id": "chron-edge-0313",
+      "from": "carmi-achar-father",
+      "to": "achar",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:7"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0314",
+      "from": "tamar-judah",
+      "to": "ancestor-24",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:4"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0315",
+      "from": "tamar-judah",
+      "to": "judah-son-세라",
+      "type": "parent_child",
+      "refs": [
+        "역대상 2:4"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0316",
+      "from": "speaker-8feeb19cd546",
+      "to": "north-jehoram-israel",
+      "type": "parent_child",
+      "refs": [
+        "역대하 22:5"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0317",
+      "from": "jehoahaz-israel",
+      "to": "speaker-e47eabb30635",
+      "type": "parent_child",
+      "refs": [
+        "역대하 25:17"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0318",
+      "from": "foreign-nahash",
+      "to": "foreign-hanun",
+      "type": "parent_child",
+      "refs": [
+        "역대상 19:2"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0319",
+      "from": "edom-bela",
+      "to": "edom-jobab",
+      "type": "royal_succession",
+      "refs": [
+        "역대상 1:44"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "앞 왕이 죽은 뒤 다음 왕이 즉위; 부자 관계로 연결하지 않음"
+    },
+    {
+      "id": "chron-edge-0320",
+      "from": "edom-jobab",
+      "to": "edom-husham",
+      "type": "royal_succession",
+      "refs": [
+        "역대상 1:45"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "앞 왕이 죽은 뒤 다음 왕이 즉위; 부자 관계로 연결하지 않음"
+    },
+    {
+      "id": "chron-edge-0321",
+      "from": "edom-husham",
+      "to": "edom-hadad-bedad",
+      "type": "royal_succession",
+      "refs": [
+        "역대상 1:46"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "앞 왕이 죽은 뒤 다음 왕이 즉위; 부자 관계로 연결하지 않음"
+    },
+    {
+      "id": "chron-edge-0322",
+      "from": "edom-hadad-bedad",
+      "to": "edom-samlah",
+      "type": "royal_succession",
+      "refs": [
+        "역대상 1:47"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "앞 왕이 죽은 뒤 다음 왕이 즉위; 부자 관계로 연결하지 않음"
+    },
+    {
+      "id": "chron-edge-0323",
+      "from": "edom-samlah",
+      "to": "edom-shaul",
+      "type": "royal_succession",
+      "refs": [
+        "역대상 1:48"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "앞 왕이 죽은 뒤 다음 왕이 즉위; 부자 관계로 연결하지 않음"
+    },
+    {
+      "id": "chron-edge-0324",
+      "from": "edom-shaul",
+      "to": "edom-baalhanan",
+      "type": "royal_succession",
+      "refs": [
+        "역대상 1:49"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "앞 왕이 죽은 뒤 다음 왕이 즉위; 부자 관계로 연결하지 않음"
+    },
+    {
+      "id": "chron-edge-0325",
+      "from": "edom-baalhanan",
+      "to": "edom-hadad-pai",
+      "type": "royal_succession",
+      "refs": [
+        "역대상 1:50"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": "앞 왕이 죽은 뒤 다음 왕이 즉위; 부자 관계로 연결하지 않음"
+    },
+    {
+      "id": "chron-edge-0326",
+      "from": "edom-father-beor",
+      "to": "edom-bela",
+      "type": "parent_child",
+      "refs": [
+        "역대상 1:43"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0327",
+      "from": "edom-father-zerah",
+      "to": "edom-jobab",
+      "type": "parent_child",
+      "refs": [
+        "역대상 1:44"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0328",
+      "from": "edom-father-bedad",
+      "to": "edom-hadad-bedad",
+      "type": "parent_child",
+      "refs": [
+        "역대상 1:46"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0329",
+      "from": "edom-father-achbor",
+      "to": "edom-baalhanan",
+      "type": "parent_child",
+      "refs": [
+        "역대상 1:49"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0330",
+      "from": "edom-hadad-pai",
+      "to": "mehetabel",
+      "type": "marriage",
+      "refs": [
+        "역대상 1:50"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0331",
+      "from": "matred",
+      "to": "mehetabel",
+      "type": "parent_child",
+      "refs": [
+        "역대상 1:50"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    },
+    {
+      "id": "chron-edge-0332",
+      "from": "mezahab",
+      "to": "mehetabel",
+      "type": "grandparent_descendant",
+      "refs": [
+        "역대상 1:50"
+      ],
+      "evidence": "본문의 관계 서술",
+      "note": ""
+    }
+  ],
+  "speakerLinks": [
+    {
+      "dialogueId": "chron-dialogue-001",
+      "voiceType": "reconstructed",
+      "nodeId": "ruler-josiah",
+      "sourceNote": "본문 발견·보고·훌다의 답을 포함하는 넓은 범위; 모든 문장을 요시야 발언으로 처리하면 안 됨"
+    },
+    {
+      "dialogueId": "chron-dialogue-002",
+      "voiceType": "reconstructed",
+      "nodeId": "ancestor-33",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-003",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-764ed3d6a850",
+      "sourceNote": "2절의 개인 판단과 4~15절의 여호와 말씀 전달을 구분"
+    },
+    {
+      "dialogueId": "chron-dialogue-004",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-764ed3d6a850",
+      "sourceNote": "2절의 개인 판단과 4~15절의 여호와 말씀 전달을 구분"
+    },
+    {
+      "dialogueId": "chron-dialogue-005",
+      "voiceType": "reconstructed",
+      "nodeId": "ancestor-33",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-006",
+      "voiceType": "reconstructed",
+      "nodeId": "ancestor-33",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-007",
+      "voiceType": "reconstructed",
+      "nodeId": "ruler-hezekiah",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-008",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-7fd690f13fe9",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-009",
+      "voiceType": "reconstructed",
+      "nodeId": "ruler-hezekiah",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-010",
+      "voiceType": "reconstructed",
+      "nodeId": "ruler-hezekiah",
+      "sourceNote": "편지·기도·격려가 함께 있어 행별 근거를 확인해야 함"
+    },
+    {
+      "dialogueId": "chron-dialogue-011",
+      "voiceType": "reconstructed",
+      "nodeId": "ruler-hezekiah",
+      "sourceNote": "편지·기도·격려가 함께 있어 행별 근거를 확인해야 함"
+    },
+    {
+      "dialogueId": "chron-dialogue-012",
+      "voiceType": "reconstructed",
+      "nodeId": "ruler-hezekiah",
+      "sourceNote": "편지·기도·격려가 함께 있어 행별 근거를 확인해야 함"
+    },
+    {
+      "dialogueId": "chron-dialogue-013",
+      "voiceType": "reconstructed",
+      "nodeId": "ruler-hezekiah",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-014",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-86c809d044bf",
+      "sourceNote": "적국의 선동·위협; 여러 전달 형식이 포함됨"
+    },
+    {
+      "dialogueId": "chron-dialogue-015",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-573377fda096",
+      "sourceNote": "편지에 담긴 적국 왕의 비방; 내용 자체를 성경의 가르침으로 승인하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-016",
+      "voiceType": "reconstructed",
+      "nodeId": "ruler-manasseh",
+      "sourceNote": "기도했다는 서술만 있고 기도문 내용은 제시되지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-017",
+      "voiceType": "reconstructed",
+      "nodeId": "ancestor-33",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-018",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-bb9dd5ec1562",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-019",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-aa3160f42963",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-020",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-ee3890c9c57f",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-021",
+      "voiceType": "reconstructed",
+      "nodeId": "ruler-solomon",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-022",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-8eb069dfdbf4",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-023",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-cc1c83ff9a99",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-024",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-cc1c83ff9a99",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-025",
+      "voiceType": "reconstructed",
+      "nodeId": "ruler-asa",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-026",
+      "voiceType": "reconstructed",
+      "nodeId": "ruler-jehoshaphat",
+      "sourceNote": "관리를 보내 가르치게 했다는 서술; 직접 명령문은 기록되지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-027",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-8c96697bf125",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-028",
+      "voiceType": "reconstructed",
+      "nodeId": "ruler-jehoshaphat",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-029",
+      "voiceType": "reconstructed",
+      "nodeId": "ruler-saul",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-030",
+      "voiceType": "reconstructed",
+      "nodeId": "ancestor-33",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-031",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-b417e70cca86",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-032",
+      "voiceType": "reconstructed",
+      "nodeId": "ancestor-33",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-033",
+      "voiceType": "divine",
+      "nodeId": "speaker-68da5de3bdc3",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-034",
+      "voiceType": "reconstructed",
+      "nodeId": "ancestor-33",
+      "sourceNote": "다윗이 아삽과 형제들에게 맡긴 찬송; 다윗의 현장 발언과 구분"
+    },
+    {
+      "dialogueId": "chron-dialogue-035",
+      "voiceType": "reconstructed",
+      "nodeId": "ancestor-33",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-036",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-2899bff57529",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-037",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-f449aed2fc3a",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-038",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-63fd6bffbb26",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-039",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-56fcb2ca30e8",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-040",
+      "voiceType": "reconstructed",
+      "nodeId": "ruler-rehoboam",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-041",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-f449aed2fc3a",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-042",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-dab99ab8c0e9",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-043",
+      "voiceType": "reconstructed",
+      "nodeId": "ruler-abijah",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-044",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-be9a32a1e08a",
+      "sourceNote": "부르짖었다는 서술; 구체적 기도문은 기록되지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-045",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-e86897d91729",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-046",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-134b92563d2b",
+      "sourceNote": "언약·맹세 행동을 재구성한 발화"
+    },
+    {
+      "dialogueId": "chron-dialogue-047",
+      "voiceType": "reconstructed",
+      "nodeId": "ruler-asa",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-048",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-df954b6da099",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-049",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-8feeb19cd546",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-050",
+      "voiceType": "reconstructed",
+      "nodeId": "ruler-jehoshaphat",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-051",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-53129c7102e9",
+      "sourceNote": "거짓 예언; 여호와의 이름을 사용해도 승인된 말씀으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-052",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-091d5414fc94",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-053",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-8feeb19cd546",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-054",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-53129c7102e9",
+      "sourceNote": "거짓 예언; 여호와의 이름을 사용해도 승인된 말씀으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-055",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-091d5414fc94",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-056",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-8feeb19cd546",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-057",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-8c1e262e5036",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-058",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-8feeb19cd546",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-059",
+      "voiceType": "reconstructed",
+      "nodeId": "ruler-jehoshaphat",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-060",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-80d700dc5437",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-061",
+      "voiceType": "reconstructed",
+      "nodeId": "ruler-jehoshaphat",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-062",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-db64681a2887",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-063",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-7095292ad371",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-064",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-dcf8be7f7f02",
+      "sourceNote": "편지로 전해진 경고, 현장 대면 대사로 연출하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-065",
+      "voiceType": "reconstructed",
+      "nodeId": "jehoiada",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-066",
+      "voiceType": "reconstructed",
+      "nodeId": "jehoiada",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-067",
+      "voiceType": "reconstructed",
+      "nodeId": "ruler-athaliah",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-068",
+      "voiceType": "reconstructed",
+      "nodeId": "ruler-joash-judah",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-069",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-f4eec7d2fddd",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-070",
+      "voiceType": "reconstructed",
+      "nodeId": "ruler-amaziah",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-071",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-7dfc17869a36",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-072",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-a5f75648f8a1",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-073",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-519e604ab70c",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-074",
+      "voiceType": "reconstructed",
+      "nodeId": "ruler-josiah",
+      "sourceNote": "본문 발견·보고·훌다의 답을 포함하는 넓은 범위; 모든 문장을 요시야 발언으로 처리하면 안 됨"
+    },
+    {
+      "dialogueId": "chron-dialogue-075",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-a660b4acd25b",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-076",
+      "voiceType": "reconstructed",
+      "nodeId": "ruler-josiah",
+      "sourceNote": "본문 발견·보고·훌다의 답을 포함하는 넓은 범위; 모든 문장을 요시야 발언으로 처리하면 안 됨"
+    },
+    {
+      "dialogueId": "chron-dialogue-077",
+      "voiceType": "reconstructed",
+      "nodeId": "ruler-josiah",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-078",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-cec91ce17c4d",
+      "sourceNote": "느고의 말이며 22절에서 서술자가 하나님의 말씀임을 확인"
+    },
+    {
+      "dialogueId": "chron-dialogue-079",
+      "voiceType": "reconstructed",
+      "nodeId": "ruler-josiah",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-080",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-a2729a65bcfa",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-081",
+      "voiceType": "narrator",
+      "nodeId": null
+    },
+    {
+      "dialogueId": "chron-dialogue-082",
+      "voiceType": "reconstructed",
+      "nodeId": "ruler-amaziah",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-083",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-e47eabb30635",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-084",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-7064d1ca3d67",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-085",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-40bef680a590",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-086",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-16f754821564",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-087",
+      "voiceType": "narrator",
+      "nodeId": null
+    },
+    {
+      "dialogueId": "chron-dialogue-088",
+      "voiceType": "narrator",
+      "nodeId": null
+    },
+    {
+      "dialogueId": "chron-dialogue-089",
+      "voiceType": "narrator",
+      "nodeId": null
+    },
+    {
+      "dialogueId": "chron-dialogue-090",
+      "voiceType": "reconstructed",
+      "nodeId": "ruler-hezekiah",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-091",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-d046cc19c594",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-092",
+      "voiceType": "reconstructed",
+      "nodeId": "ancestor-33",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-093",
+      "voiceType": "reconstructed",
+      "nodeId": "ancestor-33",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-094",
+      "voiceType": "reconstructed",
+      "nodeId": "ancestor-33",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-095",
+      "voiceType": "reconstructed",
+      "nodeId": "ancestor-33",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-096",
+      "voiceType": "reconstructed",
+      "nodeId": "ancestor-33",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-097",
+      "voiceType": "reconstructed",
+      "nodeId": "ancestor-33",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-098",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-abe5cd9d72a2",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-099",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-3ed3b36dc38e",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-100",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-6603398b960e",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-101",
+      "voiceType": "reconstructed",
+      "nodeId": "ancestor-33",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-102",
+      "voiceType": "reconstructed",
+      "nodeId": "ancestor-33",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-103",
+      "voiceType": "reconstructed",
+      "nodeId": "ancestor-33",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-104",
+      "voiceType": "reconstructed",
+      "nodeId": "ruler-solomon",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-105",
+      "voiceType": "divine",
+      "nodeId": "speaker-68da5de3bdc3",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-106",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-5b882696ea4a",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-107",
+      "voiceType": "reconstructed",
+      "nodeId": "speaker-3621ab40ee51",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-108",
+      "voiceType": "divine",
+      "nodeId": "speaker-68da5de3bdc3",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    },
+    {
+      "dialogueId": "chron-dialogue-109",
+      "voiceType": "reconstructed",
+      "nodeId": "ruler-solomon",
+      "sourceNote": "앱의 본문 기반 재구성 발화. 아래 근거 범위와 원문을 연결하되 직접 인용으로 표시하지 않음"
+    }
+  ],
+  "pendingRelations": [
+    {
+      "id": "review-zedekiah-3-16",
+      "refs": [
+        "역대상 3:15-16",
+        "역대하 36:10"
+      ],
+      "reason": "아들 표현과 왕위 계승 표현이 다름; 두 시드기야 이름을 자동 병합하지 않음"
+    },
+    {
+      "id": "review-maacah-micaiah",
+      "refs": [
+        "역대하 11:20",
+        "역대하 13:2",
+        "역대하 15:16"
+      ],
+      "reason": "마아가/미가야 표기와 왕대비·어머니 호칭의 세대 문제"
+    },
+    {
+      "id": "review-shallum-jehoahaz",
+      "refs": [
+        "역대상 3:15",
+        "역대하 36:1-4"
+      ],
+      "reason": "살룸과 여호아하스의 동일시를 두 권의 직접 개명 기록으로 확정할 수 없음"
+    },
+    {
+      "id": "review-postexile-3-21",
+      "refs": [
+        "역대상 3:21-22"
+      ],
+      "reason": "후손 배열·여섯 명의 묶음 범위가 두 역본에서 다르게 풀림"
+    },
+    {
+      "id": "review-shelomith",
+      "refs": [
+        "역대상 3:19"
+      ],
+      "reason": "슬로밋의 누이 관계 표현과 연결 범위를 표시할 필요"
+    },
+    {
+      "id": "review-priest-hilkiah",
+      "refs": [
+        "역대상 6:13",
+        "역대하 34:14"
+      ],
+      "reason": "동일 이름만으로 제사장 계보의 힐기야와 요시야 시대 인물을 자동 병합하지 않음"
+    },
+    {
+      "id": "review-pul-tiglath",
+      "refs": [
+        "역대상 5:26",
+        "역대하 28:20"
+      ],
+      "reason": "불과 디글랏빌레셀의 동일시는 두 권 외의 역사 자료를 대조할 때 검토. 이 데이터에서 이름만으로 병합하지 않음"
+    },
+    {
+      "id": "review-david-repeated-names",
+      "refs": [
+        "역대상 3:6",
+        "역대상 3:8"
+      ],
+      "reason": "엘리사마·엘리벨렛의 반복은 출현별 노드로 보존. 실제로 별개인 두 사람인지 자동 판정하지 않음"
+    }
+  ],
+  "rulerAssessmentSource": "data/chronicles-guide.json#rulers"
+}
