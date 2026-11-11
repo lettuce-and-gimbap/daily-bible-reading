@@ -209,6 +209,13 @@ document.addEventListener("input", (e) => {
 
 // 요약 탭 그리기 (reader.js의 renderReaderSheet에서 부름)
 function renderSummaryTab(body, day) {
+  renderSummaryContent(body, day);
+  if ((day || []).some(i => ['1ch', '2ch'].includes(CHAPTERS[i].book.code))) {
+    body.insertAdjacentHTML('afterbegin', '<button type="button" class="cg-entry" data-chronicles-guide><b>역대상·하 왕과 계보</b><span>왕의 변화 · 가족 관계 · 말씀과 응답 보기 ›</span></button>');
+  }
+}
+
+function renderSummaryContent(body, day) {
   summaryBook = day && day.length ? CHAPTERS[day[0]].book.code : "";
   setSheetTitle(READER_TABS);
   const pre = staticDaySummary(day);

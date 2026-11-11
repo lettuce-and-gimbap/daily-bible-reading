@@ -86,6 +86,7 @@ function renderStats() {
   app.innerHTML = `
     ${pixelBibleBannerHtml()}
     ${changelogCardHtml()}
+    <button type="button" class="cg-entry" data-chronicles-guide><b>역대상·하 왕과 계보</b><span>왕의 변화 · 가족 관계 · 말씀과 응답 보기 ›</span></button>
     <section class="hero-row">${readCard}${qtCard}</section>
 
     ${glanceCardHtml()}
