@@ -10987,7 +10987,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "caution": "",
     "refs": [
       "출애굽기 23:1-3",
-      "민수기 14장"
+      "민수기 14:1-4"
     ],
     "category": "본문 문맥",
     "lens": "",
@@ -24360,7 +24360,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "refs": [
       "출애굽기 21:12-14",
       "민수기 35:11",
-      "민수기 35장"
+      "민수기 35:1"
     ],
     "category": "본문 문맥",
     "lens": "과실도 하나님의 섭리 아래 있으나 사람의 책임을 없애지 않는다는 점은 제이원인의 개념으로 설명돼요(WCF 5:2).",
@@ -25290,7 +25290,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "refs": [
       "출애굽기 23:32-33",
       "출애굽기 34:12",
-      "여호수아 9장"
+      "여호수아 9:1"
     ],
     "category": "본문 문맥",
     "lens": "",
@@ -25351,7 +25351,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "caution": "",
     "refs": [
       "출애굽기 24:4",
-      "출애굽기 20:22-23:33"
+      "출애굽기 20:22-26"
     ],
     "category": "본문 문맥",
     "lens": "기록된 말씀이 언약의 근거가 된다는 점은 성경이 하나님의 말씀으로 기록된 이유를 보여줘요(WCF 1:1).",
@@ -26302,7 +26302,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "refs": [
       "출애굽기 30:12",
       "사무엘하 24:15",
-      "사무엘하 24장"
+      "사무엘하 24:1"
     ],
     "category": "본문 문맥",
     "lens": "",
@@ -26847,7 +26847,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "refs": [
       "출애굽기 34:10",
       "출애굽기 24:8",
-      "창세기 15장"
+      "창세기 15:1"
     ],
     "category": "본문 문맥",
     "lens": "",
@@ -31277,7 +31277,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       "레위기 27:28-29",
       "여호수아 6:17",
       "사사기 11:30-31",
-      "여호수아 7장"
+      "여호수아 7:1"
     ],
     "category": "본문 문맥",
     "lens": "",
