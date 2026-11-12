@@ -1,0 +1,50 @@
+/* 화면 스타일: 설정(관리 탭)의 "화면 스타일"에서 고르고 html[data-ui]로 적용한다. 기본(classic)은 속성이 없다. 통독·묵상 구절 목록만 바꾼다. */
+:root{--ui-paper:#f4ecd8;--ui-paper-edge:#d9ccae;--ui-ink:#2b2218;--ui-mark:#b0452a;--ui-hl:#f0dca0;--ui-pix-bg:#10162b;--ui-pix-line:#4a5a9a;--ui-pix-gold:#f2c94c;--ui-pix-ink:#f2e9c9}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--ui-paper:#262016;--ui-paper-edge:#4a4030;--ui-ink:#eadfc6;--ui-mark:#e58c70;--ui-hl:#5a4a1e}}
+:root[data-theme="dark"]{--ui-paper:#262016;--ui-paper-edge:#4a4030;--ui-ink:#eadfc6;--ui-mark:#e58c70;--ui-hl:#5a4a1e}
+
+/* 종이책: 카드 없이 한 단락으로 흐르는 본문 */
+:root[data-ui="paper"] .rd .vp-list{display:block;padding:16px 18px;background:var(--ui-paper);color:var(--ui-ink);border:1px solid var(--ui-paper-edge);border-radius:6px;font-family:"Noto Serif KR","Nanum Myeongjo","Batang",serif;line-height:2}
+:root[data-ui="paper"] .rd .vp-row{display:inline;padding:0;border:0;border-radius:0;background:transparent;color:inherit;position:static}
+:root[data-ui="paper"] .rd .vp-row::after{display:none}
+:root[data-ui="paper"] .rd .vp-row+.vp-row{border:0}
+:root[data-ui="paper"] .rd .vp-row:has(input:checked) .vp-txt{background:var(--ui-hl);border-radius:3px}
+:root[data-ui="paper"] .rd .vp-num{display:inline;min-width:0;padding:0;margin-right:3px;font-size:.62em;font-weight:600;vertical-align:super;color:var(--ui-mark)}
+:root[data-ui="paper"] .rd .vp-txt{display:inline;padding:0;font-size:calc(1rem*var(--fz,1))}
+:root[data-ui="paper"] .rd .vp-txt small{display:block;line-height:1.7;font-family:var(--font-sans,system-ui,sans-serif)}
+:root[data-ui="paper"] .rd .vp-row::after{content:" "}
+
+/* 에디토리얼: 여백의 절 번호, 구분선 없는 넓은 행 */
+:root[data-ui="editorial"] .rd .vp-list{gap:0}
+:root[data-ui="editorial"] .rd .vp-row{grid-template-columns:2.2em minmax(0,1fr);gap:10px;padding:9px 2px;border:0;border-radius:0;background:transparent}
+:root[data-ui="editorial"] .rd .vp-row+.vp-row{border-top:1px solid color-mix(in srgb,var(--line) 45%,transparent)}
+:root[data-ui="editorial"] .rd .vp-row:has(input:checked){background:transparent;box-shadow:inset 3px 0 #d9480f}
+:root[data-ui="editorial"] .rd .vp-row:has(input:checked) .vp-txt{font-weight:600}
+:root[data-ui="editorial"] .rd .vp-row::after{color:#d9480f}
+:root[data-ui="editorial"] .rd .vp-num{text-align:right;color:#d9480f;font-size:calc(.72rem*var(--fz,1));font-weight:600;padding-top:5px}
+:root[data-ui="editorial"] .rd .vp-txt{font-size:calc(1.02rem*var(--fz,1));line-height:1.75;letter-spacing:-.005em}
+:root[data-ui="editorial"] .rd.qt .vp-num{color:var(--qt)}
+
+/* 픽셀: PIXEL BIBLE 세계관과 맞춘 각진 상자 */
+:root[data-ui="pixel"] .rd .vp-list{gap:6px}
+:root[data-ui="pixel"] .rd .vp-row{border:2px solid var(--ui-pix-line);border-radius:0;background:var(--ui-pix-bg);color:var(--ui-pix-ink);box-shadow:2px 2px 0 #00000055}
+:root[data-ui="pixel"] .rd .vp-row:has(input:checked){border-color:var(--ui-pix-gold);background:#1c2748}
+:root[data-ui="pixel"] .rd .vp-row::after{color:var(--ui-pix-gold)}
+:root[data-ui="pixel"] .rd .vp-num{color:var(--ui-pix-gold);font-family:"DungGeunMo",monospace;font-weight:400}
+:root[data-ui="pixel"] .rd .vp-txt small{color:#b9b393}
+:root[data-ui="pixel"] .rd .qt-passage .vp-row{border:2px solid var(--ui-pix-line);background:var(--ui-pix-bg)}
+
+/* 설정 화면: 스타일 고르기 */
+.ui-style-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:10px}
+.ui-style-opt{display:grid;gap:4px;text-align:left;padding:8px;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--ink);font:inherit;cursor:pointer}
+.ui-style-opt.on{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent)}
+.ui-style-opt small{color:var(--muted);font-size:.78rem}
+.ui-prev{display:block;min-height:64px;padding:8px;border-radius:8px;font-size:.78rem;line-height:1.6;overflow:hidden}
+.ui-prev i{font-style:normal;font-weight:700;font-size:.7em;margin-right:3px;color:var(--accent)}
+.ui-prev-classic .ui-prev{background:var(--surface-2);border:1px solid var(--line)}
+.ui-prev-paper .ui-prev{background:var(--ui-paper);color:var(--ui-ink);font-family:"Noto Serif KR","Nanum Myeongjo",serif}
+.ui-prev-paper .ui-prev i{color:var(--ui-mark);vertical-align:super}
+.ui-prev-editorial .ui-prev{background:var(--surface);border:1px solid var(--line)}
+.ui-prev-editorial .ui-prev i{color:#d9480f}
+.ui-prev-pixel .ui-prev{background:var(--ui-pix-bg);color:var(--ui-pix-ink);border:2px solid var(--ui-pix-line);border-radius:0}
+.ui-prev-pixel .ui-prev i{color:var(--ui-pix-gold)}

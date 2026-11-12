@@ -8,6 +8,7 @@ let qtBookSel = null; // QT 모드에서 고른 권 코드
 let statsSubpage = ""; // 관리의 색상 / 계정·설정 / 픽셀 자료실 별도 화면
 let pixelReferenceCategory = "all";
 let pixelReferenceQuery = "";
+const UI_STYLES = [["classic", "기본", "지금의 카드 화면"], ["paper", "종이책", "카드 없이 한 단락으로 흐르는 본문"], ["editorial", "에디토리얼", "여백의 절 번호와 넓은 행간"], ["pixel", "픽셀", "PIXEL BIBLE과 어울리는 각진 상자"]];
 const qtCoverMap = {}; // QT 날짜 → { ref: 본문 범위, idx: 다룬 장 번호들 } (한 번 받으면 다시 받지 않음)
 const isAdminUser = () => window.isAdminAccount?.() === true;
 
@@ -139,9 +140,13 @@ function renderStatsSubpage(page, { cutoff, cutoffText, habits, habitAdvice }) {
     return;
   }
   const themeNow = state.settings.theme || "auto";
+  const uiNow = state.settings.uiStyle || "classic";
   app.innerHTML = `${header}
     <section class="card theme-card"><h3 class="label">화면 모드</h3><div class="seg wide">
       ${[["auto", "기기 설정"], ["light", "밝게"], ["dark", "어둡게"]].map(([v, l]) => `<button class="${themeNow === v ? "on" : ""}" data-theme-set="${v}">${l}</button>`).join("")}
+    </div></section>
+    <section class="card ui-style-card"><h3 class="label">화면 스타일</h3><p class="muted small">통독·묵상 본문이 보이는 방식을 골라요. 계정에 로그인하면 다른 기기에서도 같아요.</p><div class="ui-style-grid">
+      ${UI_STYLES.map(([v, l, d]) => `<button type="button" class="ui-style-opt ui-prev-${v} ${uiNow === v ? "on" : ""}" data-ui-set="${v}" aria-pressed="${uiNow === v}"><span class="ui-prev"><i>1</i> 태초에 하나님이 천지를 창조하시니라<br><i>2</i> 땅이 혼돈하고 공허하며</span><b>${l}</b><small>${d}</small></button>`).join("")}
     </div></section>
     <section class="card cutoff-card">
       <div class="cutoff-head"><div><h3 class="label">통독 하루 마감</h3><p class="muted small">마감 전 새벽에 읽으면 전날 통독으로 기록해요.</p></div><b id="cutoff-value">${cutoffText}</b></div>
@@ -176,6 +181,12 @@ function renderStatsSubpage(page, { cutoff, cutoffText, habits, habitAdvice }) {
     applyTheme();
     persist();
     button.parentElement.querySelectorAll("[data-theme-set]").forEach((item) => item.classList.toggle("on", item === button));
+  }));
+  document.querySelectorAll("[data-ui-set]").forEach((button) => button.addEventListener("click", () => {
+    state.settings.uiStyle = button.dataset.uiSet;
+    applyUiStyle();
+    persist();
+    document.querySelectorAll("[data-ui-set]").forEach((item) => { const on = item === button; item.classList.toggle("on", on); item.setAttribute("aria-pressed", String(on)); });
   }));
   const cutoffInput = $("#reading-cutoff");
   cutoffInput.addEventListener("input", () => {

@@ -166,7 +166,7 @@ async function openPixelBible(scope = {}) {
   landscapeReady.catch(() => {});
   try {
     const chapters = scope.chapters || pixelBibleTodayChapters();
-    const world = await import("./pixel-bible/world.js?v=10.11.0&rev=genesis-review-4");
+    const world = await import("./pixel-bible/world.js?v=10.12.0&rev=genesis-review-4");
     if (!modal.dialog.isConnected) return;
     let disposeWorld = () => {};
     const worldOptions = {

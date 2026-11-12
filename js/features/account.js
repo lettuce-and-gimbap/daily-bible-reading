@@ -75,6 +75,8 @@ function applyRemoteState(next) {
   const base = defaultState();
   state = { ...base, ...next, plan: normalizePlan(next.plan), readingHabits: normalizeReadingHabits(next.readingHabits), settings: normalizeSettings({ ...base.settings, ...(next.settings || {}) }) };
   saveState(state);
+  if (typeof applyTheme === "function") applyTheme();
+  if (typeof applyUiStyle === "function") applyUiStyle();
 }
 
 // first: 처음 로그인(무조건 합침). 아니면 이 기기에 안 올린 변경이 있을 때만 합치고, 없으면 서버 것을 그대로 받음

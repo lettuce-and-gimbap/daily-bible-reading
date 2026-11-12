@@ -31,6 +31,13 @@ function applyTheme() {
   else delete document.documentElement.dataset.theme;
 }
 
+// 화면 스타일(관리 탭): classic이면 속성을 두지 않고, 나머지는 html[data-ui]로 css/ui-styles.css가 적용
+function applyUiStyle() {
+  const u = (state.settings || {}).uiStyle;
+  if (["paper", "editorial", "pixel"].includes(u)) document.documentElement.dataset.ui = u;
+  else delete document.documentElement.dataset.ui;
+}
+
 // 통독 날짜는 사용자가 정한 새벽 마감 시각 전까지 전날로 본다. 기본값 0은 자정 마감이다.
 function readingDateStr(now = new Date()) {
   const cutoff = Number((state.settings || {}).readingCutoff) || 0;

@@ -138,7 +138,8 @@ function normalizeSettings(settings) {
   const theme = ["light", "dark"].includes(settings.theme) ? settings.theme : "auto"; // 화면 모드: 기기 설정 따르기 / 밝게 / 어둡게
   const cutoff = Number(settings.readingCutoff);
   const readingCutoff = Number.isInteger(cutoff) && cutoff >= 0 && cutoff <= 5 ? cutoff : 0;
-  return { ...settings, mode: ["one", "two", "three"].includes(settings.mode) ? settings.mode : "one", ver, ver2, ver3, theme, readingCutoff, hideEditionNames: settings.hideEditionNames === true };
+  const uiStyle = ["paper", "editorial", "pixel"].includes(settings.uiStyle) ? settings.uiStyle : "classic"; // 화면 스타일
+  return { ...settings, uiStyle, mode: ["one", "two", "three"].includes(settings.mode) ? settings.mode : "one", ver, ver2, ver3, theme, readingCutoff, hideEditionNames: settings.hideEditionNames === true };
 }
 
 // 계획에 포함되는 장 일련번호 순서. 끝 장이 시작 장보다 앞이면 요한계시록 다음 창세기로 이어 읽음
