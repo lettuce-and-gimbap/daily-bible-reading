@@ -4433,6 +4433,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "개혁주의는 바벨을 사람의 영광을 구하는 문명으로 읽어요. 오순절(행 2장)에 여러 언어로 복음이 전해진 일은, 흩어진 언어가 복음 안에서 다시 모이는 장면으로 읽어요.",
     "wcf": [
       25
+    ],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Ziggurat (English)",
+        "url": "https://en.wikipedia.org/wiki/Ziggurat"
+      }
     ]
   },
   {
@@ -4838,7 +4844,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "'나는 스스로 있는 자'는 하나님이 누구에게도 기대지 않고 스스로 계시며, 약속대로 함께하시는 분이라는 뜻이에요.",
-    "detail": "'에흐예 아셰르 에흐예'는 '있다'(하야)라는 말에서 나왔어요. 스스로 계신다는 뜻과 '내가 함께 있겠다'는 뜻을 함께 담고 있어요. 15절의 '여호와(YHWH)'도 같은 말에서 나온 이름이에요. 요한복음의 '나는 ~이다' 말씀(요 8:58)과 이어서 읽는 전통이 있어요.",
+    "detail": "'에흐예 아셰르 에흐예'는 '있다'(하야)라는 말에서 나왔어요. '나는 나다', '나는 있을 자가 되리라'처럼 풀 수 있어요. 스스로 계신다는 뜻과 '내가 함께 있겠다'는 뜻을 함께 담고 있어요. 15절의 '여호와(YHWH)'도 같은 말에서 나온 이름이에요. 요한복음의 '나는 ~이다' 말씀(요 8:58)과 이어서 읽는 전통이 있어요.",
     "caution": "이름의 뜻을 한 가지로 정하기는 어려워요. '스스로 계신 분'과 '함께하실 분'의 두 뜻이 함께 논의돼요.",
     "refs": [
       "출애굽기 3:12-15",
@@ -4848,6 +4854,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "하나님은 피조물에 기대지 않고 스스로 충분하신 분이에요. 동시에 이 이름으로 약속을 지키시는 하나님이 되셔요. 개혁주의 하나님 이해의 출발점이에요(WCF 2).",
     "wcf": [
       2
+    ],
+    "sourceLinks": [
+      {
+        "label": "Ehyeh (영문 위키백과)",
+        "url": "https://en.wikipedia.org/wiki/Ehyeh"
+      }
     ]
   },
   {
@@ -5120,7 +5132,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "'제사장 나라'는 이스라엘이 여러 민족 앞에서 하나님을 대표하고, 민족들을 하나님께 이끄는 사명을 받았다는 선언이에요.",
-    "detail": "제사장은 하나님과 사람 사이를 잇는 중재자예요. 나라 전체가 이 역할을 맡는다는 점이 독특해요. 칠십인역은 '왕 같은 제사장'으로 읽었고, 베드로전서 2:9가 교회에 이 표현을 적용해요.",
+    "detail": "제사장은 하나님과 사람 사이를 잇는 중재자예요. 나라 전체가 이 역할을 맡는다는 점이 독특해요. 베드로전서 2:9가 교회에 이 표현을 적용해요.",
     "caution": "",
     "refs": [
       "출애굽기 19:4-6",
@@ -5515,7 +5527,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "전쟁에서 돌아오는 아브람을 맞은 멜기세덱은 '지극히 높으신 하나님의 제사장'이자 살렘 왕이에요. 왕과 제사장을 함께 맡은 인물이 갑자기 나와요.",
-    "detail": "살렘은 훗날 예루살렘으로 읽는 견해가 많아요(시 76:2). 히브리서 7:2는 이름을 '의의 왕', 살렘을 '평강'으로 풀어요. 시편 110:4는 메시아를 '멜기세덱의 반차를 따른 제사장'이라고 불러요. 떡과 포도주는 승리자를 맞는 환대의 음식이에요.",
+    "detail": "살렘은 훗날 예루살렘으로 읽는 견해가 있어요(시 76:2). 히브리서 7:2는 이름을 '의의 왕', 살렘을 '평강'으로 풀어요. 시편 110:4는 메시아를 '멜기세덱의 반차를 따른 제사장'이라고 불러요. 떡과 포도주는 승리자를 맞는 환대의 음식이에요.",
     "caution": "멜기세덱이 누구인지에 대한 추측은 여러 가지예요. 히브리서가 말하는 범위 안에서 읽는 것이 안전해요.",
     "refs": [
       "창세기 14:18",
@@ -5527,6 +5539,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "개혁주의는 멜기세덱을 그리스도를 미리 보여 준 그림(예표)으로 읽어요. 왕과 제사장의 직분이 그리스도 안에서 하나가 된다고 봐요.",
     "wcf": [
       8
+    ],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Melchizedek (English)",
+        "url": "https://en.wikipedia.org/wiki/Melchizedek"
+      }
     ]
   },
   {
@@ -5818,7 +5836,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "category": "본문 문맥",
     "lens": "",
     "wcf": [],
-    "detail": "'미스바'는 '망대'라는 뜻이에요. 두 사람이 떨어져 있을 때 서로 해치지 않는지 여호와께서 살피시라는 문구예요. 길르앗 미스바는 훗날 입다의 서원(사사기 11:11)과 사울 왕을 세운 일(사무엘상 10:17)의 장소가 돼요."
+    "detail": "'미스바'는 '망대'라는 뜻이에요. 두 사람이 떨어져 있을 때 서로 해치지 않는지 여호와께서 살피시라는 문구예요. 길르앗 미스바는 훗날 입다가 여호와 앞에 말씀을 아뢴 곳(사사기 11:11)이에요. 사울이 왕으로 뽑힌 미스바(사무엘상 10:17)는 베냐민 땅의 다른 미스바예요. 이름이 같은 곳이 여러 곳 있었어요.",
+    "sourceLinks": [
+      {
+        "label": "Mizpah (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Mizpah"
+      }
+    ]
   },
   {
     "id": "context-gen-33-10",
@@ -5943,7 +5967,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "category": "본문 문맥",
     "lens": "",
     "wcf": [],
-    "detail": "이집트에는 꿈을 풀이하는 책과 해몽 전문가가 있었다고 알려져 있어요. 요셉은 같은 말을 바로 앞에서도 해요(창세기 41:16)."
+    "detail": "요셉은 같은 말을 바로 앞에서도 해요(창세기 41:16). 성경은 바로의 술객과 지혜자들이 꿈을 풀지 못했다고 전해요(41:8)."
   },
   {
     "id": "context-gen-41-16",
@@ -5973,7 +5997,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Pharaoh (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Pharaoh"
+      }
+    ]
   },
   {
     "id": "context-gen-42-21",
@@ -6186,8 +6216,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "'여호와가 누구냐'는 바로의 물음에 이후 재앙 전체가 답해요.",
-    "detail": "애굽 왕은 태양신 라의 아들로 여겨졌어요. '알지 못한다'는 말은 그 이름을 인정하지 않겠다는 선언이에요. 7:5에서 하나님은 애굽 사람이 '내가 여호와인 줄 알리라'고 하세요. 출애굽을 일찍 보는 견해는 이 바로를 아멘호텝 2세로, 늦게 보는 견해는 람세스 2세로 봐요. 아멘호텝 2세의 재위는 보통 기원전 1425~1401년으로 봐요.",
-    "caution": "",
+    "detail": "애굽 왕은 태양신 라의 아들로 여겨졌어요. '알지 못한다'는 말은 그 이름을 인정하지 않겠다는 선언이에요. 7:5에서 하나님은 애굽 사람이 '내가 여호와인 줄 알리라'고 하세요. 출애굽을 13세기 무렵으로 보는 학자들은 람세스 2세나 그 아들 메르넵타를 후보로 봐요. 아멘호텝 2세는 대략 기원전 1427~1401년에 다스린 왕이에요.",
+    "caution": "출애굽 연대와 바로가 누구인지는 학자마다 달라요.",
     "refs": [
       "출애굽기 5:2",
       "출애굽기 5:1-5",
@@ -6197,6 +6227,14 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "",
     "wcf": [],
     "sourceLinks": [
+      {
+        "label": "Pharaoh (영문 위키백과)",
+        "url": "https://en.wikipedia.org/wiki/Pharaoh"
+      },
+      {
+        "label": "Historicity of the Exodus (영문 위키백과)",
+        "url": "https://en.wikipedia.org/wiki/Historicity_of_the_Exodus"
+      },
       {
         "label": "Amenhotep II - Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Amenhotep_II"
@@ -6445,7 +6483,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "등불에 쓰는 기름은 올리브를 찧어 낸 순결한 기름으로, 불이 끊어지지 않도록 공급하는 일이 백성의 몫이에요.",
-    "detail": "찧어 낸 기름은 짜낸 기름보다 불순물이 적고 맑아 불꽃도 깨끗해요. 등불은 저녁부터 아침까지 아론과 아들들이 보살펴요(21절). 불이 꺼지지 않음은 하나님 앞에 항상 빛이 있음을 뜻해요.",
+    "detail": "등불은 저녁부터 아침까지 아론과 그 아들들이 보살펴요(21절). 불이 꺼지지 않음은 하나님 앞에 항상 빛이 있음을 뜻해요.",
     "caution": "",
     "refs": [
       "출애굽기 27:20",
@@ -6507,7 +6545,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "물두멍은 여인들의 놋 거울로 만들어졌고, 제사장들이 봉사하기 전에 씻는 정결의 기구예요.",
-    "detail": "당시 거울은 닦은 놋쇠 판이었어요. 성막 문에서 봉사하는 여인들(삼상 2:22)의 거울이 정결의 그릇이 된 점이 눈에 띄어요. 물두멍은 제사장이 성막에 들어가기 전과 번제단에 나아가기 전에 손발을 씻는 곳이에요(30:18-21).",
+    "detail": "옛날 거울은 닦아 빛낸 구리(놋쇠) 판이었어요. 옛 이집트와 메소포타미아에서도 구리 거울을 만들었어요. 성막 문에서 봉사하는 여인들(삼상 2:22)의 거울이 정결의 그릇이 된 점이 눈에 띄어요. 물두멍은 제사장이 성막에 들어가기 전과 번제단에 나아가기 전에 손발을 씻는 곳이에요(30:18-21).",
     "caution": "",
     "refs": [
       "출애굽기 38:8",
@@ -6518,6 +6556,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": [
       13,
       28
+    ],
+    "sourceLinks": [
+      {
+        "label": "Mirror - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Mirror"
+      }
     ]
   }]);
 
@@ -7018,7 +7062,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "세겜에서 하나님이 처음으로 이 땅을 '네 자손에게' 주겠다고 약속하세요. 아브람은 예배로 응답해요. 약속이 먼저이고, 제단은 그 뒤를 따라요.",
-    "detail": "세겜은 가나안 한복판에 있어요. 훗날 야곱이 이곳 땅을 샀고(33:19), 여호수아가 이곳에서 언약을 새롭게 했어요(수 24장). 이 제단은 약속받은 땅에서 여호와께 드린 첫 예배의 표지예요.",
+    "detail": "세겜은 가나안 땅 중부에 있는 곳으로 알려져 있어요. 훗날 야곱이 이곳 땅을 샀고(33:19), 여호수아가 이곳에서 언약을 새롭게 했어요(수 24장). 이 제단은 약속받은 땅에서 여호와께 드린 첫 예배의 표지예요.",
     "caution": "",
     "refs": [
       "창세기 12:5-7",
@@ -7246,7 +7290,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "벧엘 꿈의 '사닥다리'는 땅과 하늘을 잇는 통로예요. 도망 중인 야곱에게 하나님이 먼저 길을 열어 주세요.",
-    "detail": "'사닥다리'(술람)는 계단처럼 생긴 구조였다고 보는 견해가 많아요. 메소포타미아의 계단식 신전 탑(지구라트)을 떠올리며 읽기도 해요. 요한복음 1:51에서 예수님은 천사들이 인자 위에 오르내릴 것이라고 하시며, 자신이 이 사닥다리의 성취임을 밝히세요.",
+    "detail": "'사닥다리'(술람)는 계단처럼 생긴 구조였다고 보는 견해가 있어요. 고대 메소포타미아의 계단식 신전 탑(지구라트)과 견주어 읽기도 해요. 다만 이것은 해석이에요. 요한복음 1:51에서 예수님은 천사들이 인자 위에 오르내릴 것이라고 하시며, 자신이 이 사닥다리의 성취임을 밝히세요.",
     "caution": "",
     "refs": [
       "창세기 28:10-15",
@@ -7257,6 +7301,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "개혁주의는 그리스도를 하늘과 땅을 잇는 유일한 중보자로 읽어요(딤전 2:5).",
     "wcf": [
       8
+    ],
+    "sourceLinks": [
+      {
+        "label": "Ziggurat (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Ziggurat"
+      }
     ]
   },
   {
@@ -7339,7 +7389,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "'모세'는 '건져냈다'는 뜻으로 풀이되는 이름이에요. 모세는 궁에 들어간 뒤에도 히브리 사람으로 자라요.",
-    "detail": "아이에게 젖을 먹이는 기간을 생각하면, 모세는 어린 나이에 공주에게 갔을 거라고 보는 견해가 많아요. 사도행전 7:22는 그가 애굽 사람의 모든 지혜를 배웠다고 해요. 이름은 히브리어 '마샤(건져내다)'와 소리가 닮았고, 애굽 말의 '아들'과 이어진다고 보는 견해도 있어요.",
+    "detail": "아이에게 젖을 먹이는 기간을 생각하면, 모세는 어린 나이에 공주에게 갔을 거라고 보는 견해가 많아요. 사도행전 7:22는 그가 애굽 사람의 모든 지혜를 배웠다고 해요. 이름은 히브리어 '마샤(건져내다)'와 소리가 닮았고, 애굽 말의 '아들'(msy)과 이어진다고 보는 견해도 있어요.",
     "caution": "이름의 뜻은 히브리 말 풀이와 애굽 말 풀이가 함께 논의돼요. 본문은 '건져냈다'는 뜻으로 풀어요.",
     "refs": [
       "출애굽기 2:5-10",
@@ -7347,7 +7397,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Moses (영문 위키백과)",
+        "url": "https://en.wikipedia.org/wiki/Moses"
+      }
+    ]
   },
   {
     "id": "context-exo-3-5",
@@ -7538,7 +7594,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "sourceLinks": [
       {
-        "label": "칼뱅, 출애굽기 6:2–3 주석",
+        "label": "칼뱅 율법 주해 소개 (CCEL)",
         "url": "https://ccel.org/ccel/calvin/calcom03.html"
       }
     ]
@@ -7633,6 +7689,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "구원 사건이 시간의 질서를 새로 세우는 것은, 새로운 시작을 미리 보여 주는 그림이에요. 개혁주의는 유월절이 그리스도께서 죄를 대신 치르신 일(고전 5:7)을 미리 보여 준다고 읽어요.",
     "wcf": [
       7
+    ],
+    "sourceLinks": [
+      {
+        "label": "Nisan (영문 위키백과)",
+        "url": "https://en.wikipedia.org/wiki/Nisan"
+      }
     ]
   },
   {
@@ -7720,7 +7782,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "자녀의 질문은 부모가 이 예식의 뜻을 설명하게 하는 신앙 교육의 기회예요.",
-    "detail": "'이 예식이 무슨 뜻이냐'는 질문은 13:14, 신명기 6:20에도 비슷하게 나와요. 훗날 유월절 식사에서 네 부류의 자녀가 질문하는 전통으로 발전했어요. 대답은 규례의 이유(27절)를 사건과 연결해요.",
+    "detail": "'이 예식이 무슨 뜻이냐'는 질문은 13:14, 신명기 6:20에도 비슷하게 나와요. 대답은 규례의 이유(27절)를 사건과 연결해요.",
     "caution": "",
     "refs": [
       "출애굽기 12:25-28",
@@ -7779,7 +7841,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "하나님이 지름길 대신 먼 길을 택하신 것은 싸울 준비가 안 된 백성을 지키시는 인도예요.",
-    "detail": "'블레셋 땅의 길'은 해안을 따라 가사로 이어지는 군사 도로로, 걸어서 며칠이면 갈 수 있었다고 알려져 있어요. 그 길에는 요새와 군대가 있었어요. '블레셋'이라는 이름이 당시 해안 세력을 가리키는지, 후대 이름이 반영된 것인지는 논의돼요.",
+    "detail": "'블레셋 땅의 길'은 해안 평야를 따라 가사로 이어지는 길이에요. 이 길은 '비아 마리스'라 불리는 교역로로 알려져 있어요. '블레셋'이라는 이름이 당시 해안 세력을 가리키는지, 후대 이름이 반영된 것인지는 논의돼요.",
     "caution": "",
     "refs": [
       "출애굽기 13:17-18",
@@ -7789,6 +7851,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "하나님은 백성의 약함을 아시고 길을 돌려 인도하세요(WCF 5). 가까운 길이 곧 하나님의 길은 아니에요.",
     "wcf": [
       5
+    ],
+    "sourceLinks": [
+      {
+        "label": "Via Maris (영문 위키백과)",
+        "url": "https://en.wikipedia.org/wiki/Via_Maris"
+      }
     ]
   },
   {
@@ -7868,7 +7936,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "'만나'라는 이름은 백성이 '이것이 무엇이냐(만 후)' 하고 물은 질문에서 나왔어요.",
-    "detail": "알지 못한 음식을 모세가 '여호와께서 주신 양식'이라고 풀이해요. 31절에서 그 이름이 굳어지고, 칠십인역도 이를 '만나'로 적어요.",
+    "detail": "알지 못한 음식을 모세가 '여호와께서 주신 양식'이라고 풀이해요. 31절에서 그 이름이 굳어져요.",
     "caution": "",
     "refs": [
       "출애굽기 16:14-18",
@@ -7878,6 +7946,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "만나는 하늘 양식으로, 요 6:31-35에서 예수님이 자신을 참된 떡이라 하신 말씀과 이어져요.",
     "wcf": [
       8
+    ],
+    "sourceLinks": [
+      {
+        "label": "Manna (영문 위키백과)",
+        "url": "https://en.wikipedia.org/wiki/Manna"
+      }
     ]
   },
   {
@@ -8242,7 +8316,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
       ],
       "category": "본문 문맥",
       "lens": "",
-      "wcf": []
+      "wcf": [],
+      "sourceLinks": [
+        {
+          "label": "Shekel - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Shekel"
+        }
+      ]
     },
   {
     "id": "context-exo-31-13",
@@ -8293,7 +8373,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
         ]
       }
     ],
-    "summary": "금송아지는 애굽에서 배운 주조 기술로 만든 형상이며, 백성은 이것을 '너희를 인도해 낸 신'이라 불러요.",
+    "summary": "금송아지는 백성이 모은 금으로 만든 형상이며, 백성은 이것을 '너희를 인도해 낸 신'이라 불러요.",
     "detail": "백성은 새 신을 구한 것이 아니라 여호와를 형상으로 만들어 섬기려 했어요(5절 '여호와의 절일'). 이것은 제2계명(20:4)을 어기는 일이에요. 훗날 여로보암이 벧엘과 단에 세운 금송아지(왕상 12:28)가 이 사건을 되풀이해요.",
     "caution": "",
     "refs": [
@@ -8522,7 +8602,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Bride price (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Bride_price"
+      }
+    ]
   },
   {
     "id": "context-gen-32-10",
@@ -9058,8 +9144,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "십계명은 '내가 너를 구원했다'는 선언으로 시작해요. 순종은 구원의 조건이 아니라 구원의 열매로 요구돼요.",
-    "detail": "'종 되었던 집'은 13:3과 같은 말이에요. 후기 청동기 종주 조약은 서문에서 종주를 밝히고 역사적 은혜를 먼저 서술해요. 이 구조를 십계명 서두와 견주는 연구가 있어요.",
-    "caution": "십계명을 종주 조약 형식으로 읽는 견해(멘덴홀, 키친)는 널리 인용되지만, 형식이 정확히 일치하는지는 학자 사이에 논쟁이 있어요.",
+    "detail": "'종 되었던 집'은 13:3과 같은 말이에요. 고대 근동의 종주 조약은 서문에서 종주를 밝히고 역사적 은혜를 먼저 서술해요. 이 구조를 십계명 서두와 견주는 연구가 있어요.",
+    "caution": "십계명을 고대 조약 형식으로 읽는 견해가 있지만, 형식이 정확히 일치하는지는 학자 사이에 논쟁이 있어요.",
     "refs": [
       "출애굽기 20:1-3",
       "출애굽기 13:3"
@@ -9069,6 +9155,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": [
       7,
       19
+    ],
+    "sourceLinks": [
+      {
+        "label": "Ten Commandments (영문 위키백과)",
+        "url": "https://en.wikipedia.org/wiki/Ten_Commandments"
+      }
     ]
   },
   {
@@ -9150,7 +9242,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "겉옷은 가난한 이의 밤 이불이라 해 지기 전에 돌려줘야 해요.",
-    "detail": "팔레스타인은 일교차가 커서 해가 진 뒤에는 이불 없이 자기 어려워요. 신 24:12-13도 같은 규정이에요. 아모스 2:8은 전당 잡은 옷 위에 누워 자는 지도층을 비판해요.",
+    "detail": "겉옷은 밤에 덮고 자는 이불 역할을 했어요. 신명기 24:12-13도 같은 규정이에요. 아모스 2:8은 전당 잡은 옷 위에 누워 자는 지도층을 비판해요.",
     "caution": "",
     "refs": [
       "출애굽기 22:25-27",
@@ -9311,7 +9403,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Curse of Ham (English)",
+        "url": "https://en.wikipedia.org/wiki/Curse_of_Ham"
+      }
+    ]
   },
   {
     "id": "context-gen-15-2",
@@ -9332,7 +9430,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "아브람은 약속을 믿으면서도 질문을 해요. 자식이 없으니 다메섹 사람 엘리에셀이 상속자가 된다는 현실을 말해요.",
-    "detail": "고대 근동에는 자식이 없을 때 종을 양자로 세워 상속자로 삼는 관습이 있었다고 알려져 있어요. 다만 구체적인 기록과 이 장면을 연결하는 것은 학자마다 논란이 있어요. 아브람은 이 현실적인 대안을 이미 생각하고 있었어요.",
+    "detail": "본문에서 아브람은 자식이 없어 집의 종 엘리에셀이 상속자가 된다고 말해요. 이 현실적인 대안을 아브람이 이미 생각하고 있었던 것으로 읽혀요.",
     "caution": "엘리에셀을 24장의 종과 같은 사람이라고 단정할 근거는 없어요.",
     "refs": [
       "창세기 15:1-4",
@@ -9396,7 +9494,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
         ]
       }
     ],
-    "summary": "롯의 제안은 손님을 보호하는 것을 절대 의무로 여긴 고대 근동의 윤리를 반영해요. 하지만 딸들을 내놓는 것은 옳지 않은 어리석은 판단이에요.",
+    "summary": "롯의 제안은 손님을 보호하는 것을 중히 여긴 당시 풍습을 반영하는 것으로 읽혀요. 하지만 딸들을 내놓는 것은 옳지 않은 어리석은 판단이에요.",
     "detail": "사사기 19:24에서 기브아의 노인도 비슷한 제안을 해요. 성경은 이 일을 칭찬하지 않고, 소돔에 오래 살며 생긴 롯의 도덕적 혼란을 드러내는 서술로 남겨요. 천사들이 롯을 구하고 문을 닫아요(10절).",
     "caution": "",
     "refs": [
@@ -9427,7 +9525,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "'아들', '독자', '사랑하는 이삭'이라는 세 겹의 호칭은, 스물다섯 해를 기다려 얻은 언약의 아들을 짚어요. 아브라함의 순종을 가장 어렵게 시험하는 말이에요.",
-    "detail": "모리아 땅은 훗날 솔로몬이 성전을 지은 모리아 산(역대하 3:1)과 이어진다고 보아요. 브엘세바에서 예루살렘 일대까지는 걸어서 사흘쯤 걸리는 거리라는 견해가 있어요. 번제는 짐승 전체를 태우는 제사예요. 고대 근동에는 사람을 제물로 바치는 풍습이 있었지만, 율법은 이를 금지해요(레 18:21).",
+    "detail": "모리아 땅은 훗날 솔로몬이 성전을 지은 모리아 산(역대하 3:1)과 이어진다고 보아요. '셋째 날'에 그 곳이 멀리 보였다는 말씀(창 22:4)은 이동이 여러 날 걸린 여정이었음을 보여 줘요. 번제는 짐승 전체를 태우는 제사예요. 가나안 주변 민족에게는 아이를 제물로 바치는 풍습이 있었지만, 율법은 이를 금지해요(레 18:21).",
     "caution": "이 명령은 하나님이 사람을 제물로 바치는 일을 승인하신 것이 아니에요. 12절에서 멈추게 하셨어요.",
     "refs": [
       "창세기 22:1-2",
@@ -9439,6 +9537,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "개혁주의는 이삭이 결박당한 일을 그리스도의 대속(대신 죽으심)을 미리 보여 주는 그림으로 읽어요(히 11:17-19, 롬 8:32).",
     "wcf": [
       8
+    ],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Child sacrifice (English)",
+        "url": "https://en.wikipedia.org/wiki/Child_sacrifice"
+      }
     ]
   },
   {
@@ -9553,7 +9657,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "라헬이 임종 직전에 아들을 '베노니'(내 슬픔의 아들)라고 부르자, 야곱은 '베냐민'(오른손의 아들)으로 고쳐 불러요. 슬픔의 이름을 복의 이름으로 바꾸는 것이에요.",
-    "detail": "'베냐민'은 '오른손'(남쪽)의 아들이라는 뜻으로 풀어요. 라헬의 무덤은 에브랏(베들레헴) 길가에 세워져요(19-20절). 예레미야 31:15와 마태복음 2:18은 이 장면을 라마에서 울던 통곡과 연결해요.",
+    "detail": "'베냐민'은 '오른손'(남쪽)의 아들이라는 뜻으로 풀어요. 성경은 라헬의 무덤을 에브랏(베들레헴) 길가에 두어요(19-20절). 지금 베들레헴 북쪽 입구의 무덤이 그 자리로 전해지지만, 진짜 자리인지는 학자들 사이에서 의견이 갈려요. 예레미야 31:15와 마태복음 2:18은 이 장면을 라마에서 울던 통곡과 연결해요.",
     "caution": "",
     "refs": [
       "창세기 35:16-20",
@@ -9562,7 +9666,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Tomb of Rachel (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Tomb_of_Rachel"
+      }
+    ]
   },
   {
     "id": "context-gen-38-8",
@@ -9583,7 +9693,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "'남편의 아우 된 본분'은 형이 자식 없이 죽으면, 동생이 형수와 결혼해 형의 이름을 잇게 하는 풍습이에요. 훗날 신명기 25:5-10에 율법으로 적혀요.",
-    "detail": "고대 근동의 다른 법에도 비슷한 관습이 있었다고 소개돼요. 이 책임은 죽은 형의 집안과 상속을 지키려는 것이어서, 첫아들을 죽은 형의 아들로 세웠어요.",
+    "detail": "이 관습은 고대 사회에서 중요했어요. 목적은 자식 없이 죽은 남자의 집안 대를 잇고, 과부와 그 자식을 돌볼 남자를 두며, 땅을 집안 안에 지키는 것이었어요. 그래서 첫아들을 죽은 형의 아들로 세웠어요.",
     "caution": "",
     "refs": [
       "창세기 38:6-10",
@@ -9591,7 +9701,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Levirate marriage (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Levirate_marriage"
+      }
+    ]
   },
   {
     "id": "context-gen-48-5",
@@ -10142,7 +10258,17 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Heliopolis, Egypt (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Heliopolis,_Egypt"
+      },
+      {
+        "label": "Potiphera (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Potiphera"
+      }
+    ]
   },
   {
     "id": "context-exo-7-12",
@@ -10207,7 +10333,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Tefillin (영문 위키백과)",
+        "url": "https://en.wikipedia.org/wiki/Tefillin"
+      }
+    ]
   },
   {
     "id": "context-exo-16-35",
@@ -10665,13 +10797,19 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "summary": "'요셉을 알지 못했다'는 말은 요셉의 공로를 인정하지 않기로 했다는 뜻이에요.",
     "detail": "'알다'(야다)는 정보만 아는 게 아니라 관계 속에서 인정한다는 뜻이에요. 요셉은 큰 흉년에서 애굽을 살린 사람이에요(창 41장). 그래서 몰랐다기보다 모른 척했다고 읽는 게 자연스러워요. 이 새 왕이 누구인지는 출애굽을 언제로 보느냐에 따라 의견이 달라요.",
-    "caution": "출애굽 연대를 언제로 보느냐(기원전 15세기 또는 13세기)에 따라 이 왕이 누구인지 견해가 갈려요.",
+    "caution": "출애굽을 13세기 무렵으로 보는 학자가 많아요. 그러면 이 왕은 람세스 2세 무렵이 후보가 돼요. 그래도 확실하지 않아요.",
     "refs": [
       "출애굽기 1:8-10"
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Historicity of the Exodus (영문 위키백과)",
+        "url": "https://en.wikipedia.org/wiki/Historicity_of_the_Exodus"
+      }
+    ]
   },
   {
     "id": "context-exo-2-3",
@@ -10692,7 +10830,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "모세를 담은 '상자'는 노아의 방주와 같은 말 '테바'를 써요.",
-    "detail": "'테바'라는 말은 창세기 6-9장의 방주와 이 이야기에서만 쓰여요. '갈'은 나일 강가에 자라는 파피루스 풀이에요. 역청과 나무 진은 물이 새지 않게 바른 것이에요. 물의 심판 속에서 생명을 지키신 하나님의 방법이 모세의 이야기에 다시 겹쳐 보여요.",
+    "detail": "'테바'라는 말은 창세기 6-9장의 방주와 이 이야기에서만 쓰여요. '갈'은 나일 강 삼각주에 많이 자랐던 파피루스 풀로 볼 수 있어요. 역청과 나무 진은 물이 새지 않게 바른 것이에요. 물의 심판 속에서 생명을 지키신 하나님의 방법이 모세의 이야기에 다시 겹쳐 보여요.",
     "caution": "방주와 상자는 크기도 쓰임도 달라요. 말이 같다는 점을 하나님의 구원 이야기가 울리는 것으로 읽되, 같은 사건으로 보지는 않아요.",
     "refs": [
       "출애굽기 2:1-5",
@@ -10702,6 +10840,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "물을 지나 구원받는 모습은 홍해(14장)와 세례(고전 10:1-2)로 이어지는 미리 보여 준 그림으로 읽어 왔어요.",
     "wcf": [
       27
+    ],
+    "sourceLinks": [
+      {
+        "label": "Papyrus (영문 위키백과)",
+        "url": "https://en.wikipedia.org/wiki/Papyrus"
+      }
     ]
   },
   {
@@ -10781,7 +10925,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "벽돌에 섞을 짚은 주지 않으면서 벽돌 수는 그대로 채우라고 한 것은, 지킬 수 없는 요구예요.",
-    "detail": "애굽에서는 나일 진흙에 썬 짚이나 왕겨를 섞어 벽돌을 만들었어요. 짚은 벽돌을 단단하게 해 줘요. 이스라엘은 그루터기를 거두러 온 땅을 흩어져 다녀야 했고(12절), 벽돌 수는 그대로였어요(18-19절).",
+    "detail": "애굽에서는 나일 진흙에 썬 짚 같은 재료를 섞어 벽돌을 만들었어요. 짚은 벽돌을 단단하게 해 줘요. 이스라엘은 그루터기를 거두러 온 땅을 흩어져 다녀야 했고(12절), 벽돌 수는 그대로였어요(18-19절).",
     "caution": "",
     "refs": [
       "출애굽기 5:6-9",
@@ -10789,7 +10933,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Mudbrick (영문 위키백과)",
+        "url": "https://en.wikipedia.org/wiki/Mudbrick"
+      }
+    ]
   },
   {
     "id": "context-exo-6-7",
@@ -10850,7 +11000,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Land of Goshen (영문 위키백과)",
+        "url": "https://en.wikipedia.org/wiki/Land_of_Goshen"
+      }
+    ]
   },
   {
     "id": "context-exo-9-12",
@@ -10934,7 +11090,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "많이 거둔 이도 남지 않고 적게 거둔 이도 모자라지 않은 것은 하나님의 공급이 공평하다는 뜻이에요.",
-    "detail": "1오멜(약 2.2리터)씩이라는 정량(16절)이면 충분했어요. 바울은 고린도후서 8:15에서 이 구절을 인용해 교회가 서로의 필요를 나누는 원칙으로 써요.",
+    "detail": "1오멜씩이라는 정량(16절)이면 충분했어요. 1오멜은 약 2.3리터로 계산하는 견해가 있어요. 바울은 고린도후서 8:15에서 이 구절을 인용해 교회가 서로의 필요를 나누는 원칙으로 써요.",
     "caution": "",
     "refs": [
       "출애굽기 16:16-18",
@@ -10942,7 +11098,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Omer (unit) (영문 위키백과)",
+        "url": "https://en.wikipedia.org/wiki/Omer_(unit)"
+      }
+    ]
   },
   {
     "id": "context-exo-20-7",
@@ -11164,7 +11326,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "에덴에서 흘러나온 강이 네 줄기로 갈라져요. 그 가운데 티그리스(힛데겔)와 유프라테스가 나와서, 에덴이 메소포타미아와 이어진 곳으로 그려져요.",
-    "detail": "'힛데겔'은 티그리스의 히브리어 이름이에요. 이 강이 앗수르 동쪽으로 흐른다는 말씀은, 아르메니아 고원에서 남쪽으로 흐르는 지금의 티그리스와 지도상 바로 맞지 않아요. 비손과 기혼의 위치는 학자마다 달라요. 에덴에서 시작된 강이 땅을 적시는 그림은 에스겔 47장과 요한계시록 22:1-2의 생명의 강으로 이어져요.",
+    "detail": "'힛데겔'은 티그리스의 히브리어 이름이에요. 이 강이 앗수르 동쪽으로 흐른다는 말씀은, 아르메니아 고원에서 남쪽으로 흐르는 지금의 티그리스와 지도상 딱 맞지 않는다고 보는 견해가 있어요. 비손과 기혼의 위치는 학자마다 달라요. 에덴에서 시작된 강이 땅을 적시는 그림은 에스겔 47장과 요한계시록 22:1-2의 생명의 강으로 이어져요.",
     "caution": "에덴의 정확한 위치는 지금의 지도로 알 수 없어요.",
     "refs": [
       "창세기 2:10-14",
@@ -12065,7 +12227,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "아브람은 사래가 이복누이라는 사실(20:12)을 이용해 목숨을 지키려 해요. 약속을 받은 사람도 두려움 앞에서 흔들려요.",
-    "detail": "고대 근동에서는 아름다운 외국 여인이 왕궁에 들어갈 수 있었고, 그때 남편은 제거될 위험이 있었어요. 같은 패턴이 20장(그랄 왕 아비멜렉)과 26장(이삭)에서 되풀이돼요. 하나님은 아브람의 실수를 덮고 사래를 지키세요(17절).",
+    "detail": "본문 상황에서는 사래가 왕궁에 들어가면 남편이 위험해질 수 있어요. 같은 패턴이 20장(그랄 왕 아비멜렉)과 26장(이삭)에서 되풀이돼요. 하나님은 아브람의 실수를 덮고 사래를 지키세요(17절).",
     "caution": "사래의 안전을 자기 안전과 맞바꾼 점이 아브람의 잘못이에요.",
     "refs": [
       "창세기 12:11-17",
@@ -12097,7 +12259,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "재산이 늘어난 복이 갈등의 씨가 돼요. 같은 땅에 가나안 사람과 브리스 사람이 함께 살아서 목초지가 좁았던 것이 배경이에요.",
-    "detail": "'브리스 사람'은 가나안 땅의 토착 민족으로, 가나안 사람과 함께 나와요(15:20, 34:30). 그들이 이미 땅을 차지하고 있어서, 롯과 아브람이 함께 풀을 구하기가 어려웠어요.",
+    "detail": "'브리스 사람'은 가나안 땅에 살던 민족으로, 가나안 사람과 함께 나와요(15:20, 34:30). 그들이 이미 땅을 차지하고 있어서, 롯과 아브람이 함께 풀을 구하기가 어려웠어요.",
     "caution": "",
     "refs": [
       "창세기 13:5-9",
@@ -12126,7 +12288,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "롯은 물이 넉넉한 요단 지역을 눈으로 보고 골라요. 고른 기준이 믿음이 아니라 눈에 보이는 풍요예요.",
-    "detail": "'여호와의 동산 같고 애굽 땅 같았다'는 비유는, 에덴(2장)과 나일강 유역의 비옥함에 빗댄 말이에요. 서술자는 이것이 소돔이 망하기 전의 모습이라고 따로 밝혀요. 소알은 사해 남쪽 부근으로 보는 견해가 많아요.",
+    "detail": "'여호와의 동산 같고 애굽 땅 같았다'는 비유는, 에덴(2장)과 나일강 유역의 비옥함에 빗댄 말이에요. 서술자는 이것이 소돔이 망하기 전의 모습이라고 따로 밝혀요. 소알은 사해 동남쪽 해안 부근에 있었을 것으로 보는 견해가 있어요.",
     "caution": "",
     "refs": [
       "창세기 13:10-13",
@@ -12134,7 +12296,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Dead Sea (English)",
+        "url": "https://en.wikipedia.org/wiki/Dead_Sea"
+      }
+    ]
   },
   {
     "id": "context-gen-14-20",
@@ -12154,7 +12322,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
         ]
       }
     ],
-    "summary": "아브람이 십분의 일을 드린 것은, 전쟁의 승리가 하나님의 손에서 왔다는 고백이에요. 모세 율법보다 수백 년 앞서요.",
+    "summary": "아브람이 십분의 일을 드린 것은, 전쟁의 승리가 하나님의 손에서 왔다는 고백이에요. 모세 율법보다 앞서요.",
     "detail": "이 십일조는 레위기 27:30의 율법과 달리, 율법 이전에 약속의 후손도 없던 때 드려졌어요. 히브리서 7:4-10은 레위도 아브라함 안에서 멜기세덱에게 드린 셈이라며, 멜기세덱의 제사장직이 더 높다고 설명해요. 아브람은 소돔 왕의 몫(21-24절)은 거절해요.",
     "caution": "",
     "refs": [
@@ -12252,8 +12420,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
         ]
       }
     ],
-    "summary": "약속이 늦어지자 사래는 하나님의 방법 대신 사회 관습으로 풀려고 해요. 여종을 통해 아이를 얻는 일은 당시 흔했어요.",
-    "detail": "함무라비 법전 144~147조는 여사제(나디툼)와의 혼인과 여종이 낳은 자녀의 지위를 다루는 조항으로 알려져 있어요. '자녀를 얻을까'의 '얻다'는 '세워지다'와 뿌리가 같은 말이라서, 집안을 세우려는 마음이 담겨 있어요.",
+    "summary": "약속이 늦어지자 사래는 하나님의 방법 대신 자기 방법으로 풀려고 해요. 여종을 통해 자녀를 얻으려는 선택이에요.",
+    "detail": "'자녀를 얻을까'의 '얻다'는 '세워지다'와 뿌리가 같은 말이라서, 집안을 세우려는 마음이 담겨 있어요.",
     "caution": "하나님이 명하신 방법이 아니라 사래의 판단이에요.",
     "refs": [
       "창세기 16:1-4",
@@ -12350,7 +12518,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "도망자 하갈을 먼저 찾아오신 분이 여호와의 사자예요. 하나님은 약속의 가정 밖에 있는 이방 여종도 찾아가세요.",
-    "detail": "'술 길'은 애굽으로 가는 길목이에요. 13절에서는 이 사자가 곧 여호와 자신으로 불려요. 사사기 6:11-14 등 구약에 같은 형식이 여러 번 나와요.",
+    "detail": "'술 길'은 애굽 쪽으로 가는 길목이라고 보는 견해가 있어요. 13절에서는 이 사자가 곧 여호와 자신으로 불려요. 사사기 6:11-14 등 구약에 같은 형식이 여러 번 나와요.",
     "caution": "",
     "refs": [
       "창세기 16:7-13",
@@ -12441,7 +12609,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "'브엘라해로이'는 '나를 보시는 살아 계신 이의 샘'이라는 뜻이에요. 이 샘은 훗날 이삭이 사는 곳으로 다시 나와요(24:62, 25:11).",
-    "detail": "가데스는 시내 반도 북부의 오아시스예요. 이스라엘이 훗날 오래 머문 가데스 바네아와 이어진다고 보는 견해가 있어요. 베렛의 위치는 알려져 있지 않아요. 하갈이 만난 일이 이 샘의 이름으로 기억돼요.",
+    "detail": "가데스는 시내 반도 북부의 오아시스예요. 이스라엘이 훗날 오래 머문 가데스 바네아와 이어진다고 보는 견해가 있어요. 베렛의 위치는 본문만으로는 분명하지 않아요. 하갈이 만난 일이 이 샘의 이름으로 기억돼요.",
     "caution": "",
     "refs": [
       "창세기 16:13-14",
@@ -12450,7 +12618,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Kadesh-barnea (English)",
+        "url": "https://en.wikipedia.org/wiki/Kadesh-barnea"
+      }
+    ]
   },
   {
     "id": "context-gen-17-1",
@@ -12585,6 +12759,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": [
       32,
       33
+    ],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Canaan (English)",
+        "url": "https://en.wikipedia.org/wiki/Canaan"
+      }
     ]
   },
   {
@@ -12792,7 +12972,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "아브라함은 세 나그네를 달려가 맞이해요. 훗날 이들은 여호와와 두 천사로 드러나요(18:22, 19:1).",
-    "detail": "고대 근동에서는 나그네에게 발을 씻을 물과 쉴 그늘과 음식을 내주는 것이 의무였어요(4-5절). 히브리서 13:2는 이 장면을 인용해, 나그네를 대접하다 천사를 대접한 사람들이 있다고 말해요.",
+    "detail": "성경 세계에서는 나그네에게 발을 씻을 물과 쉴 그늘과 음식을 내주는 것이 중요한 도리였어요(4-5절). 히브리서 13:2는 이 장면을 인용해, 나그네를 대접하다 천사를 대접한 사람들이 있다고 말해요.",
     "caution": "세 사람의 정체는 해석이 갈려요.",
     "refs": [
       "창세기 18:1-2",
@@ -12822,7 +13002,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "아브라함이 서둘러 고운 가루 '세 스아'로 떡을 만들라고 한 것은 평범한 식사가 아니라, 큰 잔치 수준의 대접이에요.",
-    "detail": "한 스아는 학자마다 추정이 달라서 약 7~14리터 정도로 봐요. 세 스아는 그래도 20리터를 넘는 많은 가루예요. 훨씬 많은 사람이 먹을 양이라서 아브라함의 극진한 환대가 드러나요.",
+    "detail": "한 스아는 학자마다 추정이 조금씩 달라요. 성경의 스아는 보통 약 7.5리터 안팎으로 봐요. 세 스아는 그래도 20리터를 넘는 많은 가루예요. 훨씬 많은 사람이 먹을 양이라서 아브라함의 극진한 환대가 드러나요.",
     "caution": "",
     "refs": [
       "창세기 18:6-8",
@@ -12858,7 +13038,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "아브라함은 손님 곁에 서서 시중을 들어요. 말로만이 아니라 몸으로 하는 환대예요.",
-    "detail": "'엉긴 젖'은 요구르트나 응유 같은 유제품으로 봐요. 송아지 고기는 평소 쉽게 내놓지 않는 귀한 음식이에요. 주인이 손님 곁에 서는 것은 존경을 표하는 관습이에요.",
+    "detail": "'엉긴 젖'은 요구르트나 응유 같은 유제품으로 봐요. 송아지 고기는 귀한 음식으로 읽혀요. 주인이 손님 곁에 서서 시중드는 모습은 존경을 표하는 것으로 읽혀요.",
     "caution": "",
     "refs": [
       "창세기 18:8",
@@ -13046,7 +13226,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "소돔의 성문은 재판과 장로들이 모이는 곳이었어요. 롯이 거기 앉아 있었다는 것은 소돔 사회 안에서 어느 정도 자리를 얻었다는 뜻이에요.",
-    "detail": "고대 성문은 도시의 법정이자 시장이었어요(룻 4:1, 잠 31:23). 두 천사는 18장의 세 손님 가운데 여호와를 뺀 둘이에요. 롯이 땅에 엎드려 맞이한 몸짓은 아브라함의 환대(18:2)와 같아요.",
+    "detail": "고대 성문은 거래와 공적인 일이 이뤄지고, 법률 문서나 세금표를 붙여 두던 곳이었어요. 룻기 4:1에서 장로들이 성문에 앉고, 잠언 31:23도 성문을 공적인 자리로 보여 줘요. 두 천사는 18장의 세 손님 가운데 여호와를 뺀 둘이에요. 롯이 땅에 엎드려 맞이한 몸짓은 아브라함의 환대(18:2)와 같아요.",
     "caution": "",
     "refs": [
       "창세기 19:1-3",
@@ -13055,7 +13235,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: City gate (English)",
+        "url": "https://en.wikipedia.org/wiki/City_gate"
+      }
+    ]
   },
   {
     "id": "context-gen-19-3",
@@ -13264,7 +13450,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "롯의 요청으로 작은 성읍이 보호받고, 그 이름이 '소알'(작음)이 돼요. 하나님은 심판 가운데서도 롯의 요청을 들어주세요.",
-    "detail": "하나님은 롯이 소알에 이를 때까지 심판을 미루세요. 소알은 사해 남쪽 가까이에 있었을 것으로 보는 견해가 많아요. 신명기 34:3은 소알을 여리고 평지의 끝으로 말해요.",
+    "detail": "하나님은 롯이 소알에 이를 때까지 심판을 미루세요. 소알은 사해 남쪽 가까이에 있었던 곳으로 보는 견해가 있어요. 6세기 마다바 지도에도 '소아라(Zoara)'라는 이름이 사해 남쪽 가까이에 나와요. 신명기 34:3은 소알을 여리고 평지의 끝으로 말해요.",
     "caution": "",
     "refs": [
       "창세기 19:20-22",
@@ -13273,7 +13459,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Ghor es-Safi (English)",
+        "url": "https://en.wikipedia.org/wiki/Ghor_es-Safi"
+      }
+    ]
   },
   {
     "id": "context-gen-19-24",
@@ -13294,7 +13486,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "'하늘 곧 여호와께로부터'는 심판이 어디서 왔는지를 거듭 밝혀요. 유황과 불이 소돔과 고모라에 비처럼 쏟아져요.",
-    "detail": "소돔과 고모라는 사해 남쪽 평지에 있었을 것으로 보는 견해가 많아요. 그 일대에는 역청 구덩이(14:10)가 있었어요. 신명기 29:23은 이 땅이 유황과 소금으로 불탄 곳이 되었다고 말해요. 베드로후서 2:6과 유다서 7절은 이 사건을 경건하지 않은 자들에 대한 심판의 본보기로 들어요.",
+    "detail": "소돔과 고모라는 사해 남쪽이나 동남쪽 해안 평지에 있었을 것으로 보는 견해가 있어요. 그 일대에는 역청 구덩이(14:10)가 있었어요. 신명기 29:23은 이 땅이 유황과 소금으로 불탄 곳이 되었다고 말해요. 베드로후서 2:6과 유다서 7절은 이 사건을 경건하지 않은 자들에 대한 심판의 본보기로 들어요.",
     "caution": "",
     "refs": [
       "창세기 19:24-25",
@@ -13305,6 +13497,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "개혁주의는 이 사건을 마지막 심판을 미리 보여 주는 일로 읽어요. 하나님의 거룩과 공의, 그리고 의인을 건지시는 은혜가 함께 드러나요.",
     "wcf": [
       33
+    ],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Dead Sea (English)",
+        "url": "https://en.wikipedia.org/wiki/Dead_Sea"
+      }
     ]
   },
   {
@@ -13391,7 +13589,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "'모압'은 '아버지로부터'처럼 들리는 이름이에요. 이 기원 기사는 훗날 이스라엘과 모압의 관계를 이해하는 배경이에요.",
-    "detail": "모압은 사해 동쪽 고원에 나라를 세웠어요. 주전 9세기경 모압 왕 메사의 비문(메사 비문)이 모압과 이스라엘의 관계를 증언해요. 룻이 모압 여인이었고(룻 1:4), 다윗과 그리스도의 족보에 들어와요(마 1:5).",
+    "detail": "모압은 사해 동쪽 땅에 나라를 세웠어요. 주전 9세기경 모압 왕 메사의 비문(메사 비문)이 모압과 이스라엘의 관계를 증언해요. 룻이 모압 여인이었고(룻 1:4), 다윗과 그리스도의 족보에 들어와요(마 1:5).",
     "caution": "민족의 기원 기사를 그 민족 개인에 대한 평가로 일반화하지 않아요.",
     "refs": [
       "창세기 19:37",
@@ -13405,6 +13603,10 @@ window.ScriptureNotesData.contextualTerms.push(...[
       {
         "label": "Wikipedia: Mesha Stele (English)",
         "url": "https://en.wikipedia.org/wiki/Mesha_Stele"
+      },
+      {
+        "label": "Wikipedia: Moab (English)",
+        "url": "https://en.wikipedia.org/wiki/Moab"
       }
     ]
   },
@@ -13462,8 +13664,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
         ]
       }
     ],
-    "summary": "소돔이 멸망한 뒤 아브라함은 가나안 남서쪽 변두리의 그랄로 가요. 이삭이 태어나기(21장) 직전의 이동이에요.",
-    "detail": "그랄은 가데스와 술 사이, 네게브 서쪽 변두리 지역이에요. 오늘날 텔 하로르 부근이라고 보는 견해가 있어요. 이곳의 왕 아비멜렉은 26장에도 나와요. '아비멜렉'이 한 사람의 이름이라기보다 왕을 가리키는 칭호였다고 보는 견해도 있어요.",
+    "summary": "소돔이 멸망한 뒤 아브라함은 가나안 남쪽 지역의 그랄로 가요. 이삭이 태어나기(21장) 직전의 이동이에요.",
+    "detail": "그랄은 가데스와 술 사이, 네게브 지역에 있는 곳이에요. 오늘날 텔 하로르(또는 텔 아부 후레이라) 부근으로 보는 견해가 많아요. 이곳의 왕 아비멜렉은 26장에도 나와요. '아비멜렉'이 한 사람의 이름이라기보다 왕을 가리키는 칭호였다고 보는 견해도 있어요.",
     "caution": "",
     "refs": [
       "창세기 20:1",
@@ -13471,7 +13673,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Gerar (English)",
+        "url": "https://en.wikipedia.org/wiki/Gerar"
+      }
+    ]
   },
   {
     "id": "context-gen-20-2",
@@ -13723,7 +13931,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
           }
         ],
         "summary": "사라의 요구는 이삭이 약속의 상속자라는 믿음에서 나와요. 이스마엘이 이삭을 놀린 일(9절)이 직접적인 계기예요.",
-        "detail": "고대 근동의 법(함무라비 법전 등)에서는 아버지가 인정하면 여종이 낳은 아들도 상속을 받을 수 있었다고 알려져 있어요. 그래서 아브라함이 몹시 괴로워했어요(11절). 바울은 갈라디아서 4:29-30에서 이 장면을 육신으로 난 자와 성령으로 난 자의 대립으로 읽어요.",
+        "detail": "사라는 이삭이 약속의 상속자라고 여겼어요. 그래서 아브라함이 몹시 괴로워했어요(11절). 바울은 갈라디아서 4:29-30에서 이 장면을 육신으로 난 자와 성령으로 난 자의 대립으로 읽어요.",
         "caution": "",
         "refs": [
           "창세기 21:10-13",
@@ -13787,7 +13995,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
         }
       ],
       "summary": "가죽부대의 물이 떨어진 브엘세바 광야에서, 하갈은 아이를 덤불 아래에 두고 떨어져 앉아요. 죽음 앞에서 헤어지는 절망의 자리예요.",
-      "detail": "브엘세바 광야는 네게브 남쪽의 메마른 땅이에요(14절). 가죽부대 하나의 물은 두 사람이 오래 버티기에 모자랐어요. 하갈이 활을 쏠 만큼 떨어져 앉은 것(16절)은, 아이가 죽는 모습을 차마 보지 못하는 어머니의 마음이에요.",
+      "detail": "브엘세바 광야는 네게브 북쪽 가장자리의 메마른 땅이에요(14절). 가죽부대 하나의 물은 두 사람이 오래 버티기에 모자랐어요. 하갈이 활을 쏠 만큼 떨어져 앉은 것(16절)은, 아이가 죽는 모습을 차마 보지 못하는 어머니의 마음이에요.",
       "caution": "",
       "refs": [
         "창세기 21:15-16",
@@ -13796,7 +14004,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
       ],
       "category": "본문 문맥",
       "lens": "",
-      "wcf": []
+      "wcf": [],
+      "sourceLinks": [
+        {
+          "label": "Wikipedia: Beersheba (English)",
+          "url": "https://en.wikipedia.org/wiki/Beersheba"
+        }
+      ]
     },
   {
     "id": "context-gen-21-19",
@@ -13847,7 +14061,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "'하나님이 그 아이와 함께 계시매'라는 말은, 언약의 아들이 아닌 이스마엘에게도 하나님이 함께하신다는 약속이에요.",
-    "detail": "같은 표현이 이삭(26:3)과 요셉(39:2)에게도 쓰여요. 바란 광야(21절)는 시내 반도 북쪽 가까이 있었다고 보는 견해가 많고, 이스마엘 자손의 활동 지역으로 알려져 있어요. '활 쏘는 자'는 16:12에서 예고한 거친 삶과 맞아요.",
+    "detail": "같은 표현이 이삭(26:3)과 요셉(39:2)에게도 쓰여요. 바란 광야(21절)가 정확히 어디인지는 분명하지 않아요. '활 쏘는 자'는 16:12에서 예고한 거친 삶과 맞아요.",
     "caution": "",
     "refs": [
       "창세기 21:20-21",
@@ -13947,7 +14161,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Beersheba (English)",
+        "url": "https://en.wikipedia.org/wiki/Beersheba"
+      }
+    ]
   },
       {
         "id": "context-gen-22-5",
@@ -14164,7 +14384,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
         }
       ],
       "summary": "사라는 백이십칠 세에 죽어요(1절). 여인의 나이가 기록된 드문 경우여서, 사라의 중요성을 보여 줘요.",
-      "detail": "헤브론은 예루살렘 남쪽 유다 산지의 도시예요. '기럇아르바'는 '아르바의 성' 또는 '네 도시'라는 뜻으로, 훗날 헤브론으로 불려요(여호수아 14:15). 훗날 다윗이 처음 왕이 된 곳이에요(사무엘하 2:4).",
+      "detail": "헤브론은 예루살렘 남쪽 약 30km 지점의 도시예요. '기럇아르바'는 '아르바의 성' 또는 '네 도시'라는 뜻으로, 훗날 헤브론으로 불려요(여호수아 14:15). 훗날 다윗이 처음 왕이 된 곳이에요(사무엘하 2:4).",
       "caution": "",
       "refs": [
         "창세기 23:2",
@@ -14174,7 +14394,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
       ],
       "category": "본문 문맥",
       "lens": "",
-      "wcf": []
+      "wcf": [],
+      "sourceLinks": [
+        {
+          "label": "Wikipedia: Hebron (English)",
+          "url": "https://en.wikipedia.org/wiki/Hebron"
+        }
+      ]
     },
   {
     "id": "context-gen-23-4",
@@ -14287,7 +14513,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "성문에서 헷 족속이 보는 앞에서 소유가 확정되었다는 것은, 증인이 있는 합법적인 거래였다는 뜻이에요.",
-    "detail": "고대 근동에서 성문은 법정 역할을 하는 곳이라서, 계약을 공개하는 장소였어요(룻기 4:1-11, 보아스의 거래). 밭의 나무까지 소유 범위를 자세히 적은 것(17절)은 당시 매매 문서의 형식과 비슷하다고 보는 학자가 있어요.",
+    "detail": "성문은 공적인 거래가 이뤄지던 자리였어요(룻기 4:1-11, 보아스의 거래). 밭의 나무까지 소유 범위를 자세히 적은 것(17절)은 당시 매매 문서의 형식과 비슷하다고 보는 학자가 있어요.",
     "caution": "",
     "refs": [
       "창세기 23:17-20",
@@ -14296,7 +14522,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: City gate (English)",
+        "url": "https://en.wikipedia.org/wiki/City_gate"
+      }
+    ]
   },
   {
     "id": "context-gen-24-2",
@@ -15526,6 +15758,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "개혁주의는 언약 가정의 신앙을 이어 가기 위한 혼인의 원칙으로 읽어요. 신자의 결혼은 주 안에서 해야 한다고 가르쳐요.",
     "wcf": [
       24
+    ],
+    "sourceLinks": [
+      {
+        "label": "Paddan Aram (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Paddan_Aram"
+      }
     ]
   },
   {
@@ -15578,7 +15816,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
             }
           ],
           "summary": "야곱은 하나님이 '이 곳'에 계신 줄 몰랐다고 말해요. 하나님이 광야의 돌밭에서도 함께 계신다는 발견이에요.",
-          "detail": "당시 사람들은 신이 특정 지역에만 매인다고 여기는 경우가 많았어요. 야곱은 하란으로 도망치는 길의 돌밭에서 하나님을 만나요. 이 깨달음이 17절의 두려움과 경외로 이어져요.",
+          "detail": "고대 근동에서는 신을 도시나 땅과 함께 섬기는 일이 흔했어요. 예를 들어 앗수르의 신 아수르는 아수르 도시의 수호신이었어요. 야곱은 하란으로 도망치는 길의 돌밭에서 하나님을 만나요. 이 깨달음이 17절의 두려움과 경외로 이어져요.",
           "caution": "",
           "refs": [
             "창세기 28:15-16",
@@ -15586,7 +15824,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
           ],
           "category": "본문 문맥",
           "lens": "",
-          "wcf": []
+          "wcf": [],
+          "sourceLinks": [
+            {
+              "label": "Ancient Semitic religion (위키백과 영문)",
+              "url": "https://en.wikipedia.org/wiki/Ancient_Semitic_religion"
+            }
+          ]
         },
   {
     "id": "context-gen-28-17",
@@ -15615,7 +15859,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Babylon (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Babylon"
+      }
+    ]
   },
   {
     "id": "context-gen-28-18",
@@ -15668,7 +15918,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "'루스'는 가나안 도시의 옛 이름이고, 야곱은 이곳을 '하나님의 집'(벧엘)이라고 바꿔 불러요.",
-    "detail": "벧엘은 예루살렘 북쪽 산지에 있어요. 사사 시대에는 언약궤가 있었고(사사기 20:26-27), 북이스라엘 왕 여로보암이 금송아지를 세운 곳이기도 해요(열왕기상 12:29). 야곱이 하나님을 만난 자리가 후대에는 우상 숭배의 자리가 돼요.",
+    "detail": "벧엘은 예루살렘 북쪽 약 18km쯤 되는 산지에 있어요. 지금은 베이틴이라는 마을이 이 자리로 여겨져요. 사사 시대에는 언약궤가 있었고(사사기 20:26-27), 북이스라엘 왕 여로보암이 금송아지를 세운 곳이기도 해요(열왕기상 12:29). 야곱이 하나님을 만난 자리가 후대에는 우상 숭배의 자리가 돼요.",
     "caution": "",
     "refs": [
       "창세기 28:19",
@@ -15677,7 +15927,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Bethel (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Bethel"
+      }
+    ]
   },
   {
     "id": "context-gen-28-21",
@@ -15981,7 +16237,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "라헬이 빌하를 통해 자녀를 얻으려는 방법은, 사래가 하갈을 쓴 방식(16:2)과 같아요. 사람의 방법으로 하나님의 약속을 이루려는 되풀이예요.",
-    "detail": "'내 무릎에 두리니'는 아이를 자기 자식으로 받아들이는 법적인 행위를 나타내요(50:23 참조). 이 방법은 가정에 경쟁과 갈등을 낳아요(30:8).",
+    "detail": "'내 무릎에 두리니'는 아이를 자기 자식처럼 받아들이는 뜻으로 읽는 해석이 있어요(50:23 참조). 이 방법은 가정에 경쟁과 갈등을 낳아요(30:8).",
     "caution": "",
     "refs": [
       "창세기 30:3-4",
@@ -16020,7 +16276,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
             ],
             "category": "본문 문맥",
             "lens": "",
-            "wcf": []
+            "wcf": [],
+            "sourceLinks": [
+              {
+                "label": "Mandrake (위키백과 영문)",
+                "url": "https://en.wikipedia.org/wiki/Mandrake"
+              }
+            ]
           },
   {
     "id": "context-gen-30-16",
@@ -16256,7 +16518,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "'강'은 유브라데 강이고, 길르앗 산은 요단 동쪽의 산지예요. 야곱의 귀환길이 약속의 땅 요단 동쪽에서 시작돼요.",
-    "detail": "하란에서 길르앗까지는 수백 킬로미터 거리예요. 라반은 칠 일 만에 야곱을 따라잡아요(23절). 길르앗은 얍복 강 일대의 산지로, 야곱이 씨름하는 곳(32장)과 이어져요.",
+    "detail": "하란에서 길르앗까지는 수백 킬로미터 거리예요. 하란은 지금 터키 남동부 우르파 근처에 있어요. 라반은 칠 일 만에 야곱을 따라잡아요(23절). 길르앗은 얍복 강 일대의 산지로, 야곱이 씨름하는 곳(32장)과 이어져요.",
     "caution": "",
     "refs": [
       "창세기 31:21-23",
@@ -16265,7 +16527,17 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Harran (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Harran"
+      },
+      {
+        "label": "Gilead (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Gilead"
+      }
+    ]
   },
   {
     "id": "context-gen-31-30",
@@ -16286,8 +16558,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
         ]
       }
     ],
-    "summary": "라반은 야곱이 '아버지 집을 사모해' 떠난 것은 이해하지만, '내 신'을 훔친 것은 비난해요. 라반의 신은 집안의 수호신상(드라빔)이에요.",
-    "detail": "드라빔이 집안의 상속과 관련된 상징이었다고 보는 학자들이 있어요. 라헬이 훔친 것(19절)을 야곱은 몰랐어요. 야곱은 창세기 35:2에서 가족에게 이방 신상을 버리게 해요.",
+    "summary": "라반은 야곱이 '아버지 집을 사모해' 떠난 것은 이해하지만, '내 신'을 훔친 것은 비난해요. 라반의 신은 집안에 두던 신상(드라빔)이에요.",
+    "detail": "드라빔이 집안의 재산이나 상속 권리와 관련이 있었다고 보는 학자들이 있어요. 아직 확정된 설명은 아니에요. 라헬이 훔친 것(19절)을 야곱은 몰랐어요. 야곱은 창세기 35:2에서 가족에게 이방 신상을 버리게 해요.",
     "caution": "",
     "refs": [
       "창세기 31:19",
@@ -16296,7 +16568,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Teraphim (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Teraphim"
+      }
+    ]
   },
   {
     "id": "context-gen-31-32",
@@ -16409,7 +16687,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "라반은 아람어로 '여갈사하두다', 야곱은 히브리어로 '갈르엣'이라고 불러요. 같은 돌무더기를 두고 두 사람이 다른 언어로 이름을 붙여요.",
-    "detail": "두 이름은 모두 '증거의 무더기'라는 뜻이에요. 구약에 남은 아람어 낱말의 이른 예로 보는 견해가 있고, 이 지역에서 두 언어가 쓰였음을 보여 줘요. '갈르엣'은 길르앗 지명의 기원이 돼요.",
+    "detail": "두 이름은 모두 '증거의 무더기'라는 뜻이에요. 이 돌무더기는 두 사람이 평화를 맹세한 증거예요. 구약에 남은 아람어 낱말의 이른 예로 보는 견해가 있어요. '갈르엣'은 길르앗이라는 지명과 이어져요(48절).",
     "caution": "",
     "refs": [
       "창세기 31:46-48",
@@ -16417,7 +16695,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Galeed (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Galeed"
+      }
+    ]
   },
   {
     "id": "context-gen-31-53",
@@ -16471,7 +16755,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "'마하나임'(두 진영)은 야곱의 진영과 하나님의 군대를 가리킨다고 봐요. 에서를 만나러 가는 길에, 하나님이 천사들을 보여 주셔서 야곱을 안심시키세요.",
-    "detail": "벧엘의 사닥다리 천사들(28:12)과 이어져서, 하나님이 이십 년 전에 하신 약속대로 함께하심을 보여 줘요. 마하나임은 길르앗의 얍복 강 근처에 있었고, 훗날 다윗이 압살롬을 피해 머문 곳이에요(사무엘하 17:24).",
+    "detail": "벧엘의 사닥다리 천사들(28:12)과 이어져서, 하나님이 이십 년 전에 하신 약속대로 함께하심을 보여 줘요. 마하나임은 요단 건너편 얍복 강 근처에 있었다고 보는데, 정확한 자리는 확실하지 않아요. 훗날 다윗이 압살롬을 피해 머문 곳이에요(사무엘하 17:24).",
     "caution": "",
     "refs": [
       "창세기 32:1-2",
@@ -16480,7 +16764,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Mahanaim (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Mahanaim"
+      }
+    ]
   },
   {
     "id": "context-gen-32-3",
@@ -16502,7 +16792,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "야곱이 이십 년 만에 형에게 사자를 보내는 것은, 창세기 27:41의 살해 위협 때문에 두려운 일이에요. 그는 에서를 '내 주', 자신을 '종'이라고 불러요(4절).",
-    "detail": "27:29에서 '네가 형제들의 주가 되고'라는 복을 받았는데, 이번에는 정반대로 낮은 호칭을 써요. 세일은 사해 남쪽 에돔 산지이고, 에서가 이미 정착한 곳이에요.",
+    "detail": "27:29에서 '네가 형제들의 주가 되고'라는 복을 받았는데, 이번에는 정반대로 낮은 호칭을 써요. 세일은 사해 남쪽 끝에서 아카바 만 쪽으로 이어지는 에돔 산지이고, 에서가 이미 정착한 곳이에요.",
     "caution": "",
     "refs": [
       "창세기 32:1",
@@ -16512,7 +16802,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Mount Seir (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Mount_Seir"
+      }
+    ]
   },
     {
       "id": "context-gen-32-9",
@@ -16637,7 +16933,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Jabbok (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Jabbok"
+      }
+    ]
   },
   {
     "id": "context-gen-32-24",
@@ -16752,7 +17054,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "이스라엘 자손이 허벅지 관절의 힘줄을 먹지 않는 풍습은, 야곱이 씨름한 밤을 기억하는 식습관이에요.",
-    "detail": "'지금까지'라는 말은 본문을 기록할 때 이 풍습이 있었다는 설명이에요. 유대 전통에는 이 힘줄(기드 하나셰)을 먹지 않는다는 규정이 있어요. 모세 율법 자체에는 이런 금지가 없어요.",
+    "detail": "'지금까지'라는 말은 본문을 기록할 때 이 풍습이 있었다는 설명이에요. 유대 전통에는 이 힘줄(기드 하나셰)을 먹지 않는다는 규정이 있어요. 이 금지는 32:33의 말씀에 근거하고, 자세한 규정은 탈무드의 훌린 7장에 있어요.",
     "caution": "",
     "refs": [
       "창세기 32:32",
@@ -16760,7 +17062,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Gid hanasheh (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Gid_hanasheh"
+      }
+    ]
   },
   {
     "id": "context-gen-33-3",
@@ -16793,7 +17101,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": [],
     "sourceLinks": [
       {
-        "label": "Wikipedia - Amarna letters",
+        "label": "Amarna letters (위키백과 영문)",
         "url": "https://en.wikipedia.org/wiki/Amarna_letters"
       }
     ]
@@ -16878,7 +17186,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "야곱이 세일로 가겠다고 한 말은, 에서를 곧바로 따라가지 않으려는 완곡한 거절이에요. 실제로 17절에서는 숙곳으로 가요.",
-    "detail": "세일은 에서가 사는 사해 남쪽 산지예요(32:3). 야곱의 말과 행동이 다른 점은, 가나안 땅에 머물러야 해서라는 해석과 에서를 아직 믿지 못했다는 해석으로 갈려요.",
+    "detail": "세일은 에서가 사는 사해 남쪽 끝에서 아카바 만 쪽으로 이어지는 산지예요(32:3). 야곱의 말과 행동이 다른 점은, 가나안 땅에 머물러야 해서라는 해석과 에서를 아직 믿지 못했다는 해석으로 갈려요.",
     "caution": "야곱의 의도는 두 해석이 갈려요.",
     "refs": [
       "창세기 33:14",
@@ -16888,7 +17196,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Mount Seir (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Mount_Seir"
+      }
+    ]
   },
   {
     "id": "context-gen-33-17",
@@ -16909,7 +17223,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "'숙곳'(초막)은 야곱이 집과 우리를 짓고 정착한 곳이에요. 약속의 땅 가나안으로 들어가기 전, 첫 정착이 요단 동쪽에서 이뤄져요.",
-    "detail": "숙곳은 얍복 강 하류, 요단 계곡 동쪽에 있었다고 보는 견해가 많아요(여호수아 13:27). 야곱이 세겜을 거쳐 벧엘로 가는 서원 이행(35:1)이 늦어지는 흐름이에요.",
+    "detail": "숙곳은 요단 동쪽 땅에 있었다고 보고, 옛 터는 지금 데이르 알라(Deir Alla)로 여겨져요(여호수아 13:27). 야곱이 세겜을 거쳐 벧엘로 가는 서원 이행(35:1)이 늦어지는 흐름이에요.",
     "caution": "",
     "refs": [
       "창세기 33:17",
@@ -16918,7 +17232,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Succoth (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Succoth"
+      }
+    ]
   },
   {
     "id": "context-gen-33-18",
@@ -16949,7 +17269,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Shechem (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Shechem"
+      }
+    ]
   },
   {
     "id": "context-gen-33-19",
@@ -16971,7 +17297,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "백 크시타를 주고 산 밭은 야곱이 가나안에서 처음 가진 땅이에요. 훗날 이 땅에 요셉의 뼈가 묻혀요(여호수아 24:32).",
-    "detail": "'크시타'는 구약에 세 번만 나오는 화폐 단위라서, 정확한 값은 알 수 없어요(창세기 33:19, 여호수아 24:32, 욥기 42:11). 아브라함이 막벨라 굴을 산 일(23장)에 이은, 두 번째 땅 구입이에요.",
+    "detail": "'크시타'는 구약에 세 번만 나오는 화폐 단위라서, 정확한 값은 알 수 없어요(창세기 33:19, 여호수아 24:32, 욥기 42:11). 어린 양 모양이었거나 양 한 마리 값이었을 것이라는 견해도 있어요. 아브라함이 막벨라 굴을 산 일(23장)에 이은, 두 번째 땅 구입이에요.",
     "caution": "",
     "refs": [
       "창세기 33:19",
@@ -16980,7 +17306,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Kesitah (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Kesitah"
+      }
+    ]
   },
   {
     "id": "context-gen-33-20",
@@ -17185,7 +17517,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
         ]
       }
     ],
-    "summary": "할례 후 셋째 날은 통증이 가장 심한 때라고 보는 해석이 많아요. 시므온과 레위는 이때를 노려 기습해요.",
+    "summary": "할례 후 셋째 날은 아픔이 가장 큰 때라고 보는 해석이 있어요. 시므온과 레위는 이때를 노려 기습해요.",
     "detail": "형제 전체가 아니라 시므온과 레위 둘이 칼을 들었어요. 이 일로 창세기 49:5-7에서 야곱이 두 아들의 분노를 저주하고, 그 후손이 이스라엘 가운데 흩어지게 돼요.",
     "caution": "",
     "refs": [
@@ -17195,7 +17527,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Dinah (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Dinah"
+      }
+    ]
   },
   {
     "id": "context-gen-34-27",
@@ -17651,8 +17989,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
         ]
       }
     ],
-    "summary": "에서가 '에돔'이라 불리며 세일 산에 살아요. 세일은 사해 남쪽 아라바 동쪽의 붉은 사암 산지예요.",
-    "detail": "'에돔'은 '붉다'는 뜻이라서, 이 지역의 붉은 바위와 이어져요. 보스라는 에돔의 성읍으로 나와요(창세기 36:33, 이사야 34:6). 에돔과 이스라엘의 갈등은 민수기 20:14-21과 오바댜서로 이어져요.",
+    "summary": "에서가 '에돔'이라 불리며 세일 산에 살아요. 세일은 사해와 아카바 만 사이의 산지예요.",
+    "detail": "'에돔'은 '붉다'는 뜻이에요. 보스라는 에돔의 성읍으로 나와요(창세기 36:33, 이사야 34:6). 에돔과 이스라엘의 갈등은 민수기 20:14-21과 오바댜서로 이어져요.",
     "caution": "",
     "refs": [
       "창세기 36:8",
@@ -17662,7 +18000,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Mount Seir (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Mount_Seir"
+      }
+    ]
   },
   {
     "id": "context-gen-36-20",
@@ -17683,7 +18027,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "세일의 호리 족속은 에돔 이전의 원주민이에요. 에서의 자손이 그 땅을 차지한 과정은 신명기 2:12에서 이스라엘의 가나안 정복과 비슷하게 설명돼요.",
-    "detail": "창세기 14:6에서 그돌라오멜이 세일 산의 호리 족속을 쳤다고 나와요. 호리 족속을 근동에 널리 퍼졌던 후리인과 이어서 보는 견해가 있어요. 시브온과 아나 같은 이름이 에서의 아내 가계와 겹쳐요(2절).",
+    "detail": "창세기 14:6에서 그돌라오멜이 세일 산의 호리 족속을 쳤다고 나와요. 세일 산에는 호리 족속이 먼저 살았고, 나중에 에서의 자손이 들어와 그들을 싸워 물리쳤어요. 시브온과 아나 같은 이름이 에서의 아내 가계와 겹쳐요(2절).",
     "caution": "",
     "refs": [
       "창세기 36:20-30",
@@ -17692,7 +18036,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Mount Seir (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Mount_Seir"
+      }
+    ]
   },
   {
     "id": "context-gen-36-24",
@@ -17713,8 +18063,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "아나가 광야에서 발견한 '온천'(예밈)은 낱말의 뜻이 분명하지 않은 구절이에요. 온천으로 보기도 하고, 다른 뜻으로 풀기도 해요.",
-    "detail": "고대 헬라어와 라틴어로 된 성경은 이 낱말을 다르게 읽기도 해요. 나귀를 치다가 발견했다는 서술은, 에돔 가문이 목축으로 살았다는 배경을 보여 줘요.",
-    "caution": "낱말의 뜻이 불확실해서 한 가지로 단정하지 않아요.",
+    "detail": "이 낱말(예밈)의 뜻은 학자들 사이에서 여러 가지로 풀려요. 나귀를 치다가 발견했다는 서술은, 에돔 가문이 목축으로 살았다는 배경을 보여 줘요.",
+    "caution": "'온천'으로 보는 풀이와 다른 풀이가 함께 있어요.",
     "refs": [
       "창세기 36:24",
       "창세기 36:20"
@@ -17867,7 +18217,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
         }
       ],
       "summary": "이스마엘 사람과 미디안 상인(28절)은 같은 무리를 가리키는 두 호칭이에요. 이들은 길르앗에서 이집트로 향료를 나르는 교역로에 있었어요.",
-      "detail": "향품, 유향, 몰약은 길르앗과 아라비아에서 나는 귀한 교역품이에요. 이집트는 이런 향료를 제사와 장례 등에 많이 썼다고 알려져 있어요. 요셉의 값은 은 이십 개(28절)인데, 레위기 27:5는 다섯 살에서 스무 살 사이 남자의 값을 은 이십 세겔로 정해요.",
+      "detail": "향품과 몰약은 아라비아 남부와 아프리카 뿔 지역에서 나오는 귀한 교역품이에요. 몰약은 이집트에서 미라를 만들 때도 쓰였다고 알려져 있어요. 요셉의 값은 은 이십 개(28절)인데, 레위기 27:5는 다섯 살에서 스무 살 사이 남자의 값을 은 이십 세겔로 정해요.",
       "caution": "",
       "refs": [
         "창세기 37:25-28",
@@ -17878,7 +18228,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
       ],
       "category": "본문 문맥",
       "lens": "",
-      "wcf": []
+      "wcf": [],
+      "sourceLinks": [
+        {
+          "label": "Myrrh (위키백과 영문)",
+          "url": "https://en.wikipedia.org/wiki/Myrrh"
+        }
+      ]
     },
   {
     "id": "context-gen-37-27",
@@ -17966,7 +18322,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "요셉이 이집트로 내려가는 동안, 유다도 형제들을 떠나 '내려가' 가나안 사람들 사이에서 살아요. 요셉 이야기 한가운데 유다의 이야기가 끼어드는 이유가 여기서 시작돼요.",
-    "detail": "37장의 '내려가다'와 38장의 '내려가서'는 같은 말(야라드)이에요. 아둘람은 가나안 서쪽 낮은 구릉 지대의 성읍이에요(여호수아 15:35). 유다의 계보는 마태복음 1:3에서 다말과 베레스를 통해 예수님의 족보에 들어가요.",
+    "detail": "37장의 '내려가다'와 38장의 '내려가서'는 같은 말(야라드)이에요. 아둘람은 유다 땅의 낮은 구릉 지대(셰펠라)에 있는 성읍이에요(여호수아 15:35). 지금 자리는 엘라 골짜기를 내려다보는 언덕이에요. 유다의 계보는 마태복음 1:3에서 다말과 베레스를 통해 예수님의 족보에 들어가요.",
     "caution": "",
     "refs": [
       "창세기 38:1",
@@ -17978,6 +18334,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": [
       7,
       8
+    ],
+    "sourceLinks": [
+      {
+        "label": "Adullam (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Adullam"
+      }
     ]
   },
 
@@ -18032,7 +18394,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "다말은 과부의 옷을 벗고 너울을 쓴 채 에나임 문에 앉아요. 약속을 어긴 유다에게서 자기 권리를 되찾으려는 계획된 행동이에요.",
-    "detail": "딤나는 유다 산지의 성읍이에요. 13절의 양털 깎는 때는 잔치가 벌어지는 때였다고 보는 견해가 있어요. 이 방법은 유다의 불의가 부른 결과이며, 본받을 만한 모범은 아니에요.",
+    "detail": "딤나는 유다 땅의 성읍이에요. 13절의 양털 깎는 때는 잔치가 벌어지는 때였다고 보는 견해가 있어요. 이 방법은 유다의 불의가 부른 결과이며, 본받을 만한 모범은 아니에요.",
     "caution": "다말의 방법을 모범으로 읽지 않고, 유다의 약속 불이행이 부른 결과로 읽어요.",
     "refs": [
       "창세기 38:14",
@@ -18093,7 +18455,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "도장과 끈과 지팡이는 유다의 신원을 증명하는 개인 물건이에요. 이 물건들이 26절에서 유다를 몰아세우는 증거가 돼요.",
-    "detail": "도장(호탐)은 서명처럼 쓰던 인장이라, 끈에 꿰어 목에 걸고 다녔어요. 메소포타미아에서 쓰던 원통 인장이 대표적이에요. 유다가 자기 신원을 맡긴 것이, 결국 다말에게 증거를 쥐여 주는 결과가 돼요.",
+    "detail": "도장(호탐)은 서명처럼 쓰던 인장이라, 끈에 꿰어 몸에 지녔을 것으로 보아요. 메소포타미아에서 쓰던 원통 인장이 대표적이에요. 유다가 자기 신원을 맡긴 것이, 결국 다말에게 증거를 쥐여 주는 결과가 돼요.",
     "caution": "",
     "refs": [
       "창세기 38:17-18",
@@ -18101,7 +18463,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Cylinder seal (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Cylinder_seal"
+      }
+    ]
   },
   {
     "id": "context-gen-38-24",
@@ -18276,7 +18644,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "보디발의 아내가 요셉을 '히브리 사람'이라고 부르는 것은, 외국인 노예로 낮춰 하인들의 편견을 이끌어 내려는 말이에요.",
-    "detail": "'히브리 사람'은 이집트인이 외국인 노예를 가리킬 때 쓰던 호칭이에요(창세기 43:32). '우리를 희롱하다'는 말은 남편까지 탓하는 말로, 책임을 남편에게 돌려요.",
+    "detail": "'히브리 사람'은 이 이야기에서 외국인 종을 낮춰 부르는 말로 쓰여요. 옛 문헌의 '하비루'라는 말과 이 말이 이어지는지는 학자들 사이에서 의견이 갈려요. '우리를 희롱하다'는 말은 남편까지 탓하는 말로, 책임을 남편에게 돌려요.",
     "caution": "",
     "refs": [
       "창세기 39:13-18",
@@ -18284,7 +18652,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Habiru (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Habiru"
+      }
+    ]
   },
   {
     "id": "context-gen-39-20",
@@ -18402,7 +18776,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "'나무에 달리니'는 처형된 사람의 시신을 나무나 기둥에 매달아 새가 쪼아 먹게 하는 형벌을 말해요. 요셉의 해석이 그대로 이뤄져요.",
-    "detail": "이집트에서도 처형한 뒤 시신을 나무나 기둥에 매다는 일이 있었다고 알려져 있어요. 신명기 21:22-23은 이스라엘에서 나무에 달린 시체를 밤새 두지 말라고 정하고, 갈라디아서 3:13은 나무에 달린 자의 저주를 그리스도의 십자가와 연결해요.",
+    "detail": "이집트에서도 포로를 말뚝에 꽂아 죽이는 형벌이 있었다고 알려져 있어요. 신명기 21:22-23은 이스라엘에서 나무에 달린 시체를 밤새 두지 말라고 정하고, 갈라디아서 3:13은 나무에 달린 자의 저주를 그리스도의 십자가와 연결해요.",
     "caution": "",
     "refs": [
       "창세기 40:13",
@@ -18412,7 +18786,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Impalement (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Impalement"
+      }
+    ]
   },
   {
     "id": "context-gen-41-8",
@@ -18434,7 +18814,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "'점술가'(하르툼밈)와 '현인들'은 이집트 궁정에서 주술과 글을 맡은 사람들이에요. 이들이 꿈을 풀지 못하는 장면은 출애굽기 7-8장에서 모세 앞에서도 되풀이돼요.",
-    "detail": "'하르툼'은 이집트어에서 온 말로 보는 견해가 있어요. 출애굽기 7:11과 다니엘 1:20에도 같은 부류가 나와요. 하나님이 이집트 지혜의 한계를 드러내세요.",
+    "detail": "출애굽기 7:11과 다니엘 1:20에도 같은 부류가 나와요. 하나님이 이집트 지혜의 한계를 드러내세요.",
     "caution": "",
     "refs": [
       "창세기 41:8",
@@ -18495,7 +18875,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "'바로의 꿈은 하나'라는 말은 소 꿈과 이삭 꿈이 같은 내용이라는 뜻이에요. 하나님이 하실 일을 미리 보이셨다고 요셉이 못 박아요.",
-    "detail": "일곱 소와 일곱 이삭은 일곱 해를 가리켜요. 이집트에서 소는 풍요의 여신 하토르와 이어져 있었고, 나일 강이 풍요의 근원이었기에, 풍년과 흉년의 상징이 쉽게 이해됐을 것이라는 설명이 있어요.",
+    "detail": "일곱 소와 일곱 이삭은 일곱 해를 가리켜요. 하토르는 암소 모습으로 그려지기도 했고, 나일 강의 범람과도 이어져 있었어요. 이런 배경에서 소 꿈이 풍년과 흉년의 상징으로 읽히기 쉬웠다는 설명이 있어요.",
     "caution": "",
     "refs": [
       "창세기 41:25-28",
@@ -18503,7 +18883,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Hathor (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Hathor"
+      }
+    ]
   },
   {
     "id": "context-gen-41-34",
@@ -18524,7 +18910,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "오분의 일을 거두는 정책은, 풍년 칠 년 동안 수확의 이십 퍼센트를 나라 곡식으로 쌓아 두는 계획이에요. 요셉은 꿈을 풀 뿐 아니라 대책까지 내놓아요.",
-    "detail": "창세기 47:24에서, 흉년이 지난 뒤에도 오분의 일을 바로의 몫으로 두는 것이 굳어져요. 곡식은 이집트 정부의 창고에서 관리되었다고 알려져 있어요.",
+    "detail": "창세기 47:24에서, 흉년이 지난 뒤에도 오분의 일을 바로의 몫으로 두는 것이 굳어져요.",
     "caution": "",
     "refs": [
       "창세기 41:34-36",
@@ -18584,7 +18970,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
         }
       ],
       "summary": "'엎드리라'는 외침은 요셉이 바로 다음 자리에 있다는 것을 공개적으로 알리는 말이에요. 창세기 37:7-10의 꿈에서 절하던 장면이 이집트에서 이뤄지기 시작해요.",
-      "detail": "'버금 수레'는 왕의 수레 다음 가는 행렬용 수레예요. 이집트 무덤 벽화에도 고관의 수레 행렬이 그려져 있다고 알려져 있어요. '엎드리라'(아브렉)는 뜻이 확실하지 않지만, 존경을 나타내는 외침이었다고 봐요.",
+      "detail": "'버금 수레'는 왕의 수레 다음 가는 행렬용 수레예요. '엎드리라'(아브렉)는 뜻이 확실하지 않지만, 존경을 나타내는 외침이었다고 봐요.",
       "caution": "",
       "refs": [
         "창세기 41:43",
@@ -18761,8 +19147,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
         ]
       }
     ],
-    "summary": "요셉이 형들을 '정탐꾼'이라고 몰아세운 것은 꿈(창세기 37:5-9)을 기억한 반응이에요. 이집트 동북쪽 국경은 곡식을 구하러 오는 외지인이 지나는 길목이라, 정탐 의심이 자연스러운 구실이었어요.",
-    "detail": "요셉은 이 구실을 이용해 형들이 가족 사정을 하나씩 털어놓게 해요. 이 과정에서 요셉은 아버지와 베냐민의 소식을 듣게 돼요.",
+    "summary": "요셉이 형들을 '정탐꾼'이라고 몰아세운 것은 꿈(창세기 37:5-9)을 기억한 반응이에요. 정탐 의심은 형들의 속마음을 떠보기 좋은 구실이었어요.",
+    "detail": "이집트 동북쪽에서 시나이 북쪽 해안을 따라 가나안 쪽으로 이어진 길이 있었어요. 고대 이름은 '호루스의 길'이에요. 요셉은 이 구실을 이용해 형들이 가족 사정을 하나씩 털어놓게 해요. 이 과정에서 요셉은 아버지와 베냐민의 소식을 듣게 돼요.",
     "caution": "",
     "refs": [
       "창세기 42:9-14",
@@ -18770,7 +19156,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Way of Horus (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Way_of_Horus"
+      }
+    ]
   },
   {
     "id": "context-gen-42-13",
@@ -18882,7 +19274,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "통역을 세운 요셉은 이집트 총리와 히브리 형들 사이의 말이 통하지 않는 점을 이용해 정체를 숨겨요. 형들은 자기들끼리 한 말을 요셉이 알아들을 줄 몰라요.",
-    "detail": "요셉은 이집트 말을 쓰는 총리로 지내며 히브리 말을 숨겼어요. 이집트 궁정에는 통역관이 있었다고 알려져 있어요.",
+    "detail": "요셉은 이집트 말을 쓰는 총리로 지내며 히브리 말을 숨겼어요.",
     "caution": "",
     "refs": [
       "창세기 42:21-24"
@@ -19095,7 +19487,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       ],
       "summary": "은잔으로 점친다는 청지기의 말은, 그릇에 물이나 기름을 담아 징조를 읽는 점술을 가리켜요. 고대 근동에 알려진 점술이에요.",
       "detail": "요셉이 실제로 점쳤다는 서술은 아니에요. 15절의 요셉의 말도 이집트식으로 꾸민 말일 수 있어요. 신명기 18:10-11은 점술을 금하는데, 요셉은 꿈 해석을 하나님께 돌려 왔어요(창세기 41:16).",
-      "caution": "요셉이 점술을 행했다고 단정하지 않아요.",
+      "caution": "은잔은 점술 도구처럼 보이지만, 요셉이 점쳤다는 기록은 없어요.",
       "refs": [
         "창세기 44:5",
         "창세기 44:15",
@@ -19103,7 +19495,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
       ],
       "category": "본문 문맥",
       "lens": "",
-      "wcf": []
+      "wcf": [],
+      "sourceLinks": [
+        {
+          "label": "Lecanomancy (위키백과 영문)",
+          "url": "https://en.wikipedia.org/wiki/Lecanomancy"
+        }
+      ]
     },
         {
           "id": "context-gen-44-16",
@@ -19286,7 +19684,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "'바로에게 아버지'라는 말은 이집트 궁정에서 가장 높은 고문관을 가리키는 칭호로 읽혀요. 요셉은 이 자리를 자랑이 아니라, 하나님이 세우신 자리로 말해요.",
-    "detail": "이집트에서 왕의 최고 고문관에게 '왕의 아버지'에 해당하는 호칭이 쓰였다는 견해가 있어요. '나를 이리로 보낸 이는 당신들이 아니요 하나님이시라'는 5, 7절의 '하나님이 보내셨다'는 고백의 되풀이예요.",
+    "detail": "이 말은 바로의 가장 가까운 고문이라는 뜻으로 읽는 해석이 있어요(창세기 41:40 참조). '나를 이리로 보낸 이는 당신들이 아니요 하나님이시라'는 5, 7절의 '하나님이 보내셨다'는 고백의 되풀이예요.",
     "caution": "",
     "refs": [
       "창세기 45:8-9",
@@ -19316,7 +19714,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "고센은 나일 삼각주 동쪽의 목축에 알맞은 땅이에요. 요셉이 가족을 가까이 두려는 마음과, 목축민을 이집트인과 나누려는 이유가 겹쳐요.",
-    "detail": "고센은 와디 투밀랏 일대로 보는 견해가 많고, 라암셋 지역(창세기 47:11)과 겹쳐요. 이집트 사람이 목자를 꺼렸기에(46:34), 따로 살 수 있는 곳이었어요.",
+    "detail": "고센은 동쪽 나일 삼각주 일대로 보는 견해가 많고, 라암셋 지역(창세기 47:11)과 겹쳐요. 학자들 사이에는 고센의 정확한 위치와 이름의 뜻에 대해서도 여러 설이 있어요. 이집트 사람이 목자를 꺼렸기에(46:34), 따로 살 수 있는 곳이었어요.",
     "caution": "",
     "refs": [
       "창세기 45:10",
@@ -19326,7 +19724,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Land of Goshen (위키백과 영문)",
+        "url": "https://en.wikipedia.org/wiki/Land_of_Goshen"
+      }
+    ]
   },
   {
     "id": "context-gen-45-22",
@@ -20667,14 +21071,24 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "summary": "이스라엘은 바로가 곡식과 물건을 쌓아 둘 성을 짓는 강제 노동에 끌려가요.",
     "detail": "'국고성'은 곡식과 물건을 쌓아 두던 성이에요. 이스라엘 위에는 애굽 사람인 감독이 있었고, 그 아래에 이스라엘 사람인 책임자들이 있었어요(5:14). 요셉이 가족에게 준 '라암셋 땅'(창 47:11)과 같은 이름이 이제 강제 노동하는 곳이 돼요.",
-    "caution": "라암셋의 위치와 출애굽 연대는 학자들 사이에 논쟁이 있어요.",
+    "caution": "비돔은 튈 엘-마스쿠타나 튈 엘-레따바로 보는 견해가 있어요. 라암셋은 흔히 피-람세스(카타르 지역)와 같은 곳으로 봐요. 그래도 위치는 확실하지 않아요.",
     "refs": [
       "출애굽기 1:11",
       "창세기 47:11"
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Pithom (영문 위키백과)",
+        "url": "https://en.wikipedia.org/wiki/Pithom"
+      },
+      {
+        "label": "Pi-Ramesses (영문 위키백과)",
+        "url": "https://en.wikipedia.org/wiki/Pi-Ramesses"
+      }
+    ]
   },
   {
     "id": "context-exo-1-12",
@@ -20727,16 +21141,22 @@ window.ScriptureNotesData.contextualTerms.push(...[
         ]
       }
     ],
-    "summary": "산파 십브라와 부아는 히브리 사람이에요. 두 이름은 '아름다움'과 '소리침'이라는 뜻으로 풀이돼요.",
-    "detail": "옛 역사가 요세푸스는 두 산파를 애굽 여인으로 보았다고 해요. 그러나 원문은 '히브리 산파'라고 하므로 히브리인으로 읽는 편이 자연스러워요. 많은 히브리 여인을 두 사람이 다 돕기는 어려우니, 두 사람을 산파들의 대표로 보는 견해가 많아요.",
-    "caution": "두 산파를 애굽 여인으로 보는 옛 해석도 있지만, 원문 문맥은 히브리인으로 읽어요.",
+    "summary": "산파 십브라와 부아는 본문에서 히브리 산파로 불려요. 두 이름은 '아름다운 여인'과 '어린 여자'라는 뜻으로 풀이돼요.",
+    "detail": "원문은 '히브리 산파'라고 해요. 유대 전승은 두 산파를 요게벳과 미리암으로 보기도 해요. 많은 히브리 여인을 두 사람이 다 돕기는 어려우니, 두 사람을 산파들의 대표로 보는 견해도 있어요.",
+    "caution": "두 산파가 히브리인이었는지는 학자들 사이에 합의가 없어요. 푸아는 가나안 계통의 이름이라는 견해도 있어요.",
     "refs": [
       "출애굽기 1:15",
       "출애굽기 1:22"
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Shiphrah and Puah (영문 위키백과)",
+        "url": "https://en.wikipedia.org/wiki/Shiphrah_and_Puah"
+      }
+    ]
   },
   {
     "id": "context-exo-1-19",
@@ -20821,7 +21241,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "바로는 마지막 수단으로, 온 백성에게 남자 아기를 나일 강에 던지라고 공개로 명령했어요.",
-    "detail": "히브리어 '예오르'는 나일 강을 뜻해요. 애굽 사람들에게 나일은 가장 중요한 강이었고, 악어도 살았어요(겔 29:3). 이 명령은 2장 갈대 상자 이야기의 배경이 돼요. 또 열 번째 재앙에서 애굽의 맏아들들이 죽는 심판(11-12장)과 짝을 이뤄요.",
+    "detail": "히브리어 '예오르'는 나일 강을 뜻해요. 나일 강은 애굽 문명의 바탕이었고, 해마다 범람이 들판에 기름진 흙을 남겼어요. 이 명령은 2장 갈대 상자 이야기의 배경이 돼요. 또 열 번째 재앙에서 애굽의 맏아들들이 죽는 심판(11-12장)과 짝을 이뤄요.",
     "caution": "",
     "refs": [
       "출애굽기 1:22",
@@ -20832,6 +21252,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "하나님이 구원하실 아기를 죽이려는 왕의 박해는 아기 예수를 죽이려 한 헤롯(마 2:16)과 비슷하게 읽는 해석이에요.",
     "wcf": [
       8
+    ],
+    "sourceLinks": [
+      {
+        "label": "Nile (영문 위키백과)",
+        "url": "https://en.wikipedia.org/wiki/Nile"
+      }
     ]
   },
     {
@@ -20954,7 +21380,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "미디안 제사장의 이름 르우엘은 '하나님의 친구'라는 뜻이에요.",
-    "detail": "3:1은 모세의 장인을 이드로라 부르고, 민수기 10:29는 르우엘이라 불러요. 삿 4:11은 모세의 장인을 호밥이라 불러요. 한 사람의 여러 이름으로 보는 견해가 많지만, 르우엘을 집안의 어른으로 보는 견해도 있어요. 미디안은 아브라함의 후손(창 25:2)이에요.",
+    "detail": "3:1은 모세의 장인을 이드로라 부르고, 민수기 10:29는 르우엘이라 불러요. 삿 4:11은 모세의 장인을 호밥이라 불러요. 한 사람의 여러 이름으로 보는 견해가 많지만, 르우엘을 집안의 어른으로 보는 견해도 있어요. 미디안은 아브라함의 후손(창 25:2)이에요. 미디안 땅은 흔히 아카바 만 동쪽 해안, 아라비아 반도 북서쪽으로 봐요.",
     "caution": "르우엘과 이드로가 같은 사람인지는 확정하기 어려워요.",
     "refs": [
       "출애굽기 2:18",
@@ -20963,7 +21389,17 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Jethro (영문 위키백과)",
+        "url": "https://en.wikipedia.org/wiki/Jethro"
+      },
+      {
+        "label": "Midian (영문 위키백과)",
+        "url": "https://en.wikipedia.org/wiki/Midian"
+      }
+    ]
   },
   {
     "id": "context-exo-2-19",
@@ -21043,8 +21479,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
         }
       ],
       "summary": "모세는 40년 동안 양을 치다가 '하나님의 산'에서 부름을 받아요.",
-      "detail": "원문의 '치더니'는 오랫동안 계속 돌보았다는 뜻이에요. 광야에서 양을 이끌던 목자 경험은 백성을 인도할 준비였어요(시 78:70-72). 다윗도 목자였어요. 호렙은 시내산과 같은 곳을 가리킨다고 보는 견해가 일반적이에요(19:1-2). 12절의 예배도 이 산에서 이루어져요.",
-      "caution": "산의 정확한 위치는 확정하기 어려워요.",
+      "detail": "원문의 '치더니'는 오랫동안 계속 돌보았다는 뜻이에요. 광야에서 양을 이끌던 목자 경험은 백성을 인도할 준비였어요(시 78:70-72). 다윗도 목자였어요. 호렙을 시내산과 같은 곳으로 보는 견해가 많아요(19:1-2). 12절의 예배도 이 산에서 이루어져요.",
+      "caution": "산의 정확한 위치는 확정하기 어려워요. 시내산으로 여겨지는 곳도 여러 곳이 주장돼요.",
       "refs": [
         "출애굽기 3:1",
         "출애굽기 3:12",
@@ -21052,7 +21488,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
       ],
       "category": "본문 문맥",
       "lens": "",
-      "wcf": []
+      "wcf": [],
+      "sourceLinks": [
+        {
+          "label": "Mount Sinai (영문 위키백과)",
+          "url": "https://en.wikipedia.org/wiki/Mount_Sinai"
+        }
+      ]
     },
   {
     "id": "context-exo-3-6",
@@ -21264,7 +21706,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "손의 나병과 회복은 하나님이 치시고 낫게 하신다는 두 번째 표적이에요.",
-    "detail": "히브리어 '차라아트'는 한센병만이 아니라 여러 피부병을 함께 가리키는 말이에요(레 13-14장). 손이 눈처럼 희었다가 곧 회복돼요. 앞의 지팡이 표적과 함께, 8-9절에서는 믿지 않으면 표적을 더 보이겠다고 하세요.",
+    "detail": "히브리어 '차라아트'는 흔히 나병으로 불리지만, 지금 말하는 한센병은 아니에요. 여러 피부병을 함께 가리키는 말로 봐요(레 13-14장). 손이 눈처럼 희었다가 곧 회복돼요. 앞의 지팡이 표적과 함께, 8-9절에서는 믿지 않으면 표적을 더 보이겠다고 하세요.",
     "caution": "",
     "refs": [
       "출애굽기 4:6-7",
@@ -21275,6 +21717,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "표적은 선포된 말씀이 참임을 확인해 주는 하나님의 방법이에요(WCF 1).",
     "wcf": [
       1
+    ],
+    "sourceLinks": [
+      {
+        "label": "Tzaraath (영문 위키백과)",
+        "url": "https://en.wikipedia.org/wiki/Tzaraath"
+      }
     ]
   },
   {
@@ -21393,7 +21841,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "이스라엘을 '내 맏아들'이라 부르시는 것은, 바로의 맏아들을 치시는 마지막 재앙(23절)의 까닭이 돼요.",
-    "detail": "하나님과 이스라엘의 아들 관계를 처음으로 밝히는 구절이에요. 애굽의 왕들은 스스로 태양신 라의 아들이라 여겼다고 알려져 있어요. 그래서 누가 참 아버지인지를 두고 바로와 맞서는 구도예요. '내 아들'과 '네 아들'이 맞서는 23절과 함께 읽어요.",
+    "detail": "하나님과 이스라엘의 아들 관계를 처음으로 밝히는 구절이에요. 애굽 왕들은 자신을 '레(라)의 아들'이라는 이름으로 높이곤 했어요. 그래서 누가 참 아버지인지를 두고 바로와 맞서는 구도예요. '내 아들'과 '네 아들'이 맞서는 23절과 함께 읽어요.",
     "caution": "",
     "refs": [
       "출애굽기 4:22-23",
@@ -21404,6 +21852,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "이스라엘이 아들이 된 것은 자랑할 공로가 아니라 은혜로 맺어진 약속에서 왔어요. 이 아들의 자리는 참 아들 그리스도를 통해 완전히 이루어져요(마 2:15).",
     "wcf": [
       12
+    ],
+    "sourceLinks": [
+      {
+        "label": "Pharaoh (영문 위키백과)",
+        "url": "https://en.wikipedia.org/wiki/Pharaoh"
+      }
     ]
   },
   {
@@ -21826,7 +22280,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
           }
         ],
         "summary": "모세가 바로에게 '하나님 같이' 되는 것은, 하나님을 대신해 바로 앞에 서는 권위예요.",
-        "detail": "바로는 애굽에서 태양신의 아들이며 살아 있는 신으로 여겨졌어요. 그 앞에 하나님이 모세를 세우시고, 아론을 '대언자'(나비)라고 부르세요. 예언자라는 말의 뜻이 이 절에서 드러나요(4:16).",
+        "detail": "바로는 애굽에서 태양신 라의 아들로 여겨졌어요. 그 앞에 하나님이 모세를 세우시고, 아론을 '대언자'(나비)라고 부르세요. 예언자라는 말의 뜻이 이 절에서 드러나요(4:16).",
         "caution": "",
         "refs": [
           "출애굽기 7:1-2",
@@ -21834,7 +22288,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
         ],
         "category": "본문 문맥",
         "lens": "",
-        "wcf": []
+        "wcf": [],
+        "sourceLinks": [
+          {
+            "label": "Pharaoh (영문 위키백과)",
+            "url": "https://en.wikipedia.org/wiki/Pharaoh"
+          }
+        ]
       },
   {
     "id": "context-exo-7-4",
@@ -21957,7 +22417,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
       ],
       "category": "본문 문맥",
       "lens": "",
-      "wcf": []
+      "wcf": [],
+      "sourceLinks": [
+        {
+          "label": "Jannes and Jambres (영문 위키백과)",
+          "url": "https://en.wikipedia.org/wiki/Jannes_and_Jambres"
+        }
+      ]
     },
   {
     "id": "context-exo-7-13",
@@ -22663,7 +23129,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "양을 나흘 동안 두었다가 해 질 때 잡는 것은, 흠을 살필 시간을 두고 밤의 유월절로 들어가는 순서예요.",
-    "detail": "'해 질 때'의 원어(벤 하아르바임)는 해가 지는 무렵을 가리켜요. 히브리 사람은 하루를 해 질 때부터 세기 때문에, 이때가 열나흗날의 끝이자 밤의 시작이에요.",
+    "detail": "'해 질 때'의 원어(벤 하아르바임)는 해가 지는 무렵을 가리켜요. 유대 달력에서는 하루를 해 질 때부터 세기 때문에, 이때가 열나흗날의 끝이자 밤의 시작이에요.",
     "caution": "",
     "refs": [
       "출애굽기 12:6",
@@ -22672,7 +23138,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Jewish calendar (영문 위키백과)",
+        "url": "https://en.wikipedia.org/wiki/Jewish_calendar"
+      }
+    ]
   },
   {
     "id": "context-exo-12-8",
@@ -22823,8 +23295,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
         ]
       }
     ],
-    "summary": "우슬초는 작은 풀이라, 하나님이 구원의 표를 흔한 도구로 베푸신다는 점이 눈에 띄어요.",
-    "detail": "우슬초는 작은 풀이에요. 피를 찍어 바르는 도구로 쓰였어요. 나중에 나병 정결 의식(레 14:4-6)과 시편 51:7의 정결 기도에도 나와요. 아침까지 밖으로 나가지 않는 것은 피 아래 머무는 것이 보호라는 뜻이에요.",
+    "summary": "우슬초는 키가 작은 관목이라, 하나님이 구원의 표를 흔한 도구로 베푸신다는 점이 눈에 띄어요.",
+    "detail": "우슬초는 키가 30~60cm쯤 되는 관목이에요. 피를 찍어 바르는 도구로 쓰였어요. 나중에 나병 정결 의식(레 14:4-6)과 시편 51:7의 정결 기도에도 나와요. 아침까지 밖으로 나가지 않는 것은 피 아래 머무는 것이 보호라는 뜻이에요.",
     "caution": "",
     "refs": [
       "출애굽기 12:22",
@@ -22833,7 +23305,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Hyssop (영문 위키백과)",
+        "url": "https://en.wikipedia.org/wiki/Hyssop"
+      }
+    ]
   },
   {
     "id": "context-exo-12-23",
@@ -22886,8 +23364,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "열 번째 재앙은 11:4-5의 예고대로 한밤에 왕좌에서 감옥까지 모든 장자에게 임해요.",
-    "detail": "11:5의 '맷돌 뒤 몸종'이 여기서는 '옥에 갇힌 자'로 쓰여요. 위아래를 함께 가리키는 말이에요. 일찍 잡는 연대 견해는 이 바로를 아멘호텝 2세로 보는데, 일반 이집트학 연대로는 그의 재위가 대략 기원전 1425~1401년이에요. 성경 연대 계산과 차이가 있다는 점도 함께 봐요.",
-    "caution": "아멘호텝 2세설과 후계자 투트모세 4세가 장자가 아니었다는 점을 연결하는 논증은 가설이고 논쟁 중이에요.",
+    "detail": "11:5의 '맷돌 뒤 몸종'이 여기서는 '옥에 갇힌 자'로 쓰여요. 위아래를 함께 가리키는 말이에요. 일부 학자는 일찍 잡는 연대에서 이 바로를 아멘호텝 2세로 보기도 해요. 아멘호텝 2세는 대략 기원전 1427~1401년에 다스렸어요. 성경 연대 계산과 차이가 있다는 점도 함께 봐요.",
+    "caution": "아멘호텝 2세설과 투트모세 4세가 원래 후계자가 아니었다는 점을 장자의 죽음과 잇는 주장은 가설이고 논쟁 중이에요.",
     "refs": [
       "출애굽기 12:29-30",
       "출애굽기 11:4-6",
@@ -22995,7 +23473,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Pi-Ramesses (영문 위키백과)",
+        "url": "https://en.wikipedia.org/wiki/Pi-Ramesses"
+      }
+    ]
   },
   {
     "id": "context-exo-12-38",
@@ -23046,7 +23530,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "430년은 야곱 가족이 애굽에 들어간 때부터 출애굽까지를 세는 숫자예요. 창세기 15:13의 400년 예고와 같은 약속을 가리켜요.",
-    "detail": "400년은 대략의 숫자이고, 430년은 정확한 기간으로 보는 견해가 많아요. 갈라디아서 3:17은 아브라함의 약속부터 율법까지를 430년으로 말하는데, 기준점이 달라요. 칠십인역은 가나안에 머문 기간도 포함해 430년으로 읽는다고 알려져 있어요.",
+    "detail": "400년은 대략의 숫자이고, 430년은 정확한 기간으로 보는 견해가 많아요. 갈라디아서 3:17은 아브라함의 약속부터 율법까지를 430년으로 말하는데, 기준점이 달라요.",
     "caution": "애굽 체류가 430년 전체인지 약 215년인지는 학자들 사이에 견해가 갈려요.",
     "refs": [
       "출애굽기 12:40-41",
@@ -23271,14 +23755,20 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "summary": "'대열을 지어' 나왔다는 말은 무장했거나 정렬해 나왔다는 두 해석이 있어요. 그들은 먼 길로 돌려져 홍해 광야로 가요.",
     "detail": "'홍해'의 히브리어는 얌 수프로 '갈대 바다'로도 읽혀요. 숙곳, 에담, 비하히롯으로 나아가는 경로는 13:20과 14:2에 나와요.",
-    "caution": "얌 수프가 오늘의 홍해인지 수에즈 북쪽 갈대 지대인지 위치 논쟁이 있어요.",
+    "caution": "얌 수프가 오늘의 홍해인지, 팀사 호수나 발라 호수 같은 곳인지 위치 논쟁이 있어요.",
     "refs": [
       "출애굽기 13:17-18",
       "출애굽기 14:2"
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Yam Suph (영문 위키백과)",
+        "url": "https://en.wikipedia.org/wiki/Yam_Suph"
+      }
+    ]
   },
   {
     "id": "context-exo-13-22",
@@ -23423,7 +23913,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "'매장지가 없어서'라는 비꼬는 말은 무덤을 중시한 애굽 문화를 배경으로 해요.",
-    "detail": "애굽은 성읍마다 공동묘지와 묘비가 많아 죽음과 무덤을 중시했어요. 백성은 광야에서 무덤도 없이 죽는 것을 빈정거려요. 이 원망은 16:3, 17:3, 민 14:2로 이어져요.",
+    "detail": "애굽 사람들은 무덤을 매우 중하게 여겼고, 무덤 앞에는 이름을 새긴 비석을 세웠어요. 묘지는 대개 나일 서쪽 강변에 있었어요. 백성은 광야에서 무덤도 없이 죽는 것을 빈정거려요. 이 원망은 16:3, 17:3, 민 14:2로 이어져요.",
     "caution": "",
     "refs": [
       "출애굽기 14:11-12",
@@ -23432,7 +23922,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Ancient Egyptian funerary practices (영문 위키백과)",
+        "url": "https://en.wikipedia.org/wiki/Ancient_Egyptian_funerary_practices"
+      }
+    ]
   },
   {
     "id": "context-exo-14-13",
@@ -23519,7 +24015,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "새벽에 하나님이 구름과 불 기둥 가운데서 애굽 군대를 내려다보시며 혼란에 빠뜨리세요.",
-    "detail": "'새벽'은 밤의 마지막 시간대(대략 새벽 2시경부터 동틀 때)예요. 이스라엘을 지키던 그 기둥이 애굽에게는 심판이 돼요.",
+    "detail": "'새벽'은 밤이 끝나 갈 무렵이에요. 이스라엘을 지키던 그 기둥이 애굽에게는 심판이 돼요.",
     "caution": "",
     "refs": [
       "출애굽기 14:24",
@@ -23770,7 +24266,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "홍해의 기쁨 직후 물이 없는 사흘 길이 이어져요. 노래와 원망 사이가 사흘뿐이에요.",
-    "detail": "수르는 애굽 동쪽 국경의 광야로 에담 광야라고도 해요(민 33:8). 사흘 만에 마라에 이르러 쓴 물을 만나요(23절).",
+    "detail": "수르 광야는 민수기 33:8에서 에담 광야 길과 이어져 나와요. 사흘 만에 마라에 이르러 쓴 물을 만나요(23절).",
     "caution": "",
     "refs": [
       "출애굽기 15:22",
@@ -24518,8 +25014,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "주인이 종을 때려 죽이면 형벌을 받는다는 규정은 종에게도 생명의 가치가 있음을 법으로 확인해요.",
-    "detail": "당시 근동에서는 주인의 처분권이 매우 컸어요. 이 규정은 종을 재산으로 취급하던 관습 속에서 종의 생명을 보호하는 장치예요.",
-    "caution": "이 법은 종 제도를 승인하는 것이 아니라 당시 제도를 규제하는 법이에요. 성경 전체는 종의 존엄을 점차 밝혀요(몬 1:16; 갈 3:28).",
+    "detail": "당시 근동에서는 주인의 처분권이 매우 컸어요. 함무라비 법전에도 주인이 종을 벌하는 권한을 인정하는 규정이 있어요. 이 규정은 종을 재산으로 취급하던 관습 속에서 종의 생명을 보호하는 장치예요.",
+    "caution": "이 법은 종 제도를 그대로 인정하는 것이 아니라, 당시 제도를 제한하는 법이에요. 성경 전체는 종도 귀한 사람이라는 점을 점차 밝혀요(몬 1:16; 갈 3:28).",
     "refs": [
       "출애굽기 21:20-21",
       "출애굽기 21:26-27",
@@ -24527,7 +25023,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Code of Hammurabi - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Code_of_Hammurabi"
+      }
+    ]
   },
   {
     "id": "context-exo-21-22",
@@ -24639,9 +25141,9 @@ window.ScriptureNotesData.contextualTerms.push(...[
         ]
       }
     ],
-    "summary": "소가 종을 받으면 은 30세겔을 주는데, 이는 종 한 명의 일반적인 몸값이에요. 마태복음 26:15의 값과 같아요.",
-    "detail": "1세겔은 대략 11g 남짓으로 보고, 30세겔은 약 340g 정도의 은이에요. 스가랴 11:12-13에서 이 금액은 선지자에게 주는 값으로 조롱받고, 마태복음 26:15에서는 가룟 유다가 예수님을 파는 값으로 받아요.",
-    "caution": "세겔의 무게는 시대마다 달랐을 수 있어서, 정확한 금액 환산은 확정하기 어려워요.",
+    "summary": "소가 종을 받아 죽이면 소 주인이 종의 주인에게 은 30세겔을 내라고 해요. 마태복음 26:15의 금액과 같아요.",
+    "detail": "1세겔의 무게는 시대와 지역에 따라 달랐어요. 임금이 다스리던 때 이스라엘은 약 11.5g으로 보는 견해가 있어서, 30세겔은 약 345g이 돼요. 스가랴 11:12-13에서는 이 돈이 선지자의 품삯으로 나오는데, 그 값을 비꼬아 말한 것으로 보는 견해가 있어요. 마태복음 26:15에서는 가룟 유다가 예수님을 파는 값으로 받아요.",
+    "caution": "세겔의 무게는 시대와 지역마다 달랐을 수 있어서, 정확한 금액은 확정하기 어려워요.",
     "refs": [
       "출애굽기 21:32",
       "스가랴 11:12-13",
@@ -24649,7 +25151,17 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Shekel - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Shekel"
+      },
+      {
+        "label": "Thirty pieces of silver - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Thirty_pieces_of_silver"
+      }
+    ]
   }
 ]);
 
@@ -24807,7 +25319,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Bride price - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Bride_price"
+      }
+    ]
   },
   {
     "id": "context-exo-22-18",
@@ -25137,7 +25655,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "맥추절은 밀 수확의 첫 열매를, 수장절은 연말 추수를 감사하는 절기예요.",
-    "detail": "맥추절은 보릿단을 드린 날(레 23:10)부터 50일째라 훗날 오순절이라 불렸어요. 수장절은 가을 '연말'에 지키며 장막절(레 23:34)과 같은 절기예요. 농사력상 한 해가 가을에 끝나는 구조가 반영돼요.",
+    "detail": "맥추절은 유월절 둘째 날부터 세기 시작해 50일째 되는 날이에요(레 23:15-16). 그래서 훗날 '오순절'이라고도 불렸어요. 수장절은 가을 '연말'에 지키며 장막절(레 23:34)과 같은 절기예요. 한 해 농사가 가을에 끝나는 것을 보여 줘요.",
     "caution": "",
     "refs": [
       "출애굽기 23:16",
@@ -25146,7 +25664,17 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Shavuot - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Shavuot"
+      },
+      {
+        "label": "Sukkot - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Sukkot"
+      }
+    ]
   },
   {
     "id": "context-exo-23-19",
@@ -25168,8 +25696,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "새끼 염소를 어미의 젖에 삶지 말라는 금령은, 생명을 주는 젖을 죽음의 도구로 쓰지 말라는 뜻이에요.",
-    "detail": "이 규정은 34:26, 신명기 14:21에서도 되풀이돼요. 유대 전통은 이 규정을 바탕으로, 고기와 유제품을 따로 먹는 식사법을 발전시켰어요. 가나안의 풍요 제사와 관련이 있다는 추측도 있지만, 확실하지 않아요.",
-    "caution": "이 금령을 주신 이유는 본문에 분명히 나와 있지 않아요.",
+    "detail": "이 규정은 34:26, 신 14:21에서도 되풀이돼요. 이 규정을 주신 이유는 성경에 드러나 있지 않아요. 새끼를 어미 젖에 삶는 일이 잔인하게 느껴질 수 있다는 설명이 있어요. 유대 전통은 이 규정을 넓게 풀어, 고기와 유제품을 따로 먹는 식사법을 만들었어요. 가나안 풍요 제사와 관련이 있다는 추측도 있지만, 확실하지 않아요.",
+    "caution": "해석이 갈리는 부분이라 이유를 하나로 단정하기 어려워요.",
     "refs": [
       "출애굽기 23:19",
       "출애굽기 34:26",
@@ -25177,7 +25705,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Kashrut - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Kashrut"
+      }
+    ]
   },
   {
     "id": "context-exo-23-20",
@@ -25232,7 +25766,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "가나안 주상을 부수라는 명령은 우상 숭배를 문화 수준에서 끊으라는 뜻이에요.",
-    "detail": "가나안 종교는 바알, 아스다롯, 몰록 같은 신들을 섬겼어요. '주상(맛체바)'은 신을 상징하는 돌기둥이에요. 이스라엘이 이 명령을 어겨 우상이 남은 결과가 사사기 2:1-3에 나와요.",
+    "detail": "가나안 종교는 바알, 아세라, 아스다롯 같은 신들을 섬겼어요. '주상(맛체바)'은 예배 장소에 세운 돌기둥이에요. 이스라엘이 이 명령을 어겨 우상이 남은 결과가 사사기 2:1-3에 나와요.",
     "caution": "",
     "refs": [
       "출애굽기 23:24",
@@ -25242,7 +25776,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Canaanite religion - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Canaanite_religion"
+      }
+    ]
   },
   {
     "id": "context-exo-23-28",
@@ -25323,7 +25863,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "홍해에서 블레셋 바다(지중해)까지, 광야에서 강(유프라테스)까지의 경계는 아브라함 약속(창 15:18)이 구체화된 거예요.",
-    "detail": "다윗과 솔로몬 시대에 이 영토가 대체로 실현돼요(왕상 4:21). 이 약속은 이스라엘이 순종하며 점령할 때 이루어지는 약속이에요.",
+    "detail": "성경은 다윗과 솔로몬 때 이 약속에 가까운 넓은 땅을 다스렸다고 말해요(왕상 4:21). 학자들 대부분은 요단 서쪽의 넓은 지역과 요단 동쪽 일부를 다스렸다고 봐요. 이 약속은 이스라엘이 순종하며 점령할 때 이루어지는 약속이에요.",
     "caution": "",
     "refs": [
       "출애굽기 23:31",
@@ -25331,7 +25871,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "United Kingdom of Israel - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/United_Kingdom_of_Israel"
+      }
+    ]
   },
   {
     "id": "context-exo-23-32",
@@ -25352,8 +25898,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
         ]
       }
     ],
-    "summary": "가나안 사람들과 조약을 맺지 말라는 것은, 당시 조약에서 상대의 신들을 증인으로 세우는 관습이 있었기 때문이에요.",
-    "detail": "고대 근동의 조약은 신들을 증인으로 불렀어요. 그래서 조약을 맺으면 상대 신을 인정하는 셈이 돼요. 기브온 사람들이 속여 조약을 맺은 일(수 9장)이 이 금령과 관련된 실제 사례예요.",
+    "summary": "가나안 사람들과 조약을 맺지 말라는 것은, 그들과 가까워져 그 신들을 섬기게 될까 막으시려는 뜻이에요(33절).",
+    "detail": "조약을 맺으면 서로 가까워져 상대의 신앙과 풍습에 물들기 쉬워요(33절). 기브온 사람들이 속여 조약을 맺은 일(수 9장)이 이 금령과 관련된 실제 사례예요.",
     "caution": "",
     "refs": [
       "출애굽기 23:32-33",
@@ -25415,7 +25961,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "열두 기둥은 열두 지파 전체가 언약 당사자임을 보여주는 증표예요. 모세는 구두 서약을 글로 남겨요.",
-    "detail": "백성이 입으로 순종을 서약했지만 모세는 말씀을 기록하여 언약을 문서로 확정해요. 제단 하나에 열두 기둥은 한 하나님 앞에 선 열두 지파를 가리켜요. 이는 고대 근동 조약에서 증거 기둥을 세우는 관행과도 닮았어요.",
+    "detail": "백성이 입으로 순종을 서약했지만 모세는 말씀을 기록하여 언약을 문서로 확정해요. 제단 하나에 열두 기둥은 한 하나님 앞에 선 열두 지파를 가리켜요.",
     "caution": "",
     "refs": [
       "출애굽기 24:4",
@@ -25699,7 +26245,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "해달의 가죽은 정확히 어떤 동물인지 확정되지 않은 윗덮개 재료예요.",
-    "detail": "'타하쉬'는 해달·돌고래·듀공 등으로 추정되나 불명확해요. 붉게 물들인 숫양 가죽과 함께 성막을 비바람에서 보호하는 덮개로 쓰여요(26:14). 광야의 재료로 구하기 어려운 것은 애굽 나올 때 얻은 것으로 볼 수 있어요.",
+    "detail": "'타하쉬'가 어떤 동물인지는 확정되지 않았어요. 붉게 물들인 숫양 가죽과 함께 성막을 비바람에서 보호하는 덮개로 쓰여요(26:14). 광야에서 구하기 어려운 재료라서, 애굽에서 얻은 것으로 볼 수 있어요.",
     "caution": "재료의 정체는 확정할 수 없어요.",
     "refs": [
       "출애굽기 25:5",
@@ -25792,7 +26338,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "속죄소는 법궤 위의 순금 덮개로, 피가 뿌려져 죄가 덮이는 하나님과 만나는 자리예요.",
-    "detail": "히브리어 '카포레트'는 '덮다'(카파르)에서 나온 말이에요. 규빗은 약 45cm여서 길이 약 112cm, 너비 약 67cm예요. 대속죄일에 대제사장이 피를 이 위에 뿌려요(레 16:14-15). 로마서 3:25는 그리스도를 이 '속죄 제물'로 소개해요.",
+    "detail": "히브리어 '카포레트'는 '덮다'(카파르)에서 나온 말이에요. 규빗은 자료마다 달라서 대략 48~54cm로 봐요. 그렇게 보면 길이는 약 1.2~1.35m, 너비는 약 0.7~0.8m쯤이에요. 대속죄일에 대제사장이 피를 이 위에 뿌려요(레 16:14-15). 로마서 3:25는 그리스도를 이 '속죄 제물'로 소개해요.",
     "caution": "",
     "refs": [
       "출애굽기 25:17-22",
@@ -25802,6 +26348,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "그리스도는 하나님의 진노를 달래는 화목 제물이세요. 개혁주의는 그리스도께서 죄인 대신 벌을 받으셨다고 가르치며, 이것이 구약 속죄의 뿌리예요(WCF 8).",
     "wcf": [
       8
+    ],
+    "sourceLinks": [
+      {
+        "label": "Cubit - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Cubit"
+      }
     ]
   },
   {
@@ -25855,7 +26407,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "등잔대는 살구꽃(아몬드꽃) 모양 잔으로 장식돼 생명과 번성의 이미지를 담아요.",
-    "detail": "'살구꽃(솨케드)'은 이른 봄에 가장 먼저 피는 꽃이라 '깨어 있음'의 뜻과 말놀이로 연결돼요(렘 1:11-12). 가지 일곱의 등잔대(31-37절)는 항상 하나님 앞을 밝히는 빛이에요. 요한계시록 1:12-20의 일곱 금 촛대가 교회로 풀이돼요.",
+    "detail": "'살구꽃(솨케드)'은 이른 봄에 잎보다 먼저 피는 꽃이에요. 그래서 '깨어 있음'의 뜻과 말놀이로 연결돼요(렘 1:11-12). 가지 일곱의 등잔대(31-37절)는 항상 하나님 앞을 밝히는 빛이에요. 요한계시록 1:12-20의 일곱 금 촛대가 교회로 풀이돼요.",
     "caution": "",
     "refs": [
       "출애굽기 25:33",
@@ -25864,7 +26416,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Almond - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Almond"
+      }
+    ]
   },
   {
     "id": "context-exo-26-1",
@@ -25951,7 +26509,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "제단의 네 뿔은 힘과 구원의 상징이며, 피를 바르고 죄인이 붙잡는 자리예요.",
-    "detail": "'뿔(케렌)'은 힘과 능력을 상징해요. 속죄제의 피는 이 뿔에 발라요(레 4:7). 도피처로 뿔을 잡는 풍습도 있었어요(왕상 1:50). 가로 세로 5규빗(약 2.25m)의 놋으로 싼 조각목 제단이에요.",
+    "detail": "'뿔(케렌)'은 힘과 능력을 상징해요. 속죄제의 피는 이 뿔에 발라요(레 4:7). 도피처로 뿔을 잡는 풍습도 있었어요(왕상 1:50). 제단은 가로 세로 5규빗이고 놋으로 싼 조각목으로 만들어요. 규빗을 대략 48~54cm로 보면 약 2.4~2.7m쯤 돼요.",
     "caution": "",
     "refs": [
       "출애굽기 27:2",
@@ -25961,7 +26519,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Cubit - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Cubit"
+      }
+    ]
   },
   {
     "id": "context-exo-28-1",
@@ -26080,7 +26644,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "어깨의 보석 두 개에 열두 지파의 이름을 새기는 것은, 대제사장이 백성을 짊어지고 하나님 앞에 선다는 뜻이에요.",
-    "detail": "호마노(오닉스)는 여러 색의 띠가 어우러진 보석이에요. 각 돌에 여섯 지파의 이름을 출생 순서대로 새겨요(10절). 이름이 보석에 새겨진 것은 대제사장이 이스라엘을 하나님 앞에서 기억하게 하는 표예요(12절).",
+    "detail": "호마노(오닉스)는 여러 색의 띠가 번갈아 있는 보석이에요. 각 돌에 여섯 지파의 이름을 출생 순서대로 새겨요(10절). 이름이 보석에 새겨진 것은 대제사장이 이스라엘을 하나님 앞에서 기억하게 하는 표예요(12절).",
     "caution": "",
     "refs": [
       "출애굽기 28:9-12",
@@ -26090,6 +26654,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "대제사장이 백성의 이름을 어깨에 지고 하나님 앞에 서는 모습은, 그리스도께서 백성을 짊어지시는 일을 미리 보여 주는 그림이에요(WCF 8).",
     "wcf": [
       8
+    ],
+    "sourceLinks": [
+      {
+        "label": "Onyx - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Onyx"
+      }
     ]
   },
   {
@@ -26365,7 +26935,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "인구를 셀 때 각 사람이 내는 '속전'은, 생명이 하나님께 속했음을 인정하고 재앙을 막는 몸값이에요.",
-    "detail": "'속전'(코페르)은 21:30에도 나온 몸값이에요. 인구 조사는 나라의 권력과 세금을 세우는 수단이었고, 다윗의 인구 조사(삼하 24장)에서처럼 재앙이 따를 수 있었어요. 민수기 1장의 인구 조사는 이 규정에 따라 이루어져요.",
+    "detail": "'속전'(코페르)은 21:30에도 나온 몸값이에요. 본문은 인구를 셀 때 재앙을 막으려고 이 속전을 내라고 해요. 다윗의 인구 조사(삼하 24장)에서는 실제로 재앙이 내렸어요. 민수기 1장의 인구 조사는 이 규정에 따라 이루어져요.",
     "caution": "",
     "refs": [
       "출애굽기 30:12",
@@ -26910,7 +27480,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "하나님이 '언약을 세우겠다'고 하며 전례 없는 기이한 일을 약속하세요. 언약이 깨진 뒤의 갱신이에요.",
-    "detail": "'세우다'의 원어는 '카라트(자르다)'로 고대에는 짐승을 잘라 언약을 맺는 관행에서 나온 말이에요(창 15장). 약속하신 이적은 가나안 정복과 하나님이 백성 가운데 임재하시는 일을 포함해요.",
+    "detail": "'세우다'의 원어는 '카라트(자르다)'예요. 짐승을 쪼개 언약을 맺는 풍습과 이어진다고 보는 견해가 있어요(창 15장). 약속하신 이적은 가나안 정복과 하나님이 백성 가운데 임재하시는 일을 포함해요.",
     "caution": "",
     "refs": [
       "출애굽기 34:10",
@@ -27034,7 +27604,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
         ]
       }
     ],
-    "summary": "남자들도 금 장신구를 내놓은 것은 고대 근동에서 남녀 모두 금으로 몸을 꾸미던 풍습을 배경으로 해요.",
+    "summary": "남녀 모두 금 장신구를 자원해서 내놓은 것은 성막을 위한 기쁜 헌신을 보여 줘요.",
     "detail": "팔찌, 귀고리, 가락지, 목걸이 같은 금 장신구는 3:22, 32:2에서도 나왔던 물건이에요. 한때 금송아지의 재료가 되었던 금이 이제는 성막의 예물이 돼요. 마음이 원하는 자가 내는 자원 예물이에요(25:2).",
     "caution": "",
     "refs": [
@@ -27586,7 +28156,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "가장 가난한 이에게는 피 없는 곡식으로 속죄하게 해요. 다만 기름과 유향은 넣지 않아 소제와 구분해요.",
-    "detail": "에바 십분의 일은 약 2.2리터예요. 이것은 죄를 다루는 제사이므로 기쁨의 소제와 달리 기름과 유향을 더하지 않아요. 한 줌을 기념물로 태워요(12절).",
+    "detail": "에바 십분의 일은 자료에 따라 약 2.2~3.6리터로 봐요. 이것은 죄를 다루는 제사이므로 기쁨의 소제와 달리 기름과 유향을 더하지 않아요. 한 줌을 기념물로 태워요(12절).",
     "caution": "히브리서 9:22가 '거의 모든 것이 피로 정결'이라 하므로 이 곡식 제사는 예외 사례로 읽어요.",
     "refs": [
       "레위기 5:11-13",
@@ -27595,7 +28165,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Biblical and Talmudic units of measurement - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Biblical_and_Talmudic_units_of_measurement"
+      }
+    ]
   },
   {
     "id": "context-lev-5-16",
@@ -27747,7 +28323,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "대제사장 위임식과 함께 아침저녁으로 드리는 소제는 제사장직이 날마다 바쳐지는 헌신 위에 선다는 표예요.",
-    "detail": "'십분의 일 에바'는 약 2.2리터의 고운 가루예요. 반은 아침에, 반은 저녁에 드리고(20절) 전부 태워요(22-23절). 제사장 자신의 몫이 없다는 점에서 제사장은 먹지 않아요.",
+    "detail": "'십분의 일 에바'는 자료에 따라 약 2.2~3.6리터의 고운 가루로 봐요. 반은 아침에, 반은 저녁에 드리고(20절) 전부 태워요(22-23절). 제사장 자신의 몫이 없다는 점에서 제사장은 먹지 않아요.",
     "caution": "",
     "refs": [
       "레위기 6:20-22",
@@ -27756,7 +28332,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Biblical and Talmudic units of measurement - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Biblical_and_Talmudic_units_of_measurement"
+      }
+    ]
   },
     {
       "id": "context-lev-6-30",
@@ -28289,8 +28871,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
         ]
       }
     ],
-    "summary": "사반(바위너구리류)은 새김질하지만 굽이 갈라지지 않아 부정해요. 정결 판단은 두 가지를 모두 요구해요.",
-    "detail": "시편 104:18은 사반이 바위 틈에 산다고 해요. 정한 짐승은 굽이 갈라지고 새김질해야 해요(3절). 낙타, 사반, 토끼(4-6절)는 한 가지만 해당해 부정해요.",
+    "summary": "본문의 '사반'은 새김질하지만 굽이 갈라지지 않아 부정해요. 정결 판단은 두 가지를 모두 요구해요.",
+    "detail": "시편 104:18은 사반이 바위 틈에 산다고 해요. 정한 짐승은 굽이 갈라지고 새김질해야 해요(3절). 낙타, 사반, 토끼(4-6절)는 한 가지만 해당해 부정해요. 사반은 바위너구리를 가리키는 히브리 이름으로 보는 견해가 있어요. 하지만 바위너구리는 새김질하지 않는 동물이에요.",
     "caution": "동물 이름의 현대 대응은 학자들 사이에 추정이 있어요.",
     "refs": [
       "레위기 11:5",
@@ -28299,7 +28881,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Rock hyrax - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Rock_hyrax"
+      }
+    ]
   },
   {
     "id": "context-lev-11-10",
@@ -28553,7 +29141,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Tzaraath",
+        "url": "https://en.wikipedia.org/wiki/Tzaraath"
+      }
+    ]
   },
   {
     "id": "context-lev-13-4",
@@ -28765,7 +29359,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "나병 환자의 속건제는 격리되어 있던 동안 하나님께 드리지 못한 헌신에 대한 배상의 성격이에요.",
-    "detail": "어린 숫양과 기름 한 록(약 0.3리터)을 요제로 흔들어 드려요. 피를 오른쪽 귓부리, 엄지손가락, 엄지발가락에 바르는 것(14절)은 제사장 위임식(8:23-24)과 같아요. 회복된 환자가 하나님의 백성으로 다시 성별됨을 뜻해요.",
+    "detail": "어린 숫양과 기름 한 록을 요제로 흔들어 드려요. 기름 한 록은 약 0.3~0.5리터로 보는 견해가 있어요. 피를 오른쪽 귓부리, 엄지손가락, 엄지발가락에 바르는 것(14절)은 제사장 위임식(8:23-24)과 같아요. 회복된 환자가 하나님의 백성으로 다시 성별됨을 뜻해요.",
     "caution": "",
     "refs": [
       "레위기 14:12-14",
@@ -28774,7 +29368,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Biblical and Talmudic units of measurement",
+        "url": "https://en.wikipedia.org/wiki/Biblical_and_Talmudic_units_of_measurement"
+      }
+    ]
   },
   {
     "id": "context-lev-14-21",
@@ -28828,7 +29428,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "집의 곰팡이 규정은 가나안 땅에 들어간 뒤의 일로 주어져요. 땅이 하나님이 주신 기업이므로 거룩이 집 안까지 미쳐요.",
-    "detail": "'내가 네게 기업으로 주는 가나안 땅'이라는 서두는 광야 시대에는 해당하지 않는 규정임을 알려요. 집의 '나병 색점'은 곰팡이·균류로 보는 해석이 일반적이에요. 제사장이 진찰하고 돌을 교체하거나 헐어요(40-45절).",
+    "detail": "'내가 네게 기업으로 주는 가나안 땅'이라는 서두는 광야 시대에는 해당하지 않는 규정임을 알려요. 집의 '나병 색점'은 곰팡이나 균류로 보는 학자들이 많아요. 제사장이 진찰하고 돌을 교체하거나 헐어요(40-45절).",
     "caution": "",
     "refs": [
       "레위기 14:33-36",
@@ -28837,7 +29437,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Tzaraath",
+        "url": "https://en.wikipedia.org/wiki/Tzaraath"
+      }
+    ]
   },
   {
     "id": "context-lev-15-2",
@@ -29180,8 +29786,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
         ]
       }
     ],
-    "summary": "염소 우상(세이림)에게 제사하지 말라는 것은 애굽에서 비롯되어 광야까지 이어진 이방 신앙의 잔재를 끊는 금령이에요.",
-    "detail": "'세이림'은 '털 많은 것'으로 염소 모양의 귀신이에요. 17장은 모든 도살이 회막에서 이뤄져야 한다고 해서 들판에서 임의로 제사하던 풍습을 막아요. 여로보암이 숫염소 우상을 세운 일이 대하 11:15에 나와요.",
+    "summary": "염소 모양의 귀신 '세이림'에게 제사하지 말라는 금령이에요. 이스라엘이 우상을 섬기지 않게 하려는 것이에요.",
+    "detail": "'세이림'은 원래 '숫염소'를 뜻하던 말이 귀신 이름으로 쓰인 것으로 이해돼요. 초기 유대 문헌은 이들을 가장 낮은 귀신으로 봐요. 17장은 모든 도살이 회막에서 이뤄져야 한다고 해서 들판에서 임의로 제사하던 풍습을 막아요. 여로보암이 숫염소 우상을 세운 일이 대하 11:15에 나와요.",
     "caution": "",
     "refs": [
       "레위기 17:5-7",
@@ -29190,7 +29796,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Se'irim",
+        "url": "https://en.wikipedia.org/wiki/Se%27irim"
+      }
+    ]
   },
   {
     "id": "context-lev-17-11",
@@ -29411,7 +30023,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "몰렉에게 자녀를 불로 통과시키는 일은 성 윤리 목록 한가운데 나오는 영적 간음이에요.",
-    "detail": "몰렉은 암몬 사람의 신으로 어린이를 불에 바치는 제의와 연결돼요(왕하 23:10; 렘 32:35). 힌놈의 골짜기가 이 제사의 장소였어요. 20:1-5가 이 죄를 사형으로 다뤄요.",
+    "detail": "몰렉은 암몬 사람들이 섬긴 신으로 나와요(왕상 11:7). 왕하 23:10은 힌놈 골짜기의 도벳을 요시야가 더럽혔다고 전해요. 자녀를 불로 통과하게 한 일이 실제로 어떤 제사였는지는 학자들 사이에 해석이 갈려요. 20:1-5가 이 죄를 사형으로 다뤄요.",
     "caution": "",
     "refs": [
       "레위기 18:21",
@@ -29422,7 +30034,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Molech",
+        "url": "https://en.wikipedia.org/wiki/Molech"
+      }
+    ]
   },
   {
     "id": "context-lev-18-22",
@@ -29801,8 +30419,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
         ]
       }
     ],
-    "summary": "죽은 자를 위한 몸의 상처와 문신 금지는 가나안의 애도 풍습을 거부하는 규정이에요.",
-    "detail": "가나안 사람들은 죽은 자를 애도하며 몸을 베고 문신을 새겼어요. 신 14:1은 '너희는 여호와의 자녀이니' 몸을 베지 말라고 해요. 이스라엘은 죽음 앞에서도 이방 의식과 구별돼요.",
+    "summary": "죽은 자를 위해 몸을 베거나 문신을 새기지 말라는 규정이에요. 이방 의식과 구별되려는 것이에요.",
+    "detail": "본문은 죽은 자를 위해 살을 베거나 문신을 새기지 말라고 해요. 신 14:1도 '너희는 여호와의 자녀이니' 몸을 베지 말라고 해요. 엘리야 때 바알 선지자들이 몸을 칼로 베며 기도한 일이 왕상 18:28에 나와요. 이스라엘은 죽음 앞에서도 이방 의식과 구별돼요.",
     "caution": "오늘의 문신 일반이 이 규정에 해당하는지는 해석이 갈려요. 문맥은 죽은 자를 위한 의식이에요.",
     "refs": [
       "레위기 19:27-28",
@@ -29900,7 +30518,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "저울, 추, 에바, 힌을 공평하게 쓰라는 상거래 규정은 거룩이 시장 안에서 정직으로 나타난다는 뜻이에요.",
-    "detail": "에바는 곡식 부피 단위(약 22리터), 힌은 액체 부피 단위(약 3.7리터)예요. 속이는 저울은 하나님이 가증히 여기세요(잠 11:1; 20:10). 아모스 8:5는 에바를 작게 하고 세겔을 크게 하는 상인들을 책망해요.",
+    "detail": "에바는 곡식 부피 단위이고, 힌은 액체 부피 단위예요. 속이는 저울은 하나님이 가증히 여기세요(잠 11:1; 20:10). 아모스 8:5는 에바를 작게 하고 세겔을 크게 하는 상인들을 책망해요.",
     "caution": "",
     "refs": [
       "레위기 19:35-36",
@@ -30378,7 +30996,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "오순절에는 누룩을 넣은 빵 두 개를 드려요. 누룩 금지 규정(2:11)의 예외로, 일상의 빵이 첫 열매로 드려져요.",
-    "detail": "에바 십분의 이(약 4.4리터)의 고운 가루로 만든 떡이에요. 무교절에는 누룩이 없지만 오순절 첫 열매 떡은 누룩을 넣어요. 빵 두 개를 유대인과 이방인으로 풀이하는 해석도 있어요.",
+    "detail": "에바 십분의 이의 고운 가루로 만든 떡이에요. 무교절에는 누룩이 없지만 오순절 첫 열매 떡은 누룩을 넣어요. 빵 두 개를 유대인과 이방인으로 풀이하는 해석도 있어요.",
     "caution": "빵 두 개의 상징은 해석이 갈려요.",
     "refs": [
       "레위기 23:17",
@@ -31114,7 +31732,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "아들과 딸의 살을 먹는 것은 포위된 성에서의 극심한 굶주림을 그린 징벌 예고이며, 실제로 일어났어요.",
-    "detail": "이 경고는 신명기 28:53-57에서 되풀이되고, 열왕기하 6:28-29(사마리아 포위)와 예레미야애가 4:10에서 일어난 일로 나와요. 요세푸스도 『유대 전쟁사』에서 기원후 70년 예루살렘 포위 때 자기 아이를 먹은 여인의 일을 기록했다고 알려져 있어요.",
+    "detail": "이 경고는 신명기 28:53-57에서 되풀이되고, 열왕기하 6:28-29(사마리아 포위)와 예레미야애가 4:10에서 일어난 일로 나와요. 기원후 70년 예루살렘 포위 때에도 굶주린 한 여인이 자기 아이를 먹은 일을 요세푸스가 『유대 전쟁사』에 전해요.",
     "caution": "",
     "refs": [
       "레위기 26:29",
@@ -31124,7 +31742,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Siege of Jerusalem (70 CE)",
+        "url": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(70_CE)"
+      }
+    ]
   },
   {
     "id": "context-lev-26-31",
@@ -31146,7 +31770,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "하나님이 이스라엘의 향기로운 제물을 받지 않겠다는 선언은, 형식만 갖춘 제사가 소용없다는 강한 경고예요.",
-    "detail": "성소가 황량해진다는 말은 성막·성전이 파괴됨을 예고해요. 기원전 586년 바벨론에 의한 성전 파괴가 대표적인 이루어짐이에요. 이사야 1:11-15와 아모스 5:21-22가 같은 이유로 예배를 거절하세요.",
+    "detail": "성소가 황량해진다는 말은 성막·성전이 파괴됨을 예고해요. 기원전 586년경 바벨론에 의한 성전 파괴(왕하 25:8-9)가 대표적인 이루어짐이에요. 이사야 1:11-15와 아모스 5:21-22가 같은 이유로 예배를 거절하세요.",
     "caution": "",
     "refs": [
       "레위기 26:31",
@@ -31157,7 +31781,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Solomon's Temple",
+        "url": "https://en.wikipedia.org/wiki/Solomon%27s_Temple"
+      }
+    ]
   },
   {
     "id": "context-lev-26-34",
@@ -31721,7 +32351,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "summary": "법궤를 옮길 때 덮는 가죽 덮개의 재료로 '해달 가죽'이 나와요.",
     "detail": "히브리어 '타하쉬'가 어떤 짐승인지 분명하지 않아요. 출애굽기 25장 5절과 26장 14절에서도 성막 덮개의 재료로 나와요. 법궤는 휘장으로 싸고, 그 위에 가죽을, 다시 그 위에 청색 보자기를 덮어요(5-6절).",
-    "caution": "짐승 종류는 해달, 돌고래 등 설이 갈려서 확정하기 어려워요.",
+    "caution": "짐승 종류는 학자들 사이에 설이 갈려서 확정하기 어려워요.",
     "refs": [
       "민수기 4:5-6",
       "출애굽기 25:5",
@@ -32700,7 +33330,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "여호와께서 바다에서 바람을 보내 메추라기를 진영 사방에 내리게 하세요.",
-    "detail": "메추라기가 땅 위에 약 1미터 가까이 쌓였다는 해석과, 그만큼 낮게 날아 잡기 쉬웠다는 해석이 있어요. 사방으로 하룻길 거리에 내렸고, 출애굽기 16장 13절에도 메추라기가 올라온 일이 있어요.",
+    "detail": "메추라기가 땅 위에 약 1미터 안팎으로 쌓였다는 해석과, 그만큼 낮게 날아 잡기 쉬웠다는 해석이 있어요. 본문의 '두 규빗'은 규빗을 대략 50cm 안팎으로 볼 때 1미터 안팎이에요. 사방으로 하룻길 거리에 내렸고, 출애굽기 16장 13절에도 메추라기가 올라온 일이 있어요.",
     "caution": "",
     "refs": [
       "민수기 11:31-32",
@@ -32708,7 +33338,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Cubit (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Cubit"
+      }
+    ]
   },
   {
     "id": "context-num-11-33",
@@ -32761,7 +33397,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "미리암과 아론이 모세가 구스 여자를 아내로 맞은 일을 빌미 삼아 모세를 비방해요.",
-    "detail": "'구스'는 보통 에티오피아 쪽을 가리키지만, 하박국 3장 7절은 구산과 미디안을 나란히 불러요. 이 여자가 십보라(출애굽기 2장 21절)인지 다른 아내인지 해석이 갈려요. 2절을 보면 비방의 핵심은 모세만 여호와께서 말씀하시느냐는 점이에요.",
+    "detail": "'구스'는 나일강 남쪽 누비아의 옛 나라(쿠시)와 같은 지역으로 봐요. 하박국 3장 7절은 구산과 미디안을 나란히 불러요. 이 여자가 십보라(출애굽기 2장 21절)인지 다른 아내인지 해석이 갈려요. 2절을 보면 비방의 핵심은 모세만 여호와께서 말씀하시느냐는 점이에요.",
     "caution": "",
     "refs": [
       "민수기 12:1-2",
@@ -32770,7 +33406,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Kush (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Kush"
+      }
+    ]
   },
   {
     "id": "context-num-12-3",
@@ -33371,7 +34013,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Tzitzit (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Tzitzit"
+      }
+    ]
   },
   {
     "id": "context-num-16-1",
@@ -33609,7 +34257,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "하룻밤 사이에 아론의 지팡이에 싹이 돋고, 순이 나고, 꽃이 피고, 열매가 열려요.",
-    "detail": "본문의 '살구'는 히브리어 '샤케드'로, 봄에 가장 먼저 꽃이 피는 나무로 알려져 있어요. 출애굽기 25장 33-34절의 등잔대 장식도 살구꽃 모양이에요. 10절은 지팡이를 증거궤 앞에 간직하라고 하는데, 히브리서 9장 4절은 언약궤 안에 아론의 싹난 지팡이가 있었다고 해요.",
+    "detail": "본문의 '살구'는 히브리어 '샤케드'로, 이른 봄 잎이 나기 전에 꽃이 피는 나무예요. 출애굽기 25장 33-34절의 등잔대 장식도 살구꽃 모양이에요. 10절은 지팡이를 증거궤 앞에 간직하라고 하는데, 히브리서 9장 4절은 언약궤 안에 아론의 싹난 지팡이가 있었다고 해요.",
     "caution": "궤 앞(민수기 17장 10절)과 궤 안(히브리서 9장 4절)의 위치가 다르게 적혀 있어 해석이 갈려요.",
     "refs": [
       "민수기 17:8-10",
@@ -33618,7 +34266,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Almond (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Almond"
+      }
+    ]
   },
   {
     "id": "context-num-17-12",
@@ -34088,7 +34742,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "'여호와의 전쟁기'라는 책에 실린 말이 인용돼요.",
-    "detail": "14-15절은 아르논 골짜기를 말하는 구절을 이 책에서 인용하고, 27-30절은 '시인'의 노래를 인용해요. 여호수아 10장 13절과 사무엘하 1장 18절에도 '야살의 책'이 인용돼요. 성경이 다른 책이나 노래를 인용한 사례인데, 그 책의 성격은 전해지지 않아요.",
+    "detail": "14-15절은 아르논 골짜기를 말하는 구절을 이 책에서 인용하고, 27-30절은 '시인'의 노래를 인용해요. 여호수아 10장 13절과 사무엘하 1장 18절에도 '야살의 책'이 인용돼요. 성경이 다른 책이나 노래를 인용한 사례인데, 그 책은 전해지지 않고 승리의 노래 모음일 것이라는 추측이 있어요.",
     "caution": "",
     "refs": [
       "민수기 21:14-15",
@@ -34097,7 +34751,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Book of the Wars of the Lord (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Book_of_the_Wars_of_the_Lord"
+      }
+    ]
   },
   {
     "id": "context-num-21-23",
@@ -34151,7 +34811,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "모압 왕 발락이 점사 값을 가진 사신들을 브돌의 발람에게 보내, 이스라엘을 저주해 달라고 해요.",
-    "detail": "신명기 23장 4절은 발람을 메소보다미아 브돌 사람 브올의 아들이라 하고, 여호수아 13장 22절은 그를 점술가라고 해요. 요단 계곡의 텔 데이르 알라에서 1967년에 발견된 벽 글은 '브올의 아들 발람'을 신들의 환상을 보는 자로 전해요(주전 8세기 무렵으로 봐요). 베드로후서 2장 15절과 유다서 11절은 발람이 삯을 사랑한 일을 책망해요.",
+    "detail": "신명기 23장 4절은 발람을 메소보다미아 브돌 사람 브올의 아들이라 하고, 여호수아 13장 22절은 그를 점술가라고 해요. 요단 계곡의 텔 데이르 알라에서 1967년에 발견된 벽 글은 '브올의 아들 발람'을 신들의 환상을 보는 자로 전해요(주전 9~8세기쯤으로 봐요). 베드로후서 2장 15절과 유다서 11절은 발람이 삯을 사랑한 일을 책망해요.",
     "caution": "여호와의 이름으로 말하는 장면(8절, 18절)과 점술가라는 호칭을 구별해서 읽어요.",
     "refs": [
       "민수기 22:5-7",
@@ -34575,7 +35235,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "발람의 마지막 예언에서, 깃딤 해변에서 온 배들이 앗수르와 에벨을 괴롭힌다고 해요.",
-    "detail": "'깃딤'은 키프로스 섬을 가리키는 것으로 보는 견해가 많아요. 창세기 10장 4절은 깃딤을 야완의 아들 가운데 나열하고, 다니엘 11장 30절에는 '깃딤의 배들'이 나와요. 이 예언은 서쪽 바다 쪽에서 오는 세력이 앗수르와 에벨을 괴롭힌다는 먼 장래를 가리켜요.",
+    "detail": "'깃딤'은 키프로스 섬을 가리키는 이름으로 알려져 있어요. 키티온(지금의 라르나카) 정착지에서 나온 이름이라고 해요. 창세기 10장 4절은 깃딤을 야완의 아들 가운데 나열하고, 다니엘 11장 30절에는 '깃딤의 배들'이 나와요. 이 예언은 서쪽 바다 쪽에서 오는 세력이 앗수르와 에벨을 괴롭힌다는 먼 장래를 가리켜요.",
     "caution": "깃딤이 가리키는 세력과 그 성취는 해석이 갈려요.",
     "refs": [
       "민수기 24:20-24",
@@ -34584,7 +35244,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Kittim (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Kittim"
+      }
+    ]
   },
   {
     "id": "context-num-25-1",
@@ -35311,7 +35977,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "여호와께서 가나안의 남쪽, 서쪽, 북쪽, 동쪽 경계를 정해 주시고, 이 땅을 제비 뽑아 나누라고 하세요.",
-    "detail": "동쪽 경계는 '염해'(사해), 서쪽 경계는 '대해'(지중해)예요. 요단 동쪽은 이미 르우벤, 갓, 므낫세 반 지파가 받았으므로(13-15절) 이 경계 밖이에요. 창세기 15장 18절의 약속과 에스겔 47장 15-17절의 경계와 견주어 읽어요. 여호수아 13장 1-6절은 아직 얻지 못한 땅이 남았다고 해요.",
+    "detail": "동쪽 경계는 보통 '염해'(사해)로, 서쪽 경계는 '대해'(지중해)로 봐요. 요단 동쪽은 이미 르우벤, 갓, 므낫세 반 지파가 받았으므로(13-15절) 이 경계 밖이에요. 창세기 15장 18절의 약속과 에스겔 47장 15-17절의 경계와 견주어 읽어요. 여호수아 13장 1-6절은 아직 얻지 못한 땅이 남았다고 해요.",
     "caution": "여호와께서 정하신 경계와 실제로 차지한 범위는 여호수아서와 견주어 구별해서 읽어요.",
     "refs": [
       "민수기 34:2-12",
@@ -35374,7 +36040,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "레위인에게 주는 성읍의 들은 성벽에서 사방 천 규빗이라고 하고, 5절에서는 사방 이천 규빗을 재라고 해요.",
-    "detail": "4절은 천 규빗, 5절은 이천 규빗으로 수가 달라요. 두 구절의 관계는 본문이 설명하지 않아서 해석이 갈려요. 레위인에게 주는 성읍은 도피성 여섯과 나머지 마흔두 곳을 합쳐 마흔여덟 곳이에요(6-7절). 여호수아 21장 41절에 마흔여덟 성읍이 실제로 정해져요.",
+    "detail": "4절은 천 규빗, 5절은 이천 규빗으로 수가 달라요. 두 구절의 관계는 본문이 설명하지 않아서 해석이 갈려요. 규빗을 약 54cm로 볼 때 천 규빗은 약 540m쯤이에요. 레위인에게 주는 성읍은 도피성 여섯과 나머지 마흔두 곳을 합쳐 마흔여덟 곳이에요(6-7절). 여호수아 21장 41절에 마흔여덟 성읍이 실제로 정해져요.",
     "caution": "4절과 5절의 수가 다른 이유는 하나로 단정하지 않아요.",
     "refs": [
       "민수기 35:2-8",
@@ -35382,7 +36048,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Cubit (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Cubit"
+      }
+    ]
   },
   {
     "id": "context-num-35-11",
@@ -35726,7 +36398,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "에밈, 호리, 아위 같은 옛 주민에 대한 괄호 설명이 이어져요.",
-    "detail": "에서의 자손이 호리 사람을 몰아내고 세일에 살게 된 일이 12절에, 암몬이 삼숨밈을 몰아낸 일이 20-22절에, 갑돌에서 온 사람들이 아위 사람을 물리친 일이 23절에 나와요. 갑돌을 크레타로 보는 견해가 있어요. 창세기 36장 20-22절은 호리 사람이 세일의 주민이었다고 해요.",
+    "detail": "에서의 자손이 호리 사람을 몰아내고 세일에 살게 된 일이 12절에, 암몬이 삼숨밈을 몰아낸 일이 20-22절에, 갑돌에서 온 사람들이 아위 사람을 물리친 일이 23절에 나와요. 갑돌을 크레타로 보는 전통적인 견해가 있지만, 요즘은 키프로스나 길리기아로 보기도 해요. 창세기 36장 20-22절은 호리 사람이 세일의 주민이었다고 해요.",
     "caution": "괄호 안 설명은 새 세대에게 옛 주민의 이름과 선례를 알려 주는 삽입이에요.",
     "refs": [
       "신명기 2:10-12",
@@ -35735,7 +36407,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Caphtor",
+        "url": "https://en.wikipedia.org/wiki/Caphtor"
+      }
+    ]
   },
   {
     "id": "context-deu-2-30",
@@ -35792,7 +36470,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "summary": "바산 왕 옥의 침상은 쇠로 만들어졌고, 길이 아홉 규빗, 너비 네 규빗이라고 해요.",
     "detail": "옥은 바산 왕이며 르바임 사람 가운데 남은 자예요. 본문의 규빗을 약 45센티미터로 잡으면 길이는 4미터 남짓, 너비는 1.8미터쯤이에요. 본문은 이 침상이 암몬의 수도 랍바에 있다고 해서, 당시 독자들이 직접 찾아볼 수 있는 물건처럼 말해요.",
-    "caution": "침상의 재질이 쇠인지 돌 상자인지는 설이 갈리고, 옥의 실제 키는 확정하기 어려워요.",
+    "caution": "침상 치수가 옥의 실제 키를 말해 주는지는 확정하기 어려워요. 일부 학자는 이 치수가 신화 속 신의 침상을 본뜬 것일 수 있다고 봐요.",
     "refs": [
       "신명기 3:11",
       "신명기 3:1-6"
@@ -36242,7 +36920,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "이스라엘이 매일 고백하는 '우리 하나님 여호와는 오직 한 분이신 여호와이시다'라는 선언이에요.",
-    "detail": "쉐마는 아침저녁으로 외우는 유대 신앙의 핵심 고백이에요. 미쉬나 베라홋 2장 2절은 신명기 6장 4-9절, 11장 13-21절, 민수기 15장 37-41절을 쉐마로 꼽아요. 이집트에서 나온 나쉬 파피루스에도 십계명과 함께 쉐마의 시작이 적혀 있다고 알려져 있어요. 마가복음 12장 29-30절에서 예수께서 이 말씀을 첫째 계명으로 인용하세요.",
+    "detail": "쉐마는 아침저녁으로 외우는 유대 신앙의 핵심 고백이에요. 미쉬나 베라홋 2장 2절은 신명기 6장 4-9절, 11장 13-21절, 민수기 15장 37-41절을 쉐마로 꼽아요. 나쉬 파피루스는 1902년 이집트에서 입수된 것으로 전해지며, 십계명과 함께 쉐마의 첫 부분이 적혀 있다고 알려져 있어요. 연대는 기원전 150~100년 무렵으로 다시 보는 견해가 있어요. 마가복음 12장 29-30절에서 예수께서 이 말씀을 첫째 계명으로 인용하세요.",
     "caution": "문장을 나누는 방식에 따라 '여호와는 하나이시다'와 '여호와는 한 분뿐이시다' 두 가지로 읽혀요.",
     "refs": [
       "신명기 6:4",
@@ -36763,7 +37441,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "애굽에 내려간 조상은 칠십 명이었지만, 지금은 하늘의 별처럼 많아졌어요.",
-    "detail": "창세기 46장 27절과 출애굽기 1장 5절은 칠십 명이라고 하고, 사도행전 7장 14절은 일흔다섯 명이라고 해요. 그리스어 구약(칠십인역)은 칠십오 명으로 세기 때문이에요. 이 구절은 조상의 작은 수와 지금 하늘의 별 같은 수를 대비해요(창세기 15장 5절).",
+    "detail": "창세기 46장 27절과 출애굽기 1장 5절은 칠십 명이라고 하고, 사도행전 7장 14절은 일흔다섯 명이라고 해요. 두 숫자가 다른 이유는 본문에 따로 설명되지 않아요. 이 구절은 조상의 작은 수와 지금 하늘의 별 같은 수를 대비해요(창세기 15장 5절).",
     "caution": "",
     "refs": [
       "신명기 10:22",
@@ -36795,7 +37473,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "가나안 땅은 애굽처럼 사람이 물을 대는 땅이 아니라, 하늘에서 내리는 비를 받는 땅이에요.",
-    "detail": "애굽에서는 사람이 수고해서 물을 댔지만, 가나안은 산과 골짜기가 많아 하늘의 비를 받는 땅이에요. 여호와의 눈이 연초부터 연말까지 그 땅 위에 있다고 해요(11-12절). 14절은 이른 비와 늦은 비를 때에 맞춰 주신다고 하고, 17절은 불순종하면 하늘을 닫아 비를 내리지 않으신다고 경고해요. 열왕기상 17장 1절에서 엘리야가 비가 오지 않으리라고 선언해요.",
+    "detail": "애굽에서는 샤두프라는 장치로 사람이 힘들여 물을 퍼 올려 밭에 댔어요. 가나안은 산과 골짜기가 많아 하늘의 비를 받는 땅이에요. 여호와의 눈이 연초부터 연말까지 그 땅 위에 있다고 해요(11-12절). 14절은 이른 비와 늦은 비를 때에 맞춰 주신다고 하고, 17절은 불순종하면 하늘을 닫아 비를 내리지 않으신다고 경고해요. 열왕기상 17장 1절에서 엘리야가 비가 오지 않으리라고 선언해요.",
     "caution": "풍요가 사람의 수고가 아니라 여호와의 돌보심에 달려 있다는 점을, 애굽과 비교해서 보여 줘요.",
     "refs": [
       "신명기 11:10-12",
@@ -36805,7 +37483,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Shadoof",
+        "url": "https://en.wikipedia.org/wiki/Shadoof"
+      }
+    ]
   },
   {
     "id": "context-deu-12-5",
@@ -37865,7 +38549,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "새 집을 지을 때는 지붕에 난간을 만들어, 사람이 떨어지지 않게 하라는 규정이에요.",
-    "detail": "당시 집의 평평한 지붕은 생활 공간으로 쓰였기 때문에 필요한 규정이에요(여호수아 2장 6절, 사무엘하 11장 2절). 이유는 '그 피가 네 집에 돌아갈까 하노라'는 말이에요. 사고로 죽은 사람의 피 흘림 책임이 집주인에게 돌아간다는 뜻이에요. 19장 10절과 21장 8절처럼 무죄한 피의 책임을 공동체가 경계해요.",
+    "detail": "성경 본문에서 집 지붕은 사람이 올라가 쓰는 곳이었다는 것을 볼 수 있어요(여호수아 2장 6절, 사무엘하 11장 2절). 그래서 지붕에서 떨어지는 사고가 날 수 있었고, 이 규정이 필요했어요. 이유는 '그 피가 네 집에 돌아갈까 하노라'는 말이에요. 사고로 죽은 사람의 피 흘림 책임이 집주인에게 돌아간다는 뜻이에요. 19장 10절과 21장 8절처럼 무죄한 피의 책임을 공동체가 경계해요.",
     "caution": "사고를 예방할 책임을 집주인에게 두는 규정이에요.",
     "refs": [
       "신명기 22:8",
@@ -38141,7 +38825,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "이혼 증서에 대한 규정이 나오지만, 본문의 중심은 첫 남편이 이혼한 여자를 다시 맞지 못한다는 4절의 금지예요.",
-    "detail": "1-3절은 '…하거든' 형태의 조건문으로 이혼 증서를 전제하고, 4절이 금지를 말해요. '수치되는 일'이 무엇을 가리키는지는 후대의 랍비 학파인 샴마이와 힐렐이 미쉬나 기틴 9장에서 서로 다르게 풀었어요. 마태복음 19장 7-8절에서 예수께서는 모세가 마음이 완악하여 허락했을 뿐, 처음부터 그렇지 않았다고 말씀하세요.",
+    "detail": "1-3절은 '…하거든' 형태의 조건문으로 이혼 증서를 전제하고, 4절이 금지를 말해요. '수치되는 일'이 무엇을 가리키는지는 본문만으로는 분명하지 않아서 해석이 갈려요. 마태복음 19장 7-8절에서 예수께서는 모세가 마음이 완악하여 허락했을 뿐, 처음부터 그렇지 않았다고 말씀하세요.",
     "caution": "신명기는 이혼을 권하지 않고, 이혼 뒤의 상황을 규제하는 본문이에요.",
     "refs": [
       "신명기 24:1-4",
@@ -38211,7 +38895,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "재판에서 아버지의 죄로 자식이, 자식의 죄로 아버지가 죽임을 당하지 않고, 각 사람은 자기 죄로 벌을 받아요.",
-    "detail": "열왕기하 14장 6절에서 아마샤 왕은 아버지를 죽인 신하들만 죽이고 그 자녀들은 죽이지 않았는데, 모세의 율법책에 적힌 대로 한 것이라고 해요. 에스겔 18장 20절도 아들이 아버지의 죄악을 짊어지지 않는다고 해요. 고대 근동에는 가족을 함께 벌하는 관습도 있었다고 알려져 있어요.",
+    "detail": "열왕기하 14장 6절에서 아마샤 왕은 아버지를 죽인 신하들만 죽이고 그 자녀들은 죽이지 않았는데, 모세의 율법책에 적힌 대로 한 것이라고 해요. 에스겔 18장 20절도 아들이 아버지의 죄악을 짊어지지 않는다고 해요.",
     "caution": "5장 9절의 삼사 대 징계와 이 구절의 개인 책임을 구별해서 읽어요.",
     "refs": [
       "신명기 24:16",
@@ -38243,7 +38927,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "태형은 죄에 맞춰 대수를 정하되, 사십 대를 넘기지 말라고 해요.",
-    "detail": "사십 대는 상한선이에요. 이유는 지나치게 때리면 그 사람이 여럿 앞에서 모욕을 당하기 때문이에요. 고린도후서 11장 24절에서 바울은 유대인에게 사십에서 하나를 뺀 매를 다섯 번 맞았다고 해요. 미쉬나 마콧은 법정이 매길 수 있는 최대를 서른아홉 대로 정해 사십을 넘기지 않게 했다고 전해요.",
+    "detail": "사십 대는 상한선이에요. 이유는 지나치게 때리면 그 사람이 여럿 앞에서 모욕을 당하기 때문이에요. 고린도후서 11장 24절에서 바울은 유대인에게 사십에서 하나를 뺀 매를 다섯 번 맞았다고 해요. 유대 율법은 사십 대를 넘기지 않으려고, 실제로는 서른아홉 대까지만 때렸다고 전해져요.",
     "caution": "처벌에도 상한이 있다는 점이 핵심이에요.",
     "refs": [
       "신명기 25:1-3",
@@ -38254,8 +38938,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": [],
     "sourceLinks": [
       {
-        "label": "Wikipedia: Thirty-nine lashes",
-        "url": "https://en.wikipedia.org/wiki/Thirty-nine_lashes"
+        "label": "Wikipedia: Flogging",
+        "url": "https://en.wikipedia.org/wiki/Flogging"
       }
     ]
   },
@@ -38937,8 +39621,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "모세가 모압 땅에서 호렙에서 세운 언약 외에 또 하나의 언약을 세우라는 명령을 받았다고 말해요.",
-    "detail": "히브리어 성경에서는 이 구절이 28장 69절이에요. 모압 땅에서 맺는 이 언약은 호렙 언약에 더해진 갱신이에요. 5장 2-3절은 호렙 언약을 지금 살아 있는 우리와 세우신 것이라고 해요. 신명기가 고대 근동의 종주 조약 형식과 비교되어 읽히기도 해요.",
-    "caution": "모압 언약을 호렙 언약과 별개의 새 언약으로 읽기보다, 같은 언약의 갱신으로 읽는 이해가 많아요.",
+    "detail": "히브리어 성경에서는 이 구절이 28장 69절이에요. 모압 땅에서 맺는 이 언약은 호렙 언약 뒤에 더해진 말씀이에요. 5장 2-3절은 호렙 언약을 지금 살아 있는 우리와 세우신 것이라고 해요. 신명기가 고대 근동의 종주 조약 형식과 비교되어 읽히기도 해요.",
+    "caution": "모압 언약을 호렙 언약과 별개의 새 언약으로 읽기보다, 호렙 언약 뒤에 이어진 말씀으로 읽는 이해가 있어요.",
     "refs": [
       "신명기 29:1",
       "신명기 5:2-3"
@@ -38947,6 +39631,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "개혁주의는 모세 언약과 모압 갱신을, 하나의 은혜언약이 시대마다 다른 모습으로 시행된 것으로 읽어요(웨스트민스터 신앙고백 7장).",
     "wcf": [
       7
+    ],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Deuteronomy",
+        "url": "https://en.wikipedia.org/wiki/Deuteronomy"
+      }
     ]
   },
   {
@@ -39642,7 +40332,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "풍요로워진 이스라엘이 자기를 지으신 하나님을 버리고, 자기를 구원하신 반석을 업신여겼다는 말이에요.",
-    "detail": "'여수룬'은 '곧은 자'라는 뜻으로 쓰인 이스라엘의 다른 이름이에요. 신명기에서 세 번(32장 15절, 33장 5절, 33장 26절), 이사야 44장 2절에 나와요. 이 절은 8장 11-14절의 경고가 현실이 되는 모습이에요.",
+    "detail": "'여수룬'은 이스라엘을 부르는 노래 속 이름이에요. '곧음'을 뜻하는 말과 관련이 있을 수 있다고 봐요. 신명기에서 32장 15절, 33장 4-5절과 26절에, 이사야 44장 2절에 나와요. 이 절은 8장 11-14절의 경고가 현실이 되는 모습이에요.",
     "caution": "",
     "refs": [
       "신명기 32:15",
@@ -39680,7 +40370,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "이스라엘이 하나님이 아닌 귀신들, 근래에 들어온 새로운 신들에게 제사했다고 비판해요.",
-    "detail": "'귀신들'(쉐딤)의 뜻은 설이 갈려요. 폭력과 황폐를 뜻하는 어근에서 왔다는 설과, 아카드어 수호령 '쉐두'에서 왔다는 설이 있어요. 구약에는 이 구절과 시편 106편 37절에만 나와요. 고린도전서 10장 20절은 이방인이 제사하는 것이 귀신에게 하는 것이라고 해요.",
+    "detail": "'귀신들'(쉐딤)은 전통적으로 한 히브리 말뿌리에서 왔다고 보고, 아카드어 '쉐두'(보호하거나 해치는 영)에서 왔을 수도 있다고 해요. 구약에는 이 구절과 시편 106편 37절, 두 번만 나오고 둘 다 제사와 관련돼요. 고린도전서 10장 20절은 이방인이 제사하는 것이 귀신에게 하는 것이라고 해요.",
     "caution": "특정 신의 이름을 덧붙여 읽지 않아요. 본문은 '근래에 들어온 새로운 신들'이라고만 해요.",
     "refs": [
       "신명기 32:16-17",
@@ -73699,7 +74389,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "역대기는 아담부터 시작하는 족보로 문을 열어요. 바벨론에서 돌아온 백성이 온 인류 역사 속에서 자기 자리를 확인하게 해요.",
-    "detail": "역대기는 바벨론 포로에서 돌아온 뒤, 주전 5~4세기쯤 쓰였다고 보는 견해가 많아요. 돌아온 백성에게 우리가 어떤 백성인지 알려 주려고, 아담에서 셋과 에노스로 이어지는 하나님이 택하신 줄기만 따라가요. 가인의 후손은 빠져 있어요. 누가복음 3:38도 예수님의 족보를 아담까지 이어서 같은 생각을 보여 줘요.",
+    "detail": "역대기는 바벨론 포로에서 돌아온 뒤, 주전 400~250년 사이에 쓰였다고 보는 견해가 많아요. 돌아온 백성에게 우리가 어떤 백성인지 알려 주려고, 아담에서 셋과 에노스로 이어지는 하나님이 택하신 줄기만 따라가요. 가인의 후손은 빠져 있어요. 누가복음 3:38도 예수님의 족보를 아담까지 이어서 같은 생각을 보여 줘요.",
     "caution": "",
     "refs": [
       "역대상 1:1",
@@ -73710,7 +74400,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Books of Chronicles",
+        "url": "https://en.wikipedia.org/wiki/Books_of_Chronicles"
+      }
+    ]
   },
   {
     "id": "context-1ch-1-10",
@@ -73732,7 +74428,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "니므롯은 '세상에서 처음 힘센 용사'라고 불린 사람이에요. 바벨과 니느웨 같은 큰 도시를 세운 힘 있는 통치자의 모습이에요.",
-    "detail": "창세기 10:8-12는 니므롯의 나라가 시날 땅의 바벨과 앗수르의 니느웨까지 뻗었다고 해요. 어떤 학자는 그를 메소포타미아의 실제 왕과 연결하지만, 확실한 증거는 없어요. 역대기는 함의 족보 가운데 이 사람 하나만 따로 짚어, 힘으로 세력을 얻은 사람을 기억하게 해요.",
+    "detail": "창세기 10:8-12는 니므롯의 나라가 시날 땅의 바벨과 앗수르의 니느웨까지 뻗었다고 해요. 어떤 학자는 그를 아카드 왕 나람신 같은 메소포타미아의 실제 왕과 연결하지만, 그를 실존 인물로 확인할 직접 증거는 없어요. 역대기는 함의 족보 가운데 이 사람 하나만 따로 짚어, 힘으로 세력을 얻은 사람을 기억하게 해요.",
     "caution": "",
     "refs": [
       "역대상 1:10",
@@ -73741,7 +74437,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Nimrod",
+        "url": "https://en.wikipedia.org/wiki/Nimrod"
+      }
+    ]
   },
   {
     "id": "context-1ch-1-19",
@@ -73898,7 +74600,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Kenites",
+        "url": "https://en.wikipedia.org/wiki/Kenites"
+      }
+    ]
   },
   {
     "id": "context-1ch-3-5",
@@ -73950,7 +74658,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "여호야긴 뒤에도 다윗 집안은 스룹바벨까지 이어져요. 포로 뒤에도 다윗의 왕조가 끊어지지 않았다는 증거예요.",
-    "detail": "여호야긴은 바벨론으로 끌려갔어요(왕하 24:8-16). 바벨론에서 나온 점토판에는 그와 다섯 아들이 식량을 배급받은 기록이 있고, 주전 592년쯤의 것으로 보아요. 스룹바벨은 주전 520년쯤 돌아온 백성을 이끈 총독이고, 학개 2:23은 그를 '내 종'이라고 불러요. 마태복음 1:12도 이 줄기를 예수님의 족보에 넣어요.",
+    "detail": "여호야긴은 바벨론으로 끌려갔어요(왕하 24:8-16). 바벨론에서 나온 점토판에는 그와 다섯 아들이 식량을 배급받은 기록이 있고, 주전 592년쯤의 것으로 보아요. 스룹바벨은 주전 538~520년쯤 첫 무리를 이끌고 돌아온 유다 총독이고, 학개 2:23은 그를 '내 종'이라고 불러요. 마태복음 1:12도 이 줄기를 예수님의 족보에 넣어요.",
     "caution": "",
     "refs": [
       "역대상 3:16",
@@ -73970,6 +74678,10 @@ window.ScriptureNotesData.contextualTerms.push(...[
       {
         "label": "Wikipedia: Jehoiachin",
         "url": "https://en.wikipedia.org/wiki/Jehoiachin"
+      },
+      {
+        "label": "Wikipedia: Zerubbabel",
+        "url": "https://en.wikipedia.org/wiki/Zerubbabel"
       }
     ]
   },
@@ -74023,7 +74735,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "셀라의 후손 가운데 토기장이들은 왕을 위해 일하며 왕과 함께 살았어요. 왕을 섬기는 평범한 일도 하나님 앞의 일로 기억돼요.",
-    "detail": "느다임과 게데라(23절)는 유다 지역의 마을로 보여요. 히스기야 때(주전 700년쯤)에 '왕의 것'이라는 뜻의 글자가 찍힌 항아리 손잡이가 많이 나와요. 이 항아리를 왕실 공방에서 만들었다고 보는 견해가 있어요.",
+    "detail": "느다임과 게데라(23절)는 유다 지역의 마을로 보여요. 히스기야 때(주전 700년쯤)에 '왕의 것'이라는 뜻의 글자가 찍힌 항아리 손잡이가 많이 나와요. 이 항아리를 왕의 관리 아래 한 곳(라기스일 수도 있어요)에서 만들었다고 보는 견해가 있어요.",
     "caution": "그 항아리와 본문의 토기장이들을 잇는 것은 한 가지 견해일 뿐이고 확실하지 않아요.",
     "refs": [
       "역대상 4:21",
@@ -74132,7 +74844,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "앗수르 왕 불(디글랏빌레셀)이 동쪽 지파를 사로잡아 갔어요. 역대기는 이 일을 하나님이 앗수르 왕의 마음을 움직이신 일로 설명해요.",
-    "detail": "디글랏빌레셀 3세는 주전 8세기 중엽의 앗수르 왕이에요. 그는 길르앗과 갈릴리를 빼앗고 백성을 다른 땅으로 끌고 갔어요(왕하 15:29). 할라, 하볼, 하라, 고산 강가는 앗수르 땅 안의 지역이에요. 역대기는 앗수르의 힘보다 하나님이 일으키신 일이라는 점을 먼저 말해요.",
+    "detail": "디글랏빌레셀 3세는 주전 745~727년에 다스린 앗수르 왕이에요. 열왕기하 15:29는 그가 길르앗과 갈릴리 땅의 백성을 사로잡아 갔다고 적어요. 할라, 하볼, 하라, 고산 강가는 그들이 끌려간 곳의 지명이에요. 정확한 위치는 학자마다 조금씩 달리 봐요. 역대기는 앗수르의 힘보다 하나님이 일으키신 일이라는 점을 먼저 말해요.",
     "caution": "",
     "refs": [
       "역대상 5:25",
@@ -74410,7 +75122,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Valley of Rephaim",
+        "url": "https://en.wikipedia.org/wiki/Valley_of_Rephaim"
+      }
+    ]
   },
   {
     "id": "context-1ch-14-15",
@@ -74535,7 +75253,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "다윗은 궤가 예루살렘에 들어온 날 아삽과 그의 형제들에게 하나님께 감사하는 노래를 맡겼어요. 찬양이 예배의 일로 정해진 순간이에요.",
-    "detail": "아삽은 헤만, 여두둔과 함께 성전 음악을 맡았던 레위인이에요. 시편 50편과 73-83편이 그의 이름과 이어져 있어요. 8-36절의 찬양은 시편 105편, 96편, 106편의 일부를 엮은 것이에요. 역대기는 예배가 제사뿐 아니라 노래로도 드려진다는 점을 강조해요.",
+    "detail": "아삽은 헤만, 여두둔과 함께 성전 음악을 맡았던 레위인이에요. 히브리어 성경 번호로 시편 50편과 73~83편이 그의 이름으로 된 시편이에요. 8-36절의 찬양은 시편 105편, 96편, 106편의 일부를 엮은 것이에요. 역대기는 예배가 제사뿐 아니라 노래로도 드려진다는 점을 강조해요.",
     "caution": "",
     "refs": [
       "역대상 16:7",
@@ -74549,7 +75267,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Psalms of Asaph",
+        "url": "https://en.wikipedia.org/wiki/Psalms_of_Asaph"
+      }
+    ]
   },
   {
     "id": "context-1ch-16-23",
@@ -74835,8 +75559,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
         ]
       }
     ],
-    "summary": "하눈은 다윗의 신하들의 수염을 반쯤 깎고 옷을 엉덩이 중간까지 잘라 돌려보냈어요. 사절을 가장 크게 모욕하는 방법이었어요.",
-    "detail": "옛 중동에서 수염은 남자의 자존심이었어요. 엉덩이 중간까지 잘린 옷은 수치를 더하는 모욕이었어요. 다윗은 수염이 다시 자랄 때까지 여리고에 머물라고 해요(5절). 암몬은 이 모욕이 전쟁을 부를 것을 알고 아람 용병을 고용해요(6절).",
+    "summary": "하눈은 다윗의 신하들의 수염을 반쯤 깎고 옷을 엉덩이 중간까지 잘라 돌려보냈어요. 사절을 크게 모욕한 행동이었어요.",
+    "detail": "본문은 수염을 깎고 옷을 잘라 내는 일을 큰 모욕으로 그려요. 다윗은 수염이 다시 자랄 때까지 여리고에 머물라고 해요(5절). 암몬은 다윗과 싸우게 될 것을 알고 아람 용병을 고용해요(6절).",
     "caution": "",
     "refs": [
       "역대상 19:4",
@@ -74911,7 +75635,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Amman",
+        "url": "https://en.wikipedia.org/wiki/Amman"
+      }
+    ]
   },
   {
     "id": "context-1ch-20-2",
@@ -74932,8 +75662,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
         ]
       }
     ],
-    "summary": "랍바 왕의 금관은 한 달란트, 곧 약 34kg이에요. 머리에 쓰기에는 너무 무거워서 왕의 권위를 보여 주는 물건이었을 수도 있어요.",
-    "detail": "1달란트는 약 34kg이에요. 암몬 신 밀곰의 상에 씌운 관이라는 해석도 있어요(삼하 12:30 참고). 다윗은 이 금관을 전리품으로 가져가고, 그 성의 백성은 톱과 쇠 도구로 일하게 했어요(3절).",
+    "summary": "랍바 왕의 금관은 금 한 달란트예요. 히브리 한 달란트는 약 29kg쯤으로 봐요. 머리에 쓰기엔 아주 무거운 금관이에요.",
+    "detail": "히브리 한 달란트는 약 28.8kg쯤으로 보는 견해가 많아요. 시대마다 무게 단위가 조금씩 달라서, 정확한 숫자는 확실하지 않아요. 암몬 신 밀곰의 상에 씌운 관이라는 해석도 있어요(삼하 12:30 참고). 다윗은 이 금관을 전리품으로 가져가고, 그 성의 백성은 톱과 쇠 도구로 일하게 했어요(3절).",
     "caution": "왕관이 왕의 것인지 신상의 것인지는 해석이 갈려요.",
     "refs": [
       "역대상 20:2",
@@ -74942,7 +75672,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Talent (measurement)",
+        "url": "https://en.wikipedia.org/wiki/Talent_(measurement)"
+      }
+    ]
   },
   {
     "id": "context-1ch-20-5",
@@ -75157,7 +75893,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "다윗은 오르난의 타작마당을 금 600세겔을 주고 샀어요. 이 땅은 나중에 성전이 세워지는 자리가 돼요.",
-    "detail": "사무엘하 24:24는 타작마당과 소를 은 50세겔에 샀다고 해요. 역대기의 금 600세겔은 주변 땅 전체를 포함한 값으로 보는 견해가 있어요. 이 땅은 모리아 산(대하 3:1)이고, 후에 성전이 서는 곳이에요. 다윗은 공짜로 받기를 거절했어요(24절).",
+    "detail": "사무엘하 24:24는 타작마당과 소를 은 50세겔에 샀다고 해요. 역대기의 금 600세겔은 주변 땅 전체를 포함한 값으로 보는 견해가 있어요. 역대하 3:1은 성전을 모리아 산에 세웠다고 해요. 유대 전통은 이 타작마당 자리를 그 모리아 산으로 보지만, 현대 학자들은 두 곳을 따로 보기도 해요. 다윗은 공짜로 받기를 거절했어요(24절).",
     "caution": "",
     "refs": [
       "역대상 21:24",
@@ -75168,7 +75904,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Temple Mount",
+        "url": "https://en.wikipedia.org/wiki/Temple_Mount"
+      }
+    ]
   },
   {
     "id": "context-1ch-21-30",
@@ -75787,7 +76529,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "백성은 솔로몬에게 다시 기름을 부어 왕으로 세워요. 급하게 세워진 앞의 즉위와 달리, 온 백성이 인정하는 공식 즉위예요.",
-    "detail": "백성은 솔로몬을 다시 왕으로 삼고 기름을 부어요. 앞서 백성의 지도자들이 자원해 드린 헌물은 금 5,000달란트, 다릭 1만 개, 은 1만 달란트예요(7절). 다릭은 페르시아 시대 금화 이름이라서, 기록이 나중에 쓰인 용어일 수 있다는 견해가 있어요. 사독도 제사장으로 세워져요.",
+    "detail": "백성은 솔로몬을 다시 왕으로 삼고 기름을 부어요. 앞서 백성의 지도자들이 자원해 드린 헌물은 금 5,000달란트, 다릭 1만 개, 은 1만 달란트예요(7절). 다릭은 페르시아 제국(아케메네스 왕조)의 금화예요. 주전 500년대 후반부터 알렉산더가 오기 전인 주전 330년쯤까지 쓰였어요. 그래서 기록이 나중에 쓰인 용어일 수 있다는 견해가 있어요. 사독도 제사장으로 세워져요.",
     "caution": "",
     "refs": [
       "역대상 29:22",
@@ -75798,7 +76540,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Daric",
+        "url": "https://en.wikipedia.org/wiki/Daric"
+      }
+    ]
   },
 ]);
 
@@ -75824,7 +76572,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "본문은 욥을 온전하고 정직하며 하나님을 경외하고 악에서 떠난 사람이라고 소개해요.",
-    "detail": "‘우스’의 위치는 에돔 지역(애 4:21)이나 시리아 사막 쪽으로 추정되지만 확실하지 않아요. 욥은 이스라엘 사람이 아니라 ‘동방 사람’(1:3)이에요. 가축으로 재산을 헤아리고 가장이 직접 제사를 드리는 모습은 족장 시대와 닮아요. 이스라엘 밖에도 하나님을 경외하는 사람이 있었다는 점이 이 책의 출발이에요.",
+    "detail": "‘우스’의 정확한 위치는 알려져 있지 않아요. 애가 4:21은 우스 땅을 에돔과 이어서 말하기 때문에 에돔 쪽으로 보는 견해가 있어요. 욥은 이스라엘 사람이 아니라 ‘동방 사람’(1:3)이에요. 가축으로 재산을 헤아리고 가장이 직접 제사를 드리는 모습은 족장 시대와 닮아요. 이스라엘 밖에도 하나님을 경외하는 사람이 있었다는 점이 이 책의 출발이에요.",
     "caution": "‘온전하다’(탐)는 죄가 없다는 뜻이 아니라, 하나님께 흠 없이 한마음이라는 뜻이에요. 이 평가는 욥 자신이 아니라 서술자와 하나님이 내려요.",
     "refs": [
       "욥기 1:1",
@@ -76114,7 +76862,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "엘리바스는 욥의 경외함과 소망이 욥의 자랑이 아니었느냐고 상기시켜요.",
-    "detail": "엘리바스는 ‘데만’ 사람이에요. 데만은 에돔에서 지혜로 이름난 곳이었어요(렘 49:7). 그는 세 친구 가운데 가장 먼저, 가장 부드럽게 말을 시작해요. 욥이 가졌던 경외와 소망을 칭찬하는 척하면서, 지금 그것이 흔들린다는 비판을 숨기고 있어요.",
+    "detail": "엘리바스는 ‘데만’ 사람이에요. 데만은 에돔을 가리키는 이름으로도 쓰였고, 지혜로 이름났다고 해요(렘 49:7). 정확한 위치는 확실하지 않아요. 그는 세 친구 가운데 가장 먼저, 가장 부드럽게 말을 시작해요. 욥이 가졌던 경외와 소망을 칭찬하는 척하면서, 지금 그것이 흔들린다는 비판을 숨기고 있어요.",
     "caution": "1장에서 하나님이 욥의 ‘경외’를 자랑하셨는데(1:8), 엘리바스는 같은 경외를 욥을 비판하는 근거로 써요.",
     "refs": [
       "욥기 4:6",
@@ -76124,7 +76872,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Teman (Edom)",
+        "url": "https://en.wikipedia.org/wiki/Teman_(Edom)"
+      }
+    ]
   },
   {
     "id": "context-job-4-8",
@@ -76211,7 +76965,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "엘리바스는 사람이 고생을 위해 태어났다고 말하며, 불꽃이 위로 날아가는 것처럼 자연스럽다고 해요.",
-    "detail": "‘불꽃’의 원문은 ‘레셰프의 아들들’이에요. 레셰프는 가나안과 이집트에서 역병과 전쟁에 연결된 신 이름으로 알려져 있어요. 여기서는 불꽃, 번개, 날아오르는 새 등으로 읽는 견해가 갈려요. 불꽃이 위로 날듯 고생은 사람에게서 어쩔 수 없이 나온다는 격언이에요.",
+    "detail": "‘불꽃’의 원문은 ‘레셰프의 아들들’이에요. 레셰프는 전쟁과 역병의 신으로, 에블라 같은 시리아 지역에서 처음 숭배되었고 이집트에서도 알려져 있어요. 다만 이 구절을 ‘불꽃’ 말고 다르게 읽는 견해도 있어요. 불꽃이 위로 날듯 고생은 사람에게서 어쩔 수 없이 나온다는 격언이에요.",
     "caution": "고생이 사람의 조건이라는 말은 일면 맞지만, 욥의 구체적인 고난의 이유를 설명하지는 못해요.",
     "refs": [
       "욥기 5:7",
@@ -76411,7 +77165,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "욥은 친구들을 물이 줄었다 불었다 하는 개울에 견줘요. 믿고 기댈 수 없다는 실망이에요.",
-    "detail": "‘개울’(나할)은 건조한 지역에서 우기에만 물이 흐르는 골짜기예요. 겨울에는 불어나고 여름에는 마르니 믿을 수 없는 물이에요. 19절은 데마와 스바의 대상이 물을 찾아왔다가 실망하는 모습을 그려요. 데마는 아라비아 북부의 오아시스 도시로 알려져 있어요.",
+    "detail": "‘개울’(나할)은 건조한 지역에서 우기에만 물이 흐르는 골짜기예요. 비가 많이 온 뒤에 갑자기 불어나고 보통은 말라 있으니 믿을 수 없는 물이에요. 19절은 데마와 스바의 대상이 물을 찾아왔다가 실망하는 모습을 그려요. 데마는 욥기 6:19에 나오는 교역 도시로, 지금의 사우디아라비아 북서부 오아시스 타이마로 여겨져요.",
     "caution": "믿었던 친구가 필요할 때 마른 개울처럼 되었다는 뜻이에요. 사막 길에서 물이 마르면 목숨이 걸린 문제라서, 비유가 아주 절실해요.",
     "refs": [
       "욥기 6:15",
@@ -76420,7 +77174,17 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Wadi",
+        "url": "https://en.wikipedia.org/wiki/Wadi"
+      },
+      {
+        "label": "Wikipedia: Tayma",
+        "url": "https://en.wikipedia.org/wiki/Tayma"
+      }
+    ]
   },
   {
     "id": "context-job-7-12",
@@ -76452,7 +77216,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Yam (god)",
+        "url": "https://en.wikipedia.org/wiki/Yam_(god)"
+      }
+    ]
   },
   {
     "id": "context-job-7-17",
@@ -77044,7 +77814,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "욥은 하나님이 자기를 죽이셔도 그 앞에서 자기 행위를 아뢰겠다고 말해요.",
-    "detail": "이 절은 사본 표기에 차이가 있어요. 기록된 본문(케티브)은 ‘그분이 나를 죽이시리니 소망이 없다’로, 읽는 전승(케레)은 ‘그분 안에서 소망하리라’로 읽혀요. 두 읽기는 소리가 같은 ‘로’라는 낱말로 이어져요. 뒤 반절은 어느 쪽이든 하나님 앞에서 자기 행위를 변론하겠다는 말이에요.",
+    "detail": "이 절은 히브리어 읽기에 두 갈래가 있어요. 하나는 ‘소망이 없다’로, 다른 하나는 ‘그분을 기다리리라’로 읽어요. 두 읽기는 ‘로’라는 낱말을 ‘아니다’로 볼지 ‘그에게’로 볼지에서 갈려요. 뒤 반절은 어느 쪽이든 하나님 앞에서 자기 행위를 변론하겠다는 말이에요.",
     "caution": "어느 읽기를 따르든 욥은 죽음의 위험 앞에서도 하나님 앞에 나아가 정직하게 말하겠다는 결단을 보여 줘요.",
     "refs": [
       "욥기 13:15",
@@ -77055,6 +77825,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "개혁주의는 욥의 이 고백을 어둠 속에서도 하나님을 붙드는 믿음의 확신으로 읽는 전통이 있어요.",
     "wcf": [
       18
+    ],
+    "sourceLinks": [
+      {
+        "label": "Biblehub: 욥기 13:15 (Pulpit Commentary 주석 참고)",
+        "url": "https://biblehub.com/job/13-15.htm"
+      }
     ]
   },
   {
@@ -77109,7 +77885,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "욥은 하나님이 자기의 젊은 날 죄까지 기록하셔서 그 값을 받게 하신다고 말해요.",
-    "detail": "‘괴로운 일들을 기록하시며’는 법정에서 죄목을 적은 고소장을 떠올리게 해요. 고대 근동에서는 판결을 서판에 기록했어요. 욥은 하나님이 오래 지난 젊은 날의 죄까지 기록해 지금 벌하신다고 느껴요. 14:17에서는 같은 허물을 주머니에 봉하신다고 말해요.",
+    "detail": "‘괴로운 일들을 기록하시며’는 법정에서 죄목을 적어 두는 모습을 떠올리게 해요. 욥은 하나님이 오래 지난 젊은 날의 죄까지 기록해 지금 벌하신다고 느껴요. 14:17에서는 같은 허물을 주머니에 봉하신다고 말해요.",
     "caution": "욥은 구체적인 죄를 말하지 않아요. 젊은 날의 죄를 기억하신다는 말은 누구에게나 있을 법한 허물에 대한 두려움이에요.",
     "refs": [
       "욥기 13:26",
@@ -77202,7 +77978,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "욥은 하나님이 자기 허물을 주머니에 봉하시고 죄악을 싸매신다고 말해요.",
-    "detail": "고대에는 중요한 문서나 돈 주머니를 진흙이나 밀랍에 도장을 찍어 봉했어요. 봉인은 내용을 보존하고 변조를 막아요. 욥은 하나님이 자기 허물을 봉해 두셨다가 나중에 증거로 꺼내시는 것은 아닌지 두려워하면서도, 한편으로는 덮어 주시기를 바라요.",
+    "detail": "‘봉하다’는 말은 주머니나 문서를 봉인해 두는 모습을 떠올리게 해요. 욥은 하나님이 자기 허물을 봉해 두셨다가 나중에 증거로 꺼내시는 것은 아닌지 두려워하면서도, 한편으로는 덮어 주시기를 바라요.",
     "caution": "‘봉하다’와 ‘싸매다’가 정죄를 위한 보존인지 용서를 위한 덮음인지가 이 절의 긴장이에요. 욥도 어느 쪽인지 알지 못해요.",
     "refs": [
       "욥기 14:17",
@@ -77460,7 +78236,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "욥은 하늘에 자기의 증인이 계시고, 높은 데 자기를 위해 변호해 줄 중보자가 계신다고 말해요.",
-    "detail": "‘증인’(사히디)은 구약에서 드문 아람어풍 낱말로 읽혀요(창 31:47의 ‘여갈사하두다’ 참조). 욥은 땅에서는 모든 사람이 자기를 버렸는데, 하늘에 자기를 변호할 증인이 있다고 믿어요. 9:33의 갈망이 여기서 한 걸음 나아가요.",
+    "detail": "‘증인’(사히디)은 구약에서 드문 낱말이고, 아람어와 닮은 낱말로 읽는 견해가 있어요(창 31:47의 ‘여갈사하두다’ 참조). 욥은 땅에서는 모든 사람이 자기를 버렸는데, 하늘에 자기를 변호할 증인이 있다고 믿어요. 9:33의 갈망이 여기서 한 걸음 나아가요.",
     "caution": "증인이 하나님이신지 다른 존재인지 욥기는 분명히 하지 않아요. 하나님이 재판관이시면서 증인이기도 한 긴장이 남아요.",
     "refs": [
       "욥기 16:19",
@@ -78194,7 +78970,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "summary": "빌닷은 하나님의 눈에는 달과 별도 빛나지 못한다고 말해요.",
     "detail": "빌닷은 엘리바스가 15:15에서 말한 ‘하늘도 깨끗하지 못하다’는 생각을 이어 가요. 이 비유는 하나님 앞의 사람이 얼마나 작은지를 강조해요.",
-    "caution": "달과 별도 하나님 앞에서는 깨끗하지 못하다는 말은, 하늘의 천체조차 하나님 앞에서 낮다는 뜻이에요. 고대 근동에서 달과 별은 신으로 섬겨졌는데, 빌닷은 이들조차 하나님 앞에서 아무것도 아니라고 말해요.",
+    "caution": "달과 별도 하나님 앞에서는 깨끗하지 못하다는 말은, 하늘의 천체조차 하나님 앞에서 낮다는 뜻이에요. 고대 메소포타미아에서는 달의 신 신(Sin)을 섬겼다고 알려져 있어요.",
     "refs": [
       "욥기 25:5",
       "욥기 15:15",
@@ -78202,7 +78978,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Sin (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Sin_(mythology)"
+      }
+    ]
   }
 ]);
 
@@ -78268,7 +79050,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Yam (god)",
+        "url": "https://en.wikipedia.org/wiki/Yam_(god)"
+      }
+    ]
   },
   {
     "id": "context-job-27-8",
@@ -78352,7 +79140,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "욥은 지혜는 어디서 얻으며 명철이 있는 곳은 어디인지 물으며 지혜 노래를 시작해요.",
-    "detail": "28장은 욥기에서 따로 놓인 지혜 시예요. 1-11절은 은, 금, 철, 구리를 캐는 광산 기술을 묘사해요. 아라바의 팀나 골짜기는 오래전부터 구리를 캐던 곳이고, 이집트가 세운 하토르 신전 유적도 남아 있어요. 그 기술로도 지혜는 캐낼 수 없다는 것이 12절의 핵심 질문이에요.",
+    "detail": "28장은 욥기에서 따로 놓인 지혜 시예요. 1-11절은 은, 금, 철, 구리를 캐는 광산 기술을 묘사해요. 아라바의 팀나 골짜기는 신석기 시대부터 구리를 캔 곳으로 알려져 있어요. 이집트 왕 세티 1세 때 세웠다고 보는 하토르 신전 유적도 남아 있어요. 다만 제련 시기는 학자들 사이에 견해가 달라요. 그 기술로도 지혜는 캐낼 수 없다는 것이 12절의 핵심 질문이에요.",
     "caution": "이 시는 욥이 말하는 단락이지만 앞뒤 장과 분위기가 달라서, 서술자가 끼워 넣은 것으로 보는 견해도 있어요. 기능은 38장 이전의 중간 쉼표예요.",
     "refs": [
       "욥기 28:12",
@@ -78485,7 +79273,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "욥은 부르짖는 빈민과 도울 자 없는 고아를 건졌다고 회상해요.",
-    "detail": "고아와 과부를 보호하는 것은 고대 근동 왕의 이상이었어요. 우가릿 서사시 아깟에서 다니엘이 성문에서 과부의 송사와 고아의 사건을 재판하는 모습이 나와요. 욥은 사회적 약자를 보호한 지도자의 이상을 자기 삶으로 말해요. 신명기 10:18과도 맞아요.",
+    "detail": "우가릿 서사시 아깟에서 다넬이 성문에서 과부의 송사와 고아의 사건을 재판하는 모습이 나와요. 고아와 과부를 지켜 주는 일은 이런 옛 이야기 속 지도자의 모습이었어요. 욥은 사회적 약자를 보호한 지도자의 이상을 자기 삶으로 말해요. 신명기 10:18과도 맞아요.",
     "caution": "욥의 회상은 자랑이 아니라, 자기가 불의한 사람이 아님을 보이는 변호예요. 31장의 무죄 맹세를 준비하는 단계예요.",
     "refs": [
       "욥기 29:12",
@@ -78619,7 +79407,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "욥은 자기 눈과 약속하여 처녀를 주목하지 않았다고 말하며, 무죄 맹세의 첫머리를 열어요.",
-    "detail": "31장은 욥이 자기 무죄를 맹세하는 긴 목록이에요. 이집트 사자의 서에서 죽은 자가 심판자들 앞에서 죄를 짓지 않았다고 고백하는 부정 고백과 비슷한 형식이라는 지적이 있어요. 1절은 눈으로 음욕을 품지 않겠다고 약속했다는 말로 시작해요(마 5:28 참조).",
+    "detail": "31장은 욥이 자기 무죄를 맹세하는 긴 목록이에요. 이집트 사자의 서에서 죽은 자가 심판관 42명 앞에서 짓지 않은 죄를 하나씩 말하는 장면과 닮았다는 지적이 있어요. 1절은 눈으로 음욕을 품지 않겠다고 약속했다는 말로 시작해요(마 5:28 참조).",
     "caution": "욥은 자기 무죄를 맹세하지만, 이는 법정에서 하나님의 대답을 이끌려는 시도예요. 그 자기주장은 38-41장에서 하나님의 질문 앞에 서요.",
     "refs": [
       "욥기 31:1",
@@ -78655,7 +79443,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
         ]
       }
     ],
-    "summary": "욥은 하나님이 자기를 공평한 저울에 달아 보시고 온전함을 아시기를 바란다고 말해요.",
+    "summary": "욥은 하나님이 자기를 공평한 저울에 달아 보고 온전함을 아시기를 바란다고 말해요.",
     "detail": "저울에 마음을 달아 보는 그림은, 이집트에서 죽은 자의 심장을 마아트의 깃털과 저울에 다는 장면과 닮았어요. 구약에서도 하나님이 사람의 마음을 달아 보신다고 말해요(잠 16:2). 욥은 9:33에서 판결자가 없다고 했는데, 여기서는 하나님을 공평한 저울의 재판관으로 청해요.",
     "caution": "공평한 저울에 달아 보시기를 요구하는 것은 하나님께 대한 도전이면서, 동시에 하나님의 공의에 대한 신뢰예요.",
     "refs": [
@@ -78693,8 +79481,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "욥은 종을 학대하지 않은 근거로, 자기를 태 속에서 지으신 분이 종도 지으셨다고 말해요.",
-    "detail": "고대 근동의 법에서 종은 주인의 재산으로 다뤄졌어요(함무라비 법전 등). 욥은 종과 주인이 같은 창조주의 지음을 받았다고 말해서 종을 인격으로 대했다고 해요(13-14절). 잠언 22:2도 부자와 가난한 자가 같은 하나님이 지으신 자라고 말해요.",
-    "caution": "종의 호소를 무시하지 않았다는 욥의 변호예요(13절). 신분 질서가 강하던 고대 사회에서 드문 윤리적 근거예요.",
+    "detail": "함무라비 법전에는 종을 사고파는 규정이 나와요. 당시 종은 거래되는 대상으로 다뤄졌던 셈이에요. 욥은 종과 주인이 같은 창조주의 지음을 받았다고 말해서 종을 인격으로 대했다고 해요(13-14절). 잠언 22:2도 부자와 가난한 자가 같은 하나님이 지으신 자라고 말해요.",
+    "caution": "종의 호소를 무시하지 않았다는 욥의 변호예요(13절). 신분 질서가 강하던 고대 사회에서 보기 드문 윤리적 근거로 읽는 견해가 있어요.",
     "refs": [
       "욥기 31:15",
       "욥기 10:8",
@@ -78702,7 +79490,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Code of Hammurabi",
+        "url": "https://en.wikipedia.org/wiki/Code_of_Hammurabi"
+      }
+    ]
   },
   {
     "id": "context-job-31-35",
@@ -78724,7 +79518,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "욥은 자기 서명을 남기고, 자기를 고발하는 자가 있으면 고소장을 써서 가져오라고 청해요.",
-    "detail": "‘서명’은 히브리어 ‘타우’, 곧 마지막 글자 ‘ת’예요. 옛 글자 모양은 십자 표시였고, 서명이나 표로 쓰였어요(겔 9:4). 욥은 자기 소송에서 표를 찍고 하나님의 응답을 청해요. 36-37절에서는 고소장을 어깨에 메고 면류관처럼 쓰겠다고 해요.",
+    "detail": "‘서명’은 히브리어 ‘타우’, 곧 마지막 글자 ‘ת’예요. 에스겔 9:4에서는 이마에 표하는 표로 나와요. 욥은 자기 소송에서 표를 찍고 하나님의 응답을 청해요. 36-37절에서는 고소장을 어깨에 메고 면류관처럼 쓰겠다고 해요.",
     "caution": "욥은 고소장을 읽고 반박하겠다는 자신감을 말해요. 하나님이 38장에서 나타나실 때 이 요구에 전혀 다른 방식으로 응답하세요.",
     "refs": [
       "욥기 31:35",
@@ -78733,7 +79527,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Taw (letter)",
+        "url": "https://en.wikipedia.org/wiki/Taw"
+      }
+    ]
   },
   {
     "id": "context-job-32-2",
@@ -79472,7 +80272,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "하나님은 들나귀를 놓아 자유롭게 한 자가 누구냐고 물으시고, 광야와 소금 땅을 그 집으로 삼으셨다고 말씀하셔요.",
-    "detail": "‘들나귀’는 광야에 사는 야생 나귀로, 길들일 수 없는 자유로운 짐승이에요. 39장 전체는 사람이 다스리지 못하는 광야의 짐승들(산염소, 들나귀, 들소, 타조, 말, 매)을 통해 하나님의 돌보심을 보여 줘요.",
+    "detail": "‘들나귀’는 광야의 야생 나귀로 여겨져요. 길들일 수 없는 자유로운 짐승으로 그려져요. 39장 전체는 사람이 다스리지 못하는 광야의 짐승들(산염소, 들나귀, 들소, 타조, 말, 매)을 통해 하나님의 돌보심을 보여 줘요.",
     "caution": "야생의 자유는 사람이 통제할 수 없는 영역이에요. 하나님은 욥이 상상하는 질서 밖의 세계도 다스리신다고 보여 주세요.",
     "refs": [
       "욥기 39:5",
@@ -79670,7 +80470,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "하나님은 낚시로 리워야단을 끌어낼 수 있겠느냐고, 노끈으로 그 혀를 맬 수 있겠느냐고 물으셔요.",
-    "detail": "‘리워야단’은 우가릿 신화의 바다 괴물 ‘로탄’과 이름이 닮았어요(시 74:14; 사 27:1). 악어로 보는 읽기는 후대의 해석이고, 신화적 괴물을 시적으로 쓴 것으로 보는 견해도 있어요. 하나님은 낚시로 끌어낼 수 있느냐고 물으세요.",
+    "detail": "‘리워야단’은 우가릿 신화의 바다 괴물 ‘로탄’과 이어지는 이름이에요(시 74:14; 사 27:1). 악어로 읽는 견해는 19세기 학자들이 제안한 것이에요. 신화적 괴물을 시적으로 쓴 것으로 보는 견해도 있어요. 하나님은 낚시로 끌어낼 수 있느냐고 물으세요.",
     "caution": "사람이 길들일 수 없는 짐승을 하나님이 지으셨다는 점이 핵심이에요. 욥은 3:8에서 리워야단을 일으키는 자를 말했지만, 지금은 하나님이 직접 보이세요.",
     "refs": [
       "욥기 41:1",
@@ -79844,7 +80644,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "하나님은 엘리바스와 두 친구에게 화를 내셨어요. 그들이 하나님을 바르게 말하지 못했고, 욥은 바르게 말했다고 하셔요.",
-    "detail": "엘리바스는 에돔 지역의 ‘데만’ 사람이에요. 데만은 지혜로 이름난 곳이었어요(렘 49:7). 하나님은 지혜를 내세우던 엘리바스를 꾸짖으세요. 친구들은 하나님을 위해 말했지만 하나님을 바르게 말하지 못했어요.",
+    "detail": "엘리바스는 ‘데만’ 사람이에요. 데만은 에돔을 가리키는 이름으로도 쓰였고, 지혜로 이름났다고 해요(렘 49:7). 하나님은 지혜를 내세우던 엘리바스를 꾸짖으세요. 친구들은 하나님을 위해 말했지만 하나님을 바르게 말하지 못했어요.",
     "caution": "욥이 옳게 말했다고 해서 욥의 말이 모두 옳았다는 뜻은 아니에요. 욥은 하나님께 정직하게 부르짖었고, 친구들은 ‘잘못한 만큼 벌받는다’는 원리로 하나님을 변호했어요.",
     "refs": [
       "욥기 42:7",
@@ -79860,6 +80660,10 @@ window.ScriptureNotesData.contextualTerms.push(...[
       {
         "label": "Wikipedia: Elihu (Job)",
         "url": "https://en.wikipedia.org/wiki/Elihu_(Job)"
+      },
+      {
+        "label": "Wikipedia: Teman (Edom)",
+        "url": "https://en.wikipedia.org/wiki/Teman_(Edom)"
       }
     ]
   },
@@ -79956,7 +80760,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "잠언은 지혜가 길거리와 광장에서 사람들을 부르며 큰 소리로 외친다고 그려요.",
-    "detail": "지혜(호크모트)가 여인의 모습으로 길거리에 서서 외치는 장면이에요. 고대 도시에서 성문 어귀와 광장은 사람들이 모여 거래하고 재판을 하던 자리였다고 해요. 지혜의 부름은 몇몇 사람만 아는 비밀 가르침이 아니라, 누구에게나 열려 있다는 뜻이에요.",
+    "detail": "지혜(호크모트)가 여인의 모습으로 길거리에 서서 외치는 장면이에요. 고대 도시에서 성문 어귀는 사람들이 모이고 장사와 공지가 이뤄지던 자리였다고 해요. 지혜의 부름은 몇몇 사람만 아는 비밀 가르침이 아니라, 누구에게나 열려 있다는 뜻이에요.",
     "caution": "지혜를 인격처럼 그리는 방식은 8장과 9장에서 이어져요. 여기서는 거절당하는 부름의 안타까움이 중심이에요.",
     "refs": [
       "잠언 1:20",
@@ -79965,7 +80769,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: City gate",
+        "url": "https://en.wikipedia.org/wiki/City_gate"
+      }
+    ]
   },
   {
     "id": "context-pro-1-23",
@@ -80154,7 +80964,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "자기 우물과 샘에서 물을 마시라고 말해요. 가정의 사랑을 물에 견준 말이에요.",
-    "detail": "물이 귀한 땅에서 우물(저수조, 히브리어 ‘보르’)과 샘은 집안의 가장 귀한 재산이었어요. 15-18절은 이 물을 부부의 사랑에 견줘서, 샘물을 거리에 흘려보내지 말고 자기 아내와 누리라고 권해요. 아가 4:12의 ‘잠근 동산, 봉한 샘’과 같은 비유예요.",
+    "detail": "물이 귀한 땅에서 우물(저수조, 히브리어 ‘보르’)과 샘은 아주 소중한 것이었어요. 15-18절은 이 물을 부부의 사랑에 견줘서, 샘물을 거리에 흘려보내지 말고 자기 아내와 누리라고 권해요. 아가 4:12의 ‘잠근 동산, 봉한 샘’과 같은 비유예요.",
     "caution": "우물과 샘이 부부 관계를 가리키는 말이라는 점은 16-19절의 흐름에서 분명해져요. 혼인의 기쁨을 귀하게 여기는 말이기도 해요.",
     "refs": [
       "잠언 5:15",
@@ -80284,7 +81094,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "지혜는 여호와께서 태초에 일을 시작하시기 전에 이미 자기를 가지셨다고 말해요. 지혜가 창조보다 먼저 있었다는 뜻이에요.",
-    "detail": "‘가지셨으며’(카나니)는 ‘얻다, 소유하다, 창조하다’로 모두 읽을 수 있는 동사예요. 헬라어 구약(칠십인역)은 ‘창조하셨다’로 읽었어요. 4세기 아리우스 논쟁에서는 이 구절이 성자가 피조물이라는 뜻으로 인용되었고, 니케아 공의회(325년)가 이 문제를 다뤘어요.",
+    "detail": "‘가지셨으며’(카나니)는 ‘얻다, 소유하다, 창조하다’로 모두 읽을 수 있는 동사예요. 4세기 아리우스 논쟁에서는 이 구절이 성자가 피조물이라는 뜻으로 인용되었고, 니케아 공의회가 성자의 본성을 다루며 아리우스의 가르침을 정죄했어요.",
     "caution": "지혜를 그리스도와 연결해 읽는 것은 오랜 교회 전통의 읽기예요. 다만 8장 자체는 지혜를 인격처럼 그린 시적 표현이에요.",
     "refs": [
       "잠언 8:22",
@@ -81013,7 +81823,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "약한 사람을 약하다고 빼앗거나 성문에서 짓누르지 말라고 해요. 여호와께서 그들의 사정을 변호하신다고 덧붙여요.",
-    "detail": "22:17-24:22는 ‘지혜로운 자의 말씀’이라는 별도 모음이에요. 이집트의 《아멘엠오페의 교훈》과 닮은 부분이 있고, 이 교훈은 보통 주전 1300~1075년경 람세스 시대의 작품으로 봐요. 22:22는 그 교훈의 2장 ‘가난한 자를 약탈하지 말라’와 비슷해요. 잠언이 이 교훈을 활용했다고 보는 견해가 많지만 확실하지는 않아요. ‘성문’은 재판이 열리던 자리예요.",
+    "detail": "22:17-24:22는 ‘지혜로운 자의 말씀’이라는 별도 모음이에요. 이집트의 《아멘엠오페의 교훈》과 닮은 부분이 있고, 이 교훈은 보통 주전 1300~1075년경 람세스 시대의 작품으로 봐요. 22:22는 그 교훈의 2장 ‘가난한 자를 약탈하지 말라’와 비슷해요. 잠언이 이 교훈을 활용했다고 보는 견해가 많지만 확실하지는 않아요. ‘성문’은 성경에서 재판이 열리던 자리로 나와요(신 21:19; 룻 4:1).",
     "caution": "이 격언은 주변 나라의 지혜 문학과도 통하는 보편적인 윤리예요. 그런데 잠언은 그 이유를 23절에서 ‘여호와께서 그들의 송사를 변호하신다’는 데 둬요.",
     "refs": [
       "잠언 22:22",
@@ -81052,7 +81862,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "summary": "선조가 세운 옛 지계석을 옮기지 말라고 해요.",
     "detail": "지계석은 밭과 밭의 경계를 표시하던 돌이에요. 신명기 19:14도 이웃의 경계표를 옮기지 말라고 명해요. 《아멘엠오페의 교훈》 6장도 밭의 경계표를 옮기지 말라고 하는데, 이웃 문화에도 비슷한 윤리가 있었다는 뜻이에요.",
-    "caution": "경계를 옮기는 일은 가난한 사람의 땅을 몰래 빼앗는 흔한 방법이었어요. 23:10은 고아의 밭을 특별히 언급해요.",
+    "caution": "경계를 옮기는 일은 이웃의 땅을 몰래 빼앗는 방법이 될 수 있어요. 23:10은 고아의 밭을 특별히 언급해요.",
     "refs": [
       "잠언 22:28",
       "욥기 24:2",
@@ -91183,6 +91993,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "개혁주의는 하나님의 징계를 정죄가 아니라 자녀를 향한 아버지의 교정으로 구분해요. 그래서 진노가 아닌 긍휼로 대해 달라고 구할 수 있어요.",
     "wcf": [
       11
+    ],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Penitential Psalms",
+        "url": "https://en.wikipedia.org/wiki/Penitential_Psalms"
+      }
     ]
   },
   {
@@ -91845,7 +92661,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "이웃에게 돈을 꾸어 줄 때 이자를 노리지 않고, 뇌물을 받아 무죄한 자를 해치지 않는 사람이 머무른다고 말해요.",
-    "detail": "이 시는 이웃에게 꾸어 줄 때 이자를 받지 말라고 한 율법(출 22:25; 레 25:36-37)과 이어져요. 함무라비 법전도 이자 상한을 정해 둘 만큼 이자 대부가 흔했어요. 이스라엘은 가난한 동족을 지키는 기준을 따로 두었어요.",
+    "detail": "이 시는 이웃에게 꾸어 줄 때 이자를 받지 말라고 한 율법(출 22:25; 레 25:36-37)과 이어져요. 함무라비 법전도 이자를 최고 20%까지만 받도록 정해 두었어요. 옛 나라에서도 이자를 받고 돈을 꾸어 주는 일이 흔했다는 뜻이에요. 이스라엘은 가난한 동족을 지키는 기준을 따로 두었어요.",
     "caution": "이자 금지는 가난한 동족에게 꾸어 줄 때를 말해요. 상거래 전반보다 가난한 이웃을 착취하지 말라는 뜻이에요.",
     "refs": [
       "시편 15:5",
@@ -92112,7 +92928,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "하늘과 궁창은 하나님의 영광과 솜씨를 말없이 드러낸다고 노래해요.",
-    "detail": "고대 근동에서는 해와 달과 별을 신으로 여기는 일이 많았어요. 이 시는 하늘을 신이 아니라 하나님의 영광을 알리는 피조물로 두고, 4-6절에서는 해조차 하나님이 장막을 쳐 주신 피조물로 그려요.",
+    "detail": "고대 메소포타미아에서는 해와 달을 신으로 섬겼어요. 이 시는 하늘을 신이 아니라 하나님의 영광을 알리는 피조물로 두고, 4-6절에서는 해조차 하나님이 장막을 쳐 주신 피조물로 그려요.",
     "caution": "‘궁창’은 하늘의 펼쳐진 공간이에요. 하늘이 말없이 선포하는 증언은 7절 이하의 율법과 짝을 이뤄요.",
     "refs": [
       "시편 19:1",
@@ -92124,6 +92940,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "개혁주의는 자연이 하나님을 알 만큼은 알려 주지만 구원에는 이르지 못하므로, 특별 계시인 말씀이 필요하다고 읽어요.",
     "wcf": [
       1
+    ],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Mesopotamian religion",
+        "url": "https://en.wikipedia.org/wiki/Mesopotamian_religion"
+      }
     ]
   },
   {
@@ -92241,7 +93063,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "어떤 사람은 병거와 말을 믿지만, 백성은 여호와의 이름을 자랑한다고 말해요.",
-    "detail": "병거와 말은 당시 최강의 군사 장비였어요. 신명기 17:16은 왕이 말을 많이 두지 못하게 막았고, 이사야 31:1은 말을 의지해 애굽으로 내려가는 일을 꾸짖어요. 이 시는 출정하는 왕을 위한 기도에서 그 대비를 고백으로 만들어요.",
+    "detail": "병거와 말은 청동기 말기 전쟁에서 큰 역할을 했어요. 나중에는 기병이 병거를 대신했어요. 신명기 17:16은 왕이 말을 많이 두지 못하게 막았고, 이사야 31:1은 말을 의지해 애굽으로 내려가는 일을 꾸짖어요. 이 시는 출정하는 왕을 위한 기도에서 그 대비를 고백으로 만들어요.",
     "caution": "군사력을 준비하는 일 자체를 금하는 말이 아니라, 신뢰를 어디에 두느냐를 가르는 말이에요.",
     "refs": [
       "신명기 17:16",
@@ -92252,6 +93074,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "개혁주의는 하나님이 수단을 쓰시되 수단에 매이지 않으신다고 보아, 준비는 하되 신뢰는 오직 하나님께 두라는 뜻으로 읽어요.",
     "wcf": [
       5
+    ],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Chariot",
+        "url": "https://en.wikipedia.org/wiki/Chariot"
+      }
     ]
   }
 ]);
@@ -92345,7 +93173,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "악한 무리가 시인의 손과 발을 찔렀다고 고통을 묘사해요.",
-    "detail": "칠십인역은 이 부분을 ‘손과 발을 뚫었다’로 읽어요. 히브리어 본문은 이 자리를 다르게 읽는 견해가 있어요. 앞 절의 ‘개들’은 악한 무리를 가리키는 비유로 쓰여요.",
+    "detail": "히브리어 본문은 이 자리를 다르게 읽는 견해가 있어요. 옛 그리스어 본문에서는 ‘손과 발을 뚫었다’로 읽는 견해가 있어요. 앞 절의 ‘개들’은 악한 무리를 가리키는 비유로 쓰여요.",
     "caution": "신약은 이 구절을 직접 인용하지 않으므로 십자가와의 연결은 신중히 읽어요.",
     "refs": [
       "시편 22:16",
@@ -92415,7 +93243,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "다윗은 여호와를 자기 목자라고 고백하며, 부족함이 없다고 말해요.",
-    "detail": "고대 근동에서 왕은 백성의 ‘목자’로 불리기도 했어요. 함무라비 법전의 서문도 함무라비를 신에게 택함 받은 목자라고 불러요. 이 시는 그 왕의 칭호를 여호와께 돌려, 양치기 출신 다윗이 하나님을 자기 목자로 고백해요.",
+    "detail": "함무라비 법전의 서문은 함무라비를 신에게 택함 받은 목자라고 불러요. 이 시는 그런 목자라는 말을 여호와께 돌려, 양치기 출신 다윗이 하나님을 자기 목자로 고백해요.",
     "caution": "‘부족함이 없다’는 모든 소원이 이루어진다는 뜻이 아니라 필요가 채워진다는 확신이에요.",
     "refs": [
       "시편 23:1",
@@ -92782,7 +93610,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "하늘의 존재들에게 여호와께 영광과 능력을 돌리라고 부르는 말씀이에요.",
-    "detail": "‘베네 엘림’은 직역하면 ‘신들의 아들들’이에요. 이를 천사들로 읽는 견해와 이방 신적 존재들로 읽는 견해가 있어요. 29편의 폭풍 묘사는 가나안 바알 신화와 문학적으로 닮았다는 것이 최근 학계의 중요한 견해예요. 프랭크 크로스는 이 시가 늦어도 주전 10세기에는 지금 형태였다고 봤어요.",
+    "detail": "‘베네 엘림’은 직역하면 ‘신들의 아들들’이에요. 이를 천사들로 읽는 견해와 이방 신적 존재들로 읽는 견해가 있어요. 29편의 폭풍 묘사는 가나안 바알 신화 자료와 문학적으로 이어져 있다는 견해가 있어요. 프랭크 크로스는 이 시의 지금 형태가 늦어도 주전 10세기에는 있었다고 봤어요.",
     "caution": "‘권능 있는 자들’이 천사인지 신적 존재 전반인지는 해석이 갈려요. 어느 쪽이든 여호와께 영광을 돌려야 하는 자리에 서 있어요.",
     "refs": [
       "시편 29:1",
@@ -93113,7 +93941,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "여호와께서 의인의 뼈를 지키셔서 하나도 꺾이지 않게 하신다고 노래해요.",
-    "detail": "요한복음 19:36은 로마 군인이 예수님의 다리를 꺾지 않은 일을 말하며, 이 구절이나 출애굽기 12:46을 인용해요. 십자가형에서는 다리를 꺾어 죽음을 재촉하기도 했는데, 예수님은 이미 숨지셨기 때문에 다리를 꺾지 않았어요.",
+    "detail": "요한복음 19:36은 로마 군인이 예수님의 다리를 꺾지 않은 일을 말하며, 이 구절이나 출애굽기 12:46을 인용해요. 십자가형에서는 다리를 꺾어 죽음을 재촉하기도 했어요. 요한복음 19:33은 예수님이 이미 숨지셨기 때문에 다리를 꺾지 않았다고 전해요.",
     "caution": "시의 본뜻은 의인이 환난에서 지켜지는 것이에요. 복음서는 이를 예수님께 적용해 성취로 읽어요.",
     "refs": [
       "시편 34:20",
@@ -93123,7 +93951,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Crucifixion",
+        "url": "https://en.wikipedia.org/wiki/Crucifixion"
+      }
+    ]
   },
   {
     "id": "context-psa-35-10",
@@ -93409,7 +94243,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "시인은 가까이 지내며 떡을 나누던 친구가 자기를 등지고 해치려 한다고 말해요.",
-    "detail": "함께 떡을 먹는 것은 고대 근동에서 언약과 친교의 표시였어요. ‘발꿈치를 들었다’는 발로 걷어찬다는 배신의 그림이에요. 압살롬 편에 선 아히도벨(삼하 15:12)을 떠올리는 읽기가 있고, 요한복음 13:18은 이를 예수님께 적용해요.",
+    "detail": "함께 떡을 먹는 것은 가까운 사이의 믿음을 나타내는 자리로 읽혀요. ‘발꿈치를 들었다’는 발로 걷어찬다는 배신의 그림이에요. 압살롬 편에 선 아히도벨(삼하 15:12)을 떠올리는 읽기가 있고, 요한복음 13:18은 이를 예수님께 적용해요.",
     "caution": "시에 배신자의 이름이 나오지 않아 누구인지는 읽기에 따라 달라요. 신약은 가룟 유다와 연결해요.",
     "refs": [
       "시편 41:9",
@@ -93440,7 +94274,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "시인은 목마른 사슴이 시냇물을 찾듯 살아 계신 하나님을 간절히 찾는다고 말해요.",
-    "detail": "42편과 43편은 같은 후렴(42:5, 11; 43:5)이 세 번 나와서 한 시처럼 읽혀요. 고라 자손은 성전에서 노래하던 레위 사람들이에요. 이스라엘 땅은 여름이면 시냇물이 마르기도 해서, 갈증은 현실적인 그림이에요.",
+    "detail": "42편과 43편은 같은 후렴(42:5, 11; 43:5)이 세 번 나와서 한 시처럼 읽혀요. 고라 자손은 성전에서 노래하던 레위 사람들이에요. 많은 골짜기는 비가 온 뒤에만 물이 흐르고 평소에는 말라 있어서, 갈증은 현실적인 그림이에요.",
     "caution": "사슴의 갈증은 감정만이 아니라, 성전에서 하나님을 뵙고 예배하지 못하는 처지에서 나온 목마름이에요.",
     "refs": [
       "시편 42:1",
@@ -93449,7 +94283,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Wadi",
+        "url": "https://en.wikipedia.org/wiki/Wadi"
+      }
+    ]
   },
   {
     "id": "context-psa-42-5",
@@ -93506,7 +94346,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "시인은 낙심한 마음으로 요단 땅과 헤르몬, 미살 산에서 주를 기억한다고 말해요. 성전에서 멀리 떨어진 사람의 고백이에요.",
-    "detail": "헤르몬 산은 높이가 약 2,814m로, 시리아와 골란 고원 일대에서 가장 높은 산이에요. 이 산에 쌓인 눈이 녹아 요단 강의 물줄기가 돼요. 시인은 예루살렘에서 멀리 떨어진 북쪽 땅에서 성전을 기억해요. ‘미살’이 어디인지는 알려지지 않았어요.",
+    "detail": "헤르몬 산은 높이가 약 2,814m예요. 이 산에 쌓인 눈이 녹아 요단 강의 물줄기가 돼요. 시인은 예루살렘에서 멀리 떨어진 북쪽 땅에서 성전을 기억해요. ‘미살’이 어디인지는 알려지지 않았어요.",
     "caution": "시인이 북쪽 땅에 머문 사람으로 보는 견해가 있어요. 포로나 유랑 같은 배경은 읽기에 따라 달라요.",
     "refs": [
       "시편 42:6",
@@ -93707,7 +94547,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "하나님의 성에는 기쁨을 주는 시내가 있어 그 성을 기쁘게 한다고 노래해요.",
-    "detail": "예루살렘에는 큰 강이 없어서 기혼 샘이 주된 물이었어요. 실로암 비문은 히스기야 때로 전해지는 물길 터널을 기록해요. 이 비문은 8세기 말, 약 700년경의 것으로 보고, 물이 1,200규빗을 흘러 연못에 이르렀다고 적어요. 누가 이 터널을 팠는지는 확실하지 않아요. 시인은 요동치는 바다(2-3절)와 대비되는 잔잔한 시내로 하나님의 임재를 노래해요.",
+    "detail": "실로암 비문은 예루살렘의 물길 터널을 기록해요. 히스기야 때 물을 끌어들였다고 성경은 전하지만, 비문에는 왕의 이름이 없어요. 이 비문은 기원전 8세기, 대략 기원전 700년경의 것으로 보고, 물이 1,200규빗을 흘러 연못에 이르렀다고 적어요. 누가 이 터널을 팠는지는 확실하지 않아요. 시인은 요동치는 바다(2-3절)와 대비되는 잔잔한 시내로 하나님의 임재를 노래해요.",
     "caution": "이 시내는 지리적 강이 아니라, 하나님이 계신 성에 흐르는 평안과 복을 가리켜요.",
     "refs": [
       "시편 46:4",
@@ -94214,7 +95054,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "summary": "시인은 자기가 하나님의 집에 있는 푸른 감람나무 같다고 말하며, 하나님의 인자하심을 영원히 의지한다고 고백해요.",
     "detail": "예레미야 11:16도 여호와께서 ‘푸른 감람나무’라고 부르시던 백성을 말해요. 1절의 악한 자가 뿌리째 뽑히는 장면과 대조돼요. 9절은 영원히 감사하겠다는 서원으로 끝나요.",
-    "caution": "감람나무는 이스라엘의 주요 작물이고 오래 사는 상록수예요. 1-7절에서 뽑혀 사라질 악한 자와 대비되어, 하나님의 집에 뿌리내린 사람이 영원히 인자하심을 의지한다는 뜻이에요.",
+    "caution": "감람나무는 늘 푸른 상록수이고, 잘 가꾸면 여러 세기 동안 열매를 맺는 나무예요. 1-7절에서 뽑혀 사라질 악한 자와 대비되어, 하나님의 집에 뿌리내린 사람이 영원히 인자하심을 의지한다는 뜻이에요.",
     "refs": [
       "시편 52:8",
       "예레미야 11:16",
@@ -94223,7 +95063,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Olive",
+        "url": "https://en.wikipedia.org/wiki/Olive"
+      }
+    ]
   },
   {
     "id": "context-psa-53-1",
@@ -94245,7 +95091,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "어리석은 자는 마음으로 하나님이 없다고 말하며, 선을 행하는 자가 없다고 해요.",
-    "detail": "53편은 14편과 거의 같은 시예요. 14편이 ‘여호와’를 쓴 곳에 53편은 ‘하나님(엘로힘)’을 써요. 시편 42~83편 구간은 하나님을 ‘엘로힘’으로 많이 부르는 구간으로 알려져 있어요. 두 시는 몇 군데 말이 조금씩 달라요.",
+    "detail": "53편은 14편과 거의 같은 시예요. 14편이 ‘여호와’를 쓴 곳에 53편은 ‘하나님(엘로힘)’을 써요. 시편 42~72편 둘째 권에서는 하나님을 ‘엘로힘’이라고 많이 부르는 것으로 알려져 있어요. 두 시는 몇 군데 말이 조금씩 달라요.",
     "caution": "‘어리석은 자’(나발)는 지능이 아니라 하나님을 무시하는 도덕적 어리석음이에요. 이론적 무신론보다 실제로 살아가는 방식의 무신론에 가까워요.",
     "refs": [
       "시편 53:1",
@@ -94254,7 +95100,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Book of Psalms",
+        "url": "https://en.wikipedia.org/wiki/Book_of_Psalms"
+      }
+    ]
   },
   {
     "id": "context-psa-54-6",
@@ -95031,7 +95883,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "다시스와 섬의 왕들, 스바와 시바의 왕들이 왕께 예물을 바친다고 노래해요.",
-    "detail": "‘스바’(셰바)는 아라비아 남서쪽에서 향료와 금을 거래하던 나라로 보는 견해가 많아요. 열왕기상 10장의 스바 여왕이 솔로몬을 찾아온 일이 떠올라요. ‘다시스’는 먼 서쪽 항구로 읽히지만 위치는 논쟁이 있어요.",
+    "detail": "‘스바’(셰바)는 예멘 일대, 아라비아 남서쪽에 있던 나라로, 유향과 몰약 무역으로 알려져 있어요. 열왕기상 10장의 스바 여왕이 솔로몬을 찾아온 일이 떠올라요. ‘다시스’는 먼 바다의 항구로 보는 견해가 있지만 위치는 논쟁이 있어요.",
     "caution": "멀고 부유한 나라들이 예물을 가져온다는 말은 열방이 왕에게 복종하는 모습이에요. 요한계시록 21장 등 신약이 열방의 영광이 들어오는 그림과 이어서 읽기도 해요.",
     "refs": [
       "시편 72:10",
@@ -95040,7 +95892,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Kingdom of Saba",
+        "url": "https://en.wikipedia.org/wiki/Kingdom_of_Saba"
+      }
+    ]
   },
   {
     "id": "context-psa-73-1",
@@ -95071,7 +95929,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Book of Psalms",
+        "url": "https://en.wikipedia.org/wiki/Book_of_Psalms"
+      }
+    ]
   },
   {
     "id": "context-psa-73-25",
@@ -95126,7 +95990,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "백성은 원수들이 주의 성소를 불사르고, 이름이 계신 곳을 더럽혔다고 탄식해요.",
-    "detail": "바벨론은 주전 586년에 예루살렘 성전을 불살랐어요(왕하 25:9). 이 시를 주전 167년 안티오쿠스 4세의 성전 모독과 연결하는 학자도 있어요. 8절의 ‘하나님의 모든 모임 장소’는 여러 곳의 예배 장소를 가리키는 말로 읽혀요.",
+    "detail": "바벨론은 주전 586년에 예루살렘 성전을 불살랐어요(왕하 25:9). 이 시를 주전 2세기 안티오쿠스 4세가 성전을 더럽힌 일(주전 168–167년 무렵)과 연결하는 학자도 있어요. 8절의 ‘하나님의 모든 모임 장소’는 여러 곳의 예배 장소를 가리키는 말로 읽혀요.",
     "caution": "포로기 배경으로 읽는 것이 전통적이에요.",
     "refs": [
       "시편 74:7",
@@ -95135,7 +95999,17 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Solomon's Temple",
+        "url": "https://en.wikipedia.org/wiki/Solomon%27s_Temple"
+      },
+      {
+        "label": "Wikipedia: Antiochus IV Epiphanes",
+        "url": "https://en.wikipedia.org/wiki/Antiochus_IV_Epiphanes"
+      }
+    ]
   },
   {
     "id": "context-psa-74-14",
@@ -95269,7 +96143,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Sennacherib",
+        "url": "https://en.wikipedia.org/wiki/Sennacherib"
+      }
+    ]
   },
   {
     "id": "context-psa-76-10",
@@ -95460,7 +96340,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Solomon's Temple",
+        "url": "https://en.wikipedia.org/wiki/Solomon%27s_Temple"
+      }
+    ]
   },
   {
     "id": "context-psa-79-8",
@@ -95515,7 +96401,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "백성은 요셉을 양 떼처럼 인도하시는 이스라엘의 목자께 귀를 기울이고 빛을 비춰 주시기를 구해요.",
-    "detail": "‘그룹 사이에 좌정하신 이’는 법궤 뚜껑의 두 그룹 사이에 임하시는 하나님이에요(출 25:22). 2절의 에브라임, 베냐민, 므낫세는 북쪽 지파들이라서, 북 왕국이 앗수르에 무너지기 전(주전 722년 무렵)의 기도로 읽는 해석이 있어요.",
+    "detail": "‘그룹 사이에 좌정하신 이’는 법궤 뚜껑의 두 그룹 사이에 임하시는 하나님이에요(출 25:22). 2절의 에브라임, 베냐민, 므낫세는 북쪽 지파들이라서, 북 왕국이 앗수르에 무너지기 전(주전 720년 무렵)의 기도로 읽는 해석이 있어요.",
     "caution": "‘요셉’은 북 왕국을 대표하는 이름이에요. 이스라엘 전체를 부르면서 북쪽 지파가 특히 위기에 있었다는 뜻일 수 있어요.",
     "refs": [
       "시편 80:1",
@@ -95524,7 +96410,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Kingdom of Israel (Samaria)",
+        "url": "https://en.wikipedia.org/wiki/Kingdom_of_Israel_(Samaria)"
+      }
+    ]
   },
   {
     "id": "context-psa-80-3",
@@ -96030,6 +96922,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": [
       7,
       8
+    ],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Book of Psalms",
+        "url": "https://en.wikipedia.org/wiki/Book_of_Psalms"
+      }
     ]
   },
   {
@@ -96266,6 +97164,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": [
       5,
       8
+    ],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Yam (god)",
+        "url": "https://en.wikipedia.org/wiki/Yam_(god)"
+      }
     ]
   },
   {
@@ -97016,7 +97920,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "여호와께서 나의 주에게 말씀하시기를 원수들이 발판이 될 때까지 오른편에 앉아 있으라고 하셨다고 선포해요.",
-    "detail": "예수님은 이 구절로 바리새인들에게 다윗이 자기 후손을 ‘주’라고 부른 이유를 물으셨어요(마 22:41-46). 신약에서 가장 많이 인용되는 구약 구절의 하나예요. ‘발판’은 정복한 왕이 적장의 목을 발로 밟는 풍습을 떠올리게 해요(수 10:24).",
+    "detail": "예수님은 이 구절로 바리새인들에게 다윗이 자기 후손을 ‘주’라고 부른 이유를 물으셨어요(마 22:41-46). 신약에서 자주 인용되는 구절이에요. ‘발판’은 정복한 적을 발아래 두는 모습을 떠올리게 해요(수 10:24).",
     "caution": "‘여호와’께서 ‘내 주’께 말씀하신다는 구조라서, 다윗의 후손이 다윗보다 높은 존재임을 가리켜요.",
     "refs": [
       "시편 110:1",
@@ -97545,7 +98449,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "시인은 메섹과 게달 사이에 머무는 것이 괴롭다고 탄식해요. 평화를 싫어하는 자들 사이에서 사는 고통이에요.",
-    "detail": "메섹은 소아시아 쪽 먼 북쪽 민족으로 읽히고, 게달은 아라비아 광야의 유목 부족(창 25:13)으로 읽혀요. 둘은 멀리 떨어져 있어서, 두 곳에 머문다는 말은 문자적 위치보다 적대적인 이방인 가운데 산다는 표현으로 읽어요.",
+    "detail": "메섹은 지금의 터키 지역으로 보는 것이 일반적이에요(창 10:2). 게달은 아라비아에 살던 부족 이름이에요(창 25:13). 두 이름을 함께 쓴 것은 문자적 위치보다 적대적인 이방인 가운데 산다는 표현으로 읽어요.",
     "caution": "실제 거주지라기보다, 평화를 원하는 사람이 전쟁을 좋아하는 이들 사이에 사는 고통을 시적으로 말하는 것으로 읽혀요.",
     "refs": [
       "시편 120:5",
@@ -97556,7 +98460,17 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Meshech",
+        "url": "https://en.wikipedia.org/wiki/Meshech"
+      },
+      {
+        "label": "Wikipedia: Kedar",
+        "url": "https://en.wikipedia.org/wiki/Kedar"
+      }
+    ]
   }
 ]);
 
@@ -97582,7 +98496,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "순례자가 산을 바라보며 나의 도움이 어디서 오느냐고 묻는 질문으로 시작해요. 그 답이 하나님께 있다고 이어 말해요.",
-    "detail": "순례자가 예루살렘으로 올라가며 유다의 산들을 바라보는 장면으로 읽혀요. 이 시에는 ‘지키시다’(샤마르)가 여러 번 나와요(3-8절). 산은 이방 신들의 산당이 있던 곳이기도 했는데, 시인은 산이 아니라 산을 지으신 분께 눈을 돌려요.",
+    "detail": "순례자가 예루살렘으로 올라가며 유다의 산들을 바라보는 장면으로 읽혀요. 이 시에는 ‘지키시다’(샤마르)가 여러 번 나와요(3-8절). 시인은 산이 아니라 산을 지으신 분께 눈을 돌려요.",
     "caution": "1절은 두려움 섞인 질문이고, 2절이 곧 답이에요. 도움은 산이 아니라 천지를 지으신 여호와께로부터 와요.",
     "refs": [
       "시편 121:1",
@@ -97649,7 +98563,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "여호와를 의지하는 자는 흔들리지 않는 시온 산처럼 영원히 서 있다고 말해요.",
-    "detail": "예루살렘은 여러 산에 둘러싸인 언덕 위에 있어요(2절). 시는 이 지리를 하나님이 백성을 에워싸신다는 그림으로 써요. 시온은 흔들리지 않는 산이라, 여호와를 의지하는 사람의 안정감을 보여 줘요.",
+    "detail": "2절은 예루살렘을 둘러싼 산들의 그림을 써요. 시는 이 지리를 하나님이 백성을 에워싸신다는 그림으로 써요. 시온은 흔들리지 않는 산이라, 여호와를 의지하는 사람의 안정감을 보여 줘요.",
     "caution": "안전은 산의 높이가 아니라 둘러싸고 계신 하나님께 있어요. 그래서 시온 산 같은 사람은 ‘여호와를 의지하는 자’예요.",
     "refs": [
       "시편 125:1",
@@ -97682,7 +98596,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "여호와께서 시온의 포로를 돌려 보내실 때 백성은 꿈꾸는 것 같았다고 회상해요. 회복의 기쁨이에요.",
-    "detail": "고레스는 주전 539년 바벨론을 점령한 뒤 유대인의 귀환을 허락했어요(스 1장). 126편에는 돌아온 지 얼마 안 된 때의 기쁨과, 아직 이루어지지 않은 회복을 구하는 기도가 함께 나와요. 4절의 ‘남방(네게브)의 시내’는 평소엔 말랐다가 우기에 물이 가득 차는 개울이에요.",
+    "detail": "고레스는 주전 539년 바벨론에 들어간 뒤 유대인의 귀환을 허락했어요(스 1장). 126편에는 돌아온 지 얼마 안 된 때의 기쁨과, 아직 이루어지지 않은 회복을 구하는 기도가 함께 나와요. 4절의 ‘남방(네게브)의 시내’는 물이 말랐다가 다시 차는 개울을 떠올리게 해요.",
     "caution": "‘꿈꾸는 것 같았다’는 회복이 믿기지 않을 만큼 컸다는 뜻이에요. 그러나 4절에서 다시 간구하는 것으로 보아, 회복은 아직 진행 중이었어요.",
     "refs": [
       "시편 126:1",
@@ -97692,7 +98606,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Cyrus the Great",
+        "url": "https://en.wikipedia.org/wiki/Cyrus_the_Great"
+      }
+    ]
   },
   {
     "id": "context-psa-129-3",
@@ -97759,6 +98679,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": [
       11,
       15
+    ],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Penitential Psalms",
+        "url": "https://en.wikipedia.org/wiki/Penitential_Psalms"
+      }
     ]
   },
   {
@@ -98145,7 +99071,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "포로 된 백성이 바벨론 강변에 앉아 시온을 기억하며 울었다고 회상해요.",
-    "detail": "바벨론에는 유프라테스 외에도 여러 운하가 있었고, 에스겔은 ‘그발 강’ 가에 있었어요(겔 1:1). 알 야후두 점토판(주전 572~477년)은 바벨론 지역에 유다 포로 공동체가 있었음을 보여 줘요. 이 시는 주전 586년 예루살렘이 무너진 뒤 포로들이 부른 슬픔의 노래로 읽혀요.",
+    "detail": "에스겔은 ‘그발 강’ 가에 있었어요(겔 1:1). 알 야후두 점토판(주전 572~477년)은 바벨론 지역에 유다 포로 공동체가 있었음을 보여 줘요. 이 시는 주전 586년 예루살렘이 무너진 뒤 포로들이 부른 슬픔의 노래로 읽혀요.",
     "caution": "울음은 고향을 잃은 슬픔을 넘어 성전과 시온을 잃은 신앙의 상실이에요. 5-6절의 맹세에서 시온을 가장 큰 기쁨으로 삼겠다는 다짐이 나와요.",
     "refs": [
       "시편 137:1",
@@ -98184,7 +99110,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "바벨론에게 행한 대로 갚는 자가 복이 있다고 말하는 저주의 구절이에요. 시편에서 가장 격한 말 가운데 하나예요.",
-    "detail": "어린아이를 바위에 메어친 것은 고대 전쟁의 잔혹한 관행이었어요. 나훔 3:10은 니느웨가 그렇게 당했다고 말하고, 이사야 13:16은 바벨론에게도 같은 일이 있으리라고 예언해요. 시인은 바벨론이 에돔과 함께 예루살렘을 무너뜨릴 때 행한 일을 갚아 달라고 호소해요(7-8절).",
+    "detail": "이 구절은 전쟁 중 어린아이가 당한 잔혹한 일을 그려요. 나훔 3:10은 니느웨가 그렇게 당했다고 말하고, 이사야 13:16은 바벨론에게도 같은 일이 있으리라고 예언해요. 시인은 바벨론이 에돔과 함께 예루살렘을 무너뜨릴 때 행한 일을 갚아 달라고 호소해요(7-8절).",
     "caution": "복수를 권하는 말이 아니라, 억울한 이들이 하나님께 정의를 호소하는 격한 기도예요. 신자는 원수 사랑(마 5:44)의 빛 아래서 읽어요.",
     "refs": [
       "시편 137:9",
@@ -98446,7 +99372,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "시인은 주의 종에게 심판을 행하지 마시라고 구하며, 살아 있는 자는 누구도 주 앞에서 의롭지 않다고 고백해요.",
-    "detail": "143편은 교회 전통의 일곱 회개시 가운데 마지막이에요. 바울은 이 구절을 갈라디아서 2:16과 로마서 3:20에서 인용해, 율법의 행위로는 어떤 사람도 의롭다 하심을 받지 못한다고 설명해요.",
+    "detail": "143편은 교회 전통의 일곱 회개시 가운데 마지막이에요. 바울은 이 구절을 갈라디아서 2:16에서 인용해, 율법의 행위로는 어떤 사람도 의롭다 하심을 받지 못한다고 설명해요.",
     "caution": "시인은 자기 의를 내세우지 않고, 심판이 아니라 하나님의 의(1절)에 호소해요. 모든 사람이 심판 앞에 설 수 없다는 선언이에요.",
     "refs": [
       "시편 143:2",
@@ -98457,6 +99383,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "개혁주의는 이 구절을 이신칭의의 근거로 읽어요. 사람은 율법의 행위가 아니라 그리스도를 믿음으로 의롭다 하심을 받아요.",
     "wcf": [
       11
+    ],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Penitential Psalms",
+        "url": "https://en.wikipedia.org/wiki/Penitential_Psalms"
+      }
     ]
   },
   {
@@ -98541,7 +99473,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "여호와는 은혜로우시며 긍휼이 많으시고 노하기를 더디 하시며 인자하심이 크시다고 노래해요.",
-    "detail": "145편은 알파벳 시이지만, ‘눈’으로 시작하는 줄이 마소라 본문에는 없어요(사해 사본과 칠십인역에는 있어요). 이 구절은 출애굽기 34:6의 성품 선언을 되풀이하며, 요엘 2:13과 요나 4:2에도 나와요. 이 시는 유대인들이 매일 여러 차례 낭송하는 기도로 쓰여 왔어요.",
+    "detail": "145편은 알파벳 시이지만, ‘눈’으로 시작하는 줄이 히브리어 본문에는 빠져 있고 사해 사본과 칠십인역에는 있어요. 이 구절은 출애굽기 34:6의 성품 선언을 되풀이하며, 요엘 2:13과 요나 4:2에도 나와요. 유대인들은 하루 세 번 기도 ‘아쉬레’를 외는데, 그 대부분이 이 시예요.",
     "caution": "같은 성품 선언이 구약 곳곳에서 반복돼요. 하나님이 노하기를 더디 하심이 그분의 기본 성품이라는 뜻이에요.",
     "refs": [
       "시편 145:8",
@@ -98649,7 +99581,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "여호와는 말의 힘이나 사람의 다리가 억세다고 기뻐하지 않으신다고 말해요. 그 대신 주를 두려워하고 인자를 바라는 자를 기뻐하신다고 노래해요.",
-    "detail": "말은 당시 최강의 군사력인 기병과 병거를 가리켜요. 신명기 17:16은 왕이 말을 많이 두지 못하게 했어요. ‘사람의 다리’는 보병의 힘이에요. 하나님은 군사력이 아니라 경외하는 자를 기뻐하세요(11절).",
+    "detail": "말은 기병과 병거의 힘을 떠올리게 해요. 신명기 17:16은 왕이 말을 많이 두지 못하게 했어요. ‘사람의 다리’는 보병의 힘이에요. 하나님은 군사력이 아니라 경외하는 자를 기뻐하세요(11절).",
     "caution": "군사력 자체를 악으로 보는 것이 아니라, 신뢰를 어디에 두는지가 문제예요.",
     "refs": [
       "시편 147:10",
@@ -98681,7 +99613,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "하늘과 천사와 별과 물이 여호와의 이름을 찬양하는데, 그가 명령하시므로 지음 받았기 때문이라고 노래해요.",
-    "detail": "148편은 하늘(1-6절)과 땅(7-12절)의 만물이 하나님을 찬양하라고 부르는 시예요. 해와 달과 별은 고대 근동에서 신으로 섬겨지기도 했는데, 이 시는 그것들을 하나님의 명령으로 지음받은 피조물로 낮춰 찬양에 부르는 점이 특별해요.",
+    "detail": "148편은 하늘(1-6절)과 땅(7-12절)의 만물이 하나님을 찬양하라고 부르는 시예요. 해와 달과 별도 하나님의 명령으로 지음받은 피조물이라, 찬양에 함께 불려요. 이 시는 그것들을 경배의 대상이 아니라 찬양하는 피조물로 세워요.",
     "caution": "천체조차 창조주를 찬양하는 피조물이라는 선언은, 별을 섬기는 우상 숭배를 거부하는 선언이기도 해요.",
     "refs": [
       "시편 148:5",
@@ -108166,8 +109098,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
         ]
       }
     ],
-    "summary": "솔로몬은 이집트와 구에에서 말을 들여왔어요. 구에는 지금의 길리기아 지역이에요. 솔로몬 때 군대와 무역이 넓게 이어졌다는 뜻이에요.",
-    "detail": "구에는 앗수르 문서에도 나오는 길리기아 지역이에요. 신명기 17:16은 왕이 말을 많이 두거나 이집트에서 말을 구해 오지 말라고 금했어요. 역대기는 이 일을 직접 평가하지 않고 부의 규모로만 적어요.",
+    "summary": "솔로몬은 이집트와 구에에서 말을 들여왔어요. 구에는 길리기아 평야 쪽 지역이에요. 솔로몬 때 군대와 무역이 넓게 이어졌다는 뜻이에요.",
+    "detail": "구에는 신앗수르 문서에 나오는 이름이고, 길리기아 평야 쪽 지역을 가리키는 것으로 봐요. 신명기 17:16은 왕이 말을 많이 두거나 이집트에서 말을 구해 오지 말라고 금했어요. 역대기는 이 일을 직접 평가하지 않고 부의 규모로만 적어요.",
     "caution": "역대기가 이 일을 칭찬하는지 꾸짖는지는 분명하게 나오지 않아서, 신명기 규정과 함께 읽는 것이 좋아요.",
     "refs": [
       "역대하 1:16-17",
@@ -108175,7 +109107,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Cilicia",
+        "url": "https://en.wikipedia.org/wiki/Cilicia"
+      }
+    ]
   },
   {
     "id": "context-2ch-1-17",
@@ -108227,7 +109165,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "솔로몬은 두로 왕 후람에게 사절을 보내 성전에 쓸 백향목을 청했어요. 아버지 다윗 때부터 이어진 우호가 성전 재료로 이어졌어요.",
-    "detail": "후람(히람)은 다윗의 궁을 지을 백향목을 보낸 왕이에요(삼하 5:11). 두로는 레바논 백향목과 솜씨 좋은 장인으로 유명했어요. 솔로몬은 이 오랜 관계를 바탕으로 재료와 기술자를 요청해요.",
+    "detail": "후람(히람)은 다윗의 궁을 지을 백향목과 일꾼을 보낸 두로 왕이에요(삼하 5:11). 솔로몬은 이 오랜 관계를 바탕으로 재료와 기술자를 요청해요.",
     "caution": "",
     "refs": [
       "역대하 2:3",
@@ -108236,7 +109174,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Tyre, Lebanon",
+        "url": "https://en.wikipedia.org/wiki/Tyre,_Lebanon"
+      }
+    ]
   },
   {
     "id": "context-2ch-2-4",
@@ -108383,7 +109327,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "레바논의 나무는 뗏목으로 엮어 바다로 욥바까지 보내고, 거기서 예루살렘까지는 육로로 나르게 해요. 두로 바닷가에서 지중해를 따라 내려가는 길이에요.",
-    "detail": "욥바는 지금의 야파 항구예요. 예루살렘에서 서쪽으로 50km 남짓 떨어져 있어요. 에스라 3:7도 성전 재건 때 같은 길로 백향목을 들여온 기록을 남겨요. 포로에서 돌아온 공동체가 첫 성전을 기억하는 방식이에요.",
+    "detail": "욥바는 지금의 야파 항구예요. 지중해 바닷가에 있는 항구 도시예요. 에스라 3:7도 성전 재건 때 백향목을 욥바로 들여온 기록을 남겨요. 포로에서 돌아온 공동체가 첫 성전을 기억하는 방식이에요.",
     "caution": "",
     "refs": [
       "역대하 2:16",
@@ -108391,7 +109335,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Jaffa",
+        "url": "https://en.wikipedia.org/wiki/Jaffa"
+      }
+    ]
   },
   {
     "id": "context-2ch-2-17",
@@ -108446,7 +109396,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "성전 기초는 길이 60규빗, 너비 20규빗이에요. '옛 규빗'으로 재었다고 적혀 있어서, 규빗의 길이가 시대마다 달랐음을 보여 줘요.",
-    "detail": "'옛 규빗(처음 규빗)'이라는 말로 재는 기준을 밝혀요. 히스기야 터널의 비문에 적힌 1,200규빗이 실제로 약 533m라서, 1규빗은 약 44.5cm쯤으로 계산돼요. 그렇다면 기초는 길이 약 27m, 너비 약 9m예요. 호크마 주석은 이 기초가 모리아 산 위에 놓였다고 설명해요.",
+    "detail": "'옛 규빗(처음 규빗)'이라는 말로 재는 기준을 밝혀요. 규빗은 팔꿈치에서 가운뎃손가락 끝까지의 길이로, 시대와 기준에 따라 조금씩 달랐어요. 그래서 기초의 정확한 치수는 단정하기 어려워요. 호크마 주석은 이 기초가 모리아 산 위에 놓였다고 설명해요.",
     "caution": "규빗 길이는 계산에 따라 조금씩 달라서 정확한 치수는 단정하기 어려워요.",
     "refs": [
       "역대하 3:3",
@@ -108482,7 +109432,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "지성소는 가로세로 20규빗인 정육면체 방이고, 순금 600달란트를 입혔어요. 가장 거룩한 곳을 가장 값진 재료로 꾸민 것이에요.",
-    "detail": "600달란트는 약 20톤이라서, 문자 그대로의 무게인지 상징적인 숫자인지 해석이 갈려요. 열왕기상 6:20도 지성소 크기를 같게 적어요. 정육면체 모양은 요한계시록 21:16의 새 예루살렘과 비교되기도 해요.",
+    "detail": "600달란트는 히브리 한 달란트를 약 28.8kg으로 잡으면 약 17톤이에요. 문자 그대로의 무게인지 상징적인 숫자인지 해석이 갈려요. 열왕기상 6:20도 지성소 크기를 같게 적어요. 정육면체 모양은 요한계시록 21:16의 새 예루살렘과 비교되기도 해요.",
     "caution": "금의 무게를 오늘의 단위로 그대로 계산하기보다, 지성소의 값어치를 강조하는 표현으로 읽는 것이 좋아요.",
     "refs": [
       "역대하 3:8",
@@ -108491,7 +109441,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Talent (measurement)",
+        "url": "https://en.wikipedia.org/wiki/Talent_(measurement)"
+      }
+    ]
   },
   {
     "id": "context-2ch-3-13",
@@ -108760,7 +109716,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "궤의 채 끝은 성소 쪽에서는 보였지만 밖에서는 보이지 않았어요. '오늘까지 있다'는 말은 옛 기록에서 온 흔적일 수 있어요.",
-    "detail": "'오늘까지'라는 표현은 열왕기 저자가 성전이 서 있을 때 쓴 문장을 그대로 가져온 것으로 보는 견해가 있어요. 성전은 주전 586년에 무너졌으므로, 이 표현은 성전이 무너지기 전 기록에서 온 흔적일 가능성이 있어요.",
+    "detail": "'오늘까지'라는 표현은 열왕기 저자가 성전이 서 있을 때 쓴 문장을 그대로 가져온 것으로 보는 견해가 있어요. 성전은 주전 586년쯤(587년으로 보기도 해요) 바벨론에 무너졌으므로, 이 표현은 성전이 무너지기 전 기록에서 온 흔적일 가능성이 있어요.",
     "caution": "'오늘까지'가 가리키는 시점은 학자들 사이에서 해석이 갈려요.",
     "refs": [
       "역대하 5:9",
@@ -108768,7 +109724,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Solomon's Temple",
+        "url": "https://en.wikipedia.org/wiki/Solomon%27s_Temple"
+      }
+    ]
   },
   {
     "id": "context-2ch-5-12",
@@ -109354,7 +110316,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "솔로몬은 바알랏과 곡식과 물자를 쌓는 성, 병거를 두는 성, 마병을 두는 성을 세웠어요. 군사와 물자를 쌓아 두는 나라의 바탕을 보여 줘요.",
-    "detail": "열왕기상 9:15-19와 나란히 있어요. 하솔, 므깃도, 게셀은 이 시기의 큰 성문과 방어 시설로 유명해요. 일부 학자는 세 성에서 나온 비슷한 여섯 칸 성문을 솔로몬 시대의 증거로 보지만, 연대는 논쟁이 있어요.",
+    "detail": "열왕기상 9:15-19와 나란히 있어요. 하솔, 므깃도, 게셀은 성경이 솔로몬이 건축한 성읍으로 말하는 곳이에요(왕상 9:15). 이 성들의 건축 연대를 솔로몬 때로 볼지는 학자들 사이에 의견이 갈려요.",
     "caution": "",
     "refs": [
       "역대하 8:4-6",
@@ -109524,8 +110486,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": [],
     "sourceLinks": [
       {
-        "label": "유네스코 세계유산센터, 사바 왕국 유적과 향료 교역로",
-        "url": "https://whc.unesco.org/en/list/1700"
+        "label": "Wikipedia: Kingdom of Saba",
+        "url": "https://en.wikipedia.org/wiki/Kingdom_of_Saba"
       }
     ]
   },
@@ -109767,7 +110729,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "북쪽 지파들은 '우리가 다윗과 무슨 관계가 있느냐'고 외치고 각자 장막으로 돌아가요. 다윗 집안과 결별을 선언하는 구호예요.",
-    "detail": "사무엘하 20:1에서 세바가 같은 말로 반란을 일으켰어요. 이번에는 열 지파가 합류했어요. '각자 장막으로 돌아가라'는 말은 흩어져 집으로 돌아가라는 뜻이에요. 이 분열은 주전 931년쯤으로 추정돼요.",
+    "detail": "사무엘하 20:1에서 세바가 같은 말로 반란을 일으켰어요. 이번에는 열 지파가 합류했어요. '각자 장막으로 돌아가라'는 말은 흩어져 집으로 돌아가라는 뜻이에요. 이 분열은 주전 930년쯤으로 보는 견해가 많아요(연도는 학자마다 조금씩 달라요).",
     "caution": "",
     "refs": [
       "역대하 10:16-17",
@@ -109776,7 +110738,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Kingdom of Israel (united monarchy)",
+        "url": "https://en.wikipedia.org/wiki/Kingdom_of_Israel_(united_monarchy)"
+      }
+    ]
   },
 ]);
 
@@ -109988,7 +110956,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "르호보암이 겸손해지자 하나님의 진노가 돌아섰어요. 완전한 회복은 아니지만 유다에 선한 일이 있었어요.",
-    "detail": "시삭은 이집트 왕 쇼숑크 1세(재위 약 주전 943~922년)로 보는 견해가 많아요. 카르낙 신전에 그의 원정 목록이 새겨졌는데, 그 목록에 예루살렘 이름은 나오지 않아요. 시삭은 성전의 보물을 가져갔지만(9절) 성을 멸하지는 않았어요. 14절은 르호보암이 끝까지 하나님을 구하지 않았다고 평가해요.",
+    "detail": "시삭은 이집트 왕 쇼숑크 1세(재위 약 주전 943~922년)로 보는 견해가 많아요. 카르낙 신전에 그의 원정 목록이 새겨졌는데, 그 목록에 예루살렘 이름은 나오지 않아요. 성경은 시삭이 성전의 보물을 가져갔다고 해요(9절). 다만 이 약탈 이야기를 신학적으로 꾸민 것으로 보는 학자도 있어요. 14절은 르호보암이 끝까지 하나님을 구하지 않았다고 평가해요.",
     "caution": "",
     "refs": [
       "역대하 12:12",
@@ -110034,7 +111002,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Abijah of Judah",
+        "url": "https://en.wikipedia.org/wiki/Abijah_of_Judah"
+      }
+    ]
   },
   {
     "id": "context-2ch-14-3",
@@ -110309,7 +111283,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "북이스라엘의 바아사가 라마를 쌓아 유다와 북쪽 사이의 길을 막았어요. 사람과 물자가 오가지 못하게 한 봉쇄예요.",
-    "detail": "라마는 예루살렘 북쪽 약 8km 떨어진 요충지예요. 유다의 북쪽 길을 막는 자리였어요. 이 본문은 '아사 36년'이라고 적는데, 열왕기상 16:8은 바아사가 아사 26년에 죽었다고 말해요. 그래서 36년을 어떻게 셀지 학자들 사이에서 논의가 있어요.",
+    "detail": "라마는 예루살렘 북동쪽, 시의 경계 바로 밖에 있는 요충지예요. 유다의 북쪽 길을 막는 자리였어요. 이 본문은 '아사 36년'이라고 적는데, 열왕기상 16:8은 바아사가 아사 26년에 죽었다고 말해요. 그래서 36년을 어떻게 셀지 학자들 사이에서 논의가 있어요.",
     "caution": "'아사 36년'이라는 표기는 해석에 논의가 있어요.",
     "refs": [
       "역대하 16:1-3",
@@ -110320,7 +111294,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Er-Ram",
+        "url": "https://en.wikipedia.org/wiki/Er-Ram"
+      }
+    ]
   },
   {
     "id": "context-2ch-16-2",
@@ -110749,7 +111729,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "여호사밧은 예루살렘에 살면서 브엘세바에서 에브라임 산지까지 다니며 백성을 여호와께로 돌아오게 했어요. 왕이 직접 나라를 돌며 한 신앙 개혁이에요.",
-    "detail": "브엘세바는 유다 남쪽 끝이고, 에브라임 산지는 북쪽이에요. 전국을 두루 다닌 순회예요. 앞서 17장의 율법 교육단이 말씀을 전했다면, 여기서는 왕이 직접 지역을 돌며 백성의 마음을 돌이켜요.",
+    "detail": "브엘세바는 이스라엘 사람들이 자리 잡은 땅의 가장 남쪽 성읍이에요. 에브라임 산지는 북쪽이에요. 전국을 두루 다닌 순회예요. 앞서 17장의 율법 교육단이 말씀을 전했다면, 여기서는 왕이 직접 지역을 돌며 백성의 마음을 돌이켜요.",
     "caution": "",
     "refs": [
       "역대하 19:4-5",
@@ -110758,7 +111738,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Beersheba",
+        "url": "https://en.wikipedia.org/wiki/Beersheba"
+      }
+    ]
   },
   {
     "id": "context-2ch-19-6",
@@ -110852,7 +111838,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: En Gedi",
+        "url": "https://en.wikipedia.org/wiki/En_Gedi"
+      }
+    ]
   },
   {
     "id": "context-2ch-20-6",
@@ -111065,7 +112057,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "에돔과 립나가 유다에서 떨어져 나갔어요. 역대기는 여호람이 조상의 하나님 여호와를 버렸기 때문이라고 직접 설명해요.",
-    "detail": "열왕기하 8:20-22의 반란 이야기에 신학적인 이유를 더한 문장이에요. 에돔은 다윗이 정복해 다스리던 나라였고(삼하 8:14), 립나는 유다 서쪽의 성읍이에요. 불순종의 결과로 영토가 줄어드는 것이 역대기가 되풀이하는 패턴이에요.",
+    "detail": "열왕기하 8:20-22의 반란 이야기에 신학적인 이유를 더한 문장이에요. 에돔은 다윗이 정복해 다스리던 나라였고(삼하 8:14), 립나는 유다의 서쪽 낮은 땅(세펠라)에 있던 성읍이에요. 불순종의 결과로 영토가 줄어드는 것이 역대기가 되풀이하는 패턴이에요.",
     "caution": "",
     "refs": [
       "역대하 21:8-10",
@@ -111075,7 +112067,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Libnah",
+        "url": "https://en.wikipedia.org/wiki/Libnah"
+      }
+    ]
   },
   {
     "id": "context-2ch-21-11",
@@ -111107,7 +112105,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Elijah",
+        "url": "https://en.wikipedia.org/wiki/Elijah"
+      }
+    ]
   },
   {
     "id": "context-2ch-21-19",
@@ -111546,7 +112550,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Book of Chronicles",
+        "url": "https://en.wikipedia.org/wiki/Book_of_Chronicles"
+      }
+    ]
   },
   {
     "id": "context-2ch-25-2",
@@ -111704,7 +112714,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Uzziah",
+        "url": "https://en.wikipedia.org/wiki/Uzziah"
+      }
+    ]
   },
   {
     "id": "context-2ch-26-9",
@@ -111764,7 +112780,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Uzziah",
+        "url": "https://en.wikipedia.org/wiki/Uzziah"
+      }
+    ]
   },
   {
     "id": "context-2ch-26-16",
@@ -111796,6 +112818,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "개혁주의는 왕의 직분과 제사장의 직분을 구분하신 하나님의 질서를 중요하게 봐요. 두 직분은 그리스도 안에서 온전히 하나가 된다고 읽어요(WCF 8장; 히 7장).",
     "wcf": [
       8
+    ],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Uzziah",
+        "url": "https://en.wikipedia.org/wiki/Uzziah"
+      }
     ]
   },
   {
@@ -111818,8 +112846,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "웃시야가 한 나머지 일은 아모스의 아들 선지자 이사야가 기록했다고 해요. 이사야가 활동하던 시기와 기록 활동을 알려 줘요.",
-    "detail": "이사야 6:1은 웃시야 왕이 죽던 해에 이사야가 환상을 보았다고 적어요. 이 기록은 지금 전하지 않아요. 역대기 저자가 선지자의 기록을 참고했다는 증거로 읽혀요. 이사야서와 별개의 책으로 이해돼요.",
-    "caution": "이 기록은 지금 남아 있지 않아서 내용을 확인할 수 없어요.",
+    "detail": "이사야 6:1은 웃시야 왕이 죽던 해에 이사야가 환상을 보았다고 적어요. 역대기 저자가 이사야의 기록을 참고했다고 보는 견해가 있어요. 이 책을 이사야서와 별개의 책으로 보는 견해도 있어요. 그 기록이 지금 어떤 형태로 남아 있는지는 확실하지 않아요.",
+    "caution": "이 기록이 지금 남아 있는지는 확실하지 않아서 내용을 확인하기 어려워요.",
     "refs": [
       "역대하 26:22-23",
       "이사야 1:1",
@@ -111827,7 +112855,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Uzziah",
+        "url": "https://en.wikipedia.org/wiki/Uzziah"
+      }
+    ]
   },
   {
     "id": "context-2ch-27-3",
@@ -111857,7 +112891,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Ophel",
+        "url": "https://en.wikipedia.org/wiki/Ophel"
+      }
+    ]
   },
   {
     "id": "context-2ch-27-5",
@@ -111879,7 +112919,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "암몬은 요담에게 3년 동안 해마다 은 100달란트와 밀과 보리 1만 고르씩을 바쳤어요. 요담이 암몬을 이긴 결과예요.",
-    "detail": "고르는 옛 곡식 단위로, 한 고르는 약 230리터예요. 그래서 밀과 보리는 각각 약 2,300킬로리터쯤이 돼요. 요담은 이 공물로 성전과 성벽 건설을 이어 갔어요. 6절은 그가 하나님 앞에서 바른 길을 걸었기 때문이라고 설명해요.",
+    "detail": "고르는 옛 곡식 단위예요. 한 고르는 약 220리터쯤으로 봐요. 그래서 밀과 보리는 각각 약 2,200킬로리터쯤이 돼요. 요담은 이 공물로 성전과 성벽 건설을 이어 갔어요. 6절은 그가 하나님 앞에서 바른 길을 걸었기 때문이라고 설명해요.",
     "caution": "",
     "refs": [
       "역대하 27:5-6",
@@ -111887,7 +112927,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Biblical and Talmudic units of measurement",
+        "url": "https://en.wikipedia.org/wiki/Biblical_and_Talmudic_units_of_measurement"
+      }
+    ]
   },
   {
     "id": "context-2ch-27-6",
@@ -111940,7 +112986,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "아하스는 힌놈 골짜기에서 향을 피우고 자녀를 불에 살랐어요. 가나안 풍속을 그대로 따른 가장 끔찍한 우상숭배예요.",
-    "detail": "힌놈 골짜기는 예루살렘 남서쪽의 골짜기로, 나중에 '게헨나'라는 말의 바탕이 돼요. 레위기 18:21과 신명기 18:10이 금한 몰렉 제사예요. 열왕기하 16:3은 자녀를 불 가운데로 지나가게 했다고 적고, 역대기는 자녀들을 불살랐다고 더 강하게 말해요.",
+    "detail": "힌놈 골짜기는 예루살렘 남쪽과 서쪽을 감싸고 도는 골짜기예요. 이 이름이 나중에 '게헨나'(지옥을 뜻하는 말)의 바탕이 돼요. 레위기 18:21과 신명기 18:10이 금한 몰렉 제사예요. 열왕기하 16:3은 자녀를 불 가운데로 지나가게 했다고 적고, 역대기는 자녀들을 불살랐다고 더 강하게 말해요.",
     "caution": "",
     "refs": [
       "역대하 28:2-4",
@@ -111949,7 +112995,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Valley of Hinnom",
+        "url": "https://en.wikipedia.org/wiki/Valley_of_Hinnom"
+      }
+    ]
   },
   {
     "id": "context-2ch-28-5",
@@ -111971,7 +113023,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "하나님이 아하스를 아람 왕과 이스라엘 왕의 손에 넘기셨어요. 불순종에 대한 군사적 벌로 설명돼요.",
-    "detail": "아람 왕 르신과 이스라엘 왕 베가가 함께 유다를 쳤어요(왕하 16:5). 역대기는 피해를 더 구체적으로 적어서, 하루 만에 유다 용사 12만 명이 죽었다고 해요(6절). 이사야 7장의 배경이 되는 전쟁으로, 주전 730년대 중반의 일이에요.",
+    "detail": "아람 왕 르신과 이스라엘 왕 베가가 함께 유다를 쳤어요(왕하 16:5). 역대기는 피해를 더 구체적으로 적어서, 하루 만에 유다 용사 12만 명이 죽었다고 해요(6절). 이사야 7장의 배경이 되는 전쟁으로, 주전 730년대 중반(736~732년쯤)에 일어난 일이에요.",
     "caution": "",
     "refs": [
       "역대하 28:5-7",
@@ -111980,7 +113032,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Syro-Ephraimite War",
+        "url": "https://en.wikipedia.org/wiki/Syro-Ephraimite_War"
+      }
+    ]
   },
   {
     "id": "context-2ch-28-8",
@@ -112092,7 +113150,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "하나님이 유다를 낮추신 이유는 아하스가 '망령되이 행하여' 여호와께 크게 범죄했기 때문이에요. 도움을 청한 일이 오히려 유다를 종속시켰어요.",
-    "detail": "'망령되이'는 고삐 풀린 듯 제멋대로 행한다는 뜻이에요. 아하스 때 에돔과 블레셋이 유다를 쳤어요(17-18절). 아하스는 앗수르 왕 디글랏빌레셀 3세에게 도움을 청했고(16절), 그 결과 유다는 앗수르의 속국처럼 되었어요. 앗수르 왕의 기록에 아하스의 이름이 '야우하지'로 나온다고 알려져 있어요.",
+    "detail": "'망령되이'는 고삐 풀린 듯 제멋대로 행한다는 뜻이에요. 아하스 때 에돔과 블레셋이 유다를 쳤어요(17-18절). 아하스는 앗수르 왕 디글랏빌레셀 3세에게 도움을 청했고(16절), 그 결과 유다는 앗수르의 속국처럼 되었어요.",
     "caution": "",
     "refs": [
       "역대하 28:19-21",
@@ -112128,7 +113186,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "아하스는 자기를 친 다메섹의 신들에게 제사를 드렸어요. 그 신들이 자기를 도울 것이라고 생각했지만, 결국 신들은 그와 이스라엘을 망하게 했어요.",
-    "detail": "고대 중동 사람들은 전쟁의 승패를 신들의 힘의 차이로 여겼어요. 아하스의 계산은 이기는 쪽의 신을 섬기겠다는 정치적 신앙이에요. 하나님은 이 일을 두고 그와 온 이스라엘을 망하게 했다고 평가하세요.",
+    "detail": "고대 중동 사람들은 전쟁의 승패를 신들의 힘의 차이로 여겼다고 보는 견해가 많아요. 아하스의 계산은 이기는 쪽의 신을 섬기겠다는 정치적 신앙이에요. 하나님은 이 일을 두고 그와 온 이스라엘을 망하게 했다고 평가하세요.",
     "caution": "",
     "refs": [
       "역대하 28:22-23",
@@ -112419,7 +113477,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Beersheba",
+        "url": "https://en.wikipedia.org/wiki/Beersheba"
+      }
+    ]
   },
   {
     "id": "context-2ch-30-8",
@@ -112471,7 +113535,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "여호와께 돌아오면 사로잡혀 간 형제와 자녀가 자비를 입어 돌아올 수 있다는 약속이에요. 이미 포로가 된 북쪽 사람들에게 건네는 위로예요.",
-    "detail": "주전 733~732년 디글랏빌레셀이 갈릴리를 쳐서 사람들을 사로잡아 갔어요(왕하 15:29). 9절은 하나님이 은혜롭고 자비로우시니 돌아오면 얼굴을 돌리지 않으신다고 말해요. 출애굽기 34:6의 하나님의 성품을 고백하는 말을 바탕으로 해요.",
+    "detail": "주전 733~732년 디글랏빌레셀이 이스라엘을 쳐서 나라를 둘로 나눴어요. 열왕기하 15:29는 갈릴리 땅 사람들을 사로잡아 갔다고 적어요. 9절은 하나님이 은혜롭고 자비로우시니 돌아오면 얼굴을 돌리지 않으신다고 말해요. 출애굽기 34:6의 하나님의 성품을 고백하는 말을 바탕으로 해요.",
     "caution": "",
     "refs": [
       "역대하 30:9",
@@ -112480,7 +113544,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Tiglath-Pileser III",
+        "url": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III"
+      }
+    ]
   },
   {
     "id": "context-2ch-30-10",
@@ -112786,7 +113856,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "충성스럽게 개혁을 한 뒤에도 앗수르 왕 산헤립이 유다를 쳐들어왔어요. 신실하게 살아도 시험이 올 수 있다는 현실을 보여 줘요.",
-    "detail": "산헤립의 연대기인 테일러 프리즘(주전 701년)은 유다의 성읍 46개를 점령했다고 자랑하고, 히스기야를 새장 속의 새처럼 예루살렘에 가두었다고 적어요. 대영박물관의 라기스 부조도 산헤립이 라기스를 정복한 장면을 새겼어요.",
+    "detail": "산헤립의 기록인 테일러 프리즘(주전 689~691년쯤 만들어진 기록)은 유다의 성읍 46개를 점령했다고 자랑하고, 히스기야를 새장 속의 새처럼 예루살렘에 가두었다고 적어요. 대영박물관의 라기스 부조는 주전 701년 산헤립이 라기스를 정복한 장면을 새겼어요.",
     "caution": "",
     "refs": [
       "역대하 32:1",
@@ -112826,7 +113896,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "히스기야는 무너진 성벽을 고치고, 망대를 높이 쌓고, 성 밖에 또 성벽을 쌓았어요. 예루살렘의 방어선을 넓힌 일이에요.",
-    "detail": "예루살렘 유대인 지구의 두께 약 7m인 '넓은 성벽'은 히스기야 때 쌓은 것이라는 견해가 있어요. 그보다 이른 시기에 쌓였다는 견해도 있어서 학자들 사이에 논쟁이 있어요. 이사야 22:9-11도 이 시기의 방어 공사를 말해요.",
+    "detail": "예루살렘 유대인 지구의 두께 약 7m인 '넓은 성벽'은 처음에는 히스기야 때 쌓은 것으로 여겼어요. 2024년 탄소 연대 측정 연구는 웃시야 때 쌓은 것이라고 보았어요. 이사야 22:9-11도 히스기야 때의 방어 공사를 말해요.",
     "caution": "넓은 성벽의 연대와 건설자는 학자들 사이에서 의견이 갈려요.",
     "refs": [
       "역대하 32:5-6",
@@ -112901,7 +113971,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "산헤립은 다른 민족의 신들도 나를 막지 못했으니, 히스기야의 하나님도 못 막는다고 말해요. 여호와를 다른 나라의 신들과 같은 급으로 낮춘 모독이에요.",
-    "detail": "앗수르의 비문은 정복한 나라의 신상을 가져가는 것을 자랑했어요. 산헤립의 논리는 신의 힘이 민족의 군사력과 같다는 생각이에요. 이 모독이 하나님의 직접 응답을 부르는 원인으로 나와요. 21절에서 하나님의 천사가 앗수르 진영을 쳐요.",
+    "detail": "산헤립은 바벨론을 정복했을 때 그곳 신들을 붙잡아 부쉈다고 기록했어요. 산헤립의 논리는 신의 힘이 민족의 군사력과 같다는 생각이에요. 이 모독이 하나님의 직접 응답을 부르는 원인으로 나와요. 21절에서 하나님의 천사가 앗수르 진영을 쳐요.",
     "caution": "",
     "refs": [
       "역대하 32:14-15",
@@ -112910,7 +113980,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Sennacherib",
+        "url": "https://en.wikipedia.org/wiki/Sennacherib"
+      }
+    ]
   },
   {
     "id": "context-2ch-32-18",
@@ -112996,7 +114072,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "바벨론 사신들이 땅에서 일어난 이적을 물으러 왔을 때, 하나님이 히스기야를 시험하셨다고 해요. 열왕기하가 말하지 않는 시험의 목적을 밝혀요.",
-    "detail": "하나님이 그의 마음에 있는 것을 알려고 떠나셨다고 해요. 모든 것을 아시는 하나님이 시험하시는 것은, 히스기야 자신이 마음속을 알게 하려는 뜻으로 읽혀요(신 8:2). 당시 바벨론 왕 므로닥발라단이 앗수르에 맞설 동맹을 찾던 때였어요.",
+    "detail": "하나님이 그의 마음에 있는 것을 알려고 떠나셨다고 해요. 모든 것을 아시는 하나님이 시험하시는 것은, 히스기야 자신이 마음속을 알게 하려는 뜻으로 읽혀요(신 8:2). 열왕기하 20:12는 이 사신들을 바벨론 왕 므로닥발라단이 보낸 것으로 적어요. 위키백과에서는 이 편지를 히스기야의 병과 병이 나은 소식을 듣고 보낸 것으로 설명해요. 사신을 보낸 정치적 목적은 확실하지 않아요.",
     "caution": "",
     "refs": [
       "역대하 32:31",
@@ -113006,7 +114082,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Marduk-apla-iddina II",
+        "url": "https://en.wikipedia.org/wiki/Marduk-apla-iddina_II"
+      }
+    ]
   },
   {
     "id": "context-2ch-33-3",
@@ -113028,7 +114110,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "므낫세는 아버지 히스기야가 헐었던 산당을 다시 세우고, 바알 제단과 아세라 목상을 만들었어요. 히스기야 개혁의 정반대 행동이에요.",
-    "detail": "므낫세는 열두 살에 왕이 되어 55년 동안 다스렸어요. 에살핫돈과 아슈르바니팔의 기록에 유다 왕 므낫세가 속국의 왕으로 나와요. 한 세대 만에 개혁이 뒤집힐 수 있다는 것을 보여 줘요.",
+    "detail": "므낫세는 열두 살에 왕이 되어 55년 동안 다스렸어요. 아슈르바니팔의 기록에도 충성스러운 속국 왕으로 나와요. 한 세대 만에 개혁이 뒤집힐 수 있다는 것을 보여 줘요.",
     "caution": "",
     "refs": [
       "역대하 33:3-5",
@@ -113097,8 +114179,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "하나님은 앗수르 군대의 지휘관들을 보내셔서 므낫세를 사로잡고 쇠사슬로 묶어 바벨론으로 끌고 가게 하셨어요. 열왕기에는 없는 역대기만의 기록이에요.",
-    "detail": "므낫세는 앗수르 왕들의 기록에 속국의 왕으로 나와요. 다만 바벨론으로 끌려간 일은 그 기록에서 직접 확인되지 않아요. 역대기는 이 일을 므낫세가 괴로움 속에서 돌이키는 계기로 적어요(12-13절).",
-    "caution": "므낫세의 바벨론 연행 사건은 앗수르 문서에서 직접 확인되지 않아요.",
+    "detail": "므낫세는 앗수르 쪽 기록에 충성스러운 속국 왕으로 나와요. 바벨론으로 끌려간 일은 역대기가 전하는 내용이에요. 앗수르 기록에서 이 일을 확인하는지는 확실하지 않아요. 역대기는 이 일을 므낫세가 괴로움 속에서 돌이키는 계기로 적어요(12-13절).",
+    "caution": "므낫세가 바벨론으로 끌려간 일은 앗수르 기록에서 확인되는지 확실하지 않아요.",
     "refs": [
       "역대하 33:11-13",
       "역대하 33:12"
@@ -113134,7 +114216,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "summary": "므낫세는 환난 가운데 낮아져 기도했고, 하나님이 그 기도를 들으셔서 예루살렘으로 돌아오게 하셨어요. 그제야 그는 여호와께서 참하나님이심을 알았어요.",
     "detail": "가장 악한 왕에게도 회개의 길이 열려 있다는 것이 역대기가 말하는 은혜예요. 19절은 그의 기도가 기록으로 남았다고 해요. 돌아온 므낫세는 예루살렘 바깥 성벽을 쌓고 우상을 없애요(14-15절).",
-    "caution": "외경 '므낫세의 기도'는 후대에 쓰인 글이라서, 이 본문의 원래 기도로 볼 수 없어요.",
+    "caution": "외경 '므낫세의 기도'는 주전 2~1세기쯤 쓰인 글이라서, 이 본문의 원래 기도로 볼 수 없어요.",
     "refs": [
       "역대하 33:12-13",
       "신명기 4:35",
@@ -113145,6 +114227,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": [
       15,
       11
+    ],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Prayer of Manasseh",
+        "url": "https://en.wikipedia.org/wiki/Prayer_of_Manasseh"
+      }
     ]
   },
   {
@@ -113176,7 +114264,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Josiah",
+        "url": "https://en.wikipedia.org/wiki/Josiah"
+      }
+    ]
   },
   {
     "id": "context-2ch-34-5",
@@ -113229,7 +114323,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "요시야는 왕이 된 지 18년째에 땅과 성전을 깨끗하게 한 뒤 성전을 고치라고 명령했어요. 율법책이 발견된 것이 바로 이 수리 작업 중이었어요.",
-    "detail": "서기관 사반, 성의 지도자 마아세야, 기록관 요아가 보내졌어요. 앗수르가 약해진 틈에 이 개혁이 이루어졌다고 보며, 주전 622년쯤의 일이에요. 이 일이 아래의 율법책 발견(15절)으로 이어져요.",
+    "detail": "서기관 사반, 성의 지도자 마아세야, 기록관 요아가 보내졌어요. 앗수르가 약해진 틈에 이 개혁이 이루어졌다고 보며, 주전 622~623년쯤의 일이에요. 이 일이 아래의 율법책 발견(15절)으로 이어져요.",
     "caution": "",
     "refs": [
       "역대하 34:8-9",
@@ -113237,7 +114331,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Josiah",
+        "url": "https://en.wikipedia.org/wiki/Josiah"
+      }
+    ]
   },
   {
     "id": "context-2ch-34-15",
@@ -113259,7 +114359,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "제사장 힐기야가 성전에서 율법책을 찾았어요. 모세를 통해 주신 여호와의 율법책이라고 적혀 있어요. 성전 안에서 말씀이 발견되었다는 점이 중요해요.",
-    "detail": "'모세로 말미암아 주신 여호와의 율법책'(14절)은 모세오경이나 그 핵심인 신명기를 가리킨다고 보는 견해가 일반적이에요. 오래 불순종하는 동안 잊혔던 말씀이 발견된 것이에요. 이 발견이 요시야가 전면적으로 개혁하는 계기가 돼요.",
+    "detail": "'모세로 말미암아 주신 여호와의 율법책'(14절)을 신명기이거나 그 초기 형태로 보는 견해가 많아요. 다만 정확히 무슨 책이었는지는 학자들 사이에서 의견이 갈려요. 오래 불순종하는 동안 잊혔던 말씀이 발견된 것이에요. 이 발견이 요시야가 전면적으로 개혁하는 계기가 돼요.",
     "caution": "",
     "refs": [
       "역대하 34:14-16",
@@ -113270,6 +114370,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "개혁주의는 성경이 교회의 개혁을 이끄는 최종적인 권위라고 고백해요(WCF 1장). 요시야의 개혁은 말씀으로 회복되는 모습을 보여 줘요.",
     "wcf": [
       1
+    ],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Josiah",
+        "url": "https://en.wikipedia.org/wiki/Josiah"
+      }
     ]
   },
   {
@@ -113364,7 +114470,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Josiah",
+        "url": "https://en.wikipedia.org/wiki/Josiah"
+      }
+    ]
   },
   {
     "id": "context-2ch-34-31",
@@ -113614,7 +114726,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "애굽 왕 느고는 여호아하스를 왕위에서 내쫓고, 유다에 은 100달란트와 금 1달란트를 바치게 했어요. 유다는 앗수르의 영향에서 벗어나 이제 애굽에 눌리게 돼요.",
-    "detail": "여호아하스(살룸)는 요시야의 아들로 석 달 동안 다스렸어요. 느고는 그를 리블라로 데려가 쇠사슬로 묶었어요(왕하 23:33). 그리고 그의 형 엘리아김을 여호야김으로 이름을 바꿔 세웠어요. 이름을 바꾸는 것은 종주국이 권위를 드러내는 방식이에요.",
+    "detail": "여호아하스(살룸)는 요시야의 아들로 석 달 동안 다스렸어요. 느고는 그를 이집트로 끌고 가 포로로 삼았어요. 열왕기하 23:33은 그를 리블라에서 쇠사슬로 묶었다고 적어요. 그리고 그의 형 엘리아김을 여호야김으로 이름을 바꿔 세웠어요. 이름을 바꾸는 것은 권위를 드러내는 방식으로 읽혀요.",
     "caution": "",
     "refs": [
       "역대하 36:3-4",
@@ -113623,7 +114735,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Necho II",
+        "url": "https://en.wikipedia.org/wiki/Necho_II"
+      }
+    ]
   },
   {
     "id": "context-2ch-36-5",
@@ -113645,7 +114763,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "여호야김은 스물다섯 살에 왕이 되어 11년 동안 다스렸고, 하나님 보시기에 악을 행했어요. 그의 시대는 예레미야의 활동 시기와 겹쳐요.",
-    "detail": "여호야김은 예레미야의 두루마리를 칼로 잘라 불에 던진 왕이에요(렘 36장). 느부갓네살이 그를 쇠사슬로 묶어 바벨론으로 끌고 가려 했다는 말이 6절에 나와요. 바벨론 연대기는 주전 605년 갈그미스 전투를 기록해요.",
+    "detail": "여호야김은 예레미야의 두루마리를 칼로 잘라 불에 던진 왕이에요(렘 36장). 느부갓네살이 그를 쇠사슬로 묶어 바벨론으로 끌고 가려 했다는 말이 6절에 나와요.",
     "caution": "",
     "refs": [
       "역대하 36:5-7",
@@ -113676,7 +114794,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "여호야긴은 여덟 살에 왕이 되었다고 역대하가 적어요. 열왕기하 24:8은 열여덟 살이라고 해서 숫자가 달라요.",
-    "detail": "열왕기하 24:8과 대부분의 학자는 열여덟 살을 원래 숫자로 봐요. 히브리어 숫자 표기가 필사 과정에서 바뀌었다고 설명하는 견해가 있어요. 여호야긴은 석 달 열흘 동안 다스리다가 주전 597년 바벨론으로 끌려가요. 바벨론 연대기도 그해 예루살렘을 점령했다고 기록해요.",
+    "detail": "열왕기하 24:8의 열여덟 살을 원래 숫자로 보는 견해가 많아요. 히브리어 숫자 표기가 필사 과정에서 바뀌었다고 설명하는 견해가 있어요. 여호야긴은 석 달 열흘 동안 다스리다가 주전 597년쯤 바벨론으로 끌려가요.",
     "caution": "숫자 차이는 필사 과정의 문제로 설명하는 것이 일반적이지만 확정되지는 않았어요.",
     "refs": [
       "역대하 36:9-10",
@@ -113743,7 +114861,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "하나님이 백성을 갈대아 왕의 손에 넘기셨어요. 갈대아 왕은 성전에서도 젊은이를 칼로 죽였고, 노인이나 약한 사람도 가엾게 여기지 않았어요.",
-    "detail": "주전 586년 예루살렘이 함락된 장면이에요. 느부갓네살의 군대는 성전 안에서도 젊은이를 죽였어요. 성을 무너뜨린 것은 바벨론이지만, 백성을 넘겨주신 분은 하나님이라는 것이 역대기의 신학이에요.",
+    "detail": "주전 587년쯤 예루살렘이 함락된 장면이에요. 느부갓네살의 군대는 성전 안에서도 젊은이를 죽였어요. 성을 무너뜨린 것은 바벨론이지만, 백성을 넘겨주신 분은 하나님이라는 것이 역대기의 신학이에요.",
     "caution": "",
     "refs": [
       "역대하 36:17-19",
@@ -113754,6 +114872,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "개혁주의는 이방 제국의 침공도 하나님의 섭리와 언약의 심판으로 읽어요(WCF 5장). 하나님은 악한 도구를 쓰시지만, 악의 원인이 되지는 않으세요.",
     "wcf": [
       5
+    ],
+    "sourceLinks": [
+      {
+        "label": "Wikipedia: Nebuchadnezzar II",
+        "url": "https://en.wikipedia.org/wiki/Nebuchadnezzar_II"
+      }
     ]
   },
   {
@@ -113776,7 +114900,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "살아남은 백성은 바벨론으로 끌려가 칠십 년 동안 종살이를 했어요. 페르시아 고레스의 칙령으로 그 포로 생활이 끝나요. 역대기는 이 희망의 말로 끝나요.",
-    "detail": "칠십 년은 레위기 26:34-35의 땅의 안식 규정과 예레미야 25:11, 29:10의 예언에 근거해요. 고레스는 주전 539년 바벨론을 점령했고, 돌아가라는 칙령은 에스라 1장에서 주전 538년쯤으로 전해요. 고레스 원통은 여러 신전을 회복하고 사람들을 돌려보냈다고 적지만, 유대인과 예루살렘은 언급하지 않아요.",
+    "detail": "칠십 년은 레위기 26:34-35의 땅의 안식 규정과 예레미야 25:11, 29:10의 예언에 근거해요. 고레스는 주전 539년 바벨론을 점령했어요. 에스라 1:1은 돌아가라는 칙령을 고레스 왕 원년의 일로 전해요. 고레스 원통은 여러 신전을 회복하고 사람들을 돌려보냈다고 적지만, 유대인과 예루살렘은 언급하지 않아요.",
     "caution": "",
     "refs": [
       "역대하 36:20-21",
