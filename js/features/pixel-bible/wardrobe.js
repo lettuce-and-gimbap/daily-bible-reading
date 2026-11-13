@@ -36,6 +36,9 @@ export const WARDROBES={
  crossWrap:{label:'가슴을 사선으로 여민 겉옷',crossSash:true,mantle:true},
  pocketed:{label:'허리 주머니를 단 겉옷',scribePouch:true,layered:true},
  twoTone:{label:'몸판과 소매 색을 나눈 튜닉',twoToneSleeves:true},
+ diagonalWrap:{label:'사선 겹침과 짧은 띠를 두른 옷',diagonalWrap:true},
+ borderRobe:{label:'가장자리에 두 줄 장식을 넣은 겉옷',borderRobe:true,mantle:true},
+ workWrap:{label:'소매를 걷고 허리를 여민 작업복',workWrap:true,belt:true},
 };
 const specifics={
  아론:'highPriest',엘르아살:'highPriest',사무엘:'linen',아담:'leather',하와:'leather',
@@ -70,7 +73,7 @@ export function wardrobeDetails(style,name,refs=[]){
 export function wardrobeFor(style,role=''){
  const inferred=style.royal?'royal':/제사장/.test(role)?'priest':style.fur?'fur':style.shawl||style.hood?'shawl':style.mantle?'traveler':style.vest?'worker':null;
  const seed=[...(style.name||'')].reduce((h,c)=>(Math.imul(h,31)+c.codePointAt(0))>>>0,0);
- const creative=['wrapped','pleated','fringed','dyed','apron','vest','hooded','embroidered','short','layered','scarf','mourning','guard','scribe','gathered','patched','panelled','padded','hemmed','pleatedApron','splitMantle','woven','cuffed','panelRobe','crossWrap','pocketed','twoTone'];
+ const creative=['wrapped','pleated','fringed','dyed','apron','vest','hooded','embroidered','short','layered','scarf','mourning','guard','scribe','gathered','patched','panelled','padded','hemmed','pleatedApron','splitMantle','woven','cuffed','panelRobe','crossWrap','pocketed','twoTone','diagonalWrap','borderRobe','workWrap'];
  const kind=specifics[style.name]||inferred||creative[seed%creative.length];
  const wardrobe=WARDROBES[kind];
  const detail=/골리앗/.test(style.name)?{plate:true,helmet:true}:style.name==='모르드개'?{mantleColor:'#87628e',underColor:'#e8e4d2'}:style.name==='다니엘'?{goldChain:true}:{};
@@ -91,6 +94,9 @@ export function wardrobeFor(style,role=''){
 export function drawWardrobe(r,s,direction='down'){
  const side=direction==='right'||direction==='left',back=direction==='up';
  const lo=side?10:8,hi=side?16:16,accent=s.trim||s.accent||'#c9b58d';
+ if(s.diagonalWrap){for(let i=0;i<6;i++)r(lo+Math.min(i,hi-lo-1),22+i,1,2,accent);r(lo,28,hi-lo,1,accent);}
+ if(s.borderRobe){r(lo,22,1,8,accent);r(hi-1,22,1,8,accent);r(lo,29,hi-lo,1,accent);r(lo+1,31,hi-lo-2,1,accent);}
+ if(s.workWrap){r(lo,27,hi-lo,2,'#69533f');r(lo+1,29,2,2,accent);r(side?9:6,24,2,1,accent);r(side?16:17,24,2,1,accent);}
  if(s.underColor){r(side?14:10,22,side?3:4,8,s.underColor);}
  if(s.mantleColor){if(back)r(6,22,12,9,s.mantleColor);else r(side?8:6,22,2,9,s.mantleColor);}
  if(s.fold===1){r(lo,25,1,5,'#302f3522');r(hi-2,27,1,4,'#ffffff22');}

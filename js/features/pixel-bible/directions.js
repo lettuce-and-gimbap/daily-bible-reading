@@ -26,7 +26,7 @@ export function drawDirectionalCharacter(c,s,x,y,{scale=3,direction='up',step=0,
  }
  const side=direction!=='up',bob=step?1:0;
  r(5,37,14,1,'#183a3933');
- const leg=(x,shift,back)=>{r(x,30,4,5,O);r(x+1,31,2,3,back?'#d0b28e':skin);r(x+shift,35-Math.abs(shift),5,2,O);r(x+shift+1,35-Math.abs(shift),3,1,pose?.barefeet?skin:s.sandal?'#d2b47d':'#a77d57');};
+ const leg=(x,shift,back)=>{const lift=shift<0?1:0;r(x,30,4,5,O);r(x+1,31,2,3,back?'#d0b28e':skin);r(x+shift,35-lift,5,2,O);r(x+shift+1,35-lift,3,1,pose?.barefeet?skin:s.sandal?'#d2b47d':'#a77d57');};
  if(pose?.eventKneel){r(9,30,10,3,O);r(10,30,8,2,s.coat);r(8,33,5,3,O);r(14,33,9,3,O);r(15,34,7,1,skin);}
  else if(pose?.rising){r(9,30,8,3,O);r(10,31,6,1,s.coat);r(8,33,5,3,O);r(15,32,7,3,O);r(16,33,5,1,skin);}
  else if(pose?.sit){
@@ -62,7 +62,7 @@ export function drawDirectionalCharacter(c,s,x,y,{scale=3,direction='up',step=0,
    hr(14,Math.min(23,yy),3,Math.abs(yy-23)+2,O);
    hr(12,22,4,4,O);hr(13,23,2,2,s.coat);
    hr(14+Math.min(0,hx),yy,6+Math.abs(hx),3,O);hr(16+hx,yy,4,2,skin);
-  }else{r(11+step,22,4,4,O);r(12+step,23,2,2,s.coat);r(12+step,26,3,4,O);r(13+step,26,1,3,skin);}
+  }else{r(11,22,4,4,O);r(12,23,2,2,s.coat);r(12+step,26,3,4,O);r(13+step,26,1,3,skin);}
   // 뒤통수에서 코끝으로 이어지고 눈 하나와 귀를 구분한다.
   c.save();c.translate(12,12);c.rotate(pose?.headTilt||0);c.translate(-12,-12);
   r(8,5,8,1,O);r(6,6,12,2,O);r(5,8,14,8,O);r(7,16,11,3,O);r(10,19,5,1,O);
@@ -80,7 +80,7 @@ export function drawDirectionalCharacter(c,s,x,y,{scale=3,direction='up',step=0,
   if(s.belt)r(7,27,10,1,'#58412d');if(s.sash)r(14,22,2,9,s.sash);
   if(s.trim)r(7,31,10,1,s.trim);
   drawWardrobe(r,s,direction);
-  const arm=(x,d)=>{r(x,22+d,4,4,O);r(x+1,23+d,2,2,s.coat);r(x,26+d,3,3,O);r(x+1,26+d,1,2,skin);};arm(4,pose?.hand?-1-(pose.phase===2?1:0):-step);arm(17,pose?.hand?-1:step);
+  const arm=(x,d)=>{r(x,22,4,4,O);r(x+1,23,2,2,s.coat);r(x,26+d,3,3,O);r(x+1,26+d,1,2,skin);};arm(4,pose?.hand?-1-(pose.phase===2?1:0):-step);arm(17,pose?.hand?-1:step);
   c.save();c.translate(12,12);c.rotate(pose?.headTilt||0);c.translate(-12,-12);
   r(9,5,6,1,O);r(7,6,10,1,O);r(5,7,14,2,O);r(4,9,16,8,O);r(5,17,14,2,O);r(8,19,8,1,O);
   r(8,7,8,1,hair);r(6,8,12,2,hair);r(5,10,14,6,hair);r(6,16,12,2,hair);r(9,18,6,1,hair);

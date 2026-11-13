@@ -116,7 +116,7 @@ function drawFrontCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = ""
   else if(pose?.sit){
     r(7,31,11,3,outline);r(8,31,9,1,style.coat);r(8,33,3,3,outline);r(15,33+pose.legSwing,3,3,outline);r(8,35,5,2,outline);r(15,35+pose.legSwing,5,2,outline);
   }else if(pose?.bend){r(6,32,5,3,outline);r(14,32,5,3,outline);r(5,35,6,2,outline);r(14,35,6,2,outline);}
-  else{leg(7,step);leg(14,pose?.kick?-3:-step);if(pose?.kick){r(17,32,5,2,outline);r(18,32,3,1,skin);}}
+  else{leg(7,step>0?-2:0);leg(14,pose?.kick?-3:step<0?-2:0);if(pose?.kick){r(17,32,5,2,outline);r(18,32,3,1,skin);}}
   if(style.mantle||style.royal||style.shawl){r(7,19,10,2,outline);r(4,21,16,10,outline);r(5,22,14,8,style.coat);r(5,27,3,4,"#302f3522");}
   // 어깨에서 허리와 옷자락으로 이어지는 실루엣.
   r(9,19,6,1,outline);r(7,20,10,1,outline);r(6,21,12,3,outline);r(7,24,10,4,outline);r(6,28,12,5,outline);
@@ -126,7 +126,7 @@ function drawFrontCharacter(ctx, style, x, y, { scale = 3, walk = 0, action = ""
   // 독립된 목 기둥 없이 턱선이 어깨 윗부분에 바로 닿는다.
   // 옷깃 중앙의 한 줄 피부만 남겨 얼굴과 옷의 경계를 표현한다.
   r(10,20,4,1,skin);r(10,21,1,1,"#f4e7c5");r(13,21,1,1,"#f4e7c5");
-  const arm=(x,dy)=>{r(x,21+dy,4,4,outline);r(x+1,22+dy,2,2,style.coat);r(x,25+dy,3,4,outline);r(x+1,25+dy,2,3,skin);};
+  const arm=(x,dy)=>{r(x,21,4,4,outline);r(x+1,22,2,2,style.coat);r(x,25+dy,3,4,outline);r(x+1,25+dy,2,3,skin);};
   if(pose?.eventArms)drawEventArms(r,style,pose);
   else if(pose?.dangling){arm(4,pose.leftArm);arm(17,pose.rightArm);}
   else if(pose?.swimming){
