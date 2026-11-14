@@ -96,7 +96,7 @@ export function drawWardrobe(r,s,direction='down'){
  const lo=side?10:8,hi=side?16:16,accent=s.trim||s.accent||'#c9b58d';
  if(s.diagonalWrap){for(let i=0;i<6;i++)r(lo+Math.min(i,hi-lo-1),22+i,1,2,accent);r(lo,28,hi-lo,1,accent);}
  if(s.borderRobe){r(lo,22,1,8,accent);r(hi-1,22,1,8,accent);r(lo,29,hi-lo,1,accent);r(lo+1,31,hi-lo-2,1,accent);}
- if(s.workWrap){r(lo,27,hi-lo,2,'#69533f');r(lo+1,29,2,2,accent);r(side?9:6,24,2,1,accent);r(side?16:17,24,2,1,accent);}
+ if(s.workWrap){r(lo,27,hi-lo,2,'#69533f');r(lo+1,29,2,2,accent);r(side?9:6,24,2,1,accent);r(16,24,2,1,accent);}
  if(s.underColor){r(side?14:10,22,side?3:4,8,s.underColor);}
  if(s.mantleColor){if(back)r(6,22,12,9,s.mantleColor);else r(side?8:6,22,2,9,s.mantleColor);}
  if(s.fold===1){r(lo,25,1,5,'#302f3522');r(hi-2,27,1,4,'#ffffff22');}
