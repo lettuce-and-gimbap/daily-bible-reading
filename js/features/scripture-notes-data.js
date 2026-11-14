@@ -155768,6 +155768,10 @@ window.ScriptureNotesData.contextualTerms.push(...[
       {
         "label": "Wikipedia: Book of Revelation",
         "url": "https://en.wikipedia.org/wiki/Book_of_Revelation"
+      },
+      {
+        "label": "위키백과 · Patmos",
+        "url": "https://en.wikipedia.org/wiki/Patmos"
       }
     ]
   },
@@ -156020,7 +156024,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "사데는 살아 있다는 이름만 있다는 책망을 받아요. 그러나 옷을 더럽히지 않은 몇 사람이 있어요. 흰 옷은 그리스도께 속한 의와 승리를 뜻해요.",
-    "detail": "사데는 옛 리디아의 수도였어요. 주전 547년경 키루스에게 함락되었고, 주후 17년 지진 뒤 로마 황제 티베리우스의 지원으로 재건되었다고 전해요. 다만 얼마나 회복되었는지는 자료마다 달라요. \"깨어 있으라\"(3:2~3)는 말이 이런 도시의 역사와 겹친다고 보는 해석이 있어요.",
+    "detail": "사데는 옛 리디아의 수도였어요. 주전 547년경 키루스에게 함락되었고, 주후 17년 지진 뒤 로마 정부가 재건 자금과 세금 면제를 주어 재건되었다고 전해요. 다만 얼마나 회복되었는지는 자료마다 달라요. \"깨어 있으라\"(3:2~3)는 말이 이런 도시의 역사와 겹친다고 보는 해석이 있어요.",
     "caution": "",
     "refs": [
       "요한계시록 3:4",
@@ -156093,7 +156097,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
         ]
       }
     ],
-    "summary": "라오디게아는 은행업, 검은 양모, 의학교로 알려진 부유한 도시였어요. 지진 뒤에 스스로 재건했다고 전해요.",
+    "summary": "라오디게아는 큰 돈 거래, 검은 양모, 의학교로 알려진 부유한 도시였어요. 지진 뒤에 스스로 재건했다고 전해요.",
     "detail": "이 도시는 수로로 물을 끌어왔어요. 미지근한 물의 비유를 이 수로나 인근의 온천과 찬 샘물과 연결해 설명하지만, 확정된 해석은 아니에요. 요점은 뜨겁지도 차지도 않은 무관심과 자기만족이에요.",
     "caution": "\"차지도 뜨겁지도 않다\"를 도시의 물 하나로만 설명하는 것은 불확실해요. 3:17의 자기 평가와 함께 읽어야 해요.",
     "refs": [
@@ -157737,7 +157741,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
         ]
       }
     ],
-    "summary": "666은 \"네로 가이사\"를 히브리 글자로 옮겨 더한 값이라는 해석이 가장 많이 거론돼요. 다만 사본 가운데 616으로 적힌 것도 있어 확정된 답은 아니에요.",
+    "summary": "666은 \"네로 가이사\"를 히브리 글자로 옮겨 더한 값이라는 해석이 가장 널리 받아들여져요. 다만 616으로 적힌 사본(P115)도 있고, 다른 설명도 있어요.",
     "detail": "\"지혜 있는 자는 세어 보라\"는 이 수가 풀 수 있는 수수께끼임을 알려 줘요. \"사람의 수\"는 사람의 이름에 해당하는 수라는 뜻이에요. 6이 세 번 반복되어 불완전과 미완성을 상징한다고 보는 견해도 있어요.",
     "caution": "특정 인물을 현대에서 찾아내려는 시도는 문맥과 어긋나요. 첫 독자가 이해할 수 있는 해석을 기본으로 삼아야 해요.",
     "refs": [
@@ -158152,6 +158156,16 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "개혁주의는 악의 세력이 마지막까지 그리스도의 나라에 맞서지만, 그리스도가 말씀으로 이기신다고 가르쳐요. 이는 마지막 날의 심판을 가리켜요.",
     "wcf": [
       33
+    ],
+    "sourceLinks": [
+      {
+        "label": "위키백과 · Armageddon",
+        "url": "https://en.wikipedia.org/wiki/Armageddon"
+      },
+      {
+        "label": "위키백과 · Tel Megiddo",
+        "url": "https://en.wikipedia.org/wiki/Tel_Megiddo"
+      }
     ]
   },
   {
@@ -158253,6 +158267,10 @@ window.ScriptureNotesData.contextualTerms.push(...[
       {
         "label": "Wikipedia: Tacitus on Christ",
         "url": "https://en.wikipedia.org/wiki/Tacitus_on_Christ"
+      },
+      {
+        "label": "livius · Tacitus on the Christians",
+        "url": "https://livius.org/sources/content/tacitus/tacitus-on-the-christians"
       }
     ]
   },
@@ -158320,7 +158338,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "본문 문맥",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "위키백과 · Seven hills of Rome",
+        "url": "https://en.wikipedia.org/wiki/Seven_hills_of_Rome"
+      }
+    ]
   },
   {
     "id": "context-rev-17-14",
@@ -262410,7 +262434,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "사건",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "위키백과 · Fall of Jericho",
+        "url": "https://en.wikipedia.org/wiki/Fall_of_Jericho"
+      }
+    ]
   },
   {
     "id": "context-heb-11-31",
@@ -262441,7 +262471,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "인물",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "위키백과 · Rahab",
+        "url": "https://en.wikipedia.org/wiki/Rahab"
+      }
+    ]
   },
   {
     "id": "context-heb-11-32",
@@ -262535,7 +262571,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "지역",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "위키백과 · Mount Sinai",
+        "url": "https://en.wikipedia.org/wiki/Mount_Sinai"
+      }
+    ]
   },
   {
     "id": "context-heb-13-11",
@@ -263607,6 +263649,10 @@ window.ScriptureNotesData.contextualTerms.push(...[
       {
         "label": "Wikipedia: Ephesus",
         "url": "https://en.wikipedia.org/wiki/Ephesus"
+      },
+      {
+        "label": "위키백과 · Temple of Artemis",
+        "url": "https://en.wikipedia.org/wiki/Temple_of_Artemis"
       }
     ]
   },
@@ -263661,7 +263707,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "서머나는 에게해 바닷가의 항구 도시예요. 로마와 일찍부터 가깝게 지냈어요. 가난하지만 부요한 이 교회가 박해를 앞두고 있어요.",
-    "detail": "서머나는 일찍부터 로마와 가깝게 지낸 아시아의 큰 항구 도시로 알려져 있어요. 지금은 이즈미르예요. 2세기에 감독 폴리캅이 이곳에서 순교했다고 하며, 순교 연대는 자료마다 달라서 155~156년과 166~167년 두 설이 주로 거론돼요.",
+    "detail": "서머나는 기원전 197년 로마에 도움을 청했다고 전해지는 아시아의 큰 항구 도시예요. 지금은 이즈미르예요. 2세기에 감독 폴리캅이 이곳에서 순교했다고 하며, 순교 연대는 자료마다 달라서 155~156년과 166~167년 두 설이 주로 거론돼요.",
     "caution": "폴리캅이 순교한 때는 자료마다 달라서 대략 150년대로 말해요.",
     "refs": [
       "요한계시록 2:8",
@@ -263728,7 +263774,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "버가모는 아시아 지방의 옛 중심 도시예요. 신전과 도서관으로 유명했어요. 이곳이 '사탄의 보좌가 있는 곳'이라고 불려요.",
-    "detail": "버가모에는 제우스와 아테나를 위한 큰 제단, 치유의 신 아스클레피오스의 신전, 황제 숭배 신전이 있었어요. 도서관으로도 이름난 도시였어요. 13절의 '사탄의 보좌'가 무엇인지는 의견이 갈려요.",
+    "detail": "버가모에는 제우스와 아테나를 위한 큰 제단, 치유의 신 아스클레피오스의 신전, 황제 숭배 신전이 있었어요. 도서관은 알렉산드리아 다음으로 큰 도서관으로 알려져 있어요. 13절의 '사탄의 보좌'가 무엇인지는 의견이 갈려요.",
     "caution": "사탄의 보좌가 큰 제단인지, 황제 숭배인지, 아스클레피오스인지는 정할 수 없어요.",
     "refs": [
       "요한계시록 2:12",
@@ -263822,7 +263868,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "두아디라는 동업 조합(길드)이 많은 장사 도시였어요. 직업 모임에서 신에게 제사하고 잔치하는 일이 많아서, 신자들이 우상 제물과 음행에 끌려들 압박이 컸어요.",
-    "detail": "두아디라는 염색, 가죽, 청동 같은 조합이 많았고, 같은 때 아시아 지방의 다른 도시보다 조합이 더 많았다고 해요. 사도행전 16장 14절의 자주색 옷감 장사 루디아가 두아디라 사람이에요. 지금의 아크히사르예요.",
+    "detail": "두아디라에는 염색 조합(길드)이 있었고, 아시아 지방의 어느 도시보다 조합이 많았다고 해요. 사도행전 16장 14절의 자주색 옷감 장사 루디아가 두아디라 사람이에요. 지금의 아크히사르예요.",
     "caution": "조합 모임에 제사가 꼭 있었는지는 자료마다 설명이 달라요.",
     "refs": [
       "요한계시록 2:18",
@@ -302462,7 +302508,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "사건",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "위키백과 · Yam Suph",
+        "url": "https://en.wikipedia.org/wiki/Yam_Suph"
+      }
+    ]
   },
   {
     "id": "context-heb-11-32b",
@@ -302919,7 +302971,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "category": "지역",
     "lens": "",
-    "wcf": []
+    "wcf": [],
+    "sourceLinks": [
+      {
+        "label": "위키백과 · Golgotha",
+        "url": "https://en.wikipedia.org/wiki/Golgotha"
+      }
+    ]
   },
   {
     "id": "context-heb-13-15",
