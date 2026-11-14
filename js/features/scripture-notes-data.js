@@ -5509,45 +5509,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "detail": "출애굽기 2:24에서도 하나님이 언약을 기억하신 뒤에 구원이 시작돼요. 하나님이 보내신 바람(루아흐)은 1:2에서 물 위를 움직이던 영(루아흐)과 같은 낱말이에요. 그래서 홍수 뒤 새 창조가 시작된다는 신호로 읽혀요."
   },
   {
-    "id": "context-gen-14-18",
-    "title": "살렘 왕이자 제사장",
-    "aliases": [
-      "멜기세덱"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 14,
-        "lo": 18,
-        "hi": 18,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "전쟁에서 돌아오는 아브람을 맞은 멜기세덱은 '지극히 높으신 하나님의 제사장'이자 살렘 왕이에요. 왕과 제사장을 함께 맡은 인물이 갑자기 나와요.",
-    "detail": "살렘은 훗날 예루살렘으로 읽는 견해가 있어요(시 76:2). 히브리서 7:2는 이름을 '의의 왕', 살렘을 '평강'으로 풀어요. 시편 110:4는 메시아를 '멜기세덱의 반차를 따른 제사장'이라고 불러요. 떡과 포도주는 승리자를 맞는 환대의 음식이에요.",
-    "caution": "멜기세덱이 누구인지에 대한 추측은 여러 가지예요. 히브리서가 말하는 범위 안에서 읽는 것이 안전해요.",
-    "refs": [
-      "창세기 14:18",
-      "창세기 14:18-20",
-      "시편 110:4",
-      "히브리서 7:1-3"
-    ],
-    "category": "본문 문맥",
-    "lens": "개혁주의는 멜기세덱을 그리스도를 미리 보여 준 그림(예표)으로 읽어요. 왕과 제사장의 직분이 그리스도 안에서 하나가 된다고 봐요.",
-    "wcf": [
-      8
-    ],
-    "sourceLinks": [
-      {
-        "label": "Wikipedia: Melchizedek (English)",
-        "url": "https://en.wikipedia.org/wiki/Melchizedek"
-      }
-    ]
-  },
-  {
     "id": "context-gen-16-13",
     "title": "하갈을 살피시는 하나님",
     "aliases": [
@@ -7371,41 +7332,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-exo-2-10",
-    "title": "물에서 건져 낸 모세",
-    "aliases": [
-      "모세"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 2,
-        "lo": 10,
-        "hi": 10,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "'모세'는 '건져냈다'는 뜻으로 풀이되는 이름이에요. 모세는 궁에 들어간 뒤에도 히브리 사람으로 자라요.",
-    "detail": "아이에게 젖을 먹이는 기간을 생각하면, 모세는 어린 나이에 공주에게 갔을 거라고 보는 견해가 많아요. 사도행전 7:22는 그가 애굽 사람의 모든 지혜를 배웠다고 해요. 이름은 히브리어 '마샤(건져내다)'와 소리가 닮았고, 애굽 말의 '아들'(msy)과 이어진다고 보는 견해도 있어요.",
-    "caution": "이름의 뜻은 히브리 말 풀이와 애굽 말 풀이가 함께 논의돼요. 본문은 '건져냈다'는 뜻으로 풀어요.",
-    "refs": [
-      "출애굽기 2:5-10",
-      "사도행전 7:22"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": [],
-    "sourceLinks": [
-      {
-        "label": "Moses (영문 위키백과)",
-        "url": "https://en.wikipedia.org/wiki/Moses"
-      }
-    ]
-  },
-  {
     "id": "context-exo-3-5",
     "title": "거룩한 땅에서 신을 벗음",
     "aliases": [
@@ -9125,45 +9051,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-exo-20-2",
-    "title": "계명에 앞선 구원 선언",
-    "aliases": [
-      "종",
-      "종살이"
-    ],
-    "locations": [
-      {
-        "code": "exo",
-        "chapter": 20,
-        "lo": 2,
-        "hi": 2,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "십계명은 '내가 너를 구원했다'는 선언으로 시작해요. 순종은 구원의 조건이 아니라 구원의 열매로 요구돼요.",
-    "detail": "'종 되었던 집'은 13:3과 같은 말이에요. 고대 근동의 종주 조약은 서문에서 종주를 밝히고 역사적 은혜를 먼저 서술해요. 이 구조를 십계명 서두와 견주는 연구가 있어요.",
-    "caution": "십계명을 고대 조약 형식으로 읽는 견해가 있지만, 형식이 정확히 일치하는지는 학자 사이에 논쟁이 있어요.",
-    "refs": [
-      "출애굽기 20:1-3",
-      "출애굽기 13:3"
-    ],
-    "category": "본문 문맥",
-    "lens": "구원의 선언이 계명 앞에 있다는 점은, 율법이 구원을 얻는 수단이 아니라 구원받은 백성이 살아갈 기준이라는 개혁주의 이해의 근거예요(WCF 19:6).",
-    "wcf": [
-      7,
-      19
-    ],
-    "sourceLinks": [
-      {
-        "label": "Ten Commandments (영문 위키백과)",
-        "url": "https://en.wikipedia.org/wiki/Ten_Commandments"
-      }
-    ]
-  },
-  {
     "id": "context-exo-20-16",
     "title": "거짓 증언을 금함",
     "aliases": [
@@ -9374,42 +9261,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "category": "본문 문맥",
     "lens": "",
     "wcf": []
-  },
-  {
-    "id": "context-gen-9-22",
-    "title": "노아의 하체를 본 함",
-    "aliases": [
-      "함"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 9,
-        "lo": 22,
-        "hi": 22,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "'가나안의 아버지 함'이라는 소개는 이 사건이 가나안 족속의 성격과 이어진다는 것을 알려 줘요.",
-    "detail": "'보고'는 단순히 본 것이 아니라, 아버지의 수치를 존중하지 않고 형제에게 알린 일이에요. 수치를 덮어 주는 사랑(잠 10:12)과 대비돼요. 이 일의 결과는 함 자신이 아니라 가나안에 대한 선언(25절)으로 나타나요.",
-    "caution": "이 사건을 특정 인종에 대한 저주로 읽어 노예제를 정당화한 적이 있었지만, 본문에는 그런 근거가 없어요.",
-    "refs": [
-      "창세기 9:20-23",
-      "잠언 10:12",
-      "창세기 9:25"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": [],
-    "sourceLinks": [
-      {
-        "label": "Wikipedia: Curse of Ham (English)",
-        "url": "https://en.wikipedia.org/wiki/Curse_of_Ham"
-      }
-    ]
   },
   {
     "id": "context-gen-15-2",
@@ -14981,47 +14832,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
         "wcf": []
       },
     {
-      "id": "context-gen-25-30",
-      "title": "붉은 것과 에돔",
-      "aliases": [
-        "에돔",
-        "붉은"
-      ],
-      "locations": [
-        {
-          "code": "gen",
-          "chapter": 25,
-          "lo": 30,
-          "hi": 30,
-          "editions": [
-            "gae",
-            "easy"
-          ]
-        }
-      ],
-      "summary": "에서의 별명 '에돔'은 '붉다'는 뜻이에요. 붉은 죽이 에서의 이름과 그 후손이 세운 나라의 이름을 만들어요.",
-      "detail": "에서가 태어날 때부터 붉었다(25절)는 서술과 이어져요. 에돔은 세일 산지에 자리 잡은 나라가 돼요(36장). 이집트 메르넵타 시대(주전 13세기 말)의 기록에 나오는 샤수 유목민은, 모압과 에돔 북부 지역에서 왔다고 보는 견해가 있어요.",
-      "caution": "",
-      "refs": [
-        "창세기 25:30",
-        "창세기 36:1",
-        "창세기 25:25"
-      ],
-      "category": "본문 문맥",
-      "lens": "",
-      "wcf": [],
-      "sourceLinks": [
-        {
-          "label": "Wikipedia - Edom",
-          "url": "https://en.wikipedia.org/wiki/Edom"
-        },
-        {
-          "label": "Wikipedia - Shasu",
-          "url": "https://en.wikipedia.org/wiki/Shasu"
-        }
-      ]
-    },
-  {
     "id": "context-gen-25-31",
     "title": "장자의 명분을 팔라는 요구",
     "aliases": [
@@ -15640,44 +15450,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-gen-27-40",
-    "title": "칼을 의지하는 삶과 멍에",
-    "aliases": [
-      "멍에",
-      "애쓰고 애쓰면"
-    ],
-    "locations": [
-      {
-        "code": "gen",
-        "chapter": 27,
-        "lo": 40,
-        "hi": 40,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "'칼을 의지해 살겠고 네 아우를 섬길 것'은 에돔이 호전적이지만, 한동안 이스라엘의 지배 아래 놓인다는 예고예요. '매임을 벗을 때'라는 조건도 붙어 있어요.",
-    "detail": "에돔은 다윗 때 이스라엘에게 정복됐어요(사무엘하 8:14). 여호람 때에는 반역해 유다의 지배를 벗어나요(열왕기하 8:20-22). 열왕기하는 '오늘까지'라는 말로 이 복의 성취를 말해요.",
-    "caution": "",
-    "refs": [
-      "창세기 27:39-40",
-      "창세기 25:23",
-      "열왕기하 8:20-22",
-      "사무엘하 8:14"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": [],
-    "sourceLinks": [
-      {
-        "label": "Wikipedia - Edom",
-        "url": "https://en.wikipedia.org/wiki/Edom"
-      }
-    ]
-  },
-    {
       "id": "context-gen-27-43",
       "title": "하란으로의 피신",
       "aliases": [
@@ -30038,45 +29810,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "category": "본문 문맥",
     "lens": "",
     "wcf": []
-  },
-  {
-    "id": "context-lev-18-21",
-    "title": "몰렉에게 자녀를 주지 말라",
-    "aliases": [
-      "몰렉에게 주어 불로 통과하게",
-      "몰렉에게 제물로 바치지"
-    ],
-    "locations": [
-      {
-        "code": "lev",
-        "chapter": 18,
-        "lo": 21,
-        "hi": 21,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "몰렉에게 자녀를 불로 통과시키는 일은 성 윤리 목록 한가운데 나오는 영적 간음이에요.",
-    "detail": "몰렉은 암몬 사람들이 섬긴 신으로 나와요(왕상 11:7). 왕하 23:10은 힌놈 골짜기의 도벳을 요시야가 더럽혔다고 전해요. 자녀를 불로 통과하게 한 일이 실제로 어떤 제사였는지는 학자들 사이에 해석이 갈려요. 20:1-5가 이 죄를 사형으로 다뤄요.",
-    "caution": "",
-    "refs": [
-      "레위기 18:21",
-      "레위기 20:2-5",
-      "열왕기하 23:10",
-      "예레미야 32:35",
-      "레위기 20:1-5"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": [],
-    "sourceLinks": [
-      {
-        "label": "Wikipedia: Molech",
-        "url": "https://en.wikipedia.org/wiki/Molech"
-      }
-    ]
   },
   {
     "id": "context-lev-18-22",
@@ -49120,43 +48853,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "개혁주의는 이 약속의 완전한 성취를 영원한 대제사장 그리스도께서 이루셨다고 읽어요(히 2:17, 7:24-25).",
     "wcf": [
       8
-    ]
-  },
-  {
-    "id": "context-1sa-3-1",
-    "title": "드물었던 여호와의 말씀",
-    "aliases": [
-      "여호와의 말씀이 희귀하여",
-      "여호와께서 사람들에게 직접 말씀하시는 일이 거의 없었습니다"
-    ],
-    "locations": [
-      {
-        "code": "1sa",
-        "chapter": 3,
-        "lo": 1,
-        "hi": 1,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "'여호와의 말씀이 희귀했다'는 하나님이 침묵하신 시대라는 뜻이에요. 엘리 집안의 부패가 영적 갈증으로 번졌어요.",
-    "detail": "'희귀하다'는 값이 비싸다는 뜻도 있어서 말씀의 귀함을 말해요. 이 침묵을 깨고 부르시는 대상이 어린 사무엘이라는 점이 이 장의 놀라움이에요. 요세푸스는 사무엘이 열두 살쯤이었다고 전해요.",
-    "caution": "",
-    "refs": [
-      "사무엘상 3:1",
-      "아모스 8:11",
-      "사무엘상 3:21"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": [],
-    "sourceLinks": [
-      {
-        "label": "위키백과 사무엘",
-        "url": "https://en.wikipedia.org/wiki/Samuel"
-      }
     ]
   },
   {
@@ -81111,46 +80807,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-pro-8-22",
-    "title": "태초에 함께 계신 지혜",
-    "aliases": [
-      "여호와께서 그 조화의 시작 곧 태초에 일하시기 전에 나를 가지셨으며",
-      "태초에 나를 가지고 계셨다"
-    ],
-    "locations": [
-      {
-        "code": "pro",
-        "chapter": 8,
-        "lo": 22,
-        "hi": 22,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "지혜는 여호와께서 태초에 일을 시작하시기 전에 이미 자기를 가지셨다고 말해요. 지혜가 창조보다 먼저 있었다는 뜻이에요.",
-    "detail": "‘가지셨으며’(카나니)는 ‘얻다, 소유하다, 창조하다’로 모두 읽을 수 있는 동사예요. 4세기 아리우스 논쟁에서는 이 구절이 성자가 피조물이라는 뜻으로 인용되었고, 니케아 공의회가 성자의 본성을 다루며 아리우스의 가르침을 정죄했어요.",
-    "caution": "지혜를 그리스도와 연결해 읽는 것은 오랜 교회 전통의 읽기예요. 다만 8장 자체는 지혜를 인격처럼 그린 시적 표현이에요.",
-    "refs": [
-      "잠언 8:22",
-      "욥기 28:23",
-      "요한복음 1:1"
-    ],
-    "category": "본문 문맥",
-    "lens": "개혁주의는 잠언 8장의 지혜를 그리스도와 연결해 읽으면서도, 성자가 피조물이라는 아리우스적 읽기는 거부해요.",
-    "wcf": [
-      2,
-      8
-    ],
-    "sourceLinks": [
-      {
-        "label": "Wikipedia: Arianism",
-        "url": "https://en.wikipedia.org/wiki/Arianism"
-      }
-    ]
-  },
-  {
     "id": "context-pro-8-30",
     "title": "창조 곁의 기쁨",
     "aliases": [
@@ -81499,44 +81155,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       19
     ]
   },
-  {
-    "id": "context-pro-15-11",
-    "title": "드러나는 스올과 아바돈",
-    "aliases": [
-      "스올과 아바돈도 여호와의 앞에 드러나거든",
-      "무덤과 사망도 여호와 앞에는 환히 드러난다"
-    ],
-    "locations": [
-      {
-        "code": "pro",
-        "chapter": 15,
-        "lo": 11,
-        "hi": 11,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "스올과 아바돈도 여호와 앞에 드러나니, 사람의 마음은 더더욱 드러난다고 말해요.",
-    "detail": "‘아바돈’(멸망)은 욥기 26:6, 28:22에도 나오는 죽은 자의 세계를 가리키는 이름이에요. 요한계시록 9:11은 무저갱의 사자를 히브리어 이름 ‘아바돈’이라고 불러요. 스올과 아바돈도 하나님께 숨을 수 없는데, 사람의 마음은 말할 것도 없다는 논리예요.",
-    "caution": "가장 깊고 어두운 곳도 하나님께 드러난다는 사실이, 사람의 마음도 하나님이 아신다는 근거로 읽혀요.",
-    "refs": [
-      "잠언 15:11",
-      "욥기 26:6",
-      "잠언 15:3"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": [],
-    "sourceLinks": [
-      {
-        "label": "Wikipedia: Abaddon",
-        "url": "https://en.wikipedia.org/wiki/Abaddon"
-      }
-    ]
-  },
-]);
+  ]);
 
 // 잠언 16-20장
 window.ScriptureNotesData.contextualTerms.push(...[
@@ -112112,44 +111731,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ]
   },
   {
-    "id": "context-2ch-21-11",
-    "title": "산당을 세우고 백성을 미혹함",
-    "aliases": [
-      "여호람이 또 유다 여러 산에 산당을 세워 예루살렘 주민으로 음행하게 하고",
-      "여호람은 유다의 언덕들 위에 헛된 신들을 섬기는 산당을 지었습니다"
-    ],
-    "locations": [
-      {
-        "code": "2ch",
-        "chapter": 21,
-        "lo": 11,
-        "hi": 11,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "여호람은 유다의 산 위에 산당을 세우고, 예루살렘 백성을 우상숭배로 이끌었어요. 영적으로 음란하게 만든 일이에요.",
-    "detail": "역대기는 여호람의 악을 열왕기보다 자세히 적어요. 이어서 선지자 엘리야가 보낸 편지(12-15절)가 나와요. 북이스라엘에 있던 엘리야가 유다 왕에게 편지를 보냈다는 것 자체가 이 책의 특별한 기록이에요. 엘리야의 활동 시기를 두고 연대 논란도 있어요.",
-    "caution": "엘리야 편지의 연대는 학자들 사이에서 논의가 있어요.",
-    "refs": [
-      "역대하 21:11-13",
-      "신명기 12:2",
-      "역대하 17:6",
-      "역대하 21:12"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": [],
-    "sourceLinks": [
-      {
-        "label": "Wikipedia: Elijah",
-        "url": "https://en.wikipedia.org/wiki/Elijah"
-      }
-    ]
-  },
-  {
     "id": "context-2ch-21-19",
     "title": "여호람을 위한 분향을 하지 않음",
     "aliases": [
@@ -113001,43 +112582,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "category": "본문 문맥",
     "lens": "",
     "wcf": []
-  },
-  {
-    "id": "context-2ch-28-3",
-    "title": "힌놈 골짜기의 분향과 자녀 불사름",
-    "aliases": [
-      "또 힌놈의 아들 골짜기에서 분향하고",
-      "자기 아들까지도 불에 태워 제물로 바쳤습니다"
-    ],
-    "locations": [
-      {
-        "code": "2ch",
-        "chapter": 28,
-        "lo": 3,
-        "hi": 3,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "아하스는 힌놈 골짜기에서 향을 피우고 자녀를 불에 살랐어요. 가나안 풍속을 그대로 따른 가장 끔찍한 우상숭배예요.",
-    "detail": "힌놈 골짜기는 예루살렘 남쪽과 서쪽을 감싸고 도는 골짜기예요. 이 이름이 나중에 '게헨나'(지옥을 뜻하는 말)의 바탕이 돼요. 레위기 18:21과 신명기 18:10이 금한 몰렉 제사예요. 열왕기하 16:3은 자녀를 불 가운데로 지나가게 했다고 적고, 역대기는 자녀들을 불살랐다고 더 강하게 말해요.",
-    "caution": "",
-    "refs": [
-      "역대하 28:2-4",
-      "열왕기하 16:3",
-      "레위기 18:21"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": [],
-    "sourceLinks": [
-      {
-        "label": "Wikipedia: Valley of Hinnom",
-        "url": "https://en.wikipedia.org/wiki/Valley_of_Hinnom"
-      }
-    ]
   },
   {
     "id": "context-2ch-28-5",
@@ -125562,46 +125106,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ]
   },
   {
-    "id": "context-jas-3-6",
-    "title": "혀는 불",
-    "aliases": [
-      "혀는 곧 불이요 불의의 세계라",
-      "혀도 곧 불입니다"
-    ],
-    "locations": [
-      {
-        "code": "jas",
-        "chapter": 3,
-        "lo": 6,
-        "hi": 6,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "\"지옥\"(게헨나)은 예루살렘 근처 힌놈 골짜기에서 온 말이에요. 성경은 그곳을 아이를 불에 바친 곳으로 전해서, 심판의 불을 상징하게 되었다고 보아요.",
-    "detail": "혀의 불은 작은 불꽃이 큰 숲을 태우는 모습(3:5)으로 설명돼요. \"삶의 수레바퀴\"의 뜻은 분명하지 않아, 삶 전체를 가리키는 말로 읽혀요. 3:8은 혀를 길들일 수 있는 사람이 없다고 해서 사람의 한계를 드러내요.",
-    "caution": "힌놈 골짜기의 정확한 위치에는 여러 견해가 있어요.",
-    "refs": [
-      "야고보서 3:5",
-      "야고보서 3:6",
-      "야고보서 3:8"
-    ],
-    "category": "본문 문맥",
-    "lens": "개혁주의는 사람의 타락이 말에까지 미치며, 성령의 은혜 없이는 혀를 다스릴 수 없다고 가르쳐요.",
-    "wcf": [
-      6,
-      13
-    ],
-    "sourceLinks": [
-      {
-        "label": "Wikipedia: Gehenna",
-        "url": "https://en.wikipedia.org/wiki/Gehenna"
-      }
-    ]
-  },
-  {
     "id": "context-jas-4-4",
     "title": "세상과 벗이 되면 하나님과 원수",
     "aliases": [
@@ -136196,45 +135700,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ]
   },
   {
-    "id": "context-act-24-27",
-    "title": "이 년 뒤 바뀐 총독",
-    "aliases": [
-      "이태가 지난 후 보르기오 베스도가 벨릭스의 소임을 이어받으니",
-      "두 해가 지난 후에 보르기오 베스도가 벨릭스의 후임으로 총독이 되었습니다"
-    ],
-    "locations": [
-      {
-        "code": "act",
-        "chapter": 24,
-        "lo": 27,
-        "hi": 27,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "바울은 가이사랴에서 2년 동안 갇혀 있어요. 벨릭스는 바울을 정의롭게 풀어 주지 않고, 정치적 이익을 위해 가둬 두었어요.",
-    "detail": "벨릭스는 바울에게 뇌물을 기대하기도 했어요(24:26). 벨릭스의 재임은 서기 52~60년경으로 보는 견해가 많고, 후임 베스도가 온 연도는 학자마다 달라요. 가이사랴는 로마 총독부가 있던 곳이었어요.",
-    "caution": "이 기간 동안 바울의 사역이 멈춘 것처럼 보이지만, 총독과 왕들 앞에서 복음을 증언했고(24-26장), 로마로 가는 길이 준비되었어요.",
-    "refs": [
-      "사도행전 24:26-27",
-      "사도행전 24:22-23"
-    ],
-    "category": "본문 문맥",
-    "lens": "하나님은 불의한 권세 아래서도 섭리로 복음을 전진시키세요. 고난과 기다림의 시간도 하나님이 정하신 목적에 쓰여요.",
-    "wcf": [
-      5,
-      23
-    ],
-    "sourceLinks": [
-      {
-        "label": "Wikipedia: Antonius Felix",
-        "url": "https://en.wikipedia.org/wiki/Antonius_Felix"
-      }
-    ]
-  },
-  {
     "id": "context-act-25-11",
     "title": "가이사께 상소하다",
     "aliases": [
@@ -143631,46 +143096,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "category": "본문 문맥",
     "lens": "",
     "wcf": []
-  },
-  {
-    "id": "context-1th-2-19",
-    "title": "소망과 기쁨과 자랑의 면류관",
-    "aliases": [
-      "자랑의 면류관이 무엇이냐",
-      "여러분은 우리의 소망이요, 기쁨이요, 면류관입니다"
-    ],
-    "locations": [
-      {
-        "code": "1th",
-        "chapter": 2,
-        "lo": 19,
-        "hi": 19,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "\"강림(파루시아)\"은 높은 사람이 도시를 방문할 때 쓰던 말로 알려져 있어요. \"면류관\"은 경기에서 이긴 사람에게 씌우던 관이에요. 바울에게는 교인들이 사역의 열매라는 뜻이에요.",
-    "detail": "이 편지에서 재림은 위로(4:13~18)와 거룩한 삶(3:13, 5:23)의 동기로 여러 번 반복돼요. 바울은 교인들이 흠 없이 서는 모습으로 자신의 사역이 인정받기를 소망해요.",
-    "caution": "",
-    "refs": [
-      "데살로니가전서 2:19",
-      "데살로니가전서 2:20",
-      "데살로니가전서 3:6-8"
-    ],
-    "category": "본문 문맥",
-    "lens": "개혁주의는 신자의 상급이 은혜로 주어지는 것이고 공로가 아니라고 가르쳐요. 면류관은 하나님의 은혜에 대한 기쁨의 표현이에요.",
-    "wcf": [
-      16,
-      33
-    ],
-    "sourceLinks": [
-      {
-        "label": "Wikipedia: Parousia",
-        "url": "https://en.wikipedia.org/wiki/Parousia"
-      }
-    ]
   },
   {
     "id": "context-1th-3-5",
@@ -155734,48 +155159,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ]
   },
   {
-    "id": "context-rev-1-9",
-    "title": "환난과 참음에 함께한 요한",
-    "aliases": [
-      "나 요한은 너희 형제요",
-      "그리스도 안에서 형제된 요한입니다"
-    ],
-    "locations": [
-      {
-        "code": "rev",
-        "chapter": 1,
-        "lo": 9,
-        "hi": 9,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "요한은 \"환난, 나라, 참음\"을 예수 안에서 함께 나눈다고 말해요. 나라와 환난이 함께 나오는 점은 이 책 전체의 구조를 미리 보여 줘요. 지금 신자는 왕의 백성이지만, 고난 속에 있어요.",
-    "detail": "밧모는 에게해의 작은 섬이에요. 요한이 \"하나님의 말씀과 예수의 증언 때문에\" 거기 있었다는 점에서, 전통은 이를 박해로 인한 유배로 읽어요. 이 책의 기록 시기는 도미티아누스 때(주후 90년대)로 보는 견해가 요즘 더 많지만, 주후 60년대로 보는 견해도 있어요.",
-    "caution": "",
-    "refs": [
-      "요한계시록 1:9"
-    ],
-    "category": "본문 문맥",
-    "lens": "개혁주의는 신자가 이 땅에서 그리스도의 나라에 속하면서도, 십자가의 길을 걷는다고 가르쳐요.",
-    "wcf": [
-      8,
-      25
-    ],
-    "sourceLinks": [
-      {
-        "label": "Wikipedia: Book of Revelation",
-        "url": "https://en.wikipedia.org/wiki/Book_of_Revelation"
-      },
-      {
-        "label": "위키백과 · Patmos",
-        "url": "https://en.wikipedia.org/wiki/Patmos"
-      }
-    ]
-  },
-  {
     "id": "context-rev-1-17",
     "title": "두려워하지 말라 나는 처음이요 마지막",
     "aliases": [
@@ -157550,46 +156933,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-rev-13-1",
-    "title": "바다에서 올라온 짐승",
-    "aliases": [
-      "바다에서 한 짐승이 나오는데 뿔이 열이요 머리가 일곱이라",
-      "그 짐승은 뿔이 열이고 머리가 일곱이었는데"
-    ],
-    "locations": [
-      {
-        "code": "rev",
-        "chapter": 13,
-        "lo": 1,
-        "hi": 1,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "바다에서 올라온 짐승은 다니엘 7장의 네 짐승의 특징을 합친 모양이고, 용에게서 권세를 받아요.",
-    "detail": "바다는 다니엘 7:2~3에서 혼돈과 민족들이 일어나는 곳이에요. 이 짐승을 로마 제국과 황제 숭배로 읽는 해석(과거적), 역사 속 반복되는 국가 권력의 악으로 읽는 해석(이상주의), 마지막 때의 한 세력으로 읽는 해석(미래적)이 있어요.",
-    "caution": "짐승의 정체는 해석이 갈려요. 이 책의 첫 독자가 이해할 수 있는 1세기 로마의 상황을 기본 틀로 삼는 것이 안전해요.",
-    "refs": [
-      "요한계시록 13:1",
-      "다니엘 7:2-7",
-      "요한계시록 12:9"
-    ],
-    "category": "본문 문맥",
-    "lens": "개혁주의는 국가 권세가 하나님이 세우신 것이지만(롬 13장), 하나님의 자리를 요구할 때 악한 권세가 된다고 보아요. 교회는 그 요구를 거부해야 해요.",
-    "wcf": [
-      23,
-      25
-    ],
-    "sourceLinks": [
-      {
-        "label": "Wikipedia: Book of Revelation",
-        "url": "https://en.wikipedia.org/wiki/Book_of_Revelation"
-      }
-    ]
-  },
-  {
     "id": "context-rev-13-5",
     "title": "마흔두 달 동안의 권세",
     "aliases": [
@@ -157721,43 +157064,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "category": "본문 문맥",
     "lens": "",
     "wcf": []
-  },
-  {
-    "id": "context-rev-13-18",
-    "title": "육백육십육이라는 수",
-    "aliases": [
-      "그것은 사람의 수니 그의 수는 육백육십육이니라",
-      "그 숫자는 사람의 숫자이며, 육백육십육입니다"
-    ],
-    "locations": [
-      {
-        "code": "rev",
-        "chapter": 13,
-        "lo": 18,
-        "hi": 18,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "666은 \"네로 가이사\"를 히브리 글자로 옮겨 더한 값이라는 해석이 가장 널리 받아들여져요. 다만 616으로 적힌 사본(P115)도 있고, 다른 설명도 있어요.",
-    "detail": "\"지혜 있는 자는 세어 보라\"는 이 수가 풀 수 있는 수수께끼임을 알려 줘요. \"사람의 수\"는 사람의 이름에 해당하는 수라는 뜻이에요. 6이 세 번 반복되어 불완전과 미완성을 상징한다고 보는 견해도 있어요.",
-    "caution": "특정 인물을 현대에서 찾아내려는 시도는 문맥과 어긋나요. 첫 독자가 이해할 수 있는 해석을 기본으로 삼아야 해요.",
-    "refs": [
-      "요한계시록 13:18"
-    ],
-    "category": "본문 문맥",
-    "lens": "개혁주의는 요한계시록의 수를 상징으로 읽는 경향이 크고, 666을 한 인물의 이름 풀이에 묶지 않고 하나님을 대적하는 권세의 불완전함으로 이해하는 해석도 받아들여요.",
-    "wcf": [
-      33
-    ],
-    "sourceLinks": [
-      {
-        "label": "Wikipedia: Number of the beast",
-        "url": "https://en.wikipedia.org/wiki/Number_of_the_beast"
-      }
-    ]
   },
   {
     "id": "context-rev-14-1",
@@ -158125,50 +157431,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ]
   },
   {
-    "id": "context-rev-16-12",
-    "title": "여섯째 대접과 동방 왕들의 길, 아마겟돈",
-    "aliases": [
-      "강물이 말라서 동방에서 오는 왕들의 길이 예비되었더라",
-      "강물이 다 마르고 동방의 왕들이 쳐들어올 수 있는 길이 열렸습니다"
-    ],
-    "locations": [
-      {
-        "code": "rev",
-        "chapter": 16,
-        "lo": 12,
-        "hi": 12,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "\"유브라데\"는 이스라엘의 동쪽 경계이고, 강물이 마르는 일은 길이 열리는 사건으로 나와요(사 11:15~16).",
-    "detail": "16:16의 \"하르마게돈\"은 \"므깃도의 산\"으로 풀이돼요. 므깃도는 사사기 5:19, 열왕기하 23:29의 전투 장소이지만, 산이 아니라 평야라서 상징으로 읽는 견해가 많아요. 이 전투는 19:19~21에서 말씀으로 끝나요.",
-    "caution": "아마겟돈이 문자적 군사 충돌인지, 상징적인 최후 대결인지는 해석이 갈려요.",
-    "refs": [
-      "요한계시록 16:12",
-      "요한계시록 16:16",
-      "요한계시록 19:19-21",
-      "사사기 5:19"
-    ],
-    "category": "본문 문맥",
-    "lens": "개혁주의는 악의 세력이 마지막까지 그리스도의 나라에 맞서지만, 그리스도가 말씀으로 이기신다고 가르쳐요. 이는 마지막 날의 심판을 가리켜요.",
-    "wcf": [
-      33
-    ],
-    "sourceLinks": [
-      {
-        "label": "위키백과 · Armageddon",
-        "url": "https://en.wikipedia.org/wiki/Armageddon"
-      },
-      {
-        "label": "위키백과 · Tel Megiddo",
-        "url": "https://en.wikipedia.org/wiki/Tel_Megiddo"
-      }
-    ]
-  },
-  {
     "id": "context-rev-16-15",
     "title": "도둑같이 오시는 그리스도와 깨어 있으라는 말씀",
     "aliases": [
@@ -158271,42 +157533,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
       {
         "label": "livius · Tacitus on the Christians",
         "url": "https://livius.org/sources/content/tacitus/tacitus-on-the-christians"
-      }
-    ]
-  },
-  {
-    "id": "context-rev-17-8",
-    "title": "전에 있었다가 없고 다시 올라올 짐승",
-    "aliases": [
-      "전에 있었다가 지금은 없으나 장차 무저갱으로부터 올라와",
-      "그러나 곧 다시 살아나 끝없는 구덩이에서 올라왔다가"
-    ],
-    "locations": [
-      {
-        "code": "rev",
-        "chapter": 17,
-        "lo": 8,
-        "hi": 8,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "\"전에 있었다가 지금은 없고 장차 올라올\"은 1:8의 하나님 \"전에도 있었고 지금도 있고 장차 올 자\"를 흉내 낸 표현이에요. 짐승이 하나님을 모방하는 가짜임을 보여 줘요.",
-    "detail": "이 표현을 죽었다가 돌아온다는 네로 전설과 연결하는 해석이 있어요. 짐승의 부활처럼 보이는 모습에 속지 말라는 뜻으로 읽어요.",
-    "caution": "",
-    "refs": [
-      "요한계시록 17:8",
-      "요한계시록 1:8"
-    ],
-    "category": "본문 문맥",
-    "lens": "",
-    "wcf": [],
-    "sourceLinks": [
-      {
-        "label": "Wikipedia: Book of Revelation",
-        "url": "https://en.wikipedia.org/wiki/Book_of_Revelation"
       }
     ]
   },
@@ -167861,42 +167087,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "category": "행동",
     "lens": "",
     "wcf": []
-  },
-  {
-    "id": "context-lev-20-2",
-    "title": "몰렉은 누구일까요?",
-    "aliases": [
-      "몰렉"
-    ],
-    "locations": [
-      {
-        "code": "lev",
-        "chapter": 20,
-        "lo": 2,
-        "hi": 2,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "몰렉에게 자녀를 주는 일은 하나님이 가장 무겁게 금하시는 가증한 일이에요.",
-    "detail": "2-5절은 몰렉에게 자녀를 준 사람을 돌로 치라고 해요. 그냥 두면 하나님이 그와 가족을 끊으시겠다고 해요. 열왕기상 11:7은 몰렉을 암몬 사람의 가증한 신이라고 하고, 열왕기하 23:10은 힌놈 골짜기의 도벳을 말해요.",
-    "caution": "몰렉이 신의 이름인지 제사 이름인지 학자마다 의견이 달라요. 제사가 정확히 어땠는지도 확실하지 않아요.",
-    "refs": [
-      "레위기 20:2",
-      "레위기 20:3",
-      "레위기 20:4"
-    ],
-    "category": "인물",
-    "lens": "",
-    "wcf": [],
-    "sourceLinks": [
-      {
-        "label": "Molech - Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Molech"
-      }
-    ]
   },
   {
     "id": "context-lev-20-25",
@@ -227149,42 +226339,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-act-23-26",
-    "title": "총독 벨릭스는 누구인가",
-    "aliases": [
-      "총독 벨릭스"
-    ],
-    "locations": [
-      {
-        "code": "act",
-        "chapter": 23,
-        "lo": 26,
-        "hi": 26,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "벨릭스는 형 팔라스의 도움으로 총독이 된 사람이에요. 유대인과 바울 사이에서 정치적으로 계산하며 움직였어요.",
-    "detail": "벨릭스는 서기 52년쯤부터 유대를 다스렸고, 잔혹함과 뇌물에 약하다는 평판이 있었어요. 유대 공주 드루실라와 결혼했어요(24:24). 천부장 글라우디오 루시아의 편지는 유대인의 고발이 율법 문제일 뿐 죽이거나 가둘 까닭이 없다고 보고해요(29절). 이 판단은 뒤의 재판에서도 되풀이돼요.",
-    "caution": "편지가 천부장에게 유리하게 사실을 정리했다는 읽기가 있어요. 편지에는 시민인 줄 알고 구했다고 썼지만, 실제로는 매질하려 했어요(22:24-25).",
-    "refs": [
-      "사도행전 23:26",
-      "사도행전 23:27",
-      "사도행전 23:29"
-    ],
-    "category": "인물",
-    "lens": "",
-    "wcf": [],
-    "sourceLinks": [
-      {
-        "label": "Marcus Antonius Felix (Wikipedia)",
-        "url": "https://en.wikipedia.org/wiki/Marcus_Antonius_Felix"
-      }
-    ]
-  },
-  {
     "id": "context-act-23-31",
     "title": "안디바드리를 거쳐 간 길",
     "aliases": [
@@ -227256,42 +226410,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ]
   },
   {
-    "id": "context-act-24-1",
-    "title": "변호사 더둘로",
-    "aliases": [
-      "더둘로"
-    ],
-    "locations": [
-      {
-        "code": "act",
-        "chapter": 24,
-        "lo": 1,
-        "hi": 1,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "더둘로는 대제사장이 데려온 전문 변호사예요. 총독에게 먼저 아첨한 뒤 바울을 정치적 위험 인물로 몰았어요.",
-    "detail": "더둘로는 3절에서 칭찬으로 말을 시작해요. 그리고 5-6절에서 바울을 전염병 같은 자, 흩어진 유대인을 소요하게 하는 자, 나사렛 이단의 우두머리, 성전을 더럽히려는 자로 세 가지로 고발했어요. 종교 문제를 로마 총독이 신경 쓰는 소요 문제로 바꾼 거예요.",
-    "caution": "더둘로가 총독의 치적을 칭찬한 말은 사실과 거리가 있다는 평가가 많아요.",
-    "refs": [
-      "사도행전 24:1",
-      "사도행전 24:5",
-      "사도행전 24:6"
-    ],
-    "category": "인물",
-    "lens": "",
-    "wcf": [],
-    "sourceLinks": [
-      {
-        "label": "Marcus Antonius Felix (Wikipedia)",
-        "url": "https://en.wikipedia.org/wiki/Marcus_Antonius_Felix"
-      }
-    ]
-  },
-  {
     "id": "context-act-24-5",
     "title": "나사렛 이단이라는 이름",
     "aliases": [
@@ -227351,42 +226469,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-act-24-24",
-    "title": "드루실라는 누구인가",
-    "aliases": [
-      "드루실라"
-    ],
-    "locations": [
-      {
-        "code": "act",
-        "chapter": 24,
-        "lo": 24,
-        "hi": 24,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "드루실라는 헤롯 아그립바 1세의 딸이고 아그립바 2세의 누이예요. 남편과 이혼하고 벨릭스의 아내가 된 유대 여인이에요.",
-    "detail": "12장의 헤롯 왕이 그의 아버지예요. 드루실라는 에메사의 왕 아지주스와 이혼하고 벨릭스와 결혼했다고 전해져요. 22절에서 벨릭스가 이 도를 자세히 안다고 한 것은 유대인 아내를 통해서였을 수 있어요. 25절에서 바울이 말한 의와 절제와 심판은 이 부부에게도 닿는 말이었어요.",
-    "caution": "벨릭스가 아내를 통해 이 도를 알았다는 것은 짐작이에요.",
-    "refs": [
-      "사도행전 24:24",
-      "사도행전 24:22",
-      "사도행전 24:25"
-    ],
-    "category": "인물",
-    "lens": "",
-    "wcf": [],
-    "sourceLinks": [
-      {
-        "label": "Marcus Antonius Felix (Wikipedia)",
-        "url": "https://en.wikipedia.org/wiki/Marcus_Antonius_Felix"
-      }
-    ]
-  },
-  {
     "id": "context-act-24-25",
     "title": "의와 절제와 장차 오는 심판",
     "aliases": [
@@ -227414,42 +226496,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "category": "행동",
     "lens": "",
     "wcf": []
-  },
-  {
-    "id": "context-act-24-26",
-    "title": "돈을 받을까 바라는 총독",
-    "aliases": [
-      "돈을 받을까 바라는 고로"
-    ],
-    "locations": [
-      {
-        "code": "act",
-        "chapter": 24,
-        "lo": 26,
-        "hi": 26,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "무죄인 줄 알면서도 놓아주지 않은 까닭은 뇌물에 대한 기대였어요. 27절의 유대인 환심 얻기와 겹쳐요.",
-    "detail": "벨릭스는 바울이 무죄에 가깝다는 것을 알면서도 두 해를 끌었어요. 이유로 뇌물을 바란 것과 유대인의 마음을 얻으려 한 것, 두 가지가 나와요. 벨릭스는 뇌물에 약하고 잔혹하다는 평판이 있었어요. 바울은 억울한 가운데서도 복음 전하는 일을 멈추지 않았어요.",
-    "caution": "벨릭스가 바울에게 돈이 있다고 생각한 까닭은 쓰여 있지 않아요. 17절의 구제금을 보고 짐작해요.",
-    "refs": [
-      "사도행전 24:26",
-      "사도행전 24:27",
-      "사도행전 24:17"
-    ],
-    "category": "행동",
-    "lens": "",
-    "wcf": [],
-    "sourceLinks": [
-      {
-        "label": "Marcus Antonius Felix (Wikipedia)",
-        "url": "https://en.wikipedia.org/wiki/Marcus_Antonius_Felix"
-      }
-    ]
   },
   {
     "id": "context-act-25-1",
@@ -234231,43 +233277,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
 // Matthew-Mark new notes
 window.ScriptureNotesData.contextualTerms.push(...[
   {
-    "id": "context-mat-21-1",
-    "title": "감람 산과 벳바게는?",
-    "aliases": [
-      "벳바게",
-      "감람 산"
-    ],
-    "locations": [
-      {
-        "code": "mat",
-        "chapter": 21,
-        "lo": 1,
-        "hi": 1,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "예루살렘 동쪽 감람 산 기슭의 마을 벳바게에서 입성이 준비돼요. 메시아가 감람 산에서 오신다는 예언이 떠오르는 자리예요.",
-    "detail": "감람 산은 기드론 골짜기를 사이에 두고 예루살렘 동쪽에 있는 산등성이예요. 스가랴 14:4는 그날에 주의 발이 감람 산 위에 서리라고 해요. 벳바게는 그 산자락 마을이고, 거기서 두 제자가 나귀를 가지러 가요. 17절의 베다니도 같은 산 동쪽 기슭이에요.",
-    "caution": "스가랴 14장이 이 입성에서 이루어졌다고 마태가 말하지는 않아요. 그 연결은 해석이에요.",
-    "refs": [
-      "마태복음 21:1",
-      "마태복음 21:2",
-      "마태복음 21:17"
-    ],
-    "category": "지역",
-    "lens": "",
-    "wcf": [],
-    "sourceLinks": [
-      {
-        "label": "Mount of Olives - Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Mount_of_Olives"
-      }
-    ]
-  },
-  {
     "id": "context-mat-21-8",
     "title": "겉옷을 깐 뜻은?",
     "aliases": [
@@ -234790,42 +233799,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-mat-24-3",
-    "title": "감람 산에서 말씀한 이유는?",
-    "aliases": [
-      "감람 산 위에",
-      "올리브 산 위에"
-    ],
-    "locations": [
-      {
-        "code": "mat",
-        "chapter": 24,
-        "lo": 3,
-        "hi": 3,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "성전이 무너질 것이라고 하신 뒤(2절) 성전 맞은편 산으로 가셨어요. 이 산은 구약에서 하나님의 영광이 머문 곳과도 이어져요.",
-    "detail": "감람 산은 기드론 골짜기 건너, 성전이 있는 산의 동쪽에 있어요. 에스겔 11:23은 여호와의 영광이 성읍 가운데서 올라가 성읍 동쪽 산에 머물렀다고 해요. 제자들은 따로 와서 언제인지와 징조를 물어요. 이 산에서 하신 말씀을 '감람 산 강화'라고 불러요.",
-    "caution": "에스겔의 그 산이 감람 산이라고 본문이 말하는 것은 아니에요. 동쪽 산이라는 위치가 맞는 거예요.",
-    "refs": [
-      "마태복음 24:2",
-      "마태복음 24:3"
-    ],
-    "category": "지역",
-    "lens": "",
-    "wcf": [],
-    "sourceLinks": [
-      {
-        "label": "Mount of Olives - Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Mount_of_Olives"
-      }
-    ]
-  },
-  {
     "id": "context-mat-24-20",
     "title": "겨울과 안식일이 왜 문제?",
     "aliases": [
@@ -235190,42 +234163,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "category": "행동",
     "lens": "",
     "wcf": []
-  },
-  {
-    "id": "context-mat-26-36",
-    "title": "겟세마네는 어떤 곳?",
-    "aliases": [
-      "겟세마네"
-    ],
-    "locations": [
-      {
-        "code": "mat",
-        "chapter": 26,
-        "lo": 36,
-        "hi": 36,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "겟세마네는 감람 산 기슭의 동산이에요. 예수께서 제자들과 자주 가시던 곳이라 유다가 알고 찾아왔어요.",
-    "detail": "요한복음 18:1-2는 기드론 시내 건너편의 동산이고 유다도 그곳을 안다고 해요. 감람 산은 예루살렘 동쪽에 있고 겟세마네는 그 산자락이에요. 이곳에서 예수께서 세 번 기도하세요(39, 42, 44절).",
-    "caution": "겟세마네의 정확한 위치는 전해 오는 이야기에 따라 몇 곳이 있어요. 이름의 뜻은 확인하지 못해 적지 않았어요.",
-    "refs": [
-      "마태복음 26:36",
-      "마태복음 26:39",
-      "마태복음 26:44"
-    ],
-    "category": "지역",
-    "lens": "",
-    "wcf": [],
-    "sourceLinks": [
-      {
-        "label": "Mount of Olives - Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Mount_of_Olives"
-      }
-    ]
   },
   {
     "id": "context-mat-26-48",
@@ -243937,44 +242874,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ]
   },
   {
-    "id": "context-luk-21-37",
-    "title": "밤에는 왜 감람산에서 쉬셨나요?",
-    "aliases": [
-      "감람원이라 하는 산",
-      "올리브라고 불리는 산"
-    ],
-    "locations": [
-      {
-        "code": "luk",
-        "chapter": 21,
-        "lo": 37,
-        "hi": 37,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "유월절에는 예루살렘이 순례자로 가득 찼어요. 그래서 예수님은 낮에는 성전에서 가르치고 밤에는 성 밖 감람산에서 쉬셨어요.",
-    "detail": "감람산은 기드론 골짜기 건너 예루살렘 동쪽에 있는 산등성이로, 가장 높은 곳이 약 826미터예요. 겟세마네가 산자락에 있고 베다니가 남동쪽 비탈에 있어요. 그랜드 주석은 22장 10절의 '성에 들어가라'는 말씀으로 보아, 예수님이 성 밖 감람산이나 베다니에 머무셨을 가능성이 높다고 해요.",
-    "caution": "밤마다 정확히 어디서 지내셨는지는 본문에 없어요.",
-    "refs": [
-      "누가복음 21:37",
-      "누가복음 21:38",
-      "누가복음 22:39",
-      "누가복음 22:10"
-    ],
-    "category": "지역",
-    "lens": "",
-    "wcf": [],
-    "sourceLinks": [
-      {
-        "label": "Wikipedia: Mount of Olives",
-        "url": "https://en.wikipedia.org/wiki/Mount_of_Olives"
-      }
-    ]
-  },
-  {
     "id": "context-luk-22-1",
     "title": "유월절과 무교절은 어떻게 다른가요?",
     "aliases": [
@@ -244976,43 +243875,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "lens": "개혁주의에서는 그리스도가 같은 몸으로 부활하셨음을 강조해요. 우리 몸이 다시 살아날 소망의 근거가 돼요(웨스트민스터 신앙고백 8장 4절).",
     "wcf": [
       8
-    ]
-  },
-  {
-    "id": "context-luk-24-50",
-    "title": "베다니는 어디인가요?",
-    "aliases": [
-      "베다니"
-    ],
-    "locations": [
-      {
-        "code": "luk",
-        "chapter": 24,
-        "lo": 50,
-        "hi": 50,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "베다니는 예루살렘 동쪽 감람산 비탈의 마을이에요. 예수님이 제자들을 데리고 가서 축복하시고 하늘로 올려지신 곳 근처예요.",
-    "detail": "베다니는 감람산 남동쪽 비탈에 있는 마을이에요. 요한복음 11:18은 예루살렘에서 가까워 오 리쯤이라고 해요. 사도행전 1:12는 승천 뒤 제자들이 감람원에서 예루살렘으로 돌아왔다고 하고, 안식일에 걸을 만한 거리라고 해요. 누가는 복음서를 예루살렘 성전에서의 찬송으로 마무리해요(53절).",
-    "caution": "승천 장소를 베다니 마을 자체로 볼지, 그 앞 감람산 자락으로 볼지는 누가가 '베다니 앞까지'라고만 해서 확정할 수 없어요.",
-    "refs": [
-      "누가복음 24:50",
-      "누가복음 24:53",
-      "요한복음 11:18",
-      "사도행전 1:12"
-    ],
-    "category": "지역",
-    "lens": "",
-    "wcf": [],
-    "sourceLinks": [
-      {
-        "label": "Wikipedia: Mount of Olives",
-        "url": "https://en.wikipedia.org/wiki/Mount_of_Olives"
-      }
     ]
   }
 ]);
@@ -247485,43 +246347,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
 // Luke-John new notes
 window.ScriptureNotesData.contextualTerms.push(...[
   {
-    "id": "context-jhn-11-1",
-    "title": "베다니는 어떤 마을인가요?",
-    "aliases": [
-      "베다니"
-    ],
-    "locations": [
-      {
-        "code": "jhn",
-        "chapter": 11,
-        "lo": 1,
-        "hi": 1,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "베다니는 감람산 남동쪽 비탈의 마을로 예루살렘에서 멀지 않아요. 마리아, 마르다, 나사로의 집이 있던 곳이고 예수님이 마지막 주에 머무신 곳이에요.",
-    "detail": "18절은 베다니가 예루살렘에서 오 리쯤, 곧 15스타디온 정도로 가깝다고 해요. 감람산은 기드론 골짜기 건너 예루살렘 동쪽에 있고, 베다니는 그 남동쪽 비탈에 있어요. 누가복음 10:38-42의 마르다와 마리아 이야기도 이 가정과 이어서 읽어요. 12장 1절에서 예수님은 유월절 엿새 전에 다시 이곳에 오세요.",
-    "caution": "1장 28절의 '요단 건너편 베다니'와는 다른 마을이에요.",
-    "refs": [
-      "요한복음 11:1",
-      "요한복음 11:18",
-      "요한복음 12:1",
-      "누가복음 10:38"
-    ],
-    "category": "지역",
-    "lens": "",
-    "wcf": [],
-    "sourceLinks": [
-      {
-        "label": "Wikipedia: Mount of Olives",
-        "url": "https://en.wikipedia.org/wiki/Mount_of_Olives"
-      }
-    ]
-  },
-  {
     "id": "context-jhn-11-16",
     "title": "도마는 어떤 사람인가요?",
     "aliases": [
@@ -248368,44 +247193,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "category": "행동",
     "lens": "",
     "wcf": []
-  },
-  {
-    "id": "context-jhn-18-1",
-    "title": "기드론 시내와 동산은 어떤 곳인가요?",
-    "aliases": [
-      "기드론 시내 건너편",
-      "기드론 골짜기"
-    ],
-    "locations": [
-      {
-        "code": "jhn",
-        "chapter": 18,
-        "lo": 1,
-        "hi": 1,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "기드론 시내는 예루살렘 동쪽에서 감람산 쪽으로 건너가는 골짜기예요. 배신당한 다윗 왕이 건넌 길과 겹쳐요.",
-    "detail": "감람산은 기드론 골짜기 건너 예루살렘 동쪽에 있고, 겟세마네가 그 산자락에 있어요. 요한복음은 이곳을 동산이라고 불러요(1, 26절). 사무엘하 15:23에서 다윗은 압살롬의 반역을 피해 기드론 시내를 건너 감람산으로 올라가며 울었어요. 예수님도 배신당하는 밤에 같은 길을 가세요.",
-    "caution": "다윗과 겹쳐 읽는 것은 구약 배경에서 나온 해석이에요. 요한이 직접 말하지는 않아요.",
-    "refs": [
-      "요한복음 18:1",
-      "요한복음 18:2",
-      "요한복음 18:26",
-      "사무엘하 15:23"
-    ],
-    "category": "지역",
-    "lens": "",
-    "wcf": [],
-    "sourceLinks": [
-      {
-        "label": "Wikipedia: Mount of Olives",
-        "url": "https://en.wikipedia.org/wiki/Mount_of_Olives"
-      }
-    ]
   },
   {
     "id": "context-jhn-18-3",
@@ -263014,42 +261801,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "category": "행동",
     "lens": "",
     "wcf": []
-  },
-  {
-    "id": "context-jud-1-14",
-    "title": "에녹의 예언은 어디서 왔나요?",
-    "aliases": [
-      "에녹"
-    ],
-    "locations": [
-      {
-        "code": "jud",
-        "chapter": 1,
-        "lo": 14,
-        "hi": 14,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "유다가 말한 에녹의 예언은 창세기에는 없어요. 그때 유대인이 읽던 에녹서에 비슷한 말이 있어요. 유다는 이 말을 참된 예언으로 받아들여요.",
-    "detail": "에녹서(1 에녹)는 에티오피아와 에리트레아 정교회에서 성경으로 인정해요. 사해 근처 쿰란 동굴에서도 아람어 조각이 나왔어요. 대부분의 다른 교회는 성경에 넣지 않아요. 유다가 에녹서 어느 부분을 가리키는지는 확인하지 못했어요.",
-    "caution": "유다가 에녹서 전체를 성경으로 인정했는지, 이 부분만 참되다고 봤는지는 갈려요.",
-    "refs": [
-      "유다서 1:14",
-      "유다서 1:15",
-      "창세기 5:24"
-    ],
-    "category": "인물",
-    "lens": "",
-    "wcf": [],
-    "sourceLinks": [
-      {
-        "label": "Wikipedia: Book of Enoch",
-        "url": "https://en.wikipedia.org/wiki/Book_of_Enoch"
-      }
-    ]
   }
 ]);
 
@@ -264814,41 +263565,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "category": "인물",
     "lens": "",
     "wcf": []
-  },
-  {
-    "id": "context-amo-1-12",
-    "title": "보스라는 어떤 도시?",
-    "aliases": [
-      "보스라"
-    ],
-    "locations": [
-      {
-        "code": "amo",
-        "chapter": 1,
-        "lo": 12,
-        "hi": 12,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "보스라는 에돔의 수도로 알려진 곳이에요. 에돔 전체를 대표하는 이름으로 불에 타요.",
-    "detail": "보스라는 오늘날 요르단의 부세이라 지역으로 봐요. 데만과 함께 에돔을 대표하는 지명으로 나와요. 형제 에서의 후손을 향한 꾸짖음이에요(11절).",
-    "caution": "보스라의 정확한 위치와 크기는 학자마다 의견이 있어요.",
-    "refs": [
-      "아모스 1:12",
-      "아모스 1:11"
-    ],
-    "category": "지역",
-    "lens": "",
-    "wcf": [],
-    "sourceLinks": [
-      {
-        "label": "Edom - Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Edom"
-      }
-    ]
   },
   {
     "id": "context-amo-1-14",
@@ -268064,41 +266780,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": []
   },
   {
-    "id": "context-mal-1-4",
-    "title": "에돔은 왜 다시 쌓으려 했나?",
-    "aliases": [
-      "에돔"
-    ],
-    "locations": [
-      {
-        "code": "mal",
-        "chapter": 1,
-        "lo": 4,
-        "hi": 4,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "에돔은 무너져도 제 힘으로 다시 세울 수 있다고 믿었어요. 그래서 하나님이 또 헐겠다고 하세요.",
-    "detail": "이 말은 하나님이 야곱을 사랑하신 일(2-3절)을 보여 주는 증거예요. 에돔이 무너진 뒤 그 옛 땅에는 나바테아 사람들이 왕국을 세웠어요. 주전 2세기 초에는 이미 나바테아 왕국이 있었다고 해요.",
-    "caution": "에돔이 무너진 일이 어느 사건인지는 본문에 나와 있지 않아요.",
-    "refs": [
-      "말라기 1:4",
-      "말라기 1:2"
-    ],
-    "category": "사건",
-    "lens": "",
-    "wcf": [],
-    "sourceLinks": [
-      {
-        "label": "Edom - Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Edom"
-      }
-    ]
-  },
-  {
     "id": "context-mal-1-7",
     "title": "더러운 떡은 어떤 제물?",
     "aliases": [
@@ -269237,78 +267918,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
 // Minor prophets new notes
 window.ScriptureNotesData.contextualTerms.push(...[
   {
-    "id": "context-oba-1-3",
-    "title": "에돔은 왜 안전하다 믿었나?",
-    "aliases": [
-      "바위 틈"
-    ],
-    "locations": [
-      {
-        "code": "oba",
-        "chapter": 1,
-        "lo": 3,
-        "hi": 3,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "에돔은 험한 바위 산지에 살아서 아무도 자기를 칠 수 없다고 믿었어요. 그래서 마음이 교만해졌어요.",
-    "detail": "에돔의 중심은 오늘날 요르단 남부의 산악 지대였어요. 수도는 보스라였어요. 셀라는 에돔의 중요한 요새였고, 유다 왕 아마샤 때 이름이 나와요(왕하 14:7). 하나님은 그 높은 곳에서도 끌어내리겠다고 하세요(4절).",
-    "caution": "'바위 틈'을 도시 하나(셀라)로만 읽을 필요는 없어요. 산악 요새 전체를 가리켜요.",
-    "refs": [
-      "오바댜 1:3",
-      "오바댜 1:4",
-      "열왕기하 14:7"
-    ],
-    "category": "지역",
-    "lens": "",
-    "wcf": [],
-    "sourceLinks": [
-      {
-        "label": "Edom - Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Edom"
-      }
-    ]
-  },
-  {
-    "id": "context-oba-1-6",
-    "title": "에서와 에돔은 무슨 관계?",
-    "aliases": [
-      "에서"
-    ],
-    "locations": [
-      {
-        "code": "oba",
-        "chapter": 1,
-        "lo": 6,
-        "hi": 6,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "에서는 야곱의 쌍둥이 형이고 에돔 사람의 조상이에요. 그래서 에돔의 죄는 '형제를 해친 죄'가 돼요.",
-    "detail": "에서는 붉은 죽을 먹고 '에돔(붉다)'이라 불렸어요(창 25:30). 에서의 후손은 세일 산 지역에 자리 잡고 나라를 이루었어요(창 36:8). 오바댜는 에돔을 '에서'라고 불러서, 두 형제 사이의 오래된 다툼을 떠올리게 해요.",
-    "caution": "이 예언은 에돔 나라가 받을 심판을 말해요. 에서 한 사람의 구원 문제를 말하는 것이 아니에요.",
-    "refs": [
-      "오바댜 1:6",
-      "창세기 25:30",
-      "창세기 36:8"
-    ],
-    "category": "인물",
-    "lens": "",
-    "wcf": [],
-    "sourceLinks": [
-      {
-        "label": "Edom - Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Edom"
-      }
-    ]
-  },
-  {
     "id": "context-oba-1-7",
     "title": "약조한 동맹이 왜 배신했나?",
     "aliases": [
@@ -269336,80 +267945,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "category": "사건",
     "lens": "",
     "wcf": []
-  },
-  {
-    "id": "context-oba-1-9",
-    "title": "드만은 어디?",
-    "aliases": [
-      "드만",
-      "데만"
-    ],
-    "locations": [
-      {
-        "code": "oba",
-        "chapter": 1,
-        "lo": 9,
-        "hi": 9,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "데만은 에돔에서 지혜와 용사로 이름난 곳이에요. 그곳 용사들이 꺾이면 에돔의 힘이 모두 무너진다는 뜻이에요.",
-    "detail": "데만은 에서의 손자 이름이기도 하고(창 36:11), 에돔 지방 이름으로도 쓰였어요. 욥의 친구 엘리바스는 데만 사람이었어요(욥 2:11). 예레미야 49:7도 에돔의 지혜가 데만에서 사라졌다고 물으며 같은 그림을 써요.",
-    "caution": "데만이 정확히 어디인지는 학자마다 달라서 확실하지 않아요.",
-    "refs": [
-      "오바댜 1:9",
-      "창세기 36:11",
-      "욥기 2:11",
-      "오바댜 1:8"
-    ],
-    "category": "지역",
-    "lens": "",
-    "wcf": [],
-    "sourceLinks": [
-      {
-        "label": "Edom - Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Edom"
-      }
-    ]
-  },
-  {
-    "id": "context-oba-1-11",
-    "title": "왜 방관이 죄가 됐나?",
-    "aliases": [
-      "제비 뽑",
-      "제비를 뽑"
-    ],
-    "locations": [
-      {
-        "code": "oba",
-        "chapter": 1,
-        "lo": 11,
-        "hi": 11,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "에돔은 직접 싸우지 않았어도 예루살렘이 무너질 때 구경만 하고 약탈 쪽에 섰어요. 그래서 같은 심판을 받아요.",
-    "detail": "'그 날'은 주전 586년쯤 바벨론이 예루살렘을 무너뜨린 때로 읽는 견해가 많아요. 에돔은 유다의 형제 나라인데 이방인과 한 편이 되었어요. 시편 137:7에도 에돔이 '헐어 버리라'고 외쳤다고 나와요. 에돔이 약탈에 가담했을 수 있다고 보는 학자도 있어요.",
-    "caution": "에돔이 군사로 직접 나섰는지, 구경과 약탈 정도였는지는 해석이 갈려요.",
-    "refs": [
-      "오바댜 1:11",
-      "시편 137:7"
-    ],
-    "category": "사건",
-    "lens": "",
-    "wcf": [],
-    "sourceLinks": [
-      {
-        "label": "Edom - Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Edom"
-      }
-    ]
   },
   {
     "id": "context-oba-1-14",
@@ -295715,43 +294250,6 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "category": "사건",
     "lens": "",
     "wcf": []
-  },
-  {
-    "id": "context-2co-12-4",
-    "title": "낙원은 어떤 곳인가",
-    "aliases": [
-      "낙원으로 이끌려 가서"
-    ],
-    "locations": [
-      {
-        "code": "2co",
-        "chapter": 12,
-        "lo": 4,
-        "hi": 4,
-        "editions": [
-          "gae",
-          "easy"
-        ]
-      }
-    ],
-    "summary": "낙원은 하나님이 계신 곳을 가리키는 이름이에요. 바울은 셋째 하늘과 같은 곳으로 이끌려 가서 사람이 말할 수 없는 소리를 들었다고 해요.",
-    "detail": "예수님은 십자가의 강도에게 오늘 낙원에 있으리라 하셨어요(눅 23:43). 요한계시록 2:7은 하나님의 낙원에 있는 생명 나무를 말해요. 위키백과에 따르면 옛 그리스어 구약(칠십인역)은 창세기 2장의 동산을 '낙원'(파라데이소스)이라는 말로 옮겼어요. 바울은 자랑하지 않으려고 이 체험의 내용을 말하지 않아요.",
-    "caution": "낙원이 장소인지 상태인지, 셋째 하늘과 같은지는 확실하지 않아요.",
-    "refs": [
-      "고린도후서 12:4",
-      "고린도후서 12:2"
-    ],
-    "category": "지역",
-    "lens": "",
-    "wcf": [
-      32
-    ],
-    "sourceLinks": [
-      {
-        "label": "Wikipedia: Paradise",
-        "url": "https://en.wikipedia.org/wiki/Paradise"
-      }
-    ]
   }
 ]);
 
@@ -306199,4 +304697,1347 @@ window.ScriptureNotesData.contextualTerms.push(...[
         6
       ]
     }
+]);
+
+// 웹 확인 대체 주석: 금칙어가 걸린 출처를 빼고 성경 본문으로 다시 쓴 주석 (2026-11-14)
+window.ScriptureNotesData.contextualTerms.push(...
+[
+  {
+    "id": "context-gen-14-18",
+    "title": "살렘 왕 멜기세덱",
+    "aliases": [
+      "멜기세덱",
+      "지극히 높으신 하나님의 제사장"
+    ],
+    "locations": [
+      {
+        "code": "gen",
+        "chapter": 14,
+        "lo": 18,
+        "hi": 18,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "아브람을 맞이한 멜기세덱은 살렘 왕이면서 지극히 높으신 하나님의 제사장이었어요.",
+    "detail": "아브람은 조카 롯을 구하고 돌아오던 길이었어요(14:17). 그때 멜기세덱이 떡과 포도주를 가지고 나와 아브람을 맞았어요. 멜기세덱은 아브람에게 복을 빌어 주었고, 아브람은 얻은 것의 열에 하나를 그에게 주었어요(14:20). 제사장은 하나님 앞에서 사람을 대신해 드리는 사람이에요. 그런데 한 사람이 왕과 제사장 자리를 함께 가졌다는 점이 특별해요. 이 만남은 아브람이 하나님께 감사하는 마음을 보여 준 장면이에요.",
+    "caution": "창세기는 멜기세덱의 부모나 집안을 적지 않아요. 그래서 이 본문만으로는 그의 출신을 알 수 없어요.",
+    "refs": [
+      "창세기 14:17-20",
+      "시편 110:4",
+      "히브리서 7:1"
+    ],
+    "category": "본문 문맥",
+    "lens": "개혁주의는 멜기세덱을 하나님 앞에서 사람을 대신하는 제사장으로 보고, 이 자리가 나중에 오실 그리스도를 가리킨다고 읽어요.",
+    "wcf": [
+      8
+    ]
+  },
+  {
+    "id": "context-exo-2-10",
+    "title": "물에서 건진 아기 모세",
+    "aliases": [
+      "모세",
+      "물에서 건져내었음이라",
+      "바로의 딸"
+    ],
+    "locations": [
+      {
+        "code": "exo",
+        "chapter": 2,
+        "lo": 10,
+        "hi": 10,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "바로의 딸은 아기를 물에서 건져 냈다는 뜻으로 이름을 모세라고 지었어요.",
+    "detail": "아기는 상자에 담겨 나일 강가 갈대 사이에 놓여 있었어요(2:3). 바로의 딸이 그 상자를 열어 보고 아기를 불쌍히 여겼어요. 그녀는 아기를 자기 아들로 삼았어요(2:5-10). 성경은 이름을 붙인 이유를 이렇게 적어요. 공주가 아기를 물에서 건져냈기 때문이에요. 모세는 자라서 자기 형제들, 곧 히브리 사람들을 찾아갔어요(2:11).",
+    "caution": "2:10은 이름을 붙인 이유만 말해요. 모세가 어른이 되어 한 일은 2:11부터 나와요.",
+    "refs": [
+      "출애굽기 2:1-10",
+      "출애굽기 2:11-12"
+    ],
+    "category": "본문 문맥",
+    "lens": "개혁주의는 아기가 물에서 건져져 자란 일을 하나님이 모든 일을 이끄셔서 자기 백성을 지키신 일로 읽어요.",
+    "wcf": [
+      5
+    ]
+  },
+  {
+    "id": "context-exo-20-2",
+    "title": "십계명 앞의 구원 말씀",
+    "aliases": [
+      "종 되었던 집",
+      "종살이하던"
+    ],
+    "locations": [
+      {
+        "code": "exo",
+        "chapter": 20,
+        "lo": 2,
+        "hi": 2,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "십계명은 하나님이 종살이하던 백성을 건져 내셨다는 말로 시작해요.",
+    "detail": "하나님은 명령을 하시기 전에 먼저 자기가 누구이고 무엇을 하셨는지 말씀하셨어요. 이스라엘 백성은 애굽 땅에서 남의 밑에서 자유 없이 일하는 종살이를 했어요. 하나님이 그들을 그곳에서 이끌어 내셨어요(20:2). 그다음에 나 외에는 다른 신들을 두지 말라는 첫 계명이 나와요(20:3). 그러니 계명은 건져 주신 분이 주시는 말씀이라는 순서로 읽혀요. 출애굽기 13:3도 종 되었던 집에서 나온 날을 기념하라고 말해요.",
+    "caution": "20:2는 계명 본문이 아니라 계명 앞에 붙은 머리말이에요. 그래서 이 구절만 보고 계명의 내용을 판단하지는 않아요.",
+    "refs": [
+      "출애굽기 13:3",
+      "출애굽기 20:1-3"
+    ],
+    "category": "본문 문맥",
+    "lens": "개혁주의는 하나님이 먼저 건져 주셨기 때문에 계명을 지키는 것이 감사의 열매라고 가르쳐요.",
+    "wcf": [
+      7,
+      19
+    ]
+  },
+  {
+    "id": "context-gen-9-22",
+    "title": "취한 노아를 본 함",
+    "aliases": [
+      "가나안의 아버지 함",
+      "하체를 보고"
+    ],
+    "locations": [
+      {
+        "code": "gen",
+        "chapter": 9,
+        "lo": 22,
+        "hi": 22,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "노아가 술에 취해 누워 있을 때 함이 그 모습을 보고 형제들에게 알렸어요.",
+    "detail": "노아는 홍수가 끝난 뒤 포도나무를 심었어요(9:20). 포도주를 마시고 취해 장막 안에서 옷을 벗은 채 누웠어요(9:21). 함은 그 모습을 보고 밖으로 나가 두 형제에게 알렸어요(9:22). 셈과 야벳은 옷을 가져다 어깨에 메고 뒷걸음쳐 들어가 아버지를 덮었어요. 그들은 얼굴을 돌려 아버지를 보지 않았어요(9:23). 잠에서 깬 노아는 작은 아들이 한 일을 알고, 가나안이 형제들의 종이 될 것이라고 말했어요(9:24-25). 성경은 함을 가나안의 아버지로 소개해요(9:18).",
+    "caution": "성경은 함이 왜 그렇게 했는지 말하지 않아요. 본문에 없는 이유를 덧붙이지 않는 것이 좋아요.",
+    "refs": [
+      "창세기 9:18",
+      "창세기 9:20-25"
+    ],
+    "category": "본문 문맥",
+    "lens": "개혁주의는 노아의 취함과 함의 행동을 보며, 사람의 죄가 한 가정 안에서도 드러난다고 가르쳐요.",
+    "wcf": [
+      6
+    ]
+  },
+  {
+    "id": "context-gen-25-30",
+    "title": "붉은 죽과 에돔",
+    "aliases": [
+      "에돔",
+      "그 붉은 것을"
+    ],
+    "locations": [
+      {
+        "code": "gen",
+        "chapter": 25,
+        "lo": 30,
+        "hi": 30,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "에서는 배가 고파 야곱에게 붉은 것을 달라고 했고, 그래서 그의 별명이 에돔이 되었어요.",
+    "detail": "에서는 들에서 돌아와 몹시 피곤했어요(25:29). 그는 야곱이 끓인 붉은 것을 달라고 했어요(25:30). 야곱은 맏아들이 받는 권리와 몫, 곧 장자의 명분을 팔라고 했어요(25:31). 에서는 죽게 되었으니 명분이 무슨 소용이냐며 맹세하고 팔았어요(25:32-33). 야곱은 떡과 팥죽을 주었고, 에서는 먹고 떠났어요(25:34). 이 일 전에 하나님은 두 민족이 나뉘고 큰 자가 어린 자를 섬긴다고 말씀하셨어요(25:23).",
+    "caution": "야곱이 이 일을 이용한 마음은 본문에서 따로 평가하지 않아요. 본문이 평가하는 것은 에서가 명분을 가볍게 여긴 점이에요(25:34).",
+    "refs": [
+      "창세기 25:23",
+      "창세기 25:29-34"
+    ],
+    "category": "본문 문맥",
+    "lens": "개혁주의는 하나님이 미리 말씀하신 뜻이 이루어졌다고 보면서도, 에서가 귀한 것을 가볍게 여긴 책임은 그에게 있다고 가르쳐요.",
+    "wcf": [
+      5,
+      6
+    ]
+  },
+  {
+    "id": "context-gen-27-40",
+    "title": "칼을 믿고 살 에서",
+    "aliases": [
+      "칼을 믿고",
+      "멍에",
+      "애쓰고 애쓰면"
+    ],
+    "locations": [
+      {
+        "code": "gen",
+        "chapter": 27,
+        "lo": 40,
+        "hi": 40,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "이삭은 에서가 칼을 믿고 살며 동생을 섬길 것이라고 말했어요. 매임을 벗을 때가 오면 멍에를 떨쳐 버릴 것이라고 덧붙였어요.",
+    "detail": "야곱이 아버지를 속여 축복을 받은 뒤(27:35), 에서가 울며 축복을 구했어요(27:38). 이삭은 야곱을 이미 주로 세웠으니 더 해 줄 것이 없다고 말했어요(27:37). 그래도 에서에게 축복을 해 주었어요. 살 곳은 땅의 기름짐과 하늘 이슬에서 멀고, 칼을 믿고 살며, 동생을 섬길 것이라고 했어요(27:39-40). 이 말은 큰 자가 어린 자를 섬긴다는 앞의 말씀(25:23)과 이어져요. 나중에 에돔은 다윗 때 이스라엘 아래 놓였어요(사무엘하 8:14). 그러나 여호람 때 에돔은 유다를 배반했어요(열왕기하 8:20-22).",
+    "caution": "매임을 벗을 때가 언제인지 본문은 말하지 않아요. 그래서 뒤에 나오는 역사 기록과 함께 읽는 것이 좋아요.",
+    "refs": [
+      "창세기 25:23",
+      "창세기 27:39-40",
+      "사무엘하 8:14",
+      "열왕기하 8:20-22"
+    ],
+    "category": "본문 문맥",
+    "lens": "개혁주의는 이 축복이 하나님이 미리 정하신 뜻대로 이루어졌다고 보면서도, 야곱이 속인 일은 옳지 않았다고 가르쳐요.",
+    "wcf": [
+      5
+    ]
+  },
+  {
+    "id": "context-lev-18-21",
+    "title": "몰렉에게 자녀를 바치지 말라",
+    "aliases": [
+      "몰렉에게 주어 불로 통과하게",
+      "몰렉에게 제물로 바치지",
+      "몰렉"
+    ],
+    "locations": [
+      {
+        "code": "lev",
+        "chapter": 18,
+        "lo": 21,
+        "hi": 21,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "하나님은 자녀를 몰렉에게 주어 불 가운데로 지나가게 하지 말라고 명하셨어요.",
+    "detail": "레위기 18장은 이스라엘 백성이 따르지 말아야 할 일들을 여러 가지 적은 곳이에요. 하나님은 18:3에서 애굽 땅과 가나안 땅의 풍속을 따르지 말라고 하셨어요. 18:21은 그 금지 목록 가운데 나와요. 몰렉은 사람들이 자녀를 바치며 섬긴 신으로 나와요(20:5). 하나님은 이 일이 당신의 이름을 욕되게 한다고 말씀하셨어요. 20:2-5에서는 이 일을 하는 사람은 죽여야 하고, 그 집안까지 벌을 받는다고 하셨어요.",
+    "caution": "18:21만 보면 몰렉이 어떤 신인지 자세히 알기 어려워요. 20장과 함께 읽는 것이 좋아요.",
+    "refs": [
+      "레위기 18:3",
+      "레위기 18:21",
+      "레위기 20:2-5"
+    ],
+    "category": "본문 문맥",
+    "lens": "개혁주의는 자녀를 몰렉에게 바치는 일이 하나님 외의 것을 섬기는 죄이며 하나님의 이름을 욕되게 한다고 가르쳐요.",
+    "wcf": [
+      19,
+      21
+    ]
+  },
+  {
+    "id": "context-1sa-3-1",
+    "title": "드물었던 하나님의 말씀",
+    "aliases": [
+      "이상이 흔히 보이지 않았더라",
+      "직접 말씀하시는 일이 거의 없었습니다",
+      "엘리 앞에서"
+    ],
+    "locations": [
+      {
+        "code": "1sa",
+        "chapter": 3,
+        "lo": 1,
+        "hi": 1,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "사무엘이 엘리 밑에서 자랄 때는 하나님이 사람에게 직접 말씀하시는 일이 드물었어요.",
+    "detail": "사무엘은 어린 나이에 엘리 앞에서 하나님을 섬겼어요(3:1). 엘리는 눈이 어두워져 잘 보지 못했어요(3:2). 궤는 상자를 말하고, 성막은 하나님을 예배하던 장막이에요. 사무엘이 성막에서 자고 있을 때 하나님이 그를 세 번 부르셨어요(3:4-8). 엘리는 그것이 하나님의 부르심이라는 것을 알려 주었어요(3:9). 하나님은 엘리 집안이 벌을 받을 것을 사무엘에게 말씀하셨어요(3:11-14). 엘리가 자기 아들들의 잘못을 막지 않았기 때문이에요(3:13).",
+    "caution": "드물었다는 말이 하나님이 아예 말씀하지 않으셨다는 뜻은 아니에요. 바로 뒤에서 하나님이 사무엘을 부르셨어요.",
+    "refs": [
+      "사무엘상 3:1-10",
+      "사무엘상 3:11-14"
+    ],
+    "category": "본문 문맥",
+    "lens": "개혁주의는 하나님이 말씀하시는 때와 방법을 하나님이 정하신다고 보고, 말씀이 드문 때에도 하나님은 뜻대로 사람을 부르신다고 가르쳐요.",
+    "wcf": [
+      1
+    ]
+  },
+  {
+    "id": "context-pro-8-22",
+    "title": "태초부터 계셨던 지혜",
+    "aliases": [
+      "태초에 일하시기 전에 나를 가지셨으며",
+      "태초에 나를 가지고 계셨다"
+    ],
+    "locations": [
+      {
+        "code": "pro",
+        "chapter": 8,
+        "lo": 22,
+        "hi": 22,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "잠언 8장의 지혜는 하나님이 일을 시작하기 전부터 있었다고 말해요.",
+    "detail": "잠언은 지혜를 사람처럼 말하게 해요. 지혜는 길가와 성문에서 사람들을 부르며 말해요(8:1-4). 22절에서 지혜는 하나님이 일을 시작하시기 전에 자기를 가지셨다고 말해요. 23절은 땅이 생기기 전부터 자기가 세움을 받았다고 덧붙여요. 한 말이 어렵지만, 지혜가 세상보다 먼저 있었다는 뜻으로 읽혀요.",
+    "caution": "지혜가 누구인지는 해석이 갈려요. 하나님의 지혜 그 자체로 보는 견해와 그리스도로 보는 견해가 있어요.",
+    "refs": [
+      "잠언 8:1-4",
+      "잠언 8:22-23",
+      "요한복음 1:1"
+    ],
+    "category": "본문 문맥",
+    "lens": "개혁주의는 이 지혜를 세상을 지을 때부터 하나님과 함께 계신 그리스도로 읽는 경우가 많다고 가르쳐요.",
+    "wcf": [
+      2,
+      8
+    ]
+  },
+  {
+    "id": "context-pro-15-11",
+    "title": "드러나는 스올과 아바돈",
+    "aliases": [
+      "스올과 아바돈도",
+      "하물며 사람의 마음이리요"
+    ],
+    "locations": [
+      {
+        "code": "pro",
+        "chapter": 15,
+        "lo": 11,
+        "hi": 11,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "스올과 아바돈도 하나님 앞에 드러나니, 사람의 마음은 더욱 드러나요.",
+    "detail": "스올은 죽은 사람이 있는 곳을 가리키는 말로 쓰여요(잠언 15:24). 아바돈은 스올과 짝을 이루어 쓰이는 말이에요(잠언 27:20). 잠언 15장은 하나님이 어디에서나 사람을 살피신다고 말해요(15:3). 그 말씀에 이어 죽은 자들이 가는 곳까지 하나님 앞에 드러난다고 하니, 사람의 마음은 더욱 드러난다는 뜻이에요(15:11). 사람은 남에게 마음을 숨길 수 있어도 하나님께는 숨길 수 없어요.",
+    "caution": "이 구절은 하나님이 모든 것을 아신다는 가르침이에요. 죽은 뒤의 모습은 이 구절에서 자세히 말하지 않아요.",
+    "refs": [
+      "잠언 15:3",
+      "잠언 15:11",
+      "잠언 27:20"
+    ],
+    "category": "본문 문맥",
+    "lens": "개혁주의는 하나님이 사람의 마음까지 모두 아신다고 보고, 이 앎이 사람을 정직하게 살도록 이끈다고 가르쳐요.",
+    "wcf": [
+      2
+    ]
+  },
+  {
+    "id": "context-2ch-21-11",
+    "title": "산당을 세우고 백성을 잘못 이끎",
+    "aliases": [
+      "여러 산에 산당을 세워",
+      "헛된 신들을 섬기는 산당"
+    ],
+    "locations": [
+      {
+        "code": "2ch",
+        "chapter": 21,
+        "lo": 11,
+        "hi": 11,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "여호람은 유다의 여러 산에 산당을 세웠어요. 그래서 예루살렘 백성도 하나님을 떠나 죄를 짓게 되었어요.",
+    "detail": "여호람은 여호사밧의 아들이었어요(21:1). 그는 형제들을 칼로 죽이고 왕의 자리를 굳혔어요(21:4). 그는 이스라엘 왕들처럼 살았어요. 아합의 딸을 아내로 맞았기 때문에 아합의 집을 따라 하게 되었어요(21:6). 여호람은 유다의 언덕들 위에 헛된 신들을 섬기는 산당을 세웠어요(21:11). 산당은 산 위에 세운 제사 드리는 곳이에요. 본문의 '음행'은 하나님을 떠나 다른 신을 따르는 일을 뜻해요. 같은 때 에돔과 립나도 여호람에게서 떨어져 나갔어요(21:8-10). 선지자 엘리야는 편지를 보내 이 일을 꾸짖었어요(21:12-13).",
+    "caution": "",
+    "refs": [
+      "역대하 21:4",
+      "역대하 21:6",
+      "역대하 21:8-10",
+      "역대하 21:11",
+      "역대하 21:12-13"
+    ],
+    "category": "본문 문맥",
+    "lens": "하나님만 섬겨야 하는데 다른 신을 섬기면 큰 죄가 되고, 지도자가 앞장서 그렇게 하면 백성도 함께 무너진다고 가르쳐요.",
+    "wcf": [
+      2,
+      6,
+      21
+    ]
+  },
+  {
+    "id": "context-2ch-28-3",
+    "title": "힌놈 골짜기에서 자녀를 불사름",
+    "aliases": [
+      "그의 자녀들을 불사르고",
+      "불에 태워 제물로 바쳤습니다"
+    ],
+    "locations": [
+      {
+        "code": "2ch",
+        "chapter": 28,
+        "lo": 3,
+        "hi": 3,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "아하스는 힌놈의 아들 골짜기에서 향을 피우고, 자녀를 불에 태워 바쳤어요. 다윗처럼 살지 않고 우상을 섬긴 왕이었어요.",
+    "detail": "아하스는 스무 살에 왕이 되어 예루살렘에서 열여섯 해를 다스렸어요(28:1). 그는 다윗처럼 살지 않았어요. 이스라엘 왕들의 길을 따라 바알 우상을 만들었어요(28:1-2). 그는 힌놈의 아들 골짜기에서 향을 피웠어요. 자기 자녀를 불에 태워 제물로 바치기도 했어요(28:3). 하나님이 이스라엘 앞에서 쫓아내신 다른 나라 사람들의 역겨운 일을 그대로 따라 했어요(28:3). 산당과 푸른 나무 아래에서도 제사를 드렸어요(28:4).",
+    "caution": "본문은 아하스가 왜 이런 일을 했는지는 따로 말하지 않아요. 그가 한 일만 전해요.",
+    "refs": [
+      "역대하 28:1-4"
+    ],
+    "category": "본문 문맥",
+    "lens": "하나님이 정하신 방식으로만 예배해야 하고, 사람이 만든 방식이나 다른 신을 섬기는 것은 큰 죄라고 가르쳐요.",
+    "wcf": [
+      19,
+      21
+    ]
+  },
+  {
+    "id": "context-jas-3-6",
+    "title": "혀는 불",
+    "aliases": [
+      "혀는 곧 불이요",
+      "혀도 곧 불입니다"
+    ],
+    "locations": [
+      {
+        "code": "jas",
+        "chapter": 3,
+        "lo": 6,
+        "hi": 6,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "이 본문은 혀를 불에 비유해요. 작은 혀가 큰 해를 끼칠 수 있다는 뜻이에요.",
+    "detail": "혀는 몸에서 작은 부분이지만 큰 일을 자랑해요(3:5). 작은 불이 많은 나무를 태우듯, 혀도 몸을 더럽히고 삶 전체를 불태울 수 있어요(3:5-6). 본문은 이 불이 지옥 불에서 나온다고 해요(3:6). 사람은 짐승, 새, 물고기를 길들일 수 있어요(3:7). 그러나 혀는 아무도 길들이지 못해요. 악하고 죽이는 독이 가득하다고 해요(3:8).",
+    "caution": "",
+    "refs": [
+      "야고보서 3:5-8"
+    ],
+    "category": "본문 문맥",
+    "lens": "혀의 죄는 사람 마음이 죄로 물들어 있다는 증거이며, 혀를 다스리는 힘은 하나님의 도움에서 온다고 가르쳐요.",
+    "wcf": [
+      6,
+      13
+    ]
+  },
+  {
+    "id": "context-act-24-27",
+    "title": "두 해 뒤 바뀐 총독",
+    "aliases": [
+      "보르기오 베스도가 벨릭스의 소임을 이어받으니",
+      "벨릭스의 후임으로 총독이 되었습니다"
+    ],
+    "locations": [
+      {
+        "code": "act",
+        "chapter": 24,
+        "lo": 27,
+        "hi": 27,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "두 해가 지나자 보르기오 베스도가 벨릭스의 자리를 이어받았어요. 벨릭스는 바울을 그대로 가두어 두었어요.",
+    "detail": "바울은 가이사랴에 갇혀 있었어요(24:1, 25:4). 벨릭스는 바울을 자주 불러 이야기를 나눴어요. 바울에게 돈을 받을 수 있을까 기대했기 때문이에요(24:26). 바울은 정의와 절제, 장차 올 심판을 말했고, 벨릭스는 두려워했어요(24:25). 그래도 벨릭스는 바울을 풀어 주지 않았어요. 유대인들의 마음을 얻으려고 바울을 그대로 가두어 두었어요(24:27). 벨릭스는 바울에게 어느 정도 자유를 주고, 친구들이 돌보는 것도 막지 말라고 했어요(24:23).",
+    "caution": "",
+    "refs": [
+      "사도행전 24:1",
+      "사도행전 24:23-27",
+      "사도행전 25:4"
+    ],
+    "category": "본문 문맥",
+    "lens": "하나님은 높은 자리에 있는 사람들의 잘못까지도 다스리셔서 자기 뜻을 이루신다고 가르쳐요.",
+    "wcf": [
+      5,
+      23
+    ]
+  },
+  {
+    "id": "context-1th-2-19",
+    "title": "소망과 기쁨과 자랑의 면류관",
+    "aliases": [
+      "자랑의 면류관이 무엇이냐",
+      "여러분은 우리의 소망이요, 기쁨이요, 면류관입니다"
+    ],
+    "locations": [
+      {
+        "code": "1th",
+        "chapter": 2,
+        "lo": 19,
+        "hi": 19,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "바울은 자기가 가르친 교인들을 자기의 소망이고 기쁨이며 자랑의 면류관이라고 말해요. 주 예수께서 다시 오시는 날, 바울이 그들을 자랑스러워한다는 뜻이에요.",
+    "detail": "바울은 교인들이 자기 말을 사람의 말이 아닌 하나님의 말씀으로 받았다고 해요(2:13). 그는 교인들을 찾아가려고 여러 번 마음먹었지만, 사탄이 막았다고 말해요(2:17-18). 잠시 떨어져 있었지만 마음은 떠나지 않았다는 뜻이에요(2:17). 그래서 교인들은 바울에게 소망이고 기쁨이며 면류관이에요(2:19). 면류관은 머리에 쓰는 관이에요. 여기서는 상이나 영광을 뜻해요. 바울은 교인들이 바로 자기의 영광이고 기쁨이라고 덧붙여요(2:20).",
+    "caution": "",
+    "refs": [
+      "데살로니가전서 2:1-2",
+      "데살로니가전서 2:13",
+      "데살로니가전서 2:17-20"
+    ],
+    "category": "본문 문맥",
+    "lens": "사람을 세우는 열매는 사람이 잘해서 맺는 것이 아니라 하나님이 맡기신 일이며, 주님이 오시는 날 드러난다고 가르쳐요.",
+    "wcf": [
+      25,
+      26
+    ]
+  },
+  {
+    "id": "context-rev-1-9",
+    "title": "환난과 참음에 함께한 요한",
+    "aliases": [
+      "나 요한은 너희 형제요",
+      "그리스도 안에서 형제된 요한입니다"
+    ],
+    "locations": [
+      {
+        "code": "rev",
+        "chapter": 1,
+        "lo": 9,
+        "hi": 9,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "요한은 교인들과 고난과 나라와 인내를 함께 나눈다고 말해요. 그도 하나님의 말씀과 예수를 전한 일로 밧모 섬에 있었어요.",
+    "detail": "요한은 자기를 형제라고 불러요. 예수님 안에서 같은 자리에 선 사람이라는 뜻이에요(1:9). 그는 환난(힘든 일과 고난), 나라, 참음을 예수님과 함께 나눈다고 해요(1:9). 요한이 밧모라는 섬에 있었던 이유는 하나님의 말씀과 예수를 증언했기 때문이에요(1:9). 그곳에서 주의 날에 큰 음성을 들었어요(1:10). 그 음성은 요한이 본 것을 일곱 교회에 보내라고 했어요(1:11).",
+    "caution": "",
+    "refs": [
+      "요한계시록 1:8-11"
+    ],
+    "category": "본문 문맥",
+    "lens": "믿는 사람은 고난도 예수님 안에서 함께 나누며, 어려울 때에도 하나님의 말씀을 증언해야 한다고 가르쳐요.",
+    "wcf": [
+      1,
+      25
+    ]
+  },
+  {
+    "id": "context-rev-13-1",
+    "title": "바다에서 올라온 짐승",
+    "aliases": [
+      "바다에서 한 짐승이 나오는데",
+      "뿔이 열이고 머리가 일곱이었는데"
+    ],
+    "locations": [
+      {
+        "code": "rev",
+        "chapter": 13,
+        "lo": 1,
+        "hi": 1,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "요한은 바다에서 한 짐승이 올라오는 것을 보았어요. 그 짐승은 뿔이 열이고 머리가 일곱이었어요.",
+    "detail": "짐승의 머리마다 하나님을 욕보이는 이름이 쓰여 있었어요(13:1). 짐승은 표범 같고, 발은 곰 같고, 입은 사자 같았어요(13:2). 용이 짐승에게 자기의 힘과 보좌와 큰 권세를 주었어요(13:2). 짐승의 머리 하나가 상처를 입었다가 나았고, 사람들은 놀라며 짐승을 따랐어요(13:3). 사람들은 용과 짐승에게 절하며 누가 이 짐승과 같으냐고 말했어요(13:4).",
+    "caution": "짐승이 누구를 가리키는지는 본문이 이름으로 밝히지 않아요. 그래서 특정 사람이나 나라를 단정하지 않는 것이 좋아요.",
+    "refs": [
+      "요한계시록 13:1-4"
+    ],
+    "category": "본문 문맥",
+    "lens": "세상 권세가 잠시 힘을 얻는 것처럼 보여도, 하나님이 모든 것을 다스리신다고 가르쳐요.",
+    "wcf": [
+      5,
+      33
+    ]
+  },
+  {
+    "id": "context-rev-13-18",
+    "title": "육백육십육이라는 수",
+    "aliases": [
+      "그것은 사람의 수니",
+      "그 숫자는 사람의 숫자이며"
+    ],
+    "locations": [
+      {
+        "code": "rev",
+        "chapter": 13,
+        "lo": 18,
+        "hi": 18,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "요한은 짐승의 수가 육백육십육이라고 적었어요. 이 수는 사람의 수라고 말해요.",
+    "detail": "본문은 지혜가 있고 총명한 사람이 짐승의 수를 세어 보라고 해요(13:18). 그 수는 사람의 수이며, 육백육십육이라고 해요(13:18). 이 짐승은 앞에서 본 바다에서 올라온 짐승과 이어져 있어요(13:1). 본문은 이 수를 더 풀어 주지 않아요. 그래서 분명히 말하는 것은 짐승과 이어진 사람의 수라는 점과, 지혜로 생각해 보라는 점이에요.",
+    "caution": "666이 누구를 가리키는지는 본문만으로 확정하기 어려워요. 여러 해석이 있으니, 특정 사람이나 단체를 찍어 말하지 않는 것이 좋아요.",
+    "refs": [
+      "요한계시록 13:1",
+      "요한계시록 13:18"
+    ],
+    "category": "본문 문맥",
+    "lens": "세상 권세가 하나님을 대신하려 할 때에도, 성도는 하나님께만 충성해야 한다고 가르쳐요.",
+    "wcf": [
+      1,
+      33
+    ]
+  },
+  {
+    "id": "context-rev-16-12",
+    "title": "여섯째 대접과 동방 왕들의 길",
+    "aliases": [
+      "동방에서 오는 왕들의 길이 예비되었더라",
+      "동방의 왕들이 쳐들어올 수 있는 길이 열렸습니다"
+    ],
+    "locations": [
+      {
+        "code": "rev",
+        "chapter": 16,
+        "lo": 12,
+        "hi": 12,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "여섯째 천사가 대접을 큰 강 유브라데에 쏟자, 강물이 말라 동방의 왕들이 지나갈 길이 열렸어요.",
+    "detail": "여섯째 천사가 자기 대접을 큰 강 유브라데에 쏟았어요(16:12). 강물이 말라서 동방에서 오는 왕들이 지나갈 길이 열렸어요(16:12). 세 더러운 영이 용의 입과 짐승의 입과 거짓 선지자의 입에서 나와, 왕들을 모았어요(16:13-14). 그 모임은 하나님의 큰 날에 있을 전쟁을 위한 것이에요(16:14). 본문은 그 곳을 히브리어로 아마겟돈이라 한다고 해요(16:16). 예수님은 도둑같이 오신다며 깨어 옷을 지키라고 하셨어요(16:15).",
+    "caution": "유브라데 강과 아마겟돈이 실제로 어디를 가리키는지는 본문이 자세히 말하지 않아요. 이 장면을 언제 일어날 일로 볼지는 해석이 갈려요.",
+    "refs": [
+      "요한계시록 16:12-16"
+    ],
+    "category": "본문 문맥",
+    "lens": "하나님은 악한 세력이 모여도 모든 것을 다스리셔서 결국 자기 뜻을 이루신다고 가르쳐요.",
+    "wcf": [
+      5,
+      33
+    ]
+  },
+  {
+    "id": "context-rev-17-8",
+    "title": "전에 있다가 없고 다시 올라올 짐승",
+    "aliases": [
+      "장차 무저갱으로부터 올라와",
+      "끝없는 구덩이에서 올라왔다가"
+    ],
+    "locations": [
+      {
+        "code": "rev",
+        "chapter": 17,
+        "lo": 8,
+        "hi": 8,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "천사는 요한이 본 짐승이 전에 있었다가 지금은 없고, 장차 구덩이에서 올라와 멸망한다고 말해요.",
+    "detail": "천사는 요한에게 짐승의 비밀을 알려 주겠다고 했어요(17:7). 짐승은 전에 있었다가 지금은 없어요(17:8). 그러나 장차 끝없는 구덩이(무저갱)에서 올라와요(17:8). 결국 멸망으로 들어가요(17:8). 생명책에 이름이 없는 땅의 사람들은 이 짐승을 보고 놀랄 거예요(17:8). 1:8에서 하나님은 이제도 있고 전에도 있었고 장차 올 자라고 불리셨어요. 17:8의 짐승 설명은 이와 비슷한 말로 쓰여 있어요.",
+    "caution": "짐승이 하나님을 흉내 낸다고 보는 해석이 있어요. 그렇지만 본문이 그렇게 직접 말하지는 않아요.",
+    "refs": [
+      "요한계시록 1:8",
+      "요한계시록 17:7-8"
+    ],
+    "category": "본문 문맥",
+    "lens": "악한 세력이 하나님을 흉내 내도 결국 멸망하고, 처음과 마지막이신 하나님만 영원하시다고 가르쳐요.",
+    "wcf": [
+      5,
+      33
+    ]
+  },
+  {
+    "id": "context-lev-20-2",
+    "title": "몰렉에게 자식을 바치면 안 되는 까닭",
+    "aliases": [
+      "몰렉",
+      "몰렉에게 주면"
+    ],
+    "locations": [
+      {
+        "code": "lev",
+        "chapter": 20,
+        "lo": 2,
+        "hi": 2,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "몰렉에게 자식을 바치는 일은 하나님이 엄하게 막으신 일이에요. 이 일을 한 사람은 돌로 쳐 죽여야 했어요.",
+    "detail": "레위기 20장은 하나님이 모세에게 하신 말씀이에요. 이스라엘 자손뿐 아니라 그 땅에 함께 사는 외국인도 이 법을 지켜야 했어요. 자식을 몰렉에게 주는 사람은 그 땅 사람들이 돌로 쳐 죽이라고 하셨어요(2절). 하나님은 이 일이 자신의 거룩한 곳을 더럽히고 거룩한 이름을 욕되게 한다고 말씀하셨어요(3절). 그 사람을 못 본 체하고 벌하지 않는 사람도 같은 벌을 받는다고 하셨어요(4-5절).",
+    "caution": "몰렉이 어떤 존재였는지는 이 본문에 자세히 나오지 않아요. 본문은 자식을 바치는 일을 막는 데 초점이 있어요.",
+    "refs": [
+      "레위기 20:2-5",
+      "레위기 18:21"
+    ],
+    "category": "인물",
+    "lens": "하나님 말고 다른 것을 섬기는 일은 죄이고, 사람의 자녀까지 그것에 바치는 일은 더욱 무서운 죄라는 뜻이에요.",
+    "wcf": [
+      6,
+      19,
+      21
+    ]
+  },
+  {
+    "id": "context-act-23-26",
+    "title": "총독 벨릭스는 어떤 사람인가요",
+    "aliases": [
+      "총독 벨릭스"
+    ],
+    "locations": [
+      {
+        "code": "act",
+        "chapter": 23,
+        "lo": 26,
+        "hi": 26,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "벨릭스는 가이사랴에서 바울 사건을 맡은 총독이에요. 천부장 루시아가 바울을 그에게 보내면서 편지를 함께 썼어요.",
+    "detail": "총독은 나라 일을 맡아 다스리는 높은 관리예요. 천부장(군대 대장) 루시아는 바울이 유대 사람들에게 잡혀 죽게 된 것을 보고 군인들을 이끌고 구해 냈어요. 바울이 로마 사람인 것을 알고 밤에 가이사랴로 보냈어요(23-24절). 보낼 때 보병 200명, 기병 70명, 창병 200명을 붙였어요(23절). 루시아는 편지에 바울에게 죽을 죄나 결박할 까닭이 없다고 적었어요(29절). 벨릭스는 바울을 헤롯 궁에 지키게 하고, 고발하는 사람들이 오면 들어 보겠다고 했어요(35절).",
+    "caution": "벨릭스가 어떤 집안에서 자랐는지는 본문에 나오지 않아요. 여기서는 바울 사건과 관련된 일만 보면 돼요.",
+    "refs": [
+      "사도행전 23:26-27",
+      "사도행전 23:33-35"
+    ],
+    "category": "인물",
+    "lens": "하나님은 높은 자리에 있는 사람들까지 쓰셔서 바울을 지키시고, 좋은 소식이 계속 전해지게 하셨다는 뜻이에요.",
+    "wcf": [
+      23
+    ]
+  },
+  {
+    "id": "context-act-24-1",
+    "title": "변호사 더둘로는 누구인가요",
+    "aliases": [
+      "더둘로",
+      "변호사 더둘로"
+    ],
+    "locations": [
+      {
+        "code": "act",
+        "chapter": 24,
+        "lo": 1,
+        "hi": 1,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "더둘로는 대제사장 아나니아와 함께 온 변호사예요. 닷새 뒤 가이사랴에서 바울을 고발했어요.",
+    "detail": "변호사는 재판에서 다른 사람의 말을 대신 해 주는 사람이에요. 닷새 뒤 대제사장 아나니아가 몇몇 장로(백성의 어른들)와 더둘로를 데리고 가이사랴로 내려왔어요(1절). 더둘로는 총독 벨릭스 앞에서 바울을 고발했어요. 먼저 벨릭스를 높이고 칭찬하는 말을 했어요(2-3절). 그다음 바울을 사람들을 소동하게 하는 자라고 몰아갔고, 성전을 더럽히려 했다고도 했어요(5-6절).",
+    "caution": "본문에 나오는 더둘로의 말은 고발하는 쪽의 주장이에요. 더둘로 개인의 집안 이야기는 본문에 없어요.",
+    "refs": [
+      "사도행전 24:1-3",
+      "사도행전 24:5-6"
+    ],
+    "category": "인물",
+    "lens": "사람을 칭찬으로 꾀어 진실과 다른 말을 하는 것은 죄이고, 하나님은 그런 일을 모두 아신다는 뜻이에요.",
+    "wcf": [
+      6,
+      23
+    ]
+  },
+  {
+    "id": "context-act-24-24",
+    "title": "드루실라는 어떤 사람인가요",
+    "aliases": [
+      "드루실라",
+      "유대 여자 드루실라"
+    ],
+    "locations": [
+      {
+        "code": "act",
+        "chapter": 24,
+        "lo": 24,
+        "hi": 24,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "드루실라는 벨릭스의 아내이고 유대 여자예요. 남편과 함께 바울의 말을 들었어요.",
+    "detail": "며칠 뒤 벨릭스는 아내 드루실라와 함께 와서 바울을 불렀어요(24절). 두 사람은 바울에게서 예수님을 믿는 것에 대해 들었어요. 바울이 옳고 바르게 사는 것, 자기 마음과 몸을 잘 다스리는 것, 앞으로 올 심판을 말하자 벨릭스는 두려워했어요(25절). 벨릭스는 지금은 그만 가라고 하면서, 시간이 나면 다시 부르겠다고 했어요.",
+    "caution": "드루실라가 무슨 말을 했는지는 본문에 나오지 않아요. 드루실라 개인의 다른 이야기도 본문에 없어요.",
+    "refs": [
+      "사도행전 24:24-25",
+      "사도행전 24:22"
+    ],
+    "category": "인물",
+    "lens": "예수님을 믿는 말씀은 높은 사람이든 낮은 사람이든 모두가 들어야 하고, 마음을 돌이키는 일은 하나님이 일하셔야 가능하다는 뜻이에요.",
+    "wcf": [
+      14,
+      15
+    ]
+  },
+  {
+    "id": "context-act-24-26",
+    "title": "벨릭스가 바울을 오래 둔 까닭",
+    "aliases": [
+      "돈을 받을까 바라는 고로",
+      "바울에게서 돈을 받을까"
+    ],
+    "locations": [
+      {
+        "code": "act",
+        "chapter": 24,
+        "lo": 26,
+        "hi": 26,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "벨릭스는 바울에게서 돈을 받을 수 있을까 기대했어요. 그래서 바울을 자주 불러 이야기를 나눴어요.",
+    "detail": "벨릭스는 바울 사건을 바로 판단하지 않고 미뤘어요(22절). 바울을 어느 정도 자유롭게 두면서도 풀어 주지는 않았어요(23절). 본문은 벨릭스가 바울에게서 돈을 받을 기대를 가졌다고 말해요(26절). 그래서 바울을 여러 번 불러 이야기를 나눴어요. 두 해가 지나 보르기오 베스도가 벨릭스의 자리를 이어받았을 때도, 벨릭스는 유대 사람들의 마음을 얻으려고 바울을 그대로 가두어 두었어요(27절).",
+    "caution": "벨릭스가 실제로 돈을 받았는지는 본문에 나오지 않아요. 본문은 그런 기대가 있었다는 것만 말해요.",
+    "refs": [
+      "사도행전 24:22-23",
+      "사도행전 24:26-27"
+    ],
+    "category": "행동",
+    "lens": "돈이나 이익을 바라며 옳은 일을 미루는 것은 죄이고, 사람의 속마음까지 하나님은 다 아신다는 뜻이에요.",
+    "wcf": [
+      6,
+      23
+    ]
+  },
+  {
+    "id": "context-mat-21-1",
+    "title": "벳바게는 어디인가요",
+    "aliases": [
+      "벳바게",
+      "감람 산"
+    ],
+    "locations": [
+      {
+        "code": "mat",
+        "chapter": 21,
+        "lo": 1,
+        "hi": 1,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "벳바게는 감람 산 가까이에 있는 곳이에요. 예수님은 여기서 제자 둘을 보내셨어요.",
+    "detail": "예수님과 제자들이 예루살렘 가까이 와서 감람 산의 벳바게에 이르셨어요(1절). 예수님은 제자 둘에게 맞은편 마을로 가서 나귀와 나귀 새끼를 끌고 오라고 하셨어요(2절). 이 일은 선지자(하나님의 말을 전하는 사람)를 통해 하신 말씀을 이루려는 것이었어요. 그 말씀은 겸손한 왕이 나귀를 타고 오신다는 내용이에요(4-5절). 제자들이 그대로 하자 예수님은 나귀를 타고 가셨어요(6-7절).",
+    "caution": "벳바게가 정확히 어디인지는 본문에 자세히 나오지 않아요. 본문에서는 감람 산 가까이에 있는 곳이라는 것만 알 수 있어요.",
+    "refs": [
+      "마태복음 21:1-2",
+      "마태복음 21:4-7",
+      "사도행전 1:12"
+    ],
+    "category": "지역",
+    "lens": "예수님은 하나님이 미리 하신 말씀대로 오셔서 그 말씀을 이루셨다는 뜻이에요.",
+    "wcf": [
+      1,
+      8
+    ]
+  },
+  {
+    "id": "context-mat-24-3",
+    "title": "예수님이 감람 산에 앉으셨을 때",
+    "aliases": [
+      "감람 산 위에",
+      "올리브 산 위에"
+    ],
+    "locations": [
+      {
+        "code": "mat",
+        "chapter": 24,
+        "lo": 3,
+        "hi": 3,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "예수님은 성전이 무너진다고 말씀하신 뒤 감람 산 위에 앉으셨어요. 제자들은 그곳에서 조용히 세상 끝에 대해 물었어요.",
+    "detail": "예수님은 성전 건물을 가리키는 제자들에게 돌 하나도 남지 않고 무너진다고 말씀하셨어요(1-2절). 예수님이 감람 산 위에 앉으셨을 때, 제자들이 조용히 와서 언제 그런 일이 생길지 물었어요. 또 주님이 다시 오실 때와 세상 끝에 어떤 징조가 있을지도 물었어요(3절). 예수님은 먼저 사람들에게 속지 말라고 답하셨어요. 많은 사람이 자기가 구원자라고 말하며 사람들을 속일 것이라고 하셨어요(4-5절).",
+    "caution": "본문은 예수님이 감람 산에 앉으셨다는 것만 말하고, 왜 그곳을 고르셨는지는 말하지 않아요. 제자들이 조용히 찾아와 물었다는 점만 읽을 수 있어요.",
+    "refs": [
+      "마태복음 24:1-3",
+      "마태복음 24:4-5"
+    ],
+    "category": "지역",
+    "lens": "세상 끝과 예수님이 다시 오시는 날은 하나님이 정하신 때에 이루어지니, 사람은 속지 말고 깨어 있어야 한다는 뜻이에요.",
+    "wcf": [
+      1,
+      33
+    ]
+  },
+  {
+    "id": "context-mat-26-36",
+    "title": "예수님이 기도하러 가신 겟세마네",
+    "aliases": [
+      "겟세마네",
+      "겟세마네라 하는 곳"
+    ],
+    "locations": [
+      {
+        "code": "mat",
+        "chapter": 26,
+        "lo": 36,
+        "hi": 36,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "겟세마네는 예수님이 제자들과 함께 기도하러 가신 곳이에요. 십자가를 앞둔 기도가 여기서 드려졌어요.",
+    "detail": "예수님은 찬송을 부르고 감람 산으로 가신 뒤(30절) 제자들과 함께 겟세마네라는 곳에 이르셨어요(36절). 여기서 제자들에게 여기 앉아 있으라고 하시고, 저기 가서 기도하셨어요. 그 전에 예수님은 이틀 뒤 유월절에 자신이 팔려서 십자가에 못 박히게 된다고 미리 말씀하셨어요(2절). 대제사장들은 예수님을 잡아 죽이려고 모여 의논했어요(3-4절).",
+    "caution": "본문은 겟세마네가 감람 산에 있다고 직접 말하지 않아요. 30절에서 감람 산으로 간 뒤 36절에서 겟세마네에 이른 순서만 나와요.",
+    "refs": [
+      "마태복음 26:30-36",
+      "마태복음 26:2-4"
+    ],
+    "category": "지역",
+    "lens": "예수님은 십자가를 앞두고 기도하며 하나님의 뜻을 따르셨고, 그 길로 사람을 구원하셨다는 뜻이에요.",
+    "wcf": [
+      8
+    ]
+  },
+  {
+    "id": "context-luk-21-37",
+    "title": "예수님은 밤에 어디서 쉬셨나요",
+    "aliases": [
+      "감람원이라 하는 산",
+      "올리브라고 불리는 산"
+    ],
+    "locations": [
+      {
+        "code": "luk",
+        "chapter": 21,
+        "lo": 37,
+        "hi": 37,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "예수님은 낮에는 성전에서 가르치셨어요. 밤에는 감람원이라 하는 산으로 나가 지내셨어요.",
+    "detail": "37절은 예수님이 낮에는 성전에서 가르치시고, 밤에는 나가서 감람원이라 하는 산에서 쉬셨다고 말해요. 38절을 보면 모든 백성이 말씀을 들으려고 이른 아침에 성전으로 나아갔어요. 그래서 예수님은 낮에 성전에서 가르치는 일을 계속하셨어요. 누가복음 22:39는 예수님이 늘 하시던 대로 올리브 산으로 가셨다고 말해요.",
+    "caution": "본문은 밤에 밖에서 지내신 이유를 따로 말하지 않아요. 낮에 어디서 가르치셨고 밤에 어디서 쉬셨는지만 알려 줘요.",
+    "refs": [
+      "누가복음 21:37-38",
+      "누가복음 22:39"
+    ],
+    "category": "지역",
+    "lens": "예수님이 날마다 하나님의 말씀을 가르치신 것처럼, 성도도 날마다 말씀을 듣고 배워야 한다는 뜻이에요.",
+    "wcf": [
+      1
+    ]
+  },
+  {
+    "id": "context-luk-24-50",
+    "title": "베다니에서 제자들을 축복하신 일",
+    "aliases": [
+      "베다니"
+    ],
+    "locations": [
+      {
+        "code": "luk",
+        "chapter": 24,
+        "lo": 50,
+        "hi": 50,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "예수님은 제자들을 베다니 앞까지 데리고 가셔서 축복하셨어요. 그리고 제자들을 떠나 하늘로 올라가셨어요.",
+    "detail": "예수님은 제자들을 데리고 베다니 앞까지 나가셨어요(50절). 거기서 손을 들어 제자들을 축복하셨어요. 축복하시면서 제자들을 떠나 하늘로 올라가셨다고 나와요(51절). 누가복음 19:29에서는 베다니가 감람 산 쪽에 있는 마을이라고 말해요.",
+    "caution": "본문은 베다니가 어디쯤인지 더 자세히 알려 주지 않아요. 감람 산 쪽에 있다는 것만 함께 봐요.",
+    "refs": [
+      "누가복음 24:50-51",
+      "누가복음 19:29"
+    ],
+    "category": "지역",
+    "lens": "예수님은 하늘로 올라가셔서 높은 곳에서 다스리시고 제자들에게 복을 주시는 분이라는 뜻이에요.",
+    "wcf": [
+      8
+    ]
+  },
+  {
+    "id": "context-jhn-11-1",
+    "title": "베다니는 어떤 마을인가요?",
+    "aliases": [
+      "베다니"
+    ],
+    "locations": [
+      {
+        "code": "jhn",
+        "chapter": 11,
+        "lo": 1,
+        "hi": 1,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "베다니는 나사로와 두 누이 마리아, 마르다가 함께 살던 마을이에요. 나사로가 병들었다는 이야기도 이 마을에서 시작돼요.",
+    "detail": "요한복음 11장 1절은 나사로가 베다니 마을에 사는 사람이라고 알려 줘요. 나사로는 마리아와 마르다의 오빠예요. 2절은 마리아가 예수님께 향유를 붓고 머리털로 예수님의 발을 닦은 사람이라고 해요. 3절에서 두 누이는 예수님께 사람을 보내 예수님이 사랑하시는 사람이 병들었다고 알렸어요. 소식을 전해 와서 보아 달라고 부탁한 거예요. 요한복음 11장 18절은 베다니가 예루살렘에서 가까운 곳이라고 말해요. 요한복음 12장 1절에는 예수님이 유월절 엿새 전에 베다니에 오셨고, 그곳에 나사로가 있었다고 나와요.",
+    "caution": "",
+    "refs": [
+      "요한복음 11:1",
+      "요한복음 11:3",
+      "요한복음 11:18",
+      "요한복음 12:1"
+    ],
+    "category": "지역",
+    "lens": "나사로 가족의 이야기는 예수님이 병과 죽음을 이기시는 분이라는 사실을 보여 주므로, 우리도 어려울 때 주님께 알리고 기다리는 믿음을 배운다고 읽어요.",
+    "wcf": [
+      5,
+      8
+    ]
+  },
+  {
+    "id": "context-jhn-18-1",
+    "title": "기드론 시내와 동산은 어떤 곳인가요?",
+    "aliases": [
+      "기드론 시내 건너편",
+      "기드론 골짜기"
+    ],
+    "locations": [
+      {
+        "code": "jhn",
+        "chapter": 18,
+        "lo": 1,
+        "hi": 1,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "예수님은 제자들과 함께 기드론 시내 건너편에 있는 동산으로 가셨어요. 예수님은 이 동산에 가끔 제자들과 모이셨어요.",
+    "detail": "요한복음 18장 1절은 예수님이 앞의 말씀을 마치시고 제자들과 함께 기드론 시내 건너편으로 가셨다고 해요. 그곳에는 동산이 있었고, 예수님과 제자들이 그 안으로 들어가셨어요. 시내는 물이 흐르는 개울을 말해요. 2절은 이곳이 예수님이 제자들과 가끔 모이시던 곳이라고 알려 줘요. 그래서 예수님을 배반한 유다도 이곳을 알고 있었어요. 3절은 유다가 군대와 대제사장들과 바리새인들에게서 얻은 사람들을 데리고 등과 횃불과 무기를 들고 그리로 온다고 해요. 사무엘하 15장 23절에도 다윗 왕이 슬퍼하며 이 시내를 건너간 일이 나와요.",
+    "caution": "동산이 정확히 어디 있는지는 성경이 자세히 말하지 않아요. 그래서 위치를 정하기보다 예수님이 잡히시기 전에 제자들과 머무신 곳으로 읽는 것이 좋아요.",
+    "refs": [
+      "요한복음 18:1",
+      "요한복음 18:2",
+      "요한복음 18:3",
+      "사무엘하 15:23"
+    ],
+    "category": "지역",
+    "lens": "예수님은 자기가 가실 곳을 아시고 그 길로 가셨으므로, 우리를 살리시려는 뜻이 이 장면에서도 드러난다고 읽어요.",
+    "wcf": [
+      5,
+      8
+    ]
+  },
+  {
+    "id": "context-jud-1-14",
+    "title": "유다서가 말하는 에녹은 누구인가요?",
+    "aliases": [
+      "에녹"
+    ],
+    "locations": [
+      {
+        "code": "jud",
+        "chapter": 1,
+        "lo": 14,
+        "hi": 14,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "에녹은 아담부터 일곱째 자손이에요. 유다는 에녹이 사람들에 대해 미리 말했다고 전해요.",
+    "detail": "유다서 1장 14절은 아담부터 일곱째 자손인 에녹이 이런 사람들에 대해 말했다고 해요. 창세기 5장 18절과 24절은 에녹을 야렛의 아들로 적고, 에녹이 하나님과 함께 걸었다고 전해요. 하나님이 그를 데려가셔서 이 세상에 있지 않게 되었다고 해요. 히브리서 11장 5절은 에녹이 죽음을 보지 않고 하나님께 옮겨졌다고 말하고, 하나님을 기쁘시게 한 사람이라고 증언해요. 유다는 1장 4절에서 교회에 몰래 들어온 사람들이 있다고 말해요. 그래서 에녹의 말을 꺼내 그들이 받을 결과를 알려 줘요. 유다서 1장 15절은 주님이 모든 사람을 판단하러 오시고, 하나님을 공경하지 않은 사람들의 말과 행동을 밝히신다고 말해요.",
+    "caution": "유다가 이 말을 어디서 알았는지는 성경이 따로 밝히지 않아요. 창세기 5장에는 이 말이 나오지 않으니, 본문에 있는 내용만 확실하게 말할 수 있어요.",
+    "refs": [
+      "유다서 1:14",
+      "유다서 1:15",
+      "유다서 1:4",
+      "창세기 5:18",
+      "창세기 5:24",
+      "히브리서 11:5"
+    ],
+    "category": "인물",
+    "lens": "하나님이 다시 오셔서 모든 사람을 판단하신다는 말씀을 믿고, 그 뜻대로 하나님을 공경하며 살아야 한다고 읽어요.",
+    "wcf": [
+      1,
+      33
+    ]
+  },
+  {
+    "id": "context-amo-1-12",
+    "title": "보스라는 어떤 마을인가요?",
+    "aliases": [
+      "보스라"
+    ],
+    "locations": [
+      {
+        "code": "amo",
+        "chapter": 1,
+        "lo": 12,
+        "hi": 12,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "보스라는 에돔 땅에 있는 곳이에요. 하나님은 보스라의 궁궐에 불을 보내 태우겠다고 말씀하셨어요.",
+    "detail": "아모스 1장 12절에서 하나님은 데만에 불을 보내고, 보스라의 궁궐들을 태우겠다고 하세요. 궁궐은 왕이 사는 큰 집이에요. 바로 앞 11절은 에돔이 형제를 칼로 쫓고 불쌍히 여기지 않았다고 말해요. 그래서 12절의 벌은 에돔의 잘못과 이어져 있어요. 이사야 34장 6절은 보스라에 하나님께 드릴 제물이 있고, 에돔 땅에 큰 죽임이 있다고 말해요. 창세기 36장 33절에는 보스라 사람 세라의 아들 요밥이 왕이 되었다는 기록이 나와요.",
+    "caution": "보스라가 정확히 어디인지는 성경이 자세히 말하지 않아요. 그래서 땅의 위치를 정하기보다 에돔과 함께 나오는 곳으로 읽는 것이 좋아요.",
+    "refs": [
+      "아모스 1:12",
+      "아모스 1:11",
+      "이사야 34:6",
+      "창세기 36:33"
+    ],
+    "category": "지역",
+    "lens": "하나님은 나라와 사람이 지은 죄를 빠짐없이 아시고, 옳게 갚으신다고 읽어요.",
+    "wcf": [
+      5,
+      6
+    ]
+  },
+  {
+    "id": "context-mal-1-4",
+    "title": "에돔은 무너진 곳을 왜 다시 세우려 했나요?",
+    "aliases": [
+      "에돔"
+    ],
+    "locations": [
+      {
+        "code": "mal",
+        "chapter": 1,
+        "lo": 4,
+        "hi": 4,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "에돔 사람들은 무너진 땅을 다시 쌓겠다고 말했어요. 하나님은 그들이 쌓아도 다시 헐어 버리겠다고 하셨어요.",
+    "detail": "말라기 1장 4절에서 에돔은 자기들이 무너졌다고 말해요. 그래서 폐허가 된 곳을 다시 쌓겠다고 해요. 그러나 하나님은 그들이 쌓아도 헐어 버리시겠다고 하셔요. 사람들은 에돔을 악한 땅이라 부르고, 하나님이 영원히 화내신 백성이라고 부를 것이라고 하셔요. 말라기 1장 2절과 3절은 이 말씀의 이유를 알려 줘요. 하나님은 야곱을 사랑하셨고 에서는 미워하셨다고 해요. 창세기 25장 30절은 에서를 에돔이라고도 부른다고 적어요. 창세기 36장 9절은 에서가 에돔 사람들의 조상이라고 해요.",
+    "caution": "에돔이 다시 세우려 한 속마음은 성경이 자세히 말하지 않아요. 본문에서 확실한 것은 그들이 한 말과 하나님의 대답이에요.",
+    "refs": [
+      "말라기 1:4",
+      "말라기 1:2-3",
+      "창세기 25:30",
+      "창세기 36:9"
+    ],
+    "category": "사건",
+    "lens": "하나님은 뜻하신 대로 누구를 사랑하실지 정하시고, 사람의 계획이 하나님의 뜻을 꺾을 수 없다고 읽어요.",
+    "wcf": [
+      3,
+      5
+    ]
+  },
+  {
+    "id": "context-oba-1-3",
+    "title": "에돔은 왜 자기 땅이 안전하다고 믿었나요?",
+    "aliases": [
+      "바위 틈"
+    ],
+    "locations": [
+      {
+        "code": "oba",
+        "chapter": 1,
+        "lo": 3,
+        "hi": 3,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "에돔 사람들은 바위 틈과 높은 곳에 살았어요. 그래서 아무도 자기를 땅에 끌어내리지 못한다고 믿었어요.",
+    "detail": "오바댜 1장 3절은 에돔이 바위 틈에 살고 높은 곳에 집을 짓고 살았다고 말해요. 그리고 마음속으로 누가 나를 땅에 끌어내리겠느냐고 생각했어요. 하지만 하나님은 그 잘난 체하는 마음이 에돔을 속였다고 하셔요. 4절에서 하나님은 독수리처럼 높이 올라가 별 사이에 집을 짓더라도 거기서 끌어내리겠다고 하셔요. 예레미야 49장 16절도 같은 말을 해요. 높은 곳에 살아도 하나님 앞에서는 안전하지 않다는 뜻이에요.",
+    "caution": "바위 틈이 어떤 곳인지 성경은 더 자세히 말하지 않아요. 땅의 모양을 상상하기보다 에돔이 높은 곳에 살며 안전하다고 믿었다는 점을 읽으면 돼요.",
+    "refs": [
+      "오바댜 1:3",
+      "오바댜 1:4",
+      "예레미야 49:16"
+    ],
+    "category": "지역",
+    "lens": "사람이 높은 곳에 자리를 잡아도 하나님은 그를 낮추실 수 있으니, 자기 힘을 믿고 잘난 체하면 안 된다고 읽어요.",
+    "wcf": [
+      5,
+      6
+    ]
+  },
+  {
+    "id": "context-oba-1-6",
+    "title": "에서와 에돔은 무슨 관계인가요?",
+    "aliases": [
+      "에서"
+    ],
+    "locations": [
+      {
+        "code": "oba",
+        "chapter": 1,
+        "lo": 6,
+        "hi": 6,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "에서는 야곱의 형이고, 에돔 사람들의 조상이에요. 그래서 에돔과 야곱은 형제 사이예요.",
+    "detail": "말라기 1장 2절은 에서가 야곱의 형이라고 분명히 말해요. 창세기 25장 30절은 에서를 에돔이라고도 불렀다고 기록해요. 창세기 36장 9절은 에서가 세일 산에 사는 에돔 사람들의 조상이라고 해요. 그래서 오바댜는 에돔이 형제 야곱에게 사납게 굴었다고 말해요(오바댜 1:10). 오바댜 1장 6절은 에서의 숨긴 보물이 빼앗겼다고 말해요. 형제의 자손인 에돔 사람들이 빼앗기는 모습을 그린 말이에요.",
+    "caution": "에서는 한 사람이고, 에돔은 그 자손이 이룬 백성을 가리켜요. 두 이름을 나눠서 읽으면 헷갈리지 않아요.",
+    "refs": [
+      "오바댜 1:6",
+      "오바댜 1:10",
+      "말라기 1:2-3",
+      "창세기 25:30",
+      "창세기 36:9"
+    ],
+    "category": "인물",
+    "lens": "하나님이 야곱을 사랑하신 것은 야곱이 잘했기 때문이 아니라 하나님의 뜻이라고 읽어요.",
+    "wcf": [
+      3,
+      5
+    ]
+  },
+  {
+    "id": "context-oba-1-9",
+    "title": "데만은 어디인가요?",
+    "aliases": [
+      "드만",
+      "데만"
+    ],
+    "locations": [
+      {
+        "code": "oba",
+        "chapter": 1,
+        "lo": 9,
+        "hi": 9,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "데만은 에돔 땅에 있는 곳이에요. 오바댜는 이곳의 용사들도 겁을 먹을 것이라고 말해요.",
+    "detail": "오바댜 1장 9절은 데만의 용사들이 겁먹을 것이라고 말해요. 그리고 에서의 산에 사는 사람들이 모두 죽임을 당해 없어진다고 해요. 창세기 36장 11절에서 데만은 엘리바스의 아들 이름으로 나오고, 에돔 가문의 이름이기도 해요. 예레미야 49장 7절은 데만에 지혜가 없어졌느냐고 묻는 말이에요. 그곳이 지혜로 알려진 곳이었다는 뜻으로 읽을 수 있어요. 에스겔 25장 13절은 에돔에 내리는 벌이 데만에서부터 시작된다고 말해요.",
+    "caution": "데만이 정확히 어디인지는 성경이 자세히 말하지 않아요. 지혜와 용사에 대한 말은 예레미야서와 본문에 기대어 읽는 것이에요.",
+    "refs": [
+      "오바댜 1:9",
+      "창세기 36:11",
+      "예레미야 49:7",
+      "에스겔 25:13"
+    ],
+    "category": "지역",
+    "lens": "사람이 자랑하는 지혜와 힘도 하나님이 꺾으실 수 있으니, 사람의 힘을 믿지 말고 하나님께 맡겨야 한다고 읽어요.",
+    "wcf": [
+      5,
+      6
+    ]
+  },
+  {
+    "id": "context-oba-1-11",
+    "title": "에돔은 왜 벌을 받게 되었나요?",
+    "aliases": [
+      "제비 뽑",
+      "제비를 뽑"
+    ],
+    "locations": [
+      {
+        "code": "oba",
+        "chapter": 1,
+        "lo": 11,
+        "hi": 11,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "예루살렘이 빼앗기던 날 에돔은 멀리 서 있기만 했어요. 하나님은 그런 에돔을 빼앗는 사람들과 한패처럼 보셨어요.",
+    "detail": "오바댜 1장 11절은 외국인들이 예루살렘을 차지하려고 제비를 뽑던 날을 말해요. 제비를 뽑는다는 것은 뽑은 것으로 일을 정한다는 뜻이에요. 그날 에돔은 멀리 서 있었어요. 그런데도 하나님은 에돔을 그들 가운데 한 사람과 같다고 하셨어요. 10절은 에돔이 형제 야곱에게 사납게 굴었다고 말해요. 시편 137편 7절은 예루살렘이 무너지던 날 에돔 자손이 헐어라 헐어라 하고 외쳤다고 기록해요. 요엘 3장 3절도 제비를 뽑아 백성을 끌고 간다고 말해요.",
+    "caution": "제비를 어떻게 뽑았는지는 성경이 자세히 말하지 않아요. 여기서는 예루살렘을 차지하려고 일을 정했다는 뜻으로 읽으면 돼요.",
+    "refs": [
+      "오바댜 1:11",
+      "오바댜 1:10",
+      "시편 137:7",
+      "요엘 3:3",
+      "아모스 1:11"
+    ],
+    "category": "사건",
+    "lens": "형제가 어려울 때 돕지 않고 멀리서 지켜보기만 하는 것도 하나님 앞에서는 죄가 된다고 읽어요.",
+    "wcf": [
+      6,
+      19
+    ]
+  },
+  {
+    "id": "context-2co-12-4",
+    "title": "낙원은 어떤 곳인가요?",
+    "aliases": [
+      "낙원으로 이끌려 가서"
+    ],
+    "locations": [
+      {
+        "code": "2co",
+        "chapter": 12,
+        "lo": 4,
+        "hi": 4,
+        "editions": [
+          "gae",
+          "easy"
+        ]
+      }
+    ],
+    "summary": "낙원은 하나님과 함께 있는 자리예요. 바울은 어떤 사람이 낙원으로 이끌려 가서 말로 다 할 수 없는 말을 들었다고 전해요.",
+    "detail": "고린도후서 12장 2절에서 바울은 그리스도 안에 있는 한 사람이 14년 전에 셋째 하늘로 이끌려 갔다고 말해요. 4절은 그 사람이 낙원으로 이끌려 가서 사람이 말할 수 없는 말을 들었다고 해요. 1절에서 바울은 이 일을 자랑할 것이 못 된다고 하면서도 어쩔 수 없이 말한다고 해요. 5절에서 바울은 그 사람을 위해서는 자랑하겠지만 자기 자신은 약한 것 외에는 자랑하지 않겠다고 해요. 성경은 낙원을 하나님과 함께 있는 자리로 보여 줘요. 예수님은 한 사람에게 오늘 네가 나와 함께 낙원에 있으리라고 하셨어요(누가복음 23:43). 요한계시록 2장 7절은 하나님의 낙원에 있는 생명나무를 말해요.",
+    "caution": "바울은 그 사람이 몸 안에 있었는지 몸 밖에 있었는지 모른다고 해요(12:2-3). 낙원이 어디 있는지도 성경은 자세히 말하지 않아요. 그래서 위치를 따지기보다 하나님과 함께 있는 자리라는 뜻으로 읽으면 돼요.",
+    "refs": [
+      "고린도후서 12:2-4",
+      "고린도후서 12:1",
+      "고린도후서 12:5",
+      "누가복음 23:43",
+      "요한계시록 2:7"
+    ],
+    "category": "지역",
+    "lens": "낙원은 사람이 스스로 가서 알아낸 곳이 아니라 하나님이 말씀으로 알려 주신 만큼만 알 수 있다고 읽어요.",
+    "wcf": [
+      1,
+      32
+    ]
+  }
 ]);
