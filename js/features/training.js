@@ -13,6 +13,7 @@
   let inviteExpires = 0;
   let currentMaterial = null;
   let currentLesson = 0;
+  let viewRequest = 0;
   let progress = readProgress();
 
   if (inviteCode) {
@@ -42,6 +43,8 @@
   function message(text, error = false) { return `<p class="status${error ? " error" : ""}" role="status">${esc(text)}</p>`; }
 
   async function start() {
+    ++viewRequest;
+    currentMaterial = null;
     if (adminMode) return renderAdmin();
     if (deviceToken) {
       try {
@@ -86,14 +89,14 @@
     app.innerHTML = `<section class="card"><h2>승인 대기 중</h2>${message("관리자가 이 기기를 승인하면 자동으로 자료 목록이 열려요.")}<button class="btn secondary" id="check-now">승인 상태 확인</button></section>`;
     document.getElementById("check-now").addEventListener("click", checkStatus);
     clearInterval(pollTimer);
-    pollTimer = setInterval(checkStatus, 8000);
+    pollTimer = setInterval(checkStatus, 15000);
   }
 
   async function checkStatus() {
     if (!deviceToken) return;
     try { const data = await call("/training/status", { deviceToken }); if (data.status === "approved") renderLibrary(data.materials || []); }
     catch (error) {
-      if (error.data?.status === "revoked") { clearInterval(pollTimer); renderRequest("승인이 취소된 기기예요. 새 QR로 다시 요청해 주세요."); }
+      if (["revoked", "unregistered"].includes(error.data?.status)) start();
     }
   }
 
@@ -110,20 +113,32 @@
   }
 
   async function openMaterial(id) {
+    const requestId = ++viewRequest;
     app.innerHTML = `<section class="card">승인과 자료를 확인하고 있어요…</section>`;
     try {
-      currentMaterial = await call("/training/content", { deviceToken, item: id });
-      currentLesson = Math.min((progress[id] || []).length, lessons(currentMaterial.content).length - 1);
-      renderMaterial();
-    } catch (error) { app.innerHTML = `<section class="card"><h2>자료를 열지 못했어요</h2>${message(error.message, true)}<button class="btn secondary" id="back-library">목록으로</button></section>`; document.getElementById("back-library").addEventListener("click", start); }
+      const material = await call("/training/content", { deviceToken, item: id });
+      if (requestId !== viewRequest) return;
+      currentMaterial = material;
+      const next = material.sections.findIndex((_, i) => !(progress[id] || []).includes(i));
+      await openSection(next < 0 ? 0 : next);
+    } catch (error) { if (requestId === viewRequest) showReadError(error); }
   }
 
-  function lessons(markdown) {
-    const lines = String(markdown).replace(/\r/g, "").split("\n");
-    const starts = [];
-    lines.forEach((line, index) => { if (/^##\s+/.test(line)) starts.push(index); });
-    if (!starts.length) return [{ title: currentMaterial?.title || "자료", body: lines.join("\n") }];
-    return starts.map((start, index) => ({ title: lines[start].replace(/^##\s+/, "").trim(), body: lines.slice(start + 1, starts[index + 1] ?? lines.length).join("\n").trim() }));
+  async function openSection(index) {
+    const requestId = ++viewRequest;
+    app.innerHTML = '<section class="card" role="status">단원을 불러오는 중이에요…</section>';
+    try {
+      const section = await call("/training/content", { deviceToken, item: currentMaterial.id, section: index });
+      if (requestId !== viewRequest) return;
+      currentLesson = index;
+      renderMaterial(section.content);
+    } catch (error) { if (requestId === viewRequest) showReadError(error); }
+  }
+
+  function showReadError(error) {
+    currentMaterial = null;
+    app.innerHTML = `<section class="card"><h2>자료를 열지 못했어요</h2>${message(error.message, true)}<button class="btn secondary" id="back-library">목록으로</button></section>`;
+    document.getElementById("back-library").addEventListener("click", start);
   }
 
   function markdownHtml(markdown) {
@@ -146,17 +161,21 @@
     closePara(); closeList(); if (code) html += `<pre>${esc(codeLines.join("\n"))}</pre>`; return html;
   }
 
-  function renderMaterial() {
-    const units = lessons(currentMaterial.content);
-    currentLesson = Math.max(0, Math.min(currentLesson, units.length - 1));
+  function renderMaterial(content) {
+    const units = currentMaterial.sections;
     const done = new Set(progress[currentMaterial.id] || []);
-    const unit = units[currentLesson];
-    app.innerHTML = `<div class="topline"><a href="#" class="back" id="back-library">‹ 자료 목록</a><span class="muted small">${currentLesson + 1} / ${units.length} · 완료 ${done.size}</span></div><section class="card"><h2>${esc(currentMaterial.title)}</h2><div class="lesson-grid"><nav class="lesson-nav" aria-label="학습 단위">${units.map((u, i) => `<button class="btn${i === currentLesson ? " active" : ""}" data-lesson="${i}">${done.has(i) ? "✓ " : ""}${esc(u.title)}</button>`).join("")}</nav><article class="lesson-body"><h1>${esc(unit.title)}</h1>${markdownHtml(unit.body)}<div class="inline" style="margin-top:24px"><button class="btn" id="mark-done">${done.has(currentLesson) ? "완료했어요 ✓" : "이 단위 읽기 완료"}</button><button class="btn secondary" id="previous" ${currentLesson === 0 ? "disabled" : ""}>이전</button><button class="btn secondary" id="next" ${currentLesson === units.length - 1 ? "disabled" : ""}>다음</button></div></article></div></section>`;
+    app.innerHTML = `<div class="topline"><a href="#" class="back" id="back-library">‹ 자료 목록</a><span class="muted small">${currentLesson + 1} / ${units.length} · 완료 ${done.size}</span></div><section class="card"><h2>${esc(currentMaterial.title)}</h2><div class="lesson-grid"><nav class="lesson-nav" aria-label="학습 단위">${units.map((title, i) => `<button class="btn${i === currentLesson ? " active" : ""}" data-lesson="${i}">${done.has(i) ? "✓ " : ""}${esc(title)}</button>`).join("")}</nav><article class="lesson-body"><h1>${esc(units[currentLesson])}</h1>${markdownHtml(content)}<div class="inline" style="margin-top:24px"><button class="btn" id="mark-done">${done.has(currentLesson) ? "완료했어요 ✓" : "이 단위 읽기 완료"}</button><button class="btn secondary" id="previous" ${currentLesson === 0 ? "disabled" : ""}>이전</button><button class="btn secondary" id="next" ${currentLesson === units.length - 1 ? "disabled" : ""}>다음</button></div></article></div></section>`;
     document.getElementById("back-library").addEventListener("click", (e) => { e.preventDefault(); start(); });
-    app.querySelectorAll("[data-lesson]").forEach((button) => button.addEventListener("click", () => { currentLesson = Number(button.dataset.lesson); renderMaterial(); }));
-    document.getElementById("mark-done").addEventListener("click", (event) => { const list = new Set(progress[currentMaterial.id] || []); list.add(currentLesson); progress[currentMaterial.id] = [...list].sort((a, b) => a - b); saveProgress(); if (currentLesson < units.length - 1) currentLesson++; renderMaterial(); });
-    document.getElementById("previous").addEventListener("click", () => { currentLesson--; renderMaterial(); });
-    document.getElementById("next").addEventListener("click", () => { currentLesson++; renderMaterial(); });
+    app.querySelectorAll("[data-lesson]").forEach((button) => button.addEventListener("click", () => openSection(Number(button.dataset.lesson))));
+    document.getElementById("mark-done").addEventListener("click", () => {
+      done.add(currentLesson);
+      progress[currentMaterial.id] = [...done].sort((a, b) => a - b);
+      saveProgress();
+      if (currentLesson < units.length - 1) openSection(currentLesson + 1);
+      else renderMaterial(content);
+    });
+    document.getElementById("previous").addEventListener("click", () => openSection(currentLesson - 1));
+    document.getElementById("next").addEventListener("click", () => openSection(currentLesson + 1));
   }
 
   function renderAdmin() {
@@ -176,9 +195,11 @@
       const link = `${location.origin}${location.pathname}#invite=${data.code}`;
       const box = document.getElementById("qr-box");
       try {
-        await loadQrLibrary(); const qr = qrcode(0, "M"); qr.addData(link); qr.make(); box.innerHTML = qr.createSvgTag({ cellSize: 5, margin: 2, scalable: true }); box.hidden = false;
+        const qr = qrcode(0, "M"); qr.addData(link); qr.make(); box.innerHTML = qr.createSvgTag({ cellSize: 5, margin: 2, scalable: true }); box.hidden = false;
       } catch { box.hidden = false; box.textContent = "QR 라이브러리를 불러오지 못했어요."; }
-      document.getElementById("invite-countdown").innerHTML = `만료 시각 ${esc(dateLabel(data.expires))} · 남은 시간 5:00<br><input aria-label="훈련생 QR 접속 주소" readonly value="${esc(link)}" style="width:min(100%,520px);margin-top:8px;padding:8px;border:1px solid var(--line);border-radius:8px">`;
+      document.getElementById("invite-countdown").innerHTML = '<span></span><br><input aria-label="훈련생 QR 접속 주소" readonly style="width:min(100%,520px);margin-top:8px;padding:8px;border:1px solid var(--line);border-radius:8px">';
+      document.querySelector("#invite-countdown input").value = link;
+      updateCountdown();
       clearInterval(adminTimer); adminTimer = setInterval(updateCountdown, 1000);
     } catch (error) { showAdminError(error); }
     finally { button.disabled = false; }
@@ -186,7 +207,7 @@
 
   function updateCountdown() {
     const seconds = Math.max(0, Math.ceil((inviteExpires - Date.now()) / 1000));
-    const label = document.getElementById("invite-countdown"); if (!label) return clearInterval(adminTimer);
+    const label = document.querySelector("#invite-countdown span"); if (!label) return clearInterval(adminTimer);
     label.textContent = seconds ? `만료 시각 ${dateLabel(inviteExpires)} · 남은 시간 ${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, "0")}` : "QR이 만료됐어요. 새 QR을 만들어 주세요.";
     if (!seconds) { clearInterval(adminTimer); createInvite(); }
   }
@@ -197,22 +218,30 @@
     if (!data.readers.length) { target.innerHTML = `<p class="muted">아직 접근 요청이 없어요.</p>`; return; }
     target.innerHTML = `<ul class="reader-list">${data.readers.map((reader) => {
       const status = { pending: "승인 대기", approved: "승인됨", revoked: "권한 회수" }[reader.status] || reader.status;
-      const action = reader.status === "pending" ? `<button class="btn" data-action="approve" data-id="${reader.id}">승인</button>` : reader.status === "approved" ? `<button class="btn danger" data-action="revoke" data-id="${reader.id}">권한 회수</button>` : `<button class="btn secondary" data-action="remove" data-id="${reader.id}">기록 삭제</button>`;
-      return `<li class="row"><div><p><b>${esc(reader.label)}</b> <span class="label ${reader.status}">${status}</span></p><p class="muted small">요청 ${dateLabel(reader.requestedAt)}${reader.approvedAt ? ` · 승인 ${dateLabel(reader.approvedAt)}` : ""}</p></div><div class="row-actions">${action}</div></li>`;
+      const choices = reader.status === "revoked" ? "" : `<fieldset><legend>열람 허용 자료</legend>${data.materials.map((item) =>
+        `<label><input type="checkbox" name="material" value="${esc(item.id)}" ${reader.materials.includes(item.id) ? "checked" : ""}> ${esc(item.title)}</label><br>`).join("")}</fieldset>`;
+      const id = esc(reader.id);
+      const action = reader.status === "pending"
+        ? `<button class="btn" data-action="approve" data-id="${id}">승인</button>`
+        : reader.status === "approved"
+          ? `<button class="btn secondary" data-action="scope" data-id="${id}">범위 저장</button><button class="btn danger" data-action="revoke" data-id="${id}">권한 회수</button>`
+          : "";
+      const remove = reader.status !== "approved" ? `<button class="btn secondary" data-action="remove" data-id="${id}">기록 삭제</button>` : "";
+      return `<li class="row"><div><p><b>${esc(reader.label)}</b> <span class="label ${reader.status}">${status}</span></p><p class="muted small">요청 ${dateLabel(reader.requestedAt)}${reader.approvedAt ? ` · 승인 ${dateLabel(reader.approvedAt)}` : ""}</p>${choices}</div><div class="row-actions">${action}${remove}</div></li>`;
     }).join("")}</ul>`;
   }
 
   async function handleReaderAction(event) {
     const button = event.target.closest("[data-action]"); if (!button) return;
-    const action = button.dataset.action; const path = { approve: "approve", revoke: "revoke", remove: "remove" }[action];
+    const action = button.dataset.action;
     if (action === "revoke" && !confirm("이 기기의 훈련 자료 접근 권한을 회수할까요?")) return;
     button.disabled = true;
-    try { await call(`/account/training/${path}`, { deviceId: button.dataset.id }, { admin: true }); await loadReaders(); }
+    const materials = [...button.closest("li").querySelectorAll('[name="material"]:checked')].map((input) => input.value);
+    try { await call(`/account/training/${action}`, { deviceId: button.dataset.id, materials }, { admin: true }); await loadReaders(); }
     catch (error) { showAdminError(error); button.disabled = false; }
   }
 
   function showAdminError(error) { const status = document.getElementById("admin-status"); if (status) status.innerHTML = message(error.message, true); else app.insertAdjacentHTML("afterbegin", message(error.message, true)); }
-  function loadQrLibrary() { return new Promise((resolve, reject) => { if (window.qrcode) return resolve(); const script = document.createElement("script"); script.src = "https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"; script.onload = resolve; script.onerror = reject; document.head.append(script); }); }
 
   if (adminMode) {
     try {
@@ -224,7 +253,10 @@
 
   document.addEventListener("visibilitychange", () => {
     if (!document.hidden && !adminMode && deviceToken && currentMaterial) {
-      call("/training/status", { deviceToken }).then((data) => { if (data.status !== "approved") start(); }).catch(() => start());
+      const item = currentMaterial.id;
+      call("/training/status", { deviceToken }).then((data) => {
+        if (currentMaterial?.id === item && !data.materials?.some(({ id }) => id === item)) start();
+      }).catch(() => { if (currentMaterial?.id === item) start(); });
     }
   });
 })();

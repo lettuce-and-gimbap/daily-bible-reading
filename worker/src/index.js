@@ -8,7 +8,7 @@ import { dailySummary } from "./summary.js";
 import { account, REMINDER_MESSAGES_API_VERSION } from "./account.js";
 import { planNote } from "./plan.js";
 import { scriptureChapter } from "./scripture.js";
-import { trainingPublic } from "./training.js";
+import { trainingPublic, trainingRateAllowed } from "./training.js";
 
 const ALLOWED_ORIGINS = [
   "https://lettuce-and-gimbap.github.io",
@@ -30,8 +30,18 @@ export default {
 
     if (request.method === "OPTIONS") return new Response(null, { headers: cors });
     const { pathname } = new URL(request.url);
+    const isTraining = /^\/(?:account\/)?training\//.test(pathname);
 
     try {
+      if (isTraining) {
+        if (origin && !ALLOWED_ORIGINS.includes(origin)) return json({ error: "지원하지 않는 접속 주소예요" }, 403);
+        const ip = request.headers.get("CF-Connecting-IP") || "local";
+        // Allow shared church Wi-Fi while keeping per-device and QR caps below.
+        const group = pathname.startsWith("/account/") ? "admin" : pathname === "/training/status" ? "status" : "reader";
+        if (!await trainingRateAllowed(env, `ip:${ip}:${group}`)) {
+          return json({ error: "요청이 많아요. 잠시 후 다시 시도해 주세요" }, 429);
+        }
+      }
       if (pathname === "/vapid") return json({ publicKey: env.VAPID_PUBLIC_KEY });
       if (pathname === "/reminder-capabilities" && request.method === "GET") {
         return json({ reminderMessagesApiVersion: REMINDER_MESSAGES_API_VERSION, reminderArtwork: true });
@@ -108,6 +118,7 @@ export default {
       }
       return json({ error: "not found" }, 404);
     } catch (e) {
+      if (isTraining) return json({ error: "자료실을 잠시 열 수 없어요. 다시 시도해 주세요." }, 503);
       return json({ error: String(e && e.message || e) }, 400);
     }
   },

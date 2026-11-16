@@ -4,7 +4,7 @@
 // - 연결 코드(QR): 로그인한 기기가 10분짜리 일회용 코드를 만들면 새 기기는 비밀번호 없이 그 코드로 로그인
 
 import { feedback } from './feedback.js';
-import { trainingAdmin } from './training.js';
+import { readTrainingBody, trainingAdmin, TRAINING_ADMIN_ID } from './training.js';
 
 const ID_RE = /^[a-z0-9_]{3,20}$/;
 const MAX_DATA_BYTES = 4_000_000; // UTF-8 JSON 4MB per account
@@ -19,12 +19,22 @@ const FAIL_LIMIT = 8, FAIL_LOCK_MS = 15 * 60 * 1000;
 
 export async function account(pathname, request, env, json) {
   const db = env.DB;
-  const body = request.method === "GET" ? {} : await request.json().catch(() => ({}));
   const now = Date.now();
+  if (pathname.startsWith("/account/training/")) {
+    const token = (request.headers.get("Authorization") || "").match(/^Bearer ([a-f0-9]{64})$/i)?.[1];
+    const session = token && await db.prepare("SELECT user_id FROM sessions WHERE token_hash = ?").bind(await sha(token)).first();
+    if (!session) return json({ error: "로그인이 필요해요" }, 401);
+    if (session.user_id !== TRAINING_ADMIN_ID) return json({ error: "관리자만 사용할 수 있어요" }, 403);
+    const body = await readTrainingBody(request);
+    if (!body) return json({ error: "요청 형식 또는 크기가 올바르지 않아요" }, 400);
+    return trainingAdmin(pathname, request, env, json, session.user_id, body, now);
+  }
+  const body = request.method === "GET" ? {} : await request.json().catch(() => ({}));
 
   if (pathname === "/account/signup") {
     const id = String(body.id || "").trim().toLowerCase(), pw = String(body.pw || "");
     if (!ID_RE.test(id)) return json({ error: "아이디는 영어 소문자·숫자·_ 로 3~20자예요" }, 400);
+    if (ADMIN_IDS.has(id)) return json({ error: "사용할 수 없는 아이디예요" }, 409);
     if (pw.length < 6) return json({ error: "비밀번호는 6자 이상으로 해 주세요" }, 400);
     if (await db.prepare("SELECT 1 FROM users WHERE id = ?").bind(id).first()) return json({ error: "이미 있는 아이디예요" }, 409);
     const salt = hex(crypto.getRandomValues(new Uint8Array(16)));
@@ -48,9 +58,8 @@ export async function account(pathname, request, env, json) {
 
   if (pathname === "/account/claim") { // 연결 코드로 로그인
     const code = String(body.code || "").trim().toUpperCase();
-    const link = await db.prepare("SELECT user_id, expires FROM links WHERE code = ?").bind(code).first();
-    await db.prepare("DELETE FROM links WHERE code = ? OR expires < ?").bind(code, now).run();
-    if (!link || link.expires < now) return json({ error: "코드가 없거나 시간이 지났어요. 새로 만들어 주세요" }, 404);
+    const link = await db.prepare("DELETE FROM links WHERE code = ? AND expires > ? RETURNING user_id").bind(code, now).first();
+    if (!link) return json({ error: "코드가 없거나 시간이 지났어요. 새로 만들어 주세요" }, 404);
     return json({ id: link.user_id, token: await newSession(db, link.user_id, now) });
   }
 
@@ -60,7 +69,6 @@ export async function account(pathname, request, env, json) {
   if (!session) return json({ error: "로그인이 필요해요" }, 401);
   const uid = session.user_id;
   if (now - session.last > 3600_000) await db.prepare("UPDATE sessions SET last = ? WHERE token_hash = ?").bind(now, await sha(token)).run();
-  if (pathname.startsWith("/account/training/")) return trainingAdmin(pathname, request, env, json, uid, body, now);
   if (["/account/admin/reminder-messages", "/account/admin/reminder-art"].includes(pathname)) {
     if (!ADMIN_IDS.has(String(uid).toLowerCase())) return json({ error: "관리자만 수정할 수 있어요" }, 403);
     if (request.method === "GET") {
@@ -124,7 +132,10 @@ export async function account(pathname, request, env, json) {
   }
   if (pathname === "/account/link") {
     const code = linkCode();
-    await db.prepare("INSERT INTO links (code, user_id, expires) VALUES (?, ?, ?)").bind(code, uid, now + LINK_MS).run();
+    await db.batch([
+      db.prepare("DELETE FROM links WHERE expires <= ?").bind(now),
+      db.prepare("INSERT INTO links (code, user_id, expires) VALUES (?, ?, ?)").bind(code, uid, now + LINK_MS),
+    ]);
     return json({ code, expires: now + LINK_MS });
   }
   if (pathname === "/account/logout") {

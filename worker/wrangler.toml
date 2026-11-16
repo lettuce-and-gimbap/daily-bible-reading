@@ -1,6 +1,12 @@
 name = "daily-bible-reminder"
 main = "src/index.js"
 compatibility_date = "2026-09-01"
+preview_urls = false
+
+[[ratelimits]]
+name = "TRAINING_LIMIT"
+namespace_id = "9041"
+simple = { limit = 120, period = 60 }
 
 # 5분마다 확인하고, 구독별 지역 시간 오전 7시~자정 전 하루 7칸 중 지금 칸이면 알림을 보냄
 [triggers]

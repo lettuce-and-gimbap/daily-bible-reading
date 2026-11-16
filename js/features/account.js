@@ -254,7 +254,7 @@ async function showLinkQr(box) {
   const url = `${location.origin}${location.pathname}#link=${code}`;
   let svg = "";
   try {
-    await loadScriptOnce("https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js");
+    await loadScriptOnce("js/vendor/qrcode-generator-1.4.4.js");
     const qr = qrcode(0, "M");
     qr.addData(url);
     qr.make();
