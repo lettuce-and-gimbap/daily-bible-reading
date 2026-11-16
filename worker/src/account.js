@@ -4,6 +4,7 @@
 // - 연결 코드(QR): 로그인한 기기가 10분짜리 일회용 코드를 만들면 새 기기는 비밀번호 없이 그 코드로 로그인
 
 import { feedback } from './feedback.js';
+import { trainingAdmin } from './training.js';
 
 const ID_RE = /^[a-z0-9_]{3,20}$/;
 const MAX_DATA_BYTES = 4_000_000; // UTF-8 JSON 4MB per account
@@ -59,6 +60,7 @@ export async function account(pathname, request, env, json) {
   if (!session) return json({ error: "로그인이 필요해요" }, 401);
   const uid = session.user_id;
   if (now - session.last > 3600_000) await db.prepare("UPDATE sessions SET last = ? WHERE token_hash = ?").bind(now, await sha(token)).run();
+  if (pathname.startsWith("/account/training/")) return trainingAdmin(pathname, request, env, json, uid, body, now);
   if (["/account/admin/reminder-messages", "/account/admin/reminder-art"].includes(pathname)) {
     if (!ADMIN_IDS.has(String(uid).toLowerCase())) return json({ error: "관리자만 수정할 수 있어요" }, 403);
     if (request.method === "GET") {

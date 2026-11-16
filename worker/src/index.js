@@ -8,6 +8,7 @@ import { dailySummary } from "./summary.js";
 import { account, REMINDER_MESSAGES_API_VERSION } from "./account.js";
 import { planNote } from "./plan.js";
 import { scriptureChapter } from "./scripture.js";
+import { trainingPublic } from "./training.js";
 
 const ALLOWED_ORIGINS = [
   "https://lettuce-and-gimbap.github.io",
@@ -25,7 +26,7 @@ export default {
       Vary: "Origin",
     };
     const json = (data, status = 200) =>
-      new Response(JSON.stringify(data), { status, headers: { ...cors, "content-type": "application/json" } });
+      new Response(JSON.stringify(data), { status, headers: { ...cors, "content-type": "application/json", "cache-control": "no-store" } });
 
     if (request.method === "OPTIONS") return new Response(null, { headers: cors });
     const { pathname } = new URL(request.url);
@@ -56,6 +57,7 @@ export default {
         });
       }
       if (pathname === "/plan") return await planNote(request, env, json);
+      if (pathname.startsWith("/training/")) return await trainingPublic(pathname, request, env, json);
       if (pathname === "/scripture") return await scriptureChapter(request, env, json, cors);
       if (pathname === "/bible") return await bibleChapter(new URL(request.url).searchParams, cors, json);
       if (pathname === "/qt") return await qtPassage(new URL(request.url).searchParams, json);
