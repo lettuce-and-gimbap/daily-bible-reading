@@ -1,14 +1,26 @@
 const BANKS = { westminster: 1, discipleship: 2 };
 const TYPES = new Set(["choice", "short", "written"]);
 
-function shuffle(values) {
+function shuffle(values, random = Math.random) {
   const result = [...values];
   for (let i = result.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
+    const j = Math.floor(random() * (i + 1));
     [result[i], result[j]] = [result[j], result[i]];
   }
   return result;
 }
+
+function seededRandom(seed) {
+  let state = seed >>> 0;
+  return () => {
+    state = (Math.imul(state, 1664525) + 1013904223) >>> 0;
+    return state / 4294967296;
+  };
+}
+
+const semesterOf = ({ item, section }) => item === "discipleship"
+  ? Number(section.match(/^([12])학기 /u)?.[1]) || null
+  : null;
 
 async function allowedBanks(env, mask, item) {
   const names = Object.keys(BANKS).filter((name) => (mask & BANKS[name]) && (!item || item === name));
@@ -29,38 +41,39 @@ function unitLists(questions) {
   return [...lists.values()];
 }
 
-// Mix units before repeating one, rotate consecutive rounds through the unit list,
-// and prefer the least-used available type at each draw.
+// A filter has a complete cycle so successive rounds can cover every eligible
+// item. Interleave courses and semesters, then add one item from each unit.
 export function practiceRound(questions, rotation = 0, size = 10) {
+  if (!questions.length) return [];
+  const rounds = Math.ceil(questions.length / size);
+  const cycle = Math.floor(rotation / rounds);
+  const start = (rotation % rounds) * size;
+  const random = seededRandom(cycle + 1);
   const tracks = [[], [], []];
   for (const unit of unitLists(questions)) {
-    const { item, section } = unit[0];
-    const track = item === "westminster" ? 0 : section.startsWith("2학기") ? 2 : 1;
-    tracks[track].push(shuffle(unit));
+    const track = semesterOf(unit[0]) || 0;
+    tracks[track].push(shuffle(unit, random));
   }
   const units = [];
   for (let i = 0; i < Math.max(...tracks.map((track) => track.length)); i++) {
     for (const track of tracks) if (track[i]) units.push(track[i]);
   }
-  if (!units.length) return [];
-  const offset = (rotation * size) % units.length;
   const counts = { choice: 0, short: 0, written: 0 };
-  const ordered = units.slice(offset).concat(units.slice(0, offset));
   const selected = [];
   let drawn;
   do {
     drawn = false;
-    for (const unit of ordered) {
+    for (const unit of units) {
       if (!unit.length) continue;
       const prefer = unit.reduce((best, question, i) => counts[question.type] < counts[unit[best].type] ? i : best, 0);
       const [question] = unit.splice(prefer, 1);
       counts[question.type]++;
       selected.push(question);
       drawn = true;
-      if (selected.length === size) return shuffle(selected);
+      if (selected.length >= start + size) return shuffle(selected.slice(start), random);
     }
   } while (drawn);
-  return shuffle(selected);
+  return shuffle(selected.slice(start), random);
 }
 
 const normalize = (text) => text.normalize("NFKC").toLowerCase().replace(/[^\p{L}\p{N}]/gu, "");
@@ -111,7 +124,7 @@ export function gradeQuestion(question, reply) {
 }
 
 export async function trainingPractice(action, env, json, body, mask) {
-  const { item, section, type, rotation, id, reply } = body;
+  const { item, section, semester, type, rotation, id, reply } = body;
   if (item !== undefined && (typeof item !== "string" || !Object.hasOwn(BANKS, item) || !(BANKS[item] & mask))) {
     return json({ error: "이 자료의 연습 권한이 없어요." }, 403);
   }
@@ -124,14 +137,17 @@ export async function trainingPractice(action, env, json, body, mask) {
   if (action === "catalog") {
     return json({ total: questions.length, units: unitLists(questions).map((list) => ({
       item: list[0].item,
+      semester: semesterOf(list[0]),
       title: list[0].section,
       count: list.length,
     })) });
   }
   if (action === "start") {
     if ((section !== undefined && (!item || typeof section !== "string" || section.length > 160))
+      || (semester !== undefined && (item !== "discipleship" || ![1, 2].includes(semester)))
       || (type !== undefined && !TYPES.has(type))) return json({ error: "연습 범위를 확인해 주세요." }, 400);
-    const eligible = questions.filter((question) => (!section || section === question.section) && (!type || type === question.type));
+    const eligible = questions.filter((question) => (!section || section === question.section)
+      && (!semester || semesterOf(question) === semester) && (!type || type === question.type));
     const offset = Number.isInteger(rotation) && rotation >= 0 && rotation < 10000 ? rotation : 0;
     const selected = practiceRound(eligible, offset, 10).map(({ id, item, section, type, prompt, choices }) => ({
       id, item, section, type, prompt, choices,

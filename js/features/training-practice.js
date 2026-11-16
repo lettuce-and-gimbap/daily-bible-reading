@@ -2,8 +2,14 @@
   "use strict";
 
   const typeLabels = { choice: "사지선다", short: "단답식", written: "주관식" };
-  const bankTitles = { westminster: "웨스트민스터 신도게요서", discipleship: "제자훈련 1·2학기" };
-  const rotationKey = "daily-training-rounds";
+  const tracks = [
+    { key: "term-1", title: "제자훈련 1학기", item: "discipleship", semester: 1 },
+    { key: "term-2", title: "제자훈련 2학기", item: "discipleship", semester: 2 },
+    { key: "westminster", title: "웨스트민스터 신도게요서", item: "westminster" },
+  ];
+  const unitOrder = (unit) => Number(unit.title.match(/(?:제\s*|학기\s+)(\d+)[장과]/u)?.[1]) || 0;
+  const inTrack = (unit, track) => unit.item === track.item && (track.semester ? unit.semester === track.semester : true);
+  const rotationKey = "daily-training-rounds-v2";
   const escape = (value) => String(value ?? "").replace(/[&<>"']/g, (c) => ({
     "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
   })[c]);
@@ -29,6 +35,11 @@
     try { catalog = await request("catalog", {}); }
     catch (error) { panel.innerHTML = '<p class="status error" role="alert"></p>'; errorText(panel.firstChild, error); return; }
     if (!panel.isConnected) return;
+    const groups = tracks.map((track) => ({
+      ...track,
+      units: catalog.units.map((unit, index) => ({ ...unit, index }))
+        .filter((unit) => inTrack(unit, track)).sort((a, b) => unitOrder(a) - unitOrder(b)),
+    })).filter(({ units }) => units.length);
     let filters = { ...initial };
     let queue = [];
     let responses = [];
@@ -38,12 +49,12 @@
     function showSetup() {
       panel.innerHTML = `
         <h2 tabindex="-1">문제풀이</h2>
-        <p class="muted">열람 가능한 문항 ${catalog.total}개 · 한 회차 최대 10문제</p>
+        <p class="muted" data-range-count></p>
         <form class="practice-setup">
           <label>범위<select name="range"><option value="">허용된 모든 범위</option>
-            ${Object.entries(bankTitles).filter(([id]) => catalog.units.some((unit) => unit.item === id)).map(([id, title]) =>
-              `<optgroup label="${escape(title)}"><option value="${id}">${escape(title)} 전체</option>
-              ${catalog.units.map((unit, i) => unit.item === id ? `<option value="unit-${i}">${escape(unit.title)} (${unit.count}문제)</option>` : "").join("")}</optgroup>`).join("")}
+            ${groups.map(({ key, title, units }) =>
+              `<optgroup label="${escape(title)}"><option value="${key}">${escape(title)} 전체</option>
+              ${units.map((unit) => `<option value="unit-${unit.index}">${escape(unit.title)} (${unit.count}문제)</option>`).join("")}</optgroup>`).join("")}
           </select></label>
           <label>문제 유형<select name="type"><option value="">유형 섞기</option>${Object.entries(typeLabels).map(([id, label]) => `<option value="${id}">${label}</option>`).join("")}</select></label>
           <p class="muted small">주관식은 문항의 핵심 요소를 80% 이상 충족하면 정답으로 처리해요.</p>
@@ -54,14 +65,26 @@
       const unitIndex = catalog.units.findIndex((unit) => unit.item === filters.item && (
         unit.title === filters.section || (filters.lesson && unit.title.startsWith(filters.lesson))
       ));
-      form.elements.range.value = unitIndex >= 0 ? `unit-${unitIndex}` : (filters.item || "");
+      const track = tracks.find((candidate) => candidate.item === filters.item && candidate.semester === filters.semester);
+      form.elements.range.value = unitIndex >= 0 ? `unit-${unitIndex}` : (track?.key || "");
       if (form.elements.range.selectedIndex < 0) form.elements.range.value = "";
       form.elements.type.value = filters.type || "";
+      const updateRangeCount = () => {
+        const range = form.elements.range.value;
+        const group = groups.find(({ key }) => key === range);
+        const count = range.startsWith("unit-") ? catalog.units[Number(range.slice(5))].count
+          : group ? group.units.reduce((total, { count }) => total + count, 0) : catalog.total;
+        panel.querySelector("[data-range-count]").textContent = `선택한 범위 ${count}문항 · 한 회차 최대 10문제`;
+      };
+      updateRangeCount();
+      form.elements.range.addEventListener("change", updateRangeCount);
       form.addEventListener("submit", (event) => {
         event.preventDefault();
         const range = form.elements.range.value;
         const unit = range.startsWith("unit-") ? catalog.units[Number(range.slice(5))] : null;
-        filters = { item: unit?.item || range || undefined, section: unit?.title, type: form.elements.type.value || undefined };
+        const track = tracks.find(({ key }) => key === range);
+        filters = { item: unit?.item || track?.item, section: unit?.title,
+          semester: unit?.semester || track?.semester, type: form.elements.type.value || undefined };
         startRound(form);
       });
     }

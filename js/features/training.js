@@ -126,18 +126,37 @@
   function renderLibrary(materials) {
     clearInterval(pollTimer);
     currentMaterial = null;
-    const cards = materials.map((item) => {
-      const done = progress[item.id] || [];
-      return `<article class="card"><h2>${esc(item.title)}</h2><p class="muted small">짧은 단위로 나누어 읽고, 이 기기에 진행 상황을 저장해요. 완료 ${done.length}개</p><button class="btn" data-open-material="${esc(item.id)}">자료 열기</button></article>`;
-    }).join("");
+    const allowed = new Set(materials.map(({ id }) => id));
+    const cards = [
+      { item: "discipleship", semester: 1, label: "제자훈련 · 1학기", title: "복음과 교리",
+        description: "신앙고백부터 재림까지 12과를 연습하고, 이론정리를 읽을 수 있어요.", read: "이론정리 읽기" },
+      { item: "discipleship", semester: 2, label: "제자훈련 · 2학기", title: "제자의 삶",
+        description: "순종과 섬김부터 서로 사랑하기까지, 12과를 연습하세요." },
+      { item: "westminster", label: "웨스트민스터", title: "신도게요서",
+        description: "33장의 교리와 미주를 읽고, 장별로 핵심을 확인하세요.", read: "신도게요서 읽기" },
+    ].filter((course) => allowed.has(course.item)).map((course) => `
+      <article class="card training-course" data-course="${course.semester || course.item}">
+        <p class="course-kicker">${esc(course.label)}</p>
+        <h2>${esc(course.title)}</h2>
+        <p class="muted">${esc(course.description)}</p>
+        <div class="course-actions">
+          <button class="btn primary" type="button" data-practice-item="${course.item}" data-semester="${course.semester || ""}">문제 풀기</button>
+          ${course.read ? `<button class="btn secondary" type="button" data-open-material="${course.item}">${esc(course.read)}</button>` : ""}
+        </div>
+      </article>`).join("");
     const header = ownerPreview
-      ? '<div class="topline"><a class="back" href="index.html#today">‹ 통독</a><a class="btn secondary" href="training.html?admin=1">QR · 열람 권한 관리</a></div>'
-      : '<div class="topline"><a class="back" href="index.html#today">‹ 통독</a><button class="btn secondary" id="refresh-library">승인 다시 확인</button></div>';
-    app.innerHTML = `${header}${materials.length ? '<section class="card practice-intro"><div><h2>문제풀이</h2><p class="muted">사지선다, 단답식, 주관식을 풀고 해설과 오답을 확인하세요.</p></div><button class="btn" type="button" id="practice-all">연습 범위 고르기</button></section>' : ""}
-      ${cards || `<section class="card">열 수 있는 자료가 없어요.</section>`}`;
+      ? '<div class="topline training-library-actions"><a class="btn secondary" href="training.html?admin=1">QR · 열람 권한 관리</a></div>'
+      : '<div class="topline training-library-actions"><button class="btn secondary" id="refresh-library">승인 다시 확인</button></div>';
+    app.innerHTML = `${header}${cards ? `<section class="training-courses" aria-label="학습 과정">${cards}</section>
+      <section class="card practice-intro"><div><h2>섞어 풀기</h2><p class="muted">허용된 여러 범위에서 문제를 골고루 풀어요.</p></div><button class="btn secondary" type="button" id="practice-all">연습 범위 고르기</button></section>`
+      : '<section class="card">열 수 있는 자료가 없어요.</section>'}`;
     app.querySelectorAll("[data-open-material]").forEach((button) => button.addEventListener("click", () => openMaterial(button.dataset.openMaterial)));
     document.getElementById("refresh-library")?.addEventListener("click", checkStatus);
     document.getElementById("practice-all")?.addEventListener("click", () => openPractice());
+    app.querySelectorAll("[data-practice-item]").forEach((button) => button.addEventListener("click", () => openPractice({
+      item: button.dataset.practiceItem,
+      semester: Number(button.dataset.semester) || undefined,
+    })));
   }
 
   function openPractice(initial) {
@@ -249,7 +268,7 @@
       const section = units[currentLesson];
       const theoryLesson = THEORY_LESSONS[section.replace(/\s+\(\d+p\)$/u, "")];
       const lesson = item === "discipleship" && theoryLesson ? `1학기 ${theoryLesson}과` : undefined;
-      openPractice({ item, section, lesson });
+      openPractice({ item, section, lesson, semester: item === "discipleship" ? 1 : undefined });
     });
     document.getElementById("mark-done").addEventListener("click", () => {
       done.add(currentLesson);
@@ -265,7 +284,7 @@
   function renderAdmin() {
     clearInterval(adminTimer);
     app.innerHTML = `<section class="card"><h2>훈련 자료 접근 관리</h2><p class="muted">관리자 계정으로 요청을 승인하고, 승인된 기기의 권한을 회수할 수 있어요.</p><div id="admin-status"></div><div class="qr-layout"><div id="qr-box" class="qr-img" hidden></div><div><button class="btn" id="new-invite">동적 훈련생 QR 만들기</button><p id="invite-countdown" class="muted small">QR은 5분 동안 유효해요.</p><p class="muted small">훈련생은 QR을 스캔해 요청을 제출합니다. QR 자체로 자료가 열리지는 않으며, 아래에서 승인해야 해요.</p></div></div></section><section class="card"><div class="topline"><h2>요청 및 승인된 기기</h2><button class="btn secondary" id="refresh-readers">새로고침</button></div><div id="reader-list" class="muted">명단을 불러오는 중…</div></section><p><a class="back" href="index.html#stats">Bible-reading 앱으로 돌아가기</a></p>`;
-    app.insertAdjacentHTML("afterbegin", '<p><a class="btn secondary" href="training.html?preview=1">자료 열기 · 문제풀이 체험</a></p>');
+    app.insertAdjacentHTML("afterbegin", '<p><a class="btn secondary" href="training.html?preview=1">자료 열기 · 문제풀이</a></p>');
     document.getElementById("new-invite").addEventListener("click", createInvite);
     document.getElementById("refresh-readers").addEventListener("click", loadReaders);
     document.getElementById("reader-list").addEventListener("click", handleReaderAction);

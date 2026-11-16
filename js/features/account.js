@@ -200,7 +200,7 @@ function accountCardInner() {
       <button class="btn ghost small" id="acct-pwchange">비밀번호 바꾸기</button>
       <button class="btn text small" id="acct-logout">로그아웃</button>
     </div>
-    ${isAdmin() ? `<p class="inline wrap"><a class="btn soft small" href="training.html?preview=1">훈련 자료 · 문제풀이 체험</a><a class="btn ghost small" href="training.html?admin=1">QR · 훈련생 권한 관리</a></p>` : ""}
+    ${isAdmin() ? `<p class="inline wrap"><a class="btn soft small" href="training.html?preview=1">훈련 자료 · 문제풀이</a><a class="btn ghost small" href="training.html?admin=1">QR · 훈련생 권한 관리</a></p>` : ""}
     <div id="acct-qr"></div>
     <p class="muted small">기록은 바꿀 때마다 자동으로 서버에 올라가요. 로그아웃해도 이 기기 기록은 그대로 남아요. <a href="help.html">📖 안내 보기</a></p>`;
 }
