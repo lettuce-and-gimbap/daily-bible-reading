@@ -6,6 +6,7 @@
   const app = document.getElementById("training-app");
   const params = new URLSearchParams(location.search);
   const adminMode = params.get("admin") === "1";
+  let ownerPreview = false;
   let inviteCode = (location.hash.match(/^#invite=([a-f0-9]{64})$/i) || [])[1] || sessionStorage.getItem("daily-training-invite") || "";
   let deviceToken = localStorage.getItem(DEVICE_KEY) || "";
   let pollTimer = null;
@@ -26,14 +27,18 @@
   function randomToken() { const bytes = crypto.getRandomValues(new Uint8Array(32)); return [...bytes].map((n) => n.toString(16).padStart(2, "0")).join(""); }
   function esc(value) { return String(value ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]); }
   function dateLabel(value) { return value ? new Intl.DateTimeFormat("ko-KR", { dateStyle: "short", timeStyle: "short" }).format(new Date(value)) : "-"; }
+  function ownerToken() {
+    try {
+      const account = JSON.parse(localStorage.getItem("daily5-account") || "null");
+      return account?.id === "buucksoo" ? account.token : null;
+    } catch { return null; }
+  }
   async function call(path, body, { admin = false, method = "POST" } = {}) {
     const headers = { "content-type": "application/json" };
     if (admin) {
-      try {
-        const acct = JSON.parse(localStorage.getItem("daily5-account") || "null");
-        if (!acct?.token || String(acct.id).toLowerCase() !== "buucksoo") throw new Error();
-        headers.Authorization = `Bearer ${acct.token}`;
-      } catch { throw new Error("Bible-reading 앱에서 관리자 계정으로 로그인한 뒤 이 화면을 다시 열어 주세요."); }
+      const token = ownerToken();
+      if (!token) throw new Error("Bible-reading 앱에서 관리자 계정으로 로그인한 뒤 이 화면을 다시 열어 주세요.");
+      headers.Authorization = `Bearer ${token}`;
     }
     const response = await fetch(`${API}${path}`, { method, headers, body: body ? JSON.stringify(body) : undefined, cache: "no-store" });
     const data = await response.json().catch(() => ({}));
@@ -43,9 +48,22 @@
   function message(text, error = false) { return `<p class="status${error ? " error" : ""}" role="status">${esc(text)}</p>`; }
 
   async function start() {
-    ++viewRequest;
+    const requestId = ++viewRequest;
+    clearInterval(pollTimer);
     currentMaterial = null;
-    if (adminMode) return renderAdmin();
+    ownerPreview = false;
+    if (adminMode) return ownerToken() ? renderAdmin() : renderOwnerError("관리자 계정으로 로그인해 주세요.");
+    if (ownerToken() || params.get("preview") === "1") {
+      try {
+        const data = await call("/account/training/library", null, { admin: true, method: "GET" });
+        if (requestId !== viewRequest) return;
+        ownerPreview = true;
+        return renderLibrary(data.materials);
+      } catch (error) {
+        if (requestId === viewRequest) renderOwnerError(error.message);
+        return;
+      }
+    }
     if (deviceToken) {
       try {
         const status = await call("/training/status", { deviceToken });
@@ -58,6 +76,10 @@
     }
     currentMaterial = null;
     renderRequest(inviteCode ? "관리자에게 요청이 전달되면 이 기기에서 자료를 열 수 있어요." : "자료를 열려면 관리자가 띄운 동적 QR을 스캔해 주세요.");
+  }
+
+  function renderOwnerError(text) {
+    app.innerHTML = `<section class="card"><h2>관리자 자료실</h2>${message(text, true)}<a class="btn secondary" href="index.html#stats">Bible Reading에서 로그인 확인</a></section>`;
   }
 
   function renderRequest(note) {
@@ -107,20 +129,28 @@
       const done = progress[item.id] || [];
       return `<article class="card"><h2>${esc(item.title)}</h2><p class="muted small">짧은 단위로 나누어 읽고, 이 기기에 진행 상황을 저장해요. 완료 ${done.length}개</p><button class="btn" data-open-material="${esc(item.id)}">자료 열기</button></article>`;
     }).join("");
-    app.innerHTML = `<div class="topline"><p class="status">이 기기는 자료 열람 승인을 받았어요.</p><button class="btn secondary" id="refresh-library">승인 다시 확인</button></div>${cards || `<section class="card">열 수 있는 자료가 없어요.</section>`}`;
+    const header = ownerPreview
+      ? '<div class="topline"><p class="status">관리자 자료실 · 문항이 준비된 단원에서 문제풀이를 체험하세요.</p><a class="btn secondary" href="training.html?admin=1">QR · 열람 권한 관리</a></div>'
+      : '<div class="topline"><p class="status">이 기기는 자료 열람 승인을 받았어요.</p><button class="btn secondary" id="refresh-library">승인 다시 확인</button></div>';
+    app.innerHTML = `${header}${cards || `<section class="card">열 수 있는 자료가 없어요.</section>`}`;
     app.querySelectorAll("[data-open-material]").forEach((button) => button.addEventListener("click", () => openMaterial(button.dataset.openMaterial)));
-    document.getElementById("refresh-library").addEventListener("click", checkStatus);
+    document.getElementById("refresh-library")?.addEventListener("click", checkStatus);
+  }
+
+  function readMaterial(item, section) {
+    if (ownerPreview) return call("/account/training/content", { item, section }, { admin: true });
+    return call("/training/content", { deviceToken, item, section });
   }
 
   async function openMaterial(id) {
     const requestId = ++viewRequest;
     app.innerHTML = `<section class="card">승인과 자료를 확인하고 있어요…</section>`;
     try {
-      const material = await call("/training/content", { deviceToken, item: id });
+      const material = await readMaterial(id);
       if (requestId !== viewRequest) return;
       currentMaterial = material;
       const next = material.sections.findIndex((_, i) => !(progress[id] || []).includes(i));
-      await openSection(next < 0 ? 0 : next);
+      await openSection(material.previewSections?.[0] ?? (next < 0 ? 0 : next));
     } catch (error) { if (requestId === viewRequest) showReadError(error); }
   }
 
@@ -128,10 +158,10 @@
     const requestId = ++viewRequest;
     app.innerHTML = '<section class="card" role="status">단원을 불러오는 중이에요…</section>';
     try {
-      const section = await call("/training/content", { deviceToken, item: currentMaterial.id, section: index });
+      const section = await readMaterial(currentMaterial.id, index);
       if (requestId !== viewRequest) return;
       currentLesson = index;
-      renderMaterial(section.content);
+      renderMaterial(section.content, section.questions);
     } catch (error) { if (requestId === viewRequest) showReadError(error); }
   }
 
@@ -161,10 +191,22 @@
     closePara(); closeList(); if (code) html += `<pre>${esc(codeLines.join("\n"))}</pre>`; return html;
   }
 
-  function renderMaterial(content) {
+  function renderMaterial(content, questions = []) {
     const units = currentMaterial.sections;
     const done = new Set(progress[currentMaterial.id] || []);
     app.innerHTML = `<div class="topline"><a href="#" class="back" id="back-library">‹ 자료 목록</a><span class="muted small">${currentLesson + 1} / ${units.length} · 완료 ${done.size}</span></div><section class="card"><h2>${esc(currentMaterial.title)}</h2><div class="lesson-grid"><nav class="lesson-nav" aria-label="학습 단위">${units.map((title, i) => `<button class="btn${i === currentLesson ? " active" : ""}" data-lesson="${i}">${done.has(i) ? "✓ " : ""}${esc(title)}</button>`).join("")}</nav><article class="lesson-body"><h1>${esc(units[currentLesson])}</h1>${markdownHtml(content)}<div class="inline" style="margin-top:24px"><button class="btn" id="mark-done">${done.has(currentLesson) ? "완료했어요 ✓" : "이 단위 읽기 완료"}</button><button class="btn secondary" id="previous" ${currentLesson === 0 ? "disabled" : ""}>이전</button><button class="btn secondary" id="next" ${currentLesson === units.length - 1 ? "disabled" : ""}>다음</button></div></article></div></section>`;
+    if (ownerPreview) {
+      app.querySelectorAll("[data-lesson]").forEach((button) => {
+        if (currentMaterial.previewSections?.includes(Number(button.dataset.lesson))) button.append(" · 문제풀이");
+      });
+      if (questions.length) {
+        const quiz = document.createElement("section");
+        quiz.className = "card";
+        quiz.setAttribute("aria-label", "문제풀이 체험");
+        app.querySelector(".lesson-body h1").after(quiz);
+        bindPreviewQuiz(quiz, questions);
+      }
+    }
     document.getElementById("back-library").addEventListener("click", (e) => { e.preventDefault(); start(); });
     app.querySelectorAll("[data-lesson]").forEach((button) => button.addEventListener("click", () => openSection(Number(button.dataset.lesson))));
     document.getElementById("mark-done").addEventListener("click", () => {
@@ -172,15 +214,72 @@
       progress[currentMaterial.id] = [...done].sort((a, b) => a - b);
       saveProgress();
       if (currentLesson < units.length - 1) openSection(currentLesson + 1);
-      else renderMaterial(content);
+      else renderMaterial(content, questions);
     });
     document.getElementById("previous").addEventListener("click", () => openSection(currentLesson - 1));
     document.getElementById("next").addEventListener("click", () => openSection(currentLesson + 1));
   }
 
+  function bindPreviewQuiz(panel, questions) {
+    let queue = questions;
+    let index = 0;
+    let misses = [];
+    let correction = false;
+
+    function showQuestion() {
+      const question = queue[index];
+      panel.innerHTML = `
+        <h2>${correction ? "오답 다시 풀기" : "문제풀이 체험"}</h2>
+        <p class="muted small">${index + 1} / ${queue.length}</p>
+        <form><fieldset><legend tabindex="-1">${esc(question.prompt)}</legend>
+          ${question.choices.map((choice, i) => `<p><label><input type="radio" name="choice" value="${i}" required> ${esc(choice)}</label></p>`).join("")}
+        </fieldset><p><button class="btn" type="submit">정답 확인</button></p></form>
+        <div class="quiz-feedback" aria-live="polite"></div>`;
+      panel.querySelector("form").addEventListener("submit", (event) => {
+        event.preventDefault();
+        const form = event.currentTarget;
+        const choice = Number(new FormData(form).get("choice"));
+        const correct = choice === question.answer;
+        if (!correct) misses.push({ question, choice });
+        form.querySelectorAll("input, button").forEach((element) => { element.disabled = true; });
+        const feedback = panel.querySelector(".quiz-feedback");
+        feedback.innerHTML = `${message(correct ? "정답입니다." : "근거를 확인해 보세요.", !correct)}
+          <p><b>정답</b> ${esc(question.choices[question.answer])}</p>
+          <p>${esc(question.feedback)}</p><p class="muted small">${esc(question.source)}</p>
+          <button class="btn" type="button">${index + 1 < queue.length ? "다음 문제" : "결과 보기"}</button>`;
+        feedback.querySelector("button").addEventListener("click", () => {
+          index++;
+          if (index < queue.length) showQuestion();
+          else showResult();
+          panel.querySelector("legend, h2")?.focus();
+        });
+      });
+    }
+
+    function showResult() {
+      panel.innerHTML = `<h2 tabindex="-1">${correction ? "오답 교정 결과" : "문제풀이 결과"}</h2>
+        <p>${queue.length}문제 중 ${queue.length - misses.length}문제 정답</p>
+        ${misses.map(({ question, choice }) => `<details><summary>${esc(question.prompt)}</summary>
+          <p><b>내 답</b> ${esc(question.choices[choice])}</p><p><b>정답</b> ${esc(question.choices[question.answer])}</p>
+          <p>${esc(question.feedback)}</p><p class="muted small">${esc(question.source)}</p></details>`).join("")}
+        <p><button class="btn" type="button">${misses.length ? "틀린 문제만 다시 풀기" : "처음부터 다시 풀기"}</button></p>`;
+      panel.querySelector("button").addEventListener("click", () => {
+        correction = misses.length > 0;
+        queue = correction ? misses.map(({ question }) => question) : questions;
+        misses = [];
+        index = 0;
+        showQuestion();
+      });
+    }
+
+    panel.innerHTML = '<h2>문제풀이 체험</h2><button class="btn" type="button">이 단원 문제 풀기</button>';
+    panel.querySelector("button").addEventListener("click", showQuestion);
+  }
+
   function renderAdmin() {
     clearInterval(adminTimer);
     app.innerHTML = `<section class="card"><h2>훈련 자료 접근 관리</h2><p class="muted">관리자 계정으로 요청을 승인하고, 승인된 기기의 권한을 회수할 수 있어요.</p><div id="admin-status"></div><div class="qr-layout"><div id="qr-box" class="qr-img" hidden></div><div><button class="btn" id="new-invite">동적 훈련생 QR 만들기</button><p id="invite-countdown" class="muted small">QR은 5분 동안 유효해요.</p><p class="muted small">훈련생은 QR을 스캔해 요청을 제출합니다. QR 자체로 자료가 열리지는 않으며, 아래에서 승인해야 해요.</p></div></div></section><section class="card"><div class="topline"><h2>요청 및 승인된 기기</h2><button class="btn secondary" id="refresh-readers">새로고침</button></div><div id="reader-list" class="muted">명단을 불러오는 중…</div></section><p><a class="back" href="index.html#stats">Bible-reading 앱으로 돌아가기</a></p>`;
+    app.insertAdjacentHTML("afterbegin", '<p><a class="btn secondary" href="training.html?preview=1">자료 열기 · 문제풀이 체험</a></p>');
     document.getElementById("new-invite").addEventListener("click", createInvite);
     document.getElementById("refresh-readers").addEventListener("click", loadReaders);
     document.getElementById("reader-list").addEventListener("click", handleReaderAction);
@@ -243,16 +342,13 @@
 
   function showAdminError(error) { const status = document.getElementById("admin-status"); if (status) status.innerHTML = message(error.message, true); else app.insertAdjacentHTML("afterbegin", message(error.message, true)); }
 
-  if (adminMode) {
-    try {
-      const acct = JSON.parse(localStorage.getItem("daily5-account") || "null");
-      if (String(acct?.id).toLowerCase() !== "buucksoo" || !acct?.token) throw new Error("관리자 계정으로 먼저 로그인해 주세요.");
-      renderAdmin();
-    } catch (error) { app.innerHTML = `<section class="card"><h2>관리자 로그인 필요</h2>${message(error.message, true)}<a class="btn secondary" href="index.html#stats">Bible-reading 앱에서 로그인</a></section>`; }
-  } else start();
+  start();
 
   document.addEventListener("visibilitychange", () => {
-    if (!document.hidden && !adminMode && deviceToken && currentMaterial) {
+    if (document.hidden || adminMode) return;
+    if (ownerPreview) {
+      call("/account/training/library", null, { admin: true, method: "GET" }).catch(start);
+    } else if (deviceToken && currentMaterial) {
       const item = currentMaterial.id;
       call("/training/status", { deviceToken }).then((data) => {
         if (currentMaterial?.id === item && !data.materials?.some(({ id }) => id === item)) start();

@@ -85,22 +85,19 @@ export async function trainingPublic(pathname, request, env, json) {
     if (!reader || reader.status !== "approved") return json({ status: reader?.status || "unregistered", error: "관리자 승인이 필요해요" }, 403);
     if (pathname === "/training/status") return json({ status: "approved", materials: materialList(reader.material_mask) });
 
-    const itemId = body.item;
-    const item = typeof itemId === "string" && Object.hasOwn(MATERIALS, itemId) && MATERIALS[itemId];
-    if (!item || !(reader.material_mask & item.bit)) return json({ error: "이 자료의 열람 권한이 없어요" }, 403);
-    const content = await env.SUBS.get(item.key);
-    if (content === null) return json({ error: "자료를 아직 서버에 등록하지 않았어요" }, 404);
-    const sections = splitSections(content, item.title);
-    const index = body.section;
-    if (index === undefined) return json({ id: itemId, title: item.title, sections: sections.map(({ title }) => title) });
-    if (!Number.isInteger(index) || index < 0 || index >= sections.length) return json({ error: "해당 단원을 찾을 수 없어요" }, 404);
-    return json({ section: index, content: sections[index].content });
+    return readMaterial(env, json, body, reader.material_mask);
   }
   return json({ error: "not found" }, 404);
 }
 
 export async function trainingAdmin(pathname, request, env, json, uid, body, now = Date.now()) {
   if (uid !== TRAINING_ADMIN_ID) return json({ error: "관리자만 사용할 수 있어요" }, 403);
+  if (pathname === "/account/training/library" && request.method === "GET") {
+    return json({ materials: materialList(3) });
+  }
+  if (pathname === "/account/training/content" && request.method === "POST") {
+    return readMaterial(env, json, body, 3, true);
+  }
   const db = env.DB;
 
   if (pathname === "/account/training/invite" && request.method === "POST") {
@@ -145,6 +142,33 @@ export async function trainingAdmin(pathname, request, env, json, uid, body, now
     return json({ ok: true });
   }
   return json({ error: "not found" }, 404);
+}
+
+async function readMaterial(env, json, { item: itemId, section: index }, mask, preview = false) {
+  const item = typeof itemId === "string" && Object.hasOwn(MATERIALS, itemId) && MATERIALS[itemId];
+  if (!item || !(mask & item.bit)) return json({ error: "이 자료의 열람 권한이 없어요" }, 403);
+  const content = await env.SUBS.get(item.key);
+  if (content === null) return json({ error: "자료를 아직 서버에 등록하지 않았어요" }, 404);
+  const sections = splitSections(content, item.title);
+  const previewUnits = preview && env.TRAINING_PREVIEW_JSON
+    ? JSON.parse(env.TRAINING_PREVIEW_JSON)[itemId]
+    : null;
+  const questionsFor = (title) => previewUnits && Object.hasOwn(previewUnits, title) ? previewUnits[title] : [];
+  if (index === undefined) {
+    return json({
+      id: itemId,
+      title: item.title,
+      sections: sections.map(({ title }) => title),
+      ...(preview && { previewSections: sections.flatMap(({ title }, i) => questionsFor(title).length ? [i] : []) }),
+    });
+  }
+  if (!Number.isInteger(index) || index < 0 || index >= sections.length) return json({ error: "해당 단원을 찾을 수 없어요" }, 404);
+  const section = sections[index];
+  return json({
+    section: index,
+    content: section.content,
+    ...(preview && { questions: questionsFor(section.title) }),
+  });
 }
 
 function splitSections(markdown, title) {
