@@ -71,6 +71,16 @@ button svg, a svg, .step-pill svg, .t-st svg, .qt-today svg {
 .brand { display: flex; align-items: center; gap: 8px; color: var(--ink); text-decoration: none; font-weight: 700; letter-spacing: -0.03em; }
 .brand img { border-radius: 8px; box-shadow: 0 0 0 1px var(--line); }
 .topbar-right { display: flex; align-items: center; gap: 8px; }
+.training-entry {
+  display: inline-flex; flex: none; align-items: center; padding: 7px 11px;
+  border: 1px solid color-mix(in srgb, var(--accent) 26%, var(--line)); border-radius: 11px;
+  background: var(--accent-soft); color: var(--accent); text-decoration: none;
+  font-size: .86rem; font-weight: 750; line-height: 1.5; white-space: nowrap;
+}
+.training-entry:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (hover: hover) {
+  .training-entry:hover { background: color-mix(in srgb, var(--accent-soft), var(--accent) 10%); }
+}
 .reload-btn {
   flex: none; width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--line);
   background: var(--surface); color: var(--muted); font-size: 1.05rem; line-height: 1; cursor: pointer; padding: 0;
@@ -156,8 +166,19 @@ textarea { resize: vertical; line-height: 1.6; }
   .brand span { display: none; }
   .tabs a { padding: 6px 10px; }
   .topbar-right { gap: 6px; }
+  .training-entry { padding-inline: 8px; font-size: .8rem; }
   main { padding: 12px 10px; }
   .card { padding: 15px; }
+}
+
+@media (max-width: 410px) {
+  .topbar:has(.training-entry:not([hidden])) .app-sign { display: none; }
+}
+@media (max-width: 350px) {
+  .topbar:has(.training-entry:not([hidden])) { gap: 6px; }
+  .topbar:has(.training-entry:not([hidden])) .topbar-left { gap: 4px; }
+  .topbar:has(.training-entry:not([hidden])) .streak-chip { padding-inline: 4px; font-size: .7rem; }
+  .topbar:has(.training-entry:not([hidden])) .tabs a { padding-inline: 7px; }
 }
 
 /* 오른쪽 위 버전 · 만든 사람 */

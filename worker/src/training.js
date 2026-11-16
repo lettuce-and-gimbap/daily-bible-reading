@@ -1,4 +1,7 @@
 // Login-free, device-scoped access to private training materials.
+import { trainingPractice } from "./training-practice.js";
+
+const practiceAction = (path) => path.match(/\/practice\/(catalog|start|grade)$/)?.[1];
 export const TRAINING_ADMIN_ID = "buucksoo";
 const INVITE_TTL_MS = 5 * 60 * 1000;
 const MAX_INVITE_REQUESTS = 100;
@@ -74,16 +77,18 @@ export async function trainingPublic(pathname, request, env, json) {
     return json({ status: latest?.status || "unregistered" });
   }
 
-  if (pathname === "/training/status" || pathname === "/training/content") {
+  const action = practiceAction(pathname);
+  if (pathname === "/training/status" || pathname === "/training/content" || action) {
     const token = typeof body.deviceToken === "string" ? body.deviceToken : "";
     if (!/^[a-f0-9]{64}$/.test(token)) return json({ error: "이 기기에서 다시 접근 요청을 해 주세요" }, 401);
     const hash = await sha(token);
-    if (pathname === "/training/content" && !await trainingRateAllowed(env, `reader:${hash}`)) {
+    if (pathname !== "/training/status" && !await trainingRateAllowed(env, `reader:${hash}`)) {
       return json({ error: "요청이 많아요. 잠시 후 다시 열어 주세요" }, 429);
     }
     const reader = await env.DB.prepare("SELECT status, material_mask FROM training_readers WHERE device_hash = ?").bind(hash).first();
     if (!reader || reader.status !== "approved") return json({ status: reader?.status || "unregistered", error: "관리자 승인이 필요해요" }, 403);
     if (pathname === "/training/status") return json({ status: "approved", materials: materialList(reader.material_mask) });
+    if (action) return trainingPractice(action, env, json, body, reader.material_mask);
 
     return readMaterial(env, json, body, reader.material_mask);
   }
@@ -92,11 +97,13 @@ export async function trainingPublic(pathname, request, env, json) {
 
 export async function trainingAdmin(pathname, request, env, json, uid, body, now = Date.now()) {
   if (uid !== TRAINING_ADMIN_ID) return json({ error: "관리자만 사용할 수 있어요" }, 403);
+  const action = practiceAction(pathname);
+  if (action && request.method === "POST") return trainingPractice(action, env, json, body, 3);
   if (pathname === "/account/training/library" && request.method === "GET") {
     return json({ materials: materialList(3) });
   }
   if (pathname === "/account/training/content" && request.method === "POST") {
-    return readMaterial(env, json, body, 3, true);
+    return readMaterial(env, json, body, 3);
   }
   const db = env.DB;
 
@@ -144,31 +151,22 @@ export async function trainingAdmin(pathname, request, env, json, uid, body, now
   return json({ error: "not found" }, 404);
 }
 
-async function readMaterial(env, json, { item: itemId, section: index }, mask, preview = false) {
+async function readMaterial(env, json, { item: itemId, section: index }, mask) {
   const item = typeof itemId === "string" && Object.hasOwn(MATERIALS, itemId) && MATERIALS[itemId];
   if (!item || !(mask & item.bit)) return json({ error: "이 자료의 열람 권한이 없어요" }, 403);
   const content = await env.SUBS.get(item.key);
   if (content === null) return json({ error: "자료를 아직 서버에 등록하지 않았어요" }, 404);
   const sections = splitSections(content, item.title);
-  const previewUnits = preview && env.TRAINING_PREVIEW_JSON
-    ? JSON.parse(env.TRAINING_PREVIEW_JSON)[itemId]
-    : null;
-  const questionsFor = (title) => previewUnits && Object.hasOwn(previewUnits, title) ? previewUnits[title] : [];
   if (index === undefined) {
     return json({
       id: itemId,
       title: item.title,
       sections: sections.map(({ title }) => title),
-      ...(preview && { previewSections: sections.flatMap(({ title }, i) => questionsFor(title).length ? [i] : []) }),
     });
   }
   if (!Number.isInteger(index) || index < 0 || index >= sections.length) return json({ error: "해당 단원을 찾을 수 없어요" }, 404);
   const section = sections[index];
-  return json({
-    section: index,
-    content: section.content,
-    ...(preview && { questions: questionsFor(section.title) }),
-  });
+  return json({ section: index, content: section.content });
 }
 
 function splitSections(markdown, title) {
@@ -177,6 +175,13 @@ function splitSections(markdown, title) {
   const sections = [];
   for (let i = 1; i < blocks.length; i += 2) {
     sections.push({ title: blocks[i], content: blocks[i + 1].trim() });
+  }
+  const last = sections.at(-1);
+  const notes = last.content.match(/^미[ \t]*주[ \t]*$/m);
+  if (notes) {
+    const content = last.content.slice(notes.index + notes[0].length).trim();
+    last.content = last.content.slice(0, notes.index).trim();
+    sections.push({ title: "미주", content });
   }
   return sections;
 }

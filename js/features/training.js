@@ -3,6 +3,7 @@
   const API = "https://daily-bible-reminder.gimbap-lettuce.workers.dev";
   const DEVICE_KEY = "daily-training-device-v1";
   const PROGRESS_KEY = "daily-training-progress-v1";
+  const THEORY_LESSONS = { "언약신학, 구원사": 7, "신약 정경 과정": 4, "복음서": 6, "구원 여정 (서정) 과정": 10, "구원론 비교표": 11 };
   const app = document.getElementById("training-app");
   const params = new URLSearchParams(location.search);
   const adminMode = params.get("admin") === "1";
@@ -130,11 +131,23 @@
       return `<article class="card"><h2>${esc(item.title)}</h2><p class="muted small">짧은 단위로 나누어 읽고, 이 기기에 진행 상황을 저장해요. 완료 ${done.length}개</p><button class="btn" data-open-material="${esc(item.id)}">자료 열기</button></article>`;
     }).join("");
     const header = ownerPreview
-      ? '<div class="topline"><p class="status">관리자 자료실 · 문항이 준비된 단원에서 문제풀이를 체험하세요.</p><a class="btn secondary" href="training.html?admin=1">QR · 열람 권한 관리</a></div>'
-      : '<div class="topline"><p class="status">이 기기는 자료 열람 승인을 받았어요.</p><button class="btn secondary" id="refresh-library">승인 다시 확인</button></div>';
-    app.innerHTML = `${header}${cards || `<section class="card">열 수 있는 자료가 없어요.</section>`}`;
+      ? '<div class="topline"><a class="back" href="index.html#today">‹ 통독</a><a class="btn secondary" href="training.html?admin=1">QR · 열람 권한 관리</a></div>'
+      : '<div class="topline"><a class="back" href="index.html#today">‹ 통독</a><button class="btn secondary" id="refresh-library">승인 다시 확인</button></div>';
+    app.innerHTML = `${header}${materials.length ? '<section class="card practice-intro"><div><h2>문제풀이</h2><p class="muted">사지선다, 단답식, 주관식을 풀고 해설과 오답을 확인하세요.</p></div><button class="btn" type="button" id="practice-all">연습 범위 고르기</button></section>' : ""}
+      ${cards || `<section class="card">열 수 있는 자료가 없어요.</section>`}`;
     app.querySelectorAll("[data-open-material]").forEach((button) => button.addEventListener("click", () => openMaterial(button.dataset.openMaterial)));
     document.getElementById("refresh-library")?.addEventListener("click", checkStatus);
+    document.getElementById("practice-all")?.addEventListener("click", () => openPractice());
+  }
+
+  function openPractice(initial) {
+    ++viewRequest;
+    clearInterval(pollTimer);
+    currentMaterial = null;
+    const request = (action, body) => ownerPreview
+      ? call(`/account/training/practice/${action}`, body, { admin: true })
+      : call(`/training/practice/${action}`, { ...body, deviceToken });
+    window.TrainingPractice.open(app, request, start, initial);
   }
 
   function readMaterial(item, section) {
@@ -150,7 +163,7 @@
       if (requestId !== viewRequest) return;
       currentMaterial = material;
       const next = material.sections.findIndex((_, i) => !(progress[id] || []).includes(i));
-      await openSection(material.previewSections?.[0] ?? (next < 0 ? 0 : next));
+      await openSection(next < 0 ? 0 : next);
     } catch (error) { if (requestId === viewRequest) showReadError(error); }
   }
 
@@ -161,7 +174,7 @@
       const section = await readMaterial(currentMaterial.id, index);
       if (requestId !== viewRequest) return;
       currentLesson = index;
-      renderMaterial(section.content, section.questions);
+      renderMaterial(section.content);
     } catch (error) { if (requestId === viewRequest) showReadError(error); }
   }
 
@@ -171,7 +184,7 @@
     document.getElementById("back-library").addEventListener("click", start);
   }
 
-  function markdownHtml(markdown) {
+  function markdownHtml(markdown, isNotes = false) {
     const lines = markdown.split("\n"); let html = "", para = [], list = "", code = false, codeLines = [];
     const inline = (text) => esc(text).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/`([^`]+)`/g, "<code>$1</code>");
     const closePara = () => { if (para.length) { html += `<p>${inline(para.join(" "))}</p>`; para = []; } };
@@ -184,96 +197,69 @@
       const heading = s.match(/^(#{1,3})\s+(.+)$/);
       if (heading) { closePara(); closeList(); const n = Math.min(heading[1].length + 1, 4); html += `<h${n}>${inline(heading[2])}</h${n}>`; continue; }
       if (s.startsWith("> ")) { closePara(); closeList(); html += `<blockquote>${inline(s.slice(2))}</blockquote>`; continue; }
-      const bullet = s.match(/^[-*+]\s+(.+)$/); const ordered = s.match(/^\d+[.)]\s+(.+)$/);
-      if (bullet || ordered) { closePara(); const next = bullet ? "ul" : "ol"; if (list !== next) { closeList(); list = next; html += `<${list}>`; } html += `<li>${inline((bullet || ordered)[1])}</li>`; continue; }
+      const bullet = s.match(/^[-*+•]\s+(.+)$/);
+      const ordered = s.match(/^(\d+)[.)]\s+(.+)$/);
+      if (isNotes && ordered) {
+        closePara(); closeList();
+        html += `<p class="endnote"><b>${esc(ordered[1])})</b> ${inline(ordered[2])}</p>`;
+        continue;
+      }
+      if (/^[①②③④⑤⑥⑦⑧⑨⑩⑪⑫]/.test(s)) {
+        closePara(); closeList(); html += `<p class="numbered-line">${inline(s)}</p>`; continue;
+      }
+      if (bullet || ordered) {
+        closePara();
+        const next = bullet ? "ul" : "ol";
+        if (list !== next) { closeList(); list = next; html += `<${list}>`; }
+        html += `<li>${inline(bullet ? bullet[1] : ordered[2])}</li>`;
+        continue;
+      }
       closeList(); para.push(s);
+      // Exported PDF lines wrap mid-sentence. Start a new paragraph only at a
+      // completed sentence near the original line end or an explicit blank line.
+      if (/[.!?。！？](?:\d+\)[.!?]?)?\s*[”’」"']?$/.test(s)) closePara();
     }
     closePara(); closeList(); if (code) html += `<pre>${esc(codeLines.join("\n"))}</pre>`; return html;
   }
 
-  function renderMaterial(content, questions = []) {
+  function renderMaterial(content) {
     const units = currentMaterial.sections;
     const done = new Set(progress[currentMaterial.id] || []);
-    app.innerHTML = `<div class="topline"><a href="#" class="back" id="back-library">‹ 자료 목록</a><span class="muted small">${currentLesson + 1} / ${units.length} · 완료 ${done.size}</span></div><section class="card"><h2>${esc(currentMaterial.title)}</h2><div class="lesson-grid"><nav class="lesson-nav" aria-label="학습 단위">${units.map((title, i) => `<button class="btn${i === currentLesson ? " active" : ""}" data-lesson="${i}">${done.has(i) ? "✓ " : ""}${esc(title)}</button>`).join("")}</nav><article class="lesson-body"><h1>${esc(units[currentLesson])}</h1>${markdownHtml(content)}<div class="inline" style="margin-top:24px"><button class="btn" id="mark-done">${done.has(currentLesson) ? "완료했어요 ✓" : "이 단위 읽기 완료"}</button><button class="btn secondary" id="previous" ${currentLesson === 0 ? "disabled" : ""}>이전</button><button class="btn secondary" id="next" ${currentLesson === units.length - 1 ? "disabled" : ""}>다음</button></div></article></div></section>`;
-    if (ownerPreview) {
-      app.querySelectorAll("[data-lesson]").forEach((button) => {
-        if (currentMaterial.previewSections?.includes(Number(button.dataset.lesson))) button.append(" · 문제풀이");
-      });
-      if (questions.length) {
-        const quiz = document.createElement("section");
-        quiz.className = "card";
-        quiz.setAttribute("aria-label", "문제풀이 체험");
-        app.querySelector(".lesson-body h1").after(quiz);
-        bindPreviewQuiz(quiz, questions);
-      }
-    }
+    const isNotes = units[currentLesson] === "미주";
+    app.innerHTML = `
+      <div class="topline"><a href="#" class="back" id="back-library">‹ 자료 목록</a><span class="muted small">${currentLesson + 1} / ${units.length} · 완료 ${done.size}</span></div>
+      <section class="card">
+        <p class="muted small reading-source">${esc(currentMaterial.title)}</p>
+        <label class="reading-select">단원 <select id="reading-unit">${units.map((title, i) =>
+          `<option value="${i}" ${i === currentLesson ? "selected" : ""}>${done.has(i) ? "✓ " : ""}${esc(title)}</option>`).join("")}</select></label>
+        <article class="lesson-body">
+          <h2>${esc(units[currentLesson])}</h2>
+          ${isNotes ? "" : '<button class="btn secondary" id="practice-section">관련 문제 풀기</button>'}
+          <div class="reading-text">${markdownHtml(content, isNotes)}</div>
+          <div class="inline reading-actions"><button class="btn" id="mark-done">${done.has(currentLesson) ? "완료했어요 ✓" : "이 단위 읽기 완료"}</button>
+            <button class="btn secondary" id="previous" ${currentLesson === 0 ? "disabled" : ""}>이전</button>
+            <button class="btn secondary" id="next" ${currentLesson === units.length - 1 ? "disabled" : ""}>다음</button>
+          </div>
+        </article>
+      </section>`;
     document.getElementById("back-library").addEventListener("click", (e) => { e.preventDefault(); start(); });
-    app.querySelectorAll("[data-lesson]").forEach((button) => button.addEventListener("click", () => openSection(Number(button.dataset.lesson))));
+    document.getElementById("reading-unit").addEventListener("change", (event) => openSection(Number(event.target.value)));
+    document.getElementById("practice-section")?.addEventListener("click", () => {
+      const item = currentMaterial.id;
+      const section = units[currentLesson];
+      const theoryLesson = THEORY_LESSONS[section.replace(/\s+\(\d+p\)$/u, "")];
+      const lesson = item === "discipleship" && theoryLesson ? `1학기 ${theoryLesson}과` : undefined;
+      openPractice({ item, section, lesson });
+    });
     document.getElementById("mark-done").addEventListener("click", () => {
       done.add(currentLesson);
       progress[currentMaterial.id] = [...done].sort((a, b) => a - b);
       saveProgress();
       if (currentLesson < units.length - 1) openSection(currentLesson + 1);
-      else renderMaterial(content, questions);
+      else renderMaterial(content);
     });
     document.getElementById("previous").addEventListener("click", () => openSection(currentLesson - 1));
     document.getElementById("next").addEventListener("click", () => openSection(currentLesson + 1));
-  }
-
-  function bindPreviewQuiz(panel, questions) {
-    let queue = questions;
-    let index = 0;
-    let misses = [];
-    let correction = false;
-
-    function showQuestion() {
-      const question = queue[index];
-      panel.innerHTML = `
-        <h2>${correction ? "오답 다시 풀기" : "문제풀이 체험"}</h2>
-        <p class="muted small">${index + 1} / ${queue.length}</p>
-        <form><fieldset><legend tabindex="-1">${esc(question.prompt)}</legend>
-          ${question.choices.map((choice, i) => `<p><label><input type="radio" name="choice" value="${i}" required> ${esc(choice)}</label></p>`).join("")}
-        </fieldset><p><button class="btn" type="submit">정답 확인</button></p></form>
-        <div class="quiz-feedback" aria-live="polite"></div>`;
-      panel.querySelector("form").addEventListener("submit", (event) => {
-        event.preventDefault();
-        const form = event.currentTarget;
-        const choice = Number(new FormData(form).get("choice"));
-        const correct = choice === question.answer;
-        if (!correct) misses.push({ question, choice });
-        form.querySelectorAll("input, button").forEach((element) => { element.disabled = true; });
-        const feedback = panel.querySelector(".quiz-feedback");
-        feedback.innerHTML = `${message(correct ? "정답입니다." : "근거를 확인해 보세요.", !correct)}
-          <p><b>정답</b> ${esc(question.choices[question.answer])}</p>
-          <p>${esc(question.feedback)}</p><p class="muted small">${esc(question.source)}</p>
-          <button class="btn" type="button">${index + 1 < queue.length ? "다음 문제" : "결과 보기"}</button>`;
-        feedback.querySelector("button").addEventListener("click", () => {
-          index++;
-          if (index < queue.length) showQuestion();
-          else showResult();
-          panel.querySelector("legend, h2")?.focus();
-        });
-      });
-    }
-
-    function showResult() {
-      panel.innerHTML = `<h2 tabindex="-1">${correction ? "오답 교정 결과" : "문제풀이 결과"}</h2>
-        <p>${queue.length}문제 중 ${queue.length - misses.length}문제 정답</p>
-        ${misses.map(({ question, choice }) => `<details><summary>${esc(question.prompt)}</summary>
-          <p><b>내 답</b> ${esc(question.choices[choice])}</p><p><b>정답</b> ${esc(question.choices[question.answer])}</p>
-          <p>${esc(question.feedback)}</p><p class="muted small">${esc(question.source)}</p></details>`).join("")}
-        <p><button class="btn" type="button">${misses.length ? "틀린 문제만 다시 풀기" : "처음부터 다시 풀기"}</button></p>`;
-      panel.querySelector("button").addEventListener("click", () => {
-        correction = misses.length > 0;
-        queue = correction ? misses.map(({ question }) => question) : questions;
-        misses = [];
-        index = 0;
-        showQuestion();
-      });
-    }
-
-    panel.innerHTML = '<h2>문제풀이 체험</h2><button class="btn" type="button">이 단원 문제 풀기</button>';
-    panel.querySelector("button").addEventListener("click", showQuestion);
   }
 
   function renderAdmin() {

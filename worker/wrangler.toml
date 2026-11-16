@@ -17,6 +17,10 @@ crons = ["*/5 * * * *"]
 binding = "SUBS"
 id = "0fc4e393b78f43b6af8af3c5a1bd6d39"
 
+[[kv_namespaces]]
+binding = "TRAINING_PRACTICE"
+id = "5769f71c52184ddd84b8f28285a6410b"
+
 [vars]
 VAPID_SUBJECT = "https://lettuce-and-gimbap.github.io/daily-bible-reading/"
 # VAPID_PUBLIC_KEY, VAPID_PRIVATE_KEY는 npx wrangler secret put 으로 등록 (worker/README.md 참고)

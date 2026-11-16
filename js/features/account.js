@@ -17,6 +17,7 @@ function saveAccount() {
     if (account) localStorage.setItem(ACCOUNT_KEY, JSON.stringify(account));
     else localStorage.removeItem(ACCOUNT_KEY);
   } catch (e) { /* 저장소를 못 쓰면 이번 실행 동안만 로그인 */ }
+  window.refreshTrainingEntry?.();
 }
 
 async function accountApi(path, body, method = body ? "POST" : "GET") {

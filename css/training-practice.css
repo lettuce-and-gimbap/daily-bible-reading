@@ -1,0 +1,59 @@
+.reading-source { margin: 0 0 .8rem; }
+.reading-select, .practice-setup label, .practice-text {
+  display: grid;
+  gap: .4rem;
+  font-weight: 650;
+}
+.reading-select { max-width: 34rem; margin-bottom: 1.5rem; }
+.lesson-body { max-width: 42rem; margin-inline: auto; }
+.lesson-body h2 { font-size: clamp(1.2rem, 3vw, 1.55rem); }
+.reading-text {
+  margin-block: 1.25rem;
+  padding-block: .4rem;
+  font-size: 1.025rem;
+  line-height: 1.85;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.reading-text p { margin: 0 0 1.1em; }
+.reading-text .numbered-line, .reading-text .endnote { margin-bottom: .46em; }
+.reading-text li + li { margin-top: .42em; }
+.reading-text .endnote { padding-inline-start: 2.6em; text-indent: -2.6em; }
+.reading-actions { padding-top: 1rem; border-top: 1px solid var(--line); }
+.practice-intro { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.practice-intro p { margin: 0; }
+.practice-card { max-width: 44rem; margin-inline: auto; }
+.practice-setup { display: grid; gap: .9rem; }
+.practice-card select, .practice-card input:not([type="radio"]), .practice-card textarea, .reading-select select {
+  min-width: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  color: var(--ink);
+  padding: .7rem .8rem;
+  font: inherit;
+}
+.practice-setup p { margin: 0; }
+.practice-setup button { justify-self: start; }
+.practice-card progress { width: 100%; accent-color: var(--green); }
+.practice-question { display: grid; gap: .55rem; min-width: 0; margin: 0 0 1rem; padding: 0; border: 0; }
+.practice-question legend { width: 100%; padding: 0; margin-bottom: .65rem; font-size: 1.14rem; font-weight: 700; }
+.practice-choice {
+  display: flex;
+  align-items: flex-start;
+  gap: .65rem;
+  padding: .66rem .78rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.practice-choice:has(:checked) { background: var(--soft); border-color: var(--green); }
+.practice-choice.is-answer { background: var(--soft); border-color: var(--green); }
+.practice-choice.is-miss { background: #f8e9e6; border-color: var(--danger); }
+.practice-choice input { margin-top: .38rem; accent-color: var(--green); }
+.practice-feedback { overflow-wrap: anywhere; }
+.practice-rubric { padding-inline-start: 1.4rem; }
+.practice-result { border-top: 1px solid var(--line); padding-block: .6rem; overflow-wrap: anywhere; }
+.practice-result summary { cursor: pointer; }
+.practice-actions { margin-top: 1rem; }
