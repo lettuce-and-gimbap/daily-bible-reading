@@ -22,12 +22,13 @@ export async function account(pathname, request, env, json) {
   const now = Date.now();
   if (pathname.startsWith("/account/training/")) {
     const token = (request.headers.get("Authorization") || "").match(/^Bearer ([a-f0-9]{64})$/i)?.[1];
-    const session = token && await db.prepare("SELECT user_id FROM sessions WHERE token_hash = ?").bind(await sha(token)).first();
+    const sessionHash = token && await sha(token);
+    const session = sessionHash && await db.prepare("SELECT user_id FROM sessions WHERE token_hash = ?").bind(sessionHash).first();
     if (!session) return json({ error: "로그인이 필요해요" }, 401);
     if (session.user_id !== TRAINING_ADMIN_ID) return json({ error: "관리자만 사용할 수 있어요" }, 403);
     const body = await readTrainingBody(request);
     if (!body) return json({ error: "요청 형식 또는 크기가 올바르지 않아요" }, 400);
-    return trainingAdmin(pathname, request, env, json, session.user_id, body, now);
+    return trainingAdmin(pathname, request, env, json, session.user_id, body, now, sessionHash);
   }
   const body = request.method === "GET" ? {} : await request.json().catch(() => ({}));
 

@@ -9,9 +9,14 @@ const MATERIALS = {
   westminster: { title: "웨스트민스터 신도게요서 (미주)", key: "training:westminster", bit: 1 },
   discipleship: { title: "제자반 1학기 교재 이론정리", key: "training:discipleship", bit: 2 },
 };
+const EDITIONS = {
+  "westminster-confession": "웨스트민스터 신앙고백",
+  "westminster-full": "웨스트민스터 신앙고백서 전문",
+};
+const editionList = Object.entries(EDITIONS).map(([id, title]) => ({ id, title }));
 const materialList = (mask) => Object.entries(MATERIALS)
   .filter(([, item]) => mask & item.bit)
-  .map(([id, { title }]) => ({ id, title }));
+  .map(([id, { title }]) => ({ id, title, ...(id === "westminster" && { editions: editionList }) }));
 
 // Limit actual streamed bytes, including requests without Content-Length.
 export async function readTrainingBody(request) {
@@ -88,17 +93,17 @@ export async function trainingPublic(pathname, request, env, json) {
     const reader = await env.DB.prepare("SELECT status, material_mask FROM training_readers WHERE device_hash = ?").bind(hash).first();
     if (!reader || reader.status !== "approved") return json({ status: reader?.status || "unregistered", error: "관리자 승인이 필요해요" }, 403);
     if (pathname === "/training/status") return json({ status: "approved", materials: materialList(reader.material_mask) });
-    if (action) return trainingPractice(action, env, json, body, reader.material_mask);
+    if (action) return trainingPractice(action, env, json, body, reader.material_mask, `reader:${hash}`);
 
     return readMaterial(env, json, body, reader.material_mask);
   }
   return json({ error: "not found" }, 404);
 }
 
-export async function trainingAdmin(pathname, request, env, json, uid, body, now = Date.now()) {
+export async function trainingAdmin(pathname, request, env, json, uid, body, now = Date.now(), sessionHash) {
   if (uid !== TRAINING_ADMIN_ID) return json({ error: "관리자만 사용할 수 있어요" }, 403);
   const action = practiceAction(pathname);
-  if (action && request.method === "POST") return trainingPractice(action, env, json, body, 3);
+  if (action && request.method === "POST") return trainingPractice(action, env, json, body, 3, `admin:${sessionHash}`);
   if (pathname === "/account/training/library" && request.method === "GET") {
     return json({ materials: materialList(3) });
   }
@@ -152,6 +157,17 @@ export async function trainingAdmin(pathname, request, env, json, uid, body, now
 }
 
 async function readMaterial(env, json, { item: itemId, section: index }, mask) {
+  if (typeof itemId === "string" && Object.hasOwn(EDITIONS, itemId)) {
+    if (!(mask & MATERIALS.westminster.bit)) return json({ error: "이 자료의 열람 권한이 없어요" }, 403);
+    const prefix = `edition:${itemId}:`;
+    const sections = await env.TRAINING_PRACTICE.get(prefix + "manifest", "json");
+    if (!sections) return json({ error: "자료를 아직 서버에 등록하지 않았어요" }, 404);
+    if (index === undefined) return json({ id: itemId, title: EDITIONS[itemId], sections, practiceItem: "westminster" });
+    if (!Number.isInteger(index) || index < 0 || index >= sections.length) return json({ error: "해당 단원을 찾을 수 없어요" }, 404);
+    const content = await env.TRAINING_PRACTICE.get(prefix + "section:" + index, "json");
+    if (content === null) return json({ error: "해당 단원을 찾을 수 없어요" }, 404);
+    return json({ section: index, content });
+  }
   const item = typeof itemId === "string" && Object.hasOwn(MATERIALS, itemId) && MATERIALS[itemId];
   if (!item || !(mask & item.bit)) return json({ error: "이 자료의 열람 권한이 없어요" }, 403);
   const content = await env.SUBS.get(item.key);

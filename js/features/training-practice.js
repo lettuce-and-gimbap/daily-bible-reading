@@ -9,7 +9,7 @@
   ];
   const unitOrder = (unit) => Number(unit.title.match(/(?:제\s*|학기\s+)(\d+)[장과]/u)?.[1]) || 0;
   const inTrack = (unit, track) => unit.item === track.item && (track.semester ? unit.semester === track.semester : true);
-  const rotationKey = "daily-training-rounds-v2";
+  const rotationKey = "daily-training-rounds-v3";
   const escape = (value) => String(value ?? "").replace(/[&<>"']/g, (c) => ({
     "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
   })[c]);
@@ -45,6 +45,7 @@
     let responses = [];
     let index = 0;
     let correction = false;
+    let ticket = null;
 
     function showSetup() {
       panel.innerHTML = `
@@ -54,6 +55,7 @@
           <label>범위<select name="range"><option value="">허용된 모든 범위</option>
             ${groups.map(({ key, title, units }) =>
               `<optgroup label="${escape(title)}"><option value="${key}">${escape(title)} 전체</option>
+              ${key === "westminster" && units.some(({ supplements }) => supplements) ? '<option value="westminster-supplement">두 판본 비교 문제</option>' : ""}
               ${units.map((unit) => `<option value="unit-${unit.index}">${escape(unit.title)} (${unit.count}문제)</option>`).join("")}</optgroup>`).join("")}
           </select></label>
           <label>문제 유형<select name="type"><option value="">유형 섞기</option>${Object.entries(typeLabels).map(([id, label]) => `<option value="${id}">${label}</option>`).join("")}</select></label>
@@ -64,15 +66,17 @@
       const form = panel.querySelector("form");
       const unitIndex = catalog.units.findIndex((unit) => unit.item === filters.item && (
         unit.title === filters.section || (filters.lesson && unit.title.startsWith(filters.lesson))
+        || (filters.chapter && unitOrder(unit) === filters.chapter)
       ));
       const track = tracks.find((candidate) => candidate.item === filters.item && candidate.semester === filters.semester);
-      form.elements.range.value = unitIndex >= 0 ? `unit-${unitIndex}` : (track?.key || "");
+      form.elements.range.value = filters.supplement ? "westminster-supplement" : unitIndex >= 0 ? `unit-${unitIndex}` : (track?.key || "");
       if (form.elements.range.selectedIndex < 0) form.elements.range.value = "";
       form.elements.type.value = filters.type || "";
       const updateRangeCount = () => {
         const range = form.elements.range.value;
         const group = groups.find(({ key }) => key === range);
-        const count = range.startsWith("unit-") ? catalog.units[Number(range.slice(5))].count
+        const count = range === "westminster-supplement" ? catalog.units.reduce((total, { supplements }) => total + (supplements || 0), 0)
+          : range.startsWith("unit-") ? catalog.units[Number(range.slice(5))].count
           : group ? group.units.reduce((total, { count }) => total + count, 0) : catalog.total;
         panel.querySelector("[data-range-count]").textContent = `선택한 범위 ${count}문항 · 한 회차 최대 10문제`;
       };
@@ -83,7 +87,8 @@
         const range = form.elements.range.value;
         const unit = range.startsWith("unit-") ? catalog.units[Number(range.slice(5))] : null;
         const track = tracks.find(({ key }) => key === range);
-        filters = { item: unit?.item || track?.item, section: unit?.title,
+        const supplement = range === "westminster-supplement" ? true : undefined;
+        filters = { item: unit?.item || track?.item || (supplement ? "westminster" : undefined), section: unit?.title, supplement,
           semester: unit?.semester || track?.semester, type: form.elements.type.value || undefined };
         startRound(form);
       });
@@ -101,6 +106,7 @@
         const result = await request("start", { ...filters, rotation });
         if (!panel.isConnected) return;
         if (!result.questions.length) throw new Error("이 범위와 유형을 함께 가진 문제가 없어요. 유형이나 범위를 바꿔 주세요.");
+        ticket = result.ticket;
         try { localStorage.setItem(rotationKey, JSON.stringify({ ...rounds, [key]: (rotation + 1) % 10000 })); } catch { /* optional */ }
         begin(result.questions, false);
       } catch (error) { errorText(status, error); }
@@ -146,7 +152,7 @@
       status.hidden = true;
       try {
         const grade = await request("grade", {
-          item: question.item, id: question.id, reply: question.type === "choice" ? Number(raw) : raw,
+          item: question.item, id: question.id, ticket, reply: question.type === "choice" ? Number(raw) : raw,
         });
         if (!panel.isConnected) return;
         const result = { question, answer: question.type === "choice" ? question.choices[Number(raw)] : raw, ...grade };

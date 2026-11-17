@@ -31,10 +31,15 @@ npx wrangler deploy
 
 문항과 답안은 원자료와 별도인 Worker KV `TRAINING_PRACTICE`의 `westminster` 및 `discipleship`에 저장합니다. 문항을 갱신할 때는 해당 키만 갱신합니다. 문제 목록은 질문과 보기만 포함하며, 서버가 자료별 열람 권한을 확인한 뒤 제출한 문항의 피드백을 제공합니다. 주관식 채점은 문항별 핵심 요소 동의어를 기준으로 하며, 충족한 요소 수가 80% 이상이면 정답입니다. 지원하지 않는 표현이나 복잡한 부정은 모범 답안과 직접 비교할 수 있습니다.
 
+신앙고백 보강 자료 두 종은 같은 비공개 KV의 `edition:` 키에 판본별 목차와 단원으로 나눠 저장합니다. 웨스트민스터 열람 권한의 범위에서만 읽을 수 있습니다. GitHub Pages 파일에는 본문과 문제은행을 포함하지 않습니다. 답안 조회에는 해당 브라우저나 관리자 세션에 출제된 문항만 승인하는 90분 서명표가 필요합니다.
+
 ```powershell
 npx wrangler kv key put westminster --binding TRAINING_PRACTICE --remote --path "<웨스트민스터 연습 문항 JSON>"
 npx wrangler kv key put discipleship --binding TRAINING_PRACTICE --remote --path "<제자훈련 연습 문항 JSON>"
+npx wrangler kv bulk put "<보강 판본의 목차와 단원 JSON>" --binding TRAINING_PRACTICE --remote
 ```
+
+새 환경에는 `TRAINING_TICKET_KEY`라는 32바이트 난수 기반 Worker 비밀 값을 등록합니다. 값은 로컬 비밀 관리 도구 또는 Wrangler 표준 입력으로 전달합니다. 값을 바꾸면 이전에 시작한 회차의 서명표가 만료됩니다.
 
 훈련생 API는 허용된 자료의 제목 목록과 요청한 단원만 반환합니다. 관리자 페이지는 열람 권한을 관리합니다. 원문 수정 및 백업은 KV 접근 권한이 있는 Cloudflare 계정에서 운영합니다. 원문 사본은 개인 저장 폴더에서 관리하고, 변경 시 위의 자료별 업로드 명령으로 갱신합니다. 백업은 Cloudflare 대시보드의 해당 KV 키 또는 로컬 원본에서 받습니다. 훈련생 브라우저에는 D1/KV 관리 자격증명을 전달하지 않습니다.
 

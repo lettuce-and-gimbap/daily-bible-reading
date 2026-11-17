@@ -1,5 +1,33 @@
 const BANKS = { westminster: 1, discipleship: 2 };
 const TYPES = new Set(["choice", "short", "written"]);
+const TICKET_TTL = 90 * 60 * 1000;
+const encoder = new TextEncoder();
+const encode = (bytes) => btoa(String.fromCharCode(...bytes)).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/u, "");
+const decode = (encoded) => Uint8Array.from(atob(encoded.replace(/-/g, "+").replace(/_/g, "/")), (c) => c.charCodeAt(0));
+
+async function signingKey(secret) {
+  return crypto.subtle.importKey("raw", encoder.encode(secret), { name: "HMAC", hash: "SHA-256" }, false, ["sign", "verify"]);
+}
+
+async function issueTicket(secret, audience, questions) {
+  const expires = Date.now() + TICKET_TTL;
+  const payload = encode(encoder.encode(JSON.stringify([expires, questions.map(({ item, id }) => `${item}:${id}`)])));
+  const signature = await crypto.subtle.sign("HMAC", await signingKey(secret), encoder.encode(`${audience}.${payload}`));
+  return `${payload}.${encode(new Uint8Array(signature))}`;
+}
+
+async function validTicket(secret, audience, ticket, item, id) {
+  if (typeof ticket !== "string" || ticket.length > 650 || !/^[\w-]+\.[\w-]{43}$/u.test(ticket)) return false;
+  const [payload, signature] = ticket.split(".");
+  try {
+    const signatureValid = await crypto.subtle.verify("HMAC", await signingKey(secret), decode(signature), encoder.encode(`${audience}.${payload}`));
+    if (!signatureValid) return false;
+    const [expires, permitted] = JSON.parse(new TextDecoder().decode(decode(payload)));
+    return expires > Date.now() && permitted.includes(`${item}:${id}`);
+  } catch {
+    return false;
+  }
+}
 
 function shuffle(values, random = Math.random) {
   const result = [...values];
@@ -123,8 +151,8 @@ export function gradeQuestion(question, reply) {
   return { correct, modelAnswer, feedback: question.feedback, source: question.source, rubric, score };
 }
 
-export async function trainingPractice(action, env, json, body, mask) {
-  const { item, section, semester, type, rotation, id, reply } = body;
+export async function trainingPractice(action, env, json, body, mask, audience) {
+  const { item, section, semester, type, rotation, id, reply, supplement, ticket } = body;
   if (item !== undefined && (typeof item !== "string" || !Object.hasOwn(BANKS, item) || !(BANKS[item] & mask))) {
     return json({ error: "이 자료의 연습 권한이 없어요." }, 403);
   }
@@ -132,6 +160,10 @@ export async function trainingPractice(action, env, json, body, mask) {
     return json({ error: "문항을 확인해 주세요." }, 400);
   }
   if (!env.TRAINING_PRACTICE) return json({ error: "문제 자료를 준비하고 있어요." }, 503);
+  if (action !== "catalog" && (!env.TRAINING_TICKET_KEY || !audience)) return json({ error: "연습을 잠시 열 수 없어요." }, 503);
+  if (action === "grade" && !await validTicket(env.TRAINING_TICKET_KEY, audience, ticket, item, id)) {
+    return json({ error: "이 문제의 연습 시간이 끝났거나 이 기기에 출제된 문제가 아니에요. 연습 범위를 다시 선택해 주세요." }, 403);
+  }
   const questions = await allowedBanks(env, mask, item);
 
   if (action === "catalog") {
@@ -140,19 +172,22 @@ export async function trainingPractice(action, env, json, body, mask) {
       semester: semesterOf(list[0]),
       title: list[0].section,
       count: list.length,
+      supplements: list.filter((q) => q.supplement === true).length,
     })) });
   }
   if (action === "start") {
     if ((section !== undefined && (!item || typeof section !== "string" || section.length > 160))
       || (semester !== undefined && (item !== "discipleship" || ![1, 2].includes(semester)))
+      || (supplement !== undefined && (supplement !== true || item !== "westminster"))
       || (type !== undefined && !TYPES.has(type))) return json({ error: "연습 범위를 확인해 주세요." }, 400);
     const eligible = questions.filter((question) => (!section || section === question.section)
-      && (!semester || semesterOf(question) === semester) && (!type || type === question.type));
+      && (!semester || semesterOf(question) === semester) && (!type || type === question.type)
+      && (!supplement || question.supplement === true));
     const offset = Number.isInteger(rotation) && rotation >= 0 && rotation < 10000 ? rotation : 0;
     const selected = practiceRound(eligible, offset, 10).map(({ id, item, section, type, prompt, choices }) => ({
       id, item, section, type, prompt, choices,
     }));
-    return json({ questions: selected });
+    return json({ questions: selected, ticket: selected.length ? await issueTicket(env.TRAINING_TICKET_KEY, audience, selected) : null });
   }
   const question = questions.find((question) => question.id === id);
   if (!question) return json({ error: "문항을 찾을 수 없어요." }, 404);

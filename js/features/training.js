@@ -127,6 +127,7 @@
     clearInterval(pollTimer);
     currentMaterial = null;
     const allowed = new Set(materials.map(({ id }) => id));
+    const editions = materials.find(({ id }) => id === "westminster")?.editions || [];
     const cards = [
       { item: "discipleship", semester: 1, label: "제자훈련 · 1학기", title: "복음과 교리",
         description: "신앙고백부터 재림까지 12과를 연습하고, 이론정리를 읽을 수 있어요.", read: "이론정리 읽기" },
@@ -143,6 +144,9 @@
           <button class="btn primary" type="button" data-practice-item="${course.item}" data-semester="${course.semester || ""}">문제 풀기</button>
           ${course.read ? `<button class="btn secondary" type="button" data-open-material="${course.item}">${esc(course.read)}</button>` : ""}
         </div>
+        ${course.item === "westminster" && editions.length ? `<details class="training-editions"><summary>보강 자료 2종 읽기</summary>
+          ${editions.map(({ id, title }) => `<button class="btn ghost small" type="button" data-open-material="${esc(id)}">${esc(title)}</button>`).join("")}
+        </details>` : ""}
       </article>`).join("");
     const header = ownerPreview
       ? '<div class="topline training-library-actions"><a class="btn secondary" href="training.html?admin=1">QR · 열람 권한 관리</a></div>'
@@ -264,11 +268,12 @@
     document.getElementById("back-library").addEventListener("click", (e) => { e.preventDefault(); start(); });
     document.getElementById("reading-unit").addEventListener("change", (event) => openSection(Number(event.target.value)));
     document.getElementById("practice-section")?.addEventListener("click", () => {
-      const item = currentMaterial.id;
+      const item = currentMaterial.practiceItem || currentMaterial.id;
       const section = units[currentLesson];
       const theoryLesson = THEORY_LESSONS[section.replace(/\s+\(\d+p\)$/u, "")];
       const lesson = item === "discipleship" && theoryLesson ? `1학기 ${theoryLesson}과` : undefined;
-      openPractice({ item, section, lesson, semester: item === "discipleship" ? 1 : undefined });
+      const chapter = currentMaterial.practiceItem ? Number(section.match(/^제\s*(\d+)장/u)?.[1]) || undefined : undefined;
+      openPractice({ item, section, lesson, chapter, semester: item === "discipleship" ? 1 : undefined });
     });
     document.getElementById("mark-done").addEventListener("click", () => {
       done.add(currentLesson);
@@ -356,7 +361,7 @@
     } else if (deviceToken && currentMaterial) {
       const item = currentMaterial.id;
       call("/training/status", { deviceToken }).then((data) => {
-        if (currentMaterial?.id === item && !data.materials?.some(({ id }) => id === item)) start();
+        if (currentMaterial?.id === item && !data.materials?.some(({ id, editions }) => id === item || editions?.some((edition) => edition.id === item))) start();
       }).catch(() => { if (currentMaterial?.id === item) start(); });
     }
   });

@@ -62,6 +62,9 @@
 }
 .topline { justify-content: space-between; }
 .training-library-actions { justify-content: flex-end; }
+.training-editions { width: 100%; margin-top: .5rem; border-top: 1px solid var(--line); padding-top: .65rem; }
+.training-editions summary { color: var(--accent); cursor: pointer; font-weight: 650; }
+#training-app .training-editions .btn { margin-top: .4rem; }
 .back { color: var(--accent); font-weight: 700; text-decoration: none; }
 .back:hover { text-decoration: underline; }
 .status {
