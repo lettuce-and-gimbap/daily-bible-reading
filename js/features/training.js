@@ -167,7 +167,6 @@
           <button class="btn primary" type="button" data-practice-item="${course.item}" data-semester="${course.semester || ""}">문제 풀기</button>
           ${readingId ? `<button class="btn secondary" type="button" data-open-material="${esc(readingId)}">${esc(course.read)}</button>` : ""}
         </div>
-        ${course.semester === 1 && theoryId ? '<button class="btn text small" type="button" data-open-material="discipleship">기존 1학기 이론정리 읽기</button>' : ""}
         ${course.item === "westminster" && editions.length ? `<details class="training-editions"><summary>보강 자료 2종 읽기</summary>
           ${editions.map(({ id, title }) => `<button class="btn ghost small" type="button" data-open-material="${esc(id)}">${esc(title)}</button>`).join("")}
         </details>` : ""}
