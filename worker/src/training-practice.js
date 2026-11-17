@@ -1,3 +1,5 @@
+import { quizQuestionsFromNotes } from "./training-notes.js";
+
 const BANKS = { westminster: 1, discipleship: 2 };
 const TYPES = new Set(["choice", "short", "written"]);
 const TICKET_TTL = 90 * 60 * 1000;
@@ -53,8 +55,11 @@ const semesterOf = ({ item, section }) => item === "discipleship"
 async function allowedBanks(env, mask, item) {
   const names = Object.keys(BANKS).filter((name) => (mask & BANKS[name]) && (!item || item === name));
   const data = await Promise.all(names.map(async (name) => {
-    const questions = await env.TRAINING_PRACTICE.get(name, "json");
-    return (questions || []).map((question) => ({ ...question, item: name }));
+    const [base, notes] = await Promise.all([
+      env.TRAINING_PRACTICE.get(name, "json"),
+      name === "discipleship" ? quizQuestionsFromNotes(env) : [],
+    ]);
+    return [...(base || []), ...notes].map((question) => ({ ...question, item: name }));
   }));
   return data.flat();
 }
@@ -167,7 +172,9 @@ export async function trainingPractice(action, env, json, body, mask, audience) 
   const questions = await allowedBanks(env, mask, item);
 
   if (action === "catalog") {
-    return json({ total: questions.length, units: unitLists(questions).map((list) => ({
+    const digest = await crypto.subtle.digest("SHA-256", encoder.encode(questions.map(({ id }) => id).join("\n")));
+    const bankRevision = encode(new Uint8Array(digest, 0, 9));
+    return json({ total: questions.length, bankRevision, units: unitLists(questions).map((list) => ({
       item: list[0].item,
       semester: semesterOf(list[0]),
       title: list[0].section,

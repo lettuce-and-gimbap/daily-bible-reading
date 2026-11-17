@@ -1,5 +1,6 @@
 // Login-free, device-scoped access to private training materials.
 import { trainingPractice } from "./training-practice.js";
+import { notesAdmin, publishedLessonNote } from "./training-notes.js";
 
 const practiceAction = (path) => path.match(/\/practice\/(catalog|start|grade)$/)?.[1];
 export const TRAINING_ADMIN_ID = "buucksoo";
@@ -10,16 +11,20 @@ const MATERIALS = {
   discipleship: { title: "제자반 1학기 교재 이론정리", key: "training:discipleship", bit: 2 },
 };
 const EDITIONS = {
-  "westminster-confession": "웨스트민스터 신앙고백",
-  "westminster-full": "웨스트민스터 신앙고백서 전문",
+  "westminster-confession": { title: "웨스트민스터 신앙고백", item: "westminster" },
+  "westminster-full": { title: "웨스트민스터 신앙고백서 전문", item: "westminster" },
+  "course-theory-1": { title: "1학기 교리·교재 정리", item: "discipleship", semester: 1 },
+  "course-theory-2": { title: "2학기 교리·교재 정리", item: "discipleship", semester: 2 },
 };
-const editionList = Object.entries(EDITIONS).map(([id, title]) => ({ id, title }));
+const linkedMaterials = (item) => Object.entries(EDITIONS)
+  .filter(([, edition]) => edition.item === item)
+  .map(([id, { title }]) => ({ id, title }));
 const materialList = (mask) => Object.entries(MATERIALS)
   .filter(([, item]) => mask & item.bit)
-  .map(([id, { title }]) => ({ id, title, ...(id === "westminster" && { editions: editionList }) }));
+  .map(([id, { title }]) => ({ id, title, [id === "westminster" ? "editions" : "theory"]: linkedMaterials(id) }));
 
 // Limit actual streamed bytes, including requests without Content-Length.
-export async function readTrainingBody(request) {
+export async function readTrainingBody(request, maxBytes = 2048) {
   if (!request.body) return {};
   const reader = request.body.getReader();
   const decoder = new TextDecoder("utf-8", { fatal: true });
@@ -30,7 +35,7 @@ export async function readTrainingBody(request) {
       const { done, value } = await reader.read();
       if (done) break;
       size += value.byteLength;
-      if (size > 2048) {
+      if (size > maxBytes) {
         await reader.cancel();
         return null;
       }
@@ -102,6 +107,8 @@ export async function trainingPublic(pathname, request, env, json) {
 
 export async function trainingAdmin(pathname, request, env, json, uid, body, now = Date.now(), sessionHash) {
   if (uid !== TRAINING_ADMIN_ID) return json({ error: "관리자만 사용할 수 있어요" }, 403);
+  const noteAction = pathname.match(/^\/account\/training\/notes\/(load|preview|save)$/u)?.[1];
+  if (noteAction) return notesAdmin(noteAction, request, env, json, body);
   const action = practiceAction(pathname);
   if (action && request.method === "POST") return trainingPractice(action, env, json, body, 3, `admin:${sessionHash}`);
   if (pathname === "/account/training/library" && request.method === "GET") {
@@ -158,15 +165,18 @@ export async function trainingAdmin(pathname, request, env, json, uid, body, now
 
 async function readMaterial(env, json, { item: itemId, section: index }, mask) {
   if (typeof itemId === "string" && Object.hasOwn(EDITIONS, itemId)) {
-    if (!(mask & MATERIALS.westminster.bit)) return json({ error: "이 자료의 열람 권한이 없어요" }, 403);
+    const { title, item, semester } = EDITIONS[itemId];
+    if (!(mask & MATERIALS[item].bit)) return json({ error: "이 자료의 열람 권한이 없어요" }, 403);
     const prefix = `edition:${itemId}:`;
     const sections = await env.TRAINING_PRACTICE.get(prefix + "manifest", "json");
     if (!sections) return json({ error: "자료를 아직 서버에 등록하지 않았어요" }, 404);
-    if (index === undefined) return json({ id: itemId, title: EDITIONS[itemId], sections, practiceItem: "westminster" });
+    if (index === undefined) return json({ id: itemId, title, sections, practiceItem: item, semester });
     if (!Number.isInteger(index) || index < 0 || index >= sections.length) return json({ error: "해당 단원을 찾을 수 없어요" }, 404);
     const content = await env.TRAINING_PRACTICE.get(prefix + "section:" + index, "json");
     if (content === null) return json({ error: "해당 단원을 찾을 수 없어요" }, 404);
-    return json({ section: index, content });
+    const lesson = semester ? Number(sections[index].match(/^[12]학기\s*(\d+)과/u)?.[1]) : 0;
+    const note = lesson ? await publishedLessonNote(env, semester, lesson) : "";
+    return json({ section: index, content: note ? `${content}\n\n### 관리자 보충 노트\n\n${note}` : content });
   }
   const item = typeof itemId === "string" && Object.hasOwn(MATERIALS, itemId) && MATERIALS[itemId];
   if (!item || !(mask & item.bit)) return json({ error: "이 자료의 열람 권한이 없어요" }, 403);

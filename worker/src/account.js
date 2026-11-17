@@ -26,7 +26,8 @@ export async function account(pathname, request, env, json) {
     const session = sessionHash && await db.prepare("SELECT user_id FROM sessions WHERE token_hash = ?").bind(sessionHash).first();
     if (!session) return json({ error: "로그인이 필요해요" }, 401);
     if (session.user_id !== TRAINING_ADMIN_ID) return json({ error: "관리자만 사용할 수 있어요" }, 403);
-    const body = await readTrainingBody(request);
+    const isNoteWrite = /^\/account\/training\/notes\/(?:preview|save)$/u.test(pathname);
+    const body = await readTrainingBody(request, isNoteWrite ? 24576 : undefined);
     if (!body) return json({ error: "요청 형식 또는 크기가 올바르지 않아요" }, 400);
     return trainingAdmin(pathname, request, env, json, session.user_id, body, now, sessionHash);
   }

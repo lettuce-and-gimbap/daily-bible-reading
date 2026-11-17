@@ -3,6 +3,9 @@
   const API = "https://daily-bible-reminder.gimbap-lettuce.workers.dev";
   const DEVICE_KEY = "daily-training-device-v1";
   const PROGRESS_KEY = "daily-training-progress-v1";
+  const READING_POSITION_KEY = "daily-training-reading-position";
+  const READING_SIZE_KEY = "daily-training-reading-size";
+  const READING_SIZES = { small: "작게", normal: "보통", large: "크게", largest: "아주 크게" };
   const THEORY_LESSONS = { "언약신학, 구원사": 7, "신약 정경 과정": 4, "복음서": 6, "구원 여정 (서정) 과정": 10, "구원론 비교표": 11 };
   const app = document.getElementById("training-app");
   const params = new URLSearchParams(location.search);
@@ -15,16 +18,32 @@
   let inviteExpires = 0;
   let currentMaterial = null;
   let currentLesson = 0;
+  let readingSize = loadReadingSize();
   let viewRequest = 0;
-  let progress = readProgress();
+  const progress = readReadingRecord(PROGRESS_KEY);
+  const readingPositions = readReadingRecord(READING_POSITION_KEY);
 
   if (inviteCode) {
     sessionStorage.setItem("daily-training-invite", inviteCode);
     history.replaceState(history.state, "", location.pathname + location.search);
   }
 
-  function readProgress() { try { return JSON.parse(localStorage.getItem(PROGRESS_KEY)) || {}; } catch { return {}; } }
-  function saveProgress() { localStorage.setItem(PROGRESS_KEY, JSON.stringify(progress)); }
+  function readReadingRecord(key) {
+    try {
+      const record = JSON.parse(localStorage.getItem(key));
+      return record && typeof record === "object" && !Array.isArray(record) ? record : {};
+    } catch { return {}; }
+  }
+  function saveProgress() {
+    try { localStorage.setItem(PROGRESS_KEY, JSON.stringify(progress)); } catch { /* Keep this session's progress in memory. */ }
+  }
+  function loadReadingSize() {
+    try {
+      const size = localStorage.getItem(READING_SIZE_KEY);
+      if (Object.hasOwn(READING_SIZES, size)) return size;
+    } catch { /* Default to the usual reading size. */ }
+    return "normal";
+  }
   function randomToken() { const bytes = crypto.getRandomValues(new Uint8Array(32)); return [...bytes].map((n) => n.toString(16).padStart(2, "0")).join(""); }
   function esc(value) { return String(value ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]); }
   function dateLabel(value) { return value ? new Intl.DateTimeFormat("ko-KR", { dateStyle: "short", timeStyle: "short" }).format(new Date(value)) : "-"; }
@@ -128,26 +147,32 @@
     currentMaterial = null;
     const allowed = new Set(materials.map(({ id }) => id));
     const editions = materials.find(({ id }) => id === "westminster")?.editions || [];
+    const theory = materials.find(({ id }) => id === "discipleship")?.theory || [];
     const cards = [
       { item: "discipleship", semester: 1, label: "제자훈련 · 1학기", title: "복음과 교리",
-        description: "신앙고백부터 재림까지 12과를 연습하고, 이론정리를 읽을 수 있어요.", read: "이론정리 읽기" },
+        description: "신앙고백부터 재림까지 12과를 읽고 연습하세요.", read: "1학기 이론정리 읽기" },
       { item: "discipleship", semester: 2, label: "제자훈련 · 2학기", title: "제자의 삶",
-        description: "순종과 섬김부터 서로 사랑하기까지, 12과를 연습하세요." },
+        description: "순종과 섬김부터 서로 사랑하기까지, 12과를 읽고 연습하세요.", read: "2학기 이론정리 읽기" },
       { item: "westminster", label: "웨스트민스터", title: "신도게요서",
         description: "33장의 교리와 미주를 읽고, 장별로 핵심을 확인하세요.", read: "신도게요서 읽기" },
-    ].filter((course) => allowed.has(course.item)).map((course) => `
+    ].filter((course) => allowed.has(course.item)).map((course) => {
+      const theoryId = theory.find(({ id }) => id === `course-theory-${course.semester}`)?.id;
+      const readingId = course.semester ? theoryId || (course.semester === 1 ? course.item : "") : course.item;
+      return `
       <article class="card training-course" data-course="${course.semester || course.item}">
         <p class="course-kicker">${esc(course.label)}</p>
         <h2>${esc(course.title)}</h2>
         <p class="muted">${esc(course.description)}</p>
         <div class="course-actions">
           <button class="btn primary" type="button" data-practice-item="${course.item}" data-semester="${course.semester || ""}">문제 풀기</button>
-          ${course.read ? `<button class="btn secondary" type="button" data-open-material="${course.item}">${esc(course.read)}</button>` : ""}
+          ${readingId ? `<button class="btn secondary" type="button" data-open-material="${esc(readingId)}">${esc(course.read)}</button>` : ""}
         </div>
+        ${course.semester === 1 && theoryId ? '<button class="btn text small" type="button" data-open-material="discipleship">기존 1학기 이론정리 읽기</button>' : ""}
         ${course.item === "westminster" && editions.length ? `<details class="training-editions"><summary>보강 자료 2종 읽기</summary>
           ${editions.map(({ id, title }) => `<button class="btn ghost small" type="button" data-open-material="${esc(id)}">${esc(title)}</button>`).join("")}
         </details>` : ""}
-      </article>`).join("");
+      </article>`;
+    }).join("");
     const header = ownerPreview
       ? '<div class="topline training-library-actions"><a class="btn secondary" href="training.html?admin=1">QR · 열람 권한 관리</a></div>'
       : '<div class="topline training-library-actions"><button class="btn secondary" id="refresh-library">승인 다시 확인</button></div>';
@@ -163,14 +188,14 @@
     })));
   }
 
-  function openPractice(initial) {
+  function openPractice(initial, back = start) {
     ++viewRequest;
     clearInterval(pollTimer);
     currentMaterial = null;
     const request = (action, body) => ownerPreview
       ? call(`/account/training/practice/${action}`, body, { admin: true })
       : call(`/training/practice/${action}`, { ...body, deviceToken });
-    window.TrainingPractice.open(app, request, start, initial);
+    window.TrainingPractice.open(app, request, back, initial);
   }
 
   function readMaterial(item, section) {
@@ -178,15 +203,15 @@
     return call("/training/content", { deviceToken, item, section });
   }
 
-  async function openMaterial(id) {
+  async function openMaterial(id, section) {
     const requestId = ++viewRequest;
     app.innerHTML = `<section class="card">승인과 자료를 확인하고 있어요…</section>`;
     try {
       const material = await readMaterial(id);
       if (requestId !== viewRequest) return;
       currentMaterial = material;
-      const next = material.sections.findIndex((_, i) => !(progress[id] || []).includes(i));
-      await openSection(next < 0 ? 0 : next);
+      if (Number.isInteger(section)) await openSection(section);
+      else renderReadingToc();
     } catch (error) { if (requestId === viewRequest) showReadError(error); }
   }
 
@@ -197,6 +222,8 @@
       const section = await readMaterial(currentMaterial.id, index);
       if (requestId !== viewRequest) return;
       currentLesson = index;
+      readingPositions[currentMaterial.id] = index;
+      try { localStorage.setItem(READING_POSITION_KEY, JSON.stringify(readingPositions)); } catch { /* Keep the position in memory. */ }
       renderMaterial(section.content);
     } catch (error) { if (requestId === viewRequest) showReadError(error); }
   }
@@ -207,19 +234,182 @@
     document.getElementById("back-library").addEventListener("click", start);
   }
 
+  function readingDone() {
+    const done = progress[currentMaterial.id];
+    return new Set(Array.isArray(done) ? done.filter((index) =>
+      Number.isInteger(index) && index >= 0 && index < currentMaterial.sections.length) : []);
+  }
+
+  function readingFontControl() {
+    return `<label class="reading-font">글자 크기
+      <select id="reading-font-size">${Object.entries(READING_SIZES).map(([size, label]) =>
+        `<option value="${size}" ${size === readingSize ? "selected" : ""}>${label}</option>`).join("")}</select>
+    </label>`;
+  }
+
+  function bindReadingFont() {
+    const article = app.querySelector(".reading-text");
+    const select = app.querySelector("#reading-font-size");
+    if (article) article.dataset.readingSize = readingSize;
+    select.addEventListener("change", () => {
+      const size = select.value;
+      if (!Object.hasOwn(READING_SIZES, size)) return;
+      readingSize = size;
+      if (article) article.dataset.readingSize = size;
+      try { localStorage.setItem(READING_SIZE_KEY, size); } catch { /* Keep the selection in memory. */ }
+    });
+  }
+
+  function tocGroups(titles) {
+    const groups = [];
+    const numberedTitle = (title) => title.match(/^(?:[12]학기\s*)?(?:제\s*)?(\d+)\s*(장|과)/u);
+    titles.forEach((title, index) => {
+      const numbered = numberedTitle(title);
+      const kind = numbered?.[2] || "";
+      const last = groups.at(-1);
+      const entry = { title, index, number: numbered?.[1] };
+      if (last?.kind === kind && last.entries.length < 6) last.entries.push(entry);
+      else groups.push({ kind, entries: [entry] });
+    });
+    return groups.map(({ kind, entries }) => {
+      if (!kind) return { label: groups.length === 1 ? "전체 목차" : "참고 자료", entries };
+      const first = entries[0].number;
+      const last = entries.at(-1).number;
+      return { label: first === last ? `${first}${kind}` : `${first}–${last}${kind}`, entries };
+    });
+  }
+
+  function renderReadingToc(focusIndex) {
+    const units = currentMaterial.sections;
+    const done = readingDone();
+    const saved = readingPositions[currentMaterial.id];
+    const hasPosition = Number.isInteger(saved) && saved >= 0 && saved < units.length;
+    const following = hasPosition ? units.findIndex((_, i) => i >= saved && !done.has(i)) : -1;
+    const next = following >= 0 ? following : units.findIndex((_, i) => !done.has(i));
+    const firstToOpen = focusIndex ?? (next < 0 ? 0 : next);
+    const groups = tocGroups(units);
+    const unitList = (entries) => `<ul class="reading-unit-list">${entries.map(({ title, index }) => `
+      <li><button class="reading-unit" type="button" data-reading-unit="${index}">
+        <span>${esc(title)}</span>
+        ${done.has(index) ? '<span class="reading-done">완료</span>' : '<span class="reading-next" aria-hidden="true">›</span>'}
+      </button></li>`).join("")}</ul>`;
+    app.innerHTML = `
+      <div class="topline reading-toolbar">
+        <button class="back" type="button" id="back-library">‹ 자료 목록</button>
+        ${readingFontControl()}
+      </div>
+      <section class="card reading-toc">
+        <h2 tabindex="-1" id="reading-title">${esc(currentMaterial.title)}</h2>
+        <div class="topline reading-toc-meta">
+          <p class="muted">목차 · ${done.size} / ${units.length}개 읽음</p>
+          ${next >= 0 && (hasPosition || done.size) ? `<button class="btn secondary small" type="button" data-reading-unit="${next}">이어 읽기</button>` : ""}
+        </div>
+        ${groups.length === 1 ? unitList(groups[0].entries) : groups.map(({ label, entries }) => `
+          <details class="reading-group" name="training-toc" ${entries.some(({ index }) => index === firstToOpen) ? "open" : ""}>
+            <summary>${esc(label)} <span class="muted small">${entries.filter(({ index }) => done.has(index)).length} / ${entries.length}</span></summary>
+            ${unitList(entries)}
+          </details>`).join("")}
+        ${units.length ? "" : '<p class="muted">읽을 단원이 없어요.</p>'}
+      </section>`;
+    document.getElementById("back-library").addEventListener("click", start);
+    app.querySelectorAll("[data-reading-unit]").forEach((button) => button.addEventListener("click", () => {
+      openSection(Number(button.dataset.readingUnit));
+    }));
+    bindReadingFont();
+    const returnTo = Number.isInteger(focusIndex) && app.querySelector(`.reading-unit[data-reading-unit="${focusIndex}"]`);
+    if (returnTo) returnTo.focus();
+    else resetReaderPosition();
+  }
+
+  function resetReaderPosition() {
+    document.getElementById("reading-title")?.focus({ preventScroll: true });
+    window.scrollTo(0, 0);
+  }
+
+  function sectionPractice(section) {
+    const { id, practiceItem } = currentMaterial;
+    const theorySemester = Number(id.match(/^course-theory-([12])$/u)?.[1]);
+    if (theorySemester) {
+      const lesson = id === "course-theory-1" && /^보충 이론.*언약신학/u.test(section)
+        ? "1"
+        : section.match(/^[12]학기\s*(\d+)과/u)?.[1];
+      return lesson ? { item: "discipleship", semester: theorySemester, lesson: `${theorySemester}학기 ${lesson}과` } : null;
+    }
+    if (id === "discipleship") {
+      const lesson = THEORY_LESSONS[section.replace(/\s+\(\d+p\)$/u, "")];
+      return lesson ? { item: id, semester: 1, lesson: `1학기 ${lesson}과` } : null;
+    }
+    const chapter = Number(section.match(/^제\s*(\d+)장/u)?.[1]);
+    return chapter ? { item: practiceItem || id, section, chapter } : null;
+  }
+
+  function markdownInline(text) {
+    const pattern = /\[([^\]\n]+)\]\((https?:\/\/[^\s)]+)\)|\*\*\*([^*]+)\*\*\*|\*\*(.+?)\*\*|__(.+?)__|`([^`]+)`|\*([^*]+)\*|_([^_]+)_/gu;
+    let result = "";
+    let end = 0;
+    for (const match of text.matchAll(pattern)) {
+      const [, label, href, boldItalic, bold, altBold, code, italic, altItalic] = match;
+      result += esc(text.slice(end, match.index));
+      if (href) {
+        try {
+          const url = new URL(href);
+          result += ["https:", "http:"].includes(url.protocol) && !url.username && !url.password
+            ? `<a href="${esc(url.href)}" target="_blank" rel="noopener noreferrer">${esc(label)}</a>`
+            : esc(match[0]);
+        } catch { result += esc(match[0]); }
+      } else if (boldItalic) result += `<strong><em>${esc(boldItalic)}</em></strong>`;
+      else if (bold || altBold) result += `<strong>${markdownInline(bold || altBold)}</strong>`;
+      else if (code) result += `<code>${esc(code)}</code>`;
+      else result += `<em>${esc(italic || altItalic)}</em>`;
+      end = match.index + match[0].length;
+    }
+    return result + esc(text.slice(end));
+  }
+
   function markdownHtml(markdown, isNotes = false) {
-    const lines = markdown.split("\n"); let html = "", para = [], list = "", code = false, codeLines = [];
-    const inline = (text) => esc(text).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/`([^`]+)`/g, "<code>$1</code>");
+    const lines = String(markdown || "").split(/\r?\n/u);
+    let html = "", para = [], list = "", orderedNext = 0, code = false, codeLines = [];
+    const inline = markdownInline;
     const closePara = () => { if (para.length) { html += `<p>${inline(para.join(" "))}</p>`; para = []; } };
     const closeList = () => { if (list) { html += `</${list}>`; list = ""; } };
-    for (const line of lines) {
-      if (/^```/.test(line)) { closePara(); closeList(); if (code) { html += `<pre>${esc(codeLines.join("\n"))}</pre>`; codeLines = []; } code = !code; continue; }
+    const cells = (line) => line.trim().replace(/^\||\|$/gu, "").split("|").map((cell) => cell.trim());
+    for (let index = 0; index < lines.length; index++) {
+      const line = lines[index];
+      if (/^\s*```/.test(line)) { closePara(); closeList(); if (code) { html += `<pre>${esc(codeLines.join("\n"))}</pre>`; codeLines = []; } code = !code; continue; }
       if (code) { codeLines.push(line); continue; }
       const s = line.trim();
       if (!s) { closePara(); closeList(); continue; }
-      const heading = s.match(/^(#{1,3})\s+(.+)$/);
-      if (heading) { closePara(); closeList(); const n = Math.min(heading[1].length + 1, 4); html += `<h${n}>${inline(heading[2])}</h${n}>`; continue; }
-      if (s.startsWith("> ")) { closePara(); closeList(); html += `<blockquote>${inline(s.slice(2))}</blockquote>`; continue; }
+      const heading = s.match(/^(#{1,6})\s+(.+)$/);
+      if (heading) {
+        closePara(); closeList();
+        const level = Math.min(Math.max(heading[1].length, 3), 6);
+        html += `<h${level}>${inline(heading[2])}</h${level}>`;
+        continue;
+      }
+      if (s.startsWith("> ")) {
+        closePara(); closeList();
+        const quote = [s.slice(2)];
+        while (lines[index + 1]?.trimStart().startsWith("> ")) quote.push(lines[++index].trimStart().slice(2));
+        html += `<blockquote>${inline(quote.join(" "))}</blockquote>`;
+        continue;
+      }
+      if (s.includes("|") && lines[index + 1]?.includes("|")) {
+        const header = cells(s);
+        const separator = cells(lines[index + 1]);
+        if (header.length === separator.length && separator.every((cell) => /^:?-{3,}:?$/u.test(cell))) {
+          closePara(); closeList();
+          const rows = [];
+          index++;
+          while (lines[index + 1]?.trim().includes("|") && cells(lines[index + 1]).length === header.length) {
+            rows.push(cells(lines[++index]));
+          }
+          html += `<div class="reading-table" role="region" aria-label="표" tabindex="0"><table>
+            <thead><tr>${header.map((cell) => `<th scope="col">${inline(cell)}</th>`).join("")}</tr></thead>
+            <tbody>${rows.map((row) => `<tr>${row.map((cell) => `<td>${inline(cell)}</td>`).join("")}</tr>`).join("")}</tbody>
+          </table></div>`;
+          continue;
+        }
+      }
       const bullet = s.match(/^[-*+•]\s+(.+)$/);
       const ordered = s.match(/^(\d+)[.)]\s+(.+)$/);
       if (isNotes && ordered) {
@@ -233,7 +423,13 @@
       if (bullet || ordered) {
         closePara();
         const next = bullet ? "ul" : "ol";
-        if (list !== next) { closeList(); list = next; html += `<${list}>`; }
+        const number = ordered ? Number(ordered[1]) : 0;
+        if (list !== next || (ordered && number !== orderedNext)) {
+          closeList();
+          list = next;
+          html += ordered && number > 1 ? `<ol start="${number}">` : `<${list}>`;
+        }
+        orderedNext = number + 1;
         html += `<li>${inline(bullet ? bullet[1] : ordered[2])}</li>`;
         continue;
       }
@@ -247,43 +443,51 @@
 
   function renderMaterial(content) {
     const units = currentMaterial.sections;
-    const done = new Set(progress[currentMaterial.id] || []);
-    const isNotes = units[currentLesson] === "미주";
+    const done = readingDone();
+    const title = units[currentLesson];
+    const isNotes = /^(?:미주|각주)(?:$|\s)/u.test(title);
+    const practice = sectionPractice(title);
+    const appendix = currentMaterial.id === "course-theory-1" && /^1학기\s*1과/u.test(title)
+      ? units.findIndex((heading) => /^보충 이론.*언약신학/u.test(heading))
+      : -1;
+    const last = currentLesson + 1 === units.length;
     app.innerHTML = `
-      <div class="topline"><a href="#" class="back" id="back-library">‹ 자료 목록</a><span class="muted small">${currentLesson + 1} / ${units.length} · 완료 ${done.size}</span></div>
+      <div class="topline reading-toolbar">
+        <button class="back" id="back-toc" type="button">‹ 목차</button>
+        ${readingFontControl()}
+      </div>
       <section class="card">
-        <p class="muted small reading-source">${esc(currentMaterial.title)}</p>
-        <label class="reading-select">단원 <select id="reading-unit">${units.map((title, i) =>
-          `<option value="${i}" ${i === currentLesson ? "selected" : ""}>${done.has(i) ? "✓ " : ""}${esc(title)}</option>`).join("")}</select></label>
         <article class="lesson-body">
-          <h2>${esc(units[currentLesson])}</h2>
-          ${isNotes ? "" : '<button class="btn secondary" id="practice-section">관련 문제 풀기</button>'}
+          <p class="muted small reading-source">${esc(currentMaterial.title)} · ${currentLesson + 1} / ${units.length}${done.has(currentLesson) ? " · 읽음" : ""}</p>
+          <h2 tabindex="-1" id="reading-title">${esc(title)}</h2>
+          ${practice || appendix >= 0 ? `<div class="course-actions">
+            ${practice ? '<button class="btn secondary small" id="practice-section" type="button">이 단원 문제 풀기</button>' : ""}
+            ${appendix >= 0 ? '<button class="btn ghost small" id="read-appendix" type="button">언약신학 보충 읽기</button>' : ""}
+          </div>` : ""}
           <div class="reading-text">${markdownHtml(content, isNotes)}</div>
-          <div class="inline reading-actions"><button class="btn" id="mark-done">${done.has(currentLesson) ? "완료했어요 ✓" : "이 단위 읽기 완료"}</button>
-            <button class="btn secondary" id="previous" ${currentLesson === 0 ? "disabled" : ""}>이전</button>
-            <button class="btn secondary" id="next" ${currentLesson === units.length - 1 ? "disabled" : ""}>다음</button>
+          <div class="reading-actions">
+            ${currentLesson > 0 ? '<button class="btn ghost" type="button" id="previous">‹ 이전 단원</button>' : ""}
+            <button class="btn" id="mark-done" type="button">${last ? "완료하고 목차로" : "완료하고 다음 ›"}</button>
           </div>
         </article>
       </section>`;
-    document.getElementById("back-library").addEventListener("click", (e) => { e.preventDefault(); start(); });
-    document.getElementById("reading-unit").addEventListener("change", (event) => openSection(Number(event.target.value)));
-    document.getElementById("practice-section")?.addEventListener("click", () => {
-      const item = currentMaterial.practiceItem || currentMaterial.id;
-      const section = units[currentLesson];
-      const theoryLesson = THEORY_LESSONS[section.replace(/\s+\(\d+p\)$/u, "")];
-      const lesson = item === "discipleship" && theoryLesson ? `1학기 ${theoryLesson}과` : undefined;
-      const chapter = currentMaterial.practiceItem ? Number(section.match(/^제\s*(\d+)장/u)?.[1]) || undefined : undefined;
-      openPractice({ item, section, lesson, chapter, semester: item === "discipleship" ? 1 : undefined });
-    });
+    bindReadingFont();
+    resetReaderPosition();
+    document.getElementById("back-toc").addEventListener("click", () => renderReadingToc(currentLesson));
+    document.getElementById("read-appendix")?.addEventListener("click", () => openSection(appendix));
+    if (practice) {
+      const { id } = currentMaterial;
+      const index = currentLesson;
+      document.getElementById("practice-section").addEventListener("click", () => openPractice({ ...practice, fromReading: true }, () => openMaterial(id, index)));
+    }
     document.getElementById("mark-done").addEventListener("click", () => {
       done.add(currentLesson);
       progress[currentMaterial.id] = [...done].sort((a, b) => a - b);
       saveProgress();
-      if (currentLesson < units.length - 1) openSection(currentLesson + 1);
-      else renderMaterial(content);
+      if (last) renderReadingToc(currentLesson);
+      else openSection(currentLesson + 1);
     });
-    document.getElementById("previous").addEventListener("click", () => openSection(currentLesson - 1));
-    document.getElementById("next").addEventListener("click", () => openSection(currentLesson + 1));
+    document.getElementById("previous")?.addEventListener("click", () => openSection(currentLesson - 1));
   }
 
   function renderAdmin() {
@@ -294,6 +498,7 @@
     document.getElementById("refresh-readers").addEventListener("click", loadReaders);
     document.getElementById("reader-list").addEventListener("click", handleReaderAction);
     loadReaders().catch(showAdminError);
+    window.TrainingNotes?.mount(app, (action, data, method) => call(`/account/training/notes/${action}`, data, { admin: true, method }));
   }
 
   async function createInvite() {
@@ -361,7 +566,8 @@
     } else if (deviceToken && currentMaterial) {
       const item = currentMaterial.id;
       call("/training/status", { deviceToken }).then((data) => {
-        if (currentMaterial?.id === item && !data.materials?.some(({ id, editions }) => id === item || editions?.some((edition) => edition.id === item))) start();
+        if (currentMaterial?.id === item && !data.materials?.some(({ id, editions, theory }) =>
+          id === item || editions?.some((edition) => edition.id === item) || theory?.some(({ id }) => id === item))) start();
       }).catch(() => { if (currentMaterial?.id === item) start(); });
     }
   });

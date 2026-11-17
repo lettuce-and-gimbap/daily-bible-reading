@@ -30,3 +30,8 @@ VAPID_SUBJECT = "https://lettuce-and-gimbap.github.io/daily-bible-reading/"
 binding = "DB"
 database_name = "daily-bible-users"
 database_id = "a19b9c65-c404-4f7c-a3c0-022e3c762b8a"
+
+[[d1_databases]]
+binding = "TRAINING_NOTES"
+database_name = "daily-bible-training-notes"
+database_id = "46699e57-3da3-4b29-ab80-0b51d693a292"

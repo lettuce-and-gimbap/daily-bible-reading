@@ -10,6 +10,8 @@
   const unitOrder = (unit) => Number(unit.title.match(/(?:제\s*|학기\s+)(\d+)[장과]/u)?.[1]) || 0;
   const inTrack = (unit, track) => unit.item === track.item && (track.semester ? unit.semester === track.semester : true);
   const rotationKey = "daily-training-rounds-v3";
+  const readingSizeKey = "daily-training-reading-size";
+  const readingSizes = { small: ".94rem", normal: "1rem", large: "1.175rem", largest: "1.375rem" };
   const escape = (value) => String(value ?? "").replace(/[&<>"']/g, (c) => ({
     "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
   })[c]);
@@ -26,9 +28,24 @@
   async function open(host, request, back, initial = {}) {
     const panel = document.createElement("section");
     panel.className = "card practice-card";
-    host.innerHTML = '<button type="button" class="btn secondary" data-practice-back>‹ 자료 목록</button>';
+    host.innerHTML = `<div class="topline reading-toolbar">
+      <button type="button" class="btn secondary" data-practice-back>${initial.fromReading ? "‹ 읽던 단원" : "‹ 자료 목록"}</button>
+      <label class="reading-font">글자 크기<select data-practice-size>
+        <option value="small">작게</option><option value="normal">보통</option>
+        <option value="large">크게</option><option value="largest">아주 크게</option>
+      </select></label>
+    </div>`;
     host.append(panel);
     host.querySelector("[data-practice-back]").addEventListener("click", back);
+    const size = host.querySelector("[data-practice-size]");
+    function applySize() { panel.style.fontSize = readingSizes[size.value] || readingSizes.normal; }
+    try { size.value = localStorage.getItem(readingSizeKey) || "normal"; } catch { /* optional */ }
+    if (!size.value) size.value = "normal";
+    applySize();
+    size.addEventListener("change", () => {
+      applySize();
+      try { localStorage.setItem(readingSizeKey, size.value); } catch { /* optional */ }
+    });
     panel.innerHTML = '<h2>문제풀이</h2><p role="status">연습 범위를 불러오는 중이에요…</p>';
 
     let catalog;
@@ -43,6 +60,7 @@
     let filters = { ...initial };
     let queue = [];
     let responses = [];
+    let finishedRound = [];
     let index = 0;
     let correction = false;
     let ticket = null;
@@ -100,14 +118,17 @@
       button.disabled = true;
       status.hidden = true;
       const key = JSON.stringify(filters);
-      const rounds = readRounds();
+      const previouslySaved = readRounds();
+      const rounds = previouslySaved.bankRevision === catalog.bankRevision ? previouslySaved.rounds || {} : {};
       const rotation = rounds[key] || 0;
       try {
         const result = await request("start", { ...filters, rotation });
         if (!panel.isConnected) return;
         if (!result.questions.length) throw new Error("이 범위와 유형을 함께 가진 문제가 없어요. 유형이나 범위를 바꿔 주세요.");
         ticket = result.ticket;
-        try { localStorage.setItem(rotationKey, JSON.stringify({ ...rounds, [key]: (rotation + 1) % 10000 })); } catch { /* optional */ }
+        try { localStorage.setItem(rotationKey, JSON.stringify({
+          bankRevision: catalog.bankRevision, rounds: { ...rounds, [key]: (rotation + 1) % 10000 },
+        })); } catch { /* optional */ }
         begin(result.questions, false);
       } catch (error) { errorText(status, error); }
       finally { button.disabled = false; }
@@ -116,6 +137,7 @@
     function begin(questions, reviewing) {
       queue = questions;
       responses = [];
+      if (!reviewing) finishedRound = [];
       index = 0;
       correction = reviewing;
       showQuestion();
@@ -190,13 +212,20 @@
 
     function showResults() {
       const misses = responses.filter((result) => !result.correct);
+      if (!correction) finishedRound = [...responses];
       panel.innerHTML = `
         <h2 tabindex="-1">${correction ? "오답 교정 결과" : "연습 결과"}</h2>
         <p><b>${responses.length - misses.length} / ${responses.length} 정답</b></p>
+        ${finishedRound.length && window.TrainingExport ? `<div class="training-export-actions" aria-label="완료한 문제와 정답 저장">
+          <button class="btn secondary" type="button" data-export-md>MD 다운로드</button>
+          <button class="btn secondary" type="button" data-export-pdf>PDF 미리보기</button>
+        </div>` : ""}
         ${responses.map((result) => `<details class="practice-result"><summary>${result.correct ? "정답" : "오답"} · ${escape(result.question.prompt)}</summary>${reviewHtml(result)}</details>`).join("")}
         <div class="inline practice-actions">${misses.length ? '<button class="btn" data-retry>틀린 문제만 다시 풀기</button>' : ""}
           <button class="btn secondary" data-setup>범위 선택</button></div>`;
       panel.querySelector("[data-retry]")?.addEventListener("click", () => begin(misses.map(({ question }) => question), true));
+      panel.querySelector("[data-export-md]")?.addEventListener("click", () => window.TrainingExport.downloadMarkdown(finishedRound));
+      panel.querySelector("[data-export-pdf]")?.addEventListener("click", () => window.TrainingExport.printPreview(panel, finishedRound, showResults));
       panel.querySelector("[data-setup]").addEventListener("click", () => { showSetup(); panel.querySelector("h2").focus(); });
       panel.querySelector("h2").focus();
     }

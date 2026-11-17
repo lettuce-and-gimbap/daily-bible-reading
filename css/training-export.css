@@ -1,0 +1,64 @@
+.training-export-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .55rem;
+  margin-block: .7rem 1.1rem;
+}
+.training-export-controls {
+  margin-bottom: 1.25rem;
+  padding-bottom: .65rem;
+  border-bottom: 1px solid var(--line);
+}
+.training-export-controls p { margin: .6rem 0; }
+.training-round-document { line-height: 1.65; overflow-wrap: anywhere; }
+.training-round-document h2 { margin: .25rem 0 .5rem; }
+.training-sheet-context { color: var(--muted); font-size: .88em; }
+.training-sheet-item { margin: 0; padding: .85rem 0; }
+.training-sheet-item + .training-sheet-item { border-top: 1px solid var(--line); }
+.training-sheet-item h3 { margin: 0 0 .45rem; font-size: 1em; }
+.training-sheet-item p { margin: .35rem 0; }
+.training-sheet-choices { padding: 0; margin: .35rem 0; list-style: none; }
+.training-sheet-blank { min-height: 1.65em; padding-block: .25rem .6rem; border-bottom: 1px solid var(--line); }
+.training-sheet-answers { margin-top: 1.6rem; }
+
+@media print {
+  @page { size: A4; margin: 15mm; }
+  body.training-page:has(.training-round-document) {
+    color: #151515 !important;
+    background: #fff !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  body.training-page:has(.training-round-document) > :not(.training-main),
+  .training-main:has(.training-round-document) > :not(#training-app),
+  #training-app:has(.training-round-document) > :not(.practice-card),
+  .practice-card:has(.training-round-document) > :not(.training-round-document) {
+    display: none !important;
+  }
+  .training-main:has(.training-round-document),
+  #training-app:has(.training-round-document),
+  #training-app .practice-card:has(.training-round-document) {
+    display: block !important;
+    width: auto !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    color: #151515 !important;
+    background: #fff !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+  }
+  .training-round-document {
+    font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans CJK KR", "Noto Sans KR", sans-serif;
+    font-size: 10.5pt;
+  }
+  .training-round-document h2 { color: #151515 !important; font-size: 17pt; }
+  .training-sheet-context { color: #494949 !important; }
+  .training-sheet-item { break-inside: avoid; page-break-inside: avoid; }
+  .training-sheet-item + .training-sheet-item, .training-sheet-blank { border-color: #bdbdbd; }
+  .training-sheet-answers { break-before: page; page-break-before: always; margin-top: 0; }
+}
