@@ -376,6 +376,12 @@ function bindQtContent() {
       if (editions) editions.hidden = true;
       return qtPassageCount();
     }
+    // 첫 클릭으로 역본 선택창을 열고, 같은 상단 버튼을 다시 누르면 선택한 역본을 붙임
+    if (editions && !editions.hidden) {
+      const keep = new Set([...editions.querySelectorAll("[data-qt-ed]:checked")].map((c) => c.dataset.qtEd));
+      if (keep.size) pasteSelected(keep);
+      return;
+    }
     const chosen = [...box.querySelectorAll("input[data-ri]:checked")];
     if (!chosen.length) return;
     if (qtPassage.versions?.length > 1 && chosen.some((c) => qtPassage.rows[Number(c.dataset.ri)]?.texts[1])) {
