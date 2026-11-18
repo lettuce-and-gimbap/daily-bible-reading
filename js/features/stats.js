@@ -142,6 +142,7 @@ function renderStatsSubpage(page, { cutoff, cutoffText, habits, habitAdvice }) {
   const themeNow = state.settings.theme || "auto";
   const uiNow = state.settings.uiStyle || "classic";
   app.innerHTML = `${header}
+    <section class="card"><h3 class="label">한 손 조작</h3><p class="muted small">통독과 QT의 주요 조작 위치를 고른 손에 맞춰요.</p><div class="seg wide">${[["right", "오른손"], ["left", "왼손"]].map(([v, l]) => `<button type="button" data-hand-set="${v}" class="${(state.settings.hand || "right") === v ? "on" : ""}" aria-pressed="${(state.settings.hand || "right") === v}">${l}</button>`).join("")}</div></section>
     <section class="card theme-card"><h3 class="label">화면 모드</h3><div class="seg wide">
       ${[["auto", "기기 설정"], ["light", "밝게"], ["dark", "어둡게"]].map(([v, l]) => `<button class="${themeNow === v ? "on" : ""}" data-theme-set="${v}">${l}</button>`).join("")}
     </div></section>
@@ -176,6 +177,12 @@ function renderStatsSubpage(page, { cutoff, cutoffText, habits, habitAdvice }) {
   bindReminderCard();
   KstLight.bindPermissions(document);
   bindExportCard();
+  document.querySelectorAll("[data-hand-set]").forEach((button) => button.addEventListener("click", () => {
+    state.settings.hand = button.dataset.handSet;
+    applyTheme();
+    persist();
+    button.parentElement.querySelectorAll("[data-hand-set]").forEach((item) => { const on = item === button; item.classList.toggle("on", on); item.setAttribute("aria-pressed", String(on)); });
+  }));
   document.querySelectorAll("[data-theme-set]").forEach((button) => button.addEventListener("click", () => {
     state.settings.theme = button.dataset.themeSet;
     applyTheme();

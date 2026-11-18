@@ -26,6 +26,7 @@ function versionName(code) {
 
 // 화면 모드(관리 탭에서 고름): auto면 기기 설정을 따르고, light/dark면 css의 data-theme으로 강제
 function applyTheme() {
+  document.documentElement.dataset.hand = (state.settings || {}).hand === "left" ? "left" : "right";
   const t = (state.settings || {}).theme;
   if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
   else delete document.documentElement.dataset.theme;
