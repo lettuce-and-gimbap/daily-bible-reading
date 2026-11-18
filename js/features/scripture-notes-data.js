@@ -9520,8 +9520,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": [],
     "sourceLinks": [
       {
-        "label": "Tomb of Rachel (위키백과 영문)",
-        "url": "https://en.wikipedia.org/wiki/Tomb_of_Rachel"
+        "label": "Encyclopedia of the Bible: Rachel's Tomb",
+        "url": "https://classic.biblegateway.com/resources/encyclopedia-of-the-bible/Rachels-Tomb"
       }
     ]
   },
@@ -25436,12 +25436,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": [],
     "sourceLinks": [
       {
-        "label": "Shavuot - Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Shavuot"
+        "label": "Britannica: Shavuot",
+        "url": "https://www.britannica.com/topic/Shavuot"
       },
       {
-        "label": "Sukkot - Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Sukkot"
+        "label": "Britannica: Sukkoth",
+        "url": "https://www.britannica.com/topic/Sukkoth-Judaism"
       }
     ]
   },
@@ -38489,8 +38489,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "sourceLinks": [
       {
-        "label": "Wikipedia: Gittin (tractate)",
-        "url": "https://en.wikipedia.org/wiki/Gittin_(tractate)"
+        "label": "Matthew Henry: Deuteronomy 24",
+        "url": "https://www.biblestudytools.com/commentaries/matthew-henry-complete/deuteronomy/24.html"
       }
     ]
   },
@@ -39271,7 +39271,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "모세가 모압 땅에서 호렙에서 세운 언약 외에 또 하나의 언약을 세우라는 명령을 받았다고 말해요.",
-    "detail": "히브리어 성경에서는 이 구절이 28장 69절이에요. 모압 땅에서 맺는 이 언약은 호렙 언약 뒤에 더해진 말씀이에요. 5장 2-3절은 호렙 언약을 지금 살아 있는 우리와 세우신 것이라고 해요. 신명기가 고대 근동의 종주 조약 형식과 비교되어 읽히기도 해요.",
+    "detail": "히브리어 성경에서는 이 구절이 28장 69절이에요. 매튜 헨리는 이 언약이 호렙 언약과 같은 언약이지만, 모압에서 새로 선포되고 확인된 것이라고 풀어요. 5장 2-3절은 호렙 언약을 지금 살아 있는 우리와 세우신 것이라고 해요. 신명기가 고대 근동의 종주 조약 형식과 비교되어 읽히기도 해요.",
     "caution": "모압 언약을 호렙 언약과 별개의 새 언약으로 읽기보다, 호렙 언약 뒤에 이어진 말씀으로 읽는 이해가 있어요.",
     "refs": [
       "신명기 29:1",
@@ -39284,8 +39284,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "sourceLinks": [
       {
-        "label": "Wikipedia: Deuteronomy",
-        "url": "https://en.wikipedia.org/wiki/Deuteronomy"
+        "label": "Matthew Henry: Deuteronomy 29",
+        "url": "https://www.biblestudytools.com/commentaries/matthew-henry-complete/deuteronomy/29.html"
       }
     ]
   },
@@ -80009,7 +80009,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "하나님은 낚시로 리워야단을 끌어낼 수 있겠느냐고, 노끈으로 그 혀를 맬 수 있겠느냐고 물으셔요.",
-    "detail": "‘리워야단’은 우가릿 신화의 바다 괴물 ‘로탄’과 이어지는 이름이에요(시 74:14; 사 27:1). 악어로 읽는 견해는 19세기 학자들이 제안한 것이에요. 신화적 괴물을 시적으로 쓴 것으로 보는 견해도 있어요. 하나님은 낚시로 끌어낼 수 있느냐고 물으세요.",
+    "detail": "‘리워야단’은 우가릿 신화의 바다 괴물 ‘로탄’과 이어지는 이름이에요(시 74:14; 사 27:1). 악어로 읽는 견해도 있어요. 신화적 괴물을 시적으로 쓴 것으로 보는 견해도 있어요. 하나님은 낚시로 끌어낼 수 있느냐고 물으세요.",
     "caution": "사람이 길들일 수 없는 짐승을 하나님이 지으셨다는 점이 핵심이에요. 욥은 3:8에서 리워야단을 일으키는 자를 말했지만, 지금은 하나님이 직접 보이세요.",
     "refs": [
       "욥기 41:1",
@@ -80021,8 +80021,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": [],
     "sourceLinks": [
       {
-        "label": "Wikipedia: Leviathan",
-        "url": "https://en.wikipedia.org/wiki/Leviathan"
+        "label": "Encyclopedia of the Bible: Leviathan",
+        "url": "https://www.biblegateway.com/resources/encyclopedia-of-the-bible/Leviathan"
       }
     ]
   },
@@ -80081,7 +80081,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "하나님은 리워야단이 모든 교만한 자들 위에 군림하는 왕이라고 결론지으셔요.",
-    "detail": "리워야단이라는 이름은 우가릿 신화의 바다 괴물 ‘로탄’과 같은 뿌리에서 왔다고 보는 견해가 많아요. 악어로 읽는 해석은 19세기 학자들이 내놓았어요. 어느 쪽이든 사람이 길들일 수 없는 피조물도 하나님이 만들고 다스리신다는 것을 보여 줘요. 38~41장은 욥이 창조 세계 앞에서 겸손을 배우게 해요.",
+    "detail": "리워야단이라는 이름은 우가릿 신화의 바다 괴물 ‘로탄’과 같은 뿌리에서 왔다고 보는 견해가 많아요. 악어로 읽는 해석도 있어요. 어느 쪽이든 사람이 길들일 수 없는 피조물도 하나님이 만들고 다스리신다는 것을 보여 줘요. 38~41장은 욥이 창조 세계 앞에서 겸손을 배우게 해요.",
     "caution": "‘교만한 자들의 왕’은 리워야단 자신을 가리켜요. 그 리워야단도 하나님 아래에 있다는 것이 이 말씀의 요점이에요.",
     "refs": [
       "욥기 41:34",
@@ -80093,8 +80093,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": [],
     "sourceLinks": [
       {
-        "label": "Wikipedia: Leviathan",
-        "url": "https://en.wikipedia.org/wiki/Leviathan"
+        "label": "Encyclopedia of the Bible: Leviathan",
+        "url": "https://www.biblegateway.com/resources/encyclopedia-of-the-bible/Leviathan"
       }
     ]
   },
@@ -92405,8 +92405,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "sourceLinks": [
       {
-        "label": "Wikipedia: Mesopotamian religion",
-        "url": "https://en.wikipedia.org/wiki/Mesopotamian_religion"
+        "label": "Britannica: Shamash",
+        "url": "https://www.britannica.com/topic/Shamash"
       }
     ]
   },
@@ -95507,8 +95507,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": [],
     "sourceLinks": [
       {
-        "label": "Wikipedia: Leviathan",
-        "url": "https://en.wikipedia.org/wiki/Leviathan"
+        "label": "Encyclopedia of the Bible: Leviathan",
+        "url": "https://www.biblegateway.com/resources/encyclopedia-of-the-bible/Leviathan"
       }
     ]
   },
@@ -98071,8 +98071,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": [],
     "sourceLinks": [
       {
-        "label": "Wikipedia: Cyrus the Great",
-        "url": "https://en.wikipedia.org/wiki/Cyrus_the_Great"
+        "label": "Livius: Cyrus takes Babylon",
+        "url": "https://www.livius.org/articles/person/cyrus-the-great/cyrus-takes-babylon/"
+      },
+      {
+        "label": "Livius: Ezra on Cyrus",
+        "url": "https://www.livius.org/sources/content/bible/ezra-on-cyrus/"
       }
     ]
   },
@@ -101981,7 +101985,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "그날에 여호와께서 강한 칼로 날랜 뱀 리워야단, 곧 바다의 용을 벌하세요.",
-    "detail": "“날랜 뱀”은 우가릿(고대 가나안 도시) 신화에서 바다 괴물 로탄을 “도망치는 뱀”이라 부른 말과 같은 계열이에요. 이사야는 가나안 신화의 혼돈 괴물을 여호와의 칼 앞에서 힘없는 존재로 세워요. 시편 74:14과 욥기 41장에도 나와요.",
+    "detail": "“날랜 뱀”은 우가릿(고대 가나안 도시) 신화의 바다 괴물 로탄을 “굽은 뱀”이라 부른 표현과 가까워 보여요. 이사야는 가나안 신화의 혼돈 괴물을 여호와의 칼 앞에서 힘없는 존재로 세워요. 시편 74:14과 욥기 41장에도 나와요.",
     "caution": "리워야단이 어느 나라(앗수르, 바벨론, 애굽)를 가리키는지 읽기가 갈려요. 악한 세력 전체를 상징한다고 읽는 이도 많아요.",
     "refs": [
       "이사야 27:1",
@@ -101997,8 +102001,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "sourceLinks": [
       {
-        "label": "Wikipedia, 리워야단",
-        "url": "https://en.wikipedia.org/wiki/Leviathan"
+        "label": "Encyclopedia of the Bible: Leviathan",
+        "url": "https://www.biblegateway.com/resources/encyclopedia-of-the-bible/Leviathan"
       }
     ]
   },
@@ -117042,7 +117046,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "초막절 마지막 큰 날, 예수님은 자신이 생수를 주는 분이라고 외치셨어요. 절기가 가리키던 것이 그분 안에서 이루어진다는 선언이에요.",
-    "detail": "오늘날에도 초막절에 물과 비를 기뻐하는 '물 긷는 집의 기쁨' 의식을 되살려 지키기도 해요. 초막절의 규칙은 탈무드의 숙카 편에 자세히 나와요. 예수님은 생수가 자기라고 외치신 거예요(스가랴 14:8, 7:39).",
+    "detail": "성전이 서 있을 때는 초막절 아침마다 물을 제단에 붓는 의식이 있었고, 저녁에는 '물 긷는 곳의 기쁨'이라는 축제가 열렸어요. 미슈나 숙카 편도 이 기쁨을 전해요. 예수님은 생수가 자기라고 외치신 거예요(스가랴 14:8, 7:39).",
     "caution": "'마시라'는 사람이 하는 일이지만, 생수는 예수님이 주세요. 그 약속은 예수님이 영광을 받으신 뒤 성령이 오심으로 이루어졌어요(7:39).",
     "refs": [
       "요한복음 7:37-38",
@@ -117058,8 +117062,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "sourceLinks": [
       {
-        "label": "Wikipedia: Sukkot",
-        "url": "https://en.wikipedia.org/wiki/Sukkot"
+        "label": "Britannica: Sukkoth",
+        "url": "https://www.britannica.com/topic/Sukkoth-Judaism"
+      },
+      {
+        "label": "JTS: The Ritual of Waters",
+        "url": "https://www.jtsa.edu/torah/the-ritual-of-waters/"
       }
     ]
   },
@@ -123622,8 +123630,12 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "sourceLinks": [
       {
-        "label": "Wikipedia: Day of Atonement",
-        "url": "https://en.wikipedia.org/wiki/Day_of_Atonement"
+        "label": "Britannica: Yom Kippur",
+        "url": "https://www.britannica.com/topic/Yom-Kippur"
+      },
+      {
+        "label": "Calvin: Hebrews 9 (CCEL)",
+        "url": "https://www.ccel.org/ccel/calvin/calcom44.xv.ii.html"
       }
     ]
   },
@@ -131846,7 +131858,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "오순절은 유월절 뒤 오십 일째에 지키는 칠칠절이에요. 순례자들이 예루살렘에 모인 날 성령이 오셔서, 옛 절기가 교회의 시작일이 돼요.",
-    "detail": "칠칠절은 밀 추수를 마치는 절기예요. 뒷날 유대 전통은 이 날을 시내산에서 율법을 받은 날과 연결했다고 전해요. 2:9-11은 파르티아에서 로마까지 지중해 일대에서 온 흩어진 유대인들을 나열해요. 이 순례자들이 복음을 각지로 가져가요.",
+    "detail": "칠칠절은 밀 추수가 시작되는 때를 기리던 절기예요. 뒷날 유대 전통은 이 날을 시내산에서 율법을 받은 날과 연결했다고 전해요. 2:9-11은 파르티아에서 로마까지 지중해 일대에서 온 흩어진 유대인들을 나열해요. 이 순례자들이 복음을 각지로 가져가요.",
     "caution": "오순절 사건을 율법을 받은 일과 맞대어 읽는 견해가 있어요. 다만 누가는 그 연결을 직접 설명하지 않아요.",
     "refs": [
       "사도행전 2:1-4",
@@ -131861,8 +131873,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "sourceLinks": [
       {
-        "label": "Wikipedia: Shavuot",
-        "url": "https://en.wikipedia.org/wiki/Shavuot"
+        "label": "Britannica: Shavuot",
+        "url": "https://www.britannica.com/topic/Shavuot"
       }
     ]
   },
@@ -161961,8 +161973,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "sourceLinks": [
       {
-        "label": "Shavuot - Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Shavuot"
+        "label": "Britannica: Shavuot",
+        "url": "https://www.britannica.com/topic/Shavuot"
       }
     ]
   },
@@ -249236,7 +249248,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "초막절은 광야에서 장막에 살던 때를 기억하는 이레 동안의 절기예요. 순례자가 예루살렘에 몰려드는 큰 명절이에요.",
-    "detail": "레위기 23:33-43은 일곱째 달 15일부터 이레 동안 초막에 살며 절기를 지키라고 해요. 오늘날에도 이 절기에 물과 비를 기뻐하는 '물 긷는 집의 기쁨' 의식을 되살려 지키기도 해요. 7장 37절의 '명절 끝날 큰 날'과 8장 12절의 '세상의 빛'이 이 배경과 이어져요.",
+    "detail": "레위기 23:33-43은 일곱째 달 15일부터 이레 동안 초막에 살며 절기를 지키라고 해요. 성전 시대에는 이 절기에 매일 아침 물을 붓는 의식도 있었어요. 7장 37절의 '명절 끝날 큰 날'과 8장 12절의 '세상의 빛'이 이 배경과 이어져요.",
     "caution": "예수님이 이 절기를 배경으로 말씀하셨다는 것은 짐작이에요. 본문에 직접 없어요.",
     "refs": [
       "요한복음 7:2",
@@ -249249,8 +249261,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": [],
     "sourceLinks": [
       {
-        "label": "Wikipedia: Sukkot",
-        "url": "https://en.wikipedia.org/wiki/Sukkot"
+        "label": "Britannica: Sukkoth",
+        "url": "https://www.britannica.com/topic/Sukkoth-Judaism"
       }
     ]
   },
@@ -249417,8 +249429,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": [],
     "sourceLinks": [
       {
-        "label": "Wikipedia: Sukkot",
-        "url": "https://en.wikipedia.org/wiki/Sukkot"
+        "label": "Britannica: Sukkoth",
+        "url": "https://www.britannica.com/topic/Sukkoth-Judaism"
       }
     ]
   },
@@ -249743,7 +249755,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "수전절은 안티오코스에게 더럽혀진 성전을 되찾아 다시 하나님께 드린 일을 기억하는 겨울 절기예요. 예수님의 '거룩하게 하사 보내신 자'라는 말씀과 어울려요.",
-    "detail": "기원전 167년에 안티오코스 4세가 예루살렘 성전에 제우스 제단을 세웠어요. 유다 마카비가 기원전 164년에 성전을 되찾아 다시 봉헌했어요. 이날이 키슬레우월 25일이에요. 요한복음 10:22는 신약에서 이 절기를 말하는 유일한 본문이에요. 36절에서 예수님은 아버지께서 거룩하게 하여 세상에 보내신 자라고 하세요.",
+    "detail": "안티오코스 4세가 예루살렘 성전을 제우스에게 바쳐 더럽혔어요. 유다 마카비가 기원전 164년에 성전을 되찾아 다시 봉헌했어요. 이날이 키슬레우월 25일이에요. 요한복음 10:22는 신약에서 이 절기를 말하는 유일한 본문이에요. 36절에서 예수님은 아버지께서 거룩하게 하여 세상에 보내신 자라고 하세요.",
     "caution": "수전절은 구약 율법이 정한 절기가 아니에요. 마카비 시대에 시작된 절기라서 성경 밖 자료(마카비서)가 배경이에요.",
     "refs": [
       "요한복음 10:22",
@@ -249755,8 +249767,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "wcf": [],
     "sourceLinks": [
       {
-        "label": "Wikipedia: Hanukkah",
-        "url": "https://en.wikipedia.org/wiki/Hanukkah"
+        "label": "Britannica: Hanukkah",
+        "url": "https://www.britannica.com/topic/Hanukkah"
       }
     ]
   },
