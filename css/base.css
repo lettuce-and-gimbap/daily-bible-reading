@@ -181,6 +181,14 @@ textarea { resize: vertical; line-height: 1.6; }
   .topbar:has(.training-entry:not([hidden])) .tabs a { padding-inline: 7px; }
 }
 
+/* 좁은 화면에서 훈련 입구가 추가되면 상태와 탐색을 두 줄로 나눈다. */
+@media (max-width: 430px) {
+  .topbar:has(.training-entry:not([hidden])) { flex-wrap: wrap; gap: 4px 8px; }
+  .topbar:has(.training-entry:not([hidden])) .topbar-left { flex: 1 1 100%; min-height: 30px; }
+  .topbar:has(.training-entry:not([hidden])) .topbar-right { width: 100%; min-width: 0; justify-content: space-between; }
+  .topbar:has(.training-entry:not([hidden])) .app-sign { display: grid; }
+}
+
 /* 오른쪽 위 버전 · 만든 사람 */
 .app-sign { display: grid; justify-items: end; line-height: 1.1; color: var(--muted); font-size: .64rem; white-space: nowrap; }
 .app-sign b { font-weight: 700; color: var(--ink); }
