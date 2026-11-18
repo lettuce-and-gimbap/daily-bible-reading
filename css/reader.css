@@ -657,6 +657,23 @@ mark.study-mark:focus-visible{outline:2px solid currentColor;outline-offset:2px}
 .reader-auto-trigger[aria-expanded="true"] { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }
 .auto-scroll-heading { font-weight: 700; }
 @media (max-width: 580px) { .rd.reading .rd-nav { flex-wrap: wrap; } .rd.reading .rd-chap { min-width: 130px; } .rd.reading .rd-nav .reader-auto-trigger { margin-left: auto; } }
+
+/* 왼손 모드: 자주 쓰는 동작을 왼쪽에 모으고 절·장 순서는 유지한다. */
+@media (max-width: 580px) {
+  html[data-hand="left"] .rd.reading .rd-row > .rd-title { order: 2; }
+  html[data-hand="left"] .rd.reading .steps { order: 1; }
+  html[data-hand="left"] .rd.reading .steps > .read-switch { order: -2; }
+  html[data-hand="left"] .rd.reading .steps > .step-check { order: -1; }
+  html[data-hand="left"] .rd.qt .q-check { order: -1; margin-left: 0; margin-right: auto; }
+  html[data-hand="left"] .vp-bar .vp-n,
+  html[data-hand="left"] .qp-fixed .vp-n { order: 10; text-align: right; }
+  html[data-hand="left"] .vp-bar [data-act="paste"],
+  html[data-hand="left"] .qp-fixed [data-qa="paste"] { order: -2; }
+  html[data-hand="left"] .vp-bar [data-act="clear"],
+  html[data-hand="left"] .qp-fixed [data-qa="clear"] { order: -1; }
+  html[data-hand="left"] .vp-edsel-paste,
+  html[data-hand="left"] .vp-edsel > [data-qt-edsel="paste"] { margin-left: 0; margin-right: auto; }
+}
 .auto-scroll-main output, .auto-scroll-speed output { font-variant-numeric: tabular-nums; white-space: nowrap; }
 .auto-scroll-main .btn { min-height: 44px; padding: 6px 12px; white-space: nowrap; }
 .auto-scroll-info { display: grid; justify-items: end; font-size: .72rem; color: var(--muted); }
