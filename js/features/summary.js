@@ -114,7 +114,7 @@ function wisdomStudyHtml(entries) {
   return `<section class="tool-card sum-card"><h3 class="label">장별 주석 · 개혁주의 관점</h3>
     ${entries.map(({ ref, note, code }) => `<details class="wisdom-study"><summary><strong>${esc(ref)}</strong> · ${esc(note.heading)}</summary>
       ${note.paragraphs.map((paragraph) => `<p>${esc(paragraph)}</p>`).join("")}
-      ${chapterStudyFigure(code, note.figure)}
+      ${(note.figures || (note.figure ? [note.figure] : [])).map((figure) => chapterStudyFigure(code, figure)).join("")}
       ${note.sources?.length ? `<p class="muted small">참고 자료 · ${note.sources.map(wisdomSourceLink).join(" · ")}</p>` : ""}</details>`).join("")}
   </section>`;
 }
@@ -127,7 +127,7 @@ const genesisFigures = new Map([
 ]);
 
 function chapterStudyFigure(code, figure) {
-  const directory = { gen: "genesis-study", exo: "exodus-study", lev: "leviticus-study" }[code];
+  const directory = { gen: "genesis-study", exo: "exodus-study", lev: "leviticus-study", num: "numbers-study" }[code];
   const id = typeof figure === "string" ? figure : figure?.id;
   const label = typeof figure === "string" ? genesisFigures.get(figure) : figure?.label;
   if (!directory || !label || !/^[a-z0-9-]+$/.test(id || "")) return "";
@@ -167,7 +167,7 @@ function staticDaySummary(day) {
   const opts = { all: !!state.settings.graphAll };
   const out = composeDay(chapters, books, opts);
   const wisdom = chapters.filter(({ book }) => ["job", "psa", "pro"].includes(book.code));
-  out.wisdomStudy = chapters.filter(({ book }) => ["gen", "exo", "lev", "job", "psa", "pro"].includes(book.code)).flatMap(({ book, chap }) => {
+  out.wisdomStudy = chapters.filter(({ book }) => ["gen", "exo", "lev", "num", "job", "psa", "pro"].includes(book.code)).flatMap(({ book, chap }) => {
     const part = book.code === "psa" ? `-${Math.ceil(chap / 50)}` : "";
     const note = wisdomData(`${book.code}-study${part}`)?.[chap];
     return note ? [{ code: book.code, ref: `${book.name} ${chap}${chapUnit(book)}`, note }] : [];

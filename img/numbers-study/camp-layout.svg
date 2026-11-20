@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="740" viewBox="0 0 960 740" xml:lang="ko" role="img" aria-labelledby="title desc">
+<title id="title">회막과 진영의 배치</title><desc id="desc">본문 읽기 · 창작 도식 / 2–4장, 7장, 10장 / 본문의 관계와 순서를 읽기 쉽게 배치했습니다.</desc>
+
+<g font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans CJK KR, sans-serif">
+<rect x="0" y="0" width="960" height="740" rx="0" fill="#f6f3e9" stroke="none"/>
+<rect x="39" y="33" width="8" height="102" rx="4" fill="#225d50" stroke="none"/>
+<text x="62" y="55" font-size="20" font-weight="700" fill="#225d50" text-anchor="start">본문 읽기 · 창작 도식</text>
+<text x="60" y="101" font-size="35" font-weight="750" fill="#19342f" text-anchor="start">회막과 진영의 배치</text>
+<text x="62" y="135" font-size="20" font-weight="500" fill="#405a51" text-anchor="start">2–4장, 7장, 10장</text>
+<path d="M480 260L480 462" stroke="#b8c9be" stroke-width="2"/>
+<path d="M305 360L660 360" stroke="#b8c9be" stroke-width="2"/>
+<rect x="320" y="165" width="320" height="112" rx="14" fill="#fffdf6" stroke="#b8c9be"/>
+<text x="480" y="198" font-size="24" font-weight="750" fill="#225d50" text-anchor="middle">북 · 단 진영</text>
+<text x="480" y="230" font-size="21" font-weight="550" fill="#19342f" text-anchor="middle">단 · 아셀 · 납달리</text>
+<text x="480" y="259" font-size="20" font-weight="650" fill="#405a51" text-anchor="middle">안쪽 · 므라리</text>
+<rect x="40" y="305" width="320" height="112" rx="14" fill="#fffdf6" stroke="#b8c9be"/>
+<text x="200" y="338" font-size="24" font-weight="750" fill="#225d50" text-anchor="middle">서 · 에브라임 진영</text>
+<text x="200" y="370" font-size="21" font-weight="550" fill="#19342f" text-anchor="middle">에브라임 · 므낫세 · 베냐민</text>
+<text x="200" y="399" font-size="20" font-weight="650" fill="#405a51" text-anchor="middle">안쪽 · 게르손</text>
+<rect x="600" y="305" width="320" height="112" rx="14" fill="#fffdf6" stroke="#b8c9be"/>
+<text x="760" y="338" font-size="24" font-weight="750" fill="#225d50" text-anchor="middle">동 · 유다 진영</text>
+<text x="760" y="370" font-size="21" font-weight="550" fill="#19342f" text-anchor="middle">유다 · 잇사갈 · 스불론</text>
+<text x="760" y="399" font-size="20" font-weight="650" fill="#405a51" text-anchor="middle">안쪽 · 모세와 제사장들</text>
+<rect x="320" y="445" width="320" height="112" rx="14" fill="#fffdf6" stroke="#b8c9be"/>
+<text x="480" y="478" font-size="24" font-weight="750" fill="#225d50" text-anchor="middle">남 · 르우벤 진영</text>
+<text x="480" y="510" font-size="21" font-weight="550" fill="#19342f" text-anchor="middle">르우벤 · 시므온 · 갓</text>
+<text x="480" y="539" font-size="20" font-weight="650" fill="#405a51" text-anchor="middle">안쪽 · 고핫</text>
+<rect x="386" y="322" width="188" height="77" rx="14" fill="#225d50" stroke="none"/>
+<text x="480" y="369" font-size="28" font-weight="750" fill="white" text-anchor="middle">회막</text>
+<text x="480" y="608" font-size="23" font-weight="650" fill="#19342f" text-anchor="middle">2장 행진   유다 → 르우벤 → 회막과 레위인 → 에브라임 → 단</text>
+<text x="480" y="642" font-size="21" font-weight="500" fill="#405a51" text-anchor="middle">10장에서는 게르손·므라리의 성막 짐이 유다 진영 뒤에 나옵니다.</text>
+<path d="M40 676L920 676" stroke="#b8c9be" stroke-width="2"/>
+<text x="40" y="710" font-size="20" font-weight="500" fill="#405a51" text-anchor="start">본문의 관계와 순서를 읽기 쉽게 배치했습니다.</text>
+</g></svg>
