@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="621" viewBox="0 0 820 621" xml:lang="ko" role="img" aria-labelledby="title desc" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+<title id="title">열왕기상 17장 · 가뭄 속의 엘리야와 사르밧 과부</title>
+<desc id="desc">주요 장소: 길르앗·그릿 시내·시돈의 사르밧·과부의 다락. 본문의 흐름: 1–7 엘리야가 가뭄을 알리고 그릿에서 먹을 것을 받음 → 8–16 과부가 음식을 나누고 가루와 기름이 이어짐 → 17–24 엘리야가 간구하자 과부의 아들이 살아남. 주요 기물과 표지: 까마귀가 가져온 떡과 고기·가루통·기름병·침상.</desc>
+<rect x="0" y="0" width="820" height="621" rx="20" fill="#F6F2E8"/>
+<text x="34" y="44" font-size="20" fill="#225C52" font-weight="700">열왕기상 17장 · 본문 도해</text>
+<text x="34" y="91" font-size="32" fill="#182832" font-weight="700">가뭄 속의 엘리야와 사르밧 과부</text>
+<rect x="711" y="28" width="75" height="75" rx="14" fill="#E1EBE3"/>
+<path transform="translate(725 41) scale(2.85)" d="M5 1h6v2H5zm1 3h4v2h2l2 3v5l-2 2H4l-2-2V9l2-3h2z" fill="#225C52" fill-rule="evenodd"/>
+<rect x="34" y="126" width="752" height="84" rx="12" fill="#E1EBE3"/>
+<text x="54" y="155" font-size="18" fill="#225C52" font-weight="700">주요 장소</text>
+<text x="54" y="188" font-size="23" fill="#182832" font-weight="400">길르앗·그릿 시내·시돈의 사르밧·과부의 다락</text>
+<text x="34" y="244" font-size="18" fill="#225C52" font-weight="700">본문의 흐름</text>
+<rect x="34" y="259" width="752" height="63" rx="12" fill="#FFFDF8"/>
+<rect x="50" y="273" width="97" height="34" rx="9" fill="#E1EBE3"/>
+<text x="59" y="297" font-size="17" fill="#225C52" font-weight="700">1–7절</text>
+<text x="170" y="298" font-size="23" fill="#182832" font-weight="400">엘리야가 가뭄을 알리고 그릿에서 먹을 것을 받음</text>
+<path d="M410 325v14m-5 -6 5 6 5 -6" fill="none" stroke="#225C52" stroke-width="2" stroke-linecap="round"/>
+<rect x="34" y="344" width="752" height="63" rx="12" fill="#FFFDF8"/>
+<rect x="50" y="358" width="97" height="34" rx="9" fill="#E1EBE3"/>
+<text x="59" y="382" font-size="17" fill="#225C52" font-weight="700">8–16절</text>
+<text x="170" y="383" font-size="23" fill="#182832" font-weight="400">과부가 음식을 나누고 가루와 기름이 이어짐</text>
+<path d="M410 410v14m-5 -6 5 6 5 -6" fill="none" stroke="#225C52" stroke-width="2" stroke-linecap="round"/>
+<rect x="34" y="429" width="752" height="63" rx="12" fill="#FFFDF8"/>
+<rect x="50" y="443" width="97" height="34" rx="9" fill="#E1EBE3"/>
+<text x="59" y="467" font-size="17" fill="#225C52" font-weight="700">17–24절</text>
+<text x="170" y="468" font-size="23" fill="#182832" font-weight="400">엘리야가 간구하자 과부의 아들이 살아남</text>
+<rect x="34" y="512" width="752" height="84" rx="12" fill="#E1EBE3"/>
+<text x="54" y="541" font-size="18" fill="#225C52" font-weight="700">주요 기물과 표지</text>
+<text x="54" y="574" font-size="23" fill="#182832" font-weight="400">까마귀가 가져온 떡과 고기·가루통·기름병·침상</text>
+</svg>

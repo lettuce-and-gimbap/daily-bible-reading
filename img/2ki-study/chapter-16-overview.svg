@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="621" viewBox="0 0 820 621" xml:lang="ko" role="img" aria-labelledby="title desc" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+<title id="title">열왕기하 16장 · 아하스와 다메섹 제단</title>
+<desc id="desc">주요 장소: 예루살렘·다메섹·엘랏·기르. 본문의 흐름: 1–9 아하스가 앗수르에 은금을 보내 원군을 구함 → 10–16 다메섹 제단의 도면을 보내 예루살렘에 복제함 → 17–20 놋 기구와 성전 통로를 손봄. 주요 기물과 표지: 제단 도면·놋 제단·물두멍 받침·놋 바다와 받침 소.</desc>
+<rect x="0" y="0" width="820" height="621" rx="20" fill="#F6F2E8"/>
+<text x="34" y="44" font-size="20" fill="#334F74" font-weight="700">열왕기하 16장 · 본문 도해</text>
+<text x="34" y="91" font-size="32" fill="#182832" font-weight="700">아하스와 다메섹 제단</text>
+<rect x="711" y="28" width="75" height="75" rx="14" fill="#E4EBF4"/>
+<path transform="translate(725 41) scale(2.85)" d="M8 1l8 5v2H0V6zM2 9h2v5H2zm5 0h2v5H7zm5 0h2v5h-2zM0 15h16v2H0z" fill="#334F74" fill-rule="evenodd"/>
+<rect x="34" y="126" width="752" height="84" rx="12" fill="#E4EBF4"/>
+<text x="54" y="155" font-size="18" fill="#334F74" font-weight="700">주요 장소</text>
+<text x="54" y="188" font-size="23" fill="#182832" font-weight="400">예루살렘·다메섹·엘랏·기르</text>
+<text x="34" y="244" font-size="18" fill="#334F74" font-weight="700">본문의 흐름</text>
+<rect x="34" y="259" width="752" height="63" rx="12" fill="#FFFDF8"/>
+<rect x="50" y="273" width="97" height="34" rx="9" fill="#E4EBF4"/>
+<text x="59" y="297" font-size="17" fill="#334F74" font-weight="700">1–9절</text>
+<text x="170" y="298" font-size="23" fill="#182832" font-weight="400">아하스가 앗수르에 은금을 보내 원군을 구함</text>
+<path d="M410 325v14m-5 -6 5 6 5 -6" fill="none" stroke="#334F74" stroke-width="2" stroke-linecap="round"/>
+<rect x="34" y="344" width="752" height="63" rx="12" fill="#FFFDF8"/>
+<rect x="50" y="358" width="97" height="34" rx="9" fill="#E4EBF4"/>
+<text x="59" y="382" font-size="17" fill="#334F74" font-weight="700">10–16절</text>
+<text x="170" y="383" font-size="23" fill="#182832" font-weight="400">다메섹 제단의 도면을 보내 예루살렘에 복제함</text>
+<path d="M410 410v14m-5 -6 5 6 5 -6" fill="none" stroke="#334F74" stroke-width="2" stroke-linecap="round"/>
+<rect x="34" y="429" width="752" height="63" rx="12" fill="#FFFDF8"/>
+<rect x="50" y="443" width="97" height="34" rx="9" fill="#E4EBF4"/>
+<text x="59" y="467" font-size="17" fill="#334F74" font-weight="700">17–20절</text>
+<text x="170" y="468" font-size="23" fill="#182832" font-weight="400">놋 기구와 성전 통로를 손봄</text>
+<rect x="34" y="512" width="752" height="84" rx="12" fill="#E4EBF4"/>
+<text x="54" y="541" font-size="18" fill="#334F74" font-weight="700">주요 기물과 표지</text>
+<text x="54" y="574" font-size="23" fill="#182832" font-weight="400">제단 도면·놋 제단·물두멍 받침·놋 바다와 받침 소</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="621" viewBox="0 0 820 621" xml:lang="ko" role="img" aria-labelledby="title desc" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+<title id="title">열왕기상 22장 · 길르앗 라못과 아합의 죽음</title>
+<desc id="desc">주요 장소: 사마리아 성문·길르앗 라못·에시온게벨. 본문의 흐름: 1–28 미가야가 아합의 출정에 불길한 예언을 전함 → 29–40 아합이 전투에서 화살에 맞아 죽음 → 41–53 여호사밧과 아하시야의 통치를 기록함. 주요 기물과 표지: 쇠 뿔·변장한 옷·활과 화살·병거·다시스 배.</desc>
+<rect x="0" y="0" width="820" height="621" rx="20" fill="#F6F2E8"/>
+<text x="34" y="44" font-size="20" fill="#225C52" font-weight="700">열왕기상 22장 · 본문 도해</text>
+<text x="34" y="91" font-size="32" fill="#182832" font-weight="700">길르앗 라못과 아합의 죽음</text>
+<rect x="711" y="28" width="75" height="75" rx="14" fill="#E1EBE3"/>
+<path transform="translate(725 41) scale(2.85)" d="M11 0l5 1-1 5-2-2-7 8v3H0v-5h4l7-8z" fill="#225C52" fill-rule="evenodd"/>
+<rect x="34" y="126" width="752" height="84" rx="12" fill="#E1EBE3"/>
+<text x="54" y="155" font-size="18" fill="#225C52" font-weight="700">주요 장소</text>
+<text x="54" y="188" font-size="23" fill="#182832" font-weight="400">사마리아 성문·길르앗 라못·에시온게벨</text>
+<text x="34" y="244" font-size="18" fill="#225C52" font-weight="700">본문의 흐름</text>
+<rect x="34" y="259" width="752" height="63" rx="12" fill="#FFFDF8"/>
+<rect x="50" y="273" width="97" height="34" rx="9" fill="#E1EBE3"/>
+<text x="59" y="297" font-size="17" fill="#225C52" font-weight="700">1–28절</text>
+<text x="170" y="298" font-size="23" fill="#182832" font-weight="400">미가야가 아합의 출정에 불길한 예언을 전함</text>
+<path d="M410 325v14m-5 -6 5 6 5 -6" fill="none" stroke="#225C52" stroke-width="2" stroke-linecap="round"/>
+<rect x="34" y="344" width="752" height="63" rx="12" fill="#FFFDF8"/>
+<rect x="50" y="358" width="97" height="34" rx="9" fill="#E1EBE3"/>
+<text x="59" y="382" font-size="17" fill="#225C52" font-weight="700">29–40절</text>
+<text x="170" y="383" font-size="23" fill="#182832" font-weight="400">아합이 전투에서 화살에 맞아 죽음</text>
+<path d="M410 410v14m-5 -6 5 6 5 -6" fill="none" stroke="#225C52" stroke-width="2" stroke-linecap="round"/>
+<rect x="34" y="429" width="752" height="63" rx="12" fill="#FFFDF8"/>
+<rect x="50" y="443" width="97" height="34" rx="9" fill="#E1EBE3"/>
+<text x="59" y="467" font-size="17" fill="#225C52" font-weight="700">41–53절</text>
+<text x="170" y="468" font-size="23" fill="#182832" font-weight="400">여호사밧과 아하시야의 통치를 기록함</text>
+<rect x="34" y="512" width="752" height="84" rx="12" fill="#E1EBE3"/>
+<text x="54" y="541" font-size="18" fill="#225C52" font-weight="700">주요 기물과 표지</text>
+<text x="54" y="574" font-size="23" fill="#182832" font-weight="400">쇠 뿔·변장한 옷·활과 화살·병거·다시스 배</text>
+</svg>

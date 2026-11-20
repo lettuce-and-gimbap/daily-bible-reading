@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="621" viewBox="0 0 820 621" xml:lang="ko" role="img" aria-labelledby="title desc" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+<title id="title">열왕기하 1장 · 아하시야의 병과 엘리야의 경고</title>
+<desc id="desc">주요 장소: 사마리아·에그론·엘리야가 앉은 산. 본문의 흐름: 1–8 아하시야가 다치고 엘리야가 왕의 사자를 만남 → 9–16 두 부대가 불에 타고 셋째 지휘관은 자비를 청함 → 17–18 아하시야가 죽고 여호람이 뒤를 이음. 주요 기물과 표지: 다락 난간·침상·가죽 띠.</desc>
+<rect x="0" y="0" width="820" height="621" rx="20" fill="#F6F2E8"/>
+<text x="34" y="44" font-size="20" fill="#334F74" font-weight="700">열왕기하 1장 · 본문 도해</text>
+<text x="34" y="91" font-size="32" fill="#182832" font-weight="700">아하시야의 병과 엘리야의 경고</text>
+<rect x="711" y="28" width="75" height="75" rx="14" fill="#E4EBF4"/>
+<path transform="translate(725 41) scale(2.85)" d="M7 0l3 5v3l3-2 2 5-2 5H3l-2-4 2-6 2 3z" fill="#334F74" fill-rule="evenodd"/>
+<rect x="34" y="126" width="752" height="84" rx="12" fill="#E4EBF4"/>
+<text x="54" y="155" font-size="18" fill="#334F74" font-weight="700">주요 장소</text>
+<text x="54" y="188" font-size="23" fill="#182832" font-weight="400">사마리아·에그론·엘리야가 앉은 산</text>
+<text x="34" y="244" font-size="18" fill="#334F74" font-weight="700">본문의 흐름</text>
+<rect x="34" y="259" width="752" height="63" rx="12" fill="#FFFDF8"/>
+<rect x="50" y="273" width="97" height="34" rx="9" fill="#E4EBF4"/>
+<text x="59" y="297" font-size="17" fill="#334F74" font-weight="700">1–8절</text>
+<text x="170" y="298" font-size="23" fill="#182832" font-weight="400">아하시야가 다치고 엘리야가 왕의 사자를 만남</text>
+<path d="M410 325v14m-5 -6 5 6 5 -6" fill="none" stroke="#334F74" stroke-width="2" stroke-linecap="round"/>
+<rect x="34" y="344" width="752" height="63" rx="12" fill="#FFFDF8"/>
+<rect x="50" y="358" width="97" height="34" rx="9" fill="#E4EBF4"/>
+<text x="59" y="382" font-size="17" fill="#334F74" font-weight="700">9–16절</text>
+<text x="170" y="383" font-size="23" fill="#182832" font-weight="400">두 부대가 불에 타고 셋째 지휘관은 자비를 청함</text>
+<path d="M410 410v14m-5 -6 5 6 5 -6" fill="none" stroke="#334F74" stroke-width="2" stroke-linecap="round"/>
+<rect x="34" y="429" width="752" height="63" rx="12" fill="#FFFDF8"/>
+<rect x="50" y="443" width="97" height="34" rx="9" fill="#E4EBF4"/>
+<text x="59" y="467" font-size="17" fill="#334F74" font-weight="700">17–18절</text>
+<text x="170" y="468" font-size="23" fill="#182832" font-weight="400">아하시야가 죽고 여호람이 뒤를 이음</text>
+<rect x="34" y="512" width="752" height="84" rx="12" fill="#E4EBF4"/>
+<text x="54" y="541" font-size="18" fill="#334F74" font-weight="700">주요 기물과 표지</text>
+<text x="54" y="574" font-size="23" fill="#182832" font-weight="400">다락 난간·침상·가죽 띠</text>
+</svg>

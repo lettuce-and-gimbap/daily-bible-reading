@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="621" viewBox="0 0 820 621" xml:lang="ko" role="img" aria-labelledby="title desc" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+<title id="title">열왕기하 2장 · 요단을 건넌 뒤 이어진 엘리야의 사역</title>
+<desc id="desc">주요 장소: 길갈·벧엘·여리고·요단·갈멜산·사마리아. 본문의 흐름: 1–8 엘리야와 엘리사가 함께 요단을 건넘 → 9–18 엘리야가 올라가고 엘리사가 겉옷을 주움 → 19–25 여리고의 물이 고쳐지고 벧엘에서 조롱이 일어남. 주요 기물과 표지: 겉옷·불수레와 불말·새 그릇·소금.</desc>
+<rect x="0" y="0" width="820" height="621" rx="20" fill="#F6F2E8"/>
+<text x="34" y="44" font-size="20" fill="#334F74" font-weight="700">열왕기하 2장 · 본문 도해</text>
+<text x="34" y="91" font-size="32" fill="#182832" font-weight="700">요단을 건넌 뒤 이어진 엘리야의 사역</text>
+<rect x="711" y="28" width="75" height="75" rx="14" fill="#E4EBF4"/>
+<path transform="translate(725 41) scale(2.85)" d="M0 3h5v2h5V3h6v2h-6v2H5V5H0zM0 10h5v2h5v-2h6v2h-6v2H5v-2H0z" fill="#334F74" fill-rule="evenodd"/>
+<rect x="34" y="126" width="752" height="84" rx="12" fill="#E4EBF4"/>
+<text x="54" y="155" font-size="18" fill="#334F74" font-weight="700">주요 장소</text>
+<text x="54" y="188" font-size="23" fill="#182832" font-weight="400">길갈·벧엘·여리고·요단·갈멜산·사마리아</text>
+<text x="34" y="244" font-size="18" fill="#334F74" font-weight="700">본문의 흐름</text>
+<rect x="34" y="259" width="752" height="63" rx="12" fill="#FFFDF8"/>
+<rect x="50" y="273" width="97" height="34" rx="9" fill="#E4EBF4"/>
+<text x="59" y="297" font-size="17" fill="#334F74" font-weight="700">1–8절</text>
+<text x="170" y="298" font-size="23" fill="#182832" font-weight="400">엘리야와 엘리사가 함께 요단을 건넘</text>
+<path d="M410 325v14m-5 -6 5 6 5 -6" fill="none" stroke="#334F74" stroke-width="2" stroke-linecap="round"/>
+<rect x="34" y="344" width="752" height="63" rx="12" fill="#FFFDF8"/>
+<rect x="50" y="358" width="97" height="34" rx="9" fill="#E4EBF4"/>
+<text x="59" y="382" font-size="17" fill="#334F74" font-weight="700">9–18절</text>
+<text x="170" y="383" font-size="23" fill="#182832" font-weight="400">엘리야가 올라가고 엘리사가 겉옷을 주움</text>
+<path d="M410 410v14m-5 -6 5 6 5 -6" fill="none" stroke="#334F74" stroke-width="2" stroke-linecap="round"/>
+<rect x="34" y="429" width="752" height="63" rx="12" fill="#FFFDF8"/>
+<rect x="50" y="443" width="97" height="34" rx="9" fill="#E4EBF4"/>
+<text x="59" y="467" font-size="17" fill="#334F74" font-weight="700">19–25절</text>
+<text x="170" y="468" font-size="23" fill="#182832" font-weight="400">여리고의 물이 고쳐지고 벧엘에서 조롱이 일어남</text>
+<rect x="34" y="512" width="752" height="84" rx="12" fill="#E4EBF4"/>
+<text x="54" y="541" font-size="18" fill="#334F74" font-weight="700">주요 기물과 표지</text>
+<text x="54" y="574" font-size="23" fill="#182832" font-weight="400">겉옷·불수레와 불말·새 그릇·소금</text>
+</svg>

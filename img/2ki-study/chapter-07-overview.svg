@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="621" viewBox="0 0 820 621" xml:lang="ko" role="img" aria-labelledby="title desc" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+<title id="title">열왕기하 7장 · 텅 빈 아람 진영</title>
+<desc id="desc">주요 장소: 사마리아 성문·아람 진영·요단으로 가는 길. 본문의 흐름: 1–2 엘리사가 이튿날 곡식 값이 내릴 것을 예고함 → 3–15 나병 환자 네 명이 빈 진영을 발견하고 소식을 전함 → 16–20 백성이 곡식을 얻고 불신한 장관은 성문에서 죽음. 주요 기물과 표지: 곡식·은금과 옷·정탐용 병거·버려진 군용품.</desc>
+<rect x="0" y="0" width="820" height="621" rx="20" fill="#F6F2E8"/>
+<text x="34" y="44" font-size="20" fill="#334F74" font-weight="700">열왕기하 7장 · 본문 도해</text>
+<text x="34" y="91" font-size="32" fill="#182832" font-weight="700">텅 빈 아람 진영</text>
+<rect x="711" y="28" width="75" height="75" rx="14" fill="#E4EBF4"/>
+<path transform="translate(725 41) scale(2.85)" d="M7 17V4h2v13zM3 4l4 2v4L3 8zm10 0v4l-4 2V6zM2 9l5 2v4l-5-2zm12 0v4l-5 2v-4z" fill="#334F74" fill-rule="evenodd"/>
+<rect x="34" y="126" width="752" height="84" rx="12" fill="#E4EBF4"/>
+<text x="54" y="155" font-size="18" fill="#334F74" font-weight="700">주요 장소</text>
+<text x="54" y="188" font-size="23" fill="#182832" font-weight="400">사마리아 성문·아람 진영·요단으로 가는 길</text>
+<text x="34" y="244" font-size="18" fill="#334F74" font-weight="700">본문의 흐름</text>
+<rect x="34" y="259" width="752" height="63" rx="12" fill="#FFFDF8"/>
+<rect x="50" y="273" width="97" height="34" rx="9" fill="#E4EBF4"/>
+<text x="59" y="297" font-size="17" fill="#334F74" font-weight="700">1–2절</text>
+<text x="170" y="298" font-size="23" fill="#182832" font-weight="400">엘리사가 이튿날 곡식 값이 내릴 것을 예고함</text>
+<path d="M410 325v14m-5 -6 5 6 5 -6" fill="none" stroke="#334F74" stroke-width="2" stroke-linecap="round"/>
+<rect x="34" y="344" width="752" height="63" rx="12" fill="#FFFDF8"/>
+<rect x="50" y="358" width="97" height="34" rx="9" fill="#E4EBF4"/>
+<text x="59" y="382" font-size="17" fill="#334F74" font-weight="700">3–15절</text>
+<text x="170" y="383" font-size="23" fill="#182832" font-weight="400">나병 환자 네 명이 빈 진영을 발견하고 소식을 전함</text>
+<path d="M410 410v14m-5 -6 5 6 5 -6" fill="none" stroke="#334F74" stroke-width="2" stroke-linecap="round"/>
+<rect x="34" y="429" width="752" height="63" rx="12" fill="#FFFDF8"/>
+<rect x="50" y="443" width="97" height="34" rx="9" fill="#E4EBF4"/>
+<text x="59" y="467" font-size="17" fill="#334F74" font-weight="700">16–20절</text>
+<text x="170" y="468" font-size="23" fill="#182832" font-weight="400">백성이 곡식을 얻고 불신한 장관은 성문에서 죽음</text>
+<rect x="34" y="512" width="752" height="84" rx="12" fill="#E4EBF4"/>
+<text x="54" y="541" font-size="18" fill="#334F74" font-weight="700">주요 기물과 표지</text>
+<text x="54" y="574" font-size="23" fill="#182832" font-weight="400">곡식·은금과 옷·정탐용 병거·버려진 군용품</text>
+</svg>

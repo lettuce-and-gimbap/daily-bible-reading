@@ -58678,17 +58678,18 @@ window.ScriptureNotesData.contextualTerms.push(...[
         ]
       }
     ],
-    "summary": "아도니야는 형들이 죽은 뒤 자기가 맏이라는 이유로 병거와 호위병을 세우고 왕이 되려 해요.",
-    "detail": "아도니야는 학깃의 아들이에요. 암논과 압살롬이 죽은 뒤 살아 있는 형들 가운데 가장 앞섰어요. 병거·기병·호위병 오십 명은 압살롬이 반역할 때 세운 것과 같은 준비예요(삼하 15:1). 왕위를 이을 사람이 명확히 정해지지 않아서 힘과 명분이 맞붙었어요.",
-    "caution": "'스스로 높여'라는 말은 하나님이 정하신 왕위(대상 22:9-10)와 대비돼요. 다윗이 이 일을 승인했는지는 분명하지 않아요.",
+    "summary": "아도니야는 스스로 왕이 되겠다고 나서며 병거와 기병과 호위병을 준비해요.",
+    "detail": "아도니야는 학깃의 아들이고 압살롬 다음에 태어났어요. 병거와 기병과 호위병 오십 명을 앞세운 모습은 압살롬이 반역을 준비할 때와 비슷해요(삼하 15:1). 다윗은 밧세바에게 솔로몬을 후계자로 세우겠다고 맹세했어요(13, 30절).",
+    "caution": "본문은 아도니야가 왕이 되겠다고 나선 이유를 맏아들의 권리로 설명하지 않아요. 다윗은 아도니야가 왕 노릇을 한다는 소식도 처음에는 몰랐어요(11, 18절).",
     "refs": [
-      "열왕기상 1:5",
-      "열왕기상 1:6",
+      "열왕기상 1:5-6",
+      "열왕기상 1:11-13",
+      "열왕기상 1:29-30",
       "사무엘하 15:1",
-      "신명기 17:15"
+      "역대상 22:9-10"
     ],
     "category": "본문 문맥",
-    "lens": "개혁주의는 왕을 세우시는 분이 하나님이라고 고백해요(신 17:15). 아도니야는 맏이라는 자리를 믿고 스스로 높였고, 하나님이 택하신 솔로몬이 다윗 언약의 계보를 잇는 것이 이 장의 중심이에요.",
+    "lens": "아도니야는 스스로 왕이 되려 했고, 다윗이 세운 솔로몬은 하나님이 다윗에게 약속하신 왕위를 이어요(대상 22:9-10). 이 이야기는 사람의 계획 가운데서도 하나님이 약속을 이루시는 모습을 보여 줘요.",
     "wcf": [
       5
     ]
@@ -59163,7 +59164,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "title": "다윗의 친구 히람",
     "aliases": [
       "이는 히람이 평생에 다윗을 사랑하였음이라",
-      "두로 왕 히람은 다윗의 친구였습니다"
+      "다윗의 친구였습니다"
     ],
     "locations": [
       {
@@ -61190,7 +61191,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-17-1",
     "title": "가뭄 선포",
     "aliases": [
-      "디셉 사람 엘리야가 아합에게 말하되",
+      "수 년 동안 비도 이슬도 있지 아니하리라",
       "비나 이슬이 내리지 않을 것입니다"
     ],
     "locations": [
@@ -61606,7 +61607,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-19-8",
     "title": "사십 일의 길",
     "aliases": [
-      "사십 주 사십 야를 가서 하나님의 산 호렙에 이르니라",
+      "사십 주 사십 야를 가서",
       "사십 일 동안, 밤낮으로 걸어서"
     ],
     "locations": [
@@ -70436,7 +70437,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-7-1",
     "title": "내일 이맘때의 예언",
     "aliases": [
-      "사마리아 성문에서 고운 밀가루 한 스아를"
+      "내일 이맘때에",
+      "내일 이맘때쯤에"
     ],
     "locations": [
       {
@@ -71559,14 +71561,15 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-12-17",
     "title": "하사엘에게 준 성물",
     "aliases": [
-      "아람 왕 하사엘이"
+      "아람 왕 하사엘에게 보냈더니",
+      "아람 왕 하사엘에게 보냈습니다"
     ],
     "locations": [
       {
         "code": "2ki",
         "chapter": 12,
-        "lo": 17,
-        "hi": 17,
+        "lo": 18,
+        "hi": 18,
         "editions": [
           "gae",
           "easy"
@@ -71600,7 +71603,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "title": "신복에게 죽은 요아스",
     "aliases": [
       "요아스의 신복들이 일어나 반역하여",
-      "밀로 궁에서 요아스를 죽였습니다"
+      "그의 두 신하가 그를 배신하여"
     ],
     "locations": [
       {
@@ -72249,7 +72252,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-16-10",
     "title": "다메섹 제단을 본뜬 아하스",
     "aliases": [
-      "제사장 우리야에게"
+      "그 제단의 모든 구조와 제도의 양식",
+      "그 제단의 설계도와 모형"
     ],
     "locations": [
       {
@@ -158810,7 +158814,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "prophet-context-1ki-13-18",
     "title": "거짓말한 늙은 선지자",
     "aliases": [
-      "선지자",
+      "나도 그대와 같은 선지자라",
       "예언자"
     ],
     "locations": [
@@ -158921,8 +158925,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "prophet-context-2ki-2-3",
     "title": "선지자의 아들들이라는 표현",
     "aliases": [
-      "선지자",
-      "예언자"
+      "선지자의 제자들",
+      "예언자의 무리"
     ],
     "locations": [
       {
@@ -159041,8 +159045,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "title": "훌다의 여선지자 호칭",
     "aliases": [
       "여선지",
-      "여자 예언자",
-      "예언자"
+      "여자 예언자"
     ],
     "locations": [
       {
@@ -188449,7 +188452,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-13-18",
     "title": "천사의 말이라 속인 일",
     "aliases": [
-      "나도 그대와 같은 선지자라",
+      "이는 그 사람을 속임이라",
       "주님의 천사가 나에게 와서 그대를 내 집으로 데려가"
     ],
     "locations": [
@@ -188666,6 +188669,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-14-21",
     "title": "르호보암의 어머니 나아마",
     "aliases": [
+      "나아마요 암몬 사람",
       "암몬 사람 나아마"
     ],
     "locations": [
@@ -188681,8 +188685,8 @@ window.ScriptureNotesData.contextualTerms.push(...[
       }
     ],
     "summary": "르호보암의 어머니는 암몬 사람이에요. 솔로몬의 이방 혼인이 다음 왕에게 바로 이어진 일이에요.",
-    "detail": "솔로몬은 암몬 여인도 사랑했어요(11:1). 르호보암은 왕이 되었을 때 사십일 세였어요. 이방 혈통의 어머니를 둔 왕이라는 점이 그 시대에 산당과 우상이 퍼진 배경(22-24절)으로 읽히기도 해요.",
-    "caution": "어머니의 혈통이 아들의 믿음을 정한 것은 아니에요. 그의 이름은 두 번 적혀서 눈에 띄어요(31절).",
+    "detail": "솔로몬은 암몬 여인과도 혼인했어요(11:1). 열왕기상은 르호보암이 즉위할 때 나아마를 소개하고, 그의 통치가 끝나는 대목에서도 나아마의 이름을 다시 적어요(31절).",
+    "caution": "이어서 유다에 산당과 우상이 퍼졌다는 기록이 나와요(22-24절). 본문은 그 책임을 나아마나 그의 혈통에 돌리지 않아요.",
     "refs": [
       "열왕기상 14:21",
       "열왕기상 14:31"
@@ -189465,6 +189469,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-18-44",
     "title": "손바닥만한 구름의 뜻",
     "aliases": [
+      "사람의 손 만한 작은 구름",
       "손바닥만한 작은 구름"
     ],
     "locations": [
@@ -189675,6 +189680,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-20-1",
     "title": "벤하닷과 서른두 왕",
     "aliases": [
+      "아람의 벤하닷 왕",
       "아람 왕 벤하닷"
     ],
     "locations": [
@@ -190612,8 +190618,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-1ki-8-41",
     "title": "이방인의 기도는 왜?",
     "aliases": [
-      "주의 백성 이스라엘에 속하지 아니한 자",
-      "이스라엘에 속하지 아니한 외국인이 주의 크신 이름과"
+      "주의 백성 이스라엘에 속하지 아니한 자"
     ],
     "locations": [
       {
@@ -190622,14 +190627,13 @@ window.ScriptureNotesData.contextualTerms.push(...[
         "lo": 41,
         "hi": 41,
         "editions": [
-          "gae",
-          "easy"
+          "gae"
         ]
       }
     ],
     "summary": "솔로몬은 성전이 이스라엘만의 건물이 아니라 먼 나라 사람도 하나님께 기도하는 곳이 되기를 구했어요.",
     "detail": "이방인이 주의 이름을 듣고 와서 이 성전을 향해 기도하면 들어 달라고 해요(41-42절). 목적은 땅의 모든 백성이 주의 이름을 알고 경외하는 것이에요(43절). 이사야 56장 7절은 이 집이 모든 백성의 기도하는 집이라고 해요.",
-    "caution": "이방인이 이스라엘 공동체의 한 사람이 되는지, 손님으로 남는지는 나뉘어 있지 않아요.",
+    "caution": "쉬운성경은 41절과 42절을 한 문단으로 묶어 이방인이 성전을 향해 기도하는 상황을 이어서 전해요.",
     "refs": [
       "열왕기상 8:41",
       "열왕기상 8:42",
@@ -191302,8 +191306,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-2-3",
     "title": "벧엘에 선지자가 있었던 이유",
     "aliases": [
-      "선지자의 제자들",
-      "벧엘에 있는 예언자의 무리가 엘리사에게 와서"
+      "벧엘에 있는"
     ],
     "locations": [
       {
@@ -193525,6 +193528,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-19-37",
     "title": "산헤립은 어떻게 죽었나",
     "aliases": [
+      "아드람멜렉과 사레셀이",
       "그의 아들 아드람멜렉과 사레셀이"
     ],
     "locations": [
@@ -193541,7 +193545,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     ],
     "summary": "산헤립은 니스록 신전에서 경배하다가 두 아들에게 칼에 맞아 죽었어요. 그가 섬기던 신이 그를 지키지 못했다는 대비예요.",
     "detail": "두 아들은 암살한 뒤 아라랏 땅으로 도망쳤어요. 다른 아들 에살핫돈이 왕이 되었어요(37절). 산헤립의 죽음은 예루살렘에서 물러난 때로부터 한참 뒤의 일이에요. 그러나 성경은 이어서 적어서, 하나님을 모욕한 대가를 보여 줘요.",
-    "caution": "두 사건 사이에는 세월이 꽤 흘렀어요. 정확한 연대는 이번에 확인하지 못했어요.",
+    "caution": "산헤립이 니느웨로 돌아간 일과 두 아들에게 죽임당한 일은 이어서 기록돼요. 열왕기하는 두 사건 사이의 기간을 밝히지 않아요.",
     "refs": [
       "열왕기하 19:37",
       "열왕기하 19:36"
@@ -193939,8 +193943,7 @@ window.ScriptureNotesData.contextualTerms.push(...[
     "id": "context-2ki-22-14",
     "title": "여선지자 훌다",
     "aliases": [
-      "여선지 훌다",
-      "여자 예언자 훌다"
+      "훌다에게"
     ],
     "locations": [
       {

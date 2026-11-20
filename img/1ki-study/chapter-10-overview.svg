@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="621" viewBox="0 0 820 621" xml:lang="ko" role="img" aria-labelledby="title desc" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+<title id="title">열왕기상 10장 · 스바 여왕과 왕실의 부</title>
+<desc id="desc">주요 장소: 스바·예루살렘·레바논 나무 궁·오빌. 본문의 흐름: 1–13 여왕이 솔로몬에게 질문하고 예물을 나눔 → 14–22 금 방패와 상아 보좌, 해상 교역을 기록함 → 23–29 솔로몬의 명성과 병거·말 교역을 기록함. 주요 기물과 표지: 향품·금·보석·금 방패·상아 보좌·병거.</desc>
+<rect x="0" y="0" width="820" height="621" rx="20" fill="#F6F2E8"/>
+<text x="34" y="44" font-size="20" fill="#225C52" font-weight="700">열왕기상 10장 · 본문 도해</text>
+<text x="34" y="91" font-size="32" fill="#182832" font-weight="700">스바 여왕과 왕실의 부</text>
+<rect x="711" y="28" width="75" height="75" rx="14" fill="#E1EBE3"/>
+<path transform="translate(725 41) scale(2.85)" d="M0 7l5 2 3-6 3 6 5-2-2 8H2z" fill="#225C52" fill-rule="evenodd"/>
+<rect x="34" y="126" width="752" height="84" rx="12" fill="#E1EBE3"/>
+<text x="54" y="155" font-size="18" fill="#225C52" font-weight="700">주요 장소</text>
+<text x="54" y="188" font-size="23" fill="#182832" font-weight="400">스바·예루살렘·레바논 나무 궁·오빌</text>
+<text x="34" y="244" font-size="18" fill="#225C52" font-weight="700">본문의 흐름</text>
+<rect x="34" y="259" width="752" height="63" rx="12" fill="#FFFDF8"/>
+<rect x="50" y="273" width="97" height="34" rx="9" fill="#E1EBE3"/>
+<text x="59" y="297" font-size="17" fill="#225C52" font-weight="700">1–13절</text>
+<text x="170" y="298" font-size="23" fill="#182832" font-weight="400">여왕이 솔로몬에게 질문하고 예물을 나눔</text>
+<path d="M410 325v14m-5 -6 5 6 5 -6" fill="none" stroke="#225C52" stroke-width="2" stroke-linecap="round"/>
+<rect x="34" y="344" width="752" height="63" rx="12" fill="#FFFDF8"/>
+<rect x="50" y="358" width="97" height="34" rx="9" fill="#E1EBE3"/>
+<text x="59" y="382" font-size="17" fill="#225C52" font-weight="700">14–22절</text>
+<text x="170" y="383" font-size="23" fill="#182832" font-weight="400">금 방패와 상아 보좌, 해상 교역을 기록함</text>
+<path d="M410 410v14m-5 -6 5 6 5 -6" fill="none" stroke="#225C52" stroke-width="2" stroke-linecap="round"/>
+<rect x="34" y="429" width="752" height="63" rx="12" fill="#FFFDF8"/>
+<rect x="50" y="443" width="97" height="34" rx="9" fill="#E1EBE3"/>
+<text x="59" y="467" font-size="17" fill="#225C52" font-weight="700">23–29절</text>
+<text x="170" y="468" font-size="23" fill="#182832" font-weight="400">솔로몬의 명성과 병거·말 교역을 기록함</text>
+<rect x="34" y="512" width="752" height="84" rx="12" fill="#E1EBE3"/>
+<text x="54" y="541" font-size="18" fill="#225C52" font-weight="700">주요 기물과 표지</text>
+<text x="54" y="574" font-size="23" fill="#182832" font-weight="400">향품·금·보석·금 방패·상아 보좌·병거</text>
+</svg>

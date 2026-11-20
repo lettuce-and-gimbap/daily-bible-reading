@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="642" viewBox="0 0 820 642" xml:lang="ko" role="img" aria-labelledby="title desc" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+<title id="title">열왕기하 14장 · 두 왕의 충돌과 북왕국 영토 회복</title>
+<desc id="desc">주요 장소: 소금 골짜기·셀라·벧세메스·예루살렘·라기스·하맛 어귀. 본문의 흐름: 1–7 아마샤가 에돔을 치고 셀라를 차지함 → 8–22 이스라엘 왕 요아스가 아마샤를 이기고 보물을 가져감 → 23–29 여로보암 이세가 이스라엘의 경계를 회복함. 주요 기물과 표지: 가시나무와 백향목의 비유·성전 기물·은금.</desc>
+<rect x="0" y="0" width="820" height="642" rx="20" fill="#F6F2E8"/>
+<text x="34" y="44" font-size="20" fill="#334F74" font-weight="700">열왕기하 14장 · 본문 도해</text>
+<text x="34" y="91" font-size="32" fill="#182832" font-weight="700">두 왕의 충돌과 북왕국 영토 회복</text>
+<rect x="711" y="28" width="75" height="75" rx="14" fill="#E4EBF4"/>
+<path transform="translate(725 41) scale(2.85)" d="M0 3h3v3h3V3h4v3h3V3h3v13h-6v-5H6v5H0z" fill="#334F74" fill-rule="evenodd"/>
+<rect x="34" y="126" width="752" height="84" rx="12" fill="#E4EBF4"/>
+<text x="54" y="155" font-size="18" fill="#334F74" font-weight="700">주요 장소</text>
+<text x="54" y="188" font-size="23" fill="#182832" font-weight="400">소금 골짜기·셀라·벧세메스·예루살렘·라기스·하맛 어귀</text>
+<text x="34" y="244" font-size="18" fill="#334F74" font-weight="700">본문의 흐름</text>
+<rect x="34" y="259" width="752" height="63" rx="12" fill="#FFFDF8"/>
+<rect x="50" y="273" width="97" height="34" rx="9" fill="#E4EBF4"/>
+<text x="59" y="297" font-size="17" fill="#334F74" font-weight="700">1–7절</text>
+<text x="170" y="298" font-size="23" fill="#182832" font-weight="400">아마샤가 에돔을 치고 셀라를 차지함</text>
+<path d="M410 325v14m-5 -6 5 6 5 -6" fill="none" stroke="#334F74" stroke-width="2" stroke-linecap="round"/>
+<rect x="34" y="344" width="752" height="84" rx="12" fill="#FFFDF8"/>
+<rect x="50" y="358" width="97" height="34" rx="9" fill="#E4EBF4"/>
+<text x="59" y="382" font-size="17" fill="#334F74" font-weight="700">8–22절</text>
+<text x="170" y="383" font-size="23" fill="#182832" font-weight="400">이스라엘 왕 요아스가 아마샤를 이기고 보물을</text>
+<text x="170" y="414" font-size="23" fill="#182832" font-weight="400">가져감</text>
+<path d="M410 431v14m-5 -6 5 6 5 -6" fill="none" stroke="#334F74" stroke-width="2" stroke-linecap="round"/>
+<rect x="34" y="450" width="752" height="63" rx="12" fill="#FFFDF8"/>
+<rect x="50" y="464" width="97" height="34" rx="9" fill="#E4EBF4"/>
+<text x="59" y="488" font-size="17" fill="#334F74" font-weight="700">23–29절</text>
+<text x="170" y="489" font-size="23" fill="#182832" font-weight="400">여로보암 이세가 이스라엘의 경계를 회복함</text>
+<rect x="34" y="533" width="752" height="84" rx="12" fill="#E4EBF4"/>
+<text x="54" y="562" font-size="18" fill="#334F74" font-weight="700">주요 기물과 표지</text>
+<text x="54" y="595" font-size="23" fill="#182832" font-weight="400">가시나무와 백향목의 비유·성전 기물·은금</text>
+</svg>

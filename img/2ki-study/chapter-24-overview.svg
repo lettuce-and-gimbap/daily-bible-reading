@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="621" viewBox="0 0 820 621" xml:lang="ko" role="img" aria-labelledby="title desc" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+<title id="title">열왕기하 24장 · 여호야긴의 항복과 바벨론 이송</title>
+<desc id="desc">주요 장소: 유다·예루살렘·바벨론·애굽 시내에서 유브라데까지. 본문의 흐름: 1–7 여호야김이 바벨론을 섬기다 반역함 → 8–16 여호야긴이 항복하고 백성과 보물이 옮겨짐 → 17–20 바벨론 왕이 시드기야를 세우고 그도 반역함. 주요 기물과 표지: 성전의 금 기물·왕궁 보물.</desc>
+<rect x="0" y="0" width="820" height="621" rx="20" fill="#F6F2E8"/>
+<text x="34" y="44" font-size="20" fill="#334F74" font-weight="700">열왕기하 24장 · 본문 도해</text>
+<text x="34" y="91" font-size="32" fill="#182832" font-weight="700">여호야긴의 항복과 바벨론 이송</text>
+<rect x="711" y="28" width="75" height="75" rx="14" fill="#E4EBF4"/>
+<path transform="translate(725 41) scale(2.85)" d="M0 3h16v11H0zm2 2 6 5 6-5h-2L8 8 4 5z" fill="#334F74" fill-rule="evenodd"/>
+<rect x="34" y="126" width="752" height="84" rx="12" fill="#E4EBF4"/>
+<text x="54" y="155" font-size="18" fill="#334F74" font-weight="700">주요 장소</text>
+<text x="54" y="188" font-size="23" fill="#182832" font-weight="400">유다·예루살렘·바벨론·애굽 시내에서 유브라데까지</text>
+<text x="34" y="244" font-size="18" fill="#334F74" font-weight="700">본문의 흐름</text>
+<rect x="34" y="259" width="752" height="63" rx="12" fill="#FFFDF8"/>
+<rect x="50" y="273" width="97" height="34" rx="9" fill="#E4EBF4"/>
+<text x="59" y="297" font-size="17" fill="#334F74" font-weight="700">1–7절</text>
+<text x="170" y="298" font-size="23" fill="#182832" font-weight="400">여호야김이 바벨론을 섬기다 반역함</text>
+<path d="M410 325v14m-5 -6 5 6 5 -6" fill="none" stroke="#334F74" stroke-width="2" stroke-linecap="round"/>
+<rect x="34" y="344" width="752" height="63" rx="12" fill="#FFFDF8"/>
+<rect x="50" y="358" width="97" height="34" rx="9" fill="#E4EBF4"/>
+<text x="59" y="382" font-size="17" fill="#334F74" font-weight="700">8–16절</text>
+<text x="170" y="383" font-size="23" fill="#182832" font-weight="400">여호야긴이 항복하고 백성과 보물이 옮겨짐</text>
+<path d="M410 410v14m-5 -6 5 6 5 -6" fill="none" stroke="#334F74" stroke-width="2" stroke-linecap="round"/>
+<rect x="34" y="429" width="752" height="63" rx="12" fill="#FFFDF8"/>
+<rect x="50" y="443" width="97" height="34" rx="9" fill="#E4EBF4"/>
+<text x="59" y="467" font-size="17" fill="#334F74" font-weight="700">17–20절</text>
+<text x="170" y="468" font-size="23" fill="#182832" font-weight="400">바벨론 왕이 시드기야를 세우고 그도 반역함</text>
+<rect x="34" y="512" width="752" height="84" rx="12" fill="#E4EBF4"/>
+<text x="54" y="541" font-size="18" fill="#334F74" font-weight="700">주요 기물과 표지</text>
+<text x="54" y="574" font-size="23" fill="#182832" font-weight="400">성전의 금 기물·왕궁 보물</text>
+</svg>

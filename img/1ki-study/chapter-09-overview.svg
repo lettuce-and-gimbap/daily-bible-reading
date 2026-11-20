@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="621" viewBox="0 0 820 621" xml:lang="ko" role="img" aria-labelledby="title desc" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+<title id="title">열왕기상 9장 · 성전 이후의 약속과 건축 사업</title>
+<desc id="desc">주요 장소: 예루살렘·갈릴리·하솔·므깃도·게셀·에시온게벨. 본문의 흐름: 1–9 하나님이 왕조의 약속과 불순종의 결과를 말씀하심 → 10–23 히람과의 거래, 건축 사업과 노역을 기록함 → 24–28 성전 제사와 오빌 항해를 기록함. 주요 기물과 표지: 갈릴리의 스무 성읍·금·제물·선단.</desc>
+<rect x="0" y="0" width="820" height="621" rx="20" fill="#F6F2E8"/>
+<text x="34" y="44" font-size="20" fill="#225C52" font-weight="700">열왕기상 9장 · 본문 도해</text>
+<text x="34" y="91" font-size="32" fill="#182832" font-weight="700">성전 이후의 약속과 건축 사업</text>
+<rect x="711" y="28" width="75" height="75" rx="14" fill="#E1EBE3"/>
+<path transform="translate(725 41) scale(2.85)" d="M0 3h3v3h3V3h4v3h3V3h3v13h-6v-5H6v5H0z" fill="#225C52" fill-rule="evenodd"/>
+<rect x="34" y="126" width="752" height="84" rx="12" fill="#E1EBE3"/>
+<text x="54" y="155" font-size="18" fill="#225C52" font-weight="700">주요 장소</text>
+<text x="54" y="188" font-size="23" fill="#182832" font-weight="400">예루살렘·갈릴리·하솔·므깃도·게셀·에시온게벨</text>
+<text x="34" y="244" font-size="18" fill="#225C52" font-weight="700">본문의 흐름</text>
+<rect x="34" y="259" width="752" height="63" rx="12" fill="#FFFDF8"/>
+<rect x="50" y="273" width="97" height="34" rx="9" fill="#E1EBE3"/>
+<text x="59" y="297" font-size="17" fill="#225C52" font-weight="700">1–9절</text>
+<text x="170" y="298" font-size="23" fill="#182832" font-weight="400">하나님이 왕조의 약속과 불순종의 결과를 말씀하심</text>
+<path d="M410 325v14m-5 -6 5 6 5 -6" fill="none" stroke="#225C52" stroke-width="2" stroke-linecap="round"/>
+<rect x="34" y="344" width="752" height="63" rx="12" fill="#FFFDF8"/>
+<rect x="50" y="358" width="97" height="34" rx="9" fill="#E1EBE3"/>
+<text x="59" y="382" font-size="17" fill="#225C52" font-weight="700">10–23절</text>
+<text x="170" y="383" font-size="23" fill="#182832" font-weight="400">히람과의 거래, 건축 사업과 노역을 기록함</text>
+<path d="M410 410v14m-5 -6 5 6 5 -6" fill="none" stroke="#225C52" stroke-width="2" stroke-linecap="round"/>
+<rect x="34" y="429" width="752" height="63" rx="12" fill="#FFFDF8"/>
+<rect x="50" y="443" width="97" height="34" rx="9" fill="#E1EBE3"/>
+<text x="59" y="467" font-size="17" fill="#225C52" font-weight="700">24–28절</text>
+<text x="170" y="468" font-size="23" fill="#182832" font-weight="400">성전 제사와 오빌 항해를 기록함</text>
+<rect x="34" y="512" width="752" height="84" rx="12" fill="#E1EBE3"/>
+<text x="54" y="541" font-size="18" fill="#225C52" font-weight="700">주요 기물과 표지</text>
+<text x="54" y="574" font-size="23" fill="#182832" font-weight="400">갈릴리의 스무 성읍·금·제물·선단</text>
+</svg>
