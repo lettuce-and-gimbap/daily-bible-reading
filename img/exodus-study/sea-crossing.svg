@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 704 328" role="img" aria-labelledby="sea-crossing-title sea-crossing-desc" xml:lang="ko">
+  <title id="sea-crossing-title">바다 사이로 난 길</title>
+  <desc id="sea-crossing-desc">출애굽기 14:19–31. 물이 좌우에 벽처럼 서고 이스라엘은 마른 땅을 지난다. 뒤따르던 애굽 군대 위로 물이 돌아온다.</desc>
+  <metadata>지리 참고 자료: https://yalebiblestudy.org/courses/exodus/lessons/crossing-of-the-sea-study-guide/</metadata>
+  <rect x="0" y="0" width="704" height="328" rx="20" fill="#f9f4e9"/>
+  <g font-family="'Malgun Gothic', 'Noto Sans KR', sans-serif">
+    <g font-weight="700"><text x="352" y="43" text-anchor="middle" font-size="30" fill="#273c3d">바다 사이로 난 길</text></g>
+    <text x="352" y="76" text-anchor="middle" font-size="18" fill="#286b71">출애굽기 14:19–31</text>
+    <g class="illustration">
+      <rect x="30" y="103" width="644" height="158" rx="16" fill="#edce98"/>
+      <path d="M46 103H658Q674 103 674 119V151Q632 167 580 147T463 155T352 147T236 151T128 147T30 153V119Q30 103 46 103Z" fill="#9dcbd0" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M30 216Q80 195 134 213T247 210T360 211T474 213T586 207T674 214V245Q674 261 658 261H46Q30 261 30 245Z" fill="#9dcbd0" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M60 138Q90 126 120 138T180 138M516 234Q546 222 576 234T636 234" fill="none" stroke="#377d91" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="352" y="134" text-anchor="middle" font-size="20" fill="#273c3d">물</text>
+      <text x="352" y="246" text-anchor="middle" font-size="20" fill="#273c3d">물</text>
+      <g transform="translate(217 179)">
+      <circle cx="0" cy="-18" r="6" fill="#273c3d"/>
+      <path d="M0 -9V9M-8 0L0 -5 8 0M-6 21L0 9 6 21" fill="none" stroke="#273c3d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <g transform="translate(253 181)">
+      <circle cx="0" cy="-18" r="6" fill="#273c3d"/>
+      <path d="M0 -9V9M-8 0L0 -5 8 0M-6 21L0 9 6 21" fill="none" stroke="#273c3d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <g transform="translate(289 176)">
+      <circle cx="0" cy="-18" r="6" fill="#273c3d"/>
+      <path d="M0 -9V9M-8 0L0 -5 8 0M-6 21L0 9 6 21" fill="none" stroke="#273c3d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <path d="M322 180H403L391 172M403 180L391 188" fill="none" stroke="#286b71" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="498" y="187" text-anchor="middle" font-size="23" fill="#273c3d">마른 땅</text>
+    </g>
+    <text x="352" y="300" text-anchor="middle" font-size="18" fill="#273c3d">이스라엘이 건넌 뒤 물이 다시 돌아옴 · 도하 위치는 불확실</text>
+  </g>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 704 328" role="img" aria-labelledby="sinai-covenant-title sinai-covenant-desc" xml:lang="ko">
+  <title id="sinai-covenant-title">시내 산에서 언약을 준비하다</title>
+  <desc id="sinai-covenant-desc">출애굽기 19:1–20. 백성은 산 아래에서 준비하고 모세는 부르심을 따라 산으로 올라간다. 산 위에는 구름과 연기가 나타난다.</desc>
+  <rect x="0" y="0" width="704" height="328" rx="20" fill="#f9f4e9"/>
+  <g font-family="'Malgun Gothic', 'Noto Sans KR', sans-serif">
+    <g font-weight="700"><text x="352" y="43" text-anchor="middle" font-size="30" fill="#273c3d">시내 산에서 언약을 준비하다</text></g>
+    <text x="352" y="76" text-anchor="middle" font-size="18" fill="#286b71">출애굽기 19:1–20</text>
+    <g class="illustration">
+      <rect x="30" y="103" width="644" height="158" rx="16" fill="#e9ece5"/>
+      <path d="M90 241L209 184 243 188 329 126 379 153 431 179 467 177 590 241Z" fill="#bcad91" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M225 242L331 127 379 153 426 242Z" fill="#a89575" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M283 145Q273 134 294 132Q289 116 312 118Q325 98 348 116Q371 110 379 128Q403 137 380 146Z" fill="#6a7778" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="535" y="141" text-anchor="middle" font-size="20" fill="#273c3d">구름과 연기</text>
+      <path d="M418 136H467" fill="none" stroke="#286b71" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <g transform="translate(384 182)">
+      <circle cx="0" cy="-18" r="6" fill="#273c3d"/>
+      <path d="M0 -9V9M-8 0L0 -5 8 0M-6 21L0 9 6 21" fill="none" stroke="#273c3d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <text x="452" y="195" text-anchor="middle" font-size="19" fill="#273c3d">모세</text>
+      <path d="M338 209L353 187M353 187L342 191M353 187L354 198" fill="none" stroke="#286b71" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <g transform="translate(138 222)">
+      <circle cx="0" cy="-18" r="6" fill="#273c3d"/>
+      <path d="M0 -9V9M-8 0L0 -5 8 0M-6 21L0 9 6 21" fill="none" stroke="#273c3d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <g transform="translate(171 222)">
+      <circle cx="0" cy="-18" r="6" fill="#273c3d"/>
+      <path d="M0 -9V9M-8 0L0 -5 8 0M-6 21L0 9 6 21" fill="none" stroke="#273c3d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <g transform="translate(201 222)">
+      <circle cx="0" cy="-18" r="6" fill="#273c3d"/>
+      <path d="M0 -9V9M-8 0L0 -5 8 0M-6 21L0 9 6 21" fill="none" stroke="#273c3d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <text x="544" y="234" text-anchor="middle" font-size="19" fill="#273c3d">산 아래의 백성</text>
+    </g>
+    <text x="352" y="300" text-anchor="middle" font-size="18" fill="#273c3d">하나님이 백성을 부르시고 모세를 산 위로 부르심</text>
+  </g>
+</svg>

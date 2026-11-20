@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 704 328" role="img" aria-labelledby="passover-night-title passover-night-desc" xml:lang="ko">
+  <title id="passover-night-title">유월절 밤, 문에 바른 피</title>
+  <desc id="passover-night-desc">출애굽기 12:3–14, 21–28. 어린양의 피를 문 위와 양쪽 문설주에 바르고, 집 안에서는 어린양과 무교병과 쓴 나물을 먹는다.</desc>
+  <rect x="0" y="0" width="704" height="328" rx="20" fill="#f9f4e9"/>
+  <g font-family="'Malgun Gothic', 'Noto Sans KR', sans-serif">
+    <g font-weight="700"><text x="352" y="43" text-anchor="middle" font-size="30" fill="#273c3d">유월절 밤, 문에 바른 피</text></g>
+    <text x="352" y="76" text-anchor="middle" font-size="18" fill="#286b71">출애굽기 12:3–14, 21–28</text>
+    <g class="illustration">
+      <rect x="30" y="103" width="310" height="158" rx="16" fill="#eee2ca"/>
+      <rect x="354" y="103" width="320" height="158" rx="16" fill="#eee2ca"/>
+      <rect x="62" y="128" width="116" height="105" rx="5" fill="#d1aa75"/>
+      <rect x="95" y="151" width="49" height="82" rx="0" fill="#4d4940"/>
+      <path d="M91 230V148H148V230" fill="none" stroke="#a34036" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M151 151H171L189 164" fill="none" stroke="#a34036" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="245" y="175" text-anchor="middle" font-size="18" fill="#273c3d">문 위와 양옆</text>
+      <text x="245" y="201" text-anchor="middle" font-size="20" fill="#a34036">어린양의 피</text>
+      <text x="514" y="135" text-anchor="middle" font-size="21" fill="#273c3d">집 안의 식사</text>
+      <ellipse cx="514" cy="178" rx="107" ry="28" fill="#dac49e"/>
+      <path d="M446 183Q433 166 450 161Q472 161 474 177Q464 188 446 183Z" fill="#9a5635" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M490 176Q490 162 515 162Q539 166 536 177Q530 191 501 187Z" fill="#f9e3a5" stroke="#a16a20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M566 186Q545 164 558 158Q568 159 571 177Q576 158 588 161Q588 174 566 186Z" fill="#52734c" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="452" y="229" text-anchor="middle" font-size="18" fill="#273c3d">어린양</text>
+      <text x="515" y="229" text-anchor="middle" font-size="18" fill="#273c3d">무교병</text>
+      <text x="580" y="229" text-anchor="middle" font-size="18" fill="#273c3d">쓴 나물</text>
+    </g>
+    <text x="352" y="300" text-anchor="middle" font-size="18" fill="#273c3d">하나님이 피를 표로 보시고 그 집을 넘어가심</text>
+  </g>
+</svg>

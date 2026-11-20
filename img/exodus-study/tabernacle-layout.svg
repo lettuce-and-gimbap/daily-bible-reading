@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 704 328" role="img" aria-labelledby="tabernacle-layout-title tabernacle-layout-desc" xml:lang="ko">
+  <title id="tabernacle-layout-title">성막 안의 두 공간</title>
+  <desc id="tabernacle-layout-desc">출애굽기 25:10–40 · 26:31–37. 입구에서 성소로 들어가면 상과 등잔대가 있다. 휘장 안쪽 지성소에는 증거궤가 있다. 성막 내부의 단순 배치도이다.</desc>
+  <rect x="0" y="0" width="704" height="328" rx="20" fill="#f9f4e9"/>
+  <g font-family="'Malgun Gothic', 'Noto Sans KR', sans-serif">
+    <g font-weight="700"><text x="352" y="43" text-anchor="middle" font-size="30" fill="#273c3d">성막 안의 두 공간</text></g>
+    <text x="352" y="76" text-anchor="middle" font-size="18" fill="#286b71">출애굽기 25:10–40 · 26:31–37</text>
+    <g class="illustration">
+      <rect x="30" y="103" width="644" height="158" rx="16" fill="#eee6d3"/>
+      <rect x="77" y="136" width="550" height="107" rx="8" fill="#815b48"/>
+      <rect x="81" y="140" width="179" height="99" rx="0" fill="#ead1a7"/>
+      <rect x="260" y="140" width="363" height="99" rx="0" fill="#f8ead0"/>
+      <path d="M260 141V239" fill="none" stroke="#66517c" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M626 166V216" fill="none" stroke="#f9f4e9" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="171" y="167" text-anchor="middle" font-size="22" fill="#273c3d">지성소</text>
+      <text x="438" y="167" text-anchor="middle" font-size="22" fill="#273c3d">성소</text>
+      <text x="260" y="128" text-anchor="middle" font-size="18" fill="#273c3d">휘장</text>
+      <rect x="143" y="179" width="57" height="22" rx="4" fill="#a97528"/>
+      <path d="M136 202H207" fill="none" stroke="#805717" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="171" y="226" text-anchor="middle" font-size="18" fill="#273c3d">증거궤</text>
+      <rect x="317" y="183" width="47" height="18" rx="3" fill="#a97528"/>
+      <path d="M322 201V205M359 201V205" fill="none" stroke="#805717" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="341" y="226" text-anchor="middle" font-size="18" fill="#273c3d">상</text>
+      <path d="M478 204V181M465 185Q465 197 478 197Q491 197 491 185M460 181Q460 202 478 202Q496 202 496 181M471 205H485" fill="none" stroke="#805717" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="478" y="226" text-anchor="middle" font-size="18" fill="#273c3d">등잔대</text>
+      <path d="M655 176H592L601 170M592 176L601 182" fill="none" stroke="#286b71" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="579" y="210" text-anchor="middle" font-size="18" fill="#273c3d">입구</text>
+    </g>
+    <text x="352" y="300" text-anchor="middle" font-size="18" fill="#273c3d">성막 내부 개념도 · 기구 일부 표시 · 축척 없음</text>
+  </g>
+</svg>

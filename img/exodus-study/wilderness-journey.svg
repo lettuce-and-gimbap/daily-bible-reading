@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 704 328" role="img" aria-labelledby="wilderness-journey-title wilderness-journey-desc" xml:lang="ko">
+  <title id="wilderness-journey-title">애굽에서 시내 광야까지</title>
+  <desc id="wilderness-journey-desc">출애굽기 12:37 · 13:17–22 · 14:21–22 · 19:1–2. 라암셋에서 숙곳과 에담을 거쳐 바다를 건넌 뒤, 광야 여정을 지나 시내 광야에 이른다. 화살표는 본문의 순서를 보여 준다.</desc>
+  <metadata>지리 참고 자료: https://www.biblegateway.com/learn/topics-themes/commentaries/exodus-route-from-egypt/</metadata>
+  <rect x="0" y="0" width="704" height="328" rx="20" fill="#f9f4e9"/>
+  <g font-family="'Malgun Gothic', 'Noto Sans KR', sans-serif">
+    <g font-weight="700"><text x="352" y="43" text-anchor="middle" font-size="30" fill="#273c3d">애굽에서 시내 광야까지</text></g>
+    <text x="352" y="76" text-anchor="middle" font-size="18" fill="#286b71">출애굽기 12:37 · 13:17–22 · 14:21–22 · 19:1–2</text>
+    <g class="illustration">
+      <rect x="30" y="103" width="644" height="158" rx="16" fill="#eee6d3"/>
+      <circle cx="84" cy="171" r="9" fill="#a16a20"/>
+      <text x="84" y="143" text-anchor="middle" font-size="22" fill="#273c3d">라암셋</text>
+      <text x="84" y="223" text-anchor="middle" font-size="17" fill="#273c3d">애굽에서 출발</text>
+      <circle cx="215" cy="171" r="9" fill="#a16a20"/>
+      <text x="215" y="143" text-anchor="middle" font-size="22" fill="#273c3d">숙곳</text>
+      <text x="215" y="223" text-anchor="middle" font-size="17" fill="#273c3d">첫 이동</text>
+      <circle cx="337" cy="171" r="9" fill="#a16a20"/>
+      <text x="337" y="143" text-anchor="middle" font-size="22" fill="#273c3d">에담</text>
+      <text x="337" y="223" text-anchor="middle" font-size="17" fill="#273c3d">광야 끝</text>
+      <circle cx="466" cy="171" r="9" fill="#377d91"/>
+      <text x="466" y="143" text-anchor="middle" font-size="22" fill="#273c3d">바다</text>
+      <text x="466" y="223" text-anchor="middle" font-size="17" fill="#273c3d">바다를 건넘</text>
+      <circle cx="612" cy="171" r="9" fill="#a16a20"/>
+      <text x="612" y="143" text-anchor="middle" font-size="22" fill="#273c3d">시내 광야</text>
+      <text x="612" y="223" text-anchor="middle" font-size="17" fill="#273c3d">산 앞에 진을 침</text>
+      <path d="M101 171H193m-8 -6l8 6-8 6" fill="none" stroke="#286b71" stroke-width="2.5" stroke-dasharray="5 4"/>
+      <path d="M232 171H315m-8 -6l8 6-8 6" fill="none" stroke="#286b71" stroke-width="2.5" stroke-dasharray="5 4"/>
+      <path d="M354 171H444m-8 -6l8 6-8 6" fill="none" stroke="#286b71" stroke-width="2.5" stroke-dasharray="5 4"/>
+      <path d="M483 171H590m-8 -6l8 6-8 6" fill="none" stroke="#286b71" stroke-width="2.5" stroke-dasharray="5 4"/>
+      <text x="352" y="248" text-anchor="middle" font-size="16" fill="#286b71">바다에서 시내 광야까지의 중간 여정은 생략</text>
+    </g>
+    <text x="352" y="300" text-anchor="middle" font-size="18" fill="#273c3d">본문의 이동 순서 · 세부 경로와 바다를 건넌 위치는 불확실</text>
+  </g>
+</svg>

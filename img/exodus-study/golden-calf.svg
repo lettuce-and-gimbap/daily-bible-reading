@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 704 328" role="img" aria-labelledby="golden-calf-title golden-calf-desc" xml:lang="ko">
+  <title id="golden-calf-title">산 아래의 금송아지</title>
+  <desc id="golden-calf-desc">출애굽기 32:1–20, 30–32. 백성은 모세를 기다리다 금송아지를 만들어 섬긴다. 모세는 산 아래에서 돌판을 깨뜨리고, 이후 백성의 죄를 두고 하나님께 간구한다.</desc>
+  <rect x="0" y="0" width="704" height="328" rx="20" fill="#f9f4e9"/>
+  <g font-family="'Malgun Gothic', 'Noto Sans KR', sans-serif">
+    <g font-weight="700"><text x="352" y="43" text-anchor="middle" font-size="30" fill="#273c3d">산 아래의 금송아지</text></g>
+    <text x="352" y="76" text-anchor="middle" font-size="18" fill="#286b71">출애굽기 32:1–20, 30–32</text>
+    <g class="illustration">
+      <rect x="30" y="103" width="644" height="158" rx="16" fill="#eee2ca"/>
+      <path d="M31 217L144 122 258 217Z" fill="#ccb797" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M143 123L172 162 185 161 258 217H116Z" fill="#bfa583" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="140" y="148" text-anchor="middle" font-size="19" fill="#273c3d">시내 산</text>
+      <g transform="translate(155 190)">
+      <circle cx="0" cy="-18" r="6" fill="#273c3d"/>
+      <path d="M0 -9V9M-8 0L0 -5 8 0M-6 21L0 9 6 21" fill="none" stroke="#273c3d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <path d="M126 214L138 207 147 222 136 229Z M153 225L166 217 177 231 163 236Z" fill="#6a7778" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="235" y="244" text-anchor="middle" font-size="18" fill="#273c3d">깨진 돌판</text>
+      <rect x="399" y="209" width="150" height="14" rx="3" fill="#906f56"/>
+      <path d="M425 173Q436 162 467 163L486 165 501 150 518 151 526 163 512 175 500 175 495 187 493 208H483L480 186H450L448 208H438L437 184 425 185Z" fill="#bc812b" stroke="#81541f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M505 151L501 142M516 151L523 143M425 177Q411 176 411 166" fill="none" stroke="#81541f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="516" cy="158" r="2" fill="#273c3d"/>
+      <g transform="translate(354 205)">
+      <circle cx="0" cy="-18" r="6" fill="#273c3d"/>
+      <path d="M0 -9V9M-8 0L0 -5 8 0M-6 21L0 9 6 21" fill="none" stroke="#273c3d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <g transform="translate(595 206)">
+      <circle cx="0" cy="-18" r="6" fill="#273c3d"/>
+      <path d="M0 -9V9M-8 0L0 -5 8 0M-6 21L0 9 6 21" fill="none" stroke="#273c3d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <text x="474" y="244" text-anchor="middle" font-size="21" fill="#273c3d">금송아지</text>
+    </g>
+    <text x="352" y="300" text-anchor="middle" font-size="18" fill="#273c3d">백성이 금송아지를 섬기자 모세가 돌판을 깨뜨림</text>
+  </g>
+</svg>

@@ -112,9 +112,9 @@ function wisdomSourceLink(source) {
 function wisdomStudyHtml(entries) {
   if (!entries.length) return "";
   return `<section class="tool-card sum-card"><h3 class="label">장별 주석 · 개혁주의 관점</h3>
-    ${entries.map(({ ref, note }) => `<details class="wisdom-study"><summary><strong>${esc(ref)}</strong> · ${esc(note.heading)}</summary>
+    ${entries.map(({ ref, note, code }) => `<details class="wisdom-study"><summary><strong>${esc(ref)}</strong> · ${esc(note.heading)}</summary>
       ${note.paragraphs.map((paragraph) => `<p>${esc(paragraph)}</p>`).join("")}
-      ${genesisStudyFigure(note.figure)}
+      ${chapterStudyFigure(code, note.figure)}
       ${note.sources?.length ? `<p class="muted small">참고 자료 · ${note.sources.map(wisdomSourceLink).join(" · ")}</p>` : ""}</details>`).join("")}
   </section>`;
 }
@@ -126,12 +126,13 @@ const genesisFigures = new Map([
   ["babel", "시날의 도시 건설과 흩어짐의 흐름"],
 ]);
 
-function genesisStudyFigure(figure) {
+function chapterStudyFigure(code, figure) {
+  const directory = { gen: "genesis-study", exo: "exodus-study" }[code];
   const id = typeof figure === "string" ? figure : figure?.id;
   const label = typeof figure === "string" ? genesisFigures.get(figure) : figure?.label;
-  if (!label || !/^[a-z0-9-]+$/.test(id || "")) return "";
+  if (!directory || !label || !/^[a-z0-9-]+$/.test(id || "")) return "";
   const source = figure.sourceUrl ? wisdomSourceLink({ label: "그림 참고 자료", url: figure.sourceUrl }) : "";
-  return `<figure class="wisdom-map"><img src="img/genesis-study/${id}.svg" alt="${esc(label)}" loading="lazy">
+  return `<figure class="wisdom-map"><img src="img/${directory}/${id}.svg" alt="${esc(label)}" loading="lazy">
     <figcaption>${esc(label)} ${source}</figcaption></figure>`;
 }
 
@@ -166,10 +167,10 @@ function staticDaySummary(day) {
   const opts = { all: !!state.settings.graphAll };
   const out = composeDay(chapters, books, opts);
   const wisdom = chapters.filter(({ book }) => ["job", "psa", "pro"].includes(book.code));
-  out.wisdomStudy = chapters.filter(({ book }) => ["gen", "job", "psa", "pro"].includes(book.code)).flatMap(({ book, chap }) => {
+  out.wisdomStudy = chapters.filter(({ book }) => ["gen", "exo", "job", "psa", "pro"].includes(book.code)).flatMap(({ book, chap }) => {
     const part = book.code === "psa" ? `-${Math.ceil(chap / 50)}` : "";
     const note = wisdomData(`${book.code}-study${part}`)?.[chap];
-    return note ? [{ ref: `${book.name} ${chap}${chapUnit(book)}`, note }] : [];
+    return note ? [{ code: book.code, ref: `${book.name} ${chap}${chapUnit(book)}`, note }] : [];
   });
   const showBabel = chapters.some(({ book, chap }) => book.code === "gen" && chap === 11);
   out.wisdomPlaces = wisdom.length ? wisdomData("wisdom-places") : null;
