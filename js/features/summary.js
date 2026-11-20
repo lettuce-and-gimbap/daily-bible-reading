@@ -126,10 +126,13 @@ const genesisFigures = new Map([
   ["babel", "시날의 도시 건설과 흩어짐의 흐름"],
 ]);
 
-function genesisStudyFigure(id) {
-  const label = genesisFigures.get(id);
-  if (!label) return "";
-  return `<figure class="wisdom-map"><img src="img/genesis-study/${id}.svg" alt="${esc(label)}" loading="lazy"><figcaption>${esc(label)}</figcaption></figure>`;
+function genesisStudyFigure(figure) {
+  const id = typeof figure === "string" ? figure : figure?.id;
+  const label = typeof figure === "string" ? genesisFigures.get(figure) : figure?.label;
+  if (!label || !/^[a-z0-9-]+$/.test(id || "")) return "";
+  const source = figure.sourceUrl ? wisdomSourceLink({ label: "그림 참고 자료", url: figure.sourceUrl }) : "";
+  return `<figure class="wisdom-map"><img src="img/genesis-study/${id}.svg" alt="${esc(label)}" loading="lazy">
+    <figcaption>${esc(label)} ${source}</figcaption></figure>`;
 }
 
 function wisdomPlaceHtml(figure) {
@@ -164,7 +167,6 @@ function staticDaySummary(day) {
   const out = composeDay(chapters, books, opts);
   const wisdom = chapters.filter(({ book }) => ["job", "psa", "pro"].includes(book.code));
   out.wisdomStudy = chapters.filter(({ book }) => ["gen", "job", "psa", "pro"].includes(book.code)).flatMap(({ book, chap }) => {
-    if (book.code === "gen" && chap > 11) return [];
     const part = book.code === "psa" ? `-${Math.ceil(chap / 50)}` : "";
     const note = wisdomData(`${book.code}-study${part}`)?.[chap];
     return note ? [{ ref: `${book.name} ${chap}${chapUnit(book)}`, note }] : [];

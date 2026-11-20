@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 704 276" role="img" aria-labelledby="joseph-sold-title joseph-sold-desc" xml:lang="ko">
+  <title id="joseph-sold-title">형들이 요셉을 팔다</title>
+  <desc id="joseph-sold-desc">창세기 37:12–36. 형들을 찾아갔던 요셉은 팔려 애굽으로 끌려간다.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0 0L10 5 0 10Z" fill="#557662"/>
+    </marker>
+  </defs>
+  <rect width="704" height="276" rx="20" fill="#f7f4e9"/>
+  <g font-family="'Malgun Gothic', 'Noto Sans KR', sans-serif" font-size="18" fill="#263e38">
+    <text x="352" y="45" text-anchor="middle" font-size="26" font-weight="bold">형들이 요셉을 팔다</text>
+    <text x="352" y="75" text-anchor="middle" font-size="17">창세기 37:12–36</text>
+    <rect x="26" y="111" width="200" height="102" rx="16" fill="#dcebdd"/>
+    <text x="126" y="151" text-anchor="middle" font-size="20" font-weight="bold">세겜에서 도단으로</text>
+    <text x="126" y="183" text-anchor="middle" font-size="16">형들을 찾아감</text>
+    <path d="M230 163h17" fill="none" stroke="#557662" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="252" y="111" width="200" height="102" rx="16" fill="#f7e8bf"/>
+    <text x="352" y="151" text-anchor="middle" font-size="20" font-weight="bold">빈 구덩이</text>
+    <text x="352" y="183" text-anchor="middle" font-size="16">형들이 요셉을 던짐</text>
+    <path d="M456 163h17" fill="none" stroke="#557662" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="478" y="111" width="200" height="102" rx="16" fill="#d9e8f2"/>
+    <text x="578" y="151" text-anchor="middle" font-size="20" font-weight="bold">애굽</text>
+    <text x="578" y="183" text-anchor="middle" font-size="16">팔려서 보디발의 집으로 감</text>
+    <text x="352" y="250" text-anchor="middle" font-size="18">형들을 찾아갔던 요셉은 팔려 애굽으로 끌려간다.</text>
+  </g>
+</svg>

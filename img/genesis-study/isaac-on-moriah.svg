@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 704 276" role="img" aria-labelledby="isaac-on-moriah-title isaac-on-moriah-desc" xml:lang="ko">
+  <title id="isaac-on-moriah-title">모리아에서 이삭을 대신한 숫양</title>
+  <desc id="isaac-on-moriah-desc">창세기 22:1–19. 아브라함은 이삭 대신 숫양을 번제로 드린다.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0 0L10 5 0 10Z" fill="#557662"/>
+    </marker>
+  </defs>
+  <rect width="704" height="276" rx="20" fill="#f7f4e9"/>
+  <g font-family="'Malgun Gothic', 'Noto Sans KR', sans-serif" font-size="18" fill="#263e38">
+    <text x="352" y="45" text-anchor="middle" font-size="26" font-weight="bold">모리아에서 이삭을 대신한 숫양</text>
+    <text x="352" y="75" text-anchor="middle" font-size="17">창세기 22:1–19</text>
+    <rect x="26" y="111" width="200" height="102" rx="16" fill="#dcebdd"/>
+    <text x="126" y="151" text-anchor="middle" font-size="20" font-weight="bold">모리아 땅</text>
+    <text x="126" y="183" text-anchor="middle" font-size="16">이삭과 함께 오름</text>
+    <path d="M230 163h17" fill="none" stroke="#557662" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="252" y="111" width="200" height="102" rx="16" fill="#f7e8bf"/>
+    <text x="352" y="151" text-anchor="middle" font-size="20" font-weight="bold">제단</text>
+    <text x="352" y="183" text-anchor="middle" font-size="16">여호와의 사자가 제지함</text>
+    <path d="M456 163h17" fill="none" stroke="#557662" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="478" y="111" width="200" height="102" rx="16" fill="#d9e8f2"/>
+    <text x="578" y="151" text-anchor="middle" font-size="20" font-weight="bold">숫양</text>
+    <text x="578" y="183" text-anchor="middle" font-size="16">이삭을 대신한 제물</text>
+    <text x="352" y="250" text-anchor="middle" font-size="18">아브라함은 이삭 대신 숫양을 번제로 드린다.</text>
+  </g>
+</svg>

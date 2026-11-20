@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 704 328" role="img" aria-labelledby="abram-to-canaan-title abram-to-canaan-desc" xml:lang="ko">
+  <title id="abram-to-canaan-title">아브람, 하란에서 가나안으로</title>
+  <desc id="abram-to-canaan-desc">창세기 12:1–8. 세겜에서 땅의 약속을 받고, 벧엘 동쪽에서 다시 제단을 쌓는다. 점과 점선은 추정 위치와 본문의 이동 순서를 나타낸다.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0 0L10 5 0 10Z" fill="#557662"/>
+    </marker>
+  </defs>
+  <rect width="704" height="328" rx="20" fill="#f7f4e9"/>
+  <g font-family="'Malgun Gothic', 'Noto Sans KR', sans-serif" font-size="18" fill="#263e38">
+    <text x="352" y="45" text-anchor="middle" font-size="26" font-weight="bold">아브람, 하란에서 가나안으로</text>
+    <text x="352" y="75" text-anchor="middle" font-size="17">창세기 12:1–8</text>
+  <path d="M28 96H315L292 118 266 137 251 163 242 190 219 222 203 249H28Z" fill="#d9e8f2"/>
+  <path d="M546 110Q423 97 332 129T279 174L270 214" fill="none" stroke="#557662" stroke-width="3" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+  <text x="128" y="179" fill="#3d5d6b" text-anchor="middle">지중해</text>
+  <text x="399" y="213" fill="#557662" text-anchor="middle">가나안</text>
+  <g fill="#355e4d">
+    <circle cx="546" cy="110" r="6"/><circle cx="279" cy="174" r="6"/><circle cx="270" cy="220" r="6"/>
+  </g>
+  <text x="559" y="115" font-weight="bold">하란</text>
+  <text x="293" y="174" font-weight="bold">세겜</text>
+  <text x="285" y="226" font-weight="bold">벧엘 동쪽</text>
+  <text x="638" y="156" text-anchor="middle">↑ 북</text>
+  <text x="352" y="269" text-anchor="middle" font-size="16">점과 점선은 추정 위치와 본문의 이동 순서를 나타냄 · 축척 없음</text>
+  <metadata>Geography: https://whc.unesco.org/en/tentativelists/1400/ (Harran); https://whc.unesco.org/en/tentativelists/6949/ (Shechem); https://www.sbl-site.org/wp-content/uploads/2024/12/9781628373431_txt.pdf (Bethel identification).</metadata>
+    <text x="352" y="302" text-anchor="middle" font-size="18">세겜에서 땅의 약속을 받고, 벧엘 동쪽에서 다시 제단을 쌓는다.</text>
+  </g>
+</svg>

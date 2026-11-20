@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 704 276" role="img" aria-labelledby="jacob-at-jabbok-title jacob-at-jabbok-desc" xml:lang="ko">
+  <title id="jacob-at-jabbok-title">야곱, 얍복 나루에서 이스라엘이 되다</title>
+  <desc id="jacob-at-jabbok-desc">창세기 32:22–32. 야곱은 새 이름을 받고, 해가 뜰 때 브니엘을 떠난다.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0 0L10 5 0 10Z" fill="#557662"/>
+    </marker>
+  </defs>
+  <rect width="704" height="276" rx="20" fill="#f7f4e9"/>
+  <g font-family="'Malgun Gothic', 'Noto Sans KR', sans-serif" font-size="18" fill="#263e38">
+    <text x="352" y="45" text-anchor="middle" font-size="26" font-weight="bold">야곱, 얍복 나루에서 이스라엘이 되다</text>
+    <text x="352" y="75" text-anchor="middle" font-size="17">창세기 32:22–32</text>
+    <rect x="26" y="111" width="200" height="102" rx="16" fill="#dcebdd"/>
+    <text x="126" y="151" text-anchor="middle" font-size="20" font-weight="bold">얍복 나루</text>
+    <text x="126" y="183" text-anchor="middle" font-size="16">가족을 먼저 보냄</text>
+    <path d="M230 163h17" fill="none" stroke="#557662" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="252" y="111" width="200" height="102" rx="16" fill="#f7e8bf"/>
+    <text x="352" y="151" text-anchor="middle" font-size="20" font-weight="bold">홀로 남은 밤</text>
+    <text x="352" y="183" text-anchor="middle" font-size="16">날이 밝도록 씨름함</text>
+    <path d="M456 163h17" fill="none" stroke="#557662" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="478" y="111" width="200" height="102" rx="16" fill="#d9e8f2"/>
+    <text x="578" y="151" text-anchor="middle" font-size="20" font-weight="bold">이스라엘</text>
+    <text x="578" y="183" text-anchor="middle" font-size="16">새 이름을 받고 복을 얻음</text>
+    <text x="352" y="250" text-anchor="middle" font-size="18">야곱은 새 이름을 받고, 해가 뜰 때 브니엘을 떠난다.</text>
+  </g>
+</svg>

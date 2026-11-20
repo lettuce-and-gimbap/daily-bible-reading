@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 704 276" role="img" aria-labelledby="jacob-burial-joseph-promise-title jacob-burial-joseph-promise-desc" xml:lang="ko">
+  <title id="jacob-burial-joseph-promise-title">야곱의 장례와 요셉이 남긴 부탁</title>
+  <desc id="jacob-burial-joseph-promise-desc">창세기 49:29–33, 50:1–26. 야곱의 매장과 요셉의 마지막 부탁은 가족의 시선을 가나안으로 돌린다.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0 0L10 5 0 10Z" fill="#557662"/>
+    </marker>
+  </defs>
+  <rect width="704" height="276" rx="20" fill="#f7f4e9"/>
+  <g font-family="'Malgun Gothic', 'Noto Sans KR', sans-serif" font-size="18" fill="#263e38">
+    <text x="352" y="45" text-anchor="middle" font-size="26" font-weight="bold">야곱의 장례와 요셉이 남긴 부탁</text>
+    <text x="352" y="75" text-anchor="middle" font-size="17">창세기 49:29–33, 50:1–26</text>
+    <rect x="26" y="111" width="200" height="102" rx="16" fill="#dcebdd"/>
+    <text x="126" y="151" text-anchor="middle" font-size="20" font-weight="bold">야곱의 장례</text>
+    <text x="126" y="183" text-anchor="middle" font-size="16">가나안 막벨라 굴에 매장</text>
+    <path d="M230 163h17" fill="none" stroke="#557662" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="252" y="111" width="200" height="102" rx="16" fill="#f7e8bf"/>
+    <text x="352" y="151" text-anchor="middle" font-size="20" font-weight="bold">요셉의 위로</text>
+    <text x="352" y="183" text-anchor="middle" font-size="16">형들을 돌보겠다고 약속</text>
+    <path d="M456 163h17" fill="none" stroke="#557662" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="478" y="111" width="200" height="102" rx="16" fill="#d9e8f2"/>
+    <text x="578" y="151" text-anchor="middle" font-size="20" font-weight="bold">요셉의 부탁</text>
+    <text x="578" y="183" text-anchor="middle" font-size="16">훗날 자기 뼈를 가져갈 것</text>
+    <text x="352" y="250" text-anchor="middle" font-size="18">야곱의 매장과 요셉의 마지막 부탁은 가족의 시선을 가나안으로 돌린다.</text>
+  </g>
+</svg>
