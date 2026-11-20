@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="576" viewBox="0 0 720 576" role="img" aria-labelledby="title caption" xml:lang="ko">
+  <title id="title">속죄일에 드린 두 염소</title>
+  <desc id="caption">레위기 16:3–34에 근거한 속죄일에 드린 두 염소 도식</desc>
+  <g font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+  <rect x="0" y="0" width="720" height="576" rx="0" fill="#fcfaf4" stroke="none"/>
+  <rect x="28" y="28" width="8" height="40" rx="4" fill="#923f31" stroke="none"/>
+  <text x="50" y="61" font-size="39" font-weight="780" fill="#24342f" text-anchor="start">속죄일에 드린 두 염소</text>
+  <rect x="28" y="88" width="664" height="92" rx="15" fill="#e8f3ee" stroke="none"/>
+  <text x="48" y="122" font-size="26" font-weight="750" fill="#21675e" text-anchor="start">아론의 준비와 제비뽑기</text>
+  <text x="48" y="154" font-size="22" font-weight="500" fill="#24342f" text-anchor="start">자기 집안을 위한 수송아지와 백성을 위한 염소 두 마리</text>
+  <path d="M360 182v15H190v11M360 197h170v11" fill="none" stroke="#21675e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="28" y="218" width="324" height="160" rx="15" fill="#f8ebe6" stroke="none"/>
+  <text x="48" y="252" font-size="26" font-weight="750" fill="#923f31" text-anchor="start">여호와께 드릴 염소</text>
+  <text x="48" y="284" font-size="22" font-weight="500" fill="#24342f" text-anchor="start">백성을 위한 속죄제</text>
+  <text x="48" y="315" font-size="22" font-weight="500" fill="#24342f" text-anchor="start">수송아지와 염소의 피로</text>
+  <text x="48" y="346" font-size="22" font-weight="500" fill="#24342f" text-anchor="start">지성소·회막·제단을 속죄</text>
+  <rect x="368" y="218" width="324" height="160" rx="15" fill="#f8efd9" stroke="none"/>
+  <text x="388" y="252" font-size="26" font-weight="750" fill="#76561d" text-anchor="start">살려 둔 염소 · 아사셀</text>
+  <text x="388" y="284" font-size="22" font-weight="500" fill="#24342f" text-anchor="start">성소의 속죄를 마친 뒤</text>
+  <text x="388" y="315" font-size="22" font-weight="500" fill="#24342f" text-anchor="start">아론이 안수하고 죄를 고백</text>
+  <text x="388" y="346" font-size="22" font-weight="500" fill="#24342f" text-anchor="start">정해 둔 사람이 광야로 보냄</text>
+  <path d="M190 379v12h340v-12" fill="none" stroke="#21675e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M360 392v18m-6-6 6 6 6-6" fill="none" stroke="#21675e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="28" y="416" width="664" height="90" rx="15" fill="#e8f3ee" stroke="none"/>
+  <text x="48" y="450" font-size="26" font-weight="750" fill="#21675e" text-anchor="start">아론과 백성의 번제</text>
+  <text x="48" y="482" font-size="22" font-weight="500" fill="#24342f" text-anchor="start">아론이 몸을 씻고 옷을 갈아입은 뒤 두 번제를 드림</text>
+  <path d="M28 518H692" fill="none" stroke="#c2c7be" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="28" y="552" font-size="22" font-weight="650" fill="#24342f" text-anchor="start">레위기 16:3–34</text>
+  </g>
+</svg>

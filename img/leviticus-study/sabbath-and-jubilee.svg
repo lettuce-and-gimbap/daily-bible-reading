@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="497" viewBox="0 0 720 497" role="img" aria-labelledby="title caption" xml:lang="ko">
+  <title id="title">안식년에서 희년까지</title>
+  <desc id="caption">레위기 25:1–13, 23–28에 근거한 안식년에서 희년까지 도식</desc>
+  <g font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+  <rect x="0" y="0" width="720" height="497" rx="0" fill="#fcfaf4" stroke="none"/>
+  <rect x="28" y="28" width="8" height="40" rx="4" fill="#76561d" stroke="none"/>
+  <text x="50" y="61" font-size="39" font-weight="780" fill="#24342f" text-anchor="start">안식년에서 희년까지</text>
+  <rect x="28" y="89" width="664" height="116" rx="15" fill="#e8f3ee" stroke="none"/>
+  <text x="48" y="123" font-size="26" font-weight="750" fill="#21675e" text-anchor="start">7년마다 · 땅의 안식</text>
+  <text x="48" y="155" font-size="22" font-weight="500" fill="#24342f" text-anchor="start">6년은 경작하고 7년째는 파종과 포도원 손질을 쉼</text>
+  <text x="48" y="186" font-size="22" font-weight="500" fill="#24342f" text-anchor="start">그해 땅에서 난 것은 먹을거리로 삼음</text>
+  <rect x="28" y="229" width="76" height="44" rx="15" fill="#e8f3ee" stroke="none"/>
+  <text x="66" y="258" font-size="22" font-weight="700" fill="#21675e" text-anchor="middle">7년</text>
+  <rect x="112" y="229" width="76" height="44" rx="15" fill="#e8f3ee" stroke="none"/>
+  <text x="150" y="258" font-size="22" font-weight="700" fill="#21675e" text-anchor="middle">14년</text>
+  <rect x="196" y="229" width="76" height="44" rx="15" fill="#e8f3ee" stroke="none"/>
+  <text x="234" y="258" font-size="22" font-weight="700" fill="#21675e" text-anchor="middle">21년</text>
+  <rect x="280" y="229" width="76" height="44" rx="15" fill="#e8f3ee" stroke="none"/>
+  <text x="318" y="258" font-size="22" font-weight="700" fill="#21675e" text-anchor="middle">28년</text>
+  <rect x="364" y="229" width="76" height="44" rx="15" fill="#e8f3ee" stroke="none"/>
+  <text x="402" y="258" font-size="22" font-weight="700" fill="#21675e" text-anchor="middle">35년</text>
+  <rect x="448" y="229" width="76" height="44" rx="15" fill="#e8f3ee" stroke="none"/>
+  <text x="486" y="258" font-size="22" font-weight="700" fill="#21675e" text-anchor="middle">42년</text>
+  <rect x="532" y="229" width="76" height="44" rx="15" fill="#e8f3ee" stroke="none"/>
+  <text x="570" y="258" font-size="22" font-weight="700" fill="#21675e" text-anchor="middle">49년</text>
+
+  <path d="M360 279v18m-6-6 6 6 6-6" fill="none" stroke="#21675e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="28" y="305" width="664" height="127" rx="15" fill="#f8efd9" stroke="none"/>
+  <text x="48" y="339" font-size="26" font-weight="750" fill="#76561d" text-anchor="start">50년째 · 희년</text>
+  <text x="48" y="371" font-size="22" font-weight="500" fill="#24342f" text-anchor="start">일곱째 달 10일 속죄일에 뿔나팔을 불어 자유를 선포</text>
+  <text x="48" y="402" font-size="22" font-weight="500" fill="#24342f" text-anchor="start">각자 분배받은 땅과 가족에게 돌아감</text>
+  <path d="M28 439H692" fill="none" stroke="#c2c7be" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="28" y="473" font-size="22" font-weight="650" fill="#24342f" text-anchor="start">레위기 25:1–13, 23–28</text>
+  </g>
+</svg>

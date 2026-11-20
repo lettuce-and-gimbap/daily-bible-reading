@@ -127,7 +127,7 @@ const genesisFigures = new Map([
 ]);
 
 function chapterStudyFigure(code, figure) {
-  const directory = { gen: "genesis-study", exo: "exodus-study" }[code];
+  const directory = { gen: "genesis-study", exo: "exodus-study", lev: "leviticus-study" }[code];
   const id = typeof figure === "string" ? figure : figure?.id;
   const label = typeof figure === "string" ? genesisFigures.get(figure) : figure?.label;
   if (!directory || !label || !/^[a-z0-9-]+$/.test(id || "")) return "";
@@ -167,7 +167,7 @@ function staticDaySummary(day) {
   const opts = { all: !!state.settings.graphAll };
   const out = composeDay(chapters, books, opts);
   const wisdom = chapters.filter(({ book }) => ["job", "psa", "pro"].includes(book.code));
-  out.wisdomStudy = chapters.filter(({ book }) => ["gen", "exo", "job", "psa", "pro"].includes(book.code)).flatMap(({ book, chap }) => {
+  out.wisdomStudy = chapters.filter(({ book }) => ["gen", "exo", "lev", "job", "psa", "pro"].includes(book.code)).flatMap(({ book, chap }) => {
     const part = book.code === "psa" ? `-${Math.ceil(chap / 50)}` : "";
     const note = wisdomData(`${book.code}-study${part}`)?.[chap];
     return note ? [{ code: book.code, ref: `${book.name} ${chap}${chapUnit(book)}`, note }] : [];

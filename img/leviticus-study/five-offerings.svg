@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="535" viewBox="0 0 720 535" role="img" aria-labelledby="title caption" xml:lang="ko">
+  <title id="title">레위기의 다섯 제사</title>
+  <desc id="caption">레위기 1–4장, 5:1–19, 6:1–7에 근거한 레위기의 다섯 제사 도식</desc>
+  <g font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+  <rect x="0" y="0" width="720" height="535" rx="0" fill="#fcfaf4" stroke="none"/>
+  <rect x="28" y="28" width="8" height="40" rx="4" fill="#21675e" stroke="none"/>
+  <text x="50" y="61" font-size="39" font-weight="780" fill="#24342f" text-anchor="start">레위기의 다섯 제사</text>
+  <rect x="28" y="87" width="664" height="67" rx="15" fill="#e8f3ee" stroke="none"/>
+  <text x="46" y="116" font-size="25" font-weight="750" fill="#21675e" text-anchor="start">번제</text>
+  <text x="154" y="113" font-size="19" font-weight="650" fill="#21675e" text-anchor="start">1장</text>
+  <text x="154" y="140" font-size="22" font-weight="500" fill="#24342f" text-anchor="start">제사장이 준비된 제물을 제단에서 태움</text>
+  <rect x="28" y="163" width="664" height="67" rx="15" fill="#f8efd9" stroke="none"/>
+  <text x="46" y="192" font-size="25" font-weight="750" fill="#76561d" text-anchor="start">소제</text>
+  <text x="154" y="189" font-size="19" font-weight="650" fill="#76561d" text-anchor="start">2장</text>
+  <text x="154" y="216" font-size="22" font-weight="500" fill="#24342f" text-anchor="start">곡식 제물의 일부는 제단에, 나머지는 제사장에게</text>
+  <rect x="28" y="239" width="664" height="67" rx="15" fill="#e8f3ee" stroke="none"/>
+  <text x="46" y="268" font-size="25" font-weight="750" fill="#21675e" text-anchor="start">화목제</text>
+  <text x="154" y="265" font-size="19" font-weight="650" fill="#21675e" text-anchor="start">3장</text>
+  <text x="154" y="292" font-size="22" font-weight="500" fill="#24342f" text-anchor="start">제사장이 제물에서 떼어 낸 기름 등을 태움</text>
+  <rect x="28" y="315" width="664" height="67" rx="15" fill="#f8ebe6" stroke="none"/>
+  <text x="46" y="344" font-size="25" font-weight="750" fill="#923f31" text-anchor="start">속죄제</text>
+  <text x="154" y="341" font-size="19" font-weight="650" fill="#923f31" text-anchor="start">4장–5:13</text>
+  <text x="154" y="368" font-size="22" font-weight="500" fill="#24342f" text-anchor="start">계명을 어긴 경우 등에 제사장이 속죄함</text>
+  <rect x="28" y="391" width="664" height="67" rx="15" fill="#f8ebe6" stroke="none"/>
+  <text x="46" y="420" font-size="25" font-weight="750" fill="#923f31" text-anchor="start">속건제</text>
+  <text x="154" y="417" font-size="19" font-weight="650" fill="#923f31" text-anchor="start">5:14–6:7</text>
+  <text x="154" y="444" font-size="22" font-weight="500" fill="#24342f" text-anchor="start">숫양을 드림. 성물 손해 등에는 20%를 더해 배상</text>
+  <path d="M28 477H692" fill="none" stroke="#c2c7be" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="28" y="511" font-size="22" font-weight="650" fill="#24342f" text-anchor="start">레위기 1–4장, 5:1–19, 6:1–7</text>
+  </g>
+</svg>

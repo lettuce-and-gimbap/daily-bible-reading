@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="490" viewBox="0 0 720 490" role="img" aria-labelledby="title caption" xml:lang="ko">
+  <title id="title">속죄제에서 피를 바르는 곳</title>
+  <desc id="caption">레위기 4:3–35에 근거한 속죄제에서 피를 바르는 곳 도식</desc>
+  <g font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+  <rect x="0" y="0" width="720" height="490" rx="0" fill="#fcfaf4" stroke="none"/>
+  <rect x="28" y="28" width="8" height="40" rx="4" fill="#923f31" stroke="none"/>
+  <text x="50" y="61" font-size="39" font-weight="780" fill="#24342f" text-anchor="start">속죄제에서 피를 바르는 곳</text>
+  <rect x="28" y="90" width="324" height="136" rx="15" fill="#f8ebe6" stroke="none"/>
+  <text x="48" y="124" font-size="26" font-weight="750" fill="#923f31" text-anchor="start">제사장·온 회중</text>
+  <text x="48" y="156" font-size="22" font-weight="500" fill="#24342f" text-anchor="start">흠 없는 수송아지</text>
+  <text x="48" y="187" font-size="22" font-weight="500" fill="#24342f" text-anchor="start">4:3–21</text>
+  <rect x="368" y="90" width="324" height="136" rx="15" fill="#f8efd9" stroke="none"/>
+  <text x="388" y="124" font-size="26" font-weight="750" fill="#76561d" text-anchor="start">지도자·일반 백성</text>
+  <text x="388" y="156" font-size="22" font-weight="500" fill="#24342f" text-anchor="start">지도자: 숫염소</text>
+  <text x="388" y="187" font-size="22" font-weight="500" fill="#24342f" text-anchor="start">일반 백성: 암염소·암양</text>
+  <path d="M190 231v18m-6-6 6 6 6-6" fill="none" stroke="#923f31" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M530 231v18m-6-6 6 6 6-6" fill="none" stroke="#76561d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="28" y="254" width="324" height="105" rx="15" fill="#f8ebe6" stroke="none"/>
+  <text x="48" y="288" font-size="26" font-weight="750" fill="#923f31" text-anchor="start">회막 안</text>
+  <text x="48" y="320" font-size="22" font-weight="500" fill="#24342f" text-anchor="start">휘장 앞 7회 → 향단 뿔</text>
+  <rect x="368" y="254" width="324" height="105" rx="15" fill="#f8efd9" stroke="none"/>
+  <text x="388" y="288" font-size="26" font-weight="750" fill="#76561d" text-anchor="start">회막 입구의 번제단</text>
+  <text x="388" y="320" font-size="22" font-weight="500" fill="#24342f" text-anchor="start">번제단 뿔에 바름</text>
+  <path d="M190 360v11h340v-11" fill="none" stroke="#21675e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M360 372v18m-6-6 6 6 6-6" fill="none" stroke="#21675e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="360" y="417" font-size="24" font-weight="750" fill="#21675e" text-anchor="middle">두 경우 모두 남은 피는 번제단 밑에 쏟음</text>
+  <path d="M28 432H692" fill="none" stroke="#c2c7be" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="28" y="466" font-size="22" font-weight="650" fill="#24342f" text-anchor="start">레위기 4:3–35</text>
+  </g>
+</svg>
