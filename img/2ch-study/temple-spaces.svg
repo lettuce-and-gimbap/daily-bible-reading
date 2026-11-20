@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="355" viewBox="0 0 820 355" xml:lang="ko" role="img" aria-labelledby="title description" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+<title id="title">현관에서 지성소까지</title>
+<desc id="description">솔로몬 성전 · 역대하 3:3–17, 5:7–10. 현관과 두 기둥 야긴과 보아스. 큰 전 나무에 금을 입히고 장식함. 지성소 그룹 날개 아래에 궤를 둠. 지성소에는 두 그룹이 있었고, 성전에는 휘장을 만들었어요(3:10–14).. 공간의 관계를 보여 주는 도식이며 건물의 비율과 세부 배치는 생략했어요.</desc>
+<rect x="0" y="0" width="820" height="355" rx="20" fill="#f6f3ea"/>
+<text x="36" y="43" font-size="18" fill="#236353" font-weight="700" text-anchor="start">솔로몬 성전 · 역대하 3:3–17, 5:7–10</text>
+<text x="36" y="85" font-size="32" fill="#182c37" font-weight="700" text-anchor="start">현관에서 지성소까지</text>
+<rect x="42" y="113" width="220" height="142" rx="15" fill="#e2eee5"/>
+<path d="M4 15 24 4l20 11v5H4v-5m4 9v12m11-12v12m10-12v12m11-12v12M4 41h40" transform="translate(132 126) scale(0.85)" fill="none" stroke="#236353" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="152" y="195" font-size="23" fill="#182c37" font-weight="700" text-anchor="middle">현관과 두 기둥</text>
+<text x="152" y="228" font-size="17" fill="#236353" font-weight="400" text-anchor="middle">야긴과 보아스</text>
+<path d="M268 180h24m-6-5 6 5-6 5" fill="none" stroke="#236353" stroke-width="2"/>
+<rect x="300" y="113" width="220" height="142" rx="15" fill="#e2eee5"/>
+<path d="M11 6h27a4 4 0 0 1 0 8H17v24a5 5 0 0 1-10 0V14m5-8a4 4 0 1 0 0 8h5m0 24h25m-20-17h14m-14 7h14" transform="translate(390 126) scale(0.85)" fill="none" stroke="#236353" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="410" y="195" font-size="23" fill="#182c37" font-weight="700" text-anchor="middle">큰 전</text>
+<text x="410" y="228" font-size="17" fill="#236353" font-weight="400" text-anchor="middle">나무에 금을 입히고 장식함</text>
+<path d="M526 180h24m-6-5 6 5-6 5" fill="none" stroke="#236353" stroke-width="2"/>
+<rect x="558" y="113" width="220" height="142" rx="15" fill="#e2eee5"/>
+<path d="M8 17h32v20H8zM5 13h38v4H5zm0 20h38m-31 4v4m24-4v4" transform="translate(648 126) scale(0.85)" fill="none" stroke="#236353" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="668" y="195" font-size="23" fill="#182c37" font-weight="700" text-anchor="middle">지성소</text>
+<text x="668" y="228" font-size="17" fill="#236353" font-weight="400" text-anchor="middle">그룹 날개 아래에 궤를 둠</text>
+<text x="40" y="288" font-size="17" fill="#415560" font-weight="400" text-anchor="start">지성소에는 두 그룹이 있었고, 성전에는 휘장을 만들었어요(3:10–14).</text>
+<text x="40" y="312" font-size="17" fill="#415560" font-weight="400" text-anchor="start">공간의 관계를 보여 주는 도식이며 건물의 비율과 세부 배치는 생략했어요.</text>
+</svg>

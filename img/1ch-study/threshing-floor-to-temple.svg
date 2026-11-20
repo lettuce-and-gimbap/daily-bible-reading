@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="355" viewBox="0 0 820 355" xml:lang="ko" role="img" aria-labelledby="title description" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+<title id="title">타작마당에서 성전 터로</title>
+<desc id="description">오르난의 타작마당 · 역대상 21:18–30, 22:1–5 · 역대하 3:1. 갓의 지시 타작마당에 제단을 쌓으라. 다윗의 제단 값을 치르고 제물을 드림. 솔로몬의 성전 터 모리아산에서 공사를 시작함. 역대하는 솔로몬이 오르난의 타작마당이 있던 곳에 성전을 짓기 시작했다고 전해요.. 그림은 본문의 연결을 보여 주며 타작마당의 모양과 크기는 생략했어요.</desc>
+<rect x="0" y="0" width="820" height="355" rx="20" fill="#f6f3ea"/>
+<text x="36" y="43" font-size="18" fill="#634078" font-weight="700" text-anchor="start">오르난의 타작마당 · 역대상 21:18–30, 22:1–5 · 역대하 3:1</text>
+<text x="36" y="85" font-size="32" fill="#182c37" font-weight="700" text-anchor="start">타작마당에서 성전 터로</text>
+<rect x="42" y="113" width="220" height="142" rx="15" fill="#eee5f3"/>
+<path d="M11 6h27a4 4 0 0 1 0 8H17v24a5 5 0 0 1-10 0V14m5-8a4 4 0 1 0 0 8h5m0 24h25m-20-17h14m-14 7h14" transform="translate(132 126) scale(0.85)" fill="none" stroke="#634078" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="152" y="195" font-size="23" fill="#182c37" font-weight="700" text-anchor="middle">갓의 지시</text>
+<text x="152" y="228" font-size="17" fill="#634078" font-weight="400" text-anchor="middle">타작마당에 제단을 쌓으라</text>
+<path d="M268 180h24m-6-5 6 5-6 5" fill="none" stroke="#634078" stroke-width="2"/>
+<rect x="300" y="113" width="220" height="142" rx="15" fill="#eee5f3"/>
+<path d="M6 18h36v6H6zm4 6h28v16H10zm-2-6v-6m32 6v-6m-25 4c2-2 0-6 5-10m5 10c2-2 0-6 5-10m-11 28h10" transform="translate(390 126) scale(0.85)" fill="none" stroke="#634078" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="410" y="195" font-size="23" fill="#182c37" font-weight="700" text-anchor="middle">다윗의 제단</text>
+<text x="410" y="228" font-size="17" fill="#634078" font-weight="400" text-anchor="middle">값을 치르고 제물을 드림</text>
+<path d="M526 180h24m-6-5 6 5-6 5" fill="none" stroke="#634078" stroke-width="2"/>
+<rect x="558" y="113" width="220" height="142" rx="15" fill="#eee5f3"/>
+<path d="M4 15 24 4l20 11v5H4v-5m4 9v12m11-12v12m10-12v12m11-12v12M4 41h40" transform="translate(648 126) scale(0.85)" fill="none" stroke="#634078" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="668" y="195" font-size="23" fill="#182c37" font-weight="700" text-anchor="middle">솔로몬의 성전 터</text>
+<text x="668" y="228" font-size="17" fill="#634078" font-weight="400" text-anchor="middle">모리아산에서 공사를 시작함</text>
+<text x="40" y="288" font-size="17" fill="#415560" font-weight="400" text-anchor="start">역대하는 솔로몬이 오르난의 타작마당이 있던 곳에 성전을 짓기 시작했다고 전해요.</text>
+<text x="40" y="312" font-size="17" fill="#415560" font-weight="400" text-anchor="start">그림은 본문의 연결을 보여 주며 타작마당의 모양과 크기는 생략했어요.</text>
+</svg>

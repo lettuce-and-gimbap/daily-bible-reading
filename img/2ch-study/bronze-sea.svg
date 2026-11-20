@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="460" viewBox="0 0 820 460" xml:lang="ko" role="img" aria-labelledby="title description" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+<title id="title">놋 바다를 받치는 열두 소</title>
+<desc id="description">위에서 본 도식. 북·서·남·동을 향한 소가 각 세 마리. 지름 10규빗, 높이 5규빗, 둘레 30규빗, 용량 3,000밧. 제사장의 씻는 데 사용.</desc>
+<rect x="0" y="0" width="820" height="460" rx="20" fill="#f6f3ea"/>
+<text x="38" y="44" font-size="20" fill="#236353" font-weight="700" text-anchor="start">솔로몬 성전의 기물 · 역대하 4:2–6, 10</text>
+<text x="38" y="86" font-size="34" fill="#182c37" font-weight="700" text-anchor="start">놋 바다를 받치는 열두 소</text>
+<rect x="38" y="109" width="738" height="252" rx="15" fill="#e2eee5"/>
+<ellipse cx="260" cy="235" rx="65" ry="65" fill="#95bfc1" stroke="#236353" stroke-width="3"/>
+<ellipse cx="260" cy="235" rx="57" ry="57" fill="none" stroke="#236353" stroke-width="1.5" stroke-dasharray="3 3"/>
+<text x="260" y="243" font-size="22" fill="#236353" font-weight="700" text-anchor="middle">놋 바다</text>
+<path d="M240 158v-22m-4 6 4-6 4 6 M260 158v-22m-4 6 4-6 4 6 M280 158v-22m-4 6 4-6 4 6 M240 312v22m-4-6 4 6 4-6 M260 312v22m-4-6 4 6 4-6 M280 312v22m-4-6 4 6 4-6 M183 215h-22m6-4-6 4 6 4 M183 235h-22m6-4-6 4 6 4 M183 255h-22m6-4-6 4 6 4 M337 215h22m-6-4 6 4-6 4 M337 235h22m-6-4 6 4-6 4 M337 255h22m-6-4 6 4-6 4" fill="none" stroke="#236353" stroke-width="2"/>
+<text x="211" y="146" font-size="17" fill="#236353" font-weight="400" text-anchor="start">북</text>
+<text x="211" y="335" font-size="17" fill="#236353" font-weight="400" text-anchor="start">남</text>
+<text x="130" y="241" font-size="17" fill="#236353" font-weight="400" text-anchor="start">서</text>
+<text x="370" y="241" font-size="17" fill="#236353" font-weight="400" text-anchor="start">동</text>
+<text x="422" y="165" font-size="21" fill="#236353" font-weight="700" text-anchor="start">본문에 나온 치수</text>
+<text x="422" y="207" font-size="22" fill="#182c37" font-weight="400" text-anchor="start">지름 10규빗 · 높이 5규빗</text>
+<text x="422" y="242" font-size="22" fill="#182c37" font-weight="400" text-anchor="start">둘레 30규빗 · 용량 3,000밧</text>
+<text x="422" y="290" font-size="19" fill="#182c37" font-weight="400" text-anchor="start">제사장이 씻는 데 사용했어요.</text>
+<text x="38" y="397" font-size="18" fill="#182c37" font-weight="400" text-anchor="start">화살표 하나는 바다를 떠받치는 소 한 마리의 방향을 뜻해요.</text>
+<text x="38" y="426" font-size="18" fill="#182c37" font-weight="400" text-anchor="start">소와 그릇은 축척 없이 표시했어요. 열왕기상 7:26의 용량은 2,000밧이에요.</text>
+</svg>

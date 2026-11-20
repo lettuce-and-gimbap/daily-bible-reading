@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="355" viewBox="0 0 820 355" xml:lang="ko" role="img" aria-labelledby="title description" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+<title id="title">기럇여아림에서 다윗성까지</title>
+<desc id="description">언약궤의 이동 · 역대상 13:5–14, 15:12–29, 16:1. 기럇여아림 새 수레로 출발. 오벧에돔의 집 석 달 동안 머묾. 다윗성의 장막 레위인이 채로 메어 옮김. 첫 이동 때 기돈의 타작마당에서 웃사가 죽었어요(13:9–10).. 장소 상자는 이동 순서를 나타내며 거리와 방향에는 축척이 없어요.</desc>
+<rect x="0" y="0" width="820" height="355" rx="20" fill="#f6f3ea"/>
+<text x="36" y="43" font-size="18" fill="#8a422c" font-weight="700" text-anchor="start">언약궤의 이동 · 역대상 13:5–14, 15:12–29, 16:1</text>
+<text x="36" y="85" font-size="32" fill="#182c37" font-weight="700" text-anchor="start">기럇여아림에서 다윗성까지</text>
+<rect x="42" y="113" width="220" height="142" rx="15" fill="#f6e6da"/>
+<path d="M10 12h17a7 7 0 0 1 0 14h-6a6 6 0 0 0 0 12h16m-5-5 5 5-5 5M10 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z" transform="translate(132 126) scale(0.85)" fill="none" stroke="#8a422c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="152" y="195" font-size="23" fill="#182c37" font-weight="700" text-anchor="middle">기럇여아림</text>
+<text x="152" y="228" font-size="17" fill="#8a422c" font-weight="400" text-anchor="middle">새 수레로 출발</text>
+<path d="M268 180h24m-6-5 6 5-6 5" fill="none" stroke="#8a422c" stroke-width="2"/>
+<rect x="300" y="113" width="220" height="142" rx="15" fill="#f6e6da"/>
+<path d="M8 17h32v20H8zM5 13h38v4H5zm0 20h38m-31 4v4m24-4v4" transform="translate(390 126) scale(0.85)" fill="none" stroke="#8a422c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="410" y="195" font-size="23" fill="#182c37" font-weight="700" text-anchor="middle">오벧에돔의 집</text>
+<text x="410" y="228" font-size="17" fill="#8a422c" font-weight="400" text-anchor="middle">석 달 동안 머묾</text>
+<path d="M526 180h24m-6-5 6 5-6 5" fill="none" stroke="#8a422c" stroke-width="2"/>
+<rect x="558" y="113" width="220" height="142" rx="15" fill="#f6e6da"/>
+<path d="M4 15 24 4l20 11v5H4v-5m4 9v12m11-12v12m10-12v12m11-12v12M4 41h40" transform="translate(648 126) scale(0.85)" fill="none" stroke="#8a422c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="668" y="195" font-size="23" fill="#182c37" font-weight="700" text-anchor="middle">다윗성의 장막</text>
+<text x="668" y="228" font-size="17" fill="#8a422c" font-weight="400" text-anchor="middle">레위인이 채로 메어 옮김</text>
+<text x="40" y="288" font-size="17" fill="#415560" font-weight="400" text-anchor="start">첫 이동 때 기돈의 타작마당에서 웃사가 죽었어요(13:9–10).</text>
+<text x="40" y="312" font-size="17" fill="#415560" font-weight="400" text-anchor="start">장소 상자는 이동 순서를 나타내며 거리와 방향에는 축척이 없어요.</text>
+</svg>
