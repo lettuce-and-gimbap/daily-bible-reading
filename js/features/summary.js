@@ -114,8 +114,22 @@ function wisdomStudyHtml(entries) {
   return `<section class="tool-card sum-card"><h3 class="label">장별 주석 · 개혁주의 관점</h3>
     ${entries.map(({ ref, note }) => `<details class="wisdom-study"><summary><strong>${esc(ref)}</strong> · ${esc(note.heading)}</summary>
       ${note.paragraphs.map((paragraph) => `<p>${esc(paragraph)}</p>`).join("")}
+      ${genesisStudyFigure(note.figure)}
       ${note.sources?.length ? `<p class="muted small">참고 자료 · ${note.sources.map(wisdomSourceLink).join(" · ")}</p>` : ""}</details>`).join("")}
   </section>`;
+}
+
+const genesisFigures = new Map([
+  ["creation", "창조 기사에서 공간을 마련하고 채우는 두 순서"],
+  ["eden", "에덴에서 맡은 일과 불순종 이후의 변화를 보여 주는 개념도"],
+  ["flood", "방주 준비부터 홍수 뒤 예배까지의 흐름"],
+  ["babel", "시날의 도시 건설과 흩어짐의 흐름"],
+]);
+
+function genesisStudyFigure(id) {
+  const label = genesisFigures.get(id);
+  if (!label) return "";
+  return `<figure class="wisdom-map"><img src="img/genesis-study/${id}.svg" alt="${esc(label)}" loading="lazy"><figcaption>${esc(label)}</figcaption></figure>`;
 }
 
 function wisdomPlaceHtml(figure) {
@@ -149,12 +163,22 @@ function staticDaySummary(day) {
   const opts = { all: !!state.settings.graphAll };
   const out = composeDay(chapters, books, opts);
   const wisdom = chapters.filter(({ book }) => ["job", "psa", "pro"].includes(book.code));
-  out.wisdomStudy = wisdom.flatMap(({ book, chap }) => {
+  out.wisdomStudy = chapters.filter(({ book }) => ["gen", "job", "psa", "pro"].includes(book.code)).flatMap(({ book, chap }) => {
+    if (book.code === "gen" && chap > 11) return [];
     const part = book.code === "psa" ? `-${Math.ceil(chap / 50)}` : "";
     const note = wisdomData(`${book.code}-study${part}`)?.[chap];
     return note ? [{ ref: `${book.name} ${chap}${chapUnit(book)}`, note }] : [];
   });
+  const showBabel = chapters.some(({ book, chap }) => book.code === "gen" && chap === 11);
   out.wisdomPlaces = wisdom.length ? wisdomData("wisdom-places") : null;
+  if (showBabel) {
+    out.wisdomPlaces = { ...out.wisdomPlaces, 바벨: {
+      src: "img/wisdom-places/ancient-near-east.svg",
+      alt: "메소포타미아의 바벨을 표시한 고대 근동 개략 지도",
+      caption: "바벨은 메소포타미아의 바빌론을 가리켜요. 이 지도는 지역을 보여 주며 탑의 위치를 특정하지 않아요.",
+      sourceUrl: "https://whc.unesco.org/en/list/278/",
+    } };
+  }
   // 관계도는 장마다 따로도 그릴 수 있게: 장별 결과와, 지금 읽는 장이 이 분량의 몇 번째인지
   out.byChap = chapters.length > 1 ? chapters.map((c) => composeDay([c], books, opts)) : null;
   out.autoIdx = day.indexOf(currentChapter);
