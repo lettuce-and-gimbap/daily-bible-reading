@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="730" viewBox="0 0 820 730" xml:lang="ko" role="img" aria-labelledby="title desc" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+<title id="title">수 15장 · 유다의 경계와 성읍 목록 (본문 도해)</title><desc id="desc">남: 신 광야·애굽 시내 / 동: 염해 / 북: 보한의 돌·여부스 / 서: 대해 / 헤브론을 받은 갈렙 / 옷니엘이 드빌 점령 / 악사와 나귀 / 윗샘·아랫샘 / 남부·평지·해안·산지·광야 / 예루살렘의 여부스 주민이 남음 / 본문 목록의 구획 · 성읍군과 지명 목록은 COVERAGE의 15장 항목</desc>
+<metadata>https://www.sefaria.org/Joshua.15</metadata>
+<rect width="820" height="730" rx="20" fill="#f5f3eb"/>
+<text x="38" y="45" font-size="22" fill="#28665e" font-weight="700">여호수아 15장</text>
+<text x="38" y="94" font-size="38" fill="#173039" font-weight="700">유다의 경계와 성읍 목록</text>
+<rect x="38" y="124" width="744" height="156" rx="15" fill="#fffdf7" stroke="#d6e2d8"/>
+<circle cx="87" cy="183" r="29" fill="#dcece3"/>
+<g transform="translate(87 183)" stroke="#28665e" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M0 17C-6 7-13 4-13-5a13 13 0 1 1 26 0c0 9-7 12-13 22Z"/><circle cy="-5" r="4"/></g>
+<text x="133" y="156" font-size="19" fill="#28665e" font-weight="700">1–12절</text>
+<text x="133" y="190" font-size="30" fill="#173039" font-weight="700">네 방향의 경계</text>
+<text x="133" y="225" font-size="25" fill="#173039" font-weight="400">남: 신 광야·애굽 시내 / 동: 염해 / 북: 보한의</text>
+<text x="133" y="258" font-size="25" fill="#173039" font-weight="400">돌·여부스 / 서: 대해</text>
+<rect x="38" y="292" width="744" height="156" rx="15" fill="#fffdf7" stroke="#d6e2d8"/>
+<circle cx="87" cy="351" r="29" fill="#dcece3"/>
+<g transform="translate(87 351)" stroke="#28665e" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M-16-9q8-6 16 0t16 0M-16 0q8-6 16 0t16 0m-32 9q8-6 16 0t16 0"/></g>
+<text x="133" y="324" font-size="19" fill="#28665e" font-weight="700">13–19절</text>
+<text x="133" y="358" font-size="30" fill="#173039" font-weight="700">헤브론·드빌과 악사의 샘</text>
+<text x="133" y="393" font-size="25" fill="#173039" font-weight="400">헤브론을 받은 갈렙 / 옷니엘이 드빌 점령 / 악사와</text>
+<text x="133" y="426" font-size="25" fill="#173039" font-weight="400">나귀 / 윗샘·아랫샘</text>
+<rect x="38" y="460" width="744" height="156" rx="15" fill="#fffdf7" stroke="#d6e2d8"/>
+<circle cx="87" cy="519" r="29" fill="#dcece3"/>
+<g transform="translate(87 519)" stroke="#28665e" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M-16 13v-24h7v5h6v-5h6v5h6v-5h7v24Zm12 0V3h8v10"/></g>
+<text x="133" y="492" font-size="19" fill="#28665e" font-weight="700">20–63절</text>
+<text x="133" y="526" font-size="30" fill="#173039" font-weight="700">성읍 목록과 예루살렘</text>
+<text x="133" y="561" font-size="25" fill="#173039" font-weight="400">남부·평지·해안·산지·광야 / 예루살렘의 여부스</text>
+<text x="133" y="594" font-size="25" fill="#173039" font-weight="400">주민이 남음</text>
+<text x="42" y="658" font-size="23" fill="#40544d" font-weight="400">본문 목록의 구획 · 성읍군과 지명 목록은 COVERAGE의 15장</text>
+<text x="42" y="690" font-size="23" fill="#40544d" font-weight="400">항목</text>
+</svg>

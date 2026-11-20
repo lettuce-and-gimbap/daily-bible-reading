@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="656" viewBox="0 0 820 656" xml:lang="ko" role="img" aria-labelledby="title desc" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+<title id="title">수 8장 · 에발 산과 그리심 산 사이 (위치 관계도)</title><desc id="desc">수 8:30–35 · 두 산 기슭에서 마주 선 회중 여호수아가 율법을 기록하고 회중에게 읽었다. 궤 양편 회중은 두 산을 향해 나뉘었다. 세겜과 산의 남북 관계를 표시했다. 제단과 회중의 정확한 자리에는 좌표를 부여하지 않았다.</desc>
+<metadata>https://whc.unesco.org/en/tentativelists/5706/ | https://www.sefaria.org/Joshua.8</metadata>
+<rect width="820" height="656" rx="20" fill="#f5f3eb"/>
+<text x="38" y="46" font-size="22" fill="#28665e" font-weight="700">수 8:30–35 · 두 산 기슭에서 마주 선 회중</text>
+<text x="38" y="96" font-size="37" fill="#173039" font-weight="700">에발 산과 그리심 산 사이</text>
+<rect x="38" y="122" width="744" height="350" rx="15" fill="#fffdf7" stroke="#d6e2d8"/>
+<path d="M49 232 155 145l71 55 70-57 123 89M401 431l124-111 67 52 61-44 116 103" fill="#e4eee0" stroke="#64886d" stroke-width="4" stroke-linejoin="round"/>
+<path d="M382 135v324" stroke="#9f8871" stroke-width="3" stroke-dasharray="8 8"/>
+<circle cx="382" cy="288" r="29" fill="#dcece3" stroke="#28665e" stroke-width="2"/>
+<g transform="translate(382 288)" fill="none" stroke="#28665e" stroke-width="2"><path d="M-14-9h28v19h-28zm-4 15h36M-18-9h36M-8-9l-3-8m19 8 3-8"/></g>
+<text x="441" y="177" font-size="29" fill="#173039" font-weight="700">북쪽 · 에발 산</text>
+<text x="441" y="212" font-size="24" fill="#173039" font-weight="400">다듬지 않은 돌의 제단</text>
+<text x="441" y="296" font-size="27" fill="#173039" font-weight="700">언약궤와 제사장</text>
+<text x="73" y="279" font-size="26" fill="#173039" font-weight="400">세겜이 있는 골짜기</text>
+<text x="73" y="400" font-size="29" fill="#173039" font-weight="700">남쪽 · 그리심 산</text>
+<text x="38" y="511" font-size="23" fill="#40544d" font-weight="400">여호수아가 율법을 기록하고 회중에게 읽었다. 궤 양편 회중은 두</text>
+<text x="38" y="543" font-size="23" fill="#40544d" font-weight="400">산을 향해 나뉘었다.</text>
+<text x="38" y="575" font-size="23" fill="#40544d" font-weight="400">세겜과 산의 남북 관계를 표시했다. 제단과 회중의 정확한</text>
+<text x="38" y="607" font-size="23" fill="#40544d" font-weight="400">자리에는 좌표를 부여하지 않았다.</text>
+</svg>

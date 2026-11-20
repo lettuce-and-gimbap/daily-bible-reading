@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="624" viewBox="0 0 820 624" xml:lang="ko" role="img" aria-labelledby="title desc" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+<title id="title">수 3장 · 요단 동편에서 여리고 맞은편으로 (위치 관계도)</title><desc id="desc">수 3:1, 14–17 · 서쪽은 왼편, 북쪽은 위 강 가운데에 궤를 멘 제사장들이 서 있는 동안 백성이 건넜다. 본문의 방향 관계를 그렸다. 싯딤과 아담, 나루의 위치와 거리는 확정하지 않았다.</desc>
+<metadata>https://www.sefaria.org/Joshua.3</metadata>
+<rect width="820" height="624" rx="20" fill="#f5f3eb"/>
+<text x="38" y="46" font-size="22" fill="#28665e" font-weight="700">수 3:1, 14–17 · 서쪽은 왼편, 북쪽은 위</text>
+<text x="38" y="96" font-size="37" fill="#173039" font-weight="700">요단 동편에서 여리고 맞은편으로</text>
+<rect x="38" y="122" width="744" height="350" rx="15" fill="#fffdf7" stroke="#d6e2d8"/>
+<path d="M418 126c-44 33 18 62-25 112s49 71 4 122-7 65 4 108" fill="none" stroke="#b9dae5" stroke-width="48"/>
+<path d="M418 127c-44 33 18 62-25 112m4 122c-45 52-7 65 4 106" fill="none" stroke="#4b879d" stroke-width="4" stroke-dasharray="8 8"/>
+<path d="M657 297H160m27-20-27 20 27 20" fill="none" stroke="#28665e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="400" cy="297" r="27" fill="#dcece3" stroke="#28665e" stroke-width="2"/>
+<g transform="translate(400 297)" fill="none" stroke="#28665e" stroke-width="2"><path d="M-14-9h28v19h-28zm-4 15h36M-18-9h36M-8-9l-3-8m19 8 3-8"/></g>
+<text x="449" y="182" font-size="26" fill="#173039" font-weight="400">상류 · 아담 / 사르단 방면</text>
+<text x="133" y="252" font-size="27" fill="#173039" font-weight="700">여리고 맞은편</text>
+<text x="544" y="252" font-size="27" fill="#173039" font-weight="700">싯딤 쪽 강가</text>
+<text x="295" y="350" font-size="25" fill="#173039" font-weight="400">제사장과 언약궤</text>
+<text x="449" y="425" font-size="26" fill="#173039" font-weight="400">하류 · 염해 방면</text>
+<text x="38" y="511" font-size="23" fill="#40544d" font-weight="400">강 가운데에 궤를 멘 제사장들이 서 있는 동안 백성이 건넜다.</text>
+<text x="38" y="543" font-size="23" fill="#40544d" font-weight="400">본문의 방향 관계를 그렸다. 싯딤과 아담, 나루의 위치와 거리는</text>
+<text x="38" y="575" font-size="23" fill="#40544d" font-weight="400">확정하지 않았다.</text>
+</svg>

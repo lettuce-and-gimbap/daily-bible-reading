@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="697" viewBox="0 0 820 697" xml:lang="ko" role="img" aria-labelledby="title desc" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+<title id="title">수 3장 · 요단을 건너는 순서 (본문 도해)</title><desc id="desc">강가에 머묾 / 궤와 백성 사이 약 이천 규빗 / 제사장의 발이 물가에 닿음 / 위쪽 물은 아담·사르단 부근에서 멎음 / 아라바 바다 곧 염해 쪽 물은 끊김 / 백성은 여리고 맞은편으로 / 도하 지점과 아담의 정확한 위치 미상 · 거리와 흐름은 본문 개념도</desc>
+<metadata>https://www.sefaria.org/Joshua.3</metadata>
+<rect width="820" height="697" rx="20" fill="#f5f3eb"/>
+<text x="38" y="45" font-size="22" fill="#28665e" font-weight="700">여호수아 3장</text>
+<text x="38" y="94" font-size="38" fill="#173039" font-weight="700">요단을 건너는 순서</text>
+<rect x="38" y="124" width="744" height="123" rx="15" fill="#fffdf7" stroke="#d6e2d8"/>
+<circle cx="87" cy="183" r="29" fill="#dcece3"/>
+<g transform="translate(87 183)" stroke="#28665e" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M-16-9q8-6 16 0t16 0M-16 0q8-6 16 0t16 0m-32 9q8-6 16 0t16 0"/></g>
+<text x="133" y="156" font-size="19" fill="#28665e" font-weight="700">1–6절</text>
+<text x="133" y="190" font-size="30" fill="#173039" font-weight="700">싯딤 → 요단 강가</text>
+<text x="133" y="225" font-size="25" fill="#173039" font-weight="400">강가에 머묾 / 궤와 백성 사이 약 이천 규빗</text>
+<rect x="38" y="259" width="744" height="156" rx="15" fill="#fffdf7" stroke="#d6e2d8"/>
+<circle cx="87" cy="318" r="29" fill="#dcece3"/>
+<g transform="translate(87 318)" stroke="#28665e" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M-14-9h28v19h-28zm-4 15h36M-18-9h36M-8-9l-3-8m19 8 3-8"/></g>
+<text x="133" y="291" font-size="19" fill="#28665e" font-weight="700">7–13절</text>
+<text x="133" y="325" font-size="30" fill="#173039" font-weight="700">언약궤를 멘 제사장</text>
+<text x="133" y="360" font-size="25" fill="#173039" font-weight="400">제사장의 발이 물가에 닿음 / 위쪽 물은</text>
+<text x="133" y="393" font-size="25" fill="#173039" font-weight="400">아담·사르단 부근에서 멎음</text>
+<rect x="38" y="427" width="744" height="156" rx="15" fill="#fffdf7" stroke="#d6e2d8"/>
+<circle cx="87" cy="486" r="29" fill="#dcece3"/>
+<g transform="translate(87 486)" stroke="#28665e" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M-15 0h28m-10-10L14 0 3 10"/></g>
+<text x="133" y="459" font-size="19" fill="#28665e" font-weight="700">14–17절</text>
+<text x="133" y="493" font-size="30" fill="#173039" font-weight="700">백성의 도하</text>
+<text x="133" y="528" font-size="25" fill="#173039" font-weight="400">아라바 바다 곧 염해 쪽 물은 끊김 / 백성은 여리고</text>
+<text x="133" y="561" font-size="25" fill="#173039" font-weight="400">맞은편으로</text>
+<text x="42" y="625" font-size="23" fill="#40544d" font-weight="400">도하 지점과 아담의 정확한 위치 미상 · 거리와 흐름은 본문</text>
+<text x="42" y="657" font-size="23" fill="#40544d" font-weight="400">개념도</text>
+</svg>
