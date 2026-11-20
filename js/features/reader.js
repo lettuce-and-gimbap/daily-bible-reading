@@ -323,7 +323,7 @@ function renderReaderSheet() {
   }
 
   if (sheetTab === "goto") return renderGotoSheet(body);
-  if (sheetTab === "summary") return renderSummaryTab(body, pr.days[viewingDay]);
+  if (sheetTab === "summary") return renderSummaryTab(body, freeChapter !== null ? [freeChapter] : pr.days[viewingDay]);
   setSheetTitle(READER_TABS);
   if (sheetTab === "verses") return mountVersePicker(body, "reading", "reading" + currentChapter, currentChapter);
 

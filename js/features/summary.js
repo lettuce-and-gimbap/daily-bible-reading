@@ -88,6 +88,42 @@ function songLink(s) {
 // 그날 분량의 모든 장이 파일에 있으면 그걸 합쳐서 보여 주고, 하나라도 없으면 서버(Gemini) 요약으로 넘어감
 const staticBooks = {}; // 책 코드 → { status: "loading" | "ok" | "none", data }
 
+const wisdomFiles = new Map();
+function wisdomData(name) {
+  if (!wisdomFiles.has(name)) {
+    wisdomFiles.set(name, null);
+    fetch(`data/summary/${name}.json`, { cache: "no-cache" })
+      .then((response) => response.ok ? response.json() : null)
+      .catch(() => null)
+      .then((data) => {
+        wisdomFiles.set(name, data);
+        if (sheetTab === "summary") renderReaderSheet();
+      });
+  }
+  return wisdomFiles.get(name);
+}
+
+function wisdomSourceLink(source) {
+  const label = esc(source.label);
+  return /^https:\/\//.test(source.url || "")
+    ? `<a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">${label}</a>` : label;
+}
+
+function wisdomStudyHtml(entries) {
+  if (!entries.length) return "";
+  return `<section class="tool-card sum-card"><h3 class="label">장별 주석 · 개혁주의 관점</h3>
+    ${entries.map(({ ref, note }) => `<details class="wisdom-study"><summary><strong>${esc(ref)}</strong> · ${esc(note.heading)}</summary>
+      ${note.paragraphs.map((paragraph) => `<p>${esc(paragraph)}</p>`).join("")}
+      ${note.sources?.length ? `<p class="muted small">참고 자료 · ${note.sources.map(wisdomSourceLink).join(" · ")}</p>` : ""}</details>`).join("")}
+  </section>`;
+}
+
+function wisdomPlaceHtml(figure) {
+  if (!figure || !/^(?:\.\/)?img\/wisdom-places\/[\w.-]+$/.test(figure.src)) return "";
+  return `<figure class="wisdom-map"><img src="${esc(figure.src)}" alt="${esc(figure.alt)}" loading="lazy">
+    <figcaption>${esc(figure.caption)} ${figure.sourceUrl ? wisdomSourceLink({ label: "지도 참고 자료", url: figure.sourceUrl }) : ""}</figcaption></figure>`;
+}
+
 function loadStaticBook(code) {
   staticBooks[code] = { status: "loading" };
   fetch(`data/summary/${code}.json`, { cache: "no-cache" })
@@ -112,6 +148,13 @@ function staticDaySummary(day) {
   const books = Object.fromEntries(codes.map((code) => [code, staticBooks[code].data]));
   const opts = { all: !!state.settings.graphAll };
   const out = composeDay(chapters, books, opts);
+  const wisdom = chapters.filter(({ book }) => ["job", "psa", "pro"].includes(book.code));
+  out.wisdomStudy = wisdom.flatMap(({ book, chap }) => {
+    const part = book.code === "psa" ? `-${Math.ceil(chap / 50)}` : "";
+    const note = wisdomData(`${book.code}-study${part}`)?.[chap];
+    return note ? [{ ref: `${book.name} ${chap}${chapUnit(book)}`, note }] : [];
+  });
+  out.wisdomPlaces = wisdom.length ? wisdomData("wisdom-places") : null;
   // 관계도는 장마다 따로도 그릴 수 있게: 장별 결과와, 지금 읽는 장이 이 분량의 몇 번째인지
   out.byChap = chapters.length > 1 ? chapters.map((c) => composeDay([c], books, opts)) : null;
   out.autoIdx = day.indexOf(currentChapter);
@@ -149,7 +192,7 @@ function staticSummaryHtml(s) {
       <h3 class="label">주요 지역</h3>
       <ul class="sum-places">${s.places.map((p) => `
         <li><b>📍 ${esc(p.name)}</b>${p.where ? `<span>${esc(p.where)}</span>` : ""}
-          ${p.whats.map((w) => `<p><small>${esc(w.ref)}</small>${esc(w.text)}</p>`).join("")}</li>`).join("")}</ul>
+          ${p.whats.map((w) => `<p><small>${esc(w.ref)}</small>${esc(w.text)}</p>`).join("")}${wisdomPlaceHtml(s.wisdomPlaces?.[p.name])}</li>`).join("")}</ul>
     </section>` : "";
   const songs = s.songs.length ? `
     <section class="tool-card sum-card">
@@ -167,6 +210,7 @@ function staticSummaryHtml(s) {
       ${flow}
     </section>
     ${events}
+    ${wisdomStudyHtml(s.wisdomStudy || [])}
     ${s.people.length ? `
     <section class="tool-card sum-card">
       <div class="rg-head">

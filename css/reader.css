@@ -292,6 +292,12 @@ html.rg-open, html.rg-open body { overflow: hidden; }
 .sum-events p { margin: 0; font-size: .88rem; line-height: 1.6; color: var(--ink); }
 .sum-places p { margin: 2px 0 0; font-size: .86rem; line-height: 1.55; }
 .sum-places p small { font-size: .72rem; font-weight: 700; color: var(--accent); margin-right: 6px; }
+.wisdom-study { padding: 10px 0; border-top: 1px solid var(--line); }
+.wisdom-study summary { cursor: pointer; line-height: 1.5; }
+.wisdom-study p { margin: .65em 0 0; line-height: 1.65; }
+.wisdom-map { margin: 10px 0 0; max-width: 480px; }
+.wisdom-map img { display: block; width: 100%; height: auto; border-radius: 8px; }
+.wisdom-map figcaption { margin-top: 5px; color: var(--muted); font-size: .82rem; }
 .ai-note { text-align: center; }
 .sum-people b small { font-size: .7rem; font-weight: 600; color: var(--muted); margin-left: 5px; }
 

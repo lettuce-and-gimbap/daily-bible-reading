@@ -1,0 +1,464 @@
+{
+  "레바논": {
+    "src": "img/wisdom-places/northern-levant.svg",
+    "alt": "지중해 연안의 두로, 내륙의 헤르몬과 바산, 갈릴리호 서쪽의 다볼과 엔돌을 표시한 지도.",
+    "caption": "지중해 동쪽 해안과 나란히 뻗은 레바논 산지예요. 시편 29편은 이곳의 백향목을 꺾는 여호와의 소리를 노래해요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/study/scriptures/bible-maps/index?lang=eng"
+  },
+  "두로": {
+    "src": "img/wisdom-places/northern-levant.svg",
+    "alt": "지중해 연안의 두로, 내륙의 헤르몬과 바산, 갈릴리호 서쪽의 다볼과 엔돌을 표시한 지도.",
+    "caption": "두로는 오늘날 레바논 남부 연안의 고대 페니키아 항구예요.",
+    "sourceUrl": "https://whc.unesco.org/en/list/299/"
+  },
+  "요단 땅과 헤르몬": {
+    "src": "img/wisdom-places/northern-levant.svg",
+    "alt": "지중해 연안의 두로, 내륙의 헤르몬과 바산, 갈릴리호 서쪽의 다볼과 엔돌을 표시한 지도.",
+    "caption": "헤르몬은 요단강 상류 쪽 산지예요. 시편 42편이 함께 부르는 미살 산의 위치는 알려져 있지 않아요.",
+    "sourceUrl": "https://www.biblegateway.com/passage/?search=Psalm+42&version=NET"
+  },
+  "헐몬산": {
+    "src": "img/wisdom-places/northern-levant.svg",
+    "alt": "지중해 연안의 두로, 내륙의 헤르몬과 바산, 갈릴리호 서쪽의 다볼과 엔돌을 표시한 지도.",
+    "caption": "헐몬은 헤르몬의 다른 표기예요. 시편 133편은 헤르몬의 이슬이 먼 시온에 내리는 모습으로 형제의 연합을 그려요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/study/scriptures/bible-maps/index?lang=eng"
+  },
+  "다볼과 헤르몬": {
+    "src": "img/wisdom-places/northern-levant.svg",
+    "alt": "지중해 연안의 두로, 내륙의 헤르몬과 바산, 갈릴리호 서쪽의 다볼과 엔돌을 표시한 지도.",
+    "caption": "다볼은 갈릴리호 남서쪽에, 헤르몬은 요단 상류 북동쪽에 있어요. 시편 89편은 두 산이 기뻐하는 모습으로 노래해요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/bc/content/shared/content/images/gospel-library/manual/32498/map-5.pdf"
+  },
+  "바산의 산": {
+    "src": "img/wisdom-places/northern-levant.svg",
+    "alt": "지중해 연안의 두로, 내륙의 헤르몬과 바산, 갈릴리호 서쪽의 다볼과 엔돌을 표시한 지도.",
+    "caption": "바산은 갈릴리호와 요단강 상류 동쪽의 넓은 산지예요. 시편 68편이 가리키는 봉우리는 특정하지 않았어요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/bc/content/shared/content/images/gospel-library/manual/32498/map-5.pdf"
+  },
+  "기손 시내": {
+    "src": "img/wisdom-places/northern-levant.svg",
+    "alt": "지중해 연안의 두로, 내륙의 헤르몬과 바산, 갈릴리호 서쪽의 다볼과 엔돌을 표시한 지도.",
+    "caption": "기손 시내는 이스르엘 골짜기에서 지중해로 흘러요. 엔돌의 옛 터로 보는 곳은 그 동쪽, 다볼산 남쪽이에요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/bc/content/shared/content/images/gospel-library/manual/32498/map-5.pdf"
+  },
+  "엔돌": {
+    "src": "img/wisdom-places/northern-levant.svg",
+    "alt": "지중해 연안의 두로, 내륙의 헤르몬과 바산, 갈릴리호 서쪽의 다볼과 엔돌을 표시한 지도.",
+    "caption": "기손 시내는 이스르엘 골짜기에서 지중해로 흘러요. 엔돌의 옛 터로 보는 곳은 그 동쪽, 다볼산 남쪽이에요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/bc/content/shared/content/images/gospel-library/manual/32498/map-5.pdf"
+  },
+  "시온": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "시온은 예루살렘과 이어지는 이름이에요. 시편은 산과 성을 여호와의 다스림과 보호를 노래하는 이미지로도 써요.",
+    "sourceUrl": "https://whc.unesco.org/en/list/148/"
+  },
+  "시온산": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "시온은 예루살렘과 이어지는 이름이에요. 시편은 산과 성을 여호와의 다스림과 보호를 노래하는 이미지로도 써요.",
+    "sourceUrl": "https://whc.unesco.org/en/list/148/"
+  },
+  "예루살렘": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "시온은 예루살렘과 이어지는 이름이에요. 시편은 산과 성을 여호와의 다스림과 보호를 노래하는 이미지로도 써요.",
+    "sourceUrl": "https://whc.unesco.org/en/list/148/"
+  },
+  "살렘": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "시온은 예루살렘과 이어지는 이름이에요. 시편은 산과 성을 여호와의 다스림과 보호를 노래하는 이미지로도 써요.",
+    "sourceUrl": "https://whc.unesco.org/en/list/148/"
+  },
+  "시온의 산들": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "시온은 예루살렘과 이어지는 이름이에요. 시편은 산과 성을 여호와의 다스림과 보호를 노래하는 이미지로도 써요.",
+    "sourceUrl": "https://whc.unesco.org/en/list/148/"
+  },
+  "주의 성산": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "시편의 표현을 시온 또는 예루살렘으로 읽을 때, 지도는 그 지리적 배경을 보여 줘요.",
+    "sourceUrl": "https://www.biblegateway.com/passage/?search=Psalm+43,46,101&version=NET"
+  },
+  "여호와의 산": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "시편의 표현을 시온 또는 예루살렘으로 읽을 때, 지도는 그 지리적 배경을 보여 줘요.",
+    "sourceUrl": "https://www.biblegateway.com/passage/?search=Psalm+43,46,101&version=NET"
+  },
+  "주의 거룩한 산": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "시편의 표현을 시온 또는 예루살렘으로 읽을 때, 지도는 그 지리적 배경을 보여 줘요.",
+    "sourceUrl": "https://www.biblegateway.com/passage/?search=Psalm+43,46,101&version=NET"
+  },
+  "하나님의 성": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "시편의 표현을 시온 또는 예루살렘으로 읽을 때, 지도는 그 지리적 배경을 보여 줘요.",
+    "sourceUrl": "https://www.biblegateway.com/passage/?search=Psalm+43,46,101&version=NET"
+  },
+  "여호와의 성": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "시편의 표현을 시온 또는 예루살렘으로 읽을 때, 지도는 그 지리적 배경을 보여 줘요.",
+    "sourceUrl": "https://www.biblegateway.com/passage/?search=Psalm+43,46,101&version=NET"
+  },
+  "시온과 유다 성읍": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "예루살렘은 유다 산지에 있어요. 시편 69편은 시온과 유다의 성읍들을, 잠언 25장은 유다 왕 히스기야를 언급해요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/study/scriptures/bible-maps/map-10?lang=eng"
+  },
+  "유다": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "예루살렘은 유다 산지에 있어요. 시편 69편은 시온과 유다의 성읍들을, 잠언 25장은 유다 왕 히스기야를 언급해요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/study/scriptures/bible-maps/map-10?lang=eng"
+  },
+  "가나안 땅": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "가나안과 고대 이스라엘의 지리적 배경을 보여 주는 지도예요. 본문과 시대에 따라 두 이름의 범위가 달라져요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/study/scriptures/bible-maps/map-10?lang=eng"
+  },
+  "가나안": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "가나안과 고대 이스라엘의 지리적 배경을 보여 주는 지도예요. 본문과 시대에 따라 두 이름의 범위가 달라져요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/study/scriptures/bible-maps/map-10?lang=eng"
+  },
+  "이스라엘": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "가나안과 고대 이스라엘의 지리적 배경을 보여 주는 지도예요. 본문과 시대에 따라 두 이름의 범위가 달라져요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/study/scriptures/bible-maps/map-10?lang=eng"
+  },
+  "세겜과 숙곳": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "세겜은 요단 서쪽 산지에, 숙곳은 요단 동쪽 골짜기에 있었어요. 길르앗도 요단 동쪽이에요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/study/scriptures/bible-maps/map-3?lang=eng"
+  },
+  "세겜": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "세겜은 에발산과 그리심산 사이의 고대 성읍이에요.",
+    "sourceUrl": "https://biblical-archaeology.org/en/locations/shechem/"
+  },
+  "숙곳": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "요단 양쪽의 옛 지역을 보여 주는 지도예요. 지파 이름은 시편에서 그 지파의 사람들을 가리키기도 해요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/study/scriptures/bible-maps/map-3?lang=eng"
+  },
+  "길르앗": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "요단 양쪽의 옛 지역을 보여 주는 지도예요. 지파 이름은 시편에서 그 지파의 사람들을 가리키기도 해요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/study/scriptures/bible-maps/map-3?lang=eng"
+  },
+  "에브라임": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "요단 양쪽의 옛 지역을 보여 주는 지도예요. 지파 이름은 시편에서 그 지파의 사람들을 가리키기도 해요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/study/scriptures/bible-maps/map-3?lang=eng"
+  },
+  "므낫세": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "요단 양쪽의 옛 지역을 보여 주는 지도예요. 지파 이름은 시편에서 그 지파의 사람들을 가리키기도 해요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/study/scriptures/bible-maps/map-3?lang=eng"
+  },
+  "베냐민": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "요단 양쪽의 옛 지역을 보여 주는 지도예요. 지파 이름은 시편에서 그 지파의 사람들을 가리키기도 해요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/study/scriptures/bible-maps/map-3?lang=eng"
+  },
+  "실로": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "실로는 예루살렘 북쪽의 중앙 산지에 있어요. 시편 78편은 실로의 옛 성막을 회상해요.",
+    "sourceUrl": "https://biblical-archaeology.org/en/?focused_location=35776"
+  },
+  "가드": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "블레셋의 가드는 유다 산지와 해안 평야 사이의 텔 에스사피 유적으로 확인돼요.",
+    "sourceUrl": "https://gath.wordpress.com/wp-content/uploads/2023/12/maeir-et-al_preface-and-introduction_in-tell-es-safi-gath-iii_2023.pdf"
+  },
+  "모압": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "모압과 암몬은 요단 동쪽에, 블레셋은 지중해 쪽에 있어요. 유다 광야와 엔게디는 사해 서쪽에 있어요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/study/scriptures/bible-maps/map-10?lang=eng"
+  },
+  "암몬": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "모압과 암몬은 요단 동쪽에, 블레셋은 지중해 쪽에 있어요. 유다 광야와 엔게디는 사해 서쪽에 있어요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/study/scriptures/bible-maps/map-10?lang=eng"
+  },
+  "블레셋": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "모압과 암몬은 요단 동쪽에, 블레셋은 지중해 쪽에 있어요. 유다 광야와 엔게디는 사해 서쪽에 있어요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/study/scriptures/bible-maps/map-10?lang=eng"
+  },
+  "유다 광야": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "모압과 암몬은 요단 동쪽에, 블레셋은 지중해 쪽에 있어요. 유다 광야와 엔게디는 사해 서쪽에 있어요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/study/scriptures/bible-maps/map-10?lang=eng"
+  },
+  "엔게디": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "모압과 암몬은 요단 동쪽에, 블레셋은 지중해 쪽에 있어요. 유다 광야와 엔게디는 사해 서쪽에 있어요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/study/scriptures/bible-maps/map-10?lang=eng"
+  },
+  "에브라다와 야르의 들판": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "야르의 들판은 언약궤가 머문 기럇여아림을 가리키는 것으로 읽어요. 이 구절의 에브라다를 베들레헴과 연결하는 해석도 있지만 위치 해석은 갈려요.",
+    "sourceUrl": "https://www.biblegateway.com/passage/?search=Psalm+132%3A6&version=NET"
+  },
+  "데만": {
+    "src": "img/wisdom-places/southern-levant.svg",
+    "alt": "사해와 아라바를 사이에 두고 서쪽 네겝·가데스 후보 지역과 동쪽 에돔을 표시한 지도.",
+    "caption": "엘리바스의 데만은 에돔과 관련된 이름이에요. 정확한 옛 터는 확정되지 않았어요.",
+    "sourceUrl": "https://www.biblegateway.com/resources/encyclopedia-of-the-bible/Teman"
+  },
+  "에돔": {
+    "src": "img/wisdom-places/southern-levant.svg",
+    "alt": "사해와 아라바를 사이에 두고 서쪽 네겝·가데스 후보 지역과 동쪽 에돔을 표시한 지도.",
+    "caption": "에돔은 사해 남쪽, 아라바 동쪽 산지가 중심이었던 지역이에요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/study/scriptures/bible-maps/index?lang=eng"
+  },
+  "가데스 광야": {
+    "src": "img/wisdom-places/southern-levant.svg",
+    "alt": "사해와 아라바를 사이에 두고 서쪽 네겝·가데스 후보 지역과 동쪽 에돔을 표시한 지도.",
+    "caption": "지도는 남쪽의 가데스 바네아 일대를 보여 줘요. 시편 29편의 가데스를 이 일대와 연결하는 해석이 있지만 동일한 장소로 단정하기 어려워요.",
+    "sourceUrl": "https://www.biblegateway.com/passage/?search=Psalm+29&version=NET"
+  },
+  "소금 골짜기": {
+    "src": "img/wisdom-places/southern-levant.svg",
+    "alt": "사해와 아라바를 사이에 두고 서쪽 네겝·가데스 후보 지역과 동쪽 에돔을 표시한 지도.",
+    "caption": "시편 60편 표제에 나오는 전투 장소예요. 사해 남쪽이나 아라바 일대가 거론되지만 정확한 자리는 불확실해요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/study/scriptures/bible-maps/index?lang=eng"
+  },
+  "남방 시내": {
+    "src": "img/wisdom-places/southern-levant.svg",
+    "alt": "사해와 아라바를 사이에 두고 서쪽 네겝·가데스 후보 지역과 동쪽 에돔을 표시한 지도.",
+    "caption": "시편 126편은 네겝의 마른 물길에 물이 차듯 회복시켜 달라고 기도해요. 지도는 네겝 지역을 보여 줘요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/study/scriptures/bible-maps/index?lang=eng"
+  },
+  "소안 들": {
+    "src": "img/wisdom-places/egypt-and-sinai.svg",
+    "alt": "나일 삼각주 동부의 소안과 시나이반도 남쪽의 전통적인 시내산 후보 및 홍해를 표시한 지도.",
+    "caption": "소안은 나일 삼각주 동쪽의 타니스로 확인돼요. 시편 78편은 소안 들을 애굽에서 행하신 일과 연결해요.",
+    "sourceUrl": "https://biblical-archaeology.org/en/?focused_location=17408"
+  },
+  "애굽": {
+    "src": "img/wisdom-places/egypt-and-sinai.svg",
+    "alt": "나일 삼각주 동부의 소안과 시나이반도 남쪽의 전통적인 시내산 후보 및 홍해를 표시한 지도.",
+    "caption": "애굽은 나일강을 중심으로 자리했어요. 시편의 라합은 애굽을 가리키는 시적 별칭이에요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/study/scriptures/bible-maps/map-2?lang=eng"
+  },
+  "시내산": {
+    "src": "img/wisdom-places/egypt-and-sinai.svg",
+    "alt": "나일 삼각주 동부의 소안과 시나이반도 남쪽의 전통적인 시내산 후보 및 홍해를 표시한 지도.",
+    "caption": "시나이반도 남부의 제벨 무사는 전통적으로 시내산으로 여겨져요. 성경의 시내산 또는 호렙의 정확한 위치는 확정되지 않았어요.",
+    "sourceUrl": "https://whc.unesco.org/en/list/954/"
+  },
+  "호렙": {
+    "src": "img/wisdom-places/egypt-and-sinai.svg",
+    "alt": "나일 삼각주 동부의 소안과 시나이반도 남쪽의 전통적인 시내산 후보 및 홍해를 표시한 지도.",
+    "caption": "시나이반도 남부의 제벨 무사는 전통적으로 시내산으로 여겨져요. 성경의 시내산 또는 호렙의 정확한 위치는 확정되지 않았어요.",
+    "sourceUrl": "https://whc.unesco.org/en/list/954/"
+  },
+  "홍해": {
+    "src": "img/wisdom-places/egypt-and-sinai.svg",
+    "alt": "나일 삼각주 동부의 소안과 시나이반도 남쪽의 전통적인 시내산 후보 및 홍해를 표시한 지도.",
+    "caption": "홍해와 시나이반도 주변 물길의 위치를 보여 줘요. 출애굽 본문에서 건넌 지점에는 여러 견해가 있어요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/study/scriptures/bible-maps/map-2?lang=eng"
+  },
+  "므리바": {
+    "src": "img/wisdom-places/egypt-and-sinai.svg",
+    "alt": "나일 삼각주 동부의 소안과 시나이반도 남쪽의 전통적인 시내산 후보 및 홍해를 표시한 지도.",
+    "caption": "광야의 물 사건을 기억하는 이름이에요. 맛사와 연관된 르비딤의 므리바와 가데스의 므리바가 전해져요. 사건 장소의 정확한 좌표는 표시하지 않았어요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/study/scriptures/bible-maps/map-2?lang=eng"
+  },
+  "므리바와 맛사": {
+    "src": "img/wisdom-places/egypt-and-sinai.svg",
+    "alt": "나일 삼각주 동부의 소안과 시나이반도 남쪽의 전통적인 시내산 후보 및 홍해를 표시한 지도.",
+    "caption": "광야의 물 사건을 기억하는 이름이에요. 맛사와 연관된 르비딤의 므리바와 가데스의 므리바가 전해져요. 사건 장소의 정확한 좌표는 표시하지 않았어요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/study/scriptures/bible-maps/map-2?lang=eng"
+  },
+  "바다와 강": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "시편은 바다를 건넌 일과 요단을 건넌 일을 함께 떠올리게 해요. 이 지도에는 요단강을, 홍해 항목의 지도에는 바다 쪽 지리적 배경을 담았어요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/study/scriptures/bible-maps/map-2?lang=eng"
+  },
+  "바다와 요단": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "시편은 바다를 건넌 일과 요단을 건넌 일을 함께 떠올리게 해요. 이 지도에는 요단강을, 홍해 항목의 지도에는 바다 쪽 지리적 배경을 담았어요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/study/scriptures/bible-maps/map-2?lang=eng"
+  },
+  "데마와 스바": {
+    "src": "img/wisdom-places/ancient-near-east.svg",
+    "alt": "지중해 동쪽의 레반트, 유프라테스강의 바벨론, 아라비아의 데마와 마리브를 표시한 지도.",
+    "caption": "데마는 아라비아 북서부 오아시스 타이마와 연결돼요. 남아라비아 스바의 중심은 마리브였어요. 욥기 6편은 길을 가는 대상들을 떠올려요.",
+    "sourceUrl": "https://whc.unesco.org/en/tentativelists/6575/"
+  },
+  "스바": {
+    "src": "img/wisdom-places/ancient-near-east.svg",
+    "alt": "지중해 동쪽의 레반트, 유프라테스강의 바벨론, 아라비아의 데마와 마리브를 표시한 지도.",
+    "caption": "마리브는 오늘날 예멘에 있는 고대 스바 왕국의 중심 도시예요. 욥기 1편의 약탈 집단이 이 왕국에서 왔는지는 확실하지 않아요.",
+    "sourceUrl": "https://whc.unesco.org/en/list/1700/"
+  },
+  "스바와 시바": {
+    "src": "img/wisdom-places/ancient-near-east.svg",
+    "alt": "지중해 동쪽의 레반트, 유프라테스강의 바벨론, 아라비아의 데마와 마리브를 표시한 지도.",
+    "caption": "스바는 남아라비아의 왕국과 연결돼요. 시바는 흔히 누비아 방면으로 보지만 정확한 위치는 확정하기 어려워요.",
+    "sourceUrl": "https://www.biblegateway.com/passage/?search=Psalm+72&version=NET"
+  },
+  "바벨론 강변": {
+    "src": "img/wisdom-places/ancient-near-east.svg",
+    "alt": "지중해 동쪽의 레반트, 유프라테스강의 바벨론, 아라비아의 데마와 마리브를 표시한 지도.",
+    "caption": "바벨론은 오늘날 이라크의 유프라테스강에 있던 도시예요. 시편 137편의 강변은 포로 생활의 배경으로, 특정 강둑은 알려져 있지 않아요. 시편 87편의 라합은 애굽의 시적 별칭이에요.",
+    "sourceUrl": "https://whc.unesco.org/en/list/278/"
+  },
+  "바벨론": {
+    "src": "img/wisdom-places/ancient-near-east.svg",
+    "alt": "지중해 동쪽의 레반트, 유프라테스강의 바벨론, 아라비아의 데마와 마리브를 표시한 지도.",
+    "caption": "바벨론은 오늘날 이라크의 유프라테스강에 있던 도시예요. 시편 137편의 강변은 포로 생활의 배경으로, 특정 강둑은 알려져 있지 않아요. 시편 87편의 라합은 애굽의 시적 별칭이에요.",
+    "sourceUrl": "https://whc.unesco.org/en/list/278/"
+  },
+  "라합(애굽)과 바벨론": {
+    "src": "img/wisdom-places/ancient-near-east.svg",
+    "alt": "지중해 동쪽의 레반트, 유프라테스강의 바벨론, 아라비아의 데마와 마리브를 표시한 지도.",
+    "caption": "바벨론은 오늘날 이라크의 유프라테스강에 있던 도시예요. 시편 137편의 강변은 포로 생활의 배경으로, 특정 강둑은 알려져 있지 않아요. 시편 87편의 라합은 애굽의 시적 별칭이에요.",
+    "sourceUrl": "https://whc.unesco.org/en/list/278/"
+  },
+  "갈대아": {
+    "src": "img/wisdom-places/ancient-near-east.svg",
+    "alt": "지중해 동쪽의 레반트, 유프라테스강의 바벨론, 아라비아의 데마와 마리브를 표시한 지도.",
+    "caption": "갈대아는 메소포타미아 남부, 앗수르는 티그리스강 상류 쪽, 구스는 애굽 남쪽 누비아 방면과 연결돼요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/study/scriptures/bible-maps/index?lang=eng"
+  },
+  "앗수르": {
+    "src": "img/wisdom-places/ancient-near-east.svg",
+    "alt": "지중해 동쪽의 레반트, 유프라테스강의 바벨론, 아라비아의 데마와 마리브를 표시한 지도.",
+    "caption": "갈대아는 메소포타미아 남부, 앗수르는 티그리스강 상류 쪽, 구스는 애굽 남쪽 누비아 방면과 연결돼요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/study/scriptures/bible-maps/index?lang=eng"
+  },
+  "구스": {
+    "src": "img/wisdom-places/ancient-near-east.svg",
+    "alt": "지중해 동쪽의 레반트, 유프라테스강의 바벨론, 아라비아의 데마와 마리브를 표시한 지도.",
+    "caption": "갈대아는 메소포타미아 남부, 앗수르는 티그리스강 상류 쪽, 구스는 애굽 남쪽 누비아 방면과 연결돼요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/study/scriptures/bible-maps/index?lang=eng"
+  },
+  "메섹과 게달": {
+    "src": "img/wisdom-places/ancient-near-east.svg",
+    "alt": "지중해 동쪽의 레반트, 유프라테스강의 바벨론, 아라비아의 데마와 마리브를 표시한 지도.",
+    "caption": "메섹은 보통 아나톨리아 방면, 게달은 북아라비아의 유목 집단과 연결돼요. 시편 120편에서 두 이름은 이질적이고 적대적인 환경의 이미지로도 읽혀요.",
+    "sourceUrl": "https://classic.net.bible.org/passage.php?passage=Psa+120%3A5%2C6"
+  },
+  "우스": {
+    "src": "img/wisdom-places/unlocated.svg",
+    "alt": "우스, 오빌, 다시스를 위치 미상으로 표시한 삽화. 각 이름 옆에 욥의 고향, 금, 먼 바닷길이라는 본문 단서가 있다.",
+    "caption": "욥의 고향이에요. 에돔이나 아람 방면이 후보로 거론되지만 위치는 알려져 있지 않아요.",
+    "sourceUrl": "https://www.biblegateway.com/resources/encyclopedia-of-the-bible/Uz"
+  },
+  "오빌": {
+    "src": "img/wisdom-places/unlocated.svg",
+    "alt": "우스, 오빌, 다시스를 위치 미상으로 표시한 삽화. 각 이름 옆에 욥의 고향, 금, 먼 바닷길이라는 본문 단서가 있다.",
+    "caption": "욥기와 시편에 귀한 금으로 등장해요. 남아라비아와 아프리카 등 여러 후보가 제안됐어요.",
+    "sourceUrl": "https://www.biblegateway.com/resources/encyclopedia-of-the-bible/Ophir"
+  },
+  "다시스": {
+    "src": "img/wisdom-places/unlocated.svg",
+    "alt": "우스, 오빌, 다시스를 위치 미상으로 표시한 삽화. 각 이름 옆에 욥의 고향, 금, 먼 바닷길이라는 본문 단서가 있다.",
+    "caption": "시편은 다시스의 배와 왕을 먼 바닷길과 연결해요. 서지중해 등 여러 후보가 있어요.",
+    "sourceUrl": "https://search.biblegateway.com/resources/encyclopedia-of-the-bible/Tarshish"
+  },
+  "눈물 골짜기": {
+    "src": "img/wisdom-places/poetic-landscapes.svg",
+    "alt": "눈물 골짜기, 땅끝, 스올을 길과 수평선과 깊은 층으로 표현한 비지리적 삽화.",
+    "caption": "시편 84편의 골짜기는 순례의 어려움과 샘의 은혜를 함께 떠올리게 해요. 지리적 위치는 알려져 있지 않아요.",
+    "sourceUrl": "https://www.biblegateway.com/passage/?search=Psalm+84&version=NET%3BLEB"
+  },
+  "스올": {
+    "src": "img/wisdom-places/poetic-landscapes.svg",
+    "alt": "눈물 골짜기, 땅끝, 스올을 길과 수평선과 깊은 층으로 표현한 비지리적 삽화.",
+    "caption": "스올은 죽은 자들의 세계를 가리키는 성경의 표현이에요. 시편 139편은 하늘과 스올을 함께 불러 하나님의 임재를 노래해요.",
+    "sourceUrl": "https://www.biblegateway.com/passage/?search=Psalm+49,139&version=NET"
+  },
+  "하늘과 스올": {
+    "src": "img/wisdom-places/poetic-landscapes.svg",
+    "alt": "눈물 골짜기, 땅끝, 스올을 길과 수평선과 깊은 층으로 표현한 비지리적 삽화.",
+    "caption": "스올은 죽은 자들의 세계를 가리키는 성경의 표현이에요. 시편 139편은 하늘과 스올을 함께 불러 하나님의 임재를 노래해요.",
+    "sourceUrl": "https://www.biblegateway.com/passage/?search=Psalm+49,139&version=NET"
+  },
+  "스올 깊은 곳": {
+    "src": "img/wisdom-places/poetic-landscapes.svg",
+    "alt": "눈물 골짜기, 땅끝, 스올을 길과 수평선과 깊은 층으로 표현한 비지리적 삽화.",
+    "caption": "스올은 죽은 자들의 세계를 가리키는 성경의 표현이에요. 시편 139편은 하늘과 스올을 함께 불러 하나님의 임재를 노래해요.",
+    "sourceUrl": "https://www.biblegateway.com/passage/?search=Psalm+49,139&version=NET"
+  },
+  "땅끝": {
+    "src": "img/wisdom-places/poetic-landscapes.svg",
+    "alt": "눈물 골짜기, 땅끝, 스올을 길과 수평선과 깊은 층으로 표현한 비지리적 삽화.",
+    "caption": "멀리 떨어진 자리나 넓은 다스림의 범위를 그리는 시적 표현이에요.",
+    "sourceUrl": "https://www.biblegateway.com/passage/?search=Psalm+61,72,139&version=NET"
+  },
+  "바다 끝": {
+    "src": "img/wisdom-places/poetic-landscapes.svg",
+    "alt": "눈물 골짜기, 땅끝, 스올을 길과 수평선과 깊은 층으로 표현한 비지리적 삽화.",
+    "caption": "멀리 떨어진 자리나 넓은 다스림의 범위를 그리는 시적 표현이에요.",
+    "sourceUrl": "https://www.biblegateway.com/passage/?search=Psalm+61,72,139&version=NET"
+  },
+  "바다에서 바다까지": {
+    "src": "img/wisdom-places/poetic-landscapes.svg",
+    "alt": "눈물 골짜기, 땅끝, 스올을 길과 수평선과 깊은 층으로 표현한 비지리적 삽화.",
+    "caption": "멀리 떨어진 자리나 넓은 다스림의 범위를 그리는 시적 표현이에요.",
+    "sourceUrl": "https://www.biblegateway.com/passage/?search=Psalm+61,72,139&version=NET"
+  },
+  "십": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "시편 54편 표제의 십은 헤브론 남동쪽의 텔 지프로 비정돼요.",
+    "sourceUrl": "https://www.biblegateway.com/resources/encyclopedia-of-the-bible/Ziph-Ziphites"
+  },
+  "아둘람": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "아둘람과 엔게디는 다윗이 숨었던 곳으로 전해져요. 시편의 굴 표제만으로 어느 굴인지 확정할 수 없어요.",
+    "sourceUrl": "https://www.biblegateway.com/resources/encyclopedia-of-the-bible/Adullam"
+  },
+  "굴": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "아둘람과 엔게디는 다윗이 숨었던 곳으로 전해져요. 시편의 굴 표제만으로 어느 굴인지 확정할 수 없어요.",
+    "sourceUrl": "https://www.biblegateway.com/resources/encyclopedia-of-the-bible/Adullam"
+  },
+  "바알브올": {
+    "src": "img/wisdom-places/central-levant.svg",
+    "alt": "지중해와 요단강 사이의 세겜, 실로, 가드, 예루살렘, 십과 요단강 동쪽의 숙곳과 길르앗을 표시한 지도.",
+    "caption": "바알브올은 모압 쪽 브올의 바알을 가리켜요. 지도에는 브올과 관련된 지역만 표시했어요.",
+    "sourceUrl": "https://www.biblegateway.com/resources/encyclopedia-of-the-bible/Peor"
+  },
+  "미디안": {
+    "src": "img/wisdom-places/ancient-near-east.svg",
+    "alt": "지중해 동쪽의 레반트, 유프라테스강의 바벨론, 아라비아의 데마와 마리브를 표시한 지도.",
+    "caption": "미디안은 아카바만 동쪽과 아라비아 북서부 방면과 연결돼요. 시편 83편에서는 과거에 싸운 집단을 가리켜요.",
+    "sourceUrl": "https://www.churchofjesuschrist.org/study/scriptures/bible-maps/index?lang=eng"
+  }
+}
