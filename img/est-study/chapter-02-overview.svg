@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="540" viewBox="0 0 920 540" xml:lang="ko" role="img" aria-labelledby="title desc" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+<title id="title">에스더 2장 · 에스더가 왕후가 되다</title>
+<desc id="desc">수산 후궁 · 왕궁 · 대궐 문 / 처녀들을 모으고 에스더를 후궁에 들임 (1–11절) → 에스더가 왕후가 되고 잔치가 열림 (12–18절) → 모르드개가 암살 음모를 알림 (19–23절) / 몰약과 향품 · 왕관 · 궁중 일기</desc>
+<rect width="920" height="540" rx="20" fill="#f7f5ee"/>
+<text x="36" y="39" font-size="19" fill="#684619" font-weight="700">에스더 2장 · 본문 도해</text>
+<text x="36" y="82" font-size="34" fill="#1d2d35" font-weight="700">에스더가 왕후가 되다</text>
+<rect x="36" y="105" width="848" height="78" rx="12" fill="#f1e5cf"/>
+<text x="55" y="131" font-size="17" fill="#684619" font-weight="700">장소</text>
+<text x="55" y="160" font-size="20" fill="#1d2d35">수산 후궁 · 왕궁 · 대궐 문</text>
+<text x="36" y="214" font-size="18" fill="#684619" font-weight="700">본문의 흐름</text>
+<path d="M77 252v116" fill="none" stroke="#684619" stroke-width="2"/>
+<rect x="98" y="228" width="786" height="48" rx="10" fill="#fff"/>
+<circle cx="77" cy="252" r="6" fill="#684619"/>
+<text x="117" y="259" font-size="18" fill="#684619" font-weight="700">1–11절</text>
+<text x="216" y="259" font-size="20" fill="#1d2d35">처녀들을 모으고 에스더를 후궁에 들임</text>
+<rect x="98" y="286" width="786" height="48" rx="10" fill="#fff"/>
+<circle cx="77" cy="310" r="6" fill="#684619"/>
+<text x="117" y="317" font-size="18" fill="#684619" font-weight="700">12–18절</text>
+<text x="216" y="317" font-size="20" fill="#1d2d35">에스더가 왕후가 되고 잔치가 열림</text>
+<rect x="98" y="344" width="786" height="48" rx="10" fill="#fff"/>
+<circle cx="77" cy="368" r="6" fill="#684619"/>
+<text x="117" y="375" font-size="18" fill="#684619" font-weight="700">19–23절</text>
+<text x="216" y="375" font-size="20" fill="#1d2d35">모르드개가 암살 음모를 알림</text>
+<rect x="36" y="414" width="848" height="74" rx="12" fill="#f1e5cf"/>
+<text x="55" y="440" font-size="17" fill="#684619" font-weight="700">기물·기록·표지</text>
+<text x="55" y="468" font-size="20" fill="#1d2d35">몰약과 향품 · 왕관 · 궁중 일기</text>
+<text x="36" y="519" font-size="16" fill="#684619">역사 배경 · 수산 유적과 왕궁</text>
+</svg>
