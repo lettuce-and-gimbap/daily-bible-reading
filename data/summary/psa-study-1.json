@@ -463,6 +463,12 @@
         "label": "시편 19편 히브리어 본문 (Mechon Mamre)",
         "url": "https://mechon-mamre.org/p/pt/pt2619.htm"
       }
+    ],
+    "figures": [
+      {
+        "id": "heavens-word",
+        "label": "시편 19편 · 하늘의 증언과 하나님의 가르침 (창작 도해)"
+      }
     ]
   },
   "20": {
@@ -867,6 +873,12 @@
       {
         "label": "Mechon Mamre 히브리어 본문 시편 36:6 (한글 성경 36:5)",
         "url": "https://mechon-mamre.org/p/pt/pt2636.htm"
+      }
+    ],
+    "figures": [
+      {
+        "id": "fountain-light",
+        "label": "시편 36:7–9 · 날개와 생명의 샘 (창작 도해)"
       }
     ]
   },

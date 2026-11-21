@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+ <title id="title">시편 19편 · 하늘과 말씀</title><desc id="desc">해가 뜨는 하늘과 펼친 두루마리. 시의 흐름을 보여 주는 창작 도해입니다.</desc>
+ <rect width="800" height="450" rx="24" fill="#f7f1e4"/><path d="M0 290 Q180 240 355 279 T800 248 V450 H0Z" fill="#d7d6ba"/>
+ <circle cx="220" cy="155" r="59" fill="#efc46c"/><g stroke="#dfa85c" stroke-width="6"><path d="M220 61v22M220 227v22M126 155h22M292 155h22M154 89l16 16M270 205l16 16M286 89l-16 16M170 205l-16 16"/></g>
+ <path d="M470 140q-26 0-26 25v137q0 24 26 24h218q27 0 27-24V165q0-25-27-25H470Z" fill="#fff9e9" stroke="#a67c58" stroke-width="5"/><path d="M468 141v184M687 141v184" stroke="#a67c58" stroke-width="12" stroke-linecap="round"/><g stroke="#b7a48a" stroke-width="5"><path d="M505 185h145M505 214h145M505 243h145M505 272h100"/></g>
+ <text x="30" y="45" font-family="sans-serif" font-size="23" fill="#38554b">시편 19편 · 하늘의 증언과 하나님의 가르침</text><text x="60" y="398" font-family="sans-serif" font-size="20" fill="#38554b">창조의 영광 (1–6절)</text><text x="460" y="398" font-family="sans-serif" font-size="20" fill="#38554b">말씀과 기도 (7–14절)</text>
+</svg>
