@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="540" viewBox="0 0 920 540" xml:lang="ko" role="img" aria-labelledby="title desc" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+<title id="title">에스라 2장 · 첫 귀환 공동체의 명부</title>
+<desc id="desc">바벨론 → 예루살렘과 유다의 여러 성읍 / 가문과 고향별로 귀환자를 기록함 (1–35절) → 성전 봉사 집단과 계보를 확인할 수 없는 이들을 기록함 (36–63절) → 회중의 총수와 헌물을 기록하고 각 성읍에 정착함 (64–70절) / 계보 문서(62) · 금과 은 · 제사장 옷(69) / 고고학 배경 아케메네스 금화 다릭</desc>
+<rect x="0" y="0" width="920" height="540" rx="20" fill="#f7f5ee"/>
+<text x="36" y="39" font-size="19" fill="#235f55" font-weight="700">에스라 2장 · 본문 도해</text>
+<text x="36" y="82" font-size="34" fill="#1d2d35" font-weight="700">첫 귀환 공동체의 명부</text>
+<rect x="36" y="105" width="848" height="78" rx="12" fill="#e1ede6"/>
+<text x="55" y="131" font-size="17" fill="#235f55" font-weight="700">장소</text>
+<text x="55" y="160" font-size="21" fill="#1d2d35">바벨론 → 예루살렘과 유다의 여러 성읍</text>
+<text x="36" y="214" font-size="18" fill="#235f55" font-weight="700">본문의 흐름</text>
+<path d="M77 252v116" fill="none" stroke="#235f55" stroke-width="2"/>
+<rect x="98" y="228" width="786" height="48" rx="10" fill="#fff"/>
+<circle cx="77" cy="252" r="6" fill="#235f55"/>
+<text x="117" y="259" font-size="18" fill="#235f55" font-weight="700">1–35절</text>
+<text x="216" y="259" font-size="20" fill="#1d2d35">가문과 고향별로 귀환자를 기록함</text>
+<rect x="98" y="286" width="786" height="48" rx="10" fill="#fff"/>
+<circle cx="77" cy="310" r="6" fill="#235f55"/>
+<text x="117" y="317" font-size="18" fill="#235f55" font-weight="700">36–63절</text>
+<text x="216" y="317" font-size="20" fill="#1d2d35">성전 봉사 집단과 계보를 확인할 수 없는 이들을 기록함</text>
+<rect x="98" y="344" width="786" height="48" rx="10" fill="#fff"/>
+<circle cx="77" cy="368" r="6" fill="#235f55"/>
+<text x="117" y="375" font-size="18" fill="#235f55" font-weight="700">64–70절</text>
+<text x="216" y="375" font-size="20" fill="#1d2d35">회중의 총수와 헌물을 기록하고 각 성읍에 정착함</text>
+<rect x="36" y="414" width="848" height="74" rx="12" fill="#e1ede6"/>
+<text x="55" y="440" font-size="17" fill="#235f55" font-weight="700">기물·기록·표지</text>
+<text x="55" y="468" font-size="20" fill="#1d2d35">계보 문서(62) · 금과 은 · 제사장 옷(69)</text>
+<text x="36" y="519" font-size="16" fill="#235f55">고고학 배경 · 아케메네스 금화 다릭</text>
+</svg>

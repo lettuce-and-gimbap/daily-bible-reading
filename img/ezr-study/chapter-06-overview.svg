@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="540" viewBox="0 0 920 540" xml:lang="ko" role="img" aria-labelledby="title desc" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+<title id="title">에스라 6장 · 조서 발견과 성전 봉헌</title>
+<desc id="desc">바벨론 문서고 · 메대 악메다 → 예루살렘 / 악메다에서 고레스의 조서를 찾고 다리오가 공사를 지원함 (1–12절) → 성전을 완공하고 봉헌하며 예배 직무를 배정함 (13–18절) → 귀환 공동체가 유월절과 무교절을 지킴 (19–22절) / 조서 두루마리(2) · 봉헌 제물(17) · 모세의 책(18) / 고고학 배경 악메다(헤그마타네) 유적</desc>
+<rect x="0" y="0" width="920" height="540" rx="20" fill="#f7f5ee"/>
+<text x="36" y="39" font-size="19" fill="#235f55" font-weight="700">에스라 6장 · 본문 도해</text>
+<text x="36" y="82" font-size="34" fill="#1d2d35" font-weight="700">조서 발견과 성전 봉헌</text>
+<rect x="36" y="105" width="848" height="78" rx="12" fill="#e1ede6"/>
+<text x="55" y="131" font-size="17" fill="#235f55" font-weight="700">장소</text>
+<text x="55" y="160" font-size="21" fill="#1d2d35">바벨론 문서고 · 메대 악메다 → 예루살렘</text>
+<text x="36" y="214" font-size="18" fill="#235f55" font-weight="700">본문의 흐름</text>
+<path d="M77 252v116" fill="none" stroke="#235f55" stroke-width="2"/>
+<rect x="98" y="228" width="786" height="48" rx="10" fill="#fff"/>
+<circle cx="77" cy="252" r="6" fill="#235f55"/>
+<text x="117" y="259" font-size="18" fill="#235f55" font-weight="700">1–12절</text>
+<text x="216" y="259" font-size="20" fill="#1d2d35">악메다에서 고레스의 조서를 찾고 다리오가 공사를 지원함</text>
+<rect x="98" y="286" width="786" height="48" rx="10" fill="#fff"/>
+<circle cx="77" cy="310" r="6" fill="#235f55"/>
+<text x="117" y="317" font-size="18" fill="#235f55" font-weight="700">13–18절</text>
+<text x="216" y="317" font-size="20" fill="#1d2d35">성전을 완공하고 봉헌하며 예배 직무를 배정함</text>
+<rect x="98" y="344" width="786" height="48" rx="10" fill="#fff"/>
+<circle cx="77" cy="368" r="6" fill="#235f55"/>
+<text x="117" y="375" font-size="18" fill="#235f55" font-weight="700">19–22절</text>
+<text x="216" y="375" font-size="20" fill="#1d2d35">귀환 공동체가 유월절과 무교절을 지킴</text>
+<rect x="36" y="414" width="848" height="74" rx="12" fill="#e1ede6"/>
+<text x="55" y="440" font-size="17" fill="#235f55" font-weight="700">기물·기록·표지</text>
+<text x="55" y="468" font-size="20" fill="#1d2d35">조서 두루마리(2) · 봉헌 제물(17) · 모세의 책(18)</text>
+<text x="36" y="519" font-size="16" fill="#235f55">고고학 배경 · 악메다(헤그마타네) 유적</text>
+</svg>
