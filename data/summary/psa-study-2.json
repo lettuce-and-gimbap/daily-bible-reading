@@ -744,6 +744,13 @@
         "label": "Mechon Mamre 히브리어 성경, 시편 84편",
         "url": "https://www.mechon-mamre.org/p/pt/pt2684.htm"
       }
+    ],
+    "figures": [
+      {
+        "id": "birds-nest",
+        "label": "84:3 · 제비의 보금자리 (성소를 향한 시)",
+        "sourceUrl": "https://www.metmuseum.org/art/collection/search/550779"
+      }
     ]
   },
   "85": {
@@ -901,6 +908,12 @@
       {
         "label": "Mechon Mamre 히브리어 성경, 시편 91편",
         "url": "https://www.mechon-mamre.org/p/pt/pt2691.htm"
+      }
+    ],
+    "figures": [
+      {
+        "id": "wings-shelter",
+        "label": "91:4 · 날개 아래 피함 (보호의 비유)"
       }
     ]
   },

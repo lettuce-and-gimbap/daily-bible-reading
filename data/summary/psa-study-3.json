@@ -432,6 +432,13 @@
         "label": "Mechon Mamre 히브리어 성경, 시편 119:1",
         "url": "https://mechon-mamre.org/p/pt/pt26b9.htm"
       }
+    ],
+    "figures": [
+      {
+        "id": "lamp-path",
+        "label": "119:105 · 길을 비추는 등 (말씀의 비유)",
+        "sourceUrl": "https://www.metmuseum.org/art/collection/search/325342"
+      }
     ]
   },
   "120": {
@@ -471,6 +478,12 @@
       {
         "label": "Mechon Mamre 히브리어 성경, 시편 121:3–4",
         "url": "https://mechon-mamre.org/p/pt/pt26c1.htm"
+      }
+    ],
+    "figures": [
+      {
+        "id": "hills-help",
+        "label": "121:1–2 · 산을 향한 눈과 도움 (시적 이미지)"
       }
     ]
   },
@@ -571,6 +584,12 @@
       {
         "label": "시편 126편 히브리어 본문 (Mechon Mamre; 발음은 한글 근사치; 한글·히브리어 절 번호 동일)",
         "url": "https://mechon-mamre.org/p/pt/pt26c6.htm"
+      }
+    ],
+    "figures": [
+      {
+        "id": "sowing-harvest",
+        "label": "126:5–6 · 눈물의 씨 뿌림과 기쁨의 수확 (비유)"
       }
     ]
   },

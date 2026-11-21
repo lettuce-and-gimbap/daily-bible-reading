@@ -428,6 +428,12 @@
         "url": "https://mechon-mamre.org/p/pt/pt2618.htm",
         "label": "시편 18:2 히브리어 본문 (Mechon Mamre)"
       }
+    ],
+    "figures": [
+      {
+        "id": "rock-fortress",
+        "label": "18:2 · 반석과 요새 (보호의 비유)"
+      }
     ]
   },
   "19": {
@@ -1018,6 +1024,12 @@
         "label": "Mechon Mamre 히브리어 본문 시편 42:2 (한글 성경 42:1)",
         "url": "https://mechon-mamre.org/p/pt/pt2642.htm"
       }
+    ],
+    "figures": [
+      {
+        "id": "deer-stream",
+        "label": "42:1 · 시냇물을 찾는 사슴 (갈망의 비유)"
+      }
     ]
   },
   "43": {
@@ -1116,6 +1128,12 @@
       {
         "label": "시편 46:2 히브리어 본문 (한국어 46:1; Mechon Mamre)",
         "url": "https://mechon-mamre.org/p/pt/pt2646.htm"
+      }
+    ],
+    "figures": [
+      {
+        "id": "mountains-river",
+        "label": "46:2–4 · 흔들리는 산과 흐르는 시내 (시적 대비)"
       }
     ]
   },
