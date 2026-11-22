@@ -633,6 +633,19 @@ function rgOpen(id) {
   el.querySelector(".rg-close").focus();
 }
 
+// 표제와 본문 절이 섞인 참조에서는 절 번호만 본문 조회에 사용한다.
+function rgVerseNumbers(verses) {
+  const result = new Set();
+  for (const part of String(verses || "").split(",")) {
+    const match = part.trim().match(/^(\d{1,3})(?:\s*[-–]\s*(\d{1,3}))?\s*절?$/);
+    if (!match) continue;
+    const start = Number(match[1]), end = Number(match[2] || match[1]);
+    if (start < 1 || end < start || end > 176) continue;
+    for (let n = start; n <= end; n++) result.add(n);
+  }
+  return result;
+}
+
 // 구절 풀이의 장·절 버튼 → 그 절의 개역개정4판·쉬운성경 원문을 풀이 아래에 펼침 (다시 누르면 접힘)
 async function rgShowOrig(btn, src) {
   const box = btn.parentElement.querySelector(".rg-orig");
@@ -643,8 +656,12 @@ async function rgShowOrig(btn, src) {
   if (open || box.dataset.done) return;
   box.innerHTML = `<p class="muted small">본문 불러오는 중…</p>`;
   const idx = CHAPTERS.findIndex((c) => c.book.code === src.book && c.chap === src.chap);
-  const want = new Set();
-  String(src.verses).split(/,s*/).forEach((p) => { const [a, b] = p.split("-").map(Number); for (let n = a; n <= (b || a); n++) want.add(n); });
+  const want = rgVerseNumbers(src.verses);
+  if (!want.size) {
+    box.innerHTML = `<p class="muted small">이 설명은 절 번호가 없는 표제를 참고해요. 본문 절은 따로 연결되지 않았어요.</p>`;
+    box.dataset.done = "1";
+    return;
+  }
   try {
     if (!PUSH_SERVER || idx < 0) throw new Error("no-server");
     const rows = await versePairs(idx, (n) => want.has(n), ["gae", "easy"]);

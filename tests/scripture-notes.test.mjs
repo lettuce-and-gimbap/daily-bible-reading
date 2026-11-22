@@ -16,6 +16,20 @@ test('시편 119편 후반 구간 주석이 빠짐없이 이어진다',()=>{
  for(const n of notes){assert.equal(n.lo,next);assert.equal(n.hi,n.lo+7);next=n.hi+1;}
  assert.equal(next,177);
 });
+test('시편 119편 구간 주석은 보이는 범위의 첫 절에 한 번 표시된다',()=>{
+ const document={addEventListener(){},createElement(){return {children:[],append(child){this.children.push(child)}}}};
+ const localStorage={getItem(){return null},setItem(){}};
+ const env={window:{ScriptureNotesData:ctx.window.ScriptureNotesData},document,localStorage,CHAPTERS:[{book:{code:'psa'},chap:119}],console};
+ vm.runInNewContext(fs.readFileSync('js/features/scripture-study.js','utf8'),env);
+ function run(verses){
+  const boxes=verses.map(()=>({children:[],append(child){this.children.push(child)}}));
+  const rows=verses.map((verse,i)=>({dataset:{},querySelector(s){if(s==='.vp-num')return {textContent:String(verse)};if(s==='.vp-txt')return boxes[i];return null},querySelectorAll(){return []},nextElementSibling:null}));
+  const root={dataset:{},querySelectorAll(s){return s==='.vp-row'?rows:[]},querySelector(){return null}};
+  env.window.ScriptureStudy.mount(root,verses.map(n=>`0:gae:easy:${n}`));return boxes;
+ }
+ let boxes=run([89,90,91,96,97]);assert.deepEqual(boxes.map(b=>b.children.length),[1,0,0,0,1]);
+ boxes=run([92,93]);assert.deepEqual(boxes.map(b=>b.children.length),[1,0]);
+});
 test('ambiguous terms have contextual restrictions',()=>{
  const adoption=terms.find(t=>t.aliases.includes('양자'));assert(adoption.books.includes('rom'));assert(!adoption.books.includes('est'));
  assert(!terms.some(t=>t.aliases.includes('마지막 날')));
