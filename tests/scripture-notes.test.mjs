@@ -6,9 +6,15 @@ const ctx={window:{}};vm.runInNewContext(fs.readFileSync('js/features/scripture-
 const {terms,passages,sources}=ctx.window.ScriptureNotesData;
 const bible=fs.readFileSync('js/core/bible.js','utf8');const books=vm.runInNewContext(bible+';BOOKS',{});
 test('curated notes have valid references, unique identities and reviewable sources',()=>{
- assert.equal(terms.length,71);assert.equal(passages.length,5);
+ assert.equal(terms.length,71);assert.equal(passages.length,16);
  const ids=new Set();for(const t of [...terms,...passages]){assert(!ids.has(t.id));ids.add(t.id);assert(t.title&&t.summary&&t.refs.length);for(const ref of t.refs){const m=ref.match(/^(.+?) (\d+):(\d+)(?:[-–](\d+))?$/);assert(m,ref);const b=books.find(x=>x.name===m[1]);assert(b&&Number(m[2])<=b.chapters,ref);assert(Number(m[3])>0&&Number(m[4]||m[3])>=Number(m[3]),ref);}for(const chapter of t.wcf)assert(chapter>=1&&chapter<=33);}
  for(const x of Object.values(sources))assert(new URL(x.url).protocol==='https:');
+});
+test('시편 119편 후반 구간 주석이 빠짐없이 이어진다',()=>{
+ const notes=passages.filter(n=>n.code==='psa'&&n.chapter===119).sort((a,b)=>a.lo-b.lo);
+ assert.equal(notes.length,11);let next=89;
+ for(const n of notes){assert.equal(n.lo,next);assert.equal(n.hi,n.lo+7);next=n.hi+1;}
+ assert.equal(next,177);
 });
 test('ambiguous terms have contextual restrictions',()=>{
  const adoption=terms.find(t=>t.aliases.includes('양자'));assert(adoption.books.includes('rom'));assert(!adoption.books.includes('est'));
