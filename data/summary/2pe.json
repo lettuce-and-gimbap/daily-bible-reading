@@ -49,7 +49,8 @@
         {"name":"노아","role":"보존된 의의 전파자","weight":2},
         {"name":"롯","role":"건짐받은 의인","weight":2},
         {"name":"발람","role":"불의의 삯을 사랑한 선지자","weight":2},
-        {"name":"하나님","role":"경건한 자를 건지시는 분","weight":3}
+        {"name":"하나님","role":"경건한 자를 건지시는 분","weight":3},
+        {"name":"성도들","role":"거짓 선생의 경고를 받은 교회","weight":2}
       ],
       "rels": [
         {"from":"거짓 선생들","to":"성도들","label":"교회를 미혹함","kind":"conflict","directed":true,"weight":3,"verses":"1-3","note":"옛 이스라엘에 거짓 선지자가 있었듯 교회 안에도 거짓 선생들이 몰래 들어와 사람들을 속인다고 베드로가 경고해요."},

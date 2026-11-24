@@ -425,8 +425,8 @@
       "rels": [
         {"from":"예수","to":"베드로","label":"알려 주심","kind":"ally","directed":true,"weight":2,"verses":"3-5","note":"성전을 마주한 올리브 산에서 네 제자가 따로 물었어요. 예수님은 징조를 따지기보다 미혹을 조심하고 깨어 있으라고 답하셨어요."},
         {"from":"성령","to":"제자들","label":"말하게 하심","kind":"ally","directed":true,"weight":1,"verses":"11","note":"붙잡혀 끌려가도 무슨 말을 할까 미리 염려하지 말라 하셨어요. 말하는 이는 제자들이 아니라 성령이세요."},
-        {"from":"베드로","to":"안드레","label":"형제","kind":"family","directed":false,"weight":1,"verses":"1:16; 13:3","note":"1장에서 형제로 소개된 베드로와 안드레는 성전 파괴의 때를 함께 물었어요."},
-        {"from":"야고보","to":"요한","label":"형제","kind":"family","directed":false,"weight":1,"verses":"1:19; 13:3","note":"1장에서 형제로 소개된 야고보와 요한도 성전 파괴의 때를 함께 물었어요."}
+        {"from":"베드로","to":"안드레","label":"형제","kind":"family","directed":false,"weight":1,"verses":"3","note":"1장에서 형제로 소개된 베드로와 안드레는 성전 파괴의 때를 함께 물었어요."},
+        {"from":"야고보","to":"요한","label":"형제","kind":"family","directed":false,"weight":1,"verses":"3","note":"1장에서 형제로 소개된 야고보와 요한도 성전 파괴의 때를 함께 물었어요."}
       ],
       "places": [
         {"name":"감람산","where":"성전 맞은편 산","what":"마지막 때를 가르치신 곳","weight":3},

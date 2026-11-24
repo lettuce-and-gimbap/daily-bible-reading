@@ -127,7 +127,7 @@
         {"from":"누가","to":"바울","label":"함께 있음","kind":"ally","directed":true,"weight":2,"verses":"11","note":"다른 이들이 떠난 때에도 의사 누가만 바울 곁에 남아 있었어요."},
         {"from":"바울","to":"마가","label":"데려오라 함","kind":"ally","directed":true,"weight":2,"verses":"11","note":"바울은 마가가 자신의 일에 유익하다며 데려오라고 해요. 전에 갈등이 있었던 마가를 이제 쓸모 있는 동역자로 여겨요."},
         {"from":"알렉산더","to":"바울","label":"해를 입힘","kind":"conflict","directed":true,"weight":2,"verses":"14-15","note":"구리 세공업자 알렉산더가 바울에게 해를 많이 끼쳤고 말씀을 심히 반대했어요. 바울은 디모데에게도 조심하라고 경고해요."},
-        {"from":"예수","to":"바울","label":"곁에 서심","kind":"ally","directed":true,"weight":3,"verses":"16-17절","note":"첫 변론 때 사람들이 모두 떠났지만 주님이 곁에서 힘을 주셨어요. 그래서 복음이 모든 이방인에게 전파되었어요."}
+        {"from":"예수","to":"바울","label":"곁에 서심","kind":"ally","directed":true,"weight":3,"verses":"16-17","note":"첫 변론 때 사람들이 모두 떠났지만 주님이 곁에서 힘을 주셨어요. 그래서 복음이 모든 이방인에게 전파되었어요."}
       ],
       "places": [
         {"name":"데살로니가","where":"마게도냐의 도시","what":"데마가 간 곳","weight":1},

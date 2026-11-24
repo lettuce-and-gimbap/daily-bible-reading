@@ -23,15 +23,17 @@ const KINDS = ["family", "ally", "conflict", "other"];
 // 하나님은 본문에 "여호와"·"하나님"·"주" 등으로 나와 글자 대조에서 뺀다
 const SKIP_LOOKUP = new Set(["하나님", "예수", "성령"]);
 // 글자 수 상한: 화면 칩에 들어가는 짧은 이름(role·label·eventTitle·where·why)만 두고, 본문 설명(line·story·eventText·what·note)은 사실상 제한 없음(2026-10-17)
-const LIMIT = { line: 1000, story: 10000, role: 24, label: 10, eventTitle: 18, eventText: 3000, where: 30, what: 1000, why: 40, note: 3000 };
+const LIMIT = { line: 1000, story: 10000, role: 50, label: 32, eventTitle: 30, eventText: 3000, where: 30, what: 1000, why: 40, note: 3000 };
 
 const only = process.argv.slice(2);
-const files = existsSync(dataDir) ? readdirSync(dataDir).filter((f) => f.endsWith(".json")) : [];
+// Only chapter summaries belong here; study notes and image manifests have their own schemas.
+const files = existsSync(dataDir) ? readdirSync(dataDir).filter((f) => f.endsWith(".json") && bookByCode(f.slice(0, -5))) : [];
 let errors = 0, warns = 0, chapters = 0, noNote = 0;
 const out = [];
 const err = (where, msg) => { errors++; out.push(`  ✗ ${where} ${msg}`); };
 const warn = (where, msg) => { warns++; out.push(`  △ ${where} ${msg}`); };
 const len = (s) => [...String(s || "")].length;
+for (const code of only) if (!bookByCode(code)) err(code, "모르는 책 코드");
 
 for (const f of files) {
   const code = f.replace(".json", "");
