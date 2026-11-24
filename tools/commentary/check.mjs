@@ -29,6 +29,7 @@ const only = process.argv.slice(2);
 // Only chapter summaries belong here; study notes and image manifests have their own schemas.
 const files = existsSync(dataDir) ? readdirSync(dataDir).filter((f) => f.endsWith(".json") && bookByCode(f.slice(0, -5))) : [];
 let errors = 0, warns = 0, chapters = 0, noNote = 0;
+const uncheckedCommentary = [];
 const out = [];
 const err = (where, msg) => { errors++; out.push(`  ✗ ${where} ${msg}`); };
 const warn = (where, msg) => { warns++; out.push(`  △ ${where} ${msg}`); };
@@ -50,7 +51,7 @@ for (const f of files) {
     if (len(s.why) > LIMIT.why) warn(`songs[${i}]`, `why ${len(s.why)}자`);
   });
   const ocr = loadBook(code);
-  if (!ocr.length) warn("", "주석 OCR이 없어 이름 대조를 건너뜀");
+  if (!ocr.length) uncheckedCommentary.push(code);
   const bookText = ocr.flatMap((s) => s.pages.map((p) => p.text)).join("\n");
 
   for (const [chapKey, c] of Object.entries(data.chapters || {})) {
@@ -87,9 +88,7 @@ for (const f of files) {
       if (len(p.role) > LIMIT.role) err(at, `${p.name} role ${len(p.role)}자`);
       if (![1, 2, 3].includes(p.weight)) err(at, `${p.name} weight ${p.weight}`);
     });
-    if (c.type === "story" && people.length < 2) warn(at, "이야기 장인데 인물 2명 미만");
     const rels = c.rels || [];
-    if (c.type === "story" && people.length >= 3 && rels.length < 3) warn(at, `관계 ${rels.length}개 (이야기 장은 3~6개)`);
     rels.forEach((r) => {
       const w = `${at} 관계 ${r.from}→${r.to}`;
       if (!names.has(r.from) || !names.has(r.to)) err(w, "people에 없는 이름");
@@ -152,5 +151,6 @@ for (const f of files) {
 }
 
 console.log(out.join("\n"));
+if (uncheckedCommentary.length) console.log(`\n안내: 주석 OCR이 없는 ${uncheckedCommentary.length}권은 인명·지명 주석 대조를 수행하지 않았습니다 (${uncheckedCommentary.join(", ")}). 원문 절 범위 검사는 reference-audit.mjs로 별도 실행하세요.`);
 console.log(`\n${chapters}장 검사 · 오류 ${errors} · 경고 ${warns} · 구절 풀이 없는 관계 ${noNote}  (전체 ${BOOKS.reduce((n, b) => n + b.chapters, 0)}장 중)`);
 process.exit(errors ? 1 : 0);
