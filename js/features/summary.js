@@ -114,6 +114,7 @@ function wisdomStudyHtml(entries) {
   return `<section class="tool-card sum-card"><h3 class="label">장별 주석 · 개혁주의 관점</h3>
     ${entries.map(({ ref, note, code }) => `<details class="wisdom-study"><summary><strong>${esc(ref)}</strong> · ${esc(note.heading)}</summary>
       ${note.paragraphs.map((paragraph) => `<p>${esc(paragraph)}</p>`).join("")}
+      ${(note.realFigures || []).map((figure) => chapterStudyFigure(code, figure)).join("")}
       ${(note.figures || (note.figure ? [note.figure] : [])).map((figure) => chapterStudyFigure(code, figure)).join("")}
       ${note.sources?.length ? `<p class="muted small">참고 자료 · ${note.sources.map(wisdomSourceLink).join(" · ")}</p>` : ""}</details>`).join("")}
   </section>`;
@@ -127,6 +128,13 @@ const genesisFigures = new Map([
 ]);
 
 function chapterStudyFigure(code, figure) {
+  if (figure && typeof figure === "object" && figure.src) {
+    if (!/^img\/real-reference\/(?:[a-z0-9-]+\/)*[a-z0-9-]+\.(?:jpg|jpeg|png)$/.test(figure.src) || !figure.label) return "";
+    const source = figure.sourceUrl ? wisdomSourceLink({ label: "원본 소장 정보", url: figure.sourceUrl }) : "";
+    const license = figure.licenseUrl ? wisdomSourceLink({ label: "이용 조건", url: figure.licenseUrl }) : "";
+    const references = (figure.references || []).map(wisdomSourceLink).join(" · ");
+    return `<figure class="wisdom-map"><img src="${esc(figure.src)}" alt="${esc(figure.alt || figure.label)}" loading="lazy"><figcaption>${esc(figure.label)} ${source} ${license} ${references}</figcaption></figure>`;
+  }
   const directory = { gen: "genesis-study", exo: "exodus-study", lev: "leviticus-study", num: "numbers-study", deu: "deu-study", jos: "jos-study", jdg: "jdg-study", rut: "rut-study", "1sa": "1sa-study", "2sa": "2sa-study", "1ki": "1ki-study", "2ki": "2ki-study", "1ch": "1ch-study", "2ch": "2ch-study", ezr: "ezr-study", neh: "neh-study", est: "est-study", job: "job-study", psa: "psa-study", pro: "pro-study", ecc: "ecc-study", sng: "sng-study", isa: "isa-study", jer: "jer-study", lam: "lam-study" }[code];
   const id = typeof figure === "string" ? figure : figure?.id;
   const label = typeof figure === "string" ? genesisFigures.get(figure) : figure?.label;
@@ -168,10 +176,11 @@ function staticDaySummary(day) {
   const opts = { all: !!state.settings.graphAll };
   const out = composeDay(chapters, books, opts);
   const wisdom = chapters.filter(({ book }) => ["job", "psa", "pro"].includes(book.code));
+  const realFigures = wisdomData("real-figures");
   out.wisdomStudy = chapters.filter(({ book }) => ["gen", "exo", "lev", "num", "deu", "jos", "jdg", "rut", "1sa", "2sa", "1ki", "2ki", "1ch", "2ch", "ezr", "neh", "est", "job", "psa", "pro", "ecc", "sng", "isa", "jer", "lam"].includes(book.code)).flatMap(({ book, chap }) => {
     const part = book.code === "psa" ? `-${Math.ceil(chap / 50)}` : "";
     const note = wisdomData(`${book.code}-study${part}`)?.[chap];
-    return note ? [{ code: book.code, ref: `${book.name} ${chap}${chapUnit(book)}`, note }] : [];
+    return note ? [{ code: book.code, ref: `${book.name} ${chap}${chapUnit(book)}`, note: { ...note, realFigures: realFigures?.[book.code]?.[chap] || [] } }] : [];
   });
   const showBabel = chapters.some(({ book, chap }) => book.code === "gen" && chap === 11);
   out.wisdomPlaces = wisdom.length ? wisdomData("wisdom-places") : null;
