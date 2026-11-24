@@ -16,7 +16,7 @@ const { composeDay } = require("../../js/features/summary-data.js");
 const { aliases } = JSON.parse(readFileSync(join(here, "names.json"), "utf8"));
 // 대표 이름 → 본문에 나올 수 있는 다른 이름들 (아브라함 → 아브람)
 const otherNames = {};
-for (const [alt, main] of Object.entries(aliases)) (otherNames[main] = otherNames[main] || []).push(alt.replace(/(.*)/, "").trim());
+for (const [alt, main] of Object.entries(aliases)) (otherNames[main] = otherNames[main] || []).push(alt.trim());
 
 const TYPES = ["story", "law", "list", "poem", "wisdom", "prophecy", "letter", "vision"];
 const KINDS = ["family", "ally", "conflict", "other"];
@@ -62,7 +62,8 @@ for (const f of files) {
     if (!c.line || len(c.line) > LIMIT.line) err(at, `line ${len(c.line)}자 (1~${LIMIT.line})`);
     if (!c.story || len(c.story) > LIMIT.story) err(at, `story ${len(c.story)}자 (1~${LIMIT.story})`);
     const events = c.events || [];
-    if (events.length < 2 || events.length > 5) warn(at, `사건 ${events.length}개 (2~5)`);
+    // 보강된 장은 사건이 여섯 개 이상일 수 있으며 앱의 전체 보기에서 표시한다.
+    if (events.length < 2) warn(at, `사건 ${events.length}개 (2개 미만)`);
     let lastStart = 0;
     events.forEach((e, i) => {
       const w = `${at} 사건${i + 1}`;

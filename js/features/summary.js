@@ -223,6 +223,7 @@ function staticSummaryHtml(s) {
       <h3 class="label">${s.eventsTitle}</h3>
       <ol class="sum-events">${s.events.map((e) => `
         <li><div><b>${esc(e.title)}</b><small>${esc(e.ref)}</small></div><p>${summaryMarkdown(e.text)}</p></li>`).join("")}</ol>
+      ${s.allEvents?.length > s.events.length ? `<details class="wisdom-study"><summary>전체 ${s.allEvents.length}개 보기</summary><ol class="sum-events">${s.allEvents.map((e) => `<li><div><b>${esc(e.title)}</b><small>${esc(e.ref)}</small></div><p>${summaryMarkdown(e.text)}</p></li>`).join("")}</ol></details>` : ""}
     </section>` : "";
   const places = s.places.length ? `
     <section class="tool-card sum-card">

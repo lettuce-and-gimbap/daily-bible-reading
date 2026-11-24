@@ -86,6 +86,7 @@ export function chapterText(series, chap) {
 // 띄어쓰기를 무시하고 찾음. 3글자 이상 이름은 OCR 오타 한 글자까지 봐 줌
 export function findName(hay, name) {
   const h = hay.replace(/\s+/g, ""), n = name.replace(/\s+/g, "");
+  if (!n) return null;
   if (h.includes(n)) return "exact";
   if (n.length >= 3) {
     for (let i = 0; i + n.length <= h.length; i++) {

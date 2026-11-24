@@ -31,6 +31,8 @@ function composeDay(chapters, books, opts = {}) {
   const per = eventsPerChapter(n);
   const events = chapters.flatMap((c) => (c.data.events || []).slice(0, per)
     .map((e) => ({ title: e.title, text: e.text, ref: ref(c, e.verses) }))).slice(0, SUMMARY_LIMITS.events);
+  const allEvents = chapters.flatMap((c) => (c.data.events || [])
+    .map((e) => ({ title: e.title, text: e.text, ref: ref(c, e.verses) })));
 
   // 인물: 그날 모든 장의 인물을 모음. 이름이 같으면 한 사람, 비중(1~3)을 더함. 나오는 장을 기록
   const people = new Map();
@@ -125,7 +127,7 @@ function composeDay(chapters, books, opts = {}) {
   // 이야기 장이 하나도 없으면(시·율법·서신) "주요 사건" 대신 "주요 내용"
   const hasStory = chapters.some((c) => c.data.type === "story");
   return {
-    flowMode, flow, events, eventsTitle: hasStory ? "주요 사건" : "주요 내용",
+    flowMode, flow, events, allEvents, eventsTitle: hasStory ? "주요 사건" : "주요 내용",
     people: list, graphPeople, rels: topRels, renames, places: topPlaces, songs, mainBook,
   };
 }
