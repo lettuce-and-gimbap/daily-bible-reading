@@ -1,8 +1,19 @@
 // User marks contain only reference keys, colors and notes, never a second stored copy of scripture.
 window.ScriptureStudy=(()=>{
  const data=window.ScriptureNotesData||{terms:[],sources:{}};
+ data.passages ||= [];
  const contextualTerms=data.contextualTerms||[];
  const glossary=Object.fromEntries([...data.terms,...(data.passages||[]),...contextualTerms].map(t=>[t.id,t]));
+ const verseBooks=new Set(['1sa','2sa','1ki','2ki']),verseLoads=new Map(),verseLoaded=new Set();
+ function loadVerseNotes(code){
+  if(!verseBooks.has(code))return null;
+  if(!verseLoads.has(code))verseLoads.set(code,Promise.all([`${code}.json`,`${code}-existing.json`].map(file=>fetch(`data/verse-study/${file}`,{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error(`주석 로드 실패: ${file}`);return r.json();}).catch(error=>{console.error(error);return {passages:[]};}))).then(payloads=>{
+   for(const payload of payloads){const notes=Array.isArray(payload)?payload:payload.passages;if(!Array.isArray(notes))continue;
+    for(const note of notes){if(note.code!==code||!note.id||glossary[note.id])continue;data.passages.push(note);glossary[note.id]=note;}}
+   verseLoaded.add(code);return true;
+  }));
+  return verseLoads.get(code);
+ }
  const aliases=[...contextualTerms,...data.terms].flatMap(t=>t.aliases.map(word=>({word,term:t}))).sort((a,b)=>b.word.length-a.word.length);
  const regexEscape=s=>Array.from(s,c=>'.*+?^${}()|[]'.includes(c)||c.charCodeAt(0)===92?String.fromCharCode(92)+c:c).join('');
  const storage='scripture-study:v1';let records={};try{records=JSON.parse(localStorage.getItem(storage))||{};}catch(_){}
@@ -14,10 +25,15 @@ window.ScriptureStudy=(()=>{
   const pattern=new RegExp(`(^|[^ㄱ-ㅎㅏ-ㅣ가-힣])(${available.map(a=>regexEscape(a.word)).join('|')})`,'g');let start=0,out='';
   for(const m of text.matchAll(pattern)){const word=m[2],at=m.index+m[1].length,g=available.find(a=>a.word===word).term;out+=esc(text.slice(start,at))+`<span class="study-term" role="button" tabindex="0" data-study-term="${esc(g.id)}" aria-label="${esc(g.title)} 뜻 보기">${esc(word)}</span>`;start=at+word.length;}return out+esc(text.slice(start));
  }
+ function studyFigureHtml(im){
+  const url=String(im.url||'');if(!/^https:\/\//.test(url)&&!/^img\/real-reference\/(?:[a-z0-9-]+\/)*[a-z0-9-]+\.(?:jpg|jpeg|png)$/.test(url))return '';
+  const page=String(im.pageUrl||''),license=String(im.licenseUrl||(String(im.credit||'').match(/https:\/\/creativecommons\.org\/[^\s),]+/)||[])[0]||'');
+  return `<figure class="study-figure"><img src="${esc(url)}" alt="${esc(im.caption||'')}" loading="lazy" referrerpolicy="no-referrer"><figcaption>${esc(im.caption||'')} <small>${esc(im.credit||'')}${page.startsWith('https://')?` · <a target="_blank" rel="noopener noreferrer" href="${esc(page)}">원본 ↗</a>`:''}${license.startsWith('https://')?` · <a target="_blank" rel="noopener noreferrer" href="${esc(license)}">이용 조건 ↗</a>`:''}</small></figcaption></figure>`;
+ }
  function showTerm(g){
   const contexts=[...new Set((g.locations||[]).map(x=>`${x.code==='gen'?'창세기':x.code==='exo'?'출애굽기':x.code==='1ch'?'역대상':x.code==='2ch'?'역대하':x.code} ${x.chapter}장`))];
-  const sourceText=contexts.length?`개역개정 4판과 쉬운성경의 관련 절 및 제공받은 호크마 ${contexts.join(' · ')} 정리를 대조하여 앱에서 작성했어요. 교단이 발행한 공식 주석은 아니에요. 칼뱅이나 편집자 주석을 참고한 경우 해당 항목에 따로 밝혀요.`:'두 역본과 제공받은 호크마 참고 자료를 바탕으로 앱에서 정리한 설명이에요. 교단이 발행한 공식 주석은 아니에요. 교리적 설명은 예장합동이 표준으로 삼는 웨스트민스터 신앙고백을 참고해요.';
-  const body=modal(g.title);body.innerHTML=`<small>${esc(g.category)} · 직접 정리한 설명</small><p>${esc(g.summary)}</p>${g.detail?`<p>${esc(g.detail)}</p>`:''}${(g.images||[]).filter(im=>String(im.url).startsWith('https://')).map(im=>`<figure class="study-figure"><img src="${esc(im.url)}" alt="${esc(im.caption)}" loading="lazy" referrerpolicy="no-referrer"><figcaption>${esc(im.caption)} <small>${esc(im.credit)}${String(im.pageUrl||'').startsWith('https://')?` · <a target="_blank" rel="noopener noreferrer" href="${esc(im.pageUrl)}">원본 ↗</a>`:''}</small></figcaption></figure>`).join('')}${g.caution?`<p class="study-caution"><strong>읽을 때 유의해요</strong><br>${esc(g.caution)}</p>`:''}${g.lens?`<details><summary>개혁주의 관점</summary><p>${esc(g.lens)}</p><small>웨스트민스터 신앙고백 ${g.wcf.map(n=>n+'장').join(' · ')}</small></details>`:''}<p class="study-reference">관련 구절: ${g.refs.map(r=>`<button type="button" data-study-reference="${esc(r)}">${esc(r)}</button>`).join(' ')}</p><details><summary>설명의 기준과 출처</summary><p>${esc(sourceText)}</p>${[...(contexts.length&&!g.lens?[]:Object.values(data.sources)),...(g.sourceLinks||[])].map(x=>`<p><a target="_blank" rel="noopener noreferrer" href="${esc(x.url)}">${esc(x.label)} ↗</a></p>`).join('')}</details>`;
+  const sourceText=g.sourceNote|| (contexts.length?`개역개정 4판과 쉬운성경의 관련 절 및 제공받은 호크마 ${contexts.join(' · ')} 정리를 대조하여 앱에서 작성했어요. 교단이 발행한 공식 주석은 아니에요. 칼뱅이나 편집자 주석을 참고한 경우 해당 항목에 따로 밝혀요.`:'두 역본과 제공받은 호크마 참고 자료를 바탕으로 앱에서 정리한 설명이에요. 교단이 발행한 공식 주석은 아니에요. 교리적 설명은 예장합동이 표준으로 삼는 웨스트민스터 신앙고백을 참고해요.');
+  const body=modal(g.title);body.innerHTML=`<small>${esc(g.category)} · ${g.sourceNote?'AI 작성':'직접 정리한 설명'}</small><p>${esc(g.summary)}</p>${g.detail?`<p>${esc(g.detail)}</p>`:''}${(g.images||[]).map(studyFigureHtml).join('')}${g.caution?`<p class="study-caution"><strong>읽을 때 유의해요</strong><br>${esc(g.caution)}</p>`:''}${g.lens?`<details><summary>개혁주의 관점</summary><p>${esc(g.lens)}</p><small>웨스트민스터 신앙고백 ${g.wcf.map(n=>n+'장').join(' · ')}</small></details>`:''}<p class="study-reference">관련 구절: ${g.refs.map(r=>`<button type="button" data-study-reference="${esc(r)}">${esc(r)}</button>`).join(' ')}</p><details><summary>설명의 기준과 출처</summary><p>${esc(sourceText)}</p>${[...(g.sourceNote||contexts.length&&!g.lens?[]:Object.values(data.sources)),...(g.sourceLinks||[])].map(x=>`<p><a target="_blank" rel="noopener noreferrer" href="${esc(x.url)}">${esc(x.label)} ↗</a></p>`).join('')}</details>`;
  }
  document.addEventListener('click',async e=>{
   const button=e.target.closest('[data-study-reference]');if(!button)return;e.preventDefault();const body=button.closest('.study-dialog-body');let output=body.querySelector('.study-reference-verses');if(!output){output=document.createElement('section');output.className='study-reference-verses';output.setAttribute('aria-live','polite');body.append(output);}const request=button.dataset.studyReference;output.dataset.request=request;output.textContent='구절을 불러오는 중이에요…';
@@ -87,7 +103,10 @@ window.ScriptureStudy=(()=>{
  document.addEventListener('scroll',()=>{if(window.getSelection()?.isCollapsed)closeTip();else positionTip();},true);
  function mount(root,keys,{dock=false}={}){
   root.dataset.studyRoot='true';
+  const mountKey=keys.join('|');root.dataset.studyMountKey=mountKey;
   if(dock)root.dataset.studyDocked='true';
+  const codes=[...new Set(keys.map(key=>typeof CHAPTERS!=='undefined'?CHAPTERS[Number(key.split(':')[0])]?.book?.code:null).filter(code=>verseBooks.has(code)&&!verseLoaded.has(code)))];
+  if(codes.length)Promise.all(codes.map(loadVerseNotes)).then(results=>{if(results.some(Boolean)&&root.isConnected&&root.dataset.studyMountKey===mountKey)mount(root,keys,{dock});});
   const rows=[...root.querySelectorAll('.vp-row')],shownPassages=new Set();
   rows.forEach((row,i)=>{row.dataset.studyKey=keys[i];const [idx]=keys[i].split(':');const context=typeof CHAPTERS!=='undefined'?CHAPTERS[Number(idx)]:null;const span=row.querySelector('.vp-num').textContent.match(/\d+/g)||[];const lo=Number(span[0]),hi=Number(span[1]||span[0]);
    row.querySelector('.study-passage-links')?.remove();const notes=(data.passages||[]).filter(n=>n.code===context?.book.code&&n.chapter===context?.chap&&n.lo<=hi&&n.hi>=lo&&(!n.oncePerPassage||!shownPassages.has(n.id)));if(notes.length){const links=document.createElement('div');links.className='study-passage-links';for(const n of notes){if(n.oncePerPassage)shownPassages.add(n.id);const button=document.createElement('button');button.type='button';button.textContent='주석 · '+n.title;button.onclick=e=>{e.preventDefault();e.stopPropagation();showTerm(n);};links.append(button);}row.querySelector('.vp-txt')?.append(links);}
