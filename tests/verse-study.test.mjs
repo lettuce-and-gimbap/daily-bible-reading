@@ -3,6 +3,9 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
 import { createRequire } from 'node:module';
+import { spawnSync } from 'node:child_process';
+import { join } from 'node:path';
+import { tmpdir } from 'node:os';
 const require=createRequire(import.meta.url), bible=require('../js/core/bible.js');
 const counts=JSON.parse(fs.readFileSync('js/core/versecounts.js','utf8').match(/const VERSE_COUNTS\s*=\s*(\[[^\]]+\])/)[1]);
 const codes=['1sa','2sa','1ki','2ki'];
@@ -40,4 +43,18 @@ test('실물 사진은 안전한 경로와 출처·이용 조건을 표시한다
  const html=ctx.studyFigureHtml({url:'img/real-reference/group-1/photo.jpg',caption:'자료',credit:'저작자 https://creativecommons.org/licenses/by/4.0/',pageUrl:'https://example.org/source'});
  assert.match(html,/img\/real-reference\/group-1\/photo.jpg/);assert.match(html,/원본 ↗/);assert.match(html,/이용 조건 ↗/);
  assert.equal(ctx.studyFigureHtml({url:'img/real-reference/../../secret.jpg'}),'');
+});
+test('실물 사진의 기관 자료 링크를 절별 주석에 보존한다',()=>{
+ const figures=JSON.parse(fs.readFileSync('data/summary/real-figures.json','utf8'));
+ for(const code of codes){const data=JSON.parse(fs.readFileSync(`data/verse-study/${code}-existing.json`));
+  for(const note of data.passages.filter(n=>n.id.startsWith('real-photo-'))){
+   const f=(figures[code]?.[note.chapter]||[]).find(x=>x.src===note.images[0]?.url);assert(f,note.id);
+   for(const ref of f.references||[])assert(note.sourceLinks.some(s=>s.url===ref.url),`${note.id}: ${ref.url}`);
+  }
+ }
+});
+test('재생성 도구는 감수한 절별 주석을 덮어쓰지 않는다',()=>{
+ const dir=fs.mkdtempSync(join(tmpdir(),'verse-study-guard-')), file=join(dir,'1sa-existing.json');
+ try {fs.writeFileSync(file,'수동 감수');const run=spawnSync(process.execPath,['tools/commentary/link-existing-verse-notes.cjs',dir],{encoding:'utf8'});assert.notEqual(run.status,0);assert.match(run.stderr,/덮어쓸 수 없습니다/);assert.equal(fs.readFileSync(file,'utf8'),'수동 감수');}
+ finally {fs.unlinkSync(file);fs.rmdirSync(dir);}
 });

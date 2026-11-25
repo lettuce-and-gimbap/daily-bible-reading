@@ -12,7 +12,12 @@ export function parseReference(text) {
     const chapter = Number(headings[i][1]);
     if (chapters.has(chapter)) throw new Error(`중복 장 ${chapter}`);
     const body = text.slice(headings[i].index + headings[i][0].length, headings[i + 1]?.index ?? text.length);
-    const verses = [...body.matchAll(/^(\d{1,3})\s+/gm)].map(m => Number(m[1]));
+    const verses = [];
+    for (const m of body.matchAll(/^(\d{1,3})(?:\s*[-–]\s*(\d{1,3}))?\s+/gm)) {
+      const first = Number(m[1]), last = Number(m[2] || m[1]);
+      if (last < first || last - first > 150) throw new Error(`${chapter}장 결합 절 범위 오류`);
+      for (let verse = first; verse <= last; verse++) verses.push(verse);
+    }
     const complete = verses.length > 0 && !verses.some((v, n) => v !== n + 1);
     chapters.set(chapter, { max: verses.at(-1) || 0, complete });
   }

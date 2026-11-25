@@ -122,3 +122,4 @@ node tools/commentary/reference-audit.mjs "<원문_md 폴더>"
 - `addp.cjs <묶음.json>`: 이미 쓴 장에 빠진 인물을 덧붙임
 - `trim.cjs <책> [500]`: 글자 수를 넘긴 story에서 인용 없는 문장부터 덜어 냄(뺀 문장을 출력하니 핵심이 빠졌으면 다시 넣기)
 - `commit.sh "<메시지>"`: 전체 검사 오류가 0일 때만 커밋·푸시
+- `link-existing-verse-notes.cjs <빈 출력 폴더>`: 기존 장별 해설의 명시적 절 참조를 절별 자료로 변환해 비교한다. 감수된 `data/verse-study` 파일은 자동으로 덮어쓰지 않는다. 결과는 참조 자동 추출이므로 본문·원어·사진 연결을 직접 검토해야 한다.

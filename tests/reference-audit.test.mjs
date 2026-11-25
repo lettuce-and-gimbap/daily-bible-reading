@@ -13,6 +13,12 @@ test('원문에서 빠진 절을 보완된 본문으로 잘못 취급하지 않�
  assert.equal(validateVerseRef('1, 3', 3), true);
  assert.equal(validateVerseRef('표제', 3), true);
 });
+test('두 절이 한 줄에 결합된 역본 표기를 누락으로 오인하지 않는다', () => {
+ const refs=parseReference('## 1장\n\n1 예시\n\n2-3 예시\n\n4 예시\n');
+ assert.equal(refs.get(1).complete,true);
+ assert.equal(refs.get(1).max,4);
+ assert.throws(()=>parseReference('## 1장\n\n1 예시\n\n4-2 예시\n'));
+});
 test('빈 이름은 본문에 일치하지 않는다', () => assert.equal(findName('예시', ''), null));
 test('여러 장을 읽어도 주요 사건 전체를 다시 볼 수 있다', () => {
  const events = Array.from({length: 8}, (_, i) => ({ title:`사건${i}`, text:'내용', verses:String(i+1) }));
